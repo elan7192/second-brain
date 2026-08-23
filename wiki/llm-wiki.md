@@ -30,6 +30,8 @@ Humans abandon wikis because maintenance grows faster than value. The LLM can to
 
 A company skill catalog in Notion, or a GitHub folder of agent skills, is a product claim. Neither replaces this compiler. A local SOP does, if compiled here. See [[skill-library]], [[skill-as-sop]], and [[contradictions]] C8.
 
+[[src-retrieval-second-brain]] is the retrieval foil: hybrid search, GraphRAG, layered memory, agentic routing. Query path here stays compile-then-read. See [[retrieval-second-brain]] and C13.
+
 ## Related
 
-[[tokens-as-capital]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[how-it-works]] · [[skill-library]]
+[[tokens-as-capital]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[how-it-works]] · [[skill-library]] · [[retrieval-second-brain]]

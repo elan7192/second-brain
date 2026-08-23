@@ -18,6 +18,8 @@ A 1M-token window is not a reason to fill it. The useful unit is a small set of 
 
 Vector similarity is not a causal path. "Why did Project X fail?" may need a chain across people, suppliers, and releases that chunk search never joins.
 
+[[src-retrieval-second-brain]] names the same walk as GraphRAG. This vault walks compiled page links. That is a compile-time graph, not a query-time GraphRAG runtime. See [[retrieval-second-brain]] and [[contradictions]] C13.
+
 Facts need validity windows. "Dan works on Project A" and "Dan works on Project B" can both exist in a store. Only one may be current.
 
 ## Split
@@ -29,4 +31,4 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]] · [[retrieval-second-brain]]

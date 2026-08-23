@@ -31,6 +31,7 @@ flowchart LR
   Home --> contradictions
   Home --> skill-library
   Home --> skill-as-sop
+  Home --> retrieval-second-brain
   Home --> Jarvis
   Home --> TELOS
   hunt --> hunt-ship-loop
@@ -45,6 +46,7 @@ flowchart LR
   how-it-works --> contradictions
   how-it-works --> tokens-as-capital
   how-it-works --> context-graph
+  how-it-works --> retrieval-second-brain
   how-it-works --> memory-ablation
   how-it-works --> verifiable-instructions
   how-it-works --> audited-task-contract
@@ -53,7 +55,11 @@ flowchart LR
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
+  harness-routing --> index
+  harness-routing --> retrieval-second-brain
   harness-routing --> rohit
+  log --> retrieval-second-brain
+  log --> memory-engineering
   log --> skill-as-sop
   log --> mahipal-jangra
   log --> skill-library
@@ -66,7 +72,6 @@ flowchart LR
   log --> agent-operating-system
   log --> llm-wiki
   log --> tokens-as-capital
-  log --> memory-engineering
   log --> memory-ablation
   log --> verifiable-instructions
   log --> audited-task-contract
@@ -79,6 +84,11 @@ flowchart LR
   log --> andrej-karpathy
   log --> jacky-kwok
   log --> rohit
+  memory-engineering --> hunt
+  memory-engineering --> ship
+  memory-engineering --> index
+  memory-engineering --> retrieval-second-brain
+  memory-engineering --> contradictions
   memory-engineering --> memory-ablation
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
@@ -91,11 +101,13 @@ flowchart LR
   llm-wiki --> skill-library
   llm-wiki --> skill-as-sop
   llm-wiki --> contradictions
+  llm-wiki --> retrieval-second-brain
   llm-wiki --> tokens-as-capital
   llm-wiki --> andrej-karpathy
   llm-wiki --> how-it-works
   tokens-as-capital --> skill-library
   tokens-as-capital --> skill-as-sop
+  tokens-as-capital --> retrieval-second-brain
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   index --> Home
@@ -120,6 +132,7 @@ flowchart LR
   index --> context-graph
   index --> skill-library
   index --> skill-as-sop
+  index --> retrieval-second-brain
   index --> andrej-karpathy
   index --> jacky-kwok
   index --> rohit
@@ -135,6 +148,8 @@ flowchart LR
   entropy-gate --> audited-task-contract
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
+  context-graph --> retrieval-second-brain
+  context-graph --> contradictions
   context-graph --> skill-library
   context-graph --> tokens-as-capital
   context-graph --> llm-wiki
@@ -156,12 +171,12 @@ flowchart LR
   agent-operating-system --> hunt-ship-loop
   agent-operating-system --> skill-library
   agent-operating-system --> skill-as-sop
+  agent-operating-system --> retrieval-second-brain
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
   Today --> Home
-  Today --> skill-library
-  Today --> skill-as-sop
+  Today --> retrieval-second-brain
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
@@ -170,11 +185,22 @@ flowchart LR
   contradictions --> anti-slop
   contradictions --> skill-library
   contradictions --> mahipal-jangra
+  contradictions --> llm-wiki
+  contradictions --> retrieval-second-brain
   skill-as-sop --> tokens-as-capital
   skill-as-sop --> verifiable-instructions
   skill-as-sop --> anti-slop
   skill-as-sop --> skill-library
   skill-as-sop --> audited-task-contract
+  retrieval-second-brain --> index
+  retrieval-second-brain --> llm-wiki
+  retrieval-second-brain --> how-it-works
+  retrieval-second-brain --> context-graph
+  retrieval-second-brain --> graph
+  retrieval-second-brain --> memory-engineering
+  retrieval-second-brain --> contradictions
+  retrieval-second-brain --> tokens-as-capital
+  retrieval-second-brain --> harness-routing
   skill-library --> hurley
   skill-library --> mahipal-jangra
   skill-library --> contradictions
@@ -188,6 +214,7 @@ flowchart LR
   Hooks --> ship
   Hooks --> llm-wiki
   Hooks --> tokens-as-capital
+  Hooks --> retrieval-second-brain
   Hooks --> skill-library
   Hooks --> skill-as-sop
   Jarvis --> Home

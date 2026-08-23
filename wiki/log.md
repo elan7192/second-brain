@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-23] ingest | Retrieval second brain
+
+Compiled the four-pillar retrieval paste into [[src-retrieval-second-brain]] and [[retrieval-second-brain]]. Mapped layers onto [[memory-engineering]]. Flagged C13. D1 not reopened. Brief: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+
 ## [2026-08-23] ingest | Five skill packs and SOP thesis
 
 Compiled the pasted list into [[src-skill-pack-list]] and [[skill-as-sop]]. Checked five GitHub READMEs. Flagged C12. No pack vendored. Brief: [[ingest-brief-2026-08-23-skill-pack-list]].

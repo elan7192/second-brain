@@ -111,3 +111,13 @@ READMEs and GitHub API on 2026-08-23:
 - vercel-labs 40+ and 100+ rule counts match the current README.
 
 Resolution: quote the 2026-08-23 check on [[skill-library]]. Do not repeat the paste numbers as current.
+
+## C13. Retrieval stack vs compiled wiki
+
+[[src-retrieval-second-brain]] says read-and-recall needs hybrid BM25 + vector + rerank, GraphRAG, and a MemGPT / Letta / LangChain / LlamaIndex landing.
+
+[[llm-wiki]] and D1 say RAG re-derives on every query. This vault compiles at ingest and answers from `wiki/`.
+
+The paste's "greatly raises retrieval accuracy" has no method. unverified.
+
+Resolution: compile the four pillars onto [[retrieval-second-brain]]. Do not reopen D1. Do not install those frameworks. Wikilinks stay the graph. Frontmatter stays as it is unless a later source proves answers are worse than raw retrieval.

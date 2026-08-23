@@ -38,6 +38,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[skill-library]] | Living catalog vs GitHub dump. Compile here. Do not vendor either pack |
 | [[skill-as-sop]] | A skill is a compiled SOP for a workflow that already failed once |
+| [[retrieval-second-brain]] | Hybrid search / GraphRAG recipe. Compile the claim. Do not switch the query path |
 
 ## Sources
 
@@ -55,6 +56,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[src-johnsjawn-skill-library]] | 2026-08-21 | Notion Skills library pitch. Usage column shown. Auto-improve unverified |
 | [[src-mukul975-cybersecurity-skills]] | 2026-08-23 | GitHub skill dump. 817 claimed. Offensive bodies not copied |
 | [[src-skill-pack-list]] | 2026-08-23 | Five public packs plus SOP thesis. Counts stale. See C12 |
+| [[src-retrieval-second-brain]] | 2026-08-23 | Four retrieval pillars. Accuracy gain unverified. See C13 |
 
 ## People
 

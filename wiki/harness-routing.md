@@ -29,10 +29,12 @@ Those differences change the prompt prefix and the available actions. The same m
 
 Transfer semantic state. Do not depend on KV cache or prompt-cache reuse across harnesses.
 
+[[src-retrieval-second-brain]] agentic routing: split the question, call tools, reflect, query again. This vault's split is [[index]] then linked pages. A second pass is ingest or lint, not a reranker. See [[retrieval-second-brain]].
+
 ## Test before you believe it
 
 Compare a fixed pair, a fixed pair with audited state, and routed executors. If routing loses to the reset tax, keep the fixed pair.
 
 ## Related
 
-[[audited-task-contract]] · [[rohit]]
+[[audited-task-contract]] · [[rohit]] · [[retrieval-second-brain]]

@@ -16,6 +16,6 @@ Trend to lock. From [[src-avid-obsidian-agent-team]].
 4. **Artifact** — the brief in [[ship]]
 5. **Lock** — write it in [[decisions]] so it is not remade
 
-This vault's first locked hook family: compile, do not retrieve. See [[llm-wiki]] and [[tokens-as-capital]].
+This vault's first locked hook family: compile, do not retrieve. See [[llm-wiki]] and [[tokens-as-capital]]. Foil now on the page: [[retrieval-second-brain]]. C13.
 
 Open foil: Notion living [[skill-library]] vs a starred GitHub skill dump vs a local [[skill-as-sop]]. [[contradictions]] C8. D7 stays locked.

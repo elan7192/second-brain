@@ -24,6 +24,16 @@ Source: 0xWast3 article quoted by [[src-0xcodio-memory-ablation]].
 
 Full-transcript replay does not scale, does not rank importance, and keeps both old and new facts with no current flag.
 
+## Three layers from [[src-retrieval-second-brain]]
+
+The paste names working, episodic, and semantic memory. This vault's files, not a new store:
+
+- Working: the current prompt. Do not file it into `MEMORY.md`.
+- Episodic: `wiki/log.md`, [[hunt]], [[ship]]. Task logs and experience.
+- Semantic: compiled `wiki/` pages. That is the second brain.
+
+Retrieve in this vault means open [[index]] and follow links. It does not mean BM25 + vector + rerank. See [[retrieval-second-brain]] and [[contradictions]] C13.
+
 ## Related
 
-[[memory-ablation]] · [[audited-task-contract]] · [[entropy-gate]]
+[[memory-ablation]] · [[audited-task-contract]] · [[entropy-gate]] · [[retrieval-second-brain]]

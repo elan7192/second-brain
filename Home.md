@@ -30,6 +30,7 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - [[contradictions]]
 - [[skill-library]]
 - [[skill-as-sop]]
+- [[retrieval-second-brain]]
 - [[Jarvis]]
 - [[TELOS]]
 
@@ -41,4 +42,4 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 
 ## This batch
 
-2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Latest: [[ingest-brief-2026-08-23-skill-pack-list]].
+2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Latest: [[ingest-brief-2026-08-23-retrieval-second-brain]].

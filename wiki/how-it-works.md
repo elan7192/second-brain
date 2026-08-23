@@ -20,7 +20,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 
 ## What the model sees
 
-Prefer compiled pages over raw dumps. That is [[tokens-as-capital]] and [[context-graph]].
+Prefer compiled pages over raw dumps. That is [[tokens-as-capital]] and [[context-graph]]. Hybrid search and GraphRAG are a different query path. See [[retrieval-second-brain]] and C13.
 
 [[MEMORY]] stays small. That is [[memory-ablation]].
 Locked choices live in [[decisions]].
