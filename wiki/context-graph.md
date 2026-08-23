@@ -25,6 +25,8 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 - Graph: what is true, and when.
 - Skills / schema: how we act.
 
+[[src-mukul975-cybersecurity-skills]] describes the same split as a load order: scan all skill frontmatters, then load a few full workflows. Token numbers there are author-stated. This vault applies the split by compiling into [[skill-library]], not by installing that pack.
+
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]]

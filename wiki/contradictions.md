@@ -70,7 +70,9 @@ Resolution: `unverified`. Do not use as evidence that the architecture works.
 
 This vault already locked D1 and D7: compile into `wiki/`, open the repo in Obsidian, do not vendor skill repos ([[anti-slop]]).
 
-Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7. Do not vendor Notion. The 10% figure stays unverified.
+[[src-mukul975-cybersecurity-skills]] is that GitHub-folder form. GitHub API on 2026-08-23: 30758 stars, 3663 forks.
+
+Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7. Do not vendor Notion or the GitHub pack. The 10% figure stays unverified. Star count does not authorize install.
 
 ## C9. Skill improves with use vs usage count
 
@@ -79,3 +81,19 @@ Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7.
 The attached demo shows a `# Uses` column and comments on skill pages. It does not show skill text changing after a use.
 
 Resolution: keep the tweet line unverified. Cite the demo for usage visibility only.
+
+## C10. Anthropic in the name, unaffiliated in the README
+
+[[src-mukul975-cybersecurity-skills]] lives at `mukul975/Anthropic-Cybersecurity-Skills`.
+
+The README says it is an independent community project, not affiliated with Anthropic PBC.
+
+Resolution: cite [[mahipal-jangra]]. Do not call the pack an Anthropic product.
+
+## C11. 817 skills vs the domain table
+
+[[src-mukul975-cybersecurity-skills]] headline is 817 skills across 29 domains.
+
+The same README's domain table sums to 785. The contributing section still says Deception Technology has 2 skills and Compliance & Governance has 5, against table values 6 and 9.
+
+Resolution: treat 817 as author-stated. Quote C11 if a count is needed. Do not use the table as a proof of 817.

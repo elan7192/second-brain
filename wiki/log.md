@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-23] ingest | mukul975 cybersecurity skill library
+
+Compiled https://github.com/mukul975/Anthropic-Cybersecurity-Skills into [[src-mukul975-cybersecurity-skills]], [[mahipal-jangra]], and [[skill-library]]. Catalog pitch only. Skill bodies not copied. Flagged C10 and C11. Extended C8. `MEMORY.md` now forbids vendoring or executing the pack. Brief: [[ingest-brief-2026-08-23-cybersecurity-skills]].
+
 ## [2026-08-23] ingest | Johnsjawn skill library
 
 Compiled https://x.com/johnsjawn/status/2090805874331959600 into [[src-johnsjawn-skill-library]], [[skill-library]], and [[hurley]]. Flagged C8 (Notion living library vs this compiled vault) and C9 (improves on each use vs `# Uses` counts). D7 not reopened. Brief: [[ingest-brief-2026-08-23-skill-library]].

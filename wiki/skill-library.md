@@ -10,7 +10,7 @@ updated: 2026-08-23
 
 A shared catalog of agent skills the whole company can create, find, and reuse.
 
-Source: [[src-johnsjawn-skill-library]]. Author: [[hurley]], 2026-08-21.
+Sources: [[src-johnsjawn-skill-library]] ([[hurley]], 2026-08-21) and [[src-mukul975-cybersecurity-skills]] ([[mahipal-jangra]], repo created 2026-02-25).
 
 ## Claims that landed
 
@@ -32,6 +32,16 @@ Spoken: an agent built Ivan Bot Skill from Ivan's feedback in Notion and Slack. 
 - A downloaded skill running in a local agent. "Across any of your agents" is spoken plus a menu item. Execution is unverified.
 - A research skill rebuilt 50 times. Tweet number, no method. unverified.
 
+## GitHub catalog form
+
+[[src-mukul975-cybersecurity-skills]] is the GitHub-folder form [[hurley]] named as a failure. README headline: 817 skills, 29 domains, six framework maps, agentskills.io. GitHub API on 2026-08-23: 30758 stars, 3663 forks.
+
+Claimed load path: scan frontmatter at about 30 tokens each, then load 500-2000 tokens for a chosen skill. That is progressive disclosure, author-stated. See [[tokens-as-capital]] and [[context-graph]].
+
+README says the pack includes offensive and dual-use techniques. This vault compiled the catalog pitch only. Skill bodies, scripts, and workflows stay out. Do not vendor or execute the pack.
+
+Counts inside that README do not add up. See [[contradictions]] C11. The repo name uses Anthropic. The README denies affiliation. See C10.
+
 ## Relation to this vault
 
 This vault compiles skill rules into pages and does not vendor skill repos. That is [[anti-slop]] and D7 in `decisions.md`. Do not reopen D7.
@@ -40,4 +50,4 @@ Discovery instead of rebuild is the same bet as [[tokens-as-capital]]. The compi
 
 ## Related
 
-[[llm-wiki]] · [[anti-slop]] · [[tokens-as-capital]] · [[hurley]]
+[[llm-wiki]] · [[anti-slop]] · [[tokens-as-capital]] · [[context-graph]] · [[hurley]] · [[mahipal-jangra]]

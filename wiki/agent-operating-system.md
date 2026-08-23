@@ -20,7 +20,7 @@ Five layers, one vault.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
 5. **Keep a human gate.** [[hunt-ship-loop]]. File first. Scouts write quietly. Vault does not post, pay, or send.
 
-[[skill-library]] is adjacent: discover and reuse known patterns instead of rebuilding them. It does not replace compile-into-`wiki/`.
+[[skill-library]] is adjacent: discover and reuse known patterns instead of rebuilding them. It does not replace compile-into-`wiki/`. A starred GitHub skill dump is still a dump. See [[src-mukul975-cybersecurity-skills]].
 
 ## What this batch does not prove
 

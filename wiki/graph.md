@@ -22,6 +22,7 @@ flowchart LR
   Home --> jacky-kwok
   Home --> rohit
   Home --> hurley
+  Home --> mahipal-jangra
   Home --> ship
   Home --> graph
   Home --> Today
@@ -52,6 +53,7 @@ flowchart LR
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
   harness-routing --> rohit
+  log --> mahipal-jangra
   log --> skill-library
   log --> hurley
   log --> Home
@@ -117,6 +119,7 @@ flowchart LR
   index --> jacky-kwok
   index --> rohit
   index --> hurley
+  index --> mahipal-jangra
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
@@ -126,6 +129,7 @@ flowchart LR
   entropy-gate --> audited-task-contract
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
+  context-graph --> skill-library
   context-graph --> tokens-as-capital
   context-graph --> llm-wiki
   context-graph --> memory-engineering
@@ -156,10 +160,13 @@ flowchart LR
   contradictions --> memory-ablation
   contradictions --> anti-slop
   contradictions --> skill-library
+  contradictions --> mahipal-jangra
   skill-library --> hurley
+  skill-library --> mahipal-jangra
   skill-library --> contradictions
-  skill-library --> anti-slop
   skill-library --> tokens-as-capital
+  skill-library --> context-graph
+  skill-library --> anti-slop
   skill-library --> llm-wiki
   Hooks --> twitter
   Hooks --> contradictions
@@ -183,5 +190,7 @@ flowchart LR
   jacky-kwok --> self-verification
   andrej-karpathy --> contradictions
   andrej-karpathy --> llm-wiki
+  mahipal-jangra --> contradictions
+  mahipal-jangra --> skill-library
   hurley --> skill-library
 ```

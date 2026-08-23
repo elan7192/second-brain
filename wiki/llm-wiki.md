@@ -28,7 +28,7 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 
 Humans abandon wikis because maintenance grows faster than value. The LLM can touch many files in one pass. The human curates sources and directs questions.
 
-A company skill catalog in Notion is a product claim, not a replacement for this compiler. See [[skill-library]] and [[contradictions]] C8.
+A company skill catalog in Notion, or a GitHub folder that claims 817 agent skills, is a product claim. Neither replaces this compiler. See [[skill-library]] and [[contradictions]] C8.
 
 ## Related
 

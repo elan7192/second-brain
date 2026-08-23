@@ -16,3 +16,4 @@ Output from compiled pages. Human yes before anything leaves the vault.
 - [[builds]]
 - [[ingest-brief-2026-08-23]]
 - [[ingest-brief-2026-08-23-skill-library]]
+- [[ingest-brief-2026-08-23-cybersecurity-skills]]

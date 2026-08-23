@@ -21,6 +21,8 @@ Treat a token as an investment, not a per-query bill.
 
 [[src-johnsjawn-skill-library]] makes the same bet as write-back: discover a research skill instead of rebuilding it. The "50 times" figure is author-stated, unverified. See [[skill-library]].
 
+[[src-mukul975-cybersecurity-skills]] claims about 30 tokens to scan a skill frontmatter and 500-2000 tokens to load the body. Author-stated. The vault still compiles claims here instead of loading that pack.
+
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[src-mukul975-cybersecurity-skills]]
