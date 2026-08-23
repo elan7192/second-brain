@@ -1,0 +1,16 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "hunt/inbox",
+  "attachmentFolderPath": "raw/assets",
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "strictLineBreaks": false,
+  "defaultViewMode": "preview",
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "readableLineLength": true,
+  "showFrontmatter": true,
+  "tabSize": 2
+}

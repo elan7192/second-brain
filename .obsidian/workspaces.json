@@ -1,0 +1,45 @@
+{
+  "workspaces": {
+    "second-brain": {
+      "main": {
+        "id": "main",
+        "type": "split",
+        "children": [
+          {
+            "id": "left-leaf",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "home-tab",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home.md",
+                    "mode": "preview"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "graph-leaf",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "graph-tab",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      }
+    }
+  },
+  "active": "second-brain"
+}
