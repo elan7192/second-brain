@@ -13,7 +13,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 
 ## Start
 
-- [[Home]] — door
+- [[Home]] — door. Dark compile bus: `output/obsidian-dataflow.html` · [[dataflow-visual-2026-08-23]]
 - [[retrieval]] — FTS evidence set
 - [[claims]] — two registries; C17 unresolved
 - [[how-it-works]] — operations

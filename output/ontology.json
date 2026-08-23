@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-30T00:58:16Z",
+  "builtAt": "2026-08-30T07:14:51Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -106,19 +106,19 @@
     }
   },
   "counts": {
+    "Ship": 59,
     "Meta": 15,
-    "unverified": 103,
+    "unverified": 104,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 58,
     "Concept": 124,
     "Project": 2,
     "Person": 14,
     "Source": 142,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 427,
-    "links": 2986
+    "objects": 428,
+    "links": 2998
   },
   "objects": [
     {
@@ -971,7 +971,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 12,
-      "outbound": 8,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -1041,7 +1041,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 5,
-      "outbound": 5,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "2026-08-30"
     },
@@ -1236,7 +1236,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 43,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
@@ -1544,7 +1544,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 43,
+      "inbound": 44,
       "outbound": 21,
       "unverified": false,
       "oneLiner": "Give the model the subgraph for this decision, not the whole dump."
@@ -1558,7 +1558,7 @@
       "updated": "2026-08-30",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 144,
+      "inbound": 145,
       "outbound": 81,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
@@ -1618,6 +1618,20 @@
       "outbound": 15,
       "unverified": true,
       "oneLiner": "Question: room to optimize this project with [[daily-tool-replace]]?"
+    },
+    {
+      "primaryKey": "dataflow-visual-2026-08-23",
+      "objectType": "Ship",
+      "title": "Dataflow visual \u00b7 2026-08-23",
+      "path": "output/dataflow-visual-2026-08-23.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 5,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Rebuilt the vault visual after the [[src-bober-folder-workflow]] clip (https://x.com/bober_smart/status/2090859011365056720). The clip is a dark node graph with a vertical shared-context bus, colored "
     },
     {
       "primaryKey": "dbosc",
@@ -1978,8 +1992,8 @@
       "updated": "2026-08-30",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 15,
-      "outbound": 3,
+      "inbound": 16,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
     },
@@ -2328,8 +2342,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 33,
-      "outbound": 22,
+      "inbound": 34,
+      "outbound": 23,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2833,7 +2847,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 251,
+      "outbound": 252,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3686,7 +3700,7 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 13,
+      "inbound": 14,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
@@ -4736,7 +4750,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 4,
       "unverified": true,
       "oneLiner": "Popular how-to: raw + wiki + schema, ingest, ask. Flat markdown, one topic per file."
@@ -7084,6 +7098,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "dataflow-visual-2026-08-23"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "disclosures"
     },
     {
@@ -7665,6 +7684,11 @@
       "from": "Today",
       "linkType": "relatedTo",
       "to": "archify"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "dataflow-visual-2026-08-23"
     },
     {
       "from": "Today",
@@ -9922,6 +9946,41 @@
       "to": "work-per-cost"
     },
     {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "cites",
+      "to": "src-bober-folder-workflow"
+    },
+    {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "dataflow-visual-2026-08-23",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
       "from": "dbosc",
       "linkType": "cites",
       "to": "src-arxiv-2608-19492"
@@ -10655,6 +10714,11 @@
       "from": "graph",
       "linkType": "relatedTo",
       "to": "archify"
+    },
+    {
+      "from": "graph",
+      "linkType": "relatedTo",
+      "to": "dataflow-visual-2026-08-23"
     },
     {
       "from": "graph",
@@ -11725,6 +11789,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "dataflow-visual-2026-08-23"
     },
     {
       "from": "index",
@@ -14290,6 +14359,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "dataflow-visual-2026-08-23"
     },
     {
       "from": "log",

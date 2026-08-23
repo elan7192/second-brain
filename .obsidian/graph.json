@@ -22,7 +22,7 @@
       }
     },
     {
-      "query": "tag:#twitter OR path:raw/x OR path:wiki/sources",
+      "query": "tag:#twitter OR tag:#hunt OR path:raw/x OR path:wiki/sources OR path:hunt",
       "color": {
         "a": 1,
         "rgb": 3900150

@@ -8,7 +8,7 @@ Compiled personal wiki with a disposable FTS5 index. Open this repo as an Obsidi
 2. Open `Home.md`.
 3. Open graph view. Colors: gold wiki, teal maps, blue hunt/twitter, green people, coral ship.
 
-If you are not in Obsidian, open `output/obsidian-graph.html`.
+If you are not in Obsidian, open `output/obsidian-graph.html` (concept islands). Dark compile bus: `output/obsidian-dataflow.html`. In Obsidian: dark theme, then `maps/dataflow.canvas` or graph view.
 
 ## Agent
 
