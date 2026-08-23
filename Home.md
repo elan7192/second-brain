@@ -12,7 +12,7 @@ Door to the vault. Open this folder in Obsidian. Then open graph view.
 
 ## Result
 
-Ten X posts plus one GitHub catalog compiled into a wiki you can browse as a graph.
+Ten X posts plus GitHub skill catalogs compiled into a wiki you can browse as a graph.
 
 - Gold: [[wiki]]
 - Teal: [[maps]]
@@ -29,6 +29,7 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - [[agent-operating-system]]
 - [[contradictions]]
 - [[skill-library]]
+- [[skill-as-sop]]
 - [[Jarvis]]
 - [[TELOS]]
 
@@ -40,4 +41,4 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 
 ## This batch
 
-2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Latest: [[ingest-brief-2026-08-23-cybersecurity-skills]].
+2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Latest: [[ingest-brief-2026-08-23-skill-pack-list]].

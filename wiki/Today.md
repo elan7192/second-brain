@@ -14,13 +14,13 @@ updated: 2026-08-23
 
 Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes.
 
-Ingested [[src-johnsjawn-skill-library]] and [[src-mukul975-cybersecurity-skills]] into [[skill-library]].
+Ingested [[src-johnsjawn-skill-library]], [[src-mukul975-cybersecurity-skills]], and [[src-skill-pack-list]] into [[skill-library]] and [[skill-as-sop]].
 
 ## Look at
 
-- [[skill-library]]
-- [[contradictions]] C8, C10, C11
-- [[ingest-brief-2026-08-23-cybersecurity-skills]]
+- [[skill-as-sop]]
+- [[contradictions]] C12
+- [[ingest-brief-2026-08-23-skill-pack-list]]
 
 ## Inbox
 

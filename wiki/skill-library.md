@@ -10,7 +10,7 @@ updated: 2026-08-23
 
 A shared catalog of agent skills the whole company can create, find, and reuse.
 
-Sources: [[src-johnsjawn-skill-library]] ([[hurley]], 2026-08-21) and [[src-mukul975-cybersecurity-skills]] ([[mahipal-jangra]], repo created 2026-02-25).
+Sources: [[src-johnsjawn-skill-library]] ([[hurley]], 2026-08-21), [[src-mukul975-cybersecurity-skills]] ([[mahipal-jangra]], repo created 2026-02-25), and [[src-skill-pack-list]] (2026-08-23).
 
 ## Claims that landed
 
@@ -42,6 +42,20 @@ README says the pack includes offensive and dual-use techniques. This vault comp
 
 Counts inside that README do not add up. See [[contradictions]] C11. The repo name uses Anthropic. The README denies affiliation. See C10.
 
+## Five more GitHub packs
+
+Checked 2026-08-23. Catalog only. See [[src-skill-pack-list]] and [[skill-as-sop]].
+
+| Repo | What the README actually says | API stars that day |
+| --- | --- | --- |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Official Vercel pack. `react-best-practices` 40+ rules. `web-design-guidelines` 100+ rules. Also writing 80+, React Native 16. | 30364 |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 163 scientific skills on the badge. Same file also says 161. Paste said 148. | 34179 |
+| [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | Headline 364. Later 345. README still says 5,200+ stars. Paste said 223. | 24841 |
+| [psenger/ai-agent-skills](https://github.com/psenger/ai-agent-skills) | Named skills in the paste are present, plus others. | 9 |
+| [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | README table: 43 skill rows. Named README / C4 / Mermaid / schema / deps / handoff skills are present. | 2378 |
+
+Stale counts: [[contradictions]] C12. Scientific skill bodies were not copied.
+
 ## Relation to this vault
 
 This vault compiles skill rules into pages and does not vendor skill repos. That is [[anti-slop]] and D7 in `decisions.md`. Do not reopen D7.
@@ -50,4 +64,4 @@ Discovery instead of rebuild is the same bet as [[tokens-as-capital]]. The compi
 
 ## Related
 
-[[llm-wiki]] · [[anti-slop]] · [[tokens-as-capital]] · [[context-graph]] · [[hurley]] · [[mahipal-jangra]]
+[[llm-wiki]] · [[anti-slop]] · [[tokens-as-capital]] · [[context-graph]] · [[skill-as-sop]] · [[hurley]] · [[mahipal-jangra]]

@@ -72,7 +72,9 @@ This vault already locked D1 and D7: compile into `wiki/`, open the repo in Obsi
 
 [[src-mukul975-cybersecurity-skills]] is that GitHub-folder form. GitHub API on 2026-08-23: 30758 stars, 3663 forks.
 
-Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7. Do not vendor Notion or the GitHub pack. The 10% figure stays unverified. Star count does not authorize install.
+[[src-skill-pack-list]] adds five more GitHub folders, including an official Vercel pack.
+
+Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7. Do not vendor Notion or the GitHub packs. The 10% figure stays unverified. Star count does not authorize install.
 
 ## C9. Skill improves with use vs usage count
 
@@ -97,3 +99,15 @@ Resolution: cite [[mahipal-jangra]]. Do not call the pack an Anthropic product.
 The same README's domain table sums to 785. The contributing section still says Deception Technology has 2 skills and Compliance & Governance has 5, against table values 6 and 9.
 
 Resolution: treat 817 as author-stated. Quote C11 if a count is needed. Do not use the table as a proof of 817.
+
+## C12. Stale skill-pack counts
+
+[[src-skill-pack-list]] paste: scientific 148, alirezarezvani 223 skills and 5,200+ stars.
+
+READMEs and GitHub API on 2026-08-23:
+
+- K-Dense badge 163. Same README also says 161. 148 is gone.
+- alirezarezvani headline 364, convert section 345, API description 345 / 330+. README still says 5,200+ stars. API stars: 24841.
+- vercel-labs 40+ and 100+ rule counts match the current README.
+
+Resolution: quote the 2026-08-23 check on [[skill-library]]. Do not repeat the paste numbers as current.

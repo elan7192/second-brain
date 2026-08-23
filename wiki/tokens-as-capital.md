@@ -23,6 +23,8 @@ Treat a token as an investment, not a per-query bill.
 
 [[src-mukul975-cybersecurity-skills]] claims about 30 tokens to scan a skill frontmatter and 500-2000 tokens to load the body. Author-stated. The vault still compiles claims here instead of loading that pack.
 
+[[src-skill-pack-list]] says a skill SOP stops the agent from retrying a known failure and burning tokens. Compile the SOP. Do not buy that claim by installing a marketplace. See [[skill-as-sop]].
+
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[src-mukul975-cybersecurity-skills]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[skill-as-sop]] · [[src-mukul975-cybersecurity-skills]]

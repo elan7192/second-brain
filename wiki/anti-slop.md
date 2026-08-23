@@ -37,7 +37,7 @@ The human asked for examples, a comparison, or a specific voice.
 9. https://skills.sh/aashaexo/soundshuman/humanize
 10. https://skills.sh/jalaalrd/anti-ai-slop-writing/anti-ai-slop-writing
 
-Public ranked skills. Company living libraries are a different object. A GitHub dump that claims 817 skills is another object. Compile the pitch. Do not vendor the pack. See [[skill-library]] and [[src-mukul975-cybersecurity-skills]].
+Public ranked skills. Company living libraries are a different object. A GitHub dump is another object. Compile the pitch. Do not vendor the pack. A local SOP the human writes is compiled here. See [[skill-library]], [[skill-as-sop]], [[src-mukul975-cybersecurity-skills]].
 
 ## Related
 

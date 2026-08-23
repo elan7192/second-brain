@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-23] ingest | Five skill packs and SOP thesis
+
+Compiled the pasted list into [[src-skill-pack-list]] and [[skill-as-sop]]. Checked five GitHub READMEs. Flagged C12. No pack vendored. Brief: [[ingest-brief-2026-08-23-skill-pack-list]].
+
 ## [2026-08-23] ingest | mukul975 cybersecurity skill library
 
 Compiled https://github.com/mukul975/Anthropic-Cybersecurity-Skills into [[src-mukul975-cybersecurity-skills]], [[mahipal-jangra]], and [[skill-library]]. Catalog pitch only. Skill bodies not copied. Flagged C10 and C11. Extended C8. `MEMORY.md` now forbids vendoring or executing the pack. Brief: [[ingest-brief-2026-08-23-cybersecurity-skills]].

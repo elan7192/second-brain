@@ -30,6 +30,7 @@ flowchart LR
   Home --> agent-operating-system
   Home --> contradictions
   Home --> skill-library
+  Home --> skill-as-sop
   Home --> Jarvis
   Home --> TELOS
   hunt --> hunt-ship-loop
@@ -53,6 +54,7 @@ flowchart LR
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
   harness-routing --> rohit
+  log --> skill-as-sop
   log --> mahipal-jangra
   log --> skill-library
   log --> hurley
@@ -87,11 +89,13 @@ flowchart LR
   hunt-ship-loop --> context-graph
   llm-wiki --> index
   llm-wiki --> skill-library
+  llm-wiki --> skill-as-sop
   llm-wiki --> contradictions
   llm-wiki --> tokens-as-capital
   llm-wiki --> andrej-karpathy
   llm-wiki --> how-it-works
   tokens-as-capital --> skill-library
+  tokens-as-capital --> skill-as-sop
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   index --> Home
@@ -115,6 +119,7 @@ flowchart LR
   index --> hunt-ship-loop
   index --> context-graph
   index --> skill-library
+  index --> skill-as-sop
   index --> andrej-karpathy
   index --> jacky-kwok
   index --> rohit
@@ -124,6 +129,7 @@ flowchart LR
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
   anti-slop --> skill-library
+  anti-slop --> skill-as-sop
   anti-slop --> verifiable-instructions
   entropy-gate --> contradictions
   entropy-gate --> audited-task-contract
@@ -134,6 +140,7 @@ flowchart LR
   context-graph --> llm-wiki
   context-graph --> memory-engineering
   verifiable-instructions --> contradictions
+  verifiable-instructions --> skill-as-sop
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   agent-operating-system --> llm-wiki
@@ -148,11 +155,13 @@ flowchart LR
   agent-operating-system --> anti-slop
   agent-operating-system --> hunt-ship-loop
   agent-operating-system --> skill-library
+  agent-operating-system --> skill-as-sop
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
   Today --> Home
   Today --> skill-library
+  Today --> skill-as-sop
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
@@ -161,11 +170,17 @@ flowchart LR
   contradictions --> anti-slop
   contradictions --> skill-library
   contradictions --> mahipal-jangra
+  skill-as-sop --> tokens-as-capital
+  skill-as-sop --> verifiable-instructions
+  skill-as-sop --> anti-slop
+  skill-as-sop --> skill-library
+  skill-as-sop --> audited-task-contract
   skill-library --> hurley
   skill-library --> mahipal-jangra
   skill-library --> contradictions
   skill-library --> tokens-as-capital
   skill-library --> context-graph
+  skill-library --> skill-as-sop
   skill-library --> anti-slop
   skill-library --> llm-wiki
   Hooks --> twitter
@@ -174,6 +189,7 @@ flowchart LR
   Hooks --> llm-wiki
   Hooks --> tokens-as-capital
   Hooks --> skill-library
+  Hooks --> skill-as-sop
   Jarvis --> Home
   Jarvis --> index
   Jarvis --> ship

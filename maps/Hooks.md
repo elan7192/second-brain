@@ -18,4 +18,4 @@ Trend to lock. From [[src-avid-obsidian-agent-team]].
 
 This vault's first locked hook family: compile, do not retrieve. See [[llm-wiki]] and [[tokens-as-capital]].
 
-Open foil: Notion living [[skill-library]] vs a starred GitHub skill dump vs this compiled vault. [[contradictions]] C8. D7 stays locked.
+Open foil: Notion living [[skill-library]] vs a starred GitHub skill dump vs a local [[skill-as-sop]]. [[contradictions]] C8. D7 stays locked.
