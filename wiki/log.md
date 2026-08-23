@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-23] query | Opened vault in Obsidian
+
+Opened the repo in Obsidian 1.13.7. Graph color groups apply as written in `.obsidian/graph.json`. Brief: [[obsidian-open-2026-08-23]].
+
 ## [2026-08-23] lint | Obsidian vault layer
 
 Added `.obsidian` graph colors, [[Home]] as door, [[maps]] / [[hunt]] / [[ship]] indexes, and rendered `output/obsidian-graph.html`. Locked D7.

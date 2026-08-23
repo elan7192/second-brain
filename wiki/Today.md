@@ -12,12 +12,13 @@ updated: 2026-08-23
 
 ## Done
 
-Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes.
+Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes. Live open in Obsidian 1.13.7: [[obsidian-open-2026-08-23]].
 
 ## Look at
 
 - [[agent-operating-system]]
 - [[contradictions]]
+- Graph view next to [[Home]]
 - `output/obsidian-graph.html`
 
 ## Inbox
