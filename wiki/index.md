@@ -13,7 +13,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 ## Start
 
 - [[Home]] — door
-- [[graph]] — compiled graph snapshot
+- [[graph]] — compiled graph snapshot. Dark dataflow: `output/obsidian-graph.html`
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
 - [[contradictions]] — unresolved conflicts

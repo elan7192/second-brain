@@ -18,8 +18,9 @@ Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, H
 
 - [[agent-operating-system]]
 - [[contradictions]]
+- Dark dataflow: `output/obsidian-graph.html`
+- Canvas: `maps/dataflow.canvas`
 - Graph view next to [[Home]]
-- `output/obsidian-graph.html`
 
 ## Inbox
 

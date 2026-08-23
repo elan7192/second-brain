@@ -1,6 +1,10 @@
 {
+  "theme": "obsidian",
   "cssTheme": "",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "translucency": false,
-  "accentColor": "#d4af37"
+  "accentColor": "#c8a24a",
+  "enabledCssSnippets": [
+    "dataflow"
+  ]
 }

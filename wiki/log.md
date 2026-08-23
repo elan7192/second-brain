@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-23] query | Dark dataflow visual
+
+Rebuilt `output/obsidian-graph.html` as a dark shared-context-bus dashboard from the [[src-bober-folder-workflow]] clip. Added `maps/dataflow.canvas` and `.obsidian/snippets/dataflow.css`. Brief: [[dataflow-visual-2026-08-23]].
+
 ## [2026-08-23] query | Opened vault in Obsidian
 
 Opened the repo in Obsidian 1.13.7. Graph color groups apply as written in `.obsidian/graph.json`. Brief: [[obsidian-open-2026-08-23]].

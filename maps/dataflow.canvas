@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {"id": "brief", "type": "text", "text": "**brief**\n[[Home]] · [[ingest-brief-2026-08-23]]", "x": -920, "y": -480, "width": 260, "height": 120, "color": "4"},
+    {"id": "sources", "type": "text", "text": "**sources**\n[[index]] · raw/x · [[twitter]]", "x": -920, "y": -320, "width": 260, "height": 120, "color": "5"},
+    {"id": "constraints", "type": "text", "text": "**constraints**\n[[decisions]] · [[MEMORY]]", "x": -920, "y": -160, "width": 260, "height": 120, "color": "3"},
+    {"id": "tokens", "type": "text", "text": "**tokens**\n[[tokens-as-capital]]", "x": -920, "y": 0, "width": 260, "height": 120, "color": "3"},
+    {"id": "prior", "type": "text", "text": "**prior runs**\n[[log]] · [[Today]]", "x": -920, "y": 160, "width": 260, "height": 120, "color": "5"},
+    {"id": "bus", "type": "text", "text": "**shared context bus**\n[[index]] · [[context-graph]] · [[audited-task-contract]]", "x": -520, "y": -240, "width": 200, "height": 480, "color": "3"},
+    {"id": "planner", "type": "text", "text": "**planner**\n[[how-it-works]] · [[Jarvis]]", "x": -180, "y": -480, "width": 240, "height": 120, "color": "6"},
+    {"id": "decompose", "type": "text", "text": "**decompose**\n[[hunt-ship-loop]]", "x": -180, "y": -320, "width": 240, "height": 120, "color": "6"},
+    {"id": "route", "type": "text", "text": "**route**\n[[harness-routing]]", "x": 140, "y": -480, "width": 220, "height": 120, "color": "2"},
+    {"id": "scout-x", "type": "text", "text": "**scout 01**\n[[twitter]]", "x": 440, "y": -480, "width": 200, "height": 100, "color": "2"},
+    {"id": "scout-gh", "type": "text", "text": "**scout 02**\n[[github]]", "x": 440, "y": -340, "width": 200, "height": 100, "color": "2"},
+    {"id": "scout-hn", "type": "text", "text": "**scout 03**\n[[hacker-news]]", "x": 700, "y": -480, "width": 200, "height": 100, "color": "2"},
+    {"id": "merge", "type": "text", "text": "**merge**\n[[entropy-gate]]", "x": -180, "y": -160, "width": 240, "height": 120, "color": "6"},
+    {"id": "dedupe", "type": "text", "text": "**dedupe**\n[[memory-ablation]]", "x": -180, "y": 0, "width": 240, "height": 120, "color": "1"},
+    {"id": "cite", "type": "text", "text": "**cite check**\n[[verifiable-instructions]]", "x": 140, "y": 0, "width": 220, "height": 120, "color": "3"},
+    {"id": "writer", "type": "text", "text": "**writer**\n[[llm-wiki]]", "x": 440, "y": -80, "width": 200, "height": 120, "color": "4"},
+    {"id": "verify", "type": "text", "text": "**verify**\n[[self-verification]] · [[contradictions]]", "x": 700, "y": -80, "width": 220, "height": 120, "color": "1"},
+    {"id": "ship", "type": "text", "text": "**ship**\n[[ship]]  human yes", "x": 440, "y": 80, "width": 200, "height": 120, "color": "1"}
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "brief", "fromSide": "right", "toNode": "bus", "toSide": "left"},
+    {"id": "e2", "fromNode": "sources", "fromSide": "right", "toNode": "bus", "toSide": "left"},
+    {"id": "e3", "fromNode": "constraints", "fromSide": "right", "toNode": "bus", "toSide": "left"},
+    {"id": "e4", "fromNode": "tokens", "fromSide": "right", "toNode": "bus", "toSide": "left"},
+    {"id": "e5", "fromNode": "prior", "fromSide": "right", "toNode": "bus", "toSide": "left"},
+    {"id": "e6", "fromNode": "bus", "fromSide": "right", "toNode": "planner", "toSide": "left"},
+    {"id": "e7", "fromNode": "bus", "fromSide": "right", "toNode": "decompose", "toSide": "left"},
+    {"id": "e8", "fromNode": "bus", "fromSide": "right", "toNode": "merge", "toSide": "left"},
+    {"id": "e9", "fromNode": "bus", "fromSide": "right", "toNode": "dedupe", "toSide": "left"},
+    {"id": "e10", "fromNode": "planner", "fromSide": "bottom", "toNode": "decompose", "toSide": "top"},
+    {"id": "e11", "fromNode": "decompose", "fromSide": "right", "toNode": "route", "toSide": "left"},
+    {"id": "e12", "fromNode": "route", "fromSide": "right", "toNode": "scout-x", "toSide": "left"},
+    {"id": "e13", "fromNode": "scout-x", "fromSide": "bottom", "toNode": "merge", "toSide": "right"},
+    {"id": "e14", "fromNode": "merge", "fromSide": "bottom", "toNode": "dedupe", "toSide": "top"},
+    {"id": "e15", "fromNode": "dedupe", "fromSide": "right", "toNode": "cite", "toSide": "left"},
+    {"id": "e16", "fromNode": "cite", "fromSide": "right", "toNode": "writer", "toSide": "left"},
+    {"id": "e17", "fromNode": "writer", "fromSide": "right", "toNode": "verify", "toSide": "left"},
+    {"id": "e18", "fromNode": "verify", "fromSide": "bottom", "toNode": "ship", "toSide": "right"}
+  ]
+}

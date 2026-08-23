@@ -8,7 +8,7 @@ updated: 2026-08-23
 
 # Graph
 
-Open Obsidian graph view for the live version. This page is the compiled snapshot.
+Open Obsidian graph view for the live version. Dark dataflow: `output/obsidian-graph.html`. Canvas: `maps/dataflow.canvas`. This mermaid is the compiled snapshot.
 
 ```mermaid
 flowchart LR

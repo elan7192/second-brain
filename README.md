@@ -8,7 +8,7 @@ Compiled personal wiki. Open this repo as an Obsidian vault. `Home.md` is the do
 2. Open `Home.md`.
 3. Open graph view. Colors: gold wiki, teal maps, blue hunt/twitter, green people, coral ship.
 
-If you are not in Obsidian, open `output/obsidian-graph.html`.
+If you are not in Obsidian, open `output/obsidian-graph.html` (dark dataflow). In Obsidian: dark theme, then `maps/dataflow.canvas` or graph view.
 
 ## Agent
 

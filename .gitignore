@@ -3,3 +3,5 @@
 .obsidian/workspace-mobile.json
 .obsidian/cache
 *.tmp
+__pycache__/
+*.pyc
