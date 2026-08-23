@@ -17,6 +17,8 @@ Read this file, then `wiki/index.md`, then only the pages the index points to.
 | `MEMORY.md` | both | Durable facts only. A line stays if deleting it would change an answer. |
 | `decisions.md` | both | Locked choices. Do not reopen without new evidence. |
 | `AGENTS.md` / `CLAUDE.md` | both | This schema. Keep them identical. |
+| `maps/` `hunt/` `ship/` | agent | Obsidian navigation. Do not copy wiki prose into them. |
+| `.obsidian/` | both | Vault settings. Keep graph color groups. |
 
 ## Query
 

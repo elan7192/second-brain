@@ -1,3 +1,11 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Contradictions
 
 Flag, do not silently merge.
@@ -18,7 +26,7 @@ Bober's older article: `notes/`, `people/`, `projects/` plus `MEMORY.md`.
 
 Avid: Hunt / Ship / Maps / CoS wiki.
 
-Resolution: D1. This vault uses `raw/` + `wiki/`. Avid's Hunt/Ship rules live as [[hunt-ship-loop]], not as a second tree. `MEMORY.md` and `decisions.md` stay at repo root because they are maps, not notes dumps.
+Resolution: D1 plus D7. Compiler stays `raw/` + `wiki/`. Avid's Hunt / Ship / Maps exist as indexes and graph colors, not a second knowledge store. `MEMORY.md` and `decisions.md` stay at repo root.
 
 ## C3. 200-agent cinematic vs 64-worker study
 

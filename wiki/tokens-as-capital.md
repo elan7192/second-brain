@@ -1,3 +1,11 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Tokens as capital
 
 Treat a token as an investment, not a per-query bill.

@@ -1,3 +1,11 @@
+---
+type: ship
+tags:
+  - ship
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Ingest brief · 2026-08-23
 
 Nine X posts compiled into the first vault.
@@ -12,6 +20,6 @@ Karpathy compile + token write-back + memory ablation + verifiable schema + audi
 
 ## What to look at
 
-1. [[contradictions]] — Bober paraphrase, Hitu demo numbers, missing Voxyz blocks.
-2. `MEMORY.md` is empty of personal facts. Interview if you want the vault to know you.
-3. Wiki is below the 50-100 source density where compilation usually beats search. Keep ingesting.
+1. Open this folder in Obsidian. `Home.md` then graph view. Or open `output/obsidian-graph.html`.
+2. [[contradictions]] — Bober paraphrase, Hitu demo numbers, missing Voxyz blocks.
+3. `MEMORY.md` is empty of personal facts. Interview if you want the vault to know you.

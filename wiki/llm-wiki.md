@@ -1,3 +1,11 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # LLM Wiki
 
 Andrej Karpathy's April 2026 pattern for a personal knowledge base.

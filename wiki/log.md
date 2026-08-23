@@ -1,6 +1,18 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-23] lint | Obsidian vault layer
+
+Added `.obsidian` graph colors, [[Home]] as door, [[maps]] / [[hunt]] / [[ship]] indexes, and rendered `output/obsidian-graph.html`. Locked D7.
 
 ## [2026-08-23] ingest | Nine X posts into compiler vault
 

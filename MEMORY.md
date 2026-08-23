@@ -1,3 +1,11 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Memory
 
 Durable facts only. A line stays if deleting it would change an answer.

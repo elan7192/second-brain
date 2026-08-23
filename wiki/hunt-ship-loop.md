@@ -1,6 +1,14 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Hunt / Ship loop
 
-Operational rules from [[src-avid-obsidian-agent-team]]. This vault did not copy Avid's full folder tree. It kept the rules that change behavior.
+Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are indexes. The compiled store stays in `wiki/`.
 
 ## Rules that landed
 
@@ -11,9 +19,11 @@ Operational rules from [[src-avid-obsidian-agent-team]]. This vault did not copy
 - Lock decisions in `decisions.md` so dead ideas are not remade.
 - Nothing in the vault posts, pays, or sends.
 
-## Rules parked
+## Folders that now exist
 
-Hunt/Ship/Maps folder names, graph colors, and the 08:00 IST report clock are Avid's team setup. Revisit if this vault grows a scout fleet.
+[[hunt]], [[ship]], and [[maps]] are indexes over the compiler. They do not store a second copy of the knowledge.
+
+Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still parked.
 
 ## Related
 

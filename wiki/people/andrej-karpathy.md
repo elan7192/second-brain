@@ -1,3 +1,11 @@
+---
+type: person
+tags:
+  - person
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Andrej Karpathy
 
 April 2026 gist: [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).

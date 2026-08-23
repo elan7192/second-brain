@@ -1,3 +1,11 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Memory engineering
 
 Memory is a pipeline, not a bigger context window.

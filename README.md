@@ -1,26 +1,31 @@
 # Second brain
 
-Compiled personal wiki. Raw sources stay immutable. The agent maintains interlinked markdown in `wiki/`.
+Compiled personal wiki. Open this repo as an Obsidian vault. `Home.md` is the door.
 
-## Start
+## Obsidian
 
-1. Open `Home.md` or `wiki/index.md`.
-2. Ask questions in Cursor, Claude Code, or Codex from this repo root.
-3. Drop a source in `raw/` and say `ingest this`.
+1. Obsidian → Open folder as vault → this repo.
+2. Open `Home.md`.
+3. Open graph view. Colors: gold wiki, teal maps, blue hunt/twitter, green people, coral ship.
 
-The schema is `AGENTS.md`. Claude Code also reads `CLAUDE.md`, which points at the same rules.
+If you are not in Obsidian, open `output/obsidian-graph.html`.
+
+## Agent
+
+1. Ask questions from this repo root in Cursor, Claude Code, or Codex.
+2. Drop a source in `raw/` and say `ingest this`.
+
+Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
 
 ## Layout
 
 ```
+Home.md       vault door
 raw/          immutable sources
-wiki/         compiled pages, index, log
-output/       briefs and answers built from the wiki
-AGENTS.md     schema
-MEMORY.md     durable facts only
-decisions.md  locked choices
+wiki/         compiled pages
+maps/         Jarvis, Hooks, TELOS
+hunt/         scout indexes
+ship/         drafts, digests, angles, builds
+output/       briefs and the rendered graph
+.obsidian/    graph colors and workspace
 ```
-
-## Why this shape
-
-RAG re-derives knowledge on every query. A compiled wiki derives it once and keeps it current. See [[llm-wiki]] and [[tokens-as-capital]].

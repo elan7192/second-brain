@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-bober-folder-workflow
 
-- Raw: `raw/x/2026-08-21-bober-folder-workflow.md`
+- Raw: [[2026-08-21-bober-folder-workflow]] (`raw/x/2026-08-21-bober-folder-workflow.md`)
 - URL: https://x.com/bober_smart/status/2090859011365056720
 - Date: 2026-08-21
 

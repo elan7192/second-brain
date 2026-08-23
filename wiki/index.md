@@ -1,3 +1,11 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Index
 
 Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
@@ -5,10 +13,12 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 ## Start
 
 - [[Home]] — door
+- [[graph]] — compiled graph snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
 - [[contradictions]] — unresolved conflicts
 - [[llm-wiki]] — core architecture
+- [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 
 ## Concepts
 

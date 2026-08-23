@@ -1,21 +1,42 @@
+---
+type: home
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Home
 
-Door to the vault. Start here, or start at [[index]].
+Door to the vault. Open this folder in Obsidian. Then open graph view.
 
-## What this is
+## Result
 
-A compiled second brain. Sources land in `raw/`. The agent compiles them into `wiki/`. Questions are answered from the wiki, then useful answers are filed back.
+Nine X posts compiled into a wiki you can browse as a graph.
+
+- Gold: [[wiki]]
+- Teal: [[maps]]
+- Blue: [[hunt]] / [[twitter]]
+- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]]
+- Coral: [[ship]]
+
+Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]].
+
+## Start
+
+- [[Today]]
+- [[index]]
+- [[agent-operating-system]]
+- [[contradictions]]
+- [[Jarvis]]
+- [[TELOS]]
 
 ## Do this next
 
-- Ask a question against the wiki.
 - Drop a file in `raw/` and say `ingest this`.
-- Say `lint the wiki` for orphans, contradictions, and stale claims.
+- File a clip in [[inbox]], then ingest.
+- Say `lint the wiki`.
 
 ## This batch
 
-Nine X posts from 2026-08-17 to 2026-08-22, compiled on 2026-08-23.
-
-Read the synthesis: [[agent-operating-system]].
-Read the flags: [[contradictions]].
-Read the brief: `output/ingest-brief-2026-08-23.md`.
+2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]].

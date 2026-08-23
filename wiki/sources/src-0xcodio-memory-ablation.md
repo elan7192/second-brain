@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-0xcodio-memory-ablation
 
-- Raw: `raw/x/2026-08-22-0xcodio-memory-ablation.md`
+- Raw: [[2026-08-22-0xcodio-memory-ablation]] (`raw/x/2026-08-22-0xcodio-memory-ablation.md`)
 - URL: https://x.com/0xcodio/status/2091122604115394925
 - Date: 2026-08-22
 

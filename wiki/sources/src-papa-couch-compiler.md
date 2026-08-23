@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-papa-couch-compiler
 
-- Raw: `raw/x/2026-08-21-papa-couch-compiler.md`
+- Raw: [[2026-08-21-papa-couch-compiler]] (`raw/x/2026-08-21-papa-couch-compiler.md`)
 - URL: https://x.com/papa_couch/status/2090924446924026162
 - Date: 2026-08-21
 

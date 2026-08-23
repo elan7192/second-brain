@@ -1,3 +1,11 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Agent operating system
 
 Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts.

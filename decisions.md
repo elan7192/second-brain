@@ -1,3 +1,11 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Decisions
 
 Locked choices. Reopen only with new evidence.
@@ -43,4 +51,11 @@ Nothing in the vault posts, pays, or sends.
 Writing follows [[anti-slop]] unless the human asks for another voice.
 
 - Source: [[anti-slop]]
+- Locked: 2026-08-23
+
+## D7. Obsidian is the IDE
+
+Open the repo as an Obsidian vault. `Home.md` is the door. Hunt / Ship / Maps are navigation. `wiki/` stays the compiled store.
+
+- Source: [[hunt-ship-loop]], [[src-avid-obsidian-agent-team]]
 - Locked: 2026-08-23

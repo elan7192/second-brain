@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-jacky-self-verification
 
-- Raw: `raw/x/2026-08-17-jacky-self-verification.md`
+- Raw: [[2026-08-17-jacky-self-verification]] (`raw/x/2026-08-17-jacky-self-verification.md`)
 - URL: https://x.com/jackyk02/status/2089421448784023553
 - Date: 2026-08-17
 

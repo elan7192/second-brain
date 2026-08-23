@@ -1,3 +1,11 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Audited task contract
 
 The portable unit between coding agents is verified task state, not a transcript.

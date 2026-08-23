@@ -1,3 +1,11 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # Memory ablation
 
 A memory line earns its place only by deleting an answer the model would otherwise give.

@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-hitu-entropy-engineering
 
-- Raw: `raw/x/2026-08-21-hitu-entropy-engineering.md`
+- Raw: [[2026-08-21-hitu-entropy-engineering]] (`raw/x/2026-08-21-hitu-entropy-engineering.md`)
 - URL: https://x.com/hitu_monke/status/2090930964340113807
 - Date: 2026-08-21
 

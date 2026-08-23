@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-voxyz-verifiable-instructions
 
-- Raw: `raw/x/2026-08-22-voxyz-verifiable-instructions.md`
+- Raw: [[2026-08-22-voxyz-verifiable-instructions]] (`raw/x/2026-08-22-voxyz-verifiable-instructions.md`)
 - URL: https://x.com/voxyz_ai/status/2091206257042452830
 - Date: 2026-08-22
 

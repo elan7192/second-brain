@@ -1,6 +1,14 @@
+---
+type: source
+tags:
+  - twitter
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # src-rohit-harness-router
 
-- Raw: `raw/x/2026-08-22-rohit-harness-router.md`
+- Raw: [[2026-08-22-rohit-harness-router]] (`raw/x/2026-08-22-rohit-harness-router.md`)
 - URL: https://x.com/rohit4verse/status/2091255118511686065
 - Date: 2026-08-22
 

@@ -1,6 +1,14 @@
+---
+type: meta
+tags:
+  - wiki
+created: 2026-08-23
+updated: 2026-08-23
+---
+
 # How it works
 
-This vault is a compiler. See [[llm-wiki]].
+This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]].
 
 ## Loop
 
