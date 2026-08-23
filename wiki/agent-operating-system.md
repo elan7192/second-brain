@@ -20,9 +20,12 @@ Five layers, one vault.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
 5. **Keep a human gate.** [[hunt-ship-loop]]. File first. Scouts write quietly. Vault does not post, pay, or send.
 
+[[skill-library]] is adjacent: discover and reuse known patterns instead of rebuilding them. It does not replace compile-into-`wiki/`.
+
 ## What this batch does not prove
 
 Viral clips are not methods. See [[contradictions]].
+The [[src-johnsjawn-skill-library]] demo shows usage counts. It does not show skills rewriting themselves after use.
 
 The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] says is needed before compilation beats a good search. Treat today's pages as a seed, not a finished graph.
 

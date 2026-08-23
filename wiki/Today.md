@@ -14,11 +14,13 @@ updated: 2026-08-23
 
 Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes.
 
+Ingested [[src-johnsjawn-skill-library]] into [[skill-library]].
+
 ## Look at
 
-- [[agent-operating-system]]
-- [[contradictions]]
-- `output/obsidian-graph.html`
+- [[skill-library]]
+- [[contradictions]] C8 and C9
+- [[ingest-brief-2026-08-23-skill-library]]
 
 ## Inbox
 

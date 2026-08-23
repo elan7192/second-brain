@@ -63,3 +63,19 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. Notion living skill library vs compiled git wiki
+
+[[src-johnsjawn-skill-library]] says a GitHub folder known to 10% of the company fails, and Notion should be the home for collective AI skills.
+
+This vault already locked D1 and D7: compile into `wiki/`, open the repo in Obsidian, do not vendor skill repos ([[anti-slop]]).
+
+Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7. Do not vendor Notion. The 10% figure stays unverified.
+
+## C9. Skill improves with use vs usage count
+
+[[src-johnsjawn-skill-library]] tweet: the best deal review skill gets better every time a sales rep uses it.
+
+The attached demo shows a `# Uses` column and comments on skill pages. It does not show skill text changing after a use.
+
+Resolution: keep the tweet line unverified. Cite the demo for usage visibility only.

@@ -15,3 +15,4 @@ Output from compiled pages. Human yes before anything leaves the vault.
 - [[angles]]
 - [[builds]]
 - [[ingest-brief-2026-08-23]]
+- [[ingest-brief-2026-08-23-skill-library]]

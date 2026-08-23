@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-23] ingest | Johnsjawn skill library
+
+Compiled https://x.com/johnsjawn/status/2090805874331959600 into [[src-johnsjawn-skill-library]], [[skill-library]], and [[hurley]]. Flagged C8 (Notion living library vs this compiled vault) and C9 (improves on each use vs `# Uses` counts). D7 not reopened. Brief: [[ingest-brief-2026-08-23-skill-library]].
+
 ## [2026-08-23] lint | Obsidian vault layer
 
 Added `.obsidian` graph colors, [[Home]] as door, [[maps]] / [[hunt]] / [[ship]] indexes, and rendered `output/obsidian-graph.html`. Locked D7.

@@ -19,6 +19,8 @@ Treat a token as an investment, not a per-query bill.
 3. Fold web search into entity pages. Do not let it vanish in chat.
 4. Build `output/` from `wiki/`, not from a raw dump.
 
+[[src-johnsjawn-skill-library]] makes the same bet as write-back: discover a research skill instead of rebuilding it. The "50 times" figure is author-stated, unverified. See [[skill-library]].
+
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]]

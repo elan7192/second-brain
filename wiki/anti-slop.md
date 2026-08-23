@@ -37,6 +37,8 @@ The human asked for examples, a comparison, or a specific voice.
 9. https://skills.sh/aashaexo/soundshuman/humanize
 10. https://skills.sh/jalaalrd/anti-ai-slop-writing/anti-ai-slop-writing
 
+Public ranked skills. Company living libraries are a different object. See [[skill-library]].
+
 ## Related
 
-[[verifiable-instructions]] · D6 in `decisions.md`
+[[verifiable-instructions]] · [[skill-library]] · D6 in `decisions.md`

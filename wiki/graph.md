@@ -21,12 +21,14 @@ flowchart LR
   Home --> andrej-karpathy
   Home --> jacky-kwok
   Home --> rohit
+  Home --> hurley
   Home --> ship
   Home --> graph
   Home --> Today
   Home --> index
   Home --> agent-operating-system
   Home --> contradictions
+  Home --> skill-library
   Home --> Jarvis
   Home --> TELOS
   hunt --> hunt-ship-loop
@@ -50,6 +52,8 @@ flowchart LR
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
   harness-routing --> rohit
+  log --> skill-library
+  log --> hurley
   log --> Home
   log --> maps
   log --> hunt
@@ -80,9 +84,12 @@ flowchart LR
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
   llm-wiki --> index
+  llm-wiki --> skill-library
+  llm-wiki --> contradictions
   llm-wiki --> tokens-as-capital
   llm-wiki --> andrej-karpathy
   llm-wiki --> how-it-works
+  tokens-as-capital --> skill-library
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   index --> Home
@@ -105,12 +112,15 @@ flowchart LR
   index --> anti-slop
   index --> hunt-ship-loop
   index --> context-graph
+  index --> skill-library
   index --> andrej-karpathy
   index --> jacky-kwok
   index --> rohit
+  index --> hurley
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
+  anti-slop --> skill-library
   anti-slop --> verifiable-instructions
   entropy-gate --> contradictions
   entropy-gate --> audited-task-contract
@@ -133,21 +143,30 @@ flowchart LR
   agent-operating-system --> self-verification
   agent-operating-system --> anti-slop
   agent-operating-system --> hunt-ship-loop
+  agent-operating-system --> skill-library
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
   Today --> Home
-  Today --> agent-operating-system
+  Today --> skill-library
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
   contradictions --> audited-task-contract
   contradictions --> memory-ablation
+  contradictions --> anti-slop
+  contradictions --> skill-library
+  skill-library --> hurley
+  skill-library --> contradictions
+  skill-library --> anti-slop
+  skill-library --> tokens-as-capital
+  skill-library --> llm-wiki
   Hooks --> twitter
   Hooks --> contradictions
   Hooks --> ship
   Hooks --> llm-wiki
   Hooks --> tokens-as-capital
+  Hooks --> skill-library
   Jarvis --> Home
   Jarvis --> index
   Jarvis --> ship
@@ -164,4 +183,5 @@ flowchart LR
   jacky-kwok --> self-verification
   andrej-karpathy --> contradictions
   andrej-karpathy --> llm-wiki
+  hurley --> skill-library
 ```

@@ -36,6 +36,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[skill-library]] | Living company skill catalog. Compile here. Do not vendor Notion |
 
 ## Sources
 
@@ -50,6 +51,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[src-bober-folder-workflow]] | 2026-08-21 | Popular how-to. Income and Karpathy paraphrase unverified |
 | [[src-avid-obsidian-agent-team]] | 2026-08-20 | Hunt / Ship / Decisions vault for a bot team |
 | [[src-juampi-anti-slop-rank]] | 2026-08-21 | Ten anti-slop skills. Compiled, not vendored |
+| [[src-johnsjawn-skill-library]] | 2026-08-21 | Notion Skills library pitch. Usage column shown. Auto-improve unverified |
 
 ## People
 
@@ -58,6 +60,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |
+| [[hurley]] | Notion Skills library pitch, 2026-08-21 |
 
 ## Root files the agent must keep current
 
