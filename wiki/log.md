@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] update | arXiv corpus 281056
+
+Gap batch 4: +124800. Total 281056. Tiers S 15611 / A 23345 / B 129379 / C 84566 / D 28155. Cursor 2020-10-15. Remaining gap 2020-10 to 2025-06. Pages URL unchanged. See [[arxiv-tierlist]].
+
 ## [2026-08-24] ingest | three new X URLs
 
 TheWhizzAI ARC-AGI-3 30.2→100 marked `unverified` (NVIDIA blog exists, no paper). chatchat Living Brain linked to [[memory-engineering]] and [[agent-operating-system]]. g3t0ffmyl4wn body not retrieved. raw/ not written.
