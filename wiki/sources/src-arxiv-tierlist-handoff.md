@@ -14,7 +14,7 @@ updated: 2026-08-24
 
 ## Claims kept
 
-Product axis is future potential / runway, not citations or journal prestige. Snapshot 2026-08-23 UTC: 66555 unique papers, dates 1990-01-01 to 2026-08-20, full-corpus tiers S 15051 / A 3418 / B 17758 / C 20746 / D 9582. Harvest is OAI-PMH cs then Atom recent, with a gap about 2014 to mid 2025; rate limit about 3s; metadata only, no PDFs. Ranking is `rank.py` heuristic, no per-paper LLM. Display must be per-tier top 800 (4000 cards). Durable site (2026-08-24): https://elan7192.github.io/arxiv-potential-tierlist/ and repo https://github.com/elan7192/arxiv-potential-tierlist. ZeroDeploy URLs are stale. Do not record claim tokens.
+Product axis is future potential / runway, not citations or journal prestige. Corpus 2026-08-24 gap batch 1: 106856 unique papers (plus 26001 this batch), dates 1990-01-01 to 2026-08-20, full-corpus tiers S 15094 / A 5274 / B 35515 / C 36167 / D 14806. Harvest is OAI-PMH cs then Atom recent; remaining gap 2016-06 to 2025-06; rate limit about 3s; metadata only, no PDFs. Ranking is `rank.py` heuristic, no per-paper LLM. Display must be per-tier top 800 (4000 cards). Durable site (2026-08-24): https://elan7192.github.io/arxiv-potential-tierlist/ and repo https://github.com/elan7192/arxiv-potential-tierlist. ZeroDeploy URLs are stale. Do not record claim tokens.
 
 ## Pages updated
 

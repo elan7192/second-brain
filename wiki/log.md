@@ -10,6 +10,14 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] update | arXiv Pages live at 106856
+
+https://elan7192.github.io/arxiv-potential-tierlist/ is current. Counts already on [[arxiv-tierlist]]. No tokens. raw/ not written.
+
+## [2026-08-24] update | arXiv corpus 106856
+
+Gap batch 1: +26001 unique. Total 106856. Tiers S 15094 / A 5274 / B 35515 / C 36167 / D 14806. Remaining gap 2016-06 to 2025-06. Pages URL unchanged until push lands. See [[arxiv-tierlist]].
+
 ## [2026-08-24] rule | wiki stays current, takes bot improvements
 
 Human: wiki must know the compiled vault. Other bots send improvements here for ingest. Do not invent. See [[MEMORY]].
