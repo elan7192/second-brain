@@ -957,11 +957,12 @@ GRAPH_HTML = """<!doctype html>
         ctx.fillText(title, p.x, p.y);
       }
     }
-    const deep = view.scale >= 1.08 || !!focus || !!query;
+    const zoomed = view.scale >= 1.08;
     for (const e of data.edges) {
       const a = byId[e.source], b = byId[e.target];
       const bridge = e.source === 'agent-operating-system' || e.target === 'agent-operating-system';
-      if (!deep && !e.intra && !bridge) continue;
+      const relatedEdge = !!(focus && keep.has(a.id) && keep.has(b.id));
+      if (!zoomed && !e.intra && !bridge && !relatedEdge) continue;
       const p = toScreen(a.x, a.y);
       const q = toScreen(b.x, b.y);
       const c = toScreen(e.cx, e.cy);
@@ -1011,8 +1012,8 @@ GRAPH_HTML = """<!doctype html>
     const labeled = [];
     for (const item of candidates) {
       const n = item.n;
-      if (!item.must && shownLabels >= 14) continue;
-      if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) * view.scale < 40)) continue;
+      if (!item.must && shownLabels >= 12) continue;
+      if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) * view.scale < 78)) continue;
       const p = toScreen(n.x, n.y);
       const r = radius(n) * Math.max(view.scale, 0.8);
       ctx.font = (n === selected || n === hover ? '600 ' : '') + '12px ' + font;
