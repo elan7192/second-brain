@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-24] query | Entropy gate quiz
+
+Human asked whether the vault remembered ingested data, using [[entropy-gate]] as the probe. Answer filed to [[query-entropy-gate]]. Cite the 64-worker table. Keep the 200-agent clip `unverified` ([[contradictions]] C3). `MEMORY.md` still has no personal facts.
 
 ## [2026-08-23] lint | Obsidian vault layer
 
