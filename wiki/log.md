@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | three new X URLs
+
+TheWhizzAI ARC-AGI-3 30.2→100 marked `unverified` (NVIDIA blog exists, no paper). chatchat Living Brain linked to [[memory-engineering]] and [[agent-operating-system]]. g3t0ffmyl4wn body not retrieved. raw/ not written.
+
 ## [2026-08-24] ingest | five X scouts
 
 Ingested Mrgreenieybt3, beamnxw, promptyx_ai, openagentskill, AgentMemoryL. Linked [[llm-wiki]], [[memory-engineering]], [[harness-routing]], [[anti-slop]]. Flagged C8. No papers invented. raw/ not written.

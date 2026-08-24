@@ -33,3 +33,5 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-beamnxw-memory-stack]] is another stack tweet. Filesystem memory cost-halving is `unverified`.
 
 [[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.
+
+[[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.

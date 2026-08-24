@@ -50,6 +50,9 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-thewhizzai-avo]] | 2026-08-24 | ARC-AGI-3 30.2→100 tweet. Unverified, no paper |
+| [[src-chatchat-living-brain]] | 2026-08-24 | ChatChat Living Brain product tweet |
+| [[src-g3t0ffmyl4wn-2091749093206818856]] | 2026-08-24 | Body not retrieved. Silent |
 | [[src-mrgreenieybt3-llm-wiki]] | 2026-08-24 | Typed interlinked LLM Wiki pages |
 | [[src-beamnxw-memory-stack]] | 2026-08-24 | Memory-engineering stack. Cost-halving unverified |
 | [[src-promptyx-llm-cpu]] | 2026-08-24 | LLM as CPU / harness. No paper bound |
