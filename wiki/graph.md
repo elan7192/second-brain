@@ -44,6 +44,7 @@ flowchart LR
   how-it-works --> context-graph
   how-it-works --> memory-ablation
   how-it-works --> verifiable-instructions
+  how-it-works --> disclosure-index
   how-it-works --> audited-task-contract
   how-it-works --> entropy-gate
   self-verification --> jacky-kwok
@@ -52,6 +53,7 @@ flowchart LR
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
   harness-routing --> rohit
+  log --> disclosure-index
   log --> agent-facing-docs
   log --> verifiable-instructions
   log --> context-graph
@@ -100,6 +102,7 @@ flowchart LR
   index --> contradictions
   index --> llm-wiki
   index --> agent-facing-docs
+  index --> disclosure-index
   index --> maps
   index --> hunt
   index --> ship
@@ -148,7 +151,7 @@ flowchart LR
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
-  Today --> agent-facing-docs
+  Today --> disclosure-index
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
@@ -164,6 +167,7 @@ flowchart LR
   agent-facing-docs --> llm-wiki
   agent-facing-docs --> self-verification
   agent-facing-docs --> hunt-ship-loop
+  disclosure-index --> contradictions
   Hooks --> twitter
   Hooks --> contradictions
   Hooks --> ship
