@@ -19,14 +19,15 @@
     * { box-sizing: border-box; }
     html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--font); }
     body { overflow: hidden; }
-    canvas { display: block; width: 100%; height: 100%; cursor: grab; }
-    canvas.grabbing { cursor: grabbing; }
-    canvas.hot { cursor: pointer; }
+    #stage { position: fixed; inset: 0; z-index: 0; cursor: grab; }
+    #stage.grabbing { cursor: grabbing; }
+    #stage.hot { cursor: pointer; }
+    #labels { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
     .vignette {
-      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      position: fixed; inset: 0; pointer-events: none; z-index: 2;
       background:
-        radial-gradient(1100px 640px at 50% 42%, transparent 38%, rgba(0,0,0,0.5) 100%),
-        linear-gradient(180deg, rgba(9,11,16,0.28), transparent 16%, transparent 84%, rgba(9,11,16,0.4));
+        radial-gradient(1100px 640px at 50% 42%, transparent 42%, rgba(0,0,0,0.42) 100%),
+        linear-gradient(180deg, rgba(9,11,16,0.22), transparent 16%, transparent 84%, rgba(9,11,16,0.35));
     }
     .bar, .rail, .card, .hint, .tools {
       position: fixed; z-index: 3;
@@ -120,13 +121,21 @@
     }
     @media (max-width: 980px) {
       .legend, .rail, .hint { display: none; }
-      .bar { right: 16px; }
       .card { width: calc(100% - 32px); top: auto; bottom: 72px; }
     }
   </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three.module.min.js",
+      "three/addons/controls/OrbitControls.js": "./vendor/OrbitControls.js"
+    }
+  }
+  </script>
 </head>
 <body>
-  <canvas id="g"></canvas>
+  <div id="stage"></div>
+  <canvas id="labels"></canvas>
   <div class="vignette"></div>
   <header class="bar">
     <div class="brand">
@@ -156,13 +165,16 @@
     <button type="button" id="zoom-in" title="Zoom in">+</button>
     <button type="button" id="fit" title="Fit graph">⤢</button>
   </div>
-  <p class="hint">Scroll to zoom · Labels appear on zoom-in · Click a node for title and path</p>
+  <p class="hint">Drag to orbit · Scroll to zoom · Labels appear when closer</p>
   <script src="vendor/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script>
-  const data = {"nodes": [{"id": "maps", "label": "maps", "title": "Maps", "type": "map", "cluster": "hunt-ship", "path": "maps.md", "x": 61.61461929278623, "y": 172.5632003014993}, {"id": "wiki", "label": "wiki", "title": "Wiki", "type": "note", "cluster": "nav", "path": "wiki.md", "x": -37.99062845114031, "y": -209.7831638812989}, {"id": "Home", "label": "Home", "title": "Home", "type": "home", "cluster": "nav", "path": "Home.md", "x": -3.3083832417458443, "y": -204.87743758275934}, {"id": "MEMORY", "label": "MEMORY", "title": "Memory", "type": "note", "cluster": "memory", "path": "MEMORY.md", "x": -9.57544754376566, "y": 92.94501628166087}, {"id": "ship", "label": "ship", "title": "Ship", "type": "ship", "cluster": "hunt-ship", "path": "ship.md", "x": 35.669739271904476, "y": 208.49158103263815}, {"id": "hunt", "label": "hunt", "title": "Hunt", "type": "hunt", "cluster": "hunt-ship", "path": "hunt.md", "x": 42.20749056492901, "y": 236.1984803924632}, {"id": "ingest-brief-2026-08-24-arxiv-tierlist", "label": "ingest-brief-2026-08-24-arxiv-tierlist", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv tierlist", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-tierlist.md", "x": 39.278235297365946, "y": 107.77224406577704}, {"id": "ingest-brief-2026-08-24-arxiv-pages", "label": "ingest-brief-2026-08-24-arxiv-pages", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv Pages", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-pages.md", "x": 0.4829193690723637, "y": 165.38396680797948}, {"id": "ingest-brief-2026-08-24-trace", "label": "ingest-brief-2026-08-24-trace", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 TRACE", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-trace.md", "x": -16.240458249565854, "y": 141.6765181644025}, {"id": "ingest-brief-2026-08-23", "label": "ingest-brief-2026-08-23", "title": "Ingest brief \u00b7 2026-08-23", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-23.md", "x": 62.95980581036721, "y": 203.24597288286438}, {"id": "ingest-brief-2026-08-24-arxiv-counts", "label": "ingest-brief-2026-08-24-arxiv-counts", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv counts", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-counts.md", "x": 52.00262892150723, "y": 139.41787817634875}, {"id": "ingest-brief-2026-08-24-arxiv-128956", "label": "ingest-brief-2026-08-24-arxiv-128956", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 128956", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-128956.md", "x": 84.38751118498885, "y": 144.5317387301443}, {"id": "graph-clusters-2026-08-24", "label": "graph-clusters-2026-08-24", "title": "Graph clusters brief \u00b7 2026-08-24", "type": "ship", "cluster": "hunt-ship", "path": "output/graph-clusters-2026-08-24.md", "x": 8.470073000719275, "y": 227.5817849344117}, {"id": "ingest-brief-2026-08-24-five-x", "label": "ingest-brief-2026-08-24-five-x", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 five X", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-five-x.md", "x": 73.02419094281295, "y": 112.29295349420262}, {"id": "ingest-brief-2026-08-24-arxiv-156256", "label": "ingest-brief-2026-08-24-arxiv-156256", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 156256", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-156256.md", "x": 17.516103781988242, "y": 132.47118517297665}, {"id": "graph-ui-2026-08-24", "label": "graph-ui-2026-08-24", "title": "Graph UI brief \u00b7 2026-08-24", "type": "ship", "cluster": "hunt-ship", "path": "output/graph-ui-2026-08-24.md", "x": 74.76571603094648, "y": 234.66643580966672}, {"id": "trace", "label": "trace", "title": "TRACE", "type": "concept", "cluster": "nav", "path": "wiki/trace.md", "x": -50.6390089060912, "y": -90.48331725987255}, {"id": "memory-ablation", "label": "memory-ablation", "title": "Memory ablation", "type": "concept", "cluster": "memory", "path": "wiki/memory-ablation.md", "x": -38.98493601891211, "y": 73.23021150515427}, {"id": "arxiv-tierlist", "label": "arxiv-tierlist", "title": "arXiv potential tierlist", "type": "concept", "cluster": "nav", "path": "wiki/arxiv-tierlist.md", "x": -15.630715982627272, "y": -77.16871477493719}, {"id": "how-it-works", "label": "how-it-works", "title": "How it works", "type": "meta", "cluster": "compile", "path": "wiki/how-it-works.md", "x": -189.64080159514796, "y": -22.43137221111406}, {"id": "potential-ranking", "label": "potential-ranking", "title": "Potential ranking", "type": "concept", "cluster": "nav", "path": "wiki/potential-ranking.md", "x": 15.582202519704197, "y": -92.8940279245586}, {"id": "self-verification", "label": "self-verification", "title": "Self-verification", "type": "concept", "cluster": "verification", "path": "wiki/self-verification.md", "x": 166.97007638676132, "y": -72.18678330175592}, {"id": "graph", "label": "graph", "title": "Graph", "type": "meta", "cluster": "nav", "path": "wiki/graph.md", "x": -45.4231701171566, "y": -151.28342212768518}, {"id": "harness-routing", "label": "harness-routing", "title": "Harness routing", "type": "concept", "cluster": "harness", "path": "wiki/harness-routing.md", "x": 144.9294116122159, "y": 55.685946781857275}, {"id": "memory-engineering", "label": "memory-engineering", "title": "Memory engineering", "type": "concept", "cluster": "memory", "path": "wiki/memory-engineering.md", "x": -11.465440982914915, "y": 59.358668002816806}, {"id": "hunt-ship-loop", "label": "hunt-ship-loop", "title": "Hunt / Ship loop", "type": "concept", "cluster": "hunt-ship", "path": "wiki/hunt-ship-loop.md", "x": 33.625180706716705, "y": 181.61228559709124}, {"id": "llm-wiki", "label": "llm-wiki", "title": "LLM Wiki", "type": "concept", "cluster": "compile", "path": "wiki/llm-wiki.md", "x": -121.15319363077137, "y": -0.8524963047612192}, {"id": "tokens-as-capital", "label": "tokens-as-capital", "title": "Tokens as capital", "type": "concept", "cluster": "compile", "path": "wiki/tokens-as-capital.md", "x": -139.39336819860642, "y": 22.312810013225683}, {"id": "lanbb", "label": "lanbb", "title": "LanBB", "type": "concept", "cluster": "nav", "path": "wiki/lanbb.md", "x": -25.22954636010459, "y": -176.63863840826886}, {"id": "audited-task-contract", "label": "audited-task-contract", "title": "Audited task contract", "type": "concept", "cluster": "harness", "path": "wiki/audited-task-contract.md", "x": 114.11609339129778, "y": 63.533724741642786}, {"id": "anti-slop", "label": "anti-slop", "title": "Anti-slop", "type": "concept", "cluster": "verification", "path": "wiki/anti-slop.md", "x": 107.69169929755547, "y": -86.28354940568828}, {"id": "entropy-gate", "label": "entropy-gate", "title": "Entropy gate", "type": "concept", "cluster": "harness", "path": "wiki/entropy-gate.md", "x": 159.79126495773136, "y": 31.295343025294198}, {"id": "context-graph", "label": "context-graph", "title": "Context graph", "type": "concept", "cluster": "compile", "path": "wiki/context-graph.md", "x": -104.2175431902206, "y": 30.10616363825506}, {"id": "verifiable-instructions", "label": "verifiable-instructions", "title": "Verifiable instructions", "type": "concept", "cluster": "verification", "path": "wiki/verifiable-instructions.md", "x": 114.33740209737792, "y": -52.222241949438136}, {"id": "agent-operating-system", "label": "agent-operating-system", "title": "Agent operating system", "type": "meta", "cluster": "bridge", "path": "wiki/agent-operating-system.md", "x": 9.054590580968114, "y": 16.56515963568633}, {"id": "Today", "label": "Today", "title": "Today", "type": "meta", "cluster": "nav", "path": "wiki/Today.md", "x": -14.533946108467447, "y": -145.53205245744604}, {"id": "contradictions", "label": "contradictions", "title": "Contradictions", "type": "meta", "cluster": "nav", "path": "wiki/contradictions.md", "x": 7.2947209017550945, "y": -172.56548377236453}, {"id": "Hooks", "label": "Hooks", "title": "Hooks", "type": "map", "cluster": "hunt-ship", "path": "maps/Hooks.md", "x": 3.8315852939308037, "y": 193.8116526823911}, {"id": "Jarvis", "label": "Jarvis", "title": "Jarvis", "type": "map", "cluster": "hunt-ship", "path": "maps/Jarvis.md", "x": 93.186478938505, "y": 205.83592679974515}, {"id": "TELOS", "label": "TELOS", "title": "TELOS", "type": "map", "cluster": "hunt-ship", "path": "maps/TELOS.md", "x": 91.00255035776887, "y": 177.6193430711322}, {"id": "rohit", "label": "rohit", "title": "Rohit", "type": "person", "cluster": "harness", "path": "wiki/people/rohit.md", "x": 125.44033791293722, "y": 33.02552906990709}, {"id": "jacky-kwok", "label": "jacky-kwok", "title": "Jacky Kwok", "type": "person", "cluster": "verification", "path": "wiki/people/jacky-kwok.md", "x": 132.38784334179846, "y": -111.2700805458508}, {"id": "andrej-karpathy", "label": "andrej-karpathy", "title": "Andrej Karpathy", "type": "person", "cluster": "compile", "path": "wiki/people/andrej-karpathy.md", "x": -157.59512799119346, "y": -7.839382267148629}, {"id": "src-bober-folder-workflow", "label": "src-bober-folder-workflow", "title": "src-bober-folder-workflow", "type": "source", "cluster": "compile", "path": "wiki/sources/src-bober-folder-workflow.md", "x": -175.71500867961666, "y": 15.14862077621843}, {"id": "src-promptyx-llm-cpu", "label": "src-promptyx-llm-cpu", "title": "src-promptyx-llm-cpu", "type": "source", "cluster": "nav", "path": "wiki/sources/src-promptyx-llm-cpu.md", "x": 36.24574558435679, "y": -156.07998570896297}, {"id": "src-agentmemoryl-aml-s2", "label": "src-agentmemoryl-aml-s2", "title": "src-agentmemoryl-aml-s2", "type": "source", "cluster": "nav", "path": "wiki/sources/src-agentmemoryl-aml-s2.md", "x": -58.69519732117091, "y": -183.08122035031394}, {"id": "src-jacky-self-verification", "label": "src-jacky-self-verification", "title": "src-jacky-self-verification", "type": "source", "cluster": "verification", "path": "wiki/sources/src-jacky-self-verification.md", "x": 139.33012419323526, "y": -79.9973351821621}, {"id": "src-marfinxx-trace", "label": "src-marfinxx-trace", "title": "src-marfinxx-trace", "type": "source", "cluster": "nav", "path": "wiki/sources/src-marfinxx-trace.md", "x": -37.48629922581782, "y": -118.82742411978164}, {"id": "src-juampi-anti-slop-rank", "label": "src-juampi-anti-slop-rank", "title": "src-juampi-anti-slop-rank", "type": "source", "cluster": "verification", "path": "wiki/sources/src-juampi-anti-slop-rank.md", "x": 163.19097960819727, "y": -106.86750493008942}, {"id": "src-mrgreenieybt3-llm-wiki", "label": "src-mrgreenieybt3-llm-wiki", "title": "src-mrgreenieybt3-llm-wiki", "type": "source", "cluster": "nav", "path": "wiki/sources/src-mrgreenieybt3-llm-wiki.md", "x": 13.02687150483648, "y": -131.95751133276488}, {"id": "src-papa-couch-compiler", "label": "src-papa-couch-compiler", "title": "src-papa-couch-compiler", "type": "source", "cluster": "compile", "path": "wiki/sources/src-papa-couch-compiler.md", "x": -140.278370984607, "y": -29.505867911077083}, {"id": "src-beamnxw-memory-stack", "label": "src-beamnxw-memory-stack", "title": "src-beamnxw-memory-stack", "type": "source", "cluster": "nav", "path": "wiki/sources/src-beamnxw-memory-stack.md", "x": -69.0789255502749, "y": -123.09630854079491}, {"id": "src-hitu-entropy-engineering", "label": "src-hitu-entropy-engineering", "title": "src-hitu-entropy-engineering", "type": "source", "cluster": "harness", "path": "wiki/sources/src-hitu-entropy-engineering.md", "x": 178.91487604367217, "y": 61.9574091090953}, {"id": "src-avid-obsidian-agent-team", "label": "src-avid-obsidian-agent-team", "title": "src-avid-obsidian-agent-team", "type": "source", "cluster": "hunt-ship", "path": "wiki/sources/src-avid-obsidian-agent-team.md", "x": 28.894503685285812, "y": 159.21052345614677}, {"id": "src-openagentskill-anti-slop", "label": "src-openagentskill-anti-slop", "title": "src-openagentskill-anti-slop", "type": "source", "cluster": "nav", "path": "wiki/sources/src-openagentskill-anti-slop.md", "x": -76.57214920994001, "y": -156.33576046665098}, {"id": "src-arxiv-tierlist-handoff", "label": "src-arxiv-tierlist-handoff", "title": "src-arxiv-tierlist-handoff", "type": "source", "cluster": "nav", "path": "wiki/sources/src-arxiv-tierlist-handoff.md", "x": -10.022399822748694, "y": -107.99798080563473}, {"id": "src-rohit-harness-router", "label": "src-rohit-harness-router", "title": "src-rohit-harness-router", "type": "source", "cluster": "harness", "path": "wiki/sources/src-rohit-harness-router.md", "x": 142.61564623831669, "y": 83.80606166433293}, {"id": "src-0xcodio-memory-ablation", "label": "src-0xcodio-memory-ablation", "title": "src-0xcodio-memory-ablation", "type": "source", "cluster": "memory", "path": "wiki/sources/src-0xcodio-memory-ablation.md", "x": -44.181288406300744, "y": 102.7625583161578}, {"id": "src-voxyz-verifiable-instructions", "label": "src-voxyz-verifiable-instructions", "title": "src-voxyz-verifiable-instructions", "type": "source", "cluster": "verification", "path": "wiki/sources/src-voxyz-verifiable-instructions.md", "x": 147.20838529906774, "y": -45.05737483059077}], "edges": [{"source": "maps", "target": "Jarvis", "cx": 64.03751195850303, "cy": 201.87949627534417, "intra": true}, {"source": "maps", "target": "Hooks", "cx": 39.83947862482103, "cy": 202.53969780744748, "intra": true}, {"source": "maps", "target": "TELOS", "cx": 79.05112973599412, "cy": 159.15071690949526, "intra": true}, {"source": "MEMORY", "target": "memory-ablation", "cx": -33.7220987366728, "cy": 97.1725443268654, "intra": true}, {"source": "MEMORY", "target": "arxiv-tierlist", "cx": -21.287871729564664, "cy": -19.963192033604745, "intra": false}, {"source": "MEMORY", "target": "potential-ranking", "cx": -16.91806313923826, "cy": -22.16473587455174, "intra": false}, {"source": "MEMORY", "target": "lanbb", "cx": -22.63170798241149, "cy": -33.88898134227118, "intra": false}, {"source": "ship", "target": "ingest-brief-2026-08-23", "cx": 46.31525204918959, "cy": 190.26389160003998, "intra": true}, {"source": "ship", "target": "graph-clusters-2026-08-24", "cx": 31.636301496869883, "cy": 231.66685490647745, "intra": true}, {"source": "ship", "target": "graph-ui-2026-08-24", "cx": 65.55817378947341, "cy": 206.1340386081378, "intra": true}, {"source": "hunt", "target": "hunt-ship-loop", "cx": 57.412779197161576, "cy": 205.84005630542273, "intra": true}, {"source": "ingest-brief-2026-08-24-arxiv-tierlist", "target": "src-arxiv-tierlist-handoff", "cx": 11.449025780287764, "cy": 11.13751517379041, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-tierlist", "target": "arxiv-tierlist", "cx": 10.663861517904763, "cy": 15.453612418088065, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-tierlist", "target": "potential-ranking", "cx": 15.033670108231169, "cy": 13.252068577141067, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-pages", "target": "arxiv-tierlist", "cx": 5.232517287943661, "cy": 23.519253601996407, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-pages", "target": "src-arxiv-tierlist-handoff", "cx": 6.017681550326662, "cy": 19.203156357698752, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-pages", "target": "MEMORY", "cx": 5.081983373913122, "cy": 128.60041193350833, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "src-marfinxx-trace", "cx": -0.16853723271236642, "cy": 14.367991483617406, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "trace", "cx": -2.0099165879506398, "cy": 18.33616644400468, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "memory-engineering", "cx": 2.476111425822875, "cy": 120.5792803643694, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "context-graph", "cx": -53.998775451423626, "cy": 87.29408477868046, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "tokens-as-capital", "cx": -58.92339095259764, "cy": 86.20301527117634, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "arxiv-tierlist", "cx": 12.445276625284542, "cy": 19.884001193568103, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "src-arxiv-tierlist-handoff", "cx": 13.230440887667545, "cy": 15.567903949270448, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "potential-ranking", "cx": 16.81508521561095, "cy": 17.682457352621107, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "MEMORY", "cx": 12.294742711254003, "cy": 124.96515952508004, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "arxiv-tierlist", "cx": 16.97916014217197, "cy": 20.59994167109948, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "src-arxiv-tierlist-handoff", "cx": 17.76432440455497, "cy": 16.283844426801824, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "potential-ranking", "cx": 21.348968732498378, "cy": 18.398397830152483, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "MEMORY", "cx": 16.82862622814143, "cy": 125.68110000261142, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "llm-wiki", "cx": -43.872715626167704, "cy": 78.84617333283019, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "memory-engineering", "cx": 14.973162312755909, "cy": 116.46558131054141, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "harness-routing", "cx": 98.1955396511149, "cy": 106.16296033361378, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "anti-slop", "cx": 90.97693692921183, "cy": 38.043482396342895, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "arxiv-tierlist", "cx": 7.617163105751884, "cy": 18.91146417309601, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "src-arxiv-tierlist-handoff", "cx": 8.402327368134886, "cy": 14.595366928798354, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "potential-ranking", "cx": 11.98697169607829, "cy": 16.70992033214901, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "MEMORY", "cx": 7.466629191721345, "cy": 123.99262250460794, "intra": false}, {"source": "trace", "target": "src-marfinxx-trace", "cx": -29.209336986695014, "cy": -97.76288442105451, "intra": true}, {"source": "trace", "target": "context-graph", "cx": -82.928518697577, "cy": -59.81452072622282, "intra": false}, {"source": "trace", "target": "memory-engineering", "cx": -26.45363182033051, "cy": -26.529325140533864, "intra": false}, {"source": "trace", "target": "tokens-as-capital", "cx": -87.85313419875102, "cy": -60.905590233726926, "intra": false}, {"source": "memory-ablation", "target": "src-0xcodio-memory-ablation", "cx": -25.630138793083084, "cy": 90.80338403080725, "intra": true}, {"source": "memory-ablation", "target": "memory-engineering", "cx": -32.56856476206403, "cy": 51.72605329200759, "intra": true}, {"source": "memory-ablation", "target": "verifiable-instructions", "cx": 51.11383989683446, "cy": 4.002288999834601, "intra": false}, {"source": "arxiv-tierlist", "target": "src-arxiv-tierlist-handoff", "cx": 3.2957763428279954, "cy": -89.65044800622823, "intra": true}, {"source": "arxiv-tierlist", "target": "potential-ranking", "cx": -7.624985067420582, "cy": -100.11793349648408, "intra": true}, {"source": "potential-ranking", "target": "arxiv-tierlist", "cx": 7.576471604497506, "cy": -69.94480920301172, "intra": true}, {"source": "potential-ranking", "target": "src-arxiv-tierlist-handoff", "cx": 10.991413890385147, "cy": -114.36636779055667, "intra": true}, {"source": "self-verification", "target": "src-jacky-self-verification", "cx": 148.79342486248635, "cy": -60.67467230401094, "intra": true}, {"source": "self-verification", "target": "jacky-kwok", "cx": 135.22031489803535, "cy": -78.93493022372367, "intra": true}, {"source": "self-verification", "target": "verifiable-instructions", "cx": 133.6027737159065, "cy": -80.79302740363022, "intra": true}, {"source": "self-verification", "target": "entropy-gate", "cx": 147.6381804091189, "cy": -14.452068382663601, "intra": false}, {"source": "harness-routing", "target": "src-rohit-harness-router", "cx": 159.66892863858718, "cy": 71.05398391592576, "intra": true}, {"source": "harness-routing", "target": "audited-task-contract", "cx": 125.46235705627642, "cy": 43.66720109427101, "intra": true}, {"source": "harness-routing", "target": "entropy-gate", "cx": 166.0225309464308, "cy": 51.81538773238407, "intra": true}, {"source": "harness-routing", "target": "rohit", "cx": 147.45533438965805, "cy": 33.80253917041078, "intra": true}, {"source": "harness-routing", "target": "src-promptyx-llm-cpu", "cx": 68.93261114669119, "cy": -46.01547970033416, "intra": false}, {"source": "memory-engineering", "target": "src-0xcodio-memory-ablation", "cx": -12.164114022356351, "cy": 92.8638329183499, "intra": true}, {"source": "memory-engineering", "target": "memory-ablation", "cx": -17.88181223976299, "cy": 80.8628262159635, "intra": true}, {"source": "memory-engineering", "target": "context-graph", "cx": -78.4424906838035, "cy": 42.428593194141904, "intra": false}, {"source": "memory-engineering", "target": "audited-task-contract", "cx": 56.94090898087345, "cy": 66.5098567172732, "intra": false}, {"source": "memory-engineering", "target": "entropy-gate", "cx": 63.33543300017415, "cy": 61.99648327698439, "intra": false}, {"source": "memory-engineering", "target": "trace", "cx": -26.45363182033051, "cy": -26.529325140533864, "intra": false}, {"source": "memory-engineering", "target": "src-marfinxx-trace", "cx": -24.612252465092237, "cy": -30.497500100921137, "intra": false}, {"source": "memory-engineering", "target": "src-beamnxw-memory-stack", "cx": -29.03522015051623, "cy": -31.095143919862995, "intra": false}, {"source": "memory-engineering", "target": "src-agentmemoryl-aml-s2", "cx": -27.581498198441672, "cy": -39.493031573195665, "intra": false}, {"source": "hunt-ship-loop", "target": "src-avid-obsidian-agent-team", "cx": 16.382534110754776, "cy": 173.55311003428477, "intra": true}, {"source": "hunt-ship-loop", "target": "hunt", "cx": 18.419892074484146, "cy": 211.97070968413172, "intra": true}, {"source": "hunt-ship-loop", "target": "ship", "cx": 50.37599647271187, "cy": 193.85555098921495, "intra": true}, {"source": "hunt-ship-loop", "target": "maps", "cx": 52.57828090122977, "cy": 192.4243535784239, "intra": true}, {"source": "hunt-ship-loop", "target": "llm-wiki", "cx": -49.38857705922118, "cy": 88.5508798272346, "intra": false}, {"source": "hunt-ship-loop", "target": "context-graph", "cx": -47.01758599754407, "cy": 92.88509221925688, "intra": false}, {"source": "llm-wiki", "target": "tokens-as-capital", "cx": -142.94455493939373, "cy": 0.7528983179170812, "intra": true}, {"source": "llm-wiki", "target": "context-graph", "cx": -127.54729953549003, "cy": 22.756916521357653, "intra": true}, {"source": "llm-wiki", "target": "andrej-karpathy", "cx": -136.13643323546077, "cy": -21.23315576827042, "intra": true}, {"source": "llm-wiki", "target": "src-papa-couch-compiler", "cx": -116.72339465542736, "cy": -24.518637831661632, "intra": true}, {"source": "llm-wiki", "target": "src-bober-folder-workflow", "cx": -154.0512248503079, "cy": -12.005629510180789, "intra": true}, {"source": "llm-wiki", "target": "src-mrgreenieybt3-llm-wiki", "cx": -76.38628650172424, "cy": -69.95512028845002, "intra": false}, {"source": "tokens-as-capital", "target": "src-papa-couch-compiler", "cx": -159.0887347636142, "cy": -3.2677123909152757, "intra": true}, {"source": "tokens-as-capital", "target": "llm-wiki", "cx": -117.60200688998404, "cy": 20.707415390547382, "intra": true}, {"source": "tokens-as-capital", "target": "context-graph", "cx": -118.11867880781705, "cy": 9.568971734602059, "intra": true}, {"source": "tokens-as-capital", "target": "trace", "cx": -87.85313419875102, "cy": -60.905590233726926, "intra": false}, {"source": "lanbb", "target": "MEMORY", "cx": -22.63170798241149, "cy": -33.88898134227118, "intra": false}, {"source": "audited-task-contract", "target": "src-rohit-harness-router", "cx": 118.57209269360702, "cy": 87.43832403077083, "intra": true}, {"source": "audited-task-contract", "target": "harness-routing", "cx": 133.58314794723722, "cy": 75.55247042922906, "intra": true}, {"source": "audited-task-contract", "target": "entropy-gate", "cx": 125.5205250993588, "cy": 31.216100645630522, "intra": true}, {"source": "audited-task-contract", "target": "memory-engineering", "cx": 56.94090898087345, "cy": 66.5098567172732, "intra": false}, {"source": "anti-slop", "target": "src-juampi-anti-slop-rank", "cx": 128.38670343489508, "cy": -115.59651763725512, "intra": true}, {"source": "anti-slop", "target": "verifiable-instructions", "cx": 127.56104723136703, "cy": -72.48128315164462, "intra": true}, {"source": "anti-slop", "target": "src-openagentskill-anti-slop", "cx": 45.91950315358658, "cy": -114.17076610368139, "intra": false}, {"source": "entropy-gate", "target": "src-hitu-entropy-engineering", "cx": 183.8277315828104, "cy": 37.59868079126265, "intra": true}, {"source": "entropy-gate", "target": "audited-task-contract", "cx": 148.38683324967036, "cy": 63.61296712130647, "intra": true}, {"source": "entropy-gate", "target": "harness-routing", "cx": 138.69814562351647, "cy": 35.1659020747674, "intra": true}, {"source": "entropy-gate", "target": "self-verification", "cx": 147.6381804091189, "cy": -14.452068382663601, "intra": false}, {"source": "entropy-gate", "target": "memory-engineering", "cx": 63.33543300017415, "cy": 61.99648327698439, "intra": false}, {"source": "context-graph", "target": "src-avid-obsidian-agent-team", "cx": -47.679880780544394, "cy": 89.74884551952465, "intra": false}, {"source": "context-graph", "target": "tokens-as-capital", "cx": -125.49223258100997, "cy": 42.85000191687868, "intra": true}, {"source": "context-graph", "target": "llm-wiki", "cx": -97.82343728550194, "cy": 6.496750812136193, "intra": true}, {"source": "context-graph", "target": "memory-engineering", "cx": -78.4424906838035, "cy": 42.428593194141904, "intra": false}, {"source": "context-graph", "target": "hunt-ship-loop", "cx": -47.01758599754407, "cy": 92.88509221925688, "intra": false}, {"source": "context-graph", "target": "trace", "cx": -82.928518697577, "cy": -59.81452072622282, "intra": false}, {"source": "verifiable-instructions", "target": "src-voxyz-verifiable-instructions", "cx": 127.21418528744371, "cy": -32.31316304543869, "intra": true}, {"source": "verifiable-instructions", "target": "memory-ablation", "cx": 51.11383989683446, "cy": 4.002288999834601, "intra": false}, {"source": "verifiable-instructions", "target": "self-verification", "cx": 147.70470476823272, "cy": -43.61599784756385, "intra": true}, {"source": "verifiable-instructions", "target": "anti-slop", "cx": 94.46805416356635, "cy": -66.02450820348179, "intra": true}, {"source": "agent-operating-system", "target": "llm-wiki", "cx": -65.30238455171805, "cy": 8.520066230047359, "intra": false}, {"source": "agent-operating-system", "target": "memory-engineering", "cx": -6.45650661279444, "cy": 46.139474207758596, "intra": false}, {"source": "agent-operating-system", "target": "audited-task-contract", "cx": 72.45200617463601, "cy": 36.93554214520093, "intra": false}, {"source": "agent-operating-system", "target": "verifiable-instructions", "cx": 70.47766639563663, "cy": -27.514041662564907, "intra": false}, {"source": "agent-operating-system", "target": "hunt-ship-loop", "cx": 24.96839807346499, "cy": 96.59597323287356, "intra": false}, {"source": "Hooks", "target": "src-avid-obsidian-agent-team", "cx": 30.92558356175374, "cy": 187.05929087356554, "intra": true}, {"source": "Hooks", "target": "ship", "cx": 12.67089540356039, "cy": 216.50637218432388, "intra": true}, {"source": "Hooks", "target": "llm-wiki", "cx": -53.55968041701121, "cy": 90.25879121917657, "intra": false}, {"source": "Hooks", "target": "tokens-as-capital", "cx": -56.11330485650811, "cy": 93.50193410369474, "intra": false}, {"source": "Jarvis", "target": "MEMORY", "cx": 18.060481713633692, "cy": 134.26368633235552, "intra": false}, {"source": "Jarvis", "target": "ship", "cx": 65.35337324546212, "cy": 227.20332684660679, "intra": true}, {"source": "Jarvis", "target": "TELOS", "cx": 108.00905365130609, "cy": 190.4958693569921, "intra": true}, {"source": "TELOS", "target": "Jarvis", "cx": 76.17997564496778, "cy": 192.95940051388527, "intra": true}, {"source": "TELOS", "target": "hunt-ship-loop", "cx": 60.92177764683999, "cy": 159.6119348221413, "intra": true}, {"source": "rohit", "target": "audited-task-contract", "cx": 135.2993532361034, "cy": 54.04087083990579, "intra": true}, {"source": "rohit", "target": "harness-routing", "cx": 122.91441513549505, "cy": 54.90893668135358, "intra": true}, {"source": "rohit", "target": "src-rohit-harness-router", "cx": 115.5513138656494, "cy": 64.66509266417158, "intra": true}, {"source": "jacky-kwok", "target": "self-verification", "cx": 164.1376048305244, "cy": -104.52193362388304, "intra": true}, {"source": "jacky-kwok", "target": "src-jacky-self-verification", "cx": 151.9519851516284, "cy": -99.20621593938591, "intra": true}, {"source": "andrej-karpathy", "target": "llm-wiki", "cx": -142.61188838650403, "cy": 12.541277196360575, "intra": true}, {"source": "andrej-karpathy", "target": "src-papa-couch-compiler", "cx": -161.34394999696178, "cy": -28.58897607830167, "intra": true}, {"source": "andrej-karpathy", "target": "src-bober-folder-workflow", "cx": -154.01246645886286, "cy": 13.619923207297317, "intra": true}, {"source": "src-bober-folder-workflow", "target": "llm-wiki", "cx": -142.81697746008012, "cy": 26.301753981638, "intra": true}, {"source": "src-bober-folder-workflow", "target": "andrej-karpathy", "cx": -179.2976702119473, "cy": -6.310684698227517, "intra": true}, {"source": "src-promptyx-llm-cpu", "target": "harness-routing", "cx": 68.93261114669119, "cy": -46.01547970033416, "intra": false}, {"source": "src-agentmemoryl-aml-s2", "target": "memory-engineering", "cx": -27.581498198441672, "cy": -39.493031573195665, "intra": false}, {"source": "src-jacky-self-verification", "target": "self-verification", "cx": 157.50677571751027, "cy": -91.5094461799071, "intra": true}, {"source": "src-jacky-self-verification", "target": "jacky-kwok", "cx": 119.76598238340532, "cy": -92.061199788627, "intra": true}, {"source": "src-marfinxx-trace", "target": "trace", "cx": -58.915971145213994, "cy": -111.54785695859968, "intra": true}, {"source": "src-marfinxx-trace", "target": "memory-engineering", "cx": -24.612252465092237, "cy": -30.497500100921137, "intra": false}, {"source": "src-marfinxx-trace", "target": "context-graph", "cx": -81.08713934233873, "cy": -63.78269568661009, "intra": false}, {"source": "src-marfinxx-trace", "target": "tokens-as-capital", "cx": -86.01175484351276, "cy": -64.8737651941142, "intra": false}, {"source": "src-juampi-anti-slop-rank", "target": "anti-slop", "cx": 142.49597547085767, "cy": -77.55453669852258, "intra": true}, {"source": "src-mrgreenieybt3-llm-wiki", "target": "llm-wiki", "cx": -76.38628650172424, "cy": -69.95512028845002, "intra": false}, {"source": "src-papa-couch-compiler", "target": "llm-wiki", "cx": -144.708169959951, "cy": -5.839726384176668, "intra": true}, {"source": "src-papa-couch-compiler", "target": "tokens-as-capital", "cx": -120.58300441959916, "cy": -3.9253455069361243, "intra": true}, {"source": "src-papa-couch-compiler", "target": "andrej-karpathy", "cx": -136.52954897883865, "cy": -8.756274099924042, "intra": true}, {"source": "src-beamnxw-memory-stack", "target": "memory-engineering", "cx": -29.03522015051623, "cy": -31.095143919862995, "intra": false}, {"source": "src-hitu-entropy-engineering", "target": "entropy-gate", "cx": 154.87840941859312, "cy": 55.654071343126844, "intra": true}, {"source": "src-avid-obsidian-agent-team", "target": "hunt-ship-loop", "cx": 46.13715028124774, "cy": 167.26969901895325, "intra": true}, {"source": "src-avid-obsidian-agent-team", "target": "context-graph", "cx": -47.679880780544394, "cy": 89.74884551952465, "intra": false}, {"source": "src-openagentskill-anti-slop", "target": "src-juampi-anti-slop-rank", "cx": 53.689402397076435, "cy": -117.05251987709754, "intra": false}, {"source": "src-openagentskill-anti-slop", "target": "anti-slop", "cx": 45.91950315358658, "cy": -114.17076610368139, "intra": false}, {"source": "src-arxiv-tierlist-handoff", "target": "arxiv-tierlist", "cx": -28.948892148203964, "cy": -95.51624757434368, "intra": true}, {"source": "src-arxiv-tierlist-handoff", "target": "potential-ranking", "cx": -5.431611193429645, "cy": -86.52564093963665, "intra": true}, {"source": "src-rohit-harness-router", "target": "audited-task-contract", "cx": 138.15964693600745, "cy": 59.901462375204865, "intra": true}, {"source": "src-rohit-harness-router", "target": "harness-routing", "cx": 127.87612921194538, "cy": 68.43802453026444, "intra": true}, {"source": "src-rohit-harness-router", "target": "rohit", "cx": 152.50467028560453, "cy": 52.166498070068435, "intra": true}, {"source": "src-0xcodio-memory-ablation", "target": "memory-engineering", "cx": -43.48261536685931, "cy": 69.25739340062471, "intra": true}, {"source": "src-0xcodio-memory-ablation", "target": "memory-ablation", "cx": -57.53608563212976, "cy": 85.18938579050482, "intra": true}, {"source": "src-0xcodio-memory-ablation", "target": "verifiable-instructions", "cx": 50.38635056260006, "cy": 8.136817553375094, "intra": false}, {"source": "src-voxyz-verifiable-instructions", "target": "verifiable-instructions", "cx": 134.33160210900198, "cy": -64.9664537345902, "intra": true}], "colors": {"home": "#c6a35a", "meta": "#c6a35a", "concept": "#c6a35a", "wiki": "#c6a35a", "map": "#6f9e92", "source": "#6f87a8", "hunt": "#6f87a8", "person": "#7d9a6e", "ship": "#c48472", "note": "#8b8478"}, "labels": {"compile": "Compile", "memory": "Memory", "verification": "Verification", "harness": "Harness", "hunt-ship": "Hunt / ship", "nav": "Door", "bridge": "Synthesis"}, "types": {"home": "Door", "meta": "Meta", "concept": "Concept", "wiki": "Wiki", "map": "Map", "source": "Source", "hunt": "Hunt", "person": "Person", "ship": "Ship", "note": "Note"}, "legend": [{"key": "wiki", "label": "Wiki", "color": "#c6a35a"}, {"key": "map", "label": "Maps", "color": "#6f9e92"}, {"key": "hunt", "label": "Hunt / sources", "color": "#6f87a8"}, {"key": "person", "label": "People", "color": "#7d9a6e"}, {"key": "ship", "label": "Ship", "color": "#c48472"}], "centers": {"hunt-ship": [43.70438190011276, 174.6879817539934, 88.94048704383002], "nav": [-23.278801861664565, -143.66265309463094, 87.73743269632145], "memory": [-26.05177823797336, 82.07411352644743, 47.508014954925045], "compile": [-146.85620203859477, 0.9912108190854548, 71.63076317517019], "verification": [138.73093003199907, -79.12641002079648, 56.98462345403117], "harness": [144.30127169269517, 54.88400239868827, 55.32894972479093], "bridge": [9.054590580968114, 16.56515963568633, 20.0]}, "headers": {"bridge": [75.05459058096811, 8.565159635686332], "compile": [-246.127341918322, -6.7872062200840775], "harness": [223.68657754979108, 77.78358943903571], "hunt-ship": [60.936467382176204, 282.43919395008743], "memory": [-68.84227444479686, 137.6955376355616], "nav": [-53.66301032803082, -247.62115540866318], "verification": [205.2840967925271, -127.0008757595392]}};
-  const canvas = document.getElementById('g');
-  const ctx = canvas.getContext('2d');
+  <script type="module">
+  import * as THREE from 'three';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+  const data = {"nodes": [{"id": "maps", "label": "maps", "title": "Maps", "type": "map", "cluster": "hunt-ship", "path": "maps.md", "x": 53.5757071120048, "y": 145.17290556694056, "z": 5.0}, {"id": "wiki", "label": "wiki", "title": "Wiki", "type": "note", "cluster": "nav", "path": "wiki.md", "x": -18.821690312072946, "y": -166.04114411567693, "z": -12.0}, {"id": "Home", "label": "Home", "title": "Home", "type": "home", "cluster": "nav", "path": "Home.md", "x": -7.957047027252471, "y": -136.6076801393067, "z": -15.0}, {"id": "MEMORY", "label": "MEMORY", "title": "Memory", "type": "note", "cluster": "memory", "path": "MEMORY.md", "x": -22.88775517919194, "y": 71.14822454278588, "z": 21.0}, {"id": "ship", "label": "ship", "title": "Ship", "type": "ship", "cluster": "hunt-ship", "path": "ship.md", "x": 5.8830221092851485, "y": 177.33384201268427, "z": 13.0}, {"id": "hunt", "label": "hunt", "title": "Hunt", "type": "hunt", "cluster": "hunt-ship", "path": "hunt.md", "x": 30.638708238702097, "y": 200.80897077574912, "z": 17.0}, {"id": "ingest-brief-2026-08-24-arxiv-tierlist", "label": "ingest-brief-2026-08-24-arxiv-tierlist", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv tierlist", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-tierlist.md", "x": 37.20736153904977, "y": 86.1475498950355, "z": 17.0}, {"id": "ingest-brief-2026-08-24-arxiv-pages", "label": "ingest-brief-2026-08-24-arxiv-pages", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv Pages", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-pages.md", "x": -33.811481724424894, "y": 143.69461817223723, "z": -1.0}, {"id": "ingest-brief-2026-08-24-trace", "label": "ingest-brief-2026-08-24-trace", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 TRACE", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-trace.md", "x": -43.94722474808998, "y": 111.79643417269696, "z": 1.0}, {"id": "ingest-brief-2026-08-23", "label": "ingest-brief-2026-08-23", "title": "Ingest brief \u00b7 2026-08-23", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-23.md", "x": 27.571441926915618, "y": 150.8954151935223, "z": 2.0}, {"id": "ingest-brief-2026-08-24-arxiv-counts", "label": "ingest-brief-2026-08-24-arxiv-counts", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv counts", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-counts.md", "x": 44.881642844377915, "y": 115.42763867386056, "z": 10.0}, {"id": "ingest-brief-2026-08-24-arxiv-128956", "label": "ingest-brief-2026-08-24-arxiv-128956", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 128956", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-128956.md", "x": 78.07288490341635, "y": 121.83120461417286, "z": 10.0}, {"id": "graph-clusters-2026-08-24", "label": "graph-clusters-2026-08-24", "title": "Graph clusters brief \u00b7 2026-08-24", "type": "ship", "cluster": "hunt-ship", "path": "output/graph-clusters-2026-08-24.md", "x": -24.34280269928983, "y": 177.35942475071286, "z": -2.0}, {"id": "ingest-brief-2026-08-24-five-x", "label": "ingest-brief-2026-08-24-five-x", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 five X", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-five-x.md", "x": 67.98520349056992, "y": 91.13242648924124, "z": 0.0}, {"id": "ingest-brief-2026-08-24-arxiv-156256", "label": "ingest-brief-2026-08-24-arxiv-156256", "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 156256", "type": "ship", "cluster": "hunt-ship", "path": "output/ingest-brief-2026-08-24-arxiv-156256.md", "x": -11.775950247727181, "y": 117.19498769400354, "z": 12.0}, {"id": "graph-ui-2026-08-24", "label": "graph-ui-2026-08-24", "title": "Graph UI brief \u00b7 2026-08-24", "type": "ship", "cluster": "hunt-ship", "path": "output/graph-ui-2026-08-24.md", "x": 33.15744101302883, "y": 173.138321134906, "z": 0.0}, {"id": "trace", "label": "trace", "title": "TRACE", "type": "concept", "cluster": "nav", "path": "wiki/trace.md", "x": -38.58187953453025, "y": -56.582826416900446, "z": -29.0}, {"id": "memory-ablation", "label": "memory-ablation", "title": "Memory ablation", "type": "concept", "cluster": "memory", "path": "wiki/memory-ablation.md", "x": 24.74109659754158, "y": 42.37660880736611, "z": 22.0}, {"id": "arxiv-tierlist", "label": "arxiv-tierlist", "title": "arXiv potential tierlist", "type": "concept", "cluster": "nav", "path": "wiki/arxiv-tierlist.md", "x": -6.811177875826942, "y": -46.58162635008684, "z": -13.0}, {"id": "how-it-works", "label": "how-it-works", "title": "How it works", "type": "meta", "cluster": "compile", "path": "wiki/how-it-works.md", "x": -148.88178573265603, "y": -19.022617680871978, "z": 12.0}, {"id": "potential-ranking", "label": "potential-ranking", "title": "Potential ranking", "type": "concept", "cluster": "nav", "path": "wiki/potential-ranking.md", "x": 25.730897584046314, "y": -45.24014702839983, "z": -22.0}, {"id": "self-verification", "label": "self-verification", "title": "Self-verification", "type": "concept", "cluster": "verification", "path": "wiki/self-verification.md", "x": 112.14726829689859, "y": -50.913096876594174, "z": -17.0}, {"id": "graph", "label": "graph", "title": "Graph", "type": "meta", "cluster": "nav", "path": "wiki/graph.md", "x": -25.143250555969953, "y": -115.36809897486471, "z": -17.0}, {"id": "harness-routing", "label": "harness-routing", "title": "Harness routing", "type": "concept", "cluster": "harness", "path": "wiki/harness-routing.md", "x": 105.15171971423659, "y": 51.450362093376576, "z": -20.0}, {"id": "memory-engineering", "label": "memory-engineering", "title": "Memory engineering", "type": "concept", "cluster": "memory", "path": "wiki/memory-engineering.md", "x": 1.1357889696115424, "y": 51.83103309320145, "z": 24.0}, {"id": "hunt-ship-loop", "label": "hunt-ship-loop", "title": "Hunt / Ship loop", "type": "concept", "cluster": "hunt-ship", "path": "wiki/hunt-ship-loop.md", "x": 19.722923755304503, "y": 129.49426826171276, "z": 18.0}, {"id": "llm-wiki", "label": "llm-wiki", "title": "LLM Wiki", "type": "concept", "cluster": "compile", "path": "wiki/llm-wiki.md", "x": -105.05167973334686, "y": 26.01630575791725, "z": 20.0}, {"id": "tokens-as-capital", "label": "tokens-as-capital", "title": "Tokens as capital", "type": "concept", "cluster": "compile", "path": "wiki/tokens-as-capital.md", "x": -83.22546443735503, "y": 3.1827666169984252, "z": 11.0}, {"id": "lanbb", "label": "lanbb", "title": "LanBB", "type": "concept", "cluster": "nav", "path": "wiki/lanbb.md", "x": 19.44173196977435, "y": -148.69270953126784, "z": -30.0}, {"id": "audited-task-contract", "label": "audited-task-contract", "title": "Audited task contract", "type": "concept", "cluster": "harness", "path": "wiki/audited-task-contract.md", "x": 77.61840429282968, "y": 43.019520891920706, "z": -1.0}, {"id": "anti-slop", "label": "anti-slop", "title": "Anti-slop", "type": "concept", "cluster": "verification", "path": "wiki/anti-slop.md", "x": 81.17754591455889, "y": -62.04378505879961, "z": -19.0}, {"id": "entropy-gate", "label": "entropy-gate", "title": "Entropy gate", "type": "concept", "cluster": "harness", "path": "wiki/entropy-gate.md", "x": 133.39061522170687, "y": 53.583943601631276, "z": -14.0}, {"id": "context-graph", "label": "context-graph", "title": "Context graph", "type": "concept", "cluster": "compile", "path": "wiki/context-graph.md", "x": -74.87605783997238, "y": 37.10340925343457, "z": 26.0}, {"id": "verifiable-instructions", "label": "verifiable-instructions", "title": "Verifiable instructions", "type": "concept", "cluster": "verification", "path": "wiki/verifiable-instructions.md", "x": 84.6779276295879, "y": -29.536577880752215, "z": -17.0}, {"id": "agent-operating-system", "label": "agent-operating-system", "title": "Agent operating system", "type": "meta", "cluster": "bridge", "path": "wiki/agent-operating-system.md", "x": 1.6090333547937754, "y": 1.4369277214525362, "z": 3.0}, {"id": "Today", "label": "Today", "title": "Today", "type": "meta", "cluster": "nav", "path": "wiki/Today.md", "x": -40.018002925193784, "y": -91.88137536017855, "z": -29.0}, {"id": "contradictions", "label": "contradictions", "title": "Contradictions", "type": "meta", "cluster": "nav", "path": "wiki/contradictions.md", "x": 7.9589540549556705, "y": -107.87588571334953, "z": -29.0}, {"id": "Hooks", "label": "Hooks", "title": "Hooks", "type": "map", "cluster": "hunt-ship", "path": "maps/Hooks.md", "x": -3.403276990948348, "y": 147.58686259018626, "z": 11.0}, {"id": "Jarvis", "label": "Jarvis", "title": "Jarvis", "type": "map", "cluster": "hunt-ship", "path": "maps/Jarvis.md", "x": 60.52153314341006, "y": 179.2746306556235, "z": 6.0}, {"id": "TELOS", "label": "TELOS", "title": "TELOS", "type": "map", "cluster": "hunt-ship", "path": "maps/TELOS.md", "x": 81.62697547694869, "y": 156.65856679999533, "z": 3.0}, {"id": "rohit", "label": "rohit", "title": "Rohit", "type": "person", "cluster": "harness", "path": "wiki/people/rohit.md", "x": 126.94658532440836, "y": 23.694679539420083, "z": -10.0}, {"id": "jacky-kwok", "label": "jacky-kwok", "title": "Jacky Kwok", "type": "person", "cluster": "verification", "path": "wiki/people/jacky-kwok.md", "x": 108.13164798917208, "y": -82.01898085718203, "z": -30.0}, {"id": "andrej-karpathy", "label": "andrej-karpathy", "title": "Andrej Karpathy", "type": "person", "cluster": "compile", "path": "wiki/people/andrej-karpathy.md", "x": -138.90412142088474, "y": 14.477028864996004, "z": 23.0}, {"id": "src-bober-folder-workflow", "label": "src-bober-folder-workflow", "title": "src-bober-folder-workflow", "type": "source", "cluster": "compile", "path": "wiki/sources/src-bober-folder-workflow.md", "x": -132.8964614983426, "y": 45.02544635733035, "z": 8.0}, {"id": "src-promptyx-llm-cpu", "label": "src-promptyx-llm-cpu", "title": "src-promptyx-llm-cpu", "type": "source", "cluster": "nav", "path": "wiki/sources/src-promptyx-llm-cpu.md", "x": 40.127468471120544, "y": -122.62041362215172, "z": -30.0}, {"id": "src-agentmemoryl-aml-s2", "label": "src-agentmemoryl-aml-s2", "title": "src-agentmemoryl-aml-s2", "type": "source", "cluster": "nav", "path": "wiki/sources/src-agentmemoryl-aml-s2.md", "x": -44.49145943990679, "y": -142.367555247318, "z": -18.0}, {"id": "src-jacky-self-verification", "label": "src-jacky-self-verification", "title": "src-jacky-self-verification", "type": "source", "cluster": "verification", "path": "wiki/sources/src-jacky-self-verification.md", "x": 117.30585805760875, "y": -25.297913063369883, "z": -11.0}, {"id": "src-marfinxx-trace", "label": "src-marfinxx-trace", "title": "src-marfinxx-trace", "type": "source", "cluster": "nav", "path": "wiki/sources/src-marfinxx-trace.md", "x": -14.94950727587521, "y": -80.61909004861607, "z": -19.0}, {"id": "src-juampi-anti-slop-rank", "label": "src-juampi-anti-slop-rank", "title": "src-juampi-anti-slop-rank", "type": "source", "cluster": "verification", "path": "wiki/sources/src-juampi-anti-slop-rank.md", "x": 138.47032364971065, "y": -72.11687922494022, "z": -13.0}, {"id": "src-mrgreenieybt3-llm-wiki", "label": "src-mrgreenieybt3-llm-wiki", "title": "src-mrgreenieybt3-llm-wiki", "type": "source", "cluster": "nav", "path": "wiki/sources/src-mrgreenieybt3-llm-wiki.md", "x": 37.35916753410955, "y": -89.94429349537327, "z": -28.0}, {"id": "src-papa-couch-compiler", "label": "src-papa-couch-compiler", "title": "src-papa-couch-compiler", "type": "source", "cluster": "compile", "path": "wiki/sources/src-papa-couch-compiler.md", "x": -114.80318126701552, "y": -7.4745158420436475, "z": 21.0}, {"id": "src-beamnxw-memory-stack", "label": "src-beamnxw-memory-stack", "title": "src-beamnxw-memory-stack", "type": "source", "cluster": "nav", "path": "wiki/sources/src-beamnxw-memory-stack.md", "x": -67.28874801879695, "y": -77.65918211615562, "z": -27.0}, {"id": "src-hitu-entropy-engineering", "label": "src-hitu-entropy-engineering", "title": "src-hitu-entropy-engineering", "type": "source", "cluster": "harness", "path": "wiki/sources/src-hitu-entropy-engineering.md", "x": 122.60928532512773, "y": 83.28916405918935, "z": -10.0}, {"id": "src-avid-obsidian-agent-team", "label": "src-avid-obsidian-agent-team", "title": "src-avid-obsidian-agent-team", "type": "source", "cluster": "hunt-ship", "path": "wiki/sources/src-avid-obsidian-agent-team.md", "x": 12.18591223073423, "y": 102.71154609083784, "z": 0.0}, {"id": "src-openagentskill-anti-slop", "label": "src-openagentskill-anti-slop", "title": "src-openagentskill-anti-slop", "type": "source", "cluster": "nav", "path": "wiki/sources/src-openagentskill-anti-slop.md", "x": -61.437528863998004, "y": -114.26422190873193, "z": -31.0}, {"id": "src-arxiv-tierlist-handoff", "label": "src-arxiv-tierlist-handoff", "title": "src-arxiv-tierlist-handoff", "type": "source", "cluster": "nav", "path": "wiki/sources/src-arxiv-tierlist-handoff.md", "x": 12.51514426372639, "y": -71.61006751046482, "z": -16.0}, {"id": "src-rohit-harness-router", "label": "src-rohit-harness-router", "title": "src-rohit-harness-router", "type": "source", "cluster": "harness", "path": "wiki/sources/src-rohit-harness-router.md", "x": 96.49422486210537, "y": 19.961169462564303, "z": -15.0}, {"id": "src-0xcodio-memory-ablation", "label": "src-0xcodio-memory-ablation", "title": "src-0xcodio-memory-ablation", "type": "source", "cluster": "memory", "path": "wiki/sources/src-0xcodio-memory-ablation.md", "x": -25.149278316741754, "y": 40.767347193145774, "z": 35.0}, {"id": "src-voxyz-verifiable-instructions", "label": "src-voxyz-verifiable-instructions", "title": "src-voxyz-verifiable-instructions", "type": "source", "cluster": "verification", "path": "wiki/sources/src-voxyz-verifiable-instructions.md", "x": 145.68161495850356, "y": -37.642411558038084, "z": -30.0}], "edges": [{"source": "maps", "target": "Jarvis", "cx": 40.515804620087, "cy": 165.59116550911511, "intra": true}, {"source": "maps", "target": "Hooks", "cx": 24.240327784985432, "cy": 126.41358096632385, "intra": true}, {"source": "maps", "target": "TELOS", "cx": 73.75636739785682, "cy": 135.88340277960094, "intra": true}, {"source": "MEMORY", "target": "memory-ablation", "cx": -9.306087692311541, "cy": 39.82299493201663, "intra": true}, {"source": "MEMORY", "target": "arxiv-tierlist", "cx": -10.255519820205931, "cy": -14.323604171261167, "intra": false}, {"source": "MEMORY", "target": "potential-ranking", "cx": -5.699629255823675, "cy": -14.135797066224985, "intra": false}, {"source": "MEMORY", "target": "lanbb", "cx": -6.58011244182175, "cy": -28.61915581662651, "intra": false}, {"source": "ship", "target": "ingest-brief-2026-08-23", "cx": 3.748171981854478, "cy": 153.4674253928007, "intra": true}, {"source": "ship", "target": "graph-clusters-2026-08-24", "cx": -9.216152074156385, "cy": 193.57824455667804, "intra": true}, {"source": "ship", "target": "graph-ui-2026-08-24", "cx": 21.932059784830777, "cy": 190.91499611448143, "intra": true}, {"source": "hunt", "target": "hunt-ship-loop", "cx": 47.026723845516074, "cy": 161.80777577386507, "intra": true}, {"source": "ingest-brief-2026-08-24-arxiv-tierlist", "target": "src-arxiv-tierlist-handoff", "cx": 11.572895360940983, "cy": 16.274422659198304, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-tierlist", "target": "arxiv-tierlist", "cx": 8.867210261403516, "cy": 19.77840442165122, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-tierlist", "target": "potential-ranking", "cx": 13.423100825785774, "cy": 19.966211526687403, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-pages", "target": "arxiv-tierlist", "cx": -1.0754277954829385, "cy": 27.834993980459462, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-pages", "target": "src-arxiv-tierlist-handoff", "cx": 1.6302573040545285, "cy": 24.331012218006546, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-pages", "target": "MEMORY", "cx": -1.2173060526312547, "cy": 99.18227947827053, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "src-marfinxx-trace", "cx": -3.633797934802808, "cy": 18.604003302729733, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "trace", "cx": -6.942330051014516, "cy": 21.96908021116992, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "memory-engineering", "cx": 0.7269861048881214, "cy": 92.01212691539308, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "context-graph", "cx": -48.99310923409857, "cy": 76.5064298359685, "intra": false}, {"source": "ingest-brief-2026-08-24-trace", "target": "tokens-as-capital", "cx": -50.162026157732136, "cy": 71.75753986686743, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "arxiv-tierlist", "cx": 9.941609644149455, "cy": 23.877616850686728, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "src-arxiv-tierlist-handoff", "cx": 12.647294743686924, "cy": 20.37363508823381, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "potential-ranking", "cx": 14.497500208531712, "cy": 24.06542395572291, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-counts", "target": "MEMORY", "cx": 9.79973138700114, "cy": 95.2249023484978, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "arxiv-tierlist", "cx": 14.588383532414838, "cy": 24.77411608233045, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "src-arxiv-tierlist-handoff", "cx": 17.294068631952303, "cy": 21.270134319877535, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "potential-ranking", "cx": 19.144274096797094, "cy": 24.961923187366633, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-128956", "target": "MEMORY", "cx": 14.44650527526652, "cy": 96.12140158014152, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "llm-wiki", "cx": -37.54715634575861, "cy": 72.06127427091226, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "memory-engineering", "cx": 16.397526058300507, "cy": 89.11916583970927, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "harness-routing", "cx": 72.68681976056314, "cy": 87.014713051335, "intra": false}, {"source": "ingest-brief-2026-08-24-five-x", "target": "anti-slop", "cx": 70.10252636397975, "cy": 36.133448924418, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "arxiv-tierlist", "cx": 2.0095466112547413, "cy": 24.125045713506744, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "src-arxiv-tierlist-handoff", "cx": 4.715231710792208, "cy": 20.62106395105383, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "potential-ranking", "cx": 6.565437175636998, "cy": 24.31285281854293, "intra": false}, {"source": "ingest-brief-2026-08-24-arxiv-156256", "target": "MEMORY", "cx": 1.8676683541064252, "cy": 95.47233121131782, "intra": false}, {"source": "trace", "target": "src-marfinxx-trace", "cx": -38.68763944757453, "cy": -80.32257483830968, "intra": true}, {"source": "trace", "target": "context-graph", "cx": -61.0602172105786, "cy": -33.933876062981476, "intra": false}, {"source": "trace", "target": "memory-engineering", "cx": -11.340121871591908, "cy": -18.428178983556894, "intra": false}, {"source": "trace", "target": "tokens-as-capital", "cx": -62.229134134212174, "cy": -38.68276603208254, "intra": false}, {"source": "memory-ablation", "target": "src-0xcodio-memory-ablation", "cx": -0.816257721228467, "cy": 60.5503926761922, "intra": true}, {"source": "memory-ablation", "target": "memory-engineering", "cx": 18.723754287240165, "cy": 61.54828141013248, "intra": true}, {"source": "memory-ablation", "target": "verifiable-instructions", "cx": 53.82899109800424, "cy": 1.8565404102846688, "intra": false}, {"source": "arxiv-tierlist", "target": "src-arxiv-tierlist-handoff", "cx": -10.149958571399726, "cy": -69.13561382533328, "intra": true}, {"source": "arxiv-tierlist", "target": "potential-ranking", "cx": 10.14192220722589, "cy": -62.4565942559716, "intra": true}, {"source": "potential-ranking", "target": "arxiv-tierlist", "cx": 8.777797500993481, "cy": -29.36517912251508, "intra": true}, {"source": "potential-ranking", "target": "src-arxiv-tierlist-handoff", "cx": 4.703121479574742, "cy": -51.19831892589321, "intra": true}, {"source": "self-verification", "target": "src-jacky-self-verification", "cx": 99.37661976559009, "cy": -35.01421109177812, "intra": true}, {"source": "self-verification", "target": "jacky-kwok", "cx": 126.39552120392266, "cy": -68.5646185758499, "intra": true}, {"source": "self-verification", "target": "verifiable-instructions", "cx": 88.05013295942108, "cy": -53.5408539573521, "intra": true}, {"source": "self-verification", "target": "entropy-gate", "cx": 114.61269479682599, "cy": -1.618304226334876, "intra": false}, {"source": "harness-routing", "target": "src-rohit-harness-router", "cx": 116.80211494848535, "cy": 31.312533250700856, "intra": true}, {"source": "harness-routing", "target": "audited-task-contract", "cx": 86.69130604002908, "cy": 62.56373969512817, "intra": true}, {"source": "harness-routing", "target": "entropy-gate", "cx": 118.0683863627033, "cy": 68.43649308298397, "intra": true}, {"source": "harness-routing", "target": "rohit", "cx": 129.37294342925097, "cy": 48.03489124218076, "intra": true}, {"source": "harness-routing", "target": "src-promptyx-llm-cpu", "cx": 55.968480551461845, "cy": -29.77789398066635, "intra": false}, {"source": "memory-engineering", "target": "src-0xcodio-memory-ablation", "cx": -18.21101835651961, "cy": 61.03928243181943, "intra": true}, {"source": "memory-engineering", "target": "memory-ablation", "cx": 7.15313127991296, "cy": 32.65936049043507, "intra": true}, {"source": "memory-engineering", "target": "context-graph", "cx": -53.39090105467596, "cy": 36.109170641241676, "intra": false}, {"source": "memory-engineering", "target": "audited-task-contract", "cx": 48.763823827576395, "cy": 48.33009716408817, "intra": false}, {"source": "memory-engineering", "target": "entropy-gate", "cx": 56.5719333576192, "cy": 49.80911634344765, "intra": false}, {"source": "memory-engineering", "target": "trace", "cx": -11.340121871591908, "cy": -18.428178983556894, "intra": false}, {"source": "memory-engineering", "target": "src-marfinxx-trace", "cx": -8.0315897553802, "cy": -21.79325589199708, "intra": false}, {"source": "memory-engineering", "target": "src-beamnxw-memory-stack", "cx": -15.359083459389247, "cy": -21.378868781452617, "intra": false}, {"source": "memory-engineering", "target": "src-agentmemoryl-aml-s2", "cx": -12.167463058344623, "cy": -30.43804101981535, "intra": false}, {"source": "hunt-ship-loop", "target": "src-avid-obsidian-agent-team", "cx": 0.6535170762279439, "cy": 120.40878265115789, "intra": true}, {"source": "hunt-ship-loop", "target": "hunt", "cx": 3.3349081484905234, "cy": 168.4954632635968, "intra": true}, {"source": "hunt-ship-loop", "target": "ship", "cx": -5.421878765797366, "cy": 148.14163869954658, "intra": true}, {"source": "hunt-ship-loop", "target": "maps", "cx": 29.41122028200913, "cy": 152.96183714511278, "intra": true}, {"source": "hunt-ship-loop", "target": "llm-wiki", "cx": -44.30387550869577, "cy": 77.43193211905829, "intra": false}, {"source": "hunt-ship-loop", "target": "context-graph", "cx": -40.079288443623334, "cy": 78.98412660843071, "intra": false}, {"source": "llm-wiki", "target": "tokens-as-capital", "cx": -82.26741161641309, "cy": 25.946988836354507, "intra": true}, {"source": "llm-wiki", "target": "context-graph", "cx": -95.65459018832698, "cy": 47.04821813897185, "intra": true}, {"source": "llm-wiki", "target": "andrej-karpathy", "cx": -116.49071393102427, "cy": 4.149067116127146, "intra": true}, {"source": "llm-wiki", "target": "src-papa-couch-compiler", "cx": -126.13768442667926, "cy": 13.990824433348322, "intra": true}, {"source": "llm-wiki", "target": "src-bober-folder-workflow", "cx": -109.54690371972863, "cy": 49.32988565023262, "intra": true}, {"source": "llm-wiki", "target": "src-mrgreenieybt3-llm-wiki", "cx": -54.65305768604145, "cy": -40.1566759433401, "intra": false}, {"source": "tokens-as-capital", "target": "src-papa-couch-compiler", "cx": -93.6850232474583, "cy": -17.936683804757912, "intra": true}, {"source": "tokens-as-capital", "target": "llm-wiki", "cx": -106.0097325542888, "cy": 3.2520835385611697, "intra": true}, {"source": "tokens-as-capital", "target": "context-graph", "cx": -62.64966949794673, "cy": 16.106036390615596, "intra": true}, {"source": "tokens-as-capital", "target": "trace", "cx": -62.229134134212174, "cy": -38.68276603208254, "intra": false}, {"source": "lanbb", "target": "MEMORY", "cx": -6.58011244182175, "cy": -28.61915581662651, "intra": false}, {"source": "audited-task-contract", "target": "src-rohit-harness-router", "cx": 99.5700178389714, "cy": 41.73420056061498, "intra": true}, {"source": "audited-task-contract", "target": "harness-routing", "cx": 96.0788179670372, "cy": 31.90614329016912, "intra": true}, {"source": "audited-task-contract", "target": "entropy-gate", "cx": 101.79215300543191, "cy": 67.90018542267421, "intra": true}, {"source": "audited-task-contract", "target": "memory-engineering", "cx": 48.763823827576395, "cy": 48.33009716408817, "intra": false}, {"source": "anti-slop", "target": "src-juampi-anti-slop-rank", "cx": 113.31211024568725, "cy": -47.240622690301166, "intra": true}, {"source": "anti-slop", "target": "verifiable-instructions", "cx": 66.44569867292674, "cy": -44.015392744535134, "intra": true}, {"source": "anti-slop", "target": "src-openagentskill-anti-slop", "cx": 39.165087527961845, "cy": -79.48929126770457, "intra": false}, {"source": "entropy-gate", "target": "src-hitu-entropy-engineering", "cx": 143.43870859208243, "cy": 74.03995767873062, "intra": true}, {"source": "entropy-gate", "target": "audited-task-contract", "cx": 109.21686650910462, "cy": 28.70327907087777, "intra": true}, {"source": "entropy-gate", "target": "harness-routing", "cx": 120.47394857324018, "cy": 36.59781261202387, "intra": true}, {"source": "entropy-gate", "target": "self-verification", "cx": 114.61269479682599, "cy": -1.618304226334876, "intra": false}, {"source": "entropy-gate", "target": "memory-engineering", "cx": 56.5719333576192, "cy": 49.80911634344765, "intra": false}, {"source": "context-graph", "target": "src-avid-obsidian-agent-team", "cx": -41.134470057063176, "cy": 75.23454550450822, "intra": false}, {"source": "context-graph", "target": "tokens-as-capital", "cx": -95.45185277938067, "cy": 24.180139479817402, "intra": true}, {"source": "context-graph", "target": "llm-wiki", "cx": -84.27314738499226, "cy": 16.071496872379974, "intra": true}, {"source": "context-graph", "target": "memory-engineering", "cx": -53.39090105467596, "cy": 36.109170641241676, "intra": false}, {"source": "context-graph", "target": "hunt-ship-loop", "cx": -40.079288443623334, "cy": 78.98412660843071, "intra": false}, {"source": "context-graph", "target": "trace", "cx": -61.0602172105786, "cy": -33.933876062981476, "intra": false}, {"source": "verifiable-instructions", "target": "src-voxyz-verifiable-instructions", "cx": 112.46435293936331, "cy": -54.02545959003276, "intra": true}, {"source": "verifiable-instructions", "target": "memory-ablation", "cx": 53.82899109800424, "cy": 1.8565404102846688, "intra": false}, {"source": "verifiable-instructions", "target": "self-verification", "cx": 108.77506296706541, "cy": -26.908820799994288, "intra": true}, {"source": "verifiable-instructions", "target": "anti-slop", "cx": 99.40977487122004, "cy": -47.564970195016684, "intra": true}, {"source": "agent-operating-system", "target": "llm-wiki", "cx": -54.97556858450686, "cy": 9.468006152262392, "intra": false}, {"source": "agent-operating-system", "target": "memory-engineering", "cx": -1.0308861804477478, "cy": 26.5258977210594, "intra": false}, {"source": "agent-operating-system", "target": "audited-task-contract", "cx": 51.40374336281793, "cy": 23.2411271644813, "intra": false}, {"source": "agent-operating-system", "target": "verifiable-instructions", "cx": 53.16416756533555, "cy": -21.908810189305246, "intra": false}, {"source": "agent-operating-system", "target": "hunt-ship-loop", "cx": 12.280726430604872, "cy": 69.40085368824843, "intra": false}, {"source": "Hooks", "target": "src-avid-obsidian-agent-team", "cx": -13.226724899114188, "cy": 119.02889099300755, "intra": true}, {"source": "Hooks", "target": "ship", "cx": -14.379519749462489, "cy": 167.3363548925465, "intra": true}, {"source": "Hooks", "target": "llm-wiki", "cx": -47.541543613171164, "cy": 79.96489532504458, "intra": false}, {"source": "Hooks", "target": "tokens-as-capital", "cx": -44.485873471732305, "cy": 76.76819984531593, "intra": false}, {"source": "Jarvis", "target": "MEMORY", "cx": 11.989316028865641, "cy": 104.16348122594461, "intra": false}, {"source": "Jarvis", "target": "ship", "cx": 33.89996570146469, "cy": 158.6624078798558, "intra": true}, {"source": "Jarvis", "target": "TELOS", "cx": 83.01372448709525, "cy": 179.108581741321, "intra": true}, {"source": "TELOS", "target": "Jarvis", "cx": 59.134784133263494, "cy": 156.82461571429783, "intra": true}, {"source": "TELOS", "target": "hunt-ship-loop", "cx": 59.29988395713479, "cy": 123.42126682673751, "intra": true}, {"source": "rohit", "target": "audited-task-contract", "cx": 95.19980361111999, "cy": 15.277972568095048, "intra": true}, {"source": "rohit", "target": "harness-routing", "cx": 102.72536160939399, "cy": 27.110150390615903, "intra": true}, {"source": "rohit", "target": "src-rohit-harness-router", "cx": 109.73742767786736, "cy": 38.002072099088906, "intra": true}, {"source": "jacky-kwok", "target": "self-verification", "cx": 93.88339508214803, "cy": -64.36745915792629, "intra": true}, {"source": "jacky-kwok", "target": "src-jacky-self-verification", "cx": 132.50575267313351, "cy": -56.85884671422116, "intra": true}, {"source": "andrej-karpathy", "target": "llm-wiki", "cx": -127.46508722320733, "cy": 36.34426750678611, "intra": true}, {"source": "andrej-karpathy", "target": "src-papa-couch-compiler", "cx": -115.6999812216646, "cy": 15.747043297815493, "intra": true}, {"source": "andrej-karpathy", "target": "src-bober-folder-workflow", "cx": -151.95153949598375, "cy": 32.90788032625902, "intra": true}, {"source": "src-bober-folder-workflow", "target": "llm-wiki", "cx": -128.40123751196083, "cy": 21.711866465014985, "intra": true}, {"source": "src-bober-folder-workflow", "target": "andrej-karpathy", "cx": -119.8490434232436, "cy": 26.594594896067335, "intra": true}, {"source": "src-promptyx-llm-cpu", "target": "harness-routing", "cx": 55.968480551461845, "cy": -29.77789398066635, "intra": false}, {"source": "src-agentmemoryl-aml-s2", "target": "memory-engineering", "cx": -12.167463058344623, "cy": -30.43804101981535, "intra": false}, {"source": "src-jacky-self-verification", "target": "self-verification", "cx": 130.07650658891725, "cy": -41.196798848185935, "intra": true}, {"source": "src-jacky-self-verification", "target": "jacky-kwok", "cx": 92.9317533736473, "cy": -50.45804720633075, "intra": true}, {"source": "src-marfinxx-trace", "target": "trace", "cx": -14.843747362830932, "cy": -56.87934162720684, "intra": true}, {"source": "src-marfinxx-trace", "target": "memory-engineering", "cx": -8.0315897553802, "cy": -21.79325589199708, "intra": false}, {"source": "src-marfinxx-trace", "target": "context-graph", "cx": -57.75168509436689, "cy": -37.29895297142166, "intra": false}, {"source": "src-marfinxx-trace", "target": "tokens-as-capital", "cx": -58.920602018000466, "cy": -42.04784294052273, "intra": false}, {"source": "src-juampi-anti-slop-rank", "target": "anti-slop", "cx": 106.33575931858229, "cy": -86.92004159343867, "intra": true}, {"source": "src-mrgreenieybt3-llm-wiki", "target": "llm-wiki", "cx": -54.65305768604145, "cy": -40.1566759433401, "intra": false}, {"source": "src-papa-couch-compiler", "target": "llm-wiki", "cx": -93.71717657368312, "cy": 4.550965482525281, "intra": true}, {"source": "src-papa-couch-compiler", "target": "tokens-as-capital", "cx": -104.34362245691224, "cy": 13.64493457971269, "intra": true}, {"source": "src-papa-couch-compiler", "target": "andrej-karpathy", "cx": -138.00732146623568, "cy": -8.744530274863136, "intra": true}, {"source": "src-beamnxw-memory-stack", "target": "memory-engineering", "cx": -15.359083459389247, "cy": -21.378868781452617, "intra": false}, {"source": "src-hitu-entropy-engineering", "target": "entropy-gate", "cx": 112.56119195475216, "cy": 62.833149982089985, "intra": true}, {"source": "src-avid-obsidian-agent-team", "target": "hunt-ship-loop", "cx": 31.25531890981079, "cy": 111.7970317013927, "intra": true}, {"source": "src-avid-obsidian-agent-team", "target": "context-graph", "cx": -41.134470057063176, "cy": 75.23454550450822, "intra": false}, {"source": "src-openagentskill-anti-slop", "target": "src-juampi-anti-slop-rank", "cx": 47.186076410883096, "cy": -80.89952445096426, "intra": false}, {"source": "src-openagentskill-anti-slop", "target": "anti-slop", "cx": 39.165087527961845, "cy": -79.48929126770457, "intra": false}, {"source": "src-arxiv-tierlist-handoff", "target": "arxiv-tierlist", "cx": 15.853924959299174, "cy": -49.05608003521837, "intra": true}, {"source": "src-arxiv-tierlist-handoff", "target": "potential-ranking", "cx": 33.54292036819796, "cy": -65.65189561297144, "intra": true}, {"source": "src-rohit-harness-router", "target": "audited-task-contract", "cx": 74.54261131596367, "cy": 21.246489793870026, "intra": true}, {"source": "src-rohit-harness-router", "target": "harness-routing", "cx": 84.84382962785659, "cy": 40.09899830524002, "intra": true}, {"source": "src-rohit-harness-router", "target": "rohit", "cx": 113.70338250864636, "cy": 5.65377690289548, "intra": true}, {"source": "src-0xcodio-memory-ablation", "target": "memory-engineering", "cx": -5.8024709906106, "cy": 31.55909785452779, "intra": true}, {"source": "src-0xcodio-memory-ablation", "target": "memory-ablation", "cx": 0.40807600202829475, "cy": 22.59356332431967, "intra": true}, {"source": "src-0xcodio-memory-ablation", "target": "verifiable-instructions", "cx": 46.84433861000457, "cy": 1.6312437842938214, "intra": false}, {"source": "src-voxyz-verifiable-instructions", "target": "verifiable-instructions", "cx": 117.89518964872816, "cy": -13.153529848757536, "intra": true}], "colors": {"home": "#c6a35a", "meta": "#c6a35a", "concept": "#c6a35a", "wiki": "#c6a35a", "map": "#6f9e92", "source": "#6f87a8", "hunt": "#6f87a8", "person": "#7d9a6e", "ship": "#c48472", "note": "#8b8478"}, "labels": {"compile": "Compile", "memory": "Memory", "verification": "Verification", "harness": "Harness", "hunt-ship": "Hunt / ship", "nav": "Door", "bridge": "Synthesis"}, "types": {"home": "Door", "meta": "Meta", "concept": "Concept", "wiki": "Wiki", "map": "Map", "source": "Source", "hunt": "Hunt", "person": "Person", "ship": "Ship", "note": "Note"}, "legend": [{"key": "wiki", "label": "Wiki", "color": "#c6a35a"}, {"key": "map", "label": "Maps", "color": "#6f9e92"}, {"key": "hunt", "label": "Hunt / sources", "color": "#6f87a8"}, {"key": "person", "label": "People", "color": "#7d9a6e"}, {"key": "ship", "label": "Ship", "color": "#c48472"}], "centers": {"hunt-ship": [24.208334520737097, 140.42553408578436, 93.92432360921634], "nav": [-11.397932996980655, -100.87226984867767, 86.88410236973418], "memory": [-5.540036982195143, 51.5308034091248, 51.63457490912003], "compile": [-114.09125027565331, 14.186831903965855, 68.09624620604865], "verification": [112.51316949943434, -51.36709207423946, 55.89585810985784], "harness": [110.36847245673577, 45.833139941350375, 59.40547223920968], "bridge": [1.6090333547937754, 1.4369277214525362, 20.0]}, "headers": {"bridge": [67.60903335479378, -6.563072278547464], "compile": [-210.187297213041, 14.007425283336442], "harness": [193.23700694487644, 71.08348965492948], "hunt-ship": [31.356653625832713, 254.1538887265973], "memory": [-46.65168531539562, 112.88120871251128], "nav": [-38.693205636726724, -204.69581192728623], "verification": [181.63859358413916, -94.37517674637621]}, "heights": {"compile": 17.285714285714285, "memory": 25.5, "verification": -19.571428571428573, "harness": -11.666666666666666, "hunt-ship": 6.777777777777778, "nav": -22.8125, "bridge": 3.0}};
+  const stage = document.getElementById('stage');
+  const labelCanvas = document.getElementById('labels');
+  const lctx = labelCanvas.getContext('2d');
   const nodes = data.nodes;
   const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
   const adj = new Map();
@@ -172,16 +184,15 @@
     adj.get(e.source).push(e.target);
     adj.get(e.target).push(e.source);
   }
-  const view = { x: 0, y: 0, scale: 1 };
-  const motion = { appear: 0, headerAlpha: 1, labelAlpha: 0, hoverAmt: 0 };
+  const motion = { headerAlpha: 1, labelAlpha: 0, hoverAmt: 0 };
   let hover = null;
   let selected = null;
   let query = '';
   let island = '';
-  let drag = null;
-  let moved = false;
   let lodOpen = false;
+  let moved = false;
   const clusterOrder = ['bridge', 'compile', 'memory', 'verification', 'harness', 'hunt-ship', 'nav'];
+
   function hasGsap() { return typeof gsap !== 'undefined'; }
   function tween(target, vars) {
     if (hasGsap()) return gsap.to(target, vars);
@@ -192,6 +203,102 @@
     if (vars.onUpdate) vars.onUpdate();
     if (vars.onComplete) vars.onComplete();
     return null;
+  }
+  function worldOf(n) {
+    return new THREE.Vector3(n.x, n.z || 0, n.y);
+  }
+  function nodeRadius(n) {
+    if (n.id === 'agent-operating-system') return 7.2;
+    if (n.id === 'Home') return 5.8;
+    if (n.type === 'concept' || n.type === 'meta') return 4.6;
+    return 3.8;
+  }
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x090b10);
+  scene.fog = new THREE.Fog(0x090b10, 220, 760);
+  const camera = new THREE.PerspectiveCamera(46, window.innerWidth / window.innerHeight, 1, 2000);
+  camera.position.set(70, 210, 360);
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  stage.appendChild(renderer.domElement);
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.07;
+  controls.minDistance = 90;
+  controls.maxDistance = 640;
+  controls.maxPolarAngle = Math.PI * 0.49;
+  controls.target.set(0, 8, 10);
+  scene.add(new THREE.AmbientLight(0x8a8478, 0.9));
+  const key = new THREE.DirectionalLight(0xf4efe4, 1.15);
+  key.position.set(90, 240, 130);
+  scene.add(key);
+  const fill = new THREE.PointLight(0xc6a35a, 0.4, 700);
+  fill.position.set(-50, 90, 40);
+  scene.add(fill);
+  const rim = new THREE.DirectionalLight(0x6f9e92, 0.28);
+  rim.position.set(-120, 40, -80);
+  scene.add(rim);
+
+  const meshes = {};
+  const tubes = [];
+  const glowMeshes = {};
+  const sphereGeo = new THREE.SphereGeometry(1, 24, 18);
+  for (const [cluster, spec] of Object.entries(data.centers)) {
+    const glow = new THREE.Mesh(
+      new THREE.SphereGeometry(spec[2] * 0.92, 24, 16),
+      new THREE.MeshBasicMaterial({
+        color: 0xc6a35a,
+        transparent: true,
+        opacity: 0.055,
+        depthWrite: false
+      })
+    );
+    glow.position.set(spec[0], data.heights[cluster] || 0, spec[1]);
+    glow.scale.y = 0.42;
+    scene.add(glow);
+    glowMeshes[cluster] = glow;
+  }
+  for (const n of nodes) {
+    const color = new THREE.Color(data.colors[n.type] || '#8b8478');
+    const mat = new THREE.MeshStandardMaterial({
+      color,
+      roughness: 0.38,
+      metalness: 0.22,
+      emissive: color,
+      emissiveIntensity: 0.16
+    });
+    const mesh = new THREE.Mesh(sphereGeo, mat);
+    mesh.position.copy(worldOf(n));
+    const r = nodeRadius(n);
+    mesh.scale.setScalar(0.001);
+    mesh.userData = { id: n.id, base: r, color };
+    scene.add(mesh);
+    meshes[n.id] = mesh;
+  }
+  for (const e of data.edges) {
+    const a = byId[e.source], b = byId[e.target];
+    const p0 = worldOf(a);
+    const p2 = worldOf(b);
+    const p1 = new THREE.Vector3(e.cx, ((a.z || 0) + (b.z || 0)) / 2 + (e.intra ? 10 : 16), e.cy);
+    const curve = new THREE.QuadraticBezierCurve3(p0, p1, p2);
+    const tube = new THREE.Mesh(
+      new THREE.TubeGeometry(curve, 14, e.intra ? 0.72 : 0.48, 6, false),
+      new THREE.MeshStandardMaterial({
+        color: e.intra ? 0xddd4bf : 0xb4aa97,
+        roughness: 0.5,
+        metalness: 0.12,
+        emissive: 0x3a342c,
+        emissiveIntensity: e.intra ? 0.22 : 0.12,
+        transparent: true,
+        opacity: 0
+      })
+    );
+    tube.userData = { intra: e.intra, source: e.source, target: e.target, bridge: e.source === 'agent-operating-system' || e.target === 'agent-operating-system' };
+    scene.add(tube);
+    tubes.push(tube);
   }
 
   const legend = document.getElementById('legend');
@@ -214,83 +321,19 @@
       for (const b of islands.querySelectorAll('button')) {
         b.classList.toggle('active', b.dataset.island === island);
       }
-      animateCamera(fitTarget(island ? nodes.filter(n => n.cluster === island) : nodes), 0.7);
+      fitIsland(island);
     });
     islands.appendChild(btn);
   }
   document.getElementById('count').textContent = nodes.length + ' pages';
 
-  function cx() { return window.innerWidth / 2; }
-  function cy() { return window.innerHeight / 2 + 18; }
-  function toScreen(x, y) {
-    return { x: cx() + view.x + x * view.scale, y: cy() + view.y + y * view.scale };
-  }
-  function radius(n) {
-    if (n.id === 'agent-operating-system') return 10;
-    if (n.id === 'Home') return 8;
-    if (n.type === 'concept' || n.type === 'meta') return 6.4;
-    return 5.4;
-  }
   function matches(n) {
     if (!query) return true;
-    const hay = (n.title + ' ' + n.id + ' ' + n.path).toLowerCase();
-    return hay.includes(query);
+    return (n.title + ' ' + n.id + ' ' + n.path).toLowerCase().includes(query);
   }
   function related(n) {
     if (!n) return new Set();
     return new Set([n.id, ...(adj.get(n.id) || [])]);
-  }
-  function fitTarget(set) {
-    const items = set && set.length ? set : nodes;
-    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-    for (const n of items) {
-      minX = Math.min(minX, n.x); minY = Math.min(minY, n.y);
-      maxX = Math.max(maxX, n.x); maxY = Math.max(maxY, n.y);
-    }
-    const pad = 120;
-    const w = Math.max(maxX - minX, 80) + pad * 2;
-    const h = Math.max(maxY - minY, 80) + pad * 2;
-    const cap = items.length <= 18 ? 1.28 : 0.88;
-    const scale = Math.min((window.innerWidth - 360) / w, (window.innerHeight - 180) / h, cap);
-    const midX = (minX + maxX) / 2;
-    const midY = (minY + maxY) / 2;
-    return { scale, x: -midX * scale, y: -midY * scale };
-  }
-  function applyView(next) {
-    view.scale = next.scale;
-    view.x = next.x;
-    view.y = next.y;
-  }
-  function syncLod() {
-    const open = view.scale >= 1.08 || !!query;
-    if (open === lodOpen) return;
-    lodOpen = open;
-    tween(motion, {
-      headerAlpha: open ? 0 : 1,
-      labelAlpha: open ? 1 : 0,
-      duration: 0.38,
-      ease: 'power2.out',
-      overwrite: 'auto',
-      onUpdate: draw
-    });
-  }
-  function animateCamera(next, duration) {
-    if (hasGsap()) {
-      gsap.killTweensOf(view);
-      gsap.to(view, {
-        scale: next.scale,
-        x: next.x,
-        y: next.y,
-        duration: duration,
-        ease: 'power3.out',
-        overwrite: 'auto',
-        onUpdate: function() { syncLod(); draw(); }
-      });
-      return;
-    }
-    applyView(next);
-    syncLod();
-    draw();
   }
   function show(n) {
     document.getElementById('card-kicker').textContent = n ? 'Selected page' : 'Page';
@@ -310,142 +353,88 @@
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.textContent = other.title;
-      btn.addEventListener('click', () => { selected = other; show(other); draw(); });
+      btn.addEventListener('click', () => { selected = other; show(other); });
       li.appendChild(btn);
       list.appendChild(li);
     }
   }
-  function hit(mx, my) {
-    let best = null, bestD = 18;
-    for (const n of nodes) {
-      const p = toScreen(n.x, n.y);
-      const d = Math.hypot(p.x - mx, p.y - my);
-      const r = Math.max(radius(n) * view.scale, 9) + 8;
-      if (d <= r && d < bestD) { best = n; bestD = d; }
-    }
-    return best;
+  function camDist() {
+    return camera.position.distanceTo(controls.target);
   }
-  function drawGrid() {
-    const step = 48 * view.scale;
-    if (step < 18) return;
-    const ox = (cx() + view.x) % step;
-    const oy = (cy() + view.y) % step;
-    ctx.strokeStyle = 'rgba(255,255,255,0.028)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    for (let x = ox; x < window.innerWidth; x += step) {
-      ctx.moveTo(x, 0); ctx.lineTo(x, window.innerHeight);
+  function syncLod() {
+    const open = camDist() < 250 || !!query;
+    if (open === lodOpen) return;
+    lodOpen = open;
+    tween(motion, {
+      headerAlpha: open ? 0 : 1,
+      labelAlpha: open ? 1 : 0,
+      duration: 0.36,
+      ease: 'power2.out',
+      overwrite: 'auto'
+    });
+  }
+  function fitBox(ids, duration) {
+    const box = new THREE.Box3();
+    const use = ids && ids.length ? ids : nodes.map(n => n.id);
+    for (const id of use) {
+      if (meshes[id]) box.expandByObject(meshes[id]);
     }
-    for (let y = oy; y < window.innerHeight; y += step) {
-      ctx.moveTo(0, y); ctx.lineTo(window.innerWidth, y);
+    if (box.isEmpty()) return;
+    const center = box.getCenter(new THREE.Vector3());
+    const size = Math.max(box.getSize(new THREE.Vector3()).length(), 80);
+    const dist = Math.min(520, Math.max(200, size * 0.95));
+    const pos = center.clone().add(new THREE.Vector3(dist * 0.28, dist * 0.42, dist * 0.82));
+    tween(camera.position, { x: pos.x, y: pos.y, z: pos.z, duration, ease: 'power3.out', overwrite: 'auto' });
+    tween(controls.target, { x: center.x, y: center.y, z: center.z, duration, ease: 'power3.out', overwrite: 'auto' });
+  }
+  function fitIsland(id) {
+    if (!id) {
+      fitBox(null, 0.8);
+      return;
     }
-    ctx.stroke();
+    fitBox(nodes.filter(n => n.cluster === id).map(n => n.id), 0.75);
+  }
+  function dolly(factor) {
+    const dir = camera.position.clone().sub(controls.target);
+    const next = Math.min(controls.maxDistance, Math.max(controls.minDistance, dir.length() * factor));
+    dir.setLength(next);
+    const pos = controls.target.clone().add(dir);
+    tween(camera.position, { x: pos.x, y: pos.y, z: pos.z, duration: 0.28, ease: 'power3.out', overwrite: 'auto' });
   }
   function overlap(a, b) {
     const p = 6;
     return !(a.x + a.w + p < b.x || b.x + b.w + p < a.x || a.y + a.h + p < b.y || b.y + b.h + p < a.y);
   }
-  function labelsOpen() {
-    return motion.labelAlpha > 0.08 || view.scale >= 1.08 || !!query;
-  }
-  function appearFor(cluster) {
-    const i = Math.max(clusterOrder.indexOf(cluster), 0);
-    const start = i * 0.07;
-    const t = (motion.appear - start) / 0.42;
-    return Math.max(0, Math.min(1, t));
-  }
-  function nodePos(n) {
-    const spec = data.centers[n.cluster];
-    const t = appearFor(n.cluster);
-    if (!spec || t >= 1) return { x: n.x, y: n.y, t: t };
+  function project(vec) {
+    const v = vec.clone().project(camera);
     return {
-      x: spec[0] + (n.x - spec[0]) * t,
-      y: spec[1] + (n.y - spec[1]) * t,
-      t: t
+      x: (v.x * 0.5 + 0.5) * window.innerWidth,
+      y: (-v.y * 0.5 + 0.5) * window.innerHeight,
+      behind: v.z > 1
     };
   }
-  function draw() {
-    ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-    drawGrid();
-    const focus = selected || hover;
-    const keep = related(focus);
+  function drawLabels() {
+    lctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+    lctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
     const font = getComputedStyle(document.body).fontFamily;
     const placed = [];
-    for (const [cluster, spec] of Object.entries(data.centers)) {
-      const p = toScreen(spec[0], spec[1]);
-      const r = spec[2] * view.scale;
-      const faded = island && island !== cluster;
-      const glow = ctx.createRadialGradient(p.x, p.y, r * 0.12, p.x, p.y, r);
-      glow.addColorStop(0, faded ? 'rgba(198,163,90,0.02)' : 'rgba(198,163,90,0.07)');
-      glow.addColorStop(1, 'rgba(9,11,16,0)');
-      ctx.fillStyle = glow;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
-      ctx.fill();
-    }
     if (motion.headerAlpha > 0.02) {
-      ctx.font = '600 12px ' + font;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.globalAlpha = motion.headerAlpha * motion.appear;
+      lctx.font = '600 12px ' + font;
+      lctx.textAlign = 'center';
+      lctx.textBaseline = 'middle';
+      lctx.globalAlpha = motion.headerAlpha;
       for (const [cluster, pos] of Object.entries(data.headers)) {
-        const p = toScreen(pos[0], pos[1]);
-        const faded = island && island !== cluster;
+        const p = project(new THREE.Vector3(pos[0], (data.heights[cluster] || 0) + 18, pos[1]));
+        if (p.behind) continue;
         const title = data.labels[cluster].toUpperCase();
-        const tw = ctx.measureText(title).width;
+        const tw = lctx.measureText(title).width;
         placed.push({ x: p.x - tw / 2 - 6, y: p.y - 9, w: tw + 12, h: 18 });
-        ctx.fillStyle = faded ? '#4a453c' : '#d2c9b4';
-        ctx.fillText(title, p.x, p.y);
+        lctx.fillStyle = island && island !== cluster ? '#4a453c' : '#d2c9b4';
+        lctx.fillText(title, p.x, p.y);
       }
-      ctx.globalAlpha = 1;
+      lctx.globalAlpha = 1;
     }
-    const zoomed = view.scale >= 1.08;
-    for (const e of data.edges) {
-      const a = byId[e.source], b = byId[e.target];
-      const bridge = e.source === 'agent-operating-system' || e.target === 'agent-operating-system';
-      const relatedEdge = !!(focus && keep.has(a.id) && keep.has(b.id));
-      if (!zoomed && !e.intra && !bridge && !relatedEdge) continue;
-      const pa = nodePos(a);
-      const pb = nodePos(b);
-      const p = toScreen(pa.x, pa.y);
-      const q = toScreen(pb.x, pb.y);
-      const c = toScreen(e.cx, e.cy);
-      const hot = focus && keep.has(a.id) && keep.has(b.id);
-      const dim = (focus && !hot) || (query && !(matches(a) || matches(b))) || (island && a.cluster !== island && b.cluster !== island);
-      ctx.strokeStyle = hot ? 'rgba(198,163,90,0.98)' : e.intra ? '#ddd4bf' : '#b4aa97';
-      ctx.lineWidth = hot ? 2.4 : e.intra ? 2.05 : 1.55;
-      ctx.globalAlpha = (dim ? 0.16 : 0.94) * Math.min(pa.t, pb.t);
-      ctx.beginPath();
-      ctx.moveTo(p.x, p.y);
-      ctx.quadraticCurveTo(c.x, c.y, q.x, q.y);
-      ctx.stroke();
-      ctx.globalAlpha = 1;
-    }
-    for (const n of nodes) {
-      const np = nodePos(n);
-      const p = toScreen(np.x, np.y);
-      const r = radius(n) * Math.max(view.scale, 0.8) * (0.35 + 0.65 * np.t);
-      const color = data.colors[n.type] || '#8b8478';
-      const on = !focus || keep.has(n.id);
-      const shown = matches(n) && (!island || n.cluster === island);
-      const hotNode = n === selected || n === hover;
-      ctx.globalAlpha = (shown ? (on ? 1 : 0.2) : 0.08) * np.t;
-      if (hotNode) {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, r + 6 + 10 * motion.hoverAmt, 0, Math.PI * 2);
-        ctx.fillStyle = color + '33';
-        ctx.fill();
-      }
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, r * (hotNode ? 1 + 0.18 * motion.hoverAmt : 1), 0, Math.PI * 2);
-      ctx.fillStyle = color;
-      ctx.fill();
-      ctx.lineWidth = 1.2;
-      ctx.strokeStyle = 'rgba(9,11,16,0.55)';
-      ctx.stroke();
-      ctx.globalAlpha = 1;
-    }
+    const focus = selected || hover;
     const candidates = [];
     for (const n of nodes) {
       const must = n === hover || n === selected || (!!query && matches(n));
@@ -455,20 +444,21 @@
       candidates.push({ n, must, deg: (adj.get(n.id) || []).length });
     }
     candidates.sort((a, b) => Number(b.must) - Number(a.must) || b.deg - a.deg);
-    let shownLabels = 0;
+    let shown = 0;
     const labeled = [];
     for (const item of candidates) {
       const n = item.n;
-      if (!item.must && shownLabels >= 12) continue;
-      if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) * view.scale < 78)) continue;
-      const np = nodePos(n);
-      const p = toScreen(np.x, np.y);
-      const r = radius(n) * Math.max(view.scale, 0.8);
-      ctx.font = (n === selected || n === hover ? '600 ' : '') + '12px ' + font;
-      ctx.textAlign = 'left';
-      ctx.textBaseline = 'middle';
+      if (!item.must && shown >= 12) continue;
+      if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) < 70)) continue;
+      const mesh = meshes[n.id];
+      const p = project(mesh.position);
+      if (p.behind) continue;
+      lctx.font = (item.must ? '600 ' : '') + '12px ' + font;
+      lctx.textAlign = 'left';
+      lctx.textBaseline = 'middle';
       const label = n.title;
-      const tw = ctx.measureText(label).width;
+      const tw = lctx.measureText(label).width;
+      const r = 10;
       const slots = [
         [p.x + r + 8, p.y],
         [p.x - tw - r - 8, p.y],
@@ -485,105 +475,131 @@
       if (!box) continue;
       placed.push(box);
       labeled.push(n);
-      shownLabels += 1;
-      ctx.globalAlpha = item.must ? 1 : motion.labelAlpha;
-      ctx.fillStyle = 'rgba(9,11,16,0.82)';
-      ctx.beginPath();
-      ctx.roundRect(box.x, box.y, box.w, box.h, 6);
-      ctx.fill();
-      ctx.fillStyle = n === selected || n === hover ? '#f8f4ea' : '#ddd6c8';
-      ctx.fillText(label, box.lx, box.ly);
-      ctx.globalAlpha = 1;
+      shown += 1;
+      lctx.globalAlpha = item.must ? 1 : motion.labelAlpha;
+      lctx.fillStyle = 'rgba(9,11,16,0.82)';
+      lctx.beginPath();
+      lctx.roundRect(box.x, box.y, box.w, box.h, 6);
+      lctx.fill();
+      lctx.fillStyle = item.must ? '#f8f4ea' : '#ddd6c8';
+      lctx.fillText(label, box.lx, box.ly);
+      lctx.globalAlpha = 1;
     }
+  }
+  function paintGraph() {
+    const focus = selected || hover;
+    const keep = related(focus);
+    const zoomed = camDist() < 250;
+    for (const tube of tubes) {
+      const a = byId[tube.userData.source];
+      const b = byId[tube.userData.target];
+      const relatedEdge = !!(focus && keep.has(a.id) && keep.has(b.id));
+      const show = zoomed || tube.userData.intra || tube.userData.bridge || relatedEdge;
+      const dim = (focus && !relatedEdge) || (query && !(matches(a) || matches(b))) || (island && a.cluster !== island && b.cluster !== island);
+      tube.material.opacity = show ? (dim ? 0.12 : 0.92) : 0.04;
+      tube.material.emissiveIntensity = relatedEdge ? 0.55 : (tube.userData.intra ? 0.22 : 0.12);
+    }
+    for (const n of nodes) {
+      const mesh = meshes[n.id];
+      const on = !focus || keep.has(n.id);
+      const shown = matches(n) && (!island || n.cluster === island);
+      mesh.material.opacity = 1;
+      mesh.material.transparent = !shown || !on;
+      mesh.material.opacity = shown ? (on ? 1 : 0.22) : 0.08;
+      const hot = n === selected || n === hover;
+      const pulse = hot ? 1 + 0.2 * motion.hoverAmt : 1;
+      mesh.scale.setScalar(mesh.userData.base * pulse);
+      mesh.material.emissiveIntensity = hot ? 0.16 + 0.7 * motion.hoverAmt : 0.16;
+    }
+    for (const [cluster, glow] of Object.entries(glowMeshes)) {
+      glow.material.opacity = island && island !== cluster ? 0.02 : 0.055;
+    }
+  }
+  const raycaster = new THREE.Raycaster();
+  const pointer = new THREE.Vector2();
+  function hit(ev) {
+    pointer.x = (ev.clientX / window.innerWidth) * 2 - 1;
+    pointer.y = -(ev.clientY / window.innerHeight) * 2 + 1;
+    raycaster.setFromCamera(pointer, camera);
+    const hits = raycaster.intersectObjects(Object.values(meshes), false);
+    if (!hits.length) return null;
+    return byId[hits[0].object.userData.id] || null;
+  }
+  function tick() {
+    controls.update();
+    syncLod();
+    paintGraph();
+    renderer.render(scene, camera);
+    drawLabels();
+    requestAnimationFrame(tick);
   }
   function resize() {
-    canvas.width = window.innerWidth * devicePixelRatio;
-    canvas.height = window.innerHeight * devicePixelRatio;
-    draw();
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    labelCanvas.width = window.innerWidth * devicePixelRatio;
+    labelCanvas.height = window.innerHeight * devicePixelRatio;
   }
-  function zoomAt(mx, my, factor) {
-    const cur = view.scale;
-    const nextScale = Math.min(2.8, Math.max(0.35, cur * factor));
-    const worldX = (mx - cx() - view.x) / cur;
-    const worldY = (my - cy() - view.y) / cur;
-    animateCamera({
-      scale: nextScale,
-      x: mx - cx() - worldX * nextScale,
-      y: my - cy() - worldY * nextScale
-    }, 0.28);
-  }
-  window.addEventListener('resize', () => { resize(); });
-  canvas.addEventListener('wheel', (ev) => {
-    ev.preventDefault();
-    zoomAt(ev.clientX, ev.clientY, ev.deltaY < 0 ? 1.08 : 0.92);
-  }, { passive: false });
-  canvas.addEventListener('pointerdown', (ev) => {
-    drag = { x: ev.clientX, y: ev.clientY, vx: view.x, vy: view.y };
-    moved = false;
-    canvas.classList.add('grabbing');
-    canvas.setPointerCapture(ev.pointerId);
-  });
-  canvas.addEventListener('pointermove', (ev) => {
-    if (drag) {
-      const dx = ev.clientX - drag.x;
-      const dy = ev.clientY - drag.y;
-      if (Math.hypot(dx, dy) > 3) moved = true;
-      view.x = drag.vx + dx;
-      view.y = drag.vy + dy;
-      draw();
-      return;
-    }
-    const next = hit(ev.clientX, ev.clientY);
-    canvas.classList.toggle('hot', !!next);
+  window.addEventListener('resize', resize);
+  renderer.domElement.addEventListener('pointerdown', () => { moved = false; stage.classList.add('grabbing'); });
+  renderer.domElement.addEventListener('pointermove', (ev) => {
+    if (ev.buttons) moved = true;
+    const next = hit(ev);
+    stage.classList.toggle('hot', !!next);
     if ((next && next.id) !== (hover && hover.id)) {
       hover = next;
-      tween(motion, { hoverAmt: next ? 1 : 0, duration: 0.22, ease: 'power2.out', overwrite: 'auto', onUpdate: draw });
+      tween(motion, { hoverAmt: next ? 1 : 0, duration: 0.22, ease: 'power2.out', overwrite: 'auto' });
       if (!selected) show(hover);
     }
-    draw();
   });
-  canvas.addEventListener('pointerup', (ev) => {
-    canvas.classList.remove('grabbing');
-    drag = null;
+  renderer.domElement.addEventListener('pointerup', (ev) => {
+    stage.classList.remove('grabbing');
     if (moved) return;
-    const n = hit(ev.clientX, ev.clientY);
+    const n = hit(ev);
     selected = n && selected && selected.id === n.id ? null : n;
     show(selected || hover);
-    draw();
   });
-  canvas.addEventListener('pointerleave', () => {
+  renderer.domElement.addEventListener('pointerleave', () => {
     hover = null;
-    tween(motion, { hoverAmt: 0, duration: 0.2, ease: 'power2.out', overwrite: 'auto', onUpdate: draw });
+    tween(motion, { hoverAmt: 0, duration: 0.2, ease: 'power2.out', overwrite: 'auto' });
     if (!selected) show(null);
-    draw();
   });
   document.getElementById('q').addEventListener('input', (ev) => {
     query = ev.target.value.trim().toLowerCase();
     const hits = nodes.filter(matches);
     document.getElementById('count').textContent = query ? hits.length + ' match' : nodes.length + ' pages';
     if (hits.length === 1) { selected = hits[0]; show(selected); }
-    draw();
   });
-  document.getElementById('zoom-in').addEventListener('click', () => zoomAt(cx(), cy(), 1.15));
-  document.getElementById('zoom-out').addEventListener('click', () => zoomAt(cx(), cy(), 0.87));
-  document.getElementById('fit').addEventListener('click', () => {
-    animateCamera(fitTarget(island ? nodes.filter(n => n.cluster === island) : nodes), 0.7);
-  });
+  document.getElementById('zoom-in').addEventListener('click', () => dolly(0.82));
+  document.getElementById('zoom-out').addEventListener('click', () => dolly(1.2));
+  document.getElementById('fit').addEventListener('click', () => fitIsland(island));
   window.addEventListener('keydown', (ev) => {
-    if (ev.key === 'Escape') { selected = null; show(hover); draw(); }
-    if (ev.key === '0') animateCamera(fitTarget(nodes), 0.7);
-    if (ev.key === '+' || ev.key === '=') zoomAt(cx(), cy(), 1.15);
-    if (ev.key === '-' || ev.key === '_') zoomAt(cx(), cy(), 0.87);
+    if (ev.key === 'Escape') { selected = null; show(hover); }
+    if (ev.key === '0') fitIsland('');
+    if (ev.key === '+' || ev.key === '=') dolly(0.82);
+    if (ev.key === '-' || ev.key === '_') dolly(1.2);
   });
+
   show(null);
-  const start = fitTarget(nodes);
-  applyView({ scale: start.scale * 0.78, x: start.x, y: start.y });
-  lodOpen = false;
-  motion.headerAlpha = 1;
-  motion.labelAlpha = 0;
   resize();
-  tween(motion, { appear: 1, duration: 1.12, ease: 'power3.out', onUpdate: draw });
-  animateCamera(start, 1.18);
+  const delay = { bridge: 0, compile: 0.08, memory: 0.14, verification: 0.2, harness: 0.26, 'hunt-ship': 0.32, nav: 0.38 };
+  for (const n of nodes) {
+    const mesh = meshes[n.id];
+    tween(mesh.scale, {
+      x: mesh.userData.base,
+      y: mesh.userData.base,
+      z: mesh.userData.base,
+      duration: 0.7,
+      delay: delay[n.cluster] || 0,
+      ease: 'back.out(1.6)'
+    });
+  }
+  for (const tube of tubes) {
+    tween(tube.material, { opacity: 0.9, duration: 0.8, delay: 0.35, ease: 'power2.out' });
+  }
+  camera.position.set(40, 280, 480);
+  tween(camera.position, { x: 55, y: 168, z: 310, duration: 1.25, ease: 'power3.out' });
+  tick();
   </script>
 </body>
 </html>

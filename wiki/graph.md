@@ -45,7 +45,7 @@ Home stays the door. agent-operating-system sits in the middle as the synthesis.
 
 ## Snapshot
 
-Open `output/obsidian-graph.html` if you are not in Obsidian. Dark page: zoom, pan, hover or click a node for title and wiki path. GSAP eases the camera, appear, hover, and LoD fades. Macro zoom shows island headers. Node labels appear on zoom-in without overlap. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. See [[graph-ui-2026-08-24]].
+Open `output/obsidian-graph.html` if you are not in Obsidian. three.js orbit and depth. GSAP eases camera, appear, hover, and LoD fades. Macro zoom shows island headers. Node labels appear when closer, without overlap. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. See [[graph-ui-2026-08-24]].
 
 <!-- graph-mermaid:begin -->
 ```mermaid

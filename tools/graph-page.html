@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Second brain · concept clusters</title>
+  <style>
+    :root {
+      --bg: #090b10;
+      --ink: #f4efe4;
+      --muted: #9a9386;
+      --dim: #6d675c;
+      --panel: rgba(14, 16, 22, 0.78);
+      --stroke: rgba(255, 255, 255, 0.08);
+      --gold: #c6a35a;
+      --font: "Segoe UI Variable", "SF Pro Text", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+      --mono: "SF Mono", "Cascadia Code", ui-monospace, Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--font); }
+    body { overflow: hidden; }
+    #stage { position: fixed; inset: 0; z-index: 0; cursor: grab; }
+    #stage.grabbing { cursor: grabbing; }
+    #stage.hot { cursor: pointer; }
+    #labels { position: fixed; inset: 0; z-index: 1; pointer-events: none; }
+    .vignette {
+      position: fixed; inset: 0; pointer-events: none; z-index: 2;
+      background:
+        radial-gradient(1100px 640px at 50% 42%, transparent 42%, rgba(0,0,0,0.42) 100%),
+        linear-gradient(180deg, rgba(9,11,16,0.22), transparent 16%, transparent 84%, rgba(9,11,16,0.35));
+    }
+    .bar, .rail, .card, .hint, .tools {
+      position: fixed; z-index: 3;
+      background: var(--panel);
+      border: 1px solid var(--stroke);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    .bar {
+      top: 16px; left: 16px; right: 16px;
+      display: flex; align-items: center; gap: 22px;
+      min-height: 64px; padding: 10px 14px 10px 16px;
+      border-radius: 16px;
+    }
+    .brand { min-width: 220px; }
+    .kicker {
+      margin: 0 0 3px;
+      color: var(--gold);
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.16em; text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.02em; }
+    .legend { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; }
+    .swatch {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 5px 10px; border-radius: 999px;
+      border: 1px solid var(--stroke); color: var(--muted); font-size: 12px;
+    }
+    .swatch i { width: 8px; height: 8px; border-radius: 50%; display: block; }
+    .search {
+      display: flex; align-items: center; gap: 8px;
+      min-width: 240px; padding: 8px 12px; border-radius: 12px;
+      border: 1px solid var(--stroke); background: rgba(255,255,255,0.03);
+    }
+    .search input {
+      flex: 1; border: 0; outline: 0; background: transparent;
+      color: var(--ink); font: inherit; font-size: 13px;
+    }
+    .search input::placeholder { color: var(--dim); }
+    .count { color: var(--dim); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .rail {
+      top: 96px; left: 16px; width: 176px;
+      padding: 12px; border-radius: 16px;
+    }
+    .rail button, .tools button {
+      appearance: none; border: 0; background: transparent;
+      color: var(--muted); font: inherit; text-align: left; cursor: pointer;
+    }
+    .rail button {
+      display: flex; justify-content: space-between; align-items: center;
+      width: 100%; padding: 7px 8px; border-radius: 10px; font-size: 13px;
+    }
+    .rail button:hover, .rail button.active { background: rgba(255,255,255,0.05); color: var(--ink); }
+    .rail button span { color: var(--dim); font-size: 11px; font-variant-numeric: tabular-nums; }
+    .card {
+      top: 96px; right: 16px; width: 320px;
+      padding: 16px 16px 14px; border-radius: 16px;
+      min-height: 168px;
+    }
+    .card h2 { margin: 0 0 6px; font-size: 20px; letter-spacing: -0.03em; line-height: 1.2; }
+    .path {
+      margin: 0 0 14px; color: var(--gold);
+      font-family: var(--mono); font-size: 11px; word-break: break-all;
+    }
+    .meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+    .meta div { padding: 8px 10px; border-radius: 10px; background: rgba(255,255,255,0.03); }
+    .meta dt { color: var(--dim); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .meta dd { margin: 3px 0 0; font-size: 13px; }
+    .empty { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .links { list-style: none; margin: 0; padding: 0; }
+    .links li { margin: 0; }
+    .links button {
+      appearance: none; border: 0; background: transparent;
+      color: var(--ink); font: inherit; font-size: 13px;
+      padding: 5px 0; cursor: pointer; text-align: left; width: 100%;
+    }
+    .links button:hover { color: var(--gold); }
+    .tools {
+      bottom: 16px; right: 16px; display: flex; gap: 4px;
+      padding: 6px; border-radius: 14px;
+    }
+    .tools button {
+      width: 36px; height: 36px; border-radius: 10px;
+      text-align: center; font-size: 16px; color: var(--ink);
+    }
+    .tools button:hover { background: rgba(255,255,255,0.06); }
+    .hint {
+      bottom: 16px; left: 50%; transform: translateX(-50%);
+      padding: 8px 14px; border-radius: 999px;
+      color: var(--muted); font-size: 12px; white-space: nowrap;
+    }
+    @media (max-width: 980px) {
+      .legend, .rail, .hint { display: none; }
+      .card { width: calc(100% - 32px); top: auto; bottom: 72px; }
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three.module.min.js",
+      "three/addons/controls/OrbitControls.js": "./vendor/OrbitControls.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="stage"></div>
+  <canvas id="labels"></canvas>
+  <div class="vignette"></div>
+  <header class="bar">
+    <div class="brand">
+      <p class="kicker">Compiled wiki</p>
+      <h1>Second brain</h1>
+    </div>
+    <div class="legend" id="legend"></div>
+    <label class="search">
+      <input id="q" type="search" placeholder="Find a page" autocomplete="off"/>
+      <span class="count" id="count"></span>
+    </label>
+  </header>
+  <nav class="rail" id="islands"></nav>
+  <aside class="card" id="card">
+    <p class="kicker" id="card-kicker">Page</p>
+    <h2 id="card-title">Concept clusters</h2>
+    <p class="path" id="card-path">Hover or click a node</p>
+    <div class="meta" id="card-meta" hidden>
+      <div><dt>Island</dt><dd id="card-island"></dd></div>
+      <div><dt>Type</dt><dd id="card-type"></dd></div>
+    </div>
+    <p class="empty" id="card-empty">Islands follow the five agent-operating-system layers. Color is folder family: gold wiki, teal maps, blue hunt/sources, green people, coral ship.</p>
+    <ul class="links" id="card-links"></ul>
+  </aside>
+  <div class="tools">
+    <button type="button" id="zoom-out" title="Zoom out">−</button>
+    <button type="button" id="zoom-in" title="Zoom in">+</button>
+    <button type="button" id="fit" title="Fit graph">⤢</button>
+  </div>
+  <p class="hint">Drag to orbit · Scroll to zoom · Labels appear when closer</p>
+  <script src="vendor/gsap.min.js"></script>
+  <script type="module">
+  import * as THREE from 'three';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+  const data = __GRAPH_DATA__;
+  const stage = document.getElementById('stage');
+  const labelCanvas = document.getElementById('labels');
+  const lctx = labelCanvas.getContext('2d');
+  const nodes = data.nodes;
+  const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const adj = new Map();
+  for (const e of data.edges) {
+    if (!adj.has(e.source)) adj.set(e.source, []);
+    if (!adj.has(e.target)) adj.set(e.target, []);
+    adj.get(e.source).push(e.target);
+    adj.get(e.target).push(e.source);
+  }
+  const motion = { headerAlpha: 1, labelAlpha: 0, hoverAmt: 0 };
+  let hover = null;
+  let selected = null;
+  let query = '';
+  let island = '';
+  let lodOpen = false;
+  let moved = false;
+  const clusterOrder = ['bridge', 'compile', 'memory', 'verification', 'harness', 'hunt-ship', 'nav'];
+
+  function hasGsap() { return typeof gsap !== 'undefined'; }
+  function tween(target, vars) {
+    if (hasGsap()) return gsap.to(target, vars);
+    const skip = { duration: 1, ease: 1, onUpdate: 1, onComplete: 1, overwrite: 1 };
+    for (const [key, val] of Object.entries(vars)) {
+      if (!skip[key]) target[key] = val;
+    }
+    if (vars.onUpdate) vars.onUpdate();
+    if (vars.onComplete) vars.onComplete();
+    return null;
+  }
+  function worldOf(n) {
+    return new THREE.Vector3(n.x, n.z || 0, n.y);
+  }
+  function nodeRadius(n) {
+    if (n.id === 'agent-operating-system') return 7.2;
+    if (n.id === 'Home') return 5.8;
+    if (n.type === 'concept' || n.type === 'meta') return 4.6;
+    return 3.8;
+  }
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x090b10);
+  scene.fog = new THREE.Fog(0x090b10, 220, 760);
+  const camera = new THREE.PerspectiveCamera(46, window.innerWidth / window.innerHeight, 1, 2000);
+  camera.position.set(70, 210, 360);
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  stage.appendChild(renderer.domElement);
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.07;
+  controls.minDistance = 90;
+  controls.maxDistance = 640;
+  controls.maxPolarAngle = Math.PI * 0.49;
+  controls.target.set(0, 8, 10);
+  scene.add(new THREE.AmbientLight(0x8a8478, 0.9));
+  const key = new THREE.DirectionalLight(0xf4efe4, 1.15);
+  key.position.set(90, 240, 130);
+  scene.add(key);
+  const fill = new THREE.PointLight(0xc6a35a, 0.4, 700);
+  fill.position.set(-50, 90, 40);
+  scene.add(fill);
+  const rim = new THREE.DirectionalLight(0x6f9e92, 0.28);
+  rim.position.set(-120, 40, -80);
+  scene.add(rim);
+
+  const meshes = {};
+  const tubes = [];
+  const glowMeshes = {};
+  const sphereGeo = new THREE.SphereGeometry(1, 24, 18);
+  for (const [cluster, spec] of Object.entries(data.centers)) {
+    const glow = new THREE.Mesh(
+      new THREE.SphereGeometry(spec[2] * 0.92, 24, 16),
+      new THREE.MeshBasicMaterial({
+        color: 0xc6a35a,
+        transparent: true,
+        opacity: 0.055,
+        depthWrite: false
+      })
+    );
+    glow.position.set(spec[0], data.heights[cluster] || 0, spec[1]);
+    glow.scale.y = 0.42;
+    scene.add(glow);
+    glowMeshes[cluster] = glow;
+  }
+  for (const n of nodes) {
+    const color = new THREE.Color(data.colors[n.type] || '#8b8478');
+    const mat = new THREE.MeshStandardMaterial({
+      color,
+      roughness: 0.38,
+      metalness: 0.22,
+      emissive: color,
+      emissiveIntensity: 0.16
+    });
+    const mesh = new THREE.Mesh(sphereGeo, mat);
+    mesh.position.copy(worldOf(n));
+    const r = nodeRadius(n);
+    mesh.scale.setScalar(0.001);
+    mesh.userData = { id: n.id, base: r, color };
+    scene.add(mesh);
+    meshes[n.id] = mesh;
+  }
+  for (const e of data.edges) {
+    const a = byId[e.source], b = byId[e.target];
+    const p0 = worldOf(a);
+    const p2 = worldOf(b);
+    const p1 = new THREE.Vector3(e.cx, ((a.z || 0) + (b.z || 0)) / 2 + (e.intra ? 10 : 16), e.cy);
+    const curve = new THREE.QuadraticBezierCurve3(p0, p1, p2);
+    const tube = new THREE.Mesh(
+      new THREE.TubeGeometry(curve, 14, e.intra ? 0.72 : 0.48, 6, false),
+      new THREE.MeshStandardMaterial({
+        color: e.intra ? 0xddd4bf : 0xb4aa97,
+        roughness: 0.5,
+        metalness: 0.12,
+        emissive: 0x3a342c,
+        emissiveIntensity: e.intra ? 0.22 : 0.12,
+        transparent: true,
+        opacity: 0
+      })
+    );
+    tube.userData = { intra: e.intra, source: e.source, target: e.target, bridge: e.source === 'agent-operating-system' || e.target === 'agent-operating-system' };
+    scene.add(tube);
+    tubes.push(tube);
+  }
+
+  const legend = document.getElementById('legend');
+  for (const item of data.legend) {
+    const el = document.createElement('span');
+    el.className = 'swatch';
+    el.innerHTML = '<i style="background:' + item.color + '"></i>' + item.label;
+    legend.appendChild(el);
+  }
+  const islands = document.getElementById('islands');
+  const islandCounts = {};
+  for (const n of nodes) islandCounts[n.cluster] = (islandCounts[n.cluster] || 0) + 1;
+  for (const [id, label] of Object.entries(data.labels)) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.dataset.island = id;
+    btn.innerHTML = label + '<span>' + (islandCounts[id] || 0) + '</span>';
+    btn.addEventListener('click', () => {
+      island = island === id ? '' : id;
+      for (const b of islands.querySelectorAll('button')) {
+        b.classList.toggle('active', b.dataset.island === island);
+      }
+      fitIsland(island);
+    });
+    islands.appendChild(btn);
+  }
+  document.getElementById('count').textContent = nodes.length + ' pages';
+
+  function matches(n) {
+    if (!query) return true;
+    return (n.title + ' ' + n.id + ' ' + n.path).toLowerCase().includes(query);
+  }
+  function related(n) {
+    if (!n) return new Set();
+    return new Set([n.id, ...(adj.get(n.id) || [])]);
+  }
+  function show(n) {
+    document.getElementById('card-kicker').textContent = n ? 'Selected page' : 'Page';
+    document.getElementById('card-title').textContent = n ? n.title : 'Concept clusters';
+    document.getElementById('card-path').textContent = n ? n.path : 'Hover or click a node';
+    document.getElementById('card-meta').hidden = !n;
+    document.getElementById('card-empty').hidden = !!n;
+    document.getElementById('card-island').textContent = n ? (data.labels[n.cluster] || n.cluster) : '';
+    document.getElementById('card-type').textContent = n ? (data.types[n.type] || n.type) : '';
+    const list = document.getElementById('card-links');
+    list.innerHTML = '';
+    if (!n) return;
+    for (const id of (adj.get(n.id) || [])) {
+      const other = byId[id];
+      if (!other) continue;
+      const li = document.createElement('li');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = other.title;
+      btn.addEventListener('click', () => { selected = other; show(other); });
+      li.appendChild(btn);
+      list.appendChild(li);
+    }
+  }
+  function camDist() {
+    return camera.position.distanceTo(controls.target);
+  }
+  function syncLod() {
+    const open = camDist() < 250 || !!query;
+    if (open === lodOpen) return;
+    lodOpen = open;
+    tween(motion, {
+      headerAlpha: open ? 0 : 1,
+      labelAlpha: open ? 1 : 0,
+      duration: 0.36,
+      ease: 'power2.out',
+      overwrite: 'auto'
+    });
+  }
+  function fitBox(ids, duration) {
+    const box = new THREE.Box3();
+    const use = ids && ids.length ? ids : nodes.map(n => n.id);
+    for (const id of use) {
+      if (meshes[id]) box.expandByObject(meshes[id]);
+    }
+    if (box.isEmpty()) return;
+    const center = box.getCenter(new THREE.Vector3());
+    const size = Math.max(box.getSize(new THREE.Vector3()).length(), 80);
+    const dist = Math.min(520, Math.max(200, size * 0.95));
+    const pos = center.clone().add(new THREE.Vector3(dist * 0.28, dist * 0.42, dist * 0.82));
+    tween(camera.position, { x: pos.x, y: pos.y, z: pos.z, duration, ease: 'power3.out', overwrite: 'auto' });
+    tween(controls.target, { x: center.x, y: center.y, z: center.z, duration, ease: 'power3.out', overwrite: 'auto' });
+  }
+  function fitIsland(id) {
+    if (!id) {
+      fitBox(null, 0.8);
+      return;
+    }
+    fitBox(nodes.filter(n => n.cluster === id).map(n => n.id), 0.75);
+  }
+  function dolly(factor) {
+    const dir = camera.position.clone().sub(controls.target);
+    const next = Math.min(controls.maxDistance, Math.max(controls.minDistance, dir.length() * factor));
+    dir.setLength(next);
+    const pos = controls.target.clone().add(dir);
+    tween(camera.position, { x: pos.x, y: pos.y, z: pos.z, duration: 0.28, ease: 'power3.out', overwrite: 'auto' });
+  }
+  function overlap(a, b) {
+    const p = 6;
+    return !(a.x + a.w + p < b.x || b.x + b.w + p < a.x || a.y + a.h + p < b.y || b.y + b.h + p < a.y);
+  }
+  function project(vec) {
+    const v = vec.clone().project(camera);
+    return {
+      x: (v.x * 0.5 + 0.5) * window.innerWidth,
+      y: (-v.y * 0.5 + 0.5) * window.innerHeight,
+      behind: v.z > 1
+    };
+  }
+  function drawLabels() {
+    lctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+    lctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    const font = getComputedStyle(document.body).fontFamily;
+    const placed = [];
+    if (motion.headerAlpha > 0.02) {
+      lctx.font = '600 12px ' + font;
+      lctx.textAlign = 'center';
+      lctx.textBaseline = 'middle';
+      lctx.globalAlpha = motion.headerAlpha;
+      for (const [cluster, pos] of Object.entries(data.headers)) {
+        const p = project(new THREE.Vector3(pos[0], (data.heights[cluster] || 0) + 18, pos[1]));
+        if (p.behind) continue;
+        const title = data.labels[cluster].toUpperCase();
+        const tw = lctx.measureText(title).width;
+        placed.push({ x: p.x - tw / 2 - 6, y: p.y - 9, w: tw + 12, h: 18 });
+        lctx.fillStyle = island && island !== cluster ? '#4a453c' : '#d2c9b4';
+        lctx.fillText(title, p.x, p.y);
+      }
+      lctx.globalAlpha = 1;
+    }
+    const focus = selected || hover;
+    const candidates = [];
+    for (const n of nodes) {
+      const must = n === hover || n === selected || (!!query && matches(n));
+      if (!must && motion.labelAlpha < 0.08) continue;
+      if (!matches(n) && !must) continue;
+      if (island && n.cluster !== island && !must) continue;
+      candidates.push({ n, must, deg: (adj.get(n.id) || []).length });
+    }
+    candidates.sort((a, b) => Number(b.must) - Number(a.must) || b.deg - a.deg);
+    let shown = 0;
+    const labeled = [];
+    for (const item of candidates) {
+      const n = item.n;
+      if (!item.must && shown >= 12) continue;
+      if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) < 70)) continue;
+      const mesh = meshes[n.id];
+      const p = project(mesh.position);
+      if (p.behind) continue;
+      lctx.font = (item.must ? '600 ' : '') + '12px ' + font;
+      lctx.textAlign = 'left';
+      lctx.textBaseline = 'middle';
+      const label = n.title;
+      const tw = lctx.measureText(label).width;
+      const r = 10;
+      const slots = [
+        [p.x + r + 8, p.y],
+        [p.x - tw - r - 8, p.y],
+        [p.x - tw / 2, p.y - r - 16],
+        [p.x - tw / 2, p.y + r + 16],
+        [p.x + r + 8, p.y - 18],
+        [p.x + r + 8, p.y + 18]
+      ];
+      let box = null;
+      for (const [lx, ly] of slots) {
+        const rect = { x: lx - 5, y: ly - 9, w: tw + 10, h: 18, lx, ly };
+        if (!placed.some(prev => overlap(prev, rect))) { box = rect; break; }
+      }
+      if (!box) continue;
+      placed.push(box);
+      labeled.push(n);
+      shown += 1;
+      lctx.globalAlpha = item.must ? 1 : motion.labelAlpha;
+      lctx.fillStyle = 'rgba(9,11,16,0.82)';
+      lctx.beginPath();
+      lctx.roundRect(box.x, box.y, box.w, box.h, 6);
+      lctx.fill();
+      lctx.fillStyle = item.must ? '#f8f4ea' : '#ddd6c8';
+      lctx.fillText(label, box.lx, box.ly);
+      lctx.globalAlpha = 1;
+    }
+  }
+  function paintGraph() {
+    const focus = selected || hover;
+    const keep = related(focus);
+    const zoomed = camDist() < 250;
+    for (const tube of tubes) {
+      const a = byId[tube.userData.source];
+      const b = byId[tube.userData.target];
+      const relatedEdge = !!(focus && keep.has(a.id) && keep.has(b.id));
+      const show = zoomed || tube.userData.intra || tube.userData.bridge || relatedEdge;
+      const dim = (focus && !relatedEdge) || (query && !(matches(a) || matches(b))) || (island && a.cluster !== island && b.cluster !== island);
+      tube.material.opacity = show ? (dim ? 0.12 : 0.92) : 0.04;
+      tube.material.emissiveIntensity = relatedEdge ? 0.55 : (tube.userData.intra ? 0.22 : 0.12);
+    }
+    for (const n of nodes) {
+      const mesh = meshes[n.id];
+      const on = !focus || keep.has(n.id);
+      const shown = matches(n) && (!island || n.cluster === island);
+      mesh.material.opacity = 1;
+      mesh.material.transparent = !shown || !on;
+      mesh.material.opacity = shown ? (on ? 1 : 0.22) : 0.08;
+      const hot = n === selected || n === hover;
+      const pulse = hot ? 1 + 0.2 * motion.hoverAmt : 1;
+      mesh.scale.setScalar(mesh.userData.base * pulse);
+      mesh.material.emissiveIntensity = hot ? 0.16 + 0.7 * motion.hoverAmt : 0.16;
+    }
+    for (const [cluster, glow] of Object.entries(glowMeshes)) {
+      glow.material.opacity = island && island !== cluster ? 0.02 : 0.055;
+    }
+  }
+  const raycaster = new THREE.Raycaster();
+  const pointer = new THREE.Vector2();
+  function hit(ev) {
+    pointer.x = (ev.clientX / window.innerWidth) * 2 - 1;
+    pointer.y = -(ev.clientY / window.innerHeight) * 2 + 1;
+    raycaster.setFromCamera(pointer, camera);
+    const hits = raycaster.intersectObjects(Object.values(meshes), false);
+    if (!hits.length) return null;
+    return byId[hits[0].object.userData.id] || null;
+  }
+  function tick() {
+    controls.update();
+    syncLod();
+    paintGraph();
+    renderer.render(scene, camera);
+    drawLabels();
+    requestAnimationFrame(tick);
+  }
+  function resize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    labelCanvas.width = window.innerWidth * devicePixelRatio;
+    labelCanvas.height = window.innerHeight * devicePixelRatio;
+  }
+  window.addEventListener('resize', resize);
+  renderer.domElement.addEventListener('pointerdown', () => { moved = false; stage.classList.add('grabbing'); });
+  renderer.domElement.addEventListener('pointermove', (ev) => {
+    if (ev.buttons) moved = true;
+    const next = hit(ev);
+    stage.classList.toggle('hot', !!next);
+    if ((next && next.id) !== (hover && hover.id)) {
+      hover = next;
+      tween(motion, { hoverAmt: next ? 1 : 0, duration: 0.22, ease: 'power2.out', overwrite: 'auto' });
+      if (!selected) show(hover);
+    }
+  });
+  renderer.domElement.addEventListener('pointerup', (ev) => {
+    stage.classList.remove('grabbing');
+    if (moved) return;
+    const n = hit(ev);
+    selected = n && selected && selected.id === n.id ? null : n;
+    show(selected || hover);
+  });
+  renderer.domElement.addEventListener('pointerleave', () => {
+    hover = null;
+    tween(motion, { hoverAmt: 0, duration: 0.2, ease: 'power2.out', overwrite: 'auto' });
+    if (!selected) show(null);
+  });
+  document.getElementById('q').addEventListener('input', (ev) => {
+    query = ev.target.value.trim().toLowerCase();
+    const hits = nodes.filter(matches);
+    document.getElementById('count').textContent = query ? hits.length + ' match' : nodes.length + ' pages';
+    if (hits.length === 1) { selected = hits[0]; show(selected); }
+  });
+  document.getElementById('zoom-in').addEventListener('click', () => dolly(0.82));
+  document.getElementById('zoom-out').addEventListener('click', () => dolly(1.2));
+  document.getElementById('fit').addEventListener('click', () => fitIsland(island));
+  window.addEventListener('keydown', (ev) => {
+    if (ev.key === 'Escape') { selected = null; show(hover); }
+    if (ev.key === '0') fitIsland('');
+    if (ev.key === '+' || ev.key === '=') dolly(0.82);
+    if (ev.key === '-' || ev.key === '_') dolly(1.2);
+  });
+
+  show(null);
+  resize();
+  const delay = { bridge: 0, compile: 0.08, memory: 0.14, verification: 0.2, harness: 0.26, 'hunt-ship': 0.32, nav: 0.38 };
+  for (const n of nodes) {
+    const mesh = meshes[n.id];
+    tween(mesh.scale, {
+      x: mesh.userData.base,
+      y: mesh.userData.base,
+      z: mesh.userData.base,
+      duration: 0.7,
+      delay: delay[n.cluster] || 0,
+      ease: 'back.out(1.6)'
+    });
+  }
+  for (const tube of tubes) {
+    tween(tube.material, { opacity: 0.9, duration: 0.8, delay: 0.35, ease: 'power2.out' });
+  }
+  camera.position.set(40, 280, 480);
+  tween(camera.position, { x: 55, y: 168, z: 310, duration: 1.25, ease: 'power3.out' });
+  tick();
+  </script>
+</body>
+</html>

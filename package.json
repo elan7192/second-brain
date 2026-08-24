@@ -1,0 +1,8 @@
+{
+  "name": "second-brain-graph",
+  "private": true,
+  "description": "Vendor three.js for the compiled wiki graph. Not a marketplace plugin.",
+  "dependencies": {
+    "three": "^0.180.0"
+  }
+}
