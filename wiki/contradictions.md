@@ -79,3 +79,11 @@ Resolution: keep file-first for this vault (D1, D7). The paper describes observe
 [[src-dair-agent-friendly-docs]] recorded zero documentation-based validation events. The authors say actionability and verifiability lack consistent behavioural support.
 
 Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/lint-wiki.py`) because reading `AGENTS.md` is not the check. See D8 and [[agent-facing-docs]].
+
+## C10. Documented disclosure API vs live catalog
+
+[[src-disclosure-index]] documents `GET /api/reports` and `GET /api/stats`.
+
+Fetched 2026-08-24: both paths returned 404. The live catalog is `data/catalog.js`.
+
+Resolution: cite `data/catalog.js` and the compiled stats. Do not claim the REST API works until it returns JSON.

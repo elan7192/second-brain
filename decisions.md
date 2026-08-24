@@ -67,3 +67,11 @@ Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not ad
 - Source: [[agent-facing-docs]], [[verifiable-instructions]]
 - Locked: 2026-08-24
 - Revalidate: if a later source shows this vault's agents follow README or API docs, or that reading schema substitutes for lint and tests
+
+## D9. Bibliographic catalog only
+
+The Disclosure Index is compiled as stats, schema, and canonical URLs. Do not copy report bodies into `wiki/` or `output/`. Do not write exploit steps from those records.
+
+- Source: [[disclosure-index]], [[src-disclosure-index]]
+- Locked: 2026-08-24
+- Revalidate: if the human asks for a specific public record's metadata fields already in the catalog snapshot

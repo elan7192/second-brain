@@ -28,6 +28,8 @@ Locked choices live in [[decisions]].
 Schema rules stay checkable. That is [[verifiable-instructions]].
 Instruction files are the control surface. That is [[agent-facing-docs]] and D8.
 
+External catalogs compile to stats pages. The Disclosure Index is [[disclosure-index]]. Re-fetch only when the human asks for a new snapshot.
+
 ## What agents share
 
 Not chat. An [[audited-task-contract]]. If several agents run, apply [[entropy-gate]].

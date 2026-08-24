@@ -12,13 +12,13 @@ updated: 2026-08-24
 
 ## Done
 
-Ingested DAIR.AI's pointer to Gao and Chen, arXiv:2608.20195. Locked D8. Flagged C8 and C9.
+Ingested the Disclosure Index catalog. Locked D9. Flagged C10.
 
 ## Look at
 
-- [[agent-facing-docs]]
+- [[disclosure-index]]
 - [[contradictions]]
-- [[ingest-brief-2026-08-24]]
+- [[ingest-brief-2026-08-24-disclosure-index]]
 
 ## Inbox
 

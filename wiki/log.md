@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | Disclosure Index catalog
+
+URL ingest of https://bug-bounty-disclosures.vercel.app/#api. Parsed `data/catalog.js`: 11,338 records. Wrote [[src-disclosure-index]], [[disclosure-index]], and `output/disclosure-index-stats-2026-08-23.json`. Locked D9. Flagged C10. Documented `/api/*` returned 404.
+
 ## [2026-08-24] ingest | DAIR.AI agent-friendly documentation paper
 
 URL ingest of https://x.com/dair_ai/status/2091661799737446864 and arXiv:2608.20195. Wrote [[src-dair-agent-friendly-docs]] and [[agent-facing-docs]]. Locked D8. Flagged C8 and C9. Put the control-surface rule in `AGENTS.md`. No `raw/` file: human-owned.

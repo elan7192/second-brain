@@ -19,6 +19,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - The vault does not post, pay, send, or deploy.
 - Operational rules live in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not steer this vault through README or API docs.
 - Reading instruction or wiki pages is not verification. After those files change, run `python3 tools/lint-wiki.py`. Observed agents test less after reading docs (adjusted OR 0.39). See [[agent-facing-docs]].
+- Disclosure Index answers come from [[disclosure-index]] and `output/disclosure-index-stats-2026-08-23.json`. Do not re-fetch `catalog.js` for a normal count question. Documented `/api/reports` and `/api/stats` returned 404 on 2026-08-24.
 
 ## Open questions
 
