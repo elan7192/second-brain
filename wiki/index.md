@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. BATCH01–07 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01–08 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -80,11 +80,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[r2-opd]] | Filter OPD by reasoning progress |
 | [[scape]] | Scenario-conditioned sim-to-real |
 | [[vla-self-demo]] | Expert + self-demo VLA. Table 4 unread |
+| [[dbosc]] | Physical-language chart. 4.5× same vs wrong |
+| [[fourmas]] | Dual-hemisphere CL. Use Table 1 |
+| [[hear2act]] | Prosody-to-action. Table 11 unread |
+| [[unilang]] | LLM + machine SIDs. Beauty R@10 loses |
+| [[cvsd-reg]] | LiDAR+DINOv2. Vel16 +44 pp |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch08]] | 2026-08-24 | Five digests. C13 4MAS abstract art |
+| [[src-arxiv-2608-19492]] | 2026-08-24 | DBOSC |
+| [[src-arxiv-2608-19514]] | 2026-08-24 | 4MAS. Use Table 1 |
+| [[src-arxiv-2608-19515]] | 2026-08-24 | Hear2Act. Table 11 unread |
+| [[src-arxiv-2608-19529]] | 2026-08-24 | UniLang |
+| [[src-arxiv-2608-19536]] | 2026-08-24 | CVSD-Reg |
 | [[src-arxiv-batch07]] | 2026-08-24 | Five digests. VLA Table 4 unread |
 | [[src-arxiv-2608-20331]] | 2026-08-24 | G-CARL |
 | [[src-arxiv-2608-20338]] | 2026-08-24 | ConceptGuard |

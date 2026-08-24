@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH08 five paper digests
+
+Compiled [[dbosc]], [[fourmas]], [[hear2act]], [[unilang]], [[cvsd-reg]]. C13. Table 11 / Fig. 4 unread. See [[src-arxiv-batch08]].
+
 ## [2026-08-24] ingest | BATCH07 five paper digests
 
 Compiled [[g-carl]], [[concept-guard]], [[r2-opd]], [[scape]], [[vla-self-demo]]. Table 4 of 2608.19490 not known. See [[src-arxiv-batch07]].

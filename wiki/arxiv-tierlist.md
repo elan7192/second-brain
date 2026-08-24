@@ -117,6 +117,20 @@ Source list: [[src-arxiv-batch07]].
 
 [[vla-self-demo]] Table 4 unread.
 
+## Known papers (BATCH08)
+
+Source list: [[src-arxiv-batch08]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.19492 | [[dbosc]] |
+| 2608.19514 | [[fourmas]] |
+| 2608.19515 | [[hear2act]] |
+| 2608.19529 | [[unilang]] |
+| 2608.19536 | [[cvsd-reg]] |
+
+C13 on [[contradictions]]. Hear2Act Table 11 and UniLang Fig. 4 unread.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.

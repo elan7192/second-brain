@@ -31,7 +31,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - A selected paper must be digested into concept/source pages. Do not ingest counts-only or dump titles. Wiki does not harvest papers.
 - Findings with substance go into wiki. arxiv must read a paper before sending it. Wiki does not harvest at random.
 - Harvest stopped 2026-08-24. Do not ingest further count bumps. Only ingest when arxiv sends a read-paper digest. Counts-only is not knowledge.
-- Known compiled papers (2026-08-24): TRACE plus BATCH01–07. Open contradictions C9–C12. VLA Table 4 and other unread tables not known. Do not treat the 405856 inventory as known.
+- Known compiled papers (2026-08-24): TRACE plus BATCH01–08. Open contradictions C9–C13. Unread tables/figs not known. Do not treat the 405856 inventory as known.
 
 ## LanBB
 

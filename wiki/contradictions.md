@@ -95,3 +95,9 @@ Resolution: keep the table. See [[unitok]].
 [[src-arxiv-2511-05540]] Mini val14 NR/R 88.05/89.54. Full val14 30.46/34.64.
 
 Resolution: do not quote Mini as full val14. See [[tiwm]].
+
+## C13. 4MAS graphical abstract vs Table 1
+
+[[src-arxiv-2608-19514]] graphical abstract quotes 96.2% / 80.2%. Table 1 is 98.3 / 84.9 / 29.29.
+
+Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
