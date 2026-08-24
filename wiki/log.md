@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH09 five paper digests
+
+Compiled [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], [[orthoskillvla]]. Figs unread. See [[src-arxiv-batch09]].
+
 ## [2026-08-24] ingest | BATCH08 five paper digests
 
 Compiled [[dbosc]], [[fourmas]], [[hear2act]], [[unilang]], [[cvsd-reg]]. C13. Table 11 / Fig. 4 unread. See [[src-arxiv-batch08]].

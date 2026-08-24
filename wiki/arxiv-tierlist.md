@@ -131,6 +131,20 @@ Source list: [[src-arxiv-batch08]].
 
 C13 on [[contradictions]]. Hear2Act Table 11 and UniLang Fig. 4 unread.
 
+## Known papers (BATCH09)
+
+Source list: [[src-arxiv-batch09]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.19540 | [[camf-mft]] |
+| 2608.19568 | [[draftfm]] |
+| 2608.19579 | [[dmd-safety]] |
+| 2608.19583 | [[vgi-bench]] |
+| 2608.19589 | [[orthoskillvla]] |
+
+Figs unread.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.

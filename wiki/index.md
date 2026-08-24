@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. BATCH01–08 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -85,11 +85,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[hear2act]] | Prosody-to-action. Table 11 unread |
 | [[unilang]] | LLM + machine SIDs. Beauty R@10 loses |
 | [[cvsd-reg]] | LiDAR+DINOv2. Vel16 +44 pp |
+| [[camf-mft]] | MeanFlow transfer. FID 7.88 at NFE4 |
+| [[draftfm]] | MTG draft FM. 50.8/60.4/56.7 |
+| [[dmd-safety]] | DMD prompt-response. F1 86.7 |
+| [[vgi-bench]] | Video-gen visual IQ. Seedance 51.0 |
+| [[orthoskillvla]] | Continual VLA PEFT. SR 83.50 |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch09]] | 2026-08-24 | Five digests. Figs unread |
+| [[src-arxiv-2608-19540]] | 2026-08-24 | CAMF/MF-T |
+| [[src-arxiv-2608-19568]] | 2026-08-24 | DraftFM |
+| [[src-arxiv-2608-19579]] | 2026-08-24 | DMD safety |
+| [[src-arxiv-2608-19583]] | 2026-08-24 | VGI-BENCH |
+| [[src-arxiv-2608-19589]] | 2026-08-24 | OrthoSkillVLA |
 | [[src-arxiv-batch08]] | 2026-08-24 | Five digests. C13 4MAS abstract art |
 | [[src-arxiv-2608-19492]] | 2026-08-24 | DBOSC |
 | [[src-arxiv-2608-19514]] | 2026-08-24 | 4MAS. Use Table 1 |
