@@ -10,6 +10,8 @@ updated: 2026-08-24
 
 The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship.
 
+Unseeded sources sit with a cited layer seed. Leftover paper pages sit on Hunt / ship, not on the door.
+
 ## Cause
 
 `tools/render-obsidian-graph.py` used to park every wiki page on one ring around Home. That is a folder ring, so unrelated gold notes sat in one blob.
@@ -45,7 +47,7 @@ Home stays the door. agent-operating-system sits in the middle as the synthesis.
 
 ## Snapshot
 
-Open `output/obsidian-graph.html` if you are not in Obsidian. three.js orbit and depth. GSAP eases camera, appear, hover, and LoD fades. Macro zoom shows island headers. Node labels appear when closer, without overlap. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. See [[graph-ui-2026-08-24]].
+Open `output/obsidian-graph.html` if you are not in Obsidian. three.js orbit and depth. GSAP eases camera, appear, hover, and LoD fades. Macro zoom shows island headers. Node labels appear when closer, without overlap. Remotion clip: `output/obsidian-graph-demo.mp4` from `tools/graph-demo/` (isolated React tree). Live page stays HTML. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. See [[graph-ui-2026-08-24]].
 
 <!-- graph-mermaid:begin -->
 ```mermaid
@@ -53,19 +55,25 @@ flowchart TB
   subgraph compile[Compile]
     andrej-karpathy
     context-graph
+    iar
     llm-wiki
     src-bober-folder-workflow
     src-papa-couch-compiler
     tokens-as-capital
+    trace
   end
   subgraph memory[Memory]
     MEMORY
+    arxiv-tierlist
+    lanbb
     memory-ablation
     memory-engineering
+    potential-ranking
     src-0xcodio-memory-ablation
   end
   subgraph verification[Verification]
     anti-slop
+    evosyn
     jacky-kwok
     self-verification
     src-jacky-self-verification
@@ -78,6 +86,7 @@ flowchart TB
     entropy-gate
     harness-routing
     rohit
+    skill-transfer
     src-hitu-entropy-engineering
     src-rohit-harness-router
   end
@@ -86,14 +95,6 @@ flowchart TB
     graph-ui-2026-08-24
     hunt
     hunt-ship-loop
-    ingest-brief-2026-08-23
-    ingest-brief-2026-08-24-arxiv-128956
-    ingest-brief-2026-08-24-arxiv-156256
-    ingest-brief-2026-08-24-arxiv-counts
-    ingest-brief-2026-08-24-arxiv-pages
-    ingest-brief-2026-08-24-arxiv-tierlist
-    ingest-brief-2026-08-24-five-x
-    ingest-brief-2026-08-24-trace
     maps
     ship
     src-avid-obsidian-agent-team
@@ -102,28 +103,28 @@ flowchart TB
     agent-operating-system
   end
   MEMORY --> memory-ablation
-  ship --> ingest-brief-2026-08-23
+  MEMORY --> arxiv-tierlist
+  MEMORY --> potential-ranking
+  MEMORY --> lanbb
   ship --> graph-clusters-2026-08-24
   ship --> graph-ui-2026-08-24
   hunt --> hunt-ship-loop
-  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
-  ingest-brief-2026-08-24-trace --> memory-engineering
-  ingest-brief-2026-08-24-trace --> context-graph
-  ingest-brief-2026-08-24-trace --> tokens-as-capital
-  ingest-brief-2026-08-24-arxiv-counts --> MEMORY
-  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
-  ingest-brief-2026-08-24-five-x --> llm-wiki
-  ingest-brief-2026-08-24-five-x --> memory-engineering
-  ingest-brief-2026-08-24-five-x --> harness-routing
-  ingest-brief-2026-08-24-five-x --> anti-slop
-  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
+  trace --> context-graph
+  trace --> memory-engineering
+  trace --> tokens-as-capital
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
+  arxiv-tierlist --> potential-ranking
+  arxiv-tierlist --> evosyn
+  arxiv-tierlist --> skill-transfer
+  arxiv-tierlist --> iar
+  potential-ranking --> arxiv-tierlist
   self-verification --> src-jacky-self-verification
   self-verification --> jacky-kwok
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
+  self-verification --> evosyn
   harness-routing --> src-rohit-harness-router
   harness-routing --> audited-task-contract
   harness-routing --> entropy-gate
@@ -133,6 +134,7 @@ flowchart TB
   memory-engineering --> context-graph
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
+  memory-engineering --> trace
   hunt-ship-loop --> src-avid-obsidian-agent-team
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
@@ -147,6 +149,8 @@ flowchart TB
   tokens-as-capital --> src-papa-couch-compiler
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
+  tokens-as-capital --> trace
+  lanbb --> MEMORY
   audited-task-contract --> src-rohit-harness-router
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
@@ -163,6 +167,7 @@ flowchart TB
   context-graph --> llm-wiki
   context-graph --> memory-engineering
   context-graph --> hunt-ship-loop
+  context-graph --> trace
   verifiable-instructions --> src-voxyz-verifiable-instructions
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
@@ -172,6 +177,12 @@ flowchart TB
   agent-operating-system --> audited-task-contract
   agent-operating-system --> verifiable-instructions
   agent-operating-system --> hunt-ship-loop
+  skill-transfer --> arxiv-tierlist
+  skill-transfer --> harness-routing
+  evosyn --> arxiv-tierlist
+  evosyn --> self-verification
+  iar --> arxiv-tierlist
+  iar --> tokens-as-capital
   rohit --> audited-task-contract
   rohit --> harness-routing
   rohit --> src-rohit-harness-router

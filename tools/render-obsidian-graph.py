@@ -7,7 +7,7 @@ import json
 import math
 import re
 import shutil
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,7 +15,7 @@ OUT_DIR = ROOT / "output"
 GRAPH_PAGE = ROOT / "wiki" / "graph.md"
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 HEADING = re.compile(r"^#\s+(.+)$", re.M)
-SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "node_modules"}
+SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "node_modules", "graph-demo"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 # Catalog stars. They stay in the vault. They do not sit in this graph.
 HIDDEN = {"index", "log", "twitter", "decisions"}
@@ -150,7 +150,7 @@ CLUSTER_ANCHORS = {
     "verification": (110.0, -48.0),
     "memory": (-8.0, 88.0),
     "harness": (108.0, 48.0),
-    "hunt-ship": (28.0, 138.0),
+    "hunt-ship": (22.0, 118.0),
     "nav": (-10.0, -108.0),
     "bridge": (-6.0, 20.0),
 }
@@ -250,6 +250,30 @@ def cluster_for(slug: str, path: Path) -> str:
     return "nav"
 
 
+def refine_clusters(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
+    """Sources and people sit with a cited seed. Leftover papers stay off the door."""
+    adj: dict[str, list[str]] = defaultdict(list)
+    for src, dst in edges:
+        adj[src].append(dst)
+        adj[dst].append(src)
+    for slug, node in nodes.items():
+        if slug in CLUSTER_OF:
+            node["cluster"] = CLUSTER_OF[slug]
+            continue
+        votes: Counter[str] = Counter()
+        for other in adj.get(slug, []):
+            cluster = CLUSTER_OF.get(other)
+            if cluster and cluster not in {"nav", "bridge"}:
+                votes[cluster] += 1
+        if votes:
+            node["cluster"] = votes.most_common(1)[0][0]
+            continue
+        if node["type"] in {"source", "hunt", "ship", "map", "concept"}:
+            node["cluster"] = "hunt-ship"
+        elif node["type"] == "person":
+            node["cluster"] = "nav"
+
+
 def collect() -> tuple[dict[str, dict], list[tuple[str, str]]]:
     pages: dict[str, Path] = {}
     for path in ROOT.rglob("*.md"):
@@ -258,6 +282,8 @@ def collect() -> tuple[dict[str, dict], list[tuple[str, str]]]:
         if path.name in SKIP_FILES:
             continue
         if path.stem in HIDDEN or path.stem in SNAPSHOT_HIDDEN:
+            continue
+        if path.stem.startswith("ingest-brief-"):
             continue
         pages[path.stem] = path
 
@@ -398,7 +424,7 @@ def cluster_centers(nodes: dict[str, dict]) -> dict[str, tuple[float, float, flo
         mx = sum(item["x"] for item in items) / len(items)
         my = sum(item["y"] for item in items) / len(items)
         radius = max(math.hypot(item["x"] - mx, item["y"] - my) for item in items) + 20.0
-        centers[cluster] = (mx, my, radius)
+        centers[cluster] = (mx, my, min(radius, 78.0))
     return centers
 
 
@@ -516,9 +542,9 @@ def write_svg(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
     dest.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_html(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
+def graph_payload(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> dict:
     centers = cluster_centers(nodes)
-    payload = {
+    return {
         "nodes": list(nodes.values()),
         "edges": edge_records(nodes, edges),
         "colors": COLORS,
@@ -533,11 +559,23 @@ def write_html(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path)
             for cluster in CLUSTER_LABELS
         },
     }
+
+
+def write_html(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
+    payload = graph_payload(nodes, edges)
     template = (ROOT / "tools" / "graph-page.html").read_text(encoding="utf-8")
     dest.write_text(
         template.replace("__GRAPH_DATA__", json.dumps(payload).replace("<", "\\u003c")),
         encoding="utf-8",
     )
+
+
+def write_json(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
+    text = json.dumps(graph_payload(nodes, edges))
+    dest.write_text(text, encoding="utf-8")
+    demo = ROOT / "tools" / "graph-demo" / "src" / "graph.json"
+    if demo.parent.exists():
+        demo.write_text(text, encoding="utf-8")
 
 
 def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
@@ -608,10 +646,17 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
 def mermaid_lines(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> list[str]:
     keep = {
         slug
-        for slug, node in nodes.items()
-        if slug not in MERMAID_SKIP and node["cluster"] != "nav"
+        for slug in CLUSTER_OF
+        if slug in nodes and slug not in MERMAID_SKIP
     }
     keep.add("agent-operating-system")
+    for slug, node in nodes.items():
+        if (
+            slug not in MERMAID_SKIP
+            and node["cluster"] in {"compile", "memory", "verification", "harness", "bridge"}
+            and node["type"] in {"concept", "meta", "person"}
+        ):
+            keep.add(slug)
     order = ["compile", "memory", "verification", "harness", "hunt-ship", "bridge"]
     grouped: dict[str, list[str]] = defaultdict(list)
     for slug in keep:
@@ -674,11 +719,13 @@ def copy_vendors() -> None:
 
 def main() -> None:
     nodes, edges = collect()
+    refine_clusters(nodes, edges)
     layout(nodes, edges)
     OUT_DIR.mkdir(exist_ok=True)
     copy_vendors()
     write_svg(nodes, edges, OUT_DIR / "obsidian-graph.svg")
     write_html(nodes, edges, OUT_DIR / "obsidian-graph.html")
+    write_json(nodes, edges, OUT_DIR / "obsidian-graph.json")
     write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
     write_mermaid(nodes, edges, GRAPH_PAGE)
     counts: dict[str, int] = defaultdict(int)

@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
-SKIP_DIRS = {".git", ".obsidian", "templates", "node_modules"}
+SKIP_DIRS = {".git", ".obsidian", "templates", "node_modules", "graph-demo"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 HUBS = {"index", "log", "Home", "lint-wiki", "graph"}
 

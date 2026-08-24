@@ -1,0 +1,23 @@
+{
+  "name": "graph-demo",
+  "private": true,
+  "description": "Isolated Remotion clip of the compiled wiki graph. Live page stays output/obsidian-graph.html.",
+  "scripts": {
+    "start": "remotion studio",
+    "render": "remotion render GraphDemo ../../output/obsidian-graph-demo.mp4 --gl=angle --concurrency=2"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^8.18.0",
+    "@remotion/cli": "^4.0.339",
+    "@remotion/three": "^4.0.339",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.339",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.8.2"
+  }
+}

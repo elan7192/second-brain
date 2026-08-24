@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ship | remotion graph demo
+
+Isolated Remotion clip at `output/obsidian-graph-demo.mp4`. Live page stays `output/obsidian-graph.html` with vanilla three.js and GSAP. See [[graph]] and [[graph-ui-2026-08-24]].
+
 ## [2026-08-24] ingest | BATCH09 five paper digests
 
 Compiled [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], [[orthoskillvla]]. Figs unread. See [[src-arxiv-batch09]].
@@ -65,6 +69,7 @@ Gap batch 4: +124800. Total 281056. Tiers S 15611 / A 23345 / B 129379 / C 84566
 ## [2026-08-24] ingest | three new X URLs
 
 TheWhizzAI ARC-AGI-3 30.2→100 marked `unverified` (NVIDIA blog exists, no paper). chatchat Living Brain linked to [[memory-engineering]] and [[agent-operating-system]]. g3t0ffmyl4wn body not retrieved. raw/ not written.
+
 ## [2026-08-24] ship | three.js graph orbit
 
 Added three.js via npm and vendored it. Live page stays `output/obsidian-graph.html`. Orbit, depth, GSAP tweens. See [[graph]] and [[graph-ui-2026-08-24]].
