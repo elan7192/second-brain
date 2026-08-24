@@ -39,4 +39,6 @@ The human asked for examples, a comparison, or a specific voice.
 
 ## Related
 
-[[verifiable-instructions]] · D6 in `decisions.md`
+[[verifiable-instructions]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]]
+
+A second 10-skill list exists ([[src-openagentskill-anti-slop]]). Do not replace juampi's list. See [[contradictions]] C8.

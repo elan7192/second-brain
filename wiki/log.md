@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | five X scouts
+
+Ingested Mrgreenieybt3, beamnxw, promptyx_ai, openagentskill, AgentMemoryL. Linked [[llm-wiki]], [[memory-engineering]], [[harness-routing]], [[anti-slop]]. Flagged C8. No papers invented. raw/ not written.
+
 ## [2026-08-24] update | arXiv Pages live at 156256
 
 https://elan7192.github.io/arxiv-potential-tierlist/ shows 156256. Cursor 2018-04. Batch 3 +27300. See [[arxiv-tierlist]].

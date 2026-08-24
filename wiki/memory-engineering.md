@@ -29,3 +29,7 @@ Full-transcript replay does not scale, does not rank importance, and keeps both 
 [[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
+
+[[src-beamnxw-memory-stack]] is another stack tweet. Filesystem memory cost-halving is `unverified`.
+
+[[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.

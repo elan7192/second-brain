@@ -35,4 +35,4 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]]

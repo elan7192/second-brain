@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-created: 2026-08-23
+updated: 2026-08-24
 updated: 2026-08-23
 ---
 
@@ -63,3 +63,11 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. Two anti-slop tens
+
+[[src-juampi-anti-slop-rank]] ranked ten writing skills. Vault default is that list.
+
+[[src-openagentskill-anti-slop]] is another ten, including a code lint skill (dmmulroy/anti-slop).
+
+Resolution: keep juampi's list as D6 writing default. Do not vendor either list. Do not merge them.
