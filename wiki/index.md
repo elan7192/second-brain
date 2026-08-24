@@ -44,11 +44,13 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[trace]] | Trajectory attribution; repair context without retraining |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-marfinxx-trace]] | 2026-08-23 | Amazon TRACE tweet + KDD 2026 paper |
 | [[src-arxiv-tierlist-handoff]] | 2026-08-24 | arXiv potential tierlist facts from box handoff |
 | [[src-0xcodio-memory-ablation]] | 2026-08-22 | Line-level memory ablation. Facts survived, adjectives died |
 | [[src-rohit-harness-router]] | 2026-08-22 | Shared contract so any harness can continue the task |

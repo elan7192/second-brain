@@ -27,4 +27,6 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]] · [[trace]]
+
+[[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair.

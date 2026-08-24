@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | marfinxx TRACE
+
+Ingested https://x.com/marfinxx/status/2091496044961968275. Paper exists: arXiv 2608.09153. Kept 72.7 / 82 / 96 / 16x / 83 vs 33. Marked 84 / 76 / 4.2x `unverified`. Linked [[trace]] [[memory-engineering]] [[context-graph]] [[tokens-as-capital]]. raw/ not written.
+
 ## [2026-08-24] update | arXiv Pages live at 128956
 
 https://elan7192.github.io/arxiv-potential-tierlist/ shows 128956. Cursor 2017-04. See [[arxiv-tierlist]].
