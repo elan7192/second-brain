@@ -47,6 +47,20 @@ Source list: [[src-arxiv-batch02]].
 
 Tables 7–8 of 2510.02345 are `unverified`. Unread appendices and `.txt` extracts are not known.
 
+## Known papers (BATCH03)
+
+Source list: [[src-arxiv-batch03]].
+
+| Paper | Page |
+| --- | --- |
+| 2510.03744 | [[hydrofusion-lmf]] |
+| 2510.16851 | [[ngc]] |
+| 2511.02241 | [[sapin]] |
+| 2511.02864 | [[alphaevolve-math]] |
+| 2511.02957 | [[pavement-gnn]] |
+
+C9/C10 on [[contradictions]]. AlphaEvolve 6.24–6.67 not known.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.

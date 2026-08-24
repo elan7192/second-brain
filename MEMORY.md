@@ -31,7 +31,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - A selected paper must be digested into concept/source pages. Do not ingest counts-only or dump titles. Wiki does not harvest papers.
 - Findings with substance go into wiki. arxiv must read a paper before sending it. Wiki does not harvest at random.
 - Harvest stopped 2026-08-24. Do not ingest further count bumps. Only ingest when arxiv sends a read-paper digest. Counts-only is not knowledge.
-- Known compiled papers (2026-08-24): TRACE plus BATCH01 (2507.08177, 2507.17886, 2507.20810, 2509.26507, 2510.17928) and BATCH02 (2509.11016, 2509.21617, 2509.23982, 2509.24844, 2510.02345). Tables 7–8 of 2510.02345 unverified. Do not treat the 405856 inventory as known.
+- Known compiled papers (2026-08-24): TRACE plus BATCH01–03. NGC Table 1 vs 3 and HydroFusion abs vs §4.1 are open contradictions. AlphaEvolve 6.24–6.67 not known. Do not treat the 405856 inventory as known.
 
 ## LanBB
 

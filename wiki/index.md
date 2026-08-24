@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. BATCH01+02 papers compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01–03 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -55,11 +55,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[palrs]] | Residual steering from 100 pairs. α-sensitive |
 | [[prednext]] | Cross-view next-step/clip SNN SSL |
 | [[clustered-moe]] | Clustered low-rank MoE. Tables 7–8 unverified |
+| [[hydrofusion-lmf]] | Boluo 1988–2020 runoff. Abs vs §4.1 clash |
+| [[ngc]] | Low-rank neuronal states. Table 1 vs 3 clash |
+| [[sapin]] | CartPole without reward. Lock 82% |
+| [[alphaevolve-math]] | 67 constructions. 6.24–6.67 not line-read |
+| [[pavement-gnn]] | R² 0.38 on 1k-node simulated graph |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch03]] | 2026-08-24 | Five digests. C9 NGC, C10 HydroFusion |
+| [[src-arxiv-2510-03744]] | 2026-08-24 | HydroFusion-LMF. Abs vs §4.1 |
+| [[src-arxiv-2510-16851]] | 2026-08-24 | NGC. Table 1 vs 3 clash |
+| [[src-arxiv-2511-02241]] | 2026-08-24 | SAPIN CartPole lock 82% |
+| [[src-arxiv-2511-02864]] | 2026-08-24 | AlphaEvolve math. 6.24–6.67 unread |
+| [[src-arxiv-2511-02957]] | 2026-08-24 | Pavement GNN R² 0.38 |
 | [[src-arxiv-batch02]] | 2026-08-24 | Five more S-tier digests. 2510.02345 T7–8 unverified |
 | [[src-arxiv-2509-11016]] | 2026-08-24 | SuperDE DDQN for DE |
 | [[src-arxiv-2509-21617]] | 2026-08-24 | LANCE activation compression |

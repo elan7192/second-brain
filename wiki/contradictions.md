@@ -71,3 +71,16 @@ Resolution: `unverified`. Do not use as evidence that the architecture works.
 [[src-openagentskill-anti-slop]] is another ten, including a code lint skill (dmmulroy/anti-slop).
 
 Resolution: keep juampi's list as D6 writing default. Do not vendor either list. Do not merge them.
+
+## C9. NGC Table 1 vs Table 3 Mistral MMLU-pro
+
+[[src-arxiv-2510-16851]] Table 1 NGC Mistral MMLU-pro is 24.50. Table 3 hybrid @0.3 lists 33.67 with the same GPQA/GSM/MATH as Table 1.
+
+Resolution: unresolved. Do not pick a number. See [[ngc]].
+
+## C10. HydroFusion abstract years vs §4.1
+
+[[src-arxiv-2510-03744]] abstract says a ~10-year daily dataset. §4.1 is Boluo 1988–2020.
+
+Resolution: keep the §4.1 span. Mark the abstract phrase as a clash. See [[hydrofusion-lmf]].
+

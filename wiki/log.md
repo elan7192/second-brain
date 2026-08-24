@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH03 five paper digests
+
+Compiled [[hydrofusion-lmf]], [[ngc]], [[sapin]], [[alphaevolve-math]], [[pavement-gnn]]. Flagged C9 and C10. AlphaEvolve 6.24–6.67 not known. See [[src-arxiv-batch03]].
+
 ## [2026-08-24] ingest | BATCH02 five paper digests
 
 Compiled [[superde]], [[lance]], [[palrs]], [[prednext]], [[clustered-moe]]. Tables 7–8 of 2510.02345 marked `unverified`. See [[src-arxiv-batch02]].
