@@ -17,3 +17,5 @@ Trend to lock. From [[src-avid-obsidian-agent-team]].
 5. **Lock** — write it in [[decisions]] so it is not remade
 
 This vault's first locked hook family: compile, do not retrieve. See [[llm-wiki]] and [[tokens-as-capital]].
+
+Second locked hook family: instruction files are the control surface. They are not the verifier. See [[agent-facing-docs]] and D8.

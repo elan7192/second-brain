@@ -3,22 +3,22 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Today
 
-2026-08-23
+2026-08-24
 
 ## Done
 
-Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes.
+Ingested DAIR.AI's pointer to Gao and Chen, arXiv:2608.20195. Locked D8. Flagged C8 and C9.
 
 ## Look at
 
-- [[agent-operating-system]]
+- [[agent-facing-docs]]
 - [[contradictions]]
-- `output/obsidian-graph.html`
+- [[ingest-brief-2026-08-24]]
 
 ## Inbox
 

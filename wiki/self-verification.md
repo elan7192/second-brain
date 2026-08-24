@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Self-verification
@@ -28,6 +28,8 @@ Code: https://github.com/llm-as-a-verifier/llm-as-a-verifier
 
 For high-risk wiki claims and architecture answers: write the answer, score it against cited pages, revise if contradicted or missing. See `AGENTS.md` Self-check.
 
+Prose is not an observed oracle. [[src-dair-agent-friendly-docs]] recorded zero documentation-based validation sequences. Keep the score step, then run the executable gate. See [[agent-facing-docs]].
+
 ## Related
 
-[[verifiable-instructions]] · [[entropy-gate]]
+[[verifiable-instructions]] · [[entropy-gate]] · [[agent-facing-docs]]

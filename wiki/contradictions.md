@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Contradictions
@@ -63,3 +63,19 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. File first vs code first
+
+[[hunt-ship-loop]] files the source before answering.
+
+[[src-dair-agent-friendly-docs]] measured public agentic PRs: among multi-commit PRs that change both and have order, code is first 4.7× more often than documentation.
+
+Resolution: keep file-first for this vault (D1, D7). The paper describes observed public-agent PRs, not this compiler's ingest loop. Do not treat code-first as a schema change.
+
+## C9. Prose checks vs observed validation
+
+[[verifiable-instructions]] requires every rule to have a check.
+
+[[src-dair-agent-friendly-docs]] recorded zero documentation-based validation events. The authors say actionability and verifiability lack consistent behavioural support.
+
+Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/lint-wiki.py`) because reading `AGENTS.md` is not the check. See D8 and [[agent-facing-docs]].

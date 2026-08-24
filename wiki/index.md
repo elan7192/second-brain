@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 ## Start
 
@@ -18,6 +18,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 - [[agent-operating-system]] — synthesis of this ingest
 - [[contradictions]] — unresolved conflicts
 - [[llm-wiki]] — core architecture
+- [[agent-facing-docs]] — instruction files are the control surface
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 
 ## Concepts
@@ -36,6 +37,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[agent-facing-docs]] | Agents read instruction files and working notes, not API refs |
 
 ## Sources
 
@@ -50,6 +52,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[src-bober-folder-workflow]] | 2026-08-21 | Popular how-to. Income and Karpathy paraphrase unverified |
 | [[src-avid-obsidian-agent-team]] | 2026-08-20 | Hunt / Ship / Decisions vault for a bot team |
 | [[src-juampi-anti-slop-rank]] | 2026-08-21 | Ten anti-slop skills. Compiled, not vendored |
+| [[src-dair-agent-friendly-docs]] | 2026-08-23 | 60.5% of agent doc reads are instruction files and notes |
 
 ## People
 

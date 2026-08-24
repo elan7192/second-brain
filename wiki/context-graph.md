@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Context graph
@@ -25,6 +25,10 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 - Graph: what is true, and when.
 - Skills / schema: how we act.
 
+## What agents actually open
+
+[[src-dair-agent-friendly-docs]] measured the subgraph coding agents retrieve: instruction files and working notes, not API references. Give later agents `AGENTS.md` plus the wiki pages this decision needs. Do not fill the window with classical docs. See [[agent-facing-docs]].
+
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[agent-facing-docs]]

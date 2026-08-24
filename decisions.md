@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Decisions
@@ -59,3 +59,11 @@ Open the repo as an Obsidian vault. `Home.md` is the door. Hunt / Ship / Maps ar
 
 - Source: [[hunt-ship-loop]], [[src-avid-obsidian-agent-team]]
 - Locked: 2026-08-23
+
+## D8. Instruction files are the control surface
+
+Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/lint-wiki.py`.
+
+- Source: [[agent-facing-docs]], [[verifiable-instructions]]
+- Locked: 2026-08-24
+- Revalidate: if a later source shows this vault's agents follow README or API docs, or that reading schema substitutes for lint and tests

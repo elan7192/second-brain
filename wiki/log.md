@@ -3,12 +3,18 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-24] ingest | DAIR.AI agent-friendly documentation paper
+
+URL ingest of https://x.com/dair_ai/status/2091661799737446864 and arXiv:2608.20195. Wrote [[src-dair-agent-friendly-docs]] and [[agent-facing-docs]]. Locked D8. Flagged C8 and C9. Put the control-surface rule in `AGENTS.md`. No `raw/` file: human-owned.
+
+Pages touched: [[agent-facing-docs]], [[verifiable-instructions]], [[context-graph]], [[tokens-as-capital]], [[llm-wiki]], [[self-verification]], [[hunt-ship-loop]], [[contradictions]], [[agent-operating-system]], [[how-it-works]].
 
 ## [2026-08-23] lint | Obsidian vault layer
 

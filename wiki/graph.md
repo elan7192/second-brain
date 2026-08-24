@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Graph
@@ -164,4 +164,37 @@ flowchart LR
   jacky-kwok --> self-verification
   andrej-karpathy --> contradictions
   andrej-karpathy --> llm-wiki
+  index --> agent-facing-docs
+  index --> src-dair-agent-friendly-docs
+  log --> agent-facing-docs
+  log --> src-dair-agent-friendly-docs
+  Home --> agent-facing-docs
+  agent-facing-docs --> src-dair-agent-friendly-docs
+  agent-facing-docs --> verifiable-instructions
+  agent-facing-docs --> context-graph
+  agent-facing-docs --> tokens-as-capital
+  agent-facing-docs --> llm-wiki
+  agent-facing-docs --> self-verification
+  agent-facing-docs --> hunt-ship-loop
+  src-dair-agent-friendly-docs --> agent-facing-docs
+  src-dair-agent-friendly-docs --> verifiable-instructions
+  src-dair-agent-friendly-docs --> context-graph
+  src-dair-agent-friendly-docs --> tokens-as-capital
+  src-dair-agent-friendly-docs --> llm-wiki
+  src-dair-agent-friendly-docs --> self-verification
+  src-dair-agent-friendly-docs --> hunt-ship-loop
+  src-dair-agent-friendly-docs --> contradictions
+  verifiable-instructions --> agent-facing-docs
+  context-graph --> agent-facing-docs
+  tokens-as-capital --> agent-facing-docs
+  llm-wiki --> agent-facing-docs
+  self-verification --> agent-facing-docs
+  hunt-ship-loop --> agent-facing-docs
+  hunt-ship-loop --> contradictions
+  agent-operating-system --> agent-facing-docs
+  how-it-works --> agent-facing-docs
+  contradictions --> agent-facing-docs
+  contradictions --> src-dair-agent-friendly-docs
+  twitter --> src-dair-agent-friendly-docs
+  Hooks --> agent-facing-docs
 ```

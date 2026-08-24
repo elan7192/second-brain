@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # LLM Wiki
@@ -28,6 +28,8 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 
 Humans abandon wikis because maintenance grows faster than value. The LLM can touch many files in one pass. The human curates sources and directs questions.
 
+[[src-dair-agent-friendly-docs]] measured the same surface in coding agents: instruction files plus working notes account for 60.5% of documentation interactions. The compiled wiki is the working-notes store. See [[agent-facing-docs]].
+
 ## Related
 
-[[tokens-as-capital]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[how-it-works]]
+[[tokens-as-capital]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[how-it-works]] · [[agent-facing-docs]]

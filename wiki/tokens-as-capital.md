@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Tokens as capital
@@ -18,7 +18,8 @@ Treat a token as an investment, not a per-query bill.
 2. Write good answers into synthesis pages.
 3. Fold web search into entity pages. Do not let it vanish in chat.
 4. Build `output/` from `wiki/`, not from a raw dump.
+5. Compile instruction files and working notes. [[src-dair-agent-friendly-docs]] found those artefacts take most of an agent's documentation attention. API references take 1.3%. See [[agent-facing-docs]].
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[agent-facing-docs]]
