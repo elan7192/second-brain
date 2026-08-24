@@ -33,10 +33,12 @@ Paper: arXiv:2607.05391. Official agent impl: https://github.com/llm-as-a-verifi
 
 Planning-first best-of-N (pick a plan, execute once) changed 0 of 5 outcomes in that writeup. Do not propose it as the self-verify loop.
 
+[[adversarial-review]] Self-Refine (same model critiques its own single draft) stayed at 77%, equal to zero-shot, on LiveCodeBench. Same-model ranking of N candidates is a different loop. See [[contradictions]] C10.
+
 ## Use here
 
 For high-risk wiki claims and architecture answers: write the answer, score it against cited pages, revise if contradicted or missing. See `AGENTS.md` Self-check.
 
 ## Related
 
-[[verifiable-instructions]] · [[entropy-gate]] · [[ultra-mode]]
+[[verifiable-instructions]] · [[entropy-gate]] · [[ultra-mode]] · [[adversarial-review]]

@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | Omarsar Adversarial Review
+
+Compiled https://x.com/omarsar0/status/2091631620025647184 and arXiv:2608.18167. New pages: [[src-omarsar-adversarial-review]], [[adversarial-review]], [[elvis]]. Updated [[entropy-gate]], [[audited-task-contract]], [[self-verification]], [[contradictions]] C10.
+
 ## [2026-08-24] ingest | Maverick /ultra over PPT
 
 Compiled https://x.com/mavericktr24/status/2091147176017563673 and the same-day `agent-ultramode` README. New pages: [[src-maverick-ultramode]], [[ultra-mode]], [[probabilistic-pivot-tournament]], [[maverick]]. Updated [[self-verification]], [[entropy-gate]], [[harness-routing]], [[jacky-kwok]], [[contradictions]] C8 C9.

@@ -12,13 +12,13 @@ updated: 2026-08-24
 
 ## Done
 
-Ingested [[src-maverick-ultramode]]. New pages [[ultra-mode]], [[probabilistic-pivot-tournament]], [[maverick]]. Flagged C8 and C9.
+Ingested [[src-omarsar-adversarial-review]]. New pages [[adversarial-review]], [[elvis]]. Flagged C10.
 
 ## Look at
 
-- [[ultra-mode]]
-- [[contradictions]] C8 C9
-- `output/ingest-brief-2026-08-24.md`
+- [[adversarial-review]]
+- [[contradictions]] C10
+- `output/ingest-brief-omarsar-2026-08-24.md`
 
 ## Inbox
 

@@ -79,3 +79,11 @@ Resolution: cite the slice. Maverick's 15 tasks were failure-skewed. Same writeu
 [[ultra-mode]] apply gate: same-model win-rate margin. Author says confidence is noisy.
 
 Resolution: tournament picks a candidate worktree. Apply is uncommitted. Tests or a human still gate ship. Do not treat the LLM margin as the outside-the-model gate.
+
+## C10. Self-Refine vs N-candidate verify
+
+[[src-omarsar-adversarial-review]] Self-Refine: same model critiques one draft. LiveCodeBench 77%, equal to zero-shot. Authors: the critic makes the same mistakes as the generator.
+
+[[src-jacky-self-verification]] and [[src-maverick-ultramode]]: same model ranks N candidates and reports a lift.
+
+Resolution: cite the loop. Self-critique of one draft is not N-candidate ranking. Do not use the LCB Self-Refine zero as evidence that Jacky or Maverick failed. Do not use Jacky's lift as evidence that Self-Refine works.
