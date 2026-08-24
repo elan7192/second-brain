@@ -3,14 +3,14 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Entropy gate
 
 Unverified cross-talk is how swarms agree on bugs that never existed.
 
-Source: [[src-hitu-entropy-engineering]].
+Source: [[src-hitu-entropy-engineering]]. Second source: [[src-maverick-ultramode]] uses isolated worktrees and structured diffs.
 
 ## Prefer these numbers
 
@@ -39,6 +39,10 @@ Compare assertion maps and embedding drift. On the author's code-refactor calibr
 
 Unanimous ungated agreement was wrong in 41% of 50 runs.
 
+## What [[ultra-mode]] adds
+
+Isolated worktrees and diffs-only ranking match conditions 1 and 2. The apply gate is an LLM win-rate margin, not an objective check outside the model. Confidence is noisy. See [[contradictions]] C9.
+
 ## Related
 
-[[audited-task-contract]] · [[self-verification]] · [[memory-engineering]]
+[[audited-task-contract]] · [[self-verification]] · [[memory-engineering]] · [[ultra-mode]]

@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Contradictions
@@ -63,3 +63,19 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. Two Terminal-Bench lifts
+
+[[src-jacky-self-verification]]: DeepSeek V4 Flash, sample 5, 79% to 88% on Terminal-Bench 2.1.
+
+[[src-maverick-ultramode]]: DeepSeek V4 Flash 0731, N=5, 24% to 33% on 15 tasks, 40% to 75% on 4 recoverable tasks.
+
+Resolution: cite the slice. Maverick's 15 tasks were failure-skewed. Same writeup estimates the model already about 83% on the full set and +2 to +5 from ultra. That full-set estimate sits near Jacky's 79% to 88%. Do not quote 24% to 33% as a full-bench result.
+
+## C9. Gate outside the model vs LLM tournament
+
+[[entropy-gate]] condition 3: objective gate outside the LLM.
+
+[[ultra-mode]] apply gate: same-model win-rate margin. Author says confidence is noisy.
+
+Resolution: tournament picks a candidate worktree. Apply is uncommitted. Tests or a human still gate ship. Do not treat the LLM margin as the outside-the-model gate.

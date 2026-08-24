@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Harness routing
@@ -29,10 +29,12 @@ Those differences change the prompt prefix and the available actions. The same m
 
 Transfer semantic state. Do not depend on KV cache or prompt-cache reuse across harnesses.
 
+[[ultra-mode]] can spread the N attempts across harness commands in one pass and judge them with one verifier. That is routing inside a single task, not a mid-turn harness swap. Source: [[src-maverick-ultramode]].
+
 ## Test before you believe it
 
 Compare a fixed pair, a fixed pair with audited state, and routed executors. If routing loses to the reset tax, keep the fixed pair.
 
 ## Related
 
-[[audited-task-contract]] · [[rohit]]
+[[audited-task-contract]] · [[rohit]] · [[ultra-mode]]

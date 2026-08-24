@@ -3,7 +3,7 @@ type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Home
@@ -12,12 +12,12 @@ Door to the vault. Open this folder in Obsidian. Then open graph view.
 
 ## Result
 
-Nine X posts compiled into a wiki you can browse as a graph.
+Ten X posts compiled into a wiki you can browse as a graph.
 
 - Gold: [[wiki]]
 - Teal: [[maps]]
 - Blue: [[hunt]] / [[twitter]]
-- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]]
+- Green: [[andrej-karpathy]], [[jacky-kwok]], [[maverick]], [[rohit]]
 - Coral: [[ship]]
 
 Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]].
@@ -39,4 +39,4 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 
 ## This batch
 
-2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]].
+2026-08-17 to 2026-08-22, compiled 2026-08-23, plus [[src-maverick-ultramode]] on 2026-08-24. Briefs: [[ingest-brief-2026-08-23]], [[ingest-brief-2026-08-24]].

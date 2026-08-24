@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-24] ingest | Maverick /ultra over PPT
+
+Compiled https://x.com/mavericktr24/status/2091147176017563673 and the same-day `agent-ultramode` README. New pages: [[src-maverick-ultramode]], [[ultra-mode]], [[probabilistic-pivot-tournament]], [[maverick]]. Updated [[self-verification]], [[entropy-gate]], [[harness-routing]], [[jacky-kwok]], [[contradictions]] C8 C9.
 
 ## [2026-08-23] lint | Obsidian vault layer
 

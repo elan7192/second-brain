@@ -4,7 +4,7 @@ tags:
   - hunt
   - twitter
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Twitter hunt
@@ -15,6 +15,7 @@ Scouts write here. They do not ping chat. See [[hunt-ship-loop]].
 
 | Date | Raw | Compiled |
 | --- | --- | --- |
+| 2026-08-22 | `raw/x/2026-08-22-maverick-ultramode.md` | [[src-maverick-ultramode]] |
 | 2026-08-22 | `raw/x/2026-08-22-0xcodio-memory-ablation.md` | [[src-0xcodio-memory-ablation]] |
 | 2026-08-22 | `raw/x/2026-08-22-rohit-harness-router.md` | [[src-rohit-harness-router]] |
 | 2026-08-22 | `raw/x/2026-08-22-voxyz-verifiable-instructions.md` | [[src-voxyz-verifiable-instructions]] |

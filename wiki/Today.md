@@ -3,22 +3,22 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Today
 
-2026-08-23
+2026-08-24
 
 ## Done
 
-Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes.
+Ingested [[src-maverick-ultramode]]. New pages [[ultra-mode]], [[probabilistic-pivot-tournament]], [[maverick]]. Flagged C8 and C9.
 
 ## Look at
 
-- [[agent-operating-system]]
-- [[contradictions]]
-- `output/obsidian-graph.html`
+- [[ultra-mode]]
+- [[contradictions]] C8 C9
+- `output/ingest-brief-2026-08-24.md`
 
 ## Inbox
 

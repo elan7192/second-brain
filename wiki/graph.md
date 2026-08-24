@@ -20,6 +20,7 @@ flowchart LR
   Home --> twitter
   Home --> andrej-karpathy
   Home --> jacky-kwok
+  Home --> maverick
   Home --> rohit
   Home --> ship
   Home --> graph
@@ -46,15 +47,27 @@ flowchart LR
   how-it-works --> audited-task-contract
   how-it-works --> entropy-gate
   self-verification --> jacky-kwok
+  self-verification --> ultra-mode
+  self-verification --> probabilistic-pivot-tournament
+  self-verification --> maverick
+  self-verification --> contradictions
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
+  harness-routing --> ultra-mode
   harness-routing --> rohit
+  log --> ultra-mode
+  log --> probabilistic-pivot-tournament
+  log --> maverick
+  log --> self-verification
+  log --> entropy-gate
+  log --> harness-routing
+  log --> jacky-kwok
+  log --> contradictions
   log --> Home
   log --> maps
   log --> hunt
   log --> ship
-  log --> contradictions
   log --> agent-operating-system
   log --> llm-wiki
   log --> tokens-as-capital
@@ -62,14 +75,10 @@ flowchart LR
   log --> memory-ablation
   log --> verifiable-instructions
   log --> audited-task-contract
-  log --> harness-routing
-  log --> entropy-gate
-  log --> self-verification
   log --> anti-slop
   log --> hunt-ship-loop
   log --> context-graph
   log --> andrej-karpathy
-  log --> jacky-kwok
   log --> rohit
   memory-engineering --> memory-ablation
   memory-engineering --> audited-task-contract
@@ -102,17 +111,21 @@ flowchart LR
   index --> harness-routing
   index --> entropy-gate
   index --> self-verification
+  index --> probabilistic-pivot-tournament
+  index --> ultra-mode
   index --> anti-slop
   index --> hunt-ship-loop
   index --> context-graph
   index --> andrej-karpathy
   index --> jacky-kwok
+  index --> maverick
   index --> rohit
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
   anti-slop --> verifiable-instructions
   entropy-gate --> contradictions
+  entropy-gate --> ultra-mode
   entropy-gate --> audited-task-contract
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
@@ -132,17 +145,33 @@ flowchart LR
   agent-operating-system --> verifiable-instructions
   agent-operating-system --> self-verification
   agent-operating-system --> anti-slop
+  agent-operating-system --> ultra-mode
+  agent-operating-system --> probabilistic-pivot-tournament
   agent-operating-system --> hunt-ship-loop
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
-  Today --> Home
-  Today --> agent-operating-system
+  Today --> ultra-mode
+  Today --> probabilistic-pivot-tournament
+  Today --> maverick
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
   contradictions --> audited-task-contract
   contradictions --> memory-ablation
+  contradictions --> ultra-mode
+  ultra-mode --> maverick
+  ultra-mode --> probabilistic-pivot-tournament
+  ultra-mode --> jacky-kwok
+  ultra-mode --> self-verification
+  ultra-mode --> contradictions
+  ultra-mode --> entropy-gate
+  ultra-mode --> harness-routing
+  probabilistic-pivot-tournament --> jacky-kwok
+  probabilistic-pivot-tournament --> ultra-mode
+  probabilistic-pivot-tournament --> entropy-gate
+  probabilistic-pivot-tournament --> self-verification
+  probabilistic-pivot-tournament --> maverick
   Hooks --> twitter
   Hooks --> contradictions
   Hooks --> ship
@@ -161,7 +190,13 @@ flowchart LR
   TELOS --> hunt-ship-loop
   rohit --> audited-task-contract
   rohit --> harness-routing
+  jacky-kwok --> maverick
+  jacky-kwok --> ultra-mode
   jacky-kwok --> self-verification
+  jacky-kwok --> probabilistic-pivot-tournament
   andrej-karpathy --> contradictions
   andrej-karpathy --> llm-wiki
+  maverick --> probabilistic-pivot-tournament
+  maverick --> ultra-mode
+  maverick --> jacky-kwok
 ```
