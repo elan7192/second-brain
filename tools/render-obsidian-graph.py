@@ -656,11 +656,13 @@ def copy_vendors() -> None:
     files = [
         ROOT / "tools" / "vendor" / "gsap.min.js",
         ROOT / "tools" / "vendor" / "three.module.min.js",
+        ROOT / "tools" / "vendor" / "three.core.min.js",
         ROOT / "tools" / "vendor" / "OrbitControls.js",
     ]
     nm = ROOT / "node_modules" / "three"
     if (nm / "build" / "three.module.min.js").exists():
         shutil.copyfile(nm / "build" / "three.module.min.js", ROOT / "tools" / "vendor" / "three.module.min.js")
+        shutil.copyfile(nm / "build" / "three.core.min.js", ROOT / "tools" / "vendor" / "three.core.min.js")
         shutil.copyfile(
             nm / "examples" / "jsm" / "controls" / "OrbitControls.js",
             ROOT / "tools" / "vendor" / "OrbitControls.js",
