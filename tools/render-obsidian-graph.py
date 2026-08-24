@@ -76,6 +76,7 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "self-verification",
         "anti-slop",
         "src-voxyz-verifiable-instructions",
+        "src-voxyz-writing-system",
         "src-jacky-self-verification",
         "src-juampi-anti-slop-rank",
         "jacky-kwok",

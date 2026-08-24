@@ -14,4 +14,5 @@ Short briefs built from the wiki. Chat gets these, not the raw hunt.
 - [[ingest-brief-2026-08-24-4ndrearossetti]]
 - [[ingest-brief-2026-08-24-avichawla]]
 - [[ingest-brief-2026-08-24-alexprompter]]
+- [[ingest-brief-2026-08-24-voxyz]]
 - [[Today]]

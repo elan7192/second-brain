@@ -39,3 +39,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-avichawla-trueforge]] is a harness-token article. 2.7x is `unverified`. See [[flat-context]] and C15.
 
 [[src-alexprompter-claude-projects]] is a Claude Projects how-to. Product workspace, not this wiki. See [[project-skill-stack]] and C16.
+
+[[src-voxyz-writing-system]] is a 6/6 `/goal` writing prompt. Third list. Keep D6. See C17. C6 stays open.

@@ -58,6 +58,8 @@ Resolution: D3. Profile files may exist. They may only hold facts that change an
 
 Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear.
 
+[[src-voxyz-writing-system]] is a later `/goal` writing prompt (6/6). It is not those eight blocks. C6 stays open.
+
 ## C7. Income claim
 
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
@@ -127,3 +129,13 @@ Resolution: sponsored article, no paper, X figures unread. Do not pick a multipl
 This vault compiles `raw/` into `wiki/`. See D1 and [[llm-wiki]].
 
 Resolution: keep D1. Do not treat Claude Projects as the vault wiki. Do not adopt those folders. See [[project-skill-stack]] and C2.
+
+## C17. Three writing systems
+
+D6 writing default is juampi's ranked ten, compiled into [[anti-slop]].
+
+[[src-openagentskill-anti-slop]] is a second ten. See C8.
+
+[[src-voxyz-writing-system]] is a third: seven `/goal` rules plus a global-install prompt.
+
+Resolution: keep D6. Do not vendor the Voxyz prompt into `AGENTS.md`. Do not merge the three lists.

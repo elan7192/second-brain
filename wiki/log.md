@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | Voxyz 6/6 writing-system /goal
+
+Compiled [[src-voxyz-writing-system]] from https://x.com/voxyz_ai/status/2091938084875088316. Flagged C17. C6 stays open. Did not vendor the prompt. raw/ not written.
+
 ## [2026-08-24] ingest | alex_prompter Claude Projects quote
 
 Compiled [[project-skill-stack]] from https://x.com/alex_prompter/status/2091822275381141582. Flagged C16. GIF unread. Docs cited, not re-read. raw/ not written. See [[src-alexprompter-claude-projects]].

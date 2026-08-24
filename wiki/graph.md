@@ -73,6 +73,7 @@ flowchart TB
     src-jacky-self-verification
     src-juampi-anti-slop-rank
     src-voxyz-verifiable-instructions
+    src-voxyz-writing-system
     verifiable-instructions
   end
   subgraph harness[Harness]
@@ -153,6 +154,7 @@ flowchart TB
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
   anti-slop --> src-juampi-anti-slop-rank
+  anti-slop --> src-voxyz-writing-system
   anti-slop --> verifiable-instructions
   entropy-gate --> src-hitu-entropy-engineering
   entropy-gate --> audited-task-contract
@@ -165,6 +167,7 @@ flowchart TB
   context-graph --> memory-engineering
   context-graph --> hunt-ship-loop
   verifiable-instructions --> src-voxyz-verifiable-instructions
+  verifiable-instructions --> src-voxyz-writing-system
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   verifiable-instructions --> anti-slop
@@ -207,5 +210,8 @@ flowchart TB
   src-alexprompter-claude-projects --> context-graph
   src-alexprompter-claude-projects --> memory-engineering
   src-voxyz-verifiable-instructions --> verifiable-instructions
+  src-voxyz-writing-system --> anti-slop
+  src-voxyz-writing-system --> verifiable-instructions
+  src-voxyz-writing-system --> harness-routing
 ```
 <!-- graph-mermaid:end -->

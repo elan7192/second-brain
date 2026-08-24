@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Anti-slop
@@ -39,6 +39,8 @@ The human asked for examples, a comparison, or a specific voice.
 
 ## Related
 
-[[verifiable-instructions]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]]
-
 A second 10-skill list exists ([[src-openagentskill-anti-slop]]). Do not replace juampi's list. See [[contradictions]] C8.
+
+[[src-voxyz-writing-system]] is a third list: seven `/goal` writing rules for global CLAUDE.md / AGENTS.md. Do not vendor it. See [[contradictions]] C17.
+
+[[verifiable-instructions]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]] · [[src-voxyz-writing-system]]

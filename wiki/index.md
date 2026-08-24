@@ -161,6 +161,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[src-mrgreenieybt3-llm-wiki]] | 2026-08-24 | Typed interlinked LLM Wiki pages |
 | [[src-beamnxw-memory-stack]] | 2026-08-24 | Memory-engineering stack. Cost-halving unverified |
 | [[src-promptyx-llm-cpu]] | 2026-08-24 | LLM as CPU / harness. No paper bound |
+| [[src-voxyz-writing-system]] | 2026-08-24 | 6/6 /goal writing prompt. C17 third list. C6 still open |
 | [[src-openagentskill-anti-slop]] | 2026-08-24 | Second 10 anti-slop list. Not juampi |
 | [[src-agentmemoryl-aml-s2]] | 2026-08-24 | AML season 2 tweet. Numbers unverified |
 | [[src-marfinxx-trace]] | 2026-08-23 | Amazon TRACE tweet + KDD 2026 paper |

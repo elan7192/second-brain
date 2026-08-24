@@ -47,6 +47,10 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 
 - 2026-08-24: Claude Projects as quoted by alex_prompter are a product workspace. Do not treat them as this vault's wiki. Do not adopt `/reference`, `/analysis`, `/deliverables` as vault folders. See [[project-skill-stack]] and [[contradictions]] C16.
 
+## Writing
+
+- 2026-08-24: Voxyz 6/6 writing-system `/goal` is a third anti-slop list. Keep D6 (juampi). Do not vendor it into `AGENTS.md`. Do not treat it as closing C6. See [[src-voxyz-writing-system]] and [[contradictions]] C17.
+
 ## Open questions
 
 - No personal identity or goals have been captured yet. Do not invent them.

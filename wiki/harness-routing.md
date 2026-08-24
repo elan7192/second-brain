@@ -39,4 +39,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 [[src-avichawla-trueforge]] treats the harness as the token-cost knob. 2.7x is `unverified`. See [[flat-context]].
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[secret-gateway]] · [[flat-context]]
+[[src-voxyz-writing-system]] audits global vs project `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep project voice local. See [[contradictions]] C17.
+
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]]
