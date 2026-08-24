@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH02 five paper digests
+
+Compiled [[superde]], [[lance]], [[palrs]], [[prednext]], [[clustered-moe]]. Tables 7–8 of 2510.02345 marked `unverified`. See [[src-arxiv-batch02]].
+
 ## [2026-08-24] ingest | BATCH01 five paper digests
 
 Compiled [[causal-cps-anomaly]], [[nmc-trace-complexity]], [[flow-matching-pso]], [[bdh]], [[evosyn]] from `/workspace/arxiv-tierlist/digests/`. Linked [[arxiv-tierlist]]. Unread appendices not treated as known. See [[src-arxiv-batch01]].

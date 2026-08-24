@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. Five BATCH01 papers compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01+02 papers compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -50,11 +50,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[flow-matching-pso]] | Analogy only. FM as continuous PSO |
 | [[bdh]] | Graph+Hebbian LLM. GPT-2 scale claim. PAC bounds aspirational |
 | [[evosyn]] | Evolves test/solution filter. 231 LCB, 673 OS |
+| [[superde]] | DDQN configures DE. 28-action Q-net |
+| [[lance]] | One-shot HOSVD activations. Last-layer FT/CL |
+| [[palrs]] | Residual steering from 100 pairs. α-sensitive |
+| [[prednext]] | Cross-view next-step/clip SNN SSL |
+| [[clustered-moe]] | Clustered low-rank MoE. Tables 7–8 unverified |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch02]] | 2026-08-24 | Five more S-tier digests. 2510.02345 T7–8 unverified |
+| [[src-arxiv-2509-11016]] | 2026-08-24 | SuperDE DDQN for DE |
+| [[src-arxiv-2509-21617]] | 2026-08-24 | LANCE activation compression |
+| [[src-arxiv-2509-23982]] | 2026-08-24 | PaLRS residual steering |
+| [[src-arxiv-2509-24844]] | 2026-08-24 | PredNext SNN SSL |
+| [[src-arxiv-2510-02345]] | 2026-08-24 | Clustered MoE. Tables 7–8 unverified |
 | [[src-arxiv-batch01]] | 2026-08-24 | Five S-tier digests. Harvest frozen |
 | [[src-arxiv-2507-08177]] | 2026-08-24 | Causal CPS anomaly vision paper |
 | [[src-arxiv-2507-17886]] | 2026-08-24 | Aimone NMC time/space/energy |

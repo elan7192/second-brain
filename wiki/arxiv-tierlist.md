@@ -33,7 +33,19 @@ arxiv read these. Digest path `/workspace/arxiv-tierlist/digests/`. Source list:
 | 2509.26507 | [[bdh]] |
 | 2510.17928 | [[evosyn]] |
 
-Unread appendices and `.txt` extracts are not known.
+## Known papers (BATCH02)
+
+Source list: [[src-arxiv-batch02]].
+
+| Paper | Page |
+| --- | --- |
+| 2509.11016 | [[superde]] |
+| 2509.21617 | [[lance]] |
+| 2509.23982 | [[palrs]] |
+| 2509.24844 | [[prednext]] |
+| 2510.02345 | [[clustered-moe]] |
+
+Tables 7–8 of 2510.02345 are `unverified`. Unread appendices and `.txt` extracts are not known.
 
 ## Display
 
