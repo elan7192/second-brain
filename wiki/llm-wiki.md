@@ -30,4 +30,6 @@ Humans abandon wikis because maintenance grows faster than value. The LLM can to
 
 ## Related
 
-[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]]
+[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[src-chatgpt-t-6a8cc267]] · [[how-it-works]]
+
+[[src-chatgpt-t-6a8cc267]] is a public ChatGPT share that claimed a full upgraded snapshot ZIP not pushed to GitHub. ZIP missing. Do not treat that snapshot as this wiki.

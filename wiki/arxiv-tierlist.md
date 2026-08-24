@@ -145,6 +145,10 @@ Source list: [[src-arxiv-batch09]].
 
 Figs unread.
 
+## ChatGPT 100-paper ZIP (not known)
+
+[[src-chatgpt-t-6a8cc267]] claimed 100 papers, 5 categories × 20, inside `second-brain-upgraded-2026-08-25.zip`. Public file download 401/403. Those papers are not compiled here. Harvest remains digest-only. See C14.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.

@@ -2,8 +2,8 @@
 type: meta
 tags:
   - wiki
+created: 2026-08-23
 updated: 2026-08-24
-updated: 2026-08-23
 ---
 
 # Contradictions
@@ -101,3 +101,11 @@ Resolution: do not quote Mini as full val14. See [[tiwm]].
 [[src-arxiv-2608-19514]] graphical abstract quotes 96.2% / 80.2%. Table 1 is 98.3 / 84.9 / 29.29.
 
 Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
+
+## C14. ChatGPT upgraded snapshot vs this vault
+
+[[src-chatgpt-t-6a8cc267]] claims 100 arXiv papers (5×20), 9 skills, 25/25 memory tests, 0 lint errors, and a complete repo ZIP that was not pushed to GitHub.
+
+This vault's known papers are BATCH01–09. Harvest is digest-only. The ZIP was not retrieved (401/403).
+
+Resolution: keep the GitHub wiki. Mark the ChatGPT counts `unverified`. Do not merge or reconstruct the ZIP from the claim list. See [[arxiv-tierlist]] and [[MEMORY]].

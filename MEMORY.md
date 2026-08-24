@@ -31,7 +31,8 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - A selected paper must be digested into concept/source pages. Do not ingest counts-only or dump titles. Wiki does not harvest papers.
 - Findings with substance go into wiki. arxiv must read a paper before sending it. Wiki does not harvest at random.
 - Harvest stopped 2026-08-24. Do not ingest further count bumps. Only ingest when arxiv sends a read-paper digest. Counts-only is not knowledge.
-- Known compiled papers (2026-08-24): TRACE plus BATCH01–09. Open contradictions C9–C13. Unread tables/figs not known. Do not treat the 405856 inventory as known.
+- Known compiled papers (2026-08-24): TRACE plus BATCH01–09. Open contradictions C9–C14. Unread tables/figs not known. Do not treat the 405856 inventory as known.
+- 2026-08-24: ChatGPT share `t_6a8cc267d5c08191942d394ac016763c` claimed `second-brain-upgraded-2026-08-25.zip` (100 papers 5×20, 9 skills, 25/25 memory tests, 0 lint errors) and said it was not pushed. Public download returned 401/403. Do not treat those 100 papers or 9 skills as known. Do not reconstruct or merge the ZIP from the claim list. Harvest remains digest-only. See [[src-chatgpt-t-6a8cc267]] and C14.
 
 ## LanBB
 

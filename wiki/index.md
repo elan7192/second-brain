@@ -16,7 +16,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 - [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
-- [[contradictions]] — unresolved conflicts
+- [[contradictions]] — unresolved conflicts C1–C14
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 
@@ -95,6 +95,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-chatgpt-t-6a8cc267]] | 2026-08-24 | ChatGPT ZIP claim. File 401/403. C14 |
 | [[src-arxiv-batch09]] | 2026-08-24 | Five digests. Figs unread |
 | [[src-arxiv-2608-19540]] | 2026-08-24 | CAMF/MF-T |
 | [[src-arxiv-2608-19568]] | 2026-08-24 | DraftFM |

@@ -39,6 +39,8 @@ Compare assertion maps and embedding drift. On the author's code-refactor calibr
 
 Unanimous ungated agreement was wrong in 41% of 50 runs.
 
+[[src-chatgpt-t-6a8cc267]] is another harness claiming a complete wiki snapshot. ZIP not retrieved. Do not accept the 100-paper / 9-skill / 25/25 numbers. See C14.
+
 ## Related
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[src-chatgpt-t-6a8cc267]]

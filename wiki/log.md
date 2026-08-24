@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | ChatGPT share t_6a8cc267
+
+Public share claimed `second-brain-upgraded-2026-08-25.zip` (100 papers, 9 skills, 25/25 tests) not pushed to GitHub. ZIP 401/403. Counts `unverified`. C14. See [[src-chatgpt-t-6a8cc267]].
+
 ## [2026-08-24] ingest | BATCH09 five paper digests
 
 Compiled [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], [[orthoskillvla]]. Figs unread. See [[src-arxiv-batch09]].
