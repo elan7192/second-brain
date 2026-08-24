@@ -40,16 +40,16 @@ BRIDGE_KEEP = {
 }
 
 COLORS = {
-    "home": "#d4af37",
-    "meta": "#d4af37",
-    "concept": "#d4af37",
-    "wiki": "#d4af37",
-    "map": "#14b8a6",
-    "source": "#3b82f6",
-    "hunt": "#3b82f6",
-    "person": "#22c55e",
-    "ship": "#eb6b54",
-    "note": "#94a3b8",
+    "home": "#c6a35a",
+    "meta": "#c6a35a",
+    "concept": "#c6a35a",
+    "wiki": "#c6a35a",
+    "map": "#6f9e92",
+    "source": "#6f87a8",
+    "hunt": "#6f87a8",
+    "person": "#7d9a6e",
+    "ship": "#c48472",
+    "note": "#8b8478",
 }
 
 TYPE_LABELS = {
@@ -66,11 +66,11 @@ TYPE_LABELS = {
 }
 
 COLOR_LEGEND = [
-    {"key": "wiki", "label": "Wiki", "color": "#d4af37"},
-    {"key": "map", "label": "Maps", "color": "#14b8a6"},
-    {"key": "hunt", "label": "Hunt / sources", "color": "#3b82f6"},
-    {"key": "person", "label": "People", "color": "#22c55e"},
-    {"key": "ship", "label": "Ship", "color": "#eb6b54"},
+    {"key": "wiki", "label": "Wiki", "color": "#c6a35a"},
+    {"key": "map", "label": "Maps", "color": "#6f9e92"},
+    {"key": "hunt", "label": "Hunt / sources", "color": "#6f87a8"},
+    {"key": "person", "label": "People", "color": "#7d9a6e"},
+    {"key": "ship", "label": "Ship", "color": "#c48472"},
 ]
 
 # Islands from wiki/agent-operating-system.md. Sources and people sit
@@ -145,13 +145,22 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
 CLUSTER_OF = {slug: cluster for cluster, slugs in CLUSTER_SEEDS.items() for slug in slugs}
 
 CLUSTER_ANCHORS = {
-    "compile": (-520.0, -280.0),
-    "verification": (520.0, -280.0),
-    "memory": (-520.0, 210.0),
-    "harness": (520.0, 210.0),
-    "hunt-ship": (0.0, 460.0),
-    "nav": (0.0, -460.0),
-    "bridge": (0.0, -20.0),
+    "compile": (-155.0, -55.0),
+    "verification": (155.0, -50.0),
+    "memory": (-145.0, 95.0),
+    "harness": (145.0, 100.0),
+    "hunt-ship": (15.0, 175.0),
+    "nav": (-8.0, -160.0),
+    "bridge": (0.0, 12.0),
+}
+CLUSTER_PHASE = {
+    "compile": 0.4,
+    "verification": 1.7,
+    "memory": 2.5,
+    "harness": 3.8,
+    "hunt-ship": 0.9,
+    "nav": 5.1,
+    "bridge": 0.0,
 }
 
 CLUSTER_LABELS = {
@@ -272,6 +281,7 @@ def seed_positions(nodes: dict[str, dict]) -> None:
     grouped: dict[str, list[str]] = defaultdict(list)
     for slug, node in nodes.items():
         grouped[node["cluster"]].append(slug)
+    golden = math.pi * (3.0 - math.sqrt(5.0))
     for cluster, slugs in grouped.items():
         slugs.sort()
         ax, ay = CLUSTER_ANCHORS.get(cluster, (0.0, 0.0))
@@ -280,16 +290,15 @@ def seed_positions(nodes: dict[str, dict]) -> None:
             nodes[slugs[0]]["x"] = ax
             nodes[slugs[0]]["y"] = ay
             continue
-        rx = 70 + 11 * n
-        ry = 52 + 8 * n
+        spread = 15.0 + 3.6 * math.sqrt(n)
         if cluster == "hunt-ship":
-            rx, ry = 300.0, 120.0
-        if cluster == "nav":
-            rx, ry = 160.0, 55.0
+            spread = 20.0 + 4.2 * math.sqrt(n)
+        phase = CLUSTER_PHASE.get(cluster, 0.0)
         for i, slug in enumerate(slugs):
-            angle = (2 * math.pi * i / n) - math.pi / 2
-            nodes[slug]["x"] = ax + math.cos(angle) * rx
-            nodes[slug]["y"] = ay + math.sin(angle) * ry
+            radius = spread * math.sqrt((i + 0.35) / n)
+            angle = i * golden + phase
+            nodes[slug]["x"] = ax + math.cos(angle) * radius
+            nodes[slug]["y"] = ay + math.sin(angle) * radius
 
 
 def visible_edge(src: str, dst: str) -> bool:
@@ -307,23 +316,24 @@ def visible_edge(src: str, dst: str) -> bool:
 def edge_weight(nodes: dict[str, dict], src: str, dst: str) -> float:
     a, b = nodes[src]["cluster"], nodes[dst]["cluster"]
     if a == b:
-        return 1.0
+        return 1.15
     if "bridge" in {a, b}:
-        return 0.18
+        return 0.62
     if "nav" in {a, b}:
-        return 0.08
-    return 0.12
+        return 0.22
+    return 0.48
 
 
 def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
     seed_positions(nodes)
     slugs = list(nodes)
-    for _ in range(180):
+    drawn = [(src, dst) for src, dst in edges if visible_edge(src, dst)]
+    for _ in range(240):
         force: dict[str, list[float]] = {slug: [0.0, 0.0] for slug in slugs}
         for slug, node in nodes.items():
             ax, ay = CLUSTER_ANCHORS[node["cluster"]]
-            force[slug][0] += (ax - node["x"]) * 0.14
-            force[slug][1] += (ay - node["y"]) * 0.14
+            force[slug][0] += (ax - node["x"]) * 0.055
+            force[slug][1] += (ay - node["y"]) * 0.055
         for i, a in enumerate(slugs):
             na = nodes[a]
             for b in slugs[i + 1 :]:
@@ -332,101 +342,134 @@ def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
                 dy = na["y"] - nb["y"]
                 dist = math.hypot(dx, dy) or 0.01
                 same = na["cluster"] == nb["cluster"]
-                strength = 420.0 if same else 900.0
-                push = strength / (dist * dist)
-                push = min(push, 8.0)
+                min_d = 32.0 if same else 44.0
+                strength = 240.0 if same else 360.0
+                push = min(strength / (dist * dist), 10.0)
+                if dist < min_d:
+                    push += (min_d - dist) * 0.38
                 ux, uy = dx / dist, dy / dist
                 force[a][0] += ux * push
                 force[a][1] += uy * push
                 force[b][0] -= ux * push
                 force[b][1] -= uy * push
-        for src, dst in edges:
-            if not visible_edge(src, dst):
-                continue
+        for src, dst in drawn:
             na, nb = nodes[src], nodes[dst]
             dx = nb["x"] - na["x"]
             dy = nb["y"] - na["y"]
             dist = math.hypot(dx, dy) or 0.01
-            pull = 0.016 * dist * edge_weight(nodes, src, dst)
+            pull = 0.024 * dist * edge_weight(nodes, src, dst)
             ux, uy = dx / dist, dy / dist
             force[src][0] += ux * pull
             force[src][1] += uy * pull
             force[dst][0] -= ux * pull
             force[dst][1] -= uy * pull
         for slug, node in nodes.items():
-            node["x"] += force[slug][0] * 0.65
-            node["y"] += force[slug][1] * 0.65
+            node["x"] += force[slug][0] * 0.6
+            node["y"] += force[slug][1] * 0.6
 
 
-def cluster_bounds(nodes: dict[str, dict]) -> dict[str, tuple[float, float, float, float]]:
+def cluster_centers(nodes: dict[str, dict]) -> dict[str, tuple[float, float, float]]:
     grouped: dict[str, list[dict]] = defaultdict(list)
     for node in nodes.values():
         grouped[node["cluster"]].append(node)
-    bounds: dict[str, tuple[float, float, float, float]] = {}
+    centers: dict[str, tuple[float, float, float]] = {}
     for cluster, items in grouped.items():
-        xs = [item["x"] for item in items]
-        ys = [item["y"] for item in items]
-        pad = 56.0
-        bounds[cluster] = (min(xs) - pad, min(ys) - pad, max(xs) + pad, max(ys) + pad)
-    return bounds
+        mx = sum(item["x"] for item in items) / len(items)
+        my = sum(item["y"] for item in items) / len(items)
+        radius = max(math.hypot(item["x"] - mx, item["y"] - my) for item in items) + 28.0
+        centers[cluster] = (mx, my, radius)
+    return centers
+
+
+def edge_records(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> list[dict]:
+    centers = cluster_centers(nodes)
+    records: list[dict] = []
+    for src, dst in edges:
+        if not visible_edge(src, dst):
+            continue
+        a, b = nodes[src], nodes[dst]
+        mx = (a["x"] + b["x"]) / 2
+        my = (a["y"] + b["y"]) / 2
+        dx = b["x"] - a["x"]
+        dy = b["y"] - a["y"]
+        dist = math.hypot(dx, dy) or 1.0
+        intra = a["cluster"] == b["cluster"]
+        if intra:
+            sign = 1.0 if ((hash(src) + hash(dst)) % 2) else -1.0
+            bend = min(22.0, 8.0 + dist * 0.08)
+            cx = mx - (dy / dist) * bend * sign
+            cy = my + (dx / dist) * bend * sign
+        else:
+            ca = centers[a["cluster"]]
+            cb = centers[b["cluster"]]
+            bx = (ca[0] + cb[0]) / 2
+            by = (ca[1] + cb[1]) / 2
+            cx = mx * 0.42 + bx * 0.58
+            cy = my * 0.42 + by * 0.58
+        records.append({"source": src, "target": dst, "cx": cx, "cy": cy, "intra": intra})
+    return records
+
+
+def quad_points(
+    x1: float, y1: float, cx: float, cy: float, x2: float, y2: float, steps: int = 18
+) -> list[tuple[float, float]]:
+    pts: list[tuple[float, float]] = []
+    for i in range(steps + 1):
+        t = i / steps
+        u = 1.0 - t
+        pts.append(
+            (
+                u * u * x1 + 2 * u * t * cx + t * t * x2,
+                u * u * y1 + 2 * u * t * cy + t * t * y2,
+            )
+        )
+    return pts
 
 
 def write_svg(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
-    width, height = 1700, 1300
-    cx, cy = width / 2, height / 2 + 10
+    width, height = 1600, 1200
+    ox, oy = width / 2, height / 2 + 20
+    centers = cluster_centers(nodes)
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">',
         '<rect width="100%" height="100%" fill="#090b10"/>',
-        '<text x="40" y="48" fill="#e7e5e4" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22">Second brain · concept clusters</text>',
-        '<text x="40" y="74" fill="#a8a29e" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">gold wiki · teal maps · blue hunt/twitter · green people · coral ship</text>',
+        '<text x="40" y="48" fill="#f4efe4" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22">Second brain · concept clusters</text>',
+        '<text x="40" y="74" fill="#9a9386" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">gold wiki · teal maps · blue hunt/sources · green people · coral ship</text>',
     ]
-    for cluster, (x0, y0, x1, y1) in cluster_bounds(nodes).items():
-        rx, ry = cx + x0, cy + y0
-        rw, rh = x1 - x0, y1 - y0
+    for cluster, (mx, my, radius) in centers.items():
         lines.append(
-            f'<rect x="{rx:.1f}" y="{ry:.1f}" width="{rw:.1f}" height="{rh:.1f}" rx="28" fill="#16181e" stroke="#2a2d35" stroke-width="1"/>'
+            f'<circle cx="{ox+mx:.1f}" cy="{oy+my:.1f}" r="{radius:.1f}" fill="rgba(198,163,90,0.05)" stroke="rgba(198,163,90,0.12)" stroke-width="1"/>'
         )
-    for cluster, (ax, ay) in CLUSTER_ANCHORS.items():
-        label = CLUSTER_LABELS[cluster]
-        x, y = cx + ax, cy + ay - (150 if cluster == "hunt-ship" else 95)
-        if cluster == "bridge":
-            y = cy + ay - 36
+        label = CLUSTER_LABELS[cluster].upper()
         lines.append(
-            f'<text x="{x:.1f}" y="{y:.1f}" fill="#8a8478" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" letter-spacing="0.08em" text-anchor="middle">{label.upper()}</text>'
+            f'<text x="{ox+mx:.1f}" y="{oy+my-radius+6:.1f}" fill="#b8b09f" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" letter-spacing="0.12em" text-anchor="middle">{label}</text>'
         )
-    drawn = [(src, dst) for src, dst in edges if visible_edge(src, dst)]
-    for src, dst in drawn:
-        a, b = nodes[src], nodes[dst]
-        intra = a["cluster"] == b["cluster"]
-        stroke = "#52525b" if intra else "#3f3f46"
-        width_s = "1.4" if intra else "0.9"
+    for rec in edge_records(nodes, edges):
+        a, b = nodes[rec["source"]], nodes[rec["target"]]
+        stroke = "#9a9386" if rec["intra"] else "#6e685c"
+        width_s = "1.7" if rec["intra"] else "1.25"
         lines.append(
-            f'<line x1="{cx+a["x"]:.1f}" y1="{cy+a["y"]:.1f}" x2="{cx+b["x"]:.1f}" y2="{cy+b["y"]:.1f}" stroke="{stroke}" stroke-width="{width_s}"/>'
+            f'<path d="M {ox+a["x"]:.1f} {oy+a["y"]:.1f} Q {ox+rec["cx"]:.1f} {oy+rec["cy"]:.1f} {ox+b["x"]:.1f} {oy+b["y"]:.1f}" fill="none" stroke="{stroke}" stroke-width="{width_s}" stroke-opacity="0.88"/>'
         )
     for node in nodes.values():
-        color = COLORS.get(node["type"], "#94a3b8")
-        r = 10 if node["type"] in {"home", "meta"} and node["cluster"] == "bridge" else 7
-        if node["id"] == "Home":
-            r = 9
-        x, y = cx + node["x"], cy + node["y"]
+        color = COLORS.get(node["type"], "#8b8478")
+        r = 10 if node["id"] == "agent-operating-system" else 8 if node["id"] == "Home" else 6
+        x, y = ox + node["x"], oy + node["y"]
         lines.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="{color}"/>')
-        lines.append(
-            f'<text x="{x+11:.1f}" y="{y+4:.1f}" fill="#d6d3d1" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">{node["label"]}</text>'
-        )
     lines.append("</svg>")
     dest.write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_html(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
+    centers = cluster_centers(nodes)
     payload = {
         "nodes": list(nodes.values()),
-        "edges": [{"source": a, "target": b} for a, b in edges if visible_edge(a, b)],
+        "edges": edge_records(nodes, edges),
         "colors": COLORS,
-        "anchors": CLUSTER_ANCHORS,
         "labels": CLUSTER_LABELS,
         "types": TYPE_LABELS,
         "legend": COLOR_LEGEND,
-        "bounds": {key: list(box) for key, box in cluster_bounds(nodes).items()},
+        "centers": {key: [mx, my, radius] for key, (mx, my, radius) in centers.items()},
     }
     dest.write_text(
         GRAPH_HTML.replace("__GRAPH_DATA__", json.dumps(payload).replace("<", "\\u003c")),
@@ -441,8 +484,8 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
         print("skip png: Pillow not installed")
         return
 
-    width, height = 1700, 1300
-    cx, cy = width / 2, height / 2 + 10
+    width, height = 1600, 1200
+    ox, oy = width / 2, height / 2 + 20
     font_title = ImageFont.truetype(
         "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 28
     )
@@ -452,48 +495,45 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
     font_label = ImageFont.truetype(
         "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 14
     )
-    font_node = ImageFont.truetype(
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 13
-    )
     img = Image.new("RGB", (width, height), "#090b10")
     draw = ImageDraw.Draw(img)
     draw.text((40, 28), "Second brain · concept clusters", fill="#f4efe4", font=font_title)
     draw.text(
         (40, 66),
-        "gold wiki · teal maps · blue hunt/twitter · green people · coral ship",
+        "gold wiki · teal maps · blue hunt/sources · green people · coral ship",
         fill="#9a9386",
         font=font_sub,
     )
-    for cluster, (x0, y0, x1, y1) in cluster_bounds(nodes).items():
-        draw.rounded_rectangle(
-            (cx + x0, cy + y0, cx + x1, cy + y1),
-            radius=28,
-            fill="#16181e",
-            outline="#2a2d35",
+    for cluster, (mx, my, radius) in cluster_centers(nodes).items():
+        draw.ellipse(
+            (ox + mx - radius, oy + my - radius, ox + mx + radius, oy + my + radius),
+            outline="#3a342c",
             width=1,
         )
-    for cluster, (ax, ay) in CLUSTER_ANCHORS.items():
-        lift = 150 if cluster == "hunt-ship" else 36 if cluster == "bridge" else 95
-        x, y = cx + ax, cy + ay - lift
         label = CLUSTER_LABELS[cluster].upper()
         bbox = draw.textbbox((0, 0), label, font=font_label)
-        draw.text((x - (bbox[2] - bbox[0]) / 2, y), label, fill="#8a8478", font=font_label)
-    for src, dst in edges:
-        if not visible_edge(src, dst):
-            continue
-        a, b = nodes[src], nodes[dst]
-        intra = a["cluster"] == b["cluster"]
+        draw.text(
+            (ox + mx - (bbox[2] - bbox[0]) / 2, oy + my - radius - 4),
+            label,
+            fill="#b8b09f",
+            font=font_label,
+        )
+    for rec in edge_records(nodes, edges):
+        a, b = nodes[rec["source"]], nodes[rec["target"]]
+        pts = [
+            (ox + x, oy + y)
+            for x, y in quad_points(a["x"], a["y"], rec["cx"], rec["cy"], b["x"], b["y"])
+        ]
         draw.line(
-            [(cx + a["x"], cy + a["y"]), (cx + b["x"], cy + b["y"])],
-            fill="#52525b" if intra else "#27272a",
-            width=2 if intra else 1,
+            pts,
+            fill="#9a9386" if rec["intra"] else "#6e685c",
+            width=2 if rec["intra"] else 2,
         )
     for node in nodes.values():
-        color = COLORS.get(node["type"], "#94a3b8")
+        color = COLORS.get(node["type"], "#8b8478")
         r = 10 if node["id"] == "agent-operating-system" else 8 if node["id"] == "Home" else 6
-        x, y = cx + node["x"], cy + node["y"]
+        x, y = ox + node["x"], oy + node["y"]
         draw.ellipse((x - r, y - r, x + r, y + r), fill=color)
-        draw.text((x + 11, y - 7), node["label"], fill="#d6d3d1", font=font_node)
     img.save(dest)
 
 
@@ -556,7 +596,7 @@ GRAPH_HTML = """<!doctype html>
       --dim: #6d675c;
       --panel: rgba(14, 16, 22, 0.78);
       --stroke: rgba(255, 255, 255, 0.08);
-      --gold: #d4af37;
+      --gold: #c6a35a;
       --font: "Segoe UI Variable", "SF Pro Text", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
       --mono: "SF Mono", "Cascadia Code", ui-monospace, Menlo, Consolas, monospace;
     }
@@ -700,7 +740,7 @@ GRAPH_HTML = """<!doctype html>
     <button type="button" id="zoom-in" title="Zoom in">+</button>
     <button type="button" id="fit" title="Fit graph">⤢</button>
   </div>
-  <p class="hint">Scroll to zoom · Drag to pan · Click a node for title and path</p>
+  <p class="hint">Scroll to zoom · Labels appear on zoom-in · Click a node for title and path</p>
   <script>
   const data = __GRAPH_DATA__;
   const canvas = document.getElementById('g');
@@ -776,10 +816,11 @@ GRAPH_HTML = """<!doctype html>
       minX = Math.min(minX, n.x); minY = Math.min(minY, n.y);
       maxX = Math.max(maxX, n.x); maxY = Math.max(maxY, n.y);
     }
-    const pad = 180;
+    const pad = 120;
     const w = Math.max(maxX - minX, 80) + pad * 2;
     const h = Math.max(maxY - minY, 80) + pad * 2;
-    view.scale = Math.min((window.innerWidth - 360) / w, (window.innerHeight - 180) / h, 1.35);
+    const cap = items.length <= 18 ? 1.28 : 0.88;
+    view.scale = Math.min((window.innerWidth - 360) / w, (window.innerHeight - 180) / h, cap);
     const midX = (minX + maxX) / 2;
     const midY = (minY + maxY) / 2;
     view.x = -midX * view.scale;
@@ -823,7 +864,7 @@ GRAPH_HTML = """<!doctype html>
     if (step < 18) return;
     const ox = (cx() + view.x) % step;
     const oy = (cy() + view.y) % step;
-    ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.028)';
     ctx.lineWidth = 1;
     ctx.beginPath();
     for (let x = ox; x < window.innerWidth; x += step) {
@@ -834,53 +875,65 @@ GRAPH_HTML = """<!doctype html>
     }
     ctx.stroke();
   }
+  function overlap(a, b) {
+    return !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y + b.h < a.y);
+  }
+  function labelsOpen() {
+    return view.scale >= 1.08 || !!query;
+  }
   function draw() {
     ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
     ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
     drawGrid();
     const focus = selected || hover;
     const keep = related(focus);
-    for (const [cluster, box] of Object.entries(data.bounds)) {
-      const a = toScreen(box[0], box[1]);
-      const b = toScreen(box[2], box[3]);
+    const font = getComputedStyle(document.body).fontFamily;
+    const placed = [];
+    for (const [cluster, spec] of Object.entries(data.centers)) {
+      const p = toScreen(spec[0], spec[1]);
+      const r = spec[2] * view.scale;
       const faded = island && island !== cluster;
-      ctx.fillStyle = faded ? 'rgba(18,20,26,0.25)' : 'rgba(22,24,30,0.72)';
-      ctx.strokeStyle = faded ? 'rgba(42,45,53,0.35)' : '#2a2d35';
-      ctx.lineWidth = 1;
-      const r = 26 * view.scale;
+      const glow = ctx.createRadialGradient(p.x, p.y, r * 0.15, p.x, p.y, r);
+      glow.addColorStop(0, faded ? 'rgba(198,163,90,0.02)' : 'rgba(198,163,90,0.08)');
+      glow.addColorStop(1, 'rgba(9,11,16,0)');
+      ctx.fillStyle = glow;
       ctx.beginPath();
-      ctx.roundRect(a.x, a.y, b.x - a.x, b.y - a.y, r);
-      ctx.fill(); ctx.stroke();
-    }
-    ctx.font = '600 11px ' + getComputedStyle(document.body).fontFamily;
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'bottom';
-    for (const [cluster, pos] of Object.entries(data.anchors)) {
-      const lift = cluster === 'hunt-ship' ? 150 : cluster === 'bridge' ? 36 : 95;
-      const p = toScreen(pos[0], pos[1] - lift);
-      ctx.fillStyle = island && island !== cluster ? '#3f3c37' : '#8a8478';
-      ctx.fillText(data.labels[cluster].toUpperCase(), p.x, p.y);
+      ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.font = '600 12px ' + font;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      const title = data.labels[cluster].toUpperCase();
+      const tw = ctx.measureText(title).width;
+      const hx = p.x;
+      const hy = p.y - r + 8;
+      placed.push({ x: hx - tw / 2 - 6, y: hy - 16, w: tw + 12, h: 18 });
+      ctx.fillStyle = faded ? '#4a453c' : '#c4bba8';
+      ctx.fillText(title, hx, hy);
     }
     for (const e of data.edges) {
       const a = byId[e.source], b = byId[e.target];
       const p = toScreen(a.x, a.y);
       const q = toScreen(b.x, b.y);
+      const c = toScreen(e.cx, e.cy);
       const hot = focus && keep.has(a.id) && keep.has(b.id);
       const dim = (focus && !hot) || (query && !(matches(a) || matches(b))) || (island && a.cluster !== island && b.cluster !== island);
-      ctx.strokeStyle = hot ? 'rgba(212,175,55,0.55)' : a.cluster === b.cluster ? '#4a4d56' : '#2a2d35';
-      ctx.lineWidth = hot ? 1.8 : a.cluster === b.cluster ? 1.3 : 0.8;
-      ctx.globalAlpha = dim ? 0.18 : 1;
-      ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+      ctx.strokeStyle = hot ? 'rgba(198,163,90,0.92)' : e.intra ? '#b3aa96' : '#8a8274';
+      ctx.lineWidth = hot ? 2.1 : e.intra ? 1.65 : 1.25;
+      ctx.globalAlpha = dim ? 0.16 : 0.92;
+      ctx.beginPath();
+      ctx.moveTo(p.x, p.y);
+      ctx.quadraticCurveTo(c.x, c.y, q.x, q.y);
+      ctx.stroke();
       ctx.globalAlpha = 1;
     }
-    const font = getComputedStyle(document.body).fontFamily;
     for (const n of nodes) {
       const p = toScreen(n.x, n.y);
-      const r = radius(n) * Math.max(view.scale, 0.75);
-      const color = data.colors[n.type] || '#94a3b8';
+      const r = radius(n) * Math.max(view.scale, 0.8);
+      const color = data.colors[n.type] || '#8b8478';
       const on = !focus || keep.has(n.id);
       const shown = matches(n) && (!island || n.cluster === island);
-      ctx.globalAlpha = shown ? (on ? 1 : 0.18) : 0.08;
+      ctx.globalAlpha = shown ? (on ? 1 : 0.2) : 0.08;
       if (n === selected || n === hover) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, r + 8, 0, Math.PI * 2);
@@ -896,26 +949,46 @@ GRAPH_HTML = """<!doctype html>
       ctx.stroke();
       ctx.globalAlpha = 1;
     }
+    const candidates = [];
     for (const n of nodes) {
-      const shown = matches(n) && (!island || n.cluster === island);
-      const on = !focus || keep.has(n.id) || n === hover || n === selected;
-      if (!shown && n !== hover && n !== selected) continue;
+      const must = n === hover || n === selected || (!!query && matches(n));
+      if (!must && !labelsOpen()) continue;
+      if (!matches(n) && !must) continue;
+      if (island && n.cluster !== island && !must) continue;
+      candidates.push({ n, must, deg: (adj.get(n.id) || []).length });
+    }
+    candidates.sort((a, b) => Number(b.must) - Number(a.must) || b.deg - a.deg);
+    for (const item of candidates) {
+      const n = item.n;
       const p = toScreen(n.x, n.y);
-      const label = n.title;
+      const r = radius(n) * Math.max(view.scale, 0.8);
       ctx.font = (n === selected || n === hover ? '600 ' : '') + '12px ' + font;
       ctx.textAlign = 'left';
       ctx.textBaseline = 'middle';
+      const label = n.title;
       const tw = ctx.measureText(label).width;
-      const lx = p.x + radius(n) * Math.max(view.scale, 0.75) + 8;
-      const ly = p.y;
-      ctx.globalAlpha = shown && on ? 1 : 0.22;
-      ctx.fillStyle = 'rgba(9,11,16,0.78)';
+      const slots = [
+        [p.x + r + 8, p.y],
+        [p.x - tw - r - 8, p.y],
+        [p.x - tw / 2, p.y - r - 14],
+        [p.x - tw / 2, p.y + r + 14]
+      ];
+      let box = null;
+      for (const [lx, ly] of slots) {
+        const rect = { x: lx - 5, y: ly - 9, w: tw + 10, h: 18, lx, ly };
+        if (!placed.some(prev => overlap(prev, rect))) { box = rect; break; }
+      }
+      if (!box && item.must) {
+        box = { x: slots[0][0] - 5, y: slots[0][1] - 9, w: tw + 10, h: 18, lx: slots[0][0], ly: slots[0][1] };
+      }
+      if (!box) continue;
+      placed.push(box);
+      ctx.fillStyle = 'rgba(9,11,16,0.82)';
       ctx.beginPath();
-      ctx.roundRect(lx - 5, ly - 9, tw + 10, 18, 6);
+      ctx.roundRect(box.x, box.y, box.w, box.h, 6);
       ctx.fill();
       ctx.fillStyle = n === selected || n === hover ? '#f8f4ea' : '#ddd6c8';
-      ctx.fillText(label, lx, ly);
-      ctx.globalAlpha = 1;
+      ctx.fillText(label, box.lx, box.ly);
     }
   }
   function resize() {

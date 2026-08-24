@@ -65,6 +65,9 @@ Gap batch 4: +124800. Total 281056. Tiers S 15611 / A 23345 / B 129379 / C 84566
 ## [2026-08-24] ingest | three new X URLs
 
 TheWhizzAI ARC-AGI-3 30.2→100 marked `unverified` (NVIDIA blog exists, no paper). chatchat Living Brain linked to [[memory-engineering]] and [[agent-operating-system]]. g3t0ffmyl4wn body not retrieved. raw/ not written.
+## [2026-08-24] ship | graph UI layout and LoD
+
+Connected island cloud, curved edges, coherent gold/teal/blue/green/coral palette. Macro zoom shows cluster headers. Node labels appear on zoom-in with collision skip. See [[graph]] and [[graph-ui-2026-08-24]].
 
 ## [2026-08-24] ship | designed graph HTML
 
