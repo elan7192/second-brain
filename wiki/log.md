@@ -10,6 +10,14 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] update | arXiv Pages live at 156256
+
+https://elan7192.github.io/arxiv-potential-tierlist/ shows 156256. Cursor 2018-04. Batch 3 +27300. See [[arxiv-tierlist]].
+
+## [2026-08-24] update | arXiv corpus 156256
+
+Total 156256 from `stats.json`. Tiers S 15167 / A 8719 / B 60883 / C 52306 / D 19181. Remaining gap 2018-04 to 2025-06. URL unchanged. Handoff md had not yet grown a batch-3 section. See [[arxiv-tierlist]].
+
 ## [2026-08-24] ingest | marfinxx TRACE
 
 Ingested https://x.com/marfinxx/status/2091496044961968275. Paper exists: arXiv 2608.09153. Kept 72.7 / 82 / 96 / 16x / 83 vs 33. Marked 84 / 76 / 4.2x `unverified`. Linked [[trace]] [[memory-engineering]] [[context-graph]] [[tokens-as-capital]]. raw/ not written.
