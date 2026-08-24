@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 papers (counts only), future-potential. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. Five BATCH01 papers compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -45,11 +45,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
+| [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
+| [[nmc-trace-complexity]] | Aimone: NMC energy via sparse spike traces |
+| [[flow-matching-pso]] | Analogy only. FM as continuous PSO |
+| [[bdh]] | Graph+Hebbian LLM. GPT-2 scale claim. PAC bounds aspirational |
+| [[evosyn]] | Evolves test/solution filter. 231 LCB, 673 OS |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch01]] | 2026-08-24 | Five S-tier digests. Harvest frozen |
+| [[src-arxiv-2507-08177]] | 2026-08-24 | Causal CPS anomaly vision paper |
+| [[src-arxiv-2507-17886]] | 2026-08-24 | Aimone NMC time/space/energy |
+| [[src-arxiv-2507-20810]] | 2026-08-24 | FM=PSO analogy. No theorem |
+| [[src-arxiv-2509-26507]] | 2026-08-24 | BDH/BDH-GPU. Later sections unread |
+| [[src-arxiv-2510-17928]] | 2026-08-24 | EvoSyn 231 LCB / 673 OS |
 | [[src-thewhizzai-avo]] | 2026-08-24 | ARC-AGI-3 30.2→100 tweet. Unverified, no paper |
 | [[src-chatchat-living-brain]] | 2026-08-24 | ChatChat Living Brain product tweet |
 | [[src-g3t0ffmyl4wn-2091749093206818856]] | 2026-08-24 | Body not retrieved. Silent |

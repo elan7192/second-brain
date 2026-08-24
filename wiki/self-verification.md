@@ -31,3 +31,5 @@ For high-risk wiki claims and architecture answers: write the answer, score it a
 ## Related
 
 [[verifiable-instructions]] · [[entropy-gate]]
+
+Related later source: [[evosyn]] synthesizes executable tests; not the same as sampling several answers.

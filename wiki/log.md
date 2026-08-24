@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH01 five paper digests
+
+Compiled [[causal-cps-anomaly]], [[nmc-trace-complexity]], [[flow-matching-pso]], [[bdh]], [[evosyn]] from `/workspace/arxiv-tierlist/digests/`. Linked [[arxiv-tierlist]]. Unread appendices not treated as known. See [[src-arxiv-batch01]].
+
 ## [2026-08-24] update | arXiv corpus 405856
 
 Counts-only. Gap batch 6 +72800. Total 405856. Tiers S 16443 / A 42228 / B 197545 / C 113767 / D 35873. Cursor 2022-06-08. No paper known. See [[arxiv-tierlist]].

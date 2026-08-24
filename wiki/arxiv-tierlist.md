@@ -18,8 +18,22 @@ Source: [[src-arxiv-tierlist-handoff]]. Ranking axis and formula: [[potential-ra
 - Prior: 333056 (batch 5)
 - Date range: 1990-01-01 to 2026-08-20
 - Full-corpus tiers: S 16443 / A 42228 / B 197545 / C 113767 / D 35873
-- These are inventory counts. No paper from this pile is compiled as known.
+- Inventory counts. Known compiled papers are listed below, not the rest of the pile.
 - Data root: `/workspace/arxiv-tierlist/`
+
+## Known papers (BATCH01)
+
+arxiv read these. Digest path `/workspace/arxiv-tierlist/digests/`. Source list: [[src-arxiv-batch01]].
+
+| Paper | Page |
+| --- | --- |
+| 2507.08177 | [[causal-cps-anomaly]] |
+| 2507.17886 | [[nmc-trace-complexity]] |
+| 2507.20810 | [[flow-matching-pso]] |
+| 2509.26507 | [[bdh]] |
+| 2510.17928 | [[evosyn]] |
+
+Unread appendices and `.txt` extracts are not known.
 
 ## Display
 
