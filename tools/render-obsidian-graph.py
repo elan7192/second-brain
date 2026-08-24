@@ -145,13 +145,13 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
 CLUSTER_OF = {slug: cluster for cluster, slugs in CLUSTER_SEEDS.items() for slug in slugs}
 
 CLUSTER_ANCHORS = {
-    "compile": (-205.0, -78.0),
-    "verification": (205.0, -70.0),
-    "memory": (-195.0, 128.0),
-    "harness": (195.0, 132.0),
-    "hunt-ship": (12.0, 245.0),
-    "nav": (-8.0, -220.0),
-    "bridge": (6.0, 18.0),
+    "compile": (-220.0, -40.0),
+    "verification": (175.0, -130.0),
+    "memory": (-80.0, 155.0),
+    "harness": (195.0, 85.0),
+    "hunt-ship": (95.0, 250.0),
+    "nav": (-55.0, -215.0),
+    "bridge": (-35.0, 35.0),
 }
 CLUSTER_PHASE = {
     "compile": 0.4,
@@ -393,16 +393,19 @@ def cluster_headers(nodes: dict[str, dict]) -> dict[str, tuple[float, float]]:
         dx, dy = mx - gx, my - gy
         dist = math.hypot(dx, dy) or 1.0
         ux, uy = dx / dist, dy / dist
-        hx, hy = mx + ux * (radius + 26.0), my + uy * (radius + 18.0)
-        box = (hx - 52.0, hy - 10.0, 104.0, 20.0)
+        if cluster == "bridge":
+            hx, hy = mx + radius + 46.0, my - 8.0
+        else:
+            hx, hy = mx + ux * (radius + 28.0), my + uy * (radius + 20.0)
+        box = (hx - 58.0, hy - 12.0, 116.0, 24.0)
         extra = 0.0
         while any(
             not (box[0] + box[2] < px or px + pw < box[0] or box[1] + box[3] < py or py + ph < box[1])
             for px, py, pw, ph in placed
-        ) and extra < 80.0:
-            extra += 12.0
-            hx, hy = mx + ux * (radius + 26.0 + extra), my + uy * (radius + 18.0 + extra)
-            box = (hx - 52.0, hy - 10.0, 104.0, 20.0)
+        ) and extra < 90.0:
+            extra += 14.0
+            hx, hy = mx + ux * (radius + 28.0 + extra), my + uy * (radius + 20.0 + extra)
+            box = (hx - 58.0, hy - 12.0, 116.0, 24.0)
         headers[cluster] = (hx, hy)
         placed.append(box)
     return headers
@@ -423,7 +426,7 @@ def edge_records(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> list[d
         intra = a["cluster"] == b["cluster"]
         if intra:
             sign = 1.0 if ((hash(src) + hash(dst)) % 2) else -1.0
-            bend = min(22.0, 8.0 + dist * 0.08)
+            bend = min(36.0, 12.0 + dist * 0.14)
             cx = mx - (dy / dist) * bend * sign
             cy = my + (dx / dist) * bend * sign
         else:
@@ -431,8 +434,8 @@ def edge_records(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> list[d
             cb = centers[b["cluster"]]
             bx = (ca[0] + cb[0]) / 2
             by = (ca[1] + cb[1]) / 2
-            cx = mx * 0.42 + bx * 0.58
-            cy = my * 0.42 + by * 0.58
+            cx = mx * 0.28 + bx * 0.72
+            cy = my * 0.28 + by * 0.72
         records.append({"source": src, "target": dst, "cx": cx, "cy": cy, "intra": intra})
     return records
 
@@ -474,6 +477,9 @@ def write_svg(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
             f'<text x="{ox+hx:.1f}" y="{oy+hy:.1f}" fill="#c4bba8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" letter-spacing="0.12em" text-anchor="middle">{label}</text>'
         )
     for rec in edge_records(nodes, edges):
+        bridge = rec["source"] == "agent-operating-system" or rec["target"] == "agent-operating-system"
+        if not rec["intra"] and not bridge:
+            continue
         a, b = nodes[rec["source"]], nodes[rec["target"]]
         stroke = "#c4bba8" if rec["intra"] else "#9a9080"
         width_s = "2.0" if rec["intra"] else "1.45"
@@ -551,6 +557,9 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
             font=font_label,
         )
     for rec in edge_records(nodes, edges):
+        bridge = rec["source"] == "agent-operating-system" or rec["target"] == "agent-operating-system"
+        if not rec["intra"] and not bridge:
+            continue
         a, b = nodes[rec["source"]], nodes[rec["target"]]
         pts = [
             (ox + x, oy + y)
@@ -908,7 +917,8 @@ GRAPH_HTML = """<!doctype html>
     ctx.stroke();
   }
   function overlap(a, b) {
-    return !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y + b.h < a.y);
+    const p = 6;
+    return !(a.x + a.w + p < b.x || b.x + b.w + p < a.x || a.y + a.h + p < b.y || b.y + b.h + p < a.y);
   }
   function labelsOpen() {
     return view.scale >= 1.08 || !!query;
@@ -947,8 +957,11 @@ GRAPH_HTML = """<!doctype html>
         ctx.fillText(title, p.x, p.y);
       }
     }
+    const deep = view.scale >= 1.08 || !!focus || !!query;
     for (const e of data.edges) {
       const a = byId[e.source], b = byId[e.target];
+      const bridge = e.source === 'agent-operating-system' || e.target === 'agent-operating-system';
+      if (!deep && !e.intra && !bridge) continue;
       const p = toScreen(a.x, a.y);
       const q = toScreen(b.x, b.y);
       const c = toScreen(e.cx, e.cy);
@@ -994,8 +1007,12 @@ GRAPH_HTML = """<!doctype html>
       candidates.push({ n, must, deg: (adj.get(n.id) || []).length });
     }
     candidates.sort((a, b) => Number(b.must) - Number(a.must) || b.deg - a.deg);
+    let shownLabels = 0;
+    const labeled = [];
     for (const item of candidates) {
       const n = item.n;
+      if (!item.must && shownLabels >= 14) continue;
+      if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) * view.scale < 40)) continue;
       const p = toScreen(n.x, n.y);
       const r = radius(n) * Math.max(view.scale, 0.8);
       ctx.font = (n === selected || n === hover ? '600 ' : '') + '12px ' + font;
@@ -1019,6 +1036,8 @@ GRAPH_HTML = """<!doctype html>
       }
       if (!box) continue;
       placed.push(box);
+      labeled.push(n);
+      shownLabels += 1;
       ctx.fillStyle = 'rgba(9,11,16,0.82)';
       ctx.beginPath();
       ctx.roundRect(box.x, box.y, box.w, box.h, 6);
