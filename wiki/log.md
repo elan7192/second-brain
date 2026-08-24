@@ -10,6 +10,14 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] update | arXiv Pages live at 128956
+
+https://elan7192.github.io/arxiv-potential-tierlist/ shows 128956. Cursor 2017-04. See [[arxiv-tierlist]].
+
+## [2026-08-24] update | arXiv corpus 128956
+
+Gap batch 2: +22100 unique. Total 128956. Tiers S 15114 / A 6509 / B 46431 / C 43858 / D 17044. Remaining gap 2017-04 to 2025-06. URL unchanged. See [[arxiv-tierlist]].
+
 ## [2026-08-24] update | arXiv Pages live at 106856
 
 https://elan7192.github.io/arxiv-potential-tierlist/ is current. Counts already on [[arxiv-tierlist]]. No tokens. raw/ not written.

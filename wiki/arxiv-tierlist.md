@@ -12,13 +12,13 @@ An arXiv paper tierlist site ranked by future development potential (runway), no
 
 Source: [[src-arxiv-tierlist-handoff]]. Ranking axis and formula: [[potential-ranking]].
 
-## Corpus (2026-08-24 gap batch 1)
+## Corpus (2026-08-24 gap batch 2)
 
-- Unique papers: 106856
-- Prior snapshot 2026-08-23 UTC: 66555
-- This batch added 26001 unique (OAI cs from 2015-01-01, stopped about 2016-06)
+- Unique papers: 128956
+- This batch added 22100 unique. Cursor 2017-04-19.
+- Prior: 106856 (batch 1), 66555 (2026-08-23 UTC)
 - Date range: 1990-01-01 to 2026-08-20
-- Full-corpus tiers: S 15094 / A 5274 / B 35515 / C 36167 / D 14806
+- Full-corpus tiers: S 15114 / A 6509 / B 46431 / C 43858 / D 17044
 - Data root: `/workspace/arxiv-tierlist/`
 
 ## Display
@@ -31,9 +31,9 @@ Each card: title, authors, category, date, score, reason tags, abs and pdf links
 
 1. OAI-PMH `https://oaipmh.arxiv.org/oai` `metadataPrefix=arXiv` `set=cs`, oldest first. First lag of 48100 papers stopped at 2013-12.
 2. Atom `https://export.arxiv.org/api/query` `sortBy=submittedDate&sortOrder=descending` added 17155 papers from 2025-06 to 2026-08 (about 2000 newest per class: cs.AI, cs.LG, cs.CL, cs.CV, cs.NE, cs.RO, cs.CR, stat.ML, cs.SE, cs.IR).
-3. Gap batch 1 filled OAI from 2015-01-01 to about 2016-06. Resume: `harvest_gap_state.json`. 2016-06 to 2025-06 still open.
+3. Gap batch 2 cursor 2017-04-19. Remaining gap 2017-04 to 2025-06. Resume: `harvest_gap_state.json`.
 4. Request interval about 3 seconds. Metadata only. No PDFs.
-5. Dedup key is arXiv id. Total unique 106856.
+5. Dedup key is arXiv id. Total unique 128956.
 
 ## Ranking (essence)
 
@@ -53,19 +53,19 @@ score = clamp(0, 100,
 
 Tiers: S ≥ 80, A ≥ 68, B ≥ 52, C ≥ 38, D < 38.
 
-Known bias: recency overweights 2025–26 papers, so S is 15094. That is why display is per-tier, not global top-N. It is a product bias, not a source conflict.
+Known bias: recency overweights 2025–26 papers, so S is 15114. That is why display is per-tier, not global top-N. It is a product bias, not a source conflict.
 
 ## Public URL
 
 Current site (2026-08-24, HTTP 200): https://elan7192.github.io/arxiv-potential-tierlist/
 Repo: https://github.com/elan7192/arxiv-potential-tierlist
-Site is live on this URL at the 106856 corpus (2026-08-24). Per-tier top 800 slice.
+Site is live on this URL at the 128956 corpus (2026-08-24). Cursor 2017-04. Per-tier top 800 slice.
 
 ZeroDeploy URLs are stale. Do not treat them as current. Do not record deploy tokens. Do not use `silent-wind-6359` (pre-2013 only) or `broken-flower-1108` (global top 4000, all S). Local serve: `python3 -m http.server 8765` in `site/`.
 
 ## Next priorities (from source; do not invent)
 
-1. Fill the remaining 2016-06 to 2025-06 gap (continue OAI from harvest_gap_state.json).
+1. Fill the remaining 2017-04 to 2025-06 gap (continue OAI from harvest_gap_state.json).
 2. Rescore: lower recency weight, or per-category percentile / z-score.
 3. Product: search and category filters exist in draft; community vote as a second axis was not requested.
 

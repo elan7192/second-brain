@@ -25,7 +25,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 
 - Ranking axis is future potential / runway, not citations or journal prestige. See [[arxiv-tierlist]] and [[potential-ranking]].
 - Website display is per-tier top 800 (4000 cards), not a global top-N.
-- Corpus 2026-08-24: 106856 unique. Tiers S 15094 / A 5274 / B 35515 / C 36167 / D 14806. See [[arxiv-tierlist]].
+- Corpus 2026-08-24: 128956 unique. Tiers S 15114 / A 6509 / B 46431 / C 43858 / D 17044. See [[arxiv-tierlist]].
 - Current public site is https://elan7192.github.io/arxiv-potential-tierlist/ (repo https://github.com/elan7192/arxiv-potential-tierlist). ZeroDeploy URLs are stale. Do not treat them as current.
 - Never store ZeroDeploy or other deploy claim tokens in wiki, MEMORY, or chat.
 
