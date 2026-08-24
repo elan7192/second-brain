@@ -75,6 +75,20 @@ Source list: [[src-arxiv-batch04]].
 
 C11/C12 on [[contradictions]]. OCR-unclean tables `unverified`.
 
+## Known papers (BATCH05)
+
+Source list: [[src-arxiv-batch05]].
+
+| Paper | Page |
+| --- | --- |
+| 2512.00288 | [[portal]] |
+| 2512.00341 | [[mpi-init]] |
+| 2512.01249 | [[pwr-ga]] |
+| 2512.02419 | [[brain-ai-convergence]] |
+| 2512.03394 | [[vs-graph]] |
+
+VS-Graph figure-only accuracy `unverified`.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.

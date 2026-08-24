@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH05 five paper digests
+
+Compiled [[portal]], [[mpi-init]], [[pwr-ga]], [[brain-ai-convergence]], [[vs-graph]]. Figure-only accuracy `unverified`. See [[src-arxiv-batch05]].
+
 ## [2026-08-24] ingest | BATCH04 five paper digests
 
 Compiled [[tiwm]], [[unitok]], [[llm4eo]], [[apt-siamese]], [[foundry-3d]]. Flagged C11 and C12. OCR-unclean tables `unverified`. See [[src-arxiv-batch04]].

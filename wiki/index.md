@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. BATCH01–04 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01–05 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -65,11 +65,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[llm4eo]] | GPT-4.1-mini evolves FJSP operators |
 | [[apt-siamese]] | DARPA TC transfer. Tables 4–7 OCR-dirty |
 | [[foundry-3d]] | SuperTokens from Point-JEPA |
+| [[portal]] | Landscape generator. No optimizer scores |
+| [[mpi-init]] | Binary EA init transfer. 71/72 vs Rand |
+| [[pwr-ga]] | Pascal-weighted GA. TSP gain is tiny |
+| [[brain-ai-convergence]] | Perspective. 0 tables |
+| [[vs-graph]] | HDC graphs. Acc is figure-only |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch05]] | 2026-08-24 | Five digests. VS-Graph acc figure-only |
+| [[src-arxiv-2512-00288]] | 2026-08-24 | PORTAL generator. No bake-off |
+| [[src-arxiv-2512-00341]] | 2026-08-24 | MPI init 69-2-1 |
+| [[src-arxiv-2512-01249]] | 2026-08-24 | PWR-3. TSP ≠ 9–22% |
+| [[src-arxiv-2512-02419]] | 2026-08-24 | Brain-AI perspective |
+| [[src-arxiv-2512-03394]] | 2026-08-24 | VS-Graph. Acc unverified |
 | [[src-arxiv-batch04]] | 2026-08-24 | Five digests. C11 UniTok, C12 TIWM |
 | [[src-arxiv-2511-05540]] | 2026-08-24 | TIWM Mini vs full val14 |
 | [[src-arxiv-2511-12922]] | 2026-08-24 | UniTok. 51.89% is Toys |
