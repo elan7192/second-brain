@@ -37,7 +37,7 @@ Taken from [[agent-operating-system]].
 | Compile | llm-wiki, tokens-as-capital, context-graph |
 | Memory | memory-engineering, memory-ablation |
 | Verification | verifiable-instructions, self-verification, anti-slop |
-| Harness | audited-task-contract, harness-routing, entropy-gate |
+| Harness | audited-task-contract, harness-routing, entropy-gate, codex-goal |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
 | People / sources | Sit with the concept they already cite |
 
@@ -72,20 +72,26 @@ flowchart TB
     src-juampi-anti-slop-rank
     src-voxyz-verifiable-instructions
     verifiable-instructions
+    vox
   end
   subgraph harness[Harness]
     audited-task-contract
+    codex-goal
     entropy-gate
     harness-routing
     rohit
     src-hitu-entropy-engineering
     src-rohit-harness-router
+    src-voxyz-codex-goal-quota
   end
   subgraph hunt-ship[Hunt / ship]
     graph-clusters-2026-08-24
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
+    ingest-brief-2026-08-24
+    ingest-brief-2026-08-24-arxiv-pages
+    ingest-brief-2026-08-24-arxiv-tierlist
     maps
     ship
     src-avid-obsidian-agent-team
@@ -97,6 +103,14 @@ flowchart TB
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
   hunt --> hunt-ship-loop
+  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
+  ingest-brief-2026-08-24 --> src-voxyz-codex-goal-quota
+  ingest-brief-2026-08-24 --> codex-goal
+  ingest-brief-2026-08-24 --> vox
+  ingest-brief-2026-08-24 --> audited-task-contract
+  ingest-brief-2026-08-24 --> verifiable-instructions
+  ingest-brief-2026-08-24 --> hunt-ship-loop
+  ingest-brief-2026-08-24 --> src-voxyz-verifiable-instructions
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
@@ -104,6 +118,7 @@ flowchart TB
   self-verification --> jacky-kwok
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
+  self-verification --> codex-goal
   harness-routing --> src-rohit-harness-router
   harness-routing --> audited-task-contract
   harness-routing --> entropy-gate
@@ -114,11 +129,13 @@ flowchart TB
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
   hunt-ship-loop --> src-avid-obsidian-agent-team
+  hunt-ship-loop --> src-voxyz-codex-goal-quota
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
+  hunt-ship-loop --> codex-goal
   llm-wiki --> tokens-as-capital
   llm-wiki --> context-graph
   llm-wiki --> andrej-karpathy
@@ -128,6 +145,8 @@ flowchart TB
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   audited-task-contract --> src-rohit-harness-router
+  audited-task-contract --> codex-goal
+  audited-task-contract --> src-voxyz-codex-goal-quota
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
@@ -144,6 +163,8 @@ flowchart TB
   context-graph --> memory-engineering
   context-graph --> hunt-ship-loop
   verifiable-instructions --> src-voxyz-verifiable-instructions
+  verifiable-instructions --> src-voxyz-codex-goal-quota
+  verifiable-instructions --> codex-goal
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   verifiable-instructions --> anti-slop
@@ -152,6 +173,12 @@ flowchart TB
   agent-operating-system --> audited-task-contract
   agent-operating-system --> verifiable-instructions
   agent-operating-system --> hunt-ship-loop
+  codex-goal --> src-voxyz-codex-goal-quota
+  codex-goal --> vox
+  codex-goal --> audited-task-contract
+  codex-goal --> hunt-ship-loop
+  codex-goal --> verifiable-instructions
+  codex-goal --> self-verification
   rohit --> audited-task-contract
   rohit --> harness-routing
   rohit --> src-rohit-harness-router
@@ -160,6 +187,10 @@ flowchart TB
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler
   andrej-karpathy --> src-bober-folder-workflow
+  vox --> src-voxyz-verifiable-instructions
+  vox --> src-voxyz-codex-goal-quota
+  vox --> verifiable-instructions
+  vox --> codex-goal
   src-bober-folder-workflow --> llm-wiki
   src-bober-folder-workflow --> andrej-karpathy
   src-jacky-self-verification --> self-verification
@@ -177,6 +208,12 @@ flowchart TB
   src-0xcodio-memory-ablation --> memory-engineering
   src-0xcodio-memory-ablation --> memory-ablation
   src-0xcodio-memory-ablation --> verifiable-instructions
+  src-voxyz-verifiable-instructions --> vox
   src-voxyz-verifiable-instructions --> verifiable-instructions
+  src-voxyz-codex-goal-quota --> vox
+  src-voxyz-codex-goal-quota --> codex-goal
+  src-voxyz-codex-goal-quota --> audited-task-contract
+  src-voxyz-codex-goal-quota --> verifiable-instructions
+  src-voxyz-codex-goal-quota --> hunt-ship-loop
 ```
 <!-- graph-mermaid:end -->

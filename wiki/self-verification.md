@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Self-verification
@@ -30,4 +30,6 @@ For high-risk wiki claims and architecture answers: write the answer, score it a
 
 ## Related
 
-[[verifiable-instructions]] · [[entropy-gate]]
+[[verifiable-instructions]] · [[entropy-gate]] · [[codex-goal]]
+
+[[codex-goal]] remasures the same product flow after each change. That is evidence on the app, not a scored sample of answers.

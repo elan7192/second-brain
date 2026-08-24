@@ -77,6 +77,7 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "src-jacky-self-verification",
         "src-juampi-anti-slop-rank",
         "jacky-kwok",
+        "vox",
     },
     "harness": {
         "audited-task-contract",
@@ -84,6 +85,8 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "entropy-gate",
         "src-rohit-harness-router",
         "src-hitu-entropy-engineering",
+        "src-voxyz-codex-goal-quota",
+        "codex-goal",
         "rohit",
     },
     "hunt-ship": {
@@ -101,6 +104,7 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "angles",
         "builds",
         "ingest-brief-2026-08-23",
+        "ingest-brief-2026-08-24",
         "graph-clusters-2026-08-24",
         "src-avid-obsidian-agent-team",
         "Jarvis",

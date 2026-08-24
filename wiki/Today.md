@@ -3,22 +3,22 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Today
 
-2026-08-23
+2026-08-24
 
 ## Done
 
-Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, Hunt / Ship / Maps indexes.
+Ingested [[src-voxyz-codex-goal-quota]]. Compiled [[codex-goal]] and [[vox]].
 
 ## Look at
 
-- [[agent-operating-system]]
-- [[contradictions]]
-- `output/obsidian-graph.html`
+- [[codex-goal]]
+- [[contradictions]] C6 and C8
+- [[ingest-brief-2026-08-24]]
 
 ## Inbox
 

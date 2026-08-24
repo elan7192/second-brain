@@ -27,8 +27,10 @@ Every instruction states:
 2. How to check that it changed.
 3. What to do when evidence is missing or the check fails.
 
-This vault's schema follows that shape. The tweet's eight paste-ready blocks were not in the fetched body. See [[contradictions]] C6.
+This vault's schema follows that shape. The 2026-08-22 tweet's eight paste-ready blocks were not in the fetched body. See [[contradictions]] C6.
+
+A later Voxyz thread ([[src-voxyz-codex-goal-quota]]) ships five `/goal` prompts with checks. That thread is not the missing eight blocks. See [[codex-goal]].
 
 ## Related
 
-[[memory-ablation]] · [[self-verification]] · [[anti-slop]] · `AGENTS.md`
+[[memory-ablation]] · [[self-verification]] · [[anti-slop]] · [[codex-goal]] · `AGENTS.md`

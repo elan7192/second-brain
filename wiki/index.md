@@ -44,11 +44,13 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[codex-goal]] | Leftover Codex quota is spent with `/goal`. Five recipes with checks |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-voxyz-codex-goal-quota]] | 2026-08-23 | Leftover Codex quota. Five `/goal` prompts retrieved |
 | [[src-arxiv-tierlist-handoff]] | 2026-08-24 | arXiv potential tierlist facts from box handoff |
 | [[src-0xcodio-memory-ablation]] | 2026-08-22 | Line-level memory ablation. Facts survived, adjectives died |
 | [[src-rohit-harness-router]] | 2026-08-22 | Shared contract so any harness can continue the task |
@@ -67,6 +69,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |
+| [[vox]] | @Voxyz_ai. Checks in schema, then `/goal` recipes |
 
 ## Root files the agent must keep current
 

@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Hunt / Ship loop
@@ -18,6 +18,7 @@ Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are 
 - Chat gets a short digest. See `output/`.
 - Lock decisions in `decisions.md` so dead ideas are not remade.
 - Nothing in the vault posts, pays, or sends.
+- [[src-voxyz-codex-goal-quota]] prompt 4: do not delete, merge, push, or deploy. Leave those actions in the final list. That matches D5.
 
 ## Folders that now exist
 
@@ -27,4 +28,4 @@ Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md`
+[[llm-wiki]] · [[context-graph]] · [[codex-goal]] · D5 in `decisions.md`

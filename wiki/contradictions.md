@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Contradictions
@@ -58,8 +58,18 @@ Resolution: D3. Profile files may exist. They may only hold facts that change an
 
 Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear.
 
+The 2026-08-23 thread ([[src-voxyz-codex-goal-quota]]) is five `/goal` recipes. It does not close C6.
+
 ## C7. Income claim
 
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. Leftover Codex quota as "days of Sol"
+
+[[src-voxyz-codex-goal-quota]] says unused quota at reset throws away days of Sol.
+
+The thread has no measurement.
+
+Resolution: keep the method on [[codex-goal]]. Mark the duration `unverified`.

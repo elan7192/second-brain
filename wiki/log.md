@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | Voxyz leftover Codex quota /goal
+
+Ingested https://x.com/voxyz_ai/status/2091603024817062192. Wrote [[src-voxyz-codex-goal-quota]], [[codex-goal]], [[vox]]. Five `/goal` prompts retrieved via threadreader. Linked [[audited-task-contract]], [[verifiable-instructions]], [[hunt-ship-loop]]. C6 still open. C8 marks "days of Sol" unverified. Brief: [[ingest-brief-2026-08-24]].
+
 ## [2026-08-24] rule | wiki stays current, takes bot improvements
 
 Human: wiki must know the compiled vault. Other bots send improvements here for ingest. Do not invent. See [[MEMORY]].

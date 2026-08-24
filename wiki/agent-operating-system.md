@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Agent operating system
@@ -16,7 +16,7 @@ Five layers, one vault.
 
 1. **Compile, do not retrieve.** [[llm-wiki]] + [[tokens-as-capital]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki.
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`.
-3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs.
+3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. Codex `/goal` is a same-harness form of that contract. See [[codex-goal]].
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
 5. **Keep a human gate.** [[hunt-ship-loop]]. File first. Scouts write quietly. Vault does not post, pay, or send.
 
@@ -28,4 +28,4 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[contradictions]]
+[[how-it-works]] · [[index]] · [[contradictions]] · [[codex-goal]]

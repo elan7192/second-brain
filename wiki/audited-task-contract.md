@@ -3,14 +3,14 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Audited task contract
 
 The portable unit between coding agents is verified task state, not a transcript.
 
-Source: [[src-rohit-harness-router]].
+Source: [[src-rohit-harness-router]]. Codex `/goal` is a same-harness form of this. See [[codex-goal]] and [[src-voxyz-codex-goal-quota]].
 
 ## Reset tax
 
@@ -39,10 +39,14 @@ Exclude: full chat, secrets, raw tool dumps, adjectives.
 
 Rule: the planner proposes. The executor changes a candidate. The auditor verifies. Only the controller commits.
 
+## Codex /goal
+
+`/goal` keeps outcome, check, constraints, and a stop list in one prompt. It is scoped to a Codex thread. It does not move state to another harness. Use this page's contract fields when the task leaves Codex.
+
 ## Why not a shared brain dump
 
 Generated repo summaries in a 2026 AGENTS.md study did not significantly raise resolve rate and raised cost. Native sessions are not a standard. Unverified memory can poison later agents.
 
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[codex-goal]]

@@ -10,5 +10,6 @@ updated: 2026-08-23
 
 Short briefs built from the wiki. Chat gets these, not the raw hunt.
 
+- [[ingest-brief-2026-08-24]]
 - [[ingest-brief-2026-08-23]]
 - [[Today]]
