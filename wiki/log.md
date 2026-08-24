@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH07 five paper digests
+
+Compiled [[g-carl]], [[concept-guard]], [[r2-opd]], [[scape]], [[vla-self-demo]]. Table 4 of 2608.19490 not known. See [[src-arxiv-batch07]].
+
 ## [2026-08-24] ingest | BATCH06 five paper digests
 
 Compiled [[two-stage-nn-tl]], [[dics]], [[skill-transfer]], [[iar]], [[bert-ler]]. Unread appendices/Gemma/LoRA/figs not known. See [[src-arxiv-batch06]].

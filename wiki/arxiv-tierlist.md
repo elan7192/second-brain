@@ -103,6 +103,20 @@ Source list: [[src-arxiv-batch06]].
 
 Unread appendices / Gemma tables / LoRA grid / figs not known.
 
+## Known papers (BATCH07)
+
+Source list: [[src-arxiv-batch07]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.20331 | [[g-carl]] |
+| 2608.20338 | [[concept-guard]] |
+| 2608.19408 | [[r2-opd]] |
+| 2608.19425 | [[scape]] |
+| 2608.19490 | [[vla-self-demo]] |
+
+[[vla-self-demo]] Table 4 unread.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.
