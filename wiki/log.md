@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] query | Skills, forgetting, anti-slop
+
+Human asked whether every inputted skill was stored, how agents use them without forgetting, and how slop is cut. Answer filed to [[query-skills-and-slop]]. Ten anti-slop skills were compiled, not vendored. Forgetting is ablation plus lint, not full replay. D6 is the slop default.
+
 ## [2026-08-24] query | Entropy gate quiz
 
 Human asked whether the vault remembered ingested data, using [[entropy-gate]] as the probe. Answer filed to [[query-entropy-gate]]. Cite the 64-worker table. Keep the 200-agent clip `unverified` ([[contradictions]] C3). `MEMORY.md` still has no personal facts.
