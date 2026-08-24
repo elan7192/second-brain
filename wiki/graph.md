@@ -39,6 +39,7 @@ flowchart LR
   how-it-works --> graph
   how-it-works --> index
   how-it-works --> contradictions
+  how-it-works --> agent-facing-docs
   how-it-works --> tokens-as-capital
   how-it-works --> context-graph
   how-it-works --> memory-ablation
@@ -46,43 +47,50 @@ flowchart LR
   how-it-works --> audited-task-contract
   how-it-works --> entropy-gate
   self-verification --> jacky-kwok
+  self-verification --> agent-facing-docs
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
   harness-routing --> rohit
+  log --> agent-facing-docs
+  log --> verifiable-instructions
+  log --> context-graph
+  log --> tokens-as-capital
+  log --> llm-wiki
+  log --> self-verification
+  log --> hunt-ship-loop
+  log --> contradictions
+  log --> agent-operating-system
+  log --> how-it-works
   log --> Home
   log --> maps
   log --> hunt
   log --> ship
-  log --> contradictions
-  log --> agent-operating-system
-  log --> llm-wiki
-  log --> tokens-as-capital
   log --> memory-engineering
   log --> memory-ablation
-  log --> verifiable-instructions
   log --> audited-task-contract
   log --> harness-routing
   log --> entropy-gate
-  log --> self-verification
   log --> anti-slop
-  log --> hunt-ship-loop
-  log --> context-graph
   log --> andrej-karpathy
   log --> jacky-kwok
   log --> rohit
   memory-engineering --> memory-ablation
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
+  hunt-ship-loop --> contradictions
+  hunt-ship-loop --> agent-facing-docs
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
   llm-wiki --> index
+  llm-wiki --> agent-facing-docs
   llm-wiki --> tokens-as-capital
   llm-wiki --> andrej-karpathy
   llm-wiki --> how-it-works
+  tokens-as-capital --> agent-facing-docs
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   index --> Home
@@ -91,6 +99,7 @@ flowchart LR
   index --> agent-operating-system
   index --> contradictions
   index --> llm-wiki
+  index --> agent-facing-docs
   index --> maps
   index --> hunt
   index --> ship
@@ -116,14 +125,17 @@ flowchart LR
   entropy-gate --> audited-task-contract
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
+  context-graph --> agent-facing-docs
   context-graph --> tokens-as-capital
   context-graph --> llm-wiki
   context-graph --> memory-engineering
   verifiable-instructions --> contradictions
+  verifiable-instructions --> agent-facing-docs
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   agent-operating-system --> llm-wiki
   agent-operating-system --> tokens-as-capital
+  agent-operating-system --> agent-facing-docs
   agent-operating-system --> memory-engineering
   agent-operating-system --> memory-ablation
   agent-operating-system --> audited-task-contract
@@ -136,18 +148,28 @@ flowchart LR
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
-  Today --> Home
-  Today --> agent-operating-system
+  Today --> agent-facing-docs
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
   contradictions --> audited-task-contract
   contradictions --> memory-ablation
+  contradictions --> hunt-ship-loop
+  contradictions --> verifiable-instructions
+  contradictions --> agent-facing-docs
+  agent-facing-docs --> contradictions
+  agent-facing-docs --> verifiable-instructions
+  agent-facing-docs --> context-graph
+  agent-facing-docs --> tokens-as-capital
+  agent-facing-docs --> llm-wiki
+  agent-facing-docs --> self-verification
+  agent-facing-docs --> hunt-ship-loop
   Hooks --> twitter
   Hooks --> contradictions
   Hooks --> ship
   Hooks --> llm-wiki
   Hooks --> tokens-as-capital
+  Hooks --> agent-facing-docs
   Jarvis --> Home
   Jarvis --> index
   Jarvis --> ship
@@ -164,37 +186,4 @@ flowchart LR
   jacky-kwok --> self-verification
   andrej-karpathy --> contradictions
   andrej-karpathy --> llm-wiki
-  index --> agent-facing-docs
-  index --> src-dair-agent-friendly-docs
-  log --> agent-facing-docs
-  log --> src-dair-agent-friendly-docs
-  Home --> agent-facing-docs
-  agent-facing-docs --> src-dair-agent-friendly-docs
-  agent-facing-docs --> verifiable-instructions
-  agent-facing-docs --> context-graph
-  agent-facing-docs --> tokens-as-capital
-  agent-facing-docs --> llm-wiki
-  agent-facing-docs --> self-verification
-  agent-facing-docs --> hunt-ship-loop
-  src-dair-agent-friendly-docs --> agent-facing-docs
-  src-dair-agent-friendly-docs --> verifiable-instructions
-  src-dair-agent-friendly-docs --> context-graph
-  src-dair-agent-friendly-docs --> tokens-as-capital
-  src-dair-agent-friendly-docs --> llm-wiki
-  src-dair-agent-friendly-docs --> self-verification
-  src-dair-agent-friendly-docs --> hunt-ship-loop
-  src-dair-agent-friendly-docs --> contradictions
-  verifiable-instructions --> agent-facing-docs
-  context-graph --> agent-facing-docs
-  tokens-as-capital --> agent-facing-docs
-  llm-wiki --> agent-facing-docs
-  self-verification --> agent-facing-docs
-  hunt-ship-loop --> agent-facing-docs
-  hunt-ship-loop --> contradictions
-  agent-operating-system --> agent-facing-docs
-  how-it-works --> agent-facing-docs
-  contradictions --> agent-facing-docs
-  contradictions --> src-dair-agent-friendly-docs
-  twitter --> src-dair-agent-friendly-docs
-  Hooks --> agent-facing-docs
 ```

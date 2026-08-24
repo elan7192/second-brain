@@ -223,7 +223,7 @@ def write_mermaid(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Pa
         "tags:",
         "  - wiki",
         "created: 2026-08-23",
-        "updated: 2026-08-23",
+        "updated: 2026-08-24",
         "---",
         "",
         "# Graph",
