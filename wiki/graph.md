@@ -3,165 +3,180 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Graph
 
-Open Obsidian graph view for the live version. This page is the compiled snapshot.
+The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship.
 
+## Cause
+
+`tools/render-obsidian-graph.py` used to park every wiki page on one ring around Home. That is a folder ring, so unrelated gold notes sat in one blob.
+
+`index`, `log`, and `twitter` are catalogs. They link across every layer. In a force layout those edges collapse islands. `raw/` notes also sat on the rim because source pages point at them.
+
+Color groups in `.obsidian/graph.json` only paint nodes. They do not place them.
+
+## Filter
+
+Search in graph view:
+
+`path:wiki OR path:maps OR path:hunt OR path:ship OR path:output OR file:Home OR file:MEMORY -file:index -file:log -file:twitter`
+
+Those hidden files stay in the vault. They are doors and timelines, not concept peers.
+
+Forces: low center pull, higher repel, longer link distance. Peer concept links on those pages do the clustering.
+
+## Islands
+
+Taken from [[agent-operating-system]].
+
+| Island | Pages |
+| --- | --- |
+| Compile | llm-wiki, tokens-as-capital, context-graph |
+| Memory | memory-engineering, memory-ablation |
+| Verification | verifiable-instructions, self-verification, anti-slop |
+| Harness | audited-task-contract, harness-routing, entropy-gate |
+| Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
+| People / sources | Sit with the concept they already cite |
+
+Home stays the door. agent-operating-system sits in the middle as the synthesis.
+
+## Snapshot
+
+Open `output/obsidian-graph.html` if you are not in Obsidian. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`.
+
+<!-- graph-mermaid:begin -->
 ```mermaid
-flowchart LR
-  maps --> Jarvis
-  maps --> Hooks
-  maps --> TELOS
-  Home --> maps
-  Home --> hunt
-  Home --> twitter
-  Home --> andrej-karpathy
-  Home --> jacky-kwok
-  Home --> rohit
-  Home --> ship
-  Home --> graph
-  Home --> Today
-  Home --> index
-  Home --> agent-operating-system
-  Home --> contradictions
-  Home --> Jarvis
-  Home --> TELOS
+flowchart TB
+  subgraph compile[Compile]
+    andrej-karpathy
+    context-graph
+    llm-wiki
+    src-bober-folder-workflow
+    src-papa-couch-compiler
+    tokens-as-capital
+  end
+  subgraph memory[Memory]
+    MEMORY
+    memory-ablation
+    memory-engineering
+    src-0xcodio-memory-ablation
+  end
+  subgraph verification[Verification]
+    anti-slop
+    jacky-kwok
+    self-verification
+    src-jacky-self-verification
+    src-juampi-anti-slop-rank
+    src-voxyz-verifiable-instructions
+    verifiable-instructions
+  end
+  subgraph harness[Harness]
+    audited-task-contract
+    entropy-gate
+    harness-routing
+    rohit
+    src-hitu-entropy-engineering
+    src-rohit-harness-router
+  end
+  subgraph hunt-ship[Hunt / ship]
+    graph-clusters-2026-08-24
+    hunt
+    hunt-ship-loop
+    ingest-brief-2026-08-23
+    maps
+    ship
+    src-avid-obsidian-agent-team
+  end
+  subgraph bridge[Synthesis]
+    agent-operating-system
+  end
+  MEMORY --> memory-ablation
+  ship --> ingest-brief-2026-08-23
+  ship --> graph-clusters-2026-08-24
   hunt --> hunt-ship-loop
-  hunt --> twitter
-  twitter --> hunt-ship-loop
+  memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
-  how-it-works --> llm-wiki
-  how-it-works --> Home
-  how-it-works --> graph
-  how-it-works --> index
-  how-it-works --> contradictions
-  how-it-works --> tokens-as-capital
-  how-it-works --> context-graph
-  how-it-works --> memory-ablation
-  how-it-works --> verifiable-instructions
-  how-it-works --> audited-task-contract
-  how-it-works --> entropy-gate
+  self-verification --> src-jacky-self-verification
   self-verification --> jacky-kwok
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
+  harness-routing --> src-rohit-harness-router
   harness-routing --> audited-task-contract
+  harness-routing --> entropy-gate
   harness-routing --> rohit
-  log --> Home
-  log --> maps
-  log --> hunt
-  log --> ship
-  log --> contradictions
-  log --> agent-operating-system
-  log --> llm-wiki
-  log --> tokens-as-capital
-  log --> memory-engineering
-  log --> memory-ablation
-  log --> verifiable-instructions
-  log --> audited-task-contract
-  log --> harness-routing
-  log --> entropy-gate
-  log --> self-verification
-  log --> anti-slop
-  log --> hunt-ship-loop
-  log --> context-graph
-  log --> andrej-karpathy
-  log --> jacky-kwok
-  log --> rohit
+  memory-engineering --> src-0xcodio-memory-ablation
   memory-engineering --> memory-ablation
+  memory-engineering --> context-graph
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
+  hunt-ship-loop --> src-avid-obsidian-agent-team
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
-  llm-wiki --> index
   llm-wiki --> tokens-as-capital
+  llm-wiki --> context-graph
   llm-wiki --> andrej-karpathy
-  llm-wiki --> how-it-works
+  llm-wiki --> src-papa-couch-compiler
+  llm-wiki --> src-bober-folder-workflow
+  tokens-as-capital --> src-papa-couch-compiler
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
-  index --> Home
-  index --> graph
-  index --> how-it-works
-  index --> agent-operating-system
-  index --> contradictions
-  index --> llm-wiki
-  index --> maps
-  index --> hunt
-  index --> ship
-  index --> tokens-as-capital
-  index --> memory-engineering
-  index --> memory-ablation
-  index --> verifiable-instructions
-  index --> audited-task-contract
-  index --> harness-routing
-  index --> entropy-gate
-  index --> self-verification
-  index --> anti-slop
-  index --> hunt-ship-loop
-  index --> context-graph
-  index --> andrej-karpathy
-  index --> jacky-kwok
-  index --> rohit
+  audited-task-contract --> src-rohit-harness-router
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
+  anti-slop --> src-juampi-anti-slop-rank
   anti-slop --> verifiable-instructions
-  entropy-gate --> contradictions
+  entropy-gate --> src-hitu-entropy-engineering
   entropy-gate --> audited-task-contract
+  entropy-gate --> harness-routing
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
+  context-graph --> src-avid-obsidian-agent-team
   context-graph --> tokens-as-capital
   context-graph --> llm-wiki
   context-graph --> memory-engineering
-  verifiable-instructions --> contradictions
+  context-graph --> hunt-ship-loop
+  verifiable-instructions --> src-voxyz-verifiable-instructions
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
+  verifiable-instructions --> anti-slop
   agent-operating-system --> llm-wiki
-  agent-operating-system --> tokens-as-capital
   agent-operating-system --> memory-engineering
-  agent-operating-system --> memory-ablation
   agent-operating-system --> audited-task-contract
-  agent-operating-system --> harness-routing
-  agent-operating-system --> entropy-gate
   agent-operating-system --> verifiable-instructions
-  agent-operating-system --> self-verification
-  agent-operating-system --> anti-slop
   agent-operating-system --> hunt-ship-loop
-  agent-operating-system --> contradictions
-  agent-operating-system --> how-it-works
-  agent-operating-system --> index
-  Today --> Home
-  Today --> agent-operating-system
-  Today --> contradictions
-  contradictions --> andrej-karpathy
-  contradictions --> entropy-gate
-  contradictions --> audited-task-contract
-  contradictions --> memory-ablation
-  Hooks --> twitter
-  Hooks --> contradictions
-  Hooks --> ship
-  Hooks --> llm-wiki
-  Hooks --> tokens-as-capital
-  Jarvis --> Home
-  Jarvis --> index
-  Jarvis --> ship
-  Jarvis --> how-it-works
-  Jarvis --> agent-operating-system
-  Jarvis --> TELOS
-  TELOS --> index
-  TELOS --> contradictions
-  TELOS --> Jarvis
-  TELOS --> agent-operating-system
-  TELOS --> hunt-ship-loop
   rohit --> audited-task-contract
   rohit --> harness-routing
+  rohit --> src-rohit-harness-router
   jacky-kwok --> self-verification
-  andrej-karpathy --> contradictions
+  jacky-kwok --> src-jacky-self-verification
   andrej-karpathy --> llm-wiki
+  andrej-karpathy --> src-papa-couch-compiler
+  andrej-karpathy --> src-bober-folder-workflow
+  src-bober-folder-workflow --> llm-wiki
+  src-bober-folder-workflow --> andrej-karpathy
+  src-jacky-self-verification --> self-verification
+  src-jacky-self-verification --> jacky-kwok
+  src-juampi-anti-slop-rank --> anti-slop
+  src-papa-couch-compiler --> llm-wiki
+  src-papa-couch-compiler --> tokens-as-capital
+  src-papa-couch-compiler --> andrej-karpathy
+  src-hitu-entropy-engineering --> entropy-gate
+  src-avid-obsidian-agent-team --> hunt-ship-loop
+  src-avid-obsidian-agent-team --> context-graph
+  src-rohit-harness-router --> audited-task-contract
+  src-rohit-harness-router --> harness-routing
+  src-rohit-harness-router --> rohit
+  src-0xcodio-memory-ablation --> memory-engineering
+  src-0xcodio-memory-ablation --> memory-ablation
+  src-0xcodio-memory-ablation --> verifiable-instructions
+  src-voxyz-verifiable-instructions --> verifiable-instructions
 ```
+<!-- graph-mermaid:end -->

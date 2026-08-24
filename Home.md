@@ -3,12 +3,12 @@ type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Home
 
-Door to the vault. Open this folder in Obsidian. Then open graph view.
+Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands.
 
 ## Result
 

@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Memory engineering
@@ -26,4 +26,4 @@ Full-transcript replay does not scale, does not rank importance, and keeps both 
 
 ## Related
 
-[[memory-ablation]] · [[audited-task-contract]] · [[entropy-gate]]
+[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]]

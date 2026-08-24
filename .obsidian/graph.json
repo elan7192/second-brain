@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "path:wiki OR path:maps OR path:hunt OR path:ship OR path:output OR file:Home OR file:MEMORY -file:index -file:log -file:twitter",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -49,10 +49,10 @@
   "nodeSizeMultiplier": 1.3,
   "lineSizeMultiplier": 1.1,
   "collapse-forces": false,
-  "centerStrength": 0.36,
-  "repelStrength": 12.4,
-  "linkStrength": 0.85,
-  "linkDistance": 220,
-  "scale": 0.92,
+  "centerStrength": 0.08,
+  "repelStrength": 22.5,
+  "linkStrength": 0.32,
+  "linkDistance": 300,
+  "scale": 0.82,
   "close": false
 }
