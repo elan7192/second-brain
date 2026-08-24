@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Audited task contract
@@ -30,6 +30,8 @@ Moving a task to a new harness without a contract means re-reading the repo, reo
 
 Exclude: full chat, secrets, raw tool dumps, adjectives.
 
+[[src-4ndrearossetti-openconnector]] applies the same exclusion at tool time: the executor may call a gateway; the model still does not see the key. See [[secret-gateway]].
+
 ## Control plane
 
 - Planner proposes a bounded unit.
@@ -45,4 +47,4 @@ Generated repo summaries in a 2026 AGENTS.md study did not significantly raise r
 
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[secret-gateway]]

@@ -35,4 +35,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]]
+[[src-4ndrearossetti-openconnector]] puts credentials in a runtime, not in the prompt. Product counts `unverified`. See [[secret-gateway]].
+
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[secret-gateway]]

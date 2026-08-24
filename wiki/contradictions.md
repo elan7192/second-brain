@@ -101,3 +101,11 @@ Resolution: do not quote Mini as full val14. See [[tiwm]].
 [[src-arxiv-2608-19514]] graphical abstract quotes 96.2% / 80.2%. Table 1 is 98.3 / 84.9 / 29.29.
 
 Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
+
+## C14. Browser inject vs API-action catalog
+
+Steve Faulkner asked how to inject a password into a computer-use browser field after approval, without the model seeing it.
+
+[[src-4ndrearossetti-openconnector]] replies by quoting OpenConnector, an API-action gateway (catalog of SaaS actions; secrets stay in the runtime).
+
+Resolution: keep the shared rule on [[secret-gateway]] (credentials out of context). Do not treat the quoted product as the browser injector.

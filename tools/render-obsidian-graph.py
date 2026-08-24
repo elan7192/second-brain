@@ -82,8 +82,10 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "audited-task-contract",
         "harness-routing",
         "entropy-gate",
+        "secret-gateway",
         "src-rohit-harness-router",
         "src-hitu-entropy-engineering",
+        "src-4ndrearossetti-openconnector",
         "rohit",
     },
     "hunt-ship": {

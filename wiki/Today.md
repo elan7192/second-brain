@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Today
@@ -16,6 +16,7 @@ Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, H
 
 ## Look at
 
+- [[secret-gateway]]
 - [[agent-operating-system]]
 - [[contradictions]]
 - `output/obsidian-graph.html`

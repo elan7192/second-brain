@@ -38,6 +38,10 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - The bounty/flow product is named LanBB. semantica is a tool inside it, not the project name.
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
+## Harness
+
+- 2026-08-24: OpenConnector as quoted by 4ndrearossetti is an API-action secret gateway. Do not treat it as a browser/computer-use password field injector. See [[secret-gateway]] and [[contradictions]] C14.
+
 ## Open questions
 
 - No personal identity or goals have been captured yet. Do not invent them.

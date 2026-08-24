@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | 4ndrearossetti OpenConnector quote
+
+Compiled [[secret-gateway]] from https://x.com/4ndrearossetti/status/2091739775782809963. OpenConnector counts `unverified`. Flagged C14. raw/ not written. See [[src-4ndrearossetti-openconnector]].
+
 ## [2026-08-24] ingest | BATCH09 five paper digests
 
 Compiled [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], [[orthoskillvla]]. Figs unread. See [[src-arxiv-batch09]].

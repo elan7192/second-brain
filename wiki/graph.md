@@ -37,7 +37,7 @@ Taken from [[agent-operating-system]].
 | Compile | llm-wiki, tokens-as-capital, context-graph |
 | Memory | memory-engineering, memory-ablation |
 | Verification | verifiable-instructions, self-verification, anti-slop |
-| Harness | audited-task-contract, harness-routing, entropy-gate |
+| Harness | audited-task-contract, harness-routing, entropy-gate, secret-gateway |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
 | People / sources | Sit with the concept they already cite |
 
@@ -78,6 +78,8 @@ flowchart TB
     entropy-gate
     harness-routing
     rohit
+    secret-gateway
+    src-4ndrearossetti-openconnector
     src-hitu-entropy-engineering
     src-rohit-harness-router
   end
@@ -108,6 +110,10 @@ flowchart TB
   harness-routing --> audited-task-contract
   harness-routing --> entropy-gate
   harness-routing --> rohit
+  harness-routing --> secret-gateway
+  secret-gateway --> src-4ndrearossetti-openconnector
+  secret-gateway --> harness-routing
+  secret-gateway --> audited-task-contract
   memory-engineering --> src-0xcodio-memory-ablation
   memory-engineering --> memory-ablation
   memory-engineering --> context-graph
@@ -174,6 +180,8 @@ flowchart TB
   src-rohit-harness-router --> audited-task-contract
   src-rohit-harness-router --> harness-routing
   src-rohit-harness-router --> rohit
+  src-4ndrearossetti-openconnector --> secret-gateway
+  src-4ndrearossetti-openconnector --> harness-routing
   src-0xcodio-memory-ablation --> memory-engineering
   src-0xcodio-memory-ablation --> memory-ablation
   src-0xcodio-memory-ablation --> verifiable-instructions

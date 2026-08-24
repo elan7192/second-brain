@@ -16,7 +16,7 @@ Five layers, one vault.
 
 1. **Compile, do not retrieve.** [[llm-wiki]] + [[tokens-as-capital]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki.
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`.
-3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs.
+3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[secret-gateway]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. Credentials stay in a runtime, not in the prompt.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
 5. **Keep a human gate.** [[hunt-ship-loop]]. File first. Scouts write quietly. Vault does not post, pay, or send.
 
@@ -33,3 +33,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
+
+[[src-4ndrearossetti-openconnector]] is a secret-gateway tweet. OpenConnector counts `unverified`. Browser inject vs API catalog is C14.

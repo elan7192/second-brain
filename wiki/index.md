@@ -39,6 +39,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |
 | [[harness-routing]] | Route model and harness by phase, not by turn |
+| [[secret-gateway]] | Credentials stay in a runtime. Model context does not hold them |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |
@@ -149,6 +150,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[src-arxiv-2507-20810]] | 2026-08-24 | FM=PSO analogy. No theorem |
 | [[src-arxiv-2509-26507]] | 2026-08-24 | BDH/BDH-GPU. Later sections unread |
 | [[src-arxiv-2510-17928]] | 2026-08-24 | EvoSyn 231 LCB / 673 OS |
+| [[src-4ndrearossetti-openconnector]] | 2026-08-24 | Reply quoting OpenConnector. C14 browser vs API catalog |
 | [[src-thewhizzai-avo]] | 2026-08-24 | ARC-AGI-3 30.2→100 tweet. Unverified, no paper |
 | [[src-chatchat-living-brain]] | 2026-08-24 | ChatChat Living Brain product tweet |
 | [[src-g3t0ffmyl4wn-2091749093206818856]] | 2026-08-24 | Body not retrieved. Silent |
