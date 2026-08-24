@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Entropy gate
@@ -41,4 +41,4 @@ Unanimous ungated agreement was wrong in 41% of 50 runs.
 
 ## Related
 
-[[audited-task-contract]] · [[self-verification]] · [[memory-engineering]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]]

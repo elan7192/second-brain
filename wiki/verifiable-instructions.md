@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Verifiable instructions
@@ -31,4 +31,4 @@ This vault's schema follows that shape. The tweet's eight paste-ready blocks wer
 
 ## Related
 
-[[memory-ablation]] · [[self-verification]] · `AGENTS.md`
+[[memory-ablation]] · [[self-verification]] · [[anti-slop]] · `AGENTS.md`

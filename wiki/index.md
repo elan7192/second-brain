@@ -3,17 +3,17 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 ## Start
 
 - [[Home]] — door
-- [[graph]] — compiled graph snapshot
+- [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
 - [[contradictions]] — unresolved conflicts

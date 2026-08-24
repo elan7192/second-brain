@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-24] lint | Concept clusters in the graph
+
+The hairball was ring-by-folder layout plus catalog stars (`index`, `log`, `twitter`). Graph filter now keeps wiki/maps/hunt/ship and drops `raw/`, `index`, `log`, and `twitter`. Renderer places nodes on the five [[agent-operating-system]] layers. Added peer concept links already supported by those pages. Locked D8.
 
 ## [2026-08-23] lint | Obsidian vault layer
 
