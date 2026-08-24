@@ -32,4 +32,4 @@ Computed by `rank.py`. No per-paper LLM.
 
 ## Known bias
 
-Recency is too strong on 2025–26 papers, so the S bucket is 15611. Global top-N looks like all S. Display must stay per-tier top 800, or later lower recency / use within-category relative scores.
+Recency is too strong on 2025–26 papers, so the S bucket is 15929. Global top-N looks like all S. Display must stay per-tier top 800, or later lower recency / use within-category relative scores.

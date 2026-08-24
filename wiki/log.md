@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] update | arXiv corpus 333056
+
+Counts-only. Gap batch 5 +52000. Total 333056. Tiers S 15929 / A 31021 / B 157813 / C 96860 / D 31433. Cursor 2021-06-25. See [[arxiv-tierlist]].
+
 ## [2026-08-24] rule | digest selected papers
 
 Human: every selected paper needs a digest. Do not blindly dump or update counts only. Wiki still does not harvest. See [[MEMORY]].
