@@ -145,13 +145,13 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
 CLUSTER_OF = {slug: cluster for cluster, slugs in CLUSTER_SEEDS.items() for slug in slugs}
 
 CLUSTER_ANCHORS = {
-    "compile": (-155.0, -55.0),
-    "verification": (155.0, -50.0),
-    "memory": (-145.0, 95.0),
-    "harness": (145.0, 100.0),
-    "hunt-ship": (15.0, 175.0),
-    "nav": (-8.0, -160.0),
-    "bridge": (0.0, 12.0),
+    "compile": (-205.0, -78.0),
+    "verification": (205.0, -70.0),
+    "memory": (-195.0, 128.0),
+    "harness": (195.0, 132.0),
+    "hunt-ship": (12.0, 245.0),
+    "nav": (-8.0, -220.0),
+    "bridge": (6.0, 18.0),
 }
 CLUSTER_PHASE = {
     "compile": 0.4,
@@ -290,9 +290,9 @@ def seed_positions(nodes: dict[str, dict]) -> None:
             nodes[slugs[0]]["x"] = ax
             nodes[slugs[0]]["y"] = ay
             continue
-        spread = 15.0 + 3.6 * math.sqrt(n)
+        spread = 22.0 + 5.2 * math.sqrt(n)
         if cluster == "hunt-ship":
-            spread = 20.0 + 4.2 * math.sqrt(n)
+            spread = 30.0 + 6.0 * math.sqrt(n)
         phase = CLUSTER_PHASE.get(cluster, 0.0)
         for i, slug in enumerate(slugs):
             radius = spread * math.sqrt((i + 0.35) / n)
@@ -316,12 +316,12 @@ def visible_edge(src: str, dst: str) -> bool:
 def edge_weight(nodes: dict[str, dict], src: str, dst: str) -> float:
     a, b = nodes[src]["cluster"], nodes[dst]["cluster"]
     if a == b:
-        return 1.15
+        return 1.05
     if "bridge" in {a, b}:
-        return 0.62
+        return 0.42
     if "nav" in {a, b}:
-        return 0.22
-    return 0.48
+        return 0.16
+    return 0.3
 
 
 def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
@@ -332,8 +332,8 @@ def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
         force: dict[str, list[float]] = {slug: [0.0, 0.0] for slug in slugs}
         for slug, node in nodes.items():
             ax, ay = CLUSTER_ANCHORS[node["cluster"]]
-            force[slug][0] += (ax - node["x"]) * 0.055
-            force[slug][1] += (ay - node["y"]) * 0.055
+            force[slug][0] += (ax - node["x"]) * 0.07
+            force[slug][1] += (ay - node["y"]) * 0.07
         for i, a in enumerate(slugs):
             na = nodes[a]
             for b in slugs[i + 1 :]:
@@ -342,11 +342,11 @@ def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
                 dy = na["y"] - nb["y"]
                 dist = math.hypot(dx, dy) or 0.01
                 same = na["cluster"] == nb["cluster"]
-                min_d = 32.0 if same else 44.0
-                strength = 240.0 if same else 360.0
-                push = min(strength / (dist * dist), 10.0)
+                min_d = 40.0 if same else 58.0
+                strength = 280.0 if same else 500.0
+                push = min(strength / (dist * dist), 12.0)
                 if dist < min_d:
-                    push += (min_d - dist) * 0.38
+                    push += (min_d - dist) * 0.42
                 ux, uy = dx / dist, dy / dist
                 force[a][0] += ux * push
                 force[a][1] += uy * push
@@ -357,7 +357,7 @@ def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
             dx = nb["x"] - na["x"]
             dy = nb["y"] - na["y"]
             dist = math.hypot(dx, dy) or 0.01
-            pull = 0.024 * dist * edge_weight(nodes, src, dst)
+            pull = 0.018 * dist * edge_weight(nodes, src, dst)
             ux, uy = dx / dist, dy / dist
             force[src][0] += ux * pull
             force[src][1] += uy * pull
@@ -376,9 +376,36 @@ def cluster_centers(nodes: dict[str, dict]) -> dict[str, tuple[float, float, flo
     for cluster, items in grouped.items():
         mx = sum(item["x"] for item in items) / len(items)
         my = sum(item["y"] for item in items) / len(items)
-        radius = max(math.hypot(item["x"] - mx, item["y"] - my) for item in items) + 28.0
+        radius = max(math.hypot(item["x"] - mx, item["y"] - my) for item in items) + 20.0
         centers[cluster] = (mx, my, radius)
     return centers
+
+
+def cluster_headers(nodes: dict[str, dict]) -> dict[str, tuple[float, float]]:
+    centers = cluster_centers(nodes)
+    if not centers:
+        return {}
+    gx = sum(item[0] for item in centers.values()) / len(centers)
+    gy = sum(item[1] for item in centers.values()) / len(centers)
+    headers: dict[str, tuple[float, float]] = {}
+    placed: list[tuple[float, float, float, float]] = []
+    for cluster, (mx, my, radius) in sorted(centers.items(), key=lambda item: item[0]):
+        dx, dy = mx - gx, my - gy
+        dist = math.hypot(dx, dy) or 1.0
+        ux, uy = dx / dist, dy / dist
+        hx, hy = mx + ux * (radius + 26.0), my + uy * (radius + 18.0)
+        box = (hx - 52.0, hy - 10.0, 104.0, 20.0)
+        extra = 0.0
+        while any(
+            not (box[0] + box[2] < px or px + pw < box[0] or box[1] + box[3] < py or py + ph < box[1])
+            for px, py, pw, ph in placed
+        ) and extra < 80.0:
+            extra += 12.0
+            hx, hy = mx + ux * (radius + 26.0 + extra), my + uy * (radius + 18.0 + extra)
+            box = (hx - 52.0, hy - 10.0, 104.0, 20.0)
+        headers[cluster] = (hx, hy)
+        placed.append(box)
+    return headers
 
 
 def edge_records(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> list[dict]:
@@ -436,18 +463,20 @@ def write_svg(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
         '<text x="40" y="48" fill="#f4efe4" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22">Second brain · concept clusters</text>',
         '<text x="40" y="74" fill="#9a9386" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13">gold wiki · teal maps · blue hunt/sources · green people · coral ship</text>',
     ]
+    headers = cluster_headers(nodes)
     for cluster, (mx, my, radius) in centers.items():
         lines.append(
-            f'<circle cx="{ox+mx:.1f}" cy="{oy+my:.1f}" r="{radius:.1f}" fill="rgba(198,163,90,0.05)" stroke="rgba(198,163,90,0.12)" stroke-width="1"/>'
+            f'<circle cx="{ox+mx:.1f}" cy="{oy+my:.1f}" r="{radius:.1f}" fill="rgba(198,163,90,0.04)" stroke="rgba(198,163,90,0.14)" stroke-width="1"/>'
         )
+        hx, hy = headers[cluster]
         label = CLUSTER_LABELS[cluster].upper()
         lines.append(
-            f'<text x="{ox+mx:.1f}" y="{oy+my-radius+6:.1f}" fill="#b8b09f" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" letter-spacing="0.12em" text-anchor="middle">{label}</text>'
+            f'<text x="{ox+hx:.1f}" y="{oy+hy:.1f}" fill="#c4bba8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="13" letter-spacing="0.12em" text-anchor="middle">{label}</text>'
         )
     for rec in edge_records(nodes, edges):
         a, b = nodes[rec["source"]], nodes[rec["target"]]
-        stroke = "#9a9386" if rec["intra"] else "#6e685c"
-        width_s = "1.7" if rec["intra"] else "1.25"
+        stroke = "#c4bba8" if rec["intra"] else "#9a9080"
+        width_s = "2.0" if rec["intra"] else "1.45"
         lines.append(
             f'<path d="M {ox+a["x"]:.1f} {oy+a["y"]:.1f} Q {ox+rec["cx"]:.1f} {oy+rec["cy"]:.1f} {ox+b["x"]:.1f} {oy+b["y"]:.1f}" fill="none" stroke="{stroke}" stroke-width="{width_s}" stroke-opacity="0.88"/>'
         )
@@ -470,6 +499,7 @@ def write_html(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path)
         "types": TYPE_LABELS,
         "legend": COLOR_LEGEND,
         "centers": {key: [mx, my, radius] for key, (mx, my, radius) in centers.items()},
+        "headers": {key: [x, y] for key, (x, y) in cluster_headers(nodes).items()},
     }
     dest.write_text(
         GRAPH_HTML.replace("__GRAPH_DATA__", json.dumps(payload).replace("<", "\\u003c")),
@@ -504,18 +534,20 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
         fill="#9a9386",
         font=font_sub,
     )
+    headers = cluster_headers(nodes)
     for cluster, (mx, my, radius) in cluster_centers(nodes).items():
         draw.ellipse(
             (ox + mx - radius, oy + my - radius, ox + mx + radius, oy + my + radius),
-            outline="#3a342c",
+            outline="#4a4338",
             width=1,
         )
+        hx, hy = headers[cluster]
         label = CLUSTER_LABELS[cluster].upper()
         bbox = draw.textbbox((0, 0), label, font=font_label)
         draw.text(
-            (ox + mx - (bbox[2] - bbox[0]) / 2, oy + my - radius - 4),
+            (ox + hx - (bbox[2] - bbox[0]) / 2, oy + hy - 8),
             label,
-            fill="#b8b09f",
+            fill="#c4bba8",
             font=font_label,
         )
     for rec in edge_records(nodes, edges):
@@ -526,8 +558,8 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
         ]
         draw.line(
             pts,
-            fill="#9a9386" if rec["intra"] else "#6e685c",
-            width=2 if rec["intra"] else 2,
+            fill="#c4bba8" if rec["intra"] else "#9a9080",
+            width=3 if rec["intra"] else 2,
         )
     for node in nodes.values():
         color = COLORS.get(node["type"], "#8b8478")
@@ -893,23 +925,27 @@ GRAPH_HTML = """<!doctype html>
       const p = toScreen(spec[0], spec[1]);
       const r = spec[2] * view.scale;
       const faded = island && island !== cluster;
-      const glow = ctx.createRadialGradient(p.x, p.y, r * 0.15, p.x, p.y, r);
-      glow.addColorStop(0, faded ? 'rgba(198,163,90,0.02)' : 'rgba(198,163,90,0.08)');
+      const glow = ctx.createRadialGradient(p.x, p.y, r * 0.12, p.x, p.y, r);
+      glow.addColorStop(0, faded ? 'rgba(198,163,90,0.02)' : 'rgba(198,163,90,0.07)');
       glow.addColorStop(1, 'rgba(9,11,16,0)');
       ctx.fillStyle = glow;
       ctx.beginPath();
       ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
       ctx.fill();
+    }
+    if (!labelsOpen()) {
       ctx.font = '600 12px ' + font;
       ctx.textAlign = 'center';
-      ctx.textBaseline = 'bottom';
-      const title = data.labels[cluster].toUpperCase();
-      const tw = ctx.measureText(title).width;
-      const hx = p.x;
-      const hy = p.y - r + 8;
-      placed.push({ x: hx - tw / 2 - 6, y: hy - 16, w: tw + 12, h: 18 });
-      ctx.fillStyle = faded ? '#4a453c' : '#c4bba8';
-      ctx.fillText(title, hx, hy);
+      ctx.textBaseline = 'middle';
+      for (const [cluster, pos] of Object.entries(data.headers)) {
+        const p = toScreen(pos[0], pos[1]);
+        const faded = island && island !== cluster;
+        const title = data.labels[cluster].toUpperCase();
+        const tw = ctx.measureText(title).width;
+        placed.push({ x: p.x - tw / 2 - 6, y: p.y - 9, w: tw + 12, h: 18 });
+        ctx.fillStyle = faded ? '#4a453c' : '#d2c9b4';
+        ctx.fillText(title, p.x, p.y);
+      }
     }
     for (const e of data.edges) {
       const a = byId[e.source], b = byId[e.target];
@@ -918,8 +954,8 @@ GRAPH_HTML = """<!doctype html>
       const c = toScreen(e.cx, e.cy);
       const hot = focus && keep.has(a.id) && keep.has(b.id);
       const dim = (focus && !hot) || (query && !(matches(a) || matches(b))) || (island && a.cluster !== island && b.cluster !== island);
-      ctx.strokeStyle = hot ? 'rgba(198,163,90,0.92)' : e.intra ? '#b3aa96' : '#8a8274';
-      ctx.lineWidth = hot ? 2.1 : e.intra ? 1.65 : 1.25;
+      ctx.strokeStyle = hot ? 'rgba(198,163,90,0.95)' : e.intra ? '#d2c9b4' : '#a89f8d';
+      ctx.lineWidth = hot ? 2.3 : e.intra ? 1.9 : 1.45;
       ctx.globalAlpha = dim ? 0.16 : 0.92;
       ctx.beginPath();
       ctx.moveTo(p.x, p.y);
