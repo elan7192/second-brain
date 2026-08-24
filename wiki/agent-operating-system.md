@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Agent operating system
 
-Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts.
+Synthesis of the 2026-08-17 to 2026-08-23 ingest. File this back so later sessions do not rebuild it from the ten posts.
 
 ## Stack
 
@@ -20,6 +20,8 @@ Five layers, one vault.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
 5. **Keep a human gate.** [[hunt-ship-loop]]. File first. Scouts write quietly. Vault does not post, pay, or send.
 
+Document dumps are a separate layer. [[two-pass-document-processing]] covers ad-hoc data rooms. See [[contradictions]] C8.
+
 ## What this batch does not prove
 
 Viral clips are not methods. See [[contradictions]].
@@ -28,4 +30,4 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[contradictions]]
+[[how-it-works]] · [[index]] · [[contradictions]] · [[two-pass-document-processing]]

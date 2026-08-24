@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Contradictions
@@ -63,3 +63,11 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. Compile-once wiki vs two-pass RAG
+
+D1 and [[llm-wiki]]: pay ingest once, keep compiled pages, do not re-derive from `raw/` on every question.
+
+[[src-jerry-two-pass-docs]]: over a data room, cheap parse, retrieve, then just-in-time VLM. Retrieval with a late expensive pass.
+
+Resolution: different stores. Persistent wiki stays compile-once. Ad-hoc document dumps use [[two-pass-document-processing]]. Do not reopen D1. LlamaParse/LiteParse accuracy and cost claims stay `unverified`.

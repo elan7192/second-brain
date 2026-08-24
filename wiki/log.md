@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-24] ingest | Jerry Liu two-pass document processing
+
+Pasted URL https://x.com/jerryjliu0/status/2091564183922077885. Captured to `raw/x/2026-08-23-jerry-two-pass-docs.md`. Compiled [[src-jerry-two-pass-docs]], [[two-pass-document-processing]], [[jerry-liu]]. Updated [[harness-routing]], [[tokens-as-capital]], [[context-graph]]. Flagged C8 on [[contradictions]]. Brief: [[ingest-brief-2026-08-24]].
 
 ## [2026-08-23] lint | Obsidian vault layer
 

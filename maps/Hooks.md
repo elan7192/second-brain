@@ -3,7 +3,7 @@ type: map
 tags:
   - map
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Hooks
@@ -17,3 +17,5 @@ Trend to lock. From [[src-avid-obsidian-agent-team]].
 5. **Lock** — write it in [[decisions]] so it is not remade
 
 This vault's first locked hook family: compile, do not retrieve. See [[llm-wiki]] and [[tokens-as-capital]].
+
+Open trend, not locked: [[two-pass-document-processing]]. Foil: [[contradictions]] C8.

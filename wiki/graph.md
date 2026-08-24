@@ -21,6 +21,7 @@ flowchart LR
   Home --> andrej-karpathy
   Home --> jacky-kwok
   Home --> rohit
+  Home --> jerry-liu
   Home --> ship
   Home --> graph
   Home --> Today
@@ -49,25 +50,29 @@ flowchart LR
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
   harness-routing --> audited-task-contract
+  harness-routing --> two-pass-document-processing
   harness-routing --> rohit
+  harness-routing --> jerry-liu
+  log --> two-pass-document-processing
+  log --> jerry-liu
+  log --> harness-routing
+  log --> tokens-as-capital
+  log --> context-graph
+  log --> contradictions
   log --> Home
   log --> maps
   log --> hunt
   log --> ship
-  log --> contradictions
   log --> agent-operating-system
   log --> llm-wiki
-  log --> tokens-as-capital
   log --> memory-engineering
   log --> memory-ablation
   log --> verifiable-instructions
   log --> audited-task-contract
-  log --> harness-routing
   log --> entropy-gate
   log --> self-verification
   log --> anti-slop
   log --> hunt-ship-loop
-  log --> context-graph
   log --> andrej-karpathy
   log --> jacky-kwok
   log --> rohit
@@ -83,6 +88,9 @@ flowchart LR
   llm-wiki --> tokens-as-capital
   llm-wiki --> andrej-karpathy
   llm-wiki --> how-it-works
+  llm-wiki --> two-pass-document-processing
+  tokens-as-capital --> two-pass-document-processing
+  tokens-as-capital --> contradictions
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   index --> Home
@@ -105,9 +113,11 @@ flowchart LR
   index --> anti-slop
   index --> hunt-ship-loop
   index --> context-graph
+  index --> two-pass-document-processing
   index --> andrej-karpathy
   index --> jacky-kwok
   index --> rohit
+  index --> jerry-liu
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
@@ -116,6 +126,8 @@ flowchart LR
   entropy-gate --> audited-task-contract
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
+  context-graph --> two-pass-document-processing
+  context-graph --> contradictions
   context-graph --> tokens-as-capital
   context-graph --> llm-wiki
   context-graph --> memory-engineering
@@ -133,21 +145,30 @@ flowchart LR
   agent-operating-system --> self-verification
   agent-operating-system --> anti-slop
   agent-operating-system --> hunt-ship-loop
+  agent-operating-system --> two-pass-document-processing
   agent-operating-system --> contradictions
   agent-operating-system --> how-it-works
   agent-operating-system --> index
-  Today --> Home
-  Today --> agent-operating-system
+  Today --> two-pass-document-processing
   Today --> contradictions
   contradictions --> andrej-karpathy
   contradictions --> entropy-gate
   contradictions --> audited-task-contract
   contradictions --> memory-ablation
+  contradictions --> llm-wiki
+  contradictions --> two-pass-document-processing
+  two-pass-document-processing --> llm-wiki
+  two-pass-document-processing --> tokens-as-capital
+  two-pass-document-processing --> contradictions
+  two-pass-document-processing --> harness-routing
+  two-pass-document-processing --> context-graph
+  two-pass-document-processing --> jerry-liu
   Hooks --> twitter
   Hooks --> contradictions
   Hooks --> ship
   Hooks --> llm-wiki
   Hooks --> tokens-as-capital
+  Hooks --> two-pass-document-processing
   Jarvis --> Home
   Jarvis --> index
   Jarvis --> ship
@@ -164,4 +185,6 @@ flowchart LR
   jacky-kwok --> self-verification
   andrej-karpathy --> contradictions
   andrej-karpathy --> llm-wiki
+  jerry-liu --> two-pass-document-processing
+  jerry-liu --> harness-routing
 ```

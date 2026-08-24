@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Context graph
@@ -25,6 +25,10 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 - Graph: what is true, and when.
 - Skills / schema: how we act.
 
+## Document rooms
+
+[[two-pass-document-processing]] is the dump version of the same cut: retrieve a subset, then spend vision tokens only there. It does not compile a lasting subgraph. See [[contradictions]] C8.
+
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[src-jerry-two-pass-docs]]
