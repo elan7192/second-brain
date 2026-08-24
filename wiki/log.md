@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] update | arXiv corpus 405856
+
+Counts-only. Gap batch 6 +72800. Total 405856. Tiers S 16443 / A 42228 / B 197545 / C 113767 / D 35873. Cursor 2022-06-08. No paper known. See [[arxiv-tierlist]].
+
 ## [2026-08-24] update | arXiv corpus 333056
 
 Counts-only. Gap batch 5 +52000. Total 333056. Tiers S 15929 / A 31021 / B 157813 / C 96860 / D 31433. Cursor 2021-06-25. See [[arxiv-tierlist]].
