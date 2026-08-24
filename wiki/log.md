@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH06 five paper digests
+
+Compiled [[two-stage-nn-tl]], [[dics]], [[skill-transfer]], [[iar]], [[bert-ler]]. Unread appendices/Gemma/LoRA/figs not known. See [[src-arxiv-batch06]].
+
 ## [2026-08-24] ingest | BATCH05 five paper digests
 
 Compiled [[portal]], [[mpi-init]], [[pwr-ga]], [[brain-ai-convergence]], [[vs-graph]]. Figure-only accuracy `unverified`. See [[src-arxiv-batch05]].

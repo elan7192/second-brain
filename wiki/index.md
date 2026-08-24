@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. BATCH01–05 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01–06 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -70,11 +70,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[pwr-ga]] | Pascal-weighted GA. TSP gain is tiny |
 | [[brain-ai-convergence]] | Perspective. 0 tables |
 | [[vs-graph]] | HDC graphs. Acc is figure-only |
+| [[two-stage-nn-tl]] | Grouped NN transfer. Appendix unread |
+| [[dics]] | Centroid-split trees. Speedups, small acc drop |
+| [[skill-transfer]] | Subtask memory helps. Gemma tables unread |
+| [[iar]] | Inject-Align-Recover. LoRA grid unread |
+| [[bert-ler]] | EHR transformer. 75M pretrain |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch06]] | 2026-08-24 | Five digests. Appendices unread |
+| [[src-arxiv-2608-20255]] | 2026-08-24 | Two-stage NN-TL |
+| [[src-arxiv-2608-20258]] | 2026-08-24 | DICS tree splits |
+| [[src-arxiv-2608-20274]] | 2026-08-24 | Skill transfer. Gemma unread |
+| [[src-arxiv-2608-20281]] | 2026-08-24 | IAR. LoRA grid unread |
+| [[src-arxiv-2608-20315]] | 2026-08-24 | BERT-LER EHR |
 | [[src-arxiv-batch05]] | 2026-08-24 | Five digests. VS-Graph acc figure-only |
 | [[src-arxiv-2512-00288]] | 2026-08-24 | PORTAL generator. No bake-off |
 | [[src-arxiv-2512-00341]] | 2026-08-24 | MPI init 69-2-1 |

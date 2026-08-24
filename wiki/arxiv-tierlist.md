@@ -89,6 +89,20 @@ Source list: [[src-arxiv-batch05]].
 
 VS-Graph figure-only accuracy `unverified`.
 
+## Known papers (BATCH06)
+
+Source list: [[src-arxiv-batch06]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.20255 | [[two-stage-nn-tl]] |
+| 2608.20258 | [[dics]] |
+| 2608.20274 | [[skill-transfer]] |
+| 2608.20281 | [[iar]] |
+| 2608.20315 | [[bert-ler]] |
+
+Unread appendices / Gemma tables / LoRA grid / figs not known.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.
