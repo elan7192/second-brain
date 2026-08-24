@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | alex_prompter Claude Projects quote
+
+Compiled [[project-skill-stack]] from https://x.com/alex_prompter/status/2091822275381141582. Flagged C16. GIF unread. Docs cited, not re-read. raw/ not written. See [[src-alexprompter-claude-projects]].
+
 ## [2026-08-24] ingest | avichawla TrueForge article
 
 Compiled [[flat-context]] from https://x.com/_avichawla/status/2091804330118861239. 2.7x `unverified` (sponsored, no paper). Flagged C15. Linked [[secret-gateway]] [[harness-routing]]. raw/ not written. See [[src-avichawla-trueforge]].

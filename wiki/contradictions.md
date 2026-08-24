@@ -119,3 +119,11 @@ Body: about 40% of Claude Managed Agents tokens and under a quarter of deepagent
 Linked vendor blog table: 3.8M vs 10M vs 16.5M tokens. Blog prose also says about 2.5x cheaper vs the open harness.
 
 Resolution: sponsored article, no paper, X figures unread. Do not pick a multiplier. See [[flat-context]].
+
+## C16. Claude Projects vs compiler vault
+
+[[src-alexprompter-claude-projects]] describes Claude Projects as a persistent memory layer in the product (files, instructions, skills). Suggested folders: `/reference`, `/analysis`, `/deliverables`.
+
+This vault compiles `raw/` into `wiki/`. See D1 and [[llm-wiki]].
+
+Resolution: keep D1. Do not treat Claude Projects as the vault wiki. Do not adopt those folders. See [[project-skill-stack]] and C2.

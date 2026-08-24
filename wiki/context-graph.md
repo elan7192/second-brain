@@ -25,8 +25,10 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 - Graph: what is true, and when.
 - Skills / schema: how we act.
 
+[[src-alexprompter-claude-projects]] uses the same split in Claude: projects hold context, skills hold method. Product stack is on [[project-skill-stack]]. See [[contradictions]] C16.
+
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]] · [[trace]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]] · [[trace]] · [[project-skill-stack]]
 
 [[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair.

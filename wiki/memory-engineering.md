@@ -26,7 +26,7 @@ Full-transcript replay does not scale, does not rank importance, and keeps both 
 
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]]
+[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[project-skill-stack]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 
@@ -35,3 +35,5 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.
 
 [[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.
+
+[[src-alexprompter-claude-projects]] describes Claude Projects as persistent context across sessions. Product how-to. See [[project-skill-stack]] and C16.

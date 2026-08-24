@@ -68,6 +68,8 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "memory-ablation",
         "MEMORY",
         "src-0xcodio-memory-ablation",
+        "project-skill-stack",
+        "src-alexprompter-claude-projects",
     },
     "verification": {
         "verifiable-instructions",

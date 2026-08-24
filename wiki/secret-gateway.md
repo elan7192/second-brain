@@ -22,11 +22,11 @@ The quoted OpenConnector pitch applies the same rule to SaaS actions: the agent 
 
 [[src-avichawla-trueforge]] applies it inside a Code Mode sandbox: generated code calls `call_tool`; the harness applies stored credentials; the script never receives the key. Approvals still apply. Product is TrueForge, not OpenConnector. Do not merge them.
 
-## What this tweet does not prove
+## What these sources do not prove
 
-Product counts are `unverified`. No paper. No repo URL in the tweet.
+OpenConnector product counts are `unverified`. That tweet did not link a repo. Faulkner asked for browser field injection. The quote is an API-action catalog. See [[contradictions]] C14.
 
-Faulkner asked for browser field injection. The quote is an API-action gateway. Do not treat OpenConnector as the computer-use injector. See [[contradictions]] C14.
+TrueForge 2.7x is `unverified`. Sponsored article. See C15.
 
 ## Related
 

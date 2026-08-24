@@ -35,7 +35,7 @@ Taken from [[agent-operating-system]].
 | Island | Pages |
 | --- | --- |
 | Compile | llm-wiki, tokens-as-capital, context-graph |
-| Memory | memory-engineering, memory-ablation |
+| Memory | memory-engineering, memory-ablation, project-skill-stack |
 | Verification | verifiable-instructions, self-verification, anti-slop |
 | Harness | audited-task-contract, harness-routing, entropy-gate, secret-gateway, flat-context |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
@@ -62,7 +62,9 @@ flowchart TB
     MEMORY
     memory-ablation
     memory-engineering
+    project-skill-stack
     src-0xcodio-memory-ablation
+    src-alexprompter-claude-projects
   end
   subgraph verification[Verification]
     anti-slop
@@ -127,6 +129,11 @@ flowchart TB
   memory-engineering --> context-graph
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
+  memory-engineering --> project-skill-stack
+  project-skill-stack --> src-alexprompter-claude-projects
+  project-skill-stack --> context-graph
+  project-skill-stack --> memory-engineering
+  project-skill-stack --> llm-wiki
   hunt-ship-loop --> src-avid-obsidian-agent-team
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
@@ -196,6 +203,9 @@ flowchart TB
   src-0xcodio-memory-ablation --> memory-engineering
   src-0xcodio-memory-ablation --> memory-ablation
   src-0xcodio-memory-ablation --> verifiable-instructions
+  src-alexprompter-claude-projects --> project-skill-stack
+  src-alexprompter-claude-projects --> context-graph
+  src-alexprompter-claude-projects --> memory-engineering
   src-voxyz-verifiable-instructions --> verifiable-instructions
 ```
 <!-- graph-mermaid:end -->
