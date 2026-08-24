@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Contradictions
@@ -63,3 +63,11 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
 
 Resolution: `unverified`. Do not use as evidence that the architecture works.
+
+## C8. DeerFlow `make config` vs extensions file
+
+[[src-deer-flow]] `AGENTS.md` says `make config` copies `extensions_config.example.json` to `extensions_config.json`.
+
+`scripts/configure.py` in the clone at `1aa813d` copies `config.yaml`, `.env`, and `frontend/.env` only. After `make config`, `extensions_config.json` was absent.
+
+Resolution: treat the Python script as the executed behavior. Copy the extensions template by hand if MCP/skills config is needed. Do not claim `make config` created it.

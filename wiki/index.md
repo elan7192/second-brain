@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 ## Start
 
@@ -19,6 +19,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 - [[contradictions]] — unresolved conflicts
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
+- [[deer-flow]] — ByteDance SuperAgent local bootstrap
+- [[deer-flow-bootstrap-2026-08-24]] — install status report
 
 ## Concepts
 
@@ -36,6 +38,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[deer-flow]] | ByteDance SuperAgent. Local bootstrap on this VM |
 
 ## Sources
 
@@ -50,6 +53,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-23.
 | [[src-bober-folder-workflow]] | 2026-08-21 | Popular how-to. Income and Karpathy paraphrase unverified |
 | [[src-avid-obsidian-agent-team]] | 2026-08-20 | Hunt / Ship / Decisions vault for a bot team |
 | [[src-juampi-anti-slop-rank]] | 2026-08-21 | Ten anti-slop skills. Compiled, not vendored |
+| [[src-deer-flow]] | 2026-08-24 | bytedance/deer-flow Install.md bootstrap |
 
 ## People
 

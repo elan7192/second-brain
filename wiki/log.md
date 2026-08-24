@@ -10,6 +10,10 @@ updated: 2026-08-23
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] bootstrap | DeerFlow local install
+
+Cloned https://github.com/bytedance/deer-flow to `/home/ubuntu/deer-flow` at `1aa813d`. Followed `Install.md`: local path because Docker was missing. Ran `make config`, installed `uv` and `nginx`, then `make check` and `make install`. Did not start services. Wrote [[deer-flow]], [[src-deer-flow]], [[deer-flow-bootstrap-2026-08-24]]. Flagged C5 on [[contradictions]].
+
 ## [2026-08-23] lint | Obsidian vault layer
 
 Added `.obsidian` graph colors, [[Home]] as door, [[maps]] / [[hunt]] / [[ship]] indexes, and rendered `output/obsidian-graph.html`. Locked D7.
