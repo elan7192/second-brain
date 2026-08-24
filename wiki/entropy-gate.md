@@ -41,4 +41,4 @@ Unanimous ungated agreement was wrong in 41% of 50 runs.
 
 ## Related
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[flat-context]]

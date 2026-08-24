@@ -41,6 +41,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 ## Harness
 
 - 2026-08-24: OpenConnector as quoted by 4ndrearossetti is an API-action secret gateway. Do not treat it as a browser/computer-use password field injector. See [[secret-gateway]] and [[contradictions]] C14.
+- 2026-08-24: Avi Chawla TrueForge 2.7x token cut is a sponsored article, not a paper. Do not quote 2.7x as a measured fact. Do not mix it with wiki compile tokens (305k vs 47k). See [[src-avichawla-trueforge]] and [[contradictions]] C15.
 
 ## Open questions
 

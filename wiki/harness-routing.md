@@ -37,4 +37,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 [[src-4ndrearossetti-openconnector]] puts credentials in a runtime, not in the prompt. Product counts `unverified`. See [[secret-gateway]].
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[secret-gateway]]
+[[src-avichawla-trueforge]] treats the harness as the token-cost knob. 2.7x is `unverified`. See [[flat-context]].
+
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[secret-gateway]] · [[flat-context]]

@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | avichawla TrueForge article
+
+Compiled [[flat-context]] from https://x.com/_avichawla/status/2091804330118861239. 2.7x `unverified` (sponsored, no paper). Flagged C15. Linked [[secret-gateway]] [[harness-routing]]. raw/ not written. See [[src-avichawla-trueforge]].
+
 ## [2026-08-24] ingest | 4ndrearossetti OpenConnector quote
 
 Compiled [[secret-gateway]] from https://x.com/4ndrearossetti/status/2091739775782809963. OpenConnector counts `unverified`. Flagged C14. raw/ not written. See [[src-4ndrearossetti-openconnector]].

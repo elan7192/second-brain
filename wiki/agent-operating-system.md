@@ -35,3 +35,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
 
 [[src-4ndrearossetti-openconnector]] is a secret-gateway tweet. OpenConnector counts `unverified`. Browser inject vs API catalog is C14.
+
+[[src-avichawla-trueforge]] is a harness-token article. 2.7x is `unverified`. See [[flat-context]] and C15.

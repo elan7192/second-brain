@@ -16,6 +16,7 @@ Obsidian vault layer on the compiled wiki. Graph colors, [[Home]] as the door, H
 
 ## Look at
 
+- [[flat-context]]
 - [[secret-gateway]]
 - [[agent-operating-system]]
 - [[contradictions]]

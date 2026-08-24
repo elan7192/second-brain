@@ -10,7 +10,7 @@ updated: 2026-08-24
 
 Credentials stay in a runtime. The model context does not hold them.
 
-Source: [[src-4ndrearossetti-openconnector]].
+Source: [[src-4ndrearossetti-openconnector]]. Also [[src-avichawla-trueforge]].
 
 ## Rule
 
@@ -20,6 +20,8 @@ Steve Faulkner asked for that rule on computer-use: approval, then inject into a
 
 The quoted OpenConnector pitch applies the same rule to SaaS actions: the agent sees a catalog, the gateway talks to Gmail/Slack/Notion/Airtable, the key never enters context.
 
+[[src-avichawla-trueforge]] applies it inside a Code Mode sandbox: generated code calls `call_tool`; the harness applies stored credentials; the script never receives the key. Approvals still apply. Product is TrueForge, not OpenConnector. Do not merge them.
+
 ## What this tweet does not prove
 
 Product counts are `unverified`. No paper. No repo URL in the tweet.
@@ -28,4 +30,4 @@ Faulkner asked for browser field injection. The quote is an API-action gateway. 
 
 ## Related
 
-[[harness-routing]] · [[audited-task-contract]] · [[agent-operating-system]] · [[hunt-ship-loop]]
+[[harness-routing]] · [[audited-task-contract]] · [[agent-operating-system]] · [[hunt-ship-loop]] · [[flat-context]]

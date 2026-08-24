@@ -109,3 +109,13 @@ Steve Faulkner asked how to inject a password into a computer-use browser field 
 [[src-4ndrearossetti-openconnector]] replies by quoting OpenConnector, an API-action gateway (catalog of SaaS actions; secrets stay in the runtime).
 
 Resolution: keep the shared rule on [[secret-gateway]] (credentials out of context). Do not treat the quoted product as the browser injector.
+
+## C15. TrueForge 2.7x vs 40% vs vendor table
+
+[[src-avichawla-trueforge]] title: cut agent tokens by 2.7x.
+
+Body: about 40% of Claude Managed Agents tokens and under a quarter of deepagents'. Conclusion says two harnesses. The bench names three.
+
+Linked vendor blog table: 3.8M vs 10M vs 16.5M tokens. Blog prose also says about 2.5x cheaper vs the open harness.
+
+Resolution: sponsored article, no paper, X figures unread. Do not pick a multiplier. See [[flat-context]].
