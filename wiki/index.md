@@ -20,6 +20,14 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 
+## Projects
+
+| Page | One line |
+| --- | --- |
+| [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
+| [[arxiv-tierlist]] | Future-potential tierlist. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[potential-ranking]] | Score axis, heuristic formula, recency bias |
+
 ## Concepts
 
 | Page | One line |
@@ -41,6 +49,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-tierlist-handoff]] | 2026-08-24 | arXiv potential tierlist facts from box handoff |
 | [[src-0xcodio-memory-ablation]] | 2026-08-22 | Line-level memory ablation. Facts survived, adjectives died |
 | [[src-rohit-harness-router]] | 2026-08-22 | Shared contract so any harness can continue the task |
 | [[src-voxyz-verifiable-instructions]] | 2026-08-22 | Replace never-rules with checks. Exact 8 blocks missing |
