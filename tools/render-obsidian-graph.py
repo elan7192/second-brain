@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import math
 import re
+import shutil
 from collections import defaultdict
 from pathlib import Path
 
@@ -145,13 +146,13 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
 CLUSTER_OF = {slug: cluster for cluster, slugs in CLUSTER_SEEDS.items() for slug in slugs}
 
 CLUSTER_ANCHORS = {
-    "compile": (-220.0, -40.0),
-    "verification": (175.0, -130.0),
-    "memory": (-80.0, 155.0),
-    "harness": (195.0, 85.0),
-    "hunt-ship": (95.0, 250.0),
-    "nav": (-55.0, -215.0),
-    "bridge": (-35.0, 35.0),
+    "compile": (-165.0, -10.0),
+    "verification": (145.0, -85.0),
+    "memory": (-30.0, 120.0),
+    "harness": (150.0, 60.0),
+    "hunt-ship": (50.0, 185.0),
+    "nav": (-25.0, -160.0),
+    "bridge": (-12.0, 28.0),
 }
 CLUSTER_PHASE = {
     "compile": 0.4,
@@ -342,8 +343,8 @@ def layout(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> None:
                 dy = na["y"] - nb["y"]
                 dist = math.hypot(dx, dy) or 0.01
                 same = na["cluster"] == nb["cluster"]
-                min_d = 40.0 if same else 58.0
-                strength = 280.0 if same else 500.0
+                min_d = 38.0 if same else 52.0
+                strength = 260.0 if same else 420.0
                 push = min(strength / (dist * dist), 12.0)
                 if dist < min_d:
                     push += (min_d - dist) * 0.42
@@ -782,6 +783,8 @@ GRAPH_HTML = """<!doctype html>
     <button type="button" id="fit" title="Fit graph">⤢</button>
   </div>
   <p class="hint">Scroll to zoom · Labels appear on zoom-in · Click a node for title and path</p>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script>
   const data = __GRAPH_DATA__;
   const canvas = document.getElementById('g');
@@ -796,12 +799,26 @@ GRAPH_HTML = """<!doctype html>
     adj.get(e.target).push(e.source);
   }
   const view = { x: 0, y: 0, scale: 1 };
+  const motion = { appear: 0, headerAlpha: 1, labelAlpha: 0, hoverAmt: 0 };
   let hover = null;
   let selected = null;
   let query = '';
   let island = '';
   let drag = null;
   let moved = false;
+  let lodOpen = false;
+  const clusterOrder = ['bridge', 'compile', 'memory', 'verification', 'harness', 'hunt-ship', 'nav'];
+  function hasGsap() { return typeof gsap !== 'undefined'; }
+  function tween(target, vars) {
+    if (hasGsap()) return gsap.to(target, vars);
+    const skip = { duration: 1, ease: 1, onUpdate: 1, onComplete: 1, overwrite: 1 };
+    for (const [key, val] of Object.entries(vars)) {
+      if (!skip[key]) target[key] = val;
+    }
+    if (vars.onUpdate) vars.onUpdate();
+    if (vars.onComplete) vars.onComplete();
+    return null;
+  }
 
   const legend = document.getElementById('legend');
   for (const item of data.legend) {
@@ -823,8 +840,7 @@ GRAPH_HTML = """<!doctype html>
       for (const b of islands.querySelectorAll('button')) {
         b.classList.toggle('active', b.dataset.island === island);
       }
-      fit(island ? nodes.filter(n => n.cluster === island) : nodes);
-      draw();
+      animateCamera(fitTarget(island ? nodes.filter(n => n.cluster === island) : nodes), 0.7);
     });
     islands.appendChild(btn);
   }
@@ -850,7 +866,7 @@ GRAPH_HTML = """<!doctype html>
     if (!n) return new Set();
     return new Set([n.id, ...(adj.get(n.id) || [])]);
   }
-  function fit(set) {
+  function fitTarget(set) {
     const items = set && set.length ? set : nodes;
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     for (const n of items) {
@@ -861,11 +877,46 @@ GRAPH_HTML = """<!doctype html>
     const w = Math.max(maxX - minX, 80) + pad * 2;
     const h = Math.max(maxY - minY, 80) + pad * 2;
     const cap = items.length <= 18 ? 1.28 : 0.88;
-    view.scale = Math.min((window.innerWidth - 360) / w, (window.innerHeight - 180) / h, cap);
+    const scale = Math.min((window.innerWidth - 360) / w, (window.innerHeight - 180) / h, cap);
     const midX = (minX + maxX) / 2;
     const midY = (minY + maxY) / 2;
-    view.x = -midX * view.scale;
-    view.y = -midY * view.scale;
+    return { scale, x: -midX * scale, y: -midY * scale };
+  }
+  function applyView(next) {
+    view.scale = next.scale;
+    view.x = next.x;
+    view.y = next.y;
+  }
+  function syncLod() {
+    const open = view.scale >= 1.08 || !!query;
+    if (open === lodOpen) return;
+    lodOpen = open;
+    tween(motion, {
+      headerAlpha: open ? 0 : 1,
+      labelAlpha: open ? 1 : 0,
+      duration: 0.38,
+      ease: 'power2.out',
+      overwrite: 'auto',
+      onUpdate: draw
+    });
+  }
+  function animateCamera(next, duration) {
+    if (hasGsap()) {
+      gsap.killTweensOf(view);
+      gsap.to(view, {
+        scale: next.scale,
+        x: next.x,
+        y: next.y,
+        duration: duration,
+        ease: 'power3.out',
+        overwrite: 'auto',
+        onUpdate: function() { syncLod(); draw(); }
+      });
+      return;
+    }
+    applyView(next);
+    syncLod();
+    draw();
   }
   function show(n) {
     document.getElementById('card-kicker').textContent = n ? 'Selected page' : 'Page';
@@ -921,7 +972,23 @@ GRAPH_HTML = """<!doctype html>
     return !(a.x + a.w + p < b.x || b.x + b.w + p < a.x || a.y + a.h + p < b.y || b.y + b.h + p < a.y);
   }
   function labelsOpen() {
-    return view.scale >= 1.08 || !!query;
+    return motion.labelAlpha > 0.08 || view.scale >= 1.08 || !!query;
+  }
+  function appearFor(cluster) {
+    const i = Math.max(clusterOrder.indexOf(cluster), 0);
+    const start = i * 0.07;
+    const t = (motion.appear - start) / 0.42;
+    return Math.max(0, Math.min(1, t));
+  }
+  function nodePos(n) {
+    const spec = data.centers[n.cluster];
+    const t = appearFor(n.cluster);
+    if (!spec || t >= 1) return { x: n.x, y: n.y, t: t };
+    return {
+      x: spec[0] + (n.x - spec[0]) * t,
+      y: spec[1] + (n.y - spec[1]) * t,
+      t: t
+    };
   }
   function draw() {
     ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
@@ -943,10 +1010,11 @@ GRAPH_HTML = """<!doctype html>
       ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
       ctx.fill();
     }
-    if (!labelsOpen()) {
+    if (motion.headerAlpha > 0.02) {
       ctx.font = '600 12px ' + font;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
+      ctx.globalAlpha = motion.headerAlpha * motion.appear;
       for (const [cluster, pos] of Object.entries(data.headers)) {
         const p = toScreen(pos[0], pos[1]);
         const faded = island && island !== cluster;
@@ -956,6 +1024,7 @@ GRAPH_HTML = """<!doctype html>
         ctx.fillStyle = faded ? '#4a453c' : '#d2c9b4';
         ctx.fillText(title, p.x, p.y);
       }
+      ctx.globalAlpha = 1;
     }
     const zoomed = view.scale >= 1.08;
     for (const e of data.edges) {
@@ -963,14 +1032,16 @@ GRAPH_HTML = """<!doctype html>
       const bridge = e.source === 'agent-operating-system' || e.target === 'agent-operating-system';
       const relatedEdge = !!(focus && keep.has(a.id) && keep.has(b.id));
       if (!zoomed && !e.intra && !bridge && !relatedEdge) continue;
-      const p = toScreen(a.x, a.y);
-      const q = toScreen(b.x, b.y);
+      const pa = nodePos(a);
+      const pb = nodePos(b);
+      const p = toScreen(pa.x, pa.y);
+      const q = toScreen(pb.x, pb.y);
       const c = toScreen(e.cx, e.cy);
       const hot = focus && keep.has(a.id) && keep.has(b.id);
       const dim = (focus && !hot) || (query && !(matches(a) || matches(b))) || (island && a.cluster !== island && b.cluster !== island);
-      ctx.strokeStyle = hot ? 'rgba(198,163,90,0.95)' : e.intra ? '#d2c9b4' : '#a89f8d';
-      ctx.lineWidth = hot ? 2.3 : e.intra ? 1.9 : 1.45;
-      ctx.globalAlpha = dim ? 0.16 : 0.92;
+      ctx.strokeStyle = hot ? 'rgba(198,163,90,0.98)' : e.intra ? '#ddd4bf' : '#b4aa97';
+      ctx.lineWidth = hot ? 2.4 : e.intra ? 2.05 : 1.55;
+      ctx.globalAlpha = (dim ? 0.16 : 0.94) * Math.min(pa.t, pb.t);
       ctx.beginPath();
       ctx.moveTo(p.x, p.y);
       ctx.quadraticCurveTo(c.x, c.y, q.x, q.y);
@@ -978,20 +1049,22 @@ GRAPH_HTML = """<!doctype html>
       ctx.globalAlpha = 1;
     }
     for (const n of nodes) {
-      const p = toScreen(n.x, n.y);
-      const r = radius(n) * Math.max(view.scale, 0.8);
+      const np = nodePos(n);
+      const p = toScreen(np.x, np.y);
+      const r = radius(n) * Math.max(view.scale, 0.8) * (0.35 + 0.65 * np.t);
       const color = data.colors[n.type] || '#8b8478';
       const on = !focus || keep.has(n.id);
       const shown = matches(n) && (!island || n.cluster === island);
-      ctx.globalAlpha = shown ? (on ? 1 : 0.2) : 0.08;
-      if (n === selected || n === hover) {
+      const hotNode = n === selected || n === hover;
+      ctx.globalAlpha = (shown ? (on ? 1 : 0.2) : 0.08) * np.t;
+      if (hotNode) {
         ctx.beginPath();
-        ctx.arc(p.x, p.y, r + 8, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, r + 6 + 10 * motion.hoverAmt, 0, Math.PI * 2);
         ctx.fillStyle = color + '33';
         ctx.fill();
       }
       ctx.beginPath();
-      ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+      ctx.arc(p.x, p.y, r * (hotNode ? 1 + 0.18 * motion.hoverAmt : 1), 0, Math.PI * 2);
       ctx.fillStyle = color;
       ctx.fill();
       ctx.lineWidth = 1.2;
@@ -1002,7 +1075,7 @@ GRAPH_HTML = """<!doctype html>
     const candidates = [];
     for (const n of nodes) {
       const must = n === hover || n === selected || (!!query && matches(n));
-      if (!must && !labelsOpen()) continue;
+      if (!must && motion.labelAlpha < 0.08) continue;
       if (!matches(n) && !must) continue;
       if (island && n.cluster !== island && !must) continue;
       candidates.push({ n, must, deg: (adj.get(n.id) || []).length });
@@ -1014,7 +1087,8 @@ GRAPH_HTML = """<!doctype html>
       const n = item.n;
       if (!item.must && shownLabels >= 12) continue;
       if (!item.must && labeled.some(pt => Math.hypot(pt.x - n.x, pt.y - n.y) * view.scale < 78)) continue;
-      const p = toScreen(n.x, n.y);
+      const np = nodePos(n);
+      const p = toScreen(np.x, np.y);
       const r = radius(n) * Math.max(view.scale, 0.8);
       ctx.font = (n === selected || n === hover ? '600 ' : '') + '12px ' + font;
       ctx.textAlign = 'left';
@@ -1024,27 +1098,28 @@ GRAPH_HTML = """<!doctype html>
       const slots = [
         [p.x + r + 8, p.y],
         [p.x - tw - r - 8, p.y],
-        [p.x - tw / 2, p.y - r - 14],
-        [p.x - tw / 2, p.y + r + 14]
+        [p.x - tw / 2, p.y - r - 16],
+        [p.x - tw / 2, p.y + r + 16],
+        [p.x + r + 8, p.y - 18],
+        [p.x + r + 8, p.y + 18]
       ];
       let box = null;
       for (const [lx, ly] of slots) {
         const rect = { x: lx - 5, y: ly - 9, w: tw + 10, h: 18, lx, ly };
         if (!placed.some(prev => overlap(prev, rect))) { box = rect; break; }
       }
-      if (!box && item.must) {
-        box = { x: slots[0][0] - 5, y: slots[0][1] - 9, w: tw + 10, h: 18, lx: slots[0][0], ly: slots[0][1] };
-      }
       if (!box) continue;
       placed.push(box);
       labeled.push(n);
       shownLabels += 1;
+      ctx.globalAlpha = item.must ? 1 : motion.labelAlpha;
       ctx.fillStyle = 'rgba(9,11,16,0.82)';
       ctx.beginPath();
       ctx.roundRect(box.x, box.y, box.w, box.h, 6);
       ctx.fill();
       ctx.fillStyle = n === selected || n === hover ? '#f8f4ea' : '#ddd6c8';
       ctx.fillText(label, box.lx, box.ly);
+      ctx.globalAlpha = 1;
     }
   }
   function resize() {
@@ -1053,13 +1128,15 @@ GRAPH_HTML = """<!doctype html>
     draw();
   }
   function zoomAt(mx, my, factor) {
-    const next = Math.min(2.8, Math.max(0.35, view.scale * factor));
-    const worldX = (mx - cx() - view.x) / view.scale;
-    const worldY = (my - cy() - view.y) / view.scale;
-    view.scale = next;
-    view.x = mx - cx() - worldX * view.scale;
-    view.y = my - cy() - worldY * view.scale;
-    draw();
+    const cur = view.scale;
+    const nextScale = Math.min(2.8, Math.max(0.35, cur * factor));
+    const worldX = (mx - cx() - view.x) / cur;
+    const worldY = (my - cy() - view.y) / cur;
+    animateCamera({
+      scale: nextScale,
+      x: mx - cx() - worldX * nextScale,
+      y: my - cy() - worldY * nextScale
+    }, 0.28);
   }
   window.addEventListener('resize', () => { resize(); });
   canvas.addEventListener('wheel', (ev) => {
@@ -1082,9 +1159,13 @@ GRAPH_HTML = """<!doctype html>
       draw();
       return;
     }
-    hover = hit(ev.clientX, ev.clientY);
-    canvas.classList.toggle('hot', !!hover);
-    if (!selected) show(hover);
+    const next = hit(ev.clientX, ev.clientY);
+    canvas.classList.toggle('hot', !!next);
+    if ((next && next.id) !== (hover && hover.id)) {
+      hover = next;
+      tween(motion, { hoverAmt: next ? 1 : 0, duration: 0.22, ease: 'power2.out', overwrite: 'auto', onUpdate: draw });
+      if (!selected) show(hover);
+    }
     draw();
   });
   canvas.addEventListener('pointerup', (ev) => {
@@ -1098,6 +1179,7 @@ GRAPH_HTML = """<!doctype html>
   });
   canvas.addEventListener('pointerleave', () => {
     hover = null;
+    tween(motion, { hoverAmt: 0, duration: 0.2, ease: 'power2.out', overwrite: 'auto', onUpdate: draw });
     if (!selected) show(null);
     draw();
   });
@@ -1110,26 +1192,44 @@ GRAPH_HTML = """<!doctype html>
   });
   document.getElementById('zoom-in').addEventListener('click', () => zoomAt(cx(), cy(), 1.15));
   document.getElementById('zoom-out').addEventListener('click', () => zoomAt(cx(), cy(), 0.87));
-  document.getElementById('fit').addEventListener('click', () => { fit(island ? nodes.filter(n => n.cluster === island) : nodes); draw(); });
+  document.getElementById('fit').addEventListener('click', () => {
+    animateCamera(fitTarget(island ? nodes.filter(n => n.cluster === island) : nodes), 0.7);
+  });
   window.addEventListener('keydown', (ev) => {
     if (ev.key === 'Escape') { selected = null; show(hover); draw(); }
-    if (ev.key === '0') { fit(nodes); draw(); }
+    if (ev.key === '0') animateCamera(fitTarget(nodes), 0.7);
     if (ev.key === '+' || ev.key === '=') zoomAt(cx(), cy(), 1.15);
     if (ev.key === '-' || ev.key === '_') zoomAt(cx(), cy(), 0.87);
   });
   show(null);
-  fit(nodes);
+  const start = fitTarget(nodes);
+  applyView({ scale: start.scale * 0.78, x: start.x, y: start.y });
+  lodOpen = false;
+  motion.headerAlpha = 1;
+  motion.labelAlpha = 0;
   resize();
+  tween(motion, { appear: 1, duration: 1.12, ease: 'power3.out', onUpdate: draw });
+  animateCamera(start, 1.18);
   </script>
 </body>
 </html>
 """
 
 
+def copy_gsap() -> None:
+    src = ROOT / "tools" / "vendor" / "gsap.min.js"
+    dest = OUT_DIR / "vendor" / "gsap.min.js"
+    if not src.exists():
+        return
+    dest.parent.mkdir(exist_ok=True)
+    shutil.copyfile(src, dest)
+
+
 def main() -> None:
     nodes, edges = collect()
     layout(nodes, edges)
     OUT_DIR.mkdir(exist_ok=True)
+    copy_gsap()
     write_svg(nodes, edges, OUT_DIR / "obsidian-graph.svg")
     write_html(nodes, edges, OUT_DIR / "obsidian-graph.html")
     write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
