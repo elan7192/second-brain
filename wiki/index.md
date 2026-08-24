@@ -25,7 +25,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | Page | One line |
 | --- | --- |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
-| [[arxiv-tierlist]] | 405856 inventory. BATCH01–03 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
+| [[arxiv-tierlist]] | 405856 inventory. BATCH01–04 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
 ## Concepts
@@ -60,11 +60,22 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[sapin]] | CartPole without reward. Lock 82% |
 | [[alphaevolve-math]] | 67 constructions. 6.24–6.67 not line-read |
 | [[pavement-gnn]] | R² 0.38 on 1k-node simulated graph |
+| [[tiwm]] | 16-token nuPlan. Mini ≠ full val14 |
+| [[unitok]] | One tokenizer, 10 domains. 51.89% is Toys |
+| [[llm4eo]] | GPT-4.1-mini evolves FJSP operators |
+| [[apt-siamese]] | DARPA TC transfer. Tables 4–7 OCR-dirty |
+| [[foundry-3d]] | SuperTokens from Point-JEPA |
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-arxiv-batch04]] | 2026-08-24 | Five digests. C11 UniTok, C12 TIWM |
+| [[src-arxiv-2511-05540]] | 2026-08-24 | TIWM Mini vs full val14 |
+| [[src-arxiv-2511-12922]] | 2026-08-24 | UniTok. 51.89% is Toys |
+| [[src-arxiv-2511-16485]] | 2026-08-24 | LLM4EO FJSP |
+| [[src-arxiv-2511-20500]] | 2026-08-24 | APT Siamese. OCR tables |
+| [[src-arxiv-2511-20721]] | 2026-08-24 | Foundry 3D SuperTokens |
 | [[src-arxiv-batch03]] | 2026-08-24 | Five digests. C9 NGC, C10 HydroFusion |
 | [[src-arxiv-2510-03744]] | 2026-08-24 | HydroFusion-LMF. Abs vs §4.1 |
 | [[src-arxiv-2510-16851]] | 2026-08-24 | NGC. Table 1 vs 3 clash |

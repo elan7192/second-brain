@@ -10,6 +10,10 @@ updated: 2026-08-24
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-24] ingest | BATCH04 five paper digests
+
+Compiled [[tiwm]], [[unitok]], [[llm4eo]], [[apt-siamese]], [[foundry-3d]]. Flagged C11 and C12. OCR-unclean tables `unverified`. See [[src-arxiv-batch04]].
+
 ## [2026-08-24] ingest | BATCH03 five paper digests
 
 Compiled [[hydrofusion-lmf]], [[ngc]], [[sapin]], [[alphaevolve-math]], [[pavement-gnn]]. Flagged C9 and C10. AlphaEvolve 6.24–6.67 not known. See [[src-arxiv-batch03]].

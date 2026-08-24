@@ -61,6 +61,20 @@ Source list: [[src-arxiv-batch03]].
 
 C9/C10 on [[contradictions]]. AlphaEvolve 6.24–6.67 not known.
 
+## Known papers (BATCH04)
+
+Source list: [[src-arxiv-batch04]].
+
+| Paper | Page |
+| --- | --- |
+| 2511.05540 | [[tiwm]] |
+| 2511.12922 | [[unitok]] |
+| 2511.16485 | [[llm4eo]] |
+| 2511.20500 | [[apt-siamese]] |
+| 2511.20721 | [[foundry-3d]] |
+
+C11/C12 on [[contradictions]]. OCR-unclean tables `unverified`.
+
 ## Display
 
 The site must show all five tiers. Slice **per-tier top 800** (4000 cards) into `site/data/papers.json`. A global top-N list is all S.

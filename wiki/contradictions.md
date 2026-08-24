@@ -84,3 +84,14 @@ Resolution: unresolved. Do not pick a number. See [[ngc]].
 
 Resolution: keep the §4.1 span. Mark the abstract phrase as a clash. See [[hydrofusion-lmf]].
 
+## C11. UniTok 51.89% N@10 is Toys, not Tools
+
+[[src-arxiv-2511-12922]] body/abs say up to 51.89% NDCG@10 on Tools. Table 7: that cell is Toys. Tools is 42.99% N@10.
+
+Resolution: keep the table. See [[unitok]].
+
+## C12. TIWM Mini val14 vs full val14
+
+[[src-arxiv-2511-05540]] Mini val14 NR/R 88.05/89.54. Full val14 30.46/34.64.
+
+Resolution: do not quote Mini as full val14. See [[tiwm]].
