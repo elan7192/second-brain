@@ -66,6 +66,10 @@ Gap batch 4: +124800. Total 281056. Tiers S 15611 / A 23345 / B 129379 / C 84566
 
 TheWhizzAI ARC-AGI-3 30.2→100 marked `unverified` (NVIDIA blog exists, no paper). chatchat Living Brain linked to [[memory-engineering]] and [[agent-operating-system]]. g3t0ffmyl4wn body not retrieved. raw/ not written.
 
+## [2026-08-24] ship | designed graph HTML
+
+`output/obsidian-graph.html` is a dark product page: zoom, pan, hover/click title and path. Island clustering and gold/teal/blue/green/coral colors stay. See [[graph]] and [[graph-ui-2026-08-24]].
+
 ## [2026-08-24] ingest | five X scouts
 
 Ingested Mrgreenieybt3, beamnxw, promptyx_ai, openagentskill, AgentMemoryL. Linked [[llm-wiki]], [[memory-engineering]], [[harness-routing]], [[anti-slop]]. Flagged C8. No papers invented. raw/ not written.

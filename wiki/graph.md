@@ -45,7 +45,7 @@ Home stays the door. agent-operating-system sits in the middle as the synthesis.
 
 ## Snapshot
 
-Open `output/obsidian-graph.html` if you are not in Obsidian. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`.
+Open `output/obsidian-graph.html` if you are not in Obsidian. Dark page: zoom, pan, hover or click a node for title and wiki path. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. See [[graph-ui-2026-08-24]].
 
 <!-- graph-mermaid:begin -->
 ```mermaid
@@ -83,9 +83,17 @@ flowchart TB
   end
   subgraph hunt-ship[Hunt / ship]
     graph-clusters-2026-08-24
+    graph-ui-2026-08-24
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
+    ingest-brief-2026-08-24-arxiv-128956
+    ingest-brief-2026-08-24-arxiv-156256
+    ingest-brief-2026-08-24-arxiv-counts
+    ingest-brief-2026-08-24-arxiv-pages
+    ingest-brief-2026-08-24-arxiv-tierlist
+    ingest-brief-2026-08-24-five-x
+    ingest-brief-2026-08-24-trace
     maps
     ship
     src-avid-obsidian-agent-team
@@ -96,7 +104,19 @@ flowchart TB
   MEMORY --> memory-ablation
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
+  ship --> graph-ui-2026-08-24
   hunt --> hunt-ship-loop
+  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
+  ingest-brief-2026-08-24-trace --> memory-engineering
+  ingest-brief-2026-08-24-trace --> context-graph
+  ingest-brief-2026-08-24-trace --> tokens-as-capital
+  ingest-brief-2026-08-24-arxiv-counts --> MEMORY
+  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
+  ingest-brief-2026-08-24-five-x --> llm-wiki
+  ingest-brief-2026-08-24-five-x --> memory-engineering
+  ingest-brief-2026-08-24-five-x --> harness-routing
+  ingest-brief-2026-08-24-five-x --> anti-slop
+  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions

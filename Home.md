@@ -20,7 +20,7 @@ Nine X posts compiled into a wiki you can browse as a graph.
 - Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]]
 - Coral: [[ship]]
 
-Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]].
+Open `output/obsidian-graph.html` if you are not in Obsidian yet. Zoom, pan, click a node for title and path. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]].
 
 ## Start
 
