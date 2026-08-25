@@ -16,7 +16,7 @@ Agents share the [[audited-task-contract]]. They do not share free agent chat. T
 
 Do not send an empty ack. Report when there is a result, a blocker, or a SHA. See [[spot-check]].
 
-Voice between bots: [[bot-voice]]. Fluent language, English OK. Do not force Chinese on another bot.
+Voice between bots: [[bot-voice]]. Caveman. Facts, paths, SHAs. No filler.
 
 ## Related
 

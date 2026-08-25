@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | bot voice caveman
+
+Bot-to-bot caveman. Facts, paths, SHAs. Style URL not ingested. See [[bot-voice]].
+
 ## [2026-08-25] ingest | bot voice
 
 Bot-to-bot fluent language, English OK. Do not force Chinese between bots. lan E still gets Traditional Chinese from lead. See [[bot-voice]].

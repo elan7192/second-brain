@@ -48,7 +48,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once. No empty acks |
 | [[spot-check]] | Lead inspects without warning. Stay on-lane. File the lesson |
-| [[bot-voice]] | Bot-to-bot: fluent language. English OK. User still gets 繁中 from lead |
+| [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
