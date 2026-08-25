@@ -16,6 +16,8 @@ updated: 2026-08-25
 
 Skill Recorder trial only on a clean desktop with fake data, then [[skillspector]], then enable. See [[skill-recorder]].
 
+Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
+
 ## Pages updated
 
-[[skill-recorder]] · [[skillspector]]
+[[skill-recorder]] · [[skillspector]] · [[session-migrate]]

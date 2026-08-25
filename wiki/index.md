@@ -47,7 +47,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once |
-| [[session-migrate]] | Context only. Git is source of truth |
+| [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |

@@ -22,6 +22,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.
 - Skill Recorder: trial only on a clean desktop with fake data, then SkillSpector, then enable. See [[skill-recorder]].
+- Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
 
 ## arXiv tierlist
 

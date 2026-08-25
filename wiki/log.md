@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | dry-migrate
+
+Secret-scan first. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
+
 ## [2026-08-25] ingest | skill recorder
 
 Trial on a clean desktop with fake data, then [[skillspector]], then enable. See [[skill-recorder]], [[src-chatgpt-play-2026-08-25]], and [[ingest-brief-2026-08-25-skill-recorder]].
