@@ -20,7 +20,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Graph view and `tools/render-obsidian-graph.py` cluster by the five [[agent-operating-system]] layers. Do not place all wiki notes on one ring around Home. Filter excludes `raw/`, `templates/`, `index`, `log`, and `twitter`.
 - Wiki agent must stay current on compiled `wiki/` pages. Other agents send improvement facts here; ingest them. Do not invent gaps.
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
-- second-brain records methods learned in work; compile them into wiki/
+- second-brain records methods learned in work; compile them into wiki/.
 
 ## arXiv tierlist
 
@@ -38,16 +38,6 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 
 - The bounty/flow product is named LanBB. semantica is a tool inside it, not the project name.
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
-
-
-## Methods from play
-
-- Compile methods learned while doing work into `wiki/`. Do not forget them after the task. See [[src-play-methods-2026-08-25]].
-- SkillSpector before shipping a generated `SKILL.md`. See [[skillspector]].
-- Quota order: expiring OpenCode Go, then ChatGPT/Gemini, then Cursor. See [[quota-router]].
-- One owner per job, report once. Share an audited task contract, not free agent chat. See [[raptor-dispatch]] and D4.
-- Session-migrate is context only. Git is source of truth. See [[session-migrate]].
-- Clip pipeline uses captions/metadata. Do not rip copyrighted full films. Vault does not publish/pay/send (D5). See [[clip-pipeline]].
 
 ## Open questions
 

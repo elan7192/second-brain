@@ -11,7 +11,7 @@ updated: 2026-08-25
 - Path: `/workspace/play-until-2pm/METHODS.md`
 - Not copied into `raw/`.
 - Date: 2026-08-25
-- From: today's play, via lead. lan E: compile methods learned while doing work.
+- From: today's play methods list (lead). Extra color beyond METHODS.md is `unverified`.
 
 ## Claims kept
 
@@ -24,4 +24,4 @@ updated: 2026-08-25
 
 ## Pages updated
 
-[[skillspector]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[clip-pipeline]] · [[audited-task-contract]] · [[harness-routing]] · [[hunt-ship-loop]] · [[llm-wiki]] · [[how-it-works]]
+[[skillspector]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[clip-pipeline]] · [[audited-task-contract]] · [[harness-routing]] · [[hunt-ship-loop]] · [[llm-wiki]] · [[how-it-works]] · [[agent-operating-system]]

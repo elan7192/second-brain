@@ -12,7 +12,7 @@ Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
 ## [2026-08-25] ingest | play methods
 
-Compiled [[skillspector]], [[quota-router]], [[raptor-dispatch]], [[session-migrate]], [[clip-pipeline]]. See [[src-play-methods-2026-08-25]] and [[ingest-brief-2026-08-25-play-methods]].
+Compiled [[skillspector]], [[quota-router]], [[raptor-dispatch]], [[session-migrate]], [[clip-pipeline]] from `/workspace/play-until-2pm/METHODS.md`. Reinforced D4 on [[audited-task-contract]] and [[harness-routing]]. Not copied into raw/. See [[src-play-methods-2026-08-25]] and [[ingest-brief-2026-08-25-play-methods]].
 
 ## [2026-08-24] ingest | BATCH09 five paper digests
 

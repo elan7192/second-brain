@@ -47,7 +47,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once |
 | [[session-migrate]] | Context only. Git is source of truth |
-| [[clip-pipeline]] | Captions/metadata. Not full copyrighted films |
+| [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
 | [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
@@ -100,7 +100,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
-| [[src-play-methods-2026-08-25]] | 2026-08-25 | Play methods. Not in raw/ |
+| [[src-play-methods-2026-08-25]] | 2026-08-25 | Play methods. Path `/workspace/play-until-2pm/METHODS.md`. Not in raw/ |
 | [[src-arxiv-batch09]] | 2026-08-24 | Five digests. Figs unread |
 | [[src-arxiv-2608-19540]] | 2026-08-24 | CAMF/MF-T |
 | [[src-arxiv-2608-19568]] | 2026-08-24 | DraftFM |
