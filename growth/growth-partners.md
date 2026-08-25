@@ -15,4 +15,4 @@ DEMO roster. Hub for [[growth-core]].
 | --- | --- | --- | --- |
 | [[growth-partner-mira]] | live | 30% | First check. [[growth-win-first-check]] |
 | [[growth-partner-kai]] | live | 30% | Referral. [[growth-win-referral]] |
-| [[growth-partner-elena]] | pipeline | : | 15% ask. Blocked by [[growth-ruling-revshare]] |
+| [[growth-partner-elena]] | pipeline | - | 15% ask. Blocked by [[growth-ruling-revshare]] |

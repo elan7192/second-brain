@@ -104,6 +104,8 @@ def html(nodes: list[dict], edges: list[dict]) -> str:
     #graph {{ position: absolute; inset: 0; }}
     #hud-tl {{ position: absolute; top: 28px; left: 32px; z-index: 2; letter-spacing: 0.28em; font-size: 13px; font-weight: 600; color: #f9a8d4; }}
     #hud-br {{ position: absolute; bottom: 28px; left: 0; right: 0; text-align: center; z-index: 2; letter-spacing: 0.22em; font-size: 11px; color: #9ca3af; }}
+    #labels {{ position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }}
+    .nlabel {{ position: absolute; transform: translate(-50%, -120%); font-size: 13px; font-weight: 700; white-space: nowrap; text-shadow: 0 0 8px #050508, 0 0 2px #050508; }}
     #side {{
       position: absolute; top: 0; right: 0; width: 380px; height: 100%;
       background: rgba(8, 8, 14, 0.92); border-left: 1px solid #27272a;
@@ -122,6 +124,7 @@ def html(nodes: list[dict], edges: list[dict]) -> str:
   <div id="hud-tl">GROWTHOS / VAULT / OBSIDIAN VAULT / SECOND BRAIN</div>
   <div id="hud-br">DRAG TO ORBIT · SCROLL TO FLY · CLICK A NODE TO OPEN THE NOTE</div>
   <div id="graph"></div>
+  <div id="labels"></div>
   <aside id="side">
     <button id="close" type="button" aria-label="Close">×</button>
     <div class="crumb" id="crumb"></div>
@@ -129,57 +132,83 @@ def html(nodes: list[dict], edges: list[dict]) -> str:
     <div class="meta" id="meta"></div>
     <pre id="body"></pre>
   </aside>
-  <script src="https://unpkg.com/3d-force-graph@1.77.0/dist/3d-force-graph.min.js"></script>
-  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
+  <script src="https://unpkg.com/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
   <script>
     const DATA = {data};
     const side = document.getElementById('side');
+    const labels = document.getElementById('labels');
+    function openNote(node) {{
+      document.getElementById('crumb').textContent = node.path;
+      document.getElementById('title').textContent = node.label;
+      document.getElementById('meta').textContent = node.layer + ' · ' + node.id;
+      document.getElementById('body').textContent = node.body;
+      side.classList.add('open');
+    }}
     document.getElementById('close').onclick = () => side.classList.remove('open');
     const Graph = ForceGraph3D()(document.getElementById('graph'))
       .graphData(DATA)
       .backgroundColor('#050508')
       .showNavInfo(false)
-      .linkColor(() => 'rgba(244,114,182,0.28)')
-      .linkWidth(0.4)
-      .linkOpacity(0.35)
+      .linkColor(() => 'rgba(244,114,182,0.45)')
+      .linkWidth(0.6)
+      .linkOpacity(0.5)
+      .nodeRelSize(5)
       .nodeVal('val')
       .nodeColor('color')
-      .nodeOpacity(0.95)
+      .nodeOpacity(1)
       .nodeLabel(n => n.label)
-      .nodeThreeObject(node => {{
-        const sprite = new SpriteText(node.label.replace(/^#\\s*/, ''));
-        sprite.color = node.color;
-        sprite.textHeight = node.layer === 'core' ? 7 : 3.2;
-        sprite.fontFace = 'ui-sans-serif, system-ui, sans-serif';
-        sprite.fontWeight = node.layer === 'core' ? '700' : '500';
-        return sprite;
-      }})
-      .nodeThreeObjectExtend(true)
-      .onNodeClick(node => {{
-        document.getElementById('crumb').textContent = node.path;
-        document.getElementById('title').textContent = node.label;
-        document.getElementById('meta').textContent = node.layer + ' · ' + node.id;
-        document.getElementById('body').textContent = node.body;
-        side.classList.add('open');
-      }});
-    Graph.d3Force('charge').strength(-120);
-    Graph.d3Force('link').distance(48);
+      .onNodeClick(openNote);
+    Graph.d3Force('charge').strength(-180);
+    Graph.d3Force('link').distance(56);
+    Graph.cameraPosition({{ x: 0, y: 80, z: 520 }});
+    function paintLabels() {{
+      const nodes = Graph.graphData().nodes;
+      if (!labels.childElementCount) {{
+        nodes.forEach(node => {{
+          const el = document.createElement('div');
+          el.className = 'nlabel';
+          el.textContent = node.label.replace(/^#\\s*/, '');
+          el.style.color = node.color;
+          el.dataset.id = node.id;
+          labels.appendChild(el);
+        }});
+      }}
+      const kids = labels.children;
+      for (let i = 0; i < nodes.length; i++) {{
+        const node = nodes[i];
+        const el = kids[i];
+        if (node.x == null) continue;
+        const c = Graph.graph2ScreenCoords(node.x, node.y, node.z);
+        el.style.left = c.x + 'px';
+        el.style.top = c.y + 'px';
+      }}
+    }}
+    Graph.onEngineTick(paintLabels);
     let angle = 0;
     let holding = false;
-    Graph.onEngineStop(() => {{}});
-    const dist = 420;
+    let ready = false;
+    Graph.onEngineStop(() => {{ ready = true; paintLabels(); }});
+    setTimeout(() => {{ ready = true; }}, 2500);
+    const dist = 480;
     setInterval(() => {{
-      if (holding) return;
+      if (holding || !ready) return;
       angle += 0.004;
       Graph.cameraPosition({{
         x: dist * Math.sin(angle),
         z: dist * Math.cos(angle),
-        y: 40
+        y: 60
       }});
+      paintLabels();
     }}, 40);
     window.addEventListener('pointerdown', () => {{ holding = true; }});
     window.addEventListener('pointerup', () => {{ holding = false; }});
+    window.GROWTHOS = {{
+      open: (id) => {{
+        const node = DATA.nodes.find(n => n.id === id);
+        if (node) openNote(node);
+      }},
+      data: DATA
+    }};
   </script>
 </body>
 </html>
