@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 ## Start
 
@@ -43,6 +43,11 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
+| [[skillspector]] | Gate generated SKILL.md before shipping |
+| [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
+| [[raptor-dispatch]] | One owner per job. Report once |
+| [[session-migrate]] | Context only. Git is source of truth |
+| [[clip-pipeline]] | Captions/metadata. Not full copyrighted films |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
 | [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
@@ -95,6 +100,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-play-methods-2026-08-25]] | 2026-08-25 | Play methods. Not in raw/ |
 | [[src-arxiv-batch09]] | 2026-08-24 | Five digests. Figs unread |
 | [[src-arxiv-2608-19540]] | 2026-08-24 | CAMF/MF-T |
 | [[src-arxiv-2608-19568]] | 2026-08-24 | DraftFM |

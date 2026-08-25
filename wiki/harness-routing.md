@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # Harness routing
@@ -28,6 +28,7 @@ Those differences change the prompt prefix and the available actions. The same m
 3. Switch only at a verified checkpoint from the [[audited-task-contract]].
 
 Transfer semantic state. Do not depend on KV cache or prompt-cache reuse across harnesses.
+From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]] and [[session-migrate]].
 
 ## Test before you believe it
 
@@ -35,4 +36,4 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]]

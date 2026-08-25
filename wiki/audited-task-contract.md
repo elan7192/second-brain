@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-25
 ---
 
 # Audited task contract
@@ -29,6 +29,8 @@ Moving a task to a new harness without a contract means re-reading the repo, reo
 - Monotonic `state_version`
 
 Exclude: full chat, secrets, raw tool dumps, adjectives.
+
+From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]].
 
 ## Control plane
 

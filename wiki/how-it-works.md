@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-25
 ---
 
 # How it works
@@ -17,6 +17,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 3. Human asks. Agent reads [[index]], then pages, then answers.
 4. Useful answers go to `wiki/` or `output/`.
 5. Periodic lint: orphans, stale claims, [[contradictions]].
+6. Methods learned while doing work go into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
 
 ## What the model sees
 

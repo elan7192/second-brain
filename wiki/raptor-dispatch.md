@@ -1,0 +1,19 @@
+---
+type: concept
+tags:
+  - wiki
+created: 2026-08-25
+updated: 2026-08-25
+---
+
+# Raptor dispatch
+
+Raptor 3: one owner per job, report once.
+
+Source: [[src-play-methods-2026-08-25]] (`/workspace/play-until-2pm/METHODS.md`).
+
+Agents share the [[audited-task-contract]]. They do not share free agent chat. This is D4 from use 2026-08-25. Do not add a new decision.
+
+## Related
+
+[[harness-routing]] · [[session-migrate]]
