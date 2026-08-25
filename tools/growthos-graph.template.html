@@ -215,6 +215,7 @@
     <ul class="files" id="files"></ul>
     <pre class="note" id="note"></pre>
   </aside>
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
   <script src="https://unpkg.com/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
   <script src="https://unpkg.com/gsap@3.12.7/dist/gsap.min.js"></script>
   <script>
@@ -304,7 +305,7 @@
       g.fillRect(0, 0, 256, 256);
       const tex = new THREE.CanvasTexture(c);
       tex.needsUpdate = true;
-      tex.colorSpace = THREE.SRGBColorSpace || tex.colorSpace;
+      if (THREE.SRGBColorSpace) tex.colorSpace = THREE.SRGBColorSpace;
       return tex;
     }
 
