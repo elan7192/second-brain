@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] implement | GrowthOS GSAP chrome
+
+Sidebar was always on-screen (`#side.open` had no CSS). GSAP `xPercent` open/close, compositor overlay paint, core flare. Figma MCP needs auth and is 2D; not used. See [[gsap-figma-note-2026-08-25]] and [[growth-operator]].
+
 ## [2026-08-25] implement | GrowthOS vault
 
 Seven-layer operator notes in `growth/` from [[src-deronin-growthos-vault]]. DEMO partners. 3D graph `output/growthos-graph.html`. Briefing [[growth-briefing-2026-08-25]]. See [[growth-operator]] and [[ingest-brief-2026-08-25-growthos]].

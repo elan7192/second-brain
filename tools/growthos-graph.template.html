@@ -28,6 +28,7 @@
       font-family: "IBM Plex Mono", monospace; font-size: 10px;
       letter-spacing: 0.22em; color: #ff2d92;
     }
+    #brand .mark {
       width: 8px; height: 8px; border-radius: 50%;
       background: #ff2d92; box-shadow: 0 0 12px #ff2d92;
     }
@@ -60,8 +61,7 @@
     .status.pink { background: #ff2d92; color: #fff; box-shadow: 0 0 16px rgba(255,45,146,0.55); }
     #side {
       position: absolute; top: 0; right: 0; width: min(380px, 42vw); height: 100%;
-      z-index: 5; transform: translateX(110%);
-      transition: transform 0.28s ease;
+      z-index: 5;
       background: rgba(6, 4, 10, 0.72);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
@@ -69,8 +69,9 @@
       box-shadow: -20px 0 60px rgba(255, 20, 120, 0.12);
       padding: 22px 22px 40px;
       overflow: auto;
+      transform: translateX(110%);
+      will-change: transform;
     }
-    #side.open { transform: translateX(0); }
     #side .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
     #side .crumb {
       font-family: "IBM Plex Mono", monospace; font-size: 11px;
@@ -123,15 +124,29 @@
     .note.show { display: block; }
     #labels, #glows { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
     .orb {
-      position: absolute; border-radius: 50%; transform: translate(-50%, -50%);
+      position: absolute; left: 0; top: 0; border-radius: 50%;
       filter: blur(22px); pointer-events: none; mix-blend-mode: screen;
+      will-change: transform, opacity;
     }
+    #flare {
+      position: absolute; left: 0; top: 0; width: 320px; height: 320px;
+      pointer-events: none; z-index: 2; mix-blend-mode: screen;
+      background: radial-gradient(circle, rgba(255,255,255,0.55) 0%, rgba(255,45,146,0.28) 28%, transparent 68%);
+      will-change: transform;
+      opacity: 0;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #side { transition: none; }
+    }
+    #brand, #hint, #pills { will-change: transform, opacity; }
     .pill {
       font-family: "Space Grotesk", sans-serif; font-weight: 700;
       letter-spacing: 0.14em; text-transform: uppercase;
       color: #fff; white-space: nowrap; cursor: pointer; pointer-events: auto;
       display: inline-flex; align-items: center; gap: 6px;
       border-radius: 4px; padding: 5px 9px;
+      position: absolute; left: 0; top: 0;
+      will-change: transform, opacity;
       background: rgba(255, 20, 120, 0.92);
       border: 1px solid rgba(255,255,255,0.22);
       box-shadow: 0 0 16px rgba(255, 20, 120, 0.55);
@@ -180,6 +195,7 @@
   <div id="nebula"></div>
   <div id="graph"></div>
   <div id="glows"></div>
+  <div id="flare"></div>
   <div id="labels"></div>
   <div id="brand">
     <div class="markrow">
@@ -206,6 +222,7 @@
     <pre class="note" id="note"></pre>
   </aside>
   <script src="https://unpkg.com/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.7/dist/gsap.min.js"></script>
   <script>
     const DATA = __GROWTH_DATA__;
     const PANELS = DATA.panels;
@@ -214,7 +231,20 @@
     const noteEl = document.getElementById("note");
     const labels = document.getElementById("labels");
     const glows = document.getElementById("glows");
+    const flare = document.getElementById("flare");
     const history = [];
+    const hasGsap = typeof gsap !== "undefined";
+    const reduceMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    function motionOff() { return reduceMq.matches; }
+
+    function openSide() {
+      if (hasGsap) gsap.to(side, { xPercent: 0, duration: motionOff() ? 0 : 0.45, ease: "power3.out", overwrite: true });
+      else side.style.transform = "translateX(0)";
+    }
+    function closeSide() {
+      if (hasGsap) gsap.to(side, { xPercent: 100, duration: motionOff() ? 0 : 0.35, ease: "power2.in", overwrite: true });
+      else side.style.transform = "translateX(110%)";
+    }
 
     function renderPanel(id) {
       const p = PANELS[id];
@@ -250,14 +280,14 @@
         };
         filesEl.appendChild(li);
       });
-      side.classList.add("open");
+      openSide();
     }
 
-    document.getElementById("close").onclick = () => side.classList.remove("open");
+    document.getElementById("close").onclick = () => closeSide();
     document.getElementById("back").onclick = () => {
       const prev = history.pop();
       if (prev) renderPanel(prev);
-      else side.classList.remove("open");
+      else closeSide();
     };
 
     const Graph = ForceGraph3D()(document.getElementById("graph"))
@@ -291,6 +321,7 @@
         orb.style.width = size + "px";
         orb.style.height = size + "px";
         orb.style.background = node.color;
+        orb.dataset.half = String(size / 2);
         glows.appendChild(orb);
         const el = document.createElement("div");
         el.className = "pill " + node.kind;
@@ -307,6 +338,7 @@
     function paint() {
       const nodes = Graph.graphData().nodes;
       ensureOverlay();
+      let core = null;
       for (let i = 0; i < nodes.length; i++) {
         const node = nodes[i];
         if (node.x == null) continue;
@@ -317,17 +349,20 @@
         const dz = node.z - cam.position.z;
         const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
         const far = Math.max(0, (dist - 150) / 200);
-        glows.children[i].style.left = c.x + "px";
-        glows.children[i].style.top = c.y + "px";
-        glows.children[i].style.opacity = String(Math.max(0.08, 0.6 - far * 0.5));
+        const glow = glows.children[i];
+        const half = Number(glow.dataset.half) || 26;
+        glow.style.transform = "translate3d(" + (c.x - half) + "px," + (c.y - half) + "px,0)";
+        glow.style.opacity = String(Math.max(0.08, 0.6 - far * 0.5));
         const lab = labels.children[i];
-        lab.style.left = c.x + "px";
-        lab.style.top = c.y - 18 + "px";
-        lab.style.position = "absolute";
-        lab.style.transform = "translate(-50%, -100%)";
+        lab.style.transform = "translate3d(" + c.x + "px," + (c.y - 18) + "px,0) translate(-50%,-100%)";
         lab.style.filter = far > 0.4 ? "blur(" + (far * 3) + "px)" : "none";
         lab.style.opacity = String(Math.max(0, 1 - far * 1.35));
         lab.style.visibility = far > 0.9 ? "hidden" : "visible";
+        if (node.kind === "core") core = c;
+      }
+      if (core) {
+        flare.style.transform = "translate3d(" + (core.x - 160) + "px," + (core.y - 160) + "px,0)";
+        flare.style.opacity = "1";
       }
     }
 
@@ -338,18 +373,34 @@
     Graph.onEngineStop(() => { ready = true; paint(); });
     setTimeout(() => { ready = true; }, 1800);
     const orbit = 250;
-    setInterval(() => {
-      if (holding || !ready) return;
-      angle += 0.003;
-      Graph.cameraPosition({
-        x: orbit * Math.sin(angle),
-        z: orbit * Math.cos(angle),
-        y: 22,
-      });
-      paint();
-    }, 40);
+    if (!motionOff()) {
+      setInterval(() => {
+        if (holding || !ready) return;
+        angle += 0.003;
+        Graph.cameraPosition({
+          x: orbit * Math.sin(angle),
+          z: orbit * Math.cos(angle),
+          y: 22,
+        });
+        paint();
+      }, 40);
+    }
     window.addEventListener("pointerdown", () => { holding = true; });
     window.addEventListener("pointerup", () => { holding = false; });
+
+    if (hasGsap) {
+      gsap.set(side, { xPercent: 100 });
+      if (!motionOff()) {
+        gsap.set("#brand", { autoAlpha: 0, y: -14 });
+        gsap.set("#hint", { autoAlpha: 0 });
+        gsap.set(".status", { autoAlpha: 0 });
+        gsap.timeline({ defaults: { ease: "power3.out" } })
+          .to("#brand", { autoAlpha: 1, y: 0, duration: 0.7 })
+          .to(".status", { autoAlpha: 1, duration: 0.35, stagger: 0.08 }, "-=0.35")
+          .to("#hint", { autoAlpha: 1, duration: 0.45 }, "-=0.2");
+      }
+    }
+
     window.GROWTHOS = { open: (id) => renderPanel(id), data: DATA };
   </script>
 </body>

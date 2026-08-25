@@ -40,7 +40,7 @@ Vault still does not post, pay, send, or create live Whop objects. See D5.
 
 1. Read [[growth-core]], then only the pages it points to.
 2. `python3 tools/growth-brief.py --partner "…"`
-3. Open `output/growthos-graph.html` for the 3D graph.
+3. Open `output/growthos-graph.html` for the 3D graph. Figma is not required for that page; see [[gsap-figma-note-2026-08-25]].
 4. File the briefing. Do not send.
 
 Latest briefing: [[growth-briefing-2026-08-25]].
