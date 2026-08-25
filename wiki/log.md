@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | surprise spot-check
+
+Lead inspects without warning. Stay on-lane. Lessons go to wiki and a shared skill. [[raptor-dispatch]] also: no empty acks. See [[spot-check]].
+
 ## [2026-08-25] ingest | dry-migrate
 
 Secret-scan first. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].

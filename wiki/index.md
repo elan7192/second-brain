@@ -46,7 +46,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[skillspector]] | Gate generated SKILL.md before shipping |
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
-| [[raptor-dispatch]] | One owner per job. Report once |
+| [[raptor-dispatch]] | One owner per job. Report once. No empty acks |
+| [[spot-check]] | Lead inspects without warning. Stay on-lane. File the lesson |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
