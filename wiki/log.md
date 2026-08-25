@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] query | GrowthOS cinematic vault look
+
+Opened `output/growthos-graph.html` on main `8857622` (#15 squash). Iris core, tentacles, planet clusters. Orbit, fly, VAULT CORE, bottom pills, planet click work. Stack is vanilla three.js, not 3d-force-graph / fresnel / GSAP. Planets have no in-scene labels. See [[growthos-look-2026-08-25]] and [[growth-operator]].
+
 ## [2026-08-25] implement | GrowthOS orb materials
 
 Default Lambert spheres and CSS blur orbs looked cheap. Fresnel shader spheres, additive sprite halos, ACES + antialias. See [[growth-operator]].
