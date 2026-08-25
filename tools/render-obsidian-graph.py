@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "output"
 GRAPH_PAGE = ROOT / "wiki" / "graph.md"
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
-SKIP_DIRS = {".git", ".obsidian", "templates", "raw"}
+SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 # Catalog stars. They stay in the vault. They do not sit in this graph.
 HIDDEN = {"index", "log", "twitter", "decisions"}
@@ -106,6 +106,9 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "Jarvis",
         "TELOS",
         "Hooks",
+        "GrowthOS",
+        "growth-operator",
+        "src-deronin-growthos-vault",
     },
     "nav": {
         "Home",

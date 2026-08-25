@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-24
+updated: 2026-08-25
 updated: 2026-08-23
 ---
 
@@ -101,3 +101,9 @@ Resolution: do not quote Mini as full val14. See [[tiwm]].
 [[src-arxiv-2608-19514]] graphical abstract quotes 96.2% / 80.2%. Table 1 is 98.3 / 84.9 / 29.29.
 
 Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
+
+## C14. eptwts $100k / 10 months
+
+[[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
+
+Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].

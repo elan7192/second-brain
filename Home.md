@@ -3,7 +3,7 @@ type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # Home
@@ -20,7 +20,7 @@ Nine X posts compiled into a wiki you can browse as a graph.
 - Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]]
 - Coral: [[ship]]
 
-Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]].
+Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.
 
 ## Start
 
@@ -30,6 +30,7 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - [[contradictions]]
 - [[Jarvis]]
 - [[TELOS]]
+- [[GrowthOS]]
 
 ## Do this next
 

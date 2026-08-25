@@ -20,6 +20,8 @@ Five layers, one vault.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
 5. **Keep a human gate.** [[hunt-ship-loop]] + [[clip-pipeline]] + [[skillspector]]. File first. Scouts write quietly. Vault does not post, pay, or send. Generated skills wait for SkillSpector.
 
+[[growth-operator]] is this stack applied to partner ops: compiled notes in `growth/`, rulings instead of re-arguing, human yes before money.
+
 ## What this batch does not prove
 
 Viral clips are not methods. See [[contradictions]].
@@ -28,7 +30,7 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]]
+[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

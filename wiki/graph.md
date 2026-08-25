@@ -47,6 +47,8 @@ Home stays the door. agent-operating-system sits in the middle as the synthesis.
 
 Open `output/obsidian-graph.html` if you are not in Obsidian. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`.
 
+Growth operator graph is separate: `output/growthos-graph.html`. See [[growth-operator]]. Do not dump `growth/` notes onto this wiki snapshot.
+
 <!-- graph-mermaid:begin -->
 ```mermaid
 flowchart TB
@@ -82,21 +84,70 @@ flowchart TB
     src-rohit-harness-router
   end
   subgraph hunt-ship[Hunt / ship]
+    GrowthOS
     graph-clusters-2026-08-24
+    growth-briefing-2026-08-25
+    growth-operator
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
+    ingest-brief-2026-08-24-arxiv-128956
+    ingest-brief-2026-08-24-arxiv-156256
+    ingest-brief-2026-08-24-arxiv-281056
+    ingest-brief-2026-08-24-arxiv-405856
+    ingest-brief-2026-08-24-arxiv-counts
+    ingest-brief-2026-08-24-arxiv-pages
+    ingest-brief-2026-08-24-arxiv-tierlist
+    ingest-brief-2026-08-24-batch01
+    ingest-brief-2026-08-24-batch02
+    ingest-brief-2026-08-24-batch03
+    ingest-brief-2026-08-24-batch04
+    ingest-brief-2026-08-24-batch05
+    ingest-brief-2026-08-24-batch06
+    ingest-brief-2026-08-24-batch07
+    ingest-brief-2026-08-24-batch08
+    ingest-brief-2026-08-24-batch09
+    ingest-brief-2026-08-24-five-x
+    ingest-brief-2026-08-24-three-x
+    ingest-brief-2026-08-24-trace
+    ingest-brief-2026-08-25-growthos
+    ingest-brief-2026-08-25-play-methods
+    ingest-brief-2026-08-25-skill-recorder
     maps
     ship
     src-avid-obsidian-agent-team
+    src-deronin-growthos-vault
   end
   subgraph bridge[Synthesis]
     agent-operating-system
   end
+  maps --> GrowthOS
   MEMORY --> memory-ablation
+  MEMORY --> growth-operator
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
   hunt --> hunt-ship-loop
+  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
+  ingest-brief-2026-08-24-trace --> memory-engineering
+  ingest-brief-2026-08-24-trace --> context-graph
+  ingest-brief-2026-08-24-trace --> tokens-as-capital
+  ingest-brief-2026-08-25-play-methods --> hunt-ship-loop
+  ingest-brief-2026-08-25-play-methods --> llm-wiki
+  ingest-brief-2026-08-25-play-methods --> audited-task-contract
+  ingest-brief-2026-08-25-play-methods --> harness-routing
+  ingest-brief-2026-08-24-arxiv-281056 --> MEMORY
+  ingest-brief-2026-08-24-arxiv-counts --> MEMORY
+  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
+  ingest-brief-2026-08-24-five-x --> llm-wiki
+  ingest-brief-2026-08-24-five-x --> memory-engineering
+  ingest-brief-2026-08-24-five-x --> harness-routing
+  ingest-brief-2026-08-24-five-x --> anti-slop
+  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
+  ingest-brief-2026-08-25-growthos --> growth-operator
+  ingest-brief-2026-08-25-growthos --> src-deronin-growthos-vault
+  ingest-brief-2026-08-25-growthos --> GrowthOS
+  ingest-brief-2026-08-25-growthos --> growth-briefing-2026-08-25
+  growth-briefing-2026-08-25 --> src-deronin-growthos-vault
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
@@ -117,6 +168,7 @@ flowchart TB
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
+  hunt-ship-loop --> growth-operator
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
   llm-wiki --> tokens-as-capital
@@ -124,6 +176,7 @@ flowchart TB
   llm-wiki --> andrej-karpathy
   llm-wiki --> src-papa-couch-compiler
   llm-wiki --> src-bober-folder-workflow
+  llm-wiki --> growth-operator
   tokens-as-capital --> src-papa-couch-compiler
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
@@ -152,6 +205,14 @@ flowchart TB
   agent-operating-system --> audited-task-contract
   agent-operating-system --> verifiable-instructions
   agent-operating-system --> hunt-ship-loop
+  growth-operator --> src-deronin-growthos-vault
+  growth-operator --> GrowthOS
+  growth-operator --> growth-briefing-2026-08-25
+  growth-operator --> llm-wiki
+  growth-operator --> memory-engineering
+  growth-operator --> hunt-ship-loop
+  GrowthOS --> growth-operator
+  GrowthOS --> src-deronin-growthos-vault
   rohit --> audited-task-contract
   rohit --> harness-routing
   rohit --> src-rohit-harness-router
@@ -178,5 +239,6 @@ flowchart TB
   src-0xcodio-memory-ablation --> memory-ablation
   src-0xcodio-memory-ablation --> verifiable-instructions
   src-voxyz-verifiable-instructions --> verifiable-instructions
+  src-deronin-growthos-vault --> growth-operator
 ```
 <!-- graph-mermaid:end -->

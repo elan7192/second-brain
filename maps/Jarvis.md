@@ -22,6 +22,8 @@ Operating map for the agent. Teal in the Obsidian graph.
 
 Answer from [[wiki]] pages. File useful answers to [[ship]].
 
+If the task is GrowthOS, load [[GrowthOS]] then [[growth-core]] instead of compiling from chat.
+
 ## Related
 
 [[how-it-works]] · [[agent-operating-system]] · [[TELOS]]

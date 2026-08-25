@@ -10,6 +10,22 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] implement | GrowthOS orb materials
+
+Default Lambert spheres and CSS blur orbs looked cheap. Fresnel shader spheres, additive sprite halos, ACES + antialias. See [[growth-operator]].
+
+## [2026-08-25] query | GrowthOS 3D plugin vs clone
+
+Neither. Compiled subgraph HTML, not a plugin and not a product hunt. D5, D7, [[context-graph]]. See [[growthos-3d-gap-2026-08-25]] and [[growth-operator]].
+
+## [2026-08-25] implement | GrowthOS GSAP chrome
+
+Sidebar was always on-screen (`#side.open` had no CSS). GSAP `xPercent` open/close, compositor overlay paint, core flare. Figma MCP needs auth and is 2D; not used. See [[gsap-figma-note-2026-08-25]] and [[growth-operator]].
+
+## [2026-08-25] implement | GrowthOS vault
+
+Seven-layer operator notes in `growth/` from [[src-deronin-growthos-vault]]. DEMO partners. 3D graph `output/growthos-graph.html`. Briefing [[growth-briefing-2026-08-25]]. See [[growth-operator]] and [[ingest-brief-2026-08-25-growthos]].
+
 ## [2026-08-25] ingest | milesdeutscher grok bot use cases
 
 lan E share. 25 use cases. Overlap: skill trainer, overnight coder, knowledge base. See [[grok-bot-use-cases]] and [[src-milesdeutscher-grok-bot-use-cases]]. Not scout.

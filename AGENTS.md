@@ -108,6 +108,17 @@ For a high-risk answer (architecture, a reversal of a locked decision, a numeric
 Check: numeric or "always/never" claims quote a source page.
 If the source is a viral demo with no method: mark it `unverified` and prefer the calmer article underneath.
 
+## Growth operator
+
+When the human asks to run GrowthOS, brief a partner, or open the growth vault:
+
+1. Read `growth/growth-core.md`, then only the pages it points to.
+2. Answer from those pages. File the briefing in `output/` with `python3 tools/growth-brief.py`.
+3. Do not post, pay, send, create live Whop objects, or treat DEMO notes as real deals.
+
+Check: every claim in the briefing cites a `growth/` page or is marked `unverified`.
+If a DEMO note is the only source: say DEMO. If the vault is silent: stop and name the gap.
+
 ## Human authority
 
 This vault does not post, pay, send, or deploy.
