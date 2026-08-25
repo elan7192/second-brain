@@ -35,3 +35,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
+
+[[src-avid-company-foundry]] is a Grok + Obsidian Jarvis clip quoting Company Foundry. Compile [[company-foundry]]. Clip claims `unverified`. C15.

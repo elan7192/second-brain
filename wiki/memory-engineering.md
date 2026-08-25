@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # Memory engineering
@@ -26,7 +26,7 @@ Full-transcript replay does not scale, does not rank importance, and keeps both 
 
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]]
+[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[company-foundry]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 
@@ -35,3 +35,5 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.
 
 [[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.
+
+[[src-avid-company-foundry]]: sessions end, companies continue. Do not treat generated summaries as customer fact. Record whether a decision came from evidence, inference, or a guess. See [[company-foundry]].

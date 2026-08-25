@@ -85,6 +85,7 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "src-rohit-harness-router",
         "src-hitu-entropy-engineering",
         "rohit",
+        "company-foundry",
     },
     "hunt-ship": {
         "hunt-ship-loop",
@@ -103,6 +104,8 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "ingest-brief-2026-08-23",
         "graph-clusters-2026-08-24",
         "src-avid-obsidian-agent-team",
+        "src-avid-company-foundry",
+        "avid",
         "Jarvis",
         "TELOS",
         "Hooks",

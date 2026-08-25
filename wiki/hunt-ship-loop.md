@@ -18,6 +18,7 @@ Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are 
 - Chat gets a short digest. See `output/`.
 - Lock decisions in `decisions.md` so dead ideas are not remade.
 - Nothing in the vault posts, pays, or sends.
+- [[src-avid-company-foundry]] four levels: observe, prepare, commit, emit. Commit and emit need a gate. Same as D5.
 - One owner per job, report once. See [[raptor-dispatch]].
 - Clip work is captions/metadata, not full copyrighted films. See [[clip-pipeline]].
 - Compile methods learned in work into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
@@ -32,4 +33,4 @@ Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]]
+[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]] · [[company-foundry]] · [[avid]]

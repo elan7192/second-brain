@@ -47,6 +47,8 @@ Source: [[src-milesdeutscher-grok-bot-use-cases]].
 
 The other 20 are listed. They are not built.
 
+[[src-avid-company-foundry]] treats Grokbot as a packaged worker with its own tool loop. The company layer still owns memory, permissions, budget, and handoff. See [[company-foundry]]. Do not read the Jarvis clip as a built company.
+
 ## Related
 
-[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]]
+[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]] · [[company-foundry]]

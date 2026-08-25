@@ -53,6 +53,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
+| [[company-foundry]] | Compiler for organisational method. Clip vs article: C15 |
 | [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
@@ -107,6 +108,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-avid-company-foundry]] | 2026-08-24 | Grok+Obsidian Jarvis clip. Quoted Company Foundry article. C15 |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
 | [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |
@@ -189,6 +191,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | One line |
 | --- | --- |
+| [[avid]] | @Av1dlive. Hunt/Ship vault tweet plus Company Foundry clip. C15 |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |

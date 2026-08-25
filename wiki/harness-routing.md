@@ -30,10 +30,12 @@ Those differences change the prompt prefix and the available actions. The same m
 Transfer semantic state. Do not depend on KV cache or prompt-cache reuse across harnesses.
 From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]] and [[session-migrate]].
 
+[[src-avid-company-foundry]]: the harness owns the company method. The router selects the worker. Article lanes: economy, fast, capable. Every route needs a receipt. Kimi K3 is a first capable-tier worker, not a locked owner. See [[company-foundry]] and [[quota-router]].
+
 ## Test before you believe it
 
 Compare a fixed pair, a fixed pair with audited state, and routed executors. If routing loses to the reset tax, keep the fixed pair.
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[company-foundry]]

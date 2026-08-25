@@ -17,7 +17,7 @@ Nine X posts compiled into a wiki you can browse as a graph.
 - Gold: [[wiki]]
 - Teal: [[maps]]
 - Blue: [[hunt]] / [[twitter]]
-- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]]
+- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]], [[avid]]
 - Coral: [[ship]]
 
 Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.

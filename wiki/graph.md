@@ -77,6 +77,7 @@ flowchart TB
   end
   subgraph harness[Harness]
     audited-task-contract
+    company-foundry
     entropy-gate
     harness-routing
     rohit
@@ -85,9 +86,12 @@ flowchart TB
   end
   subgraph hunt-ship[Hunt / ship]
     GrowthOS
+    avid
     graph-clusters-2026-08-24
     growth-briefing-2026-08-25
     growth-operator
+    growthos-3d-gap-2026-08-25
+    gsap-figma-note-2026-08-25
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
@@ -110,11 +114,13 @@ flowchart TB
     ingest-brief-2026-08-24-five-x
     ingest-brief-2026-08-24-three-x
     ingest-brief-2026-08-24-trace
+    ingest-brief-2026-08-25-avid-company-foundry
     ingest-brief-2026-08-25-growthos
     ingest-brief-2026-08-25-play-methods
     ingest-brief-2026-08-25-skill-recorder
     maps
     ship
+    src-avid-company-foundry
     src-avid-obsidian-agent-team
     src-deronin-growthos-vault
   end
@@ -124,9 +130,15 @@ flowchart TB
   maps --> GrowthOS
   MEMORY --> memory-ablation
   MEMORY --> growth-operator
+  MEMORY --> company-foundry
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
+  ship --> ingest-brief-2026-08-25-avid-company-foundry
   hunt --> hunt-ship-loop
+  ingest-brief-2026-08-25-growthos --> growth-operator
+  ingest-brief-2026-08-25-growthos --> src-deronin-growthos-vault
+  ingest-brief-2026-08-25-growthos --> GrowthOS
+  ingest-brief-2026-08-25-growthos --> growth-briefing-2026-08-25
   ingest-brief-2026-08-24-arxiv-pages --> MEMORY
   ingest-brief-2026-08-24-trace --> memory-engineering
   ingest-brief-2026-08-24-trace --> context-graph
@@ -135,19 +147,30 @@ flowchart TB
   ingest-brief-2026-08-25-play-methods --> llm-wiki
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
+  growthos-3d-gap-2026-08-25 --> growth-operator
+  growthos-3d-gap-2026-08-25 --> hunt-ship-loop
+  growthos-3d-gap-2026-08-25 --> context-graph
+  growthos-3d-gap-2026-08-25 --> src-deronin-growthos-vault
+  growthos-3d-gap-2026-08-25 --> gsap-figma-note-2026-08-25
   ingest-brief-2026-08-24-arxiv-281056 --> MEMORY
   ingest-brief-2026-08-24-arxiv-counts --> MEMORY
   ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
+  gsap-figma-note-2026-08-25 --> growth-operator
+  gsap-figma-note-2026-08-25 --> context-graph
+  gsap-figma-note-2026-08-25 --> anti-slop
+  gsap-figma-note-2026-08-25 --> src-deronin-growthos-vault
   ingest-brief-2026-08-24-five-x --> llm-wiki
   ingest-brief-2026-08-24-five-x --> memory-engineering
   ingest-brief-2026-08-24-five-x --> harness-routing
   ingest-brief-2026-08-24-five-x --> anti-slop
-  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
-  ingest-brief-2026-08-25-growthos --> growth-operator
-  ingest-brief-2026-08-25-growthos --> src-deronin-growthos-vault
-  ingest-brief-2026-08-25-growthos --> GrowthOS
-  ingest-brief-2026-08-25-growthos --> growth-briefing-2026-08-25
   growth-briefing-2026-08-25 --> src-deronin-growthos-vault
+  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
+  ingest-brief-2026-08-25-avid-company-foundry --> company-foundry
+  ingest-brief-2026-08-25-avid-company-foundry --> hunt-ship-loop
+  ingest-brief-2026-08-25-avid-company-foundry --> harness-routing
+  ingest-brief-2026-08-25-avid-company-foundry --> audited-task-contract
+  ingest-brief-2026-08-25-avid-company-foundry --> entropy-gate
+  ingest-brief-2026-08-25-avid-company-foundry --> memory-engineering
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
@@ -155,8 +178,19 @@ flowchart TB
   self-verification --> jacky-kwok
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
+  growth-operator --> src-deronin-growthos-vault
+  growth-operator --> GrowthOS
+  growth-operator --> gsap-figma-note-2026-08-25
+  growth-operator --> context-graph
+  growth-operator --> growthos-3d-gap-2026-08-25
+  growth-operator --> growth-briefing-2026-08-25
+  growth-operator --> llm-wiki
+  growth-operator --> memory-engineering
+  growth-operator --> hunt-ship-loop
   harness-routing --> src-rohit-harness-router
   harness-routing --> audited-task-contract
+  harness-routing --> src-avid-company-foundry
+  harness-routing --> company-foundry
   harness-routing --> entropy-gate
   harness-routing --> rohit
   memory-engineering --> src-0xcodio-memory-ablation
@@ -164,29 +198,39 @@ flowchart TB
   memory-engineering --> context-graph
   memory-engineering --> audited-task-contract
   memory-engineering --> entropy-gate
+  memory-engineering --> company-foundry
+  memory-engineering --> src-avid-company-foundry
   hunt-ship-loop --> src-avid-obsidian-agent-team
+  hunt-ship-loop --> src-avid-company-foundry
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
   hunt-ship-loop --> growth-operator
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
+  hunt-ship-loop --> company-foundry
+  hunt-ship-loop --> avid
   llm-wiki --> tokens-as-capital
   llm-wiki --> context-graph
   llm-wiki --> andrej-karpathy
   llm-wiki --> src-papa-couch-compiler
   llm-wiki --> src-bober-folder-workflow
   llm-wiki --> growth-operator
+  llm-wiki --> company-foundry
   tokens-as-capital --> src-papa-couch-compiler
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
   audited-task-contract --> src-rohit-harness-router
+  audited-task-contract --> src-avid-company-foundry
+  audited-task-contract --> company-foundry
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
   anti-slop --> src-juampi-anti-slop-rank
   anti-slop --> verifiable-instructions
   entropy-gate --> src-hitu-entropy-engineering
+  entropy-gate --> src-avid-company-foundry
+  entropy-gate --> company-foundry
   entropy-gate --> audited-task-contract
   entropy-gate --> harness-routing
   entropy-gate --> self-verification
@@ -205,12 +249,14 @@ flowchart TB
   agent-operating-system --> audited-task-contract
   agent-operating-system --> verifiable-instructions
   agent-operating-system --> hunt-ship-loop
-  growth-operator --> src-deronin-growthos-vault
-  growth-operator --> GrowthOS
-  growth-operator --> growth-briefing-2026-08-25
-  growth-operator --> llm-wiki
-  growth-operator --> memory-engineering
-  growth-operator --> hunt-ship-loop
+  company-foundry --> src-avid-company-foundry
+  company-foundry --> hunt-ship-loop
+  company-foundry --> harness-routing
+  company-foundry --> entropy-gate
+  company-foundry --> audited-task-contract
+  company-foundry --> memory-engineering
+  company-foundry --> llm-wiki
+  company-foundry --> avid
   GrowthOS --> growth-operator
   GrowthOS --> src-deronin-growthos-vault
   rohit --> audited-task-contract
@@ -221,6 +267,10 @@ flowchart TB
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler
   andrej-karpathy --> src-bober-folder-workflow
+  avid --> src-avid-obsidian-agent-team
+  avid --> src-avid-company-foundry
+  avid --> company-foundry
+  avid --> hunt-ship-loop
   src-bober-folder-workflow --> llm-wiki
   src-bober-folder-workflow --> andrej-karpathy
   src-jacky-self-verification --> self-verification
@@ -232,13 +282,22 @@ flowchart TB
   src-hitu-entropy-engineering --> entropy-gate
   src-avid-obsidian-agent-team --> hunt-ship-loop
   src-avid-obsidian-agent-team --> context-graph
+  src-avid-obsidian-agent-team --> avid
+  src-avid-obsidian-agent-team --> src-avid-company-foundry
   src-rohit-harness-router --> audited-task-contract
   src-rohit-harness-router --> harness-routing
   src-rohit-harness-router --> rohit
   src-0xcodio-memory-ablation --> memory-engineering
   src-0xcodio-memory-ablation --> memory-ablation
   src-0xcodio-memory-ablation --> verifiable-instructions
-  src-voxyz-verifiable-instructions --> verifiable-instructions
   src-deronin-growthos-vault --> growth-operator
+  src-voxyz-verifiable-instructions --> verifiable-instructions
+  src-avid-company-foundry --> entropy-gate
+  src-avid-company-foundry --> company-foundry
+  src-avid-company-foundry --> hunt-ship-loop
+  src-avid-company-foundry --> harness-routing
+  src-avid-company-foundry --> audited-task-contract
+  src-avid-company-foundry --> memory-engineering
+  src-avid-company-foundry --> avid
 ```
 <!-- graph-mermaid:end -->

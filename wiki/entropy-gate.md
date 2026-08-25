@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # Entropy gate
@@ -39,6 +39,8 @@ Compare assertion maps and embedding drift. On the author's code-refactor calibr
 
 Unanimous ungated agreement was wrong in 41% of 50 runs.
 
+[[src-avid-company-foundry]] research swarm: collectors share a schema and write evidence rows. The synthesizer reads the ledger, not collector chats. Authority on that packet is observe and prepare only. See [[company-foundry]].
+
 ## Related
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[company-foundry]]

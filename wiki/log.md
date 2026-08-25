@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | Avid Company Foundry clip
+
+Tweet 2091848572417495138. Compile the quoted Company Foundry article and README. Grok+Obsidian Jarvis clip `unverified`. C15. Video unread. See [[company-foundry]] and [[src-avid-company-foundry]].
+
 ## [2026-08-25] implement | GrowthOS orb materials
 
 Default Lambert spheres and CSS blur orbs looked cheap. Fresnel shader spheres, additive sprite halos, ACES + antialias. See [[growth-operator]].

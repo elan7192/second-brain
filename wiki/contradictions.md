@@ -107,3 +107,11 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Avid Jarvis clip vs Company Foundry article
+
+[[src-avid-company-foundry]] tweet 2091848572417495138: Grok bot + Obsidian Jarvis that starts a business, ships software, and goes viral.
+
+Quoted article and https://github.com/codejunkie99/company-foundry: Company Foundry with Kimi K3 as first worker and DeepSeek Harness as first native target. No AI CEO. First milestone is one reviewable loop. Grokbot is a packaged worker. The company layer owns memory, permissions, budget, and handoff.
+
+Resolution: compile the article and README. Mark the clip claims `unverified`. Do not treat Grok + Obsidian as the company compiler. D5 still holds. See [[company-foundry]].
