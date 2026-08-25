@@ -2,212 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>GROWTHOS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Orbitron:wght@700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@700;800&display=swap" rel="stylesheet" />
   <style>
-    html, body { margin: 0; height: 100%; background: #000; color: #fff; overflow: hidden; font-family: "Space Grotesk", sans-serif; }
-    #graph { position: absolute; inset: 0; z-index: 1; }
-    #nebula {
-      position: absolute; inset: 0; z-index: 0; pointer-events: none;
-      background:
-        radial-gradient(ellipse 42% 36% at 44% 48%, rgba(255, 20, 120, 0.16), transparent 58%),
-        radial-gradient(ellipse 34% 30% at 66% 36%, rgba(90, 40, 255, 0.12), transparent 52%),
-        radial-gradient(ellipse 28% 24% at 58% 72%, rgba(255, 190, 40, 0.07), transparent 50%),
-        radial-gradient(ellipse 24% 22% at 28% 70%, rgba(40, 180, 255, 0.07), transparent 50%);
-      filter: blur(36px);
-    }
+    html, body { margin: 0; height: 100%; background: #050308; color: #f4eef6; overflow: hidden; font-family: "IBM Plex Mono", monospace; }
+    canvas { display: block; }
     #brand {
-      position: absolute; top: 28px; left: 32px; z-index: 4;
-      display: flex; flex-direction: column; gap: 6px;
+      position: absolute; top: 22px; left: 22px; z-index: 4;
+      display: flex; flex-direction: column; gap: 6px; pointer-events: none;
     }
-    #brand .markrow { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-    #brand .short {
-      font-family: "IBM Plex Mono", monospace; font-size: 10px;
-      letter-spacing: 0.22em; color: #ff2d92;
-    }
+    #brand .markrow { display: flex; align-items: center; gap: 10px; }
+    #brand .short { font-size: 10px; letter-spacing: 0.22em; color: #ff2d92; }
     #brand .mark {
       width: 8px; height: 8px; border-radius: 50%;
       background: #ff2d92; box-shadow: 0 0 12px #ff2d92;
     }
     #brand h1 {
       margin: 0; font-family: Orbitron, sans-serif; font-weight: 800;
-      font-size: 28px; letter-spacing: 0.18em; color: #ff2d92;
+      font-size: clamp(22px, 4vw, 34px); letter-spacing: 0.18em; color: #ff2d92;
       text-shadow: 0 0 18px rgba(255, 45, 146, 0.9), 0 0 40px rgba(255, 45, 146, 0.45);
     }
     #brand .sub {
-      font-family: "IBM Plex Mono", monospace; font-size: 10px;
-      letter-spacing: 0.22em; color: rgba(255,255,255,0.55);
+      font-size: 10px; letter-spacing: 0.22em; color: rgba(244,238,246,0.55);
       text-transform: uppercase;
     }
     #hint {
-      position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%);
-      z-index: 4; font-family: "IBM Plex Mono", monospace; font-size: 10px;
-      letter-spacing: 0.28em; color: rgba(255,255,255,0.45);
-      white-space: nowrap;
+      position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
+      z-index: 4; font-size: 10px; letter-spacing: 0.28em;
+      color: rgba(244,238,246,0.45); text-transform: uppercase;
+      text-align: center; padding: 0 16px; pointer-events: none;
     }
     #pills {
       position: absolute; bottom: 52px; left: 50%; transform: translateX(-50%);
-      z-index: 4; display: flex; gap: 10px;
+      z-index: 4; display: flex; flex-wrap: wrap; gap: 10px;
+      justify-content: center; padding: 0 12px; pointer-events: auto;
     }
     .status {
-      font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 11px;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 6px 12px; border-radius: 999px;
+      font-family: Orbitron, sans-serif; font-weight: 700; font-size: 10px;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      padding: 10px 14px; border-radius: 999px; cursor: pointer;
+      min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;
     }
-    .status.amber { background: #ffc43d; color: #1a1200; box-shadow: 0 0 16px rgba(255,196,61,0.55); }
-    .status.pink { background: #ff2d92; color: #fff; box-shadow: 0 0 16px rgba(255,45,146,0.55); }
+    .status.amber {
+      background: rgba(26,18,0,0.82); color: #c9a227;
+      border: 1px solid #c9a227; box-shadow: 0 0 16px rgba(201,162,39,0.45);
+    }
+    .status.pink {
+      background: #ff2d92; color: #fff; border: 1px solid rgba(255,45,146,0.8);
+      box-shadow: 0 0 18px rgba(255,45,146,0.55);
+    }
+    #corepill {
+      position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%);
+      z-index: 4; pointer-events: auto; cursor: pointer;
+      border: 1px solid rgba(244,238,246,0.22);
+      background: rgba(5,3,8,0.62); backdrop-filter: blur(10px);
+      border-radius: 999px; padding: 10px 16px; min-height: 44px;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    #corepill .t {
+      font-family: Orbitron, sans-serif; font-weight: 700;
+      font-size: 11px; letter-spacing: 0.18em; color: #f4eef6;
+    }
+    #corepill .n { font-size: 9px; letter-spacing: 0.12em; color: rgba(244,238,246,0.55); }
     #side {
-      position: absolute; top: 0; right: 0; width: min(380px, 42vw); height: 100%;
-      z-index: 5;
-      background: rgba(6, 4, 10, 0.72);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border-left: 1px solid rgba(255, 45, 146, 0.55);
+      position: absolute; top: 0; right: 0; width: min(380px, 100%); height: 100%;
+      z-index: 5; background: rgba(5, 3, 8, 0.82); backdrop-filter: blur(18px);
+      border-left: 1px solid rgba(255, 45, 146, 0.5);
       box-shadow: -20px 0 60px rgba(255, 20, 120, 0.12);
-      padding: 22px 22px 40px;
-      overflow: auto;
+      padding: 22px 22px 40px; overflow: auto; transform: translateX(110%);
       visibility: hidden;
-      will-change: transform;
+    }
+    @media (max-width: 640px) {
+      #side { top: auto; bottom: 0; height: 72vh; width: 100%; border-left: 0;
+        border-top: 1px solid rgba(255, 45, 146, 0.5); }
     }
     #side .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-    #side .crumb {
-      font-family: "IBM Plex Mono", monospace; font-size: 11px;
-      color: rgba(255,255,255,0.45); letter-spacing: 0.04em;
-    }
+    #side .crumb { font-size: 11px; color: rgba(244,238,246,0.45); }
     #side h2 {
-      margin: 4px 0 4px; font-size: 26px; letter-spacing: 0.08em;
-      color: #ff4da6; font-weight: 700; text-transform: uppercase;
+      margin: 4px 0; font-family: Orbitron, sans-serif; font-size: 22px;
+      letter-spacing: 0.1em; color: #ff2d92; text-transform: uppercase;
       text-shadow: 0 0 16px rgba(255,45,146,0.5);
     }
-    #side .meta {
-      font-family: "IBM Plex Mono", monospace; font-size: 11px;
-      color: rgba(255,255,255,0.4); margin-bottom: 18px;
-    }
+    #side .meta { font-size: 11px; color: rgba(244,238,246,0.4); margin-bottom: 18px; }
     .icon-btn {
-      background: none; border: 0; color: rgba(255,255,255,0.5);
-      font-size: 18px; cursor: pointer; padding: 4px 8px;
+      background: none; border: 0; color: rgba(244,238,246,0.5);
+      font-size: 22px; cursor: pointer; width: 44px; height: 44px;
     }
     .icon-btn:hover { color: #fff; }
     .files { list-style: none; margin: 0; padding: 0; }
     .files li {
       display: grid; grid-template-columns: 36px 1fr auto; gap: 10px;
       align-items: center; padding: 9px 8px; margin-bottom: 4px;
-      border-radius: 8px; cursor: pointer;
-      border: 1px solid transparent;
+      border-radius: 8px; cursor: pointer; border: 1px solid transparent; min-height: 44px;
     }
     .files li:hover, .files li.active {
-      border-color: rgba(255, 45, 146, 0.55);
-      background: rgba(255, 45, 146, 0.08);
-      box-shadow: 0 0 18px rgba(255, 45, 146, 0.12);
+      border-color: rgba(255, 45, 146, 0.55); background: rgba(255, 45, 146, 0.08);
     }
     .abbr {
-      width: 36px; height: 36px; border-radius: 8px;
-      display: grid; place-items: center;
+      width: 36px; height: 36px; border-radius: 8px; display: grid; place-items: center;
       font-family: Orbitron, sans-serif; font-size: 8px; letter-spacing: 0.08em;
-      background: linear-gradient(160deg, #ff4da6, #7a2bff);
-      box-shadow: 0 0 14px rgba(255, 45, 146, 0.45);
+      background: #ff2d92; color: #fff;
     }
-    .fname {
-      font-family: "IBM Plex Mono", monospace; font-size: 13px; color: #f5f5f5;
-    }
-    .sz, .cnt {
-      font-family: "IBM Plex Mono", monospace; font-size: 11px; color: rgba(255,255,255,0.35);
-    }
+    .fname { font-size: 13px; color: #f4eef6; }
+    .sz, .cnt { font-size: 11px; color: rgba(244,238,246,0.4); }
     .note {
       display: none; margin-top: 16px; white-space: pre-wrap;
-      font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5;
-      color: rgba(255,255,255,0.72);
+      font-size: 12px; line-height: 1.55; color: rgba(244,238,246,0.75);
     }
     .note.show { display: block; }
-    #labels { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
-    #flare {
-      position: absolute; left: 0; top: 0; width: 220px; height: 220px;
-      pointer-events: none; z-index: 2; mix-blend-mode: screen;
-      background: radial-gradient(circle, rgba(255,255,255,0.28) 0%, rgba(255,45,146,0.12) 32%, transparent 70%);
-      will-change: transform;
-      opacity: 0;
+    #vignette {
+      position: absolute; inset: 0; z-index: 3; pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 42%, rgba(0,0,0,0.55) 100%);
     }
-    @media (prefers-reduced-motion: reduce) {
-      #side { transition: none; }
-    }
-    #brand, #hint, #pills { will-change: transform, opacity; }
-    .pill {
-      font-family: "Space Grotesk", sans-serif; font-weight: 700;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: #fff; white-space: nowrap; cursor: pointer; pointer-events: auto;
-      display: inline-flex; align-items: center; gap: 6px;
-      border-radius: 4px; padding: 5px 9px;
-      position: absolute; left: 0; top: 0;
-      will-change: transform, opacity;
-      background: rgba(255, 20, 120, 0.92);
-      border: 1px solid rgba(255,255,255,0.22);
-      box-shadow: 0 0 16px rgba(255, 20, 120, 0.55);
-      font-size: 11px;
-    }
-    .pill.core {
-      background: #fff; color: #ff2d92; font-size: 13px; padding: 7px 12px;
-      box-shadow: 0 0 24px rgba(255,255,255,0.85), 0 0 48px rgba(255,45,146,0.8);
-    }
-    .pill.hub { font-size: 12px; padding: 6px 10px; }
-    .pill.ruling {
-      background: #ff9f1a; color: #1a0a00;
-      box-shadow: 0 0 16px rgba(255,159,26,0.65);
-    }
-    .pill.metric {
-      background: #ffe566; color: #1a1400;
-      box-shadow: 0 0 16px rgba(255,229,102,0.55);
-    }
-    .pill.cyan {
-      background: rgba(56, 189, 248, 0.92); color: #001018;
-      box-shadow: 0 0 14px rgba(56,189,248,0.5);
-    }
-    .pill.violet {
-      background: rgba(167, 139, 250, 0.95); color: #120024;
-    }
-    .pill.leaf {
-      background: rgba(255, 20, 120, 0.55);
-      font-size: 10px; letter-spacing: 0.1em;
-    }
-    .pill .n {
-      font-size: 9px; letter-spacing: 0; opacity: 0.8; font-weight: 600;
-    }
-    .fold {
-      width: 8px; height: 7px; border: 1.5px solid currentColor;
-      border-radius: 1px 1px 0 0; display: inline-block; opacity: 0.85;
-      position: relative;
-    }
-    .fold:after {
-      content: ""; position: absolute; left: -1.5px; right: 2px; top: -3px;
-      height: 2px; border: 1.5px solid currentColor; border-bottom: 0;
-      border-radius: 1px 1px 0 0; width: 4px;
-    }
+    button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
   </style>
 </head>
 <body>
-  <div id="nebula"></div>
-  <div id="graph"></div>
-  <div id="flare"></div>
-  <div id="labels"></div>
+  <div id="vignette"></div>
   <div id="brand">
-    <div class="markrow">
-      <div class="mark"></div>
-      <div class="short">SHORTLIST · 3</div>
-    </div>
+    <div class="markrow"><div class="mark"></div><div class="short">SHORTLIST · 3</div></div>
     <h1>GROWTHOS</h1>
     <div class="sub">Grokbot · Obsidian Vault · Second Brain</div>
   </div>
+  <button type="button" id="corepill">
+    <span class="t">VAULT CORE</span><span class="n" id="notecount">39 NOTES</span>
+  </button>
   <div id="pills">
-    <div class="status amber">Costs must not scale</div>
-    <div class="status pink">View-sale gap</div>
+    <button type="button" class="status amber" data-open="costs">Costs must not scale</button>
+    <button type="button" class="status pink" data-open="view-sale">View-sale gap</button>
   </div>
-  <div id="hint">DRAG TO ORBIT · SCROLL TO FLY · CLICK A NODE TO OPEN THE FILE</div>
+  <div id="hint">Drag to orbit · Scroll to fly · Click a node to open the file</div>
   <aside id="side">
     <div class="top">
-      <button class="icon-btn" id="back" type="button">←</button>
-      <button class="icon-btn" id="close" type="button">×</button>
+      <button class="icon-btn" id="back" type="button" aria-label="Back">←</button>
+      <button class="icon-btn" id="close" type="button" aria-label="Close">×</button>
     </div>
     <div class="crumb" id="crumb"></div>
     <h2 id="title"></h2>
@@ -216,36 +147,32 @@
     <pre class="note" id="note"></pre>
   </aside>
   <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
-  <script src="https://unpkg.com/gsap@3.12.7/dist/gsap.min.js"></script>
   <script>
     const DATA = {"nodes": [{"id": "core", "val": 7.5, "color": "#ffffff", "kind": "core", "panel": "core", "html": "VAULT CORE <span class=\"n\">39 notes</span>", "x": 0, "y": 0, "z": 0, "fx": 0, "fy": 0, "fz": 0}, {"id": "partners", "val": 4.2, "color": "#ff4da6", "kind": "hub", "panel": "partners", "html": "<span class=\"fold\"></span> PARTNERS", "x": 5.8170722959499274e-15, "y": 0.0, "z": -95.0}, {"id": "creators", "val": 4.2, "color": "#38bdf8", "kind": "cyan", "panel": "creators", "html": "CREATORS", "x": 44.14870134415802, "y": 17.849966588144433, "z": -84.11832243705494}, {"id": "playbooks", "val": 4.2, "color": "#7aa2ff", "kind": "cyan", "panel": "playbooks", "html": "PLAYBOOKS", "x": 78.18346725989736, "y": -4.5997398364829625, "z": -53.9661509394598}, {"id": "rulings", "val": 4.2, "color": "#ff9f1a", "kind": "ruling", "panel": "rulings", "html": "RULINGS", "x": 94.30734303931513, "y": -16.664664281899185, "z": -11.45098462425568}, {"id": "memories", "val": 4.2, "color": "#f9a8d4", "kind": "hub", "panel": "memories", "html": "MEMORIES", "x": 88.82654305511441, "y": 8.894040320494947, "z": 33.68746426904087}, {"id": "content", "val": 4.2, "color": "#ffe566", "kind": "metric", "panel": "content", "html": "CONTENT ENGINE", "x": 62.99665253287553, "y": 14.372768027222826, "z": 71.10852107625462}, {"id": "trends", "val": 4.2, "color": "#2ee6d6", "kind": "cyan", "panel": "trends", "html": "TREND RADAR", "x": 22.734988107317974, "y": -12.597744376683762, "z": 92.23947265547494}, {"id": "offers", "val": 4.2, "color": "#c084fc", "kind": "violet", "panel": "offers", "html": "OFFERS", "x": -22.73498810731796, "y": -11.126468020266598, "z": 92.23947265547496}, {"id": "strategies", "val": 4.2, "color": "#fb7185", "kind": "hub", "panel": "strategies", "html": "STRATEGIES", "x": -62.99665253287552, "y": 15.464912667416923, "z": 71.10852107625462}, {"id": "insights", "val": 4.2, "color": "#fde047", "kind": "metric", "panel": "insights", "html": "INSIGHTS", "x": -88.8265430551144, "y": 7.141330316351046, "z": 33.6874642690409}, {"id": "journal", "val": 4.2, "color": "#a78bfa", "kind": "violet", "panel": "journal", "html": "JOURNAL", "x": -94.30734303931513, "y": -17.305154853832022, "z": -11.45098462425571}, {"id": "niches", "val": 4.2, "color": "#4ade80", "kind": "hub", "panel": "niches", "html": "NICHES", "x": -78.18346725989741, "y": -2.6819824646555785, "z": -53.966150939459716}, {"id": "competitors", "val": 4.2, "color": "#818cf8", "kind": "leaf", "panel": "competitors", "html": "COMPETITORS", "x": -44.14870134415799, "y": 17.996272202568047, "z": -84.11832243705496}, {"id": "partner-1", "val": 2.2, "color": "#ff4da6", "kind": "leaf", "panel": "partner-1", "html": "PARTNER #1", "x": 38.00000000000001, "y": 0.0, "z": -95.0}, {"id": "partner-2", "val": 2.2, "color": "#ff4da6", "kind": "leaf", "panel": "partner-2", "html": "PARTNER #2", "x": 8.143901214329898e-15, "y": 8.090169943749475, "z": -57.0}, {"id": "partner-3", "val": 2.2, "color": "#ff4da6", "kind": "leaf", "panel": "partner-3", "html": "PARTNER #3", "x": -37.99999999999999, "y": -9.510565162951535, "z": -95.0}, {"id": "pipeline", "val": 2.2, "color": "#ff4da6", "kind": "leaf", "panel": "pipeline", "html": "PIPELINE<span class=\"n\">1</span>", "x": -1.1634144591899855e-15, "y": 3.090169943749472, "z": -133.0}, {"id": "shortlist", "val": 2.2, "color": "#38bdf8", "kind": "cyan", "panel": "shortlist", "html": "SHORTLIST<span class=\"n\">3</span>", "x": 82.14870134415801, "y": 17.849966588144433, "z": -84.11832243705494}, {"id": "passed", "val": 2.2, "color": "#38bdf8", "kind": "leaf", "panel": "passed", "html": "PASSED<span class=\"n\">1</span>", "x": 6.14870134415802, "y": 8.339401425192898, "z": -84.11832243705494}, {"id": "pb-scout", "val": 2.2, "color": "#7aa2ff", "kind": "leaf", "panel": "pb-scout", "html": "SCOUT", "x": 116.18346725989736, "y": -4.5997398364829625, "z": -53.9661509394598}, {"id": "pb-content", "val": 2.2, "color": "#7aa2ff", "kind": "leaf", "panel": "pb-content", "html": "SCRIPTS", "x": 78.18346725989736, "y": 3.490430107266512, "z": -15.966150939459801}, {"id": "pb-whop", "val": 2.2, "color": "#7aa2ff", "kind": "leaf", "panel": "pb-whop", "html": "WHOP CLI", "x": 40.183467259897355, "y": -14.110304999434497, "z": -53.966150939459794}, {"id": "pb-outreach", "val": 2.2, "color": "#7aa2ff", "kind": "leaf", "panel": "pb-outreach", "html": "OUTREACH", "x": 78.18346725989736, "y": -1.5095698927334906, "z": -91.9661509394598}, {"id": "r-rev", "val": 2.2, "color": "#ff9f1a", "kind": "ruling", "panel": "r-rev", "html": "REV-SHARE ≥ 25%", "x": 132.30734303931513, "y": -16.664664281899185, "z": -11.45098462425568}, {"id": "r-proof", "val": 2.2, "color": "#ff9f1a", "kind": "ruling", "panel": "r-proof", "html": "PROOF OF SKILL", "x": 106.04998882556313, "y": -6.8417917746122985, "z": 24.68916299496015}, {"id": "r-money", "val": 2.2, "color": "#ff9f1a", "kind": "ruling", "panel": "r-money", "html": "BOT NEVER MOVES MONEY", "x": 63.56469725306713, "y": -20.345909808745958, "z": 10.884854962858304}, {"id": "r-niche", "val": 2.2, "color": "#ff9f1a", "kind": "ruling", "panel": "r-niche", "html": "ONE NICHE AT A TIME", "x": 63.56469725306712, "y": -25.10794353691934, "z": -33.786824211369655}, {"id": "r-conv", "val": 2.2, "color": "#ff9f1a", "kind": "ruling", "panel": "r-conv", "html": "CONVERSION OVER VIEWS", "x": 106.04998882556312, "y": -9.819193222612306, "z": -47.59113224347152}, {"id": "wins", "val": 2.2, "color": "#f9a8d4", "kind": "leaf", "panel": "wins", "html": "WINS", "x": 126.82654305511441, "y": 8.894040320494947, "z": 33.68746426904087}, {"id": "first-check", "val": 2.2, "color": "#f9a8d4", "kind": "leaf", "panel": "first-check", "html": "FIRST CHECK", "x": 88.82654305511441, "y": 16.98421026424442, "z": 71.68746426904087}, {"id": "referral", "val": 2.2, "color": "#f9a8d4", "kind": "leaf", "panel": "referral", "html": "REFERRAL", "x": 50.82654305511441, "y": -0.6165248424565881, "z": 33.68746426904088}, {"id": "fail", "val": 2.2, "color": "#f9a8d4", "kind": "leaf", "panel": "fail", "html": "VIEW-CHASE", "x": 88.82654305511441, "y": 11.984210264244417, "z": -4.312535730959127}, {"id": "view-sale", "val": 2.2, "color": "#ffe566", "kind": "metric", "panel": "view-sale", "html": "VIEW-SALE GAP", "x": 100.99665253287553, "y": 14.372768027222826, "z": 71.10852107625462}, {"id": "mira-hooks", "val": 2.2, "color": "#ffe566", "kind": "leaf", "panel": "mira-hooks", "html": "MIRA HOOKS", "x": 43.99665253287554, "y": 16.45188493540042, "z": 104.01748642006329}, {"id": "kai-hooks", "val": 2.2, "color": "#ffe566", "kind": "leaf", "panel": "kai-hooks", "html": "KAI HOOKS", "x": 43.996652532875515, "y": 10.305401596464815, "z": 38.19955573244596}, {"id": "week", "val": 2.2, "color": "#2ee6d6", "kind": "leaf", "panel": "week", "html": "THIS WEEK", "x": 60.734988107317974, "y": -12.597744376683762, "z": 92.23947265547494}, {"id": "formats", "val": 2.2, "color": "#2ee6d6", "kind": "leaf", "panel": "formats", "html": "FORMATS<span class=\"n\">5</span>", "x": -15.265011892682026, "y": -22.108309539635297, "z": 92.23947265547494}, {"id": "o-mira", "val": 2.2, "color": "#c084fc", "kind": "violet", "panel": "o-mira", "html": "COMMUNITY $49/MO", "x": 15.26501189268204, "y": -11.126468020266598, "z": 92.23947265547496}, {"id": "o-kai", "val": 2.2, "color": "#c084fc", "kind": "leaf", "panel": "o-kai", "html": "OPS $99/MO", "x": -60.73498810731796, "y": -20.637033183218133, "z": 92.23947265547496}, {"id": "shadow", "val": 2.2, "color": "#fb7185", "kind": "leaf", "panel": "shadow", "html": "SHADOW OPERATOR", "x": -24.996652532875522, "y": 15.464912667416923, "z": 71.10852107625462}, {"id": "costs", "val": 2.2, "color": "#ffe566", "kind": "metric", "panel": "costs", "html": "COSTS MUST NOT SCALE", "x": -100.99665253287552, "y": 5.954347504465389, "z": 71.10852107625462}, {"id": "chess", "val": 2.2, "color": "#fde047", "kind": "metric", "panel": "chess", "html": "74k ≠ SALES", "x": -50.8265430551144, "y": 7.141330316351046, "z": 33.6874642690409}, {"id": "talent", "val": 2.2, "color": "#fde047", "kind": "leaf", "panel": "talent", "html": "TALENT > BUDGET", "x": -126.8265430551144, "y": -2.369234846600489, "z": 33.68746426904091}, {"id": "daily", "val": 2.2, "color": "#a78bfa", "kind": "leaf", "panel": "daily", "html": "DAILY NOTES", "x": -56.30734303931513, "y": -17.305154853832022, "z": -11.45098462425571}, {"id": "n-ugc", "val": 2.2, "color": "#4ade80", "kind": "leaf", "panel": "n-ugc", "html": "AI UGC", "x": -40.18346725989741, "y": -2.6819824646555785, "z": -53.966150939459716}, {"id": "n-ops", "val": 2.2, "color": "#4ade80", "kind": "leaf", "panel": "n-ops", "html": "AI OPS", "x": -116.18346725989741, "y": -12.192547627607112, "z": -53.96615093945971}], "links": [{"source": "core", "target": "partners", "distance": 100}, {"source": "core", "target": "creators", "distance": 100}, {"source": "core", "target": "playbooks", "distance": 100}, {"source": "core", "target": "rulings", "distance": 100}, {"source": "core", "target": "memories", "distance": 100}, {"source": "core", "target": "content", "distance": 100}, {"source": "core", "target": "trends", "distance": 100}, {"source": "core", "target": "offers", "distance": 100}, {"source": "core", "target": "strategies", "distance": 100}, {"source": "core", "target": "insights", "distance": 100}, {"source": "core", "target": "journal", "distance": 100}, {"source": "core", "target": "niches", "distance": 100}, {"source": "core", "target": "competitors", "distance": 100}, {"source": "partners", "target": "partner-1", "distance": 42}, {"source": "partners", "target": "partner-2", "distance": 42}, {"source": "partners", "target": "partner-3", "distance": 42}, {"source": "partners", "target": "pipeline", "distance": 42}, {"source": "creators", "target": "shortlist", "distance": 42}, {"source": "creators", "target": "passed", "distance": 42}, {"source": "playbooks", "target": "pb-scout", "distance": 42}, {"source": "playbooks", "target": "pb-content", "distance": 42}, {"source": "playbooks", "target": "pb-whop", "distance": 42}, {"source": "playbooks", "target": "pb-outreach", "distance": 42}, {"source": "rulings", "target": "r-rev", "distance": 42}, {"source": "rulings", "target": "r-proof", "distance": 42}, {"source": "rulings", "target": "r-money", "distance": 42}, {"source": "rulings", "target": "r-niche", "distance": 42}, {"source": "rulings", "target": "r-conv", "distance": 42}, {"source": "memories", "target": "wins", "distance": 42}, {"source": "memories", "target": "first-check", "distance": 42}, {"source": "memories", "target": "referral", "distance": 42}, {"source": "memories", "target": "fail", "distance": 42}, {"source": "content", "target": "view-sale", "distance": 42}, {"source": "content", "target": "mira-hooks", "distance": 42}, {"source": "content", "target": "kai-hooks", "distance": 42}, {"source": "trends", "target": "week", "distance": 42}, {"source": "trends", "target": "formats", "distance": 42}, {"source": "offers", "target": "o-mira", "distance": 42}, {"source": "offers", "target": "o-kai", "distance": 42}, {"source": "strategies", "target": "shadow", "distance": 42}, {"source": "strategies", "target": "costs", "distance": 42}, {"source": "insights", "target": "chess", "distance": 42}, {"source": "insights", "target": "talent", "distance": 42}, {"source": "journal", "target": "daily", "distance": 42}, {"source": "niches", "target": "n-ugc", "distance": 42}, {"source": "niches", "target": "n-ops", "distance": 42}], "panels": {"core": {"crumb": "vault /", "title": "VAULT CORE", "meta": "folder · 39 notes · operator memory", "items": [{"kind": "folder", "name": "partners/", "abbr": "PAR", "right": "3 items", "open": "partners"}, {"kind": "folder", "name": "creators/", "abbr": "CRE", "right": "4 items", "open": "creators"}, {"kind": "folder", "name": "playbooks/", "abbr": "PLA", "right": "4 items", "open": "playbooks"}, {"kind": "folder", "name": "rulings/", "abbr": "RUL", "right": "5 items", "open": "rulings"}, {"kind": "folder", "name": "memories/", "abbr": "MEM", "right": "4 items", "open": "memories"}, {"kind": "folder", "name": "content/", "abbr": "CON", "right": "3 items", "open": "content"}, {"kind": "folder", "name": "trends/", "abbr": "TRD", "right": "2 items", "open": "trends"}, {"kind": "folder", "name": "offers/", "abbr": "OFF", "right": "2 items", "open": "offers"}, {"kind": "folder", "name": "niches/", "abbr": "NIC", "right": "2 items", "open": "niches"}, {"kind": "file", "name": "_core.md", "abbr": "COR", "right": "1 KB", "body": "# GROWTHOS / VAULT CORE\n\nOperator memory for a Grokbot growth system. Point the bot here before a new partner. It starts with what prior partners taught, not from zero.\n\nSource: [[src-deronin-growthos-vault]]. Concept: [[growth-operator]]. Door: [[GrowthOS]].\n\n## Load order\n\n1. [[growth-rulings]]\n2. [[growth-playbooks]]\n3. [[growth-niche-ai-ugc]] · [[growth-niche-ai-ops]]\n4. [[growth-partners]] · [[growth-creators]]\n5. [[growth-content]]\n6. [[growth-trends]]\n7. [[growth-memories]]\n\n## Layers\n\n| Layer | Hub |\n| --- | --- |\n| Niches | [[growth-niche-ai-ugc]] · [[growth-niche-ai-ops]] |\n| Creators | [[growth-creators]] |\n| Partners | [[growth-partners]] |\n| Offers | [[growth-offers]] |\n| Content | [[growth-content]] |\n| Playbooks | [[growth-playbooks]] |\n| Rulings | [[growth-rulings]] |\n| Trend radar | [[growth-trends]] |\n| Memories | [[growth-memories]] |\n| Strategy | [[growth-strategy]] |\n| Insights | [[growth-insights]] |\n| Competitors | [[growth-competitors]] |\n| Journal | [[growth-journal-2026-08-25]] |\n\n## Hard stops\n\nVault does not post, pay, send, or create live Whop objects. See D5 in `decisions.md`.\n\nPartner names and dollar figures in this folder are **DEMO** unless a note says otherwise. Do not treat them as live deals.\n\n## Check\n\nA briefing must cite these pages. If a claim has no page, mark `unverified` or stop."}]}, "partners": {"crumb": "vault / partners /", "title": "PARTNERS", "meta": "folder · 2 live · 1 pipeline", "items": [{"kind": "folder", "name": "partner-#1/", "abbr": "P1", "right": "3 items", "open": "partner-1"}, {"kind": "folder", "name": "partner-#2/", "abbr": "P2", "right": "3 items", "open": "partner-2"}, {"kind": "folder", "name": "partner-#3/", "abbr": "P3", "right": "2 items", "open": "partner-3"}, {"kind": "file", "name": "_overview.md", "abbr": "PAR", "right": "1 KB", "body": "# Partners\n\nDEMO roster. Hub for [[growth-core]].\n\n| Partner | Status | Rev-share | Notes |\n| --- | --- | --- | --- |\n| [[growth-partner-mira]] | live | 30% | First check. [[growth-win-first-check]] |\n| [[growth-partner-kai]] | live | 30% | Referral. [[growth-win-referral]] |\n| [[growth-partner-elena]] | pipeline | - | 15% ask. Blocked by [[growth-ruling-revshare]] |"}]}, "partner-1": {"crumb": "vault / partners / partner-#1 /", "title": "PARTNER #1", "meta": "folder · bot-maintained · DEMO", "items": [{"kind": "file", "name": "_index.md", "abbr": "P1", "right": "1 KB", "body": "# Partner 1: Mira Vale (DEMO)\n\nScout: [[growth-scout-mira]]. Offer: [[growth-offer-mira]]. Content: [[growth-content-mira]].\n\n## Terms\n\n- Rev-share: 30% (above [[growth-ruling-revshare]])\n- Niche: [[growth-niche-ai-ugc]]\n- Signed: 2026-07-12 (DEMO date)\n\n## Objections before signing\n\n1. \"I already make money in DMs.\" Counter: DMs do not compound. A $49/mo community does.\n2. \"AI will replace me.\" Counter: the offer is the workflow, not the face.\n3. Generic outreach ignored. Specific hook critique got the reply. See [[growth-playbook-outreach]].\n\n## What this partner taught\n\nConversion topics beat view topics on her account. See [[growth-content-mira]]. Use that before writing for the next UGC partner."}, {"kind": "file", "name": "scout.md", "abbr": "SC", "right": "1 KB", "body": "# Scout: Mira Vale (DEMO)\n\nHandle: `@mira.ugc.demo`. Niche: [[growth-niche-ai-ugc]]. Status: signed → [[growth-partner-mira]].\n\n## Why the work is strong\n\nProduct-hook cuts: first 2s is the product in hand, then the problem. Native handheld, burned captions. Brands in comments asking for \"the template.\"\n\n## What is broken in distribution\n\nNo link in bio. No checkout. Comments asking how to buy get a \"dm me.\" That is freelance, not an offer.\n\n## Proof of skill\n\nPublic work a stranger can inspect. Passes [[growth-ruling-proof]]."}, {"kind": "file", "name": "offer.md", "abbr": "OF", "right": "1 KB", "body": "# Offer: Mira UGC community (DEMO)\n\nPartner: [[growth-partner-mira]]. Hub: [[growth-offers]].\n\n| Product | Price | Type |\n| --- | --- | --- |\n| AI UGC Community | $49/mo | subscription |\n| Starter Pack (templates + presets) | $149 | one time |\n| 1:1 Audit | $299 | one time |\n\nPrices are the article's example, used as DEMO. Not a live Whop catalog. See [[growth-playbook-whop]]."}, {"kind": "file", "name": "content.md", "abbr": "CT", "right": "1 KB", "body": "# Content: Mira (DEMO)\n\nPartner: [[growth-partner-mira]]. Offer: [[growth-offer-mira]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| 3 hooks that get brand replies | \"Brands asked me for the template. I sold the workflow instead.\" | 12000 | 18 | sells |\n| How I batch 10 product ads | \"Same body. Ten first lines. One afternoon.\" | 8600 | 11 | sells |\n| AI girl eats sandwich | \"She bites it and the comments go feral.\" | 89000 | 1 | views |\n\n## Gap\n\nSandwich pulled ~7x the views of the brand-reply video and ~18x fewer sales. Next scripts copy the first row, not the third.\n\nFormats that match the sellers: problem-first and workflow-batch. See [[growth-trend-2026-08-25]]."}]}, "partner-2": {"crumb": "vault / partners / partner-#2 /", "title": "PARTNER #2", "meta": "folder · bot-maintained · DEMO", "items": [{"kind": "file", "name": "_index.md", "abbr": "P2", "right": "1 KB", "body": "# Partner 2: Kai Okonkwo (DEMO)\n\nScout: [[growth-scout-kai]]. Offer: [[growth-offer-kai]]. Content: [[growth-content-kai]]. Referral from [[growth-partner-mira]].\n\n## Terms\n\n- Rev-share: 30%\n- Niche: [[growth-niche-ai-ops]]\n- Signed: 2026-08-02 (DEMO date)\n\n## Objections before signing\n\n1. \"Ops people will not pay $99/mo.\" Counter: they already pay tools. They will pay a workflow that removes a hire.\n2. Wanted to sell 1:1 only. Counter: 1:1 caps. Community plus templates scales. Same shape as [[growth-offer-mira]].\n\n## What this partner taught\n\nDo not open AI Ops as a second live niche until UGC has a first check. Mira's check unlocked this one. See [[growth-ruling-one-niche]] and [[growth-win-referral]]."}, {"kind": "file", "name": "scout.md", "abbr": "SC", "right": "1 KB", "body": "# Scout: Kai Okonkwo (DEMO)\n\nHandle: `@kai.ops.demo`. Niche: [[growth-niche-ai-ops]]. Status: signed → [[growth-partner-kai]]. Referral from [[growth-partner-mira]].\n\n## Why the work is strong\n\nScreen-record workflows: one tool chain, one outcome, timestamps. People save the videos. That is teachable.\n\n## What is broken in distribution\n\nPosts as \"notes to self.\" No community. No price. Saves do not become a checkout.\n\n## Proof of skill\n\nWorkflow videos plus two named freelance outcomes in captions. Passes [[growth-ruling-proof]]."}, {"kind": "file", "name": "offer.md", "abbr": "OF", "right": "1 KB", "body": "# Offer: Kai Ops community (DEMO)\n\nPartner: [[growth-partner-kai]]. Hub: [[growth-offers]].\n\n| Product | Price | Type |\n| --- | --- | --- |\n| AI Ops Community | $99/mo | subscription |\n| Operator Playbook | $199 | one time |\n| 1:1 Audit | $399 | one time |\n\nSame three-rung ladder as [[growth-offer-mira]]. Do not invent a fourth rung for the next partner until this ladder has a month of data."}, {"kind": "file", "name": "content.md", "abbr": "CT", "right": "1 KB", "body": "# Content: Kai (DEMO)\n\nPartner: [[growth-partner-kai]]. Offer: [[growth-offer-kai]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| Replace a $4k/mo VA with this chain | \"I stopped hiring for this task last month.\" | 5400 | 9 | sells |\n| One SOP, three tools | \"If you still paste between tabs, watch this.\" | 4100 | 7 | sells |\n| GPT does my inbox | \"Watch the bot clear 40 emails.\" | 31000 | 0 | views |\n\n## Gap\n\nInbox spectacle pulled views. Buyers came from \"replace a hire\" and \"SOP + tools.\" Next Ops scripts stay on cost-of-hire, not bot-wow."}]}, "partner-3": {"crumb": "vault / partners / partner-#3 /", "title": "PARTNER #3", "meta": "folder · bot-maintained · DEMO", "items": [{"kind": "file", "name": "_index.md", "abbr": "P3", "right": "1 KB", "body": "# Partner 3: Elena Voss (DEMO, pipeline)\n\nScout: [[growth-scout-elena]]. Status: not signed.\n\n## Terms on the table\n\nShe asked for 15% to us. Floor is 25%. See [[growth-ruling-revshare]]. No counter below the floor.\n\n## Objections\n\n1. Dead Gumroad links. She has been burned by offers that rot.\n2. Wants a lower rev-share because \"I already have an audience.\" Audience without a live checkout is the hole.\n\n## Next\n\nIf she meets the floor, reuse Mira's offer shape ([[growth-offer-mira]]) and this week's hooks ([[growth-trend-2026-08-25]]). Do not invent a new model."}, {"kind": "file", "name": "scout.md", "abbr": "SC", "right": "1 KB", "body": "# Scout: Elena Voss (DEMO)\n\nHandle: `@elena.clips.demo`. Niche: [[growth-niche-ai-ugc]]. Status: pipeline → [[growth-partner-elena]].\n\n## Why the work is strong\n\nContrarian hooks (\"stop making talking-head avatars\") then a product cutaway. Matches this week's radar: [[growth-trend-2026-08-25]].\n\n## What is broken in distribution\n\nLink in bio is a Linktree with three dead Gumroad URLs. Offer existed. It is not live.\n\n## Proof of skill\n\nCraft is real. Terms are not. She asked for 15% rev-share. Blocked by [[growth-ruling-revshare]] until she moves."}]}, "pipeline": {"crumb": "vault / partners / pipeline /", "title": "PIPELINE", "meta": "folder · 1 in pipeline", "items": [{"kind": "folder", "name": "partner-#3/", "abbr": "P3", "right": "2 items", "open": "partner-3"}]}, "creators": {"crumb": "vault / creators /", "title": "CREATORS", "meta": "folder · shortlist 3 · passed 1", "items": [{"kind": "file", "name": "_overview.md", "abbr": "CRE", "right": "1 KB", "body": "# Creators\n\nScout log. Hub for [[growth-core]]. Handles are **DEMO**.\n\n## Shortlist\n\n- [[growth-scout-mira]] : keep. Signed. [[growth-partner-mira]]\n- [[growth-scout-kai]] : keep. Signed. [[growth-partner-kai]]\n- [[growth-scout-elena]] : keep. Pipeline. [[growth-partner-elena]]\n\n## Passed\n\n- [[growth-passed-viewfarmer]] : views without craft. [[growth-ruling-proof]]"}, {"kind": "file", "name": "mira.md", "abbr": "MI", "right": "1 KB", "body": "# Scout: Mira Vale (DEMO)\n\nHandle: `@mira.ugc.demo`. Niche: [[growth-niche-ai-ugc]]. Status: signed → [[growth-partner-mira]].\n\n## Why the work is strong\n\nProduct-hook cuts: first 2s is the product in hand, then the problem. Native handheld, burned captions. Brands in comments asking for \"the template.\"\n\n## What is broken in distribution\n\nNo link in bio. No checkout. Comments asking how to buy get a \"dm me.\" That is freelance, not an offer.\n\n## Proof of skill\n\nPublic work a stranger can inspect. Passes [[growth-ruling-proof]]."}, {"kind": "file", "name": "kai.md", "abbr": "KA", "right": "1 KB", "body": "# Scout: Kai Okonkwo (DEMO)\n\nHandle: `@kai.ops.demo`. Niche: [[growth-niche-ai-ops]]. Status: signed → [[growth-partner-kai]]. Referral from [[growth-partner-mira]].\n\n## Why the work is strong\n\nScreen-record workflows: one tool chain, one outcome, timestamps. People save the videos. That is teachable.\n\n## What is broken in distribution\n\nPosts as \"notes to self.\" No community. No price. Saves do not become a checkout.\n\n## Proof of skill\n\nWorkflow videos plus two named freelance outcomes in captions. Passes [[growth-ruling-proof]]."}, {"kind": "file", "name": "elena.md", "abbr": "EL", "right": "1 KB", "body": "# Scout: Elena Voss (DEMO)\n\nHandle: `@elena.clips.demo`. Niche: [[growth-niche-ai-ugc]]. Status: pipeline → [[growth-partner-elena]].\n\n## Why the work is strong\n\nContrarian hooks (\"stop making talking-head avatars\") then a product cutaway. Matches this week's radar: [[growth-trend-2026-08-25]].\n\n## What is broken in distribution\n\nLink in bio is a Linktree with three dead Gumroad URLs. Offer existed. It is not live.\n\n## Proof of skill\n\nCraft is real. Terms are not. She asked for 15% rev-share. Blocked by [[growth-ruling-revshare]] until she moves."}, {"kind": "file", "name": "passed-viewfarmer.md", "abbr": "PS", "right": "1 KB", "body": "# Passed: ViewFarmer (DEMO)\n\nHandle: `@viewfarmer.demo`. Niche: [[growth-niche-ai-ugc]]. Hub: [[growth-creators]].\n\n## Why passed\n\nHigh views. No craft a buyer would pay to learn. Faces and trends, no product-hook skill. Fails [[growth-ruling-proof]].\n\n## One line\n\nFollowers are not the product. The workflow is."}]}, "shortlist": {"crumb": "vault / creators / shortlist /", "title": "SHORTLIST", "meta": "folder · 3 keeps", "items": [{"kind": "file", "name": "mira.md", "abbr": "MI", "right": "1 KB", "body": "# Scout: Mira Vale (DEMO)\n\nHandle: `@mira.ugc.demo`. Niche: [[growth-niche-ai-ugc]]. Status: signed → [[growth-partner-mira]].\n\n## Why the work is strong\n\nProduct-hook cuts: first 2s is the product in hand, then the problem. Native handheld, burned captions. Brands in comments asking for \"the template.\"\n\n## What is broken in distribution\n\nNo link in bio. No checkout. Comments asking how to buy get a \"dm me.\" That is freelance, not an offer.\n\n## Proof of skill\n\nPublic work a stranger can inspect. Passes [[growth-ruling-proof]]."}, {"kind": "file", "name": "kai.md", "abbr": "KA", "right": "1 KB", "body": "# Scout: Kai Okonkwo (DEMO)\n\nHandle: `@kai.ops.demo`. Niche: [[growth-niche-ai-ops]]. Status: signed → [[growth-partner-kai]]. Referral from [[growth-partner-mira]].\n\n## Why the work is strong\n\nScreen-record workflows: one tool chain, one outcome, timestamps. People save the videos. That is teachable.\n\n## What is broken in distribution\n\nPosts as \"notes to self.\" No community. No price. Saves do not become a checkout.\n\n## Proof of skill\n\nWorkflow videos plus two named freelance outcomes in captions. Passes [[growth-ruling-proof]]."}, {"kind": "file", "name": "elena.md", "abbr": "EL", "right": "1 KB", "body": "# Scout: Elena Voss (DEMO)\n\nHandle: `@elena.clips.demo`. Niche: [[growth-niche-ai-ugc]]. Status: pipeline → [[growth-partner-elena]].\n\n## Why the work is strong\n\nContrarian hooks (\"stop making talking-head avatars\") then a product cutaway. Matches this week's radar: [[growth-trend-2026-08-25]].\n\n## What is broken in distribution\n\nLink in bio is a Linktree with three dead Gumroad URLs. Offer existed. It is not live.\n\n## Proof of skill\n\nCraft is real. Terms are not. She asked for 15% rev-share. Blocked by [[growth-ruling-revshare]] until she moves."}]}, "passed": {"crumb": "vault / creators / passed /", "title": "PASSED", "meta": "folder · 1 pass", "items": [{"kind": "file", "name": "viewfarmer.md", "abbr": "PS", "right": "1 KB", "body": "# Passed: ViewFarmer (DEMO)\n\nHandle: `@viewfarmer.demo`. Niche: [[growth-niche-ai-ugc]]. Hub: [[growth-creators]].\n\n## Why passed\n\nHigh views. No craft a buyer would pay to learn. Faces and trends, no product-hook skill. Fails [[growth-ruling-proof]].\n\n## One line\n\nFollowers are not the product. The workflow is."}]}, "playbooks": {"crumb": "vault / playbooks /", "title": "PLAYBOOKS", "meta": "folder · do not send · do not run live Whop", "items": [{"kind": "file", "name": "_overview.md", "abbr": "PLA", "right": "1 KB", "body": "# Playbooks\n\nPrompts and command shapes. Hub for [[growth-core]].\n\n- [[growth-playbook-scout]] : find cracked creators with no offer\n- [[growth-playbook-content]] : write for sales, not views\n- [[growth-playbook-whop]] : offer wiring. Do not run live.\n- [[growth-playbook-outreach]] : hole they already see. Do not send.\n\nHuman gate: D5. These are files. They are not permission to post, pay, or send."}, {"kind": "file", "name": "scout.md", "abbr": "SC", "right": "1 KB", "body": "# Playbook: scout\n\nFilled prompt from [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]].\n\n```yaml\nFind 20 AI UGC creators on TikTok and Instagram that fit all of this:\n - they post their own AI video creatives (brand ads, product hooks) and it's getting positive feedback\n - no visible offer: no link in bio to a service, course, or community\n - for each one give me: handle, link to their best video, why the creative is strong, and what's broken in their distribution in one line\n - public profiles only\n - note any mention of working with products and of results\n```\n\n## After the list\n\nRead the profiles yourself the first few times. The bot will call average work \"strong\". Tune the bar. See [[growth-ruling-proof]].\n\nFile each keep as a scout note under [[growth-creators]]. File each pass with a one-line why."}, {"kind": "file", "name": "content.md", "abbr": "CT", "right": "1 KB", "body": "# Playbook: content engine\n\nFilled prompt from [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]].\n\n```yaml\nHere's the creator's profile: [link]. Here's their offer: [what we're selling, price]. Analyze their last 20 videos and 20 videos from the top people in this niche\n- for each one: topic, hook, view count, and whether it leads to an offer sale or just pulls views\n- find the gap: which topics pull views, and which actually push someone to buy\n- give me 10 video or tweets ideas, each one built to sell the offer, with a hook in the first 3 seconds\n- under each: why it converts, instead of just collecting likes\n```\n\n## Lesson already in the vault\n\nA views winner can be a sales loser. Chess example on [[growth-insights]]. DEMO rows: [[growth-content-mira]], [[growth-content-kai]].\n\nThis week's formats: [[growth-trend-2026-08-25]]."}, {"kind": "file", "name": "whop.md", "abbr": "WH", "right": "1 KB", "body": "# Playbook: Whop CLI\n\nCommand shapes from [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]]. **Do not run against a live account from this vault.**\n\n## Setup prompt (human pastes)\n\nInstall the Whop CLI, sign in, and run `whop skills add`\n- then run `whop --llms` and say in your own words what you can and cannot do with this login\n- list what is already on this account. If you find products the human did not create, leave them alone and report them\n- report anything Whop turns on by default that was not asked for\n\n## Offer prompt (AI UGC example)\n\n```yaml\nSet up the offer on Whop for this creator:\n- AI UGC Community, $49/mo, subscription\n- Starter Pack (templates + presets), $149, one time\n- 1:1 Audit, $299, one time\n- create a checkout link for each one and give me the three URLs\n- don't touch anything belonging to another business on this account\n```\n\n## Commands cited\n\n```bash\nwhop products list\nwhop plans create --help\nwhop checkout-configurations create --plan_id plan_xxx\nwhop stats time_series\n```\n\nEvery command takes `--format json`. See [[growth-ruling-no-money]]."}, {"kind": "file", "name": "outreach.md", "abbr": "OR", "right": "1 KB", "body": "# Playbook: outreach that does not sound like outreach\n\nFrom [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]]. **Do not send.** File drafts only.\n\nYou do not write \"hi, I offer services.\" You write to the person about a hole they already see.\n\n## Shape\n\n1. Name one specific piece of their work (video, hook, craft).\n2. Name the hole: no offer, no checkout, views that do not sell.\n3. One line on the system: distribution plus a Whop offer, rev-share, they keep the skill.\n4. Ask for a 15-minute look at their last 10 videos. No deck.\n\n## What already failed\n\nGeneric \"I can grow your account\" got ignored on [[growth-partner-mira]] first pass. Specific hook critique got a reply."}]}, "pb-scout": {"crumb": "vault / playbooks /", "title": "SCOUT", "meta": "file · playbook", "items": [{"kind": "file", "name": "scout.md", "abbr": "SC", "right": "1 KB", "body": "# Playbook: scout\n\nFilled prompt from [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]].\n\n```yaml\nFind 20 AI UGC creators on TikTok and Instagram that fit all of this:\n - they post their own AI video creatives (brand ads, product hooks) and it's getting positive feedback\n - no visible offer: no link in bio to a service, course, or community\n - for each one give me: handle, link to their best video, why the creative is strong, and what's broken in their distribution in one line\n - public profiles only\n - note any mention of working with products and of results\n```\n\n## After the list\n\nRead the profiles yourself the first few times. The bot will call average work \"strong\". Tune the bar. See [[growth-ruling-proof]].\n\nFile each keep as a scout note under [[growth-creators]]. File each pass with a one-line why."}]}, "pb-content": {"crumb": "vault / playbooks /", "title": "SCRIPTS", "meta": "file · playbook", "items": [{"kind": "file", "name": "content.md", "abbr": "CT", "right": "1 KB", "body": "# Playbook: content engine\n\nFilled prompt from [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]].\n\n```yaml\nHere's the creator's profile: [link]. Here's their offer: [what we're selling, price]. Analyze their last 20 videos and 20 videos from the top people in this niche\n- for each one: topic, hook, view count, and whether it leads to an offer sale or just pulls views\n- find the gap: which topics pull views, and which actually push someone to buy\n- give me 10 video or tweets ideas, each one built to sell the offer, with a hook in the first 3 seconds\n- under each: why it converts, instead of just collecting likes\n```\n\n## Lesson already in the vault\n\nA views winner can be a sales loser. Chess example on [[growth-insights]]. DEMO rows: [[growth-content-mira]], [[growth-content-kai]].\n\nThis week's formats: [[growth-trend-2026-08-25]]."}]}, "pb-whop": {"crumb": "vault / playbooks /", "title": "WHOP CLI", "meta": "file · do not run live", "items": [{"kind": "file", "name": "whop.md", "abbr": "WH", "right": "1 KB", "body": "# Playbook: Whop CLI\n\nCommand shapes from [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]]. **Do not run against a live account from this vault.**\n\n## Setup prompt (human pastes)\n\nInstall the Whop CLI, sign in, and run `whop skills add`\n- then run `whop --llms` and say in your own words what you can and cannot do with this login\n- list what is already on this account. If you find products the human did not create, leave them alone and report them\n- report anything Whop turns on by default that was not asked for\n\n## Offer prompt (AI UGC example)\n\n```yaml\nSet up the offer on Whop for this creator:\n- AI UGC Community, $49/mo, subscription\n- Starter Pack (templates + presets), $149, one time\n- 1:1 Audit, $299, one time\n- create a checkout link for each one and give me the three URLs\n- don't touch anything belonging to another business on this account\n```\n\n## Commands cited\n\n```bash\nwhop products list\nwhop plans create --help\nwhop checkout-configurations create --plan_id plan_xxx\nwhop stats time_series\n```\n\nEvery command takes `--format json`. See [[growth-ruling-no-money]]."}]}, "pb-outreach": {"crumb": "vault / playbooks /", "title": "OUTREACH", "meta": "file · do not send", "items": [{"kind": "file", "name": "outreach.md", "abbr": "OR", "right": "1 KB", "body": "# Playbook: outreach that does not sound like outreach\n\nFrom [[src-deronin-growthos-vault]]. Hub: [[growth-playbooks]]. **Do not send.** File drafts only.\n\nYou do not write \"hi, I offer services.\" You write to the person about a hole they already see.\n\n## Shape\n\n1. Name one specific piece of their work (video, hook, craft).\n2. Name the hole: no offer, no checkout, views that do not sell.\n3. One line on the system: distribution plus a Whop offer, rev-share, they keep the skill.\n4. Ask for a 15-minute look at their last 10 videos. No deck.\n\n## What already failed\n\nGeneric \"I can grow your account\" got ignored on [[growth-partner-mira]] first pass. Specific hook critique got a reply."}]}, "rulings": {"crumb": "vault / rulings /", "title": "RULINGS", "meta": "folder · one dated line each", "items": [{"kind": "file", "name": "_overview.md", "abbr": "RUL", "right": "1 KB", "body": "# Rulings\n\nOne dated line each. Do not re-argue. Hub for [[growth-core]].\n\n- [[growth-ruling-revshare]] : 2026-08-24. Never below 25% rev-share.\n- [[growth-ruling-proof]] : 2026-08-24. Never partner without proof of skill.\n- [[growth-ruling-no-money]] : 2026-08-24. Bot never moves money, deletes products, or changes price without a yes.\n- [[growth-ruling-one-niche]] : 2026-08-24. One hyped niche at a time.\n- [[growth-ruling-conversion]] : 2026-08-24. Write content that sells the offer, not content that only pulls views.\n\nSource of the first two: [[src-deronin-growthos-vault]]. The money stop is from the quoted Whop CLI article in that tweet."}, {"kind": "file", "name": "rev-share.md", "abbr": "25", "right": "1 KB", "body": "# Ruling: rev-share floor\n\n**2026-08-24.** Never below 25% rev-share.\n\nSource: [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nElena Voss asked for 15%. Pass until terms meet this floor. See [[growth-partner-elena]]."}, {"kind": "file", "name": "proof.md", "abbr": "PR", "right": "1 KB", "body": "# Ruling: proof of skill\n\n**2026-08-24.** Never partner without proof of skill.\n\nSource: [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nProof means work a stranger can inspect: videos, clients, or a workflow you would pay to learn. Follower count is not proof. See [[growth-passed-viewfarmer]]."}, {"kind": "file", "name": "no-money.md", "abbr": "$$", "right": "1 KB", "body": "# Ruling: bot never makes money moves\n\n**2026-08-24.** Never delete products, change a price, or move money without confirmation. If you hit a limit, stop and tell the human rather than working around it.\n\nSource: quoted Whop prompt in [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nAPI key create/rotate/delete is dashboard-only. CLI does not expose it. Do not work around that."}, {"kind": "file", "name": "one-niche.md", "abbr": "1N", "right": "1 KB", "body": "# Ruling: one niche at a time\n\n**2026-08-24.** Pick one hyped niche with insane demand and thin supply. Do not spread.\n\nSource: 90-day plan in [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nCurrent pick: [[growth-niche-ai-ugc]]. [[growth-niche-ai-ops]] is watch-only until UGC has a live partner and a first check."}, {"kind": "file", "name": "conversion.md", "abbr": "CV", "right": "1 KB", "body": "# Ruling: conversion over views\n\n**2026-08-24.** Growth is knowing which content sells the offer. Views-only content is the wrong target.\n\nSource: [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]]. Chess example on [[growth-insights]]. Live DEMO rows on [[growth-content-mira]] and [[growth-content-kai]]."}]}, "r-rev": {"crumb": "vault / rulings /", "title": "REV-SHARE ≥ 25%", "meta": "ruling · 2026-08-24", "items": [{"kind": "file", "name": "rev-share.md", "abbr": "25", "right": "1 KB", "body": "# Ruling: rev-share floor\n\n**2026-08-24.** Never below 25% rev-share.\n\nSource: [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nElena Voss asked for 15%. Pass until terms meet this floor. See [[growth-partner-elena]]."}]}, "r-proof": {"crumb": "vault / rulings /", "title": "PROOF OF SKILL", "meta": "ruling · 2026-08-24", "items": [{"kind": "file", "name": "proof.md", "abbr": "PR", "right": "1 KB", "body": "# Ruling: proof of skill\n\n**2026-08-24.** Never partner without proof of skill.\n\nSource: [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nProof means work a stranger can inspect: videos, clients, or a workflow you would pay to learn. Follower count is not proof. See [[growth-passed-viewfarmer]]."}]}, "r-money": {"crumb": "vault / rulings /", "title": "BOT NEVER MOVES MONEY", "meta": "ruling · 2026-08-24", "items": [{"kind": "file", "name": "no-money.md", "abbr": "$$", "right": "1 KB", "body": "# Ruling: bot never makes money moves\n\n**2026-08-24.** Never delete products, change a price, or move money without confirmation. If you hit a limit, stop and tell the human rather than working around it.\n\nSource: quoted Whop prompt in [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nAPI key create/rotate/delete is dashboard-only. CLI does not expose it. Do not work around that."}]}, "r-niche": {"crumb": "vault / rulings /", "title": "ONE NICHE AT A TIME", "meta": "ruling · 2026-08-24", "items": [{"kind": "file", "name": "one-niche.md", "abbr": "1N", "right": "1 KB", "body": "# Ruling: one niche at a time\n\n**2026-08-24.** Pick one hyped niche with insane demand and thin supply. Do not spread.\n\nSource: 90-day plan in [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]].\n\nCurrent pick: [[growth-niche-ai-ugc]]. [[growth-niche-ai-ops]] is watch-only until UGC has a live partner and a first check."}]}, "r-conv": {"crumb": "vault / rulings /", "title": "CONVERSION OVER VIEWS", "meta": "ruling · 2026-08-24", "items": [{"kind": "file", "name": "conversion.md", "abbr": "CV", "right": "1 KB", "body": "# Ruling: conversion over views\n\n**2026-08-24.** Growth is knowing which content sells the offer. Views-only content is the wrong target.\n\nSource: [[src-deronin-growthos-vault]]. Hub: [[growth-rulings]]. Chess example on [[growth-insights]]. Live DEMO rows on [[growth-content-mira]] and [[growth-content-kai]]."}]}, "memories": {"crumb": "vault / memories /", "title": "MEMORIES", "meta": "folder · bot-maintained", "items": [{"kind": "folder", "name": "wins/", "abbr": "WIN", "right": "3 items", "open": "wins"}, {"kind": "file", "name": "_overview.md", "abbr": "MEM", "right": "1 KB", "body": "# Memories\n\nWins, failures, what to reuse. Hub for [[growth-core]].\n\n## Wins\n\n- [[growth-win-first-check]]\n- [[growth-win-referral]]\n\n## Failures\n\n- [[growth-fail-view-chase]]"}, {"kind": "file", "name": "view-chase.md", "abbr": "FL", "right": "1 KB", "body": "# Failure: view-chase (DEMO)\n\nHub: [[growth-memories]]. Content: [[growth-content-mira]] sandwich row, [[growth-content-kai]] inbox row.\n\nA bot chasing views writes the spectacle. A bot reading sales writes the workflow. Chess numbers on [[growth-insights]] are the author's example. Ours are the DEMO tables.\n\nLocked by [[growth-ruling-conversion]]."}]}, "wins": {"crumb": "vault / memories / wins /", "title": "WINS", "meta": "folder · bot-maintained", "items": [{"kind": "file", "name": "_index.md", "abbr": "IX", "right": "1 KB", "body": "# Memories\n\nWins, failures, what to reuse. Hub for [[growth-core]].\n\n## Wins\n\n- [[growth-win-first-check]]\n- [[growth-win-referral]]\n\n## Failures\n\n- [[growth-fail-view-chase]]"}, {"kind": "file", "name": "first-check.md", "abbr": "FC", "right": "1 KB", "body": "# Win: first check (DEMO)\n\nPartner: [[growth-partner-mira]]. Hub: [[growth-memories]].\n\nDEMO first check: $840 in month 1 from the $49/mo community plus two starter packs. Not a live payout.\n\n## Keep\n\nLand one partner. Set the offer by hand. Understand the flow before cloning the bot. Matches phase 1 in [[src-deronin-growthos-vault]]."}, {"kind": "file", "name": "referral.md", "abbr": "RF", "right": "1 KB", "body": "# Win: referral loop (DEMO)\n\n[[growth-partner-mira]] introduced [[growth-partner-kai]] after the first check. Hub: [[growth-memories]].\n\nAsk for the intro at the happy moment, right after the first good check. Source: acquisition section in [[src-deronin-growthos-vault]]."}]}, "first-check": {"crumb": "vault / memories / wins /", "title": "FIRST CHECK", "meta": "file · DEMO", "items": [{"kind": "file", "name": "first-check.md", "abbr": "FC", "right": "1 KB", "body": "# Win: first check (DEMO)\n\nPartner: [[growth-partner-mira]]. Hub: [[growth-memories]].\n\nDEMO first check: $840 in month 1 from the $49/mo community plus two starter packs. Not a live payout.\n\n## Keep\n\nLand one partner. Set the offer by hand. Understand the flow before cloning the bot. Matches phase 1 in [[src-deronin-growthos-vault]]."}]}, "referral": {"crumb": "vault / memories / wins /", "title": "REFERRAL", "meta": "file · DEMO", "items": [{"kind": "file", "name": "referral.md", "abbr": "RF", "right": "1 KB", "body": "# Win: referral loop (DEMO)\n\n[[growth-partner-mira]] introduced [[growth-partner-kai]] after the first check. Hub: [[growth-memories]].\n\nAsk for the intro at the happy moment, right after the first good check. Source: acquisition section in [[src-deronin-growthos-vault]]."}]}, "fail": {"crumb": "vault / memories /", "title": "VIEW-CHASE", "meta": "file · failure", "items": [{"kind": "file", "name": "view-chase.md", "abbr": "FL", "right": "1 KB", "body": "# Failure: view-chase (DEMO)\n\nHub: [[growth-memories]]. Content: [[growth-content-mira]] sandwich row, [[growth-content-kai]] inbox row.\n\nA bot chasing views writes the spectacle. A bot reading sales writes the workflow. Chess numbers on [[growth-insights]] are the author's example. Ours are the DEMO tables.\n\nLocked by [[growth-ruling-conversion]]."}]}, "content": {"crumb": "vault / content /", "title": "CONTENT ENGINE", "meta": "folder · views vs sales", "items": [{"kind": "file", "name": "_overview.md", "abbr": "CON", "right": "1 KB", "body": "# Content data\n\nViews vs sales, hook by hook. Hub for [[growth-core]].\n\n- Author's chess example (not our account): [[growth-insights]]\n- DEMO Mira: [[growth-content-mira]]\n- DEMO Kai: [[growth-content-kai]]\n\nRule: [[growth-ruling-conversion]]. Engine: [[growth-playbook-content]]."}, {"kind": "file", "name": "mira.md", "abbr": "MI", "right": "1 KB", "body": "# Content: Mira (DEMO)\n\nPartner: [[growth-partner-mira]]. Offer: [[growth-offer-mira]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| 3 hooks that get brand replies | \"Brands asked me for the template. I sold the workflow instead.\" | 12000 | 18 | sells |\n| How I batch 10 product ads | \"Same body. Ten first lines. One afternoon.\" | 8600 | 11 | sells |\n| AI girl eats sandwich | \"She bites it and the comments go feral.\" | 89000 | 1 | views |\n\n## Gap\n\nSandwich pulled ~7x the views of the brand-reply video and ~18x fewer sales. Next scripts copy the first row, not the third.\n\nFormats that match the sellers: problem-first and workflow-batch. See [[growth-trend-2026-08-25]]."}, {"kind": "file", "name": "kai.md", "abbr": "KA", "right": "1 KB", "body": "# Content: Kai (DEMO)\n\nPartner: [[growth-partner-kai]]. Offer: [[growth-offer-kai]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| Replace a $4k/mo VA with this chain | \"I stopped hiring for this task last month.\" | 5400 | 9 | sells |\n| One SOP, three tools | \"If you still paste between tabs, watch this.\" | 4100 | 7 | sells |\n| GPT does my inbox | \"Watch the bot clear 40 emails.\" | 31000 | 0 | views |\n\n## Gap\n\nInbox spectacle pulled views. Buyers came from \"replace a hire\" and \"SOP + tools.\" Next Ops scripts stay on cost-of-hire, not bot-wow."}]}, "view-sale": {"crumb": "vault / content /", "title": "VIEW-SALE GAP", "meta": "file · conversion", "items": [{"kind": "file", "name": "mira.md", "abbr": "MI", "right": "1 KB", "body": "# Content: Mira (DEMO)\n\nPartner: [[growth-partner-mira]]. Offer: [[growth-offer-mira]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| 3 hooks that get brand replies | \"Brands asked me for the template. I sold the workflow instead.\" | 12000 | 18 | sells |\n| How I batch 10 product ads | \"Same body. Ten first lines. One afternoon.\" | 8600 | 11 | sells |\n| AI girl eats sandwich | \"She bites it and the comments go feral.\" | 89000 | 1 | views |\n\n## Gap\n\nSandwich pulled ~7x the views of the brand-reply video and ~18x fewer sales. Next scripts copy the first row, not the third.\n\nFormats that match the sellers: problem-first and workflow-batch. See [[growth-trend-2026-08-25]]."}, {"kind": "file", "name": "kai.md", "abbr": "KA", "right": "1 KB", "body": "# Content: Kai (DEMO)\n\nPartner: [[growth-partner-kai]]. Offer: [[growth-offer-kai]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| Replace a $4k/mo VA with this chain | \"I stopped hiring for this task last month.\" | 5400 | 9 | sells |\n| One SOP, three tools | \"If you still paste between tabs, watch this.\" | 4100 | 7 | sells |\n| GPT does my inbox | \"Watch the bot clear 40 emails.\" | 31000 | 0 | views |\n\n## Gap\n\nInbox spectacle pulled views. Buyers came from \"replace a hire\" and \"SOP + tools.\" Next Ops scripts stay on cost-of-hire, not bot-wow."}]}, "mira-hooks": {"crumb": "vault / content /", "title": "MIRA HOOKS", "meta": "file · DEMO", "items": [{"kind": "file", "name": "mira.md", "abbr": "MI", "right": "1 KB", "body": "# Content: Mira (DEMO)\n\nPartner: [[growth-partner-mira]]. Offer: [[growth-offer-mira]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| 3 hooks that get brand replies | \"Brands asked me for the template. I sold the workflow instead.\" | 12000 | 18 | sells |\n| How I batch 10 product ads | \"Same body. Ten first lines. One afternoon.\" | 8600 | 11 | sells |\n| AI girl eats sandwich | \"She bites it and the comments go feral.\" | 89000 | 1 | views |\n\n## Gap\n\nSandwich pulled ~7x the views of the brand-reply video and ~18x fewer sales. Next scripts copy the first row, not the third.\n\nFormats that match the sellers: problem-first and workflow-batch. See [[growth-trend-2026-08-25]]."}]}, "kai-hooks": {"crumb": "vault / content /", "title": "KAI HOOKS", "meta": "file · DEMO", "items": [{"kind": "file", "name": "kai.md", "abbr": "KA", "right": "1 KB", "body": "# Content: Kai (DEMO)\n\nPartner: [[growth-partner-kai]]. Offer: [[growth-offer-kai]]. Hub: [[growth-content]].\n\n| Topic | Hook | Views | Sales | Class |\n| --- | --- | --- | --- | --- |\n| Replace a $4k/mo VA with this chain | \"I stopped hiring for this task last month.\" | 5400 | 9 | sells |\n| One SOP, three tools | \"If you still paste between tabs, watch this.\" | 4100 | 7 | sells |\n| GPT does my inbox | \"Watch the bot clear 40 emails.\" | 31000 | 0 | views |\n\n## Gap\n\nInbox spectacle pulled views. Buyers came from \"replace a hire\" and \"SOP + tools.\" Next Ops scripts stay on cost-of-hire, not bot-wow."}]}, "trends": {"crumb": "vault / trends /", "title": "TREND RADAR", "meta": "folder · this week", "items": [{"kind": "file", "name": "_overview.md", "abbr": "TRD", "right": "1 KB", "body": "# Trend radar\n\nWeekly scan. Hub for [[growth-core]]. This week: [[growth-trend-2026-08-25]]."}, {"kind": "file", "name": "2026-08-25.md", "abbr": "WK", "right": "2 KB", "body": "# Trend radar: week of 2026-08-25\n\nHub: [[growth-trends]]. Niche: [[growth-niche-ai-ugc]].\n\nPublic 2026 UGC-ad writeups, not a platform ranking. Cite the URL if you reuse a line.\n\n## Formats converting this week\n\n1. **Hook first, body constant.** Write 5-10 first lines. Keep the same body and CTA. Test the hook, not the aesthetic. ([CraftStory](https://craftstory.com/blog/how-to-make-ugc-ads-with-ai/), [ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))\n2. **Four hook families.** Problem call-out. Contrarian. Before/after or 14-day result. Curiosity gap. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))\n3. **30-35s spine.** Hook 0-3s, problem, product reveal, one proof number, CTA. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/), [GetShorts](https://getshorts.ai/blog/ai-ugc-video-ads-guide))\n4. **Native, not polished.** Handheld, slight mess, 9:16, captions burned in. Over-clean reads as an ad. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))\n5. **Talking-head plus cutaways.** Hook on camera, then product / problem / demo. 30s avatar monologue looks cheap. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))\n\n## Kill / scale (vendor heuristics, unverified)\n\nKill hook rate under 20%. Scale variants 20%+ above account average. 2k-3k impressions before a pause call. Treat as vendor advice, not our data.\n\n## What this means for the next UGC partner\n\nCopy Mira's seller topics ([[growth-content-mira]]) into these hook families. Do not chase sandwich-style spectacle."}]}, "week": {"crumb": "vault / trends /", "title": "THIS WEEK", "meta": "file · 2026-08-25", "items": [{"kind": "file", "name": "2026-08-25.md", "abbr": "WK", "right": "2 KB", "body": "# Trend radar: week of 2026-08-25\n\nHub: [[growth-trends]]. Niche: [[growth-niche-ai-ugc]].\n\nPublic 2026 UGC-ad writeups, not a platform ranking. Cite the URL if you reuse a line.\n\n## Formats converting this week\n\n1. **Hook first, body constant.** Write 5-10 first lines. Keep the same body and CTA. Test the hook, not the aesthetic. ([CraftStory](https://craftstory.com/blog/how-to-make-ugc-ads-with-ai/), [ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))\n2. **Four hook families.** Problem call-out. Contrarian. Before/after or 14-day result. Curiosity gap. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))\n3. **30-35s spine.** Hook 0-3s, problem, product reveal, one proof number, CTA. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/), [GetShorts](https://getshorts.ai/blog/ai-ugc-video-ads-guide))\n4. **Native, not polished.** Handheld, slight mess, 9:16, captions burned in. Over-clean reads as an ad. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))\n5. **Talking-head plus cutaways.** Hook on camera, then product / problem / demo. 30s avatar monologue looks cheap. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))\n\n## Kill / scale (vendor heuristics, unverified)\n\nKill hook rate under 20%. Scale variants 20%+ above account average. 2k-3k impressions before a pause call. Treat as vendor advice, not our data.\n\n## What this means for the next UGC partner\n\nCopy Mira's seller topics ([[growth-content-mira]]) into these hook families. Do not chase sandwich-style spectacle."}]}, "formats": {"crumb": "vault / trends /", "title": "FORMATS", "meta": "file · 5 converting this week", "items": [{"kind": "file", "name": "2026-08-25.md", "abbr": "WK", "right": "2 KB", "body": "# Trend radar: week of 2026-08-25\n\nHub: [[growth-trends]]. Niche: [[growth-niche-ai-ugc]].\n\nPublic 2026 UGC-ad writeups, not a platform ranking. Cite the URL if you reuse a line.\n\n## Formats converting this week\n\n1. **Hook first, body constant.** Write 5-10 first lines. Keep the same body and CTA. Test the hook, not the aesthetic. ([CraftStory](https://craftstory.com/blog/how-to-make-ugc-ads-with-ai/), [ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))\n2. **Four hook families.** Problem call-out. Contrarian. Before/after or 14-day result. Curiosity gap. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))\n3. **30-35s spine.** Hook 0-3s, problem, product reveal, one proof number, CTA. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/), [GetShorts](https://getshorts.ai/blog/ai-ugc-video-ads-guide))\n4. **Native, not polished.** Handheld, slight mess, 9:16, captions burned in. Over-clean reads as an ad. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))\n5. **Talking-head plus cutaways.** Hook on camera, then product / problem / demo. 30s avatar monologue looks cheap. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))\n\n## Kill / scale (vendor heuristics, unverified)\n\nKill hook rate under 20%. Scale variants 20%+ above account average. 2k-3k impressions before a pause call. Treat as vendor advice, not our data.\n\n## What this means for the next UGC partner\n\nCopy Mira's seller topics ([[growth-content-mira]]) into these hook families. Do not chase sandwich-style spectacle."}]}, "offers": {"crumb": "vault / offers /", "title": "OFFERS", "meta": "folder · DEMO prices", "items": [{"kind": "file", "name": "_overview.md", "abbr": "OFF", "right": "1 KB", "body": "# Offers\n\nDEMO. Hub for [[growth-core]]. Shape copied from the Whop example in [[src-deronin-growthos-vault]].\n\n- [[growth-offer-mira]] : community $49/mo, pack $149, audit $299\n- [[growth-offer-kai]] : community $99/mo, playbook $199, audit $399"}, {"kind": "file", "name": "mira.md", "abbr": "M$", "right": "1 KB", "body": "# Offer: Mira UGC community (DEMO)\n\nPartner: [[growth-partner-mira]]. Hub: [[growth-offers]].\n\n| Product | Price | Type |\n| --- | --- | --- |\n| AI UGC Community | $49/mo | subscription |\n| Starter Pack (templates + presets) | $149 | one time |\n| 1:1 Audit | $299 | one time |\n\nPrices are the article's example, used as DEMO. Not a live Whop catalog. See [[growth-playbook-whop]]."}, {"kind": "file", "name": "kai.md", "abbr": "K$", "right": "1 KB", "body": "# Offer: Kai Ops community (DEMO)\n\nPartner: [[growth-partner-kai]]. Hub: [[growth-offers]].\n\n| Product | Price | Type |\n| --- | --- | --- |\n| AI Ops Community | $99/mo | subscription |\n| Operator Playbook | $199 | one time |\n| 1:1 Audit | $399 | one time |\n\nSame three-rung ladder as [[growth-offer-mira]]. Do not invent a fourth rung for the next partner until this ladder has a month of data."}]}, "o-mira": {"crumb": "vault / offers /", "title": "COMMUNITY $49/MO", "meta": "file · DEMO", "items": [{"kind": "file", "name": "mira.md", "abbr": "M$", "right": "1 KB", "body": "# Offer: Mira UGC community (DEMO)\n\nPartner: [[growth-partner-mira]]. Hub: [[growth-offers]].\n\n| Product | Price | Type |\n| --- | --- | --- |\n| AI UGC Community | $49/mo | subscription |\n| Starter Pack (templates + presets) | $149 | one time |\n| 1:1 Audit | $299 | one time |\n\nPrices are the article's example, used as DEMO. Not a live Whop catalog. See [[growth-playbook-whop]]."}]}, "o-kai": {"crumb": "vault / offers /", "title": "OPS $99/MO", "meta": "file · DEMO", "items": [{"kind": "file", "name": "kai.md", "abbr": "K$", "right": "1 KB", "body": "# Offer: Kai Ops community (DEMO)\n\nPartner: [[growth-partner-kai]]. Hub: [[growth-offers]].\n\n| Product | Price | Type |\n| --- | --- | --- |\n| AI Ops Community | $99/mo | subscription |\n| Operator Playbook | $199 | one time |\n| 1:1 Audit | $399 | one time |\n\nSame three-rung ladder as [[growth-offer-mira]]. Do not invent a fourth rung for the next partner until this ladder has a month of data."}]}, "strategies": {"crumb": "vault / strategies /", "title": "STRATEGIES", "meta": "folder", "items": [{"kind": "file", "name": "shadow-operator.md", "abbr": "SH", "right": "1 KB", "body": "# Strategy: shadow growth operator\n\nFrom [[src-deronin-growthos-vault]]. Hub: [[growth-core]].\n\nWord for word from the quoted playbook (friend @eptwts):\n\n- find people who are cracked at what they do and set up distribution\n- give them a growth playbook that does not need babysitting\n- help them ideate and set up an offer on Whop, take rev-share\n- set and forget\n\n$100k in 10 months on Whop is the author's claim about that friend. `unverified`. Do not use it as a forecast.\n\nYou do not sell your own product. You do not build an audience from zero. They bring skill. This vault brings the system.\n\nHuman keeps judgment and relationships. Bot keeps ops. Vault does not send. See D5."}]}, "shadow": {"crumb": "vault / strategies /", "title": "SHADOW OPERATOR", "meta": "file", "items": [{"kind": "file", "name": "shadow-operator.md", "abbr": "SH", "right": "1 KB", "body": "# Strategy: shadow growth operator\n\nFrom [[src-deronin-growthos-vault]]. Hub: [[growth-core]].\n\nWord for word from the quoted playbook (friend @eptwts):\n\n- find people who are cracked at what they do and set up distribution\n- give them a growth playbook that does not need babysitting\n- help them ideate and set up an offer on Whop, take rev-share\n- set and forget\n\n$100k in 10 months on Whop is the author's claim about that friend. `unverified`. Do not use it as a forecast.\n\nYou do not sell your own product. You do not build an audience from zero. They bring skill. This vault brings the system.\n\nHuman keeps judgment and relationships. Bot keeps ops. Vault does not send. See D5."}]}, "costs": {"crumb": "vault / strategies /", "title": "COSTS MUST NOT SCALE", "meta": "ruling · strategy", "items": [{"kind": "file", "name": "shadow-operator.md", "abbr": "SH", "right": "1 KB", "body": "# Strategy: shadow growth operator\n\nFrom [[src-deronin-growthos-vault]]. Hub: [[growth-core]].\n\nWord for word from the quoted playbook (friend @eptwts):\n\n- find people who are cracked at what they do and set up distribution\n- give them a growth playbook that does not need babysitting\n- help them ideate and set up an offer on Whop, take rev-share\n- set and forget\n\n$100k in 10 months on Whop is the author's claim about that friend. `unverified`. Do not use it as a forecast.\n\nYou do not sell your own product. You do not build an audience from zero. They bring skill. This vault brings the system.\n\nHuman keeps judgment and relationships. Bot keeps ops. Vault does not send. See D5."}]}, "insights": {"crumb": "vault / insights /", "title": "INSIGHTS", "meta": "folder", "items": [{"kind": "file", "name": "_overview.md", "abbr": "IN", "right": "1 KB", "body": "# Insights\n\nDurable lessons. Hub: [[growth-core]].\n\n## Chess example (author, unverified)\n\nFrom [[src-deronin-growthos-vault]]:\n\n- \"6 attacking tips that separate 1000 from 2000\" : 74k views, 51 bought\n- \"opponent finds a secret rule\" : 135k views, 2 bought\n\nNearly 2x views. 25x fewer sales. The author says he is a former candidate master. We did not re-count the channel.\n\n## Talent is easier than budget\n\nScout for skill with no distribution, not clients with a budget. See [[growth-strategy]].\n\n## Same ladder, next partner\n\nDo not redesign the offer. Reuse [[growth-offer-mira]] rungs. Kai already did. See [[growth-offer-kai]]."}]}, "chess": {"crumb": "vault / insights /", "title": "74k ≠ SALES", "meta": "file · author example unverified", "items": [{"kind": "file", "name": "_overview.md", "abbr": "IN", "right": "1 KB", "body": "# Insights\n\nDurable lessons. Hub: [[growth-core]].\n\n## Chess example (author, unverified)\n\nFrom [[src-deronin-growthos-vault]]:\n\n- \"6 attacking tips that separate 1000 from 2000\" : 74k views, 51 bought\n- \"opponent finds a secret rule\" : 135k views, 2 bought\n\nNearly 2x views. 25x fewer sales. The author says he is a former candidate master. We did not re-count the channel.\n\n## Talent is easier than budget\n\nScout for skill with no distribution, not clients with a budget. See [[growth-strategy]].\n\n## Same ladder, next partner\n\nDo not redesign the offer. Reuse [[growth-offer-mira]] rungs. Kai already did. See [[growth-offer-kai]]."}]}, "talent": {"crumb": "vault / insights /", "title": "TALENT > BUDGET", "meta": "file", "items": [{"kind": "file", "name": "_overview.md", "abbr": "IN", "right": "1 KB", "body": "# Insights\n\nDurable lessons. Hub: [[growth-core]].\n\n## Chess example (author, unverified)\n\nFrom [[src-deronin-growthos-vault]]:\n\n- \"6 attacking tips that separate 1000 from 2000\" : 74k views, 51 bought\n- \"opponent finds a secret rule\" : 135k views, 2 bought\n\nNearly 2x views. 25x fewer sales. The author says he is a former candidate master. We did not re-count the channel.\n\n## Talent is easier than budget\n\nScout for skill with no distribution, not clients with a budget. See [[growth-strategy]].\n\n## Same ladder, next partner\n\nDo not redesign the offer. Reuse [[growth-offer-mira]] rungs. Kai already did. See [[growth-offer-kai]]."}]}, "journal": {"crumb": "vault / journal /", "title": "JOURNAL", "meta": "folder", "items": [{"kind": "file", "name": "2026-08-25.md", "abbr": "JL", "right": "1 KB", "body": "# Journal: 2026-08-25\n\nHub: [[growth-core]].\n\nBuilt the GrowthOS vault from [[src-deronin-growthos-vault]]. DEMO partners Mira, Kai, Elena. No live outreach. No Whop writes.\n\nNext human look: [[growth-partner-elena]] terms vs [[growth-ruling-revshare]]. Next bot job: briefing from `python3 tools/growth-brief.py`."}]}, "daily": {"crumb": "vault / journal /", "title": "DAILY NOTES", "meta": "file", "items": [{"kind": "file", "name": "2026-08-25.md", "abbr": "JL", "right": "1 KB", "body": "# Journal: 2026-08-25\n\nHub: [[growth-core]].\n\nBuilt the GrowthOS vault from [[src-deronin-growthos-vault]]. DEMO partners Mira, Kai, Elena. No live outreach. No Whop writes.\n\nNext human look: [[growth-partner-elena]] terms vs [[growth-ruling-revshare]]. Next bot job: briefing from `python3 tools/growth-brief.py`."}]}, "niches": {"crumb": "vault / niches /", "title": "NICHES", "meta": "folder · one live", "items": [{"kind": "file", "name": "ai-ugc.md", "abbr": "UG", "right": "1 KB", "body": "# Niche: AI UGC\n\nCurrent pick. See [[growth-ruling-one-niche]]. Hub: [[growth-core]].\n\n## Demand\n\nBrands want a high volume of short creatives (ads, hooks, product demos). Article example: 30 creatives a week. Source: [[src-deronin-growthos-vault]]. That weekly count is the author's example, not a measured census.\n\n## Supply\n\nThin. The same article says many of these creators sit around 400 followers with a couple of freelance gigs and no offer. `unverified` as a market statistic. Used as the scout filter on [[growth-playbook-scout]].\n\n## Heat\n\nHeating. Skill people will pay $100 to $5,000 to learn, per that article. Range is the author's, not a sale we ran.\n\n## Who is in it\n\n- Keep: [[growth-scout-mira]] · [[growth-scout-elena]]\n- Partner: [[growth-partner-mira]]\n- Pipeline: [[growth-partner-elena]]\n- Pass: [[growth-passed-viewfarmer]]\n\n## Offer that sold (DEMO)\n\n[[growth-offer-mira]]"}, {"kind": "file", "name": "ai-ops.md", "abbr": "OP", "right": "1 KB", "body": "# Niche: AI Ops\n\nWatch-only. Do not open a second live niche until [[growth-niche-ai-ugc]] has a first check. See [[growth-ruling-one-niche]].\n\nNamed as a hot niche in [[src-deronin-growthos-vault]]. No independent supply/demand count in this vault.\n\n## Who is in it\n\n- Partner: [[growth-partner-kai]] (DEMO, signed after UGC first check)\n- Scout: [[growth-scout-kai]]"}]}, "n-ugc": {"crumb": "vault / niches /", "title": "AI UGC", "meta": "file · current pick", "items": [{"kind": "file", "name": "ai-ugc.md", "abbr": "UG", "right": "1 KB", "body": "# Niche: AI UGC\n\nCurrent pick. See [[growth-ruling-one-niche]]. Hub: [[growth-core]].\n\n## Demand\n\nBrands want a high volume of short creatives (ads, hooks, product demos). Article example: 30 creatives a week. Source: [[src-deronin-growthos-vault]]. That weekly count is the author's example, not a measured census.\n\n## Supply\n\nThin. The same article says many of these creators sit around 400 followers with a couple of freelance gigs and no offer. `unverified` as a market statistic. Used as the scout filter on [[growth-playbook-scout]].\n\n## Heat\n\nHeating. Skill people will pay $100 to $5,000 to learn, per that article. Range is the author's, not a sale we ran.\n\n## Who is in it\n\n- Keep: [[growth-scout-mira]] · [[growth-scout-elena]]\n- Partner: [[growth-partner-mira]]\n- Pipeline: [[growth-partner-elena]]\n- Pass: [[growth-passed-viewfarmer]]\n\n## Offer that sold (DEMO)\n\n[[growth-offer-mira]]"}]}, "n-ops": {"crumb": "vault / niches /", "title": "AI OPS", "meta": "file · watch-only", "items": [{"kind": "file", "name": "ai-ops.md", "abbr": "OP", "right": "1 KB", "body": "# Niche: AI Ops\n\nWatch-only. Do not open a second live niche until [[growth-niche-ai-ugc]] has a first check. See [[growth-ruling-one-niche]].\n\nNamed as a hot niche in [[src-deronin-growthos-vault]]. No independent supply/demand count in this vault.\n\n## Who is in it\n\n- Partner: [[growth-partner-kai]] (DEMO, signed after UGC first check)\n- Scout: [[growth-scout-kai]]"}]}, "competitors": {"crumb": "vault / competitors /", "title": "COMPETITORS", "meta": "folder · empty of named firms", "items": [{"kind": "file", "name": "_overview.md", "abbr": "CP", "right": "1 KB", "body": "# Competitors\n\nHub: [[growth-core]]. Empty of named firms. Do not invent a bake-off.\n\nA normal agency on a fixed fee keeps 20-30% after salaries, per [[src-deronin-growthos-vault]]. That contrast is the author's. Not a margin we measured.\n\nOur difference that is in this vault: rev-share floor [[growth-ruling-revshare]], bot ops with a human gate, memory in [[growth-core]]."}]}}};
     const PANELS = DATA.panels;
     const side = document.getElementById("side");
     const filesEl = document.getElementById("files");
     const noteEl = document.getElementById("note");
-    const labels = document.getElementById("labels");
-    const flare = document.getElementById("flare");
     const history = [];
-    const hasGsap = typeof gsap !== "undefined";
-    const reduceMq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    function motionOff() { return reduceMq.matches; }
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const CORE_R = 2.02;
+
+    (function noteBadge() {
+      const n = (DATA.nodes.find((x) => x.id === "core") || {}).html || "";
+      const m = n.match(/(\d+)\s*notes/i);
+      if (m) document.getElementById("notecount").textContent = m[1] + " NOTES";
+    })();
 
     function openSide() {
-      if (hasGsap) gsap.to(side, { xPercent: 0, autoAlpha: 1, duration: motionOff() ? 0 : 0.45, ease: "power3.out", overwrite: true });
-      else {
-        side.style.transform = "translateX(0)";
-        side.style.visibility = "visible";
-      }
+      side.style.visibility = "visible";
+      side.style.transform = "translateX(0)";
+      side.style.transition = reduce ? "none" : "transform 0.35s ease";
     }
     function closeSide() {
-      if (hasGsap) gsap.to(side, { xPercent: 100, autoAlpha: 1, duration: motionOff() ? 0 : 0.35, ease: "power2.in", overwrite: true });
-      else {
-        side.style.transform = "translateX(110%)";
-        side.style.visibility = "hidden";
-      }
+      side.style.transform = "translateX(110%)";
+      side.style.transition = reduce ? "none" : "transform 0.3s ease";
+      setTimeout(() => { side.style.visibility = "hidden"; }, 320);
     }
-
     function renderPanel(id) {
       const p = PANELS[id];
       if (!p) return;
@@ -257,277 +184,406 @@
       noteEl.textContent = "";
       (p.items || []).forEach((item) => {
         const li = document.createElement("li");
-        const abbr = document.createElement("div");
-        abbr.className = "abbr";
-        abbr.textContent = item.abbr;
-        const name = document.createElement("div");
-        name.className = "fname";
-        name.textContent = item.name;
-        const right = document.createElement("div");
-        right.className = item.kind === "folder" ? "cnt" : "sz";
-        right.textContent = item.right;
-        li.append(abbr, name, right);
+        li.innerHTML = '<div class="abbr"></div><div class="fname"></div><div class="' +
+          (item.kind === "folder" ? "cnt" : "sz") + '"></div>';
+        li.querySelector(".abbr").textContent = item.abbr;
+        li.querySelector(".fname").textContent = item.name;
+        li.lastChild.textContent = item.right;
         li.onclick = () => {
-          document.querySelectorAll(".files li").forEach((n) => n.classList.remove("active"));
+          filesEl.querySelectorAll("li").forEach((n) => n.classList.remove("active"));
           li.classList.add("active");
-          if (item.open) {
-            history.push(id);
-            renderPanel(item.open);
-          } else if (item.body) {
-            noteEl.textContent = item.body;
-            noteEl.classList.add("show");
-          }
+          if (item.open) { history.push(id); renderPanel(item.open); }
+          else if (item.body) { noteEl.textContent = item.body; noteEl.classList.add("show"); }
         };
         filesEl.appendChild(li);
       });
       openSide();
     }
-
     document.getElementById("close").onclick = () => closeSide();
     document.getElementById("back").onclick = () => {
       const prev = history.pop();
-      if (prev) renderPanel(prev);
-      else closeSide();
+      if (prev) renderPanel(prev); else closeSide();
     };
+    document.getElementById("corepill").onclick = () => { history.length = 0; renderPanel("core"); };
+    document.querySelectorAll("[data-open]").forEach((el) => {
+      el.onclick = () => { history.length = 0; renderPanel(el.dataset.open); };
+    });
 
-    function nodeRadius(node) {
-      if (node.kind === "core") return 7.4;
-      if (node.kind === "hub" || node.kind === "ruling" || node.kind === "metric") return 4.6;
-      return 2.7;
+    function canvasTex(size, paint) {
+      const c = document.createElement("canvas");
+      c.width = c.height = size;
+      const ctx = c.getContext("2d");
+      paint(ctx, size);
+      const t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.anisotropy = 8;
+      if (THREE.SRGBColorSpace) t.colorSpace = THREE.SRGBColorSpace;
+      return t;
     }
-
-    const sphereGeo = new THREE.SphereGeometry(1, 64, 64);
-    const FRESNEL_VERT = [
-      "varying vec3 vN;",
-      "varying vec3 vV;",
-      "void main() {",
-      "  vec4 w = modelViewMatrix * vec4(position, 1.0);",
-      "  vN = normalize(normalMatrix * normal);",
-      "  vV = normalize(-w.xyz);",
-      "  gl_Position = projectionMatrix * w;",
-      "}"
-    ].join("\n");
-    const FRESNEL_FRAG = [
-      "uniform vec3 uColor;",
-      "uniform vec3 uRim;",
-      "uniform float uCore;",
-      "uniform float uPower;",
-      "varying vec3 vN;",
-      "varying vec3 vV;",
-      "void main() {",
-      "  vec3 n = normalize(vN);",
-      "  vec3 v = normalize(vV);",
-      "  float ndv = max(dot(n, v), 0.0);",
-      "  float fres = pow(1.0 - ndv, uPower);",
-      "  float atm = pow(1.0 - ndv, uPower * 0.42);",
-      "  vec3 h = normalize(v + vec3(0.22, 0.84, 0.38));",
-      "  float spec = pow(max(dot(n, h), 0.0), 96.0);",
-      "  vec3 col = uColor * uCore * (0.12 + ndv * 0.28);",
-      "  col += uColor * atm * 0.55;",
-      "  col += uRim * fres;",
-      "  col += vec3(1.0, 0.96, 0.98) * spec * 0.38;",
-      "  float alpha = 0.28 + fres * 0.72;",
-      "  gl_FragColor = vec4(col, alpha);",
-      "}"
-    ].join("\n");
-    const SHELL_FRAG = [
-      "uniform vec3 uRim;",
-      "uniform float uPower;",
-      "varying vec3 vN;",
-      "varying vec3 vV;",
-      "void main() {",
-      "  vec3 n = normalize(vN);",
-      "  vec3 v = normalize(vV);",
-      "  float ndv = max(dot(n, v), 0.0);",
-      "  float fres = pow(1.0 - ndv, uPower);",
-      "  gl_FragColor = vec4(uRim * fres, fres);",
-      "}"
-    ].join("\n");
-
-    function makeShell(rim, r, scale, power, opacity) {
-      const mat = new THREE.ShaderMaterial({
-        uniforms: {
-          uRim: { value: rim.clone() },
-          uPower: { value: power }
-        },
-        vertexShader: FRESNEL_VERT,
-        fragmentShader: SHELL_FRAG,
-        transparent: true,
-        blending: THREE.AdditiveBlending,
-        depthWrite: false,
-        side: THREE.BackSide
-      });
-      const mesh = new THREE.Mesh(sphereGeo, mat);
-      mesh.scale.setScalar(r * scale);
-      mesh.renderOrder = -1;
-      mesh.material.opacity = opacity;
-      return mesh;
+    function hash(x, y) {
+      const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453;
+      return s - Math.floor(s);
     }
-
-    function makeNodeObject(node) {
-      const r = nodeRadius(node);
-      const group = new THREE.Group();
-      const base = new THREE.Color(node.color);
-      const rim = base.clone().lerp(new THREE.Color("#ffffff"), node.kind === "core" ? 0.55 : 0.22);
-      const mat = new THREE.ShaderMaterial({
-        uniforms: {
-          uColor: { value: base.clone().multiplyScalar(0.85) },
-          uRim: { value: rim },
-          uCore: { value: node.kind === "core" ? 0.85 : 0.55 },
-          uPower: { value: node.kind === "core" ? 1.55 : 2.15 }
-        },
-        vertexShader: FRESNEL_VERT,
-        fragmentShader: FRESNEL_FRAG,
-        transparent: true,
-        depthWrite: true
-      });
-      const mesh = new THREE.Mesh(sphereGeo, mat);
-      mesh.scale.setScalar(r);
-      group.add(mesh);
-      group.add(makeShell(rim, r, node.kind === "core" ? 1.22 : 1.28, 1.35, 1));
-      group.add(makeShell(base, r, node.kind === "core" ? 1.7 : 1.55, 2.4, 1));
-      if (node.kind === "core") {
-        const inner = new THREE.Mesh(
-          sphereGeo,
-          new THREE.MeshBasicMaterial({ color: 0xffffff, toneMapped: false })
-        );
-        inner.scale.setScalar(r * 0.28);
-        group.add(inner);
-        group.add(makeShell(new THREE.Color("#ffffff"), r, 2.15, 2.8, 1));
+    const metalTex = canvasTex(512, (ctx, s) => {
+      const g = ctx.createLinearGradient(0, 0, s, s);
+      g.addColorStop(0, "#1a1014"); g.addColorStop(0.5, "#0a0608"); g.addColorStop(1, "#241018");
+      ctx.fillStyle = g; ctx.fillRect(0, 0, s, s);
+      for (let i = 0; i < 1800; i++) {
+        const x = hash(i, 1) * s, y = hash(i, 2) * s;
+        ctx.fillStyle = "rgba(255,45,146," + (0.02 + hash(i, 3) * 0.08) + ")";
+        ctx.fillRect(x, y, 1 + hash(i, 4) * 18, 1);
       }
-      return group;
+    });
+    const nebulaTex = canvasTex(1024, (ctx, s) => {
+      ctx.fillStyle = "#030108"; ctx.fillRect(0, 0, s, s);
+      for (let i = 0; i < 900; i++) {
+        ctx.fillStyle = "rgba(255,255,255," + (0.15 + hash(i, 9) * 0.7) + ")";
+        ctx.fillRect(hash(i, 5) * s, hash(i, 6) * s, hash(i, 7) > 0.97 ? 2 : 1, 1);
+      }
+      for (let k = 0; k < 8; k++) {
+        const x = s * (0.2 + hash(k, 11) * 0.6);
+        const y = s * (0.25 + hash(k, 12) * 0.5);
+        const r = 80 + hash(k, 13) * 220;
+        const grd = ctx.createRadialGradient(x, y, 0, x, y, r);
+        const col = k % 2 ? "255,45,146" : "90,40,255";
+        grd.addColorStop(0, "rgba(" + col + ",0.28)");
+        grd.addColorStop(1, "rgba(" + col + ",0)");
+        ctx.fillStyle = grd; ctx.fillRect(0, 0, s, s);
+      }
+    });
+    function planetTex(kind) {
+      const pal = {
+        lava: ["#2a0a00", "#ff6a1a", "#ffd27a"],
+        crystal: ["#04160a", "#22c55e", "#b7ffd0"],
+        plasma: ["#2a0018", "#ff2d92", "#ffd0ea"],
+        ice: ["#021018", "#3b9fff", "#d4f0ff"],
+      }[kind] || ["#111", "#888", "#fff"];
+      return canvasTex(256, (ctx, s) => {
+        ctx.fillStyle = pal[0]; ctx.fillRect(0, 0, s, s);
+        for (let i = 0; i < 400; i++) {
+          ctx.fillStyle = hash(i, 20) > 0.5 ? pal[1] : pal[2];
+          ctx.globalAlpha = 0.15 + hash(i, 21) * 0.5;
+          ctx.beginPath();
+          ctx.arc(hash(i, 22) * s, hash(i, 23) * s, 2 + hash(i, 24) * 14, 0, 6.28);
+          ctx.fill();
+        }
+        ctx.globalAlpha = 1;
+      });
     }
 
-    const Graph = ForceGraph3D({
-      rendererConfig: {
-        antialias: true,
-        alpha: false,
-        powerPreference: "high-performance"
+    function makeTaperTube(curve, tubular, radial, r0, seed) {
+      const frames = curve.computeFrenetFrames(tubular, false);
+      const pos = [], nrm = [], uv = [], idx = [];
+      for (let i = 0; i <= tubular; i++) {
+        const t = i / tubular;
+        const shaft = r0 * Math.pow(1 - t, 0.62) + 0.02;
+        const club = Math.exp(-Math.pow((t - 0.8) / 0.1, 2)) * r0 * 1.15;
+        const p = curve.getPointAt(t);
+        const N = frames.normals[i], B = frames.binormals[i];
+        for (let j = 0; j <= radial; j++) {
+          const a = (j / radial) * Math.PI * 2;
+          const organic = 1 + 0.16 * Math.sin(a * 3 + t * 10 + seed) * Math.sin(t * 6);
+          const r = Math.max(0.01, (shaft + club) * organic);
+          const nx = N.x * Math.cos(a) + B.x * Math.sin(a);
+          const ny = N.y * Math.cos(a) + B.y * Math.sin(a);
+          const nz = N.z * Math.cos(a) + B.z * Math.sin(a);
+          pos.push(p.x + nx * r, p.y + ny * r, p.z + nz * r);
+          nrm.push(nx, ny, nz);
+          uv.push(j / radial, t);
+        }
       }
-    })(document.getElementById("graph"))
-      .graphData({ nodes: DATA.nodes, links: DATA.links })
-      .backgroundColor("#000000")
-      .showNavInfo(false)
-      .linkColor(() => "rgba(255,110,190,0.22)")
-      .linkWidth(0.45)
-      .linkOpacity(0.55)
-      .nodeRelSize(4)
-      .nodeVal("val")
-      .nodeOpacity(1)
-      .nodeLabel(() => "")
-      .nodeThreeObject(makeNodeObject)
-      .onNodeClick((node) => {
-        history.length = 0;
-        renderPanel(node.panel);
-      });
+      const cols = radial + 1;
+      for (let i = 0; i < tubular; i++) for (let j = 0; j < radial; j++) {
+        const a = i * cols + j, b = a + cols;
+        idx.push(a, b, a + 1, b, b + 1, a + 1);
+      }
+      const g = new THREE.BufferGeometry();
+      g.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+      g.setAttribute("normal", new THREE.Float32BufferAttribute(nrm, 3));
+      g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+      g.setIndex(idx);
+      g.computeVertexNormals();
+      return g;
+    }
+    function perp(dir, seed) {
+      const up = Math.abs(dir.y) > 0.9 ? new THREE.Vector3(1, 0, 0) : new THREE.Vector3(0, 1, 0);
+      const a = new THREE.Vector3().crossVectors(dir, up).normalize();
+      const b = new THREE.Vector3().crossVectors(dir, a).normalize();
+      const ang = seed * 6.28318530718;
+      return a.multiplyScalar(Math.cos(ang)).add(b.multiplyScalar(Math.sin(ang)));
+    }
+    function tentacleCurve(index, total) {
+      const phi = Math.acos(1 - (2 * (index + 0.5)) / total);
+      const theta = Math.PI * (1 + Math.sqrt(5)) * index;
+      const dir = new THREE.Vector3(
+        Math.sin(phi) * Math.cos(theta),
+        Math.cos(phi) * 0.72,
+        Math.sin(phi) * Math.sin(theta)
+      );
+      if (index % 3 === 0) dir.z += 1.6;
+      if (index % 5 === 1) dir.y -= 0.4;
+      dir.normalize();
+      const len = 8.6 + (index % 5) * 1.35;
+      const side = perp(dir, index * 0.37);
+      const pts = [];
+      for (let i = 0; i <= 8; i++) {
+        const t = i / 8;
+        const p = dir.clone().multiplyScalar(CORE_R * 0.96 + len * t);
+        p.add(side.clone().multiplyScalar(Math.sin(t * Math.PI * (1.05 + (index % 3) * 0.28)) * (0.12 + t * t * 2.4)));
+        pts.push(p);
+      }
+      return new THREE.CatmullRomCurve3(pts);
+    }
+    function foregroundCurve(i) {
+      const corners = [[-1, 0.82], [1, 0.88], [-1.12, 0.04], [1.12, -0.02], [-0.82, -0.95], [0.78, -1]];
+      const sx = corners[i][0], sy = corners[i][1];
+      return new THREE.CatmullRomCurve3([
+        new THREE.Vector3(sx * 0.55, sy * 0.5, CORE_R * 0.92),
+        new THREE.Vector3(sx * 1.7, sy * 1.45, 2.7),
+        new THREE.Vector3(sx * 2.7, sy * 2.2, 3.7),
+        new THREE.Vector3(sx * 3.35, sy * 2.7, 4.7),
+        new THREE.Vector3(sx * 3.7, sy * 3.0, 5.45),
+      ]);
+    }
 
-    const renderer = Graph.renderer();
-    renderer.setPixelRatio(2);
+    function kindOf(node) {
+      const c = (node.color || "").toLowerCase();
+      if (/4ade80|22c55e/.test(c)) return "crystal";
+      if (/38bdf8|7aa2ff|2ee6d6|5ecbff/.test(c)) return "ice";
+      if (/ffe566|ff9f1a|fde047|ffc43d/.test(c)) return "lava";
+      return "plasma";
+    }
+    const GLOW = { lava: "#ff6a1a", crystal: "#22c55e", plasma: "#ff2d92", ice: "#3b9fff" };
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.setClearColor(0x050308, 1);
     if (THREE.ACESFilmicToneMapping) renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.08;
-    if (THREE.SRGBColorSpace && renderer.outputColorSpace !== undefined) renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMappingExposure = 1.12;
+    renderer.localClippingEnabled = true;
+    document.body.prepend(renderer.domElement);
+    renderer.domElement.style.cssText = "position:absolute;inset:0;z-index:1;touch-action:none";
 
-    const scene = Graph.scene();
-    scene.fog = new THREE.FogExp2(0x000000, 0.0028);
-    scene.add(new THREE.AmbientLight(0x3a1428, 0.7));
+    const scene = new THREE.Scene();
+    nebulaTex.mapping = THREE.EquirectangularReflectionMapping;
+    scene.background = nebulaTex;
+    scene.environment = nebulaTex;
+    scene.fog = new THREE.FogExp2(0x030108, 0.012);
+
+    const camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 120);
+    let theta = 0.02, phi = 1.48, dist = 6.7;
+    const look = new THREE.Vector3(0, 0.08, 0);
+    function placeCam() {
+      camera.position.set(
+        dist * Math.sin(phi) * Math.sin(theta),
+        dist * Math.cos(phi) + 0.15,
+        dist * Math.sin(phi) * Math.cos(theta)
+      );
+      camera.lookAt(look);
+    }
+    placeCam();
+
+    scene.add(new THREE.AmbientLight(0x3a1428, 0.28));
     scene.add(new THREE.HemisphereLight(0xff6ab5, 0x070614, 0.55));
-    const key = new THREE.DirectionalLight(0xfff1ff, 1.15);
-    key.position.set(48, 72, 36);
-    scene.add(key);
-    const fill = new THREE.DirectionalLight(0x5ecbff, 0.38);
-    fill.position.set(-56, -18, -44);
-    scene.add(fill);
-    const rimLight = new THREE.DirectionalLight(0xff9a3c, 0.28);
-    rimLight.position.set(10, -40, 60);
-    scene.add(rimLight);
-    const coreLight = new THREE.PointLight(0xff2d92, 2.4, 420, 2);
-    coreLight.position.set(0, 0, 0);
-    scene.add(coreLight);
+    const key = new THREE.DirectionalLight(0xfff1ff, 1.15); key.position.set(10, 14, 16); scene.add(key);
+    const fill = new THREE.DirectionalLight(0x5ecbff, 0.35); fill.position.set(-12, -6, -8); scene.add(fill);
+    const viewLight = new THREE.PointLight(0xffe6f4, 2.2, 28, 2); scene.add(viewLight);
 
-    Graph.d3Force("charge").strength(-110);
-    Graph.d3Force("link").distance((l) => l.distance || 52);
-    Graph.d3VelocityDecay(0.32);
-    Graph.cameraPosition({ x: 28, y: 16, z: 168 });
-
-    function ensureOverlay() {
-      if (labels.childElementCount) return;
-      Graph.graphData().nodes.forEach((node) => {
-        const el = document.createElement("div");
-        el.className = "pill " + node.kind;
-        el.innerHTML = node.html;
-        el.onclick = (ev) => {
-          ev.stopPropagation();
-          history.length = 0;
-          renderPanel(node.panel);
-        };
-        labels.appendChild(el);
-      });
+    const clipPlane = new THREE.Plane(new THREE.Vector3(0, 0, -1), 1.42);
+    const coreGroup = new THREE.Group();
+    scene.add(coreGroup);
+    const shellMat = new THREE.MeshStandardMaterial({
+      map: metalTex, color: 0x14080e, metalness: 0.98, roughness: 0.16,
+      envMapIntensity: 1.8, emissive: 0x4a1428, emissiveIntensity: 0.42,
+      side: THREE.DoubleSide, clippingPlanes: [clipPlane], clipShadows: true,
+    });
+    const shell = new THREE.Mesh(new THREE.SphereGeometry(CORE_R, 80, 80), shellMat);
+    coreGroup.add(shell);
+    coreGroup.add(new THREE.Mesh(
+      new THREE.SphereGeometry(CORE_R * 1.06, 48, 48),
+      new THREE.MeshBasicMaterial({ color: 0xff2d92, transparent: true, opacity: 0.07, side: THREE.BackSide, depthWrite: false })
+    ));
+    [[CORE_R * 1.08, 0.028], [CORE_R * 1.2, 0.018], [CORE_R * 1.34, 0.012]].forEach((pair, i) => {
+      const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(pair[0], pair[1], 10, 96),
+        new THREE.MeshStandardMaterial({
+          map: metalTex, color: 0x1a0c12, metalness: 1, roughness: 0.14,
+          emissive: 0xff2d92, emissiveIntensity: 0.35,
+        })
+      );
+      ring.rotation.set(Math.PI / 2, i * 0.42, i * 0.18);
+      coreGroup.add(ring);
+    });
+    const iris = new THREE.Group();
+    scene.add(iris);
+    for (let i = 0; i < 11; i++) {
+      const t = i / 10;
+      const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(1.55 * (1 - t * 0.86) + 0.12, 0.026 + (1 - t) * 0.018, 10, 80),
+        new THREE.MeshStandardMaterial({
+          color: 0x1a0a12, metalness: 1, roughness: 0.12,
+          emissive: 0xff2d92, emissiveIntensity: 0.55 + (1 - t) * 0.5,
+        })
+      );
+      ring.position.z = 1.22 - t * 1.28;
+      iris.add(ring);
     }
+    const glow = new THREE.Mesh(
+      new THREE.SphereGeometry(0.48, 32, 32),
+      new THREE.MeshBasicMaterial({ color: 0xffe6f4 })
+    );
+    iris.add(glow);
+    iris.add(new THREE.Mesh(
+      new THREE.SphereGeometry(0.78, 32, 32),
+      new THREE.MeshBasicMaterial({ color: 0xff2d92, transparent: true, opacity: 0.45, depthWrite: false })
+    ));
+    iris.add(new THREE.PointLight(0xff2d92, 14, 36, 2));
 
-    function paint() {
-      const nodes = Graph.graphData().nodes;
-      ensureOverlay();
-      let core = null;
-      for (let i = 0; i < nodes.length; i++) {
-        const node = nodes[i];
-        if (node.x == null) continue;
-        const c = Graph.graph2ScreenCoords(node.x, node.y, node.z);
-        const cam = Graph.camera();
-        const dx = node.x - cam.position.x;
-        const dy = node.y - cam.position.y;
-        const dz = node.z - cam.position.z;
-        const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
-        const far = Math.max(0, (dist - 150) / 200);
-        const lab = labels.children[i];
-        lab.style.transform = "translate3d(" + c.x + "px," + (c.y - 18) + "px,0) translate(-50%,-100%)";
-        lab.style.opacity = String(Math.max(0, 1 - far * 1.35));
-        lab.style.visibility = far > 0.9 ? "hidden" : "visible";
-        if (node.kind === "core") core = c;
+    const tentMat = new THREE.MeshStandardMaterial({
+      map: metalTex, color: 0x0a0508, metalness: 0.98, roughness: 0.16,
+      envMapIntensity: 1.5, emissive: 0xff2d92, emissiveIntensity: 0.08,
+    });
+    const veinMat = new THREE.MeshBasicMaterial({
+      color: 0xff4da6, transparent: true, opacity: 0.55,
+      blending: THREE.AdditiveBlending, depthWrite: false,
+    });
+    const tentacles = [];
+    function addTentacle(curve, r0, seed) {
+      const shellG = makeTaperTube(curve, 48, 12, r0, seed);
+      const veinG = makeTaperTube(curve, 36, 8, r0 * 0.22, seed);
+      const a = new THREE.Mesh(shellG, tentMat);
+      const b = new THREE.Mesh(veinG, veinMat);
+      scene.add(a, b);
+      tentacles.push(shellG, veinG);
+    }
+    for (let i = 0; i < 16; i++) addTentacle(tentacleCurve(i, 16), 0.62 + (i % 5) * 0.1, i * 1.7);
+    for (let i = 0; i < 6; i++) addTentacle(foregroundCurve(i), 0.95 + (i % 3) * 0.12, 20 + i);
+
+    const nodeMeshes = [];
+    const SCALE = 0.072;
+    const texCache = { lava: planetTex("lava"), crystal: planetTex("crystal"), plasma: planetTex("plasma"), ice: planetTex("ice") };
+    DATA.nodes.forEach((node) => {
+      if (node.id === "core") return;
+      const kind = kindOf(node);
+      const glowC = GLOW[kind];
+      const r = Math.max(0.22, (node.val || 2.2) * 0.16);
+      const g = new THREE.Group();
+      g.position.set((node.x || 0) * SCALE, (node.y || 0) * SCALE, (node.z || 0) * SCALE);
+      const mesh = new THREE.Mesh(
+        new THREE.SphereGeometry(r, 48, 48),
+        new THREE.MeshStandardMaterial({
+          map: texCache[kind], roughness: 0.28, metalness: 0.18,
+          emissive: new THREE.Color(glowC), emissiveMap: texCache[kind], emissiveIntensity: 0.7,
+        })
+      );
+      mesh.userData.panel = node.panel;
+      g.add(mesh);
+      g.add(new THREE.Mesh(
+        new THREE.SphereGeometry(r * 1.16, 24, 24),
+        new THREE.MeshBasicMaterial({ color: glowC, transparent: true, opacity: 0.12, side: THREE.BackSide, depthWrite: false })
+      ));
+      g.add(new THREE.PointLight(glowC, 1.5, 6));
+      scene.add(g);
+      nodeMeshes.push({ mesh, spin: 0.12 + r * 0.08 });
+    });
+
+    const clusters = [
+      ["n-ugc", "n-ops"],
+      ["partner-1", "partner-2", "partner-3"],
+      ["playbooks", "creators", "trends"],
+    ];
+    const byId = Object.fromEntries(DATA.nodes.map((n) => [n.id, n]));
+    clusters.forEach((ids) => {
+      for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) {
+        const a = byId[ids[i]], b = byId[ids[j]];
+        if (!a || !b) continue;
+        const va = new THREE.Vector3(a.x * SCALE, a.y * SCALE, a.z * SCALE);
+        const vb = new THREE.Vector3(b.x * SCALE, b.y * SCALE, b.z * SCALE);
+        const dir = vb.clone().sub(va);
+        const len = dir.length();
+        const geo = new THREE.CylinderGeometry(0.03, 0.03, len, 6);
+        const rod = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
+          color: a.color, metalness: 0.9, roughness: 0.25, emissive: a.color, emissiveIntensity: 0.3,
+        }));
+        rod.position.copy(va).add(vb).multiplyScalar(0.5);
+        rod.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir.normalize());
+        scene.add(rod);
       }
-      if (core) {
-        flare.style.transform = "translate3d(" + (core.x - 110) + "px," + (core.y - 110) + "px,0)";
-        flare.style.opacity = "0.7";
+    });
+
+    const starGeo = new THREE.BufferGeometry();
+    const starPos = new Float32Array(2500 * 3);
+    for (let i = 0; i < 2500; i++) {
+      const r = 40 + Math.random() * 50;
+      const a = Math.random() * 6.28, b = Math.acos(2 * Math.random() - 1);
+      starPos[i * 3] = r * Math.sin(b) * Math.cos(a);
+      starPos[i * 3 + 1] = r * Math.cos(b);
+      starPos[i * 3 + 2] = r * Math.sin(b) * Math.sin(a);
+    }
+    starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
+    scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0xffffff, size: 0.08, transparent: true, opacity: 0.7 })));
+
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    let dragging = false, lastX = 0, lastY = 0, auto = !reduce;
+    renderer.domElement.addEventListener("pointerdown", (e) => {
+      dragging = false;
+      lastX = e.clientX; lastY = e.clientY;
+      renderer.domElement.setPointerCapture(e.pointerId);
+    });
+    renderer.domElement.addEventListener("pointermove", (e) => {
+      if (e.buttons) {
+        dragging = true; auto = false;
+        theta -= (e.clientX - lastX) * 0.005;
+        phi = Math.min(Math.PI * 0.88, Math.max(Math.PI * 0.14, phi - (e.clientY - lastY) * 0.005));
+        lastX = e.clientX; lastY = e.clientY;
       }
-    }
-
-    Graph.onEngineTick(paint);
-    let angle = 0.35;
-    let holding = false;
-    let ready = false;
-    Graph.onEngineStop(() => { ready = true; paint(); });
-    setTimeout(() => { ready = true; }, 1800);
-    const orbit = 175;
-    if (!motionOff()) {
-      setInterval(() => {
-        if (holding || !ready) return;
-        angle += 0.003;
-        Graph.cameraPosition({
-          x: orbit * Math.sin(angle),
-          z: orbit * Math.cos(angle),
-          y: 22,
-        });
-        paint();
-      }, 40);
-    }
-    window.addEventListener("pointerdown", () => { holding = true; });
-    window.addEventListener("pointerup", () => { holding = false; });
-
-    if (hasGsap) {
-      gsap.set(side, { xPercent: 100, autoAlpha: 1 });
-      if (!motionOff()) {
-        gsap.set("#brand", { autoAlpha: 0, y: -14 });
-        gsap.set("#hint", { autoAlpha: 0 });
-        gsap.set(".status", { autoAlpha: 0 });
-        gsap.timeline({ defaults: { ease: "power3.out" } })
-          .to("#brand", { autoAlpha: 1, y: 0, duration: 0.7 })
-          .to(".status", { autoAlpha: 1, duration: 0.35, stagger: 0.08 }, "-=0.35")
-          .to("#hint", { autoAlpha: 1, duration: 0.45 }, "-=0.2");
+    });
+    renderer.domElement.addEventListener("pointerup", (e) => {
+      if (dragging) return;
+      pointer.x = (e.clientX / innerWidth) * 2 - 1;
+      pointer.y = -(e.clientY / innerHeight) * 2 + 1;
+      raycaster.setFromCamera(pointer, camera);
+      const hits = raycaster.intersectObjects(nodeMeshes.map((n) => n.mesh), false);
+      if (hits.length) {
+        history.length = 0;
+        renderPanel(hits[0].object.userData.panel);
+      } else {
+        const coreHit = raycaster.intersectObject(shell, false);
+        if (coreHit.length) { history.length = 0; renderPanel("core"); }
       }
-    } else {
-      side.style.transform = "translateX(110%)";
-    }
+    });
+    renderer.domElement.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      dist = Math.min(16, Math.max(4.6, dist + e.deltaY * 0.008));
+    }, { passive: false });
 
-    window.GROWTHOS = { open: (id) => renderPanel(id), data: DATA, graph: Graph };
+    const _dir = new THREE.Vector3();
+    const clock = new THREE.Clock();
+    function tick() {
+      const dt = Math.min(clock.getDelta(), 0.1);
+      if (auto && !reduce) theta += dt * 0.045;
+      placeCam();
+      _dir.copy(camera.position).normalize();
+      clipPlane.normal.copy(_dir).negate();
+      clipPlane.constant = 1.42;
+      iris.lookAt(camera.position);
+      viewLight.position.copy(camera.position);
+      coreGroup.rotation.y += dt * 0.04;
+      const pulse = 1 + Math.sin(clock.elapsedTime * 1.6) * 0.08;
+      glow.scale.setScalar(pulse);
+      nodeMeshes.forEach((n) => { n.mesh.rotation.y += dt * n.spin; });
+      renderer.render(scene, camera);
+      requestAnimationFrame(tick);
+    }
+    tick();
+    addEventListener("resize", () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+    window.GROWTHOS = { open: (id) => renderPanel(id), data: DATA };
   </script>
 </body>
 </html>
