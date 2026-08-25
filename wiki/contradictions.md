@@ -2,8 +2,8 @@
 type: meta
 tags:
   - wiki
+created: 2026-08-23
 updated: 2026-08-25
-updated: 2026-08-23
 ---
 
 # Contradictions
@@ -107,3 +107,11 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Grok Bot screens vs entropy-gate isolation
+
+[[src-exm7777-grok-bot-money]]: all bots share one cloud computer. Separate bots are separate work surfaces, not separate security boundaries.
+
+[[entropy-gate]] wants isolated worktrees, structured diffs, and an objective gate.
+
+Resolution: different systems. Do not cite Grok Bot screens as entropy-gate isolation. See [[grok-bot]].

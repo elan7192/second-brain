@@ -2,8 +2,8 @@
 type: meta
 tags:
   - wiki
+created: 2026-08-23
 updated: 2026-08-25
-updated: 2026-08-23
 ---
 
 # Agent operating system
@@ -35,3 +35,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
+
+[[src-exm7777-grok-bot-money]] is a Grok Bot product how-to. One bot per workflow. Vault over bot memory. Approvals. Shared computer is not an entropy gate. See [[grok-bot]] and C15.

@@ -36,4 +36,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]]
+
+[[src-exm7777-grok-bot-money]] is a Grok Bot product how-to: persistent VM, computer use, one bot per workflow. Model named Grok 4.6. Pricing comparison `unverified`. See [[grok-bot]].

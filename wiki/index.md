@@ -54,6 +54,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
+| [[grok-bot]] | One bot per job. Vault over memory. Shared computer is not an entropy gate |
+| [[grok-bot-money]] | Machina ten revenue lanes. Higgsfield UGC sponsored. Cash unverified |
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
@@ -107,6 +109,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-exm7777-grok-bot-money]] | 2026-08-24 | Machina Grok Bot money tweet. Higgsfield UGC sponsored |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
 | [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |

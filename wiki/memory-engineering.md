@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-25
 ---
 
 # Memory engineering
@@ -35,3 +35,5 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.
 
 [[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.
+
+[[src-exm7777-grok-bot-money]]: Grok Bot memory holds preferences and summaries and is not a substitute for an authoritative source. The vault is. See [[grok-bot]].

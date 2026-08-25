@@ -20,6 +20,8 @@ Earlier line (fluent language, English OK) is superseded by this caveman rule.
 
 Vault page prose still follows [[anti-slop]].
 
+[[src-exm7777-grok-bot-money]]: every bot verifies before reporting. A bot that says done without checking is worse than no bot. See [[raptor-dispatch]].
+
 ## Related
 
-[[raptor-dispatch]] · [[anti-slop]] · [[spot-check]]
+[[raptor-dispatch]] · [[anti-slop]] · [[spot-check]] · [[grok-bot]]

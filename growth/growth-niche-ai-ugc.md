@@ -33,3 +33,7 @@ Heating. Skill people will pay $100 to $5,000 to learn, per that article. Range 
 ## Offer that sold (DEMO)
 
 [[growth-offer-mira]]
+
+## External how-to
+
+[[grok-bot-money]] compiles Machina's Grok Bot UGC pass. Not a partner. Higgsfield section is sponsored. D5 still holds.

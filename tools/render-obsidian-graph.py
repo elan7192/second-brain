@@ -85,6 +85,11 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "src-rohit-harness-router",
         "src-hitu-entropy-engineering",
         "rohit",
+        "grok-bot",
+        "grok-bot-money",
+        "grok-bot-use-cases",
+        "src-exm7777-grok-bot-money",
+        "src-milesdeutscher-grok-bot-use-cases",
     },
     "hunt-ship": {
         "hunt-ship-loop",

@@ -36,6 +36,8 @@ Partner names, handles, and dollar figures in `growth/` are **DEMO**. They exist
 
 Vault still does not post, pay, send, or create live Whop objects. See D5.
 
+[[src-exm7777-grok-bot-money]] is a Grok Bot UGC and revenue how-to, not a GrowthOS partner. Higgsfield UGC section is sponsored. See [[grok-bot-money]]. DEMO partner figures stay in `growth/`.
+
 ## 3D graph path
 
 Not an Obsidian plugin. Not Electron or Tauri. Not a dump of thousands of wiki pages.

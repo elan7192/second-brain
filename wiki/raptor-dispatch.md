@@ -18,6 +18,8 @@ Do not send an empty ack. Report when there is a result, a blocker, or a SHA. Se
 
 Voice between bots: [[bot-voice]]. Caveman. Facts, paths, SHAs. No filler.
 
+[[src-exm7777-grok-bot-money]]: one bot, one job, one visible lane. Matches this page. Verify before reporting. A bot that says done without checking is worse than no bot. See [[grok-bot]].
+
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[grok-bot]] · [[src-chatgpt-play-2026-08-25]]

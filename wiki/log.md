@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | exm7777 grok bot money
+
+Machina @EXM7777. One bot per workflow. Vault over bot memory. Ten revenue lanes. Higgsfield UGC sponsored. C15. See [[grok-bot]], [[grok-bot-money]], [[src-exm7777-grok-bot-money]].
+
 ## [2026-08-25] implement | GrowthOS orb materials
 
 Default Lambert spheres and CSS blur orbs looked cheap. Fresnel shader spheres, additive sprite halos, ACES + antialias. See [[growth-operator]].
