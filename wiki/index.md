@@ -44,6 +44,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[anti-slop]] | Default writing constraints |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[skillspector]] | Gate generated SKILL.md before shipping |
+| [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once |
 | [[session-migrate]] | Context only. Git is source of truth |
@@ -100,6 +101,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |
 | [[src-play-methods-2026-08-25]] | 2026-08-25 | Play methods. Path `/workspace/play-until-2pm/METHODS.md`. Not in raw/ |
 | [[src-arxiv-batch09]] | 2026-08-24 | Five digests. Figs unread |
 | [[src-arxiv-2608-19540]] | 2026-08-24 | CAMF/MF-T |

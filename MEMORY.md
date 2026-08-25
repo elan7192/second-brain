@@ -21,6 +21,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Wiki agent must stay current on compiled `wiki/` pages. Other agents send improvement facts here; ingest them. Do not invent gaps.
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.
+- Skill Recorder: trial only on a clean desktop with fake data, then SkillSpector, then enable. See [[skill-recorder]].
 
 ## arXiv tierlist
 

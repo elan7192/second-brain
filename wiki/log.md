@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | skill recorder
+
+Trial on a clean desktop with fake data, then [[skillspector]], then enable. See [[skill-recorder]], [[src-chatgpt-play-2026-08-25]], and [[ingest-brief-2026-08-25-skill-recorder]].
+
 ## [2026-08-25] ingest | play methods
 
 Compiled [[skillspector]], [[quota-router]], [[raptor-dispatch]], [[session-migrate]], [[clip-pipeline]] from `/workspace/play-until-2pm/METHODS.md`. Reinforced D4 on [[audited-task-contract]] and [[harness-routing]]. Not copied into raw/. See [[src-play-methods-2026-08-25]] and [[ingest-brief-2026-08-25-play-methods]].
