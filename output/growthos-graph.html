@@ -13,11 +13,11 @@
     #nebula {
       position: absolute; inset: 0; z-index: 0; pointer-events: none;
       background:
-        radial-gradient(ellipse 50% 40% at 42% 48%, rgba(255, 20, 120, 0.22), transparent 55%),
-        radial-gradient(ellipse 40% 35% at 68% 38%, rgba(90, 40, 255, 0.18), transparent 50%),
-        radial-gradient(ellipse 35% 30% at 58% 72%, rgba(255, 190, 40, 0.10), transparent 50%),
-        radial-gradient(ellipse 30% 28% at 28% 70%, rgba(40, 180, 255, 0.10), transparent 50%);
-      filter: blur(28px);
+        radial-gradient(ellipse 42% 36% at 44% 48%, rgba(255, 20, 120, 0.16), transparent 58%),
+        radial-gradient(ellipse 34% 30% at 66% 36%, rgba(90, 40, 255, 0.12), transparent 52%),
+        radial-gradient(ellipse 28% 24% at 58% 72%, rgba(255, 190, 40, 0.07), transparent 50%),
+        radial-gradient(ellipse 24% 22% at 28% 70%, rgba(40, 180, 255, 0.07), transparent 50%);
+      filter: blur(36px);
     }
     #brand {
       position: absolute; top: 28px; left: 32px; z-index: 4;
@@ -122,16 +122,11 @@
       color: rgba(255,255,255,0.72);
     }
     .note.show { display: block; }
-    #labels, #glows { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
-    .orb {
-      position: absolute; left: 0; top: 0; border-radius: 50%;
-      filter: blur(22px); pointer-events: none; mix-blend-mode: screen;
-      will-change: transform, opacity;
-    }
+    #labels { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; }
     #flare {
-      position: absolute; left: 0; top: 0; width: 320px; height: 320px;
+      position: absolute; left: 0; top: 0; width: 220px; height: 220px;
       pointer-events: none; z-index: 2; mix-blend-mode: screen;
-      background: radial-gradient(circle, rgba(255,255,255,0.55) 0%, rgba(255,45,146,0.28) 28%, transparent 68%);
+      background: radial-gradient(circle, rgba(255,255,255,0.28) 0%, rgba(255,45,146,0.12) 32%, transparent 70%);
       will-change: transform;
       opacity: 0;
     }
@@ -194,7 +189,6 @@
 <body>
   <div id="nebula"></div>
   <div id="graph"></div>
-  <div id="glows"></div>
   <div id="flare"></div>
   <div id="labels"></div>
   <div id="brand">
@@ -230,7 +224,6 @@
     const filesEl = document.getElementById("files");
     const noteEl = document.getElementById("note");
     const labels = document.getElementById("labels");
-    const glows = document.getElementById("glows");
     const flare = document.getElementById("flare");
     const history = [];
     const hasGsap = typeof gsap !== "undefined";
@@ -296,39 +289,176 @@
       else closeSide();
     };
 
-    const Graph = ForceGraph3D()(document.getElementById("graph"))
+    function makeGlowTexture() {
+      const c = document.createElement("canvas");
+      c.width = 256;
+      c.height = 256;
+      const g = c.getContext("2d");
+      const grd = g.createRadialGradient(128, 128, 0, 128, 128, 128);
+      grd.addColorStop(0, "rgba(255,255,255,1)");
+      grd.addColorStop(0.12, "rgba(255,255,255,0.72)");
+      grd.addColorStop(0.32, "rgba(255,255,255,0.22)");
+      grd.addColorStop(0.58, "rgba(255,255,255,0.05)");
+      grd.addColorStop(1, "rgba(255,255,255,0)");
+      g.fillStyle = grd;
+      g.fillRect(0, 0, 256, 256);
+      const tex = new THREE.CanvasTexture(c);
+      tex.needsUpdate = true;
+      tex.colorSpace = THREE.SRGBColorSpace || tex.colorSpace;
+      return tex;
+    }
+
+    function nodeRadius(node) {
+      if (node.kind === "core") return 7.4;
+      if (node.kind === "hub" || node.kind === "ruling" || node.kind === "metric") return 4.6;
+      return 2.7;
+    }
+
+    const sphereGeo = new THREE.SphereGeometry(1, 64, 64);
+    const glowTex = makeGlowTexture();
+    const FRESNEL_VERT = [
+      "varying vec3 vN;",
+      "varying vec3 vV;",
+      "void main() {",
+      "  vec4 w = modelViewMatrix * vec4(position, 1.0);",
+      "  vN = normalize(normalMatrix * normal);",
+      "  vV = normalize(-w.xyz);",
+      "  gl_Position = projectionMatrix * w;",
+      "}"
+    ].join("\n");
+    const FRESNEL_FRAG = [
+      "uniform vec3 uColor;",
+      "uniform vec3 uRim;",
+      "uniform float uCore;",
+      "uniform float uPower;",
+      "varying vec3 vN;",
+      "varying vec3 vV;",
+      "void main() {",
+      "  vec3 n = normalize(vN);",
+      "  vec3 v = normalize(vV);",
+      "  float ndv = max(dot(n, v), 0.0);",
+      "  float fres = pow(1.0 - ndv, uPower);",
+      "  vec3 h = normalize(v + vec3(0.35, 0.72, 0.48));",
+      "  float spec = pow(max(dot(n, h), 0.0), 56.0);",
+      "  vec3 col = uColor * uCore * (0.35 + ndv * 0.65);",
+      "  col += uRim * fres;",
+      "  col += vec3(1.0) * spec * 0.72;",
+      "  float alpha = mix(0.62, 1.0, fres);",
+      "  gl_FragColor = vec4(col, alpha);",
+      "}"
+    ].join("\n");
+
+    function makeNodeObject(node) {
+      const r = nodeRadius(node);
+      const group = new THREE.Group();
+      const base = new THREE.Color(node.color);
+      const rim = base.clone().lerp(new THREE.Color("#ffffff"), node.kind === "core" ? 0.62 : 0.28);
+      const mat = new THREE.ShaderMaterial({
+        uniforms: {
+          uColor: { value: base.clone().multiplyScalar(0.62) },
+          uRim: { value: rim },
+          uCore: { value: node.kind === "core" ? 0.7 : 0.42 },
+          uPower: { value: node.kind === "core" ? 1.7 : 2.45 }
+        },
+        vertexShader: FRESNEL_VERT,
+        fragmentShader: FRESNEL_FRAG,
+        transparent: true,
+        depthWrite: true
+      });
+      const mesh = new THREE.Mesh(sphereGeo, mat);
+      mesh.scale.setScalar(r);
+      group.add(mesh);
+
+      const halo = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: glowTex,
+        color: rim,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+        opacity: node.kind === "core" ? 0.85 : 0.5,
+        toneMapped: false
+      }));
+      const hs = r * (node.kind === "core" ? 5.8 : 4.0);
+      halo.scale.set(hs, hs, 1);
+      halo.renderOrder = -1;
+      group.add(halo);
+
+      if (node.kind === "core") {
+        const inner = new THREE.Mesh(
+          sphereGeo,
+          new THREE.MeshBasicMaterial({ color: 0xffffff, toneMapped: false })
+        );
+        inner.scale.setScalar(r * 0.32);
+        group.add(inner);
+        const coreHalo = new THREE.Sprite(new THREE.SpriteMaterial({
+          map: glowTex,
+          color: 0xffffff,
+          transparent: true,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+          opacity: 0.55,
+          toneMapped: false
+        }));
+        coreHalo.scale.set(r * 2.1, r * 2.1, 1);
+        group.add(coreHalo);
+      }
+      return group;
+    }
+
+    const Graph = ForceGraph3D({
+      rendererConfig: {
+        antialias: true,
+        alpha: false,
+        powerPreference: "high-performance"
+      }
+    })(document.getElementById("graph"))
       .graphData({ nodes: DATA.nodes, links: DATA.links })
       .backgroundColor("#000000")
       .showNavInfo(false)
-      .linkColor(() => "rgba(255,90,180,0.28)")
-      .linkWidth(0.3)
-      .linkOpacity(0.4)
+      .linkColor(() => "rgba(255,110,190,0.22)")
+      .linkWidth(0.45)
+      .linkOpacity(0.55)
       .nodeRelSize(4)
       .nodeVal("val")
-      .nodeColor("color")
-      .nodeOpacity(0.95)
+      .nodeOpacity(1)
       .nodeLabel(() => "")
+      .nodeThreeObject(makeNodeObject)
       .onNodeClick((node) => {
         history.length = 0;
         renderPanel(node.panel);
       });
 
+    const renderer = Graph.renderer();
+    renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+    if (THREE.ACESFilmicToneMapping) renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.08;
+    if (THREE.SRGBColorSpace && renderer.outputColorSpace !== undefined) renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+    const scene = Graph.scene();
+    scene.fog = new THREE.FogExp2(0x000000, 0.0028);
+    scene.add(new THREE.AmbientLight(0x3a1428, 0.7));
+    scene.add(new THREE.HemisphereLight(0xff6ab5, 0x070614, 0.55));
+    const key = new THREE.DirectionalLight(0xfff1ff, 1.15);
+    key.position.set(48, 72, 36);
+    scene.add(key);
+    const fill = new THREE.DirectionalLight(0x5ecbff, 0.38);
+    fill.position.set(-56, -18, -44);
+    scene.add(fill);
+    const rimLight = new THREE.DirectionalLight(0xff9a3c, 0.28);
+    rimLight.position.set(10, -40, 60);
+    scene.add(rimLight);
+    const coreLight = new THREE.PointLight(0xff2d92, 2.4, 420, 2);
+    coreLight.position.set(0, 0, 0);
+    scene.add(coreLight);
+
     Graph.d3Force("charge").strength(-110);
     Graph.d3Force("link").distance((l) => l.distance || 52);
     Graph.d3VelocityDecay(0.32);
-    Graph.cameraPosition({ x: 40, y: 24, z: 240 });
+    Graph.cameraPosition({ x: 36, y: 20, z: 210 });
 
     function ensureOverlay() {
       if (labels.childElementCount) return;
       Graph.graphData().nodes.forEach((node) => {
-        const orb = document.createElement("div");
-        orb.className = "orb";
-        const size = node.kind === "core" ? 140 : node.kind === "hub" || node.kind === "ruling" ? 78 : 52;
-        orb.style.width = size + "px";
-        orb.style.height = size + "px";
-        orb.style.background = node.color;
-        orb.dataset.half = String(size / 2);
-        glows.appendChild(orb);
         const el = document.createElement("div");
         el.className = "pill " + node.kind;
         el.innerHTML = node.html;
@@ -355,20 +485,15 @@
         const dz = node.z - cam.position.z;
         const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
         const far = Math.max(0, (dist - 150) / 200);
-        const glow = glows.children[i];
-        const half = Number(glow.dataset.half) || 26;
-        glow.style.transform = "translate3d(" + (c.x - half) + "px," + (c.y - half) + "px,0)";
-        glow.style.opacity = String(Math.max(0.08, 0.6 - far * 0.5));
         const lab = labels.children[i];
         lab.style.transform = "translate3d(" + c.x + "px," + (c.y - 18) + "px,0) translate(-50%,-100%)";
-        lab.style.filter = far > 0.4 ? "blur(" + (far * 3) + "px)" : "none";
         lab.style.opacity = String(Math.max(0, 1 - far * 1.35));
         lab.style.visibility = far > 0.9 ? "hidden" : "visible";
         if (node.kind === "core") core = c;
       }
       if (core) {
-        flare.style.transform = "translate3d(" + (core.x - 160) + "px," + (core.y - 160) + "px,0)";
-        flare.style.opacity = "1";
+        flare.style.transform = "translate3d(" + (core.x - 110) + "px," + (core.y - 110) + "px,0)";
+        flare.style.opacity = "0.7";
       }
     }
 
@@ -378,7 +503,7 @@
     let ready = false;
     Graph.onEngineStop(() => { ready = true; paint(); });
     setTimeout(() => { ready = true; }, 1800);
-    const orbit = 250;
+    const orbit = 220;
     if (!motionOff()) {
       setInterval(() => {
         if (holding || !ready) return;

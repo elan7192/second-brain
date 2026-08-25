@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] implement | GrowthOS orb materials
+
+Default Lambert spheres and CSS blur orbs looked cheap. Fresnel shader spheres, additive sprite halos, ACES + antialias. See [[growth-operator]].
+
 ## [2026-08-25] query | GrowthOS 3D plugin vs clone
 
 Neither. Compiled subgraph HTML, not a plugin and not a product hunt. D5, D7, [[context-graph]]. See [[growthos-3d-gap-2026-08-25]] and [[growth-operator]].

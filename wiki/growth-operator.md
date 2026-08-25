@@ -42,7 +42,7 @@ Not an Obsidian plugin. Not Electron or Tauri. Not a dump of thousands of wiki p
 
 D7 is Obsidian as the IDE. D5 is no deploy. The live page is compiled HTML: `python3 tools/render-growthos-graph.py` reads `growth/*.md` and writes `output/growthos-graph.html`. Counted 2026-08-25: 39 notes. Do not fake tweet chrome counts such as "14 active / 24 in pipeline". Those are chrome on [[src-deronin-growthos-vault]], not facts.
 
-Stack in the page: `3d-force-graph@1.73.3` UMD, HTML pills synced to the camera, GSAP for HUD and sidebar. Mixing SpriteText with HTML labels blanked nodes; stay on UMD + HTML overlays. See [[gsap-figma-note-2026-08-25]].
+Stack in the page: `3d-force-graph@1.73.3` UMD, custom fresnel spheres + additive sprite halos (not CSS blur orbs), HTML pills synced to the camera, GSAP for HUD and sidebar. Mixing SpriteText with HTML labels blanked nodes; stay on UMD + HTML overlays. See [[gsap-figma-note-2026-08-25]].
 
 Do not merge this graph with the wiki snapshot. [[graph]] · [[context-graph]]
 
