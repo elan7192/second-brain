@@ -24,6 +24,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Skill Recorder: trial only on a clean desktop with fake data, then SkillSpector, then enable. See [[skill-recorder]].
 - Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
 - Surprise spot-checks: lead inspects without warning; specialists stay on-lane; lessons go to wiki and a shared skill. One owner per job, report once, no empty acks. See [[spot-check]] and [[raptor-dispatch]].
+- Bot-to-bot voice is whatever is most fluent (English OK). Do not force Chinese between bots. lan E still gets Traditional Chinese from lead. See [[bot-voice]].
 
 ## arXiv tierlist
 

@@ -16,6 +16,8 @@ Agents share the [[audited-task-contract]]. They do not share free agent chat. T
 
 Do not send an empty ack. Report when there is a result, a blocker, or a SHA. See [[spot-check]].
 
+Voice between bots: [[bot-voice]]. Fluent language, English OK. Do not force Chinese on another bot.
+
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[src-chatgpt-play-2026-08-25]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]]

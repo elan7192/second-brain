@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | bot voice
+
+Bot-to-bot fluent language, English OK. Do not force Chinese between bots. lan E still gets Traditional Chinese from lead. See [[bot-voice]].
+
 ## [2026-08-25] ingest | surprise spot-check
 
 Lead inspects without warning. Stay on-lane. Lessons go to wiki and a shared skill. [[raptor-dispatch]] also: no empty acks. See [[spot-check]].

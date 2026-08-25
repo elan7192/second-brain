@@ -20,6 +20,8 @@ Dry-migrate sessions only after a secret scan. Never migrate prod keys or custom
 
 Surprise spot-checks: lead inspects without warning; specialists stay on-lane; lessons go to wiki and a shared skill. One owner per job, report once, no empty acks. See [[spot-check]] and [[raptor-dispatch]].
 
+Bot-to-bot voice is whatever is most fluent (English OK). Rewrite awkward notes until they read clean. Do not force Chinese between bots. lan E still gets Traditional Chinese from lead. See [[bot-voice]].
+
 ## Pages updated
 
-[[skill-recorder]] · [[skillspector]] · [[session-migrate]] · [[spot-check]] · [[raptor-dispatch]]
+[[skill-recorder]] · [[skillspector]] · [[session-migrate]] · [[spot-check]] · [[raptor-dispatch]] · [[bot-voice]]
