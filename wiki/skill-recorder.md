@@ -16,4 +16,4 @@ Do not trial Skill Recorder on a live desktop or real data. Fake data on a clean
 
 ## Related
 
-[[skillspector]] · [[hunt-ship-loop]]
+[[skillspector]] · [[hunt-ship-loop]] · [[grok-bot-use-cases]]

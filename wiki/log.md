@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] ingest | milesdeutscher grok bot use cases
+
+lan E share. 25 use cases. Overlap: skill trainer, overnight coder, knowledge base. See [[grok-bot-use-cases]] and [[src-milesdeutscher-grok-bot-use-cases]]. Not scout.
+
 ## [2026-08-25] ingest | bot voice caveman
 
 Bot-to-bot caveman. Facts, paths, SHAs. Style URL not ingested. See [[bot-voice]].
