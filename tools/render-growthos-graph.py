@@ -1,225 +1,543 @@
 #!/usr/bin/env python3
-"""Render growth/ as a 3D orbit graph. Click a node to read the note."""
+"""Render growth/ as a GROWTHOS constellation graph matching the DeRonin vault chrome."""
 
 from __future__ import annotations
 
 import json
-import re
+import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 GROWTH = ROOT / "growth"
+TEMPLATE = Path(__file__).resolve().parent / "growthos-graph.template.html"
 OUT = ROOT / "output" / "growthos-graph.html"
-LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
-FM = re.compile(r"^---\n(.*?)\n---\n", re.S)
-
-LAYER_COLOR = {
-    "core": "#f472b6",
-    "rulings": "#fb923c",
-    "playbooks": "#fbbf24",
-    "niches": "#34d399",
-    "creators": "#38bdf8",
-    "partners": "#e879f9",
-    "offers": "#c084fc",
-    "content": "#facc15",
-    "trends": "#22d3ee",
-    "memories": "#f9a8d4",
-    "insights": "#fde68a",
-    "strategies": "#a78bfa",
-    "competitors": "#818cf8",
-    "journal": "#94a3b8",
-}
-
-LAYER_SIZE = {
-    "core": 18,
-    "partners": 10,
-    "rulings": 9,
-    "playbooks": 9,
-    "niches": 8,
-    "creators": 8,
-    "content": 8,
-    "trends": 8,
-    "memories": 8,
-    "offers": 7,
-}
 
 
-def layer_of(text: str) -> str:
-    m = re.search(r"^growth_layer:\s*(\S+)", text, re.M)
-    return m.group(1) if m else "journal"
+def kb(slug: str) -> str:
+    path = GROWTH / f"{slug}.md"
+    n = max(1, round(path.stat().st_size / 1024))
+    return f"{n} KB"
 
 
-def title_of(text: str, slug: str) -> str:
-    m = re.search(r"^#\s+(.+)$", text, re.M)
-    return m.group(1).strip() if m else slug
+def body(slug: str) -> str:
+    path = GROWTH / f"{slug}.md"
+    text = path.read_text(encoding="utf-8")
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end != -1:
+            text = text[end + 4 :]
+    return text.strip()
 
 
-def body_of(text: str) -> str:
-    m = FM.match(text)
-    return text[m.end() :].strip() if m else text.strip()
+def file_item(name: str, slug: str, abbr: str) -> dict:
+    return {
+        "kind": "file",
+        "name": name,
+        "abbr": abbr,
+        "right": kb(slug),
+        "body": body(slug),
+    }
 
 
-def collect() -> tuple[list[dict], list[dict]]:
-    pages: dict[str, Path] = {p.stem: p for p in sorted(GROWTH.glob("*.md"))}
-    nodes = []
-    for slug, path in pages.items():
-        text = path.read_text(encoding="utf-8")
-        layer = layer_of(text)
+def folder_item(name: str, abbr: str, count: str, open_id: str) -> dict:
+    return {
+        "kind": "folder",
+        "name": name,
+        "abbr": abbr,
+        "right": count,
+        "open": open_id,
+    }
+
+
+def html_label(text: str, count: str | None = None) -> str:
+    extra = f'<span class="n">{count}</span>' if count else ""
+    return f"{text}{extra}"
+
+
+def build() -> dict:
+    n_notes = len(list(GROWTH.glob("*.md")))
+    hubs = [
+        ("partners", "PARTNERS", "#ff4da6", "hub", '<span class="fold"></span> PARTNERS'),
+        ("creators", "CREATORS", "#38bdf8", "cyan", "CREATORS"),
+        ("playbooks", "PLAYBOOKS", "#7aa2ff", "cyan", "PLAYBOOKS"),
+        ("rulings", "RULINGS", "#ff9f1a", "ruling", "RULINGS"),
+        ("memories", "MEMORIES", "#f9a8d4", "hub", "MEMORIES"),
+        ("content", "CONTENT ENGINE", "#ffe566", "metric", "CONTENT ENGINE"),
+        ("trends", "TREND RADAR", "#2ee6d6", "cyan", "TREND RADAR"),
+        ("offers", "OFFERS", "#c084fc", "violet", "OFFERS"),
+        ("strategies", "STRATEGIES", "#fb7185", "hub", "STRATEGIES"),
+        ("insights", "INSIGHTS", "#fde047", "metric", "INSIGHTS"),
+        ("journal", "JOURNAL", "#a78bfa", "violet", "JOURNAL"),
+        ("niches", "NICHES", "#4ade80", "hub", "NICHES"),
+        ("competitors", "COMPETITORS", "#818cf8", "leaf", "COMPETITORS"),
+    ]
+    leaves = [
+        ("partner-1", "partners", "PARTNER #1", "#ff4da6", "leaf", "PARTNER #1", None),
+        ("partner-2", "partners", "PARTNER #2", "#ff4da6", "leaf", "PARTNER #2", None),
+        ("partner-3", "partners", "PARTNER #3", "#ff4da6", "leaf", "PARTNER #3", None),
+        ("pipeline", "partners", "PIPELINE · 1", "#ff4da6", "leaf", "PIPELINE", "1"),
+        ("shortlist", "creators", "SHORTLIST · 3", "#38bdf8", "cyan", "SHORTLIST", "3"),
+        ("passed", "creators", "PASSED · 1", "#38bdf8", "leaf", "PASSED", "1"),
+        ("pb-scout", "playbooks", "SCOUT", "#7aa2ff", "leaf", "SCOUT", None),
+        ("pb-content", "playbooks", "SCRIPTS", "#7aa2ff", "leaf", "SCRIPTS", None),
+        ("pb-whop", "playbooks", "WHOP CLI", "#7aa2ff", "leaf", "WHOP CLI", None),
+        ("pb-outreach", "playbooks", "OUTREACH", "#7aa2ff", "leaf", "OUTREACH", None),
+        ("r-rev", "rulings", "REV-SHARE ≥ 25%", "#ff9f1a", "ruling", "REV-SHARE ≥ 25%", None),
+        ("r-proof", "rulings", "PROOF OF SKILL", "#ff9f1a", "ruling", "PROOF OF SKILL", None),
+        ("r-money", "rulings", "BOT NEVER MOVES MONEY", "#ff9f1a", "ruling", "BOT NEVER MOVES MONEY", None),
+        ("r-niche", "rulings", "ONE NICHE AT A TIME", "#ff9f1a", "ruling", "ONE NICHE AT A TIME", None),
+        ("r-conv", "rulings", "CONVERSION OVER VIEWS", "#ff9f1a", "ruling", "CONVERSION OVER VIEWS", None),
+        ("wins", "memories", "WINS", "#f9a8d4", "leaf", "WINS", None),
+        ("first-check", "memories", "FIRST CHECK", "#f9a8d4", "leaf", "FIRST CHECK", None),
+        ("referral", "memories", "REFERRAL", "#f9a8d4", "leaf", "REFERRAL", None),
+        ("fail", "memories", "VIEW-CHASE", "#f9a8d4", "leaf", "VIEW-CHASE", None),
+        ("view-sale", "content", "VIEW-SALE GAP", "#ffe566", "metric", "VIEW-SALE GAP", None),
+        ("mira-hooks", "content", "MIRA HOOKS", "#ffe566", "leaf", "MIRA HOOKS", None),
+        ("kai-hooks", "content", "KAI HOOKS", "#ffe566", "leaf", "KAI HOOKS", None),
+        ("week", "trends", "THIS WEEK", "#2ee6d6", "leaf", "THIS WEEK", None),
+        ("formats", "trends", "FORMATS · 5", "#2ee6d6", "leaf", "FORMATS", "5"),
+        ("o-mira", "offers", "COMMUNITY $49/MO", "#c084fc", "violet", "COMMUNITY $49/MO", None),
+        ("o-kai", "offers", "OPS $99/MO", "#c084fc", "leaf", "OPS $99/MO", None),
+        ("shadow", "strategies", "SHADOW OPERATOR", "#fb7185", "leaf", "SHADOW OPERATOR", None),
+        ("costs", "strategies", "COSTS MUST NOT SCALE", "#ffe566", "metric", "COSTS MUST NOT SCALE", None),
+        ("chess", "insights", "74k ≠ SALES", "#fde047", "metric", "74k ≠ SALES", None),
+        ("talent", "insights", "TALENT > BUDGET", "#fde047", "leaf", "TALENT > BUDGET", None),
+        ("daily", "journal", "DAILY NOTES", "#a78bfa", "leaf", "DAILY NOTES", None),
+        ("n-ugc", "niches", "AI UGC", "#4ade80", "leaf", "AI UGC", None),
+        ("n-ops", "niches", "AI OPS", "#4ade80", "leaf", "AI OPS", None),
+    ]
+
+    nodes: list[dict] = [
+        {
+            "id": "core",
+            "val": 7.5,
+            "color": "#ffffff",
+            "kind": "core",
+            "panel": "core",
+            "html": f'VAULT CORE <span class="n">{n_notes} notes</span>',
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "fx": 0,
+            "fy": 0,
+            "fz": 0,
+        }
+    ]
+    links: list[dict] = []
+    n_hubs = len(hubs)
+    for i, (hid, _label, color, kind, html) in enumerate(hubs):
+        ang = 2 * math.pi * i / n_hubs - math.pi / 2
+        elev = 18 * math.sin(i * 1.7)
+        x, y, z = 95 * math.cos(ang), elev, 95 * math.sin(ang)
         nodes.append(
             {
-                "id": slug,
-                "label": title_of(text, slug),
-                "layer": layer,
-                "color": LAYER_COLOR.get(layer, "#94a3b8"),
-                "val": LAYER_SIZE.get(layer, 6),
-                "path": path.relative_to(ROOT).as_posix(),
-                "body": body_of(text),
+                "id": hid,
+                "val": 4.2,
+                "color": color,
+                "kind": kind,
+                "panel": hid,
+                "html": html,
+                "x": x,
+                "y": y,
+                "z": z,
             }
         )
-    edges = []
-    seen: set[tuple[str, str]] = set()
-    for slug, path in pages.items():
-        for match in LINK.finditer(path.read_text(encoding="utf-8")):
-            target = match.group(1).strip()
-            if target not in pages or target == slug:
-                continue
-            pair = (slug, target)
-            if pair in seen:
-                continue
-            seen.add(pair)
-            edges.append({"source": slug, "target": target})
-    return nodes, edges
+        links.append({"source": "core", "target": hid, "distance": 100})
 
+    hub_pos = {n["id"]: n for n in nodes}
+    kids: dict[str, list[tuple]] = {}
+    for leaf in leaves:
+        kids.setdefault(leaf[1], []).append(leaf)
+    for hid, group in kids.items():
+        hx, hy, hz = hub_pos[hid]["x"], hub_pos[hid]["y"], hub_pos[hid]["z"]
+        for j, (lid, parent, _lab, color, kind, html, count) in enumerate(group):
+            a = 2 * math.pi * j / max(len(group), 1)
+            nodes.append(
+                {
+                    "id": lid,
+                    "val": 2.2,
+                    "color": color,
+                    "kind": kind,
+                    "panel": lid,
+                    "html": html_label(html, count) if count else html,
+                    "x": hx + 38 * math.cos(a),
+                    "y": hy + 10 * math.sin(a * 1.4),
+                    "z": hz + 38 * math.sin(a),
+                }
+            )
+            links.append({"source": parent, "target": lid, "distance": 42})
 
-def html(nodes: list[dict], edges: list[dict]) -> str:
-    data = json.dumps({"nodes": nodes, "links": edges}, ensure_ascii=False)
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GROWTHOS / VAULT</title>
-  <style>
-    html, body {{ margin: 0; height: 100%; background: #050508; color: #e5e7eb; font-family: ui-sans-serif, system-ui, sans-serif; overflow: hidden; }}
-    #graph {{ position: absolute; inset: 0; }}
-    #hud-tl {{ position: absolute; top: 28px; left: 32px; z-index: 2; letter-spacing: 0.28em; font-size: 13px; font-weight: 600; color: #f9a8d4; }}
-    #hud-br {{ position: absolute; bottom: 28px; left: 0; right: 0; text-align: center; z-index: 2; letter-spacing: 0.22em; font-size: 11px; color: #9ca3af; }}
-    #labels {{ position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }}
-    .nlabel {{ position: absolute; transform: translate(-50%, -120%); font-size: 13px; font-weight: 700; white-space: nowrap; text-shadow: 0 0 8px #050508, 0 0 2px #050508; }}
-    #side {{
-      position: absolute; top: 0; right: 0; width: 380px; height: 100%;
-      background: rgba(8, 8, 14, 0.92); border-left: 1px solid #27272a;
-      transform: translateX(100%); transition: transform 0.2s ease;
-      z-index: 3; overflow: auto; padding: 24px 22px 40px;
-    }}
-    #side.open {{ transform: translateX(0); }}
-    #side .crumb {{ font-size: 11px; color: #a78bfa; letter-spacing: 0.08em; text-transform: uppercase; }}
-    #side h1 {{ font-size: 18px; margin: 8px 0 12px; color: #fdf4ff; }}
-    #side .meta {{ font-size: 12px; color: #9ca3af; margin-bottom: 16px; }}
-    #side pre {{ white-space: pre-wrap; font-size: 13px; line-height: 1.45; color: #d4d4d8; font-family: ui-sans-serif, system-ui, sans-serif; }}
-    #close {{ position: absolute; top: 16px; right: 16px; background: none; border: 0; color: #9ca3af; font-size: 20px; cursor: pointer; }}
-  </style>
-</head>
-<body>
-  <div id="hud-tl">GROWTHOS / VAULT / OBSIDIAN VAULT / SECOND BRAIN</div>
-  <div id="hud-br">DRAG TO ORBIT · SCROLL TO FLY · CLICK A NODE TO OPEN THE NOTE</div>
-  <div id="graph"></div>
-  <div id="labels"></div>
-  <aside id="side">
-    <button id="close" type="button" aria-label="Close">×</button>
-    <div class="crumb" id="crumb"></div>
-    <h1 id="title"></h1>
-    <div class="meta" id="meta"></div>
-    <pre id="body"></pre>
-  </aside>
-  <script src="https://unpkg.com/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
-  <script>
-    const DATA = {data};
-    const side = document.getElementById('side');
-    const labels = document.getElementById('labels');
-    function openNote(node) {{
-      document.getElementById('crumb').textContent = node.path;
-      document.getElementById('title').textContent = node.label;
-      document.getElementById('meta').textContent = node.layer + ' · ' + node.id;
-      document.getElementById('body').textContent = node.body;
-      side.classList.add('open');
-    }}
-    document.getElementById('close').onclick = () => side.classList.remove('open');
-    const Graph = ForceGraph3D()(document.getElementById('graph'))
-      .graphData(DATA)
-      .backgroundColor('#050508')
-      .showNavInfo(false)
-      .linkColor(() => 'rgba(244,114,182,0.45)')
-      .linkWidth(0.6)
-      .linkOpacity(0.5)
-      .nodeRelSize(5)
-      .nodeVal('val')
-      .nodeColor('color')
-      .nodeOpacity(1)
-      .nodeLabel(n => n.label)
-      .onNodeClick(openNote);
-    Graph.d3Force('charge').strength(-180);
-    Graph.d3Force('link').distance(56);
-    Graph.cameraPosition({{ x: 0, y: 80, z: 520 }});
-    function paintLabels() {{
-      const nodes = Graph.graphData().nodes;
-      if (!labels.childElementCount) {{
-        nodes.forEach(node => {{
-          const el = document.createElement('div');
-          el.className = 'nlabel';
-          el.textContent = node.label.replace(/^#\\s*/, '');
-          el.style.color = node.color;
-          el.dataset.id = node.id;
-          labels.appendChild(el);
-        }});
-      }}
-      const kids = labels.children;
-      for (let i = 0; i < nodes.length; i++) {{
-        const node = nodes[i];
-        const el = kids[i];
-        if (node.x == null) continue;
-        const c = Graph.graph2ScreenCoords(node.x, node.y, node.z);
-        el.style.left = c.x + 'px';
-        el.style.top = c.y + 'px';
-      }}
-    }}
-    Graph.onEngineTick(paintLabels);
-    let angle = 0;
-    let holding = false;
-    let ready = false;
-    Graph.onEngineStop(() => {{ ready = true; paintLabels(); }});
-    setTimeout(() => {{ ready = true; }}, 2500);
-    const dist = 480;
-    setInterval(() => {{
-      if (holding || !ready) return;
-      angle += 0.004;
-      Graph.cameraPosition({{
-        x: dist * Math.sin(angle),
-        z: dist * Math.cos(angle),
-        y: 60
-      }});
-      paintLabels();
-    }}, 40);
-    window.addEventListener('pointerdown', () => {{ holding = true; }});
-    window.addEventListener('pointerup', () => {{ holding = false; }});
-    window.GROWTHOS = {{
-      open: (id) => {{
-        const node = DATA.nodes.find(n => n.id === id);
-        if (node) openNote(node);
-      }},
-      data: DATA
-    }};
-  </script>
-</body>
-</html>
-"""
+    panels = {
+        "core": {
+            "crumb": "vault /",
+            "title": "VAULT CORE",
+            "meta": f"folder · {n_notes} notes · operator memory",
+            "items": [
+                folder_item("partners/", "PAR", "3 items", "partners"),
+                folder_item("creators/", "CRE", "4 items", "creators"),
+                folder_item("playbooks/", "PLA", "4 items", "playbooks"),
+                folder_item("rulings/", "RUL", "5 items", "rulings"),
+                folder_item("memories/", "MEM", "4 items", "memories"),
+                folder_item("content/", "CON", "3 items", "content"),
+                folder_item("trends/", "TRD", "2 items", "trends"),
+                folder_item("offers/", "OFF", "2 items", "offers"),
+                folder_item("niches/", "NIC", "2 items", "niches"),
+                file_item("_core.md", "growth-core", "COR"),
+            ],
+        },
+        "partners": {
+            "crumb": "vault / partners /",
+            "title": "PARTNERS",
+            "meta": "folder · 2 live · 1 pipeline",
+            "items": [
+                folder_item("partner-#1/", "P1", "3 items", "partner-1"),
+                folder_item("partner-#2/", "P2", "3 items", "partner-2"),
+                folder_item("partner-#3/", "P3", "2 items", "partner-3"),
+                file_item("_overview.md", "growth-partners", "PAR"),
+            ],
+        },
+        "partner-1": {
+            "crumb": "vault / partners / partner-#1 /",
+            "title": "PARTNER #1",
+            "meta": "folder · bot-maintained · DEMO",
+            "items": [
+                file_item("_index.md", "growth-partner-mira", "P1"),
+                file_item("scout.md", "growth-scout-mira", "SC"),
+                file_item("offer.md", "growth-offer-mira", "OF"),
+                file_item("content.md", "growth-content-mira", "CT"),
+            ],
+        },
+        "partner-2": {
+            "crumb": "vault / partners / partner-#2 /",
+            "title": "PARTNER #2",
+            "meta": "folder · bot-maintained · DEMO",
+            "items": [
+                file_item("_index.md", "growth-partner-kai", "P2"),
+                file_item("scout.md", "growth-scout-kai", "SC"),
+                file_item("offer.md", "growth-offer-kai", "OF"),
+                file_item("content.md", "growth-content-kai", "CT"),
+            ],
+        },
+        "partner-3": {
+            "crumb": "vault / partners / partner-#3 /",
+            "title": "PARTNER #3",
+            "meta": "folder · bot-maintained · DEMO",
+            "items": [
+                file_item("_index.md", "growth-partner-elena", "P3"),
+                file_item("scout.md", "growth-scout-elena", "SC"),
+            ],
+        },
+        "pipeline": {
+            "crumb": "vault / partners / pipeline /",
+            "title": "PIPELINE",
+            "meta": "folder · 1 in pipeline",
+            "items": [folder_item("partner-#3/", "P3", "2 items", "partner-3")],
+        },
+        "creators": {
+            "crumb": "vault / creators /",
+            "title": "CREATORS",
+            "meta": "folder · shortlist 3 · passed 1",
+            "items": [
+                file_item("_overview.md", "growth-creators", "CRE"),
+                file_item("mira.md", "growth-scout-mira", "MI"),
+                file_item("kai.md", "growth-scout-kai", "KA"),
+                file_item("elena.md", "growth-scout-elena", "EL"),
+                file_item("passed-viewfarmer.md", "growth-passed-viewfarmer", "PS"),
+            ],
+        },
+        "shortlist": {
+            "crumb": "vault / creators / shortlist /",
+            "title": "SHORTLIST",
+            "meta": "folder · 3 keeps",
+            "items": [
+                file_item("mira.md", "growth-scout-mira", "MI"),
+                file_item("kai.md", "growth-scout-kai", "KA"),
+                file_item("elena.md", "growth-scout-elena", "EL"),
+            ],
+        },
+        "passed": {
+            "crumb": "vault / creators / passed /",
+            "title": "PASSED",
+            "meta": "folder · 1 pass",
+            "items": [file_item("viewfarmer.md", "growth-passed-viewfarmer", "PS")],
+        },
+        "playbooks": {
+            "crumb": "vault / playbooks /",
+            "title": "PLAYBOOKS",
+            "meta": "folder · do not send · do not run live Whop",
+            "items": [
+                file_item("_overview.md", "growth-playbooks", "PLA"),
+                file_item("scout.md", "growth-playbook-scout", "SC"),
+                file_item("content.md", "growth-playbook-content", "CT"),
+                file_item("whop.md", "growth-playbook-whop", "WH"),
+                file_item("outreach.md", "growth-playbook-outreach", "OR"),
+            ],
+        },
+        "pb-scout": {
+            "crumb": "vault / playbooks /",
+            "title": "SCOUT",
+            "meta": "file · playbook",
+            "items": [file_item("scout.md", "growth-playbook-scout", "SC")],
+        },
+        "pb-content": {
+            "crumb": "vault / playbooks /",
+            "title": "SCRIPTS",
+            "meta": "file · playbook",
+            "items": [file_item("content.md", "growth-playbook-content", "CT")],
+        },
+        "pb-whop": {
+            "crumb": "vault / playbooks /",
+            "title": "WHOP CLI",
+            "meta": "file · do not run live",
+            "items": [file_item("whop.md", "growth-playbook-whop", "WH")],
+        },
+        "pb-outreach": {
+            "crumb": "vault / playbooks /",
+            "title": "OUTREACH",
+            "meta": "file · do not send",
+            "items": [file_item("outreach.md", "growth-playbook-outreach", "OR")],
+        },
+        "rulings": {
+            "crumb": "vault / rulings /",
+            "title": "RULINGS",
+            "meta": "folder · one dated line each",
+            "items": [
+                file_item("_overview.md", "growth-rulings", "RUL"),
+                file_item("rev-share.md", "growth-ruling-revshare", "25"),
+                file_item("proof.md", "growth-ruling-proof", "PR"),
+                file_item("no-money.md", "growth-ruling-no-money", "$$"),
+                file_item("one-niche.md", "growth-ruling-one-niche", "1N"),
+                file_item("conversion.md", "growth-ruling-conversion", "CV"),
+            ],
+        },
+        "r-rev": {
+            "crumb": "vault / rulings /",
+            "title": "REV-SHARE ≥ 25%",
+            "meta": "ruling · 2026-08-24",
+            "items": [file_item("rev-share.md", "growth-ruling-revshare", "25")],
+        },
+        "r-proof": {
+            "crumb": "vault / rulings /",
+            "title": "PROOF OF SKILL",
+            "meta": "ruling · 2026-08-24",
+            "items": [file_item("proof.md", "growth-ruling-proof", "PR")],
+        },
+        "r-money": {
+            "crumb": "vault / rulings /",
+            "title": "BOT NEVER MOVES MONEY",
+            "meta": "ruling · 2026-08-24",
+            "items": [file_item("no-money.md", "growth-ruling-no-money", "$$")],
+        },
+        "r-niche": {
+            "crumb": "vault / rulings /",
+            "title": "ONE NICHE AT A TIME",
+            "meta": "ruling · 2026-08-24",
+            "items": [file_item("one-niche.md", "growth-ruling-one-niche", "1N")],
+        },
+        "r-conv": {
+            "crumb": "vault / rulings /",
+            "title": "CONVERSION OVER VIEWS",
+            "meta": "ruling · 2026-08-24",
+            "items": [file_item("conversion.md", "growth-ruling-conversion", "CV")],
+        },
+        "memories": {
+            "crumb": "vault / memories /",
+            "title": "MEMORIES",
+            "meta": "folder · bot-maintained",
+            "items": [
+                folder_item("wins/", "WIN", "3 items", "wins"),
+                file_item("_overview.md", "growth-memories", "MEM"),
+                file_item("view-chase.md", "growth-fail-view-chase", "FL"),
+            ],
+        },
+        "wins": {
+            "crumb": "vault / memories / wins /",
+            "title": "WINS",
+            "meta": "folder · bot-maintained",
+            "items": [
+                file_item("_index.md", "growth-memories", "IX"),
+                file_item("first-check.md", "growth-win-first-check", "FC"),
+                file_item("referral.md", "growth-win-referral", "RF"),
+            ],
+        },
+        "first-check": {
+            "crumb": "vault / memories / wins /",
+            "title": "FIRST CHECK",
+            "meta": "file · DEMO",
+            "items": [file_item("first-check.md", "growth-win-first-check", "FC")],
+        },
+        "referral": {
+            "crumb": "vault / memories / wins /",
+            "title": "REFERRAL",
+            "meta": "file · DEMO",
+            "items": [file_item("referral.md", "growth-win-referral", "RF")],
+        },
+        "fail": {
+            "crumb": "vault / memories /",
+            "title": "VIEW-CHASE",
+            "meta": "file · failure",
+            "items": [file_item("view-chase.md", "growth-fail-view-chase", "FL")],
+        },
+        "content": {
+            "crumb": "vault / content /",
+            "title": "CONTENT ENGINE",
+            "meta": "folder · views vs sales",
+            "items": [
+                file_item("_overview.md", "growth-content", "CON"),
+                file_item("mira.md", "growth-content-mira", "MI"),
+                file_item("kai.md", "growth-content-kai", "KA"),
+            ],
+        },
+        "view-sale": {
+            "crumb": "vault / content /",
+            "title": "VIEW-SALE GAP",
+            "meta": "file · conversion",
+            "items": [
+                file_item("mira.md", "growth-content-mira", "MI"),
+                file_item("kai.md", "growth-content-kai", "KA"),
+            ],
+        },
+        "mira-hooks": {
+            "crumb": "vault / content /",
+            "title": "MIRA HOOKS",
+            "meta": "file · DEMO",
+            "items": [file_item("mira.md", "growth-content-mira", "MI")],
+        },
+        "kai-hooks": {
+            "crumb": "vault / content /",
+            "title": "KAI HOOKS",
+            "meta": "file · DEMO",
+            "items": [file_item("kai.md", "growth-content-kai", "KA")],
+        },
+        "trends": {
+            "crumb": "vault / trends /",
+            "title": "TREND RADAR",
+            "meta": "folder · this week",
+            "items": [
+                file_item("_overview.md", "growth-trends", "TRD"),
+                file_item("2026-08-25.md", "growth-trend-2026-08-25", "WK"),
+            ],
+        },
+        "week": {
+            "crumb": "vault / trends /",
+            "title": "THIS WEEK",
+            "meta": "file · 2026-08-25",
+            "items": [file_item("2026-08-25.md", "growth-trend-2026-08-25", "WK")],
+        },
+        "formats": {
+            "crumb": "vault / trends /",
+            "title": "FORMATS",
+            "meta": "file · 5 converting this week",
+            "items": [file_item("2026-08-25.md", "growth-trend-2026-08-25", "WK")],
+        },
+        "offers": {
+            "crumb": "vault / offers /",
+            "title": "OFFERS",
+            "meta": "folder · DEMO prices",
+            "items": [
+                file_item("_overview.md", "growth-offers", "OFF"),
+                file_item("mira.md", "growth-offer-mira", "M$"),
+                file_item("kai.md", "growth-offer-kai", "K$"),
+            ],
+        },
+        "o-mira": {
+            "crumb": "vault / offers /",
+            "title": "COMMUNITY $49/MO",
+            "meta": "file · DEMO",
+            "items": [file_item("mira.md", "growth-offer-mira", "M$")],
+        },
+        "o-kai": {
+            "crumb": "vault / offers /",
+            "title": "OPS $99/MO",
+            "meta": "file · DEMO",
+            "items": [file_item("kai.md", "growth-offer-kai", "K$")],
+        },
+        "strategies": {
+            "crumb": "vault / strategies /",
+            "title": "STRATEGIES",
+            "meta": "folder",
+            "items": [file_item("shadow-operator.md", "growth-strategy", "SH")],
+        },
+        "shadow": {
+            "crumb": "vault / strategies /",
+            "title": "SHADOW OPERATOR",
+            "meta": "file",
+            "items": [file_item("shadow-operator.md", "growth-strategy", "SH")],
+        },
+        "costs": {
+            "crumb": "vault / strategies /",
+            "title": "COSTS MUST NOT SCALE",
+            "meta": "ruling · strategy",
+            "items": [file_item("shadow-operator.md", "growth-strategy", "SH")],
+        },
+        "insights": {
+            "crumb": "vault / insights /",
+            "title": "INSIGHTS",
+            "meta": "folder",
+            "items": [file_item("_overview.md", "growth-insights", "IN")],
+        },
+        "chess": {
+            "crumb": "vault / insights /",
+            "title": "74k ≠ SALES",
+            "meta": "file · author example unverified",
+            "items": [file_item("_overview.md", "growth-insights", "IN")],
+        },
+        "talent": {
+            "crumb": "vault / insights /",
+            "title": "TALENT > BUDGET",
+            "meta": "file",
+            "items": [file_item("_overview.md", "growth-insights", "IN")],
+        },
+        "journal": {
+            "crumb": "vault / journal /",
+            "title": "JOURNAL",
+            "meta": "folder",
+            "items": [file_item("2026-08-25.md", "growth-journal-2026-08-25", "JL")],
+        },
+        "daily": {
+            "crumb": "vault / journal /",
+            "title": "DAILY NOTES",
+            "meta": "file",
+            "items": [file_item("2026-08-25.md", "growth-journal-2026-08-25", "JL")],
+        },
+        "niches": {
+            "crumb": "vault / niches /",
+            "title": "NICHES",
+            "meta": "folder · one live",
+            "items": [
+                file_item("ai-ugc.md", "growth-niche-ai-ugc", "UG"),
+                file_item("ai-ops.md", "growth-niche-ai-ops", "OP"),
+            ],
+        },
+        "n-ugc": {
+            "crumb": "vault / niches /",
+            "title": "AI UGC",
+            "meta": "file · current pick",
+            "items": [file_item("ai-ugc.md", "growth-niche-ai-ugc", "UG")],
+        },
+        "n-ops": {
+            "crumb": "vault / niches /",
+            "title": "AI OPS",
+            "meta": "file · watch-only",
+            "items": [file_item("ai-ops.md", "growth-niche-ai-ops", "OP")],
+        },
+        "competitors": {
+            "crumb": "vault / competitors /",
+            "title": "COMPETITORS",
+            "meta": "folder · empty of named firms",
+            "items": [file_item("_overview.md", "growth-competitors", "CP")],
+        },
+    }
+    return {"nodes": nodes, "links": links, "panels": panels}
 
 
 def main() -> int:
-    nodes, edges = collect()
-    OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(html(nodes, edges), encoding="utf-8")
-    print(f"nodes={len(nodes)} links={len(edges)} -> {OUT.relative_to(ROOT)}")
+    data = build()
+    html = TEMPLATE.read_text(encoding="utf-8").replace(
+        "__GROWTH_DATA__", json.dumps(data, ensure_ascii=False)
+    )
+    OUT.write_text(html, encoding="utf-8")
+    print(f"nodes={len(data['nodes'])} links={len(data['links'])} panels={len(data['panels'])} -> {OUT.relative_to(ROOT)}")
     return 0
 
 
