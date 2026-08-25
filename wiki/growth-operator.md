@@ -36,6 +36,20 @@ Partner names, handles, and dollar figures in `growth/` are **DEMO**. They exist
 
 Vault still does not post, pay, send, or create live Whop objects. See D5.
 
+## 3D graph path
+
+Not an Obsidian plugin. Not Electron or Tauri. Not a dump of thousands of wiki pages.
+
+D7 is Obsidian as the IDE. D5 is no deploy. The live page is compiled HTML: `python3 tools/render-growthos-graph.py` reads `growth/*.md` and writes `output/growthos-graph.html`. Counted 2026-08-25: 39 notes. Do not fake tweet chrome counts such as "14 active / 24 in pipeline". Those are chrome on [[src-deronin-growthos-vault]], not facts.
+
+Stack in the page: `3d-force-graph@1.73.3` UMD, HTML pills synced to the camera, GSAP for HUD and sidebar. Mixing SpriteText with HTML labels blanked nodes; stay on UMD + HTML overlays. See [[gsap-figma-note-2026-08-25]].
+
+Do not merge this graph with the wiki snapshot. [[graph]] · [[context-graph]]
+
+Existing "cyberpunk vault" clones: wiki silent. Web search 2026-08-25 hit Exa rate limit. Do not name tools from memory.
+
+Fork answer: [[growthos-3d-gap-2026-08-25]].
+
 ## How to run it
 
 1. Read [[growth-core]], then only the pages it points to.
@@ -43,7 +57,7 @@ Vault still does not post, pay, send, or create live Whop objects. See D5.
 3. Open `output/growthos-graph.html` for the 3D graph. Figma is not required for that page; see [[gsap-figma-note-2026-08-25]].
 4. File the briefing. Do not send.
 
-Latest briefing: [[growth-briefing-2026-08-25]].
+Latest briefing: [[growth-briefing-2026-08-25]]. Graph fork: [[growthos-3d-gap-2026-08-25]].
 
 ## Related
 

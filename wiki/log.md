@@ -10,6 +10,10 @@ updated: 2026-08-25
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-25] query | GrowthOS 3D plugin vs clone
+
+Neither. Compiled subgraph HTML, not a plugin and not a product hunt. D5, D7, [[context-graph]]. See [[growthos-3d-gap-2026-08-25]] and [[growth-operator]].
+
 ## [2026-08-25] implement | GrowthOS GSAP chrome
 
 Sidebar was always on-screen (`#side.open` had no CSS). GSAP `xPercent` open/close, compositor overlay paint, core flare. Figma MCP needs auth and is 2D; not used. See [[gsap-figma-note-2026-08-25]] and [[growth-operator]].
