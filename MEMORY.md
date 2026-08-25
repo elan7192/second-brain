@@ -44,6 +44,12 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - The bounty/flow product is named LanBB. semantica is a tool inside it, not the project name.
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
+## GrowthOS
+
+- Growth operator notes live in `growth/`. Load `growth/growth-core.md` first. See [[growth-operator]].
+- Partner names and dollar figures in `growth/` are DEMO unless a note says otherwise. Do not treat them as live deals.
+- Do not outreach, create live Whop products, or move money from this vault. D5 still holds.
+
 ## Open questions
 
 - No personal identity or goals have been captured yet. Do not invent them.

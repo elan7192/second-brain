@@ -18,6 +18,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 4. Useful answers go to `wiki/` or `output/`.
 5. Periodic lint: orphans, stale claims, [[contradictions]].
 6. Methods learned while doing work go into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
+7. GrowthOS operator notes live in `growth/`. Load [[growth-core]]. Do not mix DEMO partner figures into [[MEMORY]]. See [[growth-operator]].
 
 ## What the model sees
 

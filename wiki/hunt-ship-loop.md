@@ -26,8 +26,10 @@ Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are 
 
 [[hunt]], [[ship]], and [[maps]] are indexes over the compiler. They do not store a second copy of the knowledge.
 
+`growth/` is operator memory for [[growth-operator]], not a second wiki. DEMO notes stay in `growth/`. Compiled claims about the system stay on [[growth-operator]].
+
 Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still parked.
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]]
+[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]]

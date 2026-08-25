@@ -19,11 +19,13 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 - [[contradictions]] — unresolved conflicts
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
+- [[GrowthOS]] — growth operator door
 
 ## Projects
 
 | Page | One line |
 | --- | --- |
+| [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners. Graph: output/growthos-graph.html |
 | [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
@@ -51,6 +53,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
+| [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
@@ -104,6 +107,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
 | [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |
 | [[src-play-methods-2026-08-25]] | 2026-08-25 | Play methods. Path `/workspace/play-until-2pm/METHODS.md`. Not in raw/ |

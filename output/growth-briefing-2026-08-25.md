@@ -1,0 +1,107 @@
+---
+type: output
+tags:
+  - growth
+created: 2026-08-25
+updated: 2026-08-25
+---
+
+# GrowthOS briefing · 2026-08-25
+
+Generated from `growth/`. Not from chat memory. Target: **next AI UGC creator (unnamed)**.
+
+Cite: [[growth-core]]. Demo names are DEMO. Vault does not post, pay, send, or write live Whop objects.
+
+## 1. Rulings (do not re-argue)
+
+From [[growth-rulings]]:
+
+- [[growth-ruling-revshare]]: never below 25% rev-share.
+- [[growth-ruling-proof]]: never partner without proof of skill.
+- [[growth-ruling-no-money]]: bot never deletes products, changes price, or moves money without a yes.
+- [[growth-ruling-one-niche]]: one hyped niche at a time. Current pick is AI UGC.
+- [[growth-ruling-conversion]]: write what sells the offer, not what only pulls views.
+
+## 2. What prior partners taught
+
+Roster from [[growth-partners]]:
+
+DEMO roster. Hub for [[growth-core]].
+
+| Partner | Status | Rev-share | Notes |
+| --- | --- | --- | --- |
+| [[growth-partner-mira]] | live | 30% | First check. [[growth-win-first-check]] |
+| [[growth-partner-kai]] | live | 30% | Referral. [[growth-win-referral]] |
+| [[growth-partner-elena]] | pipeline | : | 15% ask. Blocked by [[growth-ruling-revshare]] |
+
+Elena is pipeline because of a 15% ask. Floor still 25%. See [[growth-partner-elena]].
+
+Mira conversion table ([[growth-content-mira]]):
+
+Partner: [[growth-partner-mira]]. Offer: [[growth-offer-mira]]. Hub: [[growth-content]].
+
+| Topic | Hook | Views | Sales | Class |
+| --- | --- | --- | --- | --- |
+| 3 hooks that get brand replies | "Brands asked me for the template. I sold the workflow instead." | 12000 | 18 | sells |
+| How I batch 10 product ads | "Same body. Ten first lines. One afternoon." | 8600 | 11 | sells |
+| AI girl eats sandwich | "She bites it and the comments go feral." | 89000 | 1 | views |
+
+Kai conversion table ([[growth-content-kai]]):
+
+Partner: [[growth-partner-kai]]. Offer: [[growth-offer-kai]]. Hub: [[growth-content]].
+
+| Topic | Hook | Views | Sales | Class |
+| --- | --- | --- | --- | --- |
+| Replace a $4k/mo VA with this chain | "I stopped hiring for this task last month." | 5400 | 9 | sells |
+| One SOP, three tools | "If you still paste between tabs, watch this." | 4100 | 7 | sells |
+| GPT does my inbox | "Watch the bot clear 40 emails." | 31000 | 0 | views |
+
+Do not write sandwich/inbox spectacle for the next UGC partner. Copy the `sells` rows.
+
+## 3. This week's formats
+
+From [[growth-trend-2026-08-25]]:
+
+Hub: [[growth-trends]]. Niche: [[growth-niche-ai-ugc]].
+
+Public 2026 UGC-ad writeups, not a platform ranking. Cite the URL if you reuse a line.
+
+## Formats converting this week
+
+1. **Hook first, body constant.** Write 5-10 first lines. Keep the same body and CTA. Test the hook, not the aesthetic. ([CraftStory](https://craftstory.com/blog/how-to-make-ugc-ads-with-ai/), [ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))
+2. **Four hook families.** Problem call-out. Contrarian. Before/after or 14-day result. Curiosity gap. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/))
+3. **30-35s spine.** Hook 0-3s, problem, product reveal, one proof number, CTA. ([ugcad.ai](https://ugcad.ai/blog/how-to-create-ai-ugc-video-ads/), [GetShorts](https://getshorts.ai/blog/ai-ugc-video-ads-guide))
+4. **Native, not polished.** Handheld, slight mess, 9:16, captions burned in. Over-clean reads as an ad. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))
+5. **Talking-head plus cutaways.** Hook on camera, then product / problem / demo. 30s avatar monologue looks cheap. ([Oakgen](https://oakgen.ai/blog/advanced-ai-ugc-ad-workflow-2026))
+
+## Kill / scale (vendor heuristics, unverified)
+
+Kill hook rate under 20%. Scale variants 20%+ above account average. 2k-3k impressions before a pause call. Treat as vendor advice, not our data.
+
+## 4. Playbooks to load
+
+From [[growth-playbooks]]:
+
+Prompts and command shapes. Hub for [[growth-core]].
+
+- [[growth-playbook-scout]] : find cracked creators with no offer
+- [[growth-playbook-content]] : write for sales, not views
+- [[growth-playbook-whop]] : offer wiring. Do not run live.
+- [[growth-playbook-outreach]] : hole they already see. Do not send.
+
+Human gate: D5. These are files. They are not permission to post, pay, or send.
+
+## 5. Author insight (unverified as our data)
+
+Chess example on [[growth-insights]]: 74k views / 51 sales vs 135k views / 2 sales. Use the shape. Do not treat those counts as ours.
+
+## 6. Hard stops for this run
+
+- If next AI UGC creator (unnamed) has no inspectable work, stop. [[growth-ruling-proof]]
+- If terms go below 25%, stop. [[growth-ruling-revshare]]
+- If a command would delete, reprice, or move money, stop. [[growth-ruling-no-money]]
+- File the next note under `growth/`. Do not send outreach.
+
+## Sources used
+
+[[growth-core]] · [[growth-rulings]] · [[growth-partners]] · [[growth-content-mira]] · [[growth-content-kai]] · [[growth-trend-2026-08-25]] · [[growth-playbooks]] · [[growth-insights]] · [[growth-partner-elena]] · [[src-deronin-growthos-vault]]

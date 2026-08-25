@@ -43,9 +43,10 @@ Source: [[src-milesdeutscher-grok-bot-use-cases]].
 - 7 skill trainer: [[skill-recorder]] then [[skillspector]]
 - 6 overnight coder: coding agents. No extra claim.
 - 25 personal knowledge base curator: [[llm-wiki]]
+- 5 sponsor/BD finder and 19 competitive intelligence scout: overlap the scout layer of [[growth-operator]]. Not the same product.
 
-The other 22 are listed. They are not built.
+The other 20 are listed. They are not built.
 
 ## Related
 
-[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]]
+[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]]
