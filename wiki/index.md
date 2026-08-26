@@ -64,6 +64,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
+| [[multi-source-verdict]] | >1 source. One list. Human verdict. No Whop clone |
 | [[ai-sovereignty]] | Your data, your model. Karp synthesis. Unverified without URL |
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
@@ -119,6 +120,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-everestchris6-revenue-2026-08-26]] | 2026-08-26 | lan E share. Revenue guide. Article not dumped. Whop skip |
 | [[src-av1dlive-loop-graph-2026-08-26]] | 2026-08-26 | lan E share. Loop/graph guide. Article not dumped |
 | [[src-openai-codex-cli-compact]] | 2026-08-27 | Official /compact and /memories |
 | [[src-community-compaction]] | 2026-08-27 | Community compact notes. Unverified paths |

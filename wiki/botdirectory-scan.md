@@ -30,6 +30,8 @@ Papers harvest stays frozen. Scout stays on-demand. See [[grok-bot-pro-tips]] fo
 
 The other ranked gaps belong to Engineer, PM, Product, Designer. Not compiled here.
 
+Whop hustle stays skipped. Revenue-machine clone is skip. See [[multi-source-verdict]].
+
 ## Related
 
-[[stale-fact-detector]] · [[llm-wiki]] · [[file-memory]] · [[grok-bot-pro-tips]] · [[src-botdirectory-picks-2026-08-27]]
+[[stale-fact-detector]] · [[llm-wiki]] · [[file-memory]] · [[grok-bot-pro-tips]] · [[src-botdirectory-picks-2026-08-27]] · [[multi-source-verdict]]
