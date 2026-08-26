@@ -59,6 +59,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
 | [[grok-bot-pro-tips]] | Ben Lang 10 tips from @bot team |
+| [[grok-bot-tape]] | Show the tape. Cite or omit. Silence is valid |
 | [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
 | [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
 | [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
@@ -120,6 +121,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-0xcarnagee-tape-2026-08-27]] | 2026-08-27 | lan E share. Tape. 11-step roster not cloned |
 | [[src-everestchris6-revenue-2026-08-26]] | 2026-08-26 | lan E share. Revenue guide. Article not dumped. Whop skip |
 | [[src-av1dlive-loop-graph-2026-08-26]] | 2026-08-26 | lan E share. Loop/graph guide. Article not dumped |
 | [[src-openai-codex-cli-compact]] | 2026-08-27 | Official /compact and /memories |

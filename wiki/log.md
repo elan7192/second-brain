@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | grok bot tape
+
+lan E share. Article not dumped. 58min video not ingested. See [[grok-bot-tape]] and [[src-0xcarnagee-tape-2026-08-27]]. Not pushed.
+
 ## [2026-08-27] ingest | multi-source verdict
 
 lan E share. Article not dumped. Whop skip. See [[multi-source-verdict]] and [[src-everestchris6-revenue-2026-08-26]]. Not pushed.
