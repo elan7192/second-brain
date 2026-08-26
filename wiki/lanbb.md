@@ -8,7 +8,15 @@ updated: 2026-08-27
 
 # LanBB
 
-Product name for the bounty/flow work. semantica is a tool inside it, not the project name.
+Product name for the bounty/flow work. **BB = bug bounty flow.** That line is identity, not contamination.
+
+Source: [[src-lan-e-lanbb-bb-2026-08-27]] (lan E 2026-08-27 07:36 Taipei).
+
+semantica is a tool inside it, not the project name.
+
+Presence Lab ChatGPT mapping LanBB → bounty was closer than PM denials. Skills it listed (recon / IDOR / nuclei) stay `unverified` Free-chat hallucination. Do not compile them. Do not dump exploits.
+
+Hunter input sources: [[lostsec]] (coffinxp, @lostsec_) and [[zack0x01]]. See [[hunter-follows]].
 
 Repo (2026-08-24, lanbb): [elan7192/LanBB](https://github.com/elan7192/LanBB), default branch `main`.
 
@@ -22,4 +30,4 @@ The vault did not create this repo. Wiki is still silent on whether any semantic
 
 ## Related
 
-[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]]
+[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]]

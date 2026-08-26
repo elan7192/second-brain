@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | LanBB BB = bug bounty flow
+
+lan E 07:36 Taipei. Identity, not contamination. Hunter follows as input sources, not exploit dump. Presence Lab recon/IDOR/nuclei unverified. Brief: [[ingest-brief-2026-08-27-lanbb-bb]]. Not pushed.
+
 ## [2026-08-27] ingest | portable-memory, pipeline-honesty, assign-execute-verify
 
 Delta only. No Brain clone. No Hawkes. 24h intel OFF. Skip listicle, Claude-AD, Kimi, Browser Use plugin.

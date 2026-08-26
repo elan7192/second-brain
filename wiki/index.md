@@ -26,7 +26,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | Page | One line |
 | --- | --- |
 | [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners. Graph: output/growthos-graph.html |
-| [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
+| [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
@@ -66,6 +66,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[portable-memory]] | Git truth. FTS5 disposable. Do not clone Brain |
 | [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
 | [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
+| [[hunter-follows]] | lostsec + zack0x01 as input sources. Not an exploit dump |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
 | [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
@@ -129,6 +130,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lan-e-lanbb-bb-2026-08-27]] | 2026-08-27 | LanBB BB = bug bounty flow |
 | [[src-av1dlive-portable-memory]] | 2026-08-27 | Portable memory. Do not clone Brain |
 | [[src-ruujss-pipeline-honesty]] | 2026-08-27 | Pipeline honesty. Skip Hawkes |
 | [[src-lummox-assign-execute-verify]] | 2026-08-27 | AEV. 24h intel OFF |
@@ -233,6 +235,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | Page | One line |
 | --- | --- |
 | [[alex-karp]] | Palantir CEO. Sovereignty claims unverified without URL |
+| [[lostsec]] | coffinxp / @lostsec_. Hunter input source. Not a dump |
+| [[zack0x01]] | Hunter input source. Not a dump |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |
