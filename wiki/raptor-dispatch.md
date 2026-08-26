@@ -20,6 +20,8 @@ Voice between bots: [[bot-voice]]. Caveman. Facts, paths, SHAs. No filler.
 
 Process order: [[musk-algorithm]]. Delete before optimize. Automate last. One owner is a named person. See [[first-principles]].
 
+Same loop, named: [[assign-execute-verify]]. 24h intel stays OFF until lan E says 開始.
+
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[first-principles]] · [[loop-graph-engineering]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[first-principles]] · [[loop-graph-engineering]] · [[assign-execute-verify]]

@@ -27,6 +27,8 @@ This vault already does semantic wiki + index + append-only [[log]] + schema. Se
 
 Do not add a second memory writer. Catalog `persistent-bot-memory` is the same job. No PAT daily-push. See [[botdirectory-scan]].
 
+Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
+
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]]

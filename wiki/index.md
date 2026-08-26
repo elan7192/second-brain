@@ -63,6 +63,9 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
 | [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
 | [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
+| [[portable-memory]] | Git truth. FTS5 disposable. Do not clone Brain |
+| [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
+| [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
 | [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
@@ -126,6 +129,9 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-av1dlive-portable-memory]] | 2026-08-27 | Portable memory. Do not clone Brain |
+| [[src-ruujss-pipeline-honesty]] | 2026-08-27 | Pipeline honesty. Skip Hawkes |
+| [[src-lummox-assign-execute-verify]] | 2026-08-27 | AEV. 24h intel OFF |
 | [[src-andonlabs-vending-bench]] | 2026-08-27 | Vending-Bench eval |
 | [[src-maxdeg0-vault-2026-08-27]] | 2026-08-27 | Backlink-first markdown vault |
 | [[src-deronin-views-vs-sales-2026-08-27]] | 2026-08-27 | Views ≠ sales chess pair |

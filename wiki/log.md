@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | portable-memory, pipeline-honesty, assign-execute-verify
+
+Delta only. No Brain clone. No Hawkes. 24h intel OFF. Skip listicle, Claude-AD, Kimi, Browser Use plugin.
+
 ## [2026-08-27] ingest | vending-bench + four method notes
 
 [[vending-bench]], [[backlink-first]], [[views-vs-sales]], [[buying-signal]], [[drafts-not-publish]]. No Whop clone. Not dumped.

@@ -34,6 +34,8 @@ PM operational KPI 2026-08-27 is at the bottom.
 - [[session-migrate]]: context only. Git is truth. Do not migrate a compact blob as the vault.
 - [[audited-task-contract]]: share a contract, not a transcript. Avoid reset tax.
 - [[musk-algorithm]]: delete before optimize. Automate last.
+- [[pipeline-honesty]]: chrono first. Out-of-sample W/E is the honest test. In-sample ratios can inflate.
+- Match model to task. Lost experiment cycles do not come back. Do not install Kimi. No bot-farm.
 
 ## Deletes already in force (PM 2026-08-27)
 
@@ -48,9 +50,9 @@ Wallet split: Grok Bot scarce vs Fill leftover. Do not mix ledgers.
 
 - Numerator **W** = completed jobs with proof: wiki SHA, PR URL, spec path, Figma URL, or artifact path. No vibes.
 - Denominator **E** = expensive Grok Bot units: cloud-agent launches + computerUse sessions. Do not invent dollar weights.
-- Metric **W/E**. Report counts, not fake dollars.
+- Metric **W/E**. Report counts, not fake dollars. Score held-out jobs. See [[pipeline-honesty]].
 - Fill Go / Plus / Gemini is leftover burn. Separate ledger.
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]]
