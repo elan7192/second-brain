@@ -62,6 +62,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
 | [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
+| [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |

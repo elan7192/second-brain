@@ -22,4 +22,4 @@ Also see [[quota-router]] for which provider to burn first.
 
 ## Related
 
-[[quota-router]] · [[grok-bot-pro-tips]] · [[tokens-as-capital]] · [[raptor-dispatch]]
+[[quota-router]] · [[grok-bot-pro-tips]] · [[tokens-as-capital]] · [[raptor-dispatch]] · [[work-per-cost]]
