@@ -61,6 +61,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
 | [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
 | [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
+| [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
@@ -115,6 +116,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-openai-codex-cli-compact]] | 2026-08-27 | Official /compact and /memories |
+| [[src-community-compaction]] | 2026-08-27 | Community compact notes. Unverified paths |
 | [[src-lan-e-musk-algorithm]] | 2026-08-27 | lan E motto. Musk Algorithm order |
 | [[src-botdirectory-picks-2026-08-27]] | 2026-08-27 | Catalog scan 304. Not scout dump |
 | [[src-coreyganim-composio]] | 2026-08-26 | lan E share. Composio hub. Not installed |

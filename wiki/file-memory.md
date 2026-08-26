@@ -29,4 +29,4 @@ Do not add a second memory writer. Catalog `persistent-bot-memory` is the same j
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]]

@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | context compaction
+
+Chat may be fuzzy. Vault must be precise. No transcript dumps. See [[context-compaction]]. Official vs community sources labeled. Not pushed.
+
 ## [2026-08-27] ingest | musk algorithm
 
 lan E motto. Strict order. Best part is no part. See [[musk-algorithm]], [[first-principles]], [[src-lan-e-musk-algorithm]]. Not pushed.

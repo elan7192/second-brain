@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-27
 ---
 
 # Memory ablation
@@ -37,4 +37,4 @@ Do not ask a model to score memory it wrote. It defends its own prose.
 
 ## Related
 
-[[memory-engineering]] · `MEMORY.md` · [[verifiable-instructions]]
+[[memory-engineering]] · `MEMORY.md` · [[verifiable-instructions]] · [[context-compaction]]
