@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | ai sovereignty
+
+lan E paste. No primary Karp URL. Unverified. See [[ai-sovereignty]], [[alex-karp]], [[src-lan-e-karp-sovereignty-2026-08-27]]. work-per-cost already compiled. Not pushed.
+
 ## [2026-08-27] ingest | work per cost
 
 Catalog of token-save methods already in wiki. KPI W/E counts. See [[work-per-cost]]. Not pushed.

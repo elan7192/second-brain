@@ -52,6 +52,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 
 ## LanBB
 
+- Sovereign store is the git wiki. Do not put alpha only in a lab chat. See [[ai-sovereignty]]. Claims from the 2026-08-27 Karp paste are unverified until a named URL exists.
 - The bounty/flow product is named LanBB. semantica is a tool inside it, not the project name.
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 

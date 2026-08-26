@@ -3,7 +3,7 @@ type: project
 tags:
   - project
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-27
 ---
 
 # LanBB
@@ -22,4 +22,4 @@ The vault did not create this repo. Wiki is still silent on whether any semantic
 
 ## Related
 
-[[MEMORY]]
+[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]]
