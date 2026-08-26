@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-27] ingest | debs_obrien token usage
+
+lan E share. If bot usage is high, ask chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]], [[bot-voice]], [[tokens-as-capital]]. Not scout.
 
 ## [2026-08-25] implement | GrowthOS orb materials
 
