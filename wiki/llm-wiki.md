@@ -24,6 +24,7 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 - **Query.** Read [[index]] first. Answer with citations. File good answers back.
 - **Lint.** Contradictions, stale claims, orphans, missing concept pages.
 - **Methods.** Compile methods learned while doing work after the task. See [[src-play-methods-2026-08-25]].
+- **Freshness.** Audit claims with [[stale-fact-detector]] against named sources. `raw/` stays immutable.
 
 ## Why it lasts
 
@@ -31,4 +32,4 @@ Humans abandon wikis because maintenance grows faster than value. The LLM can to
 
 ## Related
 
-[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]]
+[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]]

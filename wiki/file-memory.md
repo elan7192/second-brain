@@ -25,6 +25,8 @@ Setup: markdown + one CSV. No vector DB.
 
 This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]] and [[memory-engineering]].
 
+Do not add a second memory writer. Catalog `persistent-bot-memory` is the same job. No PAT daily-push. See [[botdirectory-scan]].
+
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]]

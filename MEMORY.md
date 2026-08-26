@@ -21,6 +21,8 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Wiki agent must stay current on compiled `wiki/` pages. Other agents send improvement facts here; ingest them. Do not invent gaps.
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.
+- Stale-fact-detector: audit wiki claims against named sources. Quote note + source with dates. No writes in the audit pass. Draft patch ok. Push needs PM/lan E. raw/ immutable. Silent source = unverifiable. See [[stale-fact-detector]].
+- Botdirectory 2026-08-27: 304 listings. Prefer skill on an existing role. Do not add a second memory writer or PAT daily-push. Catalog scan, not scout dump. See [[botdirectory-scan]].
 - lan E shared Miles Deutscher 25 Grok Bot use cases (2026-08-19). See [[grok-bot-use-cases]]. Not a scout harvest.
 - Composio MCP catalog id 32661537 exists in Grok Bot. Not installed. Writes need lan E approval. See [[composio-mcp]].
 - Prefer git markdown memory over a lab built-in store. Four kinds: semantic md+index, working context, episodic log, procedural skills. Vector DB only when too much to read. Setup: markdown + one CSV. See [[file-memory]].

@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | botdirectory scan + stale-fact-detector
+
+Catalog scan, not dump. Vault methods: [[stale-fact-detector]], [[botdirectory-scan]]. See [[src-botdirectory-picks-2026-08-27]] and [[ingest-brief-2026-08-27-botdirectory]]. No new bots. Not pushed.
+
 ## [2026-08-27] ingest | composio + file memory
 
 lan E share. [[composio-mcp]] not installed. [[file-memory]] four kinds. See [[src-coreyganim-composio]] and [[src-pawelhuryn-file-memory]]. Not scout. Not pushed.
