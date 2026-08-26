@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | musk algorithm
+
+lan E motto. Strict order. Best part is no part. See [[musk-algorithm]], [[first-principles]], [[src-lan-e-musk-algorithm]]. Not pushed.
+
 ## [2026-08-27] ingest | botdirectory scan + stale-fact-detector
 
 Catalog scan, not dump. Vault methods: [[stale-fact-detector]], [[botdirectory-scan]]. See [[src-botdirectory-picks-2026-08-27]] and [[ingest-brief-2026-08-27-botdirectory]]. No new bots. Not pushed.

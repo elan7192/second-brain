@@ -49,6 +49,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once. No empty acks |
+| [[musk-algorithm]] | Delete before optimize. Automate last. Named person |
+| [[first-principles]] | Physics and named owners, not department folklore |
 | [[spot-check]] | Lead inspects without warning. Stay on-lane. File the lesson |
 | [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
@@ -113,6 +115,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lan-e-musk-algorithm]] | 2026-08-27 | lan E motto. Musk Algorithm order |
 | [[src-botdirectory-picks-2026-08-27]] | 2026-08-27 | Catalog scan 304. Not scout dump |
 | [[src-coreyganim-composio]] | 2026-08-26 | lan E share. Composio hub. Not installed |
 | [[src-pawelhuryn-file-memory]] | 2026-08-27 | lan E share. Git md memory. Four kinds |

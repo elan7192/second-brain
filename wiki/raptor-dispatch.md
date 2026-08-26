@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Raptor dispatch
@@ -18,6 +18,8 @@ Do not send an empty ack. Report when there is a result, a blocker, or a SHA. Se
 
 Voice between bots: [[bot-voice]]. Caveman. Facts, paths, SHAs. No filler.
 
+Process order: [[musk-algorithm]]. Delete before optimize. Automate last. One owner is a named person. See [[first-principles]].
+
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[first-principles]]
