@@ -114,4 +114,4 @@ Resolution: `unverified`. Do not use as a forecast or as proof the vault works. 
 
 [[entropy-gate]]: isolated worktrees, structured diffs, an objective gate outside the model.
 
-Resolution: different products. Vault keeps D4 and D5. Do not start a Headlong mind as the wiki compiler. Trial 2026-08-26 installed CLIs only.
+Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Stop with `hour stop`. Still not the wiki compiler.

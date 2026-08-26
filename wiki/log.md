@@ -10,6 +10,10 @@ updated: 2026-08-26
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-26] implement | Headlong hour trial
+
+Operator yes. Identity `hour` on local Ollama qwen2.5-coder:7b. Nested Docker overlay failed; local unsandboxed for 1h. First thought 01:05:44Z run tests. Stop T+1h. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
 ## [2026-08-26] ingest | Headlong trial
 
 hxiao quote of Andy Konwinski. Tools installed `./install.sh --symlinks` at SHA `d8f8304`. 25/25 CLIs. Mind not started: no Docker, no API key, D5. See [[headlong]], C15, [[ingest-brief-2026-08-26-headlong]].

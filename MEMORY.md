@@ -26,7 +26,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
 - Surprise spot-checks: lead inspects without warning; specialists stay on-lane; lessons go to wiki and a shared skill. One owner per job, report once, no empty acks. See [[spot-check]] and [[raptor-dispatch]].
 - Bot-to-bot voice is caveman. Facts, paths, SHAs. No filler, no empty acks. Code/errors stay exact. lan E still gets short Traditional Chinese from lead. See [[bot-voice]]. Do not install JuliusBrussee/caveman.
-- 2026-08-26: Headlong (`laude-institute/headlong`) tools were trial-installed. Do not start the 24/7 mind, Slack/Telegram bridges, or `HEADLONG_UNSANDBOXED=1` on this vault host without an explicit human yes and a spend-capped key. See [[headlong]]. D5. Do not use Headlong as the wiki runtime.
+- 2026-08-26: Headlong identity `hour` is a 1-hour local Ollama trial (qwen2.5-coder:7b as `gpt-4o`). Operator yes. Nested Docker overlay failed on this VM; shell commands run local for this hour. Stop with `hour stop` or `headlong-killall`. Do not use Headlong as the wiki runtime. Do not start Slack/Telegram bridges. See [[headlong]]. D5.
 
 ## arXiv tierlist
 

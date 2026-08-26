@@ -37,9 +37,21 @@ Docker daemon was down. `HEADLONG_NO_TTY=1 HEADLONG_FAKE_DOCKER=missing headlong
 
 Harness tests run on this host (all pass): `test_sandbox_gate.sh` 26, `test_status.sh` 23, `test_context.sh` 21, `test_recap_context_upgrade.sh` 30.
 
+## Hour trial 2026-08-26
+
+Operator yes for one hour. No cloud API key on this host. Local Ollama `qwen2.5-coder:7b` aliased as `gpt-4o`. `LLM_API_URL=http://127.0.0.1:11434/v1/chat/completions`. Dummy OpenAI key name only, not a cloud secret.
+
+Identity `hour`. `headlong-init` with `HEADLONG_NO_DASH=1`. Nested Docker overlay mount failed (`invalid argument` on this VM's overlay root). Dockerd stopped. `SHELLM_REQUIRE_DOCKER=0`. Local unsandboxed for this hour only.
+
+Trial patch in `~/.headlong/app/thinkers/_lib/common.sh`: forward `LLM_API_URL` and `HEADLONG_HOME` as shellm `--var`. Without it, `llm` hit api.openai.com and failed.
+
+First live monolith thought at 2026-08-26T01:05:44Z: "I'll run the Headlong tests." Watchdog `sleep 3600` then `hour stop`. Hard stop: `hour stop` or `headlong-killall`. Notes: `~/.headlong/hour-notes/`. Trajectory: `~/.headlong/app/.identities/hour/trajectories/6cf0dedb-root/trajectory.jsonl`. Brief: [[ingest-brief-2026-08-26-headlong-hour]].
+
+Do not start Slack or Telegram bridges.
+
 ## Vault rule
 
-Headlong is a trial install, not the wiki runtime. One shared mind fights [[entropy-gate]] isolation and D4. Continuous spend fights D5. Do not start the mind, bridges, or `HEADLONG_UNSANDBOXED=1` without an explicit human yes and a spend-capped key. See [[contradictions]] C15.
+Headlong is a trial install, not the wiki runtime. One shared mind fights [[entropy-gate]] isolation and D4. See [[contradictions]] C15. This hour is an explicit operator yes. Stop at T+1h.
 
 ## Related
 
