@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-26
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-26] ingest | Headlong trial
+
+hxiao quote of Andy Konwinski. Tools installed `./install.sh --symlinks` at SHA `d8f8304`. 25/25 CLIs. Mind not started: no Docker, no API key, D5. See [[headlong]], C15, [[ingest-brief-2026-08-26-headlong]].
 
 ## [2026-08-25] implement | GrowthOS orb materials
 

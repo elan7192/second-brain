@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
+updated: 2026-08-26
 updated: 2026-08-23
 ---
 
@@ -35,3 +35,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
+
+[[headlong]] is a persistent Bash microharness (Laude/MIT). Trial 2026-08-26 installed tools, did not start the mind. One shared stream vs layer 3 isolation: C15.

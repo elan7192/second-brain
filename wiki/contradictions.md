@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
+updated: 2026-08-26
 updated: 2026-08-23
 ---
 
@@ -107,3 +107,11 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Headlong one stream vs entropy gate
+
+[[headlong]] / [[src-laude-headlong]]: one thought stream, no per-user sessions, assume anything said is shared. The agent keeps thinking when idle.
+
+[[entropy-gate]]: isolated worktrees, structured diffs, an objective gate outside the model.
+
+Resolution: different products. Vault keeps D4 and D5. Do not start a Headlong mind as the wiki compiler. Trial 2026-08-26 installed CLIs only.

@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-26
 ---
 
 # Harness routing
@@ -36,4 +36,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]]
+[[headlong]] ([[src-laude-headlong]], [[src-hxiao-headlong]]) is a persistent harness: idle thought continues, a message is an observation. Trial on this host installed the CLIs and did not start the mind. D5. Not the wiki runtime. See C15.
+
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[headlong]]

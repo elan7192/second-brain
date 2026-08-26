@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-26
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 
 ## Start
 
@@ -41,6 +41,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |
 | [[harness-routing]] | Route model and harness by phase, not by turn |
+| [[headlong]] | Laude/MIT persistent Bash microharness. Trial install, mind not started |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |
@@ -107,6 +108,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
+| [[src-laude-headlong]] | 2026-08-26 | Headlong launch + repo. 9883 cloc at d8f8304 |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
 | [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |
