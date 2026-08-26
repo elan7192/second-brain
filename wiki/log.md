@@ -10,6 +10,10 @@ updated: 2026-08-26
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-26] harvest | Headlong hour trial ended
+
+Timer 02:07:16Z. `hour stop` then `headlong-killall`. Traj 37 rows, last durable 01:12:08Z. Tests did not run. qwen2.5-coder:7b copied nested-shellm docs example and stalled. C15: not the wiki runtime. Do not restart without new yes. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
 ## [2026-08-26] implement | Headlong hour trial
 
 Operator yes. Identity `hour` on local Ollama qwen2.5-coder:7b. Nested Docker overlay failed; local unsandboxed for 1h. First thought 01:05:44Z run tests. Stop T+1h. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].

@@ -114,4 +114,4 @@ Resolution: `unverified`. Do not use as a forecast or as proof the vault works. 
 
 [[entropy-gate]]: isolated worktrees, structured diffs, an objective gate outside the model.
 
-Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Stop with `hour stop`. Still not the wiki compiler.
+Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Harvest 02:07Z: mind stopped; tests did not run. Still not the wiki compiler. Do not restart without a new operator yes.

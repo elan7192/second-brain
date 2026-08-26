@@ -12,7 +12,7 @@ updated: 2026-08-26
 
 ## Done
 
-[[headlong]] identity `hour` running 1h local Ollama. Nested Docker overlay failed. First thought: run Headlong tests. Stop T+1h. C15.
+[[headlong]] identity `hour` 1h trial ended 02:07Z. Traj 37 rows; tests did not run; mind stopped. C15.
 
 ## Look at
 

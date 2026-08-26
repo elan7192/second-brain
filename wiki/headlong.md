@@ -45,13 +45,17 @@ Identity `hour`. `headlong-init` with `HEADLONG_NO_DASH=1`. Nested Docker overla
 
 Trial patch in `~/.headlong/app/thinkers/_lib/common.sh`: forward `LLM_API_URL` and `HEADLONG_HOME` as shellm `--var`. Without it, `llm` hit api.openai.com and failed.
 
-First live monolith thought at 2026-08-26T01:05:44Z: "I'll run the Headlong tests." Watchdog `sleep 3600` then `hour stop`. Hard stop: `hour stop` or `headlong-killall`. Notes: `~/.headlong/hour-notes/`. Trajectory: `~/.headlong/app/.identities/hour/trajectories/6cf0dedb-root/trajectory.jsonl`. Brief: [[ingest-brief-2026-08-26-headlong-hour]].
+Started 2026-08-26T01:06:25Z. Timer `headlong-hour-stop` fired 2026-08-26T02:07:16Z. Harvest ran `hour stop` then `headlong-killall` (19 processes). `hour status` after harvest: mind stopped, dash stopped. Slack and Telegram were not started. Do not restart without a new operator yes.
 
-Do not start Slack or Telegram bridges.
+Trajectory `~/.headlong/app/.identities/hour/trajectories/6cf0dedb-root/trajectory.jsonl`: 37 rows, 45493 bytes. First ts 2026-08-26T01:01:21Z. Last durable row 2026-08-26T01:12:08Z. Processes kept running until harvest ~02:08Z. Types: trajectory 1, thought 12, error 5, shellm-run 2, prompt 2, action 2, reasoning 4, shell-output 4, result 2, fork 2, merge 1. Sources: seed 11, monolith 10, empty 16.
+
+Durable monolith steps: 4× error rc=125 (Docker overlay); 1× error rc=1 (`llm` hit real OpenAI before URL forward); thought 01:05:44Z "I'll run the Headlong tests."; action `cd ~/.headlong/app/tests && ./run_tests.sh` (appended traj intent only); action 01:07:06Z nested `shellm 'Analyze the failed tests and suggest fixes' --max-iterations 2`; merge 01:12:08Z stalled (same failing command 3 times). Shell-output included `cat: /tmp/approach_a.txt: No such file or directory` from a literal copy of the shellm docs example.
+
+Tests did not run. No `run-all.sh` / `test_sandbox` / `passed:` in the trajectory. Workdir empty. Notes under `~/.headlong/hour-notes/` are operator RUN.md plus harvest STOPPED_UTC. Brief: [[ingest-brief-2026-08-26-headlong-hour]].
 
 ## Vault rule
 
-Headlong is a trial install, not the wiki runtime. One shared mind fights [[entropy-gate]] isolation and D4. See [[contradictions]] C15. This hour is an explicit operator yes. Stop at T+1h.
+Headlong is a trial install, not the wiki runtime. One shared mind fights [[entropy-gate]] isolation and D4. See [[contradictions]] C15. The 2026-08-26 hour ended at 02:07Z. Do not restart without a new operator yes. Do not start Slack or Telegram bridges.
 
 ## Related
 

@@ -41,7 +41,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |
 | [[harness-routing]] | Route model and harness by phase, not by turn |
-| [[headlong]] | Laude/MIT persistent Bash microharness. 1h local Ollama trial identity `hour` |
+| [[headlong]] | Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |

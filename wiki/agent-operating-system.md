@@ -36,4 +36,4 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
 
-[[headlong]] is a persistent Bash microharness (Laude/MIT). Trial 2026-08-26 installed tools, did not start the mind. One shared stream vs layer 3 isolation: C15.
+[[headlong]] is a persistent Bash microharness (Laude/MIT). 2026-08-26 installed tools; 1h identity `hour` ran on local Ollama and stopped 02:07Z; tests did not run. One shared stream vs layer 3 isolation: C15. Not the wiki compiler.

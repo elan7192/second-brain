@@ -42,4 +42,4 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 
 2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]].
 
-2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour run: [[ingest-brief-2026-08-26-headlong-hour]].
+2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour harvest: [[ingest-brief-2026-08-26-headlong-hour]].
