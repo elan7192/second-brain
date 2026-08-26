@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | benln grok bot pro tips
+
+lan E share. 10 tips + quota method. See [[grok-bot-pro-tips]], [[grok-bot-quota]], [[src-benln-grok-bot-pro-tips]]. Not scout. Not pushed.
+
 ## [2026-08-27] note | hxiao Headlong share
 
 lan E share. URL parked. No Headlong method yet. See [[src-hxiao-headlong-share]]. Wait for experiments.
