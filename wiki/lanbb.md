@@ -18,6 +18,8 @@ Presence Lab ChatGPT mapping LanBB → bounty was closer than PM denials. Skills
 
 Hunter input sources: [[lostsec]] (coffinxp, @lostsec_) and [[zack0x01]]. See [[hunter-follows]].
 
+Ethical hacking = in-scope find + report. Ignore porn/adult on bounty lists. Do not write exploit methods.
+
 Repo (2026-08-24, lanbb): [elan7192/LanBB](https://github.com/elan7192/LanBB), default branch `main`.
 
 semantica is nested as submodule `tools/semantica` → https://github.com/semantica-agi/semantica.git @ `6c2ccfd`.

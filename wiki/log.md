@@ -12,7 +12,7 @@ Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
 ## [2026-08-27] ingest | LanBB BB = bug bounty flow
 
-lan E 07:36 Taipei. Identity, not contamination. Hunter follows as input sources, not exploit dump. Presence Lab recon/IDOR/nuclei unverified. Brief: [[ingest-brief-2026-08-27-lanbb-bb]]. Not pushed.
+lan E 07:36 Taipei. Identity, not contamination. Hunter follows as input sources, not exploit dump. Ethical hacking = in-scope find + report. Ignore porn/adult lists. Do not write exploit methods. Presence Lab recon/IDOR/nuclei unverified. Brief: [[ingest-brief-2026-08-27-lanbb-bb]]. Not pushed.
 
 ## [2026-08-27] ingest | portable-memory, pipeline-honesty, assign-execute-verify
 

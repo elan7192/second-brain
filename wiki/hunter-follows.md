@@ -15,6 +15,8 @@ Source: [[src-lan-e-lanbb-bb-2026-08-27]].
 - [[lostsec]] — coffinxp, @lostsec_
 - [[zack0x01]]
 
+Ethical hacking = in-scope find + report. Ignore porn/adult on bounty lists. Do not write exploit methods.
+
 Read them as public hunter notes. Do not copy payloads, PoCs, or attack procedures into this vault.
 
 Recon / IDOR / nuclei skill lists from Presence Lab Free chat are `unverified` hallucination. Do not compile.

@@ -21,6 +21,8 @@ Skills it listed (recon / IDOR / nuclei) are unverified hallucination from Free 
 
 Hunter follows: lostsec (coffinxp, @lostsec_) and zack0x01 as **input sources**, not an exploit dump.
 
+Ethical hacking = in-scope find + report. Ignore porn/adult on bounty lists. Do not write exploit methods.
+
 See [[lanbb]] and [[hunter-follows]].
 
 ## Pages updated
