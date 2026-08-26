@@ -65,6 +65,11 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
+| [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
+| [[backlink-first]] | Do not answer first. Follow backlinks. Tags as weights |
+| [[views-vs-sales]] | Views ≠ sales. Chess 74k/51 vs 135k/2 |
+| [[buying-signal]] | Public "looking for alternative to" |
+| [[drafts-not-publish]] | Drafts. Taste is gate. No autopublish |
 | [[multi-source-verdict]] | >1 source. One list. Human verdict. No Whop clone |
 | [[ai-sovereignty]] | Your data, your model. Karp synthesis. Unverified without URL |
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
@@ -121,6 +126,11 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-andonlabs-vending-bench]] | 2026-08-27 | Vending-Bench eval |
+| [[src-maxdeg0-vault-2026-08-27]] | 2026-08-27 | Backlink-first markdown vault |
+| [[src-deronin-views-vs-sales-2026-08-27]] | 2026-08-27 | Views ≠ sales chess pair |
+| [[src-luismbat-buying-signal-2026-08-27]] | 2026-08-27 | Buying signal. Scout skip |
+| [[src-voxyz-drafts-2026-08-27]] | 2026-08-27 | Drafts not publish |
 | [[src-0xcarnagee-tape-2026-08-27]] | 2026-08-27 | lan E share. Tape. 11-step roster not cloned |
 | [[src-everestchris6-revenue-2026-08-26]] | 2026-08-26 | lan E share. Revenue guide. Article not dumped. Whop skip |
 | [[src-av1dlive-loop-graph-2026-08-26]] | 2026-08-26 | lan E share. Loop/graph guide. Article not dumped |
