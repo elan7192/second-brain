@@ -22,6 +22,8 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.
 - lan E shared Miles Deutscher 25 Grok Bot use cases (2026-08-19). See [[grok-bot-use-cases]]. Not a scout harvest.
+- Composio MCP catalog id 32661537 exists in Grok Bot. Not installed. Writes need lan E approval. See [[composio-mcp]].
+- Prefer git markdown memory over a lab built-in store. Four kinds: semantic md+index, working context, episodic log, procedural skills. Vector DB only when too much to read. Setup: markdown + one CSV. See [[file-memory]].
 - Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Recurring fill belongs on dedicated bot `burn`, not the lead chat. See [[grok-bot-quota]].
 - Routines: hourly or a few times a day. Never every 5 minutes. Recurring work goes to a fresh bot. See [[grok-bot-pro-tips]].
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.

@@ -49,4 +49,4 @@ The other 20 are listed. They are not built.
 
 ## Related
 
-[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]] · [[grok-bot-pro-tips]] · [[grok-bot-quota]]
+[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]] · [[grok-bot-pro-tips]] · [[grok-bot-quota]] · [[composio-mcp]] · [[file-memory]]

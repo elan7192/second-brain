@@ -57,6 +57,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
 | [[grok-bot-pro-tips]] | Ben Lang 10 tips from @bot team |
 | [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
+| [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
+| [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
 | [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
@@ -109,6 +111,8 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-coreyganim-composio]] | 2026-08-26 | lan E share. Composio hub. Not installed |
+| [[src-pawelhuryn-file-memory]] | 2026-08-27 | lan E share. Git md memory. Four kinds |
 | [[src-benln-grok-bot-pro-tips]] | 2026-08-25 | lan E share. 10 Grok Bot pro tips |
 | [[src-hxiao-headlong-share]] | 2026-08-27 | lan E share. Headlong quote. Method waits on experiments |
 | [[src-debs-obrien-token-usage]] | 2026-08-24 | lan E share. Ask chief of staff about token usage |
