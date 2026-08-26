@@ -23,6 +23,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - second-brain records methods learned in work; compile them into wiki/.
 - lan E shared Miles Deutscher 25 Grok Bot use cases (2026-08-19). See [[grok-bot-use-cases]]. Not a scout harvest.
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.
+- lan E shared https://x.com/hxiao/status/2092015227286249607 (Headlong quote). Parked. No Headlong method until experiments reports. See [[src-hxiao-headlong-share]].
 - Skill Recorder: trial only on a clean desktop with fake data, then SkillSpector, then enable. See [[skill-recorder]].
 - Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
 - Surprise spot-checks: lead inspects without warning; specialists stay on-lane; lessons go to wiki and a shared skill. One owner per job, report once, no empty acks. See [[spot-check]] and [[raptor-dispatch]].

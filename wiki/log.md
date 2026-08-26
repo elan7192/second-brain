@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] note | hxiao Headlong share
+
+lan E share. URL parked. No Headlong method yet. See [[src-hxiao-headlong-share]]. Wait for experiments.
+
 ## [2026-08-27] ingest | debs_obrien token usage
 
 lan E share. If bot usage is high, ask chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]], [[bot-voice]], [[tokens-as-capital]]. Not scout.

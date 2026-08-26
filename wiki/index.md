@@ -107,6 +107,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-hxiao-headlong-share]] | 2026-08-27 | lan E share. Headlong quote. Method waits on experiments |
 | [[src-debs-obrien-token-usage]] | 2026-08-24 | lan E share. Ask chief of staff about token usage |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
