@@ -22,4 +22,4 @@ Process order: [[musk-algorithm]]. Delete before optimize. Automate last. One ow
 
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[first-principles]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[first-principles]] · [[loop-graph-engineering]]

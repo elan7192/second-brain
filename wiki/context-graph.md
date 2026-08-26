@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-27
 ---
 
 # Context graph
@@ -29,4 +29,4 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 
 [[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]] · [[trace]]
 
-[[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair.
+[[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair. · [[loop-graph-engineering]]

@@ -49,6 +49,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once. No empty acks |
+| [[loop-graph-engineering]] | Owner + worker + verifier + stop. One graph writer |
 | [[musk-algorithm]] | Delete before optimize. Automate last. Named person |
 | [[first-principles]] | Physics and named owners, not department folklore |
 | [[spot-check]] | Lead inspects without warning. Stay on-lane. File the lesson |
@@ -118,6 +119,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-av1dlive-loop-graph-2026-08-26]] | 2026-08-26 | lan E share. Loop/graph guide. Article not dumped |
 | [[src-openai-codex-cli-compact]] | 2026-08-27 | Official /compact and /memories |
 | [[src-community-compaction]] | 2026-08-27 | Community compact notes. Unverified paths |
 | [[src-lan-e-karp-sovereignty-2026-08-27]] | 2026-08-27 | lan E paste. No primary Karp URL |

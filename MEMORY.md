@@ -21,6 +21,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Wiki agent must stay current on compiled `wiki/` pages. Other agents send improvement facts here; ingest them. Do not invent gaps.
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.
+- Loop/graph: PM outer loop, Engineer inner coding round, Vault KG writer. One worker first. Do not install Kimi Code. Do not create Coordinator/Worker/Verifier bots. Do not replace wiki markdown with a second JSONL graph store. See [[loop-graph-engineering]].
 - Chat working-memory may be fuzzy. Vault must be precise. Do not dump transcripts into wiki. See [[context-compaction]].
 - Work per cost: W = completed jobs with proof (wiki SHA, PR URL, spec path, Figma URL, artifact path). E = cloud-agent launches + computerUse sessions. Report W/E counts, not fake dollars. Grok Bot scarce vs Fill leftover: separate ledgers. See [[work-per-cost]].
 - Musk Algorithm, strict order: (1) make requirements less dumb, named person not a department (2) delete the part or process (3) simplify/optimize only after delete (4) accelerate cycle time (5) automate last. Best part is no part. Do not automate first. See [[musk-algorithm]].

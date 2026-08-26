@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | loop-graph engineering
+
+lan E share. Article not dumped. See [[loop-graph-engineering]] and [[src-av1dlive-loop-graph-2026-08-26]]. No Kimi install. Not pushed.
+
 ## [2026-08-27] ingest | ai sovereignty
 
 lan E paste. No primary Karp URL. Unverified. See [[ai-sovereignty]], [[alex-karp]], [[src-lan-e-karp-sovereignty-2026-08-27]]. work-per-cost already compiled. Not pushed.
