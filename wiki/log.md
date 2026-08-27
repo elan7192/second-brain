@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] query | daily-tool-replace vs this vault
+
+Room to optimize: delete/skip, not a git GUI. Kill omp clone and GitKraken-class UI. Pursue: captions-first ingest, 19 orphan briefs. Watch: 0 CSV, graph PNG Pillow. Brief: [[daily-tool-replace-vault-2026-08-27]].
+
 ## [2026-08-27] ingest | Can daily-tool-replace
 
 @_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C15: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].

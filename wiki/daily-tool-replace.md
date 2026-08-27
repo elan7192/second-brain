@@ -23,6 +23,14 @@ Source: [[src-can1357-daily-tool-replace-2026-08-27]]. Author: [[can-boluk]].
 
 Do not clone omp.sh or oh-my-pi from this page. Do not dump the clip's Rust body. Do not merge this with D6 writing [[anti-slop]]. See [[contradictions]] C15.
 
+Do not ship a GitKraken-class git GUI for this vault from this tweet. D7 is Obsidian. Wiki is silent on whether lan E runs GitKraken. See [[musk-algorithm]]: automate last.
+
+## This vault (2026-08-27)
+
+Daily tools named in-schema: Obsidian, git markdown, `tools/lint-wiki.py`, `tools/render-obsidian-graph.py`, `tools/growth-brief.py`. Keep list in the tweet is Can's desktop, not a vault requirement.
+
+Verdict: [[daily-tool-replace-vault-2026-08-27]]
+
 ## Related
 
-[[harness-routing]] · [[anti-slop]] · [[agent-operating-system]] · [[clip-pipeline]]
+[[harness-routing]] · [[anti-slop]] · [[agent-operating-system]] · [[clip-pipeline]] · [[musk-algorithm]] · [[work-per-cost]] · [[grok-bot-quota]]

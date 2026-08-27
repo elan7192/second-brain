@@ -32,4 +32,4 @@ Keep long-term vision.
 
 ## Related
 
-[[first-principles]] · [[raptor-dispatch]] · [[src-lan-e-musk-algorithm]]
+[[first-principles]] · [[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[daily-tool-replace]]
