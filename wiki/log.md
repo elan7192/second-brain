@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop2 | 0/116 PR10 v2-hardened
+
+keep v1 + digest pin + stronger headers + broader rate limits + WAF-ish query block + close /encryptionkeys /metrics /support /redirect. See [[hunt-harden-loop]] [[src-lanbb-pr10-loop2]].
+
 ## [2026-08-27] loop1 | 0/116 ee8da04 v1-hardened
 
 headers + login rate-limit + extra-file /ftp closed. Local Juice Shop. PR9. See [[hunt-harden-loop]] [[src-lanbb-pr9-loop1]].
