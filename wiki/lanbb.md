@@ -30,6 +30,8 @@ Human decision 2026-08-24: new repo named LanBB; do not in-place rename an exist
 
 The vault did not create this repo. Wiki is still silent on whether any semantica remote is a fork.
 
+Hunt→harden: [[hunt-harden-loop]]. Loop1 PR9 `ee8da04` local Juice Shop 0/116. Procedural stays in LanBB.
+
 ## Related
 
-[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]]
+[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]]

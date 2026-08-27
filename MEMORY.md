@@ -62,6 +62,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Sovereign store is the git wiki. Do not put alpha only in a lab chat. See [[ai-sovereignty]]. Claims from the 2026-08-27 Karp paste are unverified until a named URL exists.
 - LanBB BB = bug bounty flow. semantica is a tool inside it, not the project name. Presence Lab recon/IDOR/nuclei skill lists are unverified Free-chat hallucination. Do not compile them.
 - Hunter follows lostsec (coffinxp, @lostsec_) and zack0x01 as input sources, not an exploit dump. Ethical hacking = in-scope find + report. Ignore porn/adult on bounty lists. Do not write exploit methods. See [[hunter-follows]].
+- Hunt-harden loop1 (2026-08-27): local Juice Shop. 0/116. PR9 `ee8da04` v1-hardened (headers, login rate-limit, extra-file /ftp closed). Fail-closed scope. Recon skip loopback. Report still writes at 0/N. Procedural in LanBB not vault. See [[hunt-harden-loop]].
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
 ## GrowthOS

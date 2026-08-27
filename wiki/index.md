@@ -67,6 +67,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
 | [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
 | [[hunter-follows]] | lostsec + zack0x01 as input sources. Not an exploit dump |
+| [[hunt-harden-loop]] | CASE path. Loop1 Juice Shop 0/116 ee8da04 v1-hardened |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
 | [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
@@ -130,6 +131,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lanbb-pr9-loop1]] | 2026-08-27 | Loop1 PR9 ee8da04 Juice Shop 0/116 |
 | [[src-lan-e-lanbb-bb-2026-08-27]] | 2026-08-27 | LanBB BB = bug bounty flow |
 | [[src-av1dlive-portable-memory]] | 2026-08-27 | Portable memory. Do not clone Brain |
 | [[src-ruujss-pipeline-honesty]] | 2026-08-27 | Pipeline honesty. Skip Hawkes |

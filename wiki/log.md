@@ -10,6 +10,9 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop1 | 0/116 ee8da04 v1-hardened
+
+headers + login rate-limit + extra-file /ftp closed. Local Juice Shop. PR9. See [[hunt-harden-loop]] [[src-lanbb-pr9-loop1]].
 ## [2026-08-27] ingest | LanBB BB = bug bounty flow
 
 lan E 07:36 Taipei. Identity, not contamination. Hunter follows as input sources, not exploit dump. Ethical hacking = in-scope find + report. Ignore porn/adult lists. Do not write exploit methods. Presence Lab recon/IDOR/nuclei unverified. Brief: [[ingest-brief-2026-08-27-lanbb-bb]]. Not pushed.
