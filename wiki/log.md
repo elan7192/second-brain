@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop12 | 0/116 v12-hardened
+
+Fill v11 live 0/116 score 200 deny 403. Bake mem>=6m pids>=6. PR22 merged c201b56. See [[hunt-harden-loop]] [[src-lanbb-pr22-loop12]].
+
 ## [2026-08-27] loop11 | 0/116 3afb11b v11
 
 Authorization/Origin/Referer closed on score path + leftover continue-code/login/search/Baskets/nested SPA HTTP closed. v10 applied (score 200, deny 403). PR21 merged 484fbbe. See [[hunt-harden-loop]] [[src-lanbb-pr21-loop11]].
