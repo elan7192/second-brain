@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop5 | 0/116 17ca40d v5-hardened
+
+juice read-only + drop OPTIONS + login WAF + identity/Web3/catalog/search/info-leak closed + burst>=1. GET /api/Challenges open. Login remaining auth door. PR15 merged 9227b47. See [[hunt-harden-loop]] [[src-lanbb-pr15-loop5]].
+
 ## [2026-08-27] loop4 | 0/116 821e998 v4-hardened
 
 app/edge caps + broader URI WAF + GraphQL/basket/reviews/captcha/data-export closed. GET /api/Challenges stays open. PR12 dup closed. See [[hunt-harden-loop]] [[src-lanbb-pr13-loop4]].
