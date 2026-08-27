@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop15 | 0/116 1801528 v15-hardened
+
+worker_processes 1 baked. Floor held. Auto OOM 137 lesson. Leftover remote-user/oauth-proxy/tracing/cloud-auth headers closed. web3-walletExploitAddress/2FA-SPA/ftp-quarantine/solve-server-side/coupon HTTP closed. v14 applied. PR25 merged 02f73dc. See [[hunt-harden-loop]] [[src-lanbb-pr25-loop15]].
+
 ## [2026-08-27] loop14 | 0/116 4fd0b9f v14-hardened
 
 Floor held. Leftover hop/session/token headers closed on score path. continue-code-findIt-apply/fixIt-apply/snippets-fixes/2FA-enter/web3-nft HTTP closed. v13 applied. PR24 merged e1c2c58. See [[hunt-harden-loop]] [[src-lanbb-pr24-loop14]].
