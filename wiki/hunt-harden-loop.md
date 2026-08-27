@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -37,6 +37,17 @@ Cloud agent VM cannot hit local Juice Shop (connection refused). 0/N is still a 
 
 Next loops: Fill reads live `GET /api/Challenges` on the box. Cloud agent only ships overlays + CASE UX.
 
+## Loop3
+
+- Hunted: v2. Fill live 0/116. Report path wrote.
+- Wall: v2-hardened → v3-hardened
+- PR: https://github.com/elan7192/LanBB/pull/11 SHA `b5bfb4d`
+- Studio shows hunt vs current wall
+
+Harden named (defense): method allowlist, URI WAF, cookie/COEP/HSTS, read-only edge. Closed: upload, PII, chatbot, B2B, snippets, continue-code.
+
+`GET /api/Challenges` stays open.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]]

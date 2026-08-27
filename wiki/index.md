@@ -67,7 +67,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
 | [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
 | [[hunter-follows]] | lostsec + zack0x01 as input sources. Not an exploit dump |
-| [[hunt-harden-loop]] | CASE path. Loop1 v1 PR9. Loop2 v2 PR10. Cloud VM cannot hit local JS |
+| [[hunt-harden-loop]] | CASE path. Loop1–3 Juice Shop 0/116. v3 `b5bfb4d` PR11 |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
 | [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
@@ -131,6 +131,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lanbb-pr11-loop3]] | 2026-08-27 | Loop3 PR11 b5bfb4d v3-hardened 0/116 |
 | [[src-lanbb-pr10-loop2]] | 2026-08-27 | Loop2 PR10 v2-hardened 0/116 |
 | [[src-lanbb-pr9-loop1]] | 2026-08-27 | Loop1 PR9 ee8da04 Juice Shop 0/116 |
 | [[src-lan-e-lanbb-bb-2026-08-27]] | 2026-08-27 | LanBB BB = bug bounty flow |

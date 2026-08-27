@@ -64,6 +64,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Hunter follows lostsec (coffinxp, @lostsec_) and zack0x01 as input sources, not an exploit dump. Ethical hacking = in-scope find + report. Ignore porn/adult on bounty lists. Do not write exploit methods. See [[hunter-follows]].
 - Hunt-harden loop1 (2026-08-27): local Juice Shop. 0/116. PR9 `ee8da04` v1-hardened (headers, login rate-limit, extra-file /ftp closed). Fail-closed scope. Recon skip loopback. Report still writes at 0/N. Procedural in LanBB not vault. See [[hunt-harden-loop]].
 - Hunt-harden loop2 (2026-08-27): PR10 v2-hardened (keep v1 + digest pin + stronger headers + broader rate limits + WAF-ish query block + close /encryptionkeys /metrics /support /redirect). Cloud agent VM cannot hit local Juice Shop (connection refused). 0/N still valid report. Next: Fill live GET /api/Challenges on the box; cloud agent ships overlays + CASE UX only. See [[hunt-harden-loop]].
+- Hunt-harden loop3 (2026-08-27): PR11 `b5bfb4d` v3-hardened (method allowlist, URI WAF, cookie/COEP/HSTS, read-only edge; upload/PII/chatbot/B2B/snippets/continue-code closed). Hunted v2. Fill live 0/116. Report path wrote. Studio hunt vs current wall. GET /api/Challenges stays open. See [[hunt-harden-loop]].
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
 ## GrowthOS
