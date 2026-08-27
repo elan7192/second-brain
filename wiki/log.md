@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop11 | 0/116 3afb11b v11
+
+Authorization/Origin/Referer closed on score path + leftover continue-code/login/search/Baskets/nested SPA HTTP closed. v10 applied (score 200, deny 403). PR21 merged 484fbbe. See [[hunt-harden-loop]] [[src-lanbb-pr21-loop11]].
+
 ## [2026-08-27] loop10 | 0/116 0042064 v10
 
 trailing-slash-only GET /api/Challenges/ + empty-query/cookie-closed score path + leftover privacy/hidden/data HTTP closed. v9 applied. PR20 merged f8b4dbe. See [[hunt-harden-loop]] [[src-lanbb-pr20-loop10]].

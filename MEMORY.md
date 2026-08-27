@@ -72,6 +72,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Hunt-harden loop8 (2026-08-27): PR18 merged `7d98a3b` v8-hardened. Hunted v7: Fill live 0/116, score GET 200, default-deny 403, POST 405. Report at 0/N. v8: exact score path, 127.0.0.1 bind, GET only. Next hunt v8. No exploiting-* skills. See [[hunt-harden-loop]].
 - Hunt-harden loop9 (2026-08-27): PR19 merged `75cb3bc`, wall `dee7041` v9 (exact-equals GET /api/Challenges/, host allowlist, leftover oauth/health/debug closed). v8 applied. Report at 0/N. See [[hunt-harden-loop]].
 - Hunt-harden loop10 (2026-08-27): PR20 merged `f8b4dbe`, wall `0042064` v10 (trailing-slash-only GET /api/Challenges/, empty-query/cookie-closed score path, leftover privacy/hidden/data HTTP closed). v9 applied. Report at 0/N. See [[hunt-harden-loop]].
+- Hunt-harden loop11 (2026-08-27): PR21 merged `484fbbe`, wall `3afb11b` v11 (Authorization/Origin/Referer closed on score path; leftover continue-code/login/search/Baskets/nested SPA HTTP closed). v10 applied: score GET 200, default-deny 403. Report at 0/N. Next hunt v11. See [[hunt-harden-loop]].
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
 ## GrowthOS
