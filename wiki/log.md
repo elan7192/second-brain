@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] schema | memory-system phase 1-4
+
+Provenance + FACT/INFERENCE/OPINION on new memory-v1 pages. Claims compile to `wiki/claims.csv`. `raw/` is untrusted data. Vector/graph/autonomous ingest parked (D9). Gate: `python3 tools/lint-wiki.py`. See [[memory-system]] [[claims]] [[epistemic-labels]] [[provenance]] [[untrusted-ingest]] [[memory-system-brief-2026-08-27]].
+
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 
 Floor held. worker_processes 1 source OOM=false. Leftover tracing/auth/TLS client-cert headers closed. chatbot-respond/2FA-verify/codefixes HTTP closed. v16 applied. PR27 merged 94ac04c. Last loop this window. See [[hunt-harden-loop]] [[src-lanbb-pr27-loop17]].

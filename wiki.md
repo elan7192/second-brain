@@ -10,4 +10,4 @@ updated: 2026-08-23
 
 Compiled knowledge. Gold in the Obsidian graph.
 
-Start at [[index]]. Operations in [[how-it-works]]. Synthesis in [[agent-operating-system]].
+Start at [[index]]. Operations in [[how-it-works]]. Synthesis in [[agent-operating-system]]. Evidence table [[claims]]. Architecture [[memory-system]].

@@ -35,4 +35,4 @@ lan E or Product asks to audit a vault topic, or doubts a number.
 
 ## Related
 
-[[llm-wiki]] · [[memory-ablation]] · [[verifiable-instructions]] · [[botdirectory-scan]]
+[[llm-wiki]] · [[memory-ablation]] · [[verifiable-instructions]] · [[botdirectory-scan]] · [[provenance]] · [[claims]]

@@ -17,7 +17,7 @@ Source: 0xWast3 article quoted by [[src-0xcodio-memory-ablation]].
 1. **Capture.** Would this still be true and useful in three months? Session mood is not memory.
 2. **Consolidate.** Merge near-duplicates. Skip if already stored.
 3. **Retrieve.** Score relevance now. Dilution is a failure mode.
-4. **Reconcile.** Supersede, coexist, or `flag_conflict`. Do not silently pick a side.
+4. **Reconcile.** Supersede, coexist, or `flag_conflict`. Do not silently pick a side. Disputed rows live in `wiki/claims.csv` and [[contradictions]].
 5. **Decay.** Idle memories lose confidence. Archive below a threshold.
 
 ## Failure of replay
@@ -26,7 +26,7 @@ Full-transcript replay does not scale, does not rank importance, and keeps both 
 
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]]
+[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 

@@ -21,11 +21,14 @@ Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
 
 ```
 Home.md       vault door
-raw/          immutable sources
+raw/          immutable sources (untrusted data)
 wiki/         compiled pages
+wiki/claims.csv  rebuildable evidence table
 maps/         Jarvis, Hooks, TELOS
 hunt/         scout indexes
 ship/         drafts, digests, angles, builds
 output/       briefs and the rendered graph
 .obsidian/    graph colors and workspace
 ```
+
+Lint: `python3 tools/lint-wiki.py`. Rebuild claims: `python3 tools/compile-claims.py`. Schema: `AGENTS.md`.

@@ -8,7 +8,7 @@ updated: 2026-08-23
 
 # Contradictions
 
-Flag, do not silently merge.
+Flag, do not silently merge. Disputed claim rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claims]].
 
 ## C1. Karpathy did not say stop writing code
 
@@ -76,13 +76,13 @@ Resolution: keep juampi's list as D6 writing default. Do not vendor either list.
 
 [[src-arxiv-2510-16851]] Table 1 NGC Mistral MMLU-pro is 24.50. Table 3 hybrid @0.3 lists 33.67 with the same GPQA/GSM/MATH as Table 1.
 
-Resolution: unresolved. Do not pick a number. See [[ngc]].
+Resolution: unresolved. Do not pick a number. Claims `c-ngc-mmlu-table1` / `c-ngc-mmlu-table3`. See [[ngc]].
 
 ## C10. HydroFusion abstract years vs §4.1
 
 [[src-arxiv-2510-03744]] abstract says a ~10-year daily dataset. §4.1 is Boluo 1988–2020.
 
-Resolution: keep the §4.1 span. Mark the abstract phrase as a clash. See [[hydrofusion-lmf]].
+Resolution: keep the §4.1 span. Mark the abstract phrase as a clash. Claims `c-hydrofusion-abstract-years` / `c-hydrofusion-section-41`. See [[hydrofusion-lmf]].
 
 ## C11. UniTok 51.89% N@10 is Toys, not Tools
 
