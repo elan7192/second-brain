@@ -67,7 +67,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
 | [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
 | [[hunter-follows]] | lostsec + zack0x01 as input sources. Not an exploit dump |
-| [[hunt-harden-loop]] | CASE path. Loop1–9 Juice Shop 0/116. v9 `dee7041` PR19 |
+| [[hunt-harden-loop]] | CASE path. Loop1–10 Juice Shop 0/116. v10 `0042064` PR20 |
 | [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
 | [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
 | [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
@@ -131,6 +131,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lanbb-pr20-loop10]] | 2026-08-27 | Loop10 PR20 0042064 v10 0/116 |
 | [[src-lanbb-pr19-loop9]] | 2026-08-27 | Loop9 PR19 dee7041 v9 0/116 |
 | [[src-lanbb-pr18-loop8]] | 2026-08-27 | Loop8 PR18 v8-hardened 0/116 |
 | [[src-lanbb-pr17-loop7]] | 2026-08-27 | Loop7 PR17 7dd37e7 v7 0/116 |

@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop10 | 0/116 0042064 v10
+
+trailing-slash-only GET /api/Challenges/ + empty-query/cookie-closed score path + leftover privacy/hidden/data HTTP closed. v9 applied. PR20 merged f8b4dbe. See [[hunt-harden-loop]] [[src-lanbb-pr20-loop10]].
+
 ## [2026-08-27] loop9 | 0/116 dee7041 v9
 
 exact-equals GET /api/Challenges/ + host allowlist + leftover oauth/health/debug closed. v8 applied. PR19 merged 75cb3bc. See [[hunt-harden-loop]] [[src-lanbb-pr19-loop9]].
