@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop4 | 0/116 821e998 v4-hardened
+
+app/edge caps + broader URI WAF + GraphQL/basket/reviews/captcha/data-export closed. GET /api/Challenges stays open. PR12 dup closed. See [[hunt-harden-loop]] [[src-lanbb-pr13-loop4]].
+
 ## [2026-08-27] loop3 | 0/116 b5bfb4d v3-hardened
 
 method allowlist + URI WAF + cookie/COEP/HSTS + read-only edge + upload/PII/chatbot/B2B/snippets/continue-code closed. GET /api/Challenges stays open. See [[hunt-harden-loop]] [[src-lanbb-pr11-loop3]].

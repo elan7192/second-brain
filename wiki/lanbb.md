@@ -30,8 +30,8 @@ Human decision 2026-08-24: new repo named LanBB; do not in-place rename an exist
 
 The vault did not create this repo. Wiki is still silent on whether any semantica remote is a fork.
 
-Hunt→harden: [[hunt-harden-loop]]. Loop1 PR9 `ee8da04` v1. Loop2 PR10 v2. Loop3 PR11 `b5bfb4d` v3. Fill live 0/116. Studio hunt vs wall. `GET /api/Challenges` stays open. Procedural stays in LanBB.
+Hunt→harden: [[hunt-harden-loop]]. Loop1 PR9 v1. Loop2 PR10 v2. Loop3 PR11 `b5bfb4d` v3. Loop4 PR13 `821e998` v4. PR12 dup closed. Fill live 0/116. Studio hunted + fill pills. `GET /api/Challenges` stays open. Procedural stays in LanBB.
 
 ## Related
 
-[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]]
+[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]]

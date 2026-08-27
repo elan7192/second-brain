@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -48,6 +48,17 @@ Harden named (defense): method allowlist, URI WAF, cookie/COEP/HSTS, read-only e
 
 `GET /api/Challenges` stays open.
 
+## Loop4
+
+- Hunted: v3. Report at 0/N. Studio hunted + fill pills.
+- Wall: v3-hardened → v4-hardened
+- PR: https://github.com/elan7192/LanBB/pull/13 SHA `821e998`
+- PR12 duplicate, closed
+
+Harden named (defense): app/edge caps, broader URI WAF. Closed: GraphQL, basket, reviews, captcha, data-export.
+
+`GET /api/Challenges` stays open.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]]
