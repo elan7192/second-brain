@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-27.
 
 ## Start
 
@@ -18,6 +18,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 - [[agent-operating-system]] — synthesis of this ingest
 - [[contradictions]] — unresolved conflicts
 - [[llm-wiki]] — core architecture
+- [[claim-protocol]] — Claim → Evidence → Verification → Retrieval → Context → Answer
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 - [[GrowthOS]] — growth operator door
 
@@ -35,6 +36,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | Page | One line |
 | --- | --- |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
+| [[claim-protocol]] | Claim → Evidence → Verification → Retrieval → Context → Answer |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |
 | [[memory-ablation]] | A memory line stays only if deleting it changes an answer |
@@ -131,6 +133,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lan-e-claim-protocol-2026-08-27]] | 2026-08-27 | Claim protocol. Git truth. FTS5 disposable. Embeddings parked |
 | [[src-lanbb-pr27-loop17]] | 2026-08-27 | Loop17 PR27 ad6f669 v17 0/116 |
 | [[src-lanbb-pr26-loop16]] | 2026-08-27 | Loop16 PR26 75b62be v16 0/116 |
 | [[src-lanbb-pr25-loop15]] | 2026-08-27 | Loop15 PR25 1801528 v15 0/116 |
@@ -265,3 +268,4 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 - [[MEMORY]] — durable facts
 - [[decisions]] — locked choices
 - `wiki/log.md` — timeline
+- `wiki/claims.csv` — claim ledger. See [[claim-protocol]]

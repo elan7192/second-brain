@@ -37,6 +37,7 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - Drop a file in `raw/` and say `ingest this`.
 - File a clip in [[inbox]], then ingest.
 - Say `lint the wiki`.
+- Ask a question. Agent runs [[claim-protocol]] retrieve.
 
 ## This batch
 

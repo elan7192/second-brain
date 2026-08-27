@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
+updated: 2026-08-27
 updated: 2026-08-23
 ---
 
@@ -107,3 +107,11 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Embeddings vs no vector DB
+
+[[src-lan-e-claim-protocol-2026-08-27]] proposes BM25/FTS5 plus embeddings for hybrid retrieval.
+
+[[file-memory]] and [[portable-memory]]: vector DB only when too much to read. Setup is markdown + one CSV. FTS5 is a disposable index.
+
+Resolution: D9. Ship FTS5 + wikilink hops + recency + authority + contradiction penalty. Park embeddings until the wiki is too large to read. See [[claim-protocol]].

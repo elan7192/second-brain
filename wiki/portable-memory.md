@@ -16,7 +16,7 @@ Already in vault: git markdown is the store. Compiled wiki, not RAG dump.
 
 New here:
 
-- Git is source of truth. SQLite FTS5 is a disposable index, not a second memory.
+- Git is source of truth. SQLite FTS5 is a disposable index, not a second memory. See [[claim-protocol]].
 - Redact rolls back. It does not erase.
 - MCP tool descriptions say WHEN, not WHAT.
 - FTS prefix rewrite for search.
@@ -25,4 +25,4 @@ Do not clone `github.com/codejunkie99/brain`. Do not install a Brain binary. Vau
 
 ## Related
 
-[[file-memory]] · [[llm-wiki]] · [[loop-graph-engineering]] · [[session-migrate]] · [[src-av1dlive-portable-memory]]
+[[file-memory]] · [[llm-wiki]] · [[claim-protocol]] · [[loop-graph-engineering]] · [[session-migrate]] · [[src-av1dlive-portable-memory]]

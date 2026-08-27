@@ -20,7 +20,7 @@ Operating map for the agent. Teal in the Obsidian graph.
 
 ## Then
 
-Answer from [[wiki]] pages. File useful answers to [[ship]].
+Answer from [[wiki]] pages. File useful answers to [[ship]]. Run `python3 tools/retrieve.py` first. See [[claim-protocol]].
 
 If the task is GrowthOS, load [[GrowthOS]] then [[growth-core]] instead of compiling from chat.
 

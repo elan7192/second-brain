@@ -14,8 +14,9 @@ If you are not in Obsidian, open `output/obsidian-graph.html`.
 
 1. Ask questions from this repo root in Cursor, Claude Code, or Codex.
 2. Drop a source in `raw/` and say `ingest this`.
+3. Query retrieval: `python3 tools/retrieve.py "<question>"`.
 
-Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
+Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`. Claim ledger: `wiki/claims.csv`.
 
 ## Layout
 

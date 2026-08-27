@@ -10,7 +10,11 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
-## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
+## [2026-08-27] ingest | Claim protocol
+
+Claim → Evidence → Verification → Retrieval → Context → Answer. Ledger `wiki/claims.csv`. Retrieve FTS5 + wikilink hops. Embeddings parked C15. D9. See [[claim-protocol]] [[src-lan-e-claim-protocol-2026-08-27]].
+
+
 
 Floor held. worker_processes 1 source OOM=false. Leftover tracing/auth/TLS client-cert headers closed. chatbot-respond/2FA-verify/codefixes HTTP closed. v16 applied. PR27 merged 94ac04c. Last loop this window. See [[hunt-harden-loop]] [[src-lanbb-pr27-loop17]].
 

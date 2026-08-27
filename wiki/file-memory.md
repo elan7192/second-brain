@@ -21,9 +21,9 @@ Four kinds. Three live in files:
 
 Vector DB only when there is too much to read. Linked markdown is already a graph.
 
-Setup: markdown + one CSV. No vector DB.
+Setup: markdown + one CSV. The CSV is `wiki/claims.csv`. No vector DB.
 
-This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]] and [[memory-engineering]].
+This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]], [[memory-engineering]], and [[claim-protocol]].
 
 Do not add a second memory writer. Catalog `persistent-bot-memory` is the same job. No PAT daily-push. See [[botdirectory-scan]].
 
@@ -33,4 +33,4 @@ Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]]

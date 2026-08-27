@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Check wiki pages for missing wikilink targets and orphan pages."""
+"""Check wiki pages for missing wikilink targets, orphans, and claim ledger."""
 
 from __future__ import annotations
 
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from claim_protocol import validate_claims
 
 ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
@@ -40,12 +43,18 @@ def main() -> int:
     orphans = sorted(
         slug for slug, count in inbound.items() if count == 0 and slug not in HUBS
     )
-    print(f"pages={len(catalog)} missing={len(missing)} orphans={len(orphans)}")
+    claim_errors = validate_claims(ROOT)
+    print(
+        f"pages={len(catalog)} missing={len(missing)} orphans={len(orphans)} "
+        f"claim_errors={len(claim_errors)}"
+    )
     for item in missing:
         print(f"MISSING {item}")
     for slug in orphans:
         print(f"ORPHAN {slug}")
-    return 1 if missing else 0
+    for item in claim_errors:
+        print(f"CLAIM {item}")
+    return 1 if missing or claim_errors else 0
 
 
 if __name__ == "__main__":

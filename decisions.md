@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-27
 ---
 
 # Decisions
@@ -69,3 +69,11 @@ Graph view hides catalog stars and raw files. Layout follows the five [[agent-op
 - Source: [[graph]], [[agent-operating-system]]
 - Locked: 2026-08-24
 - Revalidate: if a later layout hides a real concept island or drops a supported peer link
+
+## D9. Claim protocol
+
+Compile through Claim → Evidence → Verification → Retrieval → Context → Answer. Git markdown stays canonical. SQLite FTS5 is a disposable index. No vector DB. No second graph store. No extra knowledge folders.
+
+- Source: [[claim-protocol]], [[portable-memory]], [[file-memory]], [[src-lan-e-claim-protocol-2026-08-27]]
+- Locked: 2026-08-27
+- Revalidate: if retrieve misses answers that index plus wikilinks find, or the wiki is too large to read without embeddings

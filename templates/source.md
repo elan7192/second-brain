@@ -15,3 +15,5 @@ updated: {{date}}
 ## Claims kept
 
 ## Pages updated
+
+Append matching rows to `wiki/claims.csv` (source + evidence + status).

@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-27
 ---
 
 # Graph
@@ -34,8 +34,8 @@ Taken from [[agent-operating-system]].
 
 | Island | Pages |
 | --- | --- |
-| Compile | llm-wiki, tokens-as-capital, context-graph |
-| Memory | memory-engineering, memory-ablation |
+| Compile | llm-wiki, tokens-as-capital, context-graph, claim-protocol |
+| Memory | memory-engineering, memory-ablation, portable-memory, file-memory |
 | Verification | verifiable-instructions, self-verification, anti-slop |
 | Harness | audited-task-contract, harness-routing, entropy-gate |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
@@ -54,16 +54,20 @@ Growth operator graph is separate: `output/growthos-graph.html`. See [[growth-op
 flowchart TB
   subgraph compile[Compile]
     andrej-karpathy
+    claim-protocol
     context-graph
     llm-wiki
     src-bober-folder-workflow
+    src-lan-e-claim-protocol-2026-08-27
     src-papa-couch-compiler
     tokens-as-capital
   end
   subgraph memory[Memory]
     MEMORY
+    file-memory
     memory-ablation
     memory-engineering
+    portable-memory
     src-0xcodio-memory-ablation
   end
   subgraph verification[Verification]
@@ -73,6 +77,7 @@ flowchart TB
     src-jacky-self-verification
     src-juampi-anti-slop-rank
     src-voxyz-verifiable-instructions
+    stale-fact-detector
     verifiable-instructions
   end
   subgraph harness[Harness]
@@ -88,6 +93,8 @@ flowchart TB
     graph-clusters-2026-08-24
     growth-briefing-2026-08-25
     growth-operator
+    growthos-3d-gap-2026-08-25
+    gsap-figma-note-2026-08-25
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
@@ -113,6 +120,9 @@ flowchart TB
     ingest-brief-2026-08-25-growthos
     ingest-brief-2026-08-25-play-methods
     ingest-brief-2026-08-25-skill-recorder
+    ingest-brief-2026-08-27-botdirectory
+    ingest-brief-2026-08-27-claim-protocol
+    ingest-brief-2026-08-27-lanbb-bb
     maps
     ship
     src-avid-obsidian-agent-team
@@ -121,49 +131,99 @@ flowchart TB
   subgraph bridge[Synthesis]
     agent-operating-system
   end
-  maps --> GrowthOS
   MEMORY --> memory-ablation
+  MEMORY --> portable-memory
+  MEMORY --> claim-protocol
+  MEMORY --> stale-fact-detector
+  MEMORY --> file-memory
   MEMORY --> growth-operator
+  hunt --> hunt-ship-loop
+  maps --> GrowthOS
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
-  hunt --> hunt-ship-loop
-  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
-  ingest-brief-2026-08-24-trace --> memory-engineering
-  ingest-brief-2026-08-24-trace --> context-graph
-  ingest-brief-2026-08-24-trace --> tokens-as-capital
-  ingest-brief-2026-08-25-play-methods --> hunt-ship-loop
-  ingest-brief-2026-08-25-play-methods --> llm-wiki
-  ingest-brief-2026-08-25-play-methods --> audited-task-contract
-  ingest-brief-2026-08-25-play-methods --> harness-routing
+  GrowthOS --> growth-operator
+  GrowthOS --> src-deronin-growthos-vault
+  growth-briefing-2026-08-25 --> src-deronin-growthos-vault
+  growthos-3d-gap-2026-08-25 --> growth-operator
+  growthos-3d-gap-2026-08-25 --> hunt-ship-loop
+  growthos-3d-gap-2026-08-25 --> context-graph
+  growthos-3d-gap-2026-08-25 --> src-deronin-growthos-vault
+  growthos-3d-gap-2026-08-25 --> gsap-figma-note-2026-08-25
+  gsap-figma-note-2026-08-25 --> growth-operator
+  gsap-figma-note-2026-08-25 --> context-graph
+  gsap-figma-note-2026-08-25 --> anti-slop
+  gsap-figma-note-2026-08-25 --> src-deronin-growthos-vault
+  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
+  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
   ingest-brief-2026-08-24-arxiv-281056 --> MEMORY
   ingest-brief-2026-08-24-arxiv-counts --> MEMORY
-  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
+  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
   ingest-brief-2026-08-24-five-x --> llm-wiki
   ingest-brief-2026-08-24-five-x --> memory-engineering
   ingest-brief-2026-08-24-five-x --> harness-routing
   ingest-brief-2026-08-24-five-x --> anti-slop
-  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
+  ingest-brief-2026-08-24-trace --> memory-engineering
+  ingest-brief-2026-08-24-trace --> context-graph
+  ingest-brief-2026-08-24-trace --> tokens-as-capital
   ingest-brief-2026-08-25-growthos --> growth-operator
   ingest-brief-2026-08-25-growthos --> src-deronin-growthos-vault
   ingest-brief-2026-08-25-growthos --> GrowthOS
   ingest-brief-2026-08-25-growthos --> growth-briefing-2026-08-25
-  growth-briefing-2026-08-25 --> src-deronin-growthos-vault
-  memory-ablation --> src-0xcodio-memory-ablation
-  memory-ablation --> memory-engineering
-  memory-ablation --> verifiable-instructions
-  self-verification --> src-jacky-self-verification
-  self-verification --> jacky-kwok
-  self-verification --> verifiable-instructions
-  self-verification --> entropy-gate
+  ingest-brief-2026-08-25-play-methods --> hunt-ship-loop
+  ingest-brief-2026-08-25-play-methods --> llm-wiki
+  ingest-brief-2026-08-25-play-methods --> audited-task-contract
+  ingest-brief-2026-08-25-play-methods --> harness-routing
+  ingest-brief-2026-08-27-botdirectory --> stale-fact-detector
+  ingest-brief-2026-08-27-claim-protocol --> claim-protocol
+  ingest-brief-2026-08-27-claim-protocol --> llm-wiki
+  ingest-brief-2026-08-27-claim-protocol --> portable-memory
+  ingest-brief-2026-08-27-claim-protocol --> file-memory
+  ingest-brief-2026-08-27-claim-protocol --> memory-engineering
+  ingest-brief-2026-08-27-claim-protocol --> context-graph
+  ingest-brief-2026-08-27-claim-protocol --> stale-fact-detector
+  ingest-brief-2026-08-27-claim-protocol --> entropy-gate
+  agent-operating-system --> llm-wiki
+  agent-operating-system --> memory-engineering
+  agent-operating-system --> audited-task-contract
+  agent-operating-system --> verifiable-instructions
+  agent-operating-system --> hunt-ship-loop
+  anti-slop --> src-juampi-anti-slop-rank
+  anti-slop --> verifiable-instructions
+  audited-task-contract --> src-rohit-harness-router
+  audited-task-contract --> harness-routing
+  audited-task-contract --> entropy-gate
+  audited-task-contract --> memory-engineering
+  context-graph --> src-avid-obsidian-agent-team
+  context-graph --> claim-protocol
+  context-graph --> tokens-as-capital
+  context-graph --> llm-wiki
+  context-graph --> memory-engineering
+  context-graph --> hunt-ship-loop
+  entropy-gate --> src-hitu-entropy-engineering
+  entropy-gate --> audited-task-contract
+  entropy-gate --> harness-routing
+  entropy-gate --> self-verification
+  entropy-gate --> memory-engineering
+  entropy-gate --> claim-protocol
+  file-memory --> llm-wiki
+  file-memory --> memory-engineering
+  file-memory --> claim-protocol
+  file-memory --> portable-memory
+  file-memory --> memory-ablation
+  file-memory --> context-graph
+  growth-operator --> src-deronin-growthos-vault
+  growth-operator --> GrowthOS
+  growth-operator --> gsap-figma-note-2026-08-25
+  growth-operator --> context-graph
+  growth-operator --> growthos-3d-gap-2026-08-25
+  growth-operator --> growth-briefing-2026-08-25
+  growth-operator --> llm-wiki
+  growth-operator --> memory-engineering
+  growth-operator --> hunt-ship-loop
   harness-routing --> src-rohit-harness-router
   harness-routing --> audited-task-contract
   harness-routing --> entropy-gate
   harness-routing --> rohit
-  memory-engineering --> src-0xcodio-memory-ablation
-  memory-engineering --> memory-ablation
-  memory-engineering --> context-graph
-  memory-engineering --> audited-task-contract
-  memory-engineering --> entropy-gate
   hunt-ship-loop --> src-avid-obsidian-agent-team
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
@@ -171,74 +231,90 @@ flowchart TB
   hunt-ship-loop --> growth-operator
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
+  llm-wiki --> stale-fact-detector
+  llm-wiki --> claim-protocol
   llm-wiki --> tokens-as-capital
   llm-wiki --> context-graph
   llm-wiki --> andrej-karpathy
   llm-wiki --> src-papa-couch-compiler
   llm-wiki --> src-bober-folder-workflow
   llm-wiki --> growth-operator
+  llm-wiki --> file-memory
+  llm-wiki --> portable-memory
+  memory-ablation --> src-0xcodio-memory-ablation
+  memory-ablation --> memory-engineering
+  memory-ablation --> verifiable-instructions
+  memory-ablation --> claim-protocol
+  memory-engineering --> src-0xcodio-memory-ablation
+  memory-engineering --> claim-protocol
+  memory-engineering --> memory-ablation
+  memory-engineering --> context-graph
+  memory-engineering --> audited-task-contract
+  memory-engineering --> entropy-gate
+  memory-engineering --> file-memory
+  portable-memory --> file-memory
+  portable-memory --> llm-wiki
+  portable-memory --> claim-protocol
+  self-verification --> src-jacky-self-verification
+  self-verification --> jacky-kwok
+  self-verification --> verifiable-instructions
+  self-verification --> entropy-gate
+  self-verification --> claim-protocol
+  stale-fact-detector --> claim-protocol
+  stale-fact-detector --> llm-wiki
+  stale-fact-detector --> memory-ablation
+  stale-fact-detector --> verifiable-instructions
   tokens-as-capital --> src-papa-couch-compiler
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
-  audited-task-contract --> src-rohit-harness-router
-  audited-task-contract --> harness-routing
-  audited-task-contract --> entropy-gate
-  audited-task-contract --> memory-engineering
-  anti-slop --> src-juampi-anti-slop-rank
-  anti-slop --> verifiable-instructions
-  entropy-gate --> src-hitu-entropy-engineering
-  entropy-gate --> audited-task-contract
-  entropy-gate --> harness-routing
-  entropy-gate --> self-verification
-  entropy-gate --> memory-engineering
-  context-graph --> src-avid-obsidian-agent-team
-  context-graph --> tokens-as-capital
-  context-graph --> llm-wiki
-  context-graph --> memory-engineering
-  context-graph --> hunt-ship-loop
   verifiable-instructions --> src-voxyz-verifiable-instructions
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   verifiable-instructions --> anti-slop
-  agent-operating-system --> llm-wiki
-  agent-operating-system --> memory-engineering
-  agent-operating-system --> audited-task-contract
-  agent-operating-system --> verifiable-instructions
-  agent-operating-system --> hunt-ship-loop
-  growth-operator --> src-deronin-growthos-vault
-  growth-operator --> GrowthOS
-  growth-operator --> growth-briefing-2026-08-25
-  growth-operator --> llm-wiki
-  growth-operator --> memory-engineering
-  growth-operator --> hunt-ship-loop
-  GrowthOS --> growth-operator
-  GrowthOS --> src-deronin-growthos-vault
-  rohit --> audited-task-contract
-  rohit --> harness-routing
-  rohit --> src-rohit-harness-router
-  jacky-kwok --> self-verification
-  jacky-kwok --> src-jacky-self-verification
+  claim-protocol --> src-lan-e-claim-protocol-2026-08-27
+  claim-protocol --> file-memory
+  claim-protocol --> memory-ablation
+  claim-protocol --> portable-memory
+  claim-protocol --> context-graph
+  claim-protocol --> llm-wiki
+  claim-protocol --> memory-engineering
+  claim-protocol --> stale-fact-detector
+  claim-protocol --> entropy-gate
+  claim-protocol --> self-verification
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler
   andrej-karpathy --> src-bober-folder-workflow
+  jacky-kwok --> self-verification
+  jacky-kwok --> src-jacky-self-verification
+  rohit --> audited-task-contract
+  rohit --> harness-routing
+  rohit --> src-rohit-harness-router
+  src-0xcodio-memory-ablation --> memory-engineering
+  src-0xcodio-memory-ablation --> memory-ablation
+  src-0xcodio-memory-ablation --> verifiable-instructions
+  src-avid-obsidian-agent-team --> hunt-ship-loop
+  src-avid-obsidian-agent-team --> context-graph
   src-bober-folder-workflow --> llm-wiki
   src-bober-folder-workflow --> andrej-karpathy
+  src-deronin-growthos-vault --> growth-operator
+  src-hitu-entropy-engineering --> entropy-gate
   src-jacky-self-verification --> self-verification
   src-jacky-self-verification --> jacky-kwok
   src-juampi-anti-slop-rank --> anti-slop
   src-papa-couch-compiler --> llm-wiki
   src-papa-couch-compiler --> tokens-as-capital
   src-papa-couch-compiler --> andrej-karpathy
-  src-hitu-entropy-engineering --> entropy-gate
-  src-avid-obsidian-agent-team --> hunt-ship-loop
-  src-avid-obsidian-agent-team --> context-graph
   src-rohit-harness-router --> audited-task-contract
   src-rohit-harness-router --> harness-routing
   src-rohit-harness-router --> rohit
-  src-0xcodio-memory-ablation --> memory-engineering
-  src-0xcodio-memory-ablation --> memory-ablation
-  src-0xcodio-memory-ablation --> verifiable-instructions
   src-voxyz-verifiable-instructions --> verifiable-instructions
-  src-deronin-growthos-vault --> growth-operator
+  src-lan-e-claim-protocol-2026-08-27 --> memory-ablation
+  src-lan-e-claim-protocol-2026-08-27 --> portable-memory
+  src-lan-e-claim-protocol-2026-08-27 --> file-memory
+  src-lan-e-claim-protocol-2026-08-27 --> claim-protocol
+  src-lan-e-claim-protocol-2026-08-27 --> llm-wiki
+  src-lan-e-claim-protocol-2026-08-27 --> memory-engineering
+  src-lan-e-claim-protocol-2026-08-27 --> context-graph
+  src-lan-e-claim-protocol-2026-08-27 --> stale-fact-detector
 ```
 <!-- graph-mermaid:end -->
