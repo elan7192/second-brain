@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop14 | 0/116 4fd0b9f v14-hardened
+
+Floor held. Leftover hop/session/token headers closed on score path. continue-code-findIt-apply/fixIt-apply/snippets-fixes/2FA-enter/web3-nft HTTP closed. v13 applied. PR24 merged e1c2c58. See [[hunt-harden-loop]] [[src-lanbb-pr24-loop14]].
+
 ## [2026-08-27] loop13 | 0/116 e8c3a57 v13-hardened
 
 Floor mem>=6m pids>=6 held. Leftover rewrite/identity headers closed on score path. continue-code-apply/tutorial/access_token/ftp-backup HTTP closed. v12 applied. PR23 merged 00ed19d. See [[hunt-harden-loop]] [[src-lanbb-pr23-loop13]].
