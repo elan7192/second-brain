@@ -45,8 +45,15 @@ When the human drops files in `raw/` and says ingest:
 7. Append `wiki/log.md`.
 8. Write a three-sentence brief in `output/` of what changed, what linked, and what the human should look at.
 
-Check: `python3 tools/lint-wiki.py` exits 0. Every new page has an inbound `[[wikilink]]`.
+Check: `python3 tools/lint-wiki.py` exits 0. Every new page has an inbound `[[wikilink]]`. Orphans fail the gate.
 If a claim cannot be tied to the raw file: leave it out.
+
+## Clip ingest
+
+Compile URL clips from caption and metadata first. Fetch video or frames only when a kept claim depends on the picture. Do not dump clip file bodies.
+
+Check: the source page cites caption or metadata. If frames were used, the source names the claim that required them.
+If the text already holds the claim: leave the video unfetched.
 
 ## Memory
 

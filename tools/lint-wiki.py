@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Check wiki pages for missing wikilink targets and orphan pages."""
+"""Check wiki pages for missing wikilink targets and orphan pages.
+
+Exit 1 if any missing link or any non-hub orphan. Hubs: index, log, Home, lint-wiki, graph.
+"""
 
 from __future__ import annotations
 
@@ -45,7 +48,7 @@ def main() -> int:
         print(f"MISSING {item}")
     for slug in orphans:
         print(f"ORPHAN {slug}")
-    return 1 if missing else 0
+    return 1 if missing or orphans else 0
 
 
 if __name__ == "__main__":

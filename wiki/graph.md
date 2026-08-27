@@ -88,6 +88,7 @@ flowchart TB
   end
   subgraph hunt-ship[Hunt / ship]
     GrowthOS
+    daily-tool-replace-vault-2026-08-27
     graph-clusters-2026-08-24
     growth-briefing-2026-08-25
     growth-operator
@@ -96,11 +97,7 @@ flowchart TB
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
-    ingest-brief-2026-08-24-arxiv-128956
-    ingest-brief-2026-08-24-arxiv-156256
-    ingest-brief-2026-08-24-arxiv-281056
     ingest-brief-2026-08-24-arxiv-405856
-    ingest-brief-2026-08-24-arxiv-counts
     ingest-brief-2026-08-24-arxiv-pages
     ingest-brief-2026-08-24-arxiv-tierlist
     ingest-brief-2026-08-24-batch01
@@ -130,6 +127,8 @@ flowchart TB
     agent-operating-system
   end
   MEMORY --> memory-ablation
+  MEMORY --> daily-tool-replace
+  MEMORY --> daily-tool-replace-vault-2026-08-27
   MEMORY --> growth-operator
   hunt --> hunt-ship-loop
   maps --> GrowthOS
@@ -147,10 +146,6 @@ flowchart TB
   gsap-figma-note-2026-08-25 --> context-graph
   gsap-figma-note-2026-08-25 --> anti-slop
   gsap-figma-note-2026-08-25 --> src-deronin-growthos-vault
-  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
-  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
-  ingest-brief-2026-08-24-arxiv-281056 --> MEMORY
-  ingest-brief-2026-08-24-arxiv-counts --> MEMORY
   ingest-brief-2026-08-24-arxiv-pages --> MEMORY
   ingest-brief-2026-08-24-five-x --> llm-wiki
   ingest-brief-2026-08-24-five-x --> memory-engineering
@@ -167,6 +162,11 @@ flowchart TB
   ingest-brief-2026-08-25-play-methods --> llm-wiki
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
+  daily-tool-replace-vault-2026-08-27 --> daily-tool-replace
+  daily-tool-replace-vault-2026-08-27 --> src-can1357-daily-tool-replace-2026-08-27
+  daily-tool-replace-vault-2026-08-27 --> ingest-brief-2026-08-24-arxiv-405856
+  daily-tool-replace-vault-2026-08-27 --> tokens-as-capital
+  daily-tool-replace-vault-2026-08-27 --> can-boluk
   ingest-brief-2026-08-27-can1357-daily-tool --> daily-tool-replace
   ingest-brief-2026-08-27-can1357-daily-tool --> src-can1357-daily-tool-replace-2026-08-27
   ingest-brief-2026-08-27-can1357-daily-tool --> can-boluk
@@ -245,6 +245,7 @@ flowchart TB
   daily-tool-replace --> src-can1357-daily-tool-replace-2026-08-27
   daily-tool-replace --> can-boluk
   daily-tool-replace --> anti-slop
+  daily-tool-replace --> daily-tool-replace-vault-2026-08-27
   daily-tool-replace --> harness-routing
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler

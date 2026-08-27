@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] execute | captions-first + orphan briefs
+
+lan E yes. Deleted 4 counts-only intermediate briefs. Linked remaining 2026-08-24 briefs from [[digests]]. Lint now fails on orphans. Clip ingest: caption first. See [[daily-tool-replace-vault-2026-08-27]] [[clip-pipeline]].
+
 ## [2026-08-27] query | daily-tool-replace vs this vault
 
 Room to optimize: delete/skip, not a git GUI. Kill omp clone and GitKraken-class UI. Pursue: captions-first ingest, 19 orphan briefs. Watch: 0 CSV, graph PNG Pillow. Brief: [[daily-tool-replace-vault-2026-08-27]].

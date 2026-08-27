@@ -29,7 +29,7 @@ Do not ship a GitKraken-class git GUI for this vault from this tweet. D7 is Obsi
 
 Daily tools named in-schema: Obsidian, git markdown, `tools/lint-wiki.py`, `tools/render-obsidian-graph.py`, `tools/growth-brief.py`. Keep list in the tweet is Can's desktop, not a vault requirement.
 
-Verdict: [[daily-tool-replace-vault-2026-08-27]]
+lan E yes 2026-08-27: captions-first ingest. Four stale count-bump briefs deleted. Remaining 2026-08-24 briefs linked. Lint fails on orphans. Verdict: [[daily-tool-replace-vault-2026-08-27]]
 
 ## Related
 
