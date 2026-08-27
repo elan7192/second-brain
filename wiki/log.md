@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop16 | 0/116 75b62be v16-hardened
+
+Floor held. worker_processes 1 source OOM=false. Leftover tracing/cloud-auth headers closed. CSAF/product-image/coupon-apply HTTP closed. v15 applied. PR26 merged 9e8bbdc. See [[hunt-harden-loop]] [[src-lanbb-pr26-loop16]].
+
 ## [2026-08-27] loop15 | 0/116 1801528 v15-hardened
 
 worker_processes 1 baked. Floor held. Auto OOM 137 lesson. Leftover remote-user/oauth-proxy/tracing/cloud-auth headers closed. web3-walletExploitAddress/2FA-SPA/ftp-quarantine/solve-server-side/coupon HTTP closed. v14 applied. PR25 merged 02f73dc. See [[hunt-harden-loop]] [[src-lanbb-pr25-loop15]].

@@ -77,6 +77,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Hunt-harden loop13 (2026-08-27): PR23 merged `00ed19d`, wall `e8c3a57` v13-hardened. Floor mem>=6m pids>=6 held. Leftover rewrite/identity headers closed on score path. Leftover HTTP: continue-code-apply, tutorial, access_token, ftp-backup. v12 applied. Report at 0/N. See [[hunt-harden-loop]].
 - Hunt-harden loop14 (2026-08-27): PR24 merged `e1c2c58`, wall `4fd0b9f` v14-hardened. Floor held. Leftover hop/session/token headers closed on score path. Leftover HTTP: continue-code-findIt-apply, fixIt-apply, snippets-fixes, 2FA-enter, web3-nft. v13 applied. Report at 0/N. See [[hunt-harden-loop]].
 - Hunt-harden loop15 (2026-08-27): PR25 merged `02f73dc`, wall `1801528` v15-hardened. worker_processes 1 baked. Floor held. Auto OOM 137 lesson. Leftover remote-user/oauth-proxy/tracing/cloud-auth headers closed. Leftover HTTP: web3-walletExploitAddress, 2FA-SPA, ftp-quarantine, solve-server-side, coupon. v14 applied. Report at 0/N. See [[hunt-harden-loop]].
+- Hunt-harden loop16 (2026-08-27): PR26 merged `9e8bbdc`, wall `75b62be` v16-hardened. Floor held. worker_processes 1 source OOM=false. Leftover tracing/cloud-auth headers closed. Leftover HTTP: CSAF, product-image, coupon-apply. v15 applied. Report at 0/N. See [[hunt-harden-loop]].
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
 ## GrowthOS

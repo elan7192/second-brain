@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]] [[src-lanbb-pr19-loop9]] [[src-lanbb-pr20-loop10]] [[src-lanbb-pr21-loop11]] [[src-lanbb-pr22-loop12]] [[src-lanbb-pr23-loop13]] [[src-lanbb-pr24-loop14]] [[src-lanbb-pr25-loop15]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]] [[src-lanbb-pr19-loop9]] [[src-lanbb-pr20-loop10]] [[src-lanbb-pr21-loop11]] [[src-lanbb-pr22-loop12]] [[src-lanbb-pr23-loop13]] [[src-lanbb-pr24-loop14]] [[src-lanbb-pr25-loop15]] [[src-lanbb-pr26-loop16]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -186,6 +186,17 @@ v14 applied. Floor `mem>=6m` `pids>=6` held. `worker_processes 1` baked. Auto OO
 
 Harden named (defense): leftover remote-user/oauth-proxy/tracing/cloud-auth headers closed. Leftover HTTP closed: web3-walletExploitAddress, 2FA-SPA, ftp-quarantine, solve-server-side, coupon.
 
+## Loop16
+
+- Report at 0/116.
+- Wall: v15 → v16-hardened
+- PR: https://github.com/elan7192/LanBB/pull/26 MERGED `9e8bbdcdc4657483dec100df8881865f53601724`
+- Wall SHA: `75b62be`
+
+v15 applied. Floor `mem>=6m` `pids>=6` held. `worker_processes 1` source `OOM=false`.
+
+Harden named (defense): leftover tracing/cloud-auth headers closed. Leftover HTTP closed: CSAF, product-image, coupon-apply.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]] · [[src-lanbb-pr20-loop10]] · [[src-lanbb-pr21-loop11]] · [[src-lanbb-pr22-loop12]] · [[src-lanbb-pr23-loop13]] · [[src-lanbb-pr24-loop14]] · [[src-lanbb-pr25-loop15]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]] · [[src-lanbb-pr20-loop10]] · [[src-lanbb-pr21-loop11]] · [[src-lanbb-pr22-loop12]] · [[src-lanbb-pr23-loop13]] · [[src-lanbb-pr24-loop14]] · [[src-lanbb-pr25-loop15]] · [[src-lanbb-pr26-loop16]]
