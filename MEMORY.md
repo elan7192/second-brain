@@ -70,6 +70,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Hunt-harden loop6 (2026-08-27): PR16 merged `2019d6c`, wall `9795cd9` v6 (juice root writable, tmpfs only /tmp, read-only edge, login closed, GET/HEAD only, SPA/static leak closed). v5 read-only skipped EROFS/tmpfs; v6 actually applies. Report at 0/N. Studio coding-snippets pill. See [[hunt-harden-loop]].
 - Hunt-harden loop7 (2026-08-27): PR17 merged `7b009d6`, wall `7dd37e7` v7 (default-deny edge except score path; leftover SPA/JS and remaining /api /rest closed). v6 applied. v7 keeps apply constraints then default-denies. Report at 0/N. Studio applies pill. See [[hunt-harden-loop]].
 - Hunt-harden loop8 (2026-08-27): PR18 merged `7d98a3b` v8-hardened. Hunted v7: Fill live 0/116, score GET 200, default-deny 403, POST 405. Report at 0/N. v8: exact score path, 127.0.0.1 bind, GET only. Next hunt v8. No exploiting-* skills. See [[hunt-harden-loop]].
+- Hunt-harden loop9 (2026-08-27): PR19 merged `75cb3bc`, wall `dee7041` v9 (exact-equals GET /api/Challenges/, host allowlist, leftover oauth/health/debug closed). v8 applied. Report at 0/N. See [[hunt-harden-loop]].
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
 ## GrowthOS

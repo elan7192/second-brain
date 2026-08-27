@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]] [[src-lanbb-pr19-loop9]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -105,6 +105,17 @@ Harden named (defense): exact score path `^/api/Challenges/?$`, bind `127.0.0.1:
 
 13 testing/UX skills. No `exploiting-*`. Coverage gaps named in PR: crypto, misc, misconfig, obscurity; docker-off deserialization/XXE. Not mixed into n/N.
 
+## Loop9
+
+- Report at 0/116.
+- Wall: v8 → v9
+- PR: https://github.com/elan7192/LanBB/pull/19 MERGED `75cb3bc98745a0057bca3a687a6ed900ba5aa290`
+- Wall SHA: `dee7041`
+
+v8 applied. v9 tightens score path + host allowlist.
+
+Harden named (defense): exact-equals GET `/api/Challenges/`, host allowlist, leftover oauth/health/debug closed.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]]

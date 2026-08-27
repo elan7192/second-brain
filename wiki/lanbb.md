@@ -30,8 +30,8 @@ Human decision 2026-08-24: new repo named LanBB; do not in-place rename an exist
 
 The vault did not create this repo. Wiki is still silent on whether any semantica remote is a fork.
 
-Hunt→harden: [[hunt-harden-loop]]. Loop1–7 v1–v7. Loop8 PR18 merged `7d98a3b` v8-hardened. Hunted v7: score GET 200, default-deny 403, POST 405. Report 0/N. Next hunt v8. Procedural stays in LanBB.
+Hunt→harden: [[hunt-harden-loop]]. Loop1–8 v1–v8. Loop9 PR19 merged `75cb3bc` wall `dee7041` v9. v8 applied. v9 exact-equals score path + host allowlist. Report 0/N. Procedural stays in LanBB.
 
 ## Related
 
-[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]]
+[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]]
