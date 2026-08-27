@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
+
+Floor held. worker_processes 1 source OOM=false. Leftover tracing/auth/TLS client-cert headers closed. chatbot-respond/2FA-verify/codefixes HTTP closed. v16 applied. PR27 merged 94ac04c. Last loop this window. See [[hunt-harden-loop]] [[src-lanbb-pr27-loop17]].
+
 ## [2026-08-27] loop16 | 0/116 75b62be v16-hardened
 
 Floor held. worker_processes 1 source OOM=false. Leftover tracing/cloud-auth headers closed. CSAF/product-image/coupon-apply HTTP closed. v15 applied. PR26 merged 9e8bbdc. See [[hunt-harden-loop]] [[src-lanbb-pr26-loop16]].

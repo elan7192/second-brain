@@ -29,7 +29,7 @@ Do not add a second memory writer. Catalog `persistent-bot-memory` is the same j
 
 Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
-Standing until 12:00 Taipei 2026-08-27: each Engineer hunt→harden loop, Vault writes Pawel semantic (method page or patch) plus one episodic [[log]] row. Do not write procedural SKILL.md. Do not dump chat. No vector DB. See [[hunt-harden-loop]].
+2026-08-27 standing closed after loop17. Each hunt→harden: Vault writes Pawel semantic plus one episodic [[log]] row. Do not write procedural SKILL.md. Do not dump chat. No vector DB. See [[hunt-harden-loop]].
 
 ## Related
 
