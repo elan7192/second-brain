@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -70,6 +70,17 @@ Harden named (defense): juice read-only, drop OPTIONS, login WAF, burst>=1. Clos
 
 `GET /api/Challenges` stays open. Login is the remaining auth door.
 
+v5 juice read-only skipped EROFS/tmpfs. Not fully applied until v6.
+
+## Loop6
+
+- Report at 0/N. Studio coding-snippets pill.
+- Wall: v5-hardened → v6
+- PR: https://github.com/elan7192/LanBB/pull/16 MERGED `2019d6c76df9b80a3bf63c5025d4a974dc70a0a3`
+- Wall SHA: `9795cd9`
+
+Harden named (defense): juice root writable, tmpfs only `/tmp`, read-only edge, login closed, GET/HEAD only, SPA/static leak closed. v6 actually applies the read-only wall v5 skipped.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]]

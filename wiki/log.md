@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop6 | 0/116 9795cd9 v6
+
+juice root writable + tmpfs only /tmp + read-only edge + login closed + GET/HEAD only + SPA/static leak closed. v5 skipped EROFS/tmpfs. PR16 merged 2019d6c. See [[hunt-harden-loop]] [[src-lanbb-pr16-loop6]].
+
 ## [2026-08-27] loop5 | 0/116 17ca40d v5-hardened
 
 juice read-only + drop OPTIONS + login WAF + identity/Web3/catalog/search/info-leak closed + burst>=1. GET /api/Challenges open. Login remaining auth door. PR15 merged 9227b47. See [[hunt-harden-loop]] [[src-lanbb-pr15-loop5]].
