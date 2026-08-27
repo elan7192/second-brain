@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop7 | 0/116 7dd37e7 v7
+
+default-deny edge except score path + leftover SPA/JS + remaining /api /rest closed. v6 applied. v7 keeps apply then default-denies. PR17 merged 7b009d6. See [[hunt-harden-loop]] [[src-lanbb-pr17-loop7]].
+
 ## [2026-08-27] loop6 | 0/116 9795cd9 v6
 
 juice root writable + tmpfs only /tmp + read-only edge + login closed + GET/HEAD only + SPA/static leak closed. v5 skipped EROFS/tmpfs. PR16 merged 2019d6c. See [[hunt-harden-loop]] [[src-lanbb-pr16-loop6]].
