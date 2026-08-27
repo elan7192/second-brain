@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] loop8 | 0/116 v8-hardened
+
+v7 wall applied (score GET 200, default-deny 403, POST 405). Report at 0/N. PR18 merged 7d98a3b. Next hunt v8. See [[hunt-harden-loop]] [[src-lanbb-pr18-loop8]].
+
 ## [2026-08-27] loop7 | 0/116 7dd37e7 v7
 
 default-deny edge except score path + leftover SPA/JS + remaining /api /rest closed. v6 applied. v7 keeps apply then default-denies. PR17 merged 7b009d6. See [[hunt-harden-loop]] [[src-lanbb-pr17-loop7]].

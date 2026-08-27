@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -92,6 +92,19 @@ v6 applied. v7 keeps apply constraints, then default-denies.
 
 Harden named (defense): default-deny edge except score path. Leftover SPA/JS closed. Remaining `/api` `/rest` closed.
 
+## Loop8
+
+- Hunted: v7-hardened. Fill live 0/116. Score GET HTTP 200. Default-deny 403. POST score path 405.
+- Report at 0/N. Wall applied.
+- PR: https://github.com/elan7192/LanBB/pull/18 MERGED `7d98a3bae7d074b1683dd5aa5ad13f0d4ef7d7b8`
+- Wall: v7 → v8-hardened. Next hunt uses v8.
+
+v7 applied. v8 keeps apply constraints (no juice EROFS, no tmpfs over data/static, burst>=1, score GET stays open).
+
+Harden named (defense): exact score path `^/api/Challenges/?$`, bind `127.0.0.1:3000` only, GET only (HEAD dropped), leftover SPA/Web3/payment closed, broader static deny, broader WAF signatures (no PoC). GET `/api/Challenges/` is the only proxied n/N path.
+
+13 testing/UX skills. No `exploiting-*`. Coverage gaps named in PR: crypto, misc, misconfig, obscurity; docker-off deserialization/XXE. Not mixed into n/N.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]]
