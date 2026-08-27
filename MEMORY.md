@@ -74,6 +74,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Hunt-harden loop10 (2026-08-27): PR20 merged `f8b4dbe`, wall `0042064` v10 (trailing-slash-only GET /api/Challenges/, empty-query/cookie-closed score path, leftover privacy/hidden/data HTTP closed). v9 applied. Report at 0/N. See [[hunt-harden-loop]].
 - Hunt-harden loop11 (2026-08-27): PR21 merged `484fbbe`, wall `3afb11b` v11 (Authorization/Origin/Referer closed on score path; leftover continue-code/login/search/Baskets/nested SPA HTTP closed). v10 applied: score GET 200, default-deny 403. Report at 0/N. Next hunt v11. See [[hunt-harden-loop]].
 - Hunt-harden loop12 (2026-08-27): PR22 merged `c201b56`, wall `e62fa4d` v12. Hunted v11: Fill live 0/116, score GET 200, default-deny 403. Bake mem>=6m pids>=6 (v11 4m/4 failed). Extra hop/auth headers closed. Leftover HTTP: hacking-instructor, juicy-nft, continue-code-xss, products-queries. Report at 0/N. Next hunt v12. See [[hunt-harden-loop]].
+- Hunt-harden loop13 (2026-08-27): PR23 merged `00ed19d`, wall `e8c3a57` v13-hardened. Floor mem>=6m pids>=6 held. Leftover rewrite/identity headers closed on score path. Leftover HTTP: continue-code-apply, tutorial, access_token, ftp-backup. v12 applied. Report at 0/N. See [[hunt-harden-loop]].
 - 2026-08-24: new repo https://github.com/elan7192/LanBB (main). semantica is submodule tools/semantica @ 6c2ccfd. Do not rename semantica-agi/semantica or elan7192/semantica. See [[lanbb]].
 
 ## GrowthOS

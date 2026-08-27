@@ -10,7 +10,7 @@ updated: 2026-08-27
 
 CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 
-Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]] [[src-lanbb-pr19-loop9]] [[src-lanbb-pr20-loop10]] [[src-lanbb-pr21-loop11]] [[src-lanbb-pr22-loop12]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
+Sources: [[src-lanbb-pr9-loop1]] [[src-lanbb-pr10-loop2]] [[src-lanbb-pr11-loop3]] [[src-lanbb-pr13-loop4]] [[src-lanbb-pr15-loop5]] [[src-lanbb-pr16-loop6]] [[src-lanbb-pr17-loop7]] [[src-lanbb-pr18-loop8]] [[src-lanbb-pr19-loop9]] [[src-lanbb-pr20-loop10]] [[src-lanbb-pr21-loop11]] [[src-lanbb-pr22-loop12]] [[src-lanbb-pr23-loop13]]. Product: [[lanbb]]. Ethical hacking = in-scope find + report. See [[hunter-follows]].
 
 ## Loop1
 
@@ -153,6 +153,17 @@ Harden named (defense): extra hop/auth headers closed on score path. Leftover HT
 
 Next hunt uses v12.
 
+## Loop13
+
+- Report at 0/116.
+- Wall: v12 → v13-hardened
+- PR: https://github.com/elan7192/LanBB/pull/23 MERGED `00ed19dde324fb766d3f0a7e5e2234a78397a923`
+- Wall SHA: `e8c3a57`
+
+v12 applied. Floor `mem>=6m` `pids>=6` held.
+
+Harden named (defense): leftover rewrite/identity headers closed on score path. Leftover HTTP closed: continue-code-apply, tutorial, access_token, ftp-backup.
+
 ## Related
 
-[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]] · [[src-lanbb-pr20-loop10]] · [[src-lanbb-pr21-loop11]] · [[src-lanbb-pr22-loop12]]
+[[lanbb]] · [[file-memory]] · [[assign-execute-verify]] · [[hunter-follows]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]] · [[src-lanbb-pr20-loop10]] · [[src-lanbb-pr21-loop11]] · [[src-lanbb-pr22-loop12]] · [[src-lanbb-pr23-loop13]]
