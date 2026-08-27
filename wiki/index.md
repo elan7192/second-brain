@@ -3,12 +3,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
+Catalog of compiled pages. Read this before answering. Updated 2026-08-27.
 
 ## Start
 
@@ -44,6 +44,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |
+| [[daily-tool-replace]] | Know-better builders replace daily-flow apps in ~1h. Hour is tweet claim |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[skillspector]] | Gate generated SKILL.md before shipping |
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
@@ -131,6 +132,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-can1357-daily-tool-replace-2026-08-27]] | 2026-08-27 | Can: hour-tops daily-tool replace. Hour unverified |
 | [[src-lanbb-pr27-loop17]] | 2026-08-27 | Loop17 PR27 ad6f669 v17 0/116 |
 | [[src-lanbb-pr26-loop16]] | 2026-08-27 | Loop16 PR26 75b62be v16 0/116 |
 | [[src-lanbb-pr25-loop15]] | 2026-08-27 | Loop15 PR25 1801528 v15 0/116 |
@@ -255,6 +257,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 | [[alex-karp]] | Palantir CEO. Sovereignty claims unverified without URL |
 | [[lostsec]] | coffinxp / @lostsec_. Hunter input source. Not a dump |
 | [[zack0x01]] | Hunter input source. Not a dump |
+| [[can-boluk]] | @_can1357. Daily-tool replace tweet. omp.sh |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |

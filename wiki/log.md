@@ -10,6 +10,10 @@ updated: 2026-08-27
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | Can daily-tool-replace
+
+@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C15: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
+
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 
 Floor held. worker_processes 1 source OOM=false. Leftover tracing/auth/TLS client-cert headers closed. chatbot-respond/2FA-verify/codefixes HTTP closed. v16 applied. PR27 merged 94ac04c. Last loop this window. See [[hunt-harden-loop]] [[src-lanbb-pr27-loop17]].

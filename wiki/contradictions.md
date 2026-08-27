@@ -2,8 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
-updated: 2026-08-23
+updated: 2026-08-27
 ---
 
 # Contradictions
@@ -107,3 +106,11 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Writing slop vs software slop
+
+D6 [[anti-slop]] is juampi's writing rank.
+
+[[src-can1357-daily-tool-replace-2026-08-27]] uses slop for an LLM-built git UI plus steering.
+
+Resolution: keep D6 as writing. Compile the clip as [[daily-tool-replace]]. Do not merge the two slops.

@@ -2,8 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
-updated: 2026-08-23
+updated: 2026-08-27
 ---
 
 # Agent operating system
@@ -35,3 +34,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
+
+[[src-can1357-daily-tool-replace-2026-08-27]] is a daily-flow replace tweet. Hour tops is `unverified` as a general bound. See [[daily-tool-replace]].

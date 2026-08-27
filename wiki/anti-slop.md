@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-27
 ---
 
 # Anti-slop
@@ -39,6 +39,8 @@ The human asked for examples, a comparison, or a specific voice.
 
 ## Related
 
-[[verifiable-instructions]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]]
+[[verifiable-instructions]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]] · [[daily-tool-replace]]
 
 A second 10-skill list exists ([[src-openagentskill-anti-slop]]). Do not replace juampi's list. See [[contradictions]] C8.
+
+[[src-can1357-daily-tool-replace-2026-08-27]] uses slop for LLM-built software UI plus steering. Vault D6 stays writing constraints. See [[contradictions]] C15.
