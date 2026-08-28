@@ -10,6 +10,8 @@ updated: 2026-08-28
 
 Short briefs built from the wiki. Chat gets these, not the raw hunt.
 
+- [[merge-conflict-report-2026-08-28-maverick-ultramode]]
+- [[ingest-brief-2026-08-24-maverick-ultramode]]
 - [[merge-conflict-report-agent-facing-2026-08-28]]
 - [[ingest-brief-2026-08-24-disclosure-index]]
 - [[ingest-brief-2026-08-24]]

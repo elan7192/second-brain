@@ -13,12 +13,14 @@ updated: 2026-08-28
 
 ## Done
 
-Merged Headlong hour harvest onto main. C16 (main C15 is Foundry). Mind stopped. Tests did not run.
-
-Merged origin/main into the agent-facing-docs branch. D8/D9 remapped to D10/D11. C8–C10 remapped to C26–C28. C25 vs D9 still unresolved.
+Merged origin/main into the maverick-ultramode branch. C8/C9 remapped to C33/C34. C17 / C18 / C25 still unresolved.
 
 ## Look at
 
+- [[ultra-mode]]
+- [[contradictions]] C33 C34
+- `output/ingest-brief-2026-08-24-maverick-ultramode.md`
+- [[merge-conflict-report-2026-08-28-maverick-ultramode]]
 - [[agent-facing-docs]]
 - [[disclosure-index]]
 - [[contradictions]] C26 C27 C28

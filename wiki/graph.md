@@ -110,6 +110,7 @@ flowchart TB
     GrowthOS
     avid
     daily-tool-replace-vault-2026-08-27
+    deer-flow-bootstrap-2026-08-24
     disclosures
     graph-clusters-2026-08-24
     growth-briefing-2026-08-25
@@ -138,6 +139,7 @@ flowchart TB
     ingest-brief-2026-08-24-batch09
     ingest-brief-2026-08-24-disclosure-index
     ingest-brief-2026-08-24-five-x
+    ingest-brief-2026-08-24-maverick-ultramode
     ingest-brief-2026-08-24-three-x
     ingest-brief-2026-08-24-trace
     ingest-brief-2026-08-25-avid-company-foundry
@@ -158,7 +160,9 @@ flowchart TB
     merge-conflict-report-2026-08-28-avid-foundry
     merge-conflict-report-2026-08-28-daily-tool
     merge-conflict-report-2026-08-28-daily-tool-2
+    merge-conflict-report-2026-08-28-deer-flow
     merge-conflict-report-2026-08-28-grok-bot
+    merge-conflict-report-2026-08-28-maverick-ultramode
     merge-conflict-report-agent-facing-2026-08-28
     merge-conflict-report-entropy-quiz-2026-08-28
     ontology-rebuild-brief-2026-08-28
@@ -309,11 +313,21 @@ flowchart TB
   ingest-brief-2026-08-25-avid-company-foundry --> audited-task-contract
   ingest-brief-2026-08-25-avid-company-foundry --> entropy-gate
   ingest-brief-2026-08-25-avid-company-foundry --> memory-engineering
+  ingest-brief-2026-08-24-maverick-ultramode --> self-verification
+  ingest-brief-2026-08-24-maverick-ultramode --> entropy-gate
+  ingest-brief-2026-08-24-maverick-ultramode --> harness-routing
+  ingest-brief-2026-08-24-maverick-ultramode --> jacky-kwok
   merge-conflict-report-entropy-quiz-2026-08-28 --> graph-clusters-2026-08-24
   merge-conflict-report-entropy-quiz-2026-08-28 --> query-entropy-gate
   merge-conflict-report-entropy-quiz-2026-08-28 --> query-skills-and-slop
   ingest-brief-2026-08-23-cybersecurity-skills --> tokens-as-capital
   ingest-brief-2026-08-23-cybersecurity-skills --> context-graph
+  merge-conflict-report-2026-08-28-maverick-ultramode --> ship
+  merge-conflict-report-2026-08-28-maverick-ultramode --> entropy-gate
+  merge-conflict-report-2026-08-28-maverick-ultramode --> harness-routing
+  merge-conflict-report-2026-08-28-maverick-ultramode --> self-verification
+  merge-conflict-report-2026-08-28-maverick-ultramode --> MEMORY
+  merge-conflict-report-2026-08-28-maverick-ultramode --> ingest-brief-2026-08-24-maverick-ultramode
   merge-conflict-report-agent-facing-2026-08-28 --> ship
   merge-conflict-report-agent-facing-2026-08-28 --> context-graph
   merge-conflict-report-agent-facing-2026-08-28 --> llm-wiki

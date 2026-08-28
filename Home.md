@@ -18,7 +18,7 @@ Ten X posts plus GitHub skill catalogs compiled into a wiki you can browse as a 
 - Gold: [[wiki]]
 - Teal: [[maps]]
 - Blue: [[hunt]] / [[twitter]] / [[disclosures]]
-- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]], [[hurley]], [[mahipal-jangra]], [[avid]]
+- Green: [[andrej-karpathy]], [[jacky-kwok]], [[maverick]], [[rohit]], [[hurley]], [[mahipal-jangra]], [[avid]]
 - Coral: [[ship]]
 
 Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.
@@ -52,6 +52,8 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 ## This batch
 
 2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Skill-library ingest: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+
+2026-08-24: [[src-maverick-ultramode]]. Brief: [[ingest-brief-2026-08-24-maverick-ultramode]]. Merge remapped C8/C9 → C33/C34. See [[merge-conflict-report-2026-08-28-maverick-ultramode]].
 
 2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour harvest: [[ingest-brief-2026-08-26-headlong-hour]].
 

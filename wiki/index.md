@@ -66,6 +66,8 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[headlong]] | Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
+| [[probabilistic-pivot-tournament]] | Ring pass, pivot duels, win-rate confidence |
+| [[ultra-mode]] | /ultra: N worktrees, then PPT picks a winner |
 | [[anti-slop]] | Default writing constraints |
 | [[daily-tool-replace]] | Know-better builders replace daily-flow apps in ~1h. Hour is tweet claim |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
@@ -286,6 +288,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[src-voxyz-verifiable-instructions]] | 2026-08-22 | Replace never-rules with checks. Exact 8 blocks missing |
 | [[src-papa-couch-compiler]] | 2026-08-21 | 305k vs 47k. Compiler vs filing cabinet |
 | [[src-hitu-entropy-engineering]] | 2026-08-21 | Swarm contamination. Prefer the 64-worker numbers |
+| [[src-maverick-ultramode]] | 2026-08-22 | /ultra. 24% to 33% on a 15-task Terminal-Bench slice |
 | [[src-jacky-self-verification]] | 2026-08-17 | DeepSeek V4 Flash + self-verify on Terminal-Bench |
 | [[src-bober-folder-workflow]] | 2026-08-21 | Popular how-to. Income and Karpathy paraphrase unverified |
 | [[src-avid-obsidian-agent-team]] | 2026-08-20 | Hunt / Ship / Decisions vault for a bot team |
@@ -308,6 +311,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[can-boluk]] | @_can1357. Daily-tool replace tweet. omp.sh |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
+| [[maverick]] | agent-ultramode. /ultra over PPT |
 | [[rohit]] | Cross-harness task contract |
 | [[hurley]] | Notion Skills library pitch, 2026-08-21 |
 | [[mahipal-jangra]] | Community cybersecurity skill library. Not Anthropic |

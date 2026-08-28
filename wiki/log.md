@@ -11,6 +11,14 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into maverick-ultramode ingest
+
+Fetched origin/main at `5927d29`. Simple unions kept. Terminal-Bench slice flag remapped C8 → C33. LLM-tournament gate flag remapped C9 → C34. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-maverick-ultramode]].
+
+## [2026-08-24] ingest | Maverick /ultra over PPT
+
+Compiled https://x.com/mavericktr24/status/2091147176017563673 and the same-day `agent-ultramode` README. New pages: [[src-maverick-ultramode]], [[ultra-mode]], [[probabilistic-pivot-tournament]], [[maverick]]. Updated [[self-verification]], [[entropy-gate]], [[harness-routing]], [[jacky-kwok]], [[contradictions]] C33 C34.
+
 ## [2026-08-28] merge | origin/main into deer-flow bootstrap
 
 Fetched origin/main at `db892ee`. Simple unions kept. DeerFlow `make config` flag remapped C8 → C32 so it does not collide with anti-slop tens C8. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-deer-flow]].

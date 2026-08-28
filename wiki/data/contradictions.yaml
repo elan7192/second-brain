@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C32 must match that page.
+# Codes C1–C34 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -320,4 +320,24 @@ contradictions:
     severity: low
     resolution: treat the Python script as executed behavior; copy the extensions template by hand
     resolution_source: concept:deer-flow
+    page: contradictions.md
+
+  - id: contradiction:c33
+    claim_a: source:src-jacky-self-verification
+    claim_b: source:src-maverick-ultramode
+    reason: two Terminal-Bench lifts; 15-task slice vs TB 2.1
+    status: resolved
+    severity: medium
+    resolution: cite the slice; do not quote 24% to 33% as a full-bench result
+    resolution_source: source:src-maverick-ultramode
+    page: contradictions.md
+
+  - id: contradiction:c34
+    claim_a: concept:entropy-gate
+    claim_b: concept:ultra-mode
+    reason: objective gate outside the LLM vs same-model win-rate apply
+    status: resolved
+    severity: medium
+    resolution: tournament picks a candidate; apply is uncommitted; tests or a human still gate ship
+    resolution_source: concept:entropy-gate
     page: contradictions.md

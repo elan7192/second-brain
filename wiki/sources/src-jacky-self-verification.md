@@ -4,7 +4,7 @@ type: source
 tags:
   - twitter
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # src-jacky-self-verification
@@ -19,4 +19,4 @@ Sample 5, verify with LLM-as-a-Verifier, 79% to 88% on Terminal-Bench 2.1 with D
 
 ## Pages updated
 
-[[self-verification]] · [[jacky-kwok]]
+[[self-verification]] · [[jacky-kwok]] · [[src-maverick-ultramode]]

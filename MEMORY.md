@@ -119,6 +119,11 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - 2026-08-23: A Smoke-problem Hook + SOP exists in the human's account of work. The script is not in `raw/`. Do not invent the method. Ask to ingest the script.
 - 2026-08-23: Do not vendor MemGPT, Letta, LangChain, LlamaIndex, or a GraphRAG runtime. Compile those claims onto [[retrieval-second-brain]]. Live query stays D9 (`python3 tools/sb ask`). See C25.
 
+## Rejections
+
+- 2026-08-22, [[src-maverick-ultramode]]: planning-first best-of-N (draft N plans, pick one, execute once) changed 0 of 5 outcomes. Do not re-propose it as the self-verify loop.
+- 2026-08-22, [[src-maverick-ultramode]]: 24% to 33% is a 15-task failure-skewed Terminal-Bench slice. Do not quote it as a full-bench result.
+
 ## Open questions
 
 - No personal identity or goals have been captured yet. Do not invent them.
