@@ -1,4 +1,5 @@
 ---
+id: person:maverick
 type: person
 tags:
   - person
