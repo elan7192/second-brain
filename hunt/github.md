@@ -22,3 +22,4 @@ Green in the graph when people or repos land here.
 | [psenger/ai-agent-skills](https://github.com/psenger/ai-agent-skills) | catalog row on [[skill-library]] |
 | [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | catalog row on [[skill-library]] |
 | [laude-institute/headlong](https://github.com/laude-institute/headlong) | compiled as [[headlong]]. 1h `hour` trial ended 02:07Z |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | cloned and bootstrapped as [[deer-flow]] |

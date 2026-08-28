@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T18:40:29Z",
+  "builtAt": "2026-08-28T18:50:19Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 13,
-    "unverified": 87,
+    "unverified": 91,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 52,
-    "Concept": 113,
+    "Ship": 56,
+    "Concept": 115,
     "Project": 2,
-    "Person": 9,
-    "Source": 128,
+    "Person": 10,
+    "Source": 130,
     "Decision": 11,
-    "Contradiction": 30,
-    "objects": 371,
-    "links": 2520
+    "Contradiction": 32,
+    "objects": 382,
+    "links": 2628
   },
   "objects": [
     {
@@ -215,7 +215,7 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 4,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "Resolution: do not mix the names. Local object table is [[vault-ontology]]."
     },
@@ -456,6 +456,34 @@
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Resolution: different systems. Do not cite Grok Bot screens as entropy-gate isolation. See [[grok-bot]]."
+    },
+    {
+      "primaryKey": "C31",
+      "objectType": "Contradiction",
+      "title": "Avid Jarvis clip vs Company Foundry article",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "Quoted article and https://github.com/codejunkie99/company-foundry: Company Foundry with Kimi K3 as first worker and DeepSeek Harness as first native target. No AI CEO. First milestone is one reviewab"
+    },
+    {
+      "primaryKey": "C32",
+      "objectType": "Contradiction",
+      "title": "DeerFlow `make config` vs extensions file",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "`scripts/configure.py` in the clone at `1aa813d` copies `config.yaml`, `.env`, and `frontend/.env` only. After `make config`, `extensions_config.json` was absent."
     },
     {
       "primaryKey": "C4",
@@ -719,7 +747,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 7,
-      "outbound": 37,
+      "outbound": 39,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -743,12 +771,12 @@
       "title": "Jarvis",
       "path": "maps/Jarvis.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-25",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 3,
-      "outbound": 13,
-      "unverified": false,
+      "inbound": 4,
+      "outbound": 15,
+      "unverified": true,
       "oneLiner": "Operating map for the agent. Teal in the Obsidian graph."
     },
     {
@@ -760,8 +788,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 8,
-      "outbound": 58,
+      "inbound": 9,
+      "outbound": 59,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -788,8 +816,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 4,
-      "outbound": 11,
+      "inbound": 5,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "2026-08-28"
     },
@@ -816,8 +844,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 27,
-      "outbound": 38,
+      "inbound": 29,
+      "outbound": 40,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -956,10 +984,24 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
-      "outbound": 5,
+      "inbound": 29,
+      "outbound": 7,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
+    },
+    {
+      "primaryKey": "avid",
+      "objectType": "Person",
+      "title": "Avid",
+      "path": "wiki/people/avid.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-28",
+      "tags": "person",
+      "island": "people",
+      "inbound": 7,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "@Av1dlive. Hunt/Ship vault tweet plus Company Foundry clip. C31"
     },
     {
       "primaryKey": "backlink-first",
@@ -1172,6 +1214,20 @@
       "oneLiner": "Clustered low-rank MoE. Tables 7\u20138 unverified"
     },
     {
+      "primaryKey": "company-foundry",
+      "objectType": "Concept",
+      "title": "Company Foundry",
+      "path": "wiki/company-foundry.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 20,
+      "outbound": 11,
+      "unverified": true,
+      "oneLiner": "Compiler for organisational method. Clip vs article: C31"
+    },
+    {
       "primaryKey": "composio-mcp",
       "objectType": "Concept",
       "title": "Composio MCP",
@@ -1222,7 +1278,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
+      "inbound": 36,
       "outbound": 17,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
@@ -1236,8 +1292,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 95,
-      "outbound": 50,
+      "inbound": 103,
+      "outbound": 53,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1324,6 +1380,34 @@
       "outbound": 18,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
+    },
+    {
+      "primaryKey": "deer-flow",
+      "objectType": "Concept",
+      "title": "DeerFlow",
+      "path": "wiki/deer-flow.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 8,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "ByteDance SuperAgent. Local bootstrap on this VM. C32"
+    },
+    {
+      "primaryKey": "deer-flow-bootstrap-2026-08-24",
+      "objectType": "Ship",
+      "title": "DeerFlow bootstrap \u00b7 2026-08-24",
+      "path": "output/deer-flow-bootstrap-2026-08-24.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 4,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Status report after following [[src-deer-flow]] `Install.md`. Compiled page: [[deer-flow]]."
     },
     {
       "primaryKey": "dics",
@@ -1446,8 +1530,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
-      "outbound": 10,
+      "inbound": 29,
+      "outbound": 12,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
@@ -1544,7 +1628,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 4,
       "unverified": true,
       "oneLiner": "SuperTokens from Point-JEPA"
@@ -1586,8 +1670,8 @@
       "updated": "2026-08-26",
       "tags": "hunt,github",
       "island": "hunt-ship",
-      "inbound": 2,
-      "outbound": 5,
+      "inbound": 3,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Green in the graph when people or repos land here."
     },
@@ -1628,8 +1712,8 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
-      "outbound": 10,
+      "inbound": 19,
+      "outbound": 11,
       "unverified": true,
       "oneLiner": "One bot per job. Vault over memory. Shared computer is not an entropy gate"
     },
@@ -1698,8 +1782,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
-      "outbound": 13,
+      "inbound": 16,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Miles 25 Grok Bot cases. lan E share"
     },
@@ -1782,8 +1866,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 30,
-      "outbound": 16,
+      "inbound": 33,
+      "outbound": 18,
       "unverified": true,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
@@ -1866,8 +1950,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 32,
-      "outbound": 16,
+      "inbound": 36,
+      "outbound": 19,
       "unverified": false,
       "oneLiner": "File first. Scouts stay quiet. Human final yes"
     },
@@ -1950,8 +2034,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 16,
-      "outbound": 263,
+      "inbound": 18,
+      "outbound": 269,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -2264,6 +2348,20 @@
       "oneLiner": "Compiled the marfinxx tweet into [[src-marfinxx-trace]] and [[trace]], and linked [[memory-engineering]], [[context-graph]], [[tokens-as-capital]]."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-25-avid-company-foundry",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-25 \u00b7 Avid Company Foundry",
+      "path": "output/ingest-brief-2026-08-25-avid-company-foundry.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-25",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Avid's 2026-08-24 clip sells Grok bot + Obsidian as a Jarvis that starts a business. The quoted article and `codejunkie99/company-foundry` README compile a company brief into packets, skills, routes, "
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-25-exm7777-grok-bot",
       "objectType": "Ship",
       "title": "Brief: Machina Grok Bot money 2026-08-25",
@@ -2454,8 +2552,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 62,
-      "outbound": 31,
+      "inbound": 63,
+      "outbound": 33,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2482,8 +2580,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 10,
-      "outbound": 205,
+      "inbound": 12,
+      "outbound": 212,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2580,8 +2678,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
-      "outbound": 25,
+      "inbound": 34,
+      "outbound": 27,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
     },
@@ -2628,6 +2726,20 @@
       "oneLiner": "Fetched `origin/main` at the claim-protocol / D9 commit, then merged into `cursor/skill-library-ingest-955f`."
     },
     {
+      "primaryKey": "merge-conflict-report-2026-08-28-avid-foundry",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 avid-company-foundry vs main",
+      "path": "output/merge-conflict-report-2026-08-28-avid-foundry.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `41f1abf` (Machina Grok Bot money / C30), then merged into `cursor/avid-company-foundry-185f`."
+    },
+    {
       "primaryKey": "merge-conflict-report-2026-08-28-daily-tool",
       "objectType": "Ship",
       "title": "Merge conflict report \u00b7 daily-tool-replace vs main",
@@ -2654,6 +2766,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `a0e5609` (agent-facing docs / Disclosure Index), then merged into `cursor/can1357-daily-tool-replace-186d`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-deer-flow",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 deer-flow bootstrap vs main",
+      "path": "output/merge-conflict-report-2026-08-28-deer-flow.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `db892ee` (Avid Company Foundry / C31), then merged into `cursor/deer-flow-bootstrap-fd24`."
     },
     {
       "primaryKey": "merge-conflict-report-2026-08-28-grok-bot",
@@ -2804,7 +2930,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 15,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Palantir AIP. Ontology + AIP Logic. No enrollment here"
@@ -3137,11 +3263,11 @@
       "title": "Ship",
       "path": "ship.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-25",
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 10,
-      "outbound": 12,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
     },
@@ -4084,16 +4210,30 @@
       "oneLiner": "2026-08-27"
     },
     {
+      "primaryKey": "src-avid-company-foundry",
+      "objectType": "Source",
+      "title": "src-avid-company-foundry",
+      "path": "wiki/sources/src-avid-company-foundry.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-28",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 17,
+      "outbound": 10,
+      "unverified": true,
+      "oneLiner": "2026-08-24"
+    },
+    {
       "primaryKey": "src-avid-obsidian-agent-team",
       "objectType": "Source",
       "title": "src-avid-obsidian-agent-team",
       "path": "wiki/sources/src-avid-obsidian-agent-team.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-25",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 9,
-      "outbound": 3,
+      "inbound": 10,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "2026-08-20"
     },
@@ -4247,6 +4387,20 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 5,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "2026-08-24"
+    },
+    {
+      "primaryKey": "src-deer-flow",
+      "objectType": "Source",
+      "title": "src-deer-flow",
+      "path": "wiki/sources/src-deer-flow.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "github",
+      "island": "sources",
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "2026-08-24"
@@ -5115,7 +5269,7 @@
       "tags": "hunt,twitter",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 13,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
     },
@@ -5415,6 +5569,11 @@
     {
       "from": "C15",
       "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "C15",
+      "linkType": "relatedTo",
       "to": "foundry-3d"
     },
     {
@@ -5703,6 +5862,31 @@
       "to": "grok-bot"
     },
     {
+      "from": "C31",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "C31",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C31",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "C32",
+      "linkType": "cites",
+      "to": "src-deer-flow"
+    },
+    {
+      "from": "C32",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
       "from": "C4",
       "linkType": "extractedFrom",
       "to": "contradictions"
@@ -5960,6 +6144,11 @@
     {
       "from": "Home",
       "linkType": "aboutPerson",
+      "to": "avid"
+    },
+    {
+      "from": "Home",
+      "linkType": "aboutPerson",
       "to": "hurley"
     },
     {
@@ -6021,6 +6210,11 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "deer-flow"
     },
     {
       "from": "Home",
@@ -6194,6 +6388,11 @@
     },
     {
       "from": "Jarvis",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "Jarvis",
       "linkType": "relatedTo",
       "to": "GrowthOS"
     },
@@ -6221,6 +6420,11 @@
       "from": "Jarvis",
       "linkType": "relatedTo",
       "to": "claim-protocol"
+    },
+    {
+      "from": "Jarvis",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "Jarvis",
@@ -6326,6 +6530,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "MEMORY",
@@ -6585,6 +6794,16 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "deer-flow"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "deer-flow-bootstrap-2026-08-24"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "disclosure-index"
     },
     {
@@ -6606,6 +6825,11 @@
       "from": "Today",
       "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong-hour"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-deer-flow"
     },
     {
       "from": "Today",
@@ -6661,6 +6885,11 @@
       "from": "agent-facing-docs",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
     },
     {
       "from": "agent-operating-system",
@@ -6726,6 +6955,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "agent-operating-system",
@@ -7370,7 +7604,17 @@
     {
       "from": "audited-task-contract",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "cites",
       "to": "src-rohit-harness-router"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "audited-task-contract",
@@ -7391,6 +7635,31 @@
       "from": "audited-task-contract",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "avid",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "avid",
+      "linkType": "cites",
+      "to": "src-avid-obsidian-agent-team"
+    },
+    {
+      "from": "avid",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "avid",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "avid",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
     },
     {
       "from": "backlink-first",
@@ -7758,6 +8027,61 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "company-foundry",
+      "linkType": "aboutPerson",
+      "to": "avid"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "foundry-3d"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
+      "to": "palantir-aip"
+    },
+    {
       "from": "composio-mcp",
       "linkType": "cites",
       "to": "src-coreyganim-composio"
@@ -7945,6 +8269,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-bober-folder-workflow"
     },
     {
@@ -7956,6 +8285,11 @@
       "from": "contradictions",
       "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-deer-flow"
     },
     {
       "from": "contradictions",
@@ -8051,6 +8385,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "contradictions",
@@ -8413,6 +8752,36 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "deer-flow",
+      "linkType": "cites",
+      "to": "src-deer-flow"
+    },
+    {
+      "from": "deer-flow",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "deer-flow",
+      "linkType": "relatedTo",
+      "to": "deer-flow-bootstrap-2026-08-24"
+    },
+    {
+      "from": "deer-flow",
+      "linkType": "relatedTo",
+      "to": "github"
+    },
+    {
+      "from": "deer-flow-bootstrap-2026-08-24",
+      "linkType": "cites",
+      "to": "src-deer-flow"
+    },
+    {
+      "from": "deer-flow-bootstrap-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "deer-flow"
+    },
+    {
       "from": "dics",
       "linkType": "cites",
       "to": "src-arxiv-2608-20258"
@@ -8650,6 +9019,11 @@
     {
       "from": "entropy-gate",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
     },
     {
@@ -8666,6 +9040,11 @@
       "from": "entropy-gate",
       "linkType": "relatedTo",
       "to": "claim-protocol"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "entropy-gate",
@@ -8930,6 +9309,11 @@
     {
       "from": "github",
       "linkType": "relatedTo",
+      "to": "deer-flow"
+    },
+    {
+      "from": "github",
+      "linkType": "relatedTo",
       "to": "headlong"
     },
     {
@@ -8976,6 +9360,11 @@
       "from": "grok-bot",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "grok-bot",
@@ -9185,12 +9574,22 @@
     {
       "from": "grok-bot-use-cases",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "grok-bot-use-cases",
+      "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
     },
     {
       "from": "grok-bot-use-cases",
       "linkType": "cites",
       "to": "src-milesdeutscher-grok-bot-use-cases"
+    },
+    {
+      "from": "grok-bot-use-cases",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "grok-bot-use-cases",
@@ -9385,6 +9784,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-can1357-daily-tool-replace-2026-08-27"
     },
     {
@@ -9416,6 +9820,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "harness-routing",
@@ -9784,6 +10193,16 @@
     },
     {
       "from": "hunt-ship-loop",
+      "linkType": "aboutPerson",
+      "to": "avid"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "hunt-ship-loop",
       "linkType": "cites",
       "to": "src-avid-obsidian-agent-team"
     },
@@ -9806,6 +10225,11 @@
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "hunt-ship-loop",
@@ -9931,6 +10355,11 @@
       "from": "index",
       "linkType": "aboutPerson",
       "to": "andrej-karpathy"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
+      "to": "avid"
     },
     {
       "from": "index",
@@ -10275,6 +10704,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-avid-obsidian-agent-team"
     },
     {
@@ -10331,6 +10765,11 @@
       "from": "index",
       "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-deer-flow"
     },
     {
       "from": "index",
@@ -10735,6 +11174,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "composio-mcp"
     },
     {
@@ -10776,6 +11220,16 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "decisions"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "deer-flow"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "deer-flow-bootstrap-2026-08-24"
     },
     {
       "from": "index",
@@ -11793,6 +12247,36 @@
       "to": "trace"
     },
     {
+      "from": "ingest-brief-2026-08-25-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "ingest-brief-2026-08-25-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "ingest-brief-2026-08-25-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-2026-08-25-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ingest-brief-2026-08-25-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "ingest-brief-2026-08-25-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
       "from": "ingest-brief-2026-08-25-exm7777-grok-bot",
       "linkType": "relatedTo",
       "to": "grok-bot"
@@ -12235,6 +12719,16 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "contradictions"
     },
     {
@@ -12430,6 +12924,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-benln-grok-bot-pro-tips"
     },
     {
@@ -12461,6 +12960,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-deer-flow"
     },
     {
       "from": "log",
@@ -12745,6 +13249,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "composio-mcp"
     },
     {
@@ -12786,6 +13295,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "dbosc"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "deer-flow"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "deer-flow-bootstrap-2026-08-24"
     },
     {
       "from": "log",
@@ -13090,12 +13609,22 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-avid-foundry"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool"
     },
     {
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool-2"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-deer-flow"
     },
     {
       "from": "log",
@@ -13550,6 +14079,11 @@
     {
       "from": "memory-engineering",
       "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "cites",
       "to": "src-beamnxw-memory-stack"
     },
     {
@@ -13586,6 +14120,11 @@
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
     },
     {
       "from": "memory-engineering",
@@ -13878,6 +14417,51 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "aboutPerson",
+      "to": "avid"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "Jarvis"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-avid-foundry",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
       "from": "merge-conflict-report-2026-08-28-daily-tool",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
@@ -13946,6 +14530,31 @@
       "from": "merge-conflict-report-2026-08-28-daily-tool-2",
       "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-deer-flow",
+      "linkType": "relatedTo",
+      "to": "Today"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-deer-flow",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-deer-flow",
+      "linkType": "relatedTo",
+      "to": "deer-flow"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-deer-flow",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-deer-flow",
+      "linkType": "relatedTo",
+      "to": "log"
     },
     {
       "from": "merge-conflict-report-2026-08-28-grok-bot",
@@ -14905,7 +15514,17 @@
     {
       "from": "ship",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-25-avid-company-foundry"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-avid-foundry"
     },
     {
       "from": "ship",
@@ -16158,6 +16777,66 @@
       "to": "portable-memory"
     },
     {
+      "from": "src-avid-company-foundry",
+      "linkType": "aboutPerson",
+      "to": "avid"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "grok-bot-use-cases"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "src-avid-company-foundry",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "src-avid-obsidian-agent-team",
+      "linkType": "aboutPerson",
+      "to": "avid"
+    },
+    {
+      "from": "src-avid-obsidian-agent-team",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
       "from": "src-avid-obsidian-agent-team",
       "linkType": "relatedTo",
       "to": "context-graph"
@@ -16356,6 +17035,16 @@
       "from": "src-debs-obrien-token-usage",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-deer-flow",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-deer-flow",
+      "linkType": "relatedTo",
+      "to": "deer-flow"
     },
     {
       "from": "src-deronin-growthos-vault",
@@ -17441,6 +18130,11 @@
       "from": "twitter",
       "linkType": "cites",
       "to": "src-0xcodio-memory-ablation"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
     },
     {
       "from": "twitter",

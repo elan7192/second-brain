@@ -32,6 +32,10 @@ Merged origin/main into the agent-facing-docs branch. D8/D9 remapped to D10/D11.
 - [[vault-ontology]]
 - [[agent-operating-system]]
 - `output/obsidian-graph.html`
+- [[deer-flow]] launch: add a model, then `make dev`
+- [[contradictions]] C32 (`make config` vs `extensions_config.json`)
+- [[deer-flow-bootstrap-2026-08-24]]
+- [[merge-conflict-report-2026-08-28-deer-flow]]
 
 ## Inbox
 

@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C31 must match that page.
+# Codes C1–C32 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -310,4 +310,14 @@ contradictions:
     severity: low
     resolution: compile the article and README; mark the clip unverified; D5 still holds
     resolution_source: concept:company-foundry
+    page: contradictions.md
+
+  - id: contradiction:c32
+    claim_a: source:src-deer-flow
+    claim_b: concept:deer-flow
+    reason: AGENTS.md make config copies extensions_config vs configure.py does not
+    status: resolved
+    severity: low
+    resolution: treat the Python script as executed behavior; copy the extensions template by hand
+    resolution_source: concept:deer-flow
     page: contradictions.md

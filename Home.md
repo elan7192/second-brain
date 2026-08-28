@@ -47,6 +47,7 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - File a clip in [[inbox]], then ingest.
 - Say `lint the wiki` or run `python3 tools/sb validate`.
 - Ask a question; the agent should `python3 tools/sb ask` first. Named chain: [[claim-protocol]].
+- Finish [[deer-flow]] launch: add a model, then `make dev`.
 
 ## This batch
 

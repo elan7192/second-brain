@@ -11,6 +11,10 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into deer-flow bootstrap
+
+Fetched origin/main at `db892ee`. Simple unions kept. DeerFlow `make config` flag remapped C8 → C32 so it does not collide with anti-slop tens C8. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-deer-flow]].
+
 ## [2026-08-28] merge | origin/main into avid-company-foundry ingest
 
 Fetched origin/main. Simple unions kept. Avid clip flag remapped C15 → C31 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-avid-foundry]].
@@ -390,6 +394,10 @@ Human asked whether every inputted skill was stored, how agents use them without
 ## [2026-08-24] query | Entropy gate quiz
 
 Human asked whether the vault remembered ingested data, using [[entropy-gate]] as the probe. Answer filed to [[query-entropy-gate]]. Cite the 64-worker table. Keep the 200-agent clip `unverified` ([[contradictions]] C3). `MEMORY.md` still has no personal facts.
+
+## [2026-08-24] bootstrap | DeerFlow local install
+
+Cloned https://github.com/bytedance/deer-flow to `/home/ubuntu/deer-flow` at `1aa813d`. Followed `Install.md`: local path because Docker was missing. Ran `make config`, installed `uv` and `nginx`, then `make check` and `make install`. Did not start services. Wrote [[deer-flow]], [[src-deer-flow]], [[deer-flow-bootstrap-2026-08-24]]. Flagged C32 on [[contradictions]] (was C8 on this branch).
 
 ## [2026-08-23] ingest | Retrieval second brain
 

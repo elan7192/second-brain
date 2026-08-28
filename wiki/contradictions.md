@@ -280,3 +280,13 @@ Quoted article and https://github.com/codejunkie99/company-foundry: Company Foun
 Resolution: compile the article and README. Mark the clip claims `unverified`. Do not treat Grok + Obsidian as the company compiler. D5 still holds. See [[company-foundry]].
 
 Remap: was C15 on the company-foundry branch. Main C15 is Foundry 3D vs Palantir Foundry.
+
+## C32. DeerFlow `make config` vs extensions file
+
+[[src-deer-flow]] `AGENTS.md` says `make config` copies `extensions_config.example.json` to `extensions_config.json`.
+
+`scripts/configure.py` in the clone at `1aa813d` copies `config.yaml`, `.env`, and `frontend/.env` only. After `make config`, `extensions_config.json` was absent.
+
+Resolution: treat the Python script as the executed behavior. Copy the extensions template by hand if MCP/skills config is needed. Do not claim `make config` created it.
+
+Remap: was C8 on the deer-flow-bootstrap branch. Main C8 is the two anti-slop tens.

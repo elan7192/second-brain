@@ -30,6 +30,8 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 - [[GrowthOS]] — growth operator door
 - [[vault-ontology]] — local Palantir-style object table
+- [[deer-flow]] — ByteDance SuperAgent local bootstrap
+- [[deer-flow-bootstrap-2026-08-24]] — install status report
 
 ## Projects
 
@@ -39,6 +41,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
+| [[deer-flow]] | ByteDance SuperAgent. Local clone at `/home/ubuntu/deer-flow` |
 
 ## Concepts
 
@@ -106,6 +109,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[deer-flow]] | ByteDance SuperAgent. Local bootstrap on this VM. C32 |
 | [[agent-facing-docs]] | Agents read instruction files and working notes, not API refs |
 | [[disclosure-index]] | 11,338 public disclosure records, compiled 2026-08-24 |
 | [[skill-library]] | Living catalog vs GitHub dump. Compile here. Do not vendor either pack |
@@ -163,6 +167,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | Page | Date | One line |
 | --- | --- | --- |
 | [[src-avid-company-foundry]] | 2026-08-24 | Grok+Obsidian Jarvis clip. Quoted Company Foundry article. C31 |
+| [[src-deer-flow]] | 2026-08-24 | bytedance/deer-flow Install.md bootstrap. C32 |
 | [[src-can1357-daily-tool-replace-2026-08-27]] | 2026-08-27 | Can: hour-tops daily-tool replace. Hour unverified |
 | [[src-lan-e-claim-protocol-2026-08-27]] | 2026-08-27 | Claim protocol. Git truth. FTS5 disposable. Embeddings parked |
 | [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
