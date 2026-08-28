@@ -1,4 +1,5 @@
 ---
+id: meta:decisions
 type: meta
 tags:
   - wiki
@@ -70,10 +71,40 @@ Graph view hides catalog stars and raw files. Layout follows the five [[agent-op
 - Locked: 2026-08-24
 - Revalidate: if a later layout hides a real concept island or drops a supported peer link
 
-## D9. Short index door
+## D9. Markdown canonical, FTS disposable
 
-Query loads `wiki/index.md` only. Paper pages live in [[index-papers]]. Source pages live in [[index-sources]]. Do not load those catalogs unless the question is a paper or a source.
+Compiled markdown is the store. SQLite FTS5 is a rebuildable index. Filenames are not identity; `id:` is. Do not treat the database as memory. Do not clone Brain.
+
+- Source: [[portable-memory]], [[retrieval]], [[stable-ids]], [[claims]]
+- Locked: 2026-08-28
+- Revalidate: if a later source shows compiled-page search worse than raw RAG with a measured eval
+
+CSV vs YAML claim registries are not locked. See C17.
+
+## D10. Instruction files are the control surface
+
+Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.
+
+- Source: [[agent-facing-docs]], [[verifiable-instructions]]
+- Locked: 2026-08-24
+- Remap: was D8 on the agent-facing-docs branch. Main already locked D8 as graph clusters.
+- Revalidate: if a later source shows this vault's agents follow README or API docs, or that reading schema substitutes for lint and tests
+
+## D11. Bibliographic catalog only
+
+The Disclosure Index is compiled as stats, schema, and canonical URLs. Do not copy report bodies into `wiki/` or `output/`. Do not write exploit steps from those records.
+
+- Source: [[disclosure-index]], [[src-disclosure-index]]
+- Locked: 2026-08-24
+- Remap: was D9 on the agent-facing-docs branch. Main already locked D9 as markdown canonical / FTS disposable.
+- Revalidate: if the human asks for a specific public record's metadata fields already in the catalog snapshot
+
+## D12. Short index catalogs
+
+`wiki/index.md` is the human/Obsidian door. Paper pages live in [[index-papers]]. Source pages live in [[index-sources]]. Do not dump those catalogs into the door. Live query stays D9 (`python3 tools/sb ask`).
 
 - Source: [[musk-algorithm]], [[context-graph]], [[tokens-as-capital]]
 - Locked: 2026-08-28
-- Revalidate: if answers miss a compiled paper because the agent never opened the paper catalog when the question was a paper
+- Remap: was D9 on the musk-algorithm branch. Main already locked D9 as markdown canonical / FTS disposable.
+- Revalidate: if a compiled paper is missing from [[index-papers]] or a source from [[index-sources]]
+- See C37 if someone wants the short index to replace `python3 tools/sb ask`

@@ -1,4 +1,5 @@
 ---
+id: concept:vla-self-demo
 type: concept
 tags:
   - wiki

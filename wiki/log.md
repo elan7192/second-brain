@@ -1,4 +1,5 @@
 ---
+id: meta:log
 type: meta
 tags:
   - wiki
@@ -10,9 +11,101 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into musk-algorithm vault pass
+
+Fetched origin/main at `4bd2ee0`. Simple unions kept. Catalog split remapped D9 → D12 so it does not collide with FTS D9. CLAUDE/D2 flag remapped C15 → C39. C37 query path and C38 ingest brief left unresolved. `first-principles.md` delete stands. Brief: [[merge-conflict-report-2026-08-28-musk]].
+
 ## [2026-08-28] musk | vault pass delete then simplify
 
-lan E ordered the five-step algorithm on this repo. Questioned requirements against named owners. Deleted full-index query, ingest briefs, MEMORY loops 1–16, first-principles page, add-frontmatter.py, CLAUDE.md copy rule. Split catalogs into [[index-papers]] and [[index-sources]]. Locked D9. Added back opt-in catalogs, origin+current LanBB links, file-back-if-rederive, lint gate. Did not add a new bot. See [[musk-algorithm]] [[musk-pass-2026-08-28]] [[decisions]].
+lan E ordered the five-step algorithm on this repo. Questioned requirements against named owners. Deleted full-index dump, MEMORY loops 1–16, first-principles page, add-frontmatter.py, CLAUDE.md copy rule. Split catalogs into [[index-papers]] and [[index-sources]]. This merge remapped that door from D9 → D12 because main already locked D9 as FTS. Query-path fight is C37. Ingest brief fight is C38. See [[musk-algorithm]] [[musk-pass-2026-08-28]] [[merge-conflict-report-2026-08-28-musk]] [[decisions]].
+
+## [2026-08-28] merge | origin/main into chatgpt-share ingest
+
+Fetched origin/main at `96f7138`. Simple unions kept. ChatGPT snapshot flag remapped C14 → C36 so it does not collide with eptwts C14. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-chatgpt-share]].
+
+## [2026-08-24] ingest | ChatGPT share t_6a8cc267
+
+Public share claimed `second-brain-upgraded-2026-08-25.zip` (100 papers, 9 skills, 25/25 tests) not pushed to GitHub. ZIP 401/403. Counts `unverified`. C36. See [[src-chatgpt-t-6a8cc267]].
+
+## [2026-08-28] merge | origin/main into omarsar-adversarial-review ingest
+
+Fetched origin/main at `4be06ef`. Simple unions kept. Self-Refine flag remapped C10 → C35 so it does not collide with HydroFusion C10. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-omarsar]].
+
+## [2026-08-24] ingest | Omarsar Adversarial Review
+
+Compiled https://x.com/omarsar0/status/2091631620025647184 and arXiv:2608.18167. New pages: [[src-omarsar-adversarial-review]], [[adversarial-review]], [[elvis]]. Updated [[entropy-gate]], [[audited-task-contract]], [[self-verification]], [[contradictions]] C35.
+
+## [2026-08-28] merge | origin/main into maverick-ultramode ingest
+
+Fetched origin/main at `5927d29`. Simple unions kept. Terminal-Bench slice flag remapped C8 → C33. LLM-tournament gate flag remapped C9 → C34. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-maverick-ultramode]].
+
+## [2026-08-24] ingest | Maverick /ultra over PPT
+
+Compiled https://x.com/mavericktr24/status/2091147176017563673 and the same-day `agent-ultramode` README. New pages: [[src-maverick-ultramode]], [[ultra-mode]], [[probabilistic-pivot-tournament]], [[maverick]]. Updated [[self-verification]], [[entropy-gate]], [[harness-routing]], [[jacky-kwok]], [[contradictions]] C33 C34.
+
+## [2026-08-28] merge | origin/main into deer-flow bootstrap
+
+Fetched origin/main at `db892ee`. Simple unions kept. DeerFlow `make config` flag remapped C8 → C32 so it does not collide with anti-slop tens C8. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-deer-flow]].
+
+## [2026-08-28] merge | origin/main into avid-company-foundry ingest
+
+Fetched origin/main. Simple unions kept. Avid clip flag remapped C15 → C31 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-avid-foundry]].
+
+## [2026-08-28] merge | origin/main into grok-bot-money ingest
+
+Fetched origin/main. Simple unions kept. Grok Bot screens flag remapped C15 → C30 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-grok-bot]].
+
+## [2026-08-28] merge | origin/main into daily-tool-replace (C29)
+
+Fetched origin/main at agent-facing-docs / C26–C28. Simple unions kept. Writing-slop flag remapped C26 → C29 so it does not collide with file-first C26. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool-2]].
+
+## [2026-08-28] merge | origin/main into daily-tool-replace
+
+Fetched origin/main at skill-library / C20–C25. Simple unions kept. Writing-slop flag remapped C15 → C26 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool]].
+
+## [2026-08-28] merge | origin/main into agent-facing-docs ingest
+
+Fetched origin/main. Simple unions kept. Decision IDs remapped D8/D9 → D10/D11 so they do not collide with graph-clusters and FTS D9. Contradiction IDs remapped C8–C10 → C26–C28 so they do not collide with anti-slop tens and arXiv flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-agent-facing-2026-08-28]].
+
+## [2026-08-28] merge | origin/main into entropy-gate quiz
+
+Fetched origin/main. Only conflict was [[log]]: both sides appended. Kept both, newest first. Query answers stay dated 2026-08-24 snapshots. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-entropy-quiz-2026-08-28]].
+
+## [2026-08-28] merge | origin/main into skill-library ingest
+
+Fetched origin/main at claim-protocol / D9. Simple unions kept. Skill flags remapped C8–C13 → C20–C25 so they do not collide with paper flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-2026-08-28]].
+
+## [2026-08-27] ingest | Claim protocol
+
+Named chain Claim → Evidence → Verification → Retrieval → Context → Answer. Live query stays `python3 tools/sb ask`. Duplicate engine parked as C18. Embeddings parked as C19. See [[claim-protocol]] [[src-lan-e-claim-protocol-2026-08-27]].
+
+## [2026-08-28] harvest | Headlong hour trial merged
+
+Parked share on main waited for experiments. This branch is the report. Traj 37 rows; tests did not run; mind stopped 02:07Z. C16 (C15 on main is Foundry). See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
+## [2026-08-28] rebuild | Palantir-style ontology from wiki
+
+Local object table `output/ontology-objects.csv`. Hosted AIP not used. D5. See [[vault-ontology]] [[palantir-aip]] [[src-palantir-aip-developers-2026-08-28]].
+
+## [2026-08-28] engine | stable ids, FTS5, claims, sb validate, sb eval
+
+Memory engine pass. Markdown stays canonical. `.cache/secondbrain.sqlite` is disposable. Claim registry in `wiki/data/claims.yaml`. CLI: `python3 tools/sb`. D9 locked. See [[retrieval]] [[claims]] [[stable-ids]] [[eval-suite]] [[memory-engine-2026-08-28]].
+
+## [2026-08-27] schema | memory-system phase 1-4
+
+Provenance + FACT/INFERENCE/OPINION on new memory-v1 pages. Source Claims kept compile to `wiki/claims.csv`. `raw/` is untrusted data. Vector search parked. Dual YAML/CSV store flagged as C17. Gate: `python3 tools/lint-wiki.py` plus `python3 tools/sb validate`. See [[memory-system]] [[claims]] [[epistemic-labels]] [[provenance]] [[untrusted-ingest]] [[memory-system-brief-2026-08-27]].
+
+## [2026-08-27] execute | captions-first + orphan briefs
+
+lan E yes. Deleted 4 counts-only intermediate briefs. Linked remaining 2026-08-24 briefs from [[digests]]. Lint now fails on orphans. Clip ingest: caption first. See [[daily-tool-replace-vault-2026-08-27]] [[clip-pipeline]].
+
+## [2026-08-27] query | daily-tool-replace vs this vault
+
+Room to optimize: delete/skip, not a git GUI. Kill omp clone and GitKraken-class UI. Pursue: captions-first ingest, 19 orphan briefs. Watch: 0 CSV, graph PNG Pillow. Brief: [[daily-tool-replace-vault-2026-08-27]].
+
+## [2026-08-27] ingest | Can daily-tool-replace
+
+@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C29: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
 
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 
@@ -140,6 +233,25 @@ lan E share. URL parked. No Headlong method yet. See [[src-hxiao-headlong-share]
 ## [2026-08-27] ingest | debs_obrien token usage
 
 lan E share. If bot usage is high, ask chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]], [[bot-voice]], [[tokens-as-capital]]. Not scout.
+## [2026-08-26] harvest | Headlong hour trial ended
+
+Timer 02:07:16Z. `hour stop` then `headlong-killall`. Traj 37 rows, last durable 01:12:08Z. Tests did not run. qwen2.5-coder:7b copied nested-shellm docs example and stalled. C16: not the wiki runtime. Do not restart without new yes. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
+## [2026-08-26] implement | Headlong hour trial
+
+Operator yes. Identity `hour` on local Ollama qwen2.5-coder:7b. Nested Docker overlay failed; local unsandboxed for 1h. First thought 01:05:44Z run tests. Stop T+1h. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
+## [2026-08-26] ingest | Headlong trial
+
+hxiao quote of Andy Konwinski. Tools installed `./install.sh --symlinks` at SHA `d8f8304`. 25/25 CLIs. Mind not started: no Docker, no API key, D5. See [[headlong]], C16, [[ingest-brief-2026-08-26-headlong]].
+
+## [2026-08-25] ingest | exm7777 grok bot money
+
+Machina @EXM7777. One bot per workflow. Vault over bot memory. Ten revenue lanes. Higgsfield UGC sponsored. C30. See [[grok-bot]], [[grok-bot-money]], [[src-exm7777-grok-bot-money]].
+
+## [2026-08-25] ingest | Avid Company Foundry clip
+
+Tweet 2091848572417495138. Compile the quoted Company Foundry article and README. Grok+Obsidian Jarvis clip `unverified`. C31. Video unread. See [[company-foundry]] and [[src-avid-company-foundry]].
 
 ## [2026-08-25] implement | GrowthOS orb materials
 
@@ -184,6 +296,16 @@ Trial on a clean desktop with fake data, then [[skillspector]], then enable. See
 ## [2026-08-25] ingest | play methods
 
 Compiled [[skillspector]], [[quota-router]], [[raptor-dispatch]], [[session-migrate]], [[clip-pipeline]] from `/workspace/play-until-2pm/METHODS.md`. Reinforced D4 on [[audited-task-contract]] and [[harness-routing]]. Not copied into raw/. See [[src-play-methods-2026-08-25]] and [[ingest-brief-2026-08-25-play-methods]].
+
+## [2026-08-24] ingest | Disclosure Index catalog
+
+URL ingest of https://bug-bounty-disclosures.vercel.app/#api. Parsed `data/catalog.js`: 11,338 records. Wrote [[src-disclosure-index]], [[disclosure-index]], and `output/disclosure-index-stats-2026-08-23.json`. Locked D11 (was D9 on this branch). Flagged C28 (was C10). Documented `/api/*` returned 404.
+
+## [2026-08-24] ingest | DAIR.AI agent-friendly documentation paper
+
+URL ingest of https://x.com/dair_ai/status/2091661799737446864 and arXiv:2608.20195. Wrote [[src-dair-agent-friendly-docs]] and [[agent-facing-docs]]. Locked D10 (was D8 on this branch). Flagged C26 and C27 (were C8 and C9). Put the control-surface rule in `AGENTS.md`. No `raw/` file: human-owned.
+
+Pages touched: [[agent-facing-docs]], [[verifiable-instructions]], [[context-graph]], [[tokens-as-capital]], [[llm-wiki]], [[self-verification]], [[hunt-ship-loop]], [[contradictions]], [[agent-operating-system]], [[how-it-works]].
 
 ## [2026-08-24] ingest | BATCH09 five paper digests
 
@@ -296,6 +418,34 @@ Compiled `/workspace/arxiv-tierlist/ARXIV_TIERLIST_HANDOFF.md` into [[src-arxiv-
 ## [2026-08-24] lint | Concept clusters in the graph
 
 The hairball was ring-by-folder layout plus catalog stars (`index`, `log`, `twitter`). Graph filter now keeps wiki/maps/hunt/ship and drops `raw/`, `index`, `log`, and `twitter`. Renderer places nodes on the five [[agent-operating-system]] layers. Added peer concept links already supported by those pages. Locked D8.
+
+## [2026-08-24] query | Skills, forgetting, anti-slop
+
+Human asked whether every inputted skill was stored, how agents use them without forgetting, and how slop is cut. Answer filed to [[query-skills-and-slop]]. Ten anti-slop skills were compiled, not vendored. Forgetting is ablation plus lint, not full replay. D6 is the slop default.
+
+## [2026-08-24] query | Entropy gate quiz
+
+Human asked whether the vault remembered ingested data, using [[entropy-gate]] as the probe. Answer filed to [[query-entropy-gate]]. Cite the 64-worker table. Keep the 200-agent clip `unverified` ([[contradictions]] C3). `MEMORY.md` still has no personal facts.
+
+## [2026-08-24] bootstrap | DeerFlow local install
+
+Cloned https://github.com/bytedance/deer-flow to `/home/ubuntu/deer-flow` at `1aa813d`. Followed `Install.md`: local path because Docker was missing. Ran `make config`, installed `uv` and `nginx`, then `make check` and `make install`. Did not start services. Wrote [[deer-flow]], [[src-deer-flow]], [[deer-flow-bootstrap-2026-08-24]]. Flagged C32 on [[contradictions]] (was C8 on this branch).
+
+## [2026-08-23] ingest | Retrieval second brain
+
+Compiled the four-pillar retrieval paste into [[src-retrieval-second-brain]] and [[retrieval-second-brain]]. Mapped layers onto [[memory-engineering]]. Flagged C25 (was C13 on this branch). D1 not reopened. C25 vs D9 later unresolved. Brief: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+
+## [2026-08-23] ingest | Five skill packs and SOP thesis
+
+Compiled the pasted list into [[src-skill-pack-list]] and [[skill-as-sop]]. Checked five GitHub READMEs. Flagged C24 (was C12 on this branch). No pack vendored. Brief: [[ingest-brief-2026-08-23-skill-pack-list]].
+
+## [2026-08-23] ingest | mukul975 cybersecurity skill library
+
+Compiled https://github.com/mukul975/Anthropic-Cybersecurity-Skills into [[src-mukul975-cybersecurity-skills]], [[mahipal-jangra]], and [[skill-library]]. Catalog pitch only. Skill bodies not copied. Flagged C22 and C23 (were C10 and C11). Extended C20. `MEMORY.md` now forbids vendoring or executing the pack. Brief: [[ingest-brief-2026-08-23-cybersecurity-skills]].
+
+## [2026-08-23] ingest | Johnsjawn skill library
+
+Compiled https://x.com/johnsjawn/status/2090805874331959600 into [[src-johnsjawn-skill-library]], [[skill-library]], and [[hurley]]. Flagged C20 (Notion living library vs this compiled vault) and C21 (improves on each use vs `# Uses` counts). D7 not reopened. Brief: [[ingest-brief-2026-08-23-skill-library]].
 
 ## [2026-08-23] lint | Obsidian vault layer
 

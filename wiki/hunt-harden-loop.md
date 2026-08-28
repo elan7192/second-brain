@@ -1,4 +1,5 @@
 ---
+id: concept:hunt-harden-loop
 type: concept
 tags:
   - wiki

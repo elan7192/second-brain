@@ -1,9 +1,10 @@
 ---
+id: concept:audited-task-contract
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-28
 ---
 
 # Audited task contract
@@ -41,10 +42,14 @@ From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-di
 
 Rule: the planner proposes. The executor changes a candidate. The auditor verifies. Only the controller commits.
 
+[[adversarial-review]] is the same shape on one artifact: M writes, R reviews, C audits the review, then M may edit. The inner loop is review text only. Source: [[src-omarsar-adversarial-review]].
+
 ## Why not a shared brain dump
 
 Generated repo summaries in a 2026 AGENTS.md study did not significantly raise resolve rate and raised cost. Native sessions are not a standard. Unverified memory can poison later agents.
 
+[[src-avid-company-foundry]]: the folder is not the product. The contracts inside it are. Workers write artifacts, not private summaries. A chat answer is not a company artifact. See [[company-foundry]].
+
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]]

@@ -1,4 +1,5 @@
 ---
+id: meta:index-papers
 type: meta
 tags:
   - wiki
@@ -8,7 +9,7 @@ updated: 2026-08-28
 
 # Index papers
 
-Opt-in catalog of compiled arXiv / paper concept pages. Do not load this on a normal query. Open it when the question is a paper. Door: [[index]].
+Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12.
 
 ## Papers
 

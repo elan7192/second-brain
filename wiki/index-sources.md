@@ -1,4 +1,5 @@
 ---
+id: meta:index-sources
 type: meta
 tags:
   - wiki
@@ -8,12 +9,29 @@ updated: 2026-08-28
 
 # Index sources
 
-Opt-in catalog of compiled source pages. Do not load this on a normal query. Open it when ingesting or citing a source. Door: [[index]].
+Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-chatgpt-t-6a8cc267]] | 2026-08-24 | ChatGPT ZIP claim. File 401/403. C36 |
+| [[src-avid-company-foundry]] | 2026-08-24 | Grok+Obsidian Jarvis clip. Quoted Company Foundry article. C31 |
+| [[src-deer-flow]] | 2026-08-24 | bytedance/deer-flow Install.md bootstrap. C32 |
+| [[src-can1357-daily-tool-replace-2026-08-27]] | 2026-08-27 | Can: hour-tops daily-tool replace. Hour unverified |
+| [[src-lan-e-claim-protocol-2026-08-27]] | 2026-08-27 | Claim protocol. Git truth. FTS5 disposable. Embeddings parked |
+| [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
+| [[src-laude-headlong]] | 2026-08-26 | Headlong launch + repo. 9883 cloc at d8f8304 |
+| [[src-palantir-aip-developers-2026-08-28]] | 2026-08-28 | AIP + Ontology docs. Hosted Foundry not used |
+| [[src-exm7777-grok-bot-money]] | 2026-08-24 | Machina Grok Bot money tweet. Higgsfield UGC sponsored |
+| [[src-omarsar-adversarial-review]] | 2026-08-23 | 3-agent AR beats 5-agent MARS. False consensus without forced dissent |
+| [[src-maverick-ultramode]] | 2026-08-22 | /ultra. 24% to 33% on a 15-task Terminal-Bench slice |
+| [[src-dair-agent-friendly-docs]] | 2026-08-23 | 60.5% of agent doc reads are instruction files and notes |
+| [[src-disclosure-index]] | 2026-08-23 | 11,338-record public disclosure catalog. REST API 404 |
+| [[src-johnsjawn-skill-library]] | 2026-08-21 | Notion Skills library pitch. Usage column shown. Auto-improve unverified |
+| [[src-mukul975-cybersecurity-skills]] | 2026-08-23 | GitHub skill dump. 817 claimed. Offensive bodies not copied |
+| [[src-skill-pack-list]] | 2026-08-23 | Five public packs plus SOP thesis. Counts stale. See C24 |
+| [[src-retrieval-second-brain]] | 2026-08-23 | Four retrieval pillars. Accuracy gain unverified. See C25 |
 | [[src-lanbb-pr27-loop17]] | 2026-08-27 | Loop17 PR27 ad6f669 v17 0/116 |
 | [[src-lanbb-pr26-loop16]] | 2026-08-27 | Loop16 PR26 75b62be v16 0/116 |
 | [[src-lanbb-pr25-loop15]] | 2026-08-27 | Loop15 PR25 1801528 v15 0/116 |

@@ -1,4 +1,5 @@
 ---
+id: project:arxiv-tierlist
 type: project
 tags:
   - project
@@ -144,6 +145,10 @@ Source list: [[src-arxiv-batch09]].
 | 2608.19589 | [[orthoskillvla]] |
 
 Figs unread.
+
+## ChatGPT 100-paper ZIP (not known)
+
+[[src-chatgpt-t-6a8cc267]] claimed 100 papers, 5 categories × 20, inside `second-brain-upgraded-2026-08-25.zip`. Public file download 401/403. Those papers are not compiled here. Harvest remains digest-only. See C36.
 
 ## Display
 

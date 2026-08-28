@@ -1,4 +1,5 @@
 ---
+id: concept:musk-algorithm
 type: concept
 tags:
   - wiki
@@ -57,8 +58,8 @@ Added back (~10%):
 
 Not automated: no new bot, hook, or renderer. `tools/lint-wiki.py` stays a manual/CI gate.
 
-Locked as D9 in [[decisions]].
+Locked as D12 in [[decisions]] (was D9 on this branch; main already locked D9 as FTS). Live query stays D9. See C37. Ingest brief is C38.
 
 ## Related
 
-[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]]
+[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]]

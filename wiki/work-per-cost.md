@@ -1,4 +1,5 @@
 ---
+id: concept:work-per-cost
 type: concept
 tags:
   - wiki
@@ -55,4 +56,4 @@ Wallet split: Grok Bot scarce vs Fill leftover. Do not mix ledgers.
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]] · [[daily-tool-replace]]
