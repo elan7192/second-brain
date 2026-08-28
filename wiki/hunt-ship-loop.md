@@ -33,4 +33,6 @@ Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]]
+[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]] · [[grok-bot]]
+
+[[src-exm7777-grok-bot-money]]: read-and-prepare first, actions behind approval, money moves never automated on day one. Matches D5. Send, publish, and ad spend stay human. See [[grok-bot-money]].

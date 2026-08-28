@@ -37,6 +37,8 @@ Partner names, handles, and dollar figures in `growth/` are **DEMO**. They exist
 
 Vault still does not post, pay, send, or create live Whop objects. See D5.
 
+[[src-exm7777-grok-bot-money]] is a Grok Bot UGC and revenue how-to, not a GrowthOS partner. Higgsfield UGC section is sponsored. See [[grok-bot-money]]. DEMO partner figures stay in `growth/`.
+
 ## 3D graph path
 
 Not an Obsidian plugin. Not Electron or Tauri. Not a dump of thousands of wiki pages.
@@ -62,4 +64,4 @@ Latest briefing: [[growth-briefing-2026-08-25]]. Graph fork: [[growthos-3d-gap-2
 
 ## Related
 
-[[src-deronin-growthos-vault]] · [[grok-bot-use-cases]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]]
+[[src-deronin-growthos-vault]] · [[grok-bot-use-cases]] · [[grok-bot-money]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]]

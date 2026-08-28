@@ -3,6 +3,7 @@ id: meta:contradictions
 type: meta
 tags:
   - wiki
+created: 2026-08-23
 updated: 2026-08-28
 ---
 
@@ -257,3 +258,13 @@ D6 [[anti-slop]] is juampi's writing rank.
 Resolution: keep D6 as writing. Compile the clip as [[daily-tool-replace]]. Do not merge the two slops.
 
 Remap: was C15 then C26 on the daily-tool-replace branch. Main C26 is file first vs code first.
+
+## C30. Grok Bot screens vs entropy-gate isolation
+
+[[src-exm7777-grok-bot-money]]: all bots share one cloud computer. Separate bots are separate work surfaces, not separate security boundaries.
+
+[[entropy-gate]] wants isolated worktrees, structured diffs, and an objective gate.
+
+Resolution: different systems. Do not cite Grok Bot screens as entropy-gate isolation. See [[grok-bot]].
+
+Remap: was C15 on the grok-bot-money branch. Main C15 is Foundry 3D vs Palantir Foundry.

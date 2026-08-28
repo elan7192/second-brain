@@ -47,4 +47,6 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 
 [[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.
 
+[[src-exm7777-grok-bot-money]]: Grok Bot memory holds preferences and summaries and is not a substitute for an authoritative source. The vault is. See [[grok-bot]].
+
 [[headlong]] stores life as a jsonl DAG with tiered compaction. Author method, not a measured memory eval here.

@@ -20,6 +20,8 @@ Source: [[src-play-methods-2026-08-25]] (`/workspace/play-until-2pm/METHODS.md`)
 3. If context is hidden, rebuild. Do not guess the hidden part.
 4. Do not treat a compact blob as the vault. See [[context-compaction]].
 
+[[src-exm7777-grok-bot-money]]: if another agent already knows the business, extract it into one `.md` and drop it into the reverse prompting session and the vault. Secret-scan still runs first. See [[grok-bot-money]].
+
 ## Related
 
-[[audited-task-contract]] · [[harness-routing]] · [[raptor-dispatch]] · [[src-chatgpt-play-2026-08-25]] · [[context-compaction]]
+[[audited-task-contract]] · [[harness-routing]] · [[raptor-dispatch]] · [[grok-bot-money]] · [[src-chatgpt-play-2026-08-25]] · [[context-compaction]]

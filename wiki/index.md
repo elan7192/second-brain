@@ -78,6 +78,8 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
+| [[grok-bot]] | One bot per job. Vault over memory. Shared computer is not an entropy gate |
+| [[grok-bot-money]] | Machina ten revenue lanes. Higgsfield UGC sponsored. Cash unverified |
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
 | [[grok-bot-pro-tips]] | Ben Lang 10 tips from @bot team |
 | [[grok-bot-tape]] | Show the tape. Cite or omit. Silence is valid |
@@ -203,6 +205,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[src-benln-grok-bot-pro-tips]] | 2026-08-25 | lan E share. 10 Grok Bot pro tips |
 | [[src-hxiao-headlong-share]] | 2026-08-27 | lan E share. Parked then; experiment report is [[headlong]] |
 | [[src-debs-obrien-token-usage]] | 2026-08-24 | lan E share. Ask chief of staff about token usage |
+| [[src-exm7777-grok-bot-money]] | 2026-08-24 | Machina Grok Bot money tweet. Higgsfield UGC sponsored |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
 | [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |

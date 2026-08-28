@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C29 must match that page.
+# Codes C1–C30 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -290,4 +290,14 @@ contradictions:
     severity: low
     resolution: keep D6 as writing; compile the clip as daily-tool-replace; do not merge the two slops
     resolution_source: concept:daily-tool-replace
+    page: contradictions.md
+
+  - id: contradiction:c30
+    claim_a: concept:grok-bot
+    claim_b: concept:entropy-gate
+    reason: Grok Bot shared screens vs entropy-gate isolated worktrees
+    status: resolved
+    severity: low
+    resolution: different systems; do not cite Grok Bot screens as entropy-gate isolation
+    resolution_source: concept:grok-bot
     page: contradictions.md

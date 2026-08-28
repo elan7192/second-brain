@@ -91,13 +91,18 @@ flowchart TB
     can-boluk
     daily-tool-replace
     entropy-gate
+    grok-bot
+    grok-bot-money
+    grok-bot-use-cases
     harness-routing
     headlong
     rohit
     src-can1357-daily-tool-replace-2026-08-27
+    src-exm7777-grok-bot-money
     src-hitu-entropy-engineering
     src-hxiao-headlong
     src-laude-headlong
+    src-milesdeutscher-grok-bot-use-cases
     src-rohit-harness-router
   end
   subgraph hunt-ship[Hunt / ship]
@@ -133,6 +138,7 @@ flowchart TB
     ingest-brief-2026-08-24-five-x
     ingest-brief-2026-08-24-three-x
     ingest-brief-2026-08-24-trace
+    ingest-brief-2026-08-25-exm7777-grok-bot
     ingest-brief-2026-08-25-growthos
     ingest-brief-2026-08-25-play-methods
     ingest-brief-2026-08-25-skill-recorder
@@ -148,6 +154,7 @@ flowchart TB
     merge-conflict-report-2026-08-28
     merge-conflict-report-2026-08-28-daily-tool
     merge-conflict-report-2026-08-28-daily-tool-2
+    merge-conflict-report-2026-08-28-grok-bot
     merge-conflict-report-agent-facing-2026-08-28
     merge-conflict-report-entropy-quiz-2026-08-28
     ontology-rebuild-brief-2026-08-28
@@ -172,8 +179,13 @@ flowchart TB
   MEMORY --> daily-tool-replace
   MEMORY --> daily-tool-replace-vault-2026-08-27
   MEMORY --> stale-fact-detector
+  MEMORY --> grok-bot-use-cases
   MEMORY --> headlong
   MEMORY --> growth-operator
+  MEMORY --> grok-bot
+  MEMORY --> entropy-gate
+  MEMORY --> src-exm7777-grok-bot-money
+  MEMORY --> grok-bot-money
   hunt --> hunt-ship-loop
   hunt --> disclosures
   maps --> GrowthOS
@@ -215,9 +227,37 @@ flowchart TB
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
   ingest-brief-2026-08-27-botdirectory --> stale-fact-detector
-  ingest-brief-2026-08-26-headlong-hour --> headlong
-  ingest-brief-2026-08-26-headlong-hour --> harness-routing
-  ingest-brief-2026-08-26-headlong-hour --> entropy-gate
+  ingest-brief-2026-08-26-headlong --> headlong
+  ingest-brief-2026-08-26-headlong --> src-hxiao-headlong
+  ingest-brief-2026-08-26-headlong --> src-laude-headlong
+  ingest-brief-2026-08-24-disclosure-index --> disclosures
+  ingest-brief-2026-08-23-retrieval-second-brain --> memory-engineering
+  ingest-brief-2026-08-23-retrieval-second-brain --> context-graph
+  ingest-brief-2026-08-23-retrieval-second-brain --> llm-wiki
+  ontology-rebuild-brief-2026-08-28 --> llm-wiki
+  ontology-rebuild-brief-2026-08-28 --> file-memory
+  ontology-rebuild-brief-2026-08-28 --> context-graph
+  daily-tool-replace-vault-2026-08-27 --> daily-tool-replace
+  daily-tool-replace-vault-2026-08-27 --> src-can1357-daily-tool-replace-2026-08-27
+  daily-tool-replace-vault-2026-08-27 --> file-memory
+  daily-tool-replace-vault-2026-08-27 --> ingest-brief-2026-08-24-arxiv-405856
+  daily-tool-replace-vault-2026-08-27 --> tokens-as-capital
+  daily-tool-replace-vault-2026-08-27 --> can-boluk
+  ingest-brief-2026-08-24 --> verifiable-instructions
+  ingest-brief-2026-08-24 --> context-graph
+  ingest-brief-2026-08-24 --> tokens-as-capital
+  ingest-brief-2026-08-24 --> llm-wiki
+  ingest-brief-2026-08-24 --> self-verification
+  ingest-brief-2026-08-25-exm7777-grok-bot --> grok-bot
+  ingest-brief-2026-08-25-exm7777-grok-bot --> grok-bot-money
+  memory-system-brief-2026-08-27 --> memory-system
+  memory-system-brief-2026-08-27 --> epistemic-labels
+  memory-system-brief-2026-08-27 --> provenance
+  memory-system-brief-2026-08-27 --> claims
+  memory-system-brief-2026-08-27 --> untrusted-ingest
+  memory-system-brief-2026-08-27 --> llm-wiki
+  memory-system-brief-2026-08-27 --> file-memory
+  memory-system-brief-2026-08-27 --> portable-memory
   query-skills-and-slop --> anti-slop
   query-skills-and-slop --> src-juampi-anti-slop-rank
   query-skills-and-slop --> context-graph
@@ -229,72 +269,19 @@ flowchart TB
   query-skills-and-slop --> src-papa-couch-compiler
   query-skills-and-slop --> verifiable-instructions
   query-skills-and-slop --> self-verification
-  merge-conflict-report-2026-08-28-daily-tool-2 --> daily-tool-replace-vault-2026-08-27
-  ingest-brief-2026-08-23-cybersecurity-skills --> tokens-as-capital
-  ingest-brief-2026-08-23-cybersecurity-skills --> context-graph
-  ingest-brief-2026-08-23-skill-library --> tokens-as-capital
-  ingest-brief-2026-08-23-skill-library --> anti-slop
-  ingest-brief-2026-08-23-skill-library --> llm-wiki
-  ingest-brief-2026-08-23-retrieval-second-brain --> memory-engineering
-  ingest-brief-2026-08-23-retrieval-second-brain --> context-graph
-  ingest-brief-2026-08-23-retrieval-second-brain --> llm-wiki
-  ingest-brief-2026-08-23-skill-pack-list --> tokens-as-capital
-  ingest-brief-2026-08-23-skill-pack-list --> verifiable-instructions
-  merge-conflict-report-2026-08-28-daily-tool --> ship
-  merge-conflict-report-2026-08-28-daily-tool --> anti-slop
-  merge-conflict-report-2026-08-28-daily-tool --> harness-routing
-  merge-conflict-report-2026-08-28-daily-tool --> daily-tool-replace
-  merge-conflict-report-2026-08-28-daily-tool --> headlong
-  merge-conflict-report-2026-08-28-daily-tool --> merge-conflict-report-2026-08-28
-  merge-conflict-report-2026-08-28-daily-tool --> daily-tool-replace-vault-2026-08-27
-  merge-conflict-report-agent-facing-2026-08-28 --> ship
-  merge-conflict-report-agent-facing-2026-08-28 --> context-graph
-  merge-conflict-report-agent-facing-2026-08-28 --> llm-wiki
-  merge-conflict-report-agent-facing-2026-08-28 --> tokens-as-capital
-  merge-conflict-report-agent-facing-2026-08-28 --> self-verification
-  merge-conflict-report-agent-facing-2026-08-28 --> verifiable-instructions
-  merge-conflict-report-agent-facing-2026-08-28 --> hunt-ship-loop
-  merge-conflict-report-agent-facing-2026-08-28 --> MEMORY
-  ontology-rebuild-brief-2026-08-28 --> llm-wiki
-  ontology-rebuild-brief-2026-08-28 --> file-memory
-  ontology-rebuild-brief-2026-08-28 --> context-graph
-  ingest-brief-2026-08-24-disclosure-index --> disclosures
-  merge-conflict-report-entropy-quiz-2026-08-28 --> graph-clusters-2026-08-24
-  merge-conflict-report-entropy-quiz-2026-08-28 --> query-entropy-gate
-  merge-conflict-report-entropy-quiz-2026-08-28 --> query-skills-and-slop
-  daily-tool-replace-vault-2026-08-27 --> daily-tool-replace
-  daily-tool-replace-vault-2026-08-27 --> src-can1357-daily-tool-replace-2026-08-27
-  daily-tool-replace-vault-2026-08-27 --> file-memory
-  daily-tool-replace-vault-2026-08-27 --> ingest-brief-2026-08-24-arxiv-405856
-  daily-tool-replace-vault-2026-08-27 --> tokens-as-capital
-  daily-tool-replace-vault-2026-08-27 --> can-boluk
-  ingest-brief-2026-08-26-headlong --> headlong
-  ingest-brief-2026-08-26-headlong --> src-hxiao-headlong
-  ingest-brief-2026-08-26-headlong --> src-laude-headlong
+  memory-engine-2026-08-28 --> claims
   ingest-brief-2026-08-27-claim-protocol --> claim-protocol
   ingest-brief-2026-08-27-claim-protocol --> llm-wiki
   ingest-brief-2026-08-27-claim-protocol --> claims
   ingest-brief-2026-08-27-claim-protocol --> portable-memory
   ingest-brief-2026-08-27-claim-protocol --> file-memory
-  ingest-brief-2026-08-24 --> verifiable-instructions
-  ingest-brief-2026-08-24 --> context-graph
-  ingest-brief-2026-08-24 --> tokens-as-capital
-  ingest-brief-2026-08-24 --> llm-wiki
-  ingest-brief-2026-08-24 --> self-verification
+  ingest-brief-2026-08-23-skill-pack-list --> tokens-as-capital
+  ingest-brief-2026-08-23-skill-pack-list --> verifiable-instructions
   ingest-brief-2026-08-27-can1357-daily-tool --> daily-tool-replace
   ingest-brief-2026-08-27-can1357-daily-tool --> src-can1357-daily-tool-replace-2026-08-27
   ingest-brief-2026-08-27-can1357-daily-tool --> can-boluk
   ingest-brief-2026-08-27-can1357-daily-tool --> anti-slop
   ingest-brief-2026-08-27-can1357-daily-tool --> harness-routing
-  memory-engine-2026-08-28 --> claims
-  memory-system-brief-2026-08-27 --> memory-system
-  memory-system-brief-2026-08-27 --> epistemic-labels
-  memory-system-brief-2026-08-27 --> provenance
-  memory-system-brief-2026-08-27 --> claims
-  memory-system-brief-2026-08-27 --> untrusted-ingest
-  memory-system-brief-2026-08-27 --> llm-wiki
-  memory-system-brief-2026-08-27 --> file-memory
-  memory-system-brief-2026-08-27 --> portable-memory
   merge-conflict-report-2026-08-28 --> ship
   merge-conflict-report-2026-08-28 --> anti-slop
   merge-conflict-report-2026-08-28 --> tokens-as-capital
@@ -303,9 +290,39 @@ flowchart TB
   merge-conflict-report-2026-08-28 --> harness-routing
   merge-conflict-report-2026-08-28 --> memory-engineering
   merge-conflict-report-2026-08-28 --> llm-wiki
+  merge-conflict-report-2026-08-28-daily-tool-2 --> daily-tool-replace-vault-2026-08-27
+  merge-conflict-report-entropy-quiz-2026-08-28 --> graph-clusters-2026-08-24
+  merge-conflict-report-entropy-quiz-2026-08-28 --> query-entropy-gate
+  merge-conflict-report-entropy-quiz-2026-08-28 --> query-skills-and-slop
+  ingest-brief-2026-08-23-cybersecurity-skills --> tokens-as-capital
+  ingest-brief-2026-08-23-cybersecurity-skills --> context-graph
+  merge-conflict-report-agent-facing-2026-08-28 --> ship
+  merge-conflict-report-agent-facing-2026-08-28 --> context-graph
+  merge-conflict-report-agent-facing-2026-08-28 --> llm-wiki
+  merge-conflict-report-agent-facing-2026-08-28 --> tokens-as-capital
+  merge-conflict-report-agent-facing-2026-08-28 --> self-verification
+  merge-conflict-report-agent-facing-2026-08-28 --> verifiable-instructions
+  merge-conflict-report-agent-facing-2026-08-28 --> hunt-ship-loop
+  merge-conflict-report-agent-facing-2026-08-28 --> MEMORY
+  merge-conflict-report-2026-08-28-grok-bot --> grok-bot
+  merge-conflict-report-2026-08-28-grok-bot --> entropy-gate
+  merge-conflict-report-2026-08-28-grok-bot --> MEMORY
+  ingest-brief-2026-08-26-headlong-hour --> headlong
+  ingest-brief-2026-08-26-headlong-hour --> harness-routing
+  ingest-brief-2026-08-26-headlong-hour --> entropy-gate
   query-entropy-gate --> entropy-gate
   query-entropy-gate --> src-hitu-entropy-engineering
   query-entropy-gate --> audited-task-contract
+  ingest-brief-2026-08-23-skill-library --> tokens-as-capital
+  ingest-brief-2026-08-23-skill-library --> anti-slop
+  ingest-brief-2026-08-23-skill-library --> llm-wiki
+  merge-conflict-report-2026-08-28-daily-tool --> ship
+  merge-conflict-report-2026-08-28-daily-tool --> anti-slop
+  merge-conflict-report-2026-08-28-daily-tool --> harness-routing
+  merge-conflict-report-2026-08-28-daily-tool --> daily-tool-replace
+  merge-conflict-report-2026-08-28-daily-tool --> headlong
+  merge-conflict-report-2026-08-28-daily-tool --> merge-conflict-report-2026-08-28
+  merge-conflict-report-2026-08-28-daily-tool --> daily-tool-replace-vault-2026-08-27
   agent-operating-system --> llm-wiki
   agent-operating-system --> memory-engineering
   agent-operating-system --> audited-task-contract
@@ -326,6 +343,8 @@ flowchart TB
   context-graph --> memory-engineering
   context-graph --> hunt-ship-loop
   entropy-gate --> src-hitu-entropy-engineering
+  entropy-gate --> src-exm7777-grok-bot-money
+  entropy-gate --> grok-bot
   entropy-gate --> headlong
   entropy-gate --> audited-task-contract
   entropy-gate --> harness-routing
@@ -340,12 +359,23 @@ flowchart TB
   file-memory --> portable-memory
   file-memory --> memory-ablation
   file-memory --> context-graph
+  grok-bot-use-cases --> src-milesdeutscher-grok-bot-use-cases
+  grok-bot-use-cases --> llm-wiki
+  grok-bot-use-cases --> growth-operator
+  grok-bot-use-cases --> src-exm7777-grok-bot-money
+  grok-bot-use-cases --> grok-bot
+  grok-bot-use-cases --> grok-bot-money
+  grok-bot-use-cases --> hunt-ship-loop
+  grok-bot-use-cases --> file-memory
   growth-operator --> src-deronin-growthos-vault
   growth-operator --> GrowthOS
+  growth-operator --> src-exm7777-grok-bot-money
+  growth-operator --> grok-bot-money
   growth-operator --> gsap-figma-note-2026-08-25
   growth-operator --> context-graph
   growth-operator --> growthos-3d-gap-2026-08-25
   growth-operator --> growth-briefing-2026-08-25
+  growth-operator --> grok-bot-use-cases
   growth-operator --> llm-wiki
   growth-operator --> memory-engineering
   growth-operator --> hunt-ship-loop
@@ -353,6 +383,8 @@ flowchart TB
   harness-routing --> audited-task-contract
   harness-routing --> entropy-gate
   harness-routing --> rohit
+  harness-routing --> grok-bot
+  harness-routing --> src-exm7777-grok-bot-money
   harness-routing --> daily-tool-replace
   harness-routing --> headlong
   harness-routing --> src-can1357-daily-tool-replace-2026-08-27
@@ -363,6 +395,9 @@ flowchart TB
   hunt-ship-loop --> growth-operator
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
+  hunt-ship-loop --> grok-bot
+  hunt-ship-loop --> src-exm7777-grok-bot-money
+  hunt-ship-loop --> grok-bot-money
   llm-wiki --> claim-protocol
   llm-wiki --> stale-fact-detector
   llm-wiki --> memory-system
@@ -370,11 +405,14 @@ flowchart TB
   llm-wiki --> andrej-karpathy
   llm-wiki --> src-papa-couch-compiler
   llm-wiki --> src-bober-folder-workflow
+  llm-wiki --> grok-bot
+  llm-wiki --> grok-bot-use-cases
   llm-wiki --> growth-operator
   llm-wiki --> file-memory
   llm-wiki --> portable-memory
   llm-wiki --> claims
   llm-wiki --> untrusted-ingest
+  llm-wiki --> src-exm7777-grok-bot-money
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
@@ -392,6 +430,8 @@ flowchart TB
   memory-engineering --> memory-system
   memory-engineering --> epistemic-labels
   memory-engineering --> claims
+  memory-engineering --> src-exm7777-grok-bot-money
+  memory-engineering --> grok-bot
   memory-engineering --> headlong
   portable-memory --> file-memory
   portable-memory --> llm-wiki
@@ -416,19 +456,6 @@ flowchart TB
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   verifiable-instructions --> anti-slop
-  epistemic-labels --> memory-system
-  epistemic-labels --> claims
-  epistemic-labels --> memory-ablation
-  epistemic-labels --> provenance
-  epistemic-labels --> verifiable-instructions
-  epistemic-labels --> anti-slop
-  headlong --> src-laude-headlong
-  headlong --> src-hxiao-headlong
-  headlong --> ingest-brief-2026-08-26-headlong-hour
-  headlong --> entropy-gate
-  headlong --> harness-routing
-  headlong --> audited-task-contract
-  headlong --> memory-engineering
   memory-system --> file-memory
   memory-system --> portable-memory
   memory-system --> llm-wiki
@@ -439,6 +466,24 @@ flowchart TB
   memory-system --> epistemic-labels
   memory-system --> provenance
   memory-system --> stale-fact-detector
+  untrusted-ingest --> memory-system
+  untrusted-ingest --> entropy-gate
+  untrusted-ingest --> verifiable-instructions
+  untrusted-ingest --> provenance
+  untrusted-ingest --> claims
+  untrusted-ingest --> epistemic-labels
+  untrusted-ingest --> llm-wiki
+  grok-bot-money --> grok-bot
+  grok-bot-money --> src-exm7777-grok-bot-money
+  grok-bot-money --> grok-bot-use-cases
+  grok-bot-money --> hunt-ship-loop
+  grok-bot-money --> growth-operator
+  epistemic-labels --> memory-system
+  epistemic-labels --> claims
+  epistemic-labels --> memory-ablation
+  epistemic-labels --> provenance
+  epistemic-labels --> verifiable-instructions
+  epistemic-labels --> anti-slop
   daily-tool-replace --> src-can1357-daily-tool-replace-2026-08-27
   daily-tool-replace --> can-boluk
   daily-tool-replace --> anti-slop
@@ -450,13 +495,6 @@ flowchart TB
   provenance --> stale-fact-detector
   provenance --> audited-task-contract
   provenance --> llm-wiki
-  untrusted-ingest --> memory-system
-  untrusted-ingest --> entropy-gate
-  untrusted-ingest --> verifiable-instructions
-  untrusted-ingest --> provenance
-  untrusted-ingest --> claims
-  untrusted-ingest --> epistemic-labels
-  untrusted-ingest --> llm-wiki
   claims --> file-memory
   claims --> provenance
   claims --> epistemic-labels
@@ -465,6 +503,21 @@ flowchart TB
   claims --> memory-system
   claims --> portable-memory
   claims --> memory-ablation
+  headlong --> src-laude-headlong
+  headlong --> src-hxiao-headlong
+  headlong --> ingest-brief-2026-08-26-headlong-hour
+  headlong --> entropy-gate
+  headlong --> harness-routing
+  headlong --> audited-task-contract
+  headlong --> memory-engineering
+  grok-bot --> src-exm7777-grok-bot-money
+  grok-bot --> grok-bot-money
+  grok-bot --> grok-bot-use-cases
+  grok-bot --> memory-engineering
+  grok-bot --> llm-wiki
+  grok-bot --> entropy-gate
+  grok-bot --> hunt-ship-loop
+  grok-bot --> harness-routing
   claim-protocol --> src-lan-e-claim-protocol-2026-08-27
   claim-protocol --> claims
   claim-protocol --> portable-memory
@@ -496,10 +549,13 @@ flowchart TB
   src-bober-folder-workflow --> llm-wiki
   src-bober-folder-workflow --> andrej-karpathy
   src-deronin-growthos-vault --> growth-operator
+  src-deronin-growthos-vault --> grok-bot-use-cases
   src-hitu-entropy-engineering --> entropy-gate
   src-jacky-self-verification --> self-verification
   src-jacky-self-verification --> jacky-kwok
   src-juampi-anti-slop-rank --> anti-slop
+  src-milesdeutscher-grok-bot-use-cases --> grok-bot-use-cases
+  src-milesdeutscher-grok-bot-use-cases --> llm-wiki
   src-papa-couch-compiler --> llm-wiki
   src-papa-couch-compiler --> tokens-as-capital
   src-papa-couch-compiler --> andrej-karpathy
@@ -516,10 +572,15 @@ flowchart TB
   src-lan-e-claim-protocol-2026-08-27 --> memory-engineering
   src-lan-e-claim-protocol-2026-08-27 --> context-graph
   src-lan-e-claim-protocol-2026-08-27 --> stale-fact-detector
-  src-laude-headlong --> headlong
-  src-laude-headlong --> src-hxiao-headlong
-  src-laude-headlong --> harness-routing
-  src-laude-headlong --> entropy-gate
+  src-exm7777-grok-bot-money --> grok-bot
+  src-exm7777-grok-bot-money --> grok-bot-money
+  src-exm7777-grok-bot-money --> grok-bot-use-cases
+  src-exm7777-grok-bot-money --> memory-engineering
+  src-exm7777-grok-bot-money --> llm-wiki
+  src-exm7777-grok-bot-money --> entropy-gate
+  src-exm7777-grok-bot-money --> hunt-ship-loop
+  src-exm7777-grok-bot-money --> harness-routing
+  src-exm7777-grok-bot-money --> growth-operator
   src-hxiao-headlong --> headlong
   src-hxiao-headlong --> src-laude-headlong
   src-hxiao-headlong --> harness-routing
@@ -527,5 +588,9 @@ flowchart TB
   src-can1357-daily-tool-replace-2026-08-27 --> can-boluk
   src-can1357-daily-tool-replace-2026-08-27 --> anti-slop
   src-can1357-daily-tool-replace-2026-08-27 --> harness-routing
+  src-laude-headlong --> headlong
+  src-laude-headlong --> src-hxiao-headlong
+  src-laude-headlong --> harness-routing
+  src-laude-headlong --> entropy-gate
 ```
 <!-- graph-mermaid:end -->

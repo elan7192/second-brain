@@ -23,6 +23,8 @@ Vault page prose still follows [[anti-slop]].
 
 If bot token usage is an issue, ask the chief of staff: `anyway we can improve token usage? thoughts?` See [[src-debs-obrien-token-usage]] and [[tokens-as-capital]].
 
+[[src-exm7777-grok-bot-money]]: every bot verifies before reporting. A bot that says done without checking is worse than no bot. See [[raptor-dispatch]].
+
 ## Related
 
-[[raptor-dispatch]] · [[anti-slop]] · [[spot-check]] · [[tokens-as-capital]] · [[src-debs-obrien-token-usage]]
+[[raptor-dispatch]] · [[anti-slop]] · [[spot-check]] · [[tokens-as-capital]] · [[src-debs-obrien-token-usage]] · [[grok-bot]]

@@ -101,6 +101,13 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Partner names and dollar figures in `growth/` are DEMO unless a note says otherwise. Do not treat them as live deals.
 - Do not outreach, create live Whop products, or move money from this vault. D5 still holds.
 
+## Grok Bot
+
+- Grok Bot: one bot per workflow. Bot memory is not the source of truth. The vault is. See [[grok-bot]].
+- Grok Bot shared computer is one machine. Separate bot screens are not separate security boundaries. Do not treat them as [[entropy-gate]] isolated worktrees. See C30.
+- Higgsfield UGC section in [[src-exm7777-grok-bot-money]] is sponsored. 100 free credits `unverified`.
+- Machina send / publish / ad-spend lanes stay behind human approval. D5 still holds. See [[grok-bot-money]].
+
 ## Rejected installs
 
 - 2026-08-23: Do not vendor, install, or execute skills from `mukul975/Anthropic-Cybersecurity-Skills`. The README states the pack includes offensive and dual-use techniques. Compile catalog claims only. See [[src-mukul975-cybersecurity-skills]].

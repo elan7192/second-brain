@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T18:34:17Z",
+  "builtAt": "2026-08-28T18:40:29Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 13,
-    "unverified": 82,
+    "unverified": 87,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 50,
-    "Concept": 111,
+    "Ship": 52,
+    "Concept": 113,
     "Project": 2,
     "Person": 9,
-    "Source": 127,
+    "Source": 128,
     "Decision": 11,
-    "Contradiction": 29,
-    "objects": 365,
-    "links": 2429
+    "Contradiction": 30,
+    "objects": 371,
+    "links": 2520
   },
   "objects": [
     {
@@ -126,7 +126,7 @@
       "objectType": "Contradiction",
       "title": "Karpathy did not say stop writing code",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -140,7 +140,7 @@
       "objectType": "Contradiction",
       "title": "HydroFusion abstract years vs \u00a74.1",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -154,7 +154,7 @@
       "objectType": "Contradiction",
       "title": "UniTok 51.89% N@10 is Toys, not Tools",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -168,7 +168,7 @@
       "objectType": "Contradiction",
       "title": "TIWM Mini val14 vs full val14",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -182,7 +182,7 @@
       "objectType": "Contradiction",
       "title": "4MAS graphical abstract vs Table 1",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -196,7 +196,7 @@
       "objectType": "Contradiction",
       "title": "eptwts $100k / 10 months",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -210,7 +210,7 @@
       "objectType": "Contradiction",
       "title": "Foundry 3D paper vs Palantir Foundry",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -224,7 +224,7 @@
       "objectType": "Contradiction",
       "title": "Headlong one stream vs entropy gate",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -238,7 +238,7 @@
       "objectType": "Contradiction",
       "title": "Two claim registries",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -252,7 +252,7 @@
       "objectType": "Contradiction",
       "title": "Two retrieve engines",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -266,7 +266,7 @@
       "objectType": "Contradiction",
       "title": "Embeddings vs no vector DB",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -280,7 +280,7 @@
       "objectType": "Contradiction",
       "title": "Two folder skeletons",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -294,7 +294,7 @@
       "objectType": "Contradiction",
       "title": "Notion living skill library vs compiled git wiki",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -308,7 +308,7 @@
       "objectType": "Contradiction",
       "title": "Skill improves with use vs usage count",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -322,7 +322,7 @@
       "objectType": "Contradiction",
       "title": "Anthropic in the name, unaffiliated in the README",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -336,7 +336,7 @@
       "objectType": "Contradiction",
       "title": "817 skills vs the domain table",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -350,7 +350,7 @@
       "objectType": "Contradiction",
       "title": "Stale skill-pack counts",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -364,7 +364,7 @@
       "objectType": "Contradiction",
       "title": "Retrieval paste vs D9 FTS query path",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -378,7 +378,7 @@
       "objectType": "Contradiction",
       "title": "File first vs code first",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -392,7 +392,7 @@
       "objectType": "Contradiction",
       "title": "Prose checks vs observed validation",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -406,7 +406,7 @@
       "objectType": "Contradiction",
       "title": "Documented disclosure API vs live catalog",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -420,7 +420,7 @@
       "objectType": "Contradiction",
       "title": "Writing slop vs software slop",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -434,7 +434,7 @@
       "objectType": "Contradiction",
       "title": "200-agent cinematic vs 64-worker study",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -444,11 +444,25 @@
       "oneLiner": "Same author's article: 64 Haiku workers, measured hallucination index and cost."
     },
     {
+      "primaryKey": "C30",
+      "objectType": "Contradiction",
+      "title": "Grok Bot screens vs entropy-gate isolation",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Resolution: different systems. Do not cite Grok Bot screens as entropy-gate isolation. See [[grok-bot]]."
+    },
+    {
       "primaryKey": "C4",
       "objectType": "Contradiction",
       "title": "Shared memory vs shared contract",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -462,7 +476,7 @@
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -476,7 +490,7 @@
       "objectType": "Contradiction",
       "title": "Exact Voxyz blocks missing",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -490,7 +504,7 @@
       "objectType": "Contradiction",
       "title": "Income claim",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -504,7 +518,7 @@
       "objectType": "Contradiction",
       "title": "Two anti-slop tens",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -518,7 +532,7 @@
       "objectType": "Contradiction",
       "title": "NGC Table 1 vs Table 3 Mistral MMLU-pro",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
@@ -746,8 +760,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 7,
-      "outbound": 54,
+      "inbound": 8,
+      "outbound": 58,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -802,8 +816,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 25,
-      "outbound": 36,
+      "inbound": 27,
+      "outbound": 38,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -998,8 +1012,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
-      "outbound": 6,
+      "inbound": 10,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Bot-to-bot caveman. Facts, paths, SHAs. User still gets short \u7e41\u4e2d from lead"
     },
@@ -1138,8 +1152,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
-      "outbound": 6,
+      "inbound": 11,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Captions/metadata; not full copyrighted films; D5"
     },
@@ -1218,12 +1232,12 @@
       "objectType": "Meta",
       "title": "Contradictions",
       "path": "wiki/contradictions.md",
-      "created": "",
+      "created": "2026-08-23",
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 92,
-      "outbound": 48,
+      "inbound": 95,
+      "outbound": 50,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1335,7 +1349,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 29,
+      "outbound": 31,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1432,8 +1446,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
-      "outbound": 8,
+      "inbound": 26,
+      "outbound": 10,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
@@ -1606,6 +1620,34 @@
       "oneLiner": "The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite."
     },
     {
+      "primaryKey": "grok-bot",
+      "objectType": "Concept",
+      "title": "Grok Bot",
+      "path": "wiki/grok-bot.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-25",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 18,
+      "outbound": 10,
+      "unverified": true,
+      "oneLiner": "One bot per job. Vault over memory. Shared computer is not an entropy gate"
+    },
+    {
+      "primaryKey": "grok-bot-money",
+      "objectType": "Concept",
+      "title": "Grok Bot money",
+      "path": "wiki/grok-bot-money.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-25",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 12,
+      "outbound": 11,
+      "unverified": true,
+      "oneLiner": "Machina ten revenue lanes. Higgsfield UGC sponsored. Cash unverified"
+    },
+    {
       "primaryKey": "grok-bot-pro-tips",
       "objectType": "Concept",
       "title": "Grok Bot pro tips",
@@ -1656,8 +1698,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
-      "outbound": 10,
+      "inbound": 15,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "Miles 25 Grok Bot cases. lan E share"
     },
@@ -1684,8 +1726,8 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
-      "outbound": 21,
+      "inbound": 20,
+      "outbound": 23,
       "unverified": false,
       "oneLiner": "Obsidian vault Grokbot reads before a new partner"
     },
@@ -1740,9 +1782,9 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
-      "outbound": 14,
-      "unverified": false,
+      "inbound": 30,
+      "outbound": 16,
+      "unverified": true,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
     {
@@ -1824,8 +1866,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
-      "outbound": 13,
+      "inbound": 32,
+      "outbound": 16,
       "unverified": false,
       "oneLiner": "File first. Scouts stay quiet. Human final yes"
     },
@@ -1909,7 +1951,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 260,
+      "outbound": 263,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -2222,6 +2264,20 @@
       "oneLiner": "Compiled the marfinxx tweet into [[src-marfinxx-trace]] and [[trace]], and linked [[memory-engineering]], [[context-graph]], [[tokens-as-capital]]."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-25-exm7777-grok-bot",
+      "objectType": "Ship",
+      "title": "Brief: Machina Grok Bot money 2026-08-25",
+      "path": "output/ingest-brief-2026-08-25-exm7777-grok-bot.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-25",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 2,
+      "unverified": true,
+      "oneLiner": "Compiled [[grok-bot]] and [[grok-bot-money]] from https://x.com/exm7777/status/2091905664704745583. One bot per workflow. Vault over bot memory. Ten revenue lanes. Higgsfield UGC is sponsored. Cash re"
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-25-growthos",
       "objectType": "Ship",
       "title": "Brief: GrowthOS 2026-08-25",
@@ -2398,8 +2454,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 60,
-      "outbound": 29,
+      "inbound": 62,
+      "outbound": 31,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2427,7 +2483,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 10,
-      "outbound": 201,
+      "outbound": 205,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2524,8 +2580,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
-      "outbound": 23,
+      "inbound": 31,
+      "outbound": 25,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
     },
@@ -2598,6 +2654,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `a0e5609` (agent-facing docs / Disclosure Index), then merged into `cursor/can1357-daily-tool-replace-186d`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-grok-bot",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 grok-bot-money vs main",
+      "path": "output/merge-conflict-report-2026-08-28-grok-bot.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `42ba5e3` (Can daily-tool-replace / C29), then merged into `cursor/ingest-exm7777-grok-bot-93be`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -2944,8 +3014,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
-      "outbound": 11,
+      "inbound": 28,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "One owner per job. Report once. No empty acks"
     },
@@ -3056,8 +3126,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 6,
+      "inbound": 13,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Context only. Secret-scan before dry-migrate. Git is truth"
     },
@@ -3112,8 +3182,8 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
-      "outbound": 4,
+      "inbound": 10,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Trial on clean desktop + fake data, then SkillSpector, then enable"
     },
@@ -3140,7 +3210,7 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Gate generated SKILL.md before shipping"
@@ -4238,6 +4308,20 @@
       "oneLiner": "2026-08-26"
     },
     {
+      "primaryKey": "src-exm7777-grok-bot-money",
+      "objectType": "Source",
+      "title": "src-exm7777-grok-bot-money",
+      "path": "wiki/sources/src-exm7777-grok-bot-money.md",
+      "created": "2026-08-25",
+      "updated": "2026-08-25",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 21,
+      "outbound": 15,
+      "unverified": true,
+      "oneLiner": "2026-08-24"
+    },
+    {
       "primaryKey": "src-g3t0ffmyl4wn-2091749093206818856",
       "objectType": "Source",
       "title": "src-g3t0ffmyl4wn-2091749093206818856",
@@ -5027,11 +5111,11 @@
       "title": "Twitter hunt",
       "path": "hunt/twitter.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "hunt,twitter",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 12,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
     },
@@ -5599,6 +5683,26 @@
       "to": "contradictions"
     },
     {
+      "from": "C30",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "C30",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C30",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "C30",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
       "from": "C4",
       "linkType": "extractedFrom",
       "to": "contradictions"
@@ -6156,6 +6260,11 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
       "to": "src-hxiao-headlong-share"
     },
     {
@@ -6251,12 +6360,27 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "epistemic-labels"
     },
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "MEMORY",
@@ -6551,6 +6675,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -6617,6 +6746,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "eval-suite"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "agent-operating-system",
@@ -7320,8 +7454,18 @@
     },
     {
       "from": "bot-voice",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "bot-voice",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "bot-voice",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "bot-voice",
@@ -7571,6 +7715,11 @@
     {
       "from": "clip-pipeline",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "clip-pipeline",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
     },
     {
@@ -7582,6 +7731,11 @@
       "from": "clip-pipeline",
       "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "clip-pipeline",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "clip-pipeline",
@@ -7816,6 +7970,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-hitu-entropy-engineering"
     },
     {
@@ -7917,6 +8076,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "fourmas"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "contradictions",
@@ -8376,6 +8540,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-25-exm7777-grok-bot"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-growthos"
     },
     {
@@ -8397,6 +8566,11 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool-2"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-grok-bot"
     },
     {
       "from": "digests",
@@ -8476,6 +8650,11 @@
     {
       "from": "entropy-gate",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "cites",
       "to": "src-hitu-entropy-engineering"
     },
     {
@@ -8492,6 +8671,11 @@
       "from": "entropy-gate",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "entropy-gate",
@@ -8789,6 +8973,111 @@
       "to": "graph"
     },
     {
+      "from": "grok-bot",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot-use-cases"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "bot-voice"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "grok-bot-use-cases"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "growth-operator"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "session-migrate"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "skill-recorder"
+    },
+    {
+      "from": "grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "skillspector"
+    },
+    {
       "from": "grok-bot-pro-tips",
       "linkType": "cites",
       "to": "src-benln-grok-bot-pro-tips"
@@ -8896,6 +9185,11 @@
     {
       "from": "grok-bot-use-cases",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "grok-bot-use-cases",
+      "linkType": "cites",
       "to": "src-milesdeutscher-grok-bot-use-cases"
     },
     {
@@ -8907,6 +9201,16 @@
       "from": "grok-bot-use-cases",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "grok-bot-use-cases",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "grok-bot-use-cases",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "grok-bot-use-cases",
@@ -8955,6 +9259,11 @@
     },
     {
       "from": "growth-operator",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "growth-operator",
       "linkType": "relatedTo",
       "to": "GrowthOS"
     },
@@ -8967,6 +9276,11 @@
       "from": "growth-operator",
       "linkType": "relatedTo",
       "to": "graph"
+    },
+    {
+      "from": "growth-operator",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "growth-operator",
@@ -9076,6 +9390,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-promptyx-llm-cpu"
     },
     {
@@ -9107,6 +9426,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "harness-routing",
@@ -9466,6 +9790,11 @@
     {
       "from": "hunt-ship-loop",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
     },
     {
@@ -9487,6 +9816,16 @@
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "hunt-ship-loop",
@@ -10016,6 +10355,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-g3t0ffmyl4wn-2091749093206818856"
     },
     {
@@ -10512,6 +10856,16 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "graph"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "index",
@@ -11439,6 +11793,16 @@
       "to": "trace"
     },
     {
+      "from": "ingest-brief-2026-08-25-exm7777-grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "ingest-brief-2026-08-25-exm7777-grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
+    },
+    {
       "from": "ingest-brief-2026-08-25-growthos",
       "linkType": "cites",
       "to": "src-deronin-growthos-vault"
@@ -11821,6 +12185,11 @@
     {
       "from": "llm-wiki",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "cites",
       "to": "src-mrgreenieybt3-llm-wiki"
     },
     {
@@ -11872,6 +12241,11 @@
       "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "llm-wiki",
@@ -12102,6 +12476,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-everestchris6-revenue-2026-08-26"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
     },
     {
       "from": "log",
@@ -12491,6 +12870,16 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "grok-bot-pro-tips"
     },
     {
@@ -12707,6 +13096,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool-2"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-grok-bot"
     },
     {
       "from": "log",
@@ -13166,6 +13560,11 @@
     {
       "from": "memory-engineering",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "cites",
       "to": "src-marfinxx-trace"
     },
     {
@@ -13217,6 +13616,11 @@
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "memory-engineering",
@@ -13542,6 +13946,31 @@
       "from": "merge-conflict-report-2026-08-28-daily-tool-2",
       "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-grok-bot",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-grok-bot",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-grok-bot",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-grok-bot",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
@@ -14146,6 +14575,11 @@
     {
       "from": "raptor-dispatch",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
     },
     {
@@ -14167,6 +14601,11 @@
       "from": "raptor-dispatch",
       "linkType": "relatedTo",
       "to": "first-principles"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
     },
     {
       "from": "raptor-dispatch",
@@ -14381,6 +14820,11 @@
     {
       "from": "session-migrate",
       "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "session-migrate",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
     },
     {
@@ -14392,6 +14836,11 @@
       "from": "session-migrate",
       "linkType": "relatedTo",
       "to": "context-compaction"
+    },
+    {
+      "from": "session-migrate",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "session-migrate",
@@ -14552,6 +15001,16 @@
       "from": "skill-recorder",
       "linkType": "cites",
       "to": "src-chatgpt-play-2026-08-25"
+    },
+    {
+      "from": "skill-recorder",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "skill-recorder",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
     },
     {
       "from": "skill-recorder",
@@ -15944,6 +16403,81 @@
       "to": "work-per-cost"
     },
     {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "bot-voice"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "grok-bot-money"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "grok-bot-use-cases"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "growth-operator"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "session-migrate"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "relatedTo",
+      "to": "skill-recorder"
+    },
+    {
       "from": "src-hitu-entropy-engineering",
       "linkType": "relatedTo",
       "to": "contradictions"
@@ -16922,6 +17456,11 @@
       "from": "twitter",
       "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
     },
     {
       "from": "twitter",
