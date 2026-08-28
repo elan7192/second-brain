@@ -11,6 +11,10 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into entropy-gate quiz
+
+Fetched origin/main. Only conflict was [[log]]: both sides appended. Kept both, newest first. Query answers stay dated 2026-08-24 snapshots. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-entropy-quiz-2026-08-28]].
+
 ## [2026-08-28] merge | origin/main into skill-library ingest
 
 Fetched origin/main at claim-protocol / D9. Simple unions kept. Skill flags remapped C8–C13 → C20–C25 so they do not collide with paper flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-2026-08-28]].
@@ -328,6 +332,14 @@ Compiled `/workspace/arxiv-tierlist/ARXIV_TIERLIST_HANDOFF.md` into [[src-arxiv-
 ## [2026-08-24] lint | Concept clusters in the graph
 
 The hairball was ring-by-folder layout plus catalog stars (`index`, `log`, `twitter`). Graph filter now keeps wiki/maps/hunt/ship and drops `raw/`, `index`, `log`, and `twitter`. Renderer places nodes on the five [[agent-operating-system]] layers. Added peer concept links already supported by those pages. Locked D8.
+
+## [2026-08-24] query | Skills, forgetting, anti-slop
+
+Human asked whether every inputted skill was stored, how agents use them without forgetting, and how slop is cut. Answer filed to [[query-skills-and-slop]]. Ten anti-slop skills were compiled, not vendored. Forgetting is ablation plus lint, not full replay. D6 is the slop default.
+
+## [2026-08-24] query | Entropy gate quiz
+
+Human asked whether the vault remembered ingested data, using [[entropy-gate]] as the probe. Answer filed to [[query-entropy-gate]]. Cite the 64-worker table. Keep the 200-agent clip `unverified` ([[contradictions]] C3). `MEMORY.md` still has no personal facts.
 
 ## [2026-08-23] ingest | Retrieval second brain
 
