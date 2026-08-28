@@ -99,6 +99,7 @@ flowchart TB
   end
   subgraph hunt-ship[Hunt / ship]
     GrowthOS
+    disclosures
     graph-clusters-2026-08-24
     growth-briefing-2026-08-25
     growth-operator
@@ -111,6 +112,7 @@ flowchart TB
     ingest-brief-2026-08-23-retrieval-second-brain
     ingest-brief-2026-08-23-skill-library
     ingest-brief-2026-08-23-skill-pack-list
+    ingest-brief-2026-08-24
     ingest-brief-2026-08-24-arxiv-128956
     ingest-brief-2026-08-24-arxiv-156256
     ingest-brief-2026-08-24-arxiv-281056
@@ -127,6 +129,7 @@ flowchart TB
     ingest-brief-2026-08-24-batch07
     ingest-brief-2026-08-24-batch08
     ingest-brief-2026-08-24-batch09
+    ingest-brief-2026-08-24-disclosure-index
     ingest-brief-2026-08-24-five-x
     ingest-brief-2026-08-24-three-x
     ingest-brief-2026-08-24-trace
@@ -142,7 +145,11 @@ flowchart TB
     memory-engine-2026-08-28
     memory-system-brief-2026-08-27
     merge-conflict-report-2026-08-28
+    merge-conflict-report-agent-facing-2026-08-28
+    merge-conflict-report-entropy-quiz-2026-08-28
     ontology-rebuild-brief-2026-08-28
+    query-entropy-gate
+    query-skills-and-slop
     ship
     src-avid-obsidian-agent-team
     src-deronin-growthos-vault
@@ -163,6 +170,7 @@ flowchart TB
   MEMORY --> headlong
   MEMORY --> growth-operator
   hunt --> hunt-ship-loop
+  hunt --> disclosures
   maps --> GrowthOS
   ship --> ingest-brief-2026-08-23
   ship --> ingest-brief-2026-08-23-skill-library
@@ -172,6 +180,7 @@ flowchart TB
   ship --> graph-clusters-2026-08-24
   ship --> ontology-rebuild-brief-2026-08-28
   ship --> merge-conflict-report-2026-08-28
+  disclosures --> hunt-ship-loop
   GrowthOS --> growth-operator
   GrowthOS --> src-deronin-growthos-vault
   growth-briefing-2026-08-25 --> src-deronin-growthos-vault
@@ -208,12 +217,18 @@ flowchart TB
   ingest-brief-2026-08-26-headlong --> headlong
   ingest-brief-2026-08-26-headlong --> src-hxiao-headlong
   ingest-brief-2026-08-26-headlong --> src-laude-headlong
+  ingest-brief-2026-08-24-disclosure-index --> disclosures
   ingest-brief-2026-08-23-retrieval-second-brain --> memory-engineering
   ingest-brief-2026-08-23-retrieval-second-brain --> context-graph
   ingest-brief-2026-08-23-retrieval-second-brain --> llm-wiki
   ontology-rebuild-brief-2026-08-28 --> llm-wiki
   ontology-rebuild-brief-2026-08-28 --> file-memory
   ontology-rebuild-brief-2026-08-28 --> context-graph
+  ingest-brief-2026-08-24 --> verifiable-instructions
+  ingest-brief-2026-08-24 --> context-graph
+  ingest-brief-2026-08-24 --> tokens-as-capital
+  ingest-brief-2026-08-24 --> llm-wiki
+  ingest-brief-2026-08-24 --> self-verification
   memory-system-brief-2026-08-27 --> memory-system
   memory-system-brief-2026-08-27 --> epistemic-labels
   memory-system-brief-2026-08-27 --> provenance
@@ -222,6 +237,17 @@ flowchart TB
   memory-system-brief-2026-08-27 --> llm-wiki
   memory-system-brief-2026-08-27 --> file-memory
   memory-system-brief-2026-08-27 --> portable-memory
+  query-skills-and-slop --> anti-slop
+  query-skills-and-slop --> src-juampi-anti-slop-rank
+  query-skills-and-slop --> context-graph
+  query-skills-and-slop --> src-voxyz-verifiable-instructions
+  query-skills-and-slop --> llm-wiki
+  query-skills-and-slop --> tokens-as-capital
+  query-skills-and-slop --> memory-engineering
+  query-skills-and-slop --> memory-ablation
+  query-skills-and-slop --> src-papa-couch-compiler
+  query-skills-and-slop --> verifiable-instructions
+  query-skills-and-slop --> self-verification
   memory-engine-2026-08-28 --> claims
   ingest-brief-2026-08-27-claim-protocol --> claim-protocol
   ingest-brief-2026-08-27-claim-protocol --> llm-wiki
@@ -238,11 +264,25 @@ flowchart TB
   merge-conflict-report-2026-08-28 --> harness-routing
   merge-conflict-report-2026-08-28 --> memory-engineering
   merge-conflict-report-2026-08-28 --> llm-wiki
+  merge-conflict-report-entropy-quiz-2026-08-28 --> graph-clusters-2026-08-24
+  merge-conflict-report-entropy-quiz-2026-08-28 --> query-entropy-gate
+  merge-conflict-report-entropy-quiz-2026-08-28 --> query-skills-and-slop
   ingest-brief-2026-08-23-cybersecurity-skills --> tokens-as-capital
   ingest-brief-2026-08-23-cybersecurity-skills --> context-graph
+  merge-conflict-report-agent-facing-2026-08-28 --> ship
+  merge-conflict-report-agent-facing-2026-08-28 --> context-graph
+  merge-conflict-report-agent-facing-2026-08-28 --> llm-wiki
+  merge-conflict-report-agent-facing-2026-08-28 --> tokens-as-capital
+  merge-conflict-report-agent-facing-2026-08-28 --> self-verification
+  merge-conflict-report-agent-facing-2026-08-28 --> verifiable-instructions
+  merge-conflict-report-agent-facing-2026-08-28 --> hunt-ship-loop
+  merge-conflict-report-agent-facing-2026-08-28 --> MEMORY
   ingest-brief-2026-08-26-headlong-hour --> headlong
   ingest-brief-2026-08-26-headlong-hour --> harness-routing
   ingest-brief-2026-08-26-headlong-hour --> entropy-gate
+  query-entropy-gate --> entropy-gate
+  query-entropy-gate --> src-hitu-entropy-engineering
+  query-entropy-gate --> audited-task-contract
   ingest-brief-2026-08-23-skill-library --> tokens-as-capital
   ingest-brief-2026-08-23-skill-library --> anti-slop
   ingest-brief-2026-08-23-skill-library --> llm-wiki

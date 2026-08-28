@@ -25,6 +25,16 @@ Read this file. For a question, run `python3 tools/sb ask` and read the evidence
 | `maps/` `hunt/` `ship/` | agent | Obsidian navigation. Do not copy wiki prose into them. |
 | `.obsidian/` | both | Vault settings. Keep graph color groups. |
 
+## Control surface
+
+Put operational rules in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs and expect later agents to follow it.
+
+Check: a new operational rule has an inbound `[[wikilink]]` from `wiki/index.md` or this file.
+If the only copy is in README or a classical doc: move it before answering.
+
+Reading this file is not verification. After any ingest or schema edit, `python3 tools/lint-wiki.py` and `python3 tools/sb validate` must exit 0.
+If lint fails: fix missing links before writing `output/`. See D10.
+
 ## Query
 
 1. Run `python3 tools/sb ask "<question>"`. If the index is missing, run `python3 tools/sb rebuild-index` first.

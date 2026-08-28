@@ -11,6 +11,10 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into agent-facing-docs ingest
+
+Fetched origin/main. Simple unions kept. Decision IDs remapped D8/D9 → D10/D11 so they do not collide with graph-clusters and FTS D9. Contradiction IDs remapped C8–C10 → C26–C28 so they do not collide with anti-slop tens and arXiv flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-agent-facing-2026-08-28]].
+
 ## [2026-08-28] merge | origin/main into entropy-gate quiz
 
 Fetched origin/main. Only conflict was [[log]]: both sides appended. Kept both, newest first. Query answers stay dated 2026-08-24 snapshots. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-entropy-quiz-2026-08-28]].
@@ -220,6 +224,16 @@ Trial on a clean desktop with fake data, then [[skillspector]], then enable. See
 ## [2026-08-25] ingest | play methods
 
 Compiled [[skillspector]], [[quota-router]], [[raptor-dispatch]], [[session-migrate]], [[clip-pipeline]] from `/workspace/play-until-2pm/METHODS.md`. Reinforced D4 on [[audited-task-contract]] and [[harness-routing]]. Not copied into raw/. See [[src-play-methods-2026-08-25]] and [[ingest-brief-2026-08-25-play-methods]].
+
+## [2026-08-24] ingest | Disclosure Index catalog
+
+URL ingest of https://bug-bounty-disclosures.vercel.app/#api. Parsed `data/catalog.js`: 11,338 records. Wrote [[src-disclosure-index]], [[disclosure-index]], and `output/disclosure-index-stats-2026-08-23.json`. Locked D11 (was D9 on this branch). Flagged C28 (was C10). Documented `/api/*` returned 404.
+
+## [2026-08-24] ingest | DAIR.AI agent-friendly documentation paper
+
+URL ingest of https://x.com/dair_ai/status/2091661799737446864 and arXiv:2608.20195. Wrote [[src-dair-agent-friendly-docs]] and [[agent-facing-docs]]. Locked D10 (was D8 on this branch). Flagged C26 and C27 (were C8 and C9). Put the control-surface rule in `AGENTS.md`. No `raw/` file: human-owned.
+
+Pages touched: [[agent-facing-docs]], [[verifiable-instructions]], [[context-graph]], [[tokens-as-capital]], [[llm-wiki]], [[self-verification]], [[hunt-ship-loop]], [[contradictions]], [[agent-operating-system]], [[how-it-works]].
 
 ## [2026-08-24] ingest | BATCH09 five paper digests
 

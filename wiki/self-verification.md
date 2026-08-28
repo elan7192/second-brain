@@ -29,8 +29,10 @@ Code: https://github.com/llm-as-a-verifier/llm-as-a-verifier
 
 For high-risk wiki claims and architecture answers: write the answer, score it against cited pages, revise if contradicted or missing. See `AGENTS.md` Self-check.
 
+Prose is not an observed oracle. [[src-dair-agent-friendly-docs]] recorded zero documentation-based validation sequences. Keep the score step, then run the executable gate. See [[agent-facing-docs]] and C27.
+
 ## Related
 
-[[verifiable-instructions]] · [[entropy-gate]] · [[claim-protocol]]
+[[verifiable-instructions]] · [[entropy-gate]] · [[claim-protocol]] · [[agent-facing-docs]]
 
 Related later source: [[evosyn]] synthesizes executable tests; not the same as sampling several answers.

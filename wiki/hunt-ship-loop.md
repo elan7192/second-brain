@@ -14,7 +14,7 @@ Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are 
 ## Rules that landed
 
 - `Home.md` is the door.
-- File first. Every source gets a date and a folder under `raw/`.
+- File first. Every source gets a date and a folder under `raw/`, or a URL ingest that writes a source page and leaves `raw/` untouched. Observed public agents touch code first. This vault still files first. See [[contradictions]] C26 and [[agent-facing-docs]].
 - Scouts (ingest, lint, research) write files. They do not ping for chatter.
 - Chat gets a short digest. See `output/`.
 - Lock decisions in `decisions.md` so dead ideas are not remade.

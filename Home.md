@@ -17,7 +17,7 @@ Ten X posts plus GitHub skill catalogs compiled into a wiki you can browse as a 
 
 - Gold: [[wiki]]
 - Teal: [[maps]]
-- Blue: [[hunt]] / [[twitter]]
+- Blue: [[hunt]] / [[twitter]] / [[disclosures]]
 - Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]], [[hurley]], [[mahipal-jangra]]
 - Coral: [[ship]]
 
@@ -35,6 +35,8 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - [[skill-library]]
 - [[skill-as-sop]]
 - [[retrieval-second-brain]]
+- [[agent-facing-docs]]
+- [[disclosure-index]]
 - [[Jarvis]]
 - [[TELOS]]
 - [[GrowthOS]]
@@ -51,3 +53,5 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Skill-library ingest: [[ingest-brief-2026-08-23-retrieval-second-brain]].
 
 2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour harvest: [[ingest-brief-2026-08-26-headlong-hour]].
+
+2026-08-24: [[agent-facing-docs]] and [[disclosure-index]]. Briefs: [[ingest-brief-2026-08-24]], [[ingest-brief-2026-08-24-disclosure-index]]. Merge remapped D8/D9 → D10/D11 and C8–C10 → C26–C28. See [[merge-conflict-report-agent-facing-2026-08-28]].
