@@ -41,11 +41,13 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Recurring fill belongs on dedicated bot `burn`, not the lead chat. See [[grok-bot-quota]].
 - Routines: hourly or a few times a day. Never every 5 minutes. Recurring work goes to a fresh bot. See [[grok-bot-pro-tips]].
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.
-- lan E shared https://x.com/hxiao/status/2092015227286249607 (Headlong quote). Parked. No Headlong method until experiments reports. See [[src-hxiao-headlong-share]].
+- lan E shared https://x.com/hxiao/status/2092015227286249607 (Headlong quote). Parked 2026-08-27 pending experiments. The 2026-08-26 hour trial is that report. See [[src-hxiao-headlong-share]] and [[headlong]].
 - Skill Recorder: trial only on a clean desktop with fake data, then SkillSpector, then enable. See [[skill-recorder]].
 - Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
 - Surprise spot-checks: lead inspects without warning; specialists stay on-lane; lessons go to wiki and a shared skill. One owner per job, report once, no empty acks. See [[spot-check]] and [[raptor-dispatch]].
 - Bot-to-bot voice is caveman. Facts, paths, SHAs. No filler, no empty acks. Code/errors stay exact. lan E still gets short Traditional Chinese from lead. See [[bot-voice]]. Do not install JuliusBrussee/caveman.
+- 2026-08-26: Headlong lives at `~/.headlong`, not in this vault. Do not vendor the checkout. Do not commit `~/.headlong/.env`.
+- 2026-08-26: Headlong identity `hour` 1h trial ended 02:07Z. Do not restart without a new operator yes. Stop remains `hour stop` then `headlong-killall`. Nested Docker overlay failed rc=125 on this VM; do not treat Docker as available here without new evidence. qwen2.5-coder:7b as `gpt-4o` via Ollama copied the nested-shellm docs example; tests did not run. Do not use Headlong as the wiki runtime. Do not start Slack/Telegram bridges. See [[headlong]]. C16. D5.
 
 ## arXiv tierlist
 

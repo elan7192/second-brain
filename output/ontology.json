@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T17:30:30Z",
+  "builtAt": "2026-08-28T17:35:47Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 12,
-    "unverified": 62,
+    "unverified": 64,
     "Hunt": 7,
     "Map": 5,
-    "Ship": 35,
-    "Concept": 99,
+    "Ship": 37,
+    "Concept": 100,
     "Project": 2,
     "Person": 6,
-    "Source": 117,
+    "Source": 119,
     "Decision": 9,
-    "Contradiction": 15,
-    "objects": 307,
-    "links": 1796
+    "Contradiction": 16,
+    "objects": 313,
+    "links": 1849
   },
   "objects": [
     {
@@ -127,7 +127,7 @@
       "title": "Karpathy did not say stop writing code",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -141,7 +141,7 @@
       "title": "HydroFusion abstract years vs \u00a74.1",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -155,7 +155,7 @@
       "title": "UniTok 51.89% N@10 is Toys, not Tools",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -169,7 +169,7 @@
       "title": "TIWM Mini val14 vs full val14",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -183,7 +183,7 @@
       "title": "4MAS graphical abstract vs Table 1",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -197,7 +197,7 @@
       "title": "eptwts $100k / 10 months",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -211,7 +211,7 @@
       "title": "Foundry 3D paper vs Palantir Foundry",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -220,12 +220,26 @@
       "oneLiner": "Resolution: do not mix the names. Local object table is [[vault-ontology]]."
     },
     {
+      "primaryKey": "C16",
+      "objectType": "Contradiction",
+      "title": "Headlong one stream vs entropy gate",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Harvest 02:07Z: mind stopped; tests did not run. Still not th"
+    },
+    {
       "primaryKey": "C2",
       "objectType": "Contradiction",
       "title": "Two folder skeletons",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -239,7 +253,7 @@
       "title": "200-agent cinematic vs 64-worker study",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -253,7 +267,7 @@
       "title": "Shared memory vs shared contract",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -267,7 +281,7 @@
       "title": "Living CLAUDE.md profile vs adjective death",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -281,7 +295,7 @@
       "title": "Exact Voxyz blocks missing",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -295,7 +309,7 @@
       "title": "Income claim",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -309,7 +323,7 @@
       "title": "Two anti-slop tens",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -323,7 +337,7 @@
       "title": "NGC Table 1 vs Table 3 Mistral MMLU-pro",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -477,11 +491,11 @@
       "title": "Home",
       "path": "Home.md",
       "created": "2026-08-23",
-      "updated": "2026-08-25",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 6,
-      "outbound": 19,
+      "inbound": 5,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -523,7 +537,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 10,
-      "outbound": 39,
+      "outbound": 40,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -547,25 +561,25 @@
       "title": "Today",
       "path": "wiki/Today.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
       "inbound": 2,
-      "outbound": 4,
+      "outbound": 6,
       "unverified": false,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "2026-08-28"
     },
     {
       "primaryKey": "agent-operating-system",
       "objectType": "Meta",
       "title": "Agent operating system",
       "path": "wiki/agent-operating-system.md",
-      "created": "",
-      "updated": "2026-08-23",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 17,
-      "outbound": 26,
+      "inbound": 19,
+      "outbound": 27,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -704,7 +718,7 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
+      "inbound": 23,
       "outbound": 5,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
@@ -953,11 +967,11 @@
       "title": "Contradictions",
       "path": "wiki/contradictions.md",
       "created": "",
-      "updated": "2026-08-23",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 48,
-      "outbound": 26,
+      "inbound": 52,
+      "outbound": 28,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`."
     },
@@ -1093,11 +1107,11 @@
       "title": "Entropy gate",
       "path": "wiki/entropy-gate.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
-      "outbound": 6,
+      "inbound": 18,
+      "outbound": 7,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
@@ -1219,11 +1233,11 @@
       "title": "GitHub hunt",
       "path": "hunt/github.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-26",
       "tags": "hunt,github",
       "island": "hunt-ship",
       "inbound": 1,
-      "outbound": 2,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Green in the graph when people or repos land here."
     },
@@ -1233,7 +1247,7 @@
       "title": "Graph",
       "path": "wiki/graph.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-26",
       "tags": "wiki",
       "island": "meta",
       "inbound": 8,
@@ -1387,13 +1401,27 @@
       "title": "Harness routing",
       "path": "wiki/harness-routing.md",
       "created": "2026-08-23",
-      "updated": "2026-08-25",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 21,
+      "outbound": 10,
+      "unverified": false,
+      "oneLiner": "Route model and harness by phase, not by turn"
+    },
+    {
+      "primaryKey": "headlong",
+      "objectType": "Concept",
+      "title": "Headlong",
+      "path": "wiki/headlong.md",
+      "created": "2026-08-26",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
       "inbound": 17,
-      "outbound": 9,
-      "unverified": false,
-      "oneLiner": "Route model and harness by phase, not by turn"
+      "outbound": 11,
+      "unverified": true,
+      "oneLiner": "Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run"
     },
     {
       "primaryKey": "hear2act",
@@ -1531,7 +1559,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 11,
-      "outbound": 235,
+      "outbound": 238,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -1858,6 +1886,34 @@
       "oneLiner": "Compiled [[skill-recorder]] from ChatGPT play 2026-08-25. Trial on a clean desktop with fake data, then [[skillspector]], then enable. Linked from [[src-chatgpt-play-2026-08-25]]."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-26-headlong",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-26 \u00b7 Headlong",
+      "path": "output/ingest-brief-2026-08-26-headlong.md",
+      "created": "2026-08-26",
+      "updated": "2026-08-26",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Installed [[headlong]] tools from `laude-institute/headlong` SHA `d8f8304`. Did not start the 24/7 mind: no Docker, no API key, D5. Linked [[src-hxiao-headlong]] and [[src-laude-headlong]]."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-26-headlong-hour",
+      "objectType": "Ship",
+      "title": "Hour brief \u00b7 2026-08-26 \u00b7 Headlong harvest",
+      "path": "output/ingest-brief-2026-08-26-headlong-hour.md",
+      "created": "2026-08-26",
+      "updated": "2026-08-26",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 4,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "The 1h identity `hour` stopped at 02:07Z. Trajectory 37 rows, last durable step 01:12:08Z; tests did not run; qwen2.5-coder:7b copied the nested-`shellm` docs example and stalled."
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-27-botdirectory",
       "objectType": "Ship",
       "title": "Brief: botdirectory scan 2026-08-27",
@@ -1965,7 +2021,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 9,
-      "outbound": 160,
+      "outbound": 163,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2045,11 +2101,11 @@
       "title": "Memory engineering",
       "path": "wiki/memory-engineering.md",
       "created": "2026-08-23",
-      "updated": "2026-08-27",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
-      "outbound": 14,
+      "inbound": 21,
+      "outbound": 15,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
     },
@@ -3434,7 +3490,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": true,
       "oneLiner": "2026-08-24"
@@ -3566,16 +3622,30 @@
       "oneLiner": "2026-08-21"
     },
     {
+      "primaryKey": "src-hxiao-headlong",
+      "objectType": "Source",
+      "title": "src-hxiao-headlong",
+      "path": "wiki/sources/src-hxiao-headlong.md",
+      "created": "2026-08-26",
+      "updated": "2026-08-28",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "2026-08-26"
+    },
+    {
       "primaryKey": "src-hxiao-headlong-share",
       "objectType": "Source",
       "title": "src-hxiao-headlong-share",
       "path": "wiki/sources/src-hxiao-headlong-share.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-28",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
-      "outbound": 2,
+      "inbound": 4,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "2026-08-27"
     },
@@ -3888,6 +3958,20 @@
       "oneLiner": "2026-08-27"
     },
     {
+      "primaryKey": "src-laude-headlong",
+      "objectType": "Source",
+      "title": "src-laude-headlong",
+      "path": "wiki/sources/src-laude-headlong.md",
+      "created": "2026-08-26",
+      "updated": "2026-08-28",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "2026-08-26"
+    },
+    {
       "primaryKey": "src-luismbat-buying-signal-2026-08-27",
       "objectType": "Source",
       "title": "src-luismbat-buying-signal-2026-08-27",
@@ -4064,7 +4148,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 2,
+      "inbound": 3,
       "outbound": 1,
       "unverified": true,
       "oneLiner": "2026-08-24"
@@ -4288,7 +4372,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
+      "inbound": 18,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "Derived objects/links from wiki. CSV is not a second wiki"
@@ -4530,6 +4614,26 @@
       "from": "C15",
       "linkType": "relatedTo",
       "to": "vault-ontology"
+    },
+    {
+      "from": "C16",
+      "linkType": "cites",
+      "to": "src-laude-headlong"
+    },
+    {
+      "from": "C16",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C16",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "C16",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "C2",
@@ -4824,6 +4928,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "hunt"
     },
     {
@@ -4840,6 +4949,16 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-23"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-26-headlong"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-26-headlong-hour"
     },
     {
       "from": "Home",
@@ -5044,6 +5163,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "hunt-harden-loop"
     },
     {
@@ -5174,11 +5298,6 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
-      "to": "Home"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
@@ -5189,7 +5308,22 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "inbox"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-26-headlong-hour"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "vault-ontology"
     },
     {
       "from": "agent-operating-system",
@@ -5255,6 +5389,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "harness-routing"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "agent-operating-system",
@@ -6209,6 +6348,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-laude-headlong"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-openagentskill-anti-slop"
     },
     {
@@ -6250,6 +6394,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "growth-operator"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "contradictions",
@@ -6499,6 +6648,11 @@
     {
       "from": "entropy-gate",
       "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
       "to": "memory-engineering"
     },
     {
@@ -6685,6 +6839,11 @@
       "from": "g-carl",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "github",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "github",
@@ -7024,6 +7183,11 @@
     {
       "from": "harness-routing",
       "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
       "to": "quota-router"
     },
     {
@@ -7035,6 +7199,61 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "headlong",
+      "linkType": "cites",
+      "to": "src-chatchat-living-brain"
+    },
+    {
+      "from": "headlong",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong"
+    },
+    {
+      "from": "headlong",
+      "linkType": "cites",
+      "to": "src-laude-headlong"
+    },
+    {
+      "from": "headlong",
+      "linkType": "cites",
+      "to": "src-promptyx-llm-cpu"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-26-headlong-hour"
+    },
+    {
+      "from": "headlong",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
     },
     {
       "from": "hear2act",
@@ -7789,6 +8008,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-hxiao-headlong"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-hxiao-headlong-share"
     },
     {
@@ -7900,6 +8124,11 @@
       "from": "index",
       "linkType": "cites",
       "to": "src-lanbb-pr9-loop1"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-laude-headlong"
     },
     {
       "from": "index",
@@ -8245,6 +8474,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "harness-routing"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "index",
@@ -9142,6 +9376,41 @@
       "to": "skillspector"
     },
     {
+      "from": "ingest-brief-2026-08-26-headlong",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong"
+    },
+    {
+      "from": "ingest-brief-2026-08-26-headlong",
+      "linkType": "cites",
+      "to": "src-laude-headlong"
+    },
+    {
+      "from": "ingest-brief-2026-08-26-headlong",
+      "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "ingest-brief-2026-08-26-headlong-hour",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-26-headlong-hour",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-2026-08-26-headlong-hour",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ingest-brief-2026-08-26-headlong-hour",
+      "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
       "from": "ingest-brief-2026-08-27-botdirectory",
       "linkType": "relatedTo",
       "to": "botdirectory-scan"
@@ -9924,6 +10193,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "hear2act"
     },
     {
@@ -9965,6 +10239,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-skill-recorder"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-26-headlong"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-26-headlong-hour"
     },
     {
       "from": "log",
@@ -10430,6 +10714,11 @@
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "memory-engineering",
@@ -12352,6 +12641,36 @@
       "to": "entropy-gate"
     },
     {
+      "from": "src-hxiao-headlong",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong-share"
+    },
+    {
+      "from": "src-hxiao-headlong",
+      "linkType": "cites",
+      "to": "src-laude-headlong"
+    },
+    {
+      "from": "src-hxiao-headlong",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-hxiao-headlong",
+      "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "src-hxiao-headlong-share",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong"
+    },
+    {
+      "from": "src-hxiao-headlong-share",
+      "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
       "from": "src-hxiao-headlong-share",
       "linkType": "relatedTo",
       "to": "index"
@@ -12620,6 +12939,36 @@
       "from": "src-lanbb-pr9-loop1",
       "linkType": "relatedTo",
       "to": "lanbb"
+    },
+    {
+      "from": "src-laude-headlong",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong"
+    },
+    {
+      "from": "src-laude-headlong",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-laude-headlong",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-laude-headlong",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-laude-headlong",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-laude-headlong",
+      "linkType": "relatedTo",
+      "to": "headlong"
     },
     {
       "from": "src-luismbat-buying-signal-2026-08-27",

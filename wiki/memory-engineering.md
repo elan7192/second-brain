@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Memory engineering
@@ -36,3 +36,5 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.
 
 [[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.
+
+[[headlong]] stores life as a jsonl DAG with tiered compaction. Author method, not a measured memory eval here.

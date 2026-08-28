@@ -4,7 +4,6 @@ type: meta
 tags:
   - wiki
 updated: 2026-08-28
-updated: 2026-08-23
 ---
 
 # Contradictions
@@ -118,3 +117,11 @@ Resolution: `unverified`. Do not use as a forecast or as proof the vault works. 
 [[palantir-aip]] Foundry is Palantir's data platform. No enrollment here.
 
 Resolution: do not mix the names. Local object table is [[vault-ontology]].
+
+## C16. Headlong one stream vs entropy gate
+
+[[headlong]] / [[src-laude-headlong]]: one thought stream, no per-user sessions, assume anything said is shared. The agent keeps thinking when idle.
+
+[[entropy-gate]]: isolated worktrees, structured diffs, an objective gate outside the model.
+
+Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Harvest 02:07Z: mind stopped; tests did not run. Still not the wiki compiler. Do not restart without a new operator yes.

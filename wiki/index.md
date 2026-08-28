@@ -51,6 +51,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |
 | [[harness-routing]] | Route model and harness by phase, not by turn |
+| [[headlong]] | Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |
@@ -143,6 +144,8 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
+| [[src-laude-headlong]] | 2026-08-26 | Headlong launch + repo. 9883 cloc at d8f8304 |
 | [[src-palantir-aip-developers-2026-08-28]] | 2026-08-28 | AIP + Ontology docs. Hosted Foundry not used |
 | [[src-lanbb-pr27-loop17]] | 2026-08-27 | Loop17 PR27 ad6f669 v17 0/116 |
 | [[src-lanbb-pr26-loop16]] | 2026-08-27 | Loop16 PR26 75b62be v16 0/116 |
@@ -181,7 +184,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[src-coreyganim-composio]] | 2026-08-26 | lan E share. Composio hub. Not installed |
 | [[src-pawelhuryn-file-memory]] | 2026-08-27 | lan E share. Git md memory. Four kinds |
 | [[src-benln-grok-bot-pro-tips]] | 2026-08-25 | lan E share. 10 Grok Bot pro tips |
-| [[src-hxiao-headlong-share]] | 2026-08-27 | lan E share. Headlong quote. Method waits on experiments |
+| [[src-hxiao-headlong-share]] | 2026-08-27 | lan E share. Parked then; experiment report is [[headlong]] |
 | [[src-debs-obrien-token-usage]] | 2026-08-24 | lan E share. Ask chief of staff about token usage |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |

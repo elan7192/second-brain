@@ -264,3 +264,17 @@ claims:
     status: supported
     valid_from: 2026-08-23
     observed_at: 2026-08-23
+
+  - id: claim:headlong-not-wiki-runtime
+    subject: Headlong
+    predicate: is_not
+    object: the wiki compiler runtime
+    confidence: high
+    sources:
+      - source:src-laude-headlong
+    concepts:
+      - concept:headlong
+      - concept:entropy-gate
+    status: supported
+    valid_from: 2026-08-26
+    observed_at: 2026-08-28

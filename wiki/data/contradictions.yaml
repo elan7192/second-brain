@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C15 must match that page.
+# Codes C1–C16 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -150,4 +150,14 @@ contradictions:
     severity: low
     resolution: do not mix the names; local object table is vault-ontology
     resolution_source: concept:vault-ontology
+    page: contradictions.md
+
+  - id: contradiction:c16
+    claim_a: concept:headlong
+    claim_b: concept:entropy-gate
+    reason: Headlong one stream vs entropy-gate isolation
+    status: resolved
+    severity: medium
+    resolution: Headlong stays a trial CLI, not the wiki compiler
+    resolution_source: concept:headlong
     page: contradictions.md
