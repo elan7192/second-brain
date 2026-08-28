@@ -9,7 +9,7 @@ updated: 2026-08-28
 
 # Agent operating system
 
-Synthesis of the 2026-08-17 to 2026-08-22 ingest, plus [[src-maverick-ultramode]]. File this back so later sessions do not rebuild it from the posts.
+Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts.
 
 ## Stack
 
@@ -17,7 +17,7 @@ Five layers, one vault.
 
 1. **Compile, then retrieve the compiled set.** [[llm-wiki]] + [[tokens-as-capital]] + [[retrieval]] + [[claim-protocol]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki. The agent queries through `python3 tools/sb ask`, not by walking [[index]]. [[agent-facing-docs]] measured that instruction files and working notes take most of an agent's documentation attention.
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]] + [[memory-system]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`. New claims are FACT, INFERENCE, or OPINION.
-3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job.
+3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job. [[adversarial-review]] freezes the artifact while a reviewer and critic argue, then the writer edits.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations. Reading `AGENTS.md` is not the check. See D10 and [[agent-facing-docs]]. [[ultra-mode]] is the coding-agent product of that loop: N isolated worktrees, [[probabilistic-pivot-tournament]], uncommitted apply.
 5. **Keep a human gate.** [[hunt-ship-loop]] + [[clip-pipeline]] + [[skillspector]]. File first. Scouts write quietly. Vault does not post, pay, or send. Generated skills wait for SkillSpector.
 
@@ -27,14 +27,14 @@ Five layers, one vault.
 
 ## What this batch does not prove
 
-Viral clips are not methods. See [[contradictions]]. Planning-first best-of-N (pick a plan, execute once) changed 0 of 5 outcomes in [[src-maverick-ultramode]]. Do not re-propose it.
+Viral clips are not methods. See [[contradictions]]. Planning-first best-of-N changed 0 of 5 outcomes in [[src-maverick-ultramode]]. Adding more agents is the wrong first review fix in [[src-omarsar-adversarial-review]].
 The [[src-johnsjawn-skill-library]] demo shows usage counts. It does not show skills rewriting themselves after use.
 
 The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] says is needed before compilation beats a good search. Treat today's pages as a seed, not a finished graph.
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[ultra-mode]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]] · [[agent-facing-docs]]
+[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[ultra-mode]] · [[adversarial-review]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]] · [[agent-facing-docs]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

@@ -153,6 +153,7 @@ flowchart TB
     ingest-brief-2026-08-27-can1357-daily-tool
     ingest-brief-2026-08-27-claim-protocol
     ingest-brief-2026-08-27-lanbb-bb
+    ingest-brief-omarsar-2026-08-24
     maps
     memory-engine-2026-08-28
     memory-system-brief-2026-08-27
@@ -163,6 +164,7 @@ flowchart TB
     merge-conflict-report-2026-08-28-deer-flow
     merge-conflict-report-2026-08-28-grok-bot
     merge-conflict-report-2026-08-28-maverick-ultramode
+    merge-conflict-report-2026-08-28-omarsar
     merge-conflict-report-agent-facing-2026-08-28
     merge-conflict-report-entropy-quiz-2026-08-28
     ontology-rebuild-brief-2026-08-28
@@ -313,6 +315,9 @@ flowchart TB
   ingest-brief-2026-08-25-avid-company-foundry --> audited-task-contract
   ingest-brief-2026-08-25-avid-company-foundry --> entropy-gate
   ingest-brief-2026-08-25-avid-company-foundry --> memory-engineering
+  ingest-brief-omarsar-2026-08-24 --> entropy-gate
+  ingest-brief-omarsar-2026-08-24 --> audited-task-contract
+  ingest-brief-omarsar-2026-08-24 --> self-verification
   ingest-brief-2026-08-24-maverick-ultramode --> self-verification
   ingest-brief-2026-08-24-maverick-ultramode --> entropy-gate
   ingest-brief-2026-08-24-maverick-ultramode --> harness-routing
@@ -339,6 +344,11 @@ flowchart TB
   merge-conflict-report-2026-08-28-grok-bot --> grok-bot
   merge-conflict-report-2026-08-28-grok-bot --> entropy-gate
   merge-conflict-report-2026-08-28-grok-bot --> MEMORY
+  merge-conflict-report-2026-08-28-omarsar --> ship
+  merge-conflict-report-2026-08-28-omarsar --> entropy-gate
+  merge-conflict-report-2026-08-28-omarsar --> audited-task-contract
+  merge-conflict-report-2026-08-28-omarsar --> self-verification
+  merge-conflict-report-2026-08-28-omarsar --> ingest-brief-omarsar-2026-08-24
   ingest-brief-2026-08-26-headlong-hour --> headlong
   ingest-brief-2026-08-26-headlong-hour --> harness-routing
   ingest-brief-2026-08-26-headlong-hour --> entropy-gate

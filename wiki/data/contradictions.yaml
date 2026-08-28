@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C34 must match that page.
+# Codes C1–C35 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -340,4 +340,14 @@ contradictions:
     severity: medium
     resolution: tournament picks a candidate; apply is uncommitted; tests or a human still gate ship
     resolution_source: concept:entropy-gate
+    page: contradictions.md
+
+  - id: contradiction:c35
+    claim_a: source:src-omarsar-adversarial-review
+    claim_b: source:src-jacky-self-verification
+    reason: Self-Refine of one draft vs N-candidate same-model verify
+    status: resolved
+    severity: medium
+    resolution: cite the loop; Self-Refine zero is not evidence Jacky or Maverick failed
+    resolution_source: concept:adversarial-review
     page: contradictions.md

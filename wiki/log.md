@@ -11,6 +11,14 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into omarsar-adversarial-review ingest
+
+Fetched origin/main at `4be06ef`. Simple unions kept. Self-Refine flag remapped C10 → C35 so it does not collide with HydroFusion C10. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-omarsar]].
+
+## [2026-08-24] ingest | Omarsar Adversarial Review
+
+Compiled https://x.com/omarsar0/status/2091631620025647184 and arXiv:2608.18167. New pages: [[src-omarsar-adversarial-review]], [[adversarial-review]], [[elvis]]. Updated [[entropy-gate]], [[audited-task-contract]], [[self-verification]], [[contradictions]] C35.
+
 ## [2026-08-28] merge | origin/main into maverick-ultramode ingest
 
 Fetched origin/main at `5927d29`. Simple unions kept. Terminal-Bench slice flag remapped C8 → C33. LLM-tournament gate flag remapped C9 → C34. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-maverick-ultramode]].

@@ -123,6 +123,9 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 
 - 2026-08-22, [[src-maverick-ultramode]]: planning-first best-of-N (draft N plans, pick one, execute once) changed 0 of 5 outcomes. Do not re-propose it as the self-verify loop.
 - 2026-08-22, [[src-maverick-ultramode]]: 24% to 33% is a 15-task failure-skewed Terminal-Bench slice. Do not quote it as a full-bench result.
+- 2026-08-23, [[src-omarsar-adversarial-review]]: adding more agents is the wrong first fix for weak review. Diminishing returns on repository-level tasks.
+- 2026-08-23, [[src-omarsar-adversarial-review]]: cooperative agents can optimize for agreement. Require explicit evidence-grounded disagreement.
+- 2026-08-23, [[src-omarsar-adversarial-review]]: Self-Refine (same model critiques one draft) stayed at 77% on LiveCodeBench. Do not treat that as Jacky or Maverick N-candidate verify.
 
 ## Open questions
 

@@ -13,10 +13,14 @@ updated: 2026-08-28
 
 ## Done
 
-Merged origin/main into the maverick-ultramode branch. C8/C9 remapped to C33/C34. C17 / C18 / C25 still unresolved.
+Merged origin/main into the omarsar-adversarial-review branch. C10 remapped to C35. C17 / C18 / C25 still unresolved.
 
 ## Look at
 
+- [[adversarial-review]]
+- [[contradictions]] C35
+- `output/ingest-brief-omarsar-2026-08-24.md`
+- [[merge-conflict-report-2026-08-28-omarsar]]
 - [[ultra-mode]]
 - [[contradictions]] C33 C34
 - `output/ingest-brief-2026-08-24-maverick-ultramode.md`

@@ -310,3 +310,13 @@ Remap: was C8 on the maverick-ultramode branch. Main C8 is the two anti-slop ten
 Resolution: tournament picks a candidate worktree. Apply is uncommitted. Tests or a human still gate ship. Do not treat the LLM margin as the outside-the-model gate.
 
 Remap: was C9 on the maverick-ultramode branch. Main C9 is NGC tables.
+
+## C35. Self-Refine vs N-candidate verify
+
+[[src-omarsar-adversarial-review]] Self-Refine: same model critiques one draft. LiveCodeBench 77%, equal to zero-shot. Authors: the critic makes the same mistakes as the generator.
+
+[[src-jacky-self-verification]] and [[src-maverick-ultramode]]: same model ranks N candidates and reports a lift.
+
+Resolution: cite the loop. Self-critique of one draft is not N-candidate ranking. Do not use the LCB Self-Refine zero as evidence that Jacky or Maverick failed. Do not use Jacky's lift as evidence that Self-Refine works.
+
+Remap: was C10 on the omarsar-adversarial-review branch. Main C10 is HydroFusion years.
