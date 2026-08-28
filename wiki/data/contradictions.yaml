@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C16 must match that page.
+# Codes C1–C19 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -170,4 +170,24 @@ contradictions:
     severity: high
     resolution: keep both; do not delete either table; human names the canonical store
     resolution_source: concept:claims
+    page: contradictions.md
+
+  - id: contradiction:c18
+    claim_a: concept:claim-protocol
+    claim_b: concept:retrieval
+    reason: tools/retrieve.py plus hand-edited CSV vs tools/sb ask plus compiled claims.csv
+    status: unresolved
+    severity: high
+    resolution: live query stays sb ask; do not wire the second CLI; do not delete PR tools without a human yes
+    resolution_source: concept:claim-protocol
+    page: contradictions.md
+
+  - id: contradiction:c19
+    claim_a: source:src-lan-e-claim-protocol-2026-08-27
+    claim_b: concept:file-memory
+    reason: proposed embeddings vs no vector DB until too much to read
+    status: resolved
+    severity: low
+    resolution: parked; same as D9 and Deferred
+    resolution_source: concept:file-memory
     page: contradictions.md

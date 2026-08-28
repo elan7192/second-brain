@@ -16,7 +16,7 @@ If you are not in Obsidian, open `output/obsidian-graph.html`.
 2. Drop a source in `raw/` and say `ingest this`.
 3. After ingest: `python3 tools/sb validate`. After retrieval changes: `python3 tools/sb eval`.
 
-Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
+Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`. Claims: `wiki/claims.csv` compile plus `wiki/data/claims.yaml`. C17.
 
 ## CLI
 

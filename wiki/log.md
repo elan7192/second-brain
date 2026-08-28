@@ -11,6 +11,10 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-27] ingest | Claim protocol
+
+Named chain Claim → Evidence → Verification → Retrieval → Context → Answer. Live query stays `python3 tools/sb ask`. Duplicate engine parked as C18. Embeddings parked as C19. See [[claim-protocol]] [[src-lan-e-claim-protocol-2026-08-27]].
+
 ## [2026-08-28] harvest | Headlong hour trial merged
 
 Parked share on main waited for experiments. This branch is the report. Traj 37 rows; tests did not run; mind stopped 02:07Z. C16 (C15 on main is Foundry). See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].

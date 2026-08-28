@@ -17,7 +17,7 @@ Already in vault: git markdown is the store. Compiled wiki, not RAG dump. Claim 
 
 New here:
 
-- Git is source of truth. SQLite FTS5 is a disposable index, not a second memory. This vault's index is `.cache/secondbrain.sqlite`, rebuilt by `python3 tools/sb rebuild-index`.
+- Git is source of truth. SQLite FTS5 is a disposable index, not a second memory. This vault's index is `.cache/secondbrain.sqlite`, rebuilt by `python3 tools/sb rebuild-index`. Named chain: [[claim-protocol]].
 - Redact rolls back. It does not erase.
 - MCP tool descriptions say WHEN, not WHAT.
 - FTS prefix rewrite for search.
@@ -26,4 +26,4 @@ Do not clone `github.com/codejunkie99/brain`. Do not install a Brain binary. Vau
 
 ## Related
 
-[[file-memory]] · [[llm-wiki]] · [[loop-graph-engineering]] · [[session-migrate]] · [[src-av1dlive-portable-memory]] · [[memory-system]] · [[claims]]
+[[file-memory]] · [[llm-wiki]] · [[claim-protocol]] · [[loop-graph-engineering]] · [[session-migrate]] · [[src-av1dlive-portable-memory]] · [[memory-system]] · [[claims]]

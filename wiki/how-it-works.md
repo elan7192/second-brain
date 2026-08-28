@@ -15,7 +15,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 
 1. Human drops a source in `raw/` or pastes a URL.
 2. Agent ingests. Raw is untrusted data. One source updates many pages, YAML claim rows, and CSV compile rows.
-3. Human asks. Agent runs `python3 tools/sb ask`, then reads the evidence pages. Cite claim ids and kind when labeled.
+3. Human asks. Agent runs `python3 tools/sb ask`, then reads the evidence pages. Cite claim ids and kind when labeled. Named chain: [[claim-protocol]].
 4. Useful answers go to `wiki/` or `output/`.
 5. Periodic lint: `python3 tools/sb validate`, `python3 tools/compile-claims.py --check`, `python3 tools/sb contradictions`, `python3 tools/sb stale`.
 6. Methods learned while doing work go into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
@@ -24,7 +24,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 
 ## What the model sees
 
-Prefer compiled pages over raw dumps. Query them through [[retrieval]]. That is [[tokens-as-capital]] and [[context-graph]].
+Prefer compiled pages over raw dumps. Query them through [[retrieval]]. That is [[tokens-as-capital]], [[context-graph]], and [[claim-protocol]].
 For object sets and links, query [[vault-ontology]] instead of walking every file.
 
 [[MEMORY]] stays small. That is [[memory-ablation]].

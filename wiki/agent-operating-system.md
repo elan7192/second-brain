@@ -15,7 +15,7 @@ Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessio
 
 Five layers, one vault.
 
-1. **Compile, then retrieve the compiled set.** [[llm-wiki]] + [[tokens-as-capital]] + [[retrieval]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki. The agent queries through `python3 tools/sb ask`, not by walking [[index]].
+1. **Compile, then retrieve the compiled set.** [[llm-wiki]] + [[tokens-as-capital]] + [[retrieval]] + [[claim-protocol]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki. The agent queries through `python3 tools/sb ask`, not by walking [[index]].
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]] + [[memory-system]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`. New claims are FACT, INFERENCE, or OPINION.
 3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
@@ -31,7 +31,7 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]]
+[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

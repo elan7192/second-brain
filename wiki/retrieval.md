@@ -21,4 +21,4 @@ See [[portable-memory]]. Do not clone Brain. Do not make the database a second m
 
 ## Related
 
-[[stable-ids]] · [[claims]] · [[llm-wiki]] · [[context-graph]] · [[tokens-as-capital]] · [[file-memory]]
+[[stable-ids]] · [[claims]] · [[llm-wiki]] · [[context-graph]] · [[tokens-as-capital]] · [[file-memory]] · [[claim-protocol]]

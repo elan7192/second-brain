@@ -23,3 +23,5 @@ derived_from: []
 FACT only. What the source said. Mark `unverified` if the method is missing.
 
 ## Pages updated
+
+Append matching rows to `wiki/claims.csv` (source + evidence + status).

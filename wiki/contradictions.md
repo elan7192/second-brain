@@ -131,3 +131,19 @@ This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / 
 Main locked D9 and put structured claims in `wiki/data/claims.yaml` for `python3 tools/sb`.
 
 Resolution: unresolved. Keep both. Do not delete either table. Cite the id you used. Human names the canonical store. See [[claims]] and [[memory-system]].
+
+## C18. Two retrieve engines
+
+This branch added `tools/retrieve.py` and `tools/claim_protocol.py`, plus a hand-edited claims.csv schema.
+
+Main already ships `python3 tools/sb ask`, `.cache/secondbrain.sqlite`, and compiled `wiki/claims.csv`. See [[retrieval]] and [[claims]].
+
+Resolution: unresolved. Live Query stays `python3 tools/sb ask`. Do not wire the second CLI. Do not delete the PR tools without a human yes. Named chain: [[claim-protocol]].
+
+## C19. Embeddings vs no vector DB
+
+[[src-lan-e-claim-protocol-2026-08-27]] proposes BM25/FTS5 plus embeddings.
+
+[[file-memory]] and main Deferred: vector DB only when too much to read. FTS5 is the disposable index.
+
+Resolution: parked. Same as D9 and Deferred. See [[claim-protocol]].

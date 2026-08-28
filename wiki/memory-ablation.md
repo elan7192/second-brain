@@ -38,4 +38,4 @@ Do not ask a model to score memory it wrote. It defends its own prose.
 
 ## Related
 
-[[memory-engineering]] · `MEMORY.md` · [[verifiable-instructions]] · [[context-compaction]] · [[claims]]
+[[memory-engineering]] · `MEMORY.md` · [[verifiable-instructions]] · [[claim-protocol]] · [[context-compaction]] · [[claims]]

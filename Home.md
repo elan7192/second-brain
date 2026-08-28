@@ -41,7 +41,7 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - Drop a file in `raw/` and say `ingest this`.
 - File a clip in [[inbox]], then ingest.
 - Say `lint the wiki` or run `python3 tools/sb validate`.
-- Ask a question; the agent should `python3 tools/sb ask` first.
+- Ask a question; the agent should `python3 tools/sb ask` first. Named chain: [[claim-protocol]].
 
 ## This batch
 

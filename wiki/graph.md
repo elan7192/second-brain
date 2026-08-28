@@ -35,7 +35,7 @@ Taken from [[agent-operating-system]].
 
 | Island | Pages |
 | --- | --- |
-| Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids |
+| Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids, claim-protocol |
 | Memory | memory-engineering, memory-ablation, portable-memory, memory-system, claims |
 | Verification | verifiable-instructions, self-verification, anti-slop |
 | Harness | audited-task-contract, harness-routing, entropy-gate |
@@ -55,9 +55,11 @@ Growth operator graph is separate: `output/growthos-graph.html`. See [[growth-op
 flowchart TB
   subgraph compile[Compile]
     andrej-karpathy
+    claim-protocol
     context-graph
     llm-wiki
     src-bober-folder-workflow
+    src-lan-e-claim-protocol-2026-08-27
     src-papa-couch-compiler
     tokens-as-capital
   end
@@ -81,6 +83,7 @@ flowchart TB
     src-jacky-self-verification
     src-juampi-anti-slop-rank
     src-voxyz-verifiable-instructions
+    stale-fact-detector
     verifiable-instructions
   end
   subgraph harness[Harness]
@@ -129,6 +132,7 @@ flowchart TB
     ingest-brief-2026-08-26-headlong
     ingest-brief-2026-08-26-headlong-hour
     ingest-brief-2026-08-27-botdirectory
+    ingest-brief-2026-08-27-claim-protocol
     ingest-brief-2026-08-27-lanbb-bb
     maps
     memory-engine-2026-08-28
@@ -145,10 +149,12 @@ flowchart TB
   MEMORY --> portable-memory
   MEMORY --> claims
   MEMORY --> memory-system
+  MEMORY --> claim-protocol
   MEMORY --> epistemic-labels
   MEMORY --> provenance
   MEMORY --> untrusted-ingest
   MEMORY --> file-memory
+  MEMORY --> stale-fact-detector
   MEMORY --> headlong
   MEMORY --> growth-operator
   hunt --> hunt-ship-loop
@@ -188,6 +194,7 @@ flowchart TB
   ingest-brief-2026-08-25-play-methods --> llm-wiki
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
+  ingest-brief-2026-08-27-botdirectory --> stale-fact-detector
   ingest-brief-2026-08-26-headlong-hour --> headlong
   ingest-brief-2026-08-26-headlong-hour --> harness-routing
   ingest-brief-2026-08-26-headlong-hour --> entropy-gate
@@ -197,6 +204,11 @@ flowchart TB
   ingest-brief-2026-08-26-headlong --> headlong
   ingest-brief-2026-08-26-headlong --> src-hxiao-headlong
   ingest-brief-2026-08-26-headlong --> src-laude-headlong
+  ingest-brief-2026-08-27-claim-protocol --> claim-protocol
+  ingest-brief-2026-08-27-claim-protocol --> llm-wiki
+  ingest-brief-2026-08-27-claim-protocol --> claims
+  ingest-brief-2026-08-27-claim-protocol --> portable-memory
+  ingest-brief-2026-08-27-claim-protocol --> file-memory
   memory-engine-2026-08-28 --> claims
   memory-system-brief-2026-08-27 --> memory-system
   memory-system-brief-2026-08-27 --> epistemic-labels
@@ -218,6 +230,7 @@ flowchart TB
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
   context-graph --> src-avid-obsidian-agent-team
+  context-graph --> claim-protocol
   context-graph --> tokens-as-capital
   context-graph --> llm-wiki
   context-graph --> memory-engineering
@@ -228,8 +241,10 @@ flowchart TB
   entropy-gate --> harness-routing
   entropy-gate --> self-verification
   entropy-gate --> memory-engineering
+  entropy-gate --> claim-protocol
   file-memory --> claims
   file-memory --> memory-system
+  file-memory --> claim-protocol
   file-memory --> llm-wiki
   file-memory --> memory-engineering
   file-memory --> portable-memory
@@ -256,6 +271,8 @@ flowchart TB
   hunt-ship-loop --> growth-operator
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
+  llm-wiki --> claim-protocol
+  llm-wiki --> stale-fact-detector
   llm-wiki --> memory-system
   llm-wiki --> tokens-as-capital
   llm-wiki --> context-graph
@@ -270,8 +287,10 @@ flowchart TB
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
+  memory-ablation --> claim-protocol
   memory-ablation --> claims
   memory-engineering --> src-0xcodio-memory-ablation
+  memory-engineering --> claim-protocol
   memory-engineering --> memory-ablation
   memory-engineering --> context-graph
   memory-engineering --> audited-task-contract
@@ -284,11 +303,19 @@ flowchart TB
   portable-memory --> file-memory
   portable-memory --> llm-wiki
   portable-memory --> claims
+  portable-memory --> claim-protocol
   portable-memory --> memory-system
   self-verification --> src-jacky-self-verification
   self-verification --> jacky-kwok
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
+  self-verification --> claim-protocol
+  stale-fact-detector --> claims
+  stale-fact-detector --> claim-protocol
+  stale-fact-detector --> llm-wiki
+  stale-fact-detector --> memory-ablation
+  stale-fact-detector --> verifiable-instructions
+  stale-fact-detector --> provenance
   tokens-as-capital --> src-papa-couch-compiler
   tokens-as-capital --> llm-wiki
   tokens-as-capital --> context-graph
@@ -318,9 +345,11 @@ flowchart TB
   memory-system --> claims
   memory-system --> epistemic-labels
   memory-system --> provenance
+  memory-system --> stale-fact-detector
   provenance --> memory-system
   provenance --> claims
   provenance --> epistemic-labels
+  provenance --> stale-fact-detector
   provenance --> audited-task-contract
   provenance --> llm-wiki
   untrusted-ingest --> memory-system
@@ -334,9 +363,21 @@ flowchart TB
   claims --> provenance
   claims --> epistemic-labels
   claims --> untrusted-ingest
+  claims --> stale-fact-detector
   claims --> memory-system
   claims --> portable-memory
   claims --> memory-ablation
+  claim-protocol --> src-lan-e-claim-protocol-2026-08-27
+  claim-protocol --> claims
+  claim-protocol --> portable-memory
+  claim-protocol --> file-memory
+  claim-protocol --> llm-wiki
+  claim-protocol --> memory-engineering
+  claim-protocol --> memory-ablation
+  claim-protocol --> context-graph
+  claim-protocol --> stale-fact-detector
+  claim-protocol --> entropy-gate
+  claim-protocol --> self-verification
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler
   andrej-karpathy --> src-bober-folder-workflow
@@ -364,6 +405,15 @@ flowchart TB
   src-rohit-harness-router --> harness-routing
   src-rohit-harness-router --> rohit
   src-voxyz-verifiable-instructions --> verifiable-instructions
+  src-lan-e-claim-protocol-2026-08-27 --> memory-ablation
+  src-lan-e-claim-protocol-2026-08-27 --> portable-memory
+  src-lan-e-claim-protocol-2026-08-27 --> file-memory
+  src-lan-e-claim-protocol-2026-08-27 --> claim-protocol
+  src-lan-e-claim-protocol-2026-08-27 --> claims
+  src-lan-e-claim-protocol-2026-08-27 --> llm-wiki
+  src-lan-e-claim-protocol-2026-08-27 --> memory-engineering
+  src-lan-e-claim-protocol-2026-08-27 --> context-graph
+  src-lan-e-claim-protocol-2026-08-27 --> stale-fact-detector
   src-laude-headlong --> headlong
   src-laude-headlong --> src-hxiao-headlong
   src-laude-headlong --> harness-routing

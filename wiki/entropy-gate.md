@@ -44,4 +44,4 @@ Unanimous ungated agreement was wrong in 41% of 50 runs.
 
 [[headlong]] is one mind, one stream, many people. Flag, do not merge: C16. Vault keeps isolation. Headlong stays a trial CLI, not the compiler runtime.
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[headlong]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[claim-protocol]] · [[headlong]]

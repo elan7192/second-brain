@@ -24,6 +24,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 - [[contradictions]] — unresolved conflicts
 - [[memory-system]] — provenance, labels, parked vector
 - [[llm-wiki]] — core architecture
+- [[claim-protocol]] — Claim → Evidence → Verification → Retrieval → Context → Answer
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 - [[GrowthOS]] — growth operator door
 - [[vault-ontology]] — local Palantir-style object table
@@ -46,6 +47,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[stable-ids]] | `id:` survives filename changes |
 | [[eval-suite]] | `sb eval` gate for retrieval |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
+| [[claim-protocol]] | Claim → Evidence → Verification → Retrieval → Context → Answer |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |
 | [[memory-system]] | Provenance, FACT/INFERENCE/OPINION. Vector parked |
@@ -149,6 +151,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lan-e-claim-protocol-2026-08-27]] | 2026-08-27 | Claim protocol. Git truth. FTS5 disposable. Embeddings parked |
 | [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
 | [[src-laude-headlong]] | 2026-08-26 | Headlong launch + repo. 9883 cloc at d8f8304 |
 | [[src-palantir-aip-developers-2026-08-28]] | 2026-08-28 | AIP + Ontology docs. Hosted Foundry not used |
@@ -286,3 +289,4 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 - [[MEMORY]] — durable facts
 - [[decisions]] — locked choices
 - `wiki/log.md` — timeline
+- `wiki/claims.csv` — compile of source Claims kept. Dual store is C17. See [[claims]]
