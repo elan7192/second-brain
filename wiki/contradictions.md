@@ -330,3 +330,25 @@ This vault's known papers are BATCH01–09. Harvest is digest-only. The ChatGPT 
 Resolution: keep the GitHub wiki. Mark the ChatGPT counts `unverified`. Do not merge or reconstruct the ZIP from the claim list. See [[arxiv-tierlist]] and [[MEMORY]].
 
 Remap: was C14 on the chatgpt-share branch. Main C14 is eptwts $100k / 10 months.
+
+## C37. Musk index-as-query vs D9 sb ask
+
+The 2026-08-28 [[musk-algorithm]] pass locked a short [[index]] as the query path (was D9 on that branch).
+
+Main already locked D9: live query is `python3 tools/sb ask`. [[index]] is not the query path. See [[retrieval]] and [[claim-protocol]].
+
+Resolution: unresolved as a query-engine fight. This merge does not reopen D9. Catalog split remapped to D12. Human should say whether the short index should replace `sb ask`. See [[merge-conflict-report-2026-08-28-musk]].
+
+## C38. Standing ingest brief vs musk skip
+
+Main ingest step 9 writes a three-sentence `output/` brief on every ingest.
+
+The musk pass deleted that standing brief (schema author, not lan E).
+
+Resolution: unresolved. Do not add a new brief. Do not delete existing briefs. Wait for lan E. See [[musk-algorithm]] and [[merge-conflict-report-2026-08-28-musk]].
+
+## C39. CLAUDE.md copy vs D2
+
+Layout table used to say keep `AGENTS.md` and `CLAUDE.md` identical. D2 says `CLAUDE.md` only points at `AGENTS.md`.
+
+Resolution: D2 wins. Pointer only. Remap: was C15 on the musk-algorithm branch. Main C15 is Foundry 3D vs Palantir Foundry.

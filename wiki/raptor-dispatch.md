@@ -21,10 +21,10 @@ Voice between bots: [[bot-voice]]. Caveman. Facts, paths, SHAs. No filler.
 
 [[src-exm7777-grok-bot-money]]: one bot, one job, one visible lane. Matches this page. Verify before reporting. A bot that says done without checking is worse than no bot. See [[grok-bot]].
 
-Process order: [[musk-algorithm]]. Delete before optimize. Automate last. One owner is a named person. See [[first-principles]].
+Process order: [[musk-algorithm]]. Delete before optimize. Automate last. One owner is a named person.
 
 Same loop, named: [[assign-execute-verify]]. 24h intel stays OFF until lan E says 開始.
 
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[grok-bot]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[first-principles]] · [[loop-graph-engineering]] · [[assign-execute-verify]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[grok-bot]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[loop-graph-engineering]] · [[assign-execute-verify]]

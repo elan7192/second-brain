@@ -32,7 +32,7 @@ Sources: [[src-can1357-daily-tool-replace-2026-08-27]], [[musk-algorithm]], [[gr
 ## Done 2026-08-27 (lan E yes)
 
 - Captions-first clip ingest is in `AGENTS.md` and [[clip-pipeline]].
-- Four counts-only intermediate briefs deleted: `arxiv-counts`, `128956`, `156256`, `281056`. Harvest already stopped. Current inventory brief kept: [[ingest-brief-2026-08-24-arxiv-405856]].
+- Four counts-only intermediate briefs deleted: `arxiv-counts`, `128956`, `156256`, `281056`. Harvest already stopped. Inventory lives on [[arxiv-tierlist]]. Later musk pass deleted the remaining 2026-08-24 arXiv ingest briefs. See [[musk-algorithm]].
 - Remaining 2026-08-24 briefs linked from [[digests]].
 - `tools/lint-wiki.py` exits 1 on orphans.
 

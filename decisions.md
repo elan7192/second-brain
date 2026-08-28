@@ -98,3 +98,13 @@ The Disclosure Index is compiled as stats, schema, and canonical URLs. Do not co
 - Locked: 2026-08-24
 - Remap: was D9 on the agent-facing-docs branch. Main already locked D9 as markdown canonical / FTS disposable.
 - Revalidate: if the human asks for a specific public record's metadata fields already in the catalog snapshot
+
+## D12. Short index catalogs
+
+`wiki/index.md` is the human/Obsidian door. Paper pages live in [[index-papers]]. Source pages live in [[index-sources]]. Do not dump those catalogs into the door. Live query stays D9 (`python3 tools/sb ask`).
+
+- Source: [[musk-algorithm]], [[context-graph]], [[tokens-as-capital]]
+- Locked: 2026-08-28
+- Remap: was D9 on the musk-algorithm branch. Main already locked D9 as markdown canonical / FTS disposable.
+- Revalidate: if a compiled paper is missing from [[index-papers]] or a source from [[index-sources]]
+- See C37 if someone wants the short index to replace `python3 tools/sb ask`

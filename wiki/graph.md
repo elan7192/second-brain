@@ -23,7 +23,7 @@ Color groups in `.obsidian/graph.json` only paint nodes. They do not place them.
 
 Search in graph view:
 
-`path:wiki OR path:maps OR path:hunt OR path:ship OR path:output OR file:Home OR file:MEMORY -file:index -file:log -file:twitter`
+`path:wiki OR path:maps OR path:hunt OR path:ship OR path:output OR file:Home OR file:MEMORY -file:index -file:index-papers -file:index-sources -file:log -file:twitter`
 
 Those hidden files stay in the vault. They are doors and timelines, not concept peers.
 
@@ -125,23 +125,8 @@ flowchart TB
     ingest-brief-2026-08-23-skill-library
     ingest-brief-2026-08-23-skill-pack-list
     ingest-brief-2026-08-24
-    ingest-brief-2026-08-24-arxiv-405856
-    ingest-brief-2026-08-24-arxiv-pages
-    ingest-brief-2026-08-24-arxiv-tierlist
-    ingest-brief-2026-08-24-batch01
-    ingest-brief-2026-08-24-batch02
-    ingest-brief-2026-08-24-batch03
-    ingest-brief-2026-08-24-batch04
-    ingest-brief-2026-08-24-batch05
-    ingest-brief-2026-08-24-batch06
-    ingest-brief-2026-08-24-batch07
-    ingest-brief-2026-08-24-batch08
-    ingest-brief-2026-08-24-batch09
     ingest-brief-2026-08-24-disclosure-index
-    ingest-brief-2026-08-24-five-x
     ingest-brief-2026-08-24-maverick-ultramode
-    ingest-brief-2026-08-24-three-x
-    ingest-brief-2026-08-24-trace
     ingest-brief-2026-08-25-avid-company-foundry
     ingest-brief-2026-08-25-exm7777-grok-bot
     ingest-brief-2026-08-25-growthos
@@ -224,14 +209,6 @@ flowchart TB
   gsap-figma-note-2026-08-25 --> context-graph
   gsap-figma-note-2026-08-25 --> anti-slop
   gsap-figma-note-2026-08-25 --> src-deronin-growthos-vault
-  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
-  ingest-brief-2026-08-24-five-x --> llm-wiki
-  ingest-brief-2026-08-24-five-x --> memory-engineering
-  ingest-brief-2026-08-24-five-x --> harness-routing
-  ingest-brief-2026-08-24-five-x --> anti-slop
-  ingest-brief-2026-08-24-trace --> memory-engineering
-  ingest-brief-2026-08-24-trace --> context-graph
-  ingest-brief-2026-08-24-trace --> tokens-as-capital
   ingest-brief-2026-08-25-growthos --> growth-operator
   ingest-brief-2026-08-25-growthos --> src-deronin-growthos-vault
   ingest-brief-2026-08-25-growthos --> GrowthOS

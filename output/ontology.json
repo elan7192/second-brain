@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T19:05:45Z",
+  "builtAt": "2026-08-28T19:13:38Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -106,19 +106,19 @@
     }
   },
   "counts": {
-    "Meta": 13,
-    "unverified": 94,
+    "Meta": 15,
+    "unverified": 90,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 62,
-    "Concept": 118,
+    "Ship": 49,
+    "Concept": 117,
     "Project": 2,
     "Person": 12,
     "Source": 133,
-    "Decision": 11,
-    "Contradiction": 36,
-    "objects": 400,
-    "links": 2821
+    "Decision": 12,
+    "Contradiction": 39,
+    "objects": 392,
+    "links": 2774
   },
   "objects": [
     {
@@ -542,6 +542,48 @@
       "oneLiner": "This vault's known papers are BATCH01\u201309. Harvest is digest-only. The ChatGPT share ZIP was not retrieved (401/403)."
     },
     {
+      "primaryKey": "C37",
+      "objectType": "Contradiction",
+      "title": "Musk index-as-query vs D9 sb ask",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "The 2026-08-28 [[musk-algorithm]] pass locked a short [[index]] as the query path (was D9 on that branch)."
+    },
+    {
+      "primaryKey": "C38",
+      "objectType": "Contradiction",
+      "title": "Standing ingest brief vs musk skip",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Main ingest step 9 writes a three-sentence `output/` brief on every ingest."
+    },
+    {
+      "primaryKey": "C39",
+      "objectType": "Contradiction",
+      "title": "CLAUDE.md copy vs D2",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 1,
+      "unverified": false,
+      "oneLiner": "Layout table used to say keep `AGENTS.md` and `CLAUDE.md` identical. D2 says `CLAUDE.md` only points at `AGENTS.md`."
+    },
+    {
       "primaryKey": "C4",
       "objectType": "Contradiction",
       "title": "Shared memory vs shared contract",
@@ -666,6 +708,20 @@
       "outbound": 3,
       "unverified": false,
       "oneLiner": "The Disclosure Index is compiled as stats, schema, and canonical URLs. Do not copy report bodies into `wiki/` or `output/`. Do not write exploit steps from those records."
+    },
+    {
+      "primaryKey": "D12",
+      "objectType": "Decision",
+      "title": "Short index catalogs",
+      "path": "decisions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "decision",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "`wiki/index.md` is the human/Obsidian door. Paper pages live in [[index-papers]]. Source pages live in [[index-sources]]. Do not dump those catalogs into the door. Live query stays D9 (`python3 tools/"
     },
     {
       "primaryKey": "D2",
@@ -802,8 +858,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 9,
-      "outbound": 47,
+      "inbound": 10,
+      "outbound": 49,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -831,7 +887,7 @@
       "tags": "map",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 15,
+      "outbound": 17,
       "unverified": true,
       "oneLiner": "Operating map for the agent. Teal in the Obsidian graph."
     },
@@ -844,8 +900,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 62,
+      "inbound": 14,
+      "outbound": 66,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -872,7 +928,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 18,
       "unverified": false,
       "oneLiner": "2026-08-28"
@@ -915,7 +971,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 31,
-      "outbound": 45,
+      "outbound": 46,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -956,10 +1012,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "67 constructions. 6.24\u20136.67 not line-read"
+      "oneLiner": "67 problems. Line-read 6.1\u20136.23 only."
     },
     {
       "primaryKey": "andrej-karpathy",
@@ -998,7 +1054,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 27,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Default writing constraints"
@@ -1012,10 +1068,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "DARPA TC transfer. Tables 4\u20137 OCR-dirty"
+      "oneLiner": "AAE + SHAP + Siamese on DARPA TC process matrices."
     },
     {
       "primaryKey": "arxiv-tierlist",
@@ -1026,7 +1082,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "projects",
-      "inbound": 114,
+      "inbound": 112,
       "outbound": 58,
       "unverified": true,
       "oneLiner": "405856 inventory. BATCH01\u201309 compiled. Site: elan7192.github.io/arxiv-potential-tierlist"
@@ -1040,7 +1096,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 8,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Assign \u2192 execute \u2192 verify. 24h intel OFF"
@@ -1096,10 +1152,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Graph+Hebbian LLM. GPT-2 scale claim. PAC bounds aspirational"
+      "oneLiner": "Dragon Hatchling. Graph + Hebbian LLM. Authors say it matches GPT-2 scaling 10M\u20131B and gives local \"equations of reasoning.\""
     },
     {
       "primaryKey": "bert-ler",
@@ -1110,10 +1166,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "EHR transformer. 75M pretrain"
+      "oneLiner": "BERT on coded EHR timelines. 75M-patient pretrain."
     },
     {
       "primaryKey": "bot-voice",
@@ -1152,10 +1208,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Perspective. 0 tables"
+      "oneLiner": "Perspective. No empirical table."
     },
     {
       "primaryKey": "builds",
@@ -1194,10 +1250,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "MeanFlow transfer. FID 7.88 at NFE4"
+      "oneLiner": "MeanFlow transfer plus continuous adversarial post-train."
     },
     {
       "primaryKey": "can-boluk",
@@ -1222,10 +1278,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Vision: CPS anomalies as causal DAG breaks"
+      "oneLiner": "Vision paper, not a new detector. Treat CPS anomalies as structural breaks in a causal DAG, not residual spikes."
     },
     {
       "primaryKey": "claim-protocol",
@@ -1236,7 +1292,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
+      "inbound": 24,
       "outbound": 12,
       "unverified": true,
       "oneLiner": "Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer"
@@ -1278,10 +1334,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "Clustered low-rank MoE. Tables 7\u20138 unverified"
+      "oneLiner": "Cluster experts, store mean base plus rank-r residuals. 12-layer d=768 toy, not a production MoE LLM."
     },
     {
       "primaryKey": "company-foundry",
@@ -1320,10 +1376,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Dual-use unlearning. 5166/68"
+      "oneLiner": "Context-sensitive unlearning. Forget/retain as dual-use of one concept."
     },
     {
       "primaryKey": "context-compaction",
@@ -1348,7 +1404,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
+      "inbound": 37,
       "outbound": 17,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
@@ -1362,8 +1418,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 118,
-      "outbound": 60,
+      "inbound": 119,
+      "outbound": 63,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1390,10 +1446,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "LiDAR+DINOv2. Vel16 +44 pp"
+      "oneLiner": "DINOv2 prior distilled into LiDAR registration. Camera-free at inference."
     },
     {
       "primaryKey": "daily-tool-replace",
@@ -1432,10 +1488,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Physical-language chart. 4.5\u00d7 same vs wrong"
+      "oneLiner": "Certify physical language via response substitution and ordered execution."
     },
     {
       "primaryKey": "decisions",
@@ -1446,8 +1502,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 16,
-      "outbound": 18,
+      "inbound": 20,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
     },
@@ -1488,10 +1544,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Centroid-split trees. Speedups, small acc drop"
+      "oneLiner": "Data-informed centroid splits for trees. CGCT / CGRF / FastC-GBM."
     },
     {
       "primaryKey": "digests",
@@ -1503,7 +1559,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 35,
+      "outbound": 23,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1544,10 +1600,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "DMD prompt-response. F1 86.7"
+      "oneLiner": "Koopman/DMD on prompt\u2013response embeddings."
     },
     {
       "primaryKey": "draftfm",
@@ -1558,10 +1614,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "MTG draft FM. 50.8/60.4/56.7"
+      "oneLiner": "Day-zero Magic: The Gathering pack policy. No card IDs."
     },
     {
       "primaryKey": "drafts",
@@ -1656,10 +1712,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Evolves test/solution filter. 231 LCB, 673 OS"
+      "oneLiner": "Evolves a test/solution filter from seed oracles, then synthesizes executably checkable training items."
     },
     {
       "primaryKey": "file-memory",
@@ -1676,20 +1732,6 @@
       "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
     },
     {
-      "primaryKey": "first-principles",
-      "objectType": "Concept",
-      "title": "First principles",
-      "path": "wiki/first-principles.md",
-      "created": "2026-08-27",
-      "updated": "2026-08-27",
-      "tags": "wiki",
-      "island": "concepts",
-      "inbound": 5,
-      "outbound": 4,
-      "unverified": false,
-      "oneLiner": "Physics and named owners, not department folklore"
-    },
-    {
       "primaryKey": "flow-matching-pso",
       "objectType": "Concept",
       "title": "Flow matching as PSO",
@@ -1698,10 +1740,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Analogy only. FM as continuous PSO"
+      "oneLiner": "Seven-page analogy. Flow matching \"is\" continuous PSO. No theorem, no experiment."
     },
     {
       "primaryKey": "foundry-3d",
@@ -1712,10 +1754,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 4,
       "unverified": true,
-      "oneLiner": "SuperTokens from Point-JEPA"
+      "oneLiner": "Distill Point-JEPA into SuperTokens for the edge."
     },
     {
       "primaryKey": "fourmas",
@@ -1726,10 +1768,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Dual-hemisphere CL. Use Table 1"
+      "oneLiner": "Two asymmetric hemispheres, STM+LTM, wake\u2013sleep."
     },
     {
       "primaryKey": "g-carl",
@@ -1740,10 +1782,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Medical report GRPO. Prec/Rec 96.62/72.18"
+      "oneLiner": "Checklist-aligned GRPO for patient-facing report interpretation."
     },
     {
       "primaryKey": "github",
@@ -1768,7 +1810,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -1866,7 +1908,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
+      "inbound": 15,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Miles 25 Grok Bot cases. lan E share"
@@ -1950,7 +1992,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 37,
+      "inbound": 36,
       "outbound": 20,
       "unverified": true,
       "oneLiner": "Route model and harness by phase, not by turn"
@@ -1978,10 +2020,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Prosody-to-action. Table 11 unread"
+      "oneLiner": "When prosody should change what an assistant does."
     },
     {
       "primaryKey": "how-it-works",
@@ -1992,10 +2034,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 16,
-      "outbound": 23,
+      "inbound": 19,
+      "outbound": 28,
       "unverified": false,
-      "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s"
+      "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
     },
     {
       "primaryKey": "hunt",
@@ -2017,13 +2059,13 @@
       "title": "Hunt-harden loop",
       "path": "wiki/hunt-harden-loop.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
-      "outbound": 22,
+      "inbound": 24,
+      "outbound": 9,
       "unverified": false,
-      "oneLiner": "CASE path. Loop1\u201317 Juice Shop 0/116. v17 `ad6f669` PR27"
+      "oneLiner": "CASE path. Juice Shop 0/116. Current wall v17 `ad6f669` PR27"
     },
     {
       "primaryKey": "hunt-ship-loop",
@@ -2076,10 +2118,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Boluo 1988\u20132020 runoff. Abs vs \u00a74.1 clash"
+      "oneLiner": "Semi-supervised multi-network fusion for daily runoff. Boluo 1988\u20132020, not a 10-year series."
     },
     {
       "primaryKey": "iar",
@@ -2090,10 +2132,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Inject-Align-Recover. LoRA grid unread"
+      "oneLiner": "Inject, Align, Recover. Retrieval-free document internalization."
     },
     {
       "primaryKey": "inbox",
@@ -2104,7 +2146,7 @@
       "updated": "2026-08-23",
       "tags": "hunt",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 0,
       "unverified": false,
       "oneLiner": "Drop unfiled clips here. New notes from Obsidian land in `hunt/inbox` by default."
@@ -2118,10 +2160,38 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 21,
-      "outbound": 277,
+      "inbound": 29,
+      "outbound": 99,
       "unverified": true,
-      "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
+      "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-28"
+    },
+    {
+      "primaryKey": "index-papers",
+      "objectType": "Meta",
+      "title": "Index papers",
+      "path": "wiki/index-papers.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "meta",
+      "inbound": 12,
+      "outbound": 50,
+      "unverified": true,
+      "oneLiner": "Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12."
+    },
+    {
+      "primaryKey": "index-sources",
+      "objectType": "Meta",
+      "title": "Index sources",
+      "path": "wiki/index-sources.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "meta",
+      "inbound": 12,
+      "outbound": 135,
+      "unverified": true,
+      "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
     {
       "primaryKey": "ingest-brief-2026-08-23",
@@ -2208,174 +2278,6 @@
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
     },
     {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-405856",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-arxiv-405856",
-      "path": "output/ingest-brief-2026-08-24-arxiv-405856.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 2,
-      "outbound": 2,
-      "unverified": false,
-      "oneLiner": "Updated [[arxiv-tierlist]] and [[potential-ranking]] to gap batch 6: 405856 unique, cursor 2022-06-08, tiers S 16443 / A 42228 / B 197545 / C 113767 / D 35873."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-pages",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv Pages",
-      "path": "output/ingest-brief-2026-08-24-arxiv-pages.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Current public URL is https://elan7192.github.io/arxiv-potential-tierlist/ (repo https://github.com/elan7192/arxiv-potential-tierlist); ZeroDeploy URLs are stale."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-tierlist",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv tierlist",
-      "path": "output/ingest-brief-2026-08-24-arxiv-tierlist.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Compiled the box handoff into [[src-arxiv-tierlist-handoff]], [[arxiv-tierlist]], and [[potential-ranking]], and recorded display, ranking-axis, and temporary-URL constraints in MEMORY.md."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch01",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch01",
-      "path": "output/ingest-brief-2026-08-24-batch01.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 7,
-      "unverified": false,
-      "oneLiner": "Compiled five arxiv-read papers from BATCH01 into [[causal-cps-anomaly]], [[nmc-trace-complexity]], [[flow-matching-pso]], [[bdh]], and [[evosyn]], each with a source page, and linked them from [[arxi"
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch02",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch02",
-      "path": "output/ingest-brief-2026-08-24-batch02.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 7,
-      "unverified": true,
-      "oneLiner": "Compiled BATCH02 into [[superde]], [[lance]], [[palrs]], [[prednext]], and [[clustered-moe]], each with a source page, linked from [[arxiv-tierlist]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch03",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch03",
-      "path": "output/ingest-brief-2026-08-24-batch03.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 7,
-      "unverified": false,
-      "oneLiner": "Compiled BATCH03 into [[hydrofusion-lmf]], [[ngc]], [[sapin]], [[alphaevolve-math]], and [[pavement-gnn]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch04",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch04",
-      "path": "output/ingest-brief-2026-08-24-batch04.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 7,
-      "unverified": true,
-      "oneLiner": "Compiled BATCH04 into [[tiwm]], [[unitok]], [[llm4eo]], [[apt-siamese]], and [[foundry-3d]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch05",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch05",
-      "path": "output/ingest-brief-2026-08-24-batch05.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 6,
-      "unverified": true,
-      "oneLiner": "Compiled BATCH05 into [[portal]], [[mpi-init]], [[pwr-ga]], [[brain-ai-convergence]], and [[vs-graph]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch06",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch06",
-      "path": "output/ingest-brief-2026-08-24-batch06.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Compiled BATCH06 into [[two-stage-nn-tl]], [[dics]], [[skill-transfer]], [[iar]], and [[bert-ler]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch07",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch07",
-      "path": "output/ingest-brief-2026-08-24-batch07.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Compiled BATCH07 into [[g-carl]], [[concept-guard]], [[r2-opd]], [[scape]], and [[vla-self-demo]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch08",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch08",
-      "path": "output/ingest-brief-2026-08-24-batch08.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Compiled BATCH08 into [[dbosc]], [[fourmas]], [[hear2act]], [[unilang]], and [[cvsd-reg]]."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-batch09",
-      "objectType": "Ship",
-      "title": "ingest-brief-2026-08-24-batch09",
-      "path": "output/ingest-brief-2026-08-24-batch09.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Compiled BATCH09 into [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], and [[orthoskillvla]]."
-    },
-    {
       "primaryKey": "ingest-brief-2026-08-24-chatgpt-share",
       "objectType": "Ship",
       "title": "Ingest brief \u00b7 2026-08-24 \u00b7 ChatGPT share",
@@ -2404,20 +2306,6 @@
       "oneLiner": "The `#api` page documents a REST catalog. The live data is `data/catalog.js`."
     },
     {
-      "primaryKey": "ingest-brief-2026-08-24-five-x",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 five X",
-      "path": "output/ingest-brief-2026-08-24-five-x.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 4,
-      "unverified": true,
-      "oneLiner": "Five scout tweets landed as source pages and linked to [[llm-wiki]], [[memory-engineering]], [[harness-routing]], and [[anti-slop]]."
-    },
-    {
       "primaryKey": "ingest-brief-2026-08-24-maverick-ultramode",
       "objectType": "Ship",
       "title": "Ingest brief \u00b7 Maverick ultramode \u00b7 2026-08-24",
@@ -2430,34 +2318,6 @@
       "outbound": 9,
       "unverified": false,
       "oneLiner": "`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slic"
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-three-x",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 three X",
-      "path": "output/ingest-brief-2026-08-24-three-x.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 2,
-      "unverified": true,
-      "oneLiner": "Three new tweets: TheWhizzAI, chatchat, g3t0ffmyl4wn."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-trace",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 TRACE",
-      "path": "output/ingest-brief-2026-08-24-trace.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 5,
-      "unverified": true,
-      "oneLiner": "Compiled the marfinxx tweet into [[src-marfinxx-trace]] and [[trace]], and linked [[memory-engineering]], [[context-graph]], [[tokens-as-capital]]."
     },
     {
       "primaryKey": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -2651,7 +2511,7 @@
       "tags": "project",
       "island": "projects",
       "inbound": 29,
-      "outbound": 25,
+      "outbound": 10,
       "unverified": true,
       "oneLiner": "Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool"
     },
@@ -2664,10 +2524,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "One-shot HOSVD activations. Last-layer FT/CL"
+      "oneLiner": "One-shot HOSVD activation cores for last-2/4-layer on-device fine-tune and CL."
     },
     {
       "primaryKey": "llm-wiki",
@@ -2679,7 +2539,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 66,
-      "outbound": 34,
+      "outbound": 36,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2692,10 +2552,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": true,
-      "oneLiner": "GPT-4.1-mini evolves FJSP operators"
+      "oneLiner": "LLM evolves EA operators for FJSP. Deployed model is GPT-4.1-mini."
     },
     {
       "primaryKey": "log",
@@ -2706,8 +2566,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 15,
-      "outbound": 223,
+      "inbound": 14,
+      "outbound": 227,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2790,7 +2650,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
+      "inbound": 24,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "A memory line stays only if deleting it changes an answer"
@@ -2818,7 +2678,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 34,
+      "inbound": 32,
       "outbound": 27,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
@@ -2964,6 +2824,20 @@
       "oneLiner": "Fetched `origin/main` at `5927d29`, then merged into `cursor/ingest-maverick-ultramode-faac`."
     },
     {
+      "primaryKey": "merge-conflict-report-2026-08-28-musk",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 musk-algorithm vs main",
+      "path": "output/merge-conflict-report-2026-08-28-musk.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 6,
+      "outbound": 11,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `4bd2ee0`, then merged into `cursor/musk-algorithm-vault-d0be`."
+    },
+    {
       "primaryKey": "merge-conflict-report-2026-08-28-omarsar",
       "objectType": "Ship",
       "title": "Merge conflict report \u00b7 omarsar-adversarial-review ingest vs main",
@@ -3014,10 +2888,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Binary EA init transfer. 71/72 vs Rand"
+      "oneLiner": "Adaptive experience transfer for binary EA initialization."
     },
     {
       "primaryKey": "multi-source-verdict",
@@ -3039,13 +2913,27 @@
       "title": "Musk Algorithm",
       "path": "wiki/musk-algorithm.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
-      "outbound": 4,
+      "inbound": 24,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Delete before optimize. Automate last. Named person"
+    },
+    {
+      "primaryKey": "musk-pass-2026-08-28",
+      "objectType": "Ship",
+      "title": "Musk pass 2026-08-28",
+      "path": "output/musk-pass-2026-08-28.md",
+      "created": "",
+      "updated": "",
+      "tags": "",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Deleted the mandatory full-index read, ingest briefs, MEMORY copies of LanBB loops 1\u201316, the extra first-principles page, and unused frontmatter automation. Query now loads `python3 tools/sb ask` (D9)"
     },
     {
       "primaryKey": "ngc",
@@ -3056,10 +2944,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Low-rank neuronal states. Table 1 vs 3 clash"
+      "oneLiner": "Neuronal group communication. Low-rank neuronal states, 30% attn params kept."
     },
     {
       "primaryKey": "nmc-trace-complexity",
@@ -3070,10 +2958,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Aimone: NMC energy via sparse spike traces"
+      "oneLiner": "Aimone: neuromorphic computing does not change the time or space class of an algorithm. Energy can, when activity is sparse."
     },
     {
       "primaryKey": "ontology-rebuild-brief-2026-08-28",
@@ -3098,10 +2986,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Continual VLA PEFT. SR 83.50"
+      "oneLiner": "Replay-free PEFT. Separate subspaces for VLM vs head."
     },
     {
       "primaryKey": "palantir-aip",
@@ -3126,10 +3014,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Residual steering from 100 pairs. \u03b1-sensitive"
+      "oneLiner": "Training-free residual steering from about 100 preference pairs."
     },
     {
       "primaryKey": "pavement-gnn",
@@ -3140,10 +3028,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "R\u00b2 0.38 on 1k-node simulated graph"
+      "oneLiner": "Digital-twin paper. The measured result is modest node regression."
     },
     {
       "primaryKey": "pipeline-honesty",
@@ -3182,10 +3070,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Landscape generator. No optimizer scores"
+      "oneLiner": "Controllable continuous landscape generator. Part I only."
     },
     {
       "primaryKey": "potential-ranking",
@@ -3196,7 +3084,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Score axis, heuristic formula, recency bias"
@@ -3210,10 +3098,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Cross-view next-step/clip SNN SSL"
+      "oneLiner": "Cross-view next-step and next-clip prediction for SNN SSL."
     },
     {
       "primaryKey": "probabilistic-pivot-tournament",
@@ -3266,10 +3154,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Pascal-weighted GA. TSP gain is tiny"
+      "oneLiner": "Pascal-weighted recombination. PWR-3 is their default."
     },
     {
       "primaryKey": "query-entropy-gate",
@@ -3322,10 +3210,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Filter OPD by reasoning progress"
+      "oneLiner": "Filter on-policy distillation by reasoning-progress ranking."
     },
     {
       "primaryKey": "raptor-dispatch",
@@ -3337,7 +3225,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 28,
-      "outbound": 13,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "One owner per job. Report once. No empty acks"
     },
@@ -3364,7 +3252,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
+      "inbound": 27,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Hybrid FTS5 over compiled pages. DB disposable"
@@ -3406,10 +3294,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "CartPole without reward. Lock 82%"
+      "oneLiner": "9\u00d79 grid, 30 migrating cells. CartPole without reward. Lock or forget."
     },
     {
       "primaryKey": "scape",
@@ -3420,10 +3308,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Scenario-conditioned sim-to-real"
+      "oneLiner": "Scenario-conditioned sim-to-real policy evaluation."
     },
     {
       "primaryKey": "self-verification",
@@ -3462,7 +3350,7 @@
       "updated": "2026-08-25",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
@@ -3518,10 +3406,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Subtask memory helps. Gemma tables unread"
+      "oneLiner": "Task-level vs subtask-level skill memory for LLM agents."
     },
     {
       "primaryKey": "skillspector",
@@ -3563,7 +3451,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "See [[grok-bot-tape]]. 11-step roster not cloned."
     },
     {
       "primaryKey": "src-0xcodio-memory-ablation",
@@ -3577,7 +3465,7 @@
       "inbound": 4,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-22"
+      "oneLiner": "Line-level ablation on a 104-line memory file. 71 lines never changed an answer. Facts survived. Adjectives died. Do not let a model audit memory it wrote."
     },
     {
       "primaryKey": "src-agentmemoryl-aml-s2",
@@ -3591,7 +3479,7 @@
       "inbound": 2,
       "outbound": 1,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Agent Memory Leaderboard exists: https://github.com/AML-memory/agent-memory-leaderboard and https://agentmemoryleaderboard.ai/docs. Textual and coding tracks. Challenge 2026 opened 2026-07-29."
     },
     {
       "primaryKey": "src-andonlabs-vending-bench",
@@ -3605,7 +3493,7 @@
       "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Long-horizon agent eval: inventory, orders, pricing, daily fee."
     },
     {
       "primaryKey": "src-arxiv-2507-08177",
@@ -3619,7 +3507,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Replace black-box CPS anomaly detectors with causal-graph change detection (DAG edges appear, vanish, or change strength). Three program pieces: divergence-aware graph profiling, multi-view fusion, co"
     },
     {
       "primaryKey": "src-arxiv-2507-17886",
@@ -3633,7 +3521,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Ideal NMC has no generic time/space complexity win vs a PRAM-like machine. Energy can separate when the spike trace is sparse/decaying: cumulative events vs scheduled work. Theorem M2.16 as stated in "
     },
     {
       "primaryKey": "src-arxiv-2507-20810",
@@ -3647,7 +3535,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Position note: flow matching and PSO share similar expressions; FM as continuous PSO. No theorem, no reduction, no experiment, no new algorithm. The paper calls itself preliminary. Do not treat the ti"
     },
     {
       "primaryKey": "src-arxiv-2509-11016",
@@ -3661,7 +3549,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "SuperDE: DDQN picks one of 4 DE mutations and 7 CHTs each generation (28 actions) from a 22-d handcrafted state. Trained on 18 CEC2010 COPs. Often wins Wilcoxon on CEC2010-ext / CEC2017 / G2000 / BBOB"
     },
     {
       "primaryKey": "src-arxiv-2509-21617",
@@ -3675,7 +3563,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "LANCE: one-shot HOSVD cores, then project later minibatches. Last 2/4-layer fine-tune. MCUNet 2-layer CIFAR-10: 11.71 MB \u2192 0.04 MB (~250\u00d7), 75.85 \u2192 70.64 acc. Split CIFAR-100 CL: ACC 71.52, 2.32 MB vs"
     },
     {
       "primaryKey": "src-arxiv-2509-23982",
@@ -3689,7 +3577,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "PaLRS: difference-in-means residual from ~100 pairs, add \u03b1\u00b7r\u0302 at one layer. TinyBenchmark GSM8K/HumanEval gains vs base (Table 3). \u03b1-sensitive. DPO/SimPO slower and usually worse in their comparison ("
     },
     {
       "primaryKey": "src-arxiv-2509-24844",
@@ -3703,7 +3591,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "PredNext: cross-view next-step and next-clip prediction on SEW-ResNet SNN SSL. UCF101 +2\u20134pt over the SNN SSL ports. Forced consistency hurts (70.32\u219260.35). ImageNet-init SimSiam+PredNext 72.24 vs sup"
     },
     {
       "primaryKey": "src-arxiv-2509-26507",
@@ -3717,7 +3605,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "BDH: n neuron particles, Hebbian fast weights, local graph dynamics. BDH-GPU is the trainable case. Authors claim GPT-2-class scaling 10M\u20131B on the same data. \"Equations of reasoning\" and brain link a"
     },
     {
       "primaryKey": "src-arxiv-2510-02345",
@@ -3731,7 +3619,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Clustered low-rank MoE on a 12-layer d=768 model. 188M vs Switch 875M. GLUE 83.5 vs Switch 85.1 vs Dense 83.8. WikiText PPL 26.8 vs Switch 24.5. Throughput vs that Switch about +15% on the default row"
     },
     {
       "primaryKey": "src-arxiv-2510-03744",
@@ -3745,7 +3633,7 @@
       "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "HydroFusion-LMF on Boluo 1988\u20132020. Table 1 MSE 1.0128 / MAE 0.5818 vs DLinear 1.128 / 0.649. NSE/KGE are in the loss, not Table 1 eval."
     },
     {
       "primaryKey": "src-arxiv-2510-16851",
@@ -3759,7 +3647,7 @@
       "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "NGC: low-rank neuronal states. Table 1 attn keep-30% beats SVD-LLM/BasisSharing. Qwen3-4B MATH-500 60.56 vs orig 58.60."
     },
     {
       "primaryKey": "src-arxiv-2510-17928",
@@ -3773,7 +3661,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "EvoSyn evolves a test/solution filter from seed oracles (MAP-Elites + islands). LiveCodeBench: 51 seeds \u2192 231 items; GRPO lifts Qwen3-4B 17.0\u219222.0, Llama-3.1-8B 1.6\u219215.7, Qwen3-8B 16.5\u219224.8 vs random-"
     },
     {
       "primaryKey": "src-arxiv-2511-02241",
@@ -3787,7 +3675,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "SAPIN 9\u00d79, 30 migrating cells, CartPole without external reward. Lock at first 500-step win: 82% of 100\u00d7100 eval episodes still succeed. Unlocked learning forgets. Punishment had no noticeable effect."
     },
     {
       "primaryKey": "src-arxiv-2511-02864",
@@ -3801,7 +3689,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "AlphaEvolve search/generalizer on 67 math constructions. Line-read: intro, usage, 6.1\u20136.23. Real lifts include kissing-11 592\u2192593, autocorr C\u22641.5032, difference-base 2.6390 with Singer hint. Many reco"
     },
     {
       "primaryKey": "src-arxiv-2511-02957",
@@ -3815,7 +3703,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "DT+GNN pavement paper. Measured experiment is node-level distress regression on a 1k-node DVRPC-inspired graph: R\u00b2 0.3798 / MAE 31.34 vs sklearn. RL/dashboard are framework text, not \u00a76 tables. Extern"
     },
     {
       "primaryKey": "src-arxiv-2511-05540",
@@ -3829,7 +3717,7 @@
       "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "TIWM: 16 tokens, no HD-map priors. Mini Table I Co-Evo ADE 0.378 vs RasterModel 1.149. Mini val14 NR/R 88.05/89.54. Full val14 30.46/34.64. 12.45M params, 360 scenes."
     },
     {
       "primaryKey": "src-arxiv-2511-12922",
@@ -3843,7 +3731,7 @@
       "inbound": 5,
       "outbound": 3,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "UniTok: one tokenizer / 10 domains. 9.11M vs 87.78M. Table 7 N@10 gain 51.89% is Toys. Tools is 42.99% N@10 / 51.87% R@10. Games only +1.49% N@10."
     },
     {
       "primaryKey": "src-arxiv-2511-16485",
@@ -3857,7 +3745,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "LLM4EO: GPT-4.1-mini evolves FJSP operators. Brandimarte Table 4 RPD_aver BM 12.71 vs GA 13.19. MK07 BM 144 loses to GA 143. Table 3 18.54% is a different Brandimarte aggregate."
     },
     {
       "primaryKey": "src-arxiv-2511-20500",
@@ -3871,7 +3759,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "AAE+SHAP+Siamese on DARPA TC. Linux PA AAE nDCG 0.51\u21920.69 (P1\u2192P3). P0 in-domain often higher (0.77)."
     },
     {
       "primaryKey": "src-arxiv-2511-20721",
@@ -3885,7 +3773,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Foundry SuperTokens from Point-JEPA. SN55 89.95 vs teacher 90.54. MN40 10-shot s=1 is 91.8. A3000 baseline 478 GFLOPs vs Foundry s=16 178. Scene Tab.7 teacher OOM."
     },
     {
       "primaryKey": "src-arxiv-2512-00288",
@@ -3899,7 +3787,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "PORTAL Part I: landscape generator only. Table I defaults p=0.6, \u0394=100, r_ref=100, |C|\u226425. No optimizer bake-off. No CEC/BBOB scores."
     },
     {
       "primaryKey": "src-arxiv-2512-00341",
@@ -3913,7 +3801,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "MPI: 132-FE init, 800-FE budget. GA-Elite vs Rand Table II 69-2-1 / 71 of 72. BRKGA+SVM-SS loses MC 2-4-6. PI wall time 3\u20134 min. Table V per-instance means not restated."
     },
     {
       "primaryKey": "src-arxiv-2512-01249",
@@ -3927,7 +3815,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "PWR-3 Table 1 ITAE median 1.557 vs 2-parent 1.842. FIR J 0.0249 vs 0.0317. Wireless U 47.1 vs 38.7. TSP 6.402 vs 6.443. Abs 9\u201322% is not the TSP gain."
     },
     {
       "primaryKey": "src-arxiv-2512-02419",
@@ -3941,7 +3829,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Perspective. 0 tables. Neocortex+cerebellum \u201c>99% of cells.\u201d World-model / prediction-error story. No new experiment. Distinct from arXiv:2411.16075."
     },
     {
       "primaryKey": "src-arxiv-2512-03394",
@@ -3955,7 +3843,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "VS-Graph train NCI1 0.192 vs GIN 85.84 ms (~450\u00d7). D=128 \u201c<1.5%\u201d drop is body text. +4\u20135% vs GraphHD on MUTAG/DD is figure-only. Mark `unverified`. Do not invent accuracy."
     },
     {
       "primaryKey": "src-arxiv-2608-19408",
@@ -3969,7 +3857,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "R\u00b2-OPD Table 1 Avg 35.06 / 51.83 vs OPD 32.55 / 47.37 vs Uni-OPD 30.78 / 46.66. AIME24 avg@4 32.50. No-merge 17.5 (\u2206 15.0)."
     },
     {
       "primaryKey": "src-arxiv-2608-19425",
@@ -3983,7 +3871,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "SCAPE Sim2Sim error \u22124.9%/\u221234.7% driving, \u221214.5%/\u221227.7% quadruped vs neural/stat. Table 2 Go2 Rvel MAE 11.79 vs r-only 13.29 (\u221211.3%). ADE width 40.07 vs 41.02."
     },
     {
       "primaryKey": "src-arxiv-2608-19490",
@@ -3997,7 +3885,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "ALOHA Table 2 Ours TES SR 90 vs MT ES 65 vs ZS 0. Pick-place 55 vs 0. Caterpillar TES 90 vs ES 30. RoboTwin TSS 70.6 vs ES 16.6 from body text."
     },
     {
       "primaryKey": "src-arxiv-2608-19492",
@@ -4011,7 +3899,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "DBOSC Table 2 same 0.5161 vs wrong 2.3104 (4.5\u00d7, 19/19). Test NMMSE accel 0.687 / audio 0.830. Converged oracle NMSE 0.0756 / 0.1844, 14/16. Diagonal ES 0.0546 vs fused 0.0615."
     },
     {
       "primaryKey": "src-arxiv-2608-19514",
@@ -4025,7 +3913,7 @@
       "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "4MAS Table 1 Class-IL Acc Split-MNIST 98.3 vs Joint 98.5 vs B-IR 93.5. Fashion 84.9 vs 88.3 vs 74.6. CIFAR-100 29.29 vs Joint 51.9 vs B-IR 27.85."
     },
     {
       "primaryKey": "src-arxiv-2608-19515",
@@ -4039,7 +3927,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Hear2Act Table 3 Prosody 1st% T 14.6 vs A+T 15.3 vs T+\u015c 39.6 vs T+S 40.7. Table 5 text mean 26.9\u219263.5. Explicit Table 4 T 52.3."
     },
     {
       "primaryKey": "src-arxiv-2608-19529",
@@ -4053,7 +3941,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "UniLang Table 1 ML-20m NDCG@5 0.1382 vs SASRec 0.0549 (+151.73%). Table 3 10k R@1 0.2938 vs DistilBERT 0.1967. Beauty R@10 0.0603 vs S\u00b3-Rec 0.0647 (loss)."
     },
     {
       "primaryKey": "src-arxiv-2608-19536",
@@ -4067,7 +3955,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "CVSD-Reg HeLiPR Vel16 SR 97.3 vs BUFFER-X 53.3 (+44.0 pp), overall 99.3. KITTI 97.7. nuScenes 99.0. Table 4 no-distill 16.2."
     },
     {
       "primaryKey": "src-arxiv-2608-19540",
@@ -4081,7 +3969,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "iMF NFE4 FID Avg MF-T+CAMF 7.88 vs MF-T 13.13 vs AFM post 9.01. SiT 4-NFE 10.30 vs 250-step FT 10.47. Paper 29% FID / up to 125\u00d7 NFE."
     },
     {
       "primaryKey": "src-arxiv-2608-19568",
@@ -4095,7 +3983,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "DraftFM d=256 top-1 BRO/FDN/MSH 50.83 / 60.37 / 56.67. 1,637,999 params. Table 12 vs Nizzahon exact 0.261."
     },
     {
       "primaryKey": "src-arxiv-2608-19579",
@@ -4109,7 +3997,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "BeaverTails 12K Qwen L\u2265150 F1 86.7. Aegis Llama L\u2265150 F1 77.0 vs AegisGuard 86.8. CoT 710 Llama 83.7."
     },
     {
       "primaryKey": "src-arxiv-2608-19583",
@@ -4123,7 +4011,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "VGI-BENCH Table 2 Seedance2.0 Overall 51.0 vs Kling 44.0 vs MiniMax-H3 44.4 vs Sora2 36.7 vs HY1.5 19.1. Table 3 judge AUC 0.803."
     },
     {
       "primaryKey": "src-arxiv-2608-19589",
@@ -4137,7 +4025,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "OrthoSkillVLA Table 1 Final SR 83.50 \u00b1 1.42 vs KeepLoRA 56.61 \u00b1 7.22, NBT 0.13 vs 0.46. Real Phase-4 avg 86.25% (+15.0)."
     },
     {
       "primaryKey": "src-arxiv-2608-20255",
@@ -4151,7 +4039,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "2-Stage NN Table 2 Sc1 MSE\u00d710\u00b2 0.93/0.64/0.34/0.27 vs Pooled 2.28\u20131.93. Table 4 UTKFace overall 59.6 vs 61.8/63.1. Table 1 NN-TL stays n^{-1/6} longer than CLS-TL (n\u03c01)^{-3/13}."
     },
     {
       "primaryKey": "src-arxiv-2608-20258",
@@ -4165,7 +4053,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "CGCT synth 8\u201322\u00d7 vs DT (Table 1 20000\u00d75000 3-cls 22.40\u00d7, acc 0.52 vs 0.53). CGRF 29.84\u00d7. Santander DT 21.67\u00d7. FastC-GBM CIFAR \u03c11 18.75, Santander 0.81 (no speedup)."
     },
     {
       "primaryKey": "src-arxiv-2608-20274",
@@ -4179,7 +4067,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "11-model avg Table 2: Task 22.1 / 20.9 / 18.0 vs Subtask 24.8 / 26.7 / 25.3 (None/Text/Code). Text \u22121.2 / +1.9. Code \u22124.1 / +0.5. AppWorld Gemini 68.1\u219277.5 subtask+code."
     },
     {
       "primaryKey": "src-arxiv-2608-20281",
@@ -4193,7 +4081,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "IAR vs Vanilla SFT 7/8 all-metric wins. Abs +3.6 domain / +12.1 general pp. Qwen3-4B CC Dom 42.4\u219250.5. Table 3 32B IAR 62.8 vs Best IA 63.9 (within 1.1)."
     },
     {
       "primaryKey": "src-arxiv-2608-20315",
@@ -4207,7 +4095,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "EHRShot Anemia ROC 0.910 vs CLMBR 0.891 (ablation 0.787). CLMBR ICU 0.84 vs 0.80. Asthma LoC PR-AUC 0.599 vs XGB 0.554. 75M-patient pretrain."
     },
     {
       "primaryKey": "src-arxiv-2608-20331",
@@ -4221,7 +4109,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Qwen3-VL-8B Table 1 Overall/Prec/Rec 1.829 / 96.62 / 72.18 vs Judge 1.766 / 95.85 / 65.47 vs SFT 1.718. CMB Val 72.05 vs Base 71.42. Clinician Ours/M acc 136:85."
     },
     {
       "primaryKey": "src-arxiv-2608-20338",
@@ -4235,7 +4123,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "ConceptGuard: 5,166 dual-use / 68 concepts. Qwen Table 3 CtxtSep SimNPO 0.34 vs Base 0.19 vs GA 0.01. Llama RMU 0.38. Table 2 GA strongest forget, Qwen HelpQA 0.09."
     },
     {
       "primaryKey": "src-arxiv-batch01",
@@ -4246,10 +4134,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 11,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "arxiv read these five and wrote digest files. Unread `.txt` / PDF appendices are not known."
     },
     {
       "primaryKey": "src-arxiv-batch02",
@@ -4260,10 +4148,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2509-11016]] \u2192 [[superde]]"
     },
     {
       "primaryKey": "src-arxiv-batch03",
@@ -4274,10 +4162,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 12,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2510-03744]] \u2192 [[hydrofusion-lmf]]"
     },
     {
       "primaryKey": "src-arxiv-batch04",
@@ -4288,10 +4176,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 12,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2511-05540]] \u2192 [[tiwm]]"
     },
     {
       "primaryKey": "src-arxiv-batch05",
@@ -4302,10 +4190,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2512-00288]] \u2192 [[portal]]"
     },
     {
       "primaryKey": "src-arxiv-batch06",
@@ -4319,7 +4207,7 @@
       "inbound": 3,
       "outbound": 11,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2608-20255]] \u2192 [[two-stage-nn-tl]]"
     },
     {
       "primaryKey": "src-arxiv-batch07",
@@ -4333,7 +4221,7 @@
       "inbound": 3,
       "outbound": 11,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2608-20331]] \u2192 [[g-carl]]"
     },
     {
       "primaryKey": "src-arxiv-batch08",
@@ -4347,7 +4235,7 @@
       "inbound": 3,
       "outbound": 12,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2608-19492]] \u2192 [[dbosc]]"
     },
     {
       "primaryKey": "src-arxiv-batch09",
@@ -4361,7 +4249,7 @@
       "inbound": 3,
       "outbound": 11,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "1. [[src-arxiv-2608-19540]] \u2192 [[camf-mft]]"
     },
     {
       "primaryKey": "src-arxiv-tierlist-handoff",
@@ -4372,10 +4260,10 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Product axis is future potential / runway, not citations or journal prestige. Corpus 2026-08-24 gap batch 6: 405856 unique papers (+72800, cursor 2022-06-08), dates 1990-01-01 to 2026-08-20, full-corp"
     },
     {
       "primaryKey": "src-av1dlive-loop-graph-2026-08-26",
@@ -4389,7 +4277,7 @@
       "inbound": 4,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-26"
+      "oneLiner": "See [[loop-graph-engineering]]. Author AGI claim is marketing. Not stored as fact."
     },
     {
       "primaryKey": "src-av1dlive-portable-memory",
@@ -4403,7 +4291,7 @@
       "inbound": 2,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Portable memory. Git is source of truth. SQLite FTS5 is a disposable index. Redact rolls back; it does not erase. MCP tool descriptions say WHEN, not WHAT. FTS prefix rewrite."
     },
     {
       "primaryKey": "src-avid-company-foundry",
@@ -4417,7 +4305,7 @@
       "inbound": 17,
       "outbound": 10,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Headline: build a one-person company with \"Grok bot + Obsidian\" as Jarvis. Claims it can start a business, ship software, and go viral. Clip claims `unverified`. C31."
     },
     {
       "primaryKey": "src-avid-obsidian-agent-team",
@@ -4431,7 +4319,7 @@
       "inbound": 10,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "2026-08-20"
+      "oneLiner": "Home as door. File first. Scouts write, chat gets a digest. Human yes. Lock decisions. Context graph: relevant subgraph, temporal facts."
     },
     {
       "primaryKey": "src-beamnxw-memory-stack",
@@ -4445,7 +4333,7 @@
       "inbound": 2,
       "outbound": 1,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "A memory-engineering stack: filesystem / markdown as long-term store, not only a vector dump. Fits [[memory-engineering]]."
     },
     {
       "primaryKey": "src-benln-grok-bot-pro-tips",
@@ -4459,7 +4347,7 @@
       "inbound": 4,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-25"
+      "oneLiner": "Ten Grok Bot pro tips. See [[grok-bot-pro-tips]]."
     },
     {
       "primaryKey": "src-bober-folder-workflow",
@@ -4473,7 +4361,7 @@
       "inbound": 7,
       "outbound": 4,
       "unverified": true,
-      "oneLiner": "2026-08-21"
+      "oneLiner": "Popular how-to: raw + wiki + schema, ingest, ask. Flat markdown, one topic per file."
     },
     {
       "primaryKey": "src-botdirectory-picks-2026-08-27",
@@ -4487,7 +4375,7 @@
       "inbound": 4,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "304 bots. Marketing 74, Personal 68, Productivity 65, Ops 49, Sales 33, Success 15."
     },
     {
       "primaryKey": "src-can1357-daily-tool-replace-2026-08-27",
@@ -4501,7 +4389,7 @@
       "inbound": 12,
       "outbound": 5,
       "unverified": true,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Reply to HSVSphere: someone who knows better can replace daily-flow garbage by building their own, in an hour tops, without weeks of maintenance, tuning, or treating it as a side project."
     },
     {
       "primaryKey": "src-chatchat-living-brain",
@@ -4515,7 +4403,7 @@
       "inbound": 4,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Product: ChatChat agents with a \"Living Brain\", tools, skills, group chat. Persistent context across turns."
     },
     {
       "primaryKey": "src-chatgpt-play-2026-08-25",
@@ -4529,7 +4417,7 @@
       "inbound": 9,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "2026-08-25"
+      "oneLiner": "Skill Recorder trial only on a clean desktop with fake data, then [[skillspector]], then enable. See [[skill-recorder]]."
     },
     {
       "primaryKey": "src-chatgpt-t-6a8cc267",
@@ -4543,7 +4431,7 @@
       "inbound": 9,
       "outbound": 6,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "One assistant message. User turns are not in the slice."
     },
     {
       "primaryKey": "src-community-compaction",
@@ -4557,7 +4445,7 @@
       "inbound": 2,
       "outbound": 1,
       "unverified": true,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Community notes, not an OpenAI paper. Compiled from PM 2026-08-27. Not copied into `raw/`."
     },
     {
       "primaryKey": "src-coreyganim-composio",
@@ -4571,7 +4459,7 @@
       "inbound": 3,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-26"
+      "oneLiner": "Cursor has fewer native connectors. Use Composio MCP as a hub to 1000+ apps."
     },
     {
       "primaryKey": "src-dair-agent-friendly-docs",
@@ -4585,7 +4473,7 @@
       "inbound": 13,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "557 SWE-chat sessions, 94,813 events, 3,033 documentation interactions. 33,097 AIDev agentic pull requests, 690,260 file-level change records."
     },
     {
       "primaryKey": "src-debs-obrien-token-usage",
@@ -4599,7 +4487,7 @@
       "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "If bot usage is an issue, send this to the chief of staff:"
     },
     {
       "primaryKey": "src-deer-flow",
@@ -4613,7 +4501,7 @@
       "inbound": 6,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "DeerFlow is ByteDance's open-source SuperAgent harness (research, code, create). Local bootstrap is defined in `Install.md`: clone if needed, `make config`, prefer Docker (`make docker-init` then `mak"
     },
     {
       "primaryKey": "src-deronin-growthos-vault",
@@ -4627,7 +4515,7 @@
       "inbound": 10,
       "outbound": 3,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Obsidian vault of markdown notes as Grokbot operator memory. Seven layers named in the tweet:"
     },
     {
       "primaryKey": "src-deronin-views-vs-sales-2026-08-27",
@@ -4641,7 +4529,7 @@
       "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Chess: views \u2260 sales. 74k views / 51 buys vs 135k views / 2 buys. Same numbers already in `growth/growth-insights.md`."
     },
     {
       "primaryKey": "src-disclosure-index",
@@ -4655,7 +4543,7 @@
       "inbound": 9,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "Public bibliographic catalog of platform disclosures, platform-associated writeups, and published audit results. Footer and parsed catalog both say 11,338 records."
     },
     {
       "primaryKey": "src-everestchris6-revenue-2026-08-26",
@@ -4669,7 +4557,7 @@
       "inbound": 3,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-26"
+      "oneLiner": "See [[multi-source-verdict]]. Author-reported 576 items / 72 problems / 57 clusters / 1 candidate. Not independently counted."
     },
     {
       "primaryKey": "src-exm7777-grok-bot-money",
@@ -4683,7 +4571,7 @@
       "inbound": 21,
       "outbound": 15,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Grok Bot: one persistent named agent, one job, on a shared cloud computer. Bot memory is not the source of truth. The vault is. Approvals beat allow rules. See [[grok-bot]]."
     },
     {
       "primaryKey": "src-g3t0ffmyl4wn-2091749093206818856",
@@ -4697,7 +4585,7 @@
       "inbound": 1,
       "outbound": 0,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Tweet body not retrieved (X blocked). Wiki is silent on what it said. Do not invent a topic."
     },
     {
       "primaryKey": "src-hitu-entropy-engineering",
@@ -4711,7 +4599,7 @@
       "inbound": 7,
       "outbound": 3,
       "unverified": true,
-      "oneLiner": "2026-08-21"
+      "oneLiner": "From the article: 64-worker table, four isolation conditions, drift gate, consensus-as-infection."
     },
     {
       "primaryKey": "src-hxiao-headlong",
@@ -4725,7 +4613,7 @@
       "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-26"
+      "oneLiner": "Quote tweet, not a paper. Body: a persistent agent should do useful idle work (more testing, polishing the README) instead of sitting frozen until the next request. Especially with unmetered local inf"
     },
     {
       "primaryKey": "src-hxiao-headlong-share",
@@ -4739,7 +4627,7 @@
       "inbound": 4,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "lan E pointed at this post. Method page now exists: [[headlong]]. Same URL as [[src-hxiao-headlong]]."
     },
     {
       "primaryKey": "src-jacky-self-verification",
@@ -4753,7 +4641,7 @@
       "inbound": 8,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-17"
+      "oneLiner": "Sample 5, verify with LLM-as-a-Verifier, 79% to 88% on Terminal-Bench 2.1 with DeepSeek V4 Flash. Author-reported. Fine-grained scores and logprob expectation."
     },
     {
       "primaryKey": "src-johnsjawn-skill-library",
@@ -4767,7 +4655,7 @@
       "inbound": 11,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "2026-08-21"
+      "oneLiner": "A company needs a living Skills library. A GitHub folder known to 10% of the company is the named failure mode. The 10% figure is author-stated, unverified."
     },
     {
       "primaryKey": "src-juampi-anti-slop-rank",
@@ -4781,7 +4669,7 @@
       "inbound": 7,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-21"
+      "oneLiner": "Ten named anti-slop skills. unslop's public pitch: no em dashes, no extra examples, no unsolicited comparisons."
     },
     {
       "primaryKey": "src-lan-e-claim-protocol-2026-08-27",
@@ -4795,7 +4683,7 @@
       "inbound": 5,
       "outbound": 14,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Source \u2192 compiled wiki \u2192 derived answer. `raw/` stays human-owned and immutable."
     },
     {
       "primaryKey": "src-lan-e-karp-sovereignty-2026-08-27",
@@ -4809,7 +4697,7 @@
       "inbound": 4,
       "outbound": 5,
       "unverified": true,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "See [[ai-sovereignty]], [[alex-karp]], and [[palantir-aip]]."
     },
     {
       "primaryKey": "src-lan-e-lanbb-bb-2026-08-27",
@@ -4823,7 +4711,7 @@
       "inbound": 6,
       "outbound": 4,
       "unverified": true,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "LanBB BB = bug bounty flow. `wiki/lanbb.md` already said bounty/flow. That is product identity, not contamination."
     },
     {
       "primaryKey": "src-lan-e-musk-algorithm",
@@ -4834,10 +4722,10 @@
       "updated": "2026-08-27",
       "tags": "play",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 3,
+      "inbound": 3,
+      "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Musk Algorithm, strict order. Best part is no part. See [[musk-algorithm]]."
     },
     {
       "primaryKey": "src-lanbb-pr10-loop2",
@@ -4848,10 +4736,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop2. Score 0/116. Wall v1-hardened \u2192 v2-hardened. Keep v1."
     },
     {
       "primaryKey": "src-lanbb-pr11-loop3",
@@ -4862,10 +4750,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop3. Hunted v2. Fill live 0/116. Report path wrote. Studio shows hunt vs current wall."
     },
     {
       "primaryKey": "src-lanbb-pr13-loop4",
@@ -4876,10 +4764,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop4. Hunted v3. Report at 0/N. Studio hunted + fill pills."
     },
     {
       "primaryKey": "src-lanbb-pr15-loop5",
@@ -4890,10 +4778,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop5. Hunted v4. Report at 0/N. Studio next-hunt pill."
     },
     {
       "primaryKey": "src-lanbb-pr16-loop6",
@@ -4904,10 +4792,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop6. Report at 0/N. Studio coding-snippets pill."
     },
     {
       "primaryKey": "src-lanbb-pr17-loop7",
@@ -4918,10 +4806,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop7. Report at 0/N. Studio applies pill."
     },
     {
       "primaryKey": "src-lanbb-pr18-loop8",
@@ -4932,10 +4820,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop8 hunted v7-hardened. Fill live 0/116. Score GET HTTP 200. Default-deny 403. POST on score path 405. `docker_disabled=18`. N=116. docker-solvable=98."
     },
     {
       "primaryKey": "src-lanbb-pr19-loop9",
@@ -4946,10 +4834,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop9. Report at 0/116. v8 applied. v9 tightens score path + host allowlist."
     },
     {
       "primaryKey": "src-lanbb-pr20-loop10",
@@ -4960,10 +4848,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop10. Report at 0/116. v9 applied. v10 tightens score path."
     },
     {
       "primaryKey": "src-lanbb-pr21-loop11",
@@ -4974,10 +4862,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop11 hunted v10-hardened. Fill live 0/116. Score GET HTTP 200. Default-deny 403. Report at 0/N."
     },
     {
       "primaryKey": "src-lanbb-pr22-loop12",
@@ -4988,10 +4876,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop12 hunted v11-hardened. Fill live 0/116. Score GET HTTP 200. Default-deny 403. Report at 0/N."
     },
     {
       "primaryKey": "src-lanbb-pr23-loop13",
@@ -5002,10 +4890,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop13. Report at 0/116. v12 applied. Floor mem>=6m pids>=6 held."
     },
     {
       "primaryKey": "src-lanbb-pr24-loop14",
@@ -5016,10 +4904,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop14. Report at 0/116. v13 applied. Floor mem>=6m pids>=6 held."
     },
     {
       "primaryKey": "src-lanbb-pr25-loop15",
@@ -5030,10 +4918,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop15. Report at 0/116. v14 applied. Floor mem>=6m pids>=6 held. `worker_processes 1` baked."
     },
     {
       "primaryKey": "src-lanbb-pr26-loop16",
@@ -5044,10 +4932,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop16. Report at 0/116. v15 applied. Floor mem>=6m pids>=6 held. `worker_processes 1` source `OOM=false`."
     },
     {
       "primaryKey": "src-lanbb-pr27-loop17",
@@ -5058,10 +4946,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop17. Report at 0/116. v16 applied. Floor mem>=6m pids>=6 held. `worker_processes 1` source `OOM=false`."
     },
     {
       "primaryKey": "src-lanbb-pr9-loop1",
@@ -5072,10 +4960,10 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Loop1. Local Juice Shop CASE. Score 0/116. Wall v0 \u2192 v1-hardened."
     },
     {
       "primaryKey": "src-laude-headlong",
@@ -5089,7 +4977,7 @@
       "inbound": 6,
       "outbound": 6,
       "unverified": true,
-      "oneLiner": "2026-08-26"
+      "oneLiner": "Headlong is an open-source Bash microharness for persistent agency. A Headlong agent is never asleep. Human messages are observations in one thought stream. The agent decides if and when to reply."
     },
     {
       "primaryKey": "src-luismbat-buying-signal-2026-08-27",
@@ -5103,7 +4991,7 @@
       "inbound": 2,
       "outbound": 1,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Public buying signal: people writing \"looking for alternative to\"."
     },
     {
       "primaryKey": "src-lummox-assign-execute-verify",
@@ -5117,7 +5005,7 @@
       "inbound": 2,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Assign \u2192 execute \u2192 verify."
     },
     {
       "primaryKey": "src-marfinxx-trace",
@@ -5128,10 +5016,10 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 4,
       "unverified": true,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "Paper (exists; do not invent): Zhao, Misra, Pandey. Trace: TRajectory Attribution for Automated Context Engineering. KDD 2026. https://arxiv.org/abs/2608.09153 Amazon Science: https://www.amazon.scien"
     },
     {
       "primaryKey": "src-maverick-ultramode",
@@ -5145,7 +5033,7 @@
       "inbound": 19,
       "outbound": 9,
       "unverified": false,
-      "oneLiner": "2026-08-22"
+      "oneLiner": "`/ultra` runs a task N times in isolated git worktrees, then a same-model [[probabilistic-pivot-tournament]] picks a winner. Terminal-Bench, DeepSeek V4 Flash 0731, N=5, OpenCode run: 24% to 33% on 15"
     },
     {
       "primaryKey": "src-maxdeg0-vault-2026-08-27",
@@ -5159,7 +5047,7 @@
       "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Grok Bot plus a markdown vault. Do not answer first. Follow backlinks. Tags as weights."
     },
     {
       "primaryKey": "src-milesdeutscher-grok-bot-use-cases",
@@ -5173,7 +5061,7 @@
       "inbound": 3,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-19"
+      "oneLiner": "Title: 25 insanely useful Grok Bot agent use cases (anyone can implement these)."
     },
     {
       "primaryKey": "src-mrgreenieybt3-llm-wiki",
@@ -5187,7 +5075,7 @@
       "inbound": 2,
       "outbound": 1,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "LLM Wiki as typed, interlinked pages. Same pattern as [[llm-wiki]]: compile sources into pages you query later."
     },
     {
       "primaryKey": "src-mukul975-cybersecurity-skills",
@@ -5201,7 +5089,7 @@
       "inbound": 14,
       "outbound": 7,
       "unverified": false,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "Community GitHub skill library. README says not affiliated with Anthropic PBC. Apache-2.0."
     },
     {
       "primaryKey": "src-omarsar-adversarial-review",
@@ -5215,7 +5103,7 @@
       "inbound": 13,
       "outbound": 7,
       "unverified": false,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "Adding more agents is the default fix for weak review. The paper reports diminishing returns on repository-level tasks."
     },
     {
       "primaryKey": "src-openagentskill-anti-slop",
@@ -5229,7 +5117,7 @@
       "inbound": 4,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "A 10-skill anti-slop list. Not the same list as [[src-juampi-anti-slop-rank]]. OpenAgentSkill also hosts dmmulroy/anti-slop (Oxlint for TS/JS), which is code lint, not juampi's writing rank."
     },
     {
       "primaryKey": "src-openai-codex-cli-compact",
@@ -5243,7 +5131,7 @@
       "inbound": 2,
       "outbound": 1,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "`/compact` summarizes visible chat."
     },
     {
       "primaryKey": "src-palantir-aip-developers-2026-08-28",
@@ -5257,7 +5145,7 @@
       "inbound": 7,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "2026-08-28"
+      "oneLiner": "AIP sits on Foundry data and the Ontology. Builder tools named on the AIP overview: AIP Logic, AIP Chatbot Studio (formerly AIP Agent Studio), AIP Evals."
     },
     {
       "primaryKey": "src-papa-couch-compiler",
@@ -5271,7 +5159,7 @@
       "inbound": 11,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-21"
+      "oneLiner": "305k vs 47k tokens for the same task if knowledge is already compiled. Write answers back. `raw/` / `wiki/` / `output/` / schema. Maintenance is why human wikis die."
     },
     {
       "primaryKey": "src-pawelhuryn-file-memory",
@@ -5285,7 +5173,7 @@
       "inbound": 3,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Prefers git `.md` memory over a lab's built-in memory since March. Cowork, Claude Code, Codex, and Grok all read the same folder."
     },
     {
       "primaryKey": "src-play-methods-2026-08-25",
@@ -5299,7 +5187,7 @@
       "inbound": 12,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "2026-08-25"
+      "oneLiner": ""
     },
     {
       "primaryKey": "src-promptyx-llm-cpu",
@@ -5313,7 +5201,7 @@
       "inbound": 3,
       "outbound": 1,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "LLM as CPU / harness: the model is not the whole agent. Tools, loop, and permissions sit outside the weights. Fits [[harness-routing]]."
     },
     {
       "primaryKey": "src-retrieval-second-brain",
@@ -5327,7 +5215,7 @@
       "inbound": 11,
       "outbound": 6,
       "unverified": true,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "Four retrieval pillars: hybrid BM25 + vector + cross-encoder rerank; GraphRAG over entity links; working / episodic / semantic memory; agentic tool-calling that splits a question, queries, and reflect"
     },
     {
       "primaryKey": "src-rohit-harness-router",
@@ -5341,7 +5229,7 @@
       "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "2026-08-22"
+      "oneLiner": "Five harnesses, one router. Shared object is an [[audited-task-contract]]. Route model and harness as separate choices. Move semantic state, never KV state. Planner / controller / executor / auditor."
     },
     {
       "primaryKey": "src-ruujss-pipeline-honesty",
@@ -5355,7 +5243,7 @@
       "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Pipeline honesty: chronological order first. Window-boundary and kernel misspec inflate a ratio. Out-of-sample is the honest test."
     },
     {
       "primaryKey": "src-skill-pack-list",
@@ -5369,7 +5257,7 @@
       "inbound": 9,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "2026-08-23"
+      "oneLiner": "A skill packages a repeated workflow as an SOP. Named jobs: UI review, API check, database plan, docs, architecture review, handoff. A stable SOP is meant to stop retrying a known failure and burning "
     },
     {
       "primaryKey": "src-thewhizzai-avo",
@@ -5380,10 +5268,10 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "2026-08-24"
+      "oneLiner": "Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness."
     },
     {
       "primaryKey": "src-voxyz-drafts-2026-08-27",
@@ -5397,7 +5285,7 @@
       "inbound": 2,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "2026-08-27"
+      "oneLiner": "Drafts, not publish. Analytics feed the next batch. Taste is the gate."
     },
     {
       "primaryKey": "src-voxyz-verifiable-instructions",
@@ -5411,7 +5299,7 @@
       "inbound": 7,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "2026-08-22"
+      "oneLiner": "Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
     },
     {
       "primaryKey": "stable-ids",
@@ -5450,10 +5338,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "DDQN configures DE. 28-action Q-net"
+      "oneLiner": "DDQN picks DE mutation and constraint handling each generation. Trained on CEC2010. Still a 28-action Q-net."
     },
     {
       "primaryKey": "tiwm",
@@ -5464,10 +5352,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "16-token nuPlan. Mini \u2260 full val14"
+      "oneLiner": "Tokenized Intent World Model. 16 BEV tokens. nuPlan."
     },
     {
       "primaryKey": "tokens-as-capital",
@@ -5492,10 +5380,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 4,
       "unverified": true,
-      "oneLiner": "Trajectory attribution; repair context without retraining"
+      "oneLiner": "TRajectory Attribution for Automated Context Engineering. Amazon authors Zhao, Misra, Pandey. KDD 2026. Paper: https://arxiv.org/abs/2608.09153"
     },
     {
       "primaryKey": "twitter",
@@ -5520,10 +5408,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Grouped NN transfer. Appendix unread"
+      "oneLiner": "Offset transfer for grouped nonparametric regression."
     },
     {
       "primaryKey": "ultra-mode",
@@ -5548,10 +5436,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "LLM + machine SIDs. Beauty R@10 loses"
+      "oneLiner": "Machine-native symbols in a pretrained LLM."
     },
     {
       "primaryKey": "unitok",
@@ -5562,10 +5450,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 3,
       "unverified": true,
-      "oneLiner": "One tokenizer, 10 domains. 51.89% is Toys"
+      "oneLiner": "One tokenizer for 10 recommendation domains."
     },
     {
       "primaryKey": "untrusted-ingest",
@@ -5632,10 +5520,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Video-gen visual IQ. Seedance 51.0"
+      "oneLiner": "Visual intelligence in video generators. 27 tasks / 810 instances."
     },
     {
       "primaryKey": "views-vs-sales",
@@ -5660,10 +5548,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Expert + self-demo VLA. Table 4 unread"
+      "oneLiner": "Fine-tune with expert + zero-shot self-demos."
     },
     {
       "primaryKey": "vs-graph",
@@ -5674,10 +5562,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": true,
-      "oneLiner": "HDC graphs. Acc is figure-only"
+      "oneLiner": "Topology-only HDC graph classifier. No backprop."
     },
     {
       "primaryKey": "wiki",
@@ -6209,6 +6097,56 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "C37",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C37",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "C37",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "C37",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-musk"
+    },
+    {
+      "from": "C37",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "C37",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "C38",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C38",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-musk"
+    },
+    {
+      "from": "C38",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "C39",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
       "from": "C4",
       "linkType": "extractedFrom",
       "to": "contradictions"
@@ -6332,6 +6270,36 @@
       "from": "D11",
       "linkType": "relatedTo",
       "to": "disclosure-index"
+    },
+    {
+      "from": "D12",
+      "linkType": "extractedFrom",
+      "to": "decisions"
+    },
+    {
+      "from": "D12",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "D12",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "D12",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "D12",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "D12",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "D2",
@@ -6526,11 +6494,6 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
-      "to": "Today"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
     {
@@ -6581,12 +6544,12 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
-      "to": "hunt"
+      "to": "how-it-works"
     },
     {
       "from": "Home",
       "linkType": "relatedTo",
-      "to": "inbox"
+      "to": "hunt"
     },
     {
       "from": "Home",
@@ -6651,12 +6614,27 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-musk"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-omarsar"
     },
     {
       "from": "Home",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-agent-facing-2026-08-28"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "musk-pass-2026-08-28"
     },
     {
       "from": "Home",
@@ -6806,12 +6784,22 @@
     {
       "from": "Jarvis",
       "linkType": "relatedTo",
-      "to": "retrieval"
+      "to": "index-papers"
     },
     {
       "from": "Jarvis",
       "linkType": "relatedTo",
-      "to": "ship"
+      "to": "index-sources"
+    },
+    {
+      "from": "Jarvis",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "Jarvis",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "Jarvis",
@@ -6837,6 +6825,16 @@
       "from": "MEMORY",
       "linkType": "cites",
       "to": "src-hxiao-headlong-share"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-lanbb-pr27-loop17"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-lanbb-pr9-loop1"
     },
     {
       "from": "MEMORY",
@@ -6986,11 +6984,6 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
-      "to": "grok-bot-use-cases"
-    },
-    {
-      "from": "MEMORY",
-      "linkType": "relatedTo",
       "to": "growth-operator"
     },
     {
@@ -7007,6 +7000,21 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "hunter-follows"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "index-sources"
     },
     {
       "from": "MEMORY",
@@ -7477,6 +7485,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "agent-operating-system",
@@ -8941,12 +8954,27 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "memory-ablation"
     },
     {
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-musk"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "contradictions",
@@ -9091,6 +9119,11 @@
     {
       "from": "daily-tool-replace-vault-2026-08-27",
       "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
       "to": "assign-execute-verify"
     },
     {
@@ -9122,11 +9155,6 @@
       "from": "daily-tool-replace-vault-2026-08-27",
       "linkType": "relatedTo",
       "to": "grok-bot-quota"
-    },
-    {
-      "from": "daily-tool-replace-vault-2026-08-27",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-arxiv-405856"
     },
     {
       "from": "daily-tool-replace-vault-2026-08-27",
@@ -9201,6 +9229,11 @@
     {
       "from": "decisions",
       "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
       "to": "disclosure-index"
     },
     {
@@ -9221,12 +9254,27 @@
     {
       "from": "decisions",
       "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
       "to": "llm-wiki"
     },
     {
       "from": "decisions",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "decisions",
@@ -9301,6 +9349,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
     },
     {
@@ -9321,6 +9374,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-23"
     },
     {
@@ -9331,87 +9389,12 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-arxiv-405856"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-arxiv-pages"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-arxiv-tierlist"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch01"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch02"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch03"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch04"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch05"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch06"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch07"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch08"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-batch09"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-disclosure-index"
     },
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-five-x"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-maverick-ultramode"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-three-x"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-trace"
     },
     {
       "from": "digests",
@@ -9457,6 +9440,11 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-musk"
     },
     {
       "from": "digests",
@@ -9777,26 +9765,6 @@
       "from": "file-memory",
       "linkType": "relatedTo",
       "to": "vault-ontology"
-    },
-    {
-      "from": "first-principles",
-      "linkType": "cites",
-      "to": "src-lan-e-musk-algorithm"
-    },
-    {
-      "from": "first-principles",
-      "linkType": "relatedTo",
-      "to": "musk-algorithm"
-    },
-    {
-      "from": "first-principles",
-      "linkType": "relatedTo",
-      "to": "raptor-dispatch"
-    },
-    {
-      "from": "first-principles",
-      "linkType": "relatedTo",
-      "to": "verifiable-instructions"
     },
     {
       "from": "flow-matching-pso",
@@ -10531,6 +10499,11 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
+      "to": "assign-execute-verify"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
       "to": "audited-task-contract"
     },
     {
@@ -10576,6 +10549,21 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
       "to": "llm-wiki"
     },
     {
@@ -10587,6 +10575,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "how-it-works",
@@ -10661,81 +10654,6 @@
     {
       "from": "hunt-harden-loop",
       "linkType": "cites",
-      "to": "src-lanbb-pr10-loop2"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr11-loop3"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr13-loop4"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr15-loop5"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr16-loop6"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr17-loop7"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr18-loop8"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr19-loop9"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr20-loop10"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr21-loop11"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr22-loop12"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr23-loop13"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr24-loop14"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr25-loop15"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
-      "to": "src-lanbb-pr26-loop16"
-    },
-    {
-      "from": "hunt-harden-loop",
-      "linkType": "cites",
       "to": "src-lanbb-pr27-loop17"
     },
     {
@@ -10761,12 +10679,22 @@
     {
       "from": "hunt-harden-loop",
       "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "hunt-harden-loop",
+      "linkType": "relatedTo",
       "to": "lanbb"
     },
     {
       "from": "hunt-harden-loop",
       "linkType": "relatedTo",
       "to": "log"
+    },
+    {
+      "from": "hunt-harden-loop",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "hunt-ship-loop",
@@ -10985,671 +10913,6 @@
     },
     {
       "from": "index",
-      "linkType": "cites",
-      "to": "src-0xcarnagee-tape-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-0xcodio-memory-ablation"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-agentmemoryl-aml-s2"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-andonlabs-vending-bench"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2507-08177"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2507-17886"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2507-20810"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2509-11016"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2509-21617"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2509-23982"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2509-24844"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2509-26507"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2510-02345"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2510-03744"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2510-16851"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2510-17928"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-02241"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-02864"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-02957"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-05540"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-12922"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-16485"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-20500"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2511-20721"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2512-00288"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2512-00341"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2512-01249"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2512-02419"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2512-03394"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19408"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19425"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19490"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19492"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19514"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19515"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19529"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19536"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19540"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19568"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19579"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19583"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-19589"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20255"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20258"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20274"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20281"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20315"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20331"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-2608-20338"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch01"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch02"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch03"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch04"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch05"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch06"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch07"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch08"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-batch09"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-av1dlive-loop-graph-2026-08-26"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-av1dlive-portable-memory"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-avid-company-foundry"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-avid-obsidian-agent-team"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-beamnxw-memory-stack"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-benln-grok-bot-pro-tips"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-bober-folder-workflow"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-botdirectory-picks-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-can1357-daily-tool-replace-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-chatchat-living-brain"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-chatgpt-play-2026-08-25"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-chatgpt-t-6a8cc267"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-community-compaction"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-coreyganim-composio"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-dair-agent-friendly-docs"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-debs-obrien-token-usage"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-deer-flow"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-deronin-growthos-vault"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-deronin-views-vs-sales-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-disclosure-index"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-everestchris6-revenue-2026-08-26"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-exm7777-grok-bot-money"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-g3t0ffmyl4wn-2091749093206818856"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-hitu-entropy-engineering"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-hxiao-headlong"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-hxiao-headlong-share"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-jacky-self-verification"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-johnsjawn-skill-library"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-juampi-anti-slop-rank"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lan-e-claim-protocol-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lan-e-karp-sovereignty-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lan-e-lanbb-bb-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lan-e-musk-algorithm"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr10-loop2"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr11-loop3"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr13-loop4"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr15-loop5"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr16-loop6"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr17-loop7"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr18-loop8"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr19-loop9"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr20-loop10"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr21-loop11"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr22-loop12"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr23-loop13"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr24-loop14"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr25-loop15"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr26-loop16"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr27-loop17"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lanbb-pr9-loop1"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-laude-headlong"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-luismbat-buying-signal-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-lummox-assign-execute-verify"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-marfinxx-trace"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-maverick-ultramode"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-maxdeg0-vault-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-milesdeutscher-grok-bot-use-cases"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-mrgreenieybt3-llm-wiki"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-mukul975-cybersecurity-skills"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-omarsar-adversarial-review"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-openagentskill-anti-slop"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-openai-codex-cli-compact"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-palantir-aip-developers-2026-08-28"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-papa-couch-compiler"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-pawelhuryn-file-memory"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-play-methods-2026-08-25"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-promptyx-llm-cpu"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-retrieval-second-brain"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-rohit-harness-router"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-ruujss-pipeline-honesty"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-skill-pack-list"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-thewhizzai-avo"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-voxyz-drafts-2026-08-27"
-    },
-    {
-      "from": "index",
-      "linkType": "cites",
-      "to": "src-voxyz-verifiable-instructions"
-    },
-    {
-      "from": "index",
       "linkType": "relatedTo",
       "to": "GrowthOS"
     },
@@ -11686,17 +10949,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "alphaevolve-math"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "anti-slop"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "apt-siamese"
     },
     {
       "from": "index",
@@ -11721,16 +10974,6 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "bdh"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "bert-ler"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "bot-voice"
     },
     {
@@ -11741,22 +10984,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "brain-ai-convergence"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "buying-signal"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "camf-mft"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "causal-cps-anomaly"
     },
     {
       "from": "index",
@@ -11776,22 +11004,12 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "clustered-moe"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "company-foundry"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
       "to": "composio-mcp"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "concept-guard"
     },
     {
       "from": "index",
@@ -11811,17 +11029,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "cvsd-reg"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "daily-tool-replace"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "dbosc"
     },
     {
       "from": "index",
@@ -11841,22 +11049,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "dics"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "disclosure-index"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "dmd-safety"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "draftfm"
     },
     {
       "from": "index",
@@ -11881,37 +11074,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "evosyn"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "file-memory"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "first-principles"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "flow-matching-pso"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "foundry-3d"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "fourmas"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "g-carl"
     },
     {
       "from": "index",
@@ -11966,11 +11129,6 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "hear2act"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "how-it-works"
     },
     {
@@ -11996,12 +11154,12 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "hydrofusion-lmf"
+      "to": "index-papers"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "iar"
+      "to": "index-sources"
     },
     {
       "from": "index",
@@ -12011,17 +11169,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "lance"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "llm-wiki"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "llm4eo"
     },
     {
       "from": "index",
@@ -12051,11 +11199,6 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "mpi-init"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "multi-source-verdict"
     },
     {
@@ -12066,32 +11209,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "ngc"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "nmc-trace-complexity"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "orthoskillvla"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "palantir-aip"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "palrs"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "pavement-gnn"
     },
     {
       "from": "index",
@@ -12106,17 +11224,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "portal"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "potential-ranking"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "prednext"
     },
     {
       "from": "index",
@@ -12131,17 +11239,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "pwr-ga"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "quota-router"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "r2-opd"
     },
     {
       "from": "index",
@@ -12157,16 +11255,6 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "sapin"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "scape"
     },
     {
       "from": "index",
@@ -12201,11 +11289,6 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "skill-transfer"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "skillspector"
     },
     {
@@ -12226,42 +11309,12 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "superde"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "tiwm"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "tokens-as-capital"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "trace"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "two-stage-nn-tl"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "ultra-mode"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "unilang"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "unitok"
     },
     {
       "from": "index",
@@ -12286,27 +11339,937 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "vgi-bench"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "views-vs-sales"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "alphaevolve-math"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "apt-siamese"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "bdh"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "bert-ler"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "brain-ai-convergence"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "camf-mft"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "causal-cps-anomaly"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "clustered-moe"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "concept-guard"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "cvsd-reg"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "dbosc"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "dics"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "dmd-safety"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "draftfm"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "evosyn"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "flow-matching-pso"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "foundry-3d"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "fourmas"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "g-carl"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "hear2act"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "hydrofusion-lmf"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "iar"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "lance"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "llm4eo"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "mpi-init"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "ngc"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "nmc-trace-complexity"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "orthoskillvla"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "palrs"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "pavement-gnn"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "portal"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "potential-ranking"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "prednext"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "pwr-ga"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "r2-opd"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "sapin"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "scape"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "skill-transfer"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "superde"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "tiwm"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "trace"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "two-stage-nn-tl"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "unilang"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "unitok"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
+      "to": "vgi-bench"
+    },
+    {
+      "from": "index-papers",
+      "linkType": "relatedTo",
       "to": "vla-self-demo"
     },
     {
-      "from": "index",
+      "from": "index-papers",
       "linkType": "relatedTo",
       "to": "vs-graph"
     },
     {
-      "from": "index",
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-0xcarnagee-tape-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-0xcodio-memory-ablation"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-agentmemoryl-aml-s2"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-andonlabs-vending-bench"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2507-08177"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2507-17886"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2507-20810"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2509-11016"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2509-21617"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2509-23982"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2509-24844"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2509-26507"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2510-02345"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2510-03744"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2510-16851"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2510-17928"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-02241"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-02864"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-02957"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-05540"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-12922"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-16485"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-20500"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2511-20721"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2512-00288"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2512-00341"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2512-01249"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2512-02419"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2512-03394"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19408"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19425"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19490"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19492"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19514"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19515"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19529"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19536"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19540"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19568"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19579"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19583"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-19589"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20255"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20258"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20274"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20281"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20315"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20331"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-2608-20338"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch01"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch02"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch03"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch04"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch07"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch08"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-batch09"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-arxiv-tierlist-handoff"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-av1dlive-loop-graph-2026-08-26"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-av1dlive-portable-memory"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-avid-obsidian-agent-team"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-beamnxw-memory-stack"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-bober-folder-workflow"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-botdirectory-picks-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-chatchat-living-brain"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-chatgpt-play-2026-08-25"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-community-compaction"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-coreyganim-composio"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-debs-obrien-token-usage"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-deer-flow"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-deronin-growthos-vault"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-deronin-views-vs-sales-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-everestchris6-revenue-2026-08-26"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-g3t0ffmyl4wn-2091749093206818856"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-hitu-entropy-engineering"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-hxiao-headlong-share"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-juampi-anti-slop-rank"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lan-e-claim-protocol-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lan-e-karp-sovereignty-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lan-e-lanbb-bb-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lan-e-musk-algorithm"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr10-loop2"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr11-loop3"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr13-loop4"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr15-loop5"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr16-loop6"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr17-loop7"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr18-loop8"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr19-loop9"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr20-loop10"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr21-loop11"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr22-loop12"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr23-loop13"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr24-loop14"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr25-loop15"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr26-loop16"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr27-loop17"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lanbb-pr9-loop1"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-laude-headlong"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-luismbat-buying-signal-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-lummox-assign-execute-verify"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-marfinxx-trace"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-maxdeg0-vault-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-milesdeutscher-grok-bot-use-cases"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-mrgreenieybt3-llm-wiki"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-openagentskill-anti-slop"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-openai-codex-cli-compact"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-palantir-aip-developers-2026-08-28"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-papa-couch-compiler"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-pawelhuryn-file-memory"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-promptyx-llm-cpu"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-ruujss-pipeline-honesty"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-voxyz-drafts-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "index-sources",
       "linkType": "relatedTo",
-      "to": "work-per-cost"
+      "to": "index"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "relatedTo",
+      "to": "index-papers"
     },
     {
       "from": "ingest-brief-2026-08-23",
@@ -12464,336 +12427,6 @@
       "to": "verifiable-instructions"
     },
     {
-      "from": "ingest-brief-2026-08-24-arxiv-405856",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-405856",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-pages",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-pages",
-      "linkType": "relatedTo",
-      "to": "MEMORY"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-pages",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-pages",
-      "linkType": "relatedTo",
-      "to": "index"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-pages",
-      "linkType": "relatedTo",
-      "to": "log"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-tierlist",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-tierlist",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-tierlist",
-      "linkType": "relatedTo",
-      "to": "index"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-tierlist",
-      "linkType": "relatedTo",
-      "to": "log"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-tierlist",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "cites",
-      "to": "src-arxiv-batch01"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "relatedTo",
-      "to": "bdh"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "relatedTo",
-      "to": "causal-cps-anomaly"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "relatedTo",
-      "to": "evosyn"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "relatedTo",
-      "to": "flow-matching-pso"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch01",
-      "linkType": "relatedTo",
-      "to": "nmc-trace-complexity"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "cites",
-      "to": "src-arxiv-batch02"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "relatedTo",
-      "to": "clustered-moe"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "relatedTo",
-      "to": "lance"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "relatedTo",
-      "to": "palrs"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "relatedTo",
-      "to": "prednext"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch02",
-      "linkType": "relatedTo",
-      "to": "superde"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "cites",
-      "to": "src-arxiv-batch03"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "relatedTo",
-      "to": "alphaevolve-math"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "relatedTo",
-      "to": "contradictions"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "relatedTo",
-      "to": "hydrofusion-lmf"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "relatedTo",
-      "to": "ngc"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "relatedTo",
-      "to": "pavement-gnn"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch03",
-      "linkType": "relatedTo",
-      "to": "sapin"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "cites",
-      "to": "src-arxiv-batch04"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "relatedTo",
-      "to": "apt-siamese"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "relatedTo",
-      "to": "contradictions"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "relatedTo",
-      "to": "foundry-3d"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "relatedTo",
-      "to": "llm4eo"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "relatedTo",
-      "to": "tiwm"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch04",
-      "linkType": "relatedTo",
-      "to": "unitok"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch05",
-      "linkType": "cites",
-      "to": "src-arxiv-batch05"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch05",
-      "linkType": "relatedTo",
-      "to": "brain-ai-convergence"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch05",
-      "linkType": "relatedTo",
-      "to": "mpi-init"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch05",
-      "linkType": "relatedTo",
-      "to": "portal"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch05",
-      "linkType": "relatedTo",
-      "to": "pwr-ga"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch05",
-      "linkType": "relatedTo",
-      "to": "vs-graph"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch06",
-      "linkType": "relatedTo",
-      "to": "bert-ler"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch06",
-      "linkType": "relatedTo",
-      "to": "dics"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch06",
-      "linkType": "relatedTo",
-      "to": "iar"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch06",
-      "linkType": "relatedTo",
-      "to": "skill-transfer"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch06",
-      "linkType": "relatedTo",
-      "to": "two-stage-nn-tl"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch07",
-      "linkType": "relatedTo",
-      "to": "concept-guard"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch07",
-      "linkType": "relatedTo",
-      "to": "g-carl"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch07",
-      "linkType": "relatedTo",
-      "to": "r2-opd"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch07",
-      "linkType": "relatedTo",
-      "to": "scape"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch07",
-      "linkType": "relatedTo",
-      "to": "vla-self-demo"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch08",
-      "linkType": "relatedTo",
-      "to": "cvsd-reg"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch08",
-      "linkType": "relatedTo",
-      "to": "dbosc"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch08",
-      "linkType": "relatedTo",
-      "to": "fourmas"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch08",
-      "linkType": "relatedTo",
-      "to": "hear2act"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch08",
-      "linkType": "relatedTo",
-      "to": "unilang"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch09",
-      "linkType": "relatedTo",
-      "to": "camf-mft"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch09",
-      "linkType": "relatedTo",
-      "to": "dmd-safety"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch09",
-      "linkType": "relatedTo",
-      "to": "draftfm"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch09",
-      "linkType": "relatedTo",
-      "to": "orthoskillvla"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-batch09",
-      "linkType": "relatedTo",
-      "to": "vgi-bench"
-    },
-    {
       "from": "ingest-brief-2026-08-24-chatgpt-share",
       "linkType": "cites",
       "to": "src-chatgpt-t-6a8cc267"
@@ -12827,26 +12460,6 @@
       "from": "ingest-brief-2026-08-24-disclosure-index",
       "linkType": "relatedTo",
       "to": "disclosures"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-five-x",
-      "linkType": "relatedTo",
-      "to": "anti-slop"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-five-x",
-      "linkType": "relatedTo",
-      "to": "harness-routing"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-five-x",
-      "linkType": "relatedTo",
-      "to": "llm-wiki"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-five-x",
-      "linkType": "relatedTo",
-      "to": "memory-engineering"
     },
     {
       "from": "ingest-brief-2026-08-24-maverick-ultramode",
@@ -12892,41 +12505,6 @@
       "from": "ingest-brief-2026-08-24-maverick-ultramode",
       "linkType": "relatedTo",
       "to": "ultra-mode"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-three-x",
-      "linkType": "cites",
-      "to": "src-thewhizzai-avo"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-three-x",
-      "linkType": "relatedTo",
-      "to": "agent-operating-system"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-trace",
-      "linkType": "cites",
-      "to": "src-marfinxx-trace"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-trace",
-      "linkType": "relatedTo",
-      "to": "context-graph"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-trace",
-      "linkType": "relatedTo",
-      "to": "memory-engineering"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-trace",
-      "linkType": "relatedTo",
-      "to": "tokens-as-capital"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-trace",
-      "linkType": "relatedTo",
-      "to": "trace"
     },
     {
       "from": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -13271,81 +12849,6 @@
     {
       "from": "lanbb",
       "linkType": "cites",
-      "to": "src-lanbb-pr10-loop2"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr11-loop3"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr13-loop4"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr15-loop5"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr16-loop6"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr17-loop7"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr18-loop8"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr19-loop9"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr20-loop10"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr21-loop11"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr22-loop12"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr23-loop13"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr24-loop14"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr25-loop15"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
-      "to": "src-lanbb-pr26-loop16"
-    },
-    {
-      "from": "lanbb",
-      "linkType": "cites",
       "to": "src-lanbb-pr27-loop17"
     },
     {
@@ -13501,7 +13004,17 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "llm-wiki",
@@ -14071,6 +13584,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "decisions"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "deer-flow"
     },
     {
@@ -14132,11 +13650,6 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "file-memory"
-    },
-    {
-      "from": "log",
-      "linkType": "relatedTo",
-      "to": "first-principles"
     },
     {
       "from": "log",
@@ -14252,6 +13765,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "iar"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "index-sources"
     },
     {
       "from": "log",
@@ -14416,6 +13939,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-musk"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-omarsar"
     },
     {
@@ -14442,6 +13970,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "musk-algorithm"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "musk-pass-2026-08-28"
     },
     {
       "from": "log",
@@ -15504,6 +15037,61 @@
       "to": "ultra-mode"
     },
     {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-musk",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
       "from": "merge-conflict-report-2026-08-28-omarsar",
       "linkType": "aboutPerson",
       "to": "maverick"
@@ -15736,17 +15324,92 @@
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
+      "to": "assign-execute-verify"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
       "to": "daily-tool-replace"
     },
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
-      "to": "first-principles"
+      "to": "decisions"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "hunt-harden-loop"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
     },
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "decisions"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "hunt-harden-loop"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "index-papers"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "musk-pass-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "ngc",
@@ -16237,11 +15900,6 @@
       "from": "raptor-dispatch",
       "linkType": "relatedTo",
       "to": "bot-voice"
-    },
-    {
-      "from": "raptor-dispatch",
-      "linkType": "relatedTo",
-      "to": "first-principles"
     },
     {
       "from": "raptor-dispatch",
@@ -18472,11 +18130,6 @@
       "from": "src-lan-e-lanbb-bb-2026-08-27",
       "linkType": "relatedTo",
       "to": "lanbb"
-    },
-    {
-      "from": "src-lan-e-musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "first-principles"
     },
     {
       "from": "src-lan-e-musk-algorithm",

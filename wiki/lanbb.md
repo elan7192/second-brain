@@ -31,8 +31,8 @@ Human decision 2026-08-24: new repo named LanBB; do not in-place rename an exist
 
 The vault did not create this repo. Wiki is still silent on whether any semantica remote is a fork.
 
-Hunt→harden: [[hunt-harden-loop]]. Loop1–17 v1–v17. Last: PR27 merged `94ac04c` wall `ad6f669` v17. Floor held. worker_processes 1 source OOM=false. Report 0/N. No more loops this window. Procedural stays in LanBB.
+Hunt→harden: [[hunt-harden-loop]]. Current wall: PR27 merged `94ac04c` wall `ad6f669` v17. Floor held. worker_processes 1 source OOM=false. Report 0/N. No more loops this window. Procedural stays in LanBB.
 
 ## Related
 
-[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr10-loop2]] · [[src-lanbb-pr11-loop3]] · [[src-lanbb-pr13-loop4]] · [[src-lanbb-pr15-loop5]] · [[src-lanbb-pr16-loop6]] · [[src-lanbb-pr17-loop7]] · [[src-lanbb-pr18-loop8]] · [[src-lanbb-pr19-loop9]] · [[src-lanbb-pr20-loop10]] · [[src-lanbb-pr21-loop11]] · [[src-lanbb-pr22-loop12]] · [[src-lanbb-pr23-loop13]] · [[src-lanbb-pr24-loop14]] · [[src-lanbb-pr25-loop15]] · [[src-lanbb-pr26-loop16]] · [[src-lanbb-pr27-loop17]]
+[[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr27-loop17]]

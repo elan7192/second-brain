@@ -22,7 +22,7 @@ import memorylib  # noqa: E402
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
-HUBS = {"index", "log", "Home", "lint-wiki", "graph", "claims"}
+HUBS = {"index", "index-papers", "index-sources", "log", "Home", "lint-wiki", "graph", "claims"}
 SOURCE_CLAIMS_RE = re.compile(r"^## Claims kept", re.M)
 
 

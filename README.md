@@ -12,11 +12,11 @@ If you are not in Obsidian, open `output/obsidian-graph.html`.
 
 ## Agent
 
-1. Ask questions from this repo root. The agent runs `python3 tools/sb ask`.
+1. Ask questions from this repo root. The agent runs `python3 tools/sb ask` (D9). `wiki/index.md` is the Obsidian door. Paper and source catalogs are D12, not the query path.
 2. Drop a source in `raw/` and say `ingest this`.
 3. After ingest: `python3 tools/sb validate`. After retrieval changes: `python3 tools/sb eval`.
 
-Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`. Claims: `wiki/claims.csv` compile plus `wiki/data/claims.yaml`. C17.
+Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md` (pointer only, D2). Claims: `wiki/claims.csv` compile plus `wiki/data/claims.yaml`. C17.
 
 ## CLI
 

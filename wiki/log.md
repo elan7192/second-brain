@@ -11,6 +11,14 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into musk-algorithm vault pass
+
+Fetched origin/main at `4bd2ee0`. Simple unions kept. Catalog split remapped D9 → D12 so it does not collide with FTS D9. CLAUDE/D2 flag remapped C15 → C39. C37 query path and C38 ingest brief left unresolved. `first-principles.md` delete stands. Brief: [[merge-conflict-report-2026-08-28-musk]].
+
+## [2026-08-28] musk | vault pass delete then simplify
+
+lan E ordered the five-step algorithm on this repo. Questioned requirements against named owners. Deleted full-index dump, MEMORY loops 1–16, first-principles page, add-frontmatter.py, CLAUDE.md copy rule. Split catalogs into [[index-papers]] and [[index-sources]]. This merge remapped that door from D9 → D12 because main already locked D9 as FTS. Query-path fight is C37. Ingest brief fight is C38. See [[musk-algorithm]] [[musk-pass-2026-08-28]] [[merge-conflict-report-2026-08-28-musk]] [[decisions]].
+
 ## [2026-08-28] merge | origin/main into chatgpt-share ingest
 
 Fetched origin/main at `96f7138`. Simple unions kept. ChatGPT snapshot flag remapped C14 → C36 so it does not collide with eptwts C14. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-chatgpt-share]].
@@ -204,7 +212,7 @@ Chat may be fuzzy. Vault must be precise. No transcript dumps. See [[context-com
 
 ## [2026-08-27] ingest | musk algorithm
 
-lan E motto. Strict order. Best part is no part. See [[musk-algorithm]], [[first-principles]], [[src-lan-e-musk-algorithm]]. Not pushed.
+lan E motto. Strict order. Best part is no part. See [[musk-algorithm]], [[src-lan-e-musk-algorithm]]. Not pushed.
 
 ## [2026-08-27] ingest | botdirectory scan + stale-fact-detector
 

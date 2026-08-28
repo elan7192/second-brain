@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C36 must match that page.
+# Codes C1–C39 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -360,4 +360,34 @@ contradictions:
     severity: medium
     resolution: keep the GitHub wiki; do not merge or reconstruct the ZIP from the claim list
     resolution_source: concept:llm-wiki
+    page: contradictions.md
+
+  - id: contradiction:c37
+    claim_a: concept:musk-algorithm
+    claim_b: concept:retrieval
+    reason: musk short index as query path vs locked D9 sb ask
+    status: disputed
+    severity: high
+    resolution: this merge does not reopen D9; catalog split remapped to D12; human names whether short index replaces sb ask
+    resolution_source: decision:markdown-canonical-fts-disposable
+    page: contradictions.md
+
+  - id: contradiction:c38
+    claim_a: concept:musk-algorithm
+    claim_b: concept:llm-wiki
+    reason: musk deleted standing ingest brief; main ingest step 9 still writes one
+    status: disputed
+    severity: medium
+    resolution: do not add a new brief; do not delete existing briefs; wait for lan E
+    resolution_source: concept:musk-algorithm
+    page: contradictions.md
+
+  - id: contradiction:c39
+    claim_a: concept:musk-algorithm
+    claim_b: concept:verifiable-instructions
+    reason: keep AGENTS.md and CLAUDE.md identical vs D2 pointer only
+    status: resolved
+    severity: low
+    resolution: D2 wins; pointer only
+    resolution_source: decision:one-schema-two-filenames
     page: contradictions.md
