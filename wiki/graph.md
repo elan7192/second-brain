@@ -1,4 +1,5 @@
 ---
+id: meta:graph
 type: meta
 tags:
   - wiki
@@ -34,8 +35,8 @@ Taken from [[agent-operating-system]].
 
 | Island | Pages |
 | --- | --- |
-| Compile | llm-wiki, tokens-as-capital, context-graph |
-| Memory | memory-engineering, memory-ablation |
+| Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids |
+| Memory | memory-engineering, memory-ablation, portable-memory, eval-suite |
 | Verification | verifiable-instructions, self-verification, anti-slop |
 | Harness | audited-task-contract, harness-routing, entropy-gate |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |

@@ -1,0 +1,56 @@
+{
+  "ontology": "second-brain",
+  "interface": {
+    "apiName": "WikiNote",
+    "properties": [
+      "primaryKey",
+      "objectType",
+      "title",
+      "path",
+      "created",
+      "updated",
+      "tags",
+      "island",
+      "inbound",
+      "outbound",
+      "unverified",
+      "oneLiner"
+    ]
+  },
+  "objectTypes": {
+    "Concept": { "primaryKey": "slug", "source": "wiki frontmatter type=concept" },
+    "Source": { "primaryKey": "slug", "source": "wiki/sources" },
+    "Person": { "primaryKey": "slug", "source": "wiki/people" },
+    "Project": { "primaryKey": "slug", "source": "wiki frontmatter type=project" },
+    "Meta": { "primaryKey": "slug", "source": "wiki meta pages and root MEMORY/decisions" },
+    "Map": { "primaryKey": "slug", "source": "maps/" },
+    "Hunt": { "primaryKey": "slug", "source": "hunt/" },
+    "Ship": { "primaryKey": "slug", "source": "ship/ and output briefs" },
+    "Note": { "primaryKey": "slug", "source": "other markdown" },
+    "Decision": { "primaryKey": "D#", "source": "decisions.md headings" },
+    "Contradiction": { "primaryKey": "C#", "source": "wiki/contradictions.md headings" }
+  },
+  "linkTypes": {
+    "cites": { "from": ["Concept", "Project", "Meta", "Note"], "to": ["Source"] },
+    "aboutPerson": { "from": ["Concept", "Source", "Project", "Meta"], "to": ["Person"] },
+    "relatedTo": { "from": ["WikiNote"], "to": ["WikiNote"] },
+    "extractedFrom": { "from": ["Decision", "Contradiction"], "to": ["Meta"] }
+  },
+  "actionTypes": {
+    "rebuildOntology": {
+      "writesWiki": false,
+      "writesOutput": true,
+      "hostedFoundry": false
+    },
+    "lintWiki": {
+      "writesWiki": false,
+      "hostedFoundry": false
+    },
+    "querySubgraph": {
+      "writesWiki": false,
+      "hostedFoundry": false
+    }
+  },
+  "hostedAip": false,
+  "sourceOfTruth": "wiki markdown"
+}

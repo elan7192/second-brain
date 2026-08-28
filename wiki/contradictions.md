@@ -1,14 +1,16 @@
 ---
+id: meta:contradictions
 type: meta
 tags:
   - wiki
-updated: 2026-08-26
-updated: 2026-08-23
+updated: 2026-08-28
 ---
 
 # Contradictions
 
-Flag, do not silently merge.
+Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`.
+
+Unresolved items stay unresolved. Do not pick a number. See [[claims]].
 
 ## C1. Karpathy did not say stop writing code
 
@@ -108,7 +110,15 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
 
-## C15. Headlong one stream vs entropy gate
+## C15. Foundry 3D paper vs Palantir Foundry
+
+[[foundry-3d]] is arXiv 2511.20721 SuperTokens / Point-JEPA.
+
+[[palantir-aip]] Foundry is Palantir's data platform. No enrollment here.
+
+Resolution: do not mix the names. Local object table is [[vault-ontology]].
+
+## C16. Headlong one stream vs entropy gate
 
 [[headlong]] / [[src-laude-headlong]]: one thought stream, no per-user sessions, assume anything said is shared. The agent keeps thinking when idle.
 

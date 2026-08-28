@@ -1,9 +1,10 @@
 # Second brain schema
 
-This repo is a compiled LLM wiki, not a chat log and not a filing cabinet.
+This repo is a compiled LLM wiki with a disposable retrieval index.
 You maintain `wiki/`. The human curates `raw/` and asks questions.
 
-Read this file, then `wiki/index.md`, then only the pages the index points to.
+Read this file. For a question, run `python3 tools/sb ask` and read the evidence set.
+`wiki/index.md` is the catalog, not the query path.
 
 ## Layout
 
@@ -11,9 +12,12 @@ Read this file, then `wiki/index.md`, then only the pages the index points to.
 | --- | --- | --- |
 | `raw/` | human | Immutable. Read only. Never edit, move, or rename. |
 | `wiki/` | agent | Compiled pages. One topic per file. Update on every ingest. |
-| `wiki/index.md` | agent | Catalog. Read this before answering. |
+| `wiki/index.md` | agent | Catalog. Human/Obsidian door. Not the query path. |
+| `wiki/data/` | agent | Claim and contradiction registries. Canonical structured facts. |
 | `wiki/log.md` | agent | Append-only timeline. Prefix every entry with `## [YYYY-MM-DD] kind \| title`. |
+| `eval/` | agent | Retrieval and provenance gold sets. |
 | `output/` | agent | Answers and briefs built from `wiki/`, never from raw memory. |
+| `.cache/secondbrain.sqlite` | agent | Disposable FTS index. Rebuild with `python3 tools/sb rebuild-index`. |
 | `MEMORY.md` | both | Durable facts only. A line stays if deleting it would change an answer. |
 | `decisions.md` | both | Locked choices. Do not reopen without new evidence. |
 | `AGENTS.md` / `CLAUDE.md` | both | This schema. Keep them identical. |
@@ -22,15 +26,17 @@ Read this file, then `wiki/index.md`, then only the pages the index points to.
 
 ## Query
 
-1. Read `wiki/index.md`.
-2. Open the linked pages. Follow `[[wikilinks]]`.
-3. Answer from compiled pages. Cite those pages.
-4. If the wiki is silent, say so. Do not invent. Ask to ingest a source or search the web.
+1. Run `python3 tools/sb ask "<question>"`. If the index is missing, run `python3 tools/sb rebuild-index` first.
+2. Read the returned evidence pages. For why/whether questions, run `python3 tools/sb trace <id>`.
+3. Answer from those pages. Cite page slugs and claim ids.
+4. If the evidence set is empty, say so. Do not invent. Ask to ingest a source or search the web.
 5. Do not read `raw/` unless the human asked for the original, or a wiki page is missing and you are ingesting.
 6. File a useful answer back into `wiki/` or `output/` so the next session does not re-derive it.
+7. For object/link questions, read `output/ontology.json` or run `python3 tools/ontology.py`. Rebuild first if `--check` fails.
 
-Check: every claim in the answer has a wiki citation, or is marked `unverified`.
+Check: every claim in the answer has a wiki citation or a claim id, or is marked `unverified`. After ingest, `python3 tools/sb validate` exits 0. After a retrieval change, `python3 tools/sb eval` exits 0.
 If evidence is missing: stop and name the gap. Do not fill it with tone.
+If the index is missing: rebuild, then retry. If eval fails: do not keep the retrieval change.
 
 ## Ingest
 
@@ -40,13 +46,26 @@ When the human drops files in `raw/` and says ingest:
 2. Write or update a source page in `wiki/sources/`.
 3. Write or update concept and people pages the source actually changes.
 4. Link both ways with `[[wikilinks]]`.
-5. Flag contradictions on the pages and on `wiki/contradictions.md`.
+5. Flag contradictions on the pages, on `wiki/contradictions.md`, and in `wiki/data/contradictions.yaml`.
 6. Update `wiki/index.md`.
 7. Append `wiki/log.md`.
 8. Write a three-sentence brief in `output/` of what changed, what linked, and what the human should look at.
+9. If the source supports a belief, add or update a row in `wiki/data/claims.yaml`.
 
-Check: `python3 tools/lint-wiki.py` exits 0. Every new page has an inbound `[[wikilink]]`.
-If a claim cannot be tied to the raw file: leave it out.
+Check: `python3 tools/sb validate` exits 0. Every new page has an inbound `[[wikilink]]` and an `id:`.
+Then `python3 tools/rebuild-ontology.py` and `python3 tools/rebuild-ontology.py --check` exits 0.
+If a claim cannot be tied to the raw file: leave it out. New supported beliefs go in `wiki/data/claims.yaml` as well as prose.
+
+## Ontology rebuild
+
+`output/ontology-objects.csv` is a derived Palantir-style object table. Wiki markdown stays the store. No live Foundry or AIP objects.
+
+1. After ingest or a structural wiki edit, run `python3 tools/rebuild-ontology.py`.
+2. Check: `python3 tools/rebuild-ontology.py --check` exits 0.
+3. If the check fails: rebuild from wiki. Do not edit the CSV by hand. If Foundry credentials are missing: keep the local ontology. Do not create a Palantir account (D5).
+
+Check: lint-wiki 0 and rebuild-ontology --check 0.
+If the CSV and wiki disagree: wiki wins.
 
 ## Memory
 

@@ -1,0 +1,163 @@
+# Structured contradictions. Prose stays in wiki/contradictions.md.
+# Codes C1–C16 must match that page.
+
+contradictions:
+  - id: contradiction:c1
+    claim_a: claim:bober-says-stop-writing-code
+    claim_b: claim:karpathy-gist-does-not-ban-coding
+    reason: Bober marketing line vs Karpathy gist
+    status: resolved
+    severity: medium
+    resolution: treat Bober's line as marketing; keep the gist
+    resolution_source: person:andrej-karpathy
+    page: contradictions.md
+
+  - id: contradiction:c2
+    claim_a: claim:compiler-vault-layout
+    claim_b: source:src-bober-folder-workflow
+    reason: two folder skeletons
+    status: resolved
+    severity: low
+    resolution: D1 plus D7; compiler stays raw/ plus wiki/
+    resolution_source: decision:compiler-vault
+    page: contradictions.md
+
+  - id: contradiction:c3
+    claim_a: claim:entropy-prefer-64-worker-table
+    claim_b: claim:entropy-200-agent-clip-unverified
+    reason: 200-agent cinematic vs 64-worker study
+    status: resolved
+    severity: medium
+    resolution: cite the 64-worker table; mark the clip unverified
+    resolution_source: concept:entropy-gate
+    page: contradictions.md
+
+  - id: contradiction:c4
+    claim_a: concept:entropy-gate
+    claim_b: concept:audited-task-contract
+    reason: shared memory vs shared contract
+    status: resolved
+    severity: low
+    resolution: share a small audited contract; do not share transcripts
+    resolution_source: concept:audited-task-contract
+    page: contradictions.md
+
+  - id: contradiction:c5
+    claim_a: source:src-papa-couch-compiler
+    claim_b: claim:memory-line-retained-iff-changes-answer
+    reason: living profile vs adjective death
+    status: resolved
+    severity: low
+    resolution: D3; profile files may only hold facts that change answers
+    resolution_source: decision:facts-not-adjectives
+    page: contradictions.md
+
+  - id: contradiction:c6
+    claim_a: source:src-voxyz-verifiable-instructions
+    claim_b: claim:schema-rules-need-three-parts
+    reason: exact eight Voxyz blocks missing
+    status: resolved
+    severity: low
+    resolution: encode the three-part rule in AGENTS.md
+    resolution_source: concept:verifiable-instructions
+    page: contradictions.md
+
+  - id: contradiction:c7
+    claim_a: source:src-bober-folder-workflow
+    claim_b: concept:llm-wiki
+    reason: income claim 17k/month
+    status: unverified
+    severity: medium
+    resolution: do not use as evidence that the architecture works
+    resolution_source: wiki/contradictions.md
+    page: contradictions.md
+
+  - id: contradiction:c8
+    claim_a: source:src-juampi-anti-slop-rank
+    claim_b: source:src-openagentskill-anti-slop
+    reason: two anti-slop tens
+    status: resolved
+    severity: low
+    resolution: keep juampi's list as D6 writing default; do not merge
+    resolution_source: decision:anti-slop-by-default
+    page: contradictions.md
+
+  - id: contradiction:c9
+    claim_a: claim:ngc-mistral-mmlu-pro-table1-24-50
+    claim_b: claim:ngc-mistral-mmlu-pro-table3-33-67
+    reason: conflicting experimental results in the same paper
+    status: unresolved
+    severity: high
+    resolution: null
+    resolution_source: null
+    page: ngc.md
+
+  - id: contradiction:c10
+    claim_a: source:src-arxiv-2510-03744
+    claim_b: concept:hydrofusion-lmf
+    reason: HydroFusion abstract years vs section 4.1
+    status: resolved
+    severity: medium
+    resolution: keep the section 4.1 span; mark the abstract phrase as a clash
+    resolution_source: concept:hydrofusion-lmf
+    page: hydrofusion-lmf.md
+
+  - id: contradiction:c11
+    claim_a: source:src-arxiv-2511-12922
+    claim_b: concept:unitok
+    reason: UniTok 51.89% N@10 is Toys, not Tools
+    status: resolved
+    severity: medium
+    resolution: keep the table
+    resolution_source: concept:unitok
+    page: unitok.md
+
+  - id: contradiction:c12
+    claim_a: source:src-arxiv-2511-05540
+    claim_b: concept:tiwm
+    reason: TIWM Mini val14 vs full val14
+    status: resolved
+    severity: medium
+    resolution: do not quote Mini as full val14
+    resolution_source: concept:tiwm
+    page: tiwm.md
+
+  - id: contradiction:c13
+    claim_a: source:src-arxiv-2608-19514
+    claim_b: concept:fourmas
+    reason: 4MAS graphical abstract vs Table 1
+    status: resolved
+    severity: medium
+    resolution: keep Table 1; do not use the abstract art numbers
+    resolution_source: concept:fourmas
+    page: fourmas.md
+
+  - id: contradiction:c14
+    claim_a: claim:eptwts-100k-unverified
+    claim_b: concept:growth-operator
+    reason: eptwts 100k / 10 months
+    status: unverified
+    severity: medium
+    resolution: do not use as a forecast or as proof the vault works
+    resolution_source: concept:growth-operator
+    page: growth-operator.md
+
+  - id: contradiction:c15
+    claim_a: concept:foundry-3d
+    claim_b: concept:palantir-aip
+    reason: Foundry 3D paper vs Palantir Foundry
+    status: resolved
+    severity: low
+    resolution: do not mix the names; local object table is vault-ontology
+    resolution_source: concept:vault-ontology
+    page: contradictions.md
+
+  - id: contradiction:c16
+    claim_a: concept:headlong
+    claim_b: concept:entropy-gate
+    reason: Headlong one stream vs entropy-gate isolation
+    status: resolved
+    severity: medium
+    resolution: Headlong stays a trial CLI, not the wiki compiler
+    resolution_source: concept:headlong
+    page: contradictions.md

@@ -1,0 +1,280 @@
+# Canonical claims. Markdown pages stay the prose; this file is the evidence graph.
+# IDs are stable. Do not delete a claim because a filename changed.
+
+claims:
+  - id: claim:memory-line-retained-iff-changes-answer
+    subject: Memory line
+    predicate: retained_iff
+    object: deleting it changes an answer
+    confidence: high
+    sources:
+      - source:src-0xcodio-memory-ablation
+    concepts:
+      - concept:memory-ablation
+    status: supported
+    valid_from: 2026-08-22
+    observed_at: 2026-08-23
+
+  - id: claim:fts5-index-is-disposable
+    subject: SQLite FTS5
+    predicate: is
+    object: a disposable index, not a second memory
+    confidence: high
+    sources:
+      - source:src-av1dlive-portable-memory
+    concepts:
+      - concept:portable-memory
+    status: supported
+    valid_from: 2026-08-27
+    observed_at: 2026-08-27
+
+  - id: claim:git-markdown-is-source-of-truth
+    subject: Git markdown
+    predicate: is
+    object: source of truth for memory
+    confidence: high
+    sources:
+      - source:src-av1dlive-portable-memory
+    concepts:
+      - concept:portable-memory
+      - concept:file-memory
+    status: supported
+    valid_from: 2026-08-27
+    observed_at: 2026-08-27
+
+  - id: claim:do-not-clone-brain
+    subject: This vault
+    predicate: must_not
+    object: clone github.com/codejunkie99/brain or install a Brain binary
+    confidence: high
+    sources:
+      - source:src-av1dlive-portable-memory
+    concepts:
+      - concept:portable-memory
+    status: supported
+    valid_from: 2026-08-27
+    observed_at: 2026-08-27
+
+  - id: claim:raw-is-immutable
+    subject: raw/
+    predicate: is
+    object: immutable human-curated sources
+    confidence: high
+    sources:
+      - source:src-papa-couch-compiler
+    concepts:
+      - concept:llm-wiki
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:compiler-vault-layout
+    subject: Compiler vault
+    predicate: uses
+    object: immutable raw/, agent wiki/, schema in AGENTS.md
+    confidence: high
+    sources:
+      - source:src-papa-couch-compiler
+    concepts:
+      - concept:llm-wiki
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:vault-does-not-post-pay-send
+    subject: This vault
+    predicate: must_not
+    object: post, pay, or send
+    confidence: high
+    sources:
+      - source:src-avid-obsidian-agent-team
+    concepts:
+      - concept:hunt-ship-loop
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:do-not-replace-wiki-with-jsonl
+    subject: Wiki markdown
+    predicate: must_not_be_replaced_by
+    object: a second JSONL graph store
+    confidence: high
+    sources:
+      - source:src-av1dlive-loop-graph-2026-08-26
+    concepts:
+      - concept:loop-graph-engineering
+    status: supported
+    valid_from: 2026-08-27
+    observed_at: 2026-08-27
+
+  - id: claim:schema-rules-need-three-parts
+    subject: Schema rule
+    predicate: must_state
+    object: behavior, check, and failure path
+    confidence: high
+    sources:
+      - source:src-voxyz-verifiable-instructions
+    concepts:
+      - concept:verifiable-instructions
+    status: supported
+    valid_from: 2026-08-22
+    observed_at: 2026-08-23
+
+  - id: claim:flag-conflict-do-not-pick-a-side
+    subject: Disagreeing agents
+    predicate: must
+    object: flag_conflict rather than silently pick a side
+    confidence: high
+    sources:
+      - source:src-0xcodio-memory-ablation
+    concepts:
+      - concept:memory-engineering
+      - concept:entropy-gate
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:vector-db-only-when-unreadably-large
+    subject: Vector DB
+    predicate: used_only_when
+    object: there is too much to read
+    confidence: medium
+    sources:
+      - source:src-pawelhuryn-file-memory
+    concepts:
+      - concept:file-memory
+    status: supported
+    valid_from: 2026-08-27
+    observed_at: 2026-08-27
+
+  - id: claim:llm-wiki-three-layers
+    subject: LLM wiki
+    predicate: has_layers
+    object: raw sources, compiled wiki, schema
+    confidence: high
+    sources:
+      - source:src-papa-couch-compiler
+    concepts:
+      - concept:llm-wiki
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:karpathy-gist-does-not-ban-coding
+    subject: Karpathy LLM wiki gist
+    predicate: does_not
+    object: tell people to stop using AI to write code
+    confidence: high
+    sources:
+      - source:src-papa-couch-compiler
+    concepts:
+      - person:andrej-karpathy
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:bober-says-stop-writing-code
+    subject: Bober folder workflow
+    predicate: claims
+    object: Karpathy told people to stop using AI to write code
+    confidence: low
+    sources:
+      - source:src-bober-folder-workflow
+    concepts:
+      - person:andrej-karpathy
+    status: contradicted
+    valid_from: 2026-08-21
+    observed_at: 2026-08-23
+
+  - id: claim:ngc-mistral-mmlu-pro-table1-24-50
+    subject: NGC Mistral MMLU-pro Table 1
+    predicate: equals
+    object: "24.50"
+    confidence: medium
+    sources:
+      - source:src-arxiv-2510-16851
+    concepts:
+      - concept:ngc
+    status: disputed
+    valid_from: 2026-08-24
+    observed_at: 2026-08-24
+
+  - id: claim:ngc-mistral-mmlu-pro-table3-33-67
+    subject: NGC Mistral MMLU-pro Table 3 hybrid at 0.3
+    predicate: equals
+    object: "33.67"
+    confidence: medium
+    sources:
+      - source:src-arxiv-2510-16851
+    concepts:
+      - concept:ngc
+    status: disputed
+    valid_from: 2026-08-24
+    observed_at: 2026-08-24
+
+  - id: claim:entropy-prefer-64-worker-table
+    subject: Entropy-gate evidence
+    predicate: should_cite
+    object: 64 Haiku worker table
+    confidence: high
+    sources:
+      - source:src-hitu-entropy-engineering
+    concepts:
+      - concept:entropy-gate
+    status: supported
+    valid_from: 2026-08-21
+    observed_at: 2026-08-23
+
+  - id: claim:entropy-200-agent-clip-unverified
+    subject: 200-agent cinematic clip
+    predicate: is
+    object: unverified
+    confidence: high
+    sources:
+      - source:src-hitu-entropy-engineering
+    concepts:
+      - concept:entropy-gate
+    status: supported
+    valid_from: 2026-08-21
+    observed_at: 2026-08-23
+
+  - id: claim:eptwts-100k-unverified
+    subject: eptwts 100k in 10 months
+    predicate: is
+    object: unverified
+    confidence: high
+    sources:
+      - source:src-deronin-growthos-vault
+    concepts:
+      - concept:growth-operator
+    status: supported
+    valid_from: 2026-08-24
+    observed_at: 2026-08-25
+
+  - id: claim:query-compiled-pages-first
+    subject: Query
+    predicate: answers_from
+    object: compiled wiki pages, not raw dumps
+    confidence: high
+    sources:
+      - source:src-papa-couch-compiler
+    concepts:
+      - concept:tokens-as-capital
+      - concept:llm-wiki
+    status: supported
+    valid_from: 2026-08-23
+    observed_at: 2026-08-23
+
+  - id: claim:headlong-not-wiki-runtime
+    subject: Headlong
+    predicate: is_not
+    object: the wiki compiler runtime
+    confidence: high
+    sources:
+      - source:src-laude-headlong
+    concepts:
+      - concept:headlong
+      - concept:entropy-gate
+    status: supported
+    valid_from: 2026-08-26
+    observed_at: 2026-08-28

@@ -1,4 +1,5 @@
 ---
+id: concept:dmd-safety
 type: concept
 tags:
   - wiki

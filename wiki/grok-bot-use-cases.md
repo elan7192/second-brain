@@ -1,9 +1,10 @@
 ---
+id: concept:grok-bot-use-cases
 type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Grok Bot use cases
@@ -49,4 +50,4 @@ The other 20 are listed. They are not built.
 
 ## Related
 
-[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]]
+[[src-milesdeutscher-grok-bot-use-cases]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]] · [[grok-bot-pro-tips]] · [[grok-bot-quota]] · [[composio-mcp]] · [[file-memory]]

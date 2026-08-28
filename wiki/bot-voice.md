@@ -1,9 +1,10 @@
 ---
+id: concept:bot-voice
 type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Bot voice
@@ -20,6 +21,8 @@ Earlier line (fluent language, English OK) is superseded by this caveman rule.
 
 Vault page prose still follows [[anti-slop]].
 
+If bot token usage is an issue, ask the chief of staff: `anyway we can improve token usage? thoughts?` See [[src-debs-obrien-token-usage]] and [[tokens-as-capital]].
+
 ## Related
 
-[[raptor-dispatch]] · [[anti-slop]] · [[spot-check]]
+[[raptor-dispatch]] · [[anti-slop]] · [[spot-check]] · [[tokens-as-capital]] · [[src-debs-obrien-token-usage]]

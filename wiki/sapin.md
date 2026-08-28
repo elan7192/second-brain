@@ -1,4 +1,5 @@
 ---
+id: concept:sapin
 type: concept
 tags:
   - wiki

@@ -1,18 +1,23 @@
 ---
+id: meta:index
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
+Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28.
 
 ## Start
 
 - [[Home]] — door
+- [[retrieval]] — FTS evidence set
+- [[claims]] — provenance units
+- [[stable-ids]] — identity
+- [[eval-suite]] — retrieval gate
 - [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
@@ -20,13 +25,14 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 - [[GrowthOS]] — growth operator door
+- [[vault-ontology]] — local Palantir-style object table
 
 ## Projects
 
 | Page | One line |
 | --- | --- |
 | [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners. Graph: output/growthos-graph.html |
-| [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
+| [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
 
@@ -34,6 +40,10 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 
 | Page | One line |
 | --- | --- |
+| [[retrieval]] | Hybrid FTS5 over compiled pages. DB disposable |
+| [[claims]] | source → claims → concepts → decisions |
+| [[stable-ids]] | `id:` survives filename changes |
+| [[eval-suite]] | `sb eval` gate for retrieval |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |
@@ -50,12 +60,38 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
 | [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
 | [[raptor-dispatch]] | One owner per job. Report once. No empty acks |
+| [[loop-graph-engineering]] | Owner + worker + verifier + stop. One graph writer |
+| [[musk-algorithm]] | Delete before optimize. Automate last. Named person |
+| [[first-principles]] | Physics and named owners, not department folklore |
 | [[spot-check]] | Lead inspects without warning. Stay on-lane. File the lesson |
 | [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
 | [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
 | [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
+| [[grok-bot-pro-tips]] | Ben Lang 10 tips from @bot team |
+| [[grok-bot-tape]] | Show the tape. Cite or omit. Silence is valid |
+| [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
+| [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
+| [[file-memory]] | Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived |
+| [[portable-memory]] | Git truth. FTS5 disposable. Do not clone Brain |
+| [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
+| [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
+| [[hunter-follows]] | lostsec + zack0x01 as input sources. Not an exploit dump |
+| [[hunt-harden-loop]] | CASE path. Loop1–17 Juice Shop 0/116. v17 `ad6f669` PR27 |
+| [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
+| [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
+| [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
+| [[backlink-first]] | Do not answer first. Follow backlinks. Tags as weights |
+| [[views-vs-sales]] | Views ≠ sales. Chess 74k/51 vs 135k/2 |
+| [[buying-signal]] | Public "looking for alternative to" |
+| [[drafts-not-publish]] | Drafts. Taste is gate. No autopublish |
+| [[multi-source-verdict]] | >1 source. One list. Human verdict. No Whop clone |
+| [[ai-sovereignty]] | Your data, your model. Karp synthesis. Unverified without URL |
+| [[palantir-aip]] | Palantir AIP. Ontology + AIP Logic. No enrollment here |
+| [[vault-ontology]] | Derived objects/links from wiki. CSV is not a second wiki |
+| [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
+| [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
 | [[trace]] | Trajectory attribution; repair context without retraining |
 | [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
@@ -110,6 +146,46 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 | --- | --- | --- |
 | [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
 | [[src-laude-headlong]] | 2026-08-26 | Headlong launch + repo. 9883 cloc at d8f8304 |
+| [[src-palantir-aip-developers-2026-08-28]] | 2026-08-28 | AIP + Ontology docs. Hosted Foundry not used |
+| [[src-lanbb-pr27-loop17]] | 2026-08-27 | Loop17 PR27 ad6f669 v17 0/116 |
+| [[src-lanbb-pr26-loop16]] | 2026-08-27 | Loop16 PR26 75b62be v16 0/116 |
+| [[src-lanbb-pr25-loop15]] | 2026-08-27 | Loop15 PR25 1801528 v15 0/116 |
+| [[src-lanbb-pr24-loop14]] | 2026-08-27 | Loop14 PR24 4fd0b9f v14 0/116 |
+| [[src-lanbb-pr23-loop13]] | 2026-08-27 | Loop13 PR23 e8c3a57 v13 0/116 |
+| [[src-lanbb-pr22-loop12]] | 2026-08-27 | Loop12 PR22 v12-hardened 0/116 |
+| [[src-lanbb-pr21-loop11]] | 2026-08-27 | Loop11 PR21 3afb11b v11 0/116 |
+| [[src-lanbb-pr20-loop10]] | 2026-08-27 | Loop10 PR20 0042064 v10 0/116 |
+| [[src-lanbb-pr19-loop9]] | 2026-08-27 | Loop9 PR19 dee7041 v9 0/116 |
+| [[src-lanbb-pr18-loop8]] | 2026-08-27 | Loop8 PR18 v8-hardened 0/116 |
+| [[src-lanbb-pr17-loop7]] | 2026-08-27 | Loop7 PR17 7dd37e7 v7 0/116 |
+| [[src-lanbb-pr16-loop6]] | 2026-08-27 | Loop6 PR16 9795cd9 v6 0/116 |
+| [[src-lanbb-pr15-loop5]] | 2026-08-27 | Loop5 PR15 17ca40d v5-hardened 0/116 |
+| [[src-lanbb-pr13-loop4]] | 2026-08-27 | Loop4 PR13 821e998 v4-hardened 0/116 |
+| [[src-lanbb-pr11-loop3]] | 2026-08-27 | Loop3 PR11 b5bfb4d v3-hardened 0/116 |
+| [[src-lanbb-pr10-loop2]] | 2026-08-27 | Loop2 PR10 v2-hardened 0/116 |
+| [[src-lanbb-pr9-loop1]] | 2026-08-27 | Loop1 PR9 ee8da04 Juice Shop 0/116 |
+| [[src-lan-e-lanbb-bb-2026-08-27]] | 2026-08-27 | LanBB BB = bug bounty flow |
+| [[src-av1dlive-portable-memory]] | 2026-08-27 | Portable memory. Do not clone Brain |
+| [[src-ruujss-pipeline-honesty]] | 2026-08-27 | Pipeline honesty. Skip Hawkes |
+| [[src-lummox-assign-execute-verify]] | 2026-08-27 | AEV. 24h intel OFF |
+| [[src-andonlabs-vending-bench]] | 2026-08-27 | Vending-Bench eval |
+| [[src-maxdeg0-vault-2026-08-27]] | 2026-08-27 | Backlink-first markdown vault |
+| [[src-deronin-views-vs-sales-2026-08-27]] | 2026-08-27 | Views ≠ sales chess pair |
+| [[src-luismbat-buying-signal-2026-08-27]] | 2026-08-27 | Buying signal. Scout skip |
+| [[src-voxyz-drafts-2026-08-27]] | 2026-08-27 | Drafts not publish |
+| [[src-0xcarnagee-tape-2026-08-27]] | 2026-08-27 | lan E share. Tape. 11-step roster not cloned |
+| [[src-everestchris6-revenue-2026-08-26]] | 2026-08-26 | lan E share. Revenue guide. Article not dumped. Whop skip |
+| [[src-av1dlive-loop-graph-2026-08-26]] | 2026-08-26 | lan E share. Loop/graph guide. Article not dumped |
+| [[src-openai-codex-cli-compact]] | 2026-08-27 | Official /compact and /memories |
+| [[src-community-compaction]] | 2026-08-27 | Community compact notes. Unverified paths |
+| [[src-lan-e-karp-sovereignty-2026-08-27]] | 2026-08-27 | lan E paste. No primary Karp URL |
+| [[src-lan-e-musk-algorithm]] | 2026-08-27 | lan E motto. Musk Algorithm order |
+| [[src-botdirectory-picks-2026-08-27]] | 2026-08-27 | Catalog scan 304. Not scout dump |
+| [[src-coreyganim-composio]] | 2026-08-26 | lan E share. Composio hub. Not installed |
+| [[src-pawelhuryn-file-memory]] | 2026-08-27 | lan E share. Git md memory. Four kinds |
+| [[src-benln-grok-bot-pro-tips]] | 2026-08-25 | lan E share. 10 Grok Bot pro tips |
+| [[src-hxiao-headlong-share]] | 2026-08-27 | lan E share. Parked then; experiment report is [[headlong]] |
+| [[src-debs-obrien-token-usage]] | 2026-08-24 | lan E share. Ask chief of staff about token usage |
 | [[src-deronin-growthos-vault]] | 2026-08-24 | GrowthOS Obsidian vault + Grokbot memory. $100k unverified |
 | [[src-milesdeutscher-grok-bot-use-cases]] | 2026-08-19 | lan E share. 25 Grok Bot use cases |
 | [[src-chatgpt-play-2026-08-25]] | 2026-08-25 | ChatGPT play. Skill Recorder trial |
@@ -192,6 +268,9 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-26.
 
 | Page | One line |
 | --- | --- |
+| [[alex-karp]] | Palantir CEO. Sovereignty claims unverified without URL |
+| [[lostsec]] | coffinxp / @lostsec_. Hunter input source. Not a dump |
+| [[zack0x01]] | Hunter input source. Not a dump |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |

@@ -1,4 +1,5 @@
 ---
+id: concept:flow-matching-pso
 type: concept
 tags:
   - wiki

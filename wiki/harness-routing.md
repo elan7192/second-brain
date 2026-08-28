@@ -1,9 +1,10 @@
 ---
+id: concept:harness-routing
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # Harness routing
@@ -36,6 +37,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C15.
+Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
 
 [[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[headlong]]

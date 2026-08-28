@@ -1,9 +1,10 @@
 ---
+id: concept:memory-engineering
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # Memory engineering
@@ -26,7 +27,7 @@ Full-transcript replay does not scale, does not rank importance, and keeps both 
 
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]]
+[[memory-ablation]] · [[context-graph]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[retrieval]] · [[claims]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 

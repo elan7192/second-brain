@@ -1,9 +1,10 @@
 ---
+id: concept:headlong
 type: concept
 tags:
   - wiki
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # Headlong
@@ -55,7 +56,7 @@ Tests did not run. No `run-all.sh` / `test_sandbox` / `passed:` in the trajector
 
 ## Vault rule
 
-Headlong is a trial install, not the wiki runtime. One shared mind fights [[entropy-gate]] isolation and D4. See [[contradictions]] C15. The 2026-08-26 hour ended at 02:07Z. Do not restart without a new operator yes. Do not start Slack or Telegram bridges.
+Headlong is a trial install, not the wiki runtime. One shared mind fights [[entropy-gate]] isolation and D4. See [[contradictions]] C16. The 2026-08-26 hour ended at 02:07Z. Do not restart without a new operator yes. Do not start Slack or Telegram bridges.
 
 ## Related
 

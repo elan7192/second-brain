@@ -10,4 +10,4 @@ updated: 2026-08-26
 
 Installed [[headlong]] tools from `laude-institute/headlong` SHA `d8f8304`. Did not start the 24/7 mind: no Docker, no API key, D5. Linked [[src-hxiao-headlong]] and [[src-laude-headlong]].
 
-Look at [[headlong]] and C15 before proposing it as the wiki runtime.
+Look at [[headlong]] and C16 before proposing it as the wiki runtime.

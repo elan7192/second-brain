@@ -1,4 +1,5 @@
 ---
+id: meta:wiki
 type: meta
 tags:
   - wiki

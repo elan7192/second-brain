@@ -1,9 +1,10 @@
 ---
+id: source:src-hxiao-headlong
 type: source
 tags:
   - twitter
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-28
 ---
 
 # src-hxiao-headlong
@@ -24,4 +25,4 @@ X API Pay-per-use blocked `get_posts_by_id`. Body retrieved via `api.fxtwitter.c
 
 ## Pages updated
 
-[[headlong]] · [[harness-routing]]
+[[headlong]] · [[harness-routing]] · [[src-hxiao-headlong-share]]
