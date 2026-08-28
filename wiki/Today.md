@@ -1,4 +1,5 @@
 ---
+id: meta:Today
 type: meta
 tags:
   - wiki

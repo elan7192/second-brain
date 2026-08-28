@@ -1,4 +1,5 @@
 ---
+id: source:src-av1dlive-loop-graph-2026-08-26
 type: source
 tags:
   - twitter

@@ -1,4 +1,5 @@
 ---
+id: concept:mpi-init
 type: concept
 tags:
   - wiki

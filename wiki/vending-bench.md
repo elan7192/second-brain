@@ -1,4 +1,5 @@
 ---
+id: concept:vending-bench
 type: concept
 tags:
   - wiki

@@ -1,4 +1,5 @@
 ---
+id: concept:ai-sovereignty
 type: concept
 tags:
   - wiki

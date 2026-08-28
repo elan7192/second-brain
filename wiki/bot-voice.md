@@ -1,4 +1,5 @@
 ---
+id: concept:bot-voice
 type: concept
 tags:
   - wiki

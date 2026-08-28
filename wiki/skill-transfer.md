@@ -1,4 +1,5 @@
 ---
+id: concept:skill-transfer
 type: concept
 tags:
   - wiki

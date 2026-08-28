@@ -1,4 +1,5 @@
 ---
+id: source:src-deronin-views-vs-sales-2026-08-27
 type: source
 tags:
   - twitter

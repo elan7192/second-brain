@@ -1,4 +1,5 @@
 ---
+id: concept:skill-recorder
 type: concept
 tags:
   - wiki
