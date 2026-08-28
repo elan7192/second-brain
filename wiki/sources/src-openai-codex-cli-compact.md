@@ -1,4 +1,5 @@
 ---
+id: source:src-openai-codex-cli-compact
 type: source
 tags:
   - docs

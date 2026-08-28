@@ -1,4 +1,5 @@
 ---
+id: concept:clustered-moe
 type: concept
 tags:
   - wiki

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T16:52:53Z",
+  "builtAt": "2026-08-28T17:30:30Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -110,15 +110,15 @@
     "unverified": 62,
     "Hunt": 7,
     "Map": 5,
-    "Ship": 34,
-    "Concept": 95,
+    "Ship": 35,
+    "Concept": 99,
     "Project": 2,
     "Person": 6,
     "Source": 117,
-    "Decision": 8,
+    "Decision": 9,
     "Contradiction": 15,
-    "objects": 301,
-    "links": 1736
+    "objects": 307,
+    "links": 1796
   },
   "objects": [
     {
@@ -444,6 +444,20 @@
       "oneLiner": "Graph view hides catalog stars and raw files. Layout follows the five [[agent-operating-system]] layers. Color groups stay gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
     },
     {
+      "primaryKey": "D9",
+      "objectType": "Decision",
+      "title": "Markdown canonical, FTS disposable",
+      "path": "decisions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-24",
+      "tags": "decision",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Compiled markdown is the store. SQLite FTS5 is a rebuildable index. Filenames are not identity; `id:` is. Do not treat the database as memory. Do not clone Brain."
+    },
+    {
       "primaryKey": "GrowthOS",
       "objectType": "Map",
       "title": "GrowthOS",
@@ -509,7 +523,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 10,
-      "outbound": 38,
+      "outbound": 39,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -551,7 +565,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 17,
-      "outbound": 23,
+      "outbound": 26,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -836,6 +850,20 @@
       "oneLiner": "Vision: CPS anomalies as causal DAG breaks"
     },
     {
+      "primaryKey": "claims",
+      "objectType": "Concept",
+      "title": "Claims",
+      "path": "wiki/claims.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 15,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "source \u2192 claims \u2192 concepts \u2192 decisions"
+    },
+    {
       "primaryKey": "clip-pipeline",
       "objectType": "Concept",
       "title": "Clip pipeline",
@@ -914,7 +942,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
+      "inbound": 22,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
@@ -929,9 +957,9 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 48,
-      "outbound": 25,
+      "outbound": 26,
       "unverified": true,
-      "oneLiner": "Flag, do not silently merge."
+      "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`."
     },
     {
       "primaryKey": "cvsd-reg",
@@ -970,8 +998,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 11,
+      "inbound": 15,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
     },
@@ -1074,6 +1102,20 @@
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
     {
+      "primaryKey": "eval-suite",
+      "objectType": "Concept",
+      "title": "Eval suite",
+      "path": "wiki/eval-suite.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 5,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "`sb eval` gate for retrieval"
+    },
+    {
       "primaryKey": "evosyn",
       "objectType": "Concept",
       "title": "EvoSyn",
@@ -1096,10 +1138,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
-      "outbound": 11,
+      "inbound": 23,
+      "outbound": 12,
       "unverified": false,
-      "oneLiner": "Git md memory. Four kinds. Markdown + one CSV"
+      "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
     },
     {
       "primaryKey": "first-principles",
@@ -1377,7 +1419,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 9,
-      "outbound": 18,
+      "outbound": 17,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]."
     },
@@ -1488,10 +1530,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
-      "outbound": 231,
+      "inbound": 11,
+      "outbound": 235,
       "unverified": true,
-      "oneLiner": "Catalog of compiled pages. Read this before answering. Updated 2026-08-28."
+      "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
     {
       "primaryKey": "ingest-brief-2026-08-23",
@@ -1894,8 +1936,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 39,
-      "outbound": 18,
+      "inbound": 41,
+      "outbound": 20,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -1923,7 +1965,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 9,
-      "outbound": 155,
+      "outbound": 160,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -1978,10 +2020,24 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
-      "outbound": 4,
+      "inbound": 18,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "A memory line stays only if deleting it changes an answer"
+    },
+    {
+      "primaryKey": "memory-engine-2026-08-28",
+      "objectType": "Ship",
+      "title": "Memory engine 2026-08-28",
+      "path": "output/memory-engine-2026-08-28.md",
+      "created": "",
+      "updated": "",
+      "tags": "",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Added stable `id:` on knowledge objects, a disposable SQLite FTS5 index, a claim/contradiction registry, and the `sb` CLI with `validate` and `eval`. Query now goes through `python3 tools/sb ask` to a"
     },
     {
       "primaryKey": "memory-engineering",
@@ -1993,7 +2049,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 20,
-      "outbound": 12,
+      "outbound": 14,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
     },
@@ -2079,7 +2135,7 @@
       "inbound": 3,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (301 objects). Snapshot `output/ontology.json` (1736 links). Hosted AIP was not used. D5 and no "
+      "oneLiner": "Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (307 objects after merge with the FTS engine). Snapshot `output/ontology.json` (1796 links). Hos"
     },
     {
       "primaryKey": "orthoskillvla",
@@ -2157,11 +2213,11 @@
       "title": "Portable memory",
       "path": "wiki/portable-memory.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
-      "outbound": 5,
+      "inbound": 10,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Git truth. FTS5 disposable. Do not clone Brain"
     },
@@ -2292,6 +2348,20 @@
       "oneLiner": "Empty. File links here. Ingest into `raw/` before they become wiki pages."
     },
     {
+      "primaryKey": "retrieval",
+      "objectType": "Concept",
+      "title": "Retrieval",
+      "path": "wiki/retrieval.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 16,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "Hybrid FTS5 over compiled pages. DB disposable"
+    },
+    {
       "primaryKey": "rohit",
       "objectType": "Person",
       "title": "Rohit",
@@ -2342,7 +2412,7 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Sample several answers, score them, keep the winner"
@@ -4070,6 +4140,20 @@
       "oneLiner": "2026-08-22"
     },
     {
+      "primaryKey": "stable-ids",
+      "objectType": "Concept",
+      "title": "Stable IDs",
+      "path": "wiki/stable-ids.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 9,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "`id:` survives filename changes"
+    },
+    {
       "primaryKey": "stale-fact-detector",
       "objectType": "Concept",
       "title": "Stale fact detector",
@@ -4078,7 +4162,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Audit wiki claims vs named sources. raw/ immutable"
@@ -4120,7 +4204,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
+      "inbound": 21,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
@@ -4205,7 +4289,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 17,
-      "outbound": 9,
+      "outbound": 10,
       "unverified": true,
       "oneLiner": "Derived objects/links from wiki. CSV is not a second wiki"
     },
@@ -4232,7 +4316,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 14,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Behavior, check, failure path. No wishes"
@@ -4653,6 +4737,31 @@
       "to": "graph"
     },
     {
+      "from": "D9",
+      "linkType": "extractedFrom",
+      "to": "decisions"
+    },
+    {
+      "from": "D9",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "D9",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "D9",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "D9",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
+    },
+    {
       "from": "GrowthOS",
       "linkType": "cites",
       "to": "src-deronin-growthos-vault"
@@ -4995,6 +5104,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "session-migrate"
     },
     {
@@ -5110,6 +5224,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
       "to": "clip-pipeline"
     },
     {
@@ -5121,6 +5240,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "eval-suite"
     },
     {
       "from": "agent-operating-system",
@@ -5166,6 +5290,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "agent-operating-system",
@@ -5868,6 +5997,41 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "decisions"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
+    },
+    {
       "from": "clip-pipeline",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
@@ -6065,6 +6229,11 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "entropy-gate"
     },
     {
@@ -6165,6 +6334,11 @@
     {
       "from": "decisions",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
       "to": "entropy-gate"
     },
     {
@@ -6186,6 +6360,21 @@
       "from": "decisions",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
     },
     {
       "from": "decisions",
@@ -6318,6 +6507,31 @@
       "to": "self-verification"
     },
     {
+      "from": "eval-suite",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "eval-suite",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "eval-suite",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "eval-suite",
+      "linkType": "relatedTo",
+      "to": "stale-fact-detector"
+    },
+    {
+      "from": "eval-suite",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "evosyn",
       "linkType": "cites",
       "to": "src-arxiv-2510-17928"
@@ -6381,6 +6595,11 @@
       "from": "file-memory",
       "linkType": "relatedTo",
       "to": "portable-memory"
+    },
+    {
+      "from": "file-memory",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "file-memory",
@@ -6855,11 +7074,6 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
-      "to": "contradictions"
-    },
-    {
-      "from": "how-it-works",
-      "linkType": "relatedTo",
       "to": "decisions"
     },
     {
@@ -6880,11 +7094,6 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
-      "to": "index"
-    },
-    {
-      "from": "how-it-works",
-      "linkType": "relatedTo",
       "to": "llm-wiki"
     },
     {
@@ -6896,6 +7105,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "palantir-aip"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "how-it-works",
@@ -7880,6 +8094,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "clip-pipeline"
     },
     {
@@ -7951,6 +8170,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "eval-suite"
     },
     {
       "from": "index",
@@ -8195,6 +8419,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "sapin"
     },
     {
@@ -8236,6 +8465,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "spot-check"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
     },
     {
       "from": "index",
@@ -9125,6 +9359,11 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "context-graph"
     },
     {
@@ -9150,17 +9389,22 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
-      "to": "index"
-    },
-    {
-      "from": "llm-wiki",
-      "linkType": "relatedTo",
       "to": "palantir-aip"
     },
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "portable-memory"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
     },
     {
       "from": "llm-wiki",
@@ -9520,6 +9764,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "clip-pipeline"
     },
     {
@@ -9586,6 +9835,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "eval-suite"
     },
     {
       "from": "log",
@@ -9760,6 +10014,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "memory-engine-2026-08-28"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "memory-engineering"
     },
     {
@@ -9845,6 +10104,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "sapin"
     },
     {
@@ -9886,6 +10150,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "spot-check"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
     },
     {
       "from": "log",
@@ -10070,6 +10339,11 @@
     {
       "from": "memory-ablation",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "memory-ablation",
+      "linkType": "relatedTo",
       "to": "context-compaction"
     },
     {
@@ -10081,6 +10355,26 @@
       "from": "memory-ablation",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "memory-engine-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "memory-engine-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "eval-suite"
+    },
+    {
+      "from": "memory-engine-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "memory-engine-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
     },
     {
       "from": "memory-engineering",
@@ -10115,6 +10409,11 @@
     {
       "from": "memory-engineering",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
       "to": "context-compaction"
     },
     {
@@ -10136,6 +10435,11 @@
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "memory-engineering",
@@ -10380,6 +10684,11 @@
     {
       "from": "portable-memory",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "portable-memory",
+      "linkType": "relatedTo",
       "to": "file-memory"
     },
     {
@@ -10395,7 +10704,17 @@
     {
       "from": "portable-memory",
       "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "portable-memory",
+      "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "portable-memory",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
     },
     {
       "from": "portal",
@@ -10531,6 +10850,51 @@
       "from": "raptor-dispatch",
       "linkType": "relatedTo",
       "to": "spot-check"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "eval-suite"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "stable-ids"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "rohit",
@@ -12518,6 +12882,21 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "stable-ids",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "stable-ids",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "stable-ids",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
       "from": "stale-fact-detector",
       "linkType": "cites",
       "to": "src-botdirectory-picks-2026-08-27"
@@ -12761,6 +13140,11 @@
       "from": "vault-ontology",
       "linkType": "relatedTo",
       "to": "palantir-aip"
+    },
+    {
+      "from": "vault-ontology",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "vending-bench",

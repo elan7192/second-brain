@@ -8,7 +8,7 @@ updated: 2026-08-28
 
 # Ontology rebuild 2026-08-28
 
-Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (301 objects). Snapshot `output/ontology.json` (1736 links). Hosted AIP was not used. D5 and no enrollment.
+Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (307 objects after merge with the FTS engine). Snapshot `output/ontology.json` (1796 links). Hosted AIP was not used. D5 and no enrollment.
 
 Linked: [[palantir-aip]] · [[vault-ontology]] · [[src-palantir-aip-developers-2026-08-28]] · [[ai-sovereignty]] · [[llm-wiki]] · [[file-memory]] · [[context-graph]]
 

@@ -1,6 +1,6 @@
 # Second brain
 
-Compiled personal wiki. Open this repo as an Obsidian vault. `Home.md` is the door.
+Compiled personal wiki with a disposable FTS5 index. Open this repo as an Obsidian vault. `Home.md` is the door.
 
 ## Obsidian
 
@@ -12,17 +12,30 @@ If you are not in Obsidian, open `output/obsidian-graph.html`.
 
 ## Agent
 
-1. Ask questions from this repo root in Cursor, Claude Code, or Codex.
+1. Ask questions from this repo root. The agent runs `python3 tools/sb ask`.
 2. Drop a source in `raw/` and say `ingest this`.
+3. After ingest: `python3 tools/sb validate`. After retrieval changes: `python3 tools/sb eval`.
 
 Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
 
-Local ontology (derived from wiki, not hosted Palantir AIP):
+## CLI
 
 ```
+python3 tools/sb rebuild-index --write-ids
+python3 tools/sb search "agent memory"
+python3 tools/sb ask "What did we decide about retrieval?"
+python3 tools/sb trace claim:fts5-index-is-disposable
+python3 tools/sb contradictions
+python3 tools/sb stale
+python3 tools/sb orphans
+python3 tools/sb validate
+python3 tools/sb eval
 python3 tools/rebuild-ontology.py
 python3 tools/ontology.py counts
 ```
+
+Markdown is canonical. `.cache/secondbrain.sqlite` is disposable.
+`output/ontology-objects.csv` is a derived object table, not hosted Palantir AIP.
 
 ## Layout
 
@@ -30,6 +43,9 @@ python3 tools/ontology.py counts
 Home.md       vault door
 raw/          immutable sources
 wiki/         compiled pages
+wiki/data/    claims and contradictions
+eval/         retrieval gold sets
+tools/sb      memory-engine CLI
 maps/         Jarvis, Hooks, TELOS
 hunt/         scout indexes
 ship/         drafts, digests, angles, builds

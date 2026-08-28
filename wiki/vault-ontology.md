@@ -1,4 +1,5 @@
 ---
+id: concept:vault-ontology
 type: concept
 tags:
   - wiki
@@ -26,9 +27,11 @@ Source: [[src-palantir-aip-developers-2026-08-28]]. Product: [[palantir-aip]]. S
 
 Wiki markdown stays the store. See [[llm-wiki]] and [[loop-graph-engineering]]. Do not replace pages with JSONL.
 
+Query still goes through `python3 tools/sb ask`. See [[retrieval]] and D9. `ontology.py` is for object sets and links.
+
 The object CSV is the one derived table. See [[file-memory]]. Do not edit `output/ontology-objects.csv` by hand.
 
-First compile on 2026-08-28: 301 objects, 1736 links. Re-run rebuild after ingest. Do not quote a stale count.
+First compile on 2026-08-28: 301 objects, 1736 links. After merge with the FTS engine: 307 objects, 1796 links. Re-run rebuild after ingest. Do not quote a stale count.
 
 ## Commands
 
@@ -52,4 +55,4 @@ Unverified pages keep a boolean on the object. Do not promote those rows to fact
 
 ## Related
 
-[[palantir-aip]] · [[llm-wiki]] · [[file-memory]] · [[context-graph]] · [[loop-graph-engineering]] · [[ai-sovereignty]] · [[how-it-works]] · [[src-palantir-aip-developers-2026-08-28]]
+[[palantir-aip]] · [[llm-wiki]] · [[file-memory]] · [[context-graph]] · [[loop-graph-engineering]] · [[ai-sovereignty]] · [[how-it-works]] · [[retrieval]] · [[src-palantir-aip-developers-2026-08-28]]

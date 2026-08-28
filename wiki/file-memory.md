@@ -1,4 +1,5 @@
 ---
+id: concept:file-memory
 type: concept
 tags:
   - wiki
@@ -21,11 +22,11 @@ Four kinds. Three live in files:
 
 Vector DB only when there is too much to read. Linked markdown is already a graph.
 
-Setup: markdown + one CSV. No vector DB.
+Setup: markdown + one disposable index. This vault uses SQLite FTS5, not a CSV. No vector DB. See [[retrieval]] and D9.
 
-The one derived CSV is `output/ontology-objects.csv`. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]].
+`output/ontology-objects.csv` is a derived object table, not the memory index. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]].
 
-This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]] and [[memory-engineering]].
+This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]], [[memory-engineering]], and [[retrieval]].
 
 Do not add a second memory writer. Catalog `persistent-bot-memory` is the same job. No PAT daily-push. See [[botdirectory-scan]].
 
@@ -35,4 +36,4 @@ Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[vault-ontology]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[retrieval]] · [[vault-ontology]]

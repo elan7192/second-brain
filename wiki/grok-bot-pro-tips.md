@@ -1,4 +1,5 @@
 ---
+id: concept:grok-bot-pro-tips
 type: concept
 tags:
   - wiki

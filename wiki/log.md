@@ -1,4 +1,5 @@
 ---
+id: meta:log
 type: meta
 tags:
   - wiki
@@ -13,6 +14,10 @@ Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 ## [2026-08-28] rebuild | Palantir-style ontology from wiki
 
 Local object table `output/ontology-objects.csv`. Hosted AIP not used. D5. See [[vault-ontology]] [[palantir-aip]] [[src-palantir-aip-developers-2026-08-28]].
+
+## [2026-08-28] engine | stable ids, FTS5, claims, sb validate, sb eval
+
+Memory engine pass. Markdown stays canonical. `.cache/secondbrain.sqlite` is disposable. Claim registry in `wiki/data/claims.yaml`. CLI: `python3 tools/sb`. D9 locked. See [[retrieval]] [[claims]] [[stable-ids]] [[eval-suite]] [[memory-engine-2026-08-28]].
 
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 

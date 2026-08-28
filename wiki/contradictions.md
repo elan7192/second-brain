@@ -1,4 +1,5 @@
 ---
+id: meta:contradictions
 type: meta
 tags:
   - wiki
@@ -8,7 +9,9 @@ updated: 2026-08-23
 
 # Contradictions
 
-Flag, do not silently merge.
+Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`.
+
+Unresolved items stay unresolved. Do not pick a number. See [[claims]].
 
 ## C1. Karpathy did not say stop writing code
 

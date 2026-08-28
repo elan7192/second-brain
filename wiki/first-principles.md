@@ -1,4 +1,5 @@
 ---
+id: concept:first-principles
 type: concept
 tags:
   - wiki

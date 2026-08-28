@@ -1,4 +1,5 @@
 ---
+id: concept:palantir-aip
 type: concept
 tags:
   - wiki

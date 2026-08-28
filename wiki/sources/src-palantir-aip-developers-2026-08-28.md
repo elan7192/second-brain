@@ -1,4 +1,5 @@
 ---
+id: source:src-palantir-aip-developers-2026-08-28
 type: source
 tags:
   - palantir

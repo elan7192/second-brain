@@ -1,4 +1,5 @@
 ---
+id: source:src-maxdeg0-vault-2026-08-27
 type: source
 tags:
   - twitter

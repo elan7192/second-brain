@@ -1,4 +1,5 @@
 ---
+id: meta:index
 type: meta
 tags:
   - wiki
@@ -8,11 +9,15 @@ updated: 2026-08-28
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-28.
+Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28.
 
 ## Start
 
 - [[Home]] — door
+- [[retrieval]] — FTS evidence set
+- [[claims]] — provenance units
+- [[stable-ids]] — identity
+- [[eval-suite]] — retrieval gate
 - [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
@@ -35,6 +40,10 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-28.
 
 | Page | One line |
 | --- | --- |
+| [[retrieval]] | Hybrid FTS5 over compiled pages. DB disposable |
+| [[claims]] | source → claims → concepts → decisions |
+| [[stable-ids]] | `id:` survives filename changes |
+| [[eval-suite]] | `sb eval` gate for retrieval |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |
@@ -63,7 +72,7 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-28.
 | [[grok-bot-tape]] | Show the tape. Cite or omit. Silence is valid |
 | [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
 | [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
-| [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
+| [[file-memory]] | Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived |
 | [[portable-memory]] | Git truth. FTS5 disposable. Do not clone Brain |
 | [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
 | [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |

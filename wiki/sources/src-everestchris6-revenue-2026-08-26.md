@@ -1,4 +1,5 @@
 ---
+id: source:src-everestchris6-revenue-2026-08-26
 type: source
 tags:
   - twitter
