@@ -89,6 +89,7 @@ flowchart TB
   subgraph harness[Harness]
     audited-task-contract
     can-boluk
+    company-foundry
     daily-tool-replace
     entropy-gate
     grok-bot
@@ -107,6 +108,7 @@ flowchart TB
   end
   subgraph hunt-ship[Hunt / ship]
     GrowthOS
+    avid
     daily-tool-replace-vault-2026-08-27
     disclosures
     graph-clusters-2026-08-24
@@ -138,6 +140,7 @@ flowchart TB
     ingest-brief-2026-08-24-five-x
     ingest-brief-2026-08-24-three-x
     ingest-brief-2026-08-24-trace
+    ingest-brief-2026-08-25-avid-company-foundry
     ingest-brief-2026-08-25-exm7777-grok-bot
     ingest-brief-2026-08-25-growthos
     ingest-brief-2026-08-25-play-methods
@@ -152,6 +155,7 @@ flowchart TB
     memory-engine-2026-08-28
     memory-system-brief-2026-08-27
     merge-conflict-report-2026-08-28
+    merge-conflict-report-2026-08-28-avid-foundry
     merge-conflict-report-2026-08-28-daily-tool
     merge-conflict-report-2026-08-28-daily-tool-2
     merge-conflict-report-2026-08-28-grok-bot
@@ -161,6 +165,7 @@ flowchart TB
     query-entropy-gate
     query-skills-and-slop
     ship
+    src-avid-company-foundry
     src-avid-obsidian-agent-team
     src-deronin-growthos-vault
   end
@@ -182,6 +187,7 @@ flowchart TB
   MEMORY --> grok-bot-use-cases
   MEMORY --> headlong
   MEMORY --> growth-operator
+  MEMORY --> company-foundry
   MEMORY --> grok-bot
   MEMORY --> entropy-gate
   MEMORY --> src-exm7777-grok-bot-money
@@ -195,8 +201,10 @@ flowchart TB
   ship --> ingest-brief-2026-08-23-skill-pack-list
   ship --> ingest-brief-2026-08-23-retrieval-second-brain
   ship --> graph-clusters-2026-08-24
+  ship --> ingest-brief-2026-08-25-avid-company-foundry
   ship --> ontology-rebuild-brief-2026-08-28
   ship --> merge-conflict-report-2026-08-28
+  ship --> merge-conflict-report-2026-08-28-avid-foundry
   disclosures --> hunt-ship-loop
   GrowthOS --> growth-operator
   GrowthOS --> src-deronin-growthos-vault
@@ -227,6 +235,10 @@ flowchart TB
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
   ingest-brief-2026-08-27-botdirectory --> stale-fact-detector
+  merge-conflict-report-2026-08-28-avid-foundry --> company-foundry
+  merge-conflict-report-2026-08-28-avid-foundry --> src-avid-company-foundry
+  merge-conflict-report-2026-08-28-avid-foundry --> avid
+  merge-conflict-report-2026-08-28-avid-foundry --> MEMORY
   ingest-brief-2026-08-26-headlong --> headlong
   ingest-brief-2026-08-26-headlong --> src-hxiao-headlong
   ingest-brief-2026-08-26-headlong --> src-laude-headlong
@@ -291,6 +303,12 @@ flowchart TB
   merge-conflict-report-2026-08-28 --> memory-engineering
   merge-conflict-report-2026-08-28 --> llm-wiki
   merge-conflict-report-2026-08-28-daily-tool-2 --> daily-tool-replace-vault-2026-08-27
+  ingest-brief-2026-08-25-avid-company-foundry --> company-foundry
+  ingest-brief-2026-08-25-avid-company-foundry --> hunt-ship-loop
+  ingest-brief-2026-08-25-avid-company-foundry --> harness-routing
+  ingest-brief-2026-08-25-avid-company-foundry --> audited-task-contract
+  ingest-brief-2026-08-25-avid-company-foundry --> entropy-gate
+  ingest-brief-2026-08-25-avid-company-foundry --> memory-engineering
   merge-conflict-report-entropy-quiz-2026-08-28 --> graph-clusters-2026-08-24
   merge-conflict-report-entropy-quiz-2026-08-28 --> query-entropy-gate
   merge-conflict-report-entropy-quiz-2026-08-28 --> query-skills-and-slop
@@ -333,6 +351,8 @@ flowchart TB
   anti-slop --> daily-tool-replace
   anti-slop --> src-can1357-daily-tool-replace-2026-08-27
   audited-task-contract --> src-rohit-harness-router
+  audited-task-contract --> src-avid-company-foundry
+  audited-task-contract --> company-foundry
   audited-task-contract --> harness-routing
   audited-task-contract --> entropy-gate
   audited-task-contract --> memory-engineering
@@ -343,6 +363,8 @@ flowchart TB
   context-graph --> memory-engineering
   context-graph --> hunt-ship-loop
   entropy-gate --> src-hitu-entropy-engineering
+  entropy-gate --> src-avid-company-foundry
+  entropy-gate --> company-foundry
   entropy-gate --> src-exm7777-grok-bot-money
   entropy-gate --> grok-bot
   entropy-gate --> headlong
@@ -362,6 +384,8 @@ flowchart TB
   grok-bot-use-cases --> src-milesdeutscher-grok-bot-use-cases
   grok-bot-use-cases --> llm-wiki
   grok-bot-use-cases --> growth-operator
+  grok-bot-use-cases --> src-avid-company-foundry
+  grok-bot-use-cases --> company-foundry
   grok-bot-use-cases --> src-exm7777-grok-bot-money
   grok-bot-use-cases --> grok-bot
   grok-bot-use-cases --> grok-bot-money
@@ -381,6 +405,8 @@ flowchart TB
   growth-operator --> hunt-ship-loop
   harness-routing --> src-rohit-harness-router
   harness-routing --> audited-task-contract
+  harness-routing --> src-avid-company-foundry
+  harness-routing --> company-foundry
   harness-routing --> entropy-gate
   harness-routing --> rohit
   harness-routing --> grok-bot
@@ -389,12 +415,15 @@ flowchart TB
   harness-routing --> headlong
   harness-routing --> src-can1357-daily-tool-replace-2026-08-27
   hunt-ship-loop --> src-avid-obsidian-agent-team
+  hunt-ship-loop --> src-avid-company-foundry
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
   hunt-ship-loop --> growth-operator
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
+  hunt-ship-loop --> company-foundry
+  hunt-ship-loop --> avid
   hunt-ship-loop --> grok-bot
   hunt-ship-loop --> src-exm7777-grok-bot-money
   hunt-ship-loop --> grok-bot-money
@@ -402,6 +431,7 @@ flowchart TB
   llm-wiki --> stale-fact-detector
   llm-wiki --> memory-system
   llm-wiki --> tokens-as-capital
+  llm-wiki --> context-graph
   llm-wiki --> andrej-karpathy
   llm-wiki --> src-papa-couch-compiler
   llm-wiki --> src-bober-folder-workflow
@@ -412,6 +442,7 @@ flowchart TB
   llm-wiki --> portable-memory
   llm-wiki --> claims
   llm-wiki --> untrusted-ingest
+  llm-wiki --> company-foundry
   llm-wiki --> src-exm7777-grok-bot-money
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
@@ -430,6 +461,8 @@ flowchart TB
   memory-engineering --> memory-system
   memory-engineering --> epistemic-labels
   memory-engineering --> claims
+  memory-engineering --> company-foundry
+  memory-engineering --> src-avid-company-foundry
   memory-engineering --> src-exm7777-grok-bot-money
   memory-engineering --> grok-bot
   memory-engineering --> headlong
@@ -484,6 +517,15 @@ flowchart TB
   epistemic-labels --> provenance
   epistemic-labels --> verifiable-instructions
   epistemic-labels --> anti-slop
+  company-foundry --> src-avid-company-foundry
+  company-foundry --> hunt-ship-loop
+  company-foundry --> harness-routing
+  company-foundry --> entropy-gate
+  company-foundry --> audited-task-contract
+  company-foundry --> memory-engineering
+  company-foundry --> llm-wiki
+  company-foundry --> avid
+  company-foundry --> grok-bot
   daily-tool-replace --> src-can1357-daily-tool-replace-2026-08-27
   daily-tool-replace --> can-boluk
   daily-tool-replace --> anti-slop
@@ -518,6 +560,7 @@ flowchart TB
   grok-bot --> entropy-gate
   grok-bot --> hunt-ship-loop
   grok-bot --> harness-routing
+  grok-bot --> company-foundry
   claim-protocol --> src-lan-e-claim-protocol-2026-08-27
   claim-protocol --> claims
   claim-protocol --> portable-memory
@@ -537,6 +580,10 @@ flowchart TB
   rohit --> audited-task-contract
   rohit --> harness-routing
   rohit --> src-rohit-harness-router
+  avid --> src-avid-obsidian-agent-team
+  avid --> src-avid-company-foundry
+  avid --> company-foundry
+  avid --> hunt-ship-loop
   can-boluk --> src-can1357-daily-tool-replace-2026-08-27
   can-boluk --> daily-tool-replace
   can-boluk --> anti-slop
@@ -546,6 +593,8 @@ flowchart TB
   src-0xcodio-memory-ablation --> verifiable-instructions
   src-avid-obsidian-agent-team --> hunt-ship-loop
   src-avid-obsidian-agent-team --> context-graph
+  src-avid-obsidian-agent-team --> avid
+  src-avid-obsidian-agent-team --> src-avid-company-foundry
   src-bober-folder-workflow --> llm-wiki
   src-bober-folder-workflow --> andrej-karpathy
   src-deronin-growthos-vault --> growth-operator
@@ -572,6 +621,14 @@ flowchart TB
   src-lan-e-claim-protocol-2026-08-27 --> memory-engineering
   src-lan-e-claim-protocol-2026-08-27 --> context-graph
   src-lan-e-claim-protocol-2026-08-27 --> stale-fact-detector
+  src-avid-company-foundry --> entropy-gate
+  src-avid-company-foundry --> company-foundry
+  src-avid-company-foundry --> hunt-ship-loop
+  src-avid-company-foundry --> harness-routing
+  src-avid-company-foundry --> audited-task-contract
+  src-avid-company-foundry --> memory-engineering
+  src-avid-company-foundry --> grok-bot-use-cases
+  src-avid-company-foundry --> avid
   src-exm7777-grok-bot-money --> grok-bot
   src-exm7777-grok-bot-money --> grok-bot-money
   src-exm7777-grok-bot-money --> grok-bot-use-cases

@@ -18,7 +18,7 @@ Ten X posts plus GitHub skill catalogs compiled into a wiki you can browse as a 
 - Gold: [[wiki]]
 - Teal: [[maps]]
 - Blue: [[hunt]] / [[twitter]] / [[disclosures]]
-- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]], [[hurley]], [[mahipal-jangra]]
+- Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]], [[hurley]], [[mahipal-jangra]], [[avid]]
 - Coral: [[ship]]
 
 Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.

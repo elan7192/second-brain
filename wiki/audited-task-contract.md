@@ -46,6 +46,8 @@ Rule: the planner proposes. The executor changes a candidate. The auditor verifi
 
 Generated repo summaries in a 2026 AGENTS.md study did not significantly raise resolve rate and raised cost. Native sessions are not a standard. Unverified memory can poison later agents.
 
+[[src-avid-company-foundry]]: the folder is not the product. The contracts inside it are. Workers write artifacts, not private summaries. A chat answer is not a company artifact. See [[company-foundry]].
+
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[company-foundry]]

@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C30 must match that page.
+# Codes C1–C31 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -148,7 +148,7 @@ contradictions:
     reason: Foundry 3D paper vs Palantir Foundry
     status: resolved
     severity: low
-    resolution: do not mix the names; local object table is vault-ontology
+    resolution: do not mix the names; Company Foundry is a third use; local object table is vault-ontology
     resolution_source: concept:vault-ontology
     page: contradictions.md
 
@@ -300,4 +300,14 @@ contradictions:
     severity: low
     resolution: different systems; do not cite Grok Bot screens as entropy-gate isolation
     resolution_source: concept:grok-bot
+    page: contradictions.md
+
+  - id: contradiction:c31
+    claim_a: source:src-avid-company-foundry
+    claim_b: concept:company-foundry
+    reason: Avid Jarvis clip vs Company Foundry article
+    status: resolved
+    severity: low
+    resolution: compile the article and README; mark the clip unverified; D5 still holds
+    resolution_source: concept:company-foundry
     page: contradictions.md

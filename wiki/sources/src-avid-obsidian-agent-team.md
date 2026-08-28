@@ -4,7 +4,7 @@ type: source
 tags:
   - twitter
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-25
 ---
 
 # src-avid-obsidian-agent-team
@@ -22,3 +22,7 @@ Folder colors and IST clocks parked.
 ## Pages updated
 
 [[hunt-ship-loop]] · [[context-graph]]
+
+## Related
+
+[[avid]] · [[src-avid-company-foundry]]

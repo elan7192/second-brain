@@ -101,6 +101,10 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Partner names and dollar figures in `growth/` are DEMO unless a note says otherwise. Do not treat them as live deals.
 - Do not outreach, create live Whop products, or move money from this vault. D5 still holds.
 
+## Avid clip
+
+- Avid 2026-08-24 tweet 2091848572417495138 sells Grok bot + Obsidian Jarvis as a one-person company. Compile [[company-foundry]] from the quoted article and README. Do not treat the clip as a live company or a D5 override. See C31.
+
 ## Grok Bot
 
 - Grok Bot: one bot per workflow. Bot memory is not the source of truth. The vault is. See [[grok-bot]].

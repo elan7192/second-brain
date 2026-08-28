@@ -77,6 +77,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
 | [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
 | [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
+| [[company-foundry]] | Compiler for organisational method. Clip vs article: C31 |
 | [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
 | [[grok-bot]] | One bot per job. Vault over memory. Shared computer is not an entropy gate |
 | [[grok-bot-money]] | Machina ten revenue lanes. Higgsfield UGC sponsored. Cash unverified |
@@ -161,6 +162,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-avid-company-foundry]] | 2026-08-24 | Grok+Obsidian Jarvis clip. Quoted Company Foundry article. C31 |
 | [[src-can1357-daily-tool-replace-2026-08-27]] | 2026-08-27 | Can: hour-tops daily-tool replace. Hour unverified |
 | [[src-lan-e-claim-protocol-2026-08-27]] | 2026-08-27 | Claim protocol. Git truth. FTS5 disposable. Embeddings parked |
 | [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
@@ -294,6 +296,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | One line |
 | --- | --- |
+| [[avid]] | @Av1dlive. Hunt/Ship vault tweet plus Company Foundry clip. C31 |
 | [[alex-karp]] | Palantir CEO. Sovereignty claims unverified without URL |
 | [[lostsec]] | coffinxp / @lostsec_. Hunter input source. Not a dump |
 | [[zack0x01]] | Hunter input source. Not a dump |

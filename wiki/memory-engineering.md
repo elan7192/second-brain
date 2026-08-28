@@ -37,7 +37,7 @@ Retrieve in this vault is `python3 tools/sb ask` (D9). It is not the paste's BM2
 
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]] · [[retrieval]] · [[retrieval-second-brain]]
+[[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]] · [[retrieval]] · [[retrieval-second-brain]] · [[company-foundry]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 
@@ -46,6 +46,8 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-agentmemoryl-aml-s2]] points at the Agent Memory Leaderboard. Season 2 numbers `unverified`.
 
 [[src-chatchat-living-brain]] claims a Living Brain. Product-only. `unverified`.
+
+[[src-avid-company-foundry]]: sessions end, companies continue. Do not treat generated summaries as customer fact. Record whether a decision came from evidence, inference, or a guess. See [[company-foundry]].
 
 [[src-exm7777-grok-bot-money]]: Grok Bot memory holds preferences and summaries and is not a substitute for an authoritative source. The vault is. See [[grok-bot]].
 

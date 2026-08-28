@@ -11,6 +11,10 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into avid-company-foundry ingest
+
+Fetched origin/main. Simple unions kept. Avid clip flag remapped C15 → C31 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-avid-foundry]].
+
 ## [2026-08-28] merge | origin/main into grok-bot-money ingest
 
 Fetched origin/main. Simple unions kept. Grok Bot screens flag remapped C15 → C30 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-grok-bot]].
@@ -208,6 +212,10 @@ hxiao quote of Andy Konwinski. Tools installed `./install.sh --symlinks` at SHA 
 ## [2026-08-25] ingest | exm7777 grok bot money
 
 Machina @EXM7777. One bot per workflow. Vault over bot memory. Ten revenue lanes. Higgsfield UGC sponsored. C30. See [[grok-bot]], [[grok-bot-money]], [[src-exm7777-grok-bot-money]].
+
+## [2026-08-25] ingest | Avid Company Foundry clip
+
+Tweet 2091848572417495138. Compile the quoted Company Foundry article and README. Grok+Obsidian Jarvis clip `unverified`. C31. Video unread. See [[company-foundry]] and [[src-avid-company-foundry]].
 
 ## [2026-08-25] implement | GrowthOS orb materials
 

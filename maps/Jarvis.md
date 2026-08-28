@@ -3,7 +3,7 @@ type: map
 tags:
   - map
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-25
 ---
 
 # Jarvis
@@ -24,6 +24,8 @@ Answer from [[wiki]] pages. File useful answers to [[ship]]. Run `python3 tools/
 
 If the task is GrowthOS, load [[GrowthOS]] then [[growth-core]] instead of compiling from chat.
 
+This map is the vault load order. It is not Avid's Grok bot + Obsidian product pitch. That clip is `unverified`. See [[src-avid-company-foundry]] and C31.
+
 ## Related
 
-[[how-it-works]] · [[agent-operating-system]] · [[TELOS]]
+[[how-it-works]] · [[agent-operating-system]] · [[TELOS]] · [[company-foundry]]

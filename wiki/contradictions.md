@@ -115,6 +115,8 @@ Resolution: `unverified`. Do not use as a forecast or as proof the vault works. 
 
 [[palantir-aip]] Foundry is Palantir's data platform. No enrollment here.
 
+[[company-foundry]] is Avid's organisational-method compiler. Third use of the word.
+
 Resolution: do not mix the names. Local object table is [[vault-ontology]].
 
 ## C16. Headlong one stream vs entropy gate
@@ -268,3 +270,13 @@ Remap: was C15 then C26 on the daily-tool-replace branch. Main C26 is file first
 Resolution: different systems. Do not cite Grok Bot screens as entropy-gate isolation. See [[grok-bot]].
 
 Remap: was C15 on the grok-bot-money branch. Main C15 is Foundry 3D vs Palantir Foundry.
+
+## C31. Avid Jarvis clip vs Company Foundry article
+
+[[src-avid-company-foundry]] tweet 2091848572417495138: Grok bot + Obsidian Jarvis that starts a business, ships software, and goes viral.
+
+Quoted article and https://github.com/codejunkie99/company-foundry: Company Foundry with Kimi K3 as first worker and DeepSeek Harness as first native target. No AI CEO. First milestone is one reviewable loop. Grokbot is a packaged worker. The company layer owns memory, permissions, budget, and handoff.
+
+Resolution: compile the article and README. Mark the clip claims `unverified`. Do not treat Grok + Obsidian as the company compiler. D5 still holds. See [[company-foundry]].
+
+Remap: was C15 on the company-foundry branch. Main C15 is Foundry 3D vs Palantir Foundry.
