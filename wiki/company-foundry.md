@@ -1,9 +1,10 @@
 ---
+id: concept:company-foundry
 type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-28
 ---
 
 # Company Foundry
@@ -52,6 +53,8 @@ Customer evidence to a product decision brief, with sources, named assumptions, 
 
 Repo https://github.com/codejunkie99/company-foundry exists. README lists DeepSeek Harness presets plus Codex and Claude Code adapters. A running foundry is `unverified`. `npm run validate` was not run here.
 
+Do not mix this name with [[foundry-3d]] or Palantir Foundry. See C15. Clip vs article is C31.
+
 ## Related
 
-[[src-avid-company-foundry]] · [[hunt-ship-loop]] · [[harness-routing]] · [[audited-task-contract]] · [[entropy-gate]] · [[memory-engineering]] · [[llm-wiki]] · [[avid]]
+[[src-avid-company-foundry]] · [[hunt-ship-loop]] · [[harness-routing]] · [[audited-task-contract]] · [[entropy-gate]] · [[memory-engineering]] · [[llm-wiki]] · [[avid]] · [[grok-bot]] · [[foundry-3d]] · [[palantir-aip]]

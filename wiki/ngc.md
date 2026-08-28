@@ -1,4 +1,5 @@
 ---
+id: concept:ngc
 type: concept
 tags:
   - wiki

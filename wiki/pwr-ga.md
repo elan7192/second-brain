@@ -1,4 +1,5 @@
 ---
+id: concept:pwr-ga
 type: concept
 tags:
   - wiki

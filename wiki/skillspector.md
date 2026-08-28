@@ -1,4 +1,5 @@
 ---
+id: concept:skillspector
 type: concept
 tags:
   - wiki

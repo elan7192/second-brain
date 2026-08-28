@@ -1,9 +1,10 @@
 ---
+id: concept:entropy-gate
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-28
 ---
 
 # Entropy gate
@@ -41,6 +42,10 @@ Unanimous ungated agreement was wrong in 41% of 50 runs.
 
 [[src-avid-company-foundry]] research swarm: collectors share a schema and write evidence rows. The synthesizer reads the ledger, not collector chats. Authority on that packet is observe and prepare only. See [[company-foundry]].
 
+[[src-exm7777-grok-bot-money]] isolates Grok Bot lanes on one shared computer. Separate screens are not isolated worktrees and not separate security boundaries. Do not cite that product as this gate. See [[contradictions]] C30 and [[grok-bot]].
+
 ## Related
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[company-foundry]]
+[[headlong]] is one mind, one stream, many people. Flag, do not merge: C16. Vault keeps isolation. Headlong stays a trial CLI, not the compiler runtime.
+
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[claim-protocol]] · [[headlong]] · [[grok-bot]] · [[company-foundry]]

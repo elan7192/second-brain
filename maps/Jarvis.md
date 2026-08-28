@@ -20,11 +20,11 @@ Operating map for the agent. Teal in the Obsidian graph.
 
 ## Then
 
-Answer from [[wiki]] pages. File useful answers to [[ship]].
+Answer from [[wiki]] pages. File useful answers to [[ship]]. Run `python3 tools/sb ask` first. See [[retrieval]] and [[claim-protocol]].
 
 If the task is GrowthOS, load [[GrowthOS]] then [[growth-core]] instead of compiling from chat.
 
-This map is the vault load order. It is not Avid's Grok bot + Obsidian product pitch. That clip is `unverified`. See [[src-avid-company-foundry]] and C15.
+This map is the vault load order. It is not Avid's Grok bot + Obsidian product pitch. That clip is `unverified`. See [[src-avid-company-foundry]] and C31.
 
 ## Related
 
