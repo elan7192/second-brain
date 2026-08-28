@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 # Foundry 3D
 
@@ -20,4 +20,4 @@ Supplement Tables 9–15 `unverified`.
 
 ## Related
 
-[[arxiv-tierlist]] · [[lance]]
+[[arxiv-tierlist]] · [[lance]] · [[palantir-aip]]

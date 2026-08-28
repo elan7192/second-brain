@@ -16,3 +16,4 @@ Output from compiled pages. Human yes before anything leaves the vault.
 - [[builds]]
 - [[ingest-brief-2026-08-23]]
 - [[graph-clusters-2026-08-24]]
+- [[ontology-rebuild-brief-2026-08-28]]

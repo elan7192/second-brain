@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # File memory
@@ -22,7 +22,9 @@ Four kinds. Three live in files:
 
 Vector DB only when there is too much to read. Linked markdown is already a graph.
 
-Setup: markdown + one disposable index. This vault uses SQLite FTS5, not a CSV. No vector DB.
+Setup: markdown + one disposable index. This vault uses SQLite FTS5, not a CSV. No vector DB. See [[retrieval]] and D9.
+
+`output/ontology-objects.csv` is a derived object table, not the memory index. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]].
 
 This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]], [[memory-engineering]], and [[retrieval]].
 
@@ -34,4 +36,4 @@ Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[retrieval]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[retrieval]] · [[vault-ontology]]

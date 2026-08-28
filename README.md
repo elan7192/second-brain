@@ -30,9 +30,12 @@ python3 tools/sb stale
 python3 tools/sb orphans
 python3 tools/sb validate
 python3 tools/sb eval
+python3 tools/rebuild-ontology.py
+python3 tools/ontology.py counts
 ```
 
 Markdown is canonical. `.cache/secondbrain.sqlite` is disposable.
+`output/ontology-objects.csv` is a derived object table, not hosted Palantir AIP.
 
 ## Layout
 

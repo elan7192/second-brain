@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Memory
@@ -19,6 +19,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - `decisions.md` is locked. Do not reopen a decision without new evidence.
 - The vault does not post, pay, send, or deploy.
 - Graph view and `tools/render-obsidian-graph.py` cluster by the five [[agent-operating-system]] layers. Do not place all wiki notes on one ring around Home. Filter excludes `raw/`, `templates/`, `index`, `log`, and `twitter`.
+- Local Palantir-style ontology is derived from wiki by `tools/rebuild-ontology.py`. `output/ontology-objects.csv` is not a second knowledge graph. Do not create live Palantir Foundry or AIP objects. No enrollment in this vault. See [[vault-ontology]] and [[palantir-aip]].
 - Wiki agent must stay current on compiled `wiki/` pages. Other agents send improvement facts here; ingest them. Do not invent gaps.
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.
@@ -36,7 +37,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Botdirectory 2026-08-27: 304 listings. Prefer skill on an existing role. Do not add a second memory writer or PAT daily-push. Catalog scan, not scout dump. See [[botdirectory-scan]].
 - lan E shared Miles Deutscher 25 Grok Bot use cases (2026-08-19). See [[grok-bot-use-cases]]. Not a scout harvest.
 - Composio MCP catalog id 32661537 exists in Grok Bot. Not installed. Writes need lan E approval. See [[composio-mcp]].
-- Prefer git markdown memory over a lab built-in store. Four kinds: semantic md+index, working context, episodic log, procedural skills. Vector DB only when too much to read. Setup: markdown + one CSV. See [[file-memory]].
+- Prefer git markdown memory over a lab built-in store. Four kinds: semantic md+index, working context, episodic log, procedural skills. Vector DB only when too much to read. Setup: markdown + disposable FTS5. `output/ontology-objects.csv` is derived objects, not the memory index. See [[file-memory]] and [[vault-ontology]].
 - Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Recurring fill belongs on dedicated bot `burn`, not the lead chat. See [[grok-bot-quota]].
 - Routines: hourly or a few times a day. Never every 5 minutes. Recurring work goes to a fresh bot. See [[grok-bot-pro-tips]].
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.

@@ -31,7 +31,7 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[retrieval]] · [[claims]] · [[eval-suite]]
+[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

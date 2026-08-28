@@ -25,6 +25,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 - [[GrowthOS]] — growth operator door
+- [[vault-ontology]] — local Palantir-style object table
 
 ## Projects
 
@@ -71,7 +72,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[grok-bot-tape]] | Show the tape. Cite or omit. Silence is valid |
 | [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
 | [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
-| [[file-memory]] | Git md memory. Four kinds. Markdown + one CSV |
+| [[file-memory]] | Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived |
 | [[portable-memory]] | Git truth. FTS5 disposable. Do not clone Brain |
 | [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
 | [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
@@ -86,6 +87,8 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[drafts-not-publish]] | Drafts. Taste is gate. No autopublish |
 | [[multi-source-verdict]] | >1 source. One list. Human verdict. No Whop clone |
 | [[ai-sovereignty]] | Your data, your model. Karp synthesis. Unverified without URL |
+| [[palantir-aip]] | Palantir AIP. Ontology + AIP Logic. No enrollment here |
+| [[vault-ontology]] | Derived objects/links from wiki. CSV is not a second wiki |
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
@@ -140,6 +143,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-palantir-aip-developers-2026-08-28]] | 2026-08-28 | AIP + Ontology docs. Hosted Foundry not used |
 | [[src-lanbb-pr27-loop17]] | 2026-08-27 | Loop17 PR27 ad6f669 v17 0/116 |
 | [[src-lanbb-pr26-loop16]] | 2026-08-27 | Loop16 PR26 75b62be v16 0/116 |
 | [[src-lanbb-pr25-loop15]] | 2026-08-27 | Loop15 PR25 1801528 v15 0/116 |

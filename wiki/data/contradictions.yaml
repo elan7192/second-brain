@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C14 must match that page.
+# Codes C1–C15 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -141,3 +141,13 @@ contradictions:
     resolution: do not use as a forecast or as proof the vault works
     resolution_source: concept:growth-operator
     page: growth-operator.md
+
+  - id: contradiction:c15
+    claim_a: concept:foundry-3d
+    claim_b: concept:palantir-aip
+    reason: Foundry 3D paper vs Palantir Foundry
+    status: resolved
+    severity: low
+    resolution: do not mix the names; local object table is vault-ontology
+    resolution_source: concept:vault-ontology
+    page: contradictions.md

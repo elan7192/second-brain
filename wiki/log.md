@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-28] rebuild | Palantir-style ontology from wiki
+
+Local object table `output/ontology-objects.csv`. Hosted AIP not used. D5. See [[vault-ontology]] [[palantir-aip]] [[src-palantir-aip-developers-2026-08-28]].
 
 ## [2026-08-28] engine | stable ids, FTS5, claims, sb validate, sb eval
 

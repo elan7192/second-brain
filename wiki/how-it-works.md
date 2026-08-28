@@ -20,10 +20,12 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 5. Periodic lint: `python3 tools/sb validate`, `python3 tools/sb contradictions`, `python3 tools/sb stale`.
 6. Methods learned while doing work go into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
 7. GrowthOS operator notes live in `growth/`. Load [[growth-core]]. Do not mix DEMO partner figures into [[MEMORY]]. See [[growth-operator]].
+8. After ingest, rebuild the local ontology: `python3 tools/rebuild-ontology.py`. See [[vault-ontology]] and [[palantir-aip]].
 
 ## What the model sees
 
 Prefer compiled pages over raw dumps. Query them through [[retrieval]]. That is [[tokens-as-capital]] and [[context-graph]].
+For object sets and links, query [[vault-ontology]] instead of walking every file.
 
 [[MEMORY]] stays small. That is [[memory-ablation]].
 Locked choices live in [[decisions]].
