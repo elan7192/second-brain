@@ -1,9 +1,10 @@
 ---
+id: source:src-chatgpt-t-6a8cc267
 type: source
 tags:
   - chatgpt
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # src-chatgpt-t-6a8cc267
@@ -36,7 +37,7 @@ Anonymous file endpoints returned 401/403. Preview: unavailable. Drive search fo
 
 The share exists and says a snapshot was not pushed. Counts, skill list, test scores, and lint zeros are `unverified`. The ZIP is missing. Do not treat those 100 papers or 9 skills as known. Do not reconstruct the snapshot from the bullet list.
 
-Fits [[entropy-gate]] (unverified peer claim from another harness) and [[llm-wiki]] (this vault's compiled state is the one on GitHub). Conflicts with harvest-stop on [[arxiv-tierlist]]. See [[contradictions]] C14.
+Fits [[entropy-gate]] (unverified peer claim from another harness) and [[llm-wiki]] (this vault's compiled state is the one on GitHub). Conflicts with harvest-stop on [[arxiv-tierlist]]. See [[contradictions]] C36.
 
 ## Pages updated
 

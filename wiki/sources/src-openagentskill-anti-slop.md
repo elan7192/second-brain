@@ -1,4 +1,5 @@
 ---
+id: source:src-openagentskill-anti-slop
 type: source
 tags:
   - twitter
