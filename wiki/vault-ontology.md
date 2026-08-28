@@ -28,6 +28,8 @@ Wiki markdown stays the store. See [[llm-wiki]] and [[loop-graph-engineering]]. 
 
 The object CSV is the one derived table. See [[file-memory]]. Do not edit `output/ontology-objects.csv` by hand.
 
+First compile on 2026-08-28: 301 objects, 1736 links. Re-run rebuild after ingest. Do not quote a stale count.
+
 ## Commands
 
 ```

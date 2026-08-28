@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T16:51:55Z",
+  "builtAt": "2026-08-28T16:52:53Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -2079,7 +2079,7 @@
       "inbound": 3,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv`, snapshot `output/ontology.json`. Hosted AIP was not used. D5 and no enrollment."
+      "oneLiner": "Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (301 objects). Snapshot `output/ontology.json` (1736 links). Hosted AIP was not used. D5 and no "
     },
     {
       "primaryKey": "orthoskillvla",

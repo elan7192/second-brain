@@ -138,7 +138,7 @@ multi-source-verdict,Concept,Multi-source verdict,wiki/multi-source-verdict.md,2
 musk-algorithm,Concept,Musk Algorithm,wiki/musk-algorithm.md,2026-08-27,2026-08-27,wiki,concepts,11,3,false,Delete before optimize. Automate last. Named person
 ngc,Concept,NGC,wiki/ngc.md,2026-08-24,2026-08-24,wiki,concepts,8,3,false,Low-rank neuronal states. Table 1 vs 3 clash
 nmc-trace-complexity,Concept,NMC trace complexity,wiki/nmc-trace-complexity.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,Aimone: NMC energy via sparse spike traces
-ontology-rebuild-brief-2026-08-28,Meta,Ontology rebuild 2026-08-28,output/ontology-rebuild-brief-2026-08-28.md,2026-08-28,2026-08-28,wiki,meta,3,8,false,"Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv`, snapshot `output/ontology.json`. Hosted AIP was not used. D5 and no enrollment."
+ontology-rebuild-brief-2026-08-28,Meta,Ontology rebuild 2026-08-28,output/ontology-rebuild-brief-2026-08-28.md,2026-08-28,2026-08-28,wiki,meta,3,8,false,Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (301 objects). Snapshot `output/ontology.json` (1736 links). Hosted AIP was not used. D5 and no 
 orthoskillvla,Concept,OrthoSkillVLA,wiki/orthoskillvla.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,Continual VLA PEFT. SR 83.50
 palantir-aip,Concept,Palantir AIP,wiki/palantir-aip.md,2026-08-28,2026-08-28,wiki,concepts,14,8,false,Palantir AIP. Ontology + AIP Logic. No enrollment here
 palrs,Concept,PaLRS,wiki/palrs.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Residual steering from 100 pairs. α-sensitive
