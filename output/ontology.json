@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T18:14:01Z",
+  "builtAt": "2026-08-28T18:34:17Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 13,
-    "unverified": 81,
-    "Hunt": 7,
+    "unverified": 82,
+    "Hunt": 8,
     "Map": 5,
-    "Ship": 43,
-    "Concept": 109,
+    "Ship": 50,
+    "Concept": 111,
     "Project": 2,
     "Person": 9,
-    "Source": 125,
-    "Decision": 9,
-    "Contradiction": 26,
-    "objects": 348,
-    "links": 2285
+    "Source": 127,
+    "Decision": 11,
+    "Contradiction": 29,
+    "objects": 365,
+    "links": 2429
   },
   "objects": [
     {
@@ -376,6 +376,48 @@
     {
       "primaryKey": "C26",
       "objectType": "Contradiction",
+      "title": "File first vs code first",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Resolution: keep file-first for this vault (D1, D7). The paper describes observed public-agent PRs, not this compiler's ingest loop. Do not treat code-first as a schema change."
+    },
+    {
+      "primaryKey": "C27",
+      "objectType": "Contradiction",
+      "title": "Prose checks vs observed validation",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/lint-wiki.py`, `python3 tools/sb validate`) because reading `AGENTS.md` is n"
+    },
+    {
+      "primaryKey": "C28",
+      "objectType": "Contradiction",
+      "title": "Documented disclosure API vs live catalog",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Fetched 2026-08-24: both paths returned 404. The live catalog is `data/catalog.js`."
+    },
+    {
+      "primaryKey": "C29",
+      "objectType": "Contradiction",
       "title": "Writing slop vs software slop",
       "path": "wiki/contradictions.md",
       "created": "",
@@ -498,6 +540,34 @@
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Use the Karpathy LLM-wiki layout: immutable `raw/`, agent-owned `wiki/`, schema in `AGENTS.md`."
+    },
+    {
+      "primaryKey": "D10",
+      "objectType": "Decision",
+      "title": "Instruction files are the control surface",
+      "path": "decisions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "decision",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/lint-wi"
+    },
+    {
+      "primaryKey": "D11",
+      "objectType": "Decision",
+      "title": "Bibliographic catalog only",
+      "path": "decisions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "decision",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "The Disclosure Index is compiled as stats, schema, and canonical URLs. Do not copy report bodies into `wiki/` or `output/`. Do not write exploit steps from those records."
     },
     {
       "primaryKey": "D2",
@@ -634,8 +704,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 6,
-      "outbound": 31,
+      "inbound": 7,
+      "outbound": 37,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -648,8 +718,8 @@
       "updated": "2026-08-23",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 2,
-      "outbound": 10,
+      "inbound": 3,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Trend to lock. From [[src-avid-obsidian-agent-team]]."
     },
@@ -676,8 +746,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 6,
-      "outbound": 52,
+      "inbound": 7,
+      "outbound": 54,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -704,10 +774,24 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 3,
-      "outbound": 8,
+      "inbound": 4,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "2026-08-28"
+    },
+    {
+      "primaryKey": "agent-facing-docs",
+      "objectType": "Concept",
+      "title": "Agent-facing docs",
+      "path": "wiki/agent-facing-docs.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 20,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Agents read instruction files and working notes, not API refs"
     },
     {
       "primaryKey": "agent-operating-system",
@@ -718,8 +802,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 23,
-      "outbound": 35,
+      "inbound": 25,
+      "outbound": 36,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -802,7 +886,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
+      "inbound": 28,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Default writing constraints"
@@ -858,7 +942,7 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
+      "inbound": 26,
       "outbound": 5,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
@@ -1124,8 +1208,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 30,
-      "outbound": 15,
+      "inbound": 35,
+      "outbound": 17,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
     },
@@ -1138,8 +1222,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 81,
-      "outbound": 43,
+      "inbound": 92,
+      "outbound": 48,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1194,7 +1278,7 @@
       "updated": "2026-08-27",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "Question: room to optimize this project with [[daily-tool-replace]]?"
@@ -1222,8 +1306,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
-      "outbound": 15,
+      "inbound": 16,
+      "outbound": 18,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
     },
@@ -1247,13 +1331,41 @@
       "title": "Digests",
       "path": "ship/digests.md",
       "created": "2026-08-23",
-      "updated": "2026-08-27",
+      "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 25,
+      "outbound": 29,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
+    },
+    {
+      "primaryKey": "disclosure-index",
+      "objectType": "Concept",
+      "title": "Disclosure Index",
+      "path": "wiki/disclosure-index.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 10,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "11,338 public disclosure records, compiled 2026-08-24"
+    },
+    {
+      "primaryKey": "disclosures",
+      "objectType": "Hunt",
+      "title": "Disclosure hunt",
+      "path": "hunt/disclosures.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "hunt",
+      "island": "hunt-ship",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Scout index for the public Disclosure Index. Blue in the Obsidian graph."
     },
     {
       "primaryKey": "dmd-safety",
@@ -1320,7 +1432,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
+      "inbound": 21,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
@@ -1488,7 +1600,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 1,
+      "inbound": 2,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite."
@@ -1670,8 +1782,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 21,
+      "inbound": 16,
+      "outbound": 23,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s"
     },
@@ -1681,11 +1793,11 @@
       "title": "Hunt",
       "path": "hunt.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-24",
       "tags": "hunt",
       "island": "hunt-ship",
       "inbound": 5,
-      "outbound": 7,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]"
     },
@@ -1712,8 +1824,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
-      "outbound": 11,
+      "inbound": 29,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "File first. Scouts stay quiet. Human final yes"
     },
@@ -1796,8 +1908,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
-      "outbound": 256,
+      "inbound": 16,
+      "outbound": 260,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -1870,6 +1982,20 @@
       "outbound": 5,
       "unverified": false,
       "oneLiner": "What changed: the pasted list and SOP thesis are now [[skill-as-sop]]. Five GitHub packs were checked against live READMEs. Stale counts landed on C24. No pack was vendored."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-24",
+      "path": "output/ingest-brief-2026-08-24.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
     },
     {
       "primaryKey": "ingest-brief-2026-08-24-arxiv-405856",
@@ -2038,6 +2164,20 @@
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled BATCH09 into [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], and [[orthoskillvla]]."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-disclosure-index",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Disclosure Index \u00b7 2026-08-24",
+      "path": "output/ingest-brief-2026-08-24-disclosure-index.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "The `#api` page documents a REST catalog. The live data is `data/catalog.js`."
     },
     {
       "primaryKey": "ingest-brief-2026-08-24-five-x",
@@ -2258,8 +2398,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 55,
-      "outbound": 27,
+      "inbound": 60,
+      "outbound": 29,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2286,8 +2426,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 7,
-      "outbound": 190,
+      "inbound": 10,
+      "outbound": 201,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2356,7 +2496,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
+      "inbound": 23,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "A memory line stays only if deleting it changes an answer"
@@ -2384,7 +2524,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 29,
       "outbound": 23,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
@@ -2444,6 +2584,48 @@
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `c5714e8` (skill-library sources; C20\u2013C25), then merged into `cursor/can1357-daily-tool-replace-186d`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-daily-tool-2",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 daily-tool-replace vs main (2)",
+      "path": "output/merge-conflict-report-2026-08-28-daily-tool-2.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 1,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `a0e5609` (agent-facing docs / Disclosure Index), then merged into `cursor/can1357-daily-tool-replace-186d`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 agent-facing-docs vs main",
+      "path": "output/merge-conflict-report-agent-facing-2026-08-28.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 4,
+      "outbound": 16,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `c9172cf`, then merged into `cursor/agent-facing-docs-8473`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-entropy-quiz-2026-08-28",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 entropy-gate quiz vs main",
+      "path": "output/merge-conflict-report-entropy-quiz-2026-08-28.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `c5714e8`, then merged into `cursor/entropy-gate-quiz-b17d`."
     },
     {
       "primaryKey": "mpi-init",
@@ -2698,6 +2880,34 @@
       "oneLiner": "Pascal-weighted GA. TSP gain is tiny"
     },
     {
+      "primaryKey": "query-entropy-gate",
+      "objectType": "Ship",
+      "title": "Query \u00b7 What is the entropy piece about?",
+      "path": "output/query-entropy-gate.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 4,
+      "unverified": true,
+      "oneLiner": "Human quiz, 2026-08-24. Answer compiled from wiki, not from `raw/`."
+    },
+    {
+      "primaryKey": "query-skills-and-slop",
+      "objectType": "Ship",
+      "title": "Query \u00b7 Skills, forgetting, anti-slop",
+      "path": "output/query-skills-and-slop.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 15,
+      "unverified": false,
+      "oneLiner": "Human asked three things on 2026-08-24. Answer compiled from wiki, not from `raw/`."
+    },
+    {
       "primaryKey": "quota-router",
       "objectType": "Concept",
       "title": "Quota router",
@@ -2832,8 +3042,8 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 6,
+      "inbound": 16,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Sample several answers, score them, keep the winner"
     },
@@ -2860,7 +3070,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 12,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
@@ -3944,6 +4154,20 @@
       "oneLiner": "2026-08-26"
     },
     {
+      "primaryKey": "src-dair-agent-friendly-docs",
+      "objectType": "Source",
+      "title": "src-dair-agent-friendly-docs",
+      "path": "wiki/sources/src-dair-agent-friendly-docs.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 13,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "2026-08-23"
+    },
+    {
       "primaryKey": "src-debs-obrien-token-usage",
       "objectType": "Source",
       "title": "src-debs-obrien-token-usage",
@@ -3986,6 +4210,20 @@
       "oneLiner": "2026-08-27"
     },
     {
+      "primaryKey": "src-disclosure-index",
+      "objectType": "Source",
+      "title": "src-disclosure-index",
+      "path": "wiki/sources/src-disclosure-index.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "hunt",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "2026-08-23"
+    },
+    {
       "primaryKey": "src-everestchris6-revenue-2026-08-26",
       "objectType": "Source",
       "title": "src-everestchris6-revenue-2026-08-26",
@@ -4022,7 +4260,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 3,
       "unverified": true,
       "oneLiner": "2026-08-21"
@@ -4092,7 +4330,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "2026-08-21"
@@ -4554,7 +4792,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "2026-08-21"
@@ -4694,7 +4932,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "2026-08-22"
@@ -4764,8 +5002,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 32,
-      "outbound": 15,
+      "inbound": 37,
+      "outbound": 17,
       "unverified": true,
       "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
     },
@@ -4789,11 +5027,11 @@
       "title": "Twitter hunt",
       "path": "hunt/twitter.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-24",
       "tags": "hunt,twitter",
       "island": "hunt-ship",
-      "inbound": 3,
-      "outbound": 11,
+      "inbound": 4,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
     },
@@ -4890,8 +5128,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
-      "outbound": 6,
+      "inbound": 27,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Behavior, check, failure path. No wishes"
     },
@@ -5288,7 +5526,7 @@
     {
       "from": "C26",
       "linkType": "cites",
-      "to": "src-can1357-daily-tool-replace-2026-08-27"
+      "to": "src-dair-agent-friendly-docs"
     },
     {
       "from": "C26",
@@ -5298,10 +5536,55 @@
     {
       "from": "C26",
       "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "C27",
+      "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "C27",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C27",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "C27",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "C28",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "C28",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C29",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "C29",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C29",
+      "linkType": "relatedTo",
       "to": "anti-slop"
     },
     {
-      "from": "C26",
+      "from": "C29",
       "linkType": "relatedTo",
       "to": "daily-tool-replace"
     },
@@ -5409,6 +5692,36 @@
       "from": "D1",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "D10",
+      "linkType": "extractedFrom",
+      "to": "decisions"
+    },
+    {
+      "from": "D10",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "D10",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "D11",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "D11",
+      "linkType": "extractedFrom",
+      "to": "decisions"
+    },
+    {
+      "from": "D11",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "D2",
@@ -5583,6 +5896,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
@@ -5599,6 +5917,16 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "disclosures"
     },
     {
       "from": "Home",
@@ -5638,6 +5966,16 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-disclosure-index"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong"
     },
     {
@@ -5654,6 +5992,11 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
       "from": "Home",
@@ -5694,6 +6037,11 @@
       "from": "Hooks",
       "linkType": "cites",
       "to": "src-avid-obsidian-agent-team"
+    },
+    {
+      "from": "Hooks",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "Hooks",
@@ -5818,6 +6166,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
@@ -5884,6 +6237,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "MEMORY",
@@ -6088,12 +6446,22 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
       "from": "Today",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "Today",
@@ -6118,12 +6486,57 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-agent-facing-2026-08-28"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "retrieval-second-brain"
     },
     {
       "from": "Today",
       "linkType": "relatedTo",
       "to": "vault-ontology"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "agent-operating-system",
@@ -6154,6 +6567,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "agent-operating-system",
@@ -7258,12 +7676,22 @@
     {
       "from": "context-graph",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
     },
     {
       "from": "context-graph",
       "linkType": "cites",
       "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "context-graph",
@@ -7373,7 +7801,17 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-deronin-growthos-vault"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
     },
     {
       "from": "contradictions",
@@ -7433,6 +7871,11 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "anti-slop"
     },
     {
@@ -7488,6 +7931,11 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "hydrofusion-lmf"
     },
     {
@@ -7539,6 +7987,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "vault-ontology"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "curated-claims",
@@ -7712,6 +8165,16 @@
     },
     {
       "from": "decisions",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "decisions",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
@@ -7729,6 +8192,11 @@
       "from": "decisions",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "decisions",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "decisions",
@@ -7823,6 +8291,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-arxiv-405856"
     },
     {
@@ -7883,6 +8356,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-disclosure-index"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-five-x"
     },
     {
@@ -7914,6 +8392,36 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-daily-tool-2"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-agent-facing-2026-08-28"
+    },
+    {
+      "from": "disclosure-index",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "disclosure-index",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "disclosures",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "disclosures",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
     },
     {
       "from": "dmd-safety",
@@ -8708,6 +9216,11 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
       "to": "audited-task-contract"
     },
     {
@@ -8729,6 +9242,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "decisions"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "how-it-works",
@@ -8789,6 +9307,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "hunt",
+      "linkType": "relatedTo",
+      "to": "disclosures"
     },
     {
       "from": "hunt",
@@ -8948,12 +9471,22 @@
     {
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
       "to": "clip-pipeline"
     },
     {
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "context-graph"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
+      "to": "contradictions"
     },
     {
       "from": "hunt-ship-loop",
@@ -9453,6 +9986,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
     },
     {
@@ -9464,6 +10002,11 @@
       "from": "index",
       "linkType": "cites",
       "to": "src-deronin-views-vs-sales-2026-08-27"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
     },
     {
       "from": "index",
@@ -9738,6 +10281,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
@@ -9889,6 +10437,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "dics"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "index",
@@ -10446,6 +10999,46 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "ingest-brief-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "ingest-brief-2026-08-24-arxiv-405856",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
@@ -10774,6 +11367,21 @@
       "from": "ingest-brief-2026-08-24-batch09",
       "linkType": "relatedTo",
       "to": "vgi-bench"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-disclosure-index",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-disclosure-index",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-disclosure-index",
+      "linkType": "relatedTo",
+      "to": "disclosures"
     },
     {
       "from": "ingest-brief-2026-08-24-five-x",
@@ -11208,6 +11816,11 @@
     {
       "from": "llm-wiki",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "cites",
       "to": "src-mrgreenieybt3-llm-wiki"
     },
     {
@@ -11224,6 +11837,11 @@
       "from": "llm-wiki",
       "linkType": "cites",
       "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "llm-wiki",
@@ -11463,12 +12081,22 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
     },
     {
       "from": "log",
       "linkType": "cites",
       "to": "src-deronin-growthos-vault"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-disclosure-index"
     },
     {
       "from": "log",
@@ -11633,6 +12261,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
@@ -11788,6 +12421,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "disclosure-index"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "dmd-safety"
     },
     {
@@ -11908,6 +12546,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "hunt"
     },
     {
@@ -12013,6 +12656,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "loop-graph-engineering"
     },
     {
@@ -12054,6 +12702,21 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-daily-tool-2"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-agent-facing-2026-08-28"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-entropy-quiz-2026-08-28"
     },
     {
       "from": "log",
@@ -12124,6 +12787,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "pwr-ga"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "query-entropy-gate"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "query-skills-and-slop"
     },
     {
       "from": "log",
@@ -12866,6 +13539,111 @@
       "to": "ship"
     },
     {
+      "from": "merge-conflict-report-2026-08-28-daily-tool-2",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "Hooks"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "Today"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-agent-facing-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "merge-conflict-report-entropy-quiz-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "graph-clusters-2026-08-24"
+    },
+    {
+      "from": "merge-conflict-report-entropy-quiz-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-entropy-quiz-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "query-entropy-gate"
+    },
+    {
+      "from": "merge-conflict-report-entropy-quiz-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "query-skills-and-slop"
+    },
+    {
       "from": "mpi-init",
       "linkType": "cites",
       "to": "src-arxiv-2512-00341"
@@ -13231,6 +14009,101 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "query-entropy-gate",
+      "linkType": "cites",
+      "to": "src-hitu-entropy-engineering"
+    },
+    {
+      "from": "query-entropy-gate",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "query-entropy-gate",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "query-entropy-gate",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "cites",
+      "to": "src-juampi-anti-slop-rank"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "cites",
+      "to": "src-papa-couch-compiler"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "query-skills-and-slop",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "quota-router",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
@@ -13468,7 +14341,17 @@
     {
       "from": "self-verification",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "cites",
       "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "self-verification",
@@ -14966,6 +15849,46 @@
       "to": "grok-bot-use-cases"
     },
     {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-dair-agent-friendly-docs",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "src-debs-obrien-token-usage",
       "linkType": "relatedTo",
       "to": "bot-voice"
@@ -14994,6 +15917,16 @@
       "from": "src-deronin-views-vs-sales-2026-08-27",
       "linkType": "relatedTo",
       "to": "views-vs-sales"
+    },
+    {
+      "from": "src-disclosure-index",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-disclosure-index",
+      "linkType": "relatedTo",
+      "to": "disclosure-index"
     },
     {
       "from": "src-everestchris6-revenue-2026-08-26",
@@ -15868,6 +16801,11 @@
     {
       "from": "tokens-as-capital",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
     },
     {
@@ -15894,6 +16832,11 @@
       "from": "tokens-as-capital",
       "linkType": "cites",
       "to": "src-skill-pack-list"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "tokens-as-capital",
@@ -15974,6 +16917,11 @@
       "from": "twitter",
       "linkType": "cites",
       "to": "src-bober-folder-workflow"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
     },
     {
       "from": "twitter",
@@ -16168,7 +17116,17 @@
     {
       "from": "verifiable-instructions",
       "linkType": "cites",
+      "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
     },
     {
       "from": "verifiable-instructions",

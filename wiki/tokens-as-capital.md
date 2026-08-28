@@ -20,6 +20,7 @@ Treat a token as an investment, not a per-query bill.
 3. Fold web search into entity pages. Do not let it vanish in chat.
 4. Build `output/` from `wiki/`, not from a raw dump.
 5. If live bot token usage is an issue, ask the chief of staff: `anyway we can improve token usage? thoughts?` See [[src-debs-obrien-token-usage]] and [[bot-voice]].
+6. Compile instruction files and working notes. [[src-dair-agent-friendly-docs]] found those artefacts take most of an agent's documentation attention. API references take 1.3%. See [[agent-facing-docs]].
 
 [[src-johnsjawn-skill-library]] makes the same bet as write-back: discover a research skill instead of rebuilding it. The "50 times" figure is author-stated, unverified. See [[skill-library]].
 
@@ -31,6 +32,6 @@ Treat a token as an investment, not a per-query bill.
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]] · [[agent-facing-docs]]
 
 [[trace]] paper: one-pass attribution is 16x fewer LLM calls than iterative per-node. Tweet 4.2x token cut is `unverified`.

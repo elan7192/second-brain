@@ -32,8 +32,12 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 
 [[src-mukul975-cybersecurity-skills]] describes the same split as a load order: scan all skill frontmatters, then load a few full workflows. Token numbers there are author-stated. This vault applies the split by compiling into [[skill-library]], not by installing that pack.
 
+## What agents actually open
+
+[[src-dair-agent-friendly-docs]] measured the subgraph coding agents retrieve: instruction files and working notes, not API references. Give later agents `AGENTS.md` plus the wiki pages this decision needs. Do not fill the window with classical docs. See [[agent-facing-docs]].
+
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]] · [[retrieval-second-brain]] · [[claim-protocol]] · [[hunt-ship-loop]] · [[trace]] · [[vault-ontology]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]] · [[retrieval-second-brain]] · [[claim-protocol]] · [[hunt-ship-loop]] · [[trace]] · [[vault-ontology]] · [[agent-facing-docs]]
 
 [[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair. · [[loop-graph-engineering]]

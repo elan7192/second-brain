@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C26 must match that page.
+# Codes C1–C29 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -253,6 +253,36 @@ contradictions:
     page: contradictions.md
 
   - id: contradiction:c26
+    claim_a: concept:hunt-ship-loop
+    claim_b: source:src-dair-agent-friendly-docs
+    reason: vault file-first vs observed agentic PRs touching code first
+    status: resolved
+    severity: low
+    resolution: keep file-first for this vault; do not treat code-first as a schema change
+    resolution_source: decision:compiler-vault
+    page: contradictions.md
+
+  - id: contradiction:c27
+    claim_a: concept:verifiable-instructions
+    claim_b: source:src-dair-agent-friendly-docs
+    reason: required prose checks vs zero observed documentation-based validation
+    status: resolved
+    severity: low
+    resolution: compatible; external gate required; reading AGENTS.md is not the check
+    resolution_source: decision:instruction-files-control-surface
+    page: contradictions.md
+
+  - id: contradiction:c28
+    claim_a: source:src-disclosure-index
+    claim_b: concept:disclosure-index
+    reason: documented REST API vs live catalog.js 404
+    status: resolved
+    severity: low
+    resolution: cite catalog.js and compiled stats; do not claim the REST API works
+    resolution_source: concept:disclosure-index
+    page: contradictions.md
+
+  - id: contradiction:c29
     claim_a: concept:anti-slop
     claim_b: concept:daily-tool-replace
     reason: D6 writing slop vs LLM-built software slop plus steering

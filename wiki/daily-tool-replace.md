@@ -22,7 +22,7 @@ Source: [[src-can1357-daily-tool-replace-2026-08-27]]. Author: [[can-boluk]].
 
 ## Do not do
 
-Do not clone omp.sh or oh-my-pi from this page. Do not dump the clip's Rust body. Do not merge this with D6 writing [[anti-slop]]. See [[contradictions]] C26.
+Do not clone omp.sh or oh-my-pi from this page. Do not dump the clip's Rust body. Do not merge this with D6 writing [[anti-slop]]. See [[contradictions]] C29.
 
 Do not ship a GitKraken-class git GUI for this vault from this tweet. D7 is Obsidian. Wiki is silent on whether lan E runs GitKraken. See [[musk-algorithm]]: automate last.
 

@@ -11,9 +11,21 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into daily-tool-replace (C29)
+
+Fetched origin/main at agent-facing-docs / C26–C28. Simple unions kept. Writing-slop flag remapped C26 → C29 so it does not collide with file-first C26. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool-2]].
+
 ## [2026-08-28] merge | origin/main into daily-tool-replace
 
 Fetched origin/main at skill-library / C20–C25. Simple unions kept. Writing-slop flag remapped C15 → C26 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool]].
+
+## [2026-08-28] merge | origin/main into agent-facing-docs ingest
+
+Fetched origin/main. Simple unions kept. Decision IDs remapped D8/D9 → D10/D11 so they do not collide with graph-clusters and FTS D9. Contradiction IDs remapped C8–C10 → C26–C28 so they do not collide with anti-slop tens and arXiv flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-agent-facing-2026-08-28]].
+
+## [2026-08-28] merge | origin/main into entropy-gate quiz
+
+Fetched origin/main. Only conflict was [[log]]: both sides appended. Kept both, newest first. Query answers stay dated 2026-08-24 snapshots. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-entropy-quiz-2026-08-28]].
 
 ## [2026-08-28] merge | origin/main into skill-library ingest
 
@@ -49,7 +61,7 @@ Room to optimize: delete/skip, not a git GUI. Kill omp clone and GitKraken-class
 
 ## [2026-08-27] ingest | Can daily-tool-replace
 
-@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C26: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
+@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C29: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
 
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 
@@ -233,6 +245,16 @@ Trial on a clean desktop with fake data, then [[skillspector]], then enable. See
 
 Compiled [[skillspector]], [[quota-router]], [[raptor-dispatch]], [[session-migrate]], [[clip-pipeline]] from `/workspace/play-until-2pm/METHODS.md`. Reinforced D4 on [[audited-task-contract]] and [[harness-routing]]. Not copied into raw/. See [[src-play-methods-2026-08-25]] and [[ingest-brief-2026-08-25-play-methods]].
 
+## [2026-08-24] ingest | Disclosure Index catalog
+
+URL ingest of https://bug-bounty-disclosures.vercel.app/#api. Parsed `data/catalog.js`: 11,338 records. Wrote [[src-disclosure-index]], [[disclosure-index]], and `output/disclosure-index-stats-2026-08-23.json`. Locked D11 (was D9 on this branch). Flagged C28 (was C10). Documented `/api/*` returned 404.
+
+## [2026-08-24] ingest | DAIR.AI agent-friendly documentation paper
+
+URL ingest of https://x.com/dair_ai/status/2091661799737446864 and arXiv:2608.20195. Wrote [[src-dair-agent-friendly-docs]] and [[agent-facing-docs]]. Locked D10 (was D8 on this branch). Flagged C26 and C27 (were C8 and C9). Put the control-surface rule in `AGENTS.md`. No `raw/` file: human-owned.
+
+Pages touched: [[agent-facing-docs]], [[verifiable-instructions]], [[context-graph]], [[tokens-as-capital]], [[llm-wiki]], [[self-verification]], [[hunt-ship-loop]], [[contradictions]], [[agent-operating-system]], [[how-it-works]].
+
 ## [2026-08-24] ingest | BATCH09 five paper digests
 
 Compiled [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], [[orthoskillvla]]. Figs unread. See [[src-arxiv-batch09]].
@@ -344,6 +366,14 @@ Compiled `/workspace/arxiv-tierlist/ARXIV_TIERLIST_HANDOFF.md` into [[src-arxiv-
 ## [2026-08-24] lint | Concept clusters in the graph
 
 The hairball was ring-by-folder layout plus catalog stars (`index`, `log`, `twitter`). Graph filter now keeps wiki/maps/hunt/ship and drops `raw/`, `index`, `log`, and `twitter`. Renderer places nodes on the five [[agent-operating-system]] layers. Added peer concept links already supported by those pages. Locked D8.
+
+## [2026-08-24] query | Skills, forgetting, anti-slop
+
+Human asked whether every inputted skill was stored, how agents use them without forgetting, and how slop is cut. Answer filed to [[query-skills-and-slop]]. Ten anti-slop skills were compiled, not vendored. Forgetting is ablation plus lint, not full replay. D6 is the slop default.
+
+## [2026-08-24] query | Entropy gate quiz
+
+Human asked whether the vault remembered ingested data, using [[entropy-gate]] as the probe. Answer filed to [[query-entropy-gate]]. Cite the 64-worker table. Keep the 200-agent clip `unverified` ([[contradictions]] C3). `MEMORY.md` still has no personal facts.
 
 ## [2026-08-23] ingest | Retrieval second brain
 

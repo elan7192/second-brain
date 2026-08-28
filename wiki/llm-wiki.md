@@ -39,6 +39,8 @@ A company skill catalog in Notion, or a GitHub folder of agent skills, is a prod
 
 [[src-retrieval-second-brain]] is the retrieval foil: hybrid search, GraphRAG, layered memory, agentic routing. Live query is D9 (`python3 tools/sb ask`). See [[retrieval-second-brain]] and C25.
 
+[[src-dair-agent-friendly-docs]] measured the same surface in coding agents: instruction files plus working notes account for 60.5% of documentation interactions. The compiled wiki is the working-notes store. See [[agent-facing-docs]].
+
 ## Related
 
-[[tokens-as-capital]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]] · [[skill-library]] · [[retrieval-second-brain]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]]
+[[tokens-as-capital]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]] · [[skill-library]] · [[retrieval-second-brain]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]] · [[agent-facing-docs]]

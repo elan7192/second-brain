@@ -218,7 +218,37 @@ Resolution: unresolved. Compile the four pillars onto [[retrieval-second-brain]]
 
 Remap: was C13 on the skill-library branch. Main C13 is 4MAS abstract art.
 
-## C26. Writing slop vs software slop
+## C26. File first vs code first
+
+[[hunt-ship-loop]] files the source before answering.
+
+[[src-dair-agent-friendly-docs]] measured public agentic PRs: among multi-commit PRs that change both and have order, code is first 4.7× more often than documentation.
+
+Resolution: keep file-first for this vault (D1, D7). The paper describes observed public-agent PRs, not this compiler's ingest loop. Do not treat code-first as a schema change.
+
+Remap: was C8 on the agent-facing-docs branch. Main C8 is the two anti-slop tens.
+
+## C27. Prose checks vs observed validation
+
+[[verifiable-instructions]] requires every rule to have a check.
+
+[[src-dair-agent-friendly-docs]] recorded zero documentation-based validation events. The authors say actionability and verifiability lack consistent behavioural support.
+
+Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/lint-wiki.py`, `python3 tools/sb validate`) because reading `AGENTS.md` is not the check. See D10 and [[agent-facing-docs]].
+
+Remap: was C9 on the agent-facing-docs branch. Main C9 is NGC tables.
+
+## C28. Documented disclosure API vs live catalog
+
+[[src-disclosure-index]] documents `GET /api/reports` and `GET /api/stats`.
+
+Fetched 2026-08-24: both paths returned 404. The live catalog is `data/catalog.js`.
+
+Resolution: cite `data/catalog.js` and the compiled stats. Do not claim the REST API works until it returns JSON.
+
+Remap: was C10 on the agent-facing-docs branch. Main C10 is HydroFusion years.
+
+## C29. Writing slop vs software slop
 
 D6 [[anti-slop]] is juampi's writing rank.
 
@@ -226,4 +256,4 @@ D6 [[anti-slop]] is juampi's writing rank.
 
 Resolution: keep D6 as writing. Compile the clip as [[daily-tool-replace]]. Do not merge the two slops.
 
-Remap: was C15 on the daily-tool-replace branch. Main C15 is Foundry 3D vs Palantir Foundry.
+Remap: was C15 then C26 on the daily-tool-replace branch. Main C26 is file first vs code first.
