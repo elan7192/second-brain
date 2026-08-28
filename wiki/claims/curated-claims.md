@@ -1,4 +1,5 @@
 ---
+id: meta:curated-claims
 type: meta
 tags:
   - wiki

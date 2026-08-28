@@ -1,4 +1,5 @@
 ---
+id: concept:spot-check
 type: concept
 tags:
   - wiki

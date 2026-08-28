@@ -92,6 +92,9 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "src-rohit-harness-router",
         "src-hitu-entropy-engineering",
         "rohit",
+        "headlong",
+        "src-laude-headlong",
+        "src-hxiao-headlong",
     },
     "hunt-ship": {
         "hunt-ship-loop",

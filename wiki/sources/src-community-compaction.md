@@ -1,4 +1,5 @@
 ---
+id: source:src-community-compaction
 type: source
 tags:
   - community

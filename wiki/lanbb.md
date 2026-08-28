@@ -1,4 +1,5 @@
 ---
+id: project:lanbb
 type: project
 tags:
   - project

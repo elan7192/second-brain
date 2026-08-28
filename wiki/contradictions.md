@@ -1,14 +1,14 @@
 ---
+id: meta:contradictions
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
-updated: 2026-08-23
+updated: 2026-08-28
 ---
 
 # Contradictions
 
-Flag, do not silently merge. Disputed claim rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claims]].
+Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claims]]. Dual claim store: C17.
 
 ## C1. Karpathy did not say stop writing code
 
@@ -107,3 +107,27 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Foundry 3D paper vs Palantir Foundry
+
+[[foundry-3d]] is arXiv 2511.20721 SuperTokens / Point-JEPA.
+
+[[palantir-aip]] Foundry is Palantir's data platform. No enrollment here.
+
+Resolution: do not mix the names. Local object table is [[vault-ontology]].
+
+## C16. Headlong one stream vs entropy gate
+
+[[headlong]] / [[src-laude-headlong]]: one thought stream, no per-user sessions, assume anything said is shared. The agent keeps thinking when idle.
+
+[[entropy-gate]]: isolated worktrees, structured diffs, an objective gate outside the model.
+
+Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Harvest 02:07Z: mind stopped; tests did not run. Still not the wiki compiler. Do not restart without a new operator yes.
+
+## C17. Two claim registries
+
+This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / INFERENCE / OPINION.
+
+Main locked D9 and put structured claims in `wiki/data/claims.yaml` for `python3 tools/sb`.
+
+Resolution: unresolved. Keep both. Do not delete either table. Cite the id you used. Human names the canonical store. See [[claims]] and [[memory-system]].

@@ -1,4 +1,5 @@
 ---
+id: concept:views-vs-sales
 type: concept
 tags:
   - wiki

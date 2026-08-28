@@ -1,9 +1,10 @@
 ---
+id: meta:decisions
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Decisions
@@ -70,10 +71,12 @@ Graph view hides catalog stars and raw files. Layout follows the five [[agent-op
 - Locked: 2026-08-24
 - Revalidate: if a later layout hides a real concept island or drops a supported peer link
 
-## D9. Claims CSV before retrieval
+## D9. Markdown canonical, FTS disposable
 
-Evidence lives in `wiki/claims.csv` plus markdown wiki pages. Do not add a vector DB, Neo4j, or a second JSONL graph store. FACT / INFERENCE / OPINION are required on new memory-v1 pages. `raw/` is untrusted data.
+Compiled markdown is the store. SQLite FTS5 is a rebuildable index. Filenames are not identity; `id:` is. Do not treat the database as memory. Do not clone Brain.
 
-- Source: [[memory-system]], [[file-memory]], [[portable-memory]], [[loop-graph-engineering]], [[grok-bot-tape]]
-- Locked: 2026-08-27
-- Revalidate: if claims.csv is unused after two later ingests, or if labeled wiki answers are worse than unlabeled prose
+- Source: [[portable-memory]], [[retrieval]], [[stable-ids]], [[claims]]
+- Locked: 2026-08-28
+- Revalidate: if a later source shows compiled-page search worse than raw RAG with a measured eval
+
+CSV vs YAML claim registries are not locked. See C17.

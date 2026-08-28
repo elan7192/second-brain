@@ -1,4 +1,5 @@
 ---
+id: concept:stale-fact-detector
 type: concept
 tags:
   - wiki

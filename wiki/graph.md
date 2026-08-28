@@ -1,9 +1,10 @@
 ---
+id: meta:graph
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Graph
@@ -34,8 +35,8 @@ Taken from [[agent-operating-system]].
 
 | Island | Pages |
 | --- | --- |
-| Compile | llm-wiki, tokens-as-capital, context-graph |
-| Memory | memory-engineering, memory-ablation, memory-system, claims |
+| Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids |
+| Memory | memory-engineering, memory-ablation, portable-memory, memory-system, claims |
 | Verification | verifiable-instructions, self-verification, anti-slop |
 | Harness | audited-task-contract, harness-routing, entropy-gate |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
@@ -86,8 +87,11 @@ flowchart TB
     audited-task-contract
     entropy-gate
     harness-routing
+    headlong
     rohit
     src-hitu-entropy-engineering
+    src-hxiao-headlong
+    src-laude-headlong
     src-rohit-harness-router
   end
   subgraph hunt-ship[Hunt / ship]
@@ -122,10 +126,14 @@ flowchart TB
     ingest-brief-2026-08-25-growthos
     ingest-brief-2026-08-25-play-methods
     ingest-brief-2026-08-25-skill-recorder
+    ingest-brief-2026-08-26-headlong
+    ingest-brief-2026-08-26-headlong-hour
     ingest-brief-2026-08-27-botdirectory
     ingest-brief-2026-08-27-lanbb-bb
     maps
+    memory-engine-2026-08-28
     memory-system-brief-2026-08-27
+    ontology-rebuild-brief-2026-08-28
     ship
     src-avid-obsidian-agent-team
     src-deronin-growthos-vault
@@ -141,11 +149,13 @@ flowchart TB
   MEMORY --> provenance
   MEMORY --> untrusted-ingest
   MEMORY --> file-memory
+  MEMORY --> headlong
   MEMORY --> growth-operator
   hunt --> hunt-ship-loop
   maps --> GrowthOS
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
+  ship --> ontology-rebuild-brief-2026-08-28
   GrowthOS --> growth-operator
   GrowthOS --> src-deronin-growthos-vault
   growth-briefing-2026-08-25 --> src-deronin-growthos-vault
@@ -178,6 +188,16 @@ flowchart TB
   ingest-brief-2026-08-25-play-methods --> llm-wiki
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
+  ingest-brief-2026-08-26-headlong-hour --> headlong
+  ingest-brief-2026-08-26-headlong-hour --> harness-routing
+  ingest-brief-2026-08-26-headlong-hour --> entropy-gate
+  ontology-rebuild-brief-2026-08-28 --> llm-wiki
+  ontology-rebuild-brief-2026-08-28 --> file-memory
+  ontology-rebuild-brief-2026-08-28 --> context-graph
+  ingest-brief-2026-08-26-headlong --> headlong
+  ingest-brief-2026-08-26-headlong --> src-hxiao-headlong
+  ingest-brief-2026-08-26-headlong --> src-laude-headlong
+  memory-engine-2026-08-28 --> claims
   memory-system-brief-2026-08-27 --> memory-system
   memory-system-brief-2026-08-27 --> epistemic-labels
   memory-system-brief-2026-08-27 --> provenance
@@ -203,6 +223,7 @@ flowchart TB
   context-graph --> memory-engineering
   context-graph --> hunt-ship-loop
   entropy-gate --> src-hitu-entropy-engineering
+  entropy-gate --> headlong
   entropy-gate --> audited-task-contract
   entropy-gate --> harness-routing
   entropy-gate --> self-verification
@@ -227,6 +248,7 @@ flowchart TB
   harness-routing --> audited-task-contract
   harness-routing --> entropy-gate
   harness-routing --> rohit
+  harness-routing --> headlong
   hunt-ship-loop --> src-avid-obsidian-agent-team
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
@@ -248,6 +270,7 @@ flowchart TB
   memory-ablation --> src-0xcodio-memory-ablation
   memory-ablation --> memory-engineering
   memory-ablation --> verifiable-instructions
+  memory-ablation --> claims
   memory-engineering --> src-0xcodio-memory-ablation
   memory-engineering --> memory-ablation
   memory-engineering --> context-graph
@@ -257,6 +280,7 @@ flowchart TB
   memory-engineering --> memory-system
   memory-engineering --> epistemic-labels
   memory-engineering --> claims
+  memory-engineering --> headlong
   portable-memory --> file-memory
   portable-memory --> llm-wiki
   portable-memory --> claims
@@ -278,6 +302,13 @@ flowchart TB
   epistemic-labels --> provenance
   epistemic-labels --> verifiable-instructions
   epistemic-labels --> anti-slop
+  headlong --> src-laude-headlong
+  headlong --> src-hxiao-headlong
+  headlong --> ingest-brief-2026-08-26-headlong-hour
+  headlong --> entropy-gate
+  headlong --> harness-routing
+  headlong --> audited-task-contract
+  headlong --> memory-engineering
   memory-system --> file-memory
   memory-system --> portable-memory
   memory-system --> llm-wiki
@@ -299,11 +330,13 @@ flowchart TB
   untrusted-ingest --> claims
   untrusted-ingest --> epistemic-labels
   untrusted-ingest --> llm-wiki
-  claims --> memory-system
   claims --> file-memory
   claims --> provenance
   claims --> epistemic-labels
   claims --> untrusted-ingest
+  claims --> memory-system
+  claims --> portable-memory
+  claims --> memory-ablation
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler
   andrej-karpathy --> src-bober-folder-workflow
@@ -331,5 +364,12 @@ flowchart TB
   src-rohit-harness-router --> harness-routing
   src-rohit-harness-router --> rohit
   src-voxyz-verifiable-instructions --> verifiable-instructions
+  src-laude-headlong --> headlong
+  src-laude-headlong --> src-hxiao-headlong
+  src-laude-headlong --> harness-routing
+  src-laude-headlong --> entropy-gate
+  src-hxiao-headlong --> headlong
+  src-hxiao-headlong --> src-laude-headlong
+  src-hxiao-headlong --> harness-routing
 ```
 <!-- graph-mermaid:end -->

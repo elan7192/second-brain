@@ -53,8 +53,11 @@ def check_links(catalog: dict[str, Path]) -> tuple[list[str], list[str]]:
 def check_source_claims() -> list[str]:
     errors: list[str] = []
     sources = ROOT / "wiki" / "sources"
-    if not sources.exists():
-        return ["wiki/sources missing"]
+    compile_layer = (ROOT / "wiki" / "claims.csv").exists() or (
+        ROOT / "wiki" / "claims"
+    ).is_dir()
+    if not sources.exists() or not compile_layer:
+        return []
     for path in sorted(sources.glob("*.md")):
         text = path.read_text(encoding="utf-8")
         if not SOURCE_CLAIMS_RE.search(text):
@@ -119,6 +122,11 @@ def check_disputed_in_conflicts() -> list[str]:
 
 
 def check_compile() -> list[str]:
+    compile_layer = (ROOT / "wiki" / "claims.csv").exists() or (
+        ROOT / "wiki" / "claims"
+    ).is_dir()
+    if not compile_layer:
+        return []
     errors: list[str] = []
     claims_csv, compile_errors = memorylib.compile_tables(ROOT)
     errors.extend(compile_errors)
@@ -131,6 +139,8 @@ def check_compile() -> list[str]:
 
 
 def check_unit_tests() -> list[str]:
+    if ROOT != TOOLS.parent:
+        return []
     proc = subprocess.run(
         [sys.executable, str(TOOLS / "test_memory.py")],
         cwd=ROOT,

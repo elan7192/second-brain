@@ -1,9 +1,10 @@
 ---
+id: concept:ai-sovereignty
 type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # AI sovereignty
@@ -22,6 +23,8 @@ Phrase "vassal states of the language labs" is Karp-attributed. `unverified` wit
 
 Data, weights, compute, and know-how stay with the institution. Application layer (Ontology / AIP) wraps frontier models so alpha does not migrate out. Fine-tune own weights. Classified / air-gapped is OK.
 
+Local compile of that layer: [[vault-ontology]] from [[palantir-aip]] docs. Hosted Palantir enrollment is absent. D5.
+
 ## Value must not concentrate
 
 Value must not concentrate in about 2500 Silicon Valley people. Vocational and neurodiverse workers should get more valuable, not replaced. Doomer unemployment narrative rejected. Attributed. `unverified`.
@@ -39,4 +42,4 @@ Benefit-max = model + application layer + controlled compute. Not renting the st
 
 ## Related
 
-[[work-per-cost]] · [[tokens-as-capital]] · [[llm-wiki]] · [[quota-router]] · [[musk-algorithm]] · [[lanbb]] · [[alex-karp]] · [[src-lan-e-karp-sovereignty-2026-08-27]]
+[[work-per-cost]] · [[tokens-as-capital]] · [[llm-wiki]] · [[quota-router]] · [[musk-algorithm]] · [[lanbb]] · [[alex-karp]] · [[palantir-aip]] · [[vault-ontology]] · [[src-lan-e-karp-sovereignty-2026-08-27]] · [[src-palantir-aip-developers-2026-08-28]]

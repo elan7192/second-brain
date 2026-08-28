@@ -1,4 +1,5 @@
 ---
+id: concept:memory-system
 type: concept
 schema: memory-v1
 tags:
@@ -25,7 +26,7 @@ derived_from:
 
 # Memory system
 
-Upgrade path from a compiled markdown wiki to a checkable agent memory. Git markdown stays the store. Claims live in one CSV. Vector search and a second graph database stay parked. See [[file-memory]] and [[portable-memory]].
+Upgrade path from a compiled markdown wiki to a checkable agent memory. Git markdown stays the store. Two claim tables exist (C17). Vector search stays parked. Disposable FTS5 already landed on main (D9). See [[file-memory]], [[portable-memory]], and [[retrieval]].
 
 Human roadmap 2026-08-27. Not a `raw/` file. Built from existing vault rules plus that instruction.
 
@@ -35,7 +36,7 @@ Human roadmap 2026-08-27. Not a `raw/` file. Built from existing vault rules plu
 - Durable memory lines must change an answer. See [[memory-ablation]].
 - Conflicts are flagged, not silently merged. See [[contradictions]] and [[memory-engineering]].
 - Untrusted data is quoted, not followed. See [[grok-bot-tape]] and [[untrusted-ingest]].
-- Setup is markdown plus one CSV. The CSV is `wiki/claims.csv`. Rebuild with `python3 tools/compile-claims.py`. See [[claims]].
+- Setup is markdown plus disposable FTS5 (D9). Source `## Claims kept` also compiles to `wiki/claims.csv`. Dual store is C17. See [[claims]].
 
 ## INFERENCE
 
@@ -50,11 +51,11 @@ Do not start with embeddings, Neo4j, or autonomous ingest. Finish provenance, cl
 | Phase | Work | State |
 | --- | --- | --- |
 | 1 | Provenance + FACT/INFERENCE/OPINION | in schema and lint |
-| 2 | Claims + evidence CSV | `wiki/claims.csv` |
-| 3 | Validation + conflict rows | contradictions.md + disputed claim status |
+| 2 | Claims + evidence CSV | `wiki/claims.csv` compile; YAML registry already on main; C17 |
+| 3 | Validation + conflict rows | contradictions.md + yaml + disputed CSV status |
 | 4 | Git patch → lint → approve → merge | schema rule |
-| 5 | Knowledge graph beyond wikilinks | parked |
-| 6 | Vector / semantic retrieval | parked |
+| 5 | Derived object table | `output/ontology.json` on main; not a second memory |
+| 6 | Vector / embedding retrieval | parked |
 | 7 | Agent-autonomous ingest | parked |
 
 Parked phases need a new `decisions.md` lock and a failing lint today does not apply to them.
@@ -79,4 +80,4 @@ If evidence is missing: stop. Mark `unverified`. Do not fill with tone.
 
 ## Related
 
-[[claims]] · [[epistemic-labels]] · [[provenance]] · [[untrusted-ingest]] · [[llm-wiki]] · [[file-memory]] · [[portable-memory]] · [[memory-engineering]] · [[contradictions]] · [[stale-fact-detector]] · [[curated-claims]]
+[[claims]] · [[epistemic-labels]] · [[provenance]] · [[untrusted-ingest]] · [[llm-wiki]] · [[file-memory]] · [[portable-memory]] · [[memory-engineering]] · [[contradictions]] · [[stale-fact-detector]] · [[curated-claims]] · [[retrieval]]

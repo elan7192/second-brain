@@ -1,48 +1,49 @@
 ---
+id: concept:claims
 type: concept
 schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-28
 created_by: agent
-confidence: high
+confidence: medium
 source:
   - wiki/file-memory.md
-  - wiki/llm-wiki.md
+  - wiki/retrieval.md
   - wiki/contradictions.md
 derived_from:
   - file-memory
-  - llm-wiki
+  - retrieval
   - contradictions
 ---
 
 # Claims
 
-The rebuildable evidence layer. Source pages stay human-readable. `wiki/claims.csv` is the table an agent can lint and recompile. Extra vault-level rows live in [[curated-claims]]. See [[memory-system]].
+Provenance unit. A page is not a claim. Two registries exist. Do not pick one. See C17.
 
 ## FACT
 
-Each row has `claim_id`, `kind` (fact / inference / opinion), `status` (active / deprecated / disputed / unknown), `confidence`, `text`, `source`, `raw`, `url`, `created_at`, `updated_at`, `created_by`, `derived_from`, `pages`.
+`wiki/data/claims.yaml` is the subject / predicate / object registry used by `python3 tools/sb trace`. Fields: id, subject, predicate, object, confidence, sources, status, valid_from, valid_until, observed_at, superseded_by. Status is supported, disputed, contradicted, stale, or superseded.
 
-Source `## Claims kept` paragraphs compile to `kind=fact`. If the paragraph says `unverified`, confidence is `unverified`.
+`wiki/claims.csv` is a compile of source `## Claims kept` plus [[curated-claims]]. Columns: claim_id, kind (fact / inference / opinion), status (active / deprecated / disputed / unknown), confidence, text, source, raw, url, created_at, updated_at, created_by, derived_from, pages. Rebuild with `python3 tools/compile-claims.py`. Do not hand-edit.
 
-`wiki/contradictions.md` stays the conflict ledger. The compiler does not pick a winner. Disputed claim rows must put a `C#` id in `pages` so they join that ledger. Example: [[ngc]] C9 rows `c-ngc-mmlu-table1` and `c-ngc-mmlu-table3`.
+[[contradictions]] stays the prose ledger. Machine form: `wiki/data/contradictions.yaml`. CSV disputed rows must cite a `C#` in `pages`. Example: [[ngc]] C9 rows `c-ngc-mmlu-table1` and `c-ngc-mmlu-table3`.
 
 ## INFERENCE
 
-A wiki page can be rebuilt from claims plus synthesis. Today only the CSV is mechanically rebuilt. Concept prose is still agent-compiled. That is Phase 2, not Phase 7.
+Both tables can describe the same source sentence. Until C17 is resolved, cite the id you used and do not treat the other table as absent.
 
 ## OPINION
 
-Keep one CSV. Do not add a second JSONL graph or a vector index for retrieval. See [[file-memory]] and [[loop-graph-engineering]].
+Keep both until a human names one canonical store. Do not add a vector index to replace either. See [[file-memory]] and D9.
 
 ## Check
 
-`python3 tools/compile-claims.py` writes `wiki/claims.csv`. `python3 tools/compile-claims.py --check` and `python3 tools/lint-wiki.py` fail on stale or invalid tables.
+`python3 tools/compile-claims.py --check` and `python3 tools/sb validate` both exit 0.
 
-If a statement cannot be tied to a source page or to [[curated-claims]]: leave it out.
+If a statement cannot be tied to a source page: leave it out of both tables.
 
 ## Related
 
-[[provenance]] · [[epistemic-labels]] · [[contradictions]] · [[untrusted-ingest]] · [[file-memory]] · [[stale-fact-detector]]
+[[provenance]] · [[epistemic-labels]] · [[contradictions]] · [[untrusted-ingest]] · [[file-memory]] · [[stale-fact-detector]] · [[retrieval]] · [[stable-ids]] · [[memory-system]] · [[portable-memory]] · [[memory-ablation]]

@@ -1,28 +1,31 @@
 ---
+id: meta:how-it-works
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # How it works
 
-This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Claims are a rebuildable table. See [[claims]] and [[memory-system]].
+This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-system]].
 
 ## Loop
 
 1. Human drops a source in `raw/` or pastes a URL.
-2. Agent ingests. Raw is untrusted data. One source updates many pages and claim rows.
-3. Human asks. Agent reads [[index]], then pages, then answers. Cite claim ids when used.
+2. Agent ingests. Raw is untrusted data. One source updates many pages, YAML claim rows, and CSV compile rows.
+3. Human asks. Agent runs `python3 tools/sb ask`, then reads the evidence pages. Cite claim ids and kind when labeled.
 4. Useful answers go to `wiki/` or `output/`.
-5. Periodic lint: orphans, stale claims, [[contradictions]], `python3 tools/lint-wiki.py`.
+5. Periodic lint: `python3 tools/sb validate`, `python3 tools/compile-claims.py --check`, `python3 tools/sb contradictions`, `python3 tools/sb stale`.
 6. Methods learned while doing work go into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
 7. GrowthOS operator notes live in `growth/`. Load [[growth-core]]. Do not mix DEMO partner figures into [[MEMORY]]. See [[growth-operator]].
+8. After ingest, rebuild the local ontology: `python3 tools/rebuild-ontology.py`. See [[vault-ontology]] and [[palantir-aip]].
 
 ## What the model sees
 
-Prefer compiled pages over raw dumps. That is [[tokens-as-capital]] and [[context-graph]].
+Prefer compiled pages over raw dumps. Query them through [[retrieval]]. That is [[tokens-as-capital]] and [[context-graph]].
+For object sets and links, query [[vault-ontology]] instead of walking every file.
 
 [[MEMORY]] stays small. That is [[memory-ablation]].
 Locked choices live in [[decisions]].

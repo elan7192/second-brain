@@ -1,4 +1,5 @@
 ---
+id: person:lostsec
 type: person
 tags:
   - person
