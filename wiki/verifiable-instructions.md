@@ -1,4 +1,5 @@
 ---
+id: concept:verifiable-instructions
 type: concept
 tags:
   - wiki
@@ -29,8 +30,10 @@ Every instruction states:
 
 This vault's schema follows that shape. The tweet's eight paste-ready blocks were not in the fetched body. See [[contradictions]] C6.
 
-Instruction files get most of an agent's documentation attention. They do not trigger testing. [[src-dair-agent-friendly-docs]] records zero Validate events and an adjusted OR of 0.39 for immediate testing after consultation. The check must be executable (`python3 tools/lint-wiki.py`, tests). Reading `AGENTS.md` is not the check. See [[agent-facing-docs]] and C9.
+Instruction files get most of an agent's documentation attention. They do not trigger testing. [[src-dair-agent-friendly-docs]] records zero Validate events and an adjusted OR of 0.39 for immediate testing after consultation. The check must be executable (`python3 tools/lint-wiki.py`, `python3 tools/sb validate`). Reading `AGENTS.md` is not the check. See [[agent-facing-docs]] and C27.
+
+A local skill SOP needs this shape or it is a wish. See [[skill-as-sop]].
 
 ## Related
 
-[[memory-ablation]] · [[self-verification]] · [[agent-facing-docs]] · `AGENTS.md`
+[[memory-ablation]] · [[self-verification]] · [[skill-as-sop]] · [[anti-slop]] · [[agent-facing-docs]] · `AGENTS.md`

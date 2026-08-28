@@ -1,9 +1,10 @@
 ---
+id: source:src-disclosure-index
 type: source
 tags:
   - hunt
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # src-disclosure-index
@@ -18,7 +19,7 @@ updated: 2026-08-24
 
 Public bibliographic catalog of platform disclosures, platform-associated writeups, and published audit results. Footer and parsed catalog both say 11,338 records.
 
-Live data is `window.DISCLOSURE_REPORTS` in `data/catalog.js`. Documented `GET /api/reports` and `GET /api/stats` returned 404 on 2026-08-24. See [[contradictions]] C10.
+Live data is `window.DISCLOSURE_REPORTS` in `data/catalog.js`. Documented `GET /api/reports` and `GET /api/stats` returned 404 on 2026-08-24. See [[contradictions]] C28.
 
 The archive stores metadata and canonical URLs. It does not copy report bodies. Site note: educational and research use only. It does not grant permission to test third-party systems.
 

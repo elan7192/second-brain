@@ -1,9 +1,10 @@
 ---
+id: concept:disclosure-index
 type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Disclosure Index
@@ -50,13 +51,13 @@ Documented on `#api`:
 - `GET /api/stats`
 - Claimed CORS and 120 requests per minute per client
 
-Fetched 2026-08-24: those paths returned 404. The queryable surface is `data/catalog.js`. See C10.
+Fetched 2026-08-24: those paths returned 404. The queryable surface is `data/catalog.js`. See C28.
 
 ## Use here
 
 Answer count questions from this page or the stats JSON. Do not re-fetch the 5.6 MB catalog for a normal query.
 
-Keep bibliographic metadata only. Do not copy report bodies. Do not write exploit steps. See D9.
+Keep bibliographic metadata only. Do not copy report bodies. Do not write exploit steps. See D11.
 
 This catalog does not authorize testing any system.
 

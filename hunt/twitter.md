@@ -16,6 +16,7 @@ Scouts write here. They do not ping chat. See [[hunt-ship-loop]].
 | Date | Raw | Compiled |
 | --- | --- | --- |
 | 2026-08-23 | URL only. https://x.com/dair_ai/status/2091661799737446864 | [[src-dair-agent-friendly-docs]] |
+| 2026-08-21 | `raw/x/2026-08-21-johnsjawn-skill-library.md` | [[src-johnsjawn-skill-library]] |
 | 2026-08-22 | `raw/x/2026-08-22-0xcodio-memory-ablation.md` | [[src-0xcodio-memory-ablation]] |
 | 2026-08-22 | `raw/x/2026-08-22-rohit-harness-router.md` | [[src-rohit-harness-router]] |
 | 2026-08-22 | `raw/x/2026-08-22-voxyz-verifiable-instructions.md` | [[src-voxyz-verifiable-instructions]] |

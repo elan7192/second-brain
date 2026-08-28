@@ -1,9 +1,10 @@
 ---
+id: concept:agent-facing-docs
 type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Agent-facing docs
@@ -35,20 +36,20 @@ Instruction-file counts are lower bounds. Runtime-loaded context files appear on
 - Immediate testing after consultation: adjusted OR 0.39 [0.25, 0.60]. Building: OR 0.25 [0.14, 0.44].
 - Failure-driven consultation: 7.5%. First recovery action is a doc read in 5.4% of 2,034 failures.
 
-Actionability and verifiability of "agent-friendly" docs have no consistent behavioural support in this corpus. See [[contradictions]] C9.
+Actionability and verifiability of "agent-friendly" docs have no consistent behavioural support in this corpus. See [[contradictions]] C27.
 
 ## Two-lobed cycle
 
 Consultation circulates into more reading and reasoning. Production of documentation is 0.87× consultation. The two lobes are loosely coupled.
 
-In multi-commit agentic PRs that change both and have order, code is first 4.7× more often than documentation. 42.6% touch both in one commit. See [[contradictions]] C8.
+In multi-commit agentic PRs that change both and have order, code is first 4.7× more often than documentation. 42.6% touch both in one commit. See [[contradictions]] C26.
 
 Agents also edit their own instructions. AIDev: `AGENTS.md` in 692 PRs, `CLAUDE.md` in 362.
 
 ## Use here
 
-1. Put operational rules on the instruction and wiki surface. See D8 in `decisions.md`.
-2. Do not treat reading `AGENTS.md` as the check. Run `python3 tools/lint-wiki.py`.
+1. Put operational rules on the instruction and wiki surface. See D10 in `decisions.md`.
+2. Do not treat reading `AGENTS.md` as the check. Run `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.
 3. File working notes into `wiki/` or `output/`. They are a first-class maintenance surface.
 4. Keep this vault's file-first ingest. Observed public agents touch code first.
 

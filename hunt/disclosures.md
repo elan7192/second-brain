@@ -16,4 +16,4 @@ Scouts write here. They do not ping chat. See [[hunt-ship-loop]].
 | --- | --- | --- |
 | 2026-08-23 | https://bug-bounty-disclosures.vercel.app/#api | [[src-disclosure-index]] |
 
-Live catalog file: `data/catalog.js`. Documented REST API was 404 on 2026-08-24. See C10.
+Live catalog file: `data/catalog.js`. Documented REST API was 404 on 2026-08-24. See C28.

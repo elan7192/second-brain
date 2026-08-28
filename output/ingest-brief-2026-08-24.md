@@ -12,7 +12,7 @@ DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault.
 
 ## What changed
 
-Agents read `AGENTS.md` and working notes, not API docs. This vault now treats instruction files and `wiki/` as the control surface, and treats reading them as not verification. Locked D8. Flagged C8 and C9.
+Agents read `AGENTS.md` and working notes, not API docs. This vault now treats instruction files and `wiki/` as the control surface, and treats reading them as not verification. Locked D10 (was D8 on this branch). Flagged C26 and C27.
 
 ## What linked
 
@@ -20,6 +20,6 @@ Agents read `AGENTS.md` and working notes, not API docs. This vault now treats i
 
 ## What to look at
 
-1. [[agent-facing-docs]] and D8 in `decisions.md`.
-2. [[contradictions]] C8 (file first vs code first) and C9 (prose checks vs observed validation).
-3. `AGENTS.md` Control surface. Then `python3 tools/lint-wiki.py`.
+1. [[agent-facing-docs]] and D10 in `decisions.md`.
+2. [[contradictions]] C26 (file first vs code first) and C27 (prose checks vs observed validation).
+3. `AGENTS.md` Control surface. Then `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.

@@ -1,0 +1,21 @@
+q-memory-ablation:
+  - claim:memory-line-retained-iff-changes-answer
+q-fts-disposable:
+  - claim:fts5-index-is-disposable
+q-human-gate:
+  - claim:vault-does-not-post-pay-send
+q-ngc-contradiction:
+  - claim:ngc-mistral-mmlu-pro-table1-24-50
+  - claim:ngc-mistral-mmlu-pro-table3-33-67
+q-karpathy-code:
+  - claim:karpathy-gist-does-not-ban-coding
+q-compiler-layout:
+  - claim:compiler-vault-layout
+q-clone-brain:
+  - claim:do-not-clone-brain
+q-three-layers:
+  - claim:llm-wiki-three-layers
+q-flag-conflict:
+  - claim:flag-conflict-do-not-pick-a-side
+q-d5:
+  - claim:vault-does-not-post-pay-send

@@ -1,9 +1,10 @@
 ---
+id: source:src-dair-agent-friendly-docs
 type: source
 tags:
   - twitter
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # src-dair-agent-friendly-docs
