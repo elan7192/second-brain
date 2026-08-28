@@ -1,4 +1,5 @@
 ---
+id: concept:alphaevolve-math
 type: concept
 tags:
   - wiki

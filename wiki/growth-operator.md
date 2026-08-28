@@ -1,4 +1,5 @@
 ---
+id: concept:growth-operator
 type: concept
 tags:
   - wiki
@@ -63,4 +64,4 @@ Latest briefing: [[growth-briefing-2026-08-25]]. Graph fork: [[growthos-3d-gap-2
 
 ## Related
 
-[[src-deronin-growthos-vault]] · [[grok-bot-use-cases]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]]
+[[src-deronin-growthos-vault]] · [[grok-bot-use-cases]] · [[grok-bot-money]] · [[llm-wiki]] · [[memory-engineering]] · [[hunt-ship-loop]]

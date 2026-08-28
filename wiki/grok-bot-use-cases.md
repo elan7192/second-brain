@@ -1,9 +1,10 @@
 ---
+id: concept:grok-bot-use-cases
 type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-08-27
 ---
 
 # Grok Bot use cases
@@ -55,4 +56,4 @@ Overlap with this 25: research, content, competitive intel, knowledge-base curat
 
 ## Related
 
-[[src-milesdeutscher-grok-bot-use-cases]] · [[grok-bot]] · [[grok-bot-money]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]]
+[[src-milesdeutscher-grok-bot-use-cases]] · [[grok-bot]] · [[grok-bot-money]] · [[skill-recorder]] · [[llm-wiki]] · [[hunt-ship-loop]] · [[growth-operator]] · [[grok-bot-pro-tips]] · [[grok-bot-quota]] · [[composio-mcp]] · [[file-memory]]

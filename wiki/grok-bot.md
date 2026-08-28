@@ -1,4 +1,5 @@
 ---
+id: concept:grok-bot
 type: concept
 tags:
   - wiki
@@ -40,7 +41,7 @@ OpenClaw, as described there, bloats when complex business workflows stack. Grok
 
 Quoted docs rule: the best roles own a repeatable outcome, not a loose category of questions.
 
-This matches [[raptor-dispatch]] (one owner per job). It does not match [[entropy-gate]] isolated worktrees. Separate screens are work surfaces, not security boundaries. See [[contradictions]] C15.
+This matches [[raptor-dispatch]] (one owner per job). It does not match [[entropy-gate]] isolated worktrees. Separate screens are work surfaces, not security boundaries. See [[contradictions]] C30.
 
 ## Limits
 
