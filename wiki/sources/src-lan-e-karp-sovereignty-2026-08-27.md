@@ -14,8 +14,8 @@ updated: 2026-08-27
 
 ## Claims kept
 
-See [[ai-sovereignty]] and [[alex-karp]].
+See [[ai-sovereignty]], [[alex-karp]], and [[palantir-aip]].
 
 ## Pages updated
 
-[[ai-sovereignty]] · [[alex-karp]] · [[work-per-cost]] · [[lanbb]]
+[[ai-sovereignty]] · [[alex-karp]] · [[work-per-cost]] · [[lanbb]] · [[palantir-aip]]

@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Memory
@@ -18,6 +18,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - `decisions.md` is locked. Do not reopen a decision without new evidence.
 - The vault does not post, pay, send, or deploy.
 - Graph view and `tools/render-obsidian-graph.py` cluster by the five [[agent-operating-system]] layers. Do not place all wiki notes on one ring around Home. Filter excludes `raw/`, `templates/`, `index`, `log`, and `twitter`.
+- Local Palantir-style ontology is derived from wiki by `tools/rebuild-ontology.py`. `output/ontology-objects.csv` is not a second knowledge graph. Do not create live Palantir Foundry or AIP objects. No enrollment in this vault. See [[vault-ontology]] and [[palantir-aip]].
 - Wiki agent must stay current on compiled `wiki/` pages. Other agents send improvement facts here; ingest them. Do not invent gaps.
 - When GitHub updates this vault, pull the clone, lint, and stay current on `wiki/`.
 - second-brain records methods learned in work; compile them into wiki/.

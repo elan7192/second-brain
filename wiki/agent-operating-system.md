@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
+updated: 2026-08-28
 updated: 2026-08-23
 ---
 
@@ -30,7 +30,7 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]]
+[[how-it-works]] · [[index]] · [[contradictions]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[vault-ontology]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

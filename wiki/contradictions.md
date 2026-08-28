@@ -2,7 +2,7 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
+updated: 2026-08-28
 updated: 2026-08-23
 ---
 
@@ -107,3 +107,11 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. Foundry 3D paper vs Palantir Foundry
+
+[[foundry-3d]] is arXiv 2511.20721 SuperTokens / Point-JEPA.
+
+[[palantir-aip]] Foundry is Palantir's data platform. No enrollment here.
+
+Resolution: do not mix the names. Local object table is [[vault-ontology]].

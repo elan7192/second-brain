@@ -28,6 +28,7 @@ Read this file, then `wiki/index.md`, then only the pages the index points to.
 4. If the wiki is silent, say so. Do not invent. Ask to ingest a source or search the web.
 5. Do not read `raw/` unless the human asked for the original, or a wiki page is missing and you are ingesting.
 6. File a useful answer back into `wiki/` or `output/` so the next session does not re-derive it.
+7. For object/link questions, read `output/ontology.json` or run `python3 tools/ontology.py`. Rebuild first if `--check` fails.
 
 Check: every claim in the answer has a wiki citation, or is marked `unverified`.
 If evidence is missing: stop and name the gap. Do not fill it with tone.
@@ -46,7 +47,19 @@ When the human drops files in `raw/` and says ingest:
 8. Write a three-sentence brief in `output/` of what changed, what linked, and what the human should look at.
 
 Check: `python3 tools/lint-wiki.py` exits 0. Every new page has an inbound `[[wikilink]]`.
+Then `python3 tools/rebuild-ontology.py` and `python3 tools/rebuild-ontology.py --check` exits 0.
 If a claim cannot be tied to the raw file: leave it out.
+
+## Ontology rebuild
+
+`output/ontology-objects.csv` is a derived Palantir-style object table. Wiki markdown stays the store. No live Foundry or AIP objects.
+
+1. After ingest or a structural wiki edit, run `python3 tools/rebuild-ontology.py`.
+2. Check: `python3 tools/rebuild-ontology.py --check` exits 0.
+3. If the check fails: rebuild from wiki. Do not edit the CSV by hand. If Foundry credentials are missing: keep the local ontology. Do not create a Palantir account (D5).
+
+Check: lint-wiki 0 and rebuild-ontology --check 0.
+If the CSV and wiki disagree: wiki wins.
 
 ## Memory
 

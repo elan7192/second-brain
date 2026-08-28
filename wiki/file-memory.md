@@ -3,7 +3,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # File memory
@@ -23,6 +23,8 @@ Vector DB only when there is too much to read. Linked markdown is already a grap
 
 Setup: markdown + one CSV. No vector DB.
 
+The one derived CSV is `output/ontology-objects.csv`. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]].
+
 This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]] and [[memory-engineering]].
 
 Do not add a second memory writer. Catalog `persistent-bot-memory` is the same job. No PAT daily-push. See [[botdirectory-scan]].
@@ -33,4 +35,4 @@ Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[vault-ontology]]

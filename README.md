@@ -17,6 +17,13 @@ If you are not in Obsidian, open `output/obsidian-graph.html`.
 
 Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
 
+Local ontology (derived from wiki, not hosted Palantir AIP):
+
+```
+python3 tools/rebuild-ontology.py
+python3 tools/ontology.py counts
+```
+
 ## Layout
 
 ```
