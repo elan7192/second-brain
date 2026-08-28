@@ -1,4 +1,5 @@
 ---
+id: concept:skill-as-sop
 type: concept
 tags:
   - wiki

@@ -1,4 +1,5 @@
 ---
+id: source:src-retrieval-second-brain
 type: source
 tags:
   - note
@@ -20,7 +21,7 @@ Landing advice: MemGPT / Letta, LangChain / LlamaIndex, or Markdown/wikilink Gra
 
 "Greatly raises retrieval accuracy" has no method and no numbers. unverified.
 
-This is a query-time retrieval stack. It does not reopen D1. See [[contradictions]] C13.
+This is a query-time retrieval stack. It does not reopen D1. Live query on this vault is D9. See [[contradictions]] C25.
 
 ## Pages updated
 

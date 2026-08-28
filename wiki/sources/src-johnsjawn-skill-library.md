@@ -1,4 +1,5 @@
 ---
+id: source:src-johnsjawn-skill-library
 type: source
 tags:
   - twitter
@@ -21,7 +22,7 @@ Named operations: create, share, collaborate, discover, understand usage. Organi
 
 Create a skill by asking from the context of work. Top skills and skill creators should rise to the top. Goal stated: Notion as the home for collective AI skills. Demo claimed available now.
 
-Tweet extras left unverified: skill text gets better on each sales use; research skill rebuilt 50 times. Demo shows `# Uses` counts and a Download for local agents menu, not those loops. See [[contradictions]] C8 and C9.
+Tweet extras left unverified: skill text gets better on each sales use; research skill rebuilt 50 times. Demo shows `# Uses` counts and a Download for local agents menu, not those loops. See [[contradictions]] C20 and C21.
 
 ## Pages updated
 

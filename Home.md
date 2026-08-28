@@ -1,14 +1,15 @@
 ---
+id: meta:Home
 type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-28
 ---
 
 # Home
 
-Door to the vault. Open this folder in Obsidian. Then open graph view.
+Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands.
 
 ## Result
 
@@ -20,26 +21,33 @@ Ten X posts plus GitHub skill catalogs compiled into a wiki you can browse as a 
 - Green: [[andrej-karpathy]], [[jacky-kwok]], [[rohit]], [[hurley]], [[mahipal-jangra]]
 - Coral: [[ship]]
 
-Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]].
+Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.
 
 ## Start
 
 - [[Today]]
 - [[index]]
 - [[agent-operating-system]]
+- [[memory-system]]
+- [[claims]]
+- [[vault-ontology]]
 - [[contradictions]]
 - [[skill-library]]
 - [[skill-as-sop]]
 - [[retrieval-second-brain]]
 - [[Jarvis]]
 - [[TELOS]]
+- [[GrowthOS]]
 
 ## Do this next
 
 - Drop a file in `raw/` and say `ingest this`.
 - File a clip in [[inbox]], then ingest.
-- Say `lint the wiki`.
+- Say `lint the wiki` or run `python3 tools/sb validate`.
+- Ask a question; the agent should `python3 tools/sb ask` first. Named chain: [[claim-protocol]].
 
 ## This batch
 
-2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Latest: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]]. Skill-library ingest: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+
+2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour harvest: [[ingest-brief-2026-08-26-headlong-hour]].

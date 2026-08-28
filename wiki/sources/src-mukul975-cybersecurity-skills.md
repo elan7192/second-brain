@@ -1,4 +1,5 @@
 ---
+id: source:src-mukul975-cybersecurity-skills
 type: source
 tags:
   - github
@@ -23,7 +24,7 @@ README states the pack includes offensive and dual-use techniques. This vault co
 
 Progressive disclosure claimed: about 30 tokens to scan frontmatter, 500-2000 to load a skill.
 
-Internal count drift: domain table sums to 785; contributing copy still says Deception 2 and Compliance 5. See [[contradictions]] C11.
+Internal count drift: domain table sums to 785; contributing copy still says Deception 2 and Compliance 5. See [[contradictions]] C23.
 
 ## Pages updated
 

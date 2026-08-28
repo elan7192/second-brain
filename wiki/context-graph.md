@@ -1,9 +1,10 @@
 ---
+id: concept:context-graph
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-28
 ---
 
 # Context graph
@@ -16,9 +17,11 @@ Source: article quoted by [[src-avid-obsidian-agent-team]].
 
 A 1M-token window is not a reason to fill it. The useful unit is a small set of entities, relationships, events, and prior decisions.
 
-Vector similarity is not a causal path. "Why did Project X fail?" may need a chain across people, suppliers, and releases that chunk search never joins.
+Vector similarity is not a causal path. "Why did Project X fail?" may need a chain across people, suppliers, and releases that chunk search never joins. Hybrid retrieve here is FTS5 plus one-hop wikilinks, not embeddings. See [[claim-protocol]] and [[retrieval]].
 
-[[src-retrieval-second-brain]] names the same walk as GraphRAG. This vault walks compiled page links. That is a compile-time graph, not a query-time GraphRAG runtime. See [[retrieval-second-brain]] and [[contradictions]] C13.
+Local cut: `python3 tools/ontology.py subgraph <slug> --hops 1`. See [[vault-ontology]].
+
+[[src-retrieval-second-brain]] names the same walk as GraphRAG. This vault walks compiled page links. That is a compile-time graph, not a query-time GraphRAG runtime. See [[retrieval-second-brain]] and [[contradictions]] C25.
 
 Facts need validity windows. "Dan works on Project A" and "Dan works on Project B" can both exist in a store. Only one may be current.
 
@@ -31,4 +34,6 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]] · [[retrieval-second-brain]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]] · [[retrieval-second-brain]] · [[claim-protocol]] · [[hunt-ship-loop]] · [[trace]] · [[vault-ontology]]
+
+[[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair. · [[loop-graph-engineering]]

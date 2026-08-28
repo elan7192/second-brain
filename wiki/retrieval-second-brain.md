@@ -1,4 +1,5 @@
 ---
+id: concept:retrieval-second-brain
 type: concept
 tags:
   - wiki
@@ -25,7 +26,7 @@ Do not vendor those frameworks. See `MEMORY.md`.
 
 ## What this vault already does
 
-Query path: read [[index]], follow page links, cite pages, write answers back. That is [[llm-wiki]] and [[how-it-works]].
+Live query: `python3 tools/sb ask` over compiled markdown with disposable FTS5. That is D9, [[retrieval]], and [[how-it-works]].
 
 Graph here is compiled pages plus Obsidian links, not a GraphRAG runtime. See [[context-graph]] and [[graph]].
 
@@ -33,10 +34,10 @@ Memory layers map onto existing files. See [[memory-engineering]].
 
 Frontmatter already exists on compiled notes (`type`, `tags`, `created`, `updated`). The paste adds `summary` and `date`. That is a recommendation, not a schema lock.
 
-## Relation to D1
+## Relation to D1 and D9
 
-This stack retrieves at question time. D1 compiles at ingest time. Do not reopen D1. See [[contradictions]] C13.
+This stack retrieves at question time with BM25 + vector + GraphRAG. D1 compiles at ingest. D9 retrieves the compiled set through FTS5. Do not reopen D1 or D9 in this merge. See [[contradictions]] C25.
 
 ## Related
 
-[[llm-wiki]] · [[tokens-as-capital]] · [[memory-engineering]] · [[context-graph]] · [[harness-routing]]
+[[llm-wiki]] · [[tokens-as-capital]] · [[memory-engineering]] · [[context-graph]] · [[harness-routing]] · [[retrieval]]

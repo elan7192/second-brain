@@ -1,4 +1,5 @@
 ---
+id: concept:anti-slop
 type: concept
 tags:
   - wiki
@@ -41,4 +42,6 @@ Public ranked skills. Company living libraries are a different object. A GitHub 
 
 ## Related
 
-[[verifiable-instructions]] · [[skill-library]] · D6 in `decisions.md`
+[[verifiable-instructions]] · [[skill-library]] · [[skill-as-sop]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]]
+
+A second 10-skill list exists ([[src-openagentskill-anti-slop]]). Do not replace juampi's list. See [[contradictions]] C8.

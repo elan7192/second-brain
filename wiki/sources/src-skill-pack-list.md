@@ -1,4 +1,5 @@
 ---
+id: source:src-skill-pack-list
 type: source
 tags:
   - github
@@ -18,7 +19,7 @@ A skill packages a repeated workflow as an SOP. Named jobs: UI review, API check
 
 The human later wrote a Smoke-problem script as Hook + SOP and asked whether to make their own skill. The script was not attached.
 
-Five GitHub packs were named. Counts in the paste are stale against 2026-08-23 READMEs. See [[contradictions]] C12. Skill bodies were not copied. Do not vendor the packs.
+Five GitHub packs were named. Counts in the paste are stale against 2026-08-23 READMEs. See [[contradictions]] C24. Skill bodies were not copied. Do not vendor the packs.
 
 ## Pages updated
 

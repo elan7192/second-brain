@@ -1,4 +1,5 @@
 ---
+id: person:hurley
 type: person
 tags:
   - person

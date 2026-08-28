@@ -1,9 +1,10 @@
 ---
+id: concept:verifiable-instructions
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Verifiable instructions
@@ -33,4 +34,4 @@ A local skill SOP needs this shape or it is a wish. See [[skill-as-sop]].
 
 ## Related
 
-[[memory-ablation]] · [[self-verification]] · [[skill-as-sop]] · `AGENTS.md`
+[[memory-ablation]] · [[self-verification]] · [[skill-as-sop]] · [[anti-slop]] · `AGENTS.md`

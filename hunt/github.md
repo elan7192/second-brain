@@ -4,7 +4,7 @@ tags:
   - hunt
   - github
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-26
 ---
 
 # GitHub hunt
@@ -21,3 +21,4 @@ Green in the graph when people or repos land here.
 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | catalog row on [[skill-library]] |
 | [psenger/ai-agent-skills](https://github.com/psenger/ai-agent-skills) | catalog row on [[skill-library]] |
 | [softaworks/agent-toolkit](https://github.com/softaworks/agent-toolkit) | catalog row on [[skill-library]] |
+| [laude-institute/headlong](https://github.com/laude-institute/headlong) | compiled as [[headlong]]. 1h `hour` trial ended 02:07Z |
