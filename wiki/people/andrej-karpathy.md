@@ -1,4 +1,5 @@
 ---
+id: person:andrej-karpathy
 type: person
 tags:
   - person

@@ -1,4 +1,5 @@
 ---
+id: person:elvis
 type: person
 tags:
   - person

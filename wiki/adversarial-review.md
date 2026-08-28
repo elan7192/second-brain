@@ -1,4 +1,5 @@
 ---
+id: concept:adversarial-review
 type: concept
 tags:
   - wiki
@@ -36,7 +37,7 @@ Claude Sonnet 4.5 Medium Reasoning. 105 stdin tasks, 57 hard. Author-reported.
 
 The five-agent baseline in the tweet is MARS.
 
-Self-Refine stays at 77%. Same model critiques its own single draft. See [[contradictions]] C10.
+Self-Refine stays at 77%. Same model critiques its own single draft. See [[contradictions]] C35.
 
 ## SWE-PRBench
 

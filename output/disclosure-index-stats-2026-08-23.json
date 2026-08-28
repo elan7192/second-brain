@@ -1,0 +1,127 @@
+{
+  "source": "https://bug-bounty-disclosures.vercel.app/",
+  "catalog_js": "https://bug-bounty-disclosures.vercel.app/data/catalog.js",
+  "site_updated": "2026-08-23",
+  "fetched": "2026-08-24",
+  "records": 11338,
+  "unique_ids": 11338,
+  "unique_urls": 11338,
+  "researchers": 4798,
+  "platforms": {
+    "HackerOne": 10019,
+    "Bugcrowd": 809,
+    "Code4rena": 411,
+    "Immunefi": 92,
+    "Intigriti": 6,
+    "YesWeHack": 1
+  },
+  "indexed_via": {
+    "HackerOne Disclosed Reports index": 9979,
+    "Bugcrowd CrowdStream": 800,
+    "Code4rena official reports": 411,
+    "Immunefi public sitemap": 92,
+    "PentesterLand historical platform index (through 2022)": 56
+  },
+  "kinds": {
+    "Platform disclosure": 10779,
+    "Competitive audit report": 411,
+    "Bug-fix review": 92,
+    "Historical platform-associated writeup": 56
+  },
+  "years": {
+    "2013": 8,
+    "2014": 388,
+    "2015": 485,
+    "2016": 999,
+    "2017": 1407,
+    "2018": 840,
+    "2019": 995,
+    "2020": 1095,
+    "2021": 1088,
+    "2022": 978,
+    "2023": 838,
+    "2024": 835,
+    "2025": 726,
+    "2026": 654,
+    "none": 2
+  },
+  "date_min": "2013-11-07",
+  "date_max": "2026-08-21",
+  "vulnerability_class": {
+    "Other": 3478,
+    "Cross-site scripting": 1740,
+    "Access control": 1364,
+    "Authentication": 1153,
+    "Information disclosure": 1122,
+    "Smart contracts": 419,
+    "Command execution": 397,
+    "Injection": 367,
+    "CSRF": 311,
+    "Business logic": 302,
+    "SSRF": 208,
+    "File security": 175,
+    "SQL injection": 172,
+    "Request smuggling": 55,
+    "Subdomain takeover": 53,
+    "XXE": 22
+  },
+  "severity": {
+    "Unrated": 3200,
+    "Medium": 3047,
+    "Low": 2007,
+    "High": 1576,
+    "Critical": 814,
+    "None": 402,
+    "Informational": 292
+  },
+  "outcome": {
+    "Resolved": 9100,
+    "Informational": 1099,
+    "missing": 559,
+    "Not applicable": 321,
+    "Duplicate": 228,
+    "Spam": 23,
+    "Unresolved": 8
+  },
+  "records_with_cve": 1601,
+  "cve_mentions": 1867,
+  "records_with_weakness": 9033,
+  "records_with_votes": 9836,
+  "native_technology_field": 0,
+  "bounty": {
+    "nonzero_records": 2277,
+    "sum": 3792071.62,
+    "min": 1.0,
+    "max": 50000.0,
+    "median": 500.0,
+    "p90": 4000.0,
+    "le_10": 23,
+    "gt_1000": 692,
+    "note": "Catalog field as published. Some Immunefi values look like title numerals, not USD."
+  },
+  "documented_api": {
+    "endpoints": [
+      "/api/reports",
+      "/api/reports/{id}",
+      "/api/stats"
+    ],
+    "filters": [
+      "q",
+      "platform",
+      "technology",
+      "status",
+      "severity",
+      "class",
+      "researcher",
+      "program",
+      "year",
+      "kind",
+      "sort",
+      "limit",
+      "offset"
+    ],
+    "rate_limit_claimed": "120 requests per minute per client",
+    "status_on_2026-08-24": "404"
+  },
+  "live_data_surface": "data/catalog.js window.DISCLOSURE_REPORTS"
+}

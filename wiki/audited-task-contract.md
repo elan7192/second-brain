@@ -1,9 +1,10 @@
 ---
+id: concept:audited-task-contract
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Audited task contract
@@ -30,6 +31,8 @@ Moving a task to a new harness without a contract means re-reading the repo, reo
 
 Exclude: full chat, secrets, raw tool dumps, adjectives.
 
+From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]].
+
 ## Control plane
 
 - Planner proposes a bounded unit.
@@ -45,6 +48,8 @@ Rule: the planner proposes. The executor changes a candidate. The auditor verifi
 
 Generated repo summaries in a 2026 AGENTS.md study did not significantly raise resolve rate and raised cost. Native sessions are not a standard. Unverified memory can poison later agents.
 
+[[src-avid-company-foundry]]: the folder is not the product. The contracts inside it are. Workers write artifacts, not private summaries. A chat answer is not a company artifact. See [[company-foundry]].
+
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]]

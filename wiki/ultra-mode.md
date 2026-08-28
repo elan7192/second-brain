@@ -1,4 +1,5 @@
 ---
+id: concept:ultra-mode
 type: concept
 tags:
   - wiki
@@ -34,7 +35,7 @@ DeepSeek V4 Flash 0731 as agent and verifier, N=5, OpenCode. Author-reported.
 
 Recovered: `chess-best-move`, `new-encrypt-command`, `decommissioning-service`. Missed: `jupyter-notebook-server`.
 
-Author says the verifier took about 56% of the pass@1 to pass@5 headroom. 9 of 15 never passed in 5 tries. Full-set estimate: model already about 83%, +2 to +5 points. See [[contradictions]] C8.
+Author says the verifier took about 56% of the pass@1 to pass@5 headroom. 9 of 15 never passed in 5 tries. Full-set estimate: model already about 83%, +2 to +5 points. See [[contradictions]] C33.
 
 ## What the author dropped
 

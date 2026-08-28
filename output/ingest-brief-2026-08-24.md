@@ -8,18 +8,18 @@ updated: 2026-08-24
 
 # Ingest brief · 2026-08-24
 
-[[src-maverick-ultramode]] compiled from the pasted X URL.
+DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault.
 
 ## What changed
 
-`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slices.
+Agents read `AGENTS.md` and working notes, not API docs. This vault now treats instruction files and `wiki/` as the control surface, and treats reading them as not verification. Locked D10 (was D8 on this branch). Flagged C26 and C27.
 
 ## What linked
 
-[[ultra-mode]] · [[self-verification]] · [[entropy-gate]] · [[harness-routing]] · [[jacky-kwok]] · [[maverick]] · [[contradictions]] C8 C9
+[[agent-facing-docs]] now sits between [[verifiable-instructions]], [[context-graph]], [[tokens-as-capital]], [[llm-wiki]], and [[self-verification]]. The measured 60.5% agent-facing share is cited from [[src-dair-agent-friendly-docs]], with the weighting and label caveats on that page.
 
 ## What to look at
 
-1. [[ultra-mode]] for the loop and the 15-task table.
-2. [[contradictions]] C8 before quoting Terminal-Bench numbers.
-3. Do not re-propose planning-first best-of-N. See `MEMORY.md`.
+1. [[agent-facing-docs]] and D10 in `decisions.md`.
+2. [[contradictions]] C26 (file first vs code first) and C27 (prose checks vs observed validation).
+3. `AGENTS.md` Control surface. Then `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.

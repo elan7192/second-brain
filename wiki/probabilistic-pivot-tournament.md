@@ -1,4 +1,5 @@
 ---
+id: concept:probabilistic-pivot-tournament
 type: concept
 tags:
   - wiki
