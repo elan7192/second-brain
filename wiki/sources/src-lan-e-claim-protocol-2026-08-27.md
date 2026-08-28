@@ -1,9 +1,10 @@
 ---
+id: source:src-lan-e-claim-protocol-2026-08-27
 type: source
 tags:
   - play
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # src-lan-e-claim-protocol-2026-08-27
@@ -28,10 +29,8 @@ Next step is the chain Claim → Evidence → Verification → Retrieval → Con
 
 Git markdown stays canonical. Indexes are disposable. See [[portable-memory]].
 
-Proposed embeddings sit behind FTS5. Vault already forbids a vector DB until the wiki is too large to read. See [[file-memory]] and [[contradictions]] C15.
-
-Architecture-vs-maturity scores and GitHub star counts from this note are author judgment. Not stored as facts.
+Proposed embeddings sit behind FTS5. Vault already forbids a vector DB until the wiki is too large to read. See [[file-memory]] and [[contradictions]] C19.
 
 ## Pages updated
 
-[[claim-protocol]] · [[llm-wiki]] · [[portable-memory]] · [[file-memory]] · [[memory-engineering]] · [[context-graph]] · [[stale-fact-detector]] · [[how-it-works]] · [[agent-operating-system]]
+[[claim-protocol]] · [[retrieval]] · [[claims]] · [[llm-wiki]] · [[portable-memory]] · [[file-memory]] · [[memory-engineering]] · [[context-graph]] · [[stale-fact-detector]] · [[how-it-works]] · [[agent-operating-system]]

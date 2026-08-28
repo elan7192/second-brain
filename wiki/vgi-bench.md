@@ -1,4 +1,5 @@
 ---
+id: concept:vgi-bench
 type: concept
 tags:
   - wiki

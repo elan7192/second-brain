@@ -1,4 +1,5 @@
 ---
+id: concept:context-compaction
 type: concept
 tags:
   - wiki

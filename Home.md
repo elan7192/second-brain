@@ -1,9 +1,10 @@
 ---
+id: meta:Home
 type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-28
 ---
 
 # Home
@@ -27,6 +28,9 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - [[Today]]
 - [[index]]
 - [[agent-operating-system]]
+- [[memory-system]]
+- [[claims]]
+- [[vault-ontology]]
 - [[contradictions]]
 - [[Jarvis]]
 - [[TELOS]]
@@ -36,9 +40,11 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 
 - Drop a file in `raw/` and say `ingest this`.
 - File a clip in [[inbox]], then ingest.
-- Say `lint the wiki`.
-- Ask a question. Agent runs [[claim-protocol]] retrieve.
+- Say `lint the wiki` or run `python3 tools/sb validate`.
+- Ask a question; the agent should `python3 tools/sb ask` first. Named chain: [[claim-protocol]].
 
 ## This batch
 
 2026-08-17 to 2026-08-22, compiled 2026-08-23. Brief: [[ingest-brief-2026-08-23]].
+
+2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour harvest: [[ingest-brief-2026-08-26-headlong-hour]].

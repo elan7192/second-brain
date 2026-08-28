@@ -68,6 +68,13 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
     "memory": {
         "memory-engineering",
         "memory-ablation",
+        "memory-system",
+        "epistemic-labels",
+        "provenance",
+        "claims",
+        "untrusted-ingest",
+        "file-memory",
+        "portable-memory",
         "MEMORY",
         "portable-memory",
         "file-memory",
@@ -90,6 +97,9 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "src-rohit-harness-router",
         "src-hitu-entropy-engineering",
         "rohit",
+        "headlong",
+        "src-laude-headlong",
+        "src-hxiao-headlong",
     },
     "hunt-ship": {
         "hunt-ship-loop",
@@ -563,7 +573,10 @@ def main() -> None:
     OUT_DIR.mkdir(exist_ok=True)
     write_svg(nodes, edges, OUT_DIR / "obsidian-graph.svg")
     write_html(nodes, edges, OUT_DIR / "obsidian-graph.html")
-    write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
+    try:
+        write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
+    except ModuleNotFoundError:
+        print("skip png: PIL not installed")
     write_mermaid(nodes, edges, GRAPH_PAGE)
     counts: dict[str, int] = defaultdict(int)
     for node in nodes.values():

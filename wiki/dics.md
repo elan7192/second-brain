@@ -1,4 +1,5 @@
 ---
+id: concept:dics
 type: concept
 tags:
   - wiki

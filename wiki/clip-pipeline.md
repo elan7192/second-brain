@@ -1,4 +1,5 @@
 ---
+id: concept:clip-pipeline
 type: concept
 tags:
   - wiki

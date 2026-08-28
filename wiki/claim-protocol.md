@@ -1,58 +1,50 @@
 ---
+id: concept:claim-protocol
 type: concept
+schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-28
+created_by: agent
+confidence: medium
+source:
+  - wiki/sources/src-lan-e-claim-protocol-2026-08-27.md
+derived_from:
+  - src-lan-e-claim-protocol-2026-08-27
+  - retrieval
+  - claims
+  - portable-memory
 ---
 
 # Claim protocol
 
-Compile and answer through one chain: Claim → Evidence → Verification → Retrieval → Context → Answer.
+Named compile chain: Claim → Evidence → Verification → Retrieval → Context → Answer.
 
-Source: [[src-lan-e-claim-protocol-2026-08-27]]. Locked as D9 in [[decisions]].
+Source: [[src-lan-e-claim-protocol-2026-08-27]]. Live tools on main are [[retrieval]] (`python3 tools/sb ask`) and [[claims]] (`python3 tools/compile-claims.py`). D9 on main is markdown canonical plus disposable FTS, not this page. See C18.
 
-## Ledger
+## FACT
 
-Canonical rows live in `wiki/claims.csv`. That is the one CSV in [[file-memory]].
+The chain is Claim → Evidence → Verification → Retrieval → Context → Answer.
 
-Each row: `id`, `claim`, `source`, `evidence`, `status`, `created_at`, `verified_at`, `wiki_page`, `supports`, `contradicts`, `supersedes`.
+Live query is `python3 tools/sb ask`. Live claim compile is `python3 tools/compile-claims.py`. Do not hand-edit `wiki/claims.csv`. Dual store with `wiki/data/claims.yaml` is C17.
 
-Statuses: `extracted` | `verified` | `unverified` | `contradicted` | `superseded`.
+Git markdown stays canonical. SQLite FTS5 is disposable. See [[portable-memory]] and D9.
 
-Evidence is a file location (`wiki/page.md#Heading` or `AGENTS.md#Query`). Provenance edges stay on the row. Do not add a second graph store. See [[loop-graph-engineering]].
+## INFERENCE
 
-## Ingest
+Compilation can inject error before any query. A claim needs a source page and evidence before it is treated as memory. Persistence is not truth.
 
-1. Read the raw source. Do not edit `raw/`.
-2. Append claim rows with source and evidence. Status starts as `extracted` or `unverified`.
-3. Promote `verified` rows into wiki prose. `unverified` rows may appear only if the page marks them `unverified`.
-4. `contradicted` rows go to [[contradictions]]. Do not silently pick a side.
+## OPINION
 
-`MEMORY.md` takes only `verified` rows that still pass [[memory-ablation]].
+`tools/retrieve.py` and `tools/claim_protocol.py` on this branch overlap [[retrieval]]. Do not wire them as the query path. Do not delete them without a human yes. See C18.
 
-## Retrieval
-
-Run `python3 tools/retrieve.py "<question>"`.
-
-The index is disposable SQLite FTS5 under `.cache/wiki.sqlite`. Rebuild is cheap. Git markdown stays truth. See [[portable-memory]].
-
-Score mix: BM25 with prefix rewrite, one-hop wikilinks, recency from `updated:`, source authority, verified-claim bonus, contradiction penalty.
-
-Embeddings stay parked. See [[contradictions]] C15.
-
-## Query
-
-Read the ranked pages, then follow links. Do not dump the vault. That is [[context-graph]].
-
-Cite wiki pages and claim ids. If retrieve returns nothing, say so.
+Embeddings stay parked. See C19 and [[file-memory]].
 
 ## Check
 
-`python3 tools/lint-wiki.py` exits 0. Every claims.csv row has source and evidence. `python3 tools/retrieve.py` returns existing wiki pages.
-
-If evidence is missing: status `unverified`. Do not write the claim into `MEMORY.md`.
+`python3 tools/sb ask` is Query step 1 in `AGENTS.md`. `python3 tools/compile-claims.py --check` matches. If evidence is missing: mark `unverified`. Do not write it into `MEMORY.md`.
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[portable-memory]] · [[file-memory]] · [[context-graph]] · [[stale-fact-detector]] · [[entropy-gate]] · [[self-verification]] · [[src-lan-e-claim-protocol-2026-08-27]]
+[[llm-wiki]] · [[retrieval]] · [[claims]] · [[memory-engineering]] · [[memory-ablation]] · [[portable-memory]] · [[file-memory]] · [[context-graph]] · [[stale-fact-detector]] · [[entropy-gate]] · [[self-verification]] · [[src-lan-e-claim-protocol-2026-08-27]]

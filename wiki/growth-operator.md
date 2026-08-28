@@ -1,4 +1,5 @@
 ---
+id: concept:growth-operator
 type: concept
 tags:
   - wiki

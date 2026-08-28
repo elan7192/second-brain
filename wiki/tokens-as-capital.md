@@ -1,4 +1,5 @@
 ---
+id: concept:tokens-as-capital
 type: concept
 tags:
   - wiki

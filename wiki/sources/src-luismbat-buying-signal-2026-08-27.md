@@ -1,4 +1,5 @@
 ---
+id: source:src-luismbat-buying-signal-2026-08-27
 type: source
 tags:
   - twitter
