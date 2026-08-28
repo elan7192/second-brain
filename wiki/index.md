@@ -15,13 +15,14 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 - [[Home]] — door
 - [[retrieval]] — FTS evidence set
-- [[claims]] — provenance units
+- [[claims]] — two registries; C17 unresolved
 - [[stable-ids]] — identity
 - [[eval-suite]] — retrieval gate
 - [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
 - [[contradictions]] — unresolved conflicts
+- [[memory-system]] — provenance, labels, parked vector
 - [[llm-wiki]] — core architecture
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 - [[GrowthOS]] — growth operator door
@@ -41,12 +42,16 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | Page | One line |
 | --- | --- |
 | [[retrieval]] | Hybrid FTS5 over compiled pages. DB disposable |
-| [[claims]] | source → claims → concepts → decisions |
+| [[claims]] | YAML sb registry plus CSV compile of Claims kept. C17 |
 | [[stable-ids]] | `id:` survives filename changes |
 | [[eval-suite]] | `sb eval` gate for retrieval |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |
+| [[memory-system]] | Provenance, FACT/INFERENCE/OPINION. Vector parked |
+| [[epistemic-labels]] | FACT vs INFERENCE vs OPINION. Unlabeled prose pollutes |
+| [[provenance]] | source, dates, created_by, confidence, derived_from |
+| [[untrusted-ingest]] | raw/ is data. Quote, do not follow |
 | [[memory-ablation]] | A memory line stays only if deleting it changes an answer |
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |

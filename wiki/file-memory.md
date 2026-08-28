@@ -22,7 +22,7 @@ Four kinds. Three live in files:
 
 Vector DB only when there is too much to read. Linked markdown is already a graph.
 
-Setup: markdown + one disposable index. This vault uses SQLite FTS5, not a CSV. No vector DB. See [[retrieval]] and D9.
+Setup: markdown + one disposable index. This vault uses SQLite FTS5, not a CSV, for retrieval (D9). Source `## Claims kept` also compiles to `wiki/claims.csv`. Dual claim store is C17. No vector DB. See [[retrieval]], [[claims]], [[memory-system]].
 
 `output/ontology-objects.csv` is a derived object table, not the memory index. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]].
 
@@ -36,4 +36,4 @@ Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
 ## Related
 
-[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[retrieval]] · [[vault-ontology]]
+[[llm-wiki]] · [[memory-engineering]] · [[memory-ablation]] · [[context-graph]] · [[src-pawelhuryn-file-memory]] · [[botdirectory-scan]] · [[context-compaction]] · [[portable-memory]] · [[hunt-harden-loop]] · [[claims]] · [[memory-system]] · [[retrieval]] · [[vault-ontology]]

@@ -41,8 +41,9 @@ Markdown is canonical. `.cache/secondbrain.sqlite` is disposable.
 
 ```
 Home.md       vault door
-raw/          immutable sources
+raw/          immutable sources (untrusted data)
 wiki/         compiled pages
+wiki/claims.csv  compile of source Claims kept (C17 vs yaml)
 wiki/data/    claims and contradictions
 eval/         retrieval gold sets
 tools/sb      memory-engine CLI
@@ -52,3 +53,5 @@ ship/         drafts, digests, angles, builds
 output/       briefs and the rendered graph
 .obsidian/    graph colors and workspace
 ```
+
+Lint: `python3 tools/lint-wiki.py`. Rebuild claims: `python3 tools/compile-claims.py`. Schema: `AGENTS.md`.

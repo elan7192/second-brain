@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T17:35:47Z",
+  "builtAt": "2026-08-28T17:48:04Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -106,19 +106,19 @@
     }
   },
   "counts": {
-    "Meta": 12,
-    "unverified": 64,
+    "Meta": 13,
+    "unverified": 68,
     "Hunt": 7,
     "Map": 5,
-    "Ship": 37,
-    "Concept": 100,
+    "Ship": 38,
+    "Concept": 104,
     "Project": 2,
     "Person": 6,
     "Source": 119,
     "Decision": 9,
-    "Contradiction": 16,
-    "objects": 313,
-    "links": 1849
+    "Contradiction": 17,
+    "objects": 320,
+    "links": 1941
   },
   "objects": [
     {
@@ -147,7 +147,7 @@
       "inbound": 0,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Resolution: keep the \u00a74.1 span. Mark the abstract phrase as a clash. See [[hydrofusion-lmf]]."
+      "oneLiner": "Resolution: keep the \u00a74.1 span. Mark the abstract phrase as a clash. Claims `c-hydrofusion-abstract-years` / `c-hydrofusion-section-41`. See [[hydrofusion-lmf]]."
     },
     {
       "primaryKey": "C11",
@@ -232,6 +232,20 @@
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Harvest 02:07Z: mind stopped; tests did not run. Still not th"
+    },
+    {
+      "primaryKey": "C17",
+      "objectType": "Contradiction",
+      "title": "Two claim registries",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / INFERENCE / OPINION."
     },
     {
       "primaryKey": "C2",
@@ -343,7 +357,7 @@
       "inbound": 0,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Resolution: unresolved. Do not pick a number. See [[ngc]]."
+      "oneLiner": "Resolution: unresolved. Do not pick a number. Claims `c-ngc-mmlu-table1` / `c-ngc-mmlu-table3`. See [[ngc]]."
     },
     {
       "primaryKey": "D1",
@@ -351,7 +365,7 @@
       "title": "Compiler vault",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -365,7 +379,7 @@
       "title": "One schema, two filenames",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -379,7 +393,7 @@
       "title": "Facts, not adjectives",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -393,7 +407,7 @@
       "title": "Shared state is a contract",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -407,7 +421,7 @@
       "title": "Human final yes",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -421,7 +435,7 @@
       "title": "Anti-slop by default",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -435,7 +449,7 @@
       "title": "Obsidian is the IDE",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -449,7 +463,7 @@
       "title": "Graph clusters by concept",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -463,7 +477,7 @@
       "title": "Markdown canonical, FTS disposable",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -495,7 +509,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 5,
-      "outbound": 22,
+      "outbound": 24,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -537,7 +551,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 10,
-      "outbound": 40,
+      "outbound": 45,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -579,7 +593,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 19,
-      "outbound": 27,
+      "outbound": 28,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -662,7 +676,7 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Default writing constraints"
@@ -718,7 +732,7 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
+      "inbound": 24,
       "outbound": 5,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
@@ -868,14 +882,14 @@
       "objectType": "Concept",
       "title": "Claims",
       "path": "wiki/claims.md",
-      "created": "2026-08-28",
+      "created": "2026-08-27",
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
-      "outbound": 7,
+      "inbound": 27,
+      "outbound": 13,
       "unverified": false,
-      "oneLiner": "source \u2192 claims \u2192 concepts \u2192 decisions"
+      "oneLiner": "YAML sb registry plus CSV compile of Claims kept. C17"
     },
     {
       "primaryKey": "clip-pipeline",
@@ -970,10 +984,24 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 52,
-      "outbound": 28,
+      "inbound": 57,
+      "outbound": 29,
       "unverified": true,
-      "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`."
+      "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
+    },
+    {
+      "primaryKey": "curated-claims",
+      "objectType": "Meta",
+      "title": "curated-claims",
+      "path": "wiki/claims/curated-claims.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "wiki",
+      "island": "meta",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Vault-level claims not copied from a single source paragraph. Compiler merges these into `wiki/claims.csv`. See [[claims]] and [[memory-system]]."
     },
     {
       "primaryKey": "cvsd-reg",
@@ -1009,10 +1037,10 @@
       "title": "Decisions",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 15,
+      "inbound": 14,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
@@ -1110,10 +1138,24 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
+      "inbound": 19,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
+    },
+    {
+      "primaryKey": "epistemic-labels",
+      "objectType": "Concept",
+      "title": "Epistemic labels",
+      "path": "wiki/epistemic-labels.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 9,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "FACT vs INFERENCE vs OPINION. Unlabeled prose pollutes"
     },
     {
       "primaryKey": "eval-suite",
@@ -1152,8 +1194,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
-      "outbound": 12,
+      "inbound": 26,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
     },
@@ -1247,7 +1289,7 @@
       "title": "Graph",
       "path": "wiki/graph.md",
       "created": "2026-08-23",
-      "updated": "2026-08-26",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
       "inbound": 8,
@@ -1306,8 +1348,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
-      "outbound": 7,
+      "inbound": 7,
+      "outbound": 8,
       "unverified": true,
       "oneLiner": "Show the tape. Cite or omit. Silence is valid"
     },
@@ -1447,9 +1489,9 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 9,
-      "outbound": 17,
+      "outbound": 19,
       "unverified": false,
-      "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]."
+      "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s"
     },
     {
       "primaryKey": "hunt",
@@ -1559,7 +1601,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 11,
-      "outbound": 238,
+      "outbound": 242,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -1992,8 +2034,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 41,
-      "outbound": 20,
+      "inbound": 45,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2021,7 +2063,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 9,
-      "outbound": 163,
+      "outbound": 168,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2034,8 +2076,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
-      "outbound": 11,
+      "inbound": 12,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "Owner + worker + verifier + stop. One graph writer"
     },
@@ -2076,7 +2118,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
+      "inbound": 20,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "A memory line stays only if deleting it changes an answer"
@@ -2104,10 +2146,38 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
-      "outbound": 15,
+      "inbound": 22,
+      "outbound": 18,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
+    },
+    {
+      "primaryKey": "memory-system",
+      "objectType": "Concept",
+      "title": "Memory system",
+      "path": "wiki/memory-system.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 20,
+      "outbound": 15,
+      "unverified": true,
+      "oneLiner": "Provenance, FACT/INFERENCE/OPINION. Vector parked"
+    },
+    {
+      "primaryKey": "memory-system-brief-2026-08-27",
+      "objectType": "Ship",
+      "title": "Brief: memory-system 2026-08-27",
+      "path": "output/memory-system-brief-2026-08-27.md",
+      "created": "",
+      "updated": "",
+      "tags": "",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 10,
+      "unverified": false,
+      "oneLiner": "Compiled [[memory-system]], [[epistemic-labels]], [[provenance]], [[claims]], and [[untrusted-ingest]]. `wiki/claims.csv` rebuilds from source `## Claims kept` plus [[curated-claims]]. Lint now fails "
     },
     {
       "primaryKey": "mpi-init",
@@ -2160,7 +2230,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 9,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Low-rank neuronal states. Table 1 vs 3 clash"
@@ -2272,8 +2342,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
-      "outbound": 8,
+      "inbound": 12,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Git truth. FTS5 disposable. Do not clone Brain"
     },
@@ -2332,6 +2402,20 @@
       "outbound": 0,
       "unverified": false,
       "oneLiner": "Empty. File links here. Ingest into `raw/` before they become wiki pages."
+    },
+    {
+      "primaryKey": "provenance",
+      "objectType": "Concept",
+      "title": "Provenance",
+      "path": "wiki/provenance.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 9,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "source, dates, created_by, confidence, derived_from"
     },
     {
       "primaryKey": "pwr-ga",
@@ -2412,7 +2496,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
+      "inbound": 17,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Hybrid FTS5 over compiled pages. DB disposable"
@@ -4246,8 +4330,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
-      "outbound": 5,
+      "inbound": 11,
+      "outbound": 7,
       "unverified": false,
       "oneLiner": "Audit wiki claims vs named sources. raw/ immutable"
     },
@@ -4364,6 +4448,20 @@
       "oneLiner": "One tokenizer, 10 domains. 51.89% is Toys"
     },
     {
+      "primaryKey": "untrusted-ingest",
+      "objectType": "Concept",
+      "title": "Untrusted ingest",
+      "path": "wiki/untrusted-ingest.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 8,
+      "outbound": 8,
+      "unverified": true,
+      "oneLiner": "raw/ is data. Quote, do not follow"
+    },
+    {
       "primaryKey": "vault-ontology",
       "objectType": "Concept",
       "title": "Vault ontology",
@@ -4400,7 +4498,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 16,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Behavior, check, failure path. No wishes"
@@ -4471,7 +4569,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 2,
-      "outbound": 3,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled knowledge. Gold in the Obsidian graph."
     },
@@ -4634,6 +4732,21 @@
       "from": "C16",
       "linkType": "relatedTo",
       "to": "headlong"
+    },
+    {
+      "from": "C17",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C17",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "C17",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "C2",
@@ -4918,6 +5031,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "contradictions"
     },
     {
@@ -4964,6 +5082,11 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "maps"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "Home",
@@ -5118,6 +5241,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "composio-mcp"
     },
     {
@@ -5129,6 +5257,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "drafts-not-publish"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
     },
     {
       "from": "MEMORY",
@@ -5193,6 +5326,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "multi-source-verdict"
     },
     {
@@ -5223,6 +5361,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "provenance"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "raptor-dispatch"
     },
     {
@@ -5249,6 +5392,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "stale-fact-detector"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "MEMORY",
@@ -5424,6 +5572,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "memory-engineering"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "agent-operating-system",
@@ -6138,17 +6291,22 @@
     {
       "from": "claims",
       "linkType": "relatedTo",
-      "to": "claims"
-    },
-    {
-      "from": "claims",
-      "linkType": "relatedTo",
       "to": "contradictions"
     },
     {
       "from": "claims",
       "linkType": "relatedTo",
-      "to": "decisions"
+      "to": "curated-claims"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "file-memory"
     },
     {
       "from": "claims",
@@ -6158,7 +6316,22 @@
     {
       "from": "claims",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "ngc"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
       "to": "portable-memory"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "claims",
@@ -6169,6 +6342,16 @@
       "from": "claims",
       "linkType": "relatedTo",
       "to": "stable-ids"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "stale-fact-detector"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "clip-pipeline",
@@ -6413,6 +6596,11 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "ngc"
     },
     {
@@ -6434,6 +6622,16 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "vault-ontology"
+    },
+    {
+      "from": "curated-claims",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "curated-claims",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "cvsd-reg",
@@ -6661,6 +6859,36 @@
       "to": "self-verification"
     },
     {
+      "from": "epistemic-labels",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "epistemic-labels",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "epistemic-labels",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "epistemic-labels",
+      "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "epistemic-labels",
+      "linkType": "relatedTo",
+      "to": "provenance"
+    },
+    {
+      "from": "epistemic-labels",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "eval-suite",
       "linkType": "relatedTo",
       "to": "claims"
@@ -6713,6 +6941,11 @@
     {
       "from": "file-memory",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "file-memory",
+      "linkType": "relatedTo",
       "to": "context-compaction"
     },
     {
@@ -6744,6 +6977,11 @@
       "from": "file-memory",
       "linkType": "relatedTo",
       "to": "memory-engineering"
+    },
+    {
+      "from": "file-memory",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "file-memory",
@@ -6974,6 +7212,11 @@
       "from": "grok-bot-tape",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "grok-bot-tape",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "grok-bot-tape",
@@ -7288,6 +7531,11 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
       "to": "context-graph"
     },
     {
@@ -7319,6 +7567,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "how-it-works",
@@ -8403,6 +8656,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "eval-suite"
     },
     {
@@ -8563,6 +8821,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "mpi-init"
     },
     {
@@ -8629,6 +8892,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "prednext"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "index",
@@ -8744,6 +9012,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "unitok"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "index",
@@ -9658,6 +9931,11 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "palantir-aip"
     },
     {
@@ -9684,6 +9962,11 @@
       "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "llm-wiki",
@@ -10108,6 +10391,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "eval-suite"
     },
     {
@@ -10308,6 +10596,16 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "memory-system-brief-2026-08-27"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "mpi-init"
     },
     {
@@ -10364,6 +10662,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "prednext"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "log",
@@ -10483,6 +10786,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "untrusted-ingest"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "vault-ontology"
     },
     {
@@ -10548,12 +10856,22 @@
     {
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
       "to": "grok-bot-quota"
     },
     {
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
       "to": "llm-wiki"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "loop-graph-engineering",
@@ -10708,7 +11026,17 @@
     {
       "from": "memory-engineering",
       "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
     },
     {
       "from": "memory-engineering",
@@ -10728,12 +11056,142 @@
     {
       "from": "memory-engineering",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
       "to": "retrieval"
     },
     {
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "trace"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "curated-claims"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "grok-bot-tape"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "provenance"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "stale-fact-detector"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "curated-claims"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "provenance"
+    },
+    {
+      "from": "memory-system-brief-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "mpi-init",
@@ -10993,6 +11451,11 @@
     {
       "from": "portable-memory",
       "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "portable-memory",
+      "linkType": "relatedTo",
       "to": "retrieval"
     },
     {
@@ -11039,6 +11502,41 @@
       "from": "prednext",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "stale-fact-detector"
     },
     {
       "from": "pwr-ga",
@@ -13258,12 +13756,22 @@
     {
       "from": "stale-fact-detector",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "stale-fact-detector",
+      "linkType": "relatedTo",
       "to": "llm-wiki"
     },
     {
       "from": "stale-fact-detector",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "stale-fact-detector",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "stale-fact-detector",
@@ -13446,6 +13954,46 @@
       "to": "contradictions"
     },
     {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "epistemic-labels"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "grok-bot-tape"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "provenance"
+    },
+    {
+      "from": "untrusted-ingest",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "vault-ontology",
       "linkType": "cites",
       "to": "src-palantir-aip-developers-2026-08-28"
@@ -13603,12 +14151,22 @@
     {
       "from": "wiki",
       "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "wiki",
+      "linkType": "relatedTo",
       "to": "how-it-works"
     },
     {
       "from": "wiki",
       "linkType": "relatedTo",
       "to": "index"
+    },
+    {
+      "from": "wiki",
+      "linkType": "relatedTo",
+      "to": "memory-system"
     },
     {
       "from": "work-per-cost",

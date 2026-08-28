@@ -28,6 +28,8 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - [[Today]]
 - [[index]]
 - [[agent-operating-system]]
+- [[memory-system]]
+- [[claims]]
 - [[vault-ontology]]
 - [[contradictions]]
 - [[Jarvis]]

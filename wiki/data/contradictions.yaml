@@ -161,3 +161,13 @@ contradictions:
     resolution: Headlong stays a trial CLI, not the wiki compiler
     resolution_source: concept:headlong
     page: contradictions.md
+
+  - id: contradiction:c17
+    claim_a: claim:source-claims-compile-to-csv
+    claim_b: claim:structured-claims-live-in-yaml
+    reason: CSV compile of Claims kept vs YAML sb registry
+    status: unresolved
+    severity: high
+    resolution: keep both; do not delete either table; human names the canonical store
+    resolution_source: concept:claims
+    page: contradictions.md

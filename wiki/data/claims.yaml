@@ -278,3 +278,31 @@ claims:
     status: supported
     valid_from: 2026-08-26
     observed_at: 2026-08-28
+
+  - id: claim:source-claims-compile-to-csv
+    subject: wiki/claims.csv
+    predicate: is
+    object: a compile of source Claims kept plus curated rows
+    confidence: medium
+    sources:
+      - source:src-papa-couch-compiler
+    concepts:
+      - concept:claims
+      - concept:memory-system
+    status: disputed
+    valid_from: 2026-08-27
+    observed_at: 2026-08-28
+
+  - id: claim:structured-claims-live-in-yaml
+    subject: wiki/data/claims.yaml
+    predicate: is
+    object: the sb claim registry for python3 tools/sb
+    confidence: high
+    sources:
+      - source:src-av1dlive-portable-memory
+    concepts:
+      - concept:claims
+      - concept:retrieval
+    status: disputed
+    valid_from: 2026-08-28
+    observed_at: 2026-08-28

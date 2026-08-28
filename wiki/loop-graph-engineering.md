@@ -44,11 +44,11 @@ Author AGI claim is marketing. Not a fact.
 - Vault = KG writer.
 - Do not install Kimi Code.
 - Do not create Coordinator / Worker / Verifier bots.
-- Do not replace wiki markdown with a second JSONL graph store.
+- Do not replace wiki markdown with a second JSONL graph store. Conflict ledger stays [[contradictions]].
 - `output/ontology.json` is a derived snapshot of the wiki. Rebuild it. Do not write claims there first. See [[vault-ontology]].
 
 See [[raptor-dispatch]], [[audited-task-contract]], [[context-graph]], [[llm-wiki]], [[work-per-cost]], [[musk-algorithm]], [[ai-sovereignty]], [[grok-bot-quota]].
 
 ## Related
 
-[[raptor-dispatch]] · [[audited-task-contract]] · [[context-graph]] · [[llm-wiki]] · [[work-per-cost]] · [[musk-algorithm]] · [[ai-sovereignty]] · [[grok-bot-quota]] · [[src-av1dlive-loop-graph-2026-08-26]] · [[src-avid-obsidian-agent-team]] · [[vault-ontology]]
+[[raptor-dispatch]] · [[audited-task-contract]] · [[context-graph]] · [[llm-wiki]] · [[work-per-cost]] · [[musk-algorithm]] · [[ai-sovereignty]] · [[grok-bot-quota]] · [[src-av1dlive-loop-graph-2026-08-26]] · [[src-avid-obsidian-agent-team]] · [[memory-system]] · [[vault-ontology]]
