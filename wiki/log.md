@@ -11,6 +11,14 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into daily-tool-replace (C29)
+
+Fetched origin/main at agent-facing-docs / C26–C28. Simple unions kept. Writing-slop flag remapped C26 → C29 so it does not collide with file-first C26. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool-2]].
+
+## [2026-08-28] merge | origin/main into daily-tool-replace
+
+Fetched origin/main at skill-library / C20–C25. Simple unions kept. Writing-slop flag remapped C15 → C26 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool]].
+
 ## [2026-08-28] merge | origin/main into agent-facing-docs ingest
 
 Fetched origin/main. Simple unions kept. Decision IDs remapped D8/D9 → D10/D11 so they do not collide with graph-clusters and FTS D9. Contradiction IDs remapped C8–C10 → C26–C28 so they do not collide with anti-slop tens and arXiv flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-agent-facing-2026-08-28]].
@@ -42,6 +50,18 @@ Memory engine pass. Markdown stays canonical. `.cache/secondbrain.sqlite` is dis
 ## [2026-08-27] schema | memory-system phase 1-4
 
 Provenance + FACT/INFERENCE/OPINION on new memory-v1 pages. Source Claims kept compile to `wiki/claims.csv`. `raw/` is untrusted data. Vector search parked. Dual YAML/CSV store flagged as C17. Gate: `python3 tools/lint-wiki.py` plus `python3 tools/sb validate`. See [[memory-system]] [[claims]] [[epistemic-labels]] [[provenance]] [[untrusted-ingest]] [[memory-system-brief-2026-08-27]].
+
+## [2026-08-27] execute | captions-first + orphan briefs
+
+lan E yes. Deleted 4 counts-only intermediate briefs. Linked remaining 2026-08-24 briefs from [[digests]]. Lint now fails on orphans. Clip ingest: caption first. See [[daily-tool-replace-vault-2026-08-27]] [[clip-pipeline]].
+
+## [2026-08-27] query | daily-tool-replace vs this vault
+
+Room to optimize: delete/skip, not a git GUI. Kill omp clone and GitKraken-class UI. Pursue: captions-first ingest, 19 orphan briefs. Watch: 0 CSV, graph PNG Pillow. Brief: [[daily-tool-replace-vault-2026-08-27]].
+
+## [2026-08-27] ingest | Can daily-tool-replace
+
+@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C29: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
 
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 

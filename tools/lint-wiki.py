@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Check wiki pages, claims tables, provenance, and untrusted-data isolation."""
+"""Check wiki pages, claims tables, provenance, orphans, and untrusted-data isolation.
+
+Exit 1 if any missing link, non-hub orphan, or extra gate failure.
+Hubs: index, log, Home, lint-wiki, graph, claims.
+"""
 
 from __future__ import annotations
 
@@ -173,7 +177,7 @@ def main() -> int:
         print(f"ORPHAN {slug}")
     for item in extra:
         print(f"FAIL {item}")
-    return 1 if missing or extra else 0
+    return 1 if missing or orphans or extra else 0
 
 
 if __name__ == "__main__":

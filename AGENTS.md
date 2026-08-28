@@ -67,7 +67,7 @@ When the human drops files in `raw/` and says ingest:
 9. Write a three-sentence brief in `output/` of what changed, what linked, and what the human should look at.
 10. If the source supports a belief, add or update a row in `wiki/data/claims.yaml`.
 
-Check: `python3 tools/sb validate` exits 0. Every new page has an inbound `[[wikilink]]` and an `id:`. `python3 tools/compile-claims.py --check` matches. Then `python3 tools/rebuild-ontology.py` and `python3 tools/rebuild-ontology.py --check` exits 0.
+Check: `python3 tools/lint-wiki.py` exits 0. Orphans fail the gate. Every new page has an inbound `[[wikilink]]` and an `id:`. `python3 tools/sb validate` exits 0. `python3 tools/compile-claims.py --check` matches. Then `python3 tools/rebuild-ontology.py` and `python3 tools/rebuild-ontology.py --check` exits 0.
 If a claim cannot be tied to the raw file or to a named source page: leave it out.
 
 ## Ontology rebuild
@@ -156,6 +156,13 @@ Do not resolve C18 (two retrieve engines) without an explicit human yes.
 Check: no vector DB or Neo4j appears in `tools/` or `MEMORY.md`. C17 and C18 stay on `wiki/contradictions.md` until resolved.
 If someone asks to delete one claim table: stop and name C17.
 If someone asks to replace `python3 tools/sb ask` with `tools/retrieve.py`: stop and name C18.
+
+## Clip ingest
+
+Compile URL clips from caption and metadata first. Fetch video or frames only when a kept claim depends on the picture. Do not dump clip file bodies.
+
+Check: the source page cites caption or metadata. If frames were used, the source names the claim that required them.
+If the text already holds the claim: leave the video unfetched.
 
 ## Memory
 

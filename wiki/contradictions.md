@@ -247,3 +247,13 @@ Fetched 2026-08-24: both paths returned 404. The live catalog is `data/catalog.j
 Resolution: cite `data/catalog.js` and the compiled stats. Do not claim the REST API works until it returns JSON.
 
 Remap: was C10 on the agent-facing-docs branch. Main C10 is HydroFusion years.
+
+## C29. Writing slop vs software slop
+
+D6 [[anti-slop]] is juampi's writing rank.
+
+[[src-can1357-daily-tool-replace-2026-08-27]] uses slop for an LLM-built git UI plus steering.
+
+Resolution: keep D6 as writing. Compile the clip as [[daily-tool-replace]]. Do not merge the two slops.
+
+Remap: was C15 then C26 on the daily-tool-replace branch. Main C26 is file first vs code first.

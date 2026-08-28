@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C28 must match that page.
+# Codes C1–C29 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -280,4 +280,14 @@ contradictions:
     severity: low
     resolution: cite catalog.js and compiled stats; do not claim the REST API works
     resolution_source: concept:disclosure-index
+    page: contradictions.md
+
+  - id: contradiction:c29
+    claim_a: concept:anti-slop
+    claim_b: concept:daily-tool-replace
+    reason: D6 writing slop vs LLM-built software slop plus steering
+    status: resolved
+    severity: low
+    resolution: keep D6 as writing; compile the clip as daily-tool-replace; do not merge the two slops
+    resolution_source: concept:daily-tool-replace
     page: contradictions.md

@@ -40,4 +40,6 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 [[src-chatchat-living-brain]] is a product tweet for persistent agent context.
 
+[[src-can1357-daily-tool-replace-2026-08-27]] is a daily-flow replace tweet. Hour tops is `unverified` as a general bound. See [[daily-tool-replace]].
+
 [[headlong]] is a persistent Bash microharness (Laude/MIT). 2026-08-26 installed tools; 1h identity `hour` ran on local Ollama and stopped 02:07Z; tests did not run. One shared stream vs layer 3 isolation: C16. Not the wiki compiler.

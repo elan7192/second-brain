@@ -41,6 +41,8 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Chat working-memory may be fuzzy. Vault must be precise. Do not dump transcripts into wiki. See [[context-compaction]].
 - Work per cost: W = completed jobs with proof (wiki SHA, PR URL, spec path, Figma URL, artifact path). E = cloud-agent launches + computerUse sessions. Report W/E counts, not fake dollars. Grok Bot scarce vs Fill leftover: separate ledgers. See [[work-per-cost]].
 - Musk Algorithm, strict order: (1) make requirements less dumb, named person not a department (2) delete the part or process (3) simplify/optimize only after delete (4) accelerate cycle time (5) automate last. Best part is no part. Do not automate first. See [[musk-algorithm]].
+- 2026-08-27: Do not clone omp.sh or ship a GitKraken-class git GUI for this vault from [[daily-tool-replace]]. Hour tops is tweet wording, not a vault SLA. Delete/skip first. See [[daily-tool-replace-vault-2026-08-27]].
+- 2026-08-27 lan E yes: URL clips compile from caption and metadata first. Fetch video or frames only when a kept claim depends on the picture. See [[clip-pipeline]].
 - Stale-fact-detector: audit wiki claims against named sources. Quote note + source with dates. No writes in the audit pass. Draft patch ok. Push needs PM/lan E. raw/ immutable. Silent source = unverifiable. See [[stale-fact-detector]].
 - Botdirectory 2026-08-27: 304 listings. Prefer skill on an existing role. Do not add a second memory writer or PAT daily-push. Catalog scan, not scout dump. See [[botdirectory-scan]].
 - lan E shared Miles Deutscher 25 Grok Bot use cases (2026-08-19). See [[grok-bot-use-cases]]. Not a scout harvest.

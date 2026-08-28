@@ -64,6 +64,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
 | [[anti-slop]] | Default writing constraints |
+| [[daily-tool-replace]] | Know-better builders replace daily-flow apps in ~1h. Hour is tweet claim |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
 | [[skillspector]] | Gate generated SKILL.md before shipping |
 | [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
@@ -158,6 +159,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-can1357-daily-tool-replace-2026-08-27]] | 2026-08-27 | Can: hour-tops daily-tool replace. Hour unverified |
 | [[src-lan-e-claim-protocol-2026-08-27]] | 2026-08-27 | Claim protocol. Git truth. FTS5 disposable. Embeddings parked |
 | [[src-hxiao-headlong]] | 2026-08-26 | hxiao quote tweet. Idle agent should keep working |
 | [[src-laude-headlong]] | 2026-08-26 | Headlong launch + repo. 9883 cloc at d8f8304 |
@@ -292,6 +294,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[alex-karp]] | Palantir CEO. Sovereignty claims unverified without URL |
 | [[lostsec]] | coffinxp / @lostsec_. Hunter input source. Not a dump |
 | [[zack0x01]] | Hunter input source. Not a dump |
+| [[can-boluk]] | @_can1357. Daily-tool replace tweet. omp.sh |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |

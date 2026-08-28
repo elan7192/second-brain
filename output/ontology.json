@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T18:22:45Z",
+  "builtAt": "2026-08-28T18:34:17Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 13,
-    "unverified": 79,
+    "unverified": 82,
     "Hunt": 8,
     "Map": 5,
     "Ship": 50,
-    "Concept": 110,
+    "Concept": 111,
     "Project": 2,
-    "Person": 8,
-    "Source": 126,
+    "Person": 9,
+    "Source": 127,
     "Decision": 11,
-    "Contradiction": 28,
-    "objects": 361,
-    "links": 2345
+    "Contradiction": 29,
+    "objects": 365,
+    "links": 2429
   },
   "objects": [
     {
@@ -414,6 +414,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Fetched 2026-08-24: both paths returned 404. The live catalog is `data/catalog.js`."
+    },
+    {
+      "primaryKey": "C29",
+      "objectType": "Contradiction",
+      "title": "Writing slop vs software slop",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "D6 [[anti-slop]] is juampi's writing rank."
     },
     {
       "primaryKey": "C3",
@@ -732,8 +746,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
-      "outbound": 51,
+      "inbound": 7,
+      "outbound": 54,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -788,8 +802,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 23,
-      "outbound": 34,
+      "inbound": 25,
+      "outbound": 36,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -869,11 +883,11 @@
       "title": "Anti-slop",
       "path": "wiki/anti-slop.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
-      "outbound": 7,
+      "inbound": 28,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Default writing constraints"
     },
@@ -900,7 +914,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "projects",
-      "inbound": 113,
+      "inbound": 109,
       "outbound": 57,
       "unverified": true,
       "oneLiner": "405856 inventory. BATCH01\u201309 compiled. Site: elan7192.github.io/arxiv-potential-tierlist"
@@ -914,7 +928,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Assign \u2192 execute \u2192 verify. 24h intel OFF"
@@ -1060,6 +1074,20 @@
       "oneLiner": "MeanFlow transfer. FID 7.88 at NFE4"
     },
     {
+      "primaryKey": "can-boluk",
+      "objectType": "Person",
+      "title": "Can B\u00f6l\u00fck",
+      "path": "wiki/people/can-boluk.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "person",
+      "island": "people",
+      "inbound": 5,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "@_can1357. Daily-tool replace tweet. omp.sh"
+    },
+    {
       "primaryKey": "causal-cps-anomaly",
       "objectType": "Concept",
       "title": "Causal CPS anomaly detection",
@@ -1107,11 +1135,11 @@
       "title": "Clip pipeline",
       "path": "wiki/clip-pipeline.md",
       "created": "2026-08-25",
-      "updated": "2026-08-25",
+      "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
-      "outbound": 2,
+      "inbound": 9,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Captions/metadata; not full copyrighted films; D5"
     },
@@ -1138,7 +1166,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Catalog 32661537. Not installed. Writes need lan E"
@@ -1194,8 +1222,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 88,
-      "outbound": 46,
+      "inbound": 92,
+      "outbound": 48,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1226,6 +1254,34 @@
       "outbound": 3,
       "unverified": false,
       "oneLiner": "LiDAR+DINOv2. Vel16 +44 pp"
+    },
+    {
+      "primaryKey": "daily-tool-replace",
+      "objectType": "Concept",
+      "title": "Daily tool replace",
+      "path": "wiki/daily-tool-replace.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 16,
+      "outbound": 11,
+      "unverified": true,
+      "oneLiner": "Know-better builders replace daily-flow apps in ~1h. Hour is tweet claim"
+    },
+    {
+      "primaryKey": "daily-tool-replace-vault-2026-08-27",
+      "objectType": "Ship",
+      "title": "Daily-tool-replace vs this vault",
+      "path": "output/daily-tool-replace-vault-2026-08-27.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 7,
+      "outbound": 15,
+      "unverified": true,
+      "oneLiner": "Question: room to optimize this project with [[daily-tool-replace]]?"
     },
     {
       "primaryKey": "dbosc",
@@ -1278,8 +1334,8 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 10,
+      "inbound": 4,
+      "outbound": 29,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1432,7 +1488,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 32,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
@@ -1572,7 +1628,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 15,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Burns on Max Mode, computerUse vision, long transcripts"
@@ -1684,8 +1740,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
-      "outbound": 12,
+      "inbound": 28,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
@@ -1698,7 +1754,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
+      "inbound": 18,
       "outbound": 11,
       "unverified": true,
       "oneLiner": "Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run"
@@ -1726,7 +1782,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 15,
+      "inbound": 16,
       "outbound": 23,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s"
@@ -1765,7 +1821,7 @@
       "title": "Hunt / Ship loop",
       "path": "wiki/hunt-ship-loop.md",
       "created": "2026-08-23",
-      "updated": "2026-08-25",
+      "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
       "inbound": 29,
@@ -1852,8 +1908,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 15,
-      "outbound": 257,
+      "inbound": 16,
+      "outbound": 260,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -1942,48 +1998,6 @@
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
     },
     {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-128956",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 128956",
-      "path": "output/ingest-brief-2026-08-24-arxiv-128956.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 0,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Corpus is 128956 unique (S 15114 / A 6509 / B 46431 / C 43858 / D 17044) after a 22100-paper gap batch."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-156256",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 156256",
-      "path": "output/ingest-brief-2026-08-24-arxiv-156256.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 0,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Corpus is 156256 unique (S 15167 / A 8719 / B 60883 / C 52306 / D 19181) per `stats.json`."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-281056",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv 281056",
-      "path": "output/ingest-brief-2026-08-24-arxiv-281056.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 0,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Corpus is 281056 unique (S 15611 / A 23345 / B 129379 / C 84566 / D 28155) from handoff batch 4 and stats.json."
-    },
-    {
       "primaryKey": "ingest-brief-2026-08-24-arxiv-405856",
       "objectType": "Ship",
       "title": "ingest-brief-2026-08-24-arxiv-405856",
@@ -1992,24 +2006,10 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Updated [[arxiv-tierlist]] and [[potential-ranking]] to gap batch 6: 405856 unique, cursor 2022-06-08, tiers S 16443 / A 42228 / B 197545 / C 113767 / D 35873."
-    },
-    {
-      "primaryKey": "ingest-brief-2026-08-24-arxiv-counts",
-      "objectType": "Ship",
-      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 arXiv counts",
-      "path": "output/ingest-brief-2026-08-24-arxiv-counts.md",
-      "created": "2026-08-24",
-      "updated": "2026-08-24",
-      "tags": "ship",
-      "island": "hunt-ship",
-      "inbound": 0,
-      "outbound": 5,
-      "unverified": false,
-      "oneLiner": "Corpus is now 106856 unique (S 15094 / A 5274 / B 35515 / C 36167 / D 14806) after a 26001-paper OAI gap batch."
     },
     {
       "primaryKey": "ingest-brief-2026-08-24-arxiv-pages",
@@ -2020,7 +2020,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Current public URL is https://elan7192.github.io/arxiv-potential-tierlist/ (repo https://github.com/elan7192/arxiv-potential-tierlist); ZeroDeploy URLs are stale."
@@ -2034,7 +2034,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled the box handoff into [[src-arxiv-tierlist-handoff]], [[arxiv-tierlist]], and [[potential-ranking]], and recorded display, ranking-axis, and temporary-URL constraints in MEMORY.md."
@@ -2048,7 +2048,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Compiled five arxiv-read papers from BATCH01 into [[causal-cps-anomaly]], [[nmc-trace-complexity]], [[flow-matching-pso]], [[bdh]], and [[evosyn]], each with a source page, and linked them from [[arxi"
@@ -2062,7 +2062,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Compiled BATCH02 into [[superde]], [[lance]], [[palrs]], [[prednext]], and [[clustered-moe]], each with a source page, linked from [[arxiv-tierlist]]."
@@ -2076,7 +2076,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Compiled BATCH03 into [[hydrofusion-lmf]], [[ngc]], [[sapin]], [[alphaevolve-math]], and [[pavement-gnn]]."
@@ -2090,7 +2090,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Compiled BATCH04 into [[tiwm]], [[unitok]], [[llm4eo]], [[apt-siamese]], and [[foundry-3d]]."
@@ -2104,7 +2104,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 6,
       "unverified": true,
       "oneLiner": "Compiled BATCH05 into [[portal]], [[mpi-init]], [[pwr-ga]], [[brain-ai-convergence]], and [[vs-graph]]."
@@ -2118,7 +2118,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled BATCH06 into [[two-stage-nn-tl]], [[dics]], [[skill-transfer]], [[iar]], and [[bert-ler]]."
@@ -2132,7 +2132,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled BATCH07 into [[g-carl]], [[concept-guard]], [[r2-opd]], [[scape]], and [[vla-self-demo]]."
@@ -2146,7 +2146,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled BATCH08 into [[dbosc]], [[fourmas]], [[hear2act]], [[unilang]], and [[cvsd-reg]]."
@@ -2160,7 +2160,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Compiled BATCH09 into [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], and [[orthoskillvla]]."
@@ -2188,7 +2188,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 4,
       "unverified": true,
       "oneLiner": "Five scout tweets landed as source pages and linked to [[llm-wiki]], [[memory-engineering]], [[harness-routing]], and [[anti-slop]]."
@@ -2202,7 +2202,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 2,
       "unverified": true,
       "oneLiner": "Three new tweets: TheWhizzAI, chatchat, g3t0ffmyl4wn."
@@ -2216,7 +2216,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 0,
+      "inbound": 1,
       "outbound": 5,
       "unverified": true,
       "oneLiner": "Compiled the marfinxx tweet into [[src-marfinxx-trace]] and [[trace]], and linked [[memory-engineering]], [[context-graph]], [[tokens-as-capital]]."
@@ -2304,6 +2304,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Compiled [[botdirectory-scan]] and [[stale-fact-detector]] from `/workspace/play-until-2pm/botdirectory-picks.md`. 304 catalog listings. Skills on existing roles. No new bots. `raw/` stays immutable. "
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-27-can1357-daily-tool",
+      "objectType": "Ship",
+      "title": "ingest brief 2026-08-27 Can daily-tool-replace",
+      "path": "output/ingest-brief-2026-08-27-can1357-daily-tool.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Changed: @_can1357 2026-08-27 pair compiled as [[daily-tool-replace]]. Know-better builders replace daily-flow apps in an hour tops. Hour is tweet wording, not a timed study."
     },
     {
       "primaryKey": "ingest-brief-2026-08-27-claim-protocol",
@@ -2412,8 +2426,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 194,
+      "inbound": 10,
+      "outbound": 201,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2426,7 +2440,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "Owner + worker + verifier + stop. One graph writer"
@@ -2552,10 +2566,38 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 3,
       "outbound": 18,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at the claim-protocol / D9 commit, then merged into `cursor/skill-library-ingest-955f`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-daily-tool",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 daily-tool-replace vs main",
+      "path": "output/merge-conflict-report-2026-08-28-daily-tool.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 13,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `c5714e8` (skill-library sources; C20\u2013C25), then merged into `cursor/can1357-daily-tool-replace-186d`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-daily-tool-2",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 daily-tool-replace vs main (2)",
+      "path": "output/merge-conflict-report-2026-08-28-daily-tool-2.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 1,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `a0e5609` (agent-facing docs / Disclosure Index), then merged into `cursor/can1357-daily-tool-replace-186d`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -2608,7 +2650,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 8,
       "unverified": true,
       "oneLiner": ">1 source. One list. Human verdict. No Whop clone"
@@ -2622,8 +2664,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 3,
+      "inbound": 13,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Delete before optimize. Automate last. Named person"
     },
@@ -2776,7 +2818,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 7,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Score axis, heuristic formula, recency bias"
@@ -3028,7 +3070,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 12,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
@@ -3938,7 +3980,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "2026-08-24"
@@ -4039,6 +4081,20 @@
       "inbound": 4,
       "outbound": 4,
       "unverified": false,
+      "oneLiner": "2026-08-27"
+    },
+    {
+      "primaryKey": "src-can1357-daily-tool-replace-2026-08-27",
+      "objectType": "Source",
+      "title": "src-can1357-daily-tool-replace-2026-08-27",
+      "path": "wiki/sources/src-can1357-daily-tool-replace-2026-08-27.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-27",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 12,
+      "outbound": 5,
+      "unverified": true,
       "oneLiner": "2026-08-27"
     },
     {
@@ -4946,7 +5002,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
+      "inbound": 37,
       "outbound": 17,
       "unverified": true,
       "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
@@ -5156,8 +5212,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
-      "outbound": 24,
+      "inbound": 22,
+      "outbound": 25,
       "unverified": true,
       "oneLiner": "Token-save catalog + W/E counts. No fake dollars"
     },
@@ -5511,6 +5567,26 @@
       "from": "C28",
       "linkType": "extractedFrom",
       "to": "contradictions"
+    },
+    {
+      "from": "C29",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "C29",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C29",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "C29",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "C3",
@@ -6140,12 +6216,27 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "composio-mcp"
     },
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "context-compaction"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
     },
     {
       "from": "MEMORY",
@@ -6450,6 +6541,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-chatchat-living-brain"
     },
     {
@@ -6506,6 +6602,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "agent-operating-system",
@@ -6770,6 +6871,11 @@
     {
       "from": "anti-slop",
       "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "anti-slop",
+      "linkType": "cites",
       "to": "src-juampi-anti-slop-rank"
     },
     {
@@ -6786,6 +6892,11 @@
       "from": "anti-slop",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "anti-slop",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "anti-slop",
@@ -7298,6 +7409,26 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "can-boluk",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "can-boluk",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "can-boluk",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "can-boluk",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
       "from": "causal-cps-anomaly",
       "linkType": "cites",
       "to": "src-arxiv-2507-08177"
@@ -7435,7 +7566,27 @@
     {
       "from": "clip-pipeline",
       "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "clip-pipeline",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "clip-pipeline",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "clip-pipeline",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "clip-pipeline",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
     },
     {
       "from": "clip-pipeline",
@@ -7645,6 +7796,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
     },
     {
@@ -7736,6 +7892,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "contradictions",
@@ -7858,6 +8019,136 @@
       "to": "foundry-3d"
     },
     {
+      "from": "daily-tool-replace",
+      "linkType": "aboutPerson",
+      "to": "can-boluk"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "daily-tool-replace",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "aboutPerson",
+      "to": "can-boluk"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "assign-execute-verify"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "composio-mcp"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "digests"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-arxiv-405856"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "multi-source-verdict"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "daily-tool-replace-vault-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
       "from": "dbosc",
       "linkType": "cites",
       "to": "src-arxiv-2608-19492"
@@ -7975,6 +8266,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "growth-briefing-2026-08-25"
     },
     {
@@ -8000,7 +8296,82 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-arxiv-405856"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-arxiv-pages"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-arxiv-tierlist"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch01"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch02"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch03"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch04"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch05"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch06"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch07"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch08"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-batch09"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-disclosure-index"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-five-x"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-three-x"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-trace"
     },
     {
       "from": "digests",
@@ -8010,7 +8381,22 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-27-can1357-daily-tool"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-27-claim-protocol"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-daily-tool"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-daily-tool-2"
     },
     {
       "from": "digests",
@@ -8685,6 +9071,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-promptyx-llm-cpu"
     },
     {
@@ -8706,6 +9097,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "harness-routing",
@@ -9200,6 +9596,11 @@
     {
       "from": "index",
       "linkType": "aboutPerson",
+      "to": "can-boluk"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
       "to": "hurley"
     },
     {
@@ -9556,6 +9957,11 @@
       "from": "index",
       "linkType": "cites",
       "to": "src-botdirectory-picks-2026-08-27"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
     },
     {
       "from": "index",
@@ -10011,6 +10417,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "cvsd-reg"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "index",
@@ -10628,112 +11039,12 @@
       "to": "verifiable-instructions"
     },
     {
-      "from": "ingest-brief-2026-08-24-arxiv-128956",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-128956",
-      "linkType": "relatedTo",
-      "to": "MEMORY"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-128956",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-128956",
-      "linkType": "relatedTo",
-      "to": "log"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-128956",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-156256",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-156256",
-      "linkType": "relatedTo",
-      "to": "MEMORY"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-156256",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-156256",
-      "linkType": "relatedTo",
-      "to": "log"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-156256",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-281056",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-281056",
-      "linkType": "relatedTo",
-      "to": "MEMORY"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-281056",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-281056",
-      "linkType": "relatedTo",
-      "to": "log"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-281056",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
       "from": "ingest-brief-2026-08-24-arxiv-405856",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
     },
     {
       "from": "ingest-brief-2026-08-24-arxiv-405856",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-counts",
-      "linkType": "cites",
-      "to": "src-arxiv-tierlist-handoff"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-counts",
-      "linkType": "relatedTo",
-      "to": "MEMORY"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-counts",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-counts",
-      "linkType": "relatedTo",
-      "to": "log"
-    },
-    {
-      "from": "ingest-brief-2026-08-24-arxiv-counts",
       "linkType": "relatedTo",
       "to": "potential-ranking"
     },
@@ -11268,6 +11579,31 @@
       "to": "stale-fact-detector"
     },
     {
+      "from": "ingest-brief-2026-08-27-can1357-daily-tool",
+      "linkType": "aboutPerson",
+      "to": "can-boluk"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-can1357-daily-tool",
+      "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-can1357-daily-tool",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-can1357-daily-tool",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-can1357-daily-tool",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
       "from": "ingest-brief-2026-08-27-claim-protocol",
       "linkType": "relatedTo",
       "to": "claim-protocol"
@@ -11730,6 +12066,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-can1357-daily-tool-replace-2026-08-27"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-chatgpt-play-2026-08-25"
     },
     {
@@ -12055,12 +12396,27 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "dbosc"
     },
     {
       "from": "log",
       "linkType": "relatedTo",
       "to": "dics"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "digests"
     },
     {
       "from": "log",
@@ -12270,6 +12626,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-27-can1357-daily-tool"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-27-lanbb-bb"
     },
     {
@@ -12336,6 +12697,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-daily-tool"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-daily-tool-2"
     },
     {
       "from": "log",
@@ -13103,6 +13474,76 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "digests"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "headlong"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-daily-tool-2",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
       "linkType": "relatedTo",
       "to": "Home"
@@ -13256,6 +13697,11 @@
       "from": "musk-algorithm",
       "linkType": "cites",
       "to": "src-lan-e-musk-algorithm"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "musk-algorithm",
@@ -15323,6 +15769,31 @@
       "to": "stale-fact-detector"
     },
     {
+      "from": "src-can1357-daily-tool-replace-2026-08-27",
+      "linkType": "aboutPerson",
+      "to": "can-boluk"
+    },
+    {
+      "from": "src-can1357-daily-tool-replace-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "src-can1357-daily-tool-replace-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-can1357-daily-tool-replace-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
+    },
+    {
+      "from": "src-can1357-daily-tool-replace-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
       "from": "src-chatchat-living-brain",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
@@ -16786,6 +17257,11 @@
       "from": "work-per-cost",
       "linkType": "relatedTo",
       "to": "context-compaction"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "relatedTo",
+      "to": "daily-tool-replace"
     },
     {
       "from": "work-per-cost",

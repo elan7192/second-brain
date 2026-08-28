@@ -41,4 +41,6 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[headlong]] · [[retrieval-second-brain]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]]
+
+[[src-can1357-daily-tool-replace-2026-08-27]]: people who know better can replace daily-flow apps themselves. Hour tops is tweet wording. See [[daily-tool-replace]].
