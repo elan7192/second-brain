@@ -1,4 +1,5 @@
 ---
+id: concept:buying-signal
 type: concept
 tags:
   - wiki

@@ -1,4 +1,5 @@
 ---
+id: concept:grok-bot-use-cases
 type: concept
 tags:
   - wiki

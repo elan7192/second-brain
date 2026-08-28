@@ -29,6 +29,8 @@ Short briefs built from the wiki. Chat gets these, not the raw hunt.
 - [[ingest-brief-2026-08-25-growthos]]
 - [[ingest-brief-2026-08-27-can1357-daily-tool]]
 - [[daily-tool-replace-vault-2026-08-27]]
+- [[merge-conflict-report-2026-08-28-daily-tool]]
+- [[ingest-brief-2026-08-27-claim-protocol]]
 - [[growth-briefing-2026-08-25]]
 - [[gsap-figma-note-2026-08-25]]
 - [[growthos-3d-gap-2026-08-25]]

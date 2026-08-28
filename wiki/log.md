@@ -1,14 +1,43 @@
 ---
+id: meta:log
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-28] merge | origin/main into daily-tool-replace
+
+Fetched origin/main at skill-library / C20–C25. Simple unions kept. Writing-slop flag remapped C15 → C26 so it does not collide with Foundry C15. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-daily-tool]].
+
+## [2026-08-28] merge | origin/main into skill-library ingest
+
+Fetched origin/main at claim-protocol / D9. Simple unions kept. Skill flags remapped C8–C13 → C20–C25 so they do not collide with paper flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-2026-08-28]].
+
+## [2026-08-27] ingest | Claim protocol
+
+Named chain Claim → Evidence → Verification → Retrieval → Context → Answer. Live query stays `python3 tools/sb ask`. Duplicate engine parked as C18. Embeddings parked as C19. See [[claim-protocol]] [[src-lan-e-claim-protocol-2026-08-27]].
+
+## [2026-08-28] harvest | Headlong hour trial merged
+
+Parked share on main waited for experiments. This branch is the report. Traj 37 rows; tests did not run; mind stopped 02:07Z. C16 (C15 on main is Foundry). See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
+## [2026-08-28] rebuild | Palantir-style ontology from wiki
+
+Local object table `output/ontology-objects.csv`. Hosted AIP not used. D5. See [[vault-ontology]] [[palantir-aip]] [[src-palantir-aip-developers-2026-08-28]].
+
+## [2026-08-28] engine | stable ids, FTS5, claims, sb validate, sb eval
+
+Memory engine pass. Markdown stays canonical. `.cache/secondbrain.sqlite` is disposable. Claim registry in `wiki/data/claims.yaml`. CLI: `python3 tools/sb`. D9 locked. See [[retrieval]] [[claims]] [[stable-ids]] [[eval-suite]] [[memory-engine-2026-08-28]].
+
+## [2026-08-27] schema | memory-system phase 1-4
+
+Provenance + FACT/INFERENCE/OPINION on new memory-v1 pages. Source Claims kept compile to `wiki/claims.csv`. `raw/` is untrusted data. Vector search parked. Dual YAML/CSV store flagged as C17. Gate: `python3 tools/lint-wiki.py` plus `python3 tools/sb validate`. See [[memory-system]] [[claims]] [[epistemic-labels]] [[provenance]] [[untrusted-ingest]] [[memory-system-brief-2026-08-27]].
 
 ## [2026-08-27] execute | captions-first + orphan briefs
 
@@ -20,7 +49,7 @@ Room to optimize: delete/skip, not a git GUI. Kill omp clone and GitKraken-class
 
 ## [2026-08-27] ingest | Can daily-tool-replace
 
-@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C15: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
+@_can1357 pair 2092973386888593582 / 2092973700677005824. Know-better replace of daily-flow apps. Hour tops is tweet wording. 6.25s git-UI clip compiled as metadata. C26: software slop vs D6 writing. Brief: [[ingest-brief-2026-08-27-can1357-daily-tool]]. See [[daily-tool-replace]] [[src-can1357-daily-tool-replace-2026-08-27]].
 
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 
@@ -148,6 +177,17 @@ lan E share. URL parked. No Headlong method yet. See [[src-hxiao-headlong-share]
 ## [2026-08-27] ingest | debs_obrien token usage
 
 lan E share. If bot usage is high, ask chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]], [[bot-voice]], [[tokens-as-capital]]. Not scout.
+## [2026-08-26] harvest | Headlong hour trial ended
+
+Timer 02:07:16Z. `hour stop` then `headlong-killall`. Traj 37 rows, last durable 01:12:08Z. Tests did not run. qwen2.5-coder:7b copied nested-shellm docs example and stalled. C16: not the wiki runtime. Do not restart without new yes. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
+## [2026-08-26] implement | Headlong hour trial
+
+Operator yes. Identity `hour` on local Ollama qwen2.5-coder:7b. Nested Docker overlay failed; local unsandboxed for 1h. First thought 01:05:44Z run tests. Stop T+1h. See [[headlong]] and [[ingest-brief-2026-08-26-headlong-hour]].
+
+## [2026-08-26] ingest | Headlong trial
+
+hxiao quote of Andy Konwinski. Tools installed `./install.sh --symlinks` at SHA `d8f8304`. 25/25 CLIs. Mind not started: no Docker, no API key, D5. See [[headlong]], C16, [[ingest-brief-2026-08-26-headlong]].
 
 ## [2026-08-25] implement | GrowthOS orb materials
 
@@ -304,6 +344,22 @@ Compiled `/workspace/arxiv-tierlist/ARXIV_TIERLIST_HANDOFF.md` into [[src-arxiv-
 ## [2026-08-24] lint | Concept clusters in the graph
 
 The hairball was ring-by-folder layout plus catalog stars (`index`, `log`, `twitter`). Graph filter now keeps wiki/maps/hunt/ship and drops `raw/`, `index`, `log`, and `twitter`. Renderer places nodes on the five [[agent-operating-system]] layers. Added peer concept links already supported by those pages. Locked D8.
+
+## [2026-08-23] ingest | Retrieval second brain
+
+Compiled the four-pillar retrieval paste into [[src-retrieval-second-brain]] and [[retrieval-second-brain]]. Mapped layers onto [[memory-engineering]]. Flagged C25 (was C13 on this branch). D1 not reopened. C25 vs D9 later unresolved. Brief: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+
+## [2026-08-23] ingest | Five skill packs and SOP thesis
+
+Compiled the pasted list into [[src-skill-pack-list]] and [[skill-as-sop]]. Checked five GitHub READMEs. Flagged C24 (was C12 on this branch). No pack vendored. Brief: [[ingest-brief-2026-08-23-skill-pack-list]].
+
+## [2026-08-23] ingest | mukul975 cybersecurity skill library
+
+Compiled https://github.com/mukul975/Anthropic-Cybersecurity-Skills into [[src-mukul975-cybersecurity-skills]], [[mahipal-jangra]], and [[skill-library]]. Catalog pitch only. Skill bodies not copied. Flagged C22 and C23 (were C10 and C11). Extended C20. `MEMORY.md` now forbids vendoring or executing the pack. Brief: [[ingest-brief-2026-08-23-cybersecurity-skills]].
+
+## [2026-08-23] ingest | Johnsjawn skill library
+
+Compiled https://x.com/johnsjawn/status/2090805874331959600 into [[src-johnsjawn-skill-library]], [[skill-library]], and [[hurley]]. Flagged C20 (Notion living library vs this compiled vault) and C21 (improves on each use vs `# Uses` counts). D7 not reopened. Brief: [[ingest-brief-2026-08-23-skill-library]].
 
 ## [2026-08-23] lint | Obsidian vault layer
 

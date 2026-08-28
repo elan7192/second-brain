@@ -1,4 +1,5 @@
 ---
+id: concept:multi-source-verdict
 type: concept
 tags:
   - wiki

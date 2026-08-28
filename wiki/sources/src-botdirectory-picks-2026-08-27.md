@@ -1,4 +1,5 @@
 ---
+id: source:src-botdirectory-picks-2026-08-27
 type: source
 tags:
   - catalog

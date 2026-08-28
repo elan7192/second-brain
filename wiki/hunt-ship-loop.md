@@ -1,4 +1,5 @@
 ---
+id: concept:hunt-ship-loop
 type: concept
 tags:
   - wiki

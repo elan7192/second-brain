@@ -1,4 +1,5 @@
 ---
+id: source:src-can1357-daily-tool-replace-2026-08-27
 type: source
 tags:
   - twitter

@@ -1,4 +1,5 @@
 ---
+id: concept:work-per-cost
 type: concept
 tags:
   - wiki

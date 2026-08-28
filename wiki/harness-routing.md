@@ -1,9 +1,10 @@
 ---
+id: concept:harness-routing
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Harness routing
@@ -30,12 +31,16 @@ Those differences change the prompt prefix and the available actions. The same m
 Transfer semantic state. Do not depend on KV cache or prompt-cache reuse across harnesses.
 From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]] and [[session-migrate]].
 
+[[src-retrieval-second-brain]] agentic routing: split the question, call tools, reflect, query again. This vault's split is `python3 tools/sb ask` then the evidence set (D9). A second pass is ingest or lint, not a reranker. See [[retrieval-second-brain]] and C25.
+
 ## Test before you believe it
 
 Compare a fixed pair, a fixed pair with audited state, and routed executors. If routing loses to the reset tax, keep the fixed pair.
 
 ## Related
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[daily-tool-replace]]
+Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
+
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]]
 
 [[src-can1357-daily-tool-replace-2026-08-27]]: people who know better can replace daily-flow apps themselves. Hour tops is tweet wording. See [[daily-tool-replace]].

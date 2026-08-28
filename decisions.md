@@ -1,9 +1,10 @@
 ---
+id: meta:decisions
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Decisions
@@ -69,3 +70,13 @@ Graph view hides catalog stars and raw files. Layout follows the five [[agent-op
 - Source: [[graph]], [[agent-operating-system]]
 - Locked: 2026-08-24
 - Revalidate: if a later layout hides a real concept island or drops a supported peer link
+
+## D9. Markdown canonical, FTS disposable
+
+Compiled markdown is the store. SQLite FTS5 is a rebuildable index. Filenames are not identity; `id:` is. Do not treat the database as memory. Do not clone Brain.
+
+- Source: [[portable-memory]], [[retrieval]], [[stable-ids]], [[claims]]
+- Locked: 2026-08-28
+- Revalidate: if a later source shows compiled-page search worse than raw RAG with a measured eval
+
+CSV vs YAML claim registries are not locked. See C17.

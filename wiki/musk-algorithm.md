@@ -1,4 +1,5 @@
 ---
+id: concept:musk-algorithm
 type: concept
 tags:
   - wiki

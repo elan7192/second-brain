@@ -1,4 +1,5 @@
 ---
+id: concept:stale-fact-detector
 type: concept
 tags:
   - wiki
@@ -11,6 +12,8 @@ updated: 2026-08-27
 Audit compiled wiki claims against named sources. Internally consistent notes can still be dead.
 
 Source: [[src-botdirectory-picks-2026-08-27]] (gap 4, owner Vault). Skill file: `stale-fact-detector`.
+
+Claims live in `wiki/claims.csv` (compile of source Claims kept) and `wiki/data/claims.yaml`. An audit still quotes the note and the newer source, with dates. See [[claims]] and [[claim-protocol]].
 
 ## When
 
@@ -35,4 +38,4 @@ lan E or Product asks to audit a vault topic, or doubts a number.
 
 ## Related
 
-[[llm-wiki]] · [[memory-ablation]] · [[verifiable-instructions]] · [[botdirectory-scan]]
+[[llm-wiki]] · [[memory-ablation]] · [[verifiable-instructions]] · [[claim-protocol]] · [[botdirectory-scan]] · [[provenance]] · [[claims]]

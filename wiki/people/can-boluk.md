@@ -1,4 +1,5 @@
 ---
+id: person:can-boluk
 type: person
 tags:
   - person

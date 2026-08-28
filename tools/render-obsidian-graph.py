@@ -58,21 +58,33 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "llm-wiki",
         "tokens-as-capital",
         "context-graph",
+        "claim-protocol",
         "how-it-works",
         "src-papa-couch-compiler",
         "src-bober-folder-workflow",
+        "src-lan-e-claim-protocol-2026-08-27",
         "andrej-karpathy",
     },
     "memory": {
         "memory-engineering",
         "memory-ablation",
+        "memory-system",
+        "epistemic-labels",
+        "provenance",
+        "claims",
+        "untrusted-ingest",
+        "file-memory",
+        "portable-memory",
         "MEMORY",
+        "portable-memory",
+        "file-memory",
         "src-0xcodio-memory-ablation",
     },
     "verification": {
         "verifiable-instructions",
         "self-verification",
         "anti-slop",
+        "stale-fact-detector",
         "src-voxyz-verifiable-instructions",
         "src-jacky-self-verification",
         "src-juampi-anti-slop-rank",
@@ -88,6 +100,9 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
         "daily-tool-replace",
         "src-can1357-daily-tool-replace-2026-08-27",
         "can-boluk",
+        "headlong",
+        "src-laude-headlong",
+        "src-hxiao-headlong",
     },
     "hunt-ship": {
         "hunt-ship-loop",
@@ -561,7 +576,10 @@ def main() -> None:
     OUT_DIR.mkdir(exist_ok=True)
     write_svg(nodes, edges, OUT_DIR / "obsidian-graph.svg")
     write_html(nodes, edges, OUT_DIR / "obsidian-graph.html")
-    write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
+    try:
+        write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
+    except ModuleNotFoundError:
+        print("skip png: PIL not installed")
     write_mermaid(nodes, edges, GRAPH_PAGE)
     counts: dict[str, int] = defaultdict(int)
     for node in nodes.values():

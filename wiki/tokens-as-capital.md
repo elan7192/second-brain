@@ -1,4 +1,5 @@
 ---
+id: concept:tokens-as-capital
 type: concept
 tags:
   - wiki
@@ -20,8 +21,16 @@ Treat a token as an investment, not a per-query bill.
 4. Build `output/` from `wiki/`, not from a raw dump.
 5. If live bot token usage is an issue, ask the chief of staff: `anyway we can improve token usage? thoughts?` See [[src-debs-obrien-token-usage]] and [[bot-voice]].
 
+[[src-johnsjawn-skill-library]] makes the same bet as write-back: discover a research skill instead of rebuilding it. The "50 times" figure is author-stated, unverified. See [[skill-library]].
+
+[[src-mukul975-cybersecurity-skills]] claims about 30 tokens to scan a skill frontmatter and 500-2000 tokens to load the body. Author-stated. The vault still compiles claims here instead of loading that pack.
+
+[[src-skill-pack-list]] says a skill SOP stops the agent from retrying a known failure and burning tokens. Compile the SOP. Do not buy that claim by installing a marketplace. See [[skill-as-sop]].
+
+[[src-retrieval-second-brain]] spends tokens at query time (search, rerank, reflect, search again). This vault spends them at ingest. See [[retrieval-second-brain]].
+
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]]
 
 [[trace]] paper: one-pass attribution is 16x fewer LLM calls than iterative per-node. Tweet 4.2x token cut is `unverified`.
