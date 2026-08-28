@@ -1,4 +1,5 @@
 ---
+id: source:src-alexprompter-claude-projects
 type: source
 tags:
   - twitter
@@ -28,7 +29,7 @@ Context stack, top to bottom: global memory, user context files, project instruc
 
 Tweet says this is based on Anthropic docs and Alex Banks (thesignal.substack.com). Those pages were not re-read here. Product how-to is tweet-reported. GIF unread. No paper. No metrics.
 
-Fits [[project-skill-stack]], [[context-graph]] (graph vs skills split), [[memory-engineering]] (persist across sessions). Claude Projects are not this vault. See [[contradictions]] C16.
+Fits [[project-skill-stack]], [[context-graph]] (graph vs skills split), [[memory-engineering]] (persist across sessions). Claude Projects are not this vault. See [[contradictions]] C42.
 
 ## Pages updated
 

@@ -1,4 +1,5 @@
 ---
+id: concept:fourmas
 type: concept
 tags:
   - wiki

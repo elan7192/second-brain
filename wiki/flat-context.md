@@ -1,4 +1,5 @@
 ---
+id: concept:flat-context
 type: concept
 tags:
   - wiki
@@ -29,7 +30,7 @@ Compaction past a default 50,000-token threshold replaces older messages with a 
 
 ## What this article does not prove
 
-2.7x and the Enterprise-Bench token table are `unverified`. Sponsored. No paper. X figures unread. See [[contradictions]] C15.
+2.7x and the Enterprise-Bench token table are `unverified`. Sponsored. No paper. X figures unread. See [[contradictions]] C41.
 
 ## Related
 

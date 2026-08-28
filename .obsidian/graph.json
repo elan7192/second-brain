@@ -41,6 +41,13 @@
         "a": 1,
         "rgb": 15427380
       }
+    },
+    {
+      "query": "tag:#growth OR path:growth",
+      "color": {
+        "a": 1,
+        "rgb": 16020150
+      }
     }
   ],
   "collapse-display": false,

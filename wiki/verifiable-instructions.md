@@ -1,4 +1,5 @@
 ---
+id: concept:verifiable-instructions
 type: concept
 tags:
   - wiki
@@ -31,6 +32,10 @@ This vault's schema follows that shape. The tweet's eight paste-ready blocks wer
 
 [[src-voxyz-writing-system]] is a later `/goal` writing prompt. It does not supply those eight blocks. C6 stays open.
 
+Instruction files get most of an agent's documentation attention. They do not trigger testing. [[src-dair-agent-friendly-docs]] records zero Validate events and an adjusted OR of 0.39 for immediate testing after consultation. The check must be executable (`python3 tools/lint-wiki.py`, `python3 tools/sb validate`). Reading `AGENTS.md` is not the check. See [[agent-facing-docs]] and C27.
+
+A local skill SOP needs this shape or it is a wish. See [[skill-as-sop]].
+
 ## Related
 
-[[memory-ablation]] · [[self-verification]] · [[anti-slop]] · `AGENTS.md` · [[src-voxyz-writing-system]]
+[[memory-ablation]] · [[self-verification]] · [[skill-as-sop]] · [[anti-slop]] · [[agent-facing-docs]] · `AGENTS.md` · [[src-voxyz-writing-system]]

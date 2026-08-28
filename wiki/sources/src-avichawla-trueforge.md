@@ -1,4 +1,5 @@
 ---
+id: source:src-avichawla-trueforge
 type: source
 tags:
   - twitter
@@ -36,7 +37,7 @@ Article-reported numbers, all `unverified`:
 
 Linked vendor blog: https://www.truefoundry.com/blog/engineering/trueforge-vs-claude-managed-agents-benchmark/ also `unverified`. Table there (not line-read from the X images): TrueForge 3.8M tokens / $8.5 / 40 min; Claude Managed Agents 10M / $11.8 / 63 min; deepagents 16.5M / $21 / 64 min. Solved ~11 / ~11 / ~10 of 14.
 
-See [[contradictions]] C15. Do not pick a multiplier.
+See [[contradictions]] C41. Do not pick a multiplier.
 
 Repo named in the article: https://github.com/truefoundry/trueforge. Docs: https://trueforge.dev/. MIT and self-hostable are article claims. Local: Node 22.13+, `npx @truefoundry/trueforge`, http://localhost:8790.
 

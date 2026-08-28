@@ -1,4 +1,5 @@
 ---
+id: concept:pavement-gnn
 type: concept
 tags:
   - wiki

@@ -1,4 +1,5 @@
 ---
+id: source:src-4ndrearossetti-openconnector
 type: source
 tags:
   - twitter
@@ -26,7 +27,7 @@ Tweet counts (800+ services, thousands of actions) are `unverified`. No paper. T
 
 Fits [[secret-gateway]] and [[harness-routing]] (permissions outside the weights). Same secret-exclusion as [[audited-task-contract]], at tool time.
 
-Browser field injection and an API-action catalog are not the same mechanism. See [[contradictions]] C14.
+Browser field injection and an API-action catalog are not the same mechanism. See [[contradictions]] C40.
 
 ## Pages updated
 

@@ -1,4 +1,5 @@
 ---
+id: concept:secret-gateway
 type: concept
 tags:
   - wiki
@@ -24,9 +25,9 @@ The quoted OpenConnector pitch applies the same rule to SaaS actions: the agent 
 
 ## What these sources do not prove
 
-OpenConnector product counts are `unverified`. That tweet did not link a repo. Faulkner asked for browser field injection. The quote is an API-action catalog. See [[contradictions]] C14.
+OpenConnector product counts are `unverified`. That tweet did not link a repo. Faulkner asked for browser field injection. The quote is an API-action catalog. See [[contradictions]] C40.
 
-TrueForge 2.7x is `unverified`. Sponsored article. See C15.
+TrueForge 2.7x is `unverified`. Sponsored article. See [[contradictions]] C41.
 
 ## Related
 

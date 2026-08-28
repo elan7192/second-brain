@@ -1,4 +1,5 @@
 ---
+id: source:src-voxyz-writing-system
 type: source
 tags:
   - twitter
@@ -25,7 +26,7 @@ Done-when: confirm both harnesses load the rules, and list every project-level o
 
 This is a writing-system prompt. It is not the eight missing blocks on [[src-voxyz-verifiable-instructions]]. C6 stays open.
 
-Do not vendor this list into `AGENTS.md`. Vault writing default stays D6 / [[anti-slop]] (juampi). Third list. See [[contradictions]] C17.
+Do not vendor this list into `AGENTS.md`. Vault writing default stays D6 / [[anti-slop]] (juampi). Third list. See [[contradictions]] C43.
 
 Fits [[harness-routing]] (global vs nested instruction files). Rule 1 "marketing energy" is author-voice, not this vault's default.
 

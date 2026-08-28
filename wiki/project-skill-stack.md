@@ -1,4 +1,5 @@
 ---
+id: concept:project-skill-stack
 type: concept
 tags:
   - wiki
@@ -30,7 +31,7 @@ Tweet-reported, not verified against Anthropic docs:
 4. Skills
 5. Current prompt
 
-Suggested folders in that tweet: `/reference`, `/analysis`, `/deliverables`. Those are not this vault's layout. See [[contradictions]] C16.
+Suggested folders in that tweet: `/reference`, `/analysis`, `/deliverables`. Those are not this vault's layout. See [[contradictions]] C42.
 
 Cowork is named as the long-running execution surface. Product-only.
 

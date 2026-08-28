@@ -1,40 +1,65 @@
 ---
+id: meta:index
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
+Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-28.
 
 ## Start
 
 - [[Home]] — door
+- [[retrieval]] — FTS evidence set
+- [[claims]] — two registries; C17 unresolved
+- [[stable-ids]] — identity
+- [[eval-suite]] — retrieval gate
 - [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
-- [[agent-operating-system]] — synthesis of this ingest
+- [[musk-algorithm]] — delete before optimize. 2026-08-28 vault pass
+- [[agent-operating-system]] — five-layer synthesis
 - [[contradictions]] — unresolved conflicts
+- [[memory-system]] — provenance, labels, parked vector
 - [[llm-wiki]] — core architecture
+- [[claim-protocol]] — Claim → Evidence → Verification → Retrieval → Context → Answer
+- [[agent-facing-docs]] — instruction files are the control surface
+- [[disclosure-index]] — compiled public disclosure catalog
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
+- [[GrowthOS]] — growth operator door
+- [[vault-ontology]] — local Palantir-style object table
+- [[deer-flow]] — ByteDance SuperAgent local bootstrap
+- [[deer-flow-bootstrap-2026-08-24]] — install status report
 
 ## Projects
 
 | Page | One line |
 | --- | --- |
-| [[lanbb]] | https://github.com/elan7192/LanBB ; semantica is tools/semantica |
+| [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners. Graph: output/growthos-graph.html |
+| [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 | [[potential-ranking]] | Score axis, heuristic formula, recency bias |
+| [[deer-flow]] | ByteDance SuperAgent. Local clone at `/home/ubuntu/deer-flow` |
 
 ## Concepts
 
 | Page | One line |
 | --- | --- |
+| [[retrieval]] | Hybrid FTS5 over compiled pages. DB disposable |
+| [[claims]] | YAML sb registry plus CSV compile of Claims kept. C17 |
+| [[stable-ids]] | `id:` survives filename changes |
+| [[eval-suite]] | `sb eval` gate for retrieval |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
+| [[claim-protocol]] | Claim → Evidence → Verification → Retrieval → Context → Answer |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |
+| [[memory-system]] | Provenance, FACT/INFERENCE/OPINION. Vector parked |
+| [[epistemic-labels]] | FACT vs INFERENCE vs OPINION. Unlabeled prose pollutes |
+| [[provenance]] | source, dates, created_by, confidence, derived_from |
+| [[untrusted-ingest]] | raw/ is data. Quote, do not follow |
 | [[memory-ablation]] | A memory line stays only if deleting it changes an answer |
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |
@@ -42,147 +67,78 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 | [[secret-gateway]] | Credentials stay in a runtime. Model context does not hold them |
 | [[flat-context]] | Load what the run needs. Offload the rest |
 | [[project-skill-stack]] | Projects hold context. Skills hold how the model acts |
+| [[headlong]] | Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |
+| [[probabilistic-pivot-tournament]] | Ring pass, pivot duels, win-rate confidence |
+| [[ultra-mode]] | /ultra: N worktrees, then PPT picks a winner |
+| [[adversarial-review]] | Writer, reviewer, critic. Freeze the artifact. Force dissent |
 | [[anti-slop]] | Default writing constraints |
+| [[daily-tool-replace]] | Know-better builders replace daily-flow apps in ~1h. Hour is tweet claim |
 | [[hunt-ship-loop]] | File first. Scouts stay quiet. Human final yes |
+| [[skillspector]] | Gate generated SKILL.md before shipping |
+| [[skill-recorder]] | Trial on clean desktop + fake data, then SkillSpector, then enable |
+| [[quota-router]] | Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor |
+| [[raptor-dispatch]] | One owner per job. Report once. No empty acks |
+| [[loop-graph-engineering]] | Owner + worker + verifier + stop. One graph writer |
+| [[musk-algorithm]] | Delete before optimize. Automate last. Named person |
+| [[spot-check]] | Lead inspects without warning. Stay on-lane. File the lesson |
+| [[bot-voice]] | Bot-to-bot caveman. Facts, paths, SHAs. User still gets short 繁中 from lead |
+| [[session-migrate]] | Context only. Secret-scan before dry-migrate. Git is truth |
+| [[clip-pipeline]] | Captions/metadata; not full copyrighted films; D5 |
+| [[company-foundry]] | Compiler for organisational method. Clip vs article: C31 |
+| [[growth-operator]] | Obsidian vault Grokbot reads before a new partner |
+| [[grok-bot]] | One bot per job. Vault over memory. Shared computer is not an entropy gate |
+| [[grok-bot-money]] | Machina ten revenue lanes. Higgsfield UGC sponsored. Cash unverified |
+| [[grok-bot-use-cases]] | Miles 25 Grok Bot cases. lan E share |
+| [[grok-bot-pro-tips]] | Ben Lang 10 tips from @bot team |
+| [[grok-bot-tape]] | Show the tape. Cite or omit. Silence is valid |
+| [[grok-bot-quota]] | Burns on Max Mode, computerUse vision, long transcripts |
+| [[composio-mcp]] | Catalog 32661537. Not installed. Writes need lan E |
+| [[file-memory]] | Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived |
+| [[portable-memory]] | Git truth. FTS5 disposable. Do not clone Brain |
+| [[pipeline-honesty]] | Chrono first. OOS W/E. Skip Hawkes |
+| [[assign-execute-verify]] | Assign → execute → verify. 24h intel OFF |
+| [[hunter-follows]] | lostsec + zack0x01 as input sources. Not an exploit dump |
+| [[hunt-harden-loop]] | CASE path. Juice Shop 0/116. Current wall v17 `ad6f669` PR27 |
+| [[context-compaction]] | Chat may be fuzzy. Vault must be precise. No transcript dumps |
+| [[work-per-cost]] | Token-save catalog + W/E counts. No fake dollars |
+| [[vending-bench]] | Long-horizon eval. W=sold units. Do not hallucinate stock |
+| [[backlink-first]] | Do not answer first. Follow backlinks. Tags as weights |
+| [[views-vs-sales]] | Views ≠ sales. Chess 74k/51 vs 135k/2 |
+| [[buying-signal]] | Public "looking for alternative to" |
+| [[drafts-not-publish]] | Drafts. Taste is gate. No autopublish |
+| [[multi-source-verdict]] | >1 source. One list. Human verdict. No Whop clone |
+| [[ai-sovereignty]] | Your data, your model. Karp synthesis. Unverified without URL |
+| [[palantir-aip]] | Palantir AIP. Ontology + AIP Logic. No enrollment here |
+| [[vault-ontology]] | Derived objects/links from wiki. CSV is not a second wiki |
+| [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
+| [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
-| [[trace]] | Trajectory attribution; repair context without retraining |
-| [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
-| [[nmc-trace-complexity]] | Aimone: NMC energy via sparse spike traces |
-| [[flow-matching-pso]] | Analogy only. FM as continuous PSO |
-| [[bdh]] | Graph+Hebbian LLM. GPT-2 scale claim. PAC bounds aspirational |
-| [[evosyn]] | Evolves test/solution filter. 231 LCB, 673 OS |
-| [[superde]] | DDQN configures DE. 28-action Q-net |
-| [[lance]] | One-shot HOSVD activations. Last-layer FT/CL |
-| [[palrs]] | Residual steering from 100 pairs. α-sensitive |
-| [[prednext]] | Cross-view next-step/clip SNN SSL |
-| [[clustered-moe]] | Clustered low-rank MoE. Tables 7–8 unverified |
-| [[hydrofusion-lmf]] | Boluo 1988–2020 runoff. Abs vs §4.1 clash |
-| [[ngc]] | Low-rank neuronal states. Table 1 vs 3 clash |
-| [[sapin]] | CartPole without reward. Lock 82% |
-| [[alphaevolve-math]] | 67 constructions. 6.24–6.67 not line-read |
-| [[pavement-gnn]] | R² 0.38 on 1k-node simulated graph |
-| [[tiwm]] | 16-token nuPlan. Mini ≠ full val14 |
-| [[unitok]] | One tokenizer, 10 domains. 51.89% is Toys |
-| [[llm4eo]] | GPT-4.1-mini evolves FJSP operators |
-| [[apt-siamese]] | DARPA TC transfer. Tables 4–7 OCR-dirty |
-| [[foundry-3d]] | SuperTokens from Point-JEPA |
-| [[portal]] | Landscape generator. No optimizer scores |
-| [[mpi-init]] | Binary EA init transfer. 71/72 vs Rand |
-| [[pwr-ga]] | Pascal-weighted GA. TSP gain is tiny |
-| [[brain-ai-convergence]] | Perspective. 0 tables |
-| [[vs-graph]] | HDC graphs. Acc is figure-only |
-| [[two-stage-nn-tl]] | Grouped NN transfer. Appendix unread |
-| [[dics]] | Centroid-split trees. Speedups, small acc drop |
-| [[skill-transfer]] | Subtask memory helps. Gemma tables unread |
-| [[iar]] | Inject-Align-Recover. LoRA grid unread |
-| [[bert-ler]] | EHR transformer. 75M pretrain |
-| [[g-carl]] | Medical report GRPO. Prec/Rec 96.62/72.18 |
-| [[concept-guard]] | Dual-use unlearning. 5166/68 |
-| [[r2-opd]] | Filter OPD by reasoning progress |
-| [[scape]] | Scenario-conditioned sim-to-real |
-| [[vla-self-demo]] | Expert + self-demo VLA. Table 4 unread |
-| [[dbosc]] | Physical-language chart. 4.5× same vs wrong |
-| [[fourmas]] | Dual-hemisphere CL. Use Table 1 |
-| [[hear2act]] | Prosody-to-action. Table 11 unread |
-| [[unilang]] | LLM + machine SIDs. Beauty R@10 loses |
-| [[cvsd-reg]] | LiDAR+DINOv2. Vel16 +44 pp |
-| [[camf-mft]] | MeanFlow transfer. FID 7.88 at NFE4 |
-| [[draftfm]] | MTG draft FM. 50.8/60.4/56.7 |
-| [[dmd-safety]] | DMD prompt-response. F1 86.7 |
-| [[vgi-bench]] | Video-gen visual IQ. Seedance 51.0 |
-| [[orthoskillvla]] | Continual VLA PEFT. SR 83.50 |
+| [[deer-flow]] | ByteDance SuperAgent. Local bootstrap on this VM. C32 |
+| [[agent-facing-docs]] | Agents read instruction files and working notes, not API refs |
+| [[disclosure-index]] | 11,338 public disclosure records, compiled 2026-08-24 |
+| [[skill-library]] | Living catalog vs GitHub dump. Compile here. Do not vendor either pack |
+| [[skill-as-sop]] | A skill is a compiled SOP for a workflow that already failed once |
+| [[retrieval-second-brain]] | Hybrid search / GraphRAG recipe. Compile the claim. Query path is D9. See C25 |
 
-## Sources
-
-| Page | Date | One line |
-| --- | --- | --- |
-| [[src-arxiv-batch09]] | 2026-08-24 | Five digests. Figs unread |
-| [[src-arxiv-2608-19540]] | 2026-08-24 | CAMF/MF-T |
-| [[src-arxiv-2608-19568]] | 2026-08-24 | DraftFM |
-| [[src-arxiv-2608-19579]] | 2026-08-24 | DMD safety |
-| [[src-arxiv-2608-19583]] | 2026-08-24 | VGI-BENCH |
-| [[src-arxiv-2608-19589]] | 2026-08-24 | OrthoSkillVLA |
-| [[src-arxiv-batch08]] | 2026-08-24 | Five digests. C13 4MAS abstract art |
-| [[src-arxiv-2608-19492]] | 2026-08-24 | DBOSC |
-| [[src-arxiv-2608-19514]] | 2026-08-24 | 4MAS. Use Table 1 |
-| [[src-arxiv-2608-19515]] | 2026-08-24 | Hear2Act. Table 11 unread |
-| [[src-arxiv-2608-19529]] | 2026-08-24 | UniLang |
-| [[src-arxiv-2608-19536]] | 2026-08-24 | CVSD-Reg |
-| [[src-arxiv-batch07]] | 2026-08-24 | Five digests. VLA Table 4 unread |
-| [[src-arxiv-2608-20331]] | 2026-08-24 | G-CARL |
-| [[src-arxiv-2608-20338]] | 2026-08-24 | ConceptGuard |
-| [[src-arxiv-2608-19408]] | 2026-08-24 | R²-OPD |
-| [[src-arxiv-2608-19425]] | 2026-08-24 | SCAPE |
-| [[src-arxiv-2608-19490]] | 2026-08-24 | VLA self-demo. Table 4 unread |
-| [[src-arxiv-batch06]] | 2026-08-24 | Five digests. Appendices unread |
-| [[src-arxiv-2608-20255]] | 2026-08-24 | Two-stage NN-TL |
-| [[src-arxiv-2608-20258]] | 2026-08-24 | DICS tree splits |
-| [[src-arxiv-2608-20274]] | 2026-08-24 | Skill transfer. Gemma unread |
-| [[src-arxiv-2608-20281]] | 2026-08-24 | IAR. LoRA grid unread |
-| [[src-arxiv-2608-20315]] | 2026-08-24 | BERT-LER EHR |
-| [[src-arxiv-batch05]] | 2026-08-24 | Five digests. VS-Graph acc figure-only |
-| [[src-arxiv-2512-00288]] | 2026-08-24 | PORTAL generator. No bake-off |
-| [[src-arxiv-2512-00341]] | 2026-08-24 | MPI init 69-2-1 |
-| [[src-arxiv-2512-01249]] | 2026-08-24 | PWR-3. TSP ≠ 9–22% |
-| [[src-arxiv-2512-02419]] | 2026-08-24 | Brain-AI perspective |
-| [[src-arxiv-2512-03394]] | 2026-08-24 | VS-Graph. Acc unverified |
-| [[src-arxiv-batch04]] | 2026-08-24 | Five digests. C11 UniTok, C12 TIWM |
-| [[src-arxiv-2511-05540]] | 2026-08-24 | TIWM Mini vs full val14 |
-| [[src-arxiv-2511-12922]] | 2026-08-24 | UniTok. 51.89% is Toys |
-| [[src-arxiv-2511-16485]] | 2026-08-24 | LLM4EO FJSP |
-| [[src-arxiv-2511-20500]] | 2026-08-24 | APT Siamese. OCR tables |
-| [[src-arxiv-2511-20721]] | 2026-08-24 | Foundry 3D SuperTokens |
-| [[src-arxiv-batch03]] | 2026-08-24 | Five digests. C9 NGC, C10 HydroFusion |
-| [[src-arxiv-2510-03744]] | 2026-08-24 | HydroFusion-LMF. Abs vs §4.1 |
-| [[src-arxiv-2510-16851]] | 2026-08-24 | NGC. Table 1 vs 3 clash |
-| [[src-arxiv-2511-02241]] | 2026-08-24 | SAPIN CartPole lock 82% |
-| [[src-arxiv-2511-02864]] | 2026-08-24 | AlphaEvolve math. 6.24–6.67 unread |
-| [[src-arxiv-2511-02957]] | 2026-08-24 | Pavement GNN R² 0.38 |
-| [[src-arxiv-batch02]] | 2026-08-24 | Five more S-tier digests. 2510.02345 T7–8 unverified |
-| [[src-arxiv-2509-11016]] | 2026-08-24 | SuperDE DDQN for DE |
-| [[src-arxiv-2509-21617]] | 2026-08-24 | LANCE activation compression |
-| [[src-arxiv-2509-23982]] | 2026-08-24 | PaLRS residual steering |
-| [[src-arxiv-2509-24844]] | 2026-08-24 | PredNext SNN SSL |
-| [[src-arxiv-2510-02345]] | 2026-08-24 | Clustered MoE. Tables 7–8 unverified |
-| [[src-arxiv-batch01]] | 2026-08-24 | Five S-tier digests. Harvest frozen |
-| [[src-arxiv-2507-08177]] | 2026-08-24 | Causal CPS anomaly vision paper |
-| [[src-arxiv-2507-17886]] | 2026-08-24 | Aimone NMC time/space/energy |
-| [[src-arxiv-2507-20810]] | 2026-08-24 | FM=PSO analogy. No theorem |
-| [[src-arxiv-2509-26507]] | 2026-08-24 | BDH/BDH-GPU. Later sections unread |
-| [[src-arxiv-2510-17928]] | 2026-08-24 | EvoSyn 231 LCB / 673 OS |
-| [[src-alexprompter-claude-projects]] | 2026-08-24 | Quote of Claude Projects how-to. C16 not this vault |
-| [[src-avichawla-trueforge]] | 2026-08-24 | TrueForge article. 2.7x unverified. C15 |
-| [[src-4ndrearossetti-openconnector]] | 2026-08-24 | Reply quoting OpenConnector. C14 browser vs API catalog |
-| [[src-thewhizzai-avo]] | 2026-08-24 | ARC-AGI-3 30.2→100 tweet. Unverified, no paper |
-| [[src-chatchat-living-brain]] | 2026-08-24 | ChatChat Living Brain product tweet |
-| [[src-g3t0ffmyl4wn-2091749093206818856]] | 2026-08-24 | Body not retrieved. Silent |
-| [[src-mrgreenieybt3-llm-wiki]] | 2026-08-24 | Typed interlinked LLM Wiki pages |
-| [[src-beamnxw-memory-stack]] | 2026-08-24 | Memory-engineering stack. Cost-halving unverified |
-| [[src-promptyx-llm-cpu]] | 2026-08-24 | LLM as CPU / harness. No paper bound |
-| [[src-voxyz-writing-system]] | 2026-08-24 | 6/6 /goal writing prompt. C17 third list. C6 still open |
-| [[src-openagentskill-anti-slop]] | 2026-08-24 | Second 10 anti-slop list. Not juampi |
-| [[src-agentmemoryl-aml-s2]] | 2026-08-24 | AML season 2 tweet. Numbers unverified |
-| [[src-marfinxx-trace]] | 2026-08-23 | Amazon TRACE tweet + KDD 2026 paper |
-| [[src-arxiv-tierlist-handoff]] | 2026-08-24 | arXiv potential tierlist facts from box handoff |
-| [[src-0xcodio-memory-ablation]] | 2026-08-22 | Line-level memory ablation. Facts survived, adjectives died |
-| [[src-rohit-harness-router]] | 2026-08-22 | Shared contract so any harness can continue the task |
-| [[src-voxyz-verifiable-instructions]] | 2026-08-22 | Replace never-rules with checks. Exact 8 blocks missing |
-| [[src-papa-couch-compiler]] | 2026-08-21 | 305k vs 47k. Compiler vs filing cabinet |
-| [[src-hitu-entropy-engineering]] | 2026-08-21 | Swarm contamination. Prefer the 64-worker numbers |
-| [[src-jacky-self-verification]] | 2026-08-17 | DeepSeek V4 Flash + self-verify on Terminal-Bench |
-| [[src-bober-folder-workflow]] | 2026-08-21 | Popular how-to. Income and Karpathy paraphrase unverified |
-| [[src-avid-obsidian-agent-team]] | 2026-08-20 | Hunt / Ship / Decisions vault for a bot team |
-| [[src-juampi-anti-slop-rank]] | 2026-08-21 | Ten anti-slop skills. Compiled, not vendored |
 
 ## People
 
 | Page | One line |
 | --- | --- |
+| [[avid]] | @Av1dlive. Hunt/Ship vault tweet plus Company Foundry clip. C31 |
+| [[alex-karp]] | Palantir CEO. Sovereignty claims unverified without URL |
+| [[lostsec]] | coffinxp / @lostsec_. Hunter input source. Not a dump |
+| [[zack0x01]] | Hunter input source. Not a dump |
+| [[can-boluk]] | @_can1357. Daily-tool replace tweet. omp.sh |
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
+| [[maverick]] | agent-ultramode. /ultra over PPT |
+| [[elvis]] | dair.ai. Posted the AR paper summary |
 | [[rohit]] | Cross-harness task contract |
+| [[hurley]] | Notion Skills library pitch, 2026-08-21 |
+| [[mahipal-jangra]] | Community cybersecurity skill library. Not Anthropic |
 
 ## Root files the agent must keep current
 
@@ -190,3 +146,4 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-24.
 - [[MEMORY]] — durable facts
 - [[decisions]] — locked choices
 - `wiki/log.md` — timeline
+- `wiki/claims.csv` — compile of source Claims kept. Dual store is C17. See [[claims]]
