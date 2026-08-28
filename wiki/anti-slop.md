@@ -1,4 +1,5 @@
 ---
+id: concept:anti-slop
 type: concept
 tags:
   - wiki
@@ -37,6 +38,10 @@ The human asked for examples, a comparison, or a specific voice.
 9. https://skills.sh/aashaexo/soundshuman/humanize
 10. https://skills.sh/jalaalrd/anti-ai-slop-writing/anti-ai-slop-writing
 
+Public ranked skills. Company living libraries are a different object. A GitHub dump is another object. Compile the pitch. Do not vendor the pack. A local SOP the human writes is compiled here. See [[skill-library]], [[skill-as-sop]], [[src-mukul975-cybersecurity-skills]].
+
 ## Related
 
-[[verifiable-instructions]] · D6 in `decisions.md`
+[[verifiable-instructions]] · [[skill-library]] · [[skill-as-sop]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]]
+
+A second 10-skill list exists ([[src-openagentskill-anti-slop]]). Do not replace juampi's list. See [[contradictions]] C8.

@@ -1,4 +1,5 @@
 ---
+id: concept:self-verification
 type: concept
 tags:
   - wiki
@@ -30,4 +31,6 @@ For high-risk wiki claims and architecture answers: write the answer, score it a
 
 ## Related
 
-[[verifiable-instructions]] · [[entropy-gate]]
+[[verifiable-instructions]] · [[entropy-gate]] · [[claim-protocol]]
+
+Related later source: [[evosyn]] synthesizes executable tests; not the same as sampling several answers.

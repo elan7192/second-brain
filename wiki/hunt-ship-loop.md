@@ -1,9 +1,10 @@
 ---
+id: concept:hunt-ship-loop
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-25
 ---
 
 # Hunt / Ship loop
@@ -18,13 +19,18 @@ Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are 
 - Chat gets a short digest. See `output/`.
 - Lock decisions in `decisions.md` so dead ideas are not remade.
 - Nothing in the vault posts, pays, or sends.
+- One owner per job, report once. See [[raptor-dispatch]].
+- Clip work is captions/metadata, not full copyrighted films. See [[clip-pipeline]].
+- Compile methods learned in work into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
 
 ## Folders that now exist
 
 [[hunt]], [[ship]], and [[maps]] are indexes over the compiler. They do not store a second copy of the knowledge.
 
+`growth/` is operator memory for [[growth-operator]], not a second wiki. DEMO notes stay in `growth/`. Compiled claims about the system stay on [[growth-operator]].
+
 Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still parked.
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md`
+[[llm-wiki]] · [[context-graph]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]]

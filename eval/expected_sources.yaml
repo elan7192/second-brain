@@ -1,0 +1,26 @@
+q-memory-ablation:
+  - concept:memory-ablation
+  - source:src-0xcodio-memory-ablation
+q-fts-disposable:
+  - concept:portable-memory
+q-human-gate:
+  - concept:hunt-ship-loop
+  - decision:human-final-yes
+q-ngc-contradiction:
+  - concept:ngc
+  - contradiction:c9
+q-karpathy-code:
+  - person:andrej-karpathy
+  - meta:contradictions
+q-compiler-layout:
+  - decision:compiler-vault
+  - claim:compiler-vault-layout
+q-clone-brain:
+  - concept:portable-memory
+  - claim:do-not-clone-brain
+q-three-layers:
+  - concept:llm-wiki
+q-flag-conflict:
+  - claim:flag-conflict-do-not-pick-a-side
+q-d5:
+  - decision:human-final-yes

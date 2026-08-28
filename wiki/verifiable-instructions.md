@@ -1,9 +1,10 @@
 ---
+id: concept:verifiable-instructions
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-24
 ---
 
 # Verifiable instructions
@@ -29,6 +30,8 @@ Every instruction states:
 
 This vault's schema follows that shape. The tweet's eight paste-ready blocks were not in the fetched body. See [[contradictions]] C6.
 
+A local skill SOP needs this shape or it is a wish. See [[skill-as-sop]].
+
 ## Related
 
-[[memory-ablation]] · [[self-verification]] · `AGENTS.md`
+[[memory-ablation]] · [[self-verification]] · [[skill-as-sop]] · [[anti-slop]] · `AGENTS.md`
