@@ -23,4 +23,4 @@ Keep long-term vision.
 
 ## Pages updated
 
-[[musk-algorithm]] · [[first-principles]] · [[raptor-dispatch]]
+[[musk-algorithm]] · [[raptor-dispatch]]

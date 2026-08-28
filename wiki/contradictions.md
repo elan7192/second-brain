@@ -2,8 +2,8 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
-updated: 2026-08-23
+created: 2026-08-23
+updated: 2026-08-28
 ---
 
 # Contradictions
@@ -107,3 +107,9 @@ Resolution: keep Table 1. Do not use the abstract art numbers. See [[fourmas]].
 [[src-deronin-growthos-vault]] quotes a friend @eptwts making $100k in 10 months on Whop as a shadow growth operator.
 
 Resolution: `unverified`. Do not use as a forecast or as proof the vault works. See [[growth-operator]].
+
+## C15. CLAUDE.md copy vs D2
+
+Layout table used to say keep `AGENTS.md` and `CLAUDE.md` identical. D2 says `CLAUDE.md` only points at `AGENTS.md`.
+
+Resolution: D2 wins. Pointer only. See [[musk-algorithm]] 2026-08-28 pass.

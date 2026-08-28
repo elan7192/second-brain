@@ -16,7 +16,7 @@ LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 # Catalog stars. They stay in the vault. They do not sit in this graph.
-HIDDEN = {"index", "log", "twitter", "decisions"}
+HIDDEN = {"index", "index-papers", "index-sources", "log", "twitter", "decisions"}
 # Hunt/ship leaf indexes. Visible in Obsidian. Too many for the snapshot.
 SNAPSHOT_HIDDEN = {
     "github",

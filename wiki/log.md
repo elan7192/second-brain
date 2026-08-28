@@ -3,12 +3,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-28] musk | vault pass delete then simplify
+
+lan E ordered the five-step algorithm on this repo. Questioned requirements against named owners. Deleted full-index query, ingest briefs, MEMORY loops 1–16, first-principles page, add-frontmatter.py, CLAUDE.md copy rule. Split catalogs into [[index-papers]] and [[index-sources]]. Locked D9. Added back opt-in catalogs, origin+current LanBB links, file-back-if-rederive, lint gate. Did not add a new bot. See [[musk-algorithm]] [[musk-pass-2026-08-28]] [[decisions]].
 
 ## [2026-08-27] loop17 | 0/116 ad6f669 v17-hardened
 
@@ -115,7 +119,7 @@ Chat may be fuzzy. Vault must be precise. No transcript dumps. See [[context-com
 
 ## [2026-08-27] ingest | musk algorithm
 
-lan E motto. Strict order. Best part is no part. See [[musk-algorithm]], [[first-principles]], [[src-lan-e-musk-algorithm]]. Not pushed.
+lan E motto. Strict order. Best part is no part. See [[musk-algorithm]], [[src-lan-e-musk-algorithm]]. Not pushed.
 
 ## [2026-08-27] ingest | botdirectory scan + stale-fact-detector
 

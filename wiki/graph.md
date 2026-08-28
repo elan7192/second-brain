@@ -22,7 +22,7 @@ Color groups in `.obsidian/graph.json` only paint nodes. They do not place them.
 
 Search in graph view:
 
-`path:wiki OR path:maps OR path:hunt OR path:ship OR path:output OR file:Home OR file:MEMORY -file:index -file:log -file:twitter`
+`path:wiki OR path:maps OR path:hunt OR path:ship OR path:output OR file:Home OR file:MEMORY -file:index -file:index-papers -file:index-sources -file:log -file:twitter`
 
 Those hidden files stay in the vault. They are doors and timelines, not concept peers.
 
@@ -91,25 +91,6 @@ flowchart TB
     hunt
     hunt-ship-loop
     ingest-brief-2026-08-23
-    ingest-brief-2026-08-24-arxiv-128956
-    ingest-brief-2026-08-24-arxiv-156256
-    ingest-brief-2026-08-24-arxiv-281056
-    ingest-brief-2026-08-24-arxiv-405856
-    ingest-brief-2026-08-24-arxiv-counts
-    ingest-brief-2026-08-24-arxiv-pages
-    ingest-brief-2026-08-24-arxiv-tierlist
-    ingest-brief-2026-08-24-batch01
-    ingest-brief-2026-08-24-batch02
-    ingest-brief-2026-08-24-batch03
-    ingest-brief-2026-08-24-batch04
-    ingest-brief-2026-08-24-batch05
-    ingest-brief-2026-08-24-batch06
-    ingest-brief-2026-08-24-batch07
-    ingest-brief-2026-08-24-batch08
-    ingest-brief-2026-08-24-batch09
-    ingest-brief-2026-08-24-five-x
-    ingest-brief-2026-08-24-three-x
-    ingest-brief-2026-08-24-trace
     ingest-brief-2026-08-25-growthos
     ingest-brief-2026-08-25-play-methods
     ingest-brief-2026-08-25-skill-recorder
@@ -127,22 +108,10 @@ flowchart TB
   ship --> ingest-brief-2026-08-23
   ship --> graph-clusters-2026-08-24
   hunt --> hunt-ship-loop
-  ingest-brief-2026-08-24-arxiv-pages --> MEMORY
-  ingest-brief-2026-08-24-trace --> memory-engineering
-  ingest-brief-2026-08-24-trace --> context-graph
-  ingest-brief-2026-08-24-trace --> tokens-as-capital
   ingest-brief-2026-08-25-play-methods --> hunt-ship-loop
   ingest-brief-2026-08-25-play-methods --> llm-wiki
   ingest-brief-2026-08-25-play-methods --> audited-task-contract
   ingest-brief-2026-08-25-play-methods --> harness-routing
-  ingest-brief-2026-08-24-arxiv-281056 --> MEMORY
-  ingest-brief-2026-08-24-arxiv-counts --> MEMORY
-  ingest-brief-2026-08-24-arxiv-128956 --> MEMORY
-  ingest-brief-2026-08-24-five-x --> llm-wiki
-  ingest-brief-2026-08-24-five-x --> memory-engineering
-  ingest-brief-2026-08-24-five-x --> harness-routing
-  ingest-brief-2026-08-24-five-x --> anti-slop
-  ingest-brief-2026-08-24-arxiv-156256 --> MEMORY
   ingest-brief-2026-08-25-growthos --> growth-operator
   ingest-brief-2026-08-25-growthos --> src-deronin-growthos-vault
   ingest-brief-2026-08-25-growthos --> GrowthOS

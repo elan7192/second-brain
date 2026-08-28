@@ -14,13 +14,13 @@ Operating map for the agent. Teal in the Obsidian graph.
 
 1. [[Home]]
 2. `AGENTS.md`
-3. [[index]]
+3. [[index]] (short door, not [[index-papers]] or [[index-sources]])
 4. [[MEMORY]]
 5. [[decisions]]
 
 ## Then
 
-Answer from [[wiki]] pages. File useful answers to [[ship]].
+Answer from [[wiki]] pages. File an answer only if the next session would re-derive it. See [[musk-algorithm]].
 
 If the task is GrowthOS, load [[GrowthOS]] then [[growth-core]] instead of compiling from chat.
 

@@ -2,8 +2,8 @@
 type: meta
 tags:
   - wiki
-updated: 2026-08-25
-updated: 2026-08-23
+created: 2026-08-23
+updated: 2026-08-28
 ---
 
 # Agent operating system
@@ -18,7 +18,7 @@ Five layers, one vault.
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`.
 3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations.
-5. **Keep a human gate.** [[hunt-ship-loop]] + [[clip-pipeline]] + [[skillspector]]. File first. Scouts write quietly. Vault does not post, pay, or send. Generated skills wait for SkillSpector.
+5. **Keep a human gate.** [[hunt-ship-loop]] + [[clip-pipeline]] + [[skillspector]]. File first. Scouts write quietly. Vault does not post, pay, or send. Generated skills wait for SkillSpector. Operating order: [[musk-algorithm]].
 
 [[growth-operator]] is this stack applied to partner ops: compiled notes in `growth/`, rulings instead of re-arguing, human yes before money.
 

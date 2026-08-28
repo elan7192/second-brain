@@ -20,8 +20,8 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 
 ## Operations
 
-- **Ingest.** One source can update 10-15 pages. Summary, entities, concepts, index, log.
-- **Query.** Read [[index]] first. Answer with citations. File good answers back.
+- **Ingest.** One source updates the pages it actually changes. Source page, concepts, matching index, log, lint. No ingest brief unless lan E asked. See [[musk-algorithm]].
+- **Query.** Read the short [[index]] first. Open [[index-papers]] or [[index-sources]] only when the question is a paper or a source. Answer with citations. File back only if the next session would re-derive it.
 - **Lint.** Contradictions, stale claims, orphans, missing concept pages.
 - **Methods.** Compile methods learned while doing work after the task. See [[src-play-methods-2026-08-25]].
 - **Freshness.** Audit claims with [[stale-fact-detector]] against named sources. `raw/` stays immutable.

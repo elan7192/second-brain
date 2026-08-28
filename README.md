@@ -12,10 +12,10 @@ If you are not in Obsidian, open `output/obsidian-graph.html`.
 
 ## Agent
 
-1. Ask questions from this repo root in Cursor, Claude Code, or Codex.
+1. Ask questions from this repo root in Cursor, Claude Code, or Codex. The agent reads the short `wiki/index.md` door, not the paper or source catalogs.
 2. Drop a source in `raw/` and say `ingest this`.
 
-Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md`.
+Schema: `AGENTS.md`. Claude Code also reads `CLAUDE.md` (pointer only).
 
 ## Layout
 

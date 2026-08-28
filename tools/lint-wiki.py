@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
-HUBS = {"index", "log", "Home", "lint-wiki", "graph"}
+HUBS = {"index", "index-papers", "index-sources", "log", "Home", "lint-wiki", "graph"}
 
 
 def pages() -> dict[str, Path]:

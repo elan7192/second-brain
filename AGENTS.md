@@ -3,47 +3,55 @@
 This repo is a compiled LLM wiki, not a chat log and not a filing cabinet.
 You maintain `wiki/`. The human curates `raw/` and asks questions.
 
-Read this file, then `wiki/index.md`, then only the pages the index points to.
+Read this file, then `wiki/index.md` (the short door), then only the pages that question needs.
+Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. Do not load them on a normal query.
 
 ## Layout
 
 | Path | Owner | Rule |
 | --- | --- | --- |
-| `raw/` | human | Immutable. Read only. Never edit, move, or rename. |
-| `wiki/` | agent | Compiled pages. One topic per file. Update on every ingest. |
-| `wiki/index.md` | agent | Catalog. Read this before answering. |
+| `raw/` | lan E | Immutable. Read only. Never edit, move, or rename. |
+| `wiki/` | agent | Compiled pages. One topic per file. Update on ingest. |
+| `wiki/index.md` | agent | Short door. Read this before answering. |
+| `wiki/index-papers.md` | agent | Paper catalog. Open only when the question is a paper. |
+| `wiki/index-sources.md` | agent | Source catalog. Open only when ingesting or citing a source. |
 | `wiki/log.md` | agent | Append-only timeline. Prefix every entry with `## [YYYY-MM-DD] kind \| title`. |
-| `output/` | agent | Answers and briefs built from `wiki/`, never from raw memory. |
+| `output/` | agent | Answers built from `wiki/`. No ingest brief unless lan E asked. |
 | `MEMORY.md` | both | Durable facts only. A line stays if deleting it would change an answer. |
 | `decisions.md` | both | Locked choices. Do not reopen without new evidence. |
-| `AGENTS.md` / `CLAUDE.md` | both | This schema. Keep them identical. |
+| `AGENTS.md` | both | This schema. Canonical. |
+| `CLAUDE.md` | both | Pointer at `AGENTS.md` only (D2). Do not copy this file into it. |
 | `maps/` `hunt/` `ship/` | agent | Obsidian navigation. Do not copy wiki prose into them. |
 | `.obsidian/` | both | Vault settings. Keep graph color groups. |
 
 ## Query
 
+Named owner: lan E. Pattern: [[andrej-karpathy]] / D1.
+
 1. Read `wiki/index.md`.
-2. Open the linked pages. Follow `[[wikilinks]]`.
-3. Answer from compiled pages. Cite those pages.
+2. If the question is a paper, open `wiki/index-papers.md`. If it is a source, open `wiki/index-sources.md`.
+3. Follow `[[wikilinks]]`. Answer from compiled pages. Cite those pages.
 4. If the wiki is silent, say so. Do not invent. Ask to ingest a source or search the web.
-5. Do not read `raw/` unless the human asked for the original, or a wiki page is missing and you are ingesting.
-6. File a useful answer back into `wiki/` or `output/` so the next session does not re-derive it.
+5. Do not read `raw/` unless lan E asked for the original, or a wiki page is missing and you are ingesting.
+6. File the answer into `wiki/` or `output/` only if the next session would otherwise re-derive it.
 
 Check: every claim in the answer has a wiki citation, or is marked `unverified`.
 If evidence is missing: stop and name the gap. Do not fill it with tone.
 
 ## Ingest
 
-When the human drops files in `raw/` and says ingest:
+When lan E drops files in `raw/` and says ingest:
 
 1. Read the new raw file. Do not edit it.
 2. Write or update a source page in `wiki/sources/`.
-3. Write or update concept and people pages the source actually changes.
-4. Link both ways with `[[wikilinks]]`.
+3. Write or update concept pages the source actually changes.
+4. One inbound `[[wikilink]]` from a living page. The source page lists pages updated.
 5. Flag contradictions on the pages and on `wiki/contradictions.md`.
-6. Update `wiki/index.md`.
+6. Update the matching index (door, papers, or sources). Do not append a paper to the short door.
 7. Append `wiki/log.md`.
-8. Write a three-sentence brief in `output/` of what changed, what linked, and what the human should look at.
+8. `python3 tools/lint-wiki.py` exits 0.
+
+Do not write an `output/` ingest brief unless lan E asked for one.
 
 Check: `python3 tools/lint-wiki.py` exits 0. Every new page has an inbound `[[wikilink]]`.
 If a claim cannot be tied to the raw file: leave it out.
@@ -110,7 +118,7 @@ If the source is a viral demo with no method: mark it `unverified` and prefer th
 
 ## Growth operator
 
-When the human asks to run GrowthOS, brief a partner, or open the growth vault:
+When lan E asks to run GrowthOS, brief a partner, or open the growth vault:
 
 1. Read `growth/growth-core.md`, then only the pages it points to.
 2. Answer from those pages. File the briefing in `output/` with `python3 tools/growth-brief.py`.
@@ -122,4 +130,6 @@ If a DEMO note is the only source: say DEMO. If the vault is silent: stop and na
 ## Human authority
 
 This vault does not post, pay, send, or deploy.
-Destructive git, production access, and permission expansion stop for an explicit yes.
+Destructive git, production access, and permission expansion stop for an explicit yes from lan E.
+
+Operating order is [[musk-algorithm]]: named person, delete, simplify, accelerate, automate last.

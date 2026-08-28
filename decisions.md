@@ -3,7 +3,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Decisions
@@ -69,3 +69,11 @@ Graph view hides catalog stars and raw files. Layout follows the five [[agent-op
 - Source: [[graph]], [[agent-operating-system]]
 - Locked: 2026-08-24
 - Revalidate: if a later layout hides a real concept island or drops a supported peer link
+
+## D9. Short index door
+
+Query loads `wiki/index.md` only. Paper pages live in [[index-papers]]. Source pages live in [[index-sources]]. Do not load those catalogs unless the question is a paper or a source.
+
+- Source: [[musk-algorithm]], [[context-graph]], [[tokens-as-capital]]
+- Locked: 2026-08-28
+- Revalidate: if answers miss a compiled paper because the agent never opened the paper catalog when the question was a paper
