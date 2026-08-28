@@ -23,9 +23,12 @@ Five layers, one vault.
 
 [[growth-operator]] is this stack applied to partner ops: compiled notes in `growth/`, rulings instead of re-arguing, human yes before money.
 
+[[skill-library]] is adjacent: discover and reuse known patterns instead of rebuilding them. It does not replace compile-into-`wiki/`. A starred GitHub skill dump is still a dump. A local SOP is [[skill-as-sop]]. A retrieval stack is [[retrieval-second-brain]]. D1 stays.
+
 ## What this batch does not prove
 
 Viral clips are not methods. See [[contradictions]].
+The [[src-johnsjawn-skill-library]] demo shows usage counts. It does not show skills rewriting themselves after use.
 
 The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] says is needed before compilation beats a good search. Treat today's pages as a seed, not a finished graph.
 

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T17:48:04Z",
+  "builtAt": "2026-08-28T18:09:00Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 13,
-    "unverified": 68,
+    "unverified": 78,
     "Hunt": 7,
     "Map": 5,
-    "Ship": 38,
-    "Concept": 104,
+    "Ship": 44,
+    "Concept": 108,
     "Project": 2,
-    "Person": 6,
-    "Source": 119,
+    "Person": 8,
+    "Source": 124,
     "Decision": 9,
-    "Contradiction": 17,
-    "objects": 320,
-    "links": 1941
+    "Contradiction": 25,
+    "objects": 345,
+    "links": 2204
   },
   "objects": [
     {
@@ -248,6 +248,34 @@
       "oneLiner": "This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / INFERENCE / OPINION."
     },
     {
+      "primaryKey": "C18",
+      "objectType": "Contradiction",
+      "title": "Two retrieve engines",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "This branch added `tools/retrieve.py` and `tools/claim_protocol.py`, plus a hand-edited claims.csv schema."
+    },
+    {
+      "primaryKey": "C19",
+      "objectType": "Contradiction",
+      "title": "Embeddings vs no vector DB",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Resolution: parked. Same as D9 and Deferred. See [[claim-protocol]]."
+    },
+    {
       "primaryKey": "C2",
       "objectType": "Contradiction",
       "title": "Two folder skeletons",
@@ -260,6 +288,90 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Karpathy / [[src-papa-couch-compiler]] / Bober's tweet: `raw/`, `wiki/`, schema."
+    },
+    {
+      "primaryKey": "C20",
+      "objectType": "Contradiction",
+      "title": "Notion living skill library vs compiled git wiki",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "This vault already locked D1 and D7: compile into `wiki/`, open the repo in Obsidian, do not vendor skill repos ([[anti-slop]])."
+    },
+    {
+      "primaryKey": "C21",
+      "objectType": "Contradiction",
+      "title": "Skill improves with use vs usage count",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 2,
+      "unverified": true,
+      "oneLiner": "The attached demo shows a `# Uses` column and comments on skill pages. It does not show skill text changing after a use."
+    },
+    {
+      "primaryKey": "C22",
+      "objectType": "Contradiction",
+      "title": "Anthropic in the name, unaffiliated in the README",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "The README says it is an independent community project, not affiliated with Anthropic PBC."
+    },
+    {
+      "primaryKey": "C23",
+      "objectType": "Contradiction",
+      "title": "817 skills vs the domain table",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "The same README's domain table sums to 785. The contributing section still says Deception Technology has 2 skills and Compliance & Governance has 5, against table values 6 and 9."
+    },
+    {
+      "primaryKey": "C24",
+      "objectType": "Contradiction",
+      "title": "Stale skill-pack counts",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "READMEs and GitHub API on 2026-08-23:"
+    },
+    {
+      "primaryKey": "C25",
+      "objectType": "Contradiction",
+      "title": "Retrieval paste vs D9 FTS query path",
+      "path": "wiki/contradictions.md",
+      "created": "",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. AGENTS.md Deferred parks vector DB, Neo4j, MemGPT-style stores, and GraphRAG as a second memory."
     },
     {
       "primaryKey": "C3",
@@ -508,8 +620,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 5,
-      "outbound": 24,
+      "inbound": 6,
+      "outbound": 31,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -523,7 +635,7 @@
       "tags": "map",
       "island": "hunt-ship",
       "inbound": 2,
-      "outbound": 7,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Trend to lock. From [[src-avid-obsidian-agent-team]]."
     },
@@ -537,7 +649,7 @@
       "tags": "map",
       "island": "hunt-ship",
       "inbound": 3,
-      "outbound": 11,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "Operating map for the agent. Teal in the Obsidian graph."
     },
@@ -551,7 +663,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 10,
-      "outbound": 45,
+      "outbound": 49,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -578,8 +690,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 2,
-      "outbound": 6,
+      "inbound": 3,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "2026-08-28"
     },
@@ -592,8 +704,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 19,
-      "outbound": 28,
+      "inbound": 21,
+      "outbound": 33,
       "unverified": true,
       "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
     },
@@ -676,8 +788,8 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
-      "outbound": 4,
+      "inbound": 21,
+      "outbound": 7,
       "unverified": false,
       "oneLiner": "Default writing constraints"
     },
@@ -732,7 +844,7 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
+      "inbound": 25,
       "outbound": 5,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
@@ -878,6 +990,20 @@
       "oneLiner": "Vision: CPS anomalies as causal DAG breaks"
     },
     {
+      "primaryKey": "claim-protocol",
+      "objectType": "Concept",
+      "title": "Claim protocol",
+      "path": "wiki/claim-protocol.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-28",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 23,
+      "outbound": 12,
+      "unverified": true,
+      "oneLiner": "Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer"
+    },
+    {
       "primaryKey": "claims",
       "objectType": "Concept",
       "title": "Claims",
@@ -886,7 +1012,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
+      "inbound": 31,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "YAML sb registry plus CSV compile of Claims kept. C17"
@@ -970,8 +1096,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
-      "outbound": 8,
+      "inbound": 30,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
     },
@@ -984,8 +1110,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 57,
-      "outbound": 29,
+      "inbound": 77,
+      "outbound": 41,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1065,11 +1191,11 @@
       "title": "Digests",
       "path": "ship/digests.md",
       "created": "2026-08-23",
-      "updated": "2026-08-25",
+      "updated": "2026-08-27",
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 1,
-      "outbound": 6,
+      "outbound": 7,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1138,8 +1264,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
-      "outbound": 7,
+      "inbound": 20,
+      "outbound": 8,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
@@ -1194,8 +1320,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
-      "outbound": 14,
+      "inbound": 31,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
     },
@@ -1278,8 +1404,8 @@
       "updated": "2026-08-26",
       "tags": "hunt,github",
       "island": "hunt-ship",
-      "inbound": 1,
-      "outbound": 3,
+      "inbound": 2,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "Green in the graph when people or repos land here."
     },
@@ -1292,7 +1418,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 8,
+      "inbound": 9,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -1446,8 +1572,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
-      "outbound": 10,
+      "inbound": 23,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
@@ -1488,8 +1614,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 9,
-      "outbound": 19,
+      "inbound": 12,
+      "outbound": 21,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s"
     },
@@ -1502,7 +1628,7 @@
       "updated": "2026-08-23",
       "tags": "hunt",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]"
@@ -1548,6 +1674,20 @@
       "outbound": 4,
       "unverified": true,
       "oneLiner": "lostsec + zack0x01 as input sources. Not an exploit dump"
+    },
+    {
+      "primaryKey": "hurley",
+      "objectType": "Person",
+      "title": "Hurley",
+      "path": "wiki/people/hurley.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "person",
+      "island": "people",
+      "inbound": 6,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Notion Skills library pitch, 2026-08-21"
     },
     {
       "primaryKey": "hydrofusion-lmf",
@@ -1600,8 +1740,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
-      "outbound": 242,
+      "inbound": 13,
+      "outbound": 253,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -1618,6 +1758,62 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Nine X posts compiled into the first vault."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-23-cybersecurity-skills",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 cybersecurity skills repo",
+      "path": "output/ingest-brief-2026-08-23-cybersecurity-skills.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "What changed: the GitHub catalog pitch is now a source page and a person page. [[skill-library]] gained a second source. Offensive skill bodies were not copied. `MEMORY.md` now forbids vendoring or ex"
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-23-retrieval-second-brain",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 retrieval second brain",
+      "path": "output/ingest-brief-2026-08-23-retrieval-second-brain.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 4,
+      "outbound": 5,
+      "unverified": true,
+      "oneLiner": "What changed: the four-pillar retrieval recipe is now [[retrieval-second-brain]]. Layer names landed on [[memory-engineering]]. GraphRAG vs compiled wikilinks landed on [[context-graph]]. C25 flags th"
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-23-skill-library",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 skill library",
+      "path": "output/ingest-brief-2026-08-23-skill-library.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "What changed: one X post (Hurley, 2026-08-21) is now a source page, a [[skill-library]] concept, and a [[hurley]] person page. Usage-ranked Notion skills are filed. Auto-improvement and the 10% / 50-r"
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-23-skill-pack-list",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 five skill packs",
+      "path": "output/ingest-brief-2026-08-23-skill-pack-list.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "What changed: the pasted list and SOP thesis are now [[skill-as-sop]]. Five GitHub packs were checked against live READMEs. Stale counts landed on C24. No pack was vendored."
     },
     {
       "primaryKey": "ingest-brief-2026-08-24-arxiv-128956",
@@ -1970,6 +2166,20 @@
       "oneLiner": "Compiled [[botdirectory-scan]] and [[stale-fact-detector]] from `/workspace/play-until-2pm/botdirectory-picks.md`. 304 catalog listings. Skills on existing roles. No new bots. `raw/` stays immutable. "
     },
     {
+      "primaryKey": "ingest-brief-2026-08-27-claim-protocol",
+      "objectType": "Ship",
+      "title": "Brief: claim protocol 2026-08-27",
+      "path": "output/ingest-brief-2026-08-27-claim-protocol.md",
+      "created": "",
+      "updated": "",
+      "tags": "",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Compiled [[claim-protocol]] from lan E's architecture note. The chain is Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer. Live query stays `python3 tools/sb ask`. Duplicate retrieve eng"
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-27-lanbb-bb",
       "objectType": "Ship",
       "title": "ingest brief 2026-08-27 LanBB BB",
@@ -2034,8 +2244,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 45,
-      "outbound": 22,
+      "inbound": 55,
+      "outbound": 27,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2062,8 +2272,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 9,
-      "outbound": 168,
+      "inbound": 10,
+      "outbound": 184,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2077,7 +2287,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 12,
-      "outbound": 13,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Owner + worker + verifier + stop. One graph writer"
     },
@@ -2094,6 +2304,20 @@
       "outbound": 4,
       "unverified": false,
       "oneLiner": "coffinxp / @lostsec_. Hunter input source. Not a dump"
+    },
+    {
+      "primaryKey": "mahipal-jangra",
+      "objectType": "Person",
+      "title": "Mahipal Jangra",
+      "path": "wiki/people/mahipal-jangra.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "person",
+      "island": "people",
+      "inbound": 7,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Community cybersecurity skill library. Not Anthropic"
     },
     {
       "primaryKey": "maps",
@@ -2118,8 +2342,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
-      "outbound": 5,
+      "inbound": 22,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "A memory line stays only if deleting it changes an answer"
     },
@@ -2146,8 +2370,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
-      "outbound": 18,
+      "inbound": 28,
+      "outbound": 23,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
     },
@@ -2178,6 +2402,20 @@
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Compiled [[memory-system]], [[epistemic-labels]], [[provenance]], [[claims]], and [[untrusted-ingest]]. `wiki/claims.csv` rebuilds from source `## Claims kept` plus [[curated-claims]]. Lint now fails "
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 skill-library ingest vs main",
+      "path": "output/merge-conflict-report-2026-08-28.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 2,
+      "outbound": 18,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at the claim-protocol / D9 commit, then merged into `cursor/skill-library-ingest-955f`."
     },
     {
       "primaryKey": "mpi-init",
@@ -2342,8 +2580,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
-      "outbound": 9,
+      "inbound": 15,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Git truth. FTS5 disposable. Do not clone Brain"
     },
@@ -2496,10 +2734,24 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
-      "outbound": 9,
+      "inbound": 26,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Hybrid FTS5 over compiled pages. DB disposable"
+    },
+    {
+      "primaryKey": "retrieval-second-brain",
+      "objectType": "Concept",
+      "title": "Retrieval second brain",
+      "path": "wiki/retrieval-second-brain.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 19,
+      "outbound": 10,
+      "unverified": true,
+      "oneLiner": "Hybrid search / GraphRAG recipe. Compile the claim. Query path is D9. See C25"
     },
     {
       "primaryKey": "rohit",
@@ -2552,8 +2804,8 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
-      "outbound": 5,
+      "inbound": 11,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Sample several answers, score them, keep the winner"
     },
@@ -2580,10 +2832,38 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 6,
-      "outbound": 7,
+      "inbound": 8,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
+    },
+    {
+      "primaryKey": "skill-as-sop",
+      "objectType": "Concept",
+      "title": "Skill as SOP",
+      "path": "wiki/skill-as-sop.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 13,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "A skill is a compiled SOP for a workflow that already failed once"
+    },
+    {
+      "primaryKey": "skill-library",
+      "objectType": "Concept",
+      "title": "Skill library",
+      "path": "wiki/skill-library.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 22,
+      "outbound": 11,
+      "unverified": true,
+      "oneLiner": "Living catalog vs GitHub dump. Compile here. Do not vendor either pack"
     },
     {
       "primaryKey": "skill-recorder",
@@ -3748,6 +4028,20 @@
       "oneLiner": "2026-08-17"
     },
     {
+      "primaryKey": "src-johnsjawn-skill-library",
+      "objectType": "Source",
+      "title": "src-johnsjawn-skill-library",
+      "path": "wiki/sources/src-johnsjawn-skill-library.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 11,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "2026-08-21"
+    },
+    {
       "primaryKey": "src-juampi-anti-slop-rank",
       "objectType": "Source",
       "title": "src-juampi-anti-slop-rank",
@@ -3760,6 +4054,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "2026-08-21"
+    },
+    {
+      "primaryKey": "src-lan-e-claim-protocol-2026-08-27",
+      "objectType": "Source",
+      "title": "src-lan-e-claim-protocol-2026-08-27",
+      "path": "wiki/sources/src-lan-e-claim-protocol-2026-08-27.md",
+      "created": "2026-08-27",
+      "updated": "2026-08-28",
+      "tags": "play",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 14,
+      "unverified": false,
+      "oneLiner": "2026-08-27"
     },
     {
       "primaryKey": "src-lan-e-karp-sovereignty-2026-08-27",
@@ -4140,6 +4448,20 @@
       "oneLiner": "2026-08-24"
     },
     {
+      "primaryKey": "src-mukul975-cybersecurity-skills",
+      "objectType": "Source",
+      "title": "src-mukul975-cybersecurity-skills",
+      "path": "wiki/sources/src-mukul975-cybersecurity-skills.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "github",
+      "island": "sources",
+      "inbound": 14,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "2026-08-23"
+    },
+    {
       "primaryKey": "src-openagentskill-anti-slop",
       "objectType": "Source",
       "title": "src-openagentskill-anti-slop",
@@ -4238,6 +4560,20 @@
       "oneLiner": "2026-08-24"
     },
     {
+      "primaryKey": "src-retrieval-second-brain",
+      "objectType": "Source",
+      "title": "src-retrieval-second-brain",
+      "path": "wiki/sources/src-retrieval-second-brain.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "note",
+      "island": "sources",
+      "inbound": 11,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "2026-08-23"
+    },
+    {
       "primaryKey": "src-rohit-harness-router",
       "objectType": "Source",
       "title": "src-rohit-harness-router",
@@ -4264,6 +4600,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "2026-08-27"
+    },
+    {
+      "primaryKey": "src-skill-pack-list",
+      "objectType": "Source",
+      "title": "src-skill-pack-list",
+      "path": "wiki/sources/src-skill-pack-list.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-23",
+      "tags": "github",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "2026-08-23"
     },
     {
       "primaryKey": "src-thewhizzai-avo",
@@ -4330,8 +4680,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 7,
+      "inbound": 13,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Audit wiki claims vs named sources. raw/ immutable"
     },
@@ -4372,8 +4722,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
-      "outbound": 8,
+      "inbound": 31,
+      "outbound": 15,
       "unverified": true,
       "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
     },
@@ -4401,7 +4751,7 @@
       "tags": "hunt,twitter",
       "island": "hunt-ship",
       "inbound": 3,
-      "outbound": 10,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
     },
@@ -4498,8 +4848,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
-      "outbound": 5,
+      "inbound": 19,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Behavior, check, failure path. No wishes"
     },
@@ -4749,6 +5099,46 @@
       "to": "memory-system"
     },
     {
+      "from": "C18",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C18",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "C18",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "C18",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "C19",
+      "linkType": "cites",
+      "to": "src-lan-e-claim-protocol-2026-08-27"
+    },
+    {
+      "from": "C19",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C19",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "C19",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
       "from": "C2",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -4757,6 +5147,101 @@
       "from": "C2",
       "linkType": "extractedFrom",
       "to": "contradictions"
+    },
+    {
+      "from": "C20",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "C20",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "C20",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "C20",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C20",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "C20",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "C21",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "C21",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C22",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
+    },
+    {
+      "from": "C22",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "C22",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C23",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "C23",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C24",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "C24",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C24",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "C25",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "C25",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C25",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
     },
     {
       "from": "C3",
@@ -4996,7 +5481,17 @@
     {
       "from": "Home",
       "linkType": "aboutPerson",
+      "to": "hurley"
+    },
+    {
+      "from": "Home",
+      "linkType": "aboutPerson",
       "to": "jacky-kwok"
+    },
+    {
+      "from": "Home",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
     },
     {
       "from": "Home",
@@ -5027,6 +5522,11 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "Home",
@@ -5071,6 +5571,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong"
     },
     {
@@ -5091,7 +5596,22 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "ship"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "Home",
@@ -5131,7 +5651,22 @@
     {
       "from": "Hooks",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "Hooks",
+      "linkType": "relatedTo",
       "to": "ship"
+    },
+    {
+      "from": "Hooks",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "Hooks",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "Hooks",
@@ -5171,6 +5706,11 @@
     {
       "from": "Jarvis",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "Jarvis",
+      "linkType": "relatedTo",
       "to": "decisions"
     },
     {
@@ -5182,6 +5722,11 @@
       "from": "Jarvis",
       "linkType": "relatedTo",
       "to": "index"
+    },
+    {
+      "from": "Jarvis",
+      "linkType": "relatedTo",
+      "to": "retrieval"
     },
     {
       "from": "Jarvis",
@@ -5202,6 +5747,11 @@
       "from": "MEMORY",
       "linkType": "cites",
       "to": "src-hxiao-headlong-share"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
     },
     {
       "from": "MEMORY",
@@ -5237,6 +5787,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "botdirectory-scan"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "MEMORY",
@@ -5376,7 +5931,17 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "MEMORY",
@@ -5466,7 +6031,17 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong-hour"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
     },
     {
       "from": "Today",
@@ -5477,6 +6052,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-chatchat-living-brain"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
     },
     {
       "from": "agent-operating-system",
@@ -5502,6 +6082,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "agent-operating-system",
@@ -5591,7 +6176,22 @@
     {
       "from": "agent-operating-system",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
       "to": "self-verification"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "agent-operating-system",
@@ -5771,12 +6371,27 @@
     {
       "from": "anti-slop",
       "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "anti-slop",
+      "linkType": "cites",
       "to": "src-openagentskill-anti-slop"
     },
     {
       "from": "anti-slop",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "anti-slop",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "anti-slop",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "anti-slop",
@@ -6289,6 +6904,66 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "claim-protocol",
+      "linkType": "cites",
+      "to": "src-lan-e-claim-protocol-2026-08-27"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
+      "to": "stale-fact-detector"
+    },
+    {
       "from": "claims",
       "linkType": "relatedTo",
       "to": "contradictions"
@@ -6445,6 +7120,26 @@
     },
     {
       "from": "context-graph",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "context-graph",
       "linkType": "relatedTo",
       "to": "hunt-ship-loop"
     },
@@ -6466,6 +7161,21 @@
     {
       "from": "context-graph",
       "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
       "to": "tokens-as-capital"
     },
     {
@@ -6482,6 +7192,11 @@
       "from": "contradictions",
       "linkType": "aboutPerson",
       "to": "andrej-karpathy"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
     },
     {
       "from": "contradictions",
@@ -6526,12 +7241,27 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-juampi-anti-slop-rank"
     },
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-lan-e-claim-protocol-2026-08-27"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-laude-headlong"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
     },
     {
       "from": "contradictions",
@@ -6546,12 +7276,32 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "contradictions",
@@ -6562,6 +7312,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "file-memory"
     },
     {
       "from": "contradictions",
@@ -6607,6 +7362,21 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "palantir-aip"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "contradictions",
@@ -6774,6 +7544,11 @@
       "to": "ingest-brief-2026-08-25-growthos"
     },
     {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-27-claim-protocol"
+    },
+    {
       "from": "dmd-safety",
       "linkType": "cites",
       "to": "src-arxiv-2608-19579"
@@ -6832,6 +7607,11 @@
       "from": "entropy-gate",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "entropy-gate",
@@ -6937,6 +7717,11 @@
       "from": "file-memory",
       "linkType": "relatedTo",
       "to": "botdirectory-scan"
+    },
+    {
+      "from": "file-memory",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "file-memory",
@@ -7080,6 +7865,11 @@
     },
     {
       "from": "github",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "github",
       "linkType": "relatedTo",
       "to": "headlong"
     },
@@ -7092,6 +7882,11 @@
       "from": "github",
       "linkType": "relatedTo",
       "to": "self-verification"
+    },
+    {
+      "from": "github",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "graph",
@@ -7406,6 +8201,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-rohit-harness-router"
     },
     {
@@ -7437,6 +8237,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
     },
     {
       "from": "harness-routing",
@@ -7531,6 +8336,11 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
       "to": "claims"
     },
     {
@@ -7582,6 +8392,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "retrieval"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
     },
     {
       "from": "how-it-works",
@@ -7819,6 +8634,16 @@
       "to": "lanbb"
     },
     {
+      "from": "hurley",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "hurley",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
       "from": "hydrofusion-lmf",
       "linkType": "cites",
       "to": "src-arxiv-2510-03744"
@@ -7861,12 +8686,22 @@
     {
       "from": "index",
       "linkType": "aboutPerson",
+      "to": "hurley"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
       "to": "jacky-kwok"
     },
     {
       "from": "index",
       "linkType": "aboutPerson",
       "to": "lostsec"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
     },
     {
       "from": "index",
@@ -8276,7 +9111,17 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-juampi-anti-slop-rank"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-lan-e-claim-protocol-2026-08-27"
     },
     {
       "from": "index",
@@ -8416,6 +9261,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-openagentskill-anti-slop"
     },
     {
@@ -8451,12 +9301,22 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-rohit-harness-router"
     },
     {
       "from": "index",
       "linkType": "cites",
       "to": "src-ruujss-pipeline-honesty"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
     },
     {
       "from": "index",
@@ -8572,6 +9432,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "causal-cps-anomaly"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "index",
@@ -8926,6 +9791,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "sapin"
     },
     {
@@ -8947,6 +9817,16 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "ship"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "index",
@@ -9067,6 +9947,111 @@
       "from": "ingest-brief-2026-08-23",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-cybersecurity-skills",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-retrieval-second-brain",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "aboutPerson",
+      "to": "hurley"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-library",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-pack-list",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "ingest-brief-2026-08-23-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "ingest-brief-2026-08-24-arxiv-128956",
@@ -9694,6 +10679,36 @@
       "to": "stale-fact-detector"
     },
     {
+      "from": "ingest-brief-2026-08-27-claim-protocol",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-claim-protocol",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-claim-protocol",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-claim-protocol",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-claim-protocol",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "ingest-brief-2026-08-27-claim-protocol",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
       "from": "ingest-brief-2026-08-27-lanbb-bb",
       "linkType": "aboutPerson",
       "to": "lostsec"
@@ -9890,6 +10905,11 @@
     },
     {
       "from": "llm-wiki",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "backlink-first"
     },
@@ -9901,12 +10921,17 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "claims"
     },
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
-      "to": "context-graph"
+      "to": "contradictions"
     },
     {
       "from": "llm-wiki",
@@ -9947,6 +10972,21 @@
       "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "retrieval"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "llm-wiki",
@@ -10001,7 +11041,17 @@
     {
       "from": "log",
       "linkType": "aboutPerson",
+      "to": "hurley"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
       "to": "jacky-kwok"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
     },
     {
       "from": "log",
@@ -10111,6 +11161,16 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-lan-e-claim-protocol-2026-08-27"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-lan-e-karp-sovereignty-2026-08-27"
     },
     {
@@ -10211,6 +11271,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-palantir-aip-developers-2026-08-28"
     },
     {
@@ -10222,6 +11287,16 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
     },
     {
       "from": "log",
@@ -10312,6 +11387,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "causal-cps-anomaly"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "log",
@@ -10516,6 +11596,26 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-cybersecurity-skills"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-skill-library"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-skill-pack-list"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-growthos"
     },
     {
@@ -10602,6 +11702,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "memory-system-brief-2026-08-27"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28"
     },
     {
       "from": "log",
@@ -10696,6 +11801,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "sapin"
     },
     {
@@ -10717,6 +11827,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "ship"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "log",
@@ -10851,6 +11971,11 @@
     {
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
       "to": "context-graph"
     },
     {
@@ -10914,6 +12039,21 @@
       "to": "lanbb"
     },
     {
+      "from": "mahipal-jangra",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "mahipal-jangra",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "mahipal-jangra",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
       "from": "maps",
       "linkType": "relatedTo",
       "to": "GrowthOS"
@@ -10937,6 +12077,11 @@
       "from": "memory-ablation",
       "linkType": "cites",
       "to": "src-0xcodio-memory-ablation"
+    },
+    {
+      "from": "memory-ablation",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "memory-ablation",
@@ -11005,8 +12150,18 @@
     },
     {
       "from": "memory-engineering",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "memory-engineering",
@@ -11051,6 +12206,11 @@
     {
       "from": "memory-engineering",
       "linkType": "relatedTo",
+      "to": "hunt"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
       "to": "memory-ablation"
     },
     {
@@ -11062,6 +12222,16 @@
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "retrieval"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "ship"
     },
     {
       "from": "memory-engineering",
@@ -11192,6 +12362,96 @@
       "from": "memory-system-brief-2026-08-27",
       "linkType": "relatedTo",
       "to": "untrusted-ingest"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "Today"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "github"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "mpi-init",
@@ -11431,6 +12691,11 @@
     {
       "from": "portable-memory",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "portable-memory",
+      "linkType": "relatedTo",
       "to": "claims"
     },
     {
@@ -11641,6 +12906,11 @@
     {
       "from": "retrieval",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
       "to": "claims"
     },
     {
@@ -11676,10 +12946,65 @@
     {
       "from": "retrieval",
       "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
       "to": "stable-ids"
     },
     {
       "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "retrieval-second-brain",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
     },
@@ -11727,6 +13052,11 @@
       "from": "self-verification",
       "linkType": "cites",
       "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
     },
     {
       "from": "self-verification",
@@ -11806,7 +13136,117 @@
     {
       "from": "ship",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-cybersecurity-skills"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-skill-library"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-23-skill-pack-list"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
       "to": "ontology-rebuild-brief-2026-08-28"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "aboutPerson",
+      "to": "hurley"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "skill-recorder",
@@ -13189,9 +14629,109 @@
       "to": "self-verification"
     },
     {
+      "from": "src-johnsjawn-skill-library",
+      "linkType": "aboutPerson",
+      "to": "hurley"
+    },
+    {
+      "from": "src-johnsjawn-skill-library",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "src-johnsjawn-skill-library",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-johnsjawn-skill-library",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-johnsjawn-skill-library",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "src-johnsjawn-skill-library",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
       "from": "src-juampi-anti-slop-rank",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "src-lan-e-claim-protocol-2026-08-27",
+      "linkType": "relatedTo",
+      "to": "stale-fact-detector"
     },
     {
       "from": "src-lan-e-karp-sovereignty-2026-08-27",
@@ -13539,6 +15079,36 @@
       "to": "llm-wiki"
     },
     {
+      "from": "src-mukul975-cybersecurity-skills",
+      "linkType": "aboutPerson",
+      "to": "mahipal-jangra"
+    },
+    {
+      "from": "src-mukul975-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "src-mukul975-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-mukul975-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-mukul975-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "src-mukul975-cybersecurity-skills",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
       "from": "src-openagentskill-anti-slop",
       "linkType": "cites",
       "to": "src-juampi-anti-slop-rank"
@@ -13674,6 +15244,31 @@
       "to": "harness-routing"
     },
     {
+      "from": "src-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "src-retrieval-second-brain",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
       "from": "src-rohit-harness-router",
       "linkType": "aboutPerson",
       "to": "rohit"
@@ -13697,6 +15292,26 @@
       "from": "src-ruujss-pipeline-honesty",
       "linkType": "relatedTo",
       "to": "work-per-cost"
+    },
+    {
+      "from": "src-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "src-skill-pack-list",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "src-thewhizzai-avo",
@@ -13756,6 +15371,11 @@
     {
       "from": "stale-fact-detector",
       "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "stale-fact-detector",
+      "linkType": "relatedTo",
       "to": "claims"
     },
     {
@@ -13811,7 +15431,27 @@
     {
       "from": "tokens-as-capital",
       "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
+      "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
       "to": "src-papa-couch-compiler"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
+      "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
+      "to": "src-skill-pack-list"
     },
     {
       "from": "tokens-as-capital",
@@ -13832,6 +15472,21 @@
       "from": "tokens-as-capital",
       "linkType": "relatedTo",
       "to": "llm-wiki"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
+      "to": "retrieval-second-brain"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "tokens-as-capital",
@@ -13887,6 +15542,11 @@
       "from": "twitter",
       "linkType": "cites",
       "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
+      "to": "src-johnsjawn-skill-library"
     },
     {
       "from": "twitter",
@@ -14087,6 +15747,11 @@
       "from": "verifiable-instructions",
       "linkType": "relatedTo",
       "to": "self-verification"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "vgi-bench",

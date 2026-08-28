@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C19 must match that page.
+# Codes C1–C25 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -190,4 +190,64 @@ contradictions:
     severity: low
     resolution: parked; same as D9 and Deferred
     resolution_source: concept:file-memory
+    page: contradictions.md
+
+  - id: contradiction:c20
+    claim_a: source:src-johnsjawn-skill-library
+    claim_b: concept:llm-wiki
+    reason: Notion living Skills library vs compiled git wiki
+    status: resolved
+    severity: medium
+    resolution: compile product claims onto skill-library; do not reopen D7; do not vendor Notion or GitHub packs
+    resolution_source: decision:obsidian-is-the-ide
+    page: contradictions.md
+
+  - id: contradiction:c21
+    claim_a: source:src-johnsjawn-skill-library
+    claim_b: concept:skill-library
+    reason: skill improves with use vs usage count column
+    status: unverified
+    severity: low
+    resolution: keep the tweet line unverified; cite the demo for usage visibility only
+    resolution_source: concept:skill-library
+    page: contradictions.md
+
+  - id: contradiction:c22
+    claim_a: source:src-mukul975-cybersecurity-skills
+    claim_b: person:mahipal-jangra
+    reason: Anthropic in the repo name vs unaffiliated README
+    status: resolved
+    severity: medium
+    resolution: cite mahipal-jangra; do not call the pack an Anthropic product
+    resolution_source: person:mahipal-jangra
+    page: contradictions.md
+
+  - id: contradiction:c23
+    claim_a: source:src-mukul975-cybersecurity-skills
+    claim_b: concept:skill-library
+    reason: 817 skills headline vs 785-row domain table
+    status: unresolved
+    severity: medium
+    resolution: treat 817 as author-stated; do not use the table as a proof of 817
+    resolution_source: concept:skill-library
+    page: contradictions.md
+
+  - id: contradiction:c24
+    claim_a: source:src-skill-pack-list
+    claim_b: concept:skill-library
+    reason: skill-pack paste counts vs live repos on 2026-08-23
+    status: resolved
+    severity: medium
+    resolution: quote the 2026-08-23 check; do not repeat paste numbers as current
+    resolution_source: concept:skill-library
+    page: contradictions.md
+
+  - id: contradiction:c25
+    claim_a: source:src-retrieval-second-brain
+    claim_b: concept:retrieval
+    reason: hybrid BM25+vector+GraphRAG paste vs D9 FTS query path
+    status: unresolved
+    severity: high
+    resolution: compile the four pillars; do not vendor those frameworks; do not reopen D9 in this merge
+    resolution_source: decision:markdown-canonical-fts-disposable
     page: contradictions.md

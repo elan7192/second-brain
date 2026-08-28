@@ -21,6 +21,8 @@ Vector similarity is not a causal path. "Why did Project X fail?" may need a cha
 
 Local cut: `python3 tools/ontology.py subgraph <slug> --hops 1`. See [[vault-ontology]].
 
+[[src-retrieval-second-brain]] names the same walk as GraphRAG. This vault walks compiled page links. That is a compile-time graph, not a query-time GraphRAG runtime. See [[retrieval-second-brain]] and [[contradictions]] C25.
+
 Facts need validity windows. "Dan works on Project A" and "Dan works on Project B" can both exist in a store. Only one may be current.
 
 ## Split
@@ -28,8 +30,10 @@ Facts need validity windows. "Dan works on Project A" and "Dan works on Project 
 - Graph: what is true, and when.
 - Skills / schema: how we act.
 
+[[src-mukul975-cybersecurity-skills]] describes the same split as a load order: scan all skill frontmatters, then load a few full workflows. Token numbers there are author-stated. This vault applies the split by compiling into [[skill-library]], not by installing that pack.
+
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[claim-protocol]] · [[hunt-ship-loop]] · [[trace]] · [[vault-ontology]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-engineering]] · [[skill-library]] · [[retrieval-second-brain]] · [[claim-protocol]] · [[hunt-ship-loop]] · [[trace]] · [[vault-ontology]]
 
 [[trace]] treats a conversation trajectory as a context graph for attribution, then edits the named source. Same idea as a subgraph, used for repair. · [[loop-graph-engineering]]

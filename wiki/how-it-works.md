@@ -25,6 +25,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 ## What the model sees
 
 Prefer compiled pages over raw dumps. Query them through [[retrieval]]. That is [[tokens-as-capital]], [[context-graph]], and [[claim-protocol]].
+The paste on [[retrieval-second-brain]] (BM25 + vector + GraphRAG + LangChain) is a different product stack. See C25.
 For object sets and links, query [[vault-ontology]] instead of walking every file.
 
 [[MEMORY]] stays small. That is [[memory-ablation]].

@@ -11,6 +11,10 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into skill-library ingest
+
+Fetched origin/main at claim-protocol / D9. Simple unions kept. Skill flags remapped C8–C13 → C20–C25 so they do not collide with paper flags. C25 vs D9 left unresolved. Brief: [[merge-conflict-report-2026-08-28]].
+
 ## [2026-08-27] ingest | Claim protocol
 
 Named chain Claim → Evidence → Verification → Retrieval → Context → Answer. Live query stays `python3 tools/sb ask`. Duplicate engine parked as C18. Embeddings parked as C19. See [[claim-protocol]] [[src-lan-e-claim-protocol-2026-08-27]].
@@ -324,6 +328,22 @@ Compiled `/workspace/arxiv-tierlist/ARXIV_TIERLIST_HANDOFF.md` into [[src-arxiv-
 ## [2026-08-24] lint | Concept clusters in the graph
 
 The hairball was ring-by-folder layout plus catalog stars (`index`, `log`, `twitter`). Graph filter now keeps wiki/maps/hunt/ship and drops `raw/`, `index`, `log`, and `twitter`. Renderer places nodes on the five [[agent-operating-system]] layers. Added peer concept links already supported by those pages. Locked D8.
+
+## [2026-08-23] ingest | Retrieval second brain
+
+Compiled the four-pillar retrieval paste into [[src-retrieval-second-brain]] and [[retrieval-second-brain]]. Mapped layers onto [[memory-engineering]]. Flagged C25 (was C13 on this branch). D1 not reopened. C25 vs D9 later unresolved. Brief: [[ingest-brief-2026-08-23-retrieval-second-brain]].
+
+## [2026-08-23] ingest | Five skill packs and SOP thesis
+
+Compiled the pasted list into [[src-skill-pack-list]] and [[skill-as-sop]]. Checked five GitHub READMEs. Flagged C24 (was C12 on this branch). No pack vendored. Brief: [[ingest-brief-2026-08-23-skill-pack-list]].
+
+## [2026-08-23] ingest | mukul975 cybersecurity skill library
+
+Compiled https://github.com/mukul975/Anthropic-Cybersecurity-Skills into [[src-mukul975-cybersecurity-skills]], [[mahipal-jangra]], and [[skill-library]]. Catalog pitch only. Skill bodies not copied. Flagged C22 and C23 (were C10 and C11). Extended C20. `MEMORY.md` now forbids vendoring or executing the pack. Brief: [[ingest-brief-2026-08-23-cybersecurity-skills]].
+
+## [2026-08-23] ingest | Johnsjawn skill library
+
+Compiled https://x.com/johnsjawn/status/2090805874331959600 into [[src-johnsjawn-skill-library]], [[skill-library]], and [[hurley]]. Flagged C20 (Notion living library vs this compiled vault) and C21 (improves on each use vs `# Uses` counts). D7 not reopened. Brief: [[ingest-brief-2026-08-23-skill-library]].
 
 ## [2026-08-23] lint | Obsidian vault layer
 

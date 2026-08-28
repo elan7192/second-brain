@@ -19,6 +19,8 @@ Do not walk [[index]] by hand when the index exists. If the database is missing,
 
 See [[portable-memory]]. Do not clone Brain. Do not make the database a second memory. See [[eval-suite]] for the gate.
 
+Paste foil: [[retrieval-second-brain]]. Hybrid BM25 + vector + GraphRAG is not this path. C25.
+
 ## Related
 
-[[stable-ids]] · [[claims]] · [[llm-wiki]] · [[context-graph]] · [[tokens-as-capital]] · [[file-memory]] · [[claim-protocol]]
+[[stable-ids]] · [[claims]] · [[llm-wiki]] · [[context-graph]] · [[tokens-as-capital]] · [[file-memory]] · [[claim-protocol]] · [[retrieval-second-brain]]

@@ -147,3 +147,73 @@ Resolution: unresolved. Live Query stays `python3 tools/sb ask`. Do not wire the
 [[file-memory]] and main Deferred: vector DB only when too much to read. FTS5 is the disposable index.
 
 Resolution: parked. Same as D9 and Deferred. See [[claim-protocol]].
+
+## C20. Notion living skill library vs compiled git wiki
+
+[[src-johnsjawn-skill-library]] says a GitHub folder known to 10% of the company fails, and Notion should be the home for collective AI skills.
+
+This vault already locked D1 and D7: compile into `wiki/`, open the repo in Obsidian, do not vendor skill repos ([[anti-slop]]).
+
+[[src-mukul975-cybersecurity-skills]] is that GitHub-folder form. GitHub API on 2026-08-23: 30758 stars, 3663 forks.
+
+[[src-skill-pack-list]] adds five more GitHub folders, including an official Vercel pack.
+
+Resolution: compile the product claims onto [[skill-library]]. Do not reopen D7. Do not vendor Notion or the GitHub packs. The 10% figure stays unverified. Star count does not authorize install.
+
+Remap: this flag was C8 on the skill-library branch. Main C8 is the two anti-slop tens.
+
+## C21. Skill improves with use vs usage count
+
+[[src-johnsjawn-skill-library]] tweet: the best deal review skill gets better every time a sales rep uses it.
+
+The attached demo shows a `# Uses` column and comments on skill pages. It does not show skill text changing after a use.
+
+Resolution: keep the tweet line unverified. Cite the demo for usage visibility only.
+
+Remap: was C9 on the skill-library branch. Main C9 is NGC tables.
+
+## C22. Anthropic in the name, unaffiliated in the README
+
+[[src-mukul975-cybersecurity-skills]] lives at `mukul975/Anthropic-Cybersecurity-Skills`.
+
+The README says it is an independent community project, not affiliated with Anthropic PBC.
+
+Resolution: cite [[mahipal-jangra]]. Do not call the pack an Anthropic product.
+
+Remap: was C10 on the skill-library branch. Main C10 is HydroFusion years.
+
+## C23. 817 skills vs the domain table
+
+[[src-mukul975-cybersecurity-skills]] headline is 817 skills across 29 domains.
+
+The same README's domain table sums to 785. The contributing section still says Deception Technology has 2 skills and Compliance & Governance has 5, against table values 6 and 9.
+
+Resolution: treat 817 as author-stated. Quote C23 if a count is needed. Do not use the table as a proof of 817.
+
+Remap: was C11 on the skill-library branch. Main C11 is UniTok Toys vs Tools.
+
+## C24. Stale skill-pack counts
+
+[[src-skill-pack-list]] paste: scientific 148, alirezarezvani 223 skills and 5,200+ stars.
+
+READMEs and GitHub API on 2026-08-23:
+
+- K-Dense badge 163. Same README also says 161. 148 is gone.
+- alirezarezvani headline 364, convert section 345, API description 345 / 330+. README still says 5,200+ stars. API stars: 24841.
+- vercel-labs 40+ and 100+ rule counts match the current README.
+
+Resolution: quote the 2026-08-23 check on [[skill-library]]. Do not repeat the paste numbers as current.
+
+Remap: was C12 on the skill-library branch. Main C12 is TIWM Mini vs full val14.
+
+## C25. Retrieval paste vs D9 FTS query path
+
+[[src-retrieval-second-brain]] says read-and-recall needs hybrid BM25 + vector + rerank, GraphRAG, and a MemGPT / Letta / LangChain / LlamaIndex landing.
+
+D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. AGENTS.md Deferred parks vector DB, Neo4j, MemGPT-style stores, and GraphRAG as a second memory.
+
+The paste's "greatly raises retrieval accuracy" has no method. unverified.
+
+Resolution: unresolved. Compile the four pillars onto [[retrieval-second-brain]]. Do not vendor those frameworks. Do not reopen D9 in this merge. Human should say whether C25 only parks GraphRAG/LangChain/vector, or also fights FTS5.
+
+Remap: was C13 on the skill-library branch. Main C13 is 4MAS abstract art.

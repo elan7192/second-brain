@@ -100,6 +100,9 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[skill-library]] | Living catalog vs GitHub dump. Compile here. Do not vendor either pack |
+| [[skill-as-sop]] | A skill is a compiled SOP for a workflow that already failed once |
+| [[retrieval-second-brain]] | Hybrid search / GraphRAG recipe. Compile the claim. Query path is D9. See C25 |
 | [[trace]] | Trajectory attribution; repair context without retraining |
 | [[causal-cps-anomaly]] | Vision: CPS anomalies as causal DAG breaks |
 | [[nmc-trace-complexity]] | Aimone: NMC energy via sparse spike traces |
@@ -271,6 +274,10 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[src-bober-folder-workflow]] | 2026-08-21 | Popular how-to. Income and Karpathy paraphrase unverified |
 | [[src-avid-obsidian-agent-team]] | 2026-08-20 | Hunt / Ship / Decisions vault for a bot team |
 | [[src-juampi-anti-slop-rank]] | 2026-08-21 | Ten anti-slop skills. Compiled, not vendored |
+| [[src-johnsjawn-skill-library]] | 2026-08-21 | Notion Skills library pitch. Usage column shown. Auto-improve unverified |
+| [[src-mukul975-cybersecurity-skills]] | 2026-08-23 | GitHub skill dump. 817 claimed. Offensive bodies not copied |
+| [[src-skill-pack-list]] | 2026-08-23 | Five public packs plus SOP thesis. Counts stale. See C24 |
+| [[src-retrieval-second-brain]] | 2026-08-23 | Four retrieval pillars. Accuracy gain unverified. See C25 |
 
 ## People
 
@@ -282,6 +289,8 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 | [[andrej-karpathy]] | LLM Wiki gist, April 2026 |
 | [[jacky-kwok]] | LLM-as-a-Verifier |
 | [[rohit]] | Cross-harness task contract |
+| [[hurley]] | Notion Skills library pitch, 2026-08-21 |
+| [[mahipal-jangra]] | Community cybersecurity skill library. Not Anthropic |
 
 ## Root files the agent must keep current
 

@@ -96,6 +96,13 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Partner names and dollar figures in `growth/` are DEMO unless a note says otherwise. Do not treat them as live deals.
 - Do not outreach, create live Whop products, or move money from this vault. D5 still holds.
 
+## Rejected installs
+
+- 2026-08-23: Do not vendor, install, or execute skills from `mukul975/Anthropic-Cybersecurity-Skills`. The README states the pack includes offensive and dual-use techniques. Compile catalog claims only. See [[src-mukul975-cybersecurity-skills]].
+- 2026-08-23: Do not vendor `vercel-labs/agent-skills`, `K-Dense-AI/scientific-agent-skills`, `alirezarezvani/claude-skills`, `psenger/ai-agent-skills`, or `softaworks/agent-toolkit`. Compile catalog claims. A local SOP the human writes may be compiled into `wiki/` or `AGENTS.md`. See [[skill-as-sop]].
+- 2026-08-23: A Smoke-problem Hook + SOP exists in the human's account of work. The script is not in `raw/`. Do not invent the method. Ask to ingest the script.
+- 2026-08-23: Do not vendor MemGPT, Letta, LangChain, LlamaIndex, or a GraphRAG runtime. Compile those claims onto [[retrieval-second-brain]]. Live query stays D9 (`python3 tools/sb ask`). See C25.
+
 ## Open questions
 
 - No personal identity or goals have been captured yet. Do not invent them.

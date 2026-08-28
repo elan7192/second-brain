@@ -8,7 +8,15 @@ C14,Contradiction,eptwts $100k / 10 months,wiki/contradictions.md,,2026-08-28,co
 C15,Contradiction,Foundry 3D paper vs Palantir Foundry,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,4,false,Resolution: do not mix the names. Local object table is [[vault-ontology]].
 C16,Contradiction,Headlong one stream vs entropy gate,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,4,false,Operator yes 2026-08-26 started a 1-hour local Ollama identity `hour`. Nested Docker overlay failed. Local unsandboxed for that hour only. Harvest 02:07Z: mind stopped; tests did not run. Still not th
 C17,Contradiction,Two claim registries,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,3,false,This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / INFERENCE / OPINION.
+C18,Contradiction,Two retrieve engines,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,4,false,"This branch added `tools/retrieve.py` and `tools/claim_protocol.py`, plus a hand-edited claims.csv schema."
+C19,Contradiction,Embeddings vs no vector DB,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,4,false,Resolution: parked. Same as D9 and Deferred. See [[claim-protocol]].
 C2,Contradiction,Two folder skeletons,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,2,false,"Karpathy / [[src-papa-couch-compiler]] / Bober's tweet: `raw/`, `wiki/`, schema."
+C20,Contradiction,Notion living skill library vs compiled git wiki,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,6,true,"This vault already locked D1 and D7: compile into `wiki/`, open the repo in Obsidian, do not vendor skill repos ([[anti-slop]])."
+C21,Contradiction,Skill improves with use vs usage count,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,2,true,The attached demo shows a `# Uses` column and comments on skill pages. It does not show skill text changing after a use.
+C22,Contradiction,"Anthropic in the name, unaffiliated in the README",wiki/contradictions.md,,2026-08-28,contradiction,meta,0,3,false,"The README says it is an independent community project, not affiliated with Anthropic PBC."
+C23,Contradiction,817 skills vs the domain table,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,2,false,"The same README's domain table sums to 785. The contributing section still says Deception Technology has 2 skills and Compliance & Governance has 5, against table values 6 and 9."
+C24,Contradiction,Stale skill-pack counts,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,3,false,READMEs and GitHub API on 2026-08-23:
+C25,Contradiction,Retrieval paste vs D9 FTS query path,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,3,true,"D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. AGENTS.md Deferred parks vector DB, Neo4j, MemGPT-style stores, and GraphRAG as a second memory."
 C3,Contradiction,200-agent cinematic vs 64-worker study,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,2,true,"Same author's article: 64 Haiku workers, measured hallucination index and cost."
 C4,Contradiction,Shared memory vs shared contract,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,3,true,Resolution: compatible. Share a small audited contract. Do not share transcripts or unverified peer claims.
 C5,Contradiction,Living CLAUDE.md profile vs adjective death,wiki/contradictions.md,,2026-08-28,contradiction,meta,0,3,false,Resolution: D3. Profile files may exist. They may only hold facts that change answers. Interview prompts that produce adjectives get filtered before `MEMORY.md`.
@@ -26,23 +34,23 @@ D7,Decision,Obsidian is the IDE,decisions.md,2026-08-23,2026-08-28,decision,meta
 D8,Decision,Graph clusters by concept,decisions.md,2026-08-23,2026-08-28,decision,meta,0,3,false,"Graph view hides catalog stars and raw files. Layout follows the five [[agent-operating-system]] layers. Color groups stay gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
 D9,Decision,"Markdown canonical, FTS disposable",decisions.md,2026-08-23,2026-08-28,decision,meta,0,5,false,Compiled markdown is the store. SQLite FTS5 is a rebuildable index. Filenames are not identity; `id:` is. Do not treat the database as memory. Do not clone Brain.
 GrowthOS,Map,GrowthOS,maps/GrowthOS.md,2026-08-25,2026-08-25,map,hunt-ship,6,5,false,Door to the growth operator vault. Teal in the Obsidian graph. Notes live in `growth/`.
-Home,Meta,Home,Home.md,2026-08-23,2026-08-28,wiki,meta,5,24,false,Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands.
-Hooks,Map,Hooks,maps/Hooks.md,2026-08-23,2026-08-23,map,hunt-ship,2,7,false,Trend to lock. From [[src-avid-obsidian-agent-team]].
-Jarvis,Map,Jarvis,maps/Jarvis.md,2026-08-23,2026-08-23,map,hunt-ship,3,11,false,Operating map for the agent. Teal in the Obsidian graph.
-MEMORY,Meta,Memory,MEMORY.md,2026-08-23,2026-08-28,wiki,meta,10,45,true,Durable facts only. A line stays if deleting it would change an answer.
+Home,Meta,Home,Home.md,2026-08-23,2026-08-28,wiki,meta,6,31,false,Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands.
+Hooks,Map,Hooks,maps/Hooks.md,2026-08-23,2026-08-23,map,hunt-ship,2,10,false,Trend to lock. From [[src-avid-obsidian-agent-team]].
+Jarvis,Map,Jarvis,maps/Jarvis.md,2026-08-23,2026-08-23,map,hunt-ship,3,13,false,Operating map for the agent. Teal in the Obsidian graph.
+MEMORY,Meta,Memory,MEMORY.md,2026-08-23,2026-08-28,wiki,meta,10,49,true,Durable facts only. A line stays if deleting it would change an answer.
 TELOS,Map,TELOS,maps/TELOS.md,2026-08-23,2026-08-23,map,hunt-ship,3,5,false,Why this vault exists.
-Today,Meta,Today,wiki/Today.md,2026-08-23,2026-08-28,wiki,meta,2,6,false,2026-08-28
-agent-operating-system,Meta,Agent operating system,wiki/agent-operating-system.md,2026-08-23,2026-08-28,wiki,meta,19,28,true,Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts.
+Today,Meta,Today,wiki/Today.md,2026-08-23,2026-08-28,wiki,meta,3,8,false,2026-08-28
+agent-operating-system,Meta,Agent operating system,wiki/agent-operating-system.md,2026-08-23,2026-08-28,wiki,meta,21,33,true,Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts.
 ai-sovereignty,Concept,AI sovereignty,wiki/ai-sovereignty.md,2026-08-27,2026-08-28,wiki,concepts,13,11,true,"Your data, your model. Karp synthesis. Unverified without URL"
 alex-karp,Person,Alex Karp,wiki/people/alex-karp.md,2026-08-27,2026-08-28,person,people,6,7,true,Palantir CEO. Sovereignty claims unverified without URL
 alphaevolve-math,Concept,AlphaEvolve math constructions,wiki/alphaevolve-math.md,2026-08-24,2026-08-24,wiki,concepts,7,3,false,67 constructions. 6.24–6.67 not line-read
 andrej-karpathy,Person,Andrej Karpathy,wiki/people/andrej-karpathy.md,2026-08-23,2026-08-23,person,people,8,4,false,"LLM Wiki gist, April 2026"
 angles,Ship,Angles,ship/angles.md,2026-08-23,2026-08-23,ship,hunt-ship,1,5,false,Reusable framings earned from [[Hooks]].
-anti-slop,Concept,Anti-slop,wiki/anti-slop.md,2026-08-23,2026-08-23,wiki,concepts,13,4,false,Default writing constraints
+anti-slop,Concept,Anti-slop,wiki/anti-slop.md,2026-08-23,2026-08-23,wiki,concepts,21,7,false,Default writing constraints
 apt-siamese,Concept,APT Siamese transfer,wiki/apt-siamese.md,2026-08-24,2026-08-24,wiki,concepts,6,2,true,DARPA TC transfer. Tables 4–7 OCR-dirty
 arxiv-tierlist,Project,arXiv potential tierlist,wiki/arxiv-tierlist.md,2026-08-24,2026-08-24,project,projects,113,57,true,405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist
 assign-execute-verify,Concept,"Assign, execute, verify",wiki/assign-execute-verify.md,2026-08-27,2026-08-27,wiki,concepts,5,5,false,Assign → execute → verify. 24h intel OFF
-audited-task-contract,Concept,Audited task contract,wiki/audited-task-contract.md,2026-08-23,2026-08-25,wiki,concepts,24,5,true,Portable verified state across coding harnesses
+audited-task-contract,Concept,Audited task contract,wiki/audited-task-contract.md,2026-08-23,2026-08-25,wiki,concepts,25,5,true,Portable verified state across coding harnesses
 backlink-first,Concept,Backlink first,wiki/backlink-first.md,2026-08-27,2026-08-27,wiki,concepts,5,6,false,Do not answer first. Follow backlinks. Tags as weights
 bdh,Concept,BDH,wiki/bdh.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,Graph+Hebbian LLM. GPT-2 scale claim. PAC bounds aspirational
 bert-ler,Concept,BERT-LER,wiki/bert-ler.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,EHR transformer. 75M pretrain
@@ -53,36 +61,37 @@ builds,Ship,Builds,ship/builds.md,2026-08-23,2026-08-23,ship,hunt-ship,1,0,false
 buying-signal,Concept,Buying signal,wiki/buying-signal.md,2026-08-27,2026-08-27,wiki,concepts,3,3,false,"Public ""looking for alternative to"""
 camf-mft,Concept,CAMF / MF-T,wiki/camf-mft.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,MeanFlow transfer. FID 7.88 at NFE4
 causal-cps-anomaly,Concept,Causal CPS anomaly detection,wiki/causal-cps-anomaly.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Vision: CPS anomalies as causal DAG breaks
-claims,Concept,Claims,wiki/claims.md,2026-08-27,2026-08-28,wiki,concepts,27,13,false,YAML sb registry plus CSV compile of Claims kept. C17
+claim-protocol,Concept,Claim protocol,wiki/claim-protocol.md,2026-08-27,2026-08-28,wiki,concepts,23,12,true,Claim → Evidence → Verification → Retrieval → Context → Answer
+claims,Concept,Claims,wiki/claims.md,2026-08-27,2026-08-28,wiki,concepts,31,13,false,YAML sb registry plus CSV compile of Claims kept. C17
 clip-pipeline,Concept,Clip pipeline,wiki/clip-pipeline.md,2026-08-25,2026-08-25,wiki,concepts,6,2,false,Captions/metadata; not full copyrighted films; D5
 clustered-moe,Concept,Clustered low-rank MoE,wiki/clustered-moe.md,2026-08-24,2026-08-24,wiki,concepts,6,2,true,Clustered low-rank MoE. Tables 7–8 unverified
 composio-mcp,Concept,Composio MCP,wiki/composio-mcp.md,2026-08-27,2026-08-27,wiki,concepts,5,4,false,Catalog 32661537. Not installed. Writes need lan E
 concept-guard,Concept,ConceptGuard,wiki/concept-guard.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,Dual-use unlearning. 5166/68
 context-compaction,Concept,Context compaction,wiki/context-compaction.md,2026-08-27,2026-08-27,wiki,concepts,11,7,true,Chat may be fuzzy. Vault must be precise. No transcript dumps
-context-graph,Concept,Context graph,wiki/context-graph.md,2026-08-23,2026-08-28,wiki,concepts,22,8,false,"Give the model the relevant subgraph, not the dump"
-contradictions,Meta,Contradictions,wiki/contradictions.md,,2026-08-28,wiki,meta,57,29,true,"Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
+context-graph,Concept,Context graph,wiki/context-graph.md,2026-08-23,2026-08-28,wiki,concepts,30,15,false,"Give the model the relevant subgraph, not the dump"
+contradictions,Meta,Contradictions,wiki/contradictions.md,,2026-08-28,wiki,meta,77,41,true,"Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
 curated-claims,Meta,curated-claims,wiki/claims/curated-claims.md,2026-08-27,2026-08-27,wiki,meta,3,2,false,Vault-level claims not copied from a single source paragraph. Compiler merges these into `wiki/claims.csv`. See [[claims]] and [[memory-system]].
 cvsd-reg,Concept,CVSD-Reg,wiki/cvsd-reg.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,LiDAR+DINOv2. Vel16 +44 pp
 dbosc,Concept,DBOSC,wiki/dbosc.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Physical-language chart. 4.5× same vs wrong
 decisions,Meta,Decisions,decisions.md,2026-08-23,2026-08-28,wiki,meta,14,15,false,Locked choices. Reopen only with new evidence.
 dics,Concept,DICS,wiki/dics.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,"Centroid-split trees. Speedups, small acc drop"
-digests,Ship,Digests,ship/digests.md,2026-08-23,2026-08-25,ship,hunt-ship,1,6,false,"Short briefs built from the wiki. Chat gets these, not the raw hunt."
+digests,Ship,Digests,ship/digests.md,2026-08-23,2026-08-27,ship,hunt-ship,1,7,false,"Short briefs built from the wiki. Chat gets these, not the raw hunt."
 dmd-safety,Concept,DMD safety,wiki/dmd-safety.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,DMD prompt-response. F1 86.7
 draftfm,Concept,DraftFM,wiki/draftfm.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,MTG draft FM. 50.8/60.4/56.7
 drafts,Ship,Drafts,ship/drafts.md,2026-08-23,2026-08-23,ship,hunt-ship,1,0,false,Work in progress. Nothing here posts itself.
 drafts-not-publish,Concept,Drafts not publish,wiki/drafts-not-publish.md,2026-08-27,2026-08-27,wiki,concepts,5,5,false,Drafts. Taste is gate. No autopublish
-entropy-gate,Concept,Entropy gate,wiki/entropy-gate.md,2026-08-23,2026-08-28,wiki,concepts,19,7,true,Isolated workers. Validated diffs. Kill unverified drift
+entropy-gate,Concept,Entropy gate,wiki/entropy-gate.md,2026-08-23,2026-08-28,wiki,concepts,20,8,true,Isolated workers. Validated diffs. Kill unverified drift
 epistemic-labels,Concept,Epistemic labels,wiki/epistemic-labels.md,2026-08-27,2026-08-27,wiki,concepts,9,6,true,FACT vs INFERENCE vs OPINION. Unlabeled prose pollutes
 eval-suite,Concept,Eval suite,wiki/eval-suite.md,2026-08-28,2026-08-28,wiki,concepts,5,5,false,`sb eval` gate for retrieval
 evosyn,Concept,EvoSyn,wiki/evosyn.md,2026-08-24,2026-08-24,wiki,concepts,8,3,false,"Evolves test/solution filter. 231 LCB, 673 OS"
-file-memory,Concept,File memory,wiki/file-memory.md,2026-08-27,2026-08-28,wiki,concepts,26,14,false,Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived
+file-memory,Concept,File memory,wiki/file-memory.md,2026-08-27,2026-08-28,wiki,concepts,31,15,false,Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived
 first-principles,Concept,First principles,wiki/first-principles.md,2026-08-27,2026-08-27,wiki,concepts,5,4,false,"Physics and named owners, not department folklore"
 flow-matching-pso,Concept,Flow matching as PSO,wiki/flow-matching-pso.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Analogy only. FM as continuous PSO
 foundry-3d,Concept,Foundry 3D,wiki/foundry-3d.md,2026-08-24,2026-08-28,wiki,concepts,11,4,true,SuperTokens from Point-JEPA
 fourmas,Concept,4MAS,wiki/fourmas.md,2026-08-24,2026-08-24,wiki,concepts,8,4,false,Dual-hemisphere CL. Use Table 1
 g-carl,Concept,G-CARL,wiki/g-carl.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Medical report GRPO. Prec/Rec 96.62/72.18
-github,Hunt,GitHub hunt,hunt/github.md,2026-08-23,2026-08-26,"hunt,github",hunt-ship,1,3,false,Green in the graph when people or repos land here.
-graph,Meta,Graph,wiki/graph.md,2026-08-23,2026-08-28,wiki,meta,8,2,false,"The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
+github,Hunt,GitHub hunt,hunt/github.md,2026-08-23,2026-08-26,"hunt,github",hunt-ship,2,5,false,Green in the graph when people or repos land here.
+graph,Meta,Graph,wiki/graph.md,2026-08-23,2026-08-28,wiki,meta,9,2,false,"The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
 graph-clusters-2026-08-24,Ship,Graph clusters brief · 2026-08-24,output/graph-clusters-2026-08-24.md,2026-08-24,2026-08-24,ship,hunt-ship,1,3,false,The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite.
 grok-bot-pro-tips,Concept,Grok Bot pro tips,wiki/grok-bot-pro-tips.md,2026-08-27,2026-08-27,wiki,concepts,13,7,false,Ben Lang 10 tips from @bot team
 grok-bot-quota,Concept,Grok Bot quota,wiki/grok-bot-quota.md,2026-08-27,2026-08-27,wiki,concepts,12,6,false,"Burns on Max Mode, computerUse vision, long transcripts"
@@ -93,19 +102,24 @@ growth-operator,Concept,Growth operator,wiki/growth-operator.md,2026-08-25,2026-
 growthos-3d-gap-2026-08-25,Ship,GrowthOS 3D: plugin vs clone vs this vault,output/growthos-3d-gap-2026-08-25.md,2026-08-25,,growth,hunt-ship,3,8,true,Neither an Obsidian plugin nor a hunt for an existing cyberpunk clone. This vault already compiles a subgraph graph from `growth/` into `output/growthos-graph.html`. [[growth-operator]]
 gsap-figma-note-2026-08-25,Ship,"Skills used, Figma not required",output/gsap-figma-note-2026-08-25.md,2026-08-25,,growth,hunt-ship,4,4,false,"Figma is disconnected (`needsAuth`). The DeRonin clip is a 3D WebGL orbit graph, so the live page is `output/growthos-graph.html`, not a 2D mock. Auth Figma later if you want a static chrome board."
 hacker-news,Hunt,Hacker News hunt,hunt/hacker-news.md,2026-08-23,2026-08-23,hunt,hunt-ship,1,0,false,Empty. File links here. Ingest into `raw/` before they become wiki pages.
-harness-routing,Concept,Harness routing,wiki/harness-routing.md,2026-08-23,2026-08-28,wiki,concepts,21,10,false,"Route model and harness by phase, not by turn"
+harness-routing,Concept,Harness routing,wiki/harness-routing.md,2026-08-23,2026-08-28,wiki,concepts,23,12,false,"Route model and harness by phase, not by turn"
 headlong,Concept,Headlong,wiki/headlong.md,2026-08-26,2026-08-28,wiki,concepts,17,11,true,Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run
 hear2act,Concept,Hear2Act,wiki/hear2act.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Prosody-to-action. Table 11 unread
-how-it-works,Meta,How it works,wiki/how-it-works.md,2026-08-23,2026-08-28,wiki,meta,9,19,false,This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s
-hunt,Hunt,Hunt,hunt.md,2026-08-23,2026-08-23,hunt,hunt-ship,4,7,false,Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]
+how-it-works,Meta,How it works,wiki/how-it-works.md,2026-08-23,2026-08-28,wiki,meta,12,21,false,This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]]. Claim tables: [[claims]] and C17. Provenance labels: [[memory-s
+hunt,Hunt,Hunt,hunt.md,2026-08-23,2026-08-23,hunt,hunt-ship,5,7,false,Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]
 hunt-harden-loop,Concept,Hunt-harden loop,wiki/hunt-harden-loop.md,2026-08-27,2026-08-27,wiki,concepts,22,22,false,CASE path. Loop1–17 Juice Shop 0/116. v17 `ad6f669` PR27
 hunt-ship-loop,Concept,Hunt / Ship loop,wiki/hunt-ship-loop.md,2026-08-23,2026-08-25,wiki,concepts,23,11,false,File first. Scouts stay quiet. Human final yes
 hunter-follows,Concept,Hunter follows,wiki/hunter-follows.md,2026-08-27,2026-08-27,wiki,concepts,8,4,true,lostsec + zack0x01 as input sources. Not an exploit dump
+hurley,Person,Hurley,wiki/people/hurley.md,2026-08-23,2026-08-23,person,people,6,2,false,"Notion Skills library pitch, 2026-08-21"
 hydrofusion-lmf,Concept,HydroFusion-LMF,wiki/hydrofusion-lmf.md,2026-08-24,2026-08-24,wiki,concepts,8,3,false,Boluo 1988–2020 runoff. Abs vs §4.1 clash
 iar,Concept,IAR,wiki/iar.md,2026-08-24,2026-08-24,wiki,concepts,7,3,false,Inject-Align-Recover. LoRA grid unread
 inbox,Hunt,Inbox,hunt/inbox.md,2026-08-23,2026-08-23,hunt,hunt-ship,3,0,false,Drop unfiled clips here. New notes from Obsidian land in `hunt/inbox` by default.
-index,Meta,Index,wiki/index.md,2026-08-23,2026-08-28,wiki,meta,11,242,true,Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28.
+index,Meta,Index,wiki/index.md,2026-08-23,2026-08-28,wiki,meta,13,253,true,Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28.
 ingest-brief-2026-08-23,Ship,Ingest brief · 2026-08-23,output/ingest-brief-2026-08-23.md,2026-08-23,2026-08-23,ship,hunt-ship,3,2,false,Nine X posts compiled into the first vault.
+ingest-brief-2026-08-23-cybersecurity-skills,Ship,Ingest brief · cybersecurity skills repo,output/ingest-brief-2026-08-23-cybersecurity-skills.md,2026-08-23,2026-08-23,ship,hunt-ship,2,4,false,What changed: the GitHub catalog pitch is now a source page and a person page. [[skill-library]] gained a second source. Offensive skill bodies were not copied. `MEMORY.md` now forbids vendoring or ex
+ingest-brief-2026-08-23-retrieval-second-brain,Ship,Ingest brief · retrieval second brain,output/ingest-brief-2026-08-23-retrieval-second-brain.md,2026-08-23,2026-08-23,ship,hunt-ship,4,5,true,What changed: the four-pillar retrieval recipe is now [[retrieval-second-brain]]. Layer names landed on [[memory-engineering]]. GraphRAG vs compiled wikilinks landed on [[context-graph]]. C25 flags th
+ingest-brief-2026-08-23-skill-library,Ship,Ingest brief · skill library,output/ingest-brief-2026-08-23-skill-library.md,2026-08-23,2026-08-23,ship,hunt-ship,2,7,true,"What changed: one X post (Hurley, 2026-08-21) is now a source page, a [[skill-library]] concept, and a [[hurley]] person page. Usage-ranked Notion skills are filed. Auto-improvement and the 10% / 50-r"
+ingest-brief-2026-08-23-skill-pack-list,Ship,Ingest brief · five skill packs,output/ingest-brief-2026-08-23-skill-pack-list.md,2026-08-23,2026-08-23,ship,hunt-ship,2,5,false,What changed: the pasted list and SOP thesis are now [[skill-as-sop]]. Five GitHub packs were checked against live READMEs. Stale counts landed on C24. No pack was vendored.
 ingest-brief-2026-08-24-arxiv-128956,Ship,Ingest brief · 2026-08-24 · arXiv 128956,output/ingest-brief-2026-08-24-arxiv-128956.md,2026-08-24,2026-08-24,ship,hunt-ship,0,5,false,Corpus is 128956 unique (S 15114 / A 6509 / B 46431 / C 43858 / D 17044) after a 22100-paper gap batch.
 ingest-brief-2026-08-24-arxiv-156256,Ship,Ingest brief · 2026-08-24 · arXiv 156256,output/ingest-brief-2026-08-24-arxiv-156256.md,2026-08-24,2026-08-24,ship,hunt-ship,0,5,false,Corpus is 156256 unique (S 15167 / A 8719 / B 60883 / C 52306 / D 19181) per `stats.json`.
 ingest-brief-2026-08-24-arxiv-281056,Ship,Ingest brief · 2026-08-24 · arXiv 281056,output/ingest-brief-2026-08-24-arxiv-281056.md,2026-08-24,2026-08-24,ship,hunt-ship,0,5,false,Corpus is 281056 unique (S 15611 / A 23345 / B 129379 / C 84566 / D 28155) from handoff batch 4 and stats.json.
@@ -131,21 +145,24 @@ ingest-brief-2026-08-25-skill-recorder,Ship,Brief: Skill Recorder 2026-08-25,out
 ingest-brief-2026-08-26-headlong,Ship,Ingest brief · 2026-08-26 · Headlong,output/ingest-brief-2026-08-26-headlong.md,2026-08-26,2026-08-26,ship,hunt-ship,2,3,false,"Installed [[headlong]] tools from `laude-institute/headlong` SHA `d8f8304`. Did not start the 24/7 mind: no Docker, no API key, D5. Linked [[src-hxiao-headlong]] and [[src-laude-headlong]]."
 ingest-brief-2026-08-26-headlong-hour,Ship,Hour brief · 2026-08-26 · Headlong harvest,output/ingest-brief-2026-08-26-headlong-hour.md,2026-08-26,2026-08-26,ship,hunt-ship,4,4,false,"The 1h identity `hour` stopped at 02:07Z. Trajectory 37 rows, last durable step 01:12:08Z; tests did not run; qwen2.5-coder:7b copied the nested-`shellm` docs example and stalled."
 ingest-brief-2026-08-27-botdirectory,Ship,Brief: botdirectory scan 2026-08-27,output/ingest-brief-2026-08-27-botdirectory.md,,,,hunt-ship,1,2,false,Compiled [[botdirectory-scan]] and [[stale-fact-detector]] from `/workspace/play-until-2pm/botdirectory-picks.md`. 304 catalog listings. Skills on existing roles. No new bots. `raw/` stays immutable. 
+ingest-brief-2026-08-27-claim-protocol,Ship,Brief: claim protocol 2026-08-27,output/ingest-brief-2026-08-27-claim-protocol.md,,,,hunt-ship,1,6,false,Compiled [[claim-protocol]] from lan E's architecture note. The chain is Claim → Evidence → Verification → Retrieval → Context → Answer. Live query stays `python3 tools/sb ask`. Duplicate retrieve eng
 ingest-brief-2026-08-27-lanbb-bb,Ship,ingest brief 2026-08-27 LanBB BB,output/ingest-brief-2026-08-27-lanbb-bb.md,,,,hunt-ship,1,5,true,"lan E 07:36 Taipei: LanBB BB is bug bounty flow. The existing bounty/flow line on [[lanbb]] is identity, not contamination."
 jacky-kwok,Person,Jacky Kwok,wiki/people/jacky-kwok.md,2026-08-23,2026-08-23,person,people,5,2,false,LLM-as-a-Verifier
 lanbb,Project,LanBB,wiki/lanbb.md,2026-08-24,2026-08-27,project,projects,29,25,true,Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool
 lance,Concept,LANCE,wiki/lance.md,2026-08-24,2026-08-24,wiki,concepts,8,2,false,One-shot HOSVD activations. Last-layer FT/CL
-llm-wiki,Concept,LLM Wiki,wiki/llm-wiki.md,2026-08-23,2026-08-28,wiki,concepts,45,22,false,Persistent compiled wiki between you and raw sources
+llm-wiki,Concept,LLM Wiki,wiki/llm-wiki.md,2026-08-23,2026-08-28,wiki,concepts,55,27,false,Persistent compiled wiki between you and raw sources
 llm4eo,Concept,LLM4EO,wiki/llm4eo.md,2026-08-24,2026-08-24,wiki,concepts,6,3,true,GPT-4.1-mini evolves FJSP operators
-log,Meta,Log,wiki/log.md,2026-08-23,2026-08-28,wiki,meta,9,168,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
-loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-08-28,wiki,concepts,12,13,false,Owner + worker + verifier + stop. One graph writer
+log,Meta,Log,wiki/log.md,2026-08-23,2026-08-28,wiki,meta,10,184,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-08-28,wiki,concepts,12,14,false,Owner + worker + verifier + stop. One graph writer
 lostsec,Person,lostsec,wiki/people/lostsec.md,2026-08-27,2026-08-27,person,people,6,4,false,coffinxp / @lostsec_. Hunter input source. Not a dump
+mahipal-jangra,Person,Mahipal Jangra,wiki/people/mahipal-jangra.md,2026-08-23,2026-08-23,person,people,7,3,false,Community cybersecurity skill library. Not Anthropic
 maps,Map,Maps,maps.md,2026-08-23,2026-08-25,map,hunt-ship,4,4,false,Teal in the Obsidian graph.
-memory-ablation,Concept,Memory ablation,wiki/memory-ablation.md,2026-08-23,2026-08-27,wiki,concepts,20,5,false,A memory line stays only if deleting it changes an answer
+memory-ablation,Concept,Memory ablation,wiki/memory-ablation.md,2026-08-23,2026-08-27,wiki,concepts,22,6,false,A memory line stays only if deleting it changes an answer
 memory-engine-2026-08-28,Ship,Memory engine 2026-08-28,output/memory-engine-2026-08-28.md,,,,hunt-ship,1,4,false,"Added stable `id:` on knowledge objects, a disposable SQLite FTS5 index, a claim/contradiction registry, and the `sb` CLI with `validate` and `eval`. Query now goes through `python3 tools/sb ask` to a"
-memory-engineering,Concept,Memory engineering,wiki/memory-engineering.md,2026-08-23,2026-08-28,wiki,concepts,22,18,true,"Capture, consolidate, retrieve, reconcile, decay"
+memory-engineering,Concept,Memory engineering,wiki/memory-engineering.md,2026-08-23,2026-08-28,wiki,concepts,28,23,true,"Capture, consolidate, retrieve, reconcile, decay"
 memory-system,Concept,Memory system,wiki/memory-system.md,2026-08-27,2026-08-27,wiki,concepts,20,15,true,"Provenance, FACT/INFERENCE/OPINION. Vector parked"
 memory-system-brief-2026-08-27,Ship,Brief: memory-system 2026-08-27,output/memory-system-brief-2026-08-27.md,,,,hunt-ship,1,10,false,"Compiled [[memory-system]], [[epistemic-labels]], [[provenance]], [[claims]], and [[untrusted-ingest]]. `wiki/claims.csv` rebuilds from source `## Claims kept` plus [[curated-claims]]. Lint now fails "
+merge-conflict-report-2026-08-28,Ship,Merge conflict report · skill-library ingest vs main,output/merge-conflict-report-2026-08-28.md,2026-08-28,2026-08-28,ship,hunt-ship,2,18,false,"Fetched `origin/main` at the claim-protocol / D9 commit, then merged into `cursor/skill-library-ingest-955f`."
 mpi-init,Concept,MPI init,wiki/mpi-init.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Binary EA init transfer. 71/72 vs Rand
 multi-source-verdict,Concept,Multi-source verdict,wiki/multi-source-verdict.md,2026-08-27,2026-08-27,wiki,concepts,10,8,true,>1 source. One list. Human verdict. No Whop clone
 musk-algorithm,Concept,Musk Algorithm,wiki/musk-algorithm.md,2026-08-27,2026-08-27,wiki,concepts,11,3,false,Delete before optimize. Automate last. Named person
@@ -157,7 +174,7 @@ palantir-aip,Concept,Palantir AIP,wiki/palantir-aip.md,2026-08-28,2026-08-28,wik
 palrs,Concept,PaLRS,wiki/palrs.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Residual steering from 100 pairs. α-sensitive
 pavement-gnn,Concept,Pavement GNN,wiki/pavement-gnn.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,R² 0.38 on 1k-node simulated graph
 pipeline-honesty,Concept,Pipeline honesty,wiki/pipeline-honesty.md,2026-08-27,2026-08-27,wiki,concepts,4,4,false,Chrono first. OOS W/E. Skip Hawkes
-portable-memory,Concept,Portable memory,wiki/portable-memory.md,2026-08-27,2026-08-28,wiki,concepts,12,9,false,Git truth. FTS5 disposable. Do not clone Brain
+portable-memory,Concept,Portable memory,wiki/portable-memory.md,2026-08-27,2026-08-28,wiki,concepts,15,10,false,Git truth. FTS5 disposable. Do not clone Brain
 portal,Concept,PORTAL,wiki/portal.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,Landscape generator. No optimizer scores
 potential-ranking,Concept,Potential ranking,wiki/potential-ranking.md,2026-08-24,2026-08-24,project,concepts,11,2,false,"Score axis, heuristic formula, recency bias"
 prednext,Concept,PredNext,wiki/prednext.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Cross-view next-step/clip SNN SSL
@@ -168,13 +185,16 @@ quota-router,Concept,Quota router,wiki/quota-router.md,2026-08-25,2026-08-27,wik
 r2-opd,Concept,R²-OPD,wiki/r2-opd.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,Filter OPD by reasoning progress
 raptor-dispatch,Concept,Raptor dispatch,wiki/raptor-dispatch.md,2026-08-25,2026-08-27,wiki,concepts,25,11,false,One owner per job. Report once. No empty acks
 reddit,Hunt,Reddit hunt,hunt/reddit.md,2026-08-23,2026-08-23,hunt,hunt-ship,1,0,false,Empty. File links here. Ingest into `raw/` before they become wiki pages.
-retrieval,Concept,Retrieval,wiki/retrieval.md,2026-08-28,2026-08-28,wiki,concepts,17,9,false,Hybrid FTS5 over compiled pages. DB disposable
+retrieval,Concept,Retrieval,wiki/retrieval.md,2026-08-28,2026-08-28,wiki,concepts,26,11,false,Hybrid FTS5 over compiled pages. DB disposable
+retrieval-second-brain,Concept,Retrieval second brain,wiki/retrieval-second-brain.md,2026-08-23,2026-08-23,wiki,concepts,19,10,true,Hybrid search / GraphRAG recipe. Compile the claim. Query path is D9. See C25
 rohit,Person,Rohit,wiki/people/rohit.md,2026-08-23,2026-08-23,person,people,5,3,false,Cross-harness task contract
 sapin,Concept,SAPIN,wiki/sapin.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,CartPole without reward. Lock 82%
 scape,Concept,SCAPE,wiki/scape.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Scenario-conditioned sim-to-real
-self-verification,Concept,Self-verification,wiki/self-verification.md,2026-08-23,2026-08-23,wiki,concepts,10,5,false,"Sample several answers, score them, keep the winner"
+self-verification,Concept,Self-verification,wiki/self-verification.md,2026-08-23,2026-08-23,wiki,concepts,11,6,false,"Sample several answers, score them, keep the winner"
 session-migrate,Concept,Session-migrate,wiki/session-migrate.md,2026-08-25,2026-08-27,wiki,concepts,11,6,false,Context only. Secret-scan before dry-migrate. Git is truth
-ship,Ship,Ship,ship.md,2026-08-23,2026-08-23,ship,hunt-ship,6,7,false,Output from compiled pages. Human yes before anything leaves the vault.
+ship,Ship,Ship,ship.md,2026-08-23,2026-08-23,ship,hunt-ship,8,12,false,Output from compiled pages. Human yes before anything leaves the vault.
+skill-as-sop,Concept,Skill as SOP,wiki/skill-as-sop.md,2026-08-23,2026-08-23,wiki,concepts,13,6,false,A skill is a compiled SOP for a workflow that already failed once
+skill-library,Concept,Skill library,wiki/skill-library.md,2026-08-23,2026-08-23,wiki,concepts,22,11,true,Living catalog vs GitHub dump. Compile here. Do not vendor either pack
 skill-recorder,Concept,Skill Recorder,wiki/skill-recorder.md,2026-08-25,2026-08-25,wiki,concepts,8,4,false,"Trial on clean desktop + fake data, then SkillSpector, then enable"
 skill-transfer,Concept,Skill transfer,wiki/skill-transfer.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,Subtask memory helps. Gemma tables unread
 skillspector,Concept,SkillSpector,wiki/skillspector.md,2026-08-25,2026-08-25,wiki,concepts,10,4,false,Gate generated SKILL.md before shipping
@@ -258,7 +278,9 @@ src-hitu-entropy-engineering,Source,src-hitu-entropy-engineering,wiki/sources/sr
 src-hxiao-headlong,Source,src-hxiao-headlong,wiki/sources/src-hxiao-headlong.md,2026-08-26,2026-08-28,twitter,sources,5,4,false,2026-08-26
 src-hxiao-headlong-share,Source,src-hxiao-headlong-share,wiki/sources/src-hxiao-headlong-share.md,2026-08-27,2026-08-28,twitter,sources,4,4,false,2026-08-27
 src-jacky-self-verification,Source,src-jacky-self-verification,wiki/sources/src-jacky-self-verification.md,2026-08-23,2026-08-23,twitter,sources,4,3,false,2026-08-17
+src-johnsjawn-skill-library,Source,src-johnsjawn-skill-library,wiki/sources/src-johnsjawn-skill-library.md,2026-08-23,2026-08-23,twitter,sources,11,7,true,2026-08-21
 src-juampi-anti-slop-rank,Source,src-juampi-anti-slop-rank,wiki/sources/src-juampi-anti-slop-rank.md,2026-08-23,2026-08-23,twitter,sources,6,2,false,2026-08-21
+src-lan-e-claim-protocol-2026-08-27,Source,src-lan-e-claim-protocol-2026-08-27,wiki/sources/src-lan-e-claim-protocol-2026-08-27.md,2026-08-27,2026-08-28,play,sources,5,14,false,2026-08-27
 src-lan-e-karp-sovereignty-2026-08-27,Source,src-lan-e-karp-sovereignty-2026-08-27,wiki/sources/src-lan-e-karp-sovereignty-2026-08-27.md,2026-08-27,2026-08-27,play,sources,4,5,true,2026-08-27
 src-lan-e-lanbb-bb-2026-08-27,Source,src-lan-e-lanbb-bb-2026-08-27,wiki/sources/src-lan-e-lanbb-bb-2026-08-27.md,2026-08-27,2026-08-27,project,sources,6,4,true,2026-08-27
 src-lan-e-musk-algorithm,Source,src-lan-e-musk-algorithm,wiki/sources/src-lan-e-musk-algorithm.md,2026-08-27,2026-08-27,play,sources,4,3,false,2026-08-27
@@ -286,6 +308,7 @@ src-marfinxx-trace,Source,src-marfinxx-trace,wiki/sources/src-marfinxx-trace.md,
 src-maxdeg0-vault-2026-08-27,Source,src-maxdeg0-vault-2026-08-27,wiki/sources/src-maxdeg0-vault-2026-08-27.md,2026-08-27,2026-08-27,twitter,sources,2,2,false,2026-08-27
 src-milesdeutscher-grok-bot-use-cases,Source,src-milesdeutscher-grok-bot-use-cases,wiki/sources/src-milesdeutscher-grok-bot-use-cases.md,2026-08-25,2026-08-25,twitter,sources,3,3,false,2026-08-19
 src-mrgreenieybt3-llm-wiki,Source,src-mrgreenieybt3-llm-wiki,wiki/sources/src-mrgreenieybt3-llm-wiki.md,2026-08-24,2026-08-24,twitter,sources,2,1,false,2026-08-24
+src-mukul975-cybersecurity-skills,Source,src-mukul975-cybersecurity-skills,wiki/sources/src-mukul975-cybersecurity-skills.md,2026-08-23,2026-08-23,github,sources,14,7,false,2026-08-23
 src-openagentskill-anti-slop,Source,src-openagentskill-anti-slop,wiki/sources/src-openagentskill-anti-slop.md,2026-08-24,2026-08-24,twitter,sources,4,3,false,2026-08-24
 src-openai-codex-cli-compact,Source,src-openai-codex-cli-compact,wiki/sources/src-openai-codex-cli-compact.md,2026-08-27,2026-08-27,docs,sources,2,1,false,2026-08-27
 src-palantir-aip-developers-2026-08-28,Source,src-palantir-aip-developers-2026-08-28,wiki/sources/src-palantir-aip-developers-2026-08-28.md,2026-08-28,2026-08-28,"palantir,aip",sources,7,5,false,2026-08-28
@@ -293,25 +316,27 @@ src-papa-couch-compiler,Source,src-papa-couch-compiler,wiki/sources/src-papa-cou
 src-pawelhuryn-file-memory,Source,src-pawelhuryn-file-memory,wiki/sources/src-pawelhuryn-file-memory.md,2026-08-27,2026-08-27,twitter,sources,3,3,false,2026-08-27
 src-play-methods-2026-08-25,Source,src-play-methods-2026-08-25,wiki/sources/src-play-methods-2026-08-25.md,2026-08-25,2026-08-25,play,sources,12,11,true,2026-08-25
 src-promptyx-llm-cpu,Source,src-promptyx-llm-cpu,wiki/sources/src-promptyx-llm-cpu.md,2026-08-24,2026-08-24,twitter,sources,3,1,true,2026-08-24
+src-retrieval-second-brain,Source,src-retrieval-second-brain,wiki/sources/src-retrieval-second-brain.md,2026-08-23,2026-08-23,note,sources,11,6,true,2026-08-23
 src-rohit-harness-router,Source,src-rohit-harness-router,wiki/sources/src-rohit-harness-router.md,2026-08-23,2026-08-23,twitter,sources,5,4,false,2026-08-22
 src-ruujss-pipeline-honesty,Source,src-ruujss-pipeline-honesty,wiki/sources/src-ruujss-pipeline-honesty.md,2026-08-27,2026-08-27,twitter,sources,2,2,false,2026-08-27
+src-skill-pack-list,Source,src-skill-pack-list,wiki/sources/src-skill-pack-list.md,2026-08-23,2026-08-23,github,sources,9,6,false,2026-08-23
 src-thewhizzai-avo,Source,src-thewhizzai-avo,wiki/sources/src-thewhizzai-avo.md,2026-08-24,2026-08-24,twitter,sources,4,2,true,2026-08-24
 src-voxyz-drafts-2026-08-27,Source,src-voxyz-drafts-2026-08-27,wiki/sources/src-voxyz-drafts-2026-08-27.md,2026-08-27,2026-08-27,twitter,sources,2,2,false,2026-08-27
 src-voxyz-verifiable-instructions,Source,src-voxyz-verifiable-instructions,wiki/sources/src-voxyz-verifiable-instructions.md,2026-08-23,2026-08-23,twitter,sources,6,3,false,2026-08-22
 stable-ids,Concept,Stable IDs,wiki/stable-ids.md,2026-08-28,2026-08-28,wiki,concepts,9,3,false,`id:` survives filename changes
-stale-fact-detector,Concept,Stale fact detector,wiki/stale-fact-detector.md,2026-08-27,2026-08-27,wiki,concepts,11,7,false,Audit wiki claims vs named sources. raw/ immutable
+stale-fact-detector,Concept,Stale fact detector,wiki/stale-fact-detector.md,2026-08-27,2026-08-27,wiki,concepts,13,8,false,Audit wiki claims vs named sources. raw/ immutable
 superde,Concept,SuperDE,wiki/superde.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,DDQN configures DE. 28-action Q-net
 tiwm,Concept,TIWM,wiki/tiwm.md,2026-08-24,2026-08-24,wiki,concepts,8,3,false,16-token nuPlan. Mini ≠ full val14
-tokens-as-capital,Concept,Tokens as capital,wiki/tokens-as-capital.md,2026-08-23,2026-08-27,wiki,concepts,21,8,true,Pay ingest once. Write answers back. Do not re-derive
+tokens-as-capital,Concept,Tokens as capital,wiki/tokens-as-capital.md,2026-08-23,2026-08-27,wiki,concepts,31,15,true,Pay ingest once. Write answers back. Do not re-derive
 trace,Concept,TRACE,wiki/trace.md,2026-08-24,2026-08-24,wiki,concepts,9,4,true,Trajectory attribution; repair context without retraining
-twitter,Hunt,Twitter hunt,hunt/twitter.md,2026-08-23,2026-08-23,"hunt,twitter",hunt-ship,3,10,false,Index of X sources in `raw/x/`. Blue in the Obsidian graph.
+twitter,Hunt,Twitter hunt,hunt/twitter.md,2026-08-23,2026-08-23,"hunt,twitter",hunt-ship,3,11,false,Index of X sources in `raw/x/`. Blue in the Obsidian graph.
 two-stage-nn-tl,Concept,Two-stage NN transfer,wiki/two-stage-nn-tl.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Grouped NN transfer. Appendix unread
 unilang,Concept,UniLang,wiki/unilang.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,LLM + machine SIDs. Beauty R@10 loses
 unitok,Concept,UniTok,wiki/unitok.md,2026-08-24,2026-08-24,wiki,concepts,9,3,true,"One tokenizer, 10 domains. 51.89% is Toys"
 untrusted-ingest,Concept,Untrusted ingest,wiki/untrusted-ingest.md,2026-08-27,2026-08-27,wiki,concepts,8,8,true,"raw/ is data. Quote, do not follow"
 vault-ontology,Concept,Vault ontology,wiki/vault-ontology.md,2026-08-28,2026-08-28,wiki,concepts,18,10,true,Derived objects/links from wiki. CSV is not a second wiki
 vending-bench,Concept,Vending-Bench,wiki/vending-bench.md,2026-08-27,2026-08-27,wiki,concepts,6,4,false,Long-horizon eval. W=sold units. Do not hallucinate stock
-verifiable-instructions,Concept,Verifiable instructions,wiki/verifiable-instructions.md,2026-08-23,2026-08-24,wiki,concepts,16,5,false,"Behavior, check, failure path. No wishes"
+verifiable-instructions,Concept,Verifiable instructions,wiki/verifiable-instructions.md,2026-08-23,2026-08-24,wiki,concepts,19,6,false,"Behavior, check, failure path. No wishes"
 vgi-bench,Concept,VGI-BENCH,wiki/vgi-bench.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Video-gen visual IQ. Seedance 51.0
 views-vs-sales,Concept,Views vs sales,wiki/views-vs-sales.md,2026-08-27,2026-08-27,wiki,concepts,5,5,false,Views ≠ sales. Chess 74k/51 vs 135k/2
 vla-self-demo,Concept,VLA self-demo,wiki/vla-self-demo.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,Expert + self-demo VLA. Table 4 unread

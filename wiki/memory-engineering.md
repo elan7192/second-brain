@@ -25,9 +25,19 @@ Source: 0xWast3 article quoted by [[src-0xcodio-memory-ablation]].
 
 Full-transcript replay does not scale, does not rank importance, and keeps both old and new facts with no current flag.
 
+## Three layers from [[src-retrieval-second-brain]]
+
+The paste names working, episodic, and semantic memory. This vault's files, not a new store:
+
+- Working: the current prompt. Do not file it into `MEMORY.md`.
+- Episodic: `wiki/log.md`, [[hunt]], [[ship]]. Task logs and experience.
+- Semantic: compiled `wiki/` pages. That is the second brain.
+
+Retrieve in this vault is `python3 tools/sb ask` (D9). It is not the paste's BM25 + vector + rerank. See [[retrieval-second-brain]] and [[contradictions]] C25.
+
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]] · [[retrieval]]
+[[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]] · [[retrieval]] · [[retrieval-second-brain]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 
