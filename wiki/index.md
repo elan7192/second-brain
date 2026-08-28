@@ -1,18 +1,23 @@
 ---
+id: meta:index
 type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-08-28
 ---
 
 # Index
 
-Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
+Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28.
 
 ## Start
 
 - [[Home]] — door
+- [[retrieval]] — FTS evidence set
+- [[claims]] — provenance units
+- [[stable-ids]] — identity
+- [[eval-suite]] — retrieval gate
 - [[graph]] — concept-cluster snapshot
 - [[how-it-works]] — operations
 - [[agent-operating-system]] — synthesis of this ingest
@@ -34,6 +39,10 @@ Catalog of compiled pages. Read this before answering. Updated 2026-08-25.
 
 | Page | One line |
 | --- | --- |
+| [[retrieval]] | Hybrid FTS5 over compiled pages. DB disposable |
+| [[claims]] | source → claims → concepts → decisions |
+| [[stable-ids]] | `id:` survives filename changes |
+| [[eval-suite]] | `sb eval` gate for retrieval |
 | [[llm-wiki]] | Persistent compiled wiki between you and raw sources |
 | [[tokens-as-capital]] | Pay ingest once. Write answers back. Do not re-derive |
 | [[memory-engineering]] | Capture, consolidate, retrieve, reconcile, decay |

@@ -1,4 +1,5 @@
 ---
+id: concept:entropy-gate
 type: concept
 tags:
   - wiki

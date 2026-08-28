@@ -1,4 +1,5 @@
 ---
+id: concept:lance
 type: concept
 tags:
   - wiki

@@ -1,4 +1,5 @@
 ---
+id: concept:botdirectory-scan
 type: concept
 tags:
   - wiki

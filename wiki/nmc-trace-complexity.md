@@ -1,4 +1,5 @@
 ---
+id: concept:nmc-trace-complexity
 type: concept
 tags:
   - wiki

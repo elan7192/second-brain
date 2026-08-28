@@ -1,4 +1,5 @@
 ---
+id: concept:verifiable-instructions
 type: concept
 tags:
   - wiki

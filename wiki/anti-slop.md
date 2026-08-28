@@ -1,4 +1,5 @@
 ---
+id: concept:anti-slop
 type: concept
 tags:
   - wiki

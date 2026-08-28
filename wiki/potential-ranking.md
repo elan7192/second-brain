@@ -1,4 +1,5 @@
 ---
+id: concept:potential-ranking
 type: concept
 tags:
   - project

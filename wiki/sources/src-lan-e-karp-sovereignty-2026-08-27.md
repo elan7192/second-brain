@@ -1,4 +1,5 @@
 ---
+id: source:src-lan-e-karp-sovereignty-2026-08-27
 type: source
 tags:
   - play

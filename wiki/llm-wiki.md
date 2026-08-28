@@ -1,9 +1,10 @@
 ---
+id: concept:llm-wiki
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-08-28
 ---
 
 # LLM Wiki
@@ -21,8 +22,8 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 ## Operations
 
 - **Ingest.** One source can update 10-15 pages. Summary, entities, concepts, index, log.
-- **Query.** Read [[index]] first. Answer with citations. File good answers back.
-- **Lint.** Contradictions, stale claims, orphans, missing concept pages.
+- **Query.** Run `python3 tools/sb ask`. Answer from the evidence set. File good answers back.
+- **Lint.** `python3 tools/sb validate`. Contradictions, stale claims, orphans, missing concept pages, missing ids.
 - **Methods.** Compile methods learned while doing work after the task. See [[src-play-methods-2026-08-25]].
 - **Freshness.** Audit claims with [[stale-fact-detector]] against named sources. `raw/` stays immutable.
 
@@ -32,4 +33,4 @@ Humans abandon wikis because maintenance grows faster than value. The LLM can to
 
 ## Related
 
-[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]]
+[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[how-it-works]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[retrieval]] · [[claims]] · [[stable-ids]]

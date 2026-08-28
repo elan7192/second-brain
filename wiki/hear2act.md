@@ -1,4 +1,5 @@
 ---
+id: concept:hear2act
 type: concept
 tags:
   - wiki

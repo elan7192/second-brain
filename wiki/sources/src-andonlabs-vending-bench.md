@@ -1,4 +1,5 @@
 ---
+id: source:src-andonlabs-vending-bench
 type: source
 tags:
   - eval

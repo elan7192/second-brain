@@ -1,0 +1,14 @@
+q-memory-ablation:
+  - keep adjective memories
+q-fts-disposable:
+  - SQLite is the source of truth
+q-human-gate:
+  - the vault may post without approval
+q-ngc-contradiction:
+  - the resolved NGC number is
+q-karpathy-code:
+  - Karpathy banned coding agents
+q-clone-brain:
+  - install Brain
+q-d5:
+  - reopen D5 without evidence
