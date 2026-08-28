@@ -1,9 +1,10 @@
 ---
+id: concept:deer-flow
 type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # DeerFlow
@@ -30,7 +31,7 @@ Path used: local. Docker was not installed, so `docker info` failed and Docker i
 
 1. Add at least one uncommented entry under `models` in `config.yaml`. The template has 26 commented examples and 0 active models.
 2. Put real values in the env vars that entry references (`$OPENAI_API_KEY`, `$ANTHROPIC_API_KEY`, `$VOLCENGINE_API_KEY`, or whichever provider you uncomment). Active `$VAR` placeholders were all commented; none need values until a model is enabled.
-3. Copy `extensions_config.example.json` to `extensions_config.json` if you need MCP/skills config. `make config` does not create it. See [[contradictions]] C5.
+3. Copy `extensions_config.example.json` to `extensions_config.json` if you need MCP/skills config. `make config` does not create it. See [[contradictions]] C32.
 4. Start with `make dev` from `/home/ubuntu/deer-flow`. UI: http://localhost:2026.
 
 Optional later: `make setup-sandbox` if you use a Docker/container sandbox. Docker is still absent on this VM.

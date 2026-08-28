@@ -3,7 +3,7 @@ type: ship
 tags:
   - ship
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-25
 ---
 
 # Ship
@@ -15,3 +15,12 @@ Output from compiled pages. Human yes before anything leaves the vault.
 - [[angles]]
 - [[builds]]
 - [[ingest-brief-2026-08-23]]
+- [[ingest-brief-2026-08-23-skill-library]]
+- [[ingest-brief-2026-08-23-cybersecurity-skills]]
+- [[ingest-brief-2026-08-23-skill-pack-list]]
+- [[ingest-brief-2026-08-23-retrieval-second-brain]]
+- [[graph-clusters-2026-08-24]]
+- [[ingest-brief-2026-08-25-avid-company-foundry]]
+- [[ontology-rebuild-brief-2026-08-28]]
+- [[merge-conflict-report-2026-08-28]]
+- [[merge-conflict-report-2026-08-28-avid-foundry]]

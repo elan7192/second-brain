@@ -1,9 +1,10 @@
 ---
+id: source:src-deer-flow
 type: source
 tags:
   - github
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # src-deer-flow
