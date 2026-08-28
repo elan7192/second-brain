@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C35 must match that page.
+# Codes C1–C36 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -350,4 +350,14 @@ contradictions:
     severity: medium
     resolution: cite the loop; Self-Refine zero is not evidence Jacky or Maverick failed
     resolution_source: concept:adversarial-review
+    page: contradictions.md
+
+  - id: contradiction:c36
+    claim_a: source:src-chatgpt-t-6a8cc267
+    claim_b: concept:llm-wiki
+    reason: ChatGPT upgraded snapshot ZIP vs this vault; 100-paper counts unverified
+    status: unverified
+    severity: medium
+    resolution: keep the GitHub wiki; do not merge or reconstruct the ZIP from the claim list
+    resolution_source: concept:llm-wiki
     page: contradictions.md

@@ -11,6 +11,14 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into chatgpt-share ingest
+
+Fetched origin/main at `96f7138`. Simple unions kept. ChatGPT snapshot flag remapped C14 → C36 so it does not collide with eptwts C14. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-chatgpt-share]].
+
+## [2026-08-24] ingest | ChatGPT share t_6a8cc267
+
+Public share claimed `second-brain-upgraded-2026-08-25.zip` (100 papers, 9 skills, 25/25 tests) not pushed to GitHub. ZIP 401/403. Counts `unverified`. C36. See [[src-chatgpt-t-6a8cc267]].
+
 ## [2026-08-28] merge | origin/main into omarsar-adversarial-review ingest
 
 Fetched origin/main at `4be06ef`. Simple unions kept. Self-Refine flag remapped C10 → C35 so it does not collide with HydroFusion C10. C17 / C18 / C25 left unresolved. Brief: [[merge-conflict-report-2026-08-28-omarsar]].

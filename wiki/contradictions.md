@@ -320,3 +320,13 @@ Remap: was C9 on the maverick-ultramode branch. Main C9 is NGC tables.
 Resolution: cite the loop. Self-critique of one draft is not N-candidate ranking. Do not use the LCB Self-Refine zero as evidence that Jacky or Maverick failed. Do not use Jacky's lift as evidence that Self-Refine works.
 
 Remap: was C10 on the omarsar-adversarial-review branch. Main C10 is HydroFusion years.
+
+## C36. ChatGPT upgraded snapshot vs this vault
+
+[[src-chatgpt-t-6a8cc267]] claims 100 arXiv papers (5×20), 9 skills, 25/25 memory tests, 0 lint errors, and a complete repo ZIP that was not pushed to GitHub.
+
+This vault's known papers are BATCH01–09. Harvest is digest-only. The ChatGPT share ZIP was not retrieved (401/403).
+
+Resolution: keep the GitHub wiki. Mark the ChatGPT counts `unverified`. Do not merge or reconstruct the ZIP from the claim list. See [[arxiv-tierlist]] and [[MEMORY]].
+
+Remap: was C14 on the chatgpt-share branch. Main C14 is eptwts $100k / 10 months.

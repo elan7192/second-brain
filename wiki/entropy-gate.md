@@ -40,6 +40,8 @@ Compare assertion maps and embedding drift. On the author's code-refactor calibr
 
 Unanimous ungated agreement was wrong in 41% of 50 runs.
 
+[[src-chatgpt-t-6a8cc267]] is another harness claiming a complete wiki snapshot. ZIP not retrieved. Do not accept the 100-paper / 9-skill / 25/25 numbers. See C36.
+
 ## What [[ultra-mode]] adds
 
 Isolated worktrees and diffs-only ranking match conditions 1 and 2. The apply gate is an LLM win-rate margin, not an objective check outside the model. Confidence is noisy. See [[contradictions]] C34.
@@ -56,4 +58,4 @@ A third source for "more agents is the wrong default." LiveCodeBench: 3-agent AR
 
 [[headlong]] is one mind, one stream, many people. Flag, do not merge: C16. Vault keeps isolation. Headlong stays a trial CLI, not the compiler runtime.
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[claim-protocol]] · [[headlong]] · [[grok-bot]] · [[company-foundry]] · [[ultra-mode]] · [[adversarial-review]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[claim-protocol]] · [[headlong]] · [[grok-bot]] · [[company-foundry]] · [[ultra-mode]] · [[adversarial-review]] · [[src-chatgpt-t-6a8cc267]]

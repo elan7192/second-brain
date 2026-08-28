@@ -169,6 +169,7 @@ Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-chatgpt-t-6a8cc267]] | 2026-08-24 | ChatGPT ZIP claim. File 401/403. C36 |
 | [[src-avid-company-foundry]] | 2026-08-24 | Grok+Obsidian Jarvis clip. Quoted Company Foundry article. C31 |
 | [[src-deer-flow]] | 2026-08-24 | bytedance/deer-flow Install.md bootstrap. C32 |
 | [[src-can1357-daily-tool-replace-2026-08-27]] | 2026-08-27 | Can: hour-tops daily-tool replace. Hour unverified |

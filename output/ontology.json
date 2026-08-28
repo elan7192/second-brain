@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T18:50:19Z",
+  "builtAt": "2026-08-28T19:05:45Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 13,
-    "unverified": 91,
+    "unverified": 94,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 56,
-    "Concept": 115,
+    "Ship": 62,
+    "Concept": 118,
     "Project": 2,
-    "Person": 10,
-    "Source": 130,
+    "Person": 12,
+    "Source": 133,
     "Decision": 11,
-    "Contradiction": 32,
-    "objects": 382,
-    "links": 2628
+    "Contradiction": 36,
+    "objects": 400,
+    "links": 2821
   },
   "objects": [
     {
@@ -486,6 +486,62 @@
       "oneLiner": "`scripts/configure.py` in the clone at `1aa813d` copies `config.yaml`, `.env`, and `frontend/.env` only. After `make config`, `extensions_config.json` was absent."
     },
     {
+      "primaryKey": "C33",
+      "objectType": "Contradiction",
+      "title": "Two Terminal-Bench lifts",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Resolution: cite the slice. Maverick's 15 tasks were failure-skewed. Same writeup estimates the model already about 83% on the full set and +2 to +5 from ultra. That full-set estimate sits near Jacky'"
+    },
+    {
+      "primaryKey": "C34",
+      "objectType": "Contradiction",
+      "title": "Gate outside the model vs LLM tournament",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Resolution: tournament picks a candidate worktree. Apply is uncommitted. Tests or a human still gate ship. Do not treat the LLM margin as the outside-the-model gate."
+    },
+    {
+      "primaryKey": "C35",
+      "objectType": "Contradiction",
+      "title": "Self-Refine vs N-candidate verify",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Resolution: cite the loop. Self-critique of one draft is not N-candidate ranking. Do not use the LCB Self-Refine zero as evidence that Jacky or Maverick failed. Do not use Jacky's lift as evidence tha"
+    },
+    {
+      "primaryKey": "C36",
+      "objectType": "Contradiction",
+      "title": "ChatGPT upgraded snapshot vs this vault",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": true,
+      "oneLiner": "This vault's known papers are BATCH01\u201309. Harvest is digest-only. The ChatGPT share ZIP was not retrieved (401/403)."
+    },
+    {
       "primaryKey": "C4",
       "objectType": "Contradiction",
       "title": "Shared memory vs shared contract",
@@ -746,8 +802,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 7,
-      "outbound": 39,
+      "inbound": 9,
+      "outbound": 47,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -788,8 +844,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 9,
-      "outbound": 59,
+      "inbound": 13,
+      "outbound": 62,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -816,10 +872,24 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 5,
-      "outbound": 14,
+      "inbound": 7,
+      "outbound": 18,
       "unverified": false,
       "oneLiner": "2026-08-28"
+    },
+    {
+      "primaryKey": "adversarial-review",
+      "objectType": "Concept",
+      "title": "Adversarial review",
+      "path": "wiki/adversarial-review.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 11,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Writer, reviewer, critic. Freeze the artifact. Force dissent"
     },
     {
       "primaryKey": "agent-facing-docs",
@@ -844,10 +914,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 29,
-      "outbound": 40,
+      "inbound": 31,
+      "outbound": 45,
       "unverified": true,
-      "oneLiner": "Synthesis of the 2026-08-17 to 2026-08-22 ingest. File this back so later sessions do not rebuild it from the nine posts."
+      "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts."
     },
     {
       "primaryKey": "ai-sovereignty",
@@ -956,8 +1026,8 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "projects",
-      "inbound": 109,
-      "outbound": 57,
+      "inbound": 114,
+      "outbound": 58,
       "unverified": true,
       "oneLiner": "405856 inventory. BATCH01\u201309 compiled. Site: elan7192.github.io/arxiv-potential-tierlist"
     },
@@ -981,11 +1051,11 @@
       "title": "Audited task contract",
       "path": "wiki/audited-task-contract.md",
       "created": "2026-08-23",
-      "updated": "2026-08-25",
+      "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
-      "outbound": 7,
+      "inbound": 33,
+      "outbound": 9,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
     },
@@ -1292,8 +1362,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 103,
-      "outbound": 53,
+      "inbound": 118,
+      "outbound": 60,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1433,7 +1503,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 31,
+      "outbound": 35,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1522,6 +1592,20 @@
       "oneLiner": "Drafts. Taste is gate. No autopublish"
     },
     {
+      "primaryKey": "elvis",
+      "objectType": "Person",
+      "title": "Elvis",
+      "path": "wiki/people/elvis.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "person",
+      "island": "people",
+      "inbound": 6,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "dair.ai. Posted the AR paper summary"
+    },
+    {
       "primaryKey": "entropy-gate",
       "objectType": "Concept",
       "title": "Entropy gate",
@@ -1530,8 +1614,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
-      "outbound": 12,
+      "inbound": 42,
+      "outbound": 17,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
@@ -1667,11 +1751,11 @@
       "title": "GitHub hunt",
       "path": "hunt/github.md",
       "created": "2026-08-23",
-      "updated": "2026-08-26",
+      "updated": "2026-08-28",
       "tags": "hunt,github",
       "island": "hunt-ship",
-      "inbound": 3,
-      "outbound": 6,
+      "inbound": 4,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Green in the graph when people or repos land here."
     },
@@ -1866,8 +1950,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 33,
-      "outbound": 18,
+      "inbound": 37,
+      "outbound": 20,
       "unverified": true,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
@@ -2034,8 +2118,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 18,
-      "outbound": 269,
+      "inbound": 21,
+      "outbound": 277,
       "unverified": true,
       "oneLiner": "Catalog of compiled pages. Human/Obsidian door. Query with `python3 tools/sb ask`. Updated 2026-08-28."
     },
@@ -2292,6 +2376,20 @@
       "oneLiner": "Compiled BATCH09 into [[camf-mft]], [[draftfm]], [[dmd-safety]], [[vgi-bench]], and [[orthoskillvla]]."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-24-chatgpt-share",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 ChatGPT share",
+      "path": "output/ingest-brief-2026-08-24-chatgpt-share.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 4,
+      "unverified": true,
+      "oneLiner": "The public share only has ChatGPT's last message: a claimed `second-brain-upgraded-2026-08-25.zip` that was not pushed. The ZIP download is 401/403, so the 100 papers, 9 skills, and 25/25 tests stay `"
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-24-disclosure-index",
       "objectType": "Ship",
       "title": "Ingest brief \u00b7 Disclosure Index \u00b7 2026-08-24",
@@ -2318,6 +2416,20 @@
       "outbound": 4,
       "unverified": true,
       "oneLiner": "Five scout tweets landed as source pages and linked to [[llm-wiki]], [[memory-engineering]], [[harness-routing]], and [[anti-slop]]."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-maverick-ultramode",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Maverick ultramode \u00b7 2026-08-24",
+      "path": "output/ingest-brief-2026-08-24-maverick-ultramode.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 3,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slic"
     },
     {
       "primaryKey": "ingest-brief-2026-08-24-three-x",
@@ -2502,16 +2614,30 @@
       "oneLiner": "lan E 07:36 Taipei: LanBB BB is bug bounty flow. The existing bounty/flow line on [[lanbb]] is identity, not contamination."
     },
     {
+      "primaryKey": "ingest-brief-omarsar-2026-08-24",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Omarsar \u00b7 2026-08-24",
+      "path": "output/ingest-brief-omarsar-2026-08-24.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 3,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "1. [[adversarial-review]] for the loop and the two tables."
+    },
+    {
       "primaryKey": "jacky-kwok",
       "objectType": "Person",
       "title": "Jacky Kwok",
       "path": "wiki/people/jacky-kwok.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 5,
-      "outbound": 2,
+      "inbound": 10,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "LLM-as-a-Verifier"
     },
@@ -2552,8 +2678,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 63,
-      "outbound": 33,
+      "inbound": 66,
+      "outbound": 34,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2580,8 +2706,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
-      "outbound": 212,
+      "inbound": 15,
+      "outbound": 223,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2640,6 +2766,20 @@
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Teal in the Obsidian graph."
+    },
+    {
+      "primaryKey": "maverick",
+      "objectType": "Person",
+      "title": "Maverick",
+      "path": "wiki/people/maverick.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "person",
+      "island": "people",
+      "inbound": 10,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "agent-ultramode. /ultra over PPT"
     },
     {
       "primaryKey": "memory-ablation",
@@ -2740,6 +2880,20 @@
       "oneLiner": "Fetched `origin/main` at `41f1abf` (Machina Grok Bot money / C30), then merged into `cursor/avid-company-foundry-185f`."
     },
     {
+      "primaryKey": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 chatgpt-share ingest vs main",
+      "path": "output/merge-conflict-report-2026-08-28-chatgpt-share.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `96f7138` (Omarsar `#6` already on main), then merged into `cursor/ingest-chatgpt-share-ff83`."
+    },
+    {
       "primaryKey": "merge-conflict-report-2026-08-28-daily-tool",
       "objectType": "Ship",
       "title": "Merge conflict report \u00b7 daily-tool-replace vs main",
@@ -2794,6 +2948,34 @@
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `42ba5e3` (Can daily-tool-replace / C29), then merged into `cursor/ingest-exm7777-grok-bot-93be`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 maverick-ultramode ingest vs main",
+      "path": "output/merge-conflict-report-2026-08-28-maverick-ultramode.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 4,
+      "outbound": 15,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `5927d29`, then merged into `cursor/ingest-maverick-ultramode-faac`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-omarsar",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 omarsar-adversarial-review ingest vs main",
+      "path": "output/merge-conflict-report-2026-08-28-omarsar.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 4,
+      "outbound": 15,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `4be06ef` (Maverick `#5` already on main), then merged into `cursor/ingest-omarsar-adversarial-review-faac`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -3034,6 +3216,20 @@
       "oneLiner": "Cross-view next-step/clip SNN SSL"
     },
     {
+      "primaryKey": "probabilistic-pivot-tournament",
+      "objectType": "Concept",
+      "title": "Probabilistic Pivot Tournament",
+      "path": "wiki/probabilistic-pivot-tournament.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 9,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "Ring pass, pivot duels, win-rate confidence"
+    },
+    {
       "primaryKey": "product-hunt",
       "objectType": "Hunt",
       "title": "Product Hunt hunt",
@@ -3235,11 +3431,11 @@
       "title": "Self-verification",
       "path": "wiki/self-verification.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
-      "outbound": 8,
+      "inbound": 25,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Sample several answers, score them, keep the winner"
     },
@@ -3266,7 +3462,7 @@
       "updated": "2026-08-25",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 10,
+      "inbound": 12,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
@@ -4336,6 +4532,20 @@
       "oneLiner": "2026-08-25"
     },
     {
+      "primaryKey": "src-chatgpt-t-6a8cc267",
+      "objectType": "Source",
+      "title": "src-chatgpt-t-6a8cc267",
+      "path": "wiki/sources/src-chatgpt-t-6a8cc267.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "chatgpt",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "2026-08-24"
+    },
+    {
       "primaryKey": "src-community-compaction",
       "objectType": "Source",
       "title": "src-community-compaction",
@@ -4537,11 +4747,11 @@
       "title": "src-jacky-self-verification",
       "path": "wiki/sources/src-jacky-self-verification.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 3,
+      "inbound": 8,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "2026-08-17"
     },
@@ -4924,6 +5134,20 @@
       "oneLiner": "2026-08-23"
     },
     {
+      "primaryKey": "src-maverick-ultramode",
+      "objectType": "Source",
+      "title": "src-maverick-ultramode",
+      "path": "wiki/sources/src-maverick-ultramode.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 19,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "2026-08-22"
+    },
+    {
       "primaryKey": "src-maxdeg0-vault-2026-08-27",
       "objectType": "Source",
       "title": "src-maxdeg0-vault-2026-08-27",
@@ -4975,6 +5199,20 @@
       "tags": "github",
       "island": "sources",
       "inbound": 14,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "2026-08-23"
+    },
+    {
+      "primaryKey": "src-omarsar-adversarial-review",
+      "objectType": "Source",
+      "title": "src-omarsar-adversarial-review",
+      "path": "wiki/sources/src-omarsar-adversarial-review.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 13,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "2026-08-23"
@@ -5268,8 +5506,8 @@
       "updated": "2026-08-28",
       "tags": "hunt,twitter",
       "island": "hunt-ship",
-      "inbound": 4,
-      "outbound": 14,
+      "inbound": 6,
+      "outbound": 16,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
     },
@@ -5286,6 +5524,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Grouped NN transfer. Appendix unread"
+    },
+    {
+      "primaryKey": "ultra-mode",
+      "objectType": "Concept",
+      "title": "Ultra mode",
+      "path": "wiki/ultra-mode.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 17,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "/ultra: N worktrees, then PPT picks a winner"
     },
     {
       "primaryKey": "unilang",
@@ -5887,6 +6139,76 @@
       "to": "contradictions"
     },
     {
+      "from": "C33",
+      "linkType": "cites",
+      "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "C33",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "C33",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C34",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C34",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "C34",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
+      "from": "C35",
+      "linkType": "cites",
+      "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "C35",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "C35",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "C35",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C36",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
+    },
+    {
+      "from": "C36",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C36",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "C36",
+      "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
       "from": "C4",
       "linkType": "extractedFrom",
       "to": "contradictions"
@@ -6149,6 +6471,11 @@
     {
       "from": "Home",
       "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "Home",
+      "linkType": "aboutPerson",
       "to": "hurley"
     },
     {
@@ -6164,7 +6491,22 @@
     {
       "from": "Home",
       "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "Home",
+      "linkType": "aboutPerson",
       "to": "rohit"
+    },
+    {
+      "from": "Home",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "Home",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
     },
     {
       "from": "Home",
@@ -6274,6 +6616,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-maverick-ultramode"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong"
     },
     {
@@ -6284,12 +6631,27 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "ingest-brief-omarsar-2026-08-24"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "maps"
     },
     {
       "from": "Home",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-omarsar"
     },
     {
       "from": "Home",
@@ -6459,6 +6821,11 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
     },
     {
@@ -6474,7 +6841,17 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
     },
     {
       "from": "MEMORY",
@@ -6779,6 +7156,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "adversarial-review"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
     {
@@ -6834,6 +7216,16 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-omarsar"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
@@ -6844,7 +7236,42 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "vault-ontology"
+    },
+    {
+      "from": "adversarial-review",
+      "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "adversarial-review",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "adversarial-review",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "adversarial-review",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "adversarial-review",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "adversarial-review",
+      "linkType": "relatedTo",
+      "to": "self-verification"
     },
     {
       "from": "agent-facing-docs",
@@ -6914,6 +7341,16 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-papa-couch-compiler"
     },
     {
@@ -6925,6 +7362,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
     },
     {
       "from": "agent-operating-system",
@@ -7039,6 +7481,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
       "to": "raptor-dispatch"
     },
     {
@@ -7075,6 +7522,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "agent-operating-system",
@@ -7340,6 +7792,11 @@
       "from": "arxiv-tierlist",
       "linkType": "cites",
       "to": "src-arxiv-tierlist-handoff"
+    },
+    {
+      "from": "arxiv-tierlist",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
     },
     {
       "from": "arxiv-tierlist",
@@ -7609,7 +8066,17 @@
     {
       "from": "audited-task-contract",
       "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "cites",
       "to": "src-rohit-harness-router"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
     },
     {
       "from": "audited-task-contract",
@@ -8284,6 +8751,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
     },
     {
@@ -8314,6 +8786,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -8334,7 +8811,17 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
     },
     {
       "from": "contradictions",
@@ -8364,12 +8851,22 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
     {
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
     },
     {
       "from": "contradictions",
@@ -8480,6 +8977,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "tiwm"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "contradictions",
@@ -8899,6 +9401,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-maverick-ultramode"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-three-x"
     },
     {
@@ -8929,6 +9436,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-omarsar-2026-08-24"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool"
     },
     {
@@ -8940,6 +9452,16 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-grok-bot"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-omarsar"
     },
     {
       "from": "digests",
@@ -9017,9 +9539,24 @@
       "to": "work-per-cost"
     },
     {
+      "from": "elvis",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "elvis",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
+    },
+    {
       "from": "entropy-gate",
       "linkType": "cites",
       "to": "src-avid-company-foundry"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
     },
     {
       "from": "entropy-gate",
@@ -9030,6 +9567,21 @@
       "from": "entropy-gate",
       "linkType": "cites",
       "to": "src-hitu-entropy-engineering"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
     },
     {
       "from": "entropy-gate",
@@ -9075,6 +9627,11 @@
       "from": "entropy-gate",
       "linkType": "relatedTo",
       "to": "self-verification"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "epistemic-labels",
@@ -9304,6 +9861,11 @@
     {
       "from": "github",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "github",
+      "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
     },
     {
@@ -9330,6 +9892,11 @@
       "from": "github",
       "linkType": "relatedTo",
       "to": "skill-library"
+    },
+    {
+      "from": "github",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "graph",
@@ -9799,6 +10366,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-promptyx-llm-cpu"
     },
     {
@@ -9865,6 +10437,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "headlong",
@@ -10369,6 +10946,11 @@
     {
       "from": "index",
       "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
       "to": "hurley"
     },
     {
@@ -10385,6 +10967,11 @@
       "from": "index",
       "linkType": "aboutPerson",
       "to": "mahipal-jangra"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
+      "to": "maverick"
     },
     {
       "from": "index",
@@ -10749,6 +11336,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-community-compaction"
     },
     {
@@ -10959,6 +11551,11 @@
     {
       "from": "index",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
       "to": "src-maxdeg0-vault-2026-08-27"
     },
     {
@@ -10975,6 +11572,11 @@
       "from": "index",
       "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
     },
     {
       "from": "index",
@@ -11060,6 +11662,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "MEMORY"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
     },
     {
       "from": "index",
@@ -11514,6 +12121,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "provenance"
     },
     {
@@ -11635,6 +12247,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "two-stage-nn-tl"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "index",
@@ -12177,6 +12794,26 @@
       "to": "vgi-bench"
     },
     {
+      "from": "ingest-brief-2026-08-24-chatgpt-share",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
       "from": "ingest-brief-2026-08-24-disclosure-index",
       "linkType": "cites",
       "to": "src-disclosure-index"
@@ -12210,6 +12847,51 @@
       "from": "ingest-brief-2026-08-24-five-x",
       "linkType": "relatedTo",
       "to": "memory-engineering"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "aboutPerson",
+      "to": "jacky-kwok"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "ingest-brief-2026-08-24-three-x",
@@ -12507,14 +13189,69 @@
       "to": "lanbb"
     },
     {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "jacky-kwok",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
       "from": "jacky-kwok",
       "linkType": "cites",
       "to": "src-jacky-self-verification"
     },
     {
       "from": "jacky-kwok",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "jacky-kwok",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "jacky-kwok",
       "linkType": "relatedTo",
       "to": "self-verification"
+    },
+    {
+      "from": "jacky-kwok",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "lanbb",
@@ -12660,6 +13397,11 @@
       "from": "llm-wiki",
       "linkType": "cites",
       "to": "src-bober-folder-workflow"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
     },
     {
       "from": "llm-wiki",
@@ -12844,6 +13586,11 @@
     {
       "from": "log",
       "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
       "to": "hurley"
     },
     {
@@ -12855,6 +13602,11 @@
       "from": "log",
       "linkType": "aboutPerson",
       "to": "mahipal-jangra"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
+      "to": "maverick"
     },
     {
       "from": "log",
@@ -12945,6 +13697,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-chatgpt-play-2026-08-25"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-chatgpt-t-6a8cc267"
     },
     {
       "from": "log",
@@ -13099,12 +13856,22 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-milesdeutscher-grok-bot-use-cases"
     },
     {
       "from": "log",
       "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
     },
     {
       "from": "log",
@@ -13140,6 +13907,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "MEMORY"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
     },
     {
       "from": "log",
@@ -13614,6 +14386,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-chatgpt-share"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-daily-tool"
     },
     {
@@ -13630,6 +14407,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-grok-bot"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-omarsar"
     },
     {
       "from": "log",
@@ -13700,6 +14487,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "prednext"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
     },
     {
       "from": "log",
@@ -13835,6 +14627,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "two-stage-nn-tl"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "log",
@@ -14015,6 +14812,26 @@
       "from": "maps",
       "linkType": "relatedTo",
       "to": "TELOS"
+    },
+    {
+      "from": "maverick",
+      "linkType": "aboutPerson",
+      "to": "jacky-kwok"
+    },
+    {
+      "from": "maverick",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "maverick",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "maverick",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "memory-ablation",
@@ -14462,6 +15279,36 @@
       "to": "log"
     },
     {
+      "from": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-chatgpt-share",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
       "from": "merge-conflict-report-2026-08-28-daily-tool",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
@@ -14580,6 +15427,156 @@
       "from": "merge-conflict-report-2026-08-28-grok-bot",
       "linkType": "relatedTo",
       "to": "grok-bot"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "Today"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "github"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-maverick-ultramode"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "Today"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-omarsar-2026-08-24"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
@@ -15002,6 +15999,41 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "aboutPerson",
+      "to": "jacky-kwok"
+    },
+    {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "cites",
+      "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "probabilistic-pivot-tournament",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
       "from": "provenance",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
@@ -15388,6 +16420,11 @@
     },
     {
       "from": "self-verification",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "self-verification",
       "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
     },
@@ -15395,6 +16432,16 @@
       "from": "self-verification",
       "linkType": "cites",
       "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
     },
     {
       "from": "self-verification",
@@ -15409,12 +16456,27 @@
     {
       "from": "self-verification",
       "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
       "to": "entropy-gate"
     },
     {
       "from": "self-verification",
       "linkType": "relatedTo",
       "to": "evosyn"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
     },
     {
       "from": "self-verification",
@@ -16972,6 +18034,36 @@
       "to": "spot-check"
     },
     {
+      "from": "src-chatgpt-t-6a8cc267",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "src-chatgpt-t-6a8cc267",
+      "linkType": "relatedTo",
+      "to": "arxiv-tierlist"
+    },
+    {
+      "from": "src-chatgpt-t-6a8cc267",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-chatgpt-t-6a8cc267",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-chatgpt-t-6a8cc267",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-chatgpt-share"
+    },
+    {
+      "from": "src-chatgpt-t-6a8cc267",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
       "from": "src-community-compaction",
       "linkType": "relatedTo",
       "to": "context-compaction"
@@ -17220,6 +18312,11 @@
       "from": "src-jacky-self-verification",
       "linkType": "aboutPerson",
       "to": "jacky-kwok"
+    },
+    {
+      "from": "src-jacky-self-verification",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
     },
     {
       "from": "src-jacky-self-verification",
@@ -17647,6 +18744,46 @@
       "to": "trace"
     },
     {
+      "from": "src-maverick-ultramode",
+      "linkType": "aboutPerson",
+      "to": "jacky-kwok"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "src-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
       "from": "src-maxdeg0-vault-2026-08-27",
       "linkType": "relatedTo",
       "to": "backlink-first"
@@ -17705,6 +18842,36 @@
       "from": "src-mukul975-cybersecurity-skills",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-omarsar-adversarial-review",
+      "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "src-omarsar-adversarial-review",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
+    },
+    {
+      "from": "src-omarsar-adversarial-review",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-omarsar-adversarial-review",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-omarsar-adversarial-review",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-omarsar-adversarial-review",
+      "linkType": "relatedTo",
+      "to": "self-verification"
     },
     {
       "from": "src-openagentskill-anti-slop",
@@ -18179,6 +19346,16 @@
     {
       "from": "twitter",
       "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
       "to": "src-papa-couch-compiler"
     },
     {
@@ -18205,6 +19382,46 @@
       "from": "two-stage-nn-tl",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "aboutPerson",
+      "to": "jacky-kwok"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "relatedTo",
+      "to": "self-verification"
     },
     {
       "from": "unilang",
