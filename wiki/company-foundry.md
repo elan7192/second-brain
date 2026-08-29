@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Company Foundry
@@ -57,4 +57,4 @@ Do not mix this name with [[foundry-3d]] or Palantir Foundry. See C15. Clip vs a
 
 ## Related
 
-[[src-avid-company-foundry]] · [[hunt-ship-loop]] · [[harness-routing]] · [[audited-task-contract]] · [[entropy-gate]] · [[memory-engineering]] · [[llm-wiki]] · [[avid]] · [[grok-bot]] · [[foundry-3d]] · [[palantir-aip]]
+[[src-avid-company-foundry]] · [[hunt-ship-loop]] · [[harness-routing]] · [[audited-task-contract]] · [[entropy-gate]] · [[memory-engineering]] · [[llm-wiki]] · [[avid]] · [[grok-bot]] · [[foundry-3d]] · [[palantir-aip]] · [[ingest-brief-2026-08-25-avid-company-foundry]]

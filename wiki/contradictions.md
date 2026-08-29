@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Contradictions
@@ -239,7 +239,7 @@ Remap: was C8 on the agent-facing-docs branch. Main C8 is the two anti-slop tens
 
 [[src-dair-agent-friendly-docs]] recorded zero documentation-based validation events. The authors say actionability and verifiability lack consistent behavioural support.
 
-Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/lint-wiki.py`, `python3 tools/sb validate`) because reading `AGENTS.md` is not the check. See D10 and [[agent-facing-docs]].
+Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/sb validate`) because reading `AGENTS.md` is not the check. See D10 and [[agent-facing-docs]].
 
 Remap: was C9 on the agent-facing-docs branch. Main C9 is NGC tables.
 
@@ -343,11 +343,11 @@ Resolution: unresolved as a query-engine fight. This merge does not reopen D9. C
 
 ## C38. Standing ingest brief vs musk skip
 
-Main ingest step 9 writes a three-sentence `output/` brief on every ingest.
+Main ingest step 9 wrote a three-sentence `output/` brief on every ingest.
 
-The musk pass deleted that standing brief (schema author, not lan E).
+The 2026-08-28 musk pass deleted that standing brief (schema author, not lan E).
 
-Resolution: unresolved. Do not add a new brief. Do not delete existing briefs. Wait for lan E. See [[musk-algorithm]] and [[merge-conflict-report-2026-08-28-musk]].
+Resolution: skip. lan E ordered the algorithm again on 2026-08-29. Do not write a standing brief. Existing briefs stay as historical output. File only if the next session would re-derive the answer. See [[musk-algorithm]].
 
 ## C39. CLAUDE.md copy vs D2
 

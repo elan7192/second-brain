@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Agent-facing docs
@@ -49,7 +49,7 @@ Agents also edit their own instructions. AIDev: `AGENTS.md` in 692 PRs, `CLAUDE.
 ## Use here
 
 1. Put operational rules on the instruction and wiki surface. See D10 in `decisions.md`.
-2. Do not treat reading `AGENTS.md` as the check. Run `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.
+2. Do not treat reading `AGENTS.md` as the check. Run `python3 tools/sb validate`.
 3. File working notes into `wiki/` or `output/`. They are a first-class maintenance surface.
 4. Keep this vault's file-first ingest. Observed public agents touch code first.
 

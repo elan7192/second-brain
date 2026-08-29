@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-29] musk | second vault pass delete then simplify
+
+lan E sent the five-step algorithm again. Deleted concept/people catalogs from the short door, Home/Today merge dumps, standing ingest brief, dual lint command, and the graph mermaid dump. C38 resolved: skip. `tools/sb` added so `python3 tools/sb` runs. C17 / C18 / C37 left untouched. See [[musk-algorithm]].
 
 ## [2026-08-28] merge | origin/main into openconnector X ingest branch
 

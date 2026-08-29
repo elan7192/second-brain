@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Musk Algorithm
@@ -59,6 +59,31 @@ Added back (~10%):
 Not automated: no new bot, hook, or renderer. `tools/lint-wiki.py` stays a manual/CI gate.
 
 Locked as D12 in [[decisions]] (was D9 on this branch; main already locked D9 as FTS). Live query stays D9. See C37. Ingest brief is C38.
+
+## Vault pass 2026-08-29
+
+lan E sent the five steps again. Requirements questioned against a named person. Physics unchanged: git markdown, token cost of every forced read, D1 compiler, D5 human yes.
+
+Questioned and deleted:
+
+- Full concept and people catalogs on the short [[index]] (agents walking the door, not lan E). D12 already split papers and sources.
+- Home / Today merge-report dumps (merge process leftover). Timeline stays on [[log]].
+- Standing `output/` ingest brief (schema author). C38 resolved: skip. Existing briefs stay.
+- Dual standing gate `lint-wiki.py` then `sb validate` (lint already runs inside validate).
+- `compile-claims.py --check` as a third standing command (lint already runs it).
+- Mermaid dump inside [[graph]] plus the renderer write (html/svg snapshots remain).
+- DeerFlow `make dev` as a Home next action (other VM, needs keys, D5).
+
+Added back (~10%):
+
+- Projects table on [[index]] (active work).
+- Start operating pages on [[index]] and [[Home]].
+- Existing historical briefs and merge reports.
+- `tools/sb` so the documented `python3 tools/sb` command runs.
+
+Accelerated: one gate (`python3 tools/sb validate`), one query command that exists on disk.
+
+Not automated: no new bot, hook, or renderer. C17 and C18 untouched. C37 still open.
 
 ## Related
 

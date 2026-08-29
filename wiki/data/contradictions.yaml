@@ -375,10 +375,10 @@ contradictions:
   - id: contradiction:c38
     claim_a: concept:musk-algorithm
     claim_b: concept:llm-wiki
-    reason: musk deleted standing ingest brief; main ingest step 9 still writes one
-    status: disputed
+    reason: musk deleted standing ingest brief; main ingest used to write one
+    status: resolved
     severity: medium
-    resolution: do not add a new brief; do not delete existing briefs; wait for lan E
+    resolution: skip standing brief; existing briefs stay; lan E 2026-08-29
     resolution_source: concept:musk-algorithm
     page: contradictions.md
 
