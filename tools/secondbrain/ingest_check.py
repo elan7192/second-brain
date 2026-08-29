@@ -67,7 +67,7 @@ def _inbound_from_living(root: Path, slug: str, source: Path) -> list[str]:
     for path in root.rglob("*.md"):
         if path.resolve() in skip:
             continue
-        if any(part in {".git", ".obsidian", "templates", "raw", ".agents", ".cursor"} for part in path.parts):
+        if any(part in {".git", ".obsidian", "templates", "raw"} for part in path.parts):
             continue
         if path.name in CATALOG_NAMES:
             continue

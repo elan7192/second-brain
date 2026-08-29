@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "output"
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
-SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth", ".agents", ".cursor"}
+SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 # Catalog stars. They stay in the vault. They do not sit in this graph.
 HIDDEN = {"index", "index-papers", "index-sources", "log", "twitter", "decisions"}

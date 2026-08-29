@@ -22,7 +22,7 @@ CONTRADICTION = re.compile(r"^## (C\d+)\.\s+(.+)$", re.M)
 UNVERIFIED = re.compile(r"\bunverified\b", re.I)
 INDEX_ROW = re.compile(r"^\|\s*\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]\s*\|\s*(.+?)\s*\|")
 
-SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth", ".agents", ".cursor"}
+SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 
 TYPE_MAP = {

@@ -11,10 +11,6 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
-## [2026-08-29] ingest | Voxyz Archify diagram skill
-
-Compiled [[src-voxyz-archify]] from https://x.com/voxyz_ai/status/2093677504179400946. Copied `tt-a1i/archify` to `.agents/skills/archify`. Wrote [[archify]] and `output/archify/vault-architecture.html`. Flagged C47. Did not copy the prompt into `AGENTS.md`. raw/ not written. C6 stays open.
-
 ## [2026-08-29] gate | PR27 adversarial tests and contract v1
 
 Follow-up review of PR 27. Compiled [[src-vault-review-pr27-2026-08-29]]. Added negative tests in `tests/test_gates.py`, contract schema v1, provenance counts, CI `.github/workflows/vault.yml`. C17 stays two projections. No MCP. No daemon.

@@ -4,14 +4,14 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-08-23
 ---
 
 # Skill library
 
 A shared catalog of agent skills the whole company can create, find, and reuse.
 
-Sources: [[src-johnsjawn-skill-library]] ([[hurley]], 2026-08-21), [[src-mukul975-cybersecurity-skills]] ([[mahipal-jangra]], repo created 2026-02-25), [[src-skill-pack-list]] (2026-08-23), and [[src-voxyz-archify]] (2026-08-29).
+Sources: [[src-johnsjawn-skill-library]] ([[hurley]], 2026-08-21), [[src-mukul975-cybersecurity-skills]] ([[mahipal-jangra]], repo created 2026-02-25), and [[src-skill-pack-list]] (2026-08-23).
 
 ## Claims that landed
 
@@ -59,12 +59,10 @@ Stale counts: [[contradictions]] C24. Scientific skill bodies were not copied.
 
 ## Relation to this vault
 
-This vault compiles skill rules into pages and does not vendor marketplace dumps. That is [[anti-slop]]. Do not reopen D7 (Obsidian is the IDE).
-
-[[src-voxyz-archify]] is a named exception: lan E asked to integrate one diagram skill. Copy lives at `.agents/skills/archify`. See [[archify]] and C47.
+This vault compiles skill rules into pages and does not vendor skill repos. That is [[anti-slop]] and D7 in `decisions.md`. Do not reopen D7.
 
 Discovery instead of rebuild is the same bet as [[tokens-as-capital]]. The compiler store stays `wiki/`. See [[contradictions]] C20.
 
 ## Related
 
-[[llm-wiki]] · [[anti-slop]] · [[tokens-as-capital]] · [[context-graph]] · [[skill-as-sop]] · [[archify]] · [[hurley]] · [[mahipal-jangra]]
+[[llm-wiki]] · [[anti-slop]] · [[tokens-as-capital]] · [[context-graph]] · [[skill-as-sop]] · [[hurley]] · [[mahipal-jangra]]

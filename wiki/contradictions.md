@@ -428,11 +428,3 @@ Remap: was C8 on the leftover-quota branch. Main C8 is the two anti-slop tens.
 D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. [[index]] is not the query path. See C37 and [[retrieval]].
 
 Resolution: keep D9. Treat the review's retrieval rating as an assessment, not a vault fact. Do not walk [[index]] as the query path. Health counts live under `python3 tools/sb health`. See [[deterministic-core]].
-
-## C47. One Archify skill vs do-not-vendor packs
-
-[[skill-library]] and [[skill-as-sop]] reject vendoring public skill packs.
-
-lan E asked to integrate [[src-voxyz-archify]] (https://x.com/voxyz_ai/status/2093677504179400946).
-
-Resolution: copy only `tt-a1i/archify` to `.agents/skills/archify`. Do not copy its prompts into `AGENTS.md`. Do not vendor other packs from this yes. HTML under `output/archify/` is derived. See [[archify]].

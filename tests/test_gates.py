@@ -101,16 +101,6 @@ class GateFixture(unittest.TestCase):
         icode, iout = ingest_check.check("src-0xcodio-memory-ablation", self.root)
         self.assertEqual(icode, 0, iout)
 
-    def test_agents_skill_markdown_is_not_a_wiki_orphan(self) -> None:
-        _write(
-            self.root / ".agents" / "skills" / "archify" / "SKILL.md",
-            "# Archify\n\nSkill body. Not a wiki page.\n",
-        )
-        self._rebuild()
-        code, out = validate(self.root, self.db)
-        self.assertEqual(code, 0, out)
-        self.assertNotIn("ORPHAN SKILL", out)
-
     def test_missing_id_fails_ingest(self) -> None:
         path = self.root / "wiki" / "sources" / "src-0xcodio-memory-ablation.md"
         text = path.read_text(encoding="utf-8").replace(
