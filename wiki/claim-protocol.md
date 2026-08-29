@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-28
+updated: 2026-08-29
 created_by: agent
 confidence: medium
 source:
@@ -43,7 +43,7 @@ Embeddings stay parked. See C19 and [[file-memory]].
 
 ## Check
 
-`python3 tools/sb ask` is Query step 1 in `AGENTS.md`. `python3 tools/compile-claims.py --check` matches. If evidence is missing: mark `unverified`. Do not write it into `MEMORY.md`.
+`python3 tools/sb ask` is Query step 1 in `AGENTS.md`. `python3 tools/sb validate` matches. If evidence is missing: mark `unverified`. Do not write it into `MEMORY.md`.
 
 ## Related
 

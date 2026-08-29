@@ -14,11 +14,10 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 
 ## Vault
 
-- This repo is a compiled LLM wiki. Query with `python3 tools/sb ask`. Answer from the evidence set. Do not re-read `raw/` to answer a normal question. Do not walk `wiki/index.md` as the query path.
+- This repo is a compiled LLM wiki. Query with `python3 tools/sb ask` (D9). Answer from the evidence set. Do not re-read `raw/` to answer a normal question. Do not walk [[index]] as the query path. Paper and source catalogs are D12. See C37 and [[musk-algorithm]].
 - `raw/` is immutable. Never edit it.
 - `decisions.md` is locked. Do not reopen a decision without new evidence.
 - The vault does not post, pay, send, or deploy. Named: lan E.
-- Query is `python3 tools/sb ask` (D9). Do not walk [[index]] as the query path. Paper pages live in [[index-papers]]. Source pages live in [[index-sources]]. Those catalogs are the Obsidian door split (D12), not a second query engine. See C37 and [[musk-algorithm]].
 - Graph view and `tools/render-obsidian-graph.py` cluster by the five [[agent-operating-system]] layers. Filter excludes `raw/`, `templates/`, `index`, `index-papers`, `index-sources`, `log`, and `twitter`. Do not place all wiki notes on one ring around Home.
 - Operational rules live in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not steer this vault through README or API docs. See D10 and [[agent-facing-docs]].
 - Reading instruction or wiki pages is not verification. After those files change, run `python3 tools/sb validate`. Observed agents test less after reading docs (adjusted OR 0.39). See [[agent-facing-docs]] and C27.
@@ -38,13 +37,12 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Loop/graph: PM outer loop, Engineer inner coding round, Vault KG writer. One worker first. Do not install Kimi Code. Do not create Coordinator/Worker/Verifier bots. Do not replace wiki markdown with a second JSONL graph store. See [[loop-graph-engineering]].
 - Chat working-memory may be fuzzy. Vault must be precise. Do not dump transcripts into wiki. See [[context-compaction]].
 - Work per cost: W = completed jobs with proof (wiki SHA, PR URL, spec path, Figma URL, artifact path). E = cloud-agent launches + computerUse sessions. Report W/E counts, not fake dollars. Grok Bot scarce vs Fill leftover: separate ledgers. See [[work-per-cost]].
-- Musk Algorithm, strict order, named lan E: (1) make requirements less dumb, named person not a department (2) delete the part or process (3) simplify/optimize only after delete (4) accelerate cycle time (5) automate last. Best part is no part. Do not automate first. Passes: 2026-08-28, 2026-08-29. Catalog split is D12. Live query stays D9. Standing ingest brief is skipped (C38). See [[musk-algorithm]] and C37.
+- Musk Algorithm, strict order, named lan E: (1) make requirements less dumb, named person not a department (2) delete the part or process (3) simplify/optimize only after delete (4) accelerate cycle time (5) automate last. Best part is no part. Do not automate first. Passes through 2026-08-29. Catalog split is D12. Live query stays D9. Standing ingest brief is skipped (C38). See [[musk-algorithm]] and C37.
 - 2026-08-27: Do not clone omp.sh or ship a GitKraken-class git GUI for this vault from [[daily-tool-replace]]. Hour tops is tweet wording, not a vault SLA. Delete/skip first. See [[daily-tool-replace-vault-2026-08-27]].
 - 2026-08-27 lan E yes: URL clips compile from caption and metadata first. Fetch video or frames only when a kept claim depends on the picture. See [[clip-pipeline]].
 - Stale-fact-detector: audit wiki claims against named sources. Quote note + source with dates. No writes in the audit pass. Draft patch ok. Push needs PM/lan E. raw/ immutable. Silent source = unverifiable. See [[stale-fact-detector]].
 - Botdirectory 2026-08-27: 304 listings. Prefer skill on an existing role. Do not add a second memory writer or PAT daily-push. Catalog scan, not scout dump. See [[botdirectory-scan]].
 - Composio MCP catalog id 32661537 exists in Grok Bot. Not installed. Writes need lan E approval. See [[composio-mcp]].
-- Prefer git markdown memory over a lab built-in store. Four kinds: semantic md+index, working context, episodic log, procedural skills. Vector DB only when too much to read. Setup: markdown + disposable FTS5. `output/ontology-objects.csv` is derived objects, not the memory index. See [[file-memory]] and [[vault-ontology]].
 - Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Recurring fill belongs on dedicated bot `burn`, not the lead chat. See [[grok-bot-quota]].
 - Routines: hourly or a few times a day. Never every 5 minutes. Recurring work goes to a fresh bot. See [[grok-bot-pro-tips]].
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.

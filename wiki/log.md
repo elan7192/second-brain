@@ -11,6 +11,10 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] musk | third pass until a cycle is idle
+
+Deleted Home/index overlap, digest merge dump, `tools/sb.py`, MEMORY query duplicate, mandatory always-rebuild ontology, Home people catalog, GrowthOS graph on Home, graph islands table. Digests kept nine briefs that would otherwise orphan. Next pass found only locked parts (C17, C18, D1–D12, C38 existing briefs, append-only log). Stopped. See [[musk-algorithm]].
+
 ## [2026-08-29] musk | second vault pass delete then simplify
 
 lan E sent the five-step algorithm again. Deleted concept/people catalogs from the short door, Home/Today merge dumps, standing ingest brief, dual lint command, and the graph mermaid dump. C38 resolved: skip. `tools/sb` added so `python3 tools/sb` runs. C17 / C18 / C37 left untouched. See [[musk-algorithm]].

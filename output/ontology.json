@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T04:28:10Z",
+  "builtAt": "2026-08-29T04:37:55Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -118,7 +118,7 @@
     "Decision": 12,
     "Contradiction": 43,
     "objects": 408,
-    "links": 2796
+    "links": 2745
   },
   "objects": [
     {
@@ -900,7 +900,7 @@
       "updated": "2026-08-25",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Door to the growth operator vault. Teal in the Obsidian graph. Notes live in `growth/`."
@@ -914,8 +914,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
-      "outbound": 26,
+      "inbound": 10,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -957,7 +957,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 15,
-      "outbound": 71,
+      "outbound": 69,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -984,8 +984,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 6,
-      "outbound": 4,
+      "inbound": 5,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "2026-08-29"
     },
@@ -1026,7 +1026,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 36,
+      "inbound": 35,
       "outbound": 53,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts."
@@ -1082,7 +1082,7 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "April 2026 gist: [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)."
@@ -1138,7 +1138,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "projects",
-      "inbound": 112,
+      "inbound": 111,
       "outbound": 58,
       "unverified": true,
       "oneLiner": "405856 inventory. BATCH01\u201309 compiled. Site: elan7192.github.io/arxiv-potential-tierlist"
@@ -1152,7 +1152,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Assign \u2192 execute \u2192 verify."
@@ -1180,7 +1180,7 @@
       "updated": "2026-08-28",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "@Av1dlive. Two compiled posts."
@@ -1345,10 +1345,10 @@
       "title": "Claim protocol",
       "path": "wiki/claim-protocol.md",
       "created": "2026-08-27",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
+      "inbound": 23,
       "outbound": 12,
       "unverified": true,
       "oneLiner": "Named compile chain: Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer."
@@ -1362,7 +1362,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 30,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Provenance unit. A page is not a claim. Two registries exist. Do not pick one. See C17."
@@ -1474,7 +1474,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 133,
+      "inbound": 131,
       "outbound": 71,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
@@ -1530,7 +1530,7 @@
       "updated": "2026-08-27",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "Question: room to optimize this project with [[daily-tool-replace]]?"
@@ -1558,7 +1558,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 20,
+      "inbound": 19,
       "outbound": 22,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
@@ -1572,10 +1572,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "ByteDance SuperAgent. Local clone at `/home/ubuntu/deer-flow`"
+      "oneLiner": "ByteDance SuperAgent harness. Repo: https://github.com/bytedance/deer-flow. Source page: [[src-deer-flow]]."
     },
     {
       "primaryKey": "deer-flow-bootstrap-2026-08-24",
@@ -1611,13 +1611,13 @@
       "title": "Digests",
       "path": "ship/digests.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 28,
+      "outbound": 9,
       "unverified": false,
-      "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
+      "oneLiner": "Short briefs that still need an inbound link. Knowledge lives on the concept pages. Query with `python3 tools/sb ask`."
     },
     {
       "primaryKey": "disclosure-index",
@@ -1712,7 +1712,7 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "@omarsar0. Founder of dair.ai. Posted the Adversarial Review summary. Not a paper author."
@@ -1880,7 +1880,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -1992,7 +1992,7 @@
       "updated": "2026-08-25",
       "tags": "growth",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 28,
       "unverified": true,
       "oneLiner": "Generated from `growth/`. Not from chat memory. Target: **next AI UGC creator (unnamed)**."
@@ -2009,7 +2009,7 @@
       "inbound": 20,
       "outbound": 23,
       "unverified": false,
-      "oneLiner": "DeRonin GrowthOS. Notes in `growth/`. DEMO partners. Graph: output/growthos-graph.html"
+      "oneLiner": "DeRonin GrowthOS. Notes in `growth/`. DEMO partners"
     },
     {
       "primaryKey": "growthos-3d-gap-2026-08-25",
@@ -2020,7 +2020,7 @@
       "updated": "",
       "tags": "growth",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "Neither an Obsidian plugin nor a hunt for an existing cyberpunk clone. This vault already compiles a subgraph graph from `growth/` into `output/growthos-graph.html`. [[growth-operator]]"
@@ -2034,7 +2034,7 @@
       "updated": "",
       "tags": "growth",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Figma is disconnected (`needsAuth`). The DeRonin clip is a 3D WebGL orbit graph, so the live page is `output/growthos-graph.html`, not a 2D mock. Auth Figma later if you want a static chrome board."
@@ -2104,7 +2104,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 19,
+      "inbound": 18,
       "outbound": 25,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
@@ -2132,7 +2132,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
+      "inbound": 22,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump."
@@ -2174,7 +2174,7 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "@Johnsjawn. Bio on the ingested post: works at Notion, creates drinkorigin.co."
@@ -2231,7 +2231,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 30,
-      "outbound": 24,
+      "outbound": 21,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2244,7 +2244,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
+      "inbound": 9,
       "outbound": 50,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12."
@@ -2258,7 +2258,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
+      "inbound": 11,
       "outbound": 139,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
@@ -2426,7 +2426,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slic"
@@ -2482,7 +2482,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Built [[growth-operator]] from [[src-deronin-growthos-vault]]. Operator notes are in `growth/` with DEMO partners. Linked from [[GrowthOS]] and [[growth-core]]."
@@ -2566,7 +2566,7 @@
       "updated": "2026-08-27",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Changed: @_can1357 2026-08-27 pair compiled as [[daily-tool-replace]]. Know-better builders replace daily-flow apps in an hour tops. Hour is tweet wording, not a timed study."
@@ -2608,7 +2608,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "1. [[adversarial-review]] for the loop and the two tables."
@@ -2622,7 +2622,7 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Stanford CS PhD. Author of LLM-as-a-Verifier (arXiv:2607.05391) and the DeepSeek V4 Flash self-verification Terminal-Bench post."
@@ -2734,7 +2734,7 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "@mukul975. README citation: Jangra, Mahipal."
@@ -2762,7 +2762,7 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "@mavericktr24. GitHub `maverick-tr`. Shipped `agent-ultramode`: a `/ultra` command that productizes [[probabilistic-pivot-tournament]] for coding agents."
@@ -2776,7 +2776,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
+      "inbound": 22,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "A memory line earns its place only by deleting an answer the model would otherwise give."
@@ -2818,7 +2818,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
+      "inbound": 19,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "Upgrade path from a compiled markdown wiki to a checkable agent memory. Git markdown stays the store. Two claim tables exist (C17). Vector search stays parked. Disposable FTS5 already landed on main ("
@@ -2888,7 +2888,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `c5714e8` (skill-library sources; C20\u2013C25), then merged into `cursor/can1357-daily-tool-replace-186d`."
@@ -2902,7 +2902,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `a0e5609` (agent-facing docs / Disclosure Index), then merged into `cursor/can1357-daily-tool-replace-186d`."
@@ -2930,7 +2930,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `42ba5e3` (Can daily-tool-replace / C29), then merged into `cursor/ingest-exm7777-grok-bot-93be`."
@@ -2944,7 +2944,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `5927d29`, then merged into `cursor/ingest-maverick-ultramode-faac`."
@@ -2958,7 +2958,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `4bd2ee0`, then merged into `cursor/musk-algorithm-vault-d0be`."
@@ -2972,7 +2972,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `4be06ef` (Maverick `#5` already on main), then merged into `cursor/ingest-omarsar-adversarial-review-faac`."
@@ -2986,7 +2986,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 19,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `923f0f0`, then merged into `cursor/ingest-4ndrearossetti-openconnector-068c`."
@@ -3000,7 +3000,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `c9172cf`, then merged into `cursor/agent-facing-docs-8473`."
@@ -3056,8 +3056,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
-      "outbound": 14,
+      "inbound": 24,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
     },
@@ -3406,7 +3406,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 27,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Hybrid search over compiled pages. Markdown stays canonical. SQLite FTS5 is disposable."
@@ -3434,7 +3434,7 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "@rohit4verse. Article: how to give every coding agent the same second brain."
@@ -5702,7 +5702,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
+      "inbound": 15,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph."
@@ -6722,71 +6722,6 @@
     },
     {
       "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "andrej-karpathy"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "avid"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "elvis"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "hurley"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "jacky-kwok"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "mahipal-jangra"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "maverick"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "rohit"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "GrowthOS"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "agent-operating-system"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "claim-protocol"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "claims"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "contradictions"
-    },
-    {
-      "from": "Home",
       "linkType": "relatedTo",
       "to": "disclosures"
     },
@@ -6794,11 +6729,6 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "graph"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "how-it-works"
     },
     {
       "from": "Home",
@@ -6818,32 +6748,12 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
-      "to": "memory-system"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "musk-algorithm"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "retrieval"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
       "to": "ship"
     },
     {
       "from": "Home",
       "linkType": "relatedTo",
       "to": "twitter"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "vault-ontology"
     },
     {
       "from": "Home",
@@ -7203,16 +7113,6 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
-      "to": "index-papers"
-    },
-    {
-      "from": "MEMORY",
-      "linkType": "relatedTo",
-      "to": "index-sources"
-    },
-    {
-      "from": "MEMORY",
-      "linkType": "relatedTo",
       "to": "lanbb"
     },
     {
@@ -7364,11 +7264,6 @@
       "from": "TELOS",
       "linkType": "relatedTo",
       "to": "index"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "contradictions"
     },
     {
       "from": "Today",
@@ -9583,41 +9478,6 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "Today"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "daily-tool-replace-vault-2026-08-27"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "growth-briefing-2026-08-25"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "growthos-3d-gap-2026-08-25"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "gsap-figma-note-2026-08-25"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "index-papers"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-23"
     },
     {
@@ -9648,11 +9508,6 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-maverick-ultramode"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-voxyz"
     },
     {
@@ -9663,62 +9518,7 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-25-growthos"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-27-can1357-daily-tool"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-27-claim-protocol"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-omarsar-2026-08-24"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-daily-tool"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-daily-tool-2"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-grok-bot"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-musk"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-omarsar"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-x-ingest"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
       "from": "disclosure-index",
@@ -11178,11 +10978,6 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "GrowthOS"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "Home"
     },
     {
@@ -11219,11 +11014,6 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "decisions"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "deer-flow"
     },
     {
       "from": "index",
@@ -11289,11 +11079,6 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "ship"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "vault-ontology"
     },
     {
       "from": "index-papers",
@@ -15483,32 +15268,7 @@
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
-      "to": "Home"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "assign-execute-verify"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
       "to": "daily-tool-replace"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "decisions"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "graph"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "hunt-harden-loop"
     },
     {
       "from": "musk-algorithm",
@@ -15518,22 +15278,7 @@
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
-      "to": "index-papers"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "index-sources"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
       "to": "log"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "memory-ablation"
     },
     {
       "from": "musk-algorithm",

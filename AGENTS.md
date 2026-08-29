@@ -20,7 +20,7 @@ Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. 
 | `wiki/claims.csv` | agent | Compile of source `## Claims kept`. Dual store with `wiki/data/` is C17. Do not hand-edit. |
 | `wiki/log.md` | agent | Append-only timeline. Prefix every entry with `## [YYYY-MM-DD] kind \| title`. |
 | `eval/` | agent | Retrieval and provenance gold sets. |
-| `output/` | agent | Answers built from `wiki/`. Standing ingest brief is C38. |
+| `output/` | agent | Answers built from `wiki/`. No standing brief (C38). |
 | `.cache/secondbrain.sqlite` | agent | Disposable FTS index. Rebuild with `python3 tools/sb rebuild-index`. |
 | `MEMORY.md` | both | Durable facts only. A line stays if deleting it would change an answer. |
 | `decisions.md` | both | Locked choices. Do not reopen without new evidence. |
@@ -82,9 +82,7 @@ If a claim cannot be tied to the raw file or to a named source page: leave it ou
 
 `output/ontology-objects.csv` is a derived Palantir-style object table. Wiki markdown stays the store. No live Foundry or AIP objects.
 
-1. After ingest or a structural wiki edit, run `python3 tools/rebuild-ontology.py`.
-2. Check: `python3 tools/rebuild-ontology.py --check` exits 0.
-3. If the check fails: rebuild from wiki. Do not edit the CSV by hand. If Foundry credentials are missing: keep the local ontology. Do not create a Palantir account (D5).
+After ingest or a structural wiki edit, `python3 tools/rebuild-ontology.py --check` exits 0. Rebuild from wiki if the check fails. Do not edit the CSV by hand. If Foundry credentials are missing: keep the local ontology. Do not create a Palantir account (D5).
 
 Check: `python3 tools/sb validate` 0 and `python3 tools/rebuild-ontology.py --check` 0.
 If the CSV and wiki disagree: wiki wins.
@@ -97,7 +95,7 @@ Compiled claims are FACT, INFERENCE, or OPINION. Do not write an inference as if
 - INFERENCE: Z follows from named X + Y. `derived_from` lists those ids or slugs.
 - OPINION: a parked recommendation. It does not enter `MEMORY.md`.
 
-Check: a new `schema: memory-v1` concept page has at least one `## FACT`, `## INFERENCE`, or `## OPINION` heading. `python3 tools/lint-wiki.py` fails if none are present.
+Check: a new `schema: memory-v1` concept page has at least one `## FACT`, `## INFERENCE`, or `## OPINION` heading. `python3 tools/sb validate` fails if none are present.
 If the source is silent: do not emit a FACT.
 
 ## Provenance

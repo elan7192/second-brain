@@ -11,15 +11,7 @@ updated: 2026-08-29
 
 2026-08-29
 
-## Done
-
-[[musk-algorithm]] second vault pass. Deleted concept/people catalogs from the short door, standing ingest brief, dual lint command, and the graph mermaid dump.
-
-## Look at
-
-- [[musk-algorithm]]
-- [[log]]
-- [[contradictions]] C38
+See [[log]] and [[musk-algorithm]].
 
 ## Inbox
 

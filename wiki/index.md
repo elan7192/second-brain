@@ -9,7 +9,7 @@ updated: 2026-08-29
 
 # Index
 
-Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the query path. D12. Updated 2026-08-29.
+Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the query path. D12.
 
 ## Start
 
@@ -23,19 +23,15 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 - [[memory-system]] — provenance, labels, parked vector
 - [[llm-wiki]] — core architecture
 - [[claim-protocol]] — Claim → Evidence → Verification → Retrieval → Context → Answer
-- [[graph]] — concept-cluster snapshot
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
-- [[GrowthOS]] — growth operator door
-- [[vault-ontology]] — local Palantir-style object table
 
 ## Projects
 
 | Page | One line |
 | --- | --- |
-| [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners. Graph: output/growthos-graph.html |
+| [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners |
 | [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
-| [[deer-flow]] | ByteDance SuperAgent. Local clone at `/home/ubuntu/deer-flow` |
 
 ## Root files the agent must keep current
 

@@ -54,4 +54,4 @@ output/       briefs and the rendered graph
 .obsidian/    graph colors and workspace
 ```
 
-Lint: `python3 tools/lint-wiki.py`. Rebuild claims: `python3 tools/compile-claims.py`. Schema: `AGENTS.md`.
+Gate: `python3 tools/sb validate`. Rebuild claims: `python3 tools/compile-claims.py`. Schema: `AGENTS.md`.

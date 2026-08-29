@@ -31,18 +31,7 @@ Forces: low center pull, higher repel, longer link distance. Peer concept links 
 
 ## Islands
 
-Taken from [[agent-operating-system]].
-
-| Island | Pages |
-| --- | --- |
-| Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids, claim-protocol |
-| Memory | memory-engineering, memory-ablation, portable-memory, memory-system, claims, project-skill-stack |
-| Verification | verifiable-instructions, self-verification, anti-slop |
-| Harness | audited-task-contract, harness-routing, entropy-gate, secret-gateway, flat-context |
-| Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
-| People / sources | Sit with the concept they already cite |
-
-Home stays the door. agent-operating-system sits in the middle as the synthesis.
+Taken from [[agent-operating-system]]. Home stays the door. agent-operating-system sits in the middle as the synthesis.
 
 ## Snapshot
 
