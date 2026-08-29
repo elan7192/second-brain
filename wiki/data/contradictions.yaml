@@ -468,6 +468,6 @@ contradictions:
     reason: one Archify skill vs do-not-vendor packs
     status: resolved
     severity: low
-    resolution: copy only tt-a1i/archify to .agents/skills/archify; do not copy prompts into AGENTS.md
+    resolution: pin tt-a1i/archify; do not vendor renderers or copy prompts into AGENTS.md
     resolution_source: concept:archify
     page: contradictions.md

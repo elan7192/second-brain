@@ -381,7 +381,7 @@ claims:
   - id: claim:archify-is-project-diagram-skill
     subject: Archify
     predicate: is
-    object: the optional project diagram skill at .agents/skills/archify
+    object: a pinned external diagram skill (pin.json), not a vendored renderer
     confidence: high
     sources:
       - source:src-voxyz-archify

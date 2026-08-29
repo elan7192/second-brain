@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: unit tests
-        run: python3 -m unittest tests.test_secondbrain tests.test_gates tools.test_memory -q
+        run: python3 -m unittest tests.test_secondbrain tests.test_gates tests.test_archify_pin tools.test_memory -q
       - name: validate
         run: python3 tools/sb validate
       - name: health

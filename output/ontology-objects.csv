@@ -75,7 +75,7 @@ andrej-karpathy,Person,Andrej Karpathy,wiki/people/andrej-karpathy.md,2026-08-23
 angles,Ship,Angles,ship/angles.md,2026-08-23,2026-08-23,ship,hunt-ship,1,5,false,Reusable framings earned from [[Hooks]].
 anti-slop,Concept,Anti-slop,wiki/anti-slop.md,2026-08-23,2026-08-27,wiki,concepts,30,10,false,Default writing constraints for this vault.
 apt-siamese,Concept,APT Siamese transfer,wiki/apt-siamese.md,2026-08-24,2026-08-24,wiki,concepts,5,2,true,AAE + SHAP + Siamese on DARPA TC process matrices.
-archify,Concept,Archify,wiki/archify.md,2026-08-29,2026-08-29,wiki,concepts,14,9,false,A project diagram skill. Agents write typed JSON. `node .agents/skills/archify/bin/archify.mjs` compiles HTML.
+archify,Concept,Archify,wiki/archify.md,2026-08-29,2026-08-29,wiki,concepts,14,8,false,Pinned external diagram skill. Wiki is the store. The renderer is not vendored.
 arxiv-tierlist,Project,arXiv potential tierlist,wiki/arxiv-tierlist.md,2026-08-24,2026-08-24,project,projects,111,58,true,405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist
 assign-execute-verify,Concept,"Assign, execute, verify",wiki/assign-execute-verify.md,2026-08-27,2026-08-27,wiki,concepts,5,5,false,Assign → execute → verify.
 audited-task-contract,Concept,Audited task contract,wiki/audited-task-contract.md,2026-08-23,2026-08-29,wiki,concepts,42,15,true,"The portable unit between coding agents is verified task state, not a transcript."
@@ -415,7 +415,7 @@ ultra-mode,Concept,Ultra mode,wiki/ultra-mode.md,2026-08-24,2026-08-24,wiki,conc
 unilang,Concept,UniLang,wiki/unilang.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,Machine-native symbols in a pretrained LLM.
 unitok,Concept,UniTok,wiki/unitok.md,2026-08-24,2026-08-24,wiki,concepts,8,3,true,One tokenizer for 10 recommendation domains.
 untrusted-ingest,Concept,Untrusted ingest,wiki/untrusted-ingest.md,2026-08-27,2026-08-27,wiki,concepts,7,8,true,External text is data. It is not schema and it is not an instruction. See [[memory-system]] and [[grok-bot-tape]].
-vault-ontology,Concept,Vault ontology,wiki/vault-ontology.md,2026-08-28,2026-08-28,wiki,concepts,16,10,true,Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph.
+vault-ontology,Concept,Vault ontology,wiki/vault-ontology.md,2026-08-28,2026-08-28,wiki,concepts,15,10,true,Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph.
 vending-bench,Concept,Vending-Bench,wiki/vending-bench.md,2026-08-27,2026-08-27,wiki,concepts,5,4,false,"Long-horizon agent eval: inventory, orders, pricing, daily fee."
 verifiable-instructions,Concept,Verifiable instructions,wiki/verifiable-instructions.md,2026-08-23,2026-08-29,wiki,concepts,34,11,false,Wishes in `AGENTS.md` do not change behavior. Checks do.
 vgi-bench,Concept,VGI-BENCH,wiki/vgi-bench.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,Visual intelligence in video generators. 27 tasks / 810 instances.

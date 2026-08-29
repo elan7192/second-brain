@@ -28,7 +28,7 @@ Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. 
 | `CLAUDE.md` | both | Pointer at `AGENTS.md` only (D2). Do not copy this file into it. |
 | `maps/` `hunt/` `ship/` | agent | Obsidian navigation. Do not copy wiki prose into them. |
 | `.obsidian/` | both | Vault settings. Keep graph color groups. |
-| `.agents/skills/` | agent | Optional project skills. Markdown there is not wiki. `lint-wiki.py` skips `.agents` and `.cursor`. |
+| `.agents/skills/` | agent | Thin pins and vault skill stubs. Not wiki. Do not vendor renderer trees. `lint-wiki.py` skips `.agents` and `.cursor`. |
 
 ## Control surface
 

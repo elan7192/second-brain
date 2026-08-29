@@ -11,9 +11,13 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] hygiene | Archify pin, drop vendored runtime
+
+Review of #28. Removed renderer/examples/scripts from `.agents/skills/archify`. Left `pin.json`, vault `SKILL.md`, and upstream LICENSE. Dropped committed HTML/PNG. Tweet 2400x1260 is not a vault gate. C47 updated. See [[archify]].
+
 ## [2026-08-29] ingest | Voxyz Archify diagram skill
 
-Compiled [[src-voxyz-archify]] from https://x.com/voxyz_ai/status/2093677504179400946. Copied `tt-a1i/archify` to `.agents/skills/archify`. Wrote [[archify]] and `output/archify/vault-architecture.html`. Flagged C47. Did not copy the prompt into `AGENTS.md`. raw/ not written. C6 stays open.
+Compiled [[src-voxyz-archify]] from https://x.com/voxyz_ai/status/2093677504179400946. Copied `tt-a1i/archify` to `.agents/skills/archify`. Wrote [[archify]] and `output/archify/vault-architecture.html`. Flagged C47. Did not copy the prompt into `AGENTS.md`. raw/ not written. C6 stays open. Replaced the same day by the pin hygiene entry above.
 
 ## [2026-08-29] gate | PR27 adversarial tests and contract v1
 

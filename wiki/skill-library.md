@@ -61,7 +61,7 @@ Stale counts: [[contradictions]] C24. Scientific skill bodies were not copied.
 
 This vault compiles skill rules into pages and does not vendor marketplace dumps. That is [[anti-slop]]. Do not reopen D7 (Obsidian is the IDE).
 
-[[src-voxyz-archify]] is a named exception: lan E asked to integrate one diagram skill. Copy lives at `.agents/skills/archify`. See [[archify]] and C47.
+[[src-voxyz-archify]] is a named exception: lan E asked to integrate one diagram skill. Pin lives at `.agents/skills/archify/pin.json`. Renderer is not vendored. See [[archify]] and C47.
 
 Discovery instead of rebuild is the same bet as [[tokens-as-capital]]. The compiler store stays `wiki/`. See [[contradictions]] C20.
 

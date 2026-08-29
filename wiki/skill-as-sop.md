@@ -24,7 +24,7 @@ Source: [[src-skill-pack-list]].
 
 Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
 
-[[src-voxyz-archify]] is one local SOP lan E asked to install: [[archify]] at `.agents/skills/archify`. Do not copy its prompts into `AGENTS.md`. See C47.
+[[src-voxyz-archify]] is one local SOP lan E asked to pin: [[archify]] at `.agents/skills/archify/pin.json`. Do not vendor the renderer. Do not copy its prompts into `AGENTS.md`. See C47.
 
 If the next source is the Smoke script, ingest it. Until then do not invent the method.
 

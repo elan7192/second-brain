@@ -1,0 +1,11 @@
+{
+  "name": "archify",
+  "upstream": "https://github.com/tt-a1i/archify",
+  "commit": "0853a805003514776bef3593ecca091409828902",
+  "version": "2.16.0-dev.0",
+  "license": "MIT",
+  "skill_path": "archify/SKILL.md",
+  "cli": "archify/bin/archify.mjs",
+  "pinned_at": "2026-08-29",
+  "based_on": "Cocoon-AI/architecture-diagram-generator (MIT)"
+}

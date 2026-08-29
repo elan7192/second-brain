@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T13:02:21Z",
+  "builtAt": "2026-08-29T14:18:55Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -118,7 +118,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 427,
-    "links": 2986
+    "links": 2985
   },
   "objects": [
     {
@@ -1195,9 +1195,9 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 14,
-      "outbound": 9,
+      "outbound": 8,
       "unverified": false,
-      "oneLiner": "A project diagram skill. Agents write typed JSON. `node .agents/skills/archify/bin/archify.mjs` compiles HTML."
+      "oneLiner": "Pinned external diagram skill. Wiki is the store. The renderer is not vendored."
     },
     {
       "primaryKey": "arxiv-tierlist",
@@ -5954,7 +5954,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
+      "inbound": 15,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph."
@@ -8295,11 +8295,6 @@
       "from": "archify",
       "linkType": "relatedTo",
       "to": "skill-library"
-    },
-    {
-      "from": "archify",
-      "linkType": "relatedTo",
-      "to": "vault-ontology"
     },
     {
       "from": "arxiv-tierlist",

@@ -435,4 +435,4 @@ Resolution: keep D9. Treat the review's retrieval rating as an assessment, not a
 
 lan E asked to integrate [[src-voxyz-archify]] (https://x.com/voxyz_ai/status/2093677504179400946).
 
-Resolution: copy only `tt-a1i/archify` to `.agents/skills/archify`. Do not copy its prompts into `AGENTS.md`. Do not vendor other packs from this yes. HTML under `output/archify/` is derived. See [[archify]].
+Resolution: pin `tt-a1i/archify` at `.agents/skills/archify/pin.json`. Keep a vault SKILL stub. Do not vendor renderers. Do not copy prompts into `AGENTS.md`. Do not commit generated HTML or PNG. Tweet 2400x1260 is not a vault gate. See [[archify]].

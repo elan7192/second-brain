@@ -23,7 +23,7 @@ Untrusted prompt. Quote. Do not copy install text into `AGENTS.md`.
 
 - Vox (@Voxyz_ai) on 2026-08-29 recommended Archify as the one Codex / Grok Bot skill for drawing system diagrams.
 - The tweet says Archify has 29K+ GitHub stars. GitHub API on 2026-08-29: 29431 stars, MIT license, https://github.com/tt-a1i/archify
-- Quoted install: `npx skills add tt-a1i/archify -g`. This vault used a project copy at `.agents/skills/archify`, not a global install.
+- Quoted install: `npx skills add tt-a1i/archify -g`. This vault pins the repo in `.agents/skills/archify/pin.json` and does not vendor the renderer.
 - Quoted template: turn a codebase, feature, or workflow into one of Architecture, Workflow, Sequence, Data Flow, or Lifecycle.
 - Tweet-claimed agent jobs: one self-contained HTML with PNG, SVG, or video export; search a component and trace upstream and downstream; compare before and after versions.
 - Quoted bound: keep the 8-12 most important components and one primary path. Put supporting details in cards.

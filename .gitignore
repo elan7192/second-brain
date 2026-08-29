@@ -7,3 +7,8 @@
 *.sqlite
 __pycache__/
 *.pyc
+.agents/skills/archify/upstream/
+output/archify/*.html
+output/archify/*.png
+output/archify/*.receipt.json
+output/archify/*.visual-check.*

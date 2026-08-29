@@ -19,19 +19,40 @@ derived_from:
 
 # Archify
 
-A project diagram skill. Agents write typed JSON. `node .agents/skills/archify/bin/archify.mjs` compiles HTML.
+Pinned external diagram skill. Wiki is the store. The renderer is not vendored.
 
-Source: [[src-voxyz-archify]] ([[vox]], 2026-08-29). Repo: https://github.com/tt-a1i/archify
+Source: [[src-voxyz-archify]] ([[vox]], 2026-08-29). Upstream: https://github.com/tt-a1i/archify
 
 ## FACT
 
 [[src-voxyz-archify]] names Archify as Vox's default system-map skill for Codex / Grok Bot.
 
-The tweet quotes `npx skills add tt-a1i/archify -g`. This vault copied the skill to `.agents/skills/archify` after lan E asked to integrate the post. Global install was not used.
+The tweet quotes `npx skills add tt-a1i/archify -g`. This vault does not keep a global install and does not vendor the renderer tree.
 
-GitHub API on 2026-08-29: 29431 stars. MIT. README version string `v2.16.0-dev.0`. Five diagram types: architecture, workflow, sequence, dataflow, lifecycle.
+GitHub API on 2026-08-29: 29431 stars. MIT. Pin: `.agents/skills/archify/pin.json`. Commit `0853a805003514776bef3593ecca091409828902`. Version string `v2.16.0-dev.0`. LICENSE in that directory is upstream MIT (tt-a1i 2026; Cocoon AI 2025).
 
-Delivered vault map: `output/archify/vault-architecture.html` from `output/archify/vault-architecture.json`. PNG is 2048x1320 from Archify visual-check (`output/archify/vault-architecture.png`). The tweet asked for 2400x1260; that size was not produced. Wiki markdown stays the store. The HTML is derived, same class as `output/ontology-objects.csv`. See [[vault-ontology]] and [[graph]].
+`.agents/skills/archify/SKILL.md` is a vault-authored behavior change. It tells an agent when to fetch the pin and to follow upstream `archify/SKILL.md` after fetch. It is not documentation-only.
+
+Tweet size 2400x1260 is caption wording. It is not a vault gate. Archify `visual-check` uses 1440x900 and 2048x1320. Do not commit a PNG that claims to satisfy 2400x1260.
+
+## Why not vendor the runtime
+
+#28 copied renderers, schemas, examples, and scripts into git. That mixed ingest with an upstream checkout and hid the update boundary. C47 now pins the commit and fetches on demand. Wiki compile stays. See [[skill-library]].
+
+## Commit boundary
+
+| Path | Kind | Commit |
+| --- | --- | --- |
+| `wiki/` | ingested knowledge | yes |
+| `.agents/skills/archify/pin.json` | vault pin | yes |
+| `.agents/skills/archify/SKILL.md` | vault behavior stub | yes |
+| `.agents/skills/archify/LICENSE` | upstream MIT copy | yes |
+| `.agents/skills/archify/upstream/` | checkout of the pin | no |
+| `output/archify/*.json` | authored IR | local only |
+| `output/archify/*.html` `*.png` receipts | generated | no |
+| `output/ontology-objects.csv` | vault ontology | yes, existing product |
+
+Update: bump `commit` in `pin.json`, run `python3 tools/fetch-archify.py --check`, then fetch. Do not copy new upstream files into git.
 
 ## INFERENCE
 
@@ -39,11 +60,11 @@ A checked HTML map can show the ingest and query path without replacing `python3
 
 ## OPINION
 
-Keep the skill local. Do not copy Archify prompts into `AGENTS.md`. Do not vendor other public packs from this yes. See C47 and [[skill-as-sop]].
+Do not copy Archify prompts into `AGENTS.md`. Do not vendor other public packs from this yes. See C47 and [[skill-as-sop]].
 
 ## Check
 
-`python3 tools/sb ingest-check src-voxyz-archify` exits 0. `node .agents/skills/archify/bin/archify.mjs validate architecture output/archify/vault-architecture.json --quality showcase --json` reports 0 composition errors. If the skill is missing: stop and name the gap. Do not invent a second diagram runtime.
+`python3 tools/sb ingest-check src-voxyz-archify` exits 0. `python3 tools/fetch-archify.py --check` exits 0. `git ls-files .agents/skills/archify` is only `LICENSE`, `SKILL.md`, and `pin.json`. If fetch is needed and fails: stop and name the gap. Do not invent a second diagram runtime.
 
 ## Related
 
