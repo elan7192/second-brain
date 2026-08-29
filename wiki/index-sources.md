@@ -15,6 +15,10 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-voxyz-writing-system]] | 2026-08-24 | 6/6 /goal writing prompt. C43 third list. C6 still open |
+| [[src-alexprompter-claude-projects]] | 2026-08-24 | Quote of Claude Projects how-to. C42 not this vault |
+| [[src-avichawla-trueforge]] | 2026-08-24 | TrueForge article. 2.7x unverified. C41 |
+| [[src-4ndrearossetti-openconnector]] | 2026-08-24 | Reply quoting OpenConnector. C40 browser vs API catalog |
 | [[src-chatgpt-t-6a8cc267]] | 2026-08-24 | ChatGPT ZIP claim. File 401/403. C36 |
 | [[src-avid-company-foundry]] | 2026-08-24 | Grok+Obsidian Jarvis clip. Quoted Company Foundry article. C31 |
 | [[src-deer-flow]] | 2026-08-24 | bytedance/deer-flow Install.md bootstrap. C32 |

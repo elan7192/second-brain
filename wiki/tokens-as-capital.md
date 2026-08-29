@@ -32,6 +32,8 @@ Treat a token as an investment, not a per-query bill.
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]] · [[agent-facing-docs]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]] · [[agent-facing-docs]] · [[flat-context]]
 
 [[trace]] paper: one-pass attribution is 16x fewer LLM calls than iterative per-node. Tweet 4.2x token cut is `unverified`.
+
+[[src-avichawla-trueforge]] 2.7x is agent-harness runtime tokens, not wiki compile tokens. Do not mix with 305k vs 47k. See [[flat-context]] and [[contradictions]] C41.

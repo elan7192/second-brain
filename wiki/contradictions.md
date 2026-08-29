@@ -59,6 +59,8 @@ Resolution: D3. Profile files may exist. They may only hold facts that change an
 
 Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear.
 
+[[src-voxyz-writing-system]] is a later `/goal` writing prompt (6/6). It is not those eight blocks. C6 stays open.
+
 ## C7. Income claim
 
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
@@ -352,3 +354,47 @@ Resolution: unresolved. Do not add a new brief. Do not delete existing briefs. W
 Layout table used to say keep `AGENTS.md` and `CLAUDE.md` identical. D2 says `CLAUDE.md` only points at `AGENTS.md`.
 
 Resolution: D2 wins. Pointer only. Remap: was C15 on the musk-algorithm branch. Main C15 is Foundry 3D vs Palantir Foundry.
+
+## C40. Browser inject vs API-action catalog
+
+Steve Faulkner asked how to inject a password into a computer-use browser field after approval, without the model seeing it.
+
+[[src-4ndrearossetti-openconnector]] replies by quoting OpenConnector, an API-action gateway (catalog of SaaS actions; secrets stay in the runtime).
+
+Resolution: keep the shared rule on [[secret-gateway]] (credentials out of context). Do not treat the quoted product as the browser injector.
+
+Remap: was C14 on the openconnector ingest branch. Main C14 is eptwts $100k / 10 months.
+
+## C41. TrueForge 2.7x vs 40% vs vendor table
+
+[[src-avichawla-trueforge]] title: cut agent tokens by 2.7x.
+
+Body: about 40% of Claude Managed Agents tokens and under a quarter of deepagents'. Conclusion says two harnesses. The bench names three.
+
+Linked vendor blog table: 3.8M vs 10M vs 16.5M tokens. Blog prose also says about 2.5x cheaper vs the open harness.
+
+Resolution: sponsored article, no paper, X figures unread. Do not pick a multiplier. See [[flat-context]].
+
+Remap: was C15 on this branch. Main C15 is Foundry 3D vs Palantir Foundry.
+
+## C42. Claude Projects vs compiler vault
+
+[[src-alexprompter-claude-projects]] describes Claude Projects as a persistent memory layer in the product (files, instructions, skills). Suggested folders: `/reference`, `/analysis`, `/deliverables`.
+
+This vault compiles `raw/` into `wiki/`. See D1 and [[llm-wiki]].
+
+Resolution: keep D1. Do not treat Claude Projects as the vault wiki. Do not adopt those folders. See [[project-skill-stack]] and C2.
+
+Remap: was C16 on this branch. Main C16 is Headlong one stream vs entropy gate.
+
+## C43. Three writing systems
+
+D6 writing default is juampi's ranked ten, compiled into [[anti-slop]].
+
+[[src-openagentskill-anti-slop]] is a second ten. See C8.
+
+[[src-voxyz-writing-system]] is a third: seven `/goal` rules plus a global-install prompt.
+
+Resolution: keep D6. Do not vendor the Voxyz prompt into `AGENTS.md`. Do not merge the three lists.
+
+Remap: was C17 on this branch. Main C17 is two claim registries.

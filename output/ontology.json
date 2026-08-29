@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T19:13:38Z",
+  "builtAt": "2026-08-28T19:22:30Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 15,
-    "unverified": 90,
+    "unverified": 96,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 49,
-    "Concept": 117,
+    "Ship": 54,
+    "Concept": 120,
     "Project": 2,
     "Person": 12,
-    "Source": 133,
+    "Source": 137,
     "Decision": 12,
-    "Contradiction": 39,
-    "objects": 392,
-    "links": 2774
+    "Contradiction": 43,
+    "objects": 408,
+    "links": 2925
   },
   "objects": [
     {
@@ -598,6 +598,62 @@
       "oneLiner": "Resolution: compatible. Share a small audited contract. Do not share transcripts or unverified peer claims."
     },
     {
+      "primaryKey": "C40",
+      "objectType": "Contradiction",
+      "title": "Browser inject vs API-action catalog",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Steve Faulkner asked how to inject a password into a computer-use browser field after approval, without the model seeing it."
+    },
+    {
+      "primaryKey": "C41",
+      "objectType": "Contradiction",
+      "title": "TrueForge 2.7x vs 40% vs vendor table",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Body: about 40% of Claude Managed Agents tokens and under a quarter of deepagents'. Conclusion says two harnesses. The bench names three."
+    },
+    {
+      "primaryKey": "C42",
+      "objectType": "Contradiction",
+      "title": "Claude Projects vs compiler vault",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "This vault compiles `raw/` into `wiki/`. See D1 and [[llm-wiki]]."
+    },
+    {
+      "primaryKey": "C43",
+      "objectType": "Contradiction",
+      "title": "Three writing systems",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-28",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "D6 writing default is juampi's ranked ten, compiled into [[anti-slop]]."
+    },
+    {
       "primaryKey": "C5",
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
@@ -621,7 +677,7 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 2,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear."
     },
@@ -900,8 +956,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
-      "outbound": 66,
+      "inbound": 15,
+      "outbound": 71,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -929,7 +985,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 6,
-      "outbound": 18,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "2026-08-28"
     },
@@ -970,8 +1026,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 31,
-      "outbound": 46,
+      "inbound": 37,
+      "outbound": 53,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -1054,8 +1110,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
-      "outbound": 9,
+      "inbound": 30,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Default writing constraints"
     },
@@ -1110,8 +1166,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 33,
-      "outbound": 9,
+      "inbound": 36,
+      "outbound": 11,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
     },
@@ -1404,8 +1460,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 37,
-      "outbound": 17,
+      "inbound": 40,
+      "outbound": 19,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
     },
@@ -1418,8 +1474,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 119,
-      "outbound": 63,
+      "inbound": 133,
+      "outbound": 71,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1559,7 +1615,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 23,
+      "outbound": 28,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1670,8 +1726,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
-      "outbound": 17,
+      "inbound": 45,
+      "outbound": 18,
       "unverified": true,
       "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
     },
@@ -1730,6 +1786,20 @@
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
+    },
+    {
+      "primaryKey": "flat-context",
+      "objectType": "Concept",
+      "title": "Flat context",
+      "path": "wiki/flat-context.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 13,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Load what the run needs. Offload the rest"
     },
     {
       "primaryKey": "flow-matching-pso",
@@ -1810,7 +1880,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -1992,8 +2062,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
-      "outbound": 20,
+      "inbound": 42,
+      "outbound": 26,
       "unverified": true,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
@@ -2076,8 +2146,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
-      "outbound": 19,
+      "inbound": 38,
+      "outbound": 20,
       "unverified": false,
       "oneLiner": "File first. Scouts stay quiet. Human final yes"
     },
@@ -2160,8 +2230,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 29,
-      "outbound": 99,
+      "inbound": 30,
+      "outbound": 102,
       "unverified": true,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-28"
     },
@@ -2188,8 +2258,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
-      "outbound": 135,
+      "inbound": 13,
+      "outbound": 139,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2278,6 +2348,48 @@
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-24-4ndrearossetti",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 4ndrearossetti",
+      "path": "output/ingest-brief-2026-08-24-4ndrearossetti.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 2,
+      "unverified": true,
+      "oneLiner": "Andrea Rossetti replied to Steve Faulkner by quoting Alex Veremeyenko's OpenConnector thread."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-alexprompter",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 alex_prompter Claude Projects",
+      "path": "output/ingest-brief-2026-08-24-alexprompter.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Alex Prompter quoted Mr. Claude on Claude Projects as a persistent memory layer."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-avichawla",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 avichawla TrueForge",
+      "path": "output/ingest-brief-2026-08-24-avichawla.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "Avi Chawla X article on TrueForge. New page: [[flat-context]]. Credentials-in-harness extends [[secret-gateway]]."
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-24-chatgpt-share",
       "objectType": "Ship",
       "title": "Ingest brief \u00b7 2026-08-24 \u00b7 ChatGPT share",
@@ -2318,6 +2430,20 @@
       "outbound": 9,
       "unverified": false,
       "oneLiner": "`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slic"
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-voxyz",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 2026-08-24 \u00b7 Voxyz writing system",
+      "path": "output/ingest-brief-2026-08-24-voxyz.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 1,
+      "unverified": false,
+      "oneLiner": "Voxyz 6/6 `/goal` prompt: one writing system in global CLAUDE.md / AGENTS.md, project voice stays local."
     },
     {
       "primaryKey": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -2538,8 +2664,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 66,
-      "outbound": 36,
+      "inbound": 71,
+      "outbound": 37,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2567,7 +2693,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 227,
+      "outbound": 235,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2678,8 +2804,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 32,
-      "outbound": 27,
+      "inbound": 35,
+      "outbound": 29,
       "unverified": true,
       "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
     },
@@ -2850,6 +2976,20 @@
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `4be06ef` (Maverick `#5` already on main), then merged into `cursor/ingest-omarsar-adversarial-review-faac`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-28-x-ingest",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 X ingest vs main",
+      "path": "output/merge-conflict-report-2026-08-28-x-ingest.md",
+      "created": "2026-08-28",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 3,
+      "outbound": 19,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `923f0f0`, then merged into `cursor/ingest-4ndrearossetti-openconnector-068c`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -3132,6 +3272,20 @@
       "oneLiner": "Empty. File links here. Ingest into `raw/` before they become wiki pages."
     },
     {
+      "primaryKey": "project-skill-stack",
+      "objectType": "Concept",
+      "title": "Project skill stack",
+      "path": "wiki/project-skill-stack.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 13,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Projects hold context. Skills hold how the model acts"
+    },
+    {
       "primaryKey": "provenance",
       "objectType": "Concept",
       "title": "Provenance",
@@ -3314,6 +3468,20 @@
       "oneLiner": "Scenario-conditioned sim-to-real policy evaluation."
     },
     {
+      "primaryKey": "secret-gateway",
+      "objectType": "Concept",
+      "title": "Secret gateway",
+      "path": "wiki/secret-gateway.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 16,
+      "outbound": 8,
+      "unverified": true,
+      "oneLiner": "Credentials stay in a runtime. Model context does not hold them"
+    },
+    {
       "primaryKey": "self-verification",
       "objectType": "Concept",
       "title": "Self-verification",
@@ -3468,6 +3636,20 @@
       "oneLiner": "Line-level ablation on a 104-line memory file. 71 lines never changed an answer. Facts survived. Adjectives died. Do not let a model audit memory it wrote."
     },
     {
+      "primaryKey": "src-4ndrearossetti-openconnector",
+      "objectType": "Source",
+      "title": "src-4ndrearossetti-openconnector",
+      "path": "wiki/sources/src-4ndrearossetti-openconnector.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 5,
+      "unverified": true,
+      "oneLiner": "Reply to Steve Faulkner (@southpolesteve, 2091632440242573786). Body is a mention plus a quote of Alex Veremeyenko (@alex_verem, 2091165832592413114)."
+    },
+    {
       "primaryKey": "src-agentmemoryl-aml-s2",
       "objectType": "Source",
       "title": "src-agentmemoryl-aml-s2",
@@ -3480,6 +3662,20 @@
       "outbound": 1,
       "unverified": true,
       "oneLiner": "Agent Memory Leaderboard exists: https://github.com/AML-memory/agent-memory-leaderboard and https://agentmemoryleaderboard.ai/docs. Textual and coding tracks. Challenge 2026 opened 2026-07-29."
+    },
+    {
+      "primaryKey": "src-alexprompter-claude-projects",
+      "objectType": "Source",
+      "title": "src-alexprompter-claude-projects",
+      "path": "wiki/sources/src-alexprompter-claude-projects.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "alex_prompter body names claudeskills101 as a Claude tutorial account. Adjective dropped."
     },
     {
       "primaryKey": "src-andonlabs-vending-bench",
@@ -4294,6 +4490,20 @@
       "oneLiner": "Portable memory. Git is source of truth. SQLite FTS5 is a disposable index. Redact rolls back; it does not erase. MCP tool descriptions say WHEN, not WHAT. FTS prefix rewrite."
     },
     {
+      "primaryKey": "src-avichawla-trueforge",
+      "objectType": "Source",
+      "title": "src-avichawla-trueforge",
+      "path": "wiki/sources/src-avichawla-trueforge.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 11,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "X article. Closing line thanks TrueFoundry for working on it. Sponsored. No paper."
+    },
+    {
       "primaryKey": "src-avid-company-foundry",
       "objectType": "Source",
       "title": "src-avid-company-foundry",
@@ -4400,7 +4610,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 2,
       "unverified": true,
       "oneLiner": "Product: ChatChat agents with a \"Living Brain\", tools, skills, group chat. Persistent context across turns."
@@ -5114,7 +5324,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "A 10-skill anti-slop list. Not the same list as [[src-juampi-anti-slop-rank]]. OpenAgentSkill also hosts dmmulroy/anti-slop (Oxlint for TS/JS), which is code lint, not juampi's writing rank."
@@ -5268,7 +5478,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": true,
       "oneLiner": "Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness."
@@ -5296,10 +5506,24 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
+    },
+    {
+      "primaryKey": "src-voxyz-writing-system",
+      "objectType": "Source",
+      "title": "src-voxyz-writing-system",
+      "path": "wiki/sources/src-voxyz-writing-system.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 12,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Sixth `/goal` prompt, labeled 6/6. Install one writing system in global `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep each project's voice in project-level files. Audit dupl"
     },
     {
       "primaryKey": "stable-ids",
@@ -5366,8 +5590,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 37,
-      "outbound": 17,
+      "inbound": 40,
+      "outbound": 20,
       "unverified": true,
       "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
     },
@@ -5506,8 +5730,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
-      "outbound": 8,
+      "inbound": 29,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Behavior, check, failure path. No wishes"
     },
@@ -6162,6 +6386,76 @@
       "to": "entropy-gate"
     },
     {
+      "from": "C40",
+      "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "C40",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C40",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
+      "from": "C41",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "C41",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C41",
+      "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "C42",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "C42",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C42",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "C42",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "C43",
+      "linkType": "cites",
+      "to": "src-openagentskill-anti-slop"
+    },
+    {
+      "from": "C43",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "C43",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C43",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
       "from": "C5",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -6180,6 +6474,11 @@
       "from": "C6",
       "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "C6",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "C6",
@@ -6809,6 +7108,11 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
       "to": "src-chatgpt-t-6a8cc267"
     },
     {
@@ -6850,6 +7154,11 @@
       "from": "MEMORY",
       "linkType": "cites",
       "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "MEMORY",
@@ -6920,6 +7229,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "context-compaction"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "contradictions"
     },
     {
       "from": "MEMORY",
@@ -7069,6 +7383,11 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
       "to": "provenance"
     },
     {
@@ -7085,6 +7404,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "MEMORY",
@@ -7199,6 +7523,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "headlong"
     },
     {
@@ -7234,12 +7563,27 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-x-ingest"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "Today",
@@ -7324,6 +7668,21 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-avid-company-foundry"
     },
     {
@@ -7370,6 +7729,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "agent-operating-system",
@@ -7430,6 +7794,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "eval-suite"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "flat-context"
     },
     {
       "from": "agent-operating-system",
@@ -7499,6 +7868,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
       "to": "raptor-dispatch"
     },
     {
@@ -7510,6 +7884,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "agent-operating-system",
@@ -7720,6 +8099,11 @@
       "from": "anti-slop",
       "linkType": "cites",
       "to": "src-openagentskill-anti-slop"
+    },
+    {
+      "from": "anti-slop",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "anti-slop",
@@ -8074,6 +8458,11 @@
     {
       "from": "audited-task-contract",
       "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "cites",
       "to": "src-avid-company-foundry"
     },
     {
@@ -8115,6 +8504,11 @@
       "from": "audited-task-contract",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "avid",
@@ -8629,6 +9023,11 @@
     {
       "from": "context-graph",
       "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "cites",
       "to": "src-avid-obsidian-agent-team"
     },
     {
@@ -8684,6 +9083,11 @@
     {
       "from": "context-graph",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
       "to": "retrieval"
     },
     {
@@ -8724,6 +9128,16 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-arxiv-2510-03744"
     },
     {
@@ -8745,6 +9159,11 @@
       "from": "contradictions",
       "linkType": "cites",
       "to": "src-arxiv-2608-19514"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
     },
     {
       "from": "contradictions",
@@ -8863,6 +9282,11 @@
     },
     {
       "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "contradictions",
       "linkType": "relatedTo",
       "to": "MEMORY"
     },
@@ -8919,6 +9343,11 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "foundry-3d"
     },
     {
@@ -8959,6 +9388,11 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "memory-ablation"
     },
     {
@@ -8989,12 +9423,22 @@
     {
       "from": "contradictions",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
       "to": "retrieval"
     },
     {
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "contradictions",
@@ -9389,12 +9833,32 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-4ndrearossetti"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-alexprompter"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-avichawla"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-disclosure-index"
     },
     {
       "from": "digests",
       "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-maverick-ultramode"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz"
     },
     {
       "from": "digests",
@@ -9450,6 +9914,11 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-omarsar"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-x-ingest"
     },
     {
       "from": "digests",
@@ -9590,6 +10059,11 @@
       "from": "entropy-gate",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "entropy-gate",
+      "linkType": "relatedTo",
+      "to": "flat-context"
     },
     {
       "from": "entropy-gate",
@@ -9765,6 +10239,41 @@
       "from": "file-memory",
       "linkType": "relatedTo",
       "to": "vault-ontology"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "cites",
+      "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
+      "from": "flat-context",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "flow-matching-pso",
@@ -10319,6 +10828,16 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-avid-company-foundry"
     },
     {
@@ -10358,6 +10877,11 @@
     },
     {
       "from": "harness-routing",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
     },
@@ -10369,12 +10893,22 @@
     {
       "from": "harness-routing",
       "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
       "to": "daily-tool-replace"
     },
     {
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "entropy-gate"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "flat-context"
     },
     {
       "from": "harness-routing",
@@ -10400,6 +10934,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "harness-routing",
@@ -10784,6 +11323,11 @@
     {
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
       "to": "ship"
     },
     {
@@ -11079,6 +11623,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "graph"
     },
     {
@@ -11234,6 +11783,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "provenance"
     },
     {
@@ -11255,6 +11809,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "index",
@@ -11609,7 +12168,17 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-agentmemoryl-aml-s2"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
     },
     {
       "from": "index-sources",
@@ -11900,6 +12469,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-av1dlive-portable-memory"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
     },
     {
       "from": "index-sources",
@@ -12263,6 +12837,11 @@
     },
     {
       "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "index-sources",
       "linkType": "relatedTo",
       "to": "index"
     },
@@ -12427,6 +13006,41 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "ingest-brief-2026-08-24-4ndrearossetti",
+      "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-4ndrearossetti",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-alexprompter",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-alexprompter",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-avichawla",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-avichawla",
+      "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-avichawla",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
       "from": "ingest-brief-2026-08-24-chatgpt-share",
       "linkType": "cites",
       "to": "src-chatgpt-t-6a8cc267"
@@ -12505,6 +13119,11 @@
       "from": "ingest-brief-2026-08-24-maverick-ultramode",
       "linkType": "relatedTo",
       "to": "ultra-mode"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -13029,6 +13648,11 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "retrieval"
     },
     {
@@ -13134,6 +13758,16 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-arxiv-batch01"
     },
     {
@@ -13185,6 +13819,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-av1dlive-loop-graph-2026-08-26"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
     },
     {
       "from": "log",
@@ -13410,6 +14049,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skill-pack-list"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "log",
@@ -13650,6 +14294,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "flat-context"
     },
     {
       "from": "log",
@@ -13949,6 +14598,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-28-x-ingest"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
@@ -14029,6 +14683,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "provenance"
     },
     {
@@ -14080,6 +14739,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "scape"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
     },
     {
       "from": "log",
@@ -14429,6 +15093,11 @@
     {
       "from": "memory-engineering",
       "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "cites",
       "to": "src-avid-company-foundry"
     },
     {
@@ -14530,6 +15199,11 @@
       "from": "memory-engineering",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "memory-engineering",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
     },
     {
       "from": "memory-engineering",
@@ -15167,6 +15841,101 @@
       "to": "ultra-mode"
     },
     {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "MEMORY"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-x-ingest",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
       "linkType": "relatedTo",
       "to": "Home"
@@ -15697,6 +16466,36 @@
       "to": "ultra-mode"
     },
     {
+      "from": "project-skill-stack",
+      "linkType": "cites",
+      "to": "src-alexprompter-claude-projects"
+    },
+    {
+      "from": "project-skill-stack",
+      "linkType": "cites",
+      "to": "src-chatchat-living-brain"
+    },
+    {
+      "from": "project-skill-stack",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "project-skill-stack",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "project-skill-stack",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "project-skill-stack",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
       "from": "provenance",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
@@ -16070,6 +16869,46 @@
       "from": "scape",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "cites",
+      "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "secret-gateway",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
     },
     {
       "from": "self-verification",
@@ -16447,9 +17286,64 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "src-4ndrearossetti-openconnector",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-4ndrearossetti-openconnector",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-4ndrearossetti-openconnector",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-4ndrearossetti-openconnector",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-4ndrearossetti-openconnector",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
       "from": "src-agentmemoryl-aml-s2",
       "linkType": "relatedTo",
       "to": "memory-engineering"
+    },
+    {
+      "from": "src-alexprompter-claude-projects",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-alexprompter-claude-projects",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-alexprompter-claude-projects",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-alexprompter-claude-projects",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-alexprompter-claude-projects",
+      "linkType": "relatedTo",
+      "to": "memory-engineering"
+    },
+    {
+      "from": "src-alexprompter-claude-projects",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
     },
     {
       "from": "src-andonlabs-vending-bench",
@@ -17495,6 +18389,41 @@
       "from": "src-av1dlive-portable-memory",
       "linkType": "relatedTo",
       "to": "portable-memory"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "flat-context"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "secret-gateway"
+    },
+    {
+      "from": "src-avichawla-trueforge",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "src-avid-company-foundry",
@@ -18762,6 +19691,36 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "src-voxyz-writing-system",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "stable-ids",
       "linkType": "relatedTo",
       "to": "claims"
@@ -18844,6 +19803,11 @@
     {
       "from": "tokens-as-capital",
       "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
     },
     {
@@ -18895,6 +19859,16 @@
       "from": "tokens-as-capital",
       "linkType": "relatedTo",
       "to": "context-graph"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
+      "to": "flat-context"
     },
     {
       "from": "tokens-as-capital",
@@ -19225,6 +20199,11 @@
       "from": "verifiable-instructions",
       "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
     },
     {
       "from": "verifiable-instructions",

@@ -64,6 +64,9 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 | [[verifiable-instructions]] | Behavior, check, failure path. No wishes |
 | [[audited-task-contract]] | Portable verified state across coding harnesses |
 | [[harness-routing]] | Route model and harness by phase, not by turn |
+| [[secret-gateway]] | Credentials stay in a runtime. Model context does not hold them |
+| [[flat-context]] | Load what the run needs. Offload the rest |
+| [[project-skill-stack]] | Projects hold context. Skills hold how the model acts |
 | [[headlong]] | Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run |
 | [[entropy-gate]] | Isolated workers. Validated diffs. Kill unverified drift |
 | [[self-verification]] | Sample several answers, score them, keep the winner |

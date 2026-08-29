@@ -13,10 +13,19 @@ updated: 2026-08-28
 
 ## Done
 
-Merged origin/main into the omarsar-adversarial-review branch. C10 remapped to C35. C17 / C18 / C25 still unresolved.
+Merged origin/main into the openconnector X ingest branch. Branch flags remapped C14→C40, C15→C41, C16→C42, C17→C43. C17 / C18 / C25 / C37 / C38 still unresolved.
 
 ## Look at
 
+- [[secret-gateway]]
+- [[flat-context]]
+- [[project-skill-stack]]
+- [[contradictions]] C40 C41 C42 C43
+- `output/ingest-brief-2026-08-24-4ndrearossetti.md`
+- `output/ingest-brief-2026-08-24-avichawla.md`
+- `output/ingest-brief-2026-08-24-alexprompter.md`
+- `output/ingest-brief-2026-08-24-voxyz.md`
+- [[merge-conflict-report-2026-08-28-x-ingest]]
 - [[adversarial-review]]
 - [[contradictions]] C35
 - `output/ingest-brief-omarsar-2026-08-24.md`

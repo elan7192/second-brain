@@ -58,4 +58,4 @@ A third source for "more agents is the wrong default." LiveCodeBench: 3-agent AR
 
 [[headlong]] is one mind, one stream, many people. Flag, do not merge: C16. Vault keeps isolation. Headlong stays a trial CLI, not the compiler runtime.
 
-[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[claim-protocol]] · [[headlong]] · [[grok-bot]] · [[company-foundry]] · [[ultra-mode]] · [[adversarial-review]] · [[src-chatgpt-t-6a8cc267]]
+[[audited-task-contract]] · [[harness-routing]] · [[self-verification]] · [[memory-engineering]] · [[claim-protocol]] · [[headlong]] · [[grok-bot]] · [[company-foundry]] · [[ultra-mode]] · [[adversarial-review]] · [[src-chatgpt-t-6a8cc267]] · [[flat-context]]

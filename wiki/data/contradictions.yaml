@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C39 must match that page.
+# Codes C1–C43 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -390,4 +390,44 @@ contradictions:
     severity: low
     resolution: D2 wins; pointer only
     resolution_source: decision:one-schema-two-filenames
+    page: contradictions.md
+
+  - id: contradiction:c40
+    claim_a: source:src-4ndrearossetti-openconnector
+    claim_b: concept:secret-gateway
+    reason: browser field inject vs API-action catalog
+    status: resolved
+    severity: medium
+    resolution: keep the shared credentials-out-of-context rule; do not treat OpenConnector as the browser injector
+    resolution_source: concept:secret-gateway
+    page: contradictions.md
+
+  - id: contradiction:c41
+    claim_a: source:src-avichawla-trueforge
+    claim_b: concept:flat-context
+    reason: TrueForge title 2.7x vs body 40 percent vs vendor table
+    status: unverified
+    severity: medium
+    resolution: sponsored article, no paper; do not pick a multiplier
+    resolution_source: concept:flat-context
+    page: contradictions.md
+
+  - id: contradiction:c42
+    claim_a: source:src-alexprompter-claude-projects
+    claim_b: concept:project-skill-stack
+    reason: Claude Projects product workspace vs this compiler vault
+    status: resolved
+    severity: medium
+    resolution: keep D1; do not treat Claude Projects as the vault wiki; do not adopt those folders
+    resolution_source: concept:project-skill-stack
+    page: contradictions.md
+
+  - id: contradiction:c43
+    claim_a: source:src-voxyz-writing-system
+    claim_b: concept:anti-slop
+    reason: third writing list vs D6 juampi default
+    status: resolved
+    severity: medium
+    resolution: keep D6; do not vendor the Voxyz prompt into AGENTS.md; C6 stays open
+    resolution_source: concept:anti-slop
     page: contradictions.md

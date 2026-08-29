@@ -43,7 +43,7 @@ A company skill catalog in Notion, or a GitHub folder of agent skills, is a prod
 
 ## Related
 
-[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[src-chatgpt-t-6a8cc267]] · [[how-it-works]] · [[skill-library]] · [[retrieval-second-brain]] · [[grok-bot]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]] · [[agent-facing-docs]] · [[company-foundry]]
+[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[src-chatgpt-t-6a8cc267]] · [[how-it-works]] · [[skill-library]] · [[retrieval-second-brain]] · [[grok-bot]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]] · [[agent-facing-docs]] · [[company-foundry]] · [[project-skill-stack]]
 
 [[src-chatgpt-t-6a8cc267]] is a public ChatGPT share that claimed a full upgraded snapshot ZIP not pushed to GitHub. ZIP missing. Do not treat that snapshot as this wiki. See C36.
 

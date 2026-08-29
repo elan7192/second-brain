@@ -36,9 +36,9 @@ Taken from [[agent-operating-system]].
 | Island | Pages |
 | --- | --- |
 | Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids, claim-protocol |
-| Memory | memory-engineering, memory-ablation, portable-memory, memory-system, claims |
+| Memory | memory-engineering, memory-ablation, portable-memory, memory-system, claims, project-skill-stack |
 | Verification | verifiable-instructions, self-verification, anti-slop |
-| Harness | audited-task-contract, harness-routing, entropy-gate |
+| Harness | audited-task-contract, harness-routing, entropy-gate, secret-gateway, flat-context |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
 | People / sources | Sit with the concept they already cite |
 
@@ -72,8 +72,10 @@ flowchart TB
     memory-engineering
     memory-system
     portable-memory
+    project-skill-stack
     provenance
     src-0xcodio-memory-ablation
+    src-alexprompter-claude-projects
     untrusted-ingest
   end
   subgraph verification[Verification]
@@ -83,6 +85,7 @@ flowchart TB
     src-jacky-self-verification
     src-juampi-anti-slop-rank
     src-voxyz-verifiable-instructions
+    src-voxyz-writing-system
     stale-fact-detector
     verifiable-instructions
   end
@@ -98,6 +101,10 @@ flowchart TB
     harness-routing
     headlong
     rohit
+    secret-gateway
+    flat-context
+    src-4ndrearossetti-openconnector
+    src-avichawla-trueforge
     src-can1357-daily-tool-replace-2026-08-27
     src-exm7777-grok-bot-money
     src-hitu-entropy-engineering
@@ -650,5 +657,28 @@ flowchart TB
   src-laude-headlong --> src-hxiao-headlong
   src-laude-headlong --> harness-routing
   src-laude-headlong --> entropy-gate
+  secret-gateway --> src-4ndrearossetti-openconnector
+  secret-gateway --> harness-routing
+  secret-gateway --> audited-task-contract
+  secret-gateway --> flat-context
+  flat-context --> src-avichawla-trueforge
+  flat-context --> harness-routing
+  flat-context --> secret-gateway
+  flat-context --> entropy-gate
+  project-skill-stack --> src-alexprompter-claude-projects
+  project-skill-stack --> context-graph
+  project-skill-stack --> memory-engineering
+  project-skill-stack --> llm-wiki
+  src-4ndrearossetti-openconnector --> secret-gateway
+  src-4ndrearossetti-openconnector --> harness-routing
+  src-avichawla-trueforge --> flat-context
+  src-avichawla-trueforge --> harness-routing
+  src-avichawla-trueforge --> secret-gateway
+  src-alexprompter-claude-projects --> project-skill-stack
+  src-alexprompter-claude-projects --> context-graph
+  src-alexprompter-claude-projects --> memory-engineering
+  src-voxyz-writing-system --> anti-slop
+  src-voxyz-writing-system --> verifiable-instructions
+  src-voxyz-writing-system --> harness-routing
 ```
 <!-- graph-mermaid:end -->

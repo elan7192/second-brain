@@ -11,6 +11,26 @@ updated: 2026-08-28
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-28] merge | origin/main into openconnector X ingest branch
+
+Fetched origin/main at `923f0f0`. Simple unions kept. Branch flags remapped C14→C40, C15→C41, C16→C42, C17→C43 so they do not collide with main C14–C17. C17 / C18 / C25 / C37 / C38 left unresolved. Catalog split stays D12. See [[merge-conflict-report-2026-08-28-x-ingest]].
+
+## [2026-08-24] ingest | Voxyz 6/6 writing-system /goal
+
+Compiled [[src-voxyz-writing-system]] from https://x.com/voxyz_ai/status/2091938084875088316. Flagged C43. C6 stays open. Did not vendor the prompt. raw/ not written.
+
+## [2026-08-24] ingest | alex_prompter Claude Projects quote
+
+Compiled [[project-skill-stack]] from https://x.com/alex_prompter/status/2091822275381141582. Flagged C42. GIF unread. Docs cited, not re-read. raw/ not written. See [[src-alexprompter-claude-projects]].
+
+## [2026-08-24] ingest | avichawla TrueForge article
+
+Compiled [[flat-context]] from https://x.com/_avichawla/status/2091804330118861239. 2.7x `unverified` (sponsored, no paper). Flagged C41. Linked [[secret-gateway]] [[harness-routing]]. raw/ not written. See [[src-avichawla-trueforge]].
+
+## [2026-08-24] ingest | 4ndrearossetti OpenConnector quote
+
+Compiled [[secret-gateway]] from https://x.com/4ndrearossetti/status/2091739775782809963. OpenConnector counts `unverified`. Flagged C40. raw/ not written. See [[src-4ndrearossetti-openconnector]].
+
 ## [2026-08-28] merge | origin/main into musk-algorithm vault pass
 
 Fetched origin/main at `4bd2ee0`. Simple unions kept. Catalog split remapped D9 → D12 so it does not collide with FTS D9. CLAUDE/D2 flag remapped C15 → C39. C37 query path and C38 ingest brief left unresolved. `first-principles.md` delete stands. Brief: [[merge-conflict-report-2026-08-28-musk]].

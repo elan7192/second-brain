@@ -37,7 +37,7 @@ Retrieve in this vault is `python3 tools/sb ask` (D9). It is not the paste's BM2
 
 ## Related
 
-[[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]] · [[retrieval]] · [[retrieval-second-brain]] · [[company-foundry]]
+[[memory-ablation]] · [[context-graph]] · [[claim-protocol]] · [[audited-task-contract]] · [[entropy-gate]] · [[trace]] · [[src-marfinxx-trace]] · [[file-memory]] · [[context-compaction]] · [[memory-system]] · [[epistemic-labels]] · [[claims]] · [[retrieval]] · [[retrieval-second-brain]] · [[company-foundry]] · [[project-skill-stack]]
 
 TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbinghaus decay appear in the quoted article on that source, not as TRACE eval numbers.
 
@@ -52,3 +52,5 @@ TRACE ([[trace]]) repairs context files from trajectories. CRUD memory and Ebbin
 [[src-exm7777-grok-bot-money]]: Grok Bot memory holds preferences and summaries and is not a substitute for an authoritative source. The vault is. See [[grok-bot]].
 
 [[headlong]] stores life as a jsonl DAG with tiered compaction. Author method, not a measured memory eval here.
+
+[[src-alexprompter-claude-projects]] describes Claude Projects as persistent context across sessions. Product how-to. See [[project-skill-stack]] and C42.

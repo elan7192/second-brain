@@ -45,8 +45,14 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]]
 
 [[src-can1357-daily-tool-replace-2026-08-27]]: people who know better can replace daily-flow apps themselves. Hour tops is tweet wording. See [[daily-tool-replace]].
 
 [[src-exm7777-grok-bot-money]] is a Grok Bot product how-to: persistent VM, computer use, one bot per workflow. Model named Grok 4.6. Pricing comparison `unverified`. See [[grok-bot]].
+
+[[src-4ndrearossetti-openconnector]] puts credentials in a runtime, not in the prompt. Product counts `unverified`. See [[secret-gateway]].
+
+[[src-avichawla-trueforge]] treats the harness as the token-cost knob. 2.7x is `unverified`. See [[flat-context]].
+
+[[src-voxyz-writing-system]] audits global vs project `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep project voice local. See [[contradictions]] C43.
