@@ -11,7 +11,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "output"
-GRAPH_PAGE = ROOT / "wiki" / "graph.md"
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
@@ -180,28 +179,6 @@ CLUSTER_LABELS = {
     "nav": "Door",
     "bridge": "Synthesis",
 }
-
-MERMAID_SKIP = {
-    "Home",
-    "how-it-works",
-    "contradictions",
-    "Today",
-    "graph",
-    "wiki",
-    "Jarvis",
-    "TELOS",
-    "Hooks",
-    "github",
-    "hacker-news",
-    "reddit",
-    "product-hunt",
-    "inbox",
-    "digests",
-    "drafts",
-    "angles",
-    "builds",
-}
-
 
 def note_type(path: Path) -> str:
     rel = path.relative_to(ROOT).as_posix()
@@ -544,51 +521,6 @@ def write_png(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) 
     img.save(dest)
 
 
-def mermaid_lines(nodes: dict[str, dict], edges: list[tuple[str, str]]) -> list[str]:
-    keep = {
-        slug
-        for slug, node in nodes.items()
-        if slug not in MERMAID_SKIP and node["cluster"] != "nav"
-    }
-    keep.add("agent-operating-system")
-    order = ["compile", "memory", "verification", "harness", "hunt-ship", "bridge"]
-    grouped: dict[str, list[str]] = defaultdict(list)
-    for slug in keep:
-        grouped[nodes[slug]["cluster"]].append(slug)
-    lines = ["flowchart TB"]
-    for cluster in order:
-        slugs = sorted(grouped.get(cluster, []))
-        if not slugs:
-            continue
-        lines.append(f"  subgraph {cluster}[{CLUSTER_LABELS[cluster]}]")
-        for slug in slugs:
-            lines.append(f"    {slug}")
-        lines.append("  end")
-    for src, dst in edges:
-        if src in keep and dst in keep and visible_edge(src, dst):
-            lines.append(f"  {src} --> {dst}")
-    return lines
-
-
-def write_mermaid(nodes: dict[str, dict], edges: list[tuple[str, str]], dest: Path) -> None:
-    text = dest.read_text(encoding="utf-8")
-    begin = "<!-- graph-mermaid:begin -->"
-    end = "<!-- graph-mermaid:end -->"
-    block = (
-        begin
-        + "\n```mermaid\n"
-        + "\n".join(mermaid_lines(nodes, edges))
-        + "\n```\n"
-        + end
-    )
-    if begin in text and end in text:
-        pre, rest = text.split(begin, 1)
-        _, post = rest.split(end, 1)
-        dest.write_text(pre + block + post, encoding="utf-8")
-        return
-    dest.write_text(text.rstrip() + "\n\n" + block + "\n", encoding="utf-8")
-
-
 def main() -> None:
     nodes, edges = collect()
     layout(nodes, edges)
@@ -599,7 +531,6 @@ def main() -> None:
         write_png(nodes, edges, OUT_DIR / "obsidian-graph.png")
     except ModuleNotFoundError:
         print("skip png: PIL not installed")
-    write_mermaid(nodes, edges, GRAPH_PAGE)
     counts: dict[str, int] = defaultdict(int)
     for node in nodes.values():
         counts[node["cluster"]] += 1

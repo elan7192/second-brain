@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Musk Algorithm
@@ -21,44 +21,16 @@ Source: [[src-lan-e-musk-algorithm]]. Named owner: lan E.
 
 Doing it backwards (automate, then simplify, then delete) wastes time.
 
-Keep long-term vision.
+Keep long-term vision. Starship lines on the source are examples, not new physics.
 
-## Starship examples (not new physics)
+## Vault passes
 
-- Grid fins stay deployed.
-- Interstage pushers deleted via booster gimbal.
-- Autogenous pressurization instead of helium.
-- Landing legs deleted in favor of tower catch.
-- Raptor 3 subtracts plumbing.
+- 2026-08-28: short door D12. Deleted full-index dump, first-principles page, MEMORY LanBB loops. C37 open.
+- 2026-08-29: deleted door catalogs, standing brief, dual lint, graph mermaid. C38 skip.
+- 2026-08-29b: deleted Home/index overlap, digest dump, `tools/sb.py`, MEMORY query duplicate, mandatory ontology rebuild, Home people catalog, GrowthOS graph on Home, graph islands table.
+- Stopped: next pass found only locked parts (C17, C18, D1–D12, C38 existing briefs, append-only log).
 
-## Vault pass 2026-08-28
-
-lan E ordered this sequence on the second-brain repo. Requirements questioned against a named person. Physics of this vault: git markdown, token cost of every forced read, D1 compiler, D5 human yes.
-
-Deleted:
-
-- Mandatory full-index read on every query (agent folklore, not lan E).
-- Mandatory `output/` ingest brief (schema author, not lan E).
-- `MEMORY.md` copy of LanBB loops 1–16 (failed [[memory-ablation]]; history lives on [[hunt-harden-loop]]).
-- Separate `wiki/first-principles.md` page (same order as step 1 here).
-- `tools/add-frontmatter.py` (unused automation).
-- "Keep `CLAUDE.md` identical to `AGENTS.md`" (contradicted D2).
-- Standing "pull the GitHub clone and stay current" wiki-agent order (unnamed department).
-- Home default "file a clip in inbox" (scout paused; lan E, [[assign-execute-verify]]).
-- Nineteen orphan `output/ingest-brief-2026-08-24-*.md` files (no inbound wikilink; knowledge is on concept pages).
-- Seventeen-section hunt-harden prose on the living page (process leftover; table + current wall remain).
-
-Added back (~10%):
-
-- [[index-papers]] and [[index-sources]] so catalogs still exist, opt-in.
-- Origin + current LanBB source links on [[hunt-harden-loop]].
-- File-back only when the next session would re-derive the answer.
-- Lint as the ingest gate.
-- Six ingest briefs that still have inbound wikilinks.
-
-Not automated: no new bot, hook, or renderer. `tools/lint-wiki.py` stays a manual/CI gate.
-
-Locked as D12 in [[decisions]] (was D9 on this branch; main already locked D9 as FTS). Live query stays D9. See C37. Ingest brief is C38.
+See [[log]]. Live query stays D9. C17 and C18 untouched.
 
 ## Related
 

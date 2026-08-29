@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T03:51:17Z",
+  "builtAt": "2026-08-29T04:40:10Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,7 +107,7 @@
   },
   "counts": {
     "Meta": 15,
-    "unverified": 104,
+    "unverified": 103,
     "Hunt": 8,
     "Map": 5,
     "Ship": 58,
@@ -118,7 +118,7 @@
     "Decision": 12,
     "Contradiction": 45,
     "objects": 420,
-    "links": 3085
+    "links": 2882
   },
   "objects": [
     {
@@ -399,7 +399,7 @@
       "inbound": 0,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/lint-wiki.py`, `python3 tools/sb validate`) because reading `AGENTS.md` is n"
+      "oneLiner": "Resolution: compatible. Observed agents do not validate against prose. This vault requires an external gate (`python3 tools/sb validate`) because reading `AGENTS.md` is not the check. See D10 and [[ag"
     },
     {
       "primaryKey": "C28",
@@ -565,9 +565,9 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 3,
+      "outbound": 2,
       "unverified": false,
-      "oneLiner": "Main ingest step 9 writes a three-sentence `output/` brief on every ingest."
+      "oneLiner": "Main ingest step 9 wrote a three-sentence `output/` brief on every ingest."
     },
     {
       "primaryKey": "C39",
@@ -757,7 +757,7 @@
       "title": "Compiler vault",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -771,13 +771,13 @@
       "title": "Instruction files are the control surface",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/lint-wi"
+      "oneLiner": "Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/sb vali"
     },
     {
       "primaryKey": "D11",
@@ -785,7 +785,7 @@
       "title": "Bibliographic catalog only",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -799,7 +799,7 @@
       "title": "Short index catalogs",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -813,7 +813,7 @@
       "title": "One schema, two filenames",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -827,7 +827,7 @@
       "title": "Facts, not adjectives",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -841,7 +841,7 @@
       "title": "Shared state is a contract",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -855,7 +855,7 @@
       "title": "Human final yes",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -869,7 +869,7 @@
       "title": "Anti-slop by default",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -883,7 +883,7 @@
       "title": "Obsidian is the IDE",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -897,7 +897,7 @@
       "title": "Graph clusters by concept",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -911,7 +911,7 @@
       "title": "Markdown canonical, FTS disposable",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "decision",
       "island": "meta",
       "inbound": 0,
@@ -928,7 +928,7 @@
       "updated": "2026-08-25",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Door to the growth operator vault. Teal in the Obsidian graph. Notes live in `growth/`."
@@ -943,7 +943,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 12,
-      "outbound": 57,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -970,7 +970,7 @@
       "updated": "2026-08-25",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 17,
       "unverified": true,
       "oneLiner": "Operating map for the agent. Teal in the Obsidian graph."
@@ -981,11 +981,11 @@
       "title": "Memory",
       "path": "MEMORY.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
       "inbound": 15,
-      "outbound": 71,
+      "outbound": 69,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -998,7 +998,7 @@
       "updated": "2026-08-23",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Why this vault exists."
@@ -1012,8 +1012,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 6,
-      "outbound": 28,
+      "inbound": 5,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "2026-08-29"
     },
@@ -1026,10 +1026,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 9,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "Writer, reviewer, critic. Freeze the artifact. Force dissent"
+      "oneLiner": "Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
     },
     {
       "primaryKey": "agent-facing-docs",
@@ -1037,13 +1037,13 @@
       "title": "Agent-facing docs",
       "path": "wiki/agent-facing-docs.md",
       "created": "2026-08-24",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
+      "inbound": 17,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Agents read instruction files and working notes, not API refs"
+      "oneLiner": "Coding agents spend most of their documentation attention on instruction files and their own working notes."
     },
     {
       "primaryKey": "agent-operating-system",
@@ -1054,7 +1054,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 39,
+      "inbound": 37,
       "outbound": 57,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
@@ -1068,10 +1068,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "Your data, your model. Karp synthesis. Unverified without URL"
+      "oneLiner": "lan E paste 2026-08-27. Synthesis, not a transcript dump. No primary Karp URL. Marked `unverified` until a named source URL exists."
     },
     {
       "primaryKey": "alex-karp",
@@ -1082,10 +1082,10 @@
       "updated": "2026-08-28",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "Palantir CEO. Sovereignty claims unverified without URL"
+      "oneLiner": "Palantir CEO. Facts below are lan E synthesis 2026-08-27. No primary URL. `unverified`."
     },
     {
       "primaryKey": "alphaevolve-math",
@@ -1110,10 +1110,10 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 8,
+      "inbound": 6,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "LLM Wiki gist, April 2026"
+      "oneLiner": "April 2026 gist: [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)."
     },
     {
       "primaryKey": "angles",
@@ -1138,10 +1138,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 30,
       "outbound": 10,
       "unverified": false,
-      "oneLiner": "Default writing constraints"
+      "oneLiner": "Default writing constraints for this vault."
     },
     {
       "primaryKey": "apt-siamese",
@@ -1166,7 +1166,7 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "projects",
-      "inbound": 112,
+      "inbound": 111,
       "outbound": 58,
       "unverified": true,
       "oneLiner": "405856 inventory. BATCH01\u201309 compiled. Site: elan7192.github.io/arxiv-potential-tierlist"
@@ -1180,10 +1180,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 5,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "Assign \u2192 execute \u2192 verify. 24h intel OFF"
+      "oneLiner": "Assign \u2192 execute \u2192 verify."
     },
     {
       "primaryKey": "audited-task-contract",
@@ -1194,10 +1194,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 40,
+      "inbound": 39,
       "outbound": 13,
       "unverified": true,
-      "oneLiner": "Portable verified state across coding harnesses"
+      "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
     },
     {
       "primaryKey": "avid",
@@ -1208,10 +1208,10 @@
       "updated": "2026-08-28",
       "tags": "person",
       "island": "people",
-      "inbound": 7,
+      "inbound": 5,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "@Av1dlive. Hunt/Ship vault tweet plus Company Foundry clip. C31"
+      "oneLiner": "@Av1dlive. Two compiled posts."
     },
     {
       "primaryKey": "backlink-first",
@@ -1222,10 +1222,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "Do not answer first. Follow backlinks. Tags as weights"
+      "oneLiner": "Do not answer first. Follow backlinks. Tags are weights."
     },
     {
       "primaryKey": "bdh",
@@ -1264,10 +1264,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 9,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Bot-to-bot caveman. Facts, paths, SHAs. User still gets short \u7e41\u4e2d from lead"
+      "oneLiner": "Bot-to-bot voice is caveman. Facts, paths, SHAs. No filler. No empty acks."
     },
     {
       "primaryKey": "botdirectory-scan",
@@ -1278,10 +1278,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "Catalog scan. Skills on existing roles. Not a dump"
+      "oneLiner": "Catalog scan of botdirectory.ai. Not a scout dump. Not a bot factory."
     },
     {
       "primaryKey": "brain-ai-convergence",
@@ -1320,10 +1320,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Public \"looking for alternative to\""
+      "oneLiner": "A public \"looking for alternative to\" is a buying signal."
     },
     {
       "primaryKey": "camf-mft",
@@ -1348,10 +1348,10 @@
       "updated": "2026-08-27",
       "tags": "person",
       "island": "people",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "@_can1357. Daily-tool replace tweet. omp.sh"
+      "oneLiner": "X: @_can1357. Sites on that profile: can.ac, omp.sh."
     },
     {
       "primaryKey": "causal-cps-anomaly",
@@ -1373,13 +1373,13 @@
       "title": "Claim protocol",
       "path": "wiki/claim-protocol.md",
       "created": "2026-08-27",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
+      "inbound": 23,
       "outbound": 12,
       "unverified": true,
-      "oneLiner": "Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer"
+      "oneLiner": "Named compile chain: Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer."
     },
     {
       "primaryKey": "claims",
@@ -1387,13 +1387,13 @@
       "title": "Claims",
       "path": "wiki/claims.md",
       "created": "2026-08-27",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 30,
       "outbound": 13,
       "unverified": false,
-      "oneLiner": "YAML sb registry plus CSV compile of Claims kept. C17"
+      "oneLiner": "Provenance unit. A page is not a claim. Two registries exist. Do not pick one. See C17."
     },
     {
       "primaryKey": "clip-pipeline",
@@ -1404,10 +1404,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 10,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Captions/metadata; not full copyrighted films; D5"
+      "oneLiner": "Work from captions and metadata. Do not rip copyrighted full films."
     },
     {
       "primaryKey": "clustered-moe",
@@ -1432,10 +1432,10 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 13,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "Leftover Codex quota is spent with `/goal`. Five recipes with checks"
+      "oneLiner": "Codex leftover quota is spent with `/goal`. A one-off prompt leaves the rest on the table at reset."
     },
     {
       "primaryKey": "company-foundry",
@@ -1443,13 +1443,13 @@
       "title": "Company Foundry",
       "path": "wiki/company-foundry.md",
       "created": "2026-08-25",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
-      "outbound": 11,
+      "inbound": 19,
+      "outbound": 12,
       "unverified": true,
-      "oneLiner": "Compiler for organisational method. Clip vs article: C31"
+      "oneLiner": "A compiler for organisational method. Source: [[src-avid-company-foundry]] article and README."
     },
     {
       "primaryKey": "composio-mcp",
@@ -1460,10 +1460,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Catalog 32661537. Not installed. Writes need lan E"
+      "oneLiner": "Hub from Grok Bot to 1000+ apps, because Cursor has fewer native connectors."
     },
     {
       "primaryKey": "concept-guard",
@@ -1488,10 +1488,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 10,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "Chat may be fuzzy. Vault must be precise. No transcript dumps"
+      "oneLiner": "Chat working-memory may be fuzzy. The vault must be precise. Do not dump transcripts into wiki."
     },
     {
       "primaryKey": "context-graph",
@@ -1502,10 +1502,10 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 44,
+      "inbound": 43,
       "outbound": 21,
       "unverified": false,
-      "oneLiner": "Give the model the relevant subgraph, not the dump"
+      "oneLiner": "Give the model the subgraph for this decision, not the whole dump."
     },
     {
       "primaryKey": "contradictions",
@@ -1516,7 +1516,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 141,
+      "inbound": 139,
       "outbound": 75,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
@@ -1558,10 +1558,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
+      "inbound": 15,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "Know-better builders replace daily-flow apps in ~1h. Hour is tweet claim"
+      "oneLiner": "If you know the tool well, replace daily-flow garbage by building your own with an LLM, in an hour tops, without weeks of maintenance or a side-project tax."
     },
     {
       "primaryKey": "daily-tool-replace-vault-2026-08-27",
@@ -1572,7 +1572,7 @@
       "updated": "2026-08-27",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "Question: room to optimize this project with [[daily-tool-replace]]?"
@@ -1597,10 +1597,10 @@
       "title": "Decisions",
       "path": "decisions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 20,
+      "inbound": 19,
       "outbound": 22,
       "unverified": false,
       "oneLiner": "Locked choices. Reopen only with new evidence."
@@ -1614,10 +1614,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "ByteDance SuperAgent. Local bootstrap on this VM. C32"
+      "oneLiner": "ByteDance SuperAgent harness. Repo: https://github.com/bytedance/deer-flow. Source page: [[src-deer-flow]]."
     },
     {
       "primaryKey": "deer-flow-bootstrap-2026-08-24",
@@ -1628,7 +1628,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Status report after following [[src-deer-flow]] `Install.md`. Compiled page: [[deer-flow]]."
@@ -1653,13 +1653,13 @@
       "title": "Digests",
       "path": "ship/digests.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 32,
+      "outbound": 11,
       "unverified": false,
-      "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
+      "oneLiner": "Short briefs that still need an inbound link. Knowledge lives on the concept pages. Query with `python3 tools/sb ask`."
     },
     {
       "primaryKey": "disclosure-index",
@@ -1670,10 +1670,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 7,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "11,338 public disclosure records, compiled 2026-08-24"
+      "oneLiner": "Compiled snapshot of the public Disclosure Index catalog. Source: [[src-disclosure-index]]. Machine counts: `output/disclosure-index-stats-2026-08-23.json`."
     },
     {
       "primaryKey": "disclosures",
@@ -1740,10 +1740,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "Drafts. Taste is gate. No autopublish"
+      "oneLiner": "Drafts. Do not publish. Analytics feed the next batch. Taste is the gate."
     },
     {
       "primaryKey": "elvis",
@@ -1754,10 +1754,10 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "dair.ai. Posted the AR paper summary"
+      "oneLiner": "@omarsar0. Founder of dair.ai. Posted the Adversarial Review summary. Not a paper author."
     },
     {
       "primaryKey": "entropy-gate",
@@ -1768,10 +1768,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 45,
+      "inbound": 44,
       "outbound": 18,
       "unverified": true,
-      "oneLiner": "Isolated workers. Validated diffs. Kill unverified drift"
+      "oneLiner": "Unverified cross-talk is how swarms agree on bugs that never existed."
     },
     {
       "primaryKey": "epistemic-labels",
@@ -1782,10 +1782,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 6,
       "unverified": true,
-      "oneLiner": "FACT vs INFERENCE vs OPINION. Unlabeled prose pollutes"
+      "oneLiner": "Every new compiled claim is one of FACT, INFERENCE, or OPINION. Mixing them in unlabeled prose is how knowledge pollution starts. See [[memory-system]]."
     },
     {
       "primaryKey": "eval-suite",
@@ -1796,10 +1796,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "`sb eval` gate for retrieval"
+      "oneLiner": "Measures whether retrieval and provenance work. Files live in `eval/`."
     },
     {
       "primaryKey": "evosyn",
@@ -1824,10 +1824,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 32,
+      "inbound": 31,
       "outbound": 15,
       "unverified": false,
-      "oneLiner": "Git md memory. Four kinds. FTS5 disposable. Ontology CSV is derived"
+      "oneLiner": "Git markdown memory, shared across harnesses. Not a lab's built-in store."
     },
     {
       "primaryKey": "flat-context",
@@ -1838,10 +1838,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 11,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "Load what the run needs. Offload the rest"
+      "oneLiner": "Load what the run needs. Offload the rest."
     },
     {
       "primaryKey": "flow-matching-pso",
@@ -1919,7 +1919,7 @@
       "title": "Graph",
       "path": "wiki/graph.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
       "inbound": 13,
@@ -1936,7 +1936,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite."
@@ -1950,10 +1950,10 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
+      "inbound": 18,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "One bot per job. Vault over memory. Shared computer is not an entropy gate"
+      "oneLiner": "Product harness from Machina. One persistent named agent. One job."
     },
     {
       "primaryKey": "grok-bot-money",
@@ -1964,10 +1964,10 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "Machina ten revenue lanes. Higgsfield UGC sponsored. Cash unverified"
+      "oneLiner": "Ten revenue workflows from Machina. Architecture: [[grok-bot]]. Source: [[src-exm7777-grok-bot-money]]."
     },
     {
       "primaryKey": "grok-bot-pro-tips",
@@ -1978,10 +1978,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 7,
       "unverified": false,
-      "oneLiner": "Ben Lang 10 tips from @bot team"
+      "oneLiner": "Ten tips from the @bot team, collected by Ben Lang."
     },
     {
       "primaryKey": "grok-bot-quota",
@@ -1992,10 +1992,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
+      "inbound": 14,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "Burns on Max Mode, computerUse vision, long transcripts"
+      "oneLiner": "Grok Bot quota burns fastest on:"
     },
     {
       "primaryKey": "grok-bot-tape",
@@ -2006,10 +2006,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 6,
       "outbound": 8,
       "unverified": true,
-      "oneLiner": "Show the tape. Cite or omit. Silence is valid"
+      "oneLiner": "Show the tape. Recording or screenshots. Source for every number. Guesses listed. Skip listed. Cannot cite \u2192 omit."
     },
     {
       "primaryKey": "grok-bot-use-cases",
@@ -2020,10 +2020,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
+      "inbound": 14,
       "outbound": 15,
       "unverified": false,
-      "oneLiner": "Miles 25 Grok Bot cases. lan E share"
+      "oneLiner": "25 use cases from Miles Deutscher. lan E share. Not a scout harvest."
     },
     {
       "primaryKey": "growth-briefing-2026-08-25",
@@ -2034,7 +2034,7 @@
       "updated": "2026-08-25",
       "tags": "growth",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 28,
       "unverified": true,
       "oneLiner": "Generated from `growth/`. Not from chat memory. Target: **next AI UGC creator (unnamed)**."
@@ -2051,7 +2051,7 @@
       "inbound": 20,
       "outbound": 23,
       "unverified": false,
-      "oneLiner": "Obsidian vault Grokbot reads before a new partner"
+      "oneLiner": "DeRonin GrowthOS. Notes in `growth/`. DEMO partners"
     },
     {
       "primaryKey": "growthos-3d-gap-2026-08-25",
@@ -2062,7 +2062,7 @@
       "updated": "",
       "tags": "growth",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "Neither an Obsidian plugin nor a hunt for an existing cyberpunk clone. This vault already compiles a subgraph graph from `growth/` into `output/growthos-graph.html`. [[growth-operator]]"
@@ -2076,7 +2076,7 @@
       "updated": "",
       "tags": "growth",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Figma is disconnected (`needsAuth`). The DeRonin clip is a 3D WebGL orbit graph, so the live page is `output/growthos-graph.html`, not a 2D mock. Auth Figma later if you want a static chrome board."
@@ -2104,10 +2104,10 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 47,
+      "inbound": 46,
       "outbound": 29,
       "unverified": true,
-      "oneLiner": "Route model and harness by phase, not by turn"
+      "oneLiner": "A model and a harness are different knobs."
     },
     {
       "primaryKey": "headlong",
@@ -2118,10 +2118,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
+      "inbound": 15,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "Laude/MIT persistent Bash microharness. 1h `hour` trial ended 02:07Z; tests did not run"
+      "oneLiner": "Laude Institute / MIT Bash microharness for persistent agency. One thought stream. The agent keeps generating thoughts when nobody is talking to it."
     },
     {
       "primaryKey": "hear2act",
@@ -2143,11 +2143,11 @@
       "title": "How it works",
       "path": "wiki/how-it-works.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 19,
-      "outbound": 28,
+      "inbound": 18,
+      "outbound": 25,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
     },
@@ -2174,10 +2174,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
+      "inbound": 22,
       "outbound": 9,
       "unverified": false,
-      "oneLiner": "CASE path. Juice Shop 0/116. Current wall v17 `ad6f669` PR27"
+      "oneLiner": "CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump."
     },
     {
       "primaryKey": "hunt-ship-loop",
@@ -2188,10 +2188,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 41,
       "outbound": 22,
       "unverified": false,
-      "oneLiner": "File first. Scouts stay quiet. Human final yes"
+      "oneLiner": "Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are indexes. The compiled store stays in `wiki/`."
     },
     {
       "primaryKey": "hunter-follows",
@@ -2202,10 +2202,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 4,
       "unverified": true,
-      "oneLiner": "lostsec + zack0x01 as input sources. Not an exploit dump"
+      "oneLiner": "Input sources for LanBB bug-bounty flow. Not an exploit dump."
     },
     {
       "primaryKey": "hurley",
@@ -2216,10 +2216,10 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Notion Skills library pitch, 2026-08-21"
+      "oneLiner": "@Johnsjawn. Bio on the ingested post: works at Notion, creates drinkorigin.co."
     },
     {
       "primaryKey": "hydrofusion-lmf",
@@ -2273,9 +2273,9 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 32,
-      "outbound": 106,
-      "unverified": true,
-      "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-29"
+      "outbound": 21,
+      "unverified": false,
+      "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
     {
       "primaryKey": "index-papers",
@@ -2286,7 +2286,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
+      "inbound": 9,
       "outbound": 50,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12."
@@ -2300,7 +2300,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 15,
+      "inbound": 13,
       "outbound": 141,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
@@ -2314,7 +2314,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 1,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Nine X posts compiled into the first vault."
@@ -2328,7 +2328,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "What changed: the GitHub catalog pitch is now a source page and a person page. [[skill-library]] gained a second source. Offensive skill bodies were not copied. `MEMORY.md` now forbids vendoring or ex"
@@ -2342,7 +2342,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 1,
       "outbound": 5,
       "unverified": true,
       "oneLiner": "What changed: the four-pillar retrieval recipe is now [[retrieval-second-brain]]. Layer names landed on [[memory-engineering]]. GraphRAG vs compiled wikilinks landed on [[context-graph]]. C25 flags th"
@@ -2356,7 +2356,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "What changed: one X post (Hurley, 2026-08-21) is now a source page, a [[skill-library]] concept, and a [[hurley]] person page. Usage-ranked Notion skills are filed. Auto-improvement and the 10% / 50-r"
@@ -2370,7 +2370,7 @@
       "updated": "2026-08-23",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "What changed: the pasted list and SOP thesis are now [[skill-as-sop]]. Five GitHub packs were checked against live READMEs. Stale counts landed on C24. No pack was vendored."
@@ -2384,7 +2384,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
@@ -2454,7 +2454,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "The `#api` page documents a REST catalog. The live data is `data/catalog.js`."
@@ -2468,7 +2468,7 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 3,
       "outbound": 6,
       "unverified": true,
       "oneLiner": "Jerry Liu\u2019s 2026-08-23 post on two-pass document processing is compiled."
@@ -2482,7 +2482,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 1,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slic"
@@ -2510,7 +2510,7 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 3,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "The 2026-08-23 Voxyz leftover-quota thread is compiled. Five `/goal` prompts were retrieved in full."
@@ -2552,7 +2552,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Built [[growth-operator]] from [[src-deronin-growthos-vault]]. Operator notes are in `growth/` with DEMO partners. Linked from [[GrowthOS]] and [[growth-core]]."
@@ -2594,7 +2594,7 @@
       "updated": "2026-08-26",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Installed [[headlong]] tools from `laude-institute/headlong` SHA `d8f8304`. Did not start the 24/7 mind: no Docker, no API key, D5. Linked [[src-hxiao-headlong]] and [[src-laude-headlong]]."
@@ -2608,7 +2608,7 @@
       "updated": "2026-08-26",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "The 1h identity `hour` stopped at 02:07Z. Trajectory 37 rows, last durable step 01:12:08Z; tests did not run; qwen2.5-coder:7b copied the nested-`shellm` docs example and stalled."
@@ -2636,7 +2636,7 @@
       "updated": "2026-08-27",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Changed: @_can1357 2026-08-27 pair compiled as [[daily-tool-replace]]. Know-better builders replace daily-flow apps in an hour tops. Hour is tweet wording, not a timed study."
@@ -2678,7 +2678,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 1,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "1. [[adversarial-review]] for the loop and the two tables."
@@ -2692,10 +2692,10 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 10,
+      "inbound": 8,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "LLM-as-a-Verifier"
+      "oneLiner": "Stanford CS PhD. Author of LLM-as-a-Verifier (arXiv:2607.05391) and the DeepSeek V4 Flash self-verification Terminal-Bench post."
     },
     {
       "primaryKey": "jerry-liu",
@@ -2706,10 +2706,10 @@
       "updated": "2026-08-29",
       "tags": "person",
       "island": "people",
-      "inbound": 8,
+      "inbound": 6,
       "outbound": 3,
       "unverified": true,
-      "oneLiner": "Two-pass document processing. LlamaIndex"
+      "oneLiner": "@jerryjliu0. Cofounder/CEO of LlamaIndex, per the 2026-08-23 post."
     },
     {
       "primaryKey": "lanbb",
@@ -2751,7 +2751,7 @@
       "inbound": 74,
       "outbound": 38,
       "unverified": false,
-      "oneLiner": "Persistent compiled wiki between you and raw sources"
+      "oneLiner": "Andrej Karpathy's April 2026 pattern for a personal knowledge base."
     },
     {
       "primaryKey": "llm4eo",
@@ -2776,7 +2776,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
+      "inbound": 16,
       "outbound": 246,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
@@ -2790,10 +2790,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 14,
       "unverified": false,
-      "oneLiner": "Owner + worker + verifier + stop. One graph writer"
+      "oneLiner": "Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
     },
     {
       "primaryKey": "lostsec",
@@ -2804,10 +2804,10 @@
       "updated": "2026-08-27",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "coffinxp / @lostsec_. Hunter input source. Not a dump"
+      "oneLiner": "Bug bounty hunter. Also coffinxp. Handle @lostsec_."
     },
     {
       "primaryKey": "mahipal-jangra",
@@ -2818,10 +2818,10 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 7,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Community cybersecurity skill library. Not Anthropic"
+      "oneLiner": "@mukul975. README citation: Jangra, Mahipal."
     },
     {
       "primaryKey": "maps",
@@ -2846,10 +2846,10 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 10,
+      "inbound": 8,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "agent-ultramode. /ultra over PPT"
+      "oneLiner": "@mavericktr24. GitHub `maverick-tr`. Shipped `agent-ultramode`: a `/ultra` command that productizes [[probabilistic-pivot-tournament]] for coding agents."
     },
     {
       "primaryKey": "memory-ablation",
@@ -2860,10 +2860,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
+      "inbound": 22,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "A memory line stays only if deleting it changes an answer"
+      "oneLiner": "A memory line earns its place only by deleting an answer the model would otherwise give."
     },
     {
       "primaryKey": "memory-engine-2026-08-28",
@@ -2888,10 +2888,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
+      "inbound": 34,
       "outbound": 29,
       "unverified": true,
-      "oneLiner": "Capture, consolidate, retrieve, reconcile, decay"
+      "oneLiner": "Memory is a pipeline, not a bigger context window."
     },
     {
       "primaryKey": "memory-system",
@@ -2902,10 +2902,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
+      "inbound": 19,
       "outbound": 15,
       "unverified": true,
-      "oneLiner": "Provenance, FACT/INFERENCE/OPINION. Vector parked"
+      "oneLiner": "Upgrade path from a compiled markdown wiki to a checkable agent memory. Git markdown stays the store. Two claim tables exist (C17). Vector search stays parked. Disposable FTS5 already landed on main ("
     },
     {
       "primaryKey": "memory-system-brief-2026-08-27",
@@ -2930,7 +2930,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 18,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at the claim-protocol / D9 commit, then merged into `cursor/skill-library-ingest-955f`."
@@ -2944,7 +2944,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `41f1abf` (Machina Grok Bot money / C30), then merged into `cursor/avid-company-foundry-185f`."
@@ -2972,7 +2972,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `c5714e8` (skill-library sources; C20\u2013C25), then merged into `cursor/can1357-daily-tool-replace-186d`."
@@ -2986,7 +2986,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `a0e5609` (agent-facing docs / Disclosure Index), then merged into `cursor/can1357-daily-tool-replace-186d`."
@@ -3000,7 +3000,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `db892ee` (Avid Company Foundry / C31), then merged into `cursor/deer-flow-bootstrap-fd24`."
@@ -3014,7 +3014,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `42ba5e3` (Can daily-tool-replace / C29), then merged into `cursor/ingest-exm7777-grok-bot-93be`."
@@ -3028,7 +3028,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 1,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `5927d29`, then merged into `cursor/ingest-maverick-ultramode-faac`."
@@ -3042,7 +3042,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 3,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `4bd2ee0`, then merged into `cursor/musk-algorithm-vault-d0be`."
@@ -3056,7 +3056,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 1,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `4be06ef` (Maverick `#5` already on main), then merged into `cursor/ingest-omarsar-adversarial-review-faac`."
@@ -3070,7 +3070,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 3,
+      "inbound": 1,
       "outbound": 19,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `923f0f0`, then merged into `cursor/ingest-4ndrearossetti-openconnector-068c`."
@@ -3084,7 +3084,7 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 5,
+      "inbound": 1,
       "outbound": 17,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `dbf957b`, then merged into `cursor/ingest-jerry-two-pass-2f90`."
@@ -3098,7 +3098,7 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 5,
+      "inbound": 1,
       "outbound": 17,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `5502848`, then merged into `cursor/ingest-voxyz-codex-goal-4456`."
@@ -3112,7 +3112,7 @@
       "updated": "2026-08-28",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 1,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `c9172cf`, then merged into `cursor/agent-facing-docs-8473`."
@@ -3154,10 +3154,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 10,
       "outbound": 8,
       "unverified": true,
-      "oneLiner": ">1 source. One list. Human verdict. No Whop clone"
+      "oneLiner": "One complaint or one system is not enough. Surface only with more than one confirming source."
     },
     {
       "primaryKey": "musk-algorithm",
@@ -3165,13 +3165,13 @@
       "title": "Musk Algorithm",
       "path": "wiki/musk-algorithm.md",
       "created": "2026-08-27",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
       "inbound": 24,
-      "outbound": 11,
+      "outbound": 6,
       "unverified": false,
-      "oneLiner": "Delete before optimize. Automate last. Named person"
+      "oneLiner": "Strict order. Best part is no part."
     },
     {
       "primaryKey": "musk-pass-2026-08-28",
@@ -3182,7 +3182,7 @@
       "updated": "",
       "tags": "",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 1,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Deleted the mandatory full-index read, ingest briefs, MEMORY copies of LanBB loops 1\u201316, the extra first-principles page, and unused frontmatter automation. Query now loads `python3 tools/sb ask` (D9)"
@@ -3224,7 +3224,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 3,
+      "inbound": 2,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Changed: wiki pages compiled into a Palantir-style Ontology. Object table `output/ontology-objects.csv` (307 objects after merge with the FTS engine). Snapshot `output/ontology.json` (1796 links). Hos"
@@ -3252,10 +3252,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
+      "inbound": 13,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Palantir AIP. Ontology + AIP Logic. No enrollment here"
+      "oneLiner": "Palantir Artificial Intelligence Platform. Application layer on Foundry data and the Ontology."
     },
     {
       "primaryKey": "palrs",
@@ -3294,10 +3294,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Chrono first. OOS W/E. Skip Hawkes"
+      "oneLiner": "Chronological order first. Window-boundary and kernel misspec inflate a ratio. Out-of-sample is the honest test."
     },
     {
       "primaryKey": "portable-memory",
@@ -3308,10 +3308,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
+      "inbound": 14,
       "outbound": 10,
       "unverified": false,
-      "oneLiner": "Git truth. FTS5 disposable. Do not clone Brain"
+      "oneLiner": "Delta vs [[file-memory]] and [[llm-wiki]]. Do not clone Brain."
     },
     {
       "primaryKey": "portal",
@@ -3336,10 +3336,10 @@
       "updated": "2026-08-24",
       "tags": "project",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
-      "oneLiner": "Score axis, heuristic formula, recency bias"
+      "oneLiner": "The sort axis for [[arxiv-tierlist]] is future potential / room for further development, not quality, correctness, citations, or journal prestige. A 2017 Transformer ranking below a 2026 open-ended ag"
     },
     {
       "primaryKey": "prednext",
@@ -3364,10 +3364,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 7,
       "unverified": false,
-      "oneLiner": "Ring pass, pivot duels, win-rate confidence"
+      "oneLiner": "The ranking step in [[src-maverick-ultramode]]. Named in the tweet as the verifier that picks a winning diff. Reimplemented from [[jacky-kwok]] LLM-as-a-Verifier (arXiv:2607.05391)."
     },
     {
       "primaryKey": "product-hunt",
@@ -3392,10 +3392,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 11,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "Projects hold context. Skills hold how the model acts"
+      "oneLiner": "Projects hold context. Skills hold how the model acts."
     },
     {
       "primaryKey": "provenance",
@@ -3406,10 +3406,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "source, dates, created_by, confidence, derived_from"
+      "oneLiner": "A compiled page must answer: where did this come from, when, who wrote it, and what it was derived from. A path like `wiki/ssrf.md` with no source is not enough. See [[memory-system]]."
     },
     {
       "primaryKey": "pwr-ga",
@@ -3462,10 +3462,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 9,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Burn expiring OpenCode Go, then ChatGPT/Gemini, then Cursor"
+      "oneLiner": "Burn expiring quota first."
     },
     {
       "primaryKey": "r2-opd",
@@ -3490,10 +3490,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 27,
       "outbound": 12,
       "unverified": false,
-      "oneLiner": "One owner per job. Report once. No empty acks"
+      "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
     },
     {
       "primaryKey": "reddit",
@@ -3521,7 +3521,7 @@
       "inbound": 27,
       "outbound": 11,
       "unverified": false,
-      "oneLiner": "Hybrid FTS5 over compiled pages. DB disposable"
+      "oneLiner": "Hybrid search over compiled pages. Markdown stays canonical. SQLite FTS5 is disposable."
     },
     {
       "primaryKey": "retrieval-second-brain",
@@ -3532,10 +3532,10 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
+      "inbound": 16,
       "outbound": 10,
       "unverified": true,
-      "oneLiner": "Hybrid search / GraphRAG recipe. Compile the claim. Query path is D9. See C25"
+      "oneLiner": "A query-time stack for \"read and recall\": hybrid search, GraphRAG, three memory layers, agentic routing."
     },
     {
       "primaryKey": "rohit",
@@ -3546,10 +3546,10 @@
       "updated": "2026-08-23",
       "tags": "person",
       "island": "people",
-      "inbound": 5,
+      "inbound": 3,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "Cross-harness task contract"
+      "oneLiner": "@rohit4verse. Article: how to give every coding agent the same second brain."
     },
     {
       "primaryKey": "sapin",
@@ -3588,10 +3588,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
+      "inbound": 14,
       "outbound": 8,
       "unverified": true,
-      "oneLiner": "Credentials stay in a runtime. Model context does not hold them"
+      "oneLiner": "Credentials stay in a runtime. The model context does not hold them."
     },
     {
       "primaryKey": "self-verification",
@@ -3602,10 +3602,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
+      "inbound": 26,
       "outbound": 15,
       "unverified": false,
-      "oneLiner": "Sample several answers, score them, keep the winner"
+      "oneLiner": "Generate several candidates. Score them. Keep the winner."
     },
     {
       "primaryKey": "session-migrate",
@@ -3616,10 +3616,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Context only. Secret-scan before dry-migrate. Git is truth"
+      "oneLiner": "Session-migrate transfers context only. Git is the source of truth."
     },
     {
       "primaryKey": "ship",
@@ -3631,7 +3631,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 13,
-      "outbound": 19,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
     },
@@ -3644,10 +3644,10 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 11,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "A skill is a compiled SOP for a workflow that already failed once"
+      "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
     {
       "primaryKey": "skill-library",
@@ -3658,10 +3658,10 @@
       "updated": "2026-08-23",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
+      "inbound": 20,
       "outbound": 11,
       "unverified": true,
-      "oneLiner": "Living catalog vs GitHub dump. Compile here. Do not vendor either pack"
+      "oneLiner": "A shared catalog of agent skills the whole company can create, find, and reuse."
     },
     {
       "primaryKey": "skill-recorder",
@@ -3672,10 +3672,10 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 9,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "Trial on clean desktop + fake data, then SkillSpector, then enable"
+      "oneLiner": "Trial only on a clean desktop with fake data. Then [[skillspector]]. Then enable."
     },
     {
       "primaryKey": "skill-transfer",
@@ -3700,10 +3700,10 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 10,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Gate generated SKILL.md before shipping"
+      "oneLiner": "Gate a generated `SKILL.md` with SkillSpector before shipping it."
     },
     {
       "primaryKey": "spot-check",
@@ -3714,10 +3714,10 @@
       "updated": "2026-08-25",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Lead inspects without warning. Stay on-lane. File the lesson"
+      "oneLiner": "Lead inspects without warning. Specialists stay on-lane. Lessons go to wiki and a shared skill."
     },
     {
       "primaryKey": "src-0xcarnagee-tape-2026-08-27",
@@ -4974,7 +4974,7 @@
       "updated": "2026-08-29",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Agent harnesses (Codex, Cowork) default to two-pass document processing over a data room: cheap OSS parse, then retrieval (grep or semantic), then a just-in-time VLM pass on the pages that matter. Def"
@@ -5366,7 +5366,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 19,
+      "inbound": 18,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "`/ultra` runs a task N times in isolated git worktrees, then a same-model [[probabilistic-pivot-tournament]] picks a winner. Terminal-Bench, DeepSeek V4 Flash 0731, N=5, OpenCode run: 24% to 33% on 15"
@@ -5436,7 +5436,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Adding more agents is the default fix for weak review. The paper reports diminishing returns on repository-level tasks."
@@ -5520,7 +5520,7 @@
       "updated": "2026-08-25",
       "tags": "play",
       "island": "sources",
-      "inbound": 12,
+      "inbound": 11,
       "outbound": 11,
       "unverified": true,
       "oneLiner": ""
@@ -5618,7 +5618,7 @@
       "updated": "2026-08-29",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 15,
+      "inbound": 14,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Leftover Codex quota dies at reset. Spend it with `/goal`, not a one-off prompt."
@@ -5674,10 +5674,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
+      "inbound": 8,
       "outbound": 3,
       "unverified": false,
-      "oneLiner": "`id:` survives filename changes"
+      "oneLiner": "Every knowledge object has `id:` in frontmatter. Filenames can change without destroying identity."
     },
     {
       "primaryKey": "stale-fact-detector",
@@ -5688,10 +5688,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "Audit wiki claims vs named sources. raw/ immutable"
+      "oneLiner": "Audit compiled wiki claims against named sources. Internally consistent notes can still be dead."
     },
     {
       "primaryKey": "superde",
@@ -5730,10 +5730,10 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 44,
+      "inbound": 43,
       "outbound": 22,
       "unverified": true,
-      "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
+      "oneLiner": "Treat a token as an investment, not a per-query bill."
     },
     {
       "primaryKey": "trace",
@@ -5772,10 +5772,10 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
+      "inbound": 14,
       "outbound": 7,
       "unverified": true,
-      "oneLiner": "Cheap parse and retrieve, then JIT VLM on the pages that matter"
+      "oneLiner": "For a knowledge-work task over a data room, parse cheaply, retrieve a subset, then run a VLM only on those pages."
     },
     {
       "primaryKey": "two-stage-nn-tl",
@@ -5800,10 +5800,10 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
+      "inbound": 15,
       "outbound": 8,
       "unverified": false,
-      "oneLiner": "/ultra: N worktrees, then PPT picks a winner"
+      "oneLiner": "A `/ultra` command and CLI that runs a coding task N times, then applies a verified winner."
     },
     {
       "primaryKey": "unilang",
@@ -5842,10 +5842,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 7,
       "outbound": 8,
       "unverified": true,
-      "oneLiner": "raw/ is data. Quote, do not follow"
+      "oneLiner": "External text is data. It is not schema and it is not an instruction. See [[memory-system]] and [[grok-bot-tape]]."
     },
     {
       "primaryKey": "vault-ontology",
@@ -5856,10 +5856,10 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
+      "inbound": 15,
       "outbound": 10,
       "unverified": true,
-      "oneLiner": "Derived objects/links from wiki. CSV is not a second wiki"
+      "oneLiner": "Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph."
     },
     {
       "primaryKey": "vending-bench",
@@ -5870,10 +5870,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Long-horizon eval. W=sold units. Do not hallucinate stock"
+      "oneLiner": "Long-horizon agent eval: inventory, orders, pricing, daily fee."
     },
     {
       "primaryKey": "verifiable-instructions",
@@ -5881,13 +5881,13 @@
       "title": "Verifiable instructions",
       "path": "wiki/verifiable-instructions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-24",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 34,
+      "inbound": 33,
       "outbound": 11,
       "unverified": false,
-      "oneLiner": "Behavior, check, failure path. No wishes"
+      "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
     },
     {
       "primaryKey": "vgi-bench",
@@ -5912,10 +5912,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 4,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "Views \u2260 sales. Chess 74k/51 vs 135k/2"
+      "oneLiner": "Views \u2260 sales."
     },
     {
       "primaryKey": "vla-self-demo",
@@ -5940,10 +5940,10 @@
       "updated": "2026-08-29",
       "tags": "person",
       "island": "people",
-      "inbound": 9,
+      "inbound": 7,
       "outbound": 6,
       "unverified": false,
-      "oneLiner": "@Voxyz_ai. Checks in schema, then `/goal` recipes"
+      "oneLiner": "@Voxyz_ai. Site: https://www.voxyz.ai"
     },
     {
       "primaryKey": "vs-graph",
@@ -5982,10 +5982,10 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
+      "inbound": 21,
       "outbound": 25,
       "unverified": true,
-      "oneLiner": "Token-save catalog + W/E counts. No fake dollars"
+      "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
     },
     {
       "primaryKey": "zack0x01",
@@ -5996,10 +5996,10 @@
       "updated": "2026-08-27",
       "tags": "person",
       "island": "people",
-      "inbound": 6,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
-      "oneLiner": "Hunter input source. Not a dump"
+      "oneLiner": "Bug bounty hunter. Handle zack0x01."
     }
   ],
   "links": [
@@ -6526,11 +6526,6 @@
     {
       "from": "C38",
       "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-musk"
-    },
-    {
-      "from": "C38",
-      "linkType": "relatedTo",
       "to": "musk-algorithm"
     },
     {
@@ -6935,126 +6930,6 @@
     },
     {
       "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "andrej-karpathy"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "avid"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "elvis"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "hurley"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "jacky-kwok"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "jerry-liu"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "mahipal-jangra"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "maverick"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "rohit"
-    },
-    {
-      "from": "Home",
-      "linkType": "aboutPerson",
-      "to": "vox"
-    },
-    {
-      "from": "Home",
-      "linkType": "cites",
-      "to": "src-jerry-two-pass-docs"
-    },
-    {
-      "from": "Home",
-      "linkType": "cites",
-      "to": "src-maverick-ultramode"
-    },
-    {
-      "from": "Home",
-      "linkType": "cites",
-      "to": "src-omarsar-adversarial-review"
-    },
-    {
-      "from": "Home",
-      "linkType": "cites",
-      "to": "src-voxyz-codex-goal-quota"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "GrowthOS"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "Jarvis"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "TELOS"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "agent-facing-docs"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "agent-operating-system"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "claim-protocol"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "claims"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "contradictions"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "deer-flow"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "disclosure-index"
-    },
-    {
-      "from": "Home",
       "linkType": "relatedTo",
       "to": "disclosures"
     },
@@ -7062,16 +6937,6 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "graph"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "headlong"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "how-it-works"
     },
     {
       "from": "Home",
@@ -7086,107 +6951,7 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-disclosure-index"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-jerry-two-pass"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-maverick-ultramode"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-26-headlong"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-26-headlong-hour"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-omarsar-2026-08-24"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
       "to": "maps"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "memory-system"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-musk"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-omarsar"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-agent-facing-2026-08-28"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "musk-algorithm"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "musk-pass-2026-08-28"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "retrieval-second-brain"
     },
     {
       "from": "Home",
@@ -7196,22 +6961,7 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
-      "to": "skill-as-sop"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "skill-library"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
       "to": "twitter"
-    },
-    {
-      "from": "Home",
-      "linkType": "relatedTo",
-      "to": "vault-ontology"
     },
     {
       "from": "Home",
@@ -7576,16 +7326,6 @@
     {
       "from": "MEMORY",
       "linkType": "relatedTo",
-      "to": "index-papers"
-    },
-    {
-      "from": "MEMORY",
-      "linkType": "relatedTo",
-      "to": "index-sources"
-    },
-    {
-      "from": "MEMORY",
-      "linkType": "relatedTo",
       "to": "lanbb"
     },
     {
@@ -7741,52 +7481,7 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
-      "to": "adversarial-review"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "agent-facing-docs"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "agent-operating-system"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
       "to": "codex-goal"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "contradictions"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "deer-flow"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "deer-flow-bootstrap-2026-08-24"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "disclosure-index"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "flat-context"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "headlong"
     },
     {
       "from": "Today",
@@ -7796,87 +7491,17 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
+      "to": "log"
     },
     {
       "from": "Today",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-jerry-two-pass"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-26-headlong-hour"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-deer-flow"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-omarsar"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-x-ingest"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-agent-facing-2026-08-28"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "project-skill-stack"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "retrieval-second-brain"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "secret-gateway"
+      "to": "musk-algorithm"
     },
     {
       "from": "Today",
       "linkType": "relatedTo",
       "to": "two-pass-document-processing"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "ultra-mode"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "vault-ontology"
     },
     {
       "from": "adversarial-review",
@@ -9291,6 +8916,11 @@
     {
       "from": "company-foundry",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-25-avid-company-foundry"
+    },
+    {
+      "from": "company-foundry",
+      "linkType": "relatedTo",
       "to": "llm-wiki"
     },
     {
@@ -10166,41 +9796,6 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "Today"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "arxiv-tierlist"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "daily-tool-replace-vault-2026-08-27"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "growth-briefing-2026-08-25"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "growthos-3d-gap-2026-08-25"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "gsap-figma-note-2026-08-25"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "index-papers"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-23"
     },
     {
@@ -10236,11 +9831,6 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-maverick-ultramode"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-voxyz"
     },
     {
@@ -10256,72 +9846,7 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-25-growthos"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-27-can1357-daily-tool"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-27-claim-protocol"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-omarsar-2026-08-24"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-daily-tool"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-daily-tool-2"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-grok-bot"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-maverick-ultramode"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-musk"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-omarsar"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-x-ingest"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
-    },
-    {
-      "from": "digests",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
       "from": "disclosure-index",
@@ -11430,11 +10955,6 @@
     },
     {
       "from": "how-it-works",
-      "linkType": "cites",
-      "to": "src-play-methods-2026-08-25"
-    },
-    {
-      "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "Home"
     },
@@ -11447,11 +10967,6 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
-    },
-    {
-      "from": "how-it-works",
-      "linkType": "relatedTo",
-      "to": "assign-execute-verify"
     },
     {
       "from": "how-it-works",
@@ -11532,11 +11047,6 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "musk-algorithm"
-    },
-    {
-      "from": "how-it-works",
-      "linkType": "relatedTo",
-      "to": "palantir-aip"
     },
     {
       "from": "how-it-works",
@@ -11820,81 +11330,6 @@
     },
     {
       "from": "index",
-      "linkType": "aboutPerson",
-      "to": "alex-karp"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "andrej-karpathy"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "avid"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "can-boluk"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "elvis"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "hurley"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "jacky-kwok"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "jerry-liu"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "lostsec"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "mahipal-jangra"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "maverick"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "rohit"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "vox"
-    },
-    {
-      "from": "index",
-      "linkType": "aboutPerson",
-      "to": "zack0x01"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "GrowthOS"
-    },
-    {
-      "from": "index",
       "linkType": "relatedTo",
       "to": "Home"
     },
@@ -11906,62 +11341,12 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "adversarial-review"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "agent-facing-docs"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "ai-sovereignty"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "anti-slop"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "arxiv-tierlist"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "assign-execute-verify"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "audited-task-contract"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "backlink-first"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "bot-voice"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "botdirectory-scan"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "buying-signal"
     },
     {
       "from": "index",
@@ -11976,42 +11361,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "clip-pipeline"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "codex-goal"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "company-foundry"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "composio-mcp"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "context-compaction"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "context-graph"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "contradictions"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "daily-tool-replace"
     },
     {
       "from": "index",
@@ -12021,97 +11371,12 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "deer-flow"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "deer-flow-bootstrap-2026-08-24"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "disclosure-index"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "drafts-not-publish"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "entropy-gate"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "epistemic-labels"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "eval-suite"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "file-memory"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "flat-context"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "graph"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "grok-bot"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "grok-bot-money"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "grok-bot-pro-tips"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "grok-bot-quota"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "grok-bot-tape"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "grok-bot-use-cases"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "growth-operator"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "harness-routing"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "headlong"
     },
     {
       "from": "index",
@@ -12122,21 +11387,6 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "hunt"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "hunt-harden-loop"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "hunt-ship-loop"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "hunter-follows"
     },
     {
       "from": "index",
@@ -12161,22 +11411,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "loop-graph-engineering"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "maps"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "memory-ablation"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "memory-engineering"
     },
     {
       "from": "index",
@@ -12186,57 +11421,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "multi-source-verdict"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "musk-algorithm"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "palantir-aip"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "pipeline-honesty"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "portable-memory"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "potential-ranking"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "probabilistic-pivot-tournament"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "project-skill-stack"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "provenance"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "quota-router"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "raptor-dispatch"
     },
     {
       "from": "index",
@@ -12246,107 +11431,7 @@
     {
       "from": "index",
       "linkType": "relatedTo",
-      "to": "retrieval-second-brain"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "secret-gateway"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "self-verification"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "session-migrate"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
       "to": "ship"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "skill-as-sop"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "skill-library"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "skill-recorder"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "skillspector"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "spot-check"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "stable-ids"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "stale-fact-detector"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "tokens-as-capital"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "two-pass-document-processing"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "ultra-mode"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "untrusted-ingest"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "vault-ontology"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "vending-bench"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "verifiable-instructions"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "views-vs-sales"
-    },
-    {
-      "from": "index",
-      "linkType": "relatedTo",
-      "to": "work-per-cost"
     },
     {
       "from": "index-papers",
@@ -16861,22 +15946,7 @@
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
-      "to": "assign-execute-verify"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
       "to": "daily-tool-replace"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "decisions"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "hunt-harden-loop"
     },
     {
       "from": "musk-algorithm",
@@ -16886,17 +15956,7 @@
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
-      "to": "index-papers"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "index-sources"
-    },
-    {
-      "from": "musk-algorithm",
-      "linkType": "relatedTo",
-      "to": "memory-ablation"
+      "to": "log"
     },
     {
       "from": "musk-algorithm",
@@ -17812,81 +16872,6 @@
       "from": "ship",
       "linkType": "relatedTo",
       "to": "drafts"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "graph-clusters-2026-08-24"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23-cybersecurity-skills"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23-retrieval-second-brain"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23-skill-library"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-23-skill-pack-list"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-jerry-two-pass"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ingest-brief-2026-08-25-avid-company-foundry"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-28-avid-foundry"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
-    },
-    {
-      "from": "ship",
-      "linkType": "relatedTo",
-      "to": "ontology-rebuild-brief-2026-08-28"
     },
     {
       "from": "skill-as-sop",

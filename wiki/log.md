@@ -11,6 +11,18 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] merge | origin/main into musk-algorithm pass
+
+Fetched origin/main at `2667956`. Kept musk short door. Kept main's [[two-pass-document-processing]] and [[codex-goal]] pages. C44 and C45 stay. C38 skip stays. C17 / C18 / C37 untouched.
+
+## [2026-08-29] musk | third pass until a cycle is idle
+
+Deleted Home/index overlap, digest merge dump, `tools/sb.py`, MEMORY query duplicate, mandatory always-rebuild ontology, Home people catalog, GrowthOS graph on Home, graph islands table. Digests kept briefs that would otherwise orphan. Next pass found only locked parts (C17, C18, D1–D12, C38 existing briefs, append-only log). Stopped. See [[musk-algorithm]].
+
+## [2026-08-29] musk | second vault pass delete then simplify
+
+lan E sent the five-step algorithm again. Deleted concept/people catalogs from the short door, Home/Today merge dumps, standing ingest brief, dual lint command, and the graph mermaid dump. C38 resolved: skip. `tools/sb` added so `python3 tools/sb` runs. C17 / C18 / C37 left untouched. See [[musk-algorithm]].
+
 ## [2026-08-29] merge | origin/main into voxyz leftover-quota branch
 
 Fetched origin/main at `5502848`. Simple unions kept. Branch flag remapped C8→C45 so it does not collide with main C8 (two anti-slop tens). Same-day brief renamed to [[ingest-brief-2026-08-24-voxyz-codex-goal]]; main [[ingest-brief-2026-08-24]] kept. C17 / C18 / C25 / C37 / C38 left unresolved. See [[merge-conflict-report-2026-08-29-voxyz-codex-goal]].

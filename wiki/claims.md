@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-28
+updated: 2026-08-29
 created_by: agent
 confidence: medium
 source:
@@ -40,7 +40,7 @@ Keep both until a human names one canonical store. Do not add a vector index to 
 
 ## Check
 
-`python3 tools/compile-claims.py --check` and `python3 tools/sb validate` both exit 0.
+`python3 tools/sb validate` exits 0. Rebuild the CSV with `python3 tools/compile-claims.py` if stale.
 
 If a statement cannot be tied to a source page: leave it out of both tables.
 

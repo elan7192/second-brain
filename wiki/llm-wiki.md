@@ -21,9 +21,9 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 
 ## Operations
 
-- **Ingest.** One source updates the pages it actually changes. Source page, concepts, matching index (D12), log, YAML claim rows, CSV compile rows, lint. Standing ingest brief is C38. See [[musk-algorithm]].
+- **Ingest.** One source updates the pages it actually changes. Source page, concepts, matching catalog (D12), log, YAML claim rows, CSV compile rows, `python3 tools/sb validate`. No standing ingest brief (C38). See [[musk-algorithm]].
 - **Query.** Run `python3 tools/sb ask`. Answer from the evidence set. Do not walk [[index]] as the query path (D9, C37). File back only if the next session would re-derive it. Named chain: [[claim-protocol]].
-- **Lint.** `python3 tools/sb validate`. Also `python3 tools/compile-claims.py --check`. Contradictions, stale claims, orphans, missing ids, injection phrases.
+- **Lint.** `python3 tools/sb validate`. Contradictions, stale claims, orphans, missing ids, injection phrases.
 - **Methods.** Compile methods learned while doing work after the task. See [[src-play-methods-2026-08-25]].
 - **Freshness.** Audit claims with [[stale-fact-detector]] against named sources. `raw/` stays immutable.
 - **Memory system.** Provenance and FACT/INFERENCE/OPINION on new pages. See [[memory-system]]. Dual claim store is C17.

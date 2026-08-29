@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Decisions
@@ -83,7 +83,7 @@ CSV vs YAML claim registries are not locked. See C17.
 
 ## D10. Instruction files are the control surface
 
-Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.
+Put steerage in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs. Reading those files is not the check. After they change, run `python3 tools/sb validate` (runs lint).
 
 - Source: [[agent-facing-docs]], [[verifiable-instructions]]
 - Locked: 2026-08-24
