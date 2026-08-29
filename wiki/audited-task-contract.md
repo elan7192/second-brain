@@ -1,9 +1,10 @@
 ---
+id: concept:audited-task-contract
 type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-28
 ---
 
 # Audited task contract
@@ -30,6 +31,10 @@ Moving a task to a new harness without a contract means re-reading the repo, reo
 
 Exclude: full chat, secrets, raw tool dumps, adjectives.
 
+[[src-4ndrearossetti-openconnector]] applies the same exclusion at tool time: the executor may call a gateway; the model still does not see the key. See [[secret-gateway]].
+
+From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]].
+
 ## Control plane
 
 - Planner proposes a bounded unit.
@@ -39,14 +44,16 @@ Exclude: full chat, secrets, raw tool dumps, adjectives.
 
 Rule: the planner proposes. The executor changes a candidate. The auditor verifies. Only the controller commits.
 
-## Codex /goal
+[[adversarial-review]] is the same shape on one artifact: M writes, R reviews, C audits the review, then M may edit. The inner loop is review text only. Source: [[src-omarsar-adversarial-review]].
 
-`/goal` keeps outcome, check, constraints, and a stop list in one prompt. It is scoped to a Codex thread. It does not move state to another harness. Use this page's contract fields when the task leaves Codex.
+`/goal` keeps outcome, check, constraints, and a stop list in one Codex prompt. It does not move state to another harness. Use this page's contract fields when the task leaves Codex. See [[codex-goal]].
 
 ## Why not a shared brain dump
 
 Generated repo summaries in a 2026 AGENTS.md study did not significantly raise resolve rate and raised cost. Native sessions are not a standard. Unverified memory can poison later agents.
 
+[[src-avid-company-foundry]]: the folder is not the product. The contracts inside it are. Workers write artifacts, not private summaries. A chat answer is not a company artifact. See [[company-foundry]].
+
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[codex-goal]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]] · [[secret-gateway]] · [[codex-goal]]

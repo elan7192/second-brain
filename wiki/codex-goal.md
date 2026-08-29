@@ -1,9 +1,10 @@
 ---
+id: concept:codex-goal
 type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-29
 ---
 
 # Codex /goal
@@ -30,7 +31,7 @@ Full prompt text stays in the raw file.
 
 ## What this page does not claim
 
-"Days of Sol" leftover is `unverified`. See [[contradictions]] C8.
+"Days of Sol" leftover is `unverified`. See [[contradictions]] C45.
 
 `$ux-audit`, `$impeccable`, and `$transitions-dev` are names in the thread. This wiki has not confirmed they install.
 

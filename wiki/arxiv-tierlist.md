@@ -1,4 +1,5 @@
 ---
+id: project:arxiv-tierlist
 type: project
 tags:
   - project
@@ -12,12 +13,142 @@ An arXiv paper tierlist site ranked by future development potential (runway), no
 
 Source: [[src-arxiv-tierlist-handoff]]. Ranking axis and formula: [[potential-ranking]].
 
-## Corpus (2026-08-23 UTC snapshot)
+## Corpus (2026-08-24 gap batch 6)
 
-- Unique papers: 66555
+- Unique papers: 405856. This batch added 72800. Cursor 2022-06-08.
+- Prior: 333056 (batch 5)
 - Date range: 1990-01-01 to 2026-08-20
-- Full-corpus tiers: S 15051 / A 3418 / B 17758 / C 20746 / D 9582
+- Full-corpus tiers: S 16443 / A 42228 / B 197545 / C 113767 / D 35873
+- Inventory counts. Known compiled papers are listed below, not the rest of the pile.
 - Data root: `/workspace/arxiv-tierlist/`
+
+## Known papers (BATCH01)
+
+arxiv read these. Digest path `/workspace/arxiv-tierlist/digests/`. Source list: [[src-arxiv-batch01]].
+
+| Paper | Page |
+| --- | --- |
+| 2507.08177 | [[causal-cps-anomaly]] |
+| 2507.17886 | [[nmc-trace-complexity]] |
+| 2507.20810 | [[flow-matching-pso]] |
+| 2509.26507 | [[bdh]] |
+| 2510.17928 | [[evosyn]] |
+
+## Known papers (BATCH02)
+
+Source list: [[src-arxiv-batch02]].
+
+| Paper | Page |
+| --- | --- |
+| 2509.11016 | [[superde]] |
+| 2509.21617 | [[lance]] |
+| 2509.23982 | [[palrs]] |
+| 2509.24844 | [[prednext]] |
+| 2510.02345 | [[clustered-moe]] |
+
+Tables 7–8 of 2510.02345 are `unverified`. Unread appendices and `.txt` extracts are not known.
+
+## Known papers (BATCH03)
+
+Source list: [[src-arxiv-batch03]].
+
+| Paper | Page |
+| --- | --- |
+| 2510.03744 | [[hydrofusion-lmf]] |
+| 2510.16851 | [[ngc]] |
+| 2511.02241 | [[sapin]] |
+| 2511.02864 | [[alphaevolve-math]] |
+| 2511.02957 | [[pavement-gnn]] |
+
+C9/C10 on [[contradictions]]. AlphaEvolve 6.24–6.67 not known.
+
+## Known papers (BATCH04)
+
+Source list: [[src-arxiv-batch04]].
+
+| Paper | Page |
+| --- | --- |
+| 2511.05540 | [[tiwm]] |
+| 2511.12922 | [[unitok]] |
+| 2511.16485 | [[llm4eo]] |
+| 2511.20500 | [[apt-siamese]] |
+| 2511.20721 | [[foundry-3d]] |
+
+C11/C12 on [[contradictions]]. OCR-unclean tables `unverified`.
+
+## Known papers (BATCH05)
+
+Source list: [[src-arxiv-batch05]].
+
+| Paper | Page |
+| --- | --- |
+| 2512.00288 | [[portal]] |
+| 2512.00341 | [[mpi-init]] |
+| 2512.01249 | [[pwr-ga]] |
+| 2512.02419 | [[brain-ai-convergence]] |
+| 2512.03394 | [[vs-graph]] |
+
+VS-Graph figure-only accuracy `unverified`.
+
+## Known papers (BATCH06)
+
+Source list: [[src-arxiv-batch06]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.20255 | [[two-stage-nn-tl]] |
+| 2608.20258 | [[dics]] |
+| 2608.20274 | [[skill-transfer]] |
+| 2608.20281 | [[iar]] |
+| 2608.20315 | [[bert-ler]] |
+
+Unread appendices / Gemma tables / LoRA grid / figs not known.
+
+## Known papers (BATCH07)
+
+Source list: [[src-arxiv-batch07]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.20331 | [[g-carl]] |
+| 2608.20338 | [[concept-guard]] |
+| 2608.19408 | [[r2-opd]] |
+| 2608.19425 | [[scape]] |
+| 2608.19490 | [[vla-self-demo]] |
+
+[[vla-self-demo]] Table 4 unread.
+
+## Known papers (BATCH08)
+
+Source list: [[src-arxiv-batch08]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.19492 | [[dbosc]] |
+| 2608.19514 | [[fourmas]] |
+| 2608.19515 | [[hear2act]] |
+| 2608.19529 | [[unilang]] |
+| 2608.19536 | [[cvsd-reg]] |
+
+C13 on [[contradictions]]. Hear2Act Table 11 and UniLang Fig. 4 unread.
+
+## Known papers (BATCH09)
+
+Source list: [[src-arxiv-batch09]].
+
+| Paper | Page |
+| --- | --- |
+| 2608.19540 | [[camf-mft]] |
+| 2608.19568 | [[draftfm]] |
+| 2608.19579 | [[dmd-safety]] |
+| 2608.19583 | [[vgi-bench]] |
+| 2608.19589 | [[orthoskillvla]] |
+
+Figs unread.
+
+## ChatGPT 100-paper ZIP (not known)
+
+[[src-chatgpt-t-6a8cc267]] claimed 100 papers, 5 categories × 20, inside `second-brain-upgraded-2026-08-25.zip`. Public file download 401/403. Those papers are not compiled here. Harvest remains digest-only. See C36.
 
 ## Display
 
@@ -29,9 +160,9 @@ Each card: title, authors, category, date, score, reason tags, abs and pdf links
 
 1. OAI-PMH `https://oaipmh.arxiv.org/oai` `metadataPrefix=arXiv` `set=cs`, oldest first. First lag of 48100 papers stopped at 2013-12.
 2. Atom `https://export.arxiv.org/api/query` `sortBy=submittedDate&sortOrder=descending` added 17155 papers from 2025-06 to 2026-08 (about 2000 newest per class: cs.AI, cs.LG, cs.CL, cs.CV, cs.NE, cs.RO, cs.CR, stat.ML, cs.SE, cs.IR).
-3. Gap remains about 2014 to mid 2025.
+3. Remaining gap 2022-06 to 2025-06. Resume: `harvest_gap_state.json`. Next GAP_TARGET >> 325001.
 4. Request interval about 3 seconds. Metadata only. No PDFs.
-5. Dedup key is arXiv id. `seen_ids.txt` has 66555 lines.
+5. Dedup key is arXiv id. Total unique 405856.
 
 ## Ranking (essence)
 
@@ -51,18 +182,19 @@ score = clamp(0, 100,
 
 Tiers: S ≥ 80, A ≥ 68, B ≥ 52, C ≥ 38, D < 38.
 
-Known bias: recency overweights 2025–26 papers, so S is 15051. That is why display is per-tier, not global top-N. It is a product bias, not a source conflict.
+Known bias: recency overweights 2025–26 papers, so S is 16443. That is why display is per-tier, not global top-N. It is a product bias, not a source conflict.
 
 ## Public URL
 
 Current site (2026-08-24, HTTP 200): https://elan7192.github.io/arxiv-potential-tierlist/
 Repo: https://github.com/elan7192/arxiv-potential-tierlist
+Same Pages URL. Local slice rebuilt. Do not assume the public page already shows 405856.
 
 ZeroDeploy URLs are stale. Do not treat them as current. Do not record deploy tokens. Do not use `silent-wind-6359` (pre-2013 only) or `broken-flower-1108` (global top 4000, all S). Local serve: `python3 -m http.server 8765` in `site/`.
 
 ## Next priorities (from source; do not invent)
 
-1. Fill the 2014–mid-2025 gap (continue OAI or yearly/category Atom).
+1. Fill the remaining 2022-06 to 2025-06 gap (continue OAI from harvest_gap_state.json).
 2. Rescore: lower recency weight, or per-category percentile / z-score.
 3. Product: search and category filters exist in draft; community vote as a second axis was not requested.
 

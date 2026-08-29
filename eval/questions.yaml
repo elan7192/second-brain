@@ -1,0 +1,67 @@
+questions:
+  - id: q-memory-ablation
+    question: What makes a memory line worth keeping?
+    kind: fact
+    k: 8
+    must_include:
+      - deleting it
+      - changes an answer
+
+  - id: q-fts-disposable
+    question: Is the SQLite FTS5 index the source of truth?
+    kind: fact
+    k: 8
+    must_include:
+      - disposable
+
+  - id: q-human-gate
+    question: Can this vault post, pay, send, or deploy?
+    kind: fact
+    k: 8
+    must_include:
+      - post
+
+  - id: q-ngc-contradiction
+    question: What is the NGC Mistral MMLU-pro number?
+    kind: contradiction
+    k: 8
+
+  - id: q-karpathy-code
+    question: Did Karpathy tell people to stop writing code?
+    kind: contradiction
+    k: 8
+
+  - id: q-compiler-layout
+    question: What is the compiler vault layout?
+    kind: fact
+    k: 8
+    must_include:
+      - raw/
+
+  - id: q-clone-brain
+    question: Should we clone codejunkie99 brain?
+    kind: fact
+    k: 8
+    must_include:
+      - Do not clone
+
+  - id: q-three-layers
+    question: What are the three layers of LLM wiki?
+    kind: fact
+    k: 8
+    must_include:
+      - Raw sources
+
+  - id: q-flag-conflict
+    question: What should agents do when they disagree?
+    kind: fact
+    k: 8
+    must_include:
+      - flag_conflict
+
+  - id: q-d5
+    question: What did we decide about posting and paying?
+    kind: fact
+    k: 8
+    must_include:
+      - Human final yes

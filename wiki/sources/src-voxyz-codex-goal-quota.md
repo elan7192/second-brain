@@ -1,9 +1,10 @@
 ---
+id: source:src-voxyz-codex-goal-quota
 type: source
 tags:
   - twitter
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-29
 ---
 
 # src-voxyz-codex-goal-quota
@@ -27,7 +28,7 @@ Five retrieved recipes:
 
 ## Gaps
 
-"Days of Sol" is not measured. See [[contradictions]] C8.
+"Days of Sol" is not measured. See [[contradictions]] C45.
 
 Skill names are as written in the thread. Availability is unchecked.
 

@@ -1,0 +1,453 @@
+# Structured contradictions. Prose stays in wiki/contradictions.md.
+# Codes C1–C45 must match that page.
+
+contradictions:
+  - id: contradiction:c1
+    claim_a: claim:bober-says-stop-writing-code
+    claim_b: claim:karpathy-gist-does-not-ban-coding
+    reason: Bober marketing line vs Karpathy gist
+    status: resolved
+    severity: medium
+    resolution: treat Bober's line as marketing; keep the gist
+    resolution_source: person:andrej-karpathy
+    page: contradictions.md
+
+  - id: contradiction:c2
+    claim_a: claim:compiler-vault-layout
+    claim_b: source:src-bober-folder-workflow
+    reason: two folder skeletons
+    status: resolved
+    severity: low
+    resolution: D1 plus D7; compiler stays raw/ plus wiki/
+    resolution_source: decision:compiler-vault
+    page: contradictions.md
+
+  - id: contradiction:c3
+    claim_a: claim:entropy-prefer-64-worker-table
+    claim_b: claim:entropy-200-agent-clip-unverified
+    reason: 200-agent cinematic vs 64-worker study
+    status: resolved
+    severity: medium
+    resolution: cite the 64-worker table; mark the clip unverified
+    resolution_source: concept:entropy-gate
+    page: contradictions.md
+
+  - id: contradiction:c4
+    claim_a: concept:entropy-gate
+    claim_b: concept:audited-task-contract
+    reason: shared memory vs shared contract
+    status: resolved
+    severity: low
+    resolution: share a small audited contract; do not share transcripts
+    resolution_source: concept:audited-task-contract
+    page: contradictions.md
+
+  - id: contradiction:c5
+    claim_a: source:src-papa-couch-compiler
+    claim_b: claim:memory-line-retained-iff-changes-answer
+    reason: living profile vs adjective death
+    status: resolved
+    severity: low
+    resolution: D3; profile files may only hold facts that change answers
+    resolution_source: decision:facts-not-adjectives
+    page: contradictions.md
+
+  - id: contradiction:c6
+    claim_a: source:src-voxyz-verifiable-instructions
+    claim_b: claim:schema-rules-need-three-parts
+    reason: exact eight Voxyz blocks missing
+    status: resolved
+    severity: low
+    resolution: encode the three-part rule in AGENTS.md
+    resolution_source: concept:verifiable-instructions
+    page: contradictions.md
+
+  - id: contradiction:c7
+    claim_a: source:src-bober-folder-workflow
+    claim_b: concept:llm-wiki
+    reason: income claim 17k/month
+    status: unverified
+    severity: medium
+    resolution: do not use as evidence that the architecture works
+    resolution_source: wiki/contradictions.md
+    page: contradictions.md
+
+  - id: contradiction:c8
+    claim_a: source:src-juampi-anti-slop-rank
+    claim_b: source:src-openagentskill-anti-slop
+    reason: two anti-slop tens
+    status: resolved
+    severity: low
+    resolution: keep juampi's list as D6 writing default; do not merge
+    resolution_source: decision:anti-slop-by-default
+    page: contradictions.md
+
+  - id: contradiction:c9
+    claim_a: claim:ngc-mistral-mmlu-pro-table1-24-50
+    claim_b: claim:ngc-mistral-mmlu-pro-table3-33-67
+    reason: conflicting experimental results in the same paper
+    status: unresolved
+    severity: high
+    resolution: null
+    resolution_source: null
+    page: ngc.md
+
+  - id: contradiction:c10
+    claim_a: source:src-arxiv-2510-03744
+    claim_b: concept:hydrofusion-lmf
+    reason: HydroFusion abstract years vs section 4.1
+    status: resolved
+    severity: medium
+    resolution: keep the section 4.1 span; mark the abstract phrase as a clash
+    resolution_source: concept:hydrofusion-lmf
+    page: hydrofusion-lmf.md
+
+  - id: contradiction:c11
+    claim_a: source:src-arxiv-2511-12922
+    claim_b: concept:unitok
+    reason: UniTok 51.89% N@10 is Toys, not Tools
+    status: resolved
+    severity: medium
+    resolution: keep the table
+    resolution_source: concept:unitok
+    page: unitok.md
+
+  - id: contradiction:c12
+    claim_a: source:src-arxiv-2511-05540
+    claim_b: concept:tiwm
+    reason: TIWM Mini val14 vs full val14
+    status: resolved
+    severity: medium
+    resolution: do not quote Mini as full val14
+    resolution_source: concept:tiwm
+    page: tiwm.md
+
+  - id: contradiction:c13
+    claim_a: source:src-arxiv-2608-19514
+    claim_b: concept:fourmas
+    reason: 4MAS graphical abstract vs Table 1
+    status: resolved
+    severity: medium
+    resolution: keep Table 1; do not use the abstract art numbers
+    resolution_source: concept:fourmas
+    page: fourmas.md
+
+  - id: contradiction:c14
+    claim_a: claim:eptwts-100k-unverified
+    claim_b: concept:growth-operator
+    reason: eptwts 100k / 10 months
+    status: unverified
+    severity: medium
+    resolution: do not use as a forecast or as proof the vault works
+    resolution_source: concept:growth-operator
+    page: growth-operator.md
+
+  - id: contradiction:c15
+    claim_a: concept:foundry-3d
+    claim_b: concept:palantir-aip
+    reason: Foundry 3D paper vs Palantir Foundry
+    status: resolved
+    severity: low
+    resolution: do not mix the names; Company Foundry is a third use; local object table is vault-ontology
+    resolution_source: concept:vault-ontology
+    page: contradictions.md
+
+  - id: contradiction:c16
+    claim_a: concept:headlong
+    claim_b: concept:entropy-gate
+    reason: Headlong one stream vs entropy-gate isolation
+    status: resolved
+    severity: medium
+    resolution: Headlong stays a trial CLI, not the wiki compiler
+    resolution_source: concept:headlong
+    page: contradictions.md
+
+  - id: contradiction:c17
+    claim_a: claim:source-claims-compile-to-csv
+    claim_b: claim:structured-claims-live-in-yaml
+    reason: CSV compile of Claims kept vs YAML sb registry
+    status: unresolved
+    severity: high
+    resolution: keep both; do not delete either table; human names the canonical store
+    resolution_source: concept:claims
+    page: contradictions.md
+
+  - id: contradiction:c18
+    claim_a: concept:claim-protocol
+    claim_b: concept:retrieval
+    reason: tools/retrieve.py plus hand-edited CSV vs tools/sb ask plus compiled claims.csv
+    status: unresolved
+    severity: high
+    resolution: live query stays sb ask; do not wire the second CLI; do not delete PR tools without a human yes
+    resolution_source: concept:claim-protocol
+    page: contradictions.md
+
+  - id: contradiction:c19
+    claim_a: source:src-lan-e-claim-protocol-2026-08-27
+    claim_b: concept:file-memory
+    reason: proposed embeddings vs no vector DB until too much to read
+    status: resolved
+    severity: low
+    resolution: parked; same as D9 and Deferred
+    resolution_source: concept:file-memory
+    page: contradictions.md
+
+  - id: contradiction:c20
+    claim_a: source:src-johnsjawn-skill-library
+    claim_b: concept:llm-wiki
+    reason: Notion living Skills library vs compiled git wiki
+    status: resolved
+    severity: medium
+    resolution: compile product claims onto skill-library; do not reopen D7; do not vendor Notion or GitHub packs
+    resolution_source: decision:obsidian-is-the-ide
+    page: contradictions.md
+
+  - id: contradiction:c21
+    claim_a: source:src-johnsjawn-skill-library
+    claim_b: concept:skill-library
+    reason: skill improves with use vs usage count column
+    status: unverified
+    severity: low
+    resolution: keep the tweet line unverified; cite the demo for usage visibility only
+    resolution_source: concept:skill-library
+    page: contradictions.md
+
+  - id: contradiction:c22
+    claim_a: source:src-mukul975-cybersecurity-skills
+    claim_b: person:mahipal-jangra
+    reason: Anthropic in the repo name vs unaffiliated README
+    status: resolved
+    severity: medium
+    resolution: cite mahipal-jangra; do not call the pack an Anthropic product
+    resolution_source: person:mahipal-jangra
+    page: contradictions.md
+
+  - id: contradiction:c23
+    claim_a: source:src-mukul975-cybersecurity-skills
+    claim_b: concept:skill-library
+    reason: 817 skills headline vs 785-row domain table
+    status: unresolved
+    severity: medium
+    resolution: treat 817 as author-stated; do not use the table as a proof of 817
+    resolution_source: concept:skill-library
+    page: contradictions.md
+
+  - id: contradiction:c24
+    claim_a: source:src-skill-pack-list
+    claim_b: concept:skill-library
+    reason: skill-pack paste counts vs live repos on 2026-08-23
+    status: resolved
+    severity: medium
+    resolution: quote the 2026-08-23 check; do not repeat paste numbers as current
+    resolution_source: concept:skill-library
+    page: contradictions.md
+
+  - id: contradiction:c25
+    claim_a: source:src-retrieval-second-brain
+    claim_b: concept:retrieval
+    reason: hybrid BM25+vector+GraphRAG paste vs D9 FTS query path
+    status: unresolved
+    severity: high
+    resolution: compile the four pillars; do not vendor those frameworks; do not reopen D9 in this merge
+    resolution_source: decision:markdown-canonical-fts-disposable
+    page: contradictions.md
+
+  - id: contradiction:c26
+    claim_a: concept:hunt-ship-loop
+    claim_b: source:src-dair-agent-friendly-docs
+    reason: vault file-first vs observed agentic PRs touching code first
+    status: resolved
+    severity: low
+    resolution: keep file-first for this vault; do not treat code-first as a schema change
+    resolution_source: decision:compiler-vault
+    page: contradictions.md
+
+  - id: contradiction:c27
+    claim_a: concept:verifiable-instructions
+    claim_b: source:src-dair-agent-friendly-docs
+    reason: required prose checks vs zero observed documentation-based validation
+    status: resolved
+    severity: low
+    resolution: compatible; external gate required; reading AGENTS.md is not the check
+    resolution_source: decision:instruction-files-control-surface
+    page: contradictions.md
+
+  - id: contradiction:c28
+    claim_a: source:src-disclosure-index
+    claim_b: concept:disclosure-index
+    reason: documented REST API vs live catalog.js 404
+    status: resolved
+    severity: low
+    resolution: cite catalog.js and compiled stats; do not claim the REST API works
+    resolution_source: concept:disclosure-index
+    page: contradictions.md
+
+  - id: contradiction:c29
+    claim_a: concept:anti-slop
+    claim_b: concept:daily-tool-replace
+    reason: D6 writing slop vs LLM-built software slop plus steering
+    status: resolved
+    severity: low
+    resolution: keep D6 as writing; compile the clip as daily-tool-replace; do not merge the two slops
+    resolution_source: concept:daily-tool-replace
+    page: contradictions.md
+
+  - id: contradiction:c30
+    claim_a: concept:grok-bot
+    claim_b: concept:entropy-gate
+    reason: Grok Bot shared screens vs entropy-gate isolated worktrees
+    status: resolved
+    severity: low
+    resolution: different systems; do not cite Grok Bot screens as entropy-gate isolation
+    resolution_source: concept:grok-bot
+    page: contradictions.md
+
+  - id: contradiction:c31
+    claim_a: source:src-avid-company-foundry
+    claim_b: concept:company-foundry
+    reason: Avid Jarvis clip vs Company Foundry article
+    status: resolved
+    severity: low
+    resolution: compile the article and README; mark the clip unverified; D5 still holds
+    resolution_source: concept:company-foundry
+    page: contradictions.md
+
+  - id: contradiction:c32
+    claim_a: source:src-deer-flow
+    claim_b: concept:deer-flow
+    reason: AGENTS.md make config copies extensions_config vs configure.py does not
+    status: resolved
+    severity: low
+    resolution: treat the Python script as executed behavior; copy the extensions template by hand
+    resolution_source: concept:deer-flow
+    page: contradictions.md
+
+  - id: contradiction:c33
+    claim_a: source:src-jacky-self-verification
+    claim_b: source:src-maverick-ultramode
+    reason: two Terminal-Bench lifts; 15-task slice vs TB 2.1
+    status: resolved
+    severity: medium
+    resolution: cite the slice; do not quote 24% to 33% as a full-bench result
+    resolution_source: source:src-maverick-ultramode
+    page: contradictions.md
+
+  - id: contradiction:c34
+    claim_a: concept:entropy-gate
+    claim_b: concept:ultra-mode
+    reason: objective gate outside the LLM vs same-model win-rate apply
+    status: resolved
+    severity: medium
+    resolution: tournament picks a candidate; apply is uncommitted; tests or a human still gate ship
+    resolution_source: concept:entropy-gate
+    page: contradictions.md
+
+  - id: contradiction:c35
+    claim_a: source:src-omarsar-adversarial-review
+    claim_b: source:src-jacky-self-verification
+    reason: Self-Refine of one draft vs N-candidate same-model verify
+    status: resolved
+    severity: medium
+    resolution: cite the loop; Self-Refine zero is not evidence Jacky or Maverick failed
+    resolution_source: concept:adversarial-review
+    page: contradictions.md
+
+  - id: contradiction:c36
+    claim_a: source:src-chatgpt-t-6a8cc267
+    claim_b: concept:llm-wiki
+    reason: ChatGPT upgraded snapshot ZIP vs this vault; 100-paper counts unverified
+    status: unverified
+    severity: medium
+    resolution: keep the GitHub wiki; do not merge or reconstruct the ZIP from the claim list
+    resolution_source: concept:llm-wiki
+    page: contradictions.md
+
+  - id: contradiction:c37
+    claim_a: concept:musk-algorithm
+    claim_b: concept:retrieval
+    reason: musk short index as query path vs locked D9 sb ask
+    status: disputed
+    severity: high
+    resolution: this merge does not reopen D9; catalog split remapped to D12; human names whether short index replaces sb ask
+    resolution_source: decision:markdown-canonical-fts-disposable
+    page: contradictions.md
+
+  - id: contradiction:c38
+    claim_a: concept:musk-algorithm
+    claim_b: concept:llm-wiki
+    reason: musk deleted standing ingest brief; main ingest step 9 still writes one
+    status: disputed
+    severity: medium
+    resolution: do not add a new brief; do not delete existing briefs; wait for lan E
+    resolution_source: concept:musk-algorithm
+    page: contradictions.md
+
+  - id: contradiction:c39
+    claim_a: concept:musk-algorithm
+    claim_b: concept:verifiable-instructions
+    reason: keep AGENTS.md and CLAUDE.md identical vs D2 pointer only
+    status: resolved
+    severity: low
+    resolution: D2 wins; pointer only
+    resolution_source: decision:one-schema-two-filenames
+    page: contradictions.md
+
+  - id: contradiction:c40
+    claim_a: source:src-4ndrearossetti-openconnector
+    claim_b: concept:secret-gateway
+    reason: browser field inject vs API-action catalog
+    status: resolved
+    severity: medium
+    resolution: keep the shared credentials-out-of-context rule; do not treat OpenConnector as the browser injector
+    resolution_source: concept:secret-gateway
+    page: contradictions.md
+
+  - id: contradiction:c41
+    claim_a: source:src-avichawla-trueforge
+    claim_b: concept:flat-context
+    reason: TrueForge title 2.7x vs body 40 percent vs vendor table
+    status: unverified
+    severity: medium
+    resolution: sponsored article, no paper; do not pick a multiplier
+    resolution_source: concept:flat-context
+    page: contradictions.md
+
+  - id: contradiction:c42
+    claim_a: source:src-alexprompter-claude-projects
+    claim_b: concept:project-skill-stack
+    reason: Claude Projects product workspace vs this compiler vault
+    status: resolved
+    severity: medium
+    resolution: keep D1; do not treat Claude Projects as the vault wiki; do not adopt those folders
+    resolution_source: concept:project-skill-stack
+    page: contradictions.md
+
+  - id: contradiction:c43
+    claim_a: source:src-voxyz-writing-system
+    claim_b: concept:anti-slop
+    reason: third writing list vs D6 juampi default
+    status: resolved
+    severity: medium
+    resolution: keep D6; do not vendor the Voxyz prompt into AGENTS.md; C6 stays open
+    resolution_source: concept:anti-slop
+    page: contradictions.md
+
+  - id: contradiction:c44
+    claim_a: concept:llm-wiki
+    claim_b: source:src-jerry-two-pass-docs
+    reason: compile-once wiki vs two-pass RAG over data rooms
+    status: resolved
+    severity: medium
+    resolution: different stores; persistent wiki stays compile-once; dumps use two-pass; do not reopen D1
+    resolution_source: decision:compiler-vault
+    page: contradictions.md
+
+  - id: contradiction:c45
+    claim_a: source:src-voxyz-codex-goal-quota
+    claim_b: concept:codex-goal
+    reason: leftover Codex quota as days of Sol
+    status: unverified
+    severity: low
+    resolution: keep the /goal method; mark the duration unverified
+    resolution_source: concept:codex-goal
+    page: contradictions.md
