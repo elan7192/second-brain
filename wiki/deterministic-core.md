@@ -10,8 +10,10 @@ created_by: agent
 confidence: medium
 source:
   - wiki/sources/src-vault-review-2026-08-29.md
+  - wiki/sources/src-vault-review-pr27-2026-08-29.md
 derived_from:
   - src-vault-review-2026-08-29
+  - src-vault-review-pr27-2026-08-29
   - llm-wiki
   - audited-task-contract
   - claims
@@ -30,13 +32,15 @@ Source: [[src-vault-review-2026-08-29]]. Live gates: `python3 tools/sb validate`
 
 The same source says the LLM should propose changes and deterministic code should validate them before they become canonical.
 
-`python3 tools/sb health` prints page, claim, contradiction, stale, orphan, broken-link, missing-id, and C17 dual-store counts. It does not replace `python3 tools/sb validate`.
+`python3 tools/sb health` prints page, claim, contradiction, stale, orphan, broken-link, missing-id, provenance-gap, and C17 dual-store counts. Dual store is labeled `two_projections`. IDs are not required to match. It does not replace `python3 tools/sb validate`. Source: [[src-vault-review-pr27-2026-08-29]].
 
 `python3 tools/sb ingest-check <slug>` fails if a named source lacks `id:`, `## Claims kept`, a [[index-sources]] row, an inbound wikilink, or a compiled CSV claim row.
 
-`python3 tools/sb contract-check` accepts a YAML mapping with `objective`, `acceptance_checks`, `write_scope`, and `state_version`. It rejects `transcript`, `secrets`, `tool_dumps`, and `chat`. See [[audited-task-contract]].
+`python3 tools/sb contract-check` accepts contract schema v1: `contract_version`, `objective`, `acceptance_checks`, `write_scope` (string, list, or `{allow, deny}`), and `state_version`. Status is SCHEMA_INVALID, SCHEMA_VALID, TASK_FAILED, or TASK_PASSED. It rejects `transcript`, `secrets`, `tool_dumps`, and `chat`. See [[audited-task-contract]].
 
-Validate fails when a dated `valid_until` is earlier than `valid_from`, or when `superseded_by` names an unknown id.
+Validate fails when a dated `valid_until` is earlier than `valid_from`, when `superseded_by` names an unknown id, when a YAML claim has no `sources`, or when a CSV claim has no source path.
+
+Adversarial tests live in `tests/test_gates.py`. CI runs validate, health, ingest-check, contract-check, and eval.
 
 The review rated retrieval 5/10 and said there is no real retrieval layer. Live query is already `python3 tools/sb ask` (D9). See C46.
 
@@ -50,8 +54,8 @@ Do not add an MCP write path, an ingestion daemon, or `raw/public|private` from 
 
 ## Check
 
-`python3 tools/sb validate` exits 0. After a named ingest, `python3 tools/sb ingest-check <slug>` exits 0. `python3 tools/sb health` prints `gate PASS`. If health shows a dual-store gap: cite both ids and C17. If ingest-check fails: fix catalog, inbound link, or Claims kept before writing `output/`.
+`python3 tools/sb validate` exits 0. After a named ingest, `python3 tools/sb ingest-check <slug>` exits 0. `python3 tools/sb health` prints `gate PASS` and `claims_without_provenance 0`. `python3 -m unittest tests.test_gates -q` exits 0. If health shows a dual-store overlap of 0: that is expected under C17 two_projections. If ingest-check fails: fix catalog, inbound link, or Claims kept before writing `output/`.
 
 ## Related
 
-[[llm-wiki]] · [[claims]] · [[retrieval]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[how-it-works]] · [[claim-protocol]] · [[memory-system]] · [[src-vault-review-2026-08-29]]
+[[llm-wiki]] · [[claims]] · [[retrieval]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[how-it-works]] · [[claim-protocol]] · [[memory-system]] · [[provenance]] · [[src-vault-review-2026-08-29]] · [[src-vault-review-pr27-2026-08-29]]

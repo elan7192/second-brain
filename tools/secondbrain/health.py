@@ -7,13 +7,13 @@ from collections import Counter
 from pathlib import Path
 
 from . import claims as claims_mod
-from . import frontmatter, ids, validate
+from . import frontmatter, ids, provenance, validate
 from .index import connect, rebuild
 from .paths import ROOT, db_path
 from .yamlutil import loads
 
 
-def report(root: Path | None = None, db: Path | None = None) -> str:
+def report(root: Path | None = None, db: Path | None = None) -> tuple[int, str]:
     root = root or ROOT
     target = db or db_path()
     if not target.exists():
@@ -37,6 +37,7 @@ def report(root: Path | None = None, db: Path | None = None) -> str:
     missing, orphans = _link_health(root)
     missing_ids = _missing_ids(root)
     yaml_ids, csv_ids = _claim_id_sets(root)
+    prov = provenance.counts(root)
     gate_code, _ = validate.validate(root, target)
 
     lines = [
@@ -53,11 +54,14 @@ def report(root: Path | None = None, db: Path | None = None) -> str:
         f"orphans               {len(orphans)}",
         f"broken_wikilinks      {len(missing)}",
         f"missing_ids           {len(missing_ids)}",
-        "dual_store            C17 both present; "
+        f"claims_without_provenance {prov['claims_without_provenance']}"
+        f"  yaml={prov['yaml_no_provenance']} csv={prov['csv_no_provenance']}",
+        "dual_store            C17 two_projections; "
         f"yaml={len(yaml_ids)} csv={len(csv_ids)} id_overlap={len(yaml_ids & csv_ids)}",
+        "dual_store_rule       IDs are not required to match. Human names the store.",
         f"gate                  {'PASS' if gate_code == 0 else 'FAIL'}",
     ]
-    return "\n".join(lines) + "\n"
+    return gate_code, "\n".join(lines) + "\n"
 
 
 def _bucket(counter: Counter[str], keys: tuple[str, ...]) -> str:

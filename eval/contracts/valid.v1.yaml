@@ -1,0 +1,13 @@
+contract_version: 1
+objective: Check the vault gates after ingest.
+acceptance_checks:
+  - python3 tools/sb validate
+  - python3 tools/sb health
+write_scope:
+  allow:
+    - wiki/
+    - output/
+    - eval/
+  deny:
+    - raw/
+state_version: 1

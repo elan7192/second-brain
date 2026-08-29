@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T04:53:35Z",
+  "builtAt": "2026-08-29T05:00:37Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -114,11 +114,11 @@
     "Concept": 123,
     "Project": 2,
     "Person": 14,
-    "Source": 140,
+    "Source": 141,
     "Decision": 12,
     "Contradiction": 46,
-    "objects": 423,
-    "links": 2925
+    "objects": 424,
+    "links": 2940
   },
   "objects": [
     {
@@ -243,7 +243,7 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 3,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / INFERENCE / OPINION."
     },
@@ -999,7 +999,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 15,
-      "outbound": 71,
+      "outbound": 72,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -1208,7 +1208,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 41,
+      "inbound": 42,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
@@ -1404,8 +1404,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 32,
-      "outbound": 14,
+      "inbound": 33,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Provenance unit. A page is not a claim. Two registries exist. Do not pick one. See C17."
     },
@@ -1530,8 +1530,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 141,
-      "outbound": 77,
+      "inbound": 142,
+      "outbound": 78,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1656,8 +1656,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
-      "outbound": 10,
+      "inbound": 15,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "The model proposes wiki edits. Code accepts them."
     },
@@ -2329,7 +2329,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 142,
+      "outbound": 143,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2805,7 +2805,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 248,
+      "outbound": 249,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3431,11 +3431,11 @@
       "title": "Provenance",
       "path": "wiki/provenance.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
-      "outbound": 7,
+      "inbound": 10,
+      "outbound": 9,
       "unverified": true,
       "oneLiner": "A compiled page must answer: where did this come from, when, who wrote it, and what it was derived from. A path like `wiki/ssrf.md` with no source is not enough. See [[memory-system]]."
     },
@@ -5646,10 +5646,24 @@
       "updated": "2026-08-29",
       "tags": "play",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 9,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Untrusted paste. Quote. Do not copy ratings or folder proposals into `AGENTS.md` as locks."
+    },
+    {
+      "primaryKey": "src-vault-review-pr27-2026-08-29",
+      "objectType": "Source",
+      "title": "src-vault-review-pr27-2026-08-29",
+      "path": "wiki/sources/src-vault-review-pr27-2026-08-29.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "play",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Untrusted paste. Quote. Do not copy \"merge YAML and CSV ids\" into schema as a lock. That would resolve C17 without a human yes."
     },
     {
       "primaryKey": "src-voxyz-codex-goal-quota",
@@ -6179,6 +6193,11 @@
       "from": "C16",
       "linkType": "relatedTo",
       "to": "headlong"
+    },
+    {
+      "from": "C17",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
     },
     {
       "from": "C17",
@@ -7229,6 +7248,11 @@
       "from": "MEMORY",
       "linkType": "cites",
       "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
     },
     {
       "from": "MEMORY",
@@ -8483,7 +8507,7 @@
     {
       "from": "audited-task-contract",
       "linkType": "cites",
-      "to": "src-vault-review-2026-08-29"
+      "to": "src-vault-review-pr27-2026-08-29"
     },
     {
       "from": "audited-task-contract",
@@ -8814,6 +8838,11 @@
       "from": "claim-protocol",
       "linkType": "relatedTo",
       "to": "stale-fact-detector"
+    },
+    {
+      "from": "claims",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
     },
     {
       "from": "claims",
@@ -9373,6 +9402,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -9897,6 +9931,11 @@
     },
     {
       "from": "deterministic-core",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "deterministic-core",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
     },
@@ -9929,6 +9968,11 @@
       "from": "deterministic-core",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "deterministic-core",
@@ -12533,6 +12577,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -13879,6 +13928,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
     },
     {
       "from": "log",
@@ -16527,6 +16581,11 @@
     },
     {
       "from": "provenance",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "provenance",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
     },
@@ -16534,6 +16593,11 @@
       "from": "provenance",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "provenance",
@@ -19739,6 +19803,31 @@
       "from": "src-vault-review-2026-08-29",
       "linkType": "relatedTo",
       "to": "retrieval"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "src-voxyz-codex-goal-quota",

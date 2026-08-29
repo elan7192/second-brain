@@ -42,7 +42,7 @@ If validate fails: fix missing links before writing `output/`. See D10.
 The model proposes wiki edits. Code accepts them. See [[deterministic-core]].
 After validate, `python3 tools/sb health` prints integrity counts. It does not replace validate.
 After a named source ingest, `python3 tools/sb ingest-check <slug>` must exit 0.
-If a machine-readable contract is written, `python3 tools/sb contract-check <path>` must exit 0.
+If a machine-readable contract is written, `python3 tools/sb contract-check <path>` must exit 0. Schema is v1 (`contract_version`). Status is SCHEMA_INVALID, SCHEMA_VALID, TASK_FAILED, or TASK_PASSED.
 If health shows a dual-store gap: cite both ids and C17. Do not pick a table.
 If ingest-check fails: fix catalog, inbound link, or Claims kept before writing `output/`.
 Do not add an MCP write path or ingestion daemon without lan E yes.

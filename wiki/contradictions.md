@@ -137,7 +137,7 @@ This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / 
 
 Main locked D9 and put structured claims in `wiki/data/claims.yaml` for `python3 tools/sb`.
 
-Resolution: unresolved. Keep both. Do not delete either table. Cite the id you used. Human names the canonical store. See [[claims]] and [[memory-system]].
+Resolution: unresolved. Keep both. They are two projections. `python3 tools/sb health` prints `two_projections` and `id_overlap`. Do not fail validate because the ids differ. Cite the id you used. Human names the canonical store. See [[claims]], [[memory-system]], and [[src-vault-review-pr27-2026-08-29]].
 
 ## C18. Two retrieve engines
 

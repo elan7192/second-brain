@@ -109,7 +109,9 @@ def check_disputed_in_conflicts() -> list[str]:
     import csv
 
     conflict_ids = memorylib.contradiction_ids(ROOT)
-    for row in csv.DictReader(claims_path.open(encoding="utf-8")):
+    with claims_path.open(encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for row in rows:
         if row.get("status") != "disputed":
             continue
         pages = row.get("pages", "")

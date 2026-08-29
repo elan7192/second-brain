@@ -41,6 +41,11 @@ def main(argv: list[str] | None = None) -> int:
     p_ingest.add_argument("slug")
     p_contract = sub.add_parser("contract-check", help="Validate a machine-readable task contract")
     p_contract.add_argument("path", nargs="?", default="")
+    p_contract.add_argument(
+        "--results",
+        default="",
+        help="YAML map of acceptance_check -> bool. Distinguishes TASK_PASSED vs TASK_FAILED.",
+    )
     sub.add_parser("eval", help="Run the retrieval/claim eval suite")
     sub.add_parser("graph", help="Print link degree for indexed objects")
     sub.add_parser("memory-review", help="Print MEMORY.md ablation reminder")
@@ -72,14 +77,15 @@ def main(argv: list[str] | None = None) -> int:
         return code
     if args.cmd == "health":
         _ensure_index()
-        sys.stdout.write(health.report())
-        return 0
+        code, out = health.report()
+        sys.stdout.write(out)
+        return code
     if args.cmd == "ingest-check":
         code, out = ingest_check.check(args.slug)
         sys.stdout.write(out)
         return code
     if args.cmd == "contract-check":
-        return cmd_contract(args.path)
+        return cmd_contract(args.path, args.results)
     if args.cmd == "eval":
         code, out, _ = eval_suite.run_eval()
         sys.stdout.write(out)
@@ -134,21 +140,30 @@ def cmd_trace(object_id: str) -> int:
     return 1 if out.startswith("unknown id:") else 0
 
 
-def cmd_contract(path: str) -> int:
+def cmd_contract(path: str, results_path: str = "") -> int:
+    results = _load_results(results_path) if results_path else None
     if path:
-        errors = contract.check_path(Path(path))
+        status, errors = contract.evaluate_path(Path(path), results)
+        sys.stdout.write(status + "\n")
         if errors:
-            sys.stdout.write("FAIL contract-check\n" + "\n".join(f"  {e}" for e in errors) + "\n")
-            return 1
-        sys.stdout.write(f"ok contract {path}\n")
-        return 0
-    agents = ROOT / "agents"
-    if not agents.is_dir():
-        sys.stdout.write("0 contracts\n")
-        return 0
-    code, out = contract.check_dir(agents)
-    sys.stdout.write(out)
-    return code
+            sys.stdout.write("\n".join(f"  {item}" for item in errors) + "\n")
+        return 0 if status in {contract.SCHEMA_VALID, contract.TASK_PASSED} else 1
+    for folder in (ROOT / "eval" / "contracts", ROOT / "agents"):
+        if folder.is_dir():
+            code, out = contract.check_dir(folder)
+            sys.stdout.write(out)
+            return code
+    sys.stdout.write("0 contracts\n")
+    return 0
+
+
+def _load_results(path: str) -> dict[str, bool]:
+    from .yamlutil import loads
+
+    data = loads(Path(path).read_text(encoding="utf-8")) or {}
+    if not isinstance(data, dict):
+        return {}
+    return {str(key): bool(value) for key, value in data.items()}
 
 
 def cmd_graph() -> int:

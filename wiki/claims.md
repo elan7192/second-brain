@@ -32,7 +32,7 @@ Provenance unit. A page is not a claim. Two registries exist. Do not pick one. S
 
 ## INFERENCE
 
-Both tables can describe the same source sentence. Until C17 is resolved, cite the id you used and do not treat the other table as absent.
+Both tables can describe the same source sentence. They are two projections, not one identity. `python3 tools/sb health` prints `dual_store C17 two_projections` and `id_overlap`. Do not fail validate because YAML ids differ from CSV ids. Until C17 is resolved, cite the id you used and do not treat the other table as absent. Source: [[src-vault-review-pr27-2026-08-29]].
 
 ## OPINION
 
@@ -40,10 +40,10 @@ Keep both until a human names one canonical store. Do not add a vector index to 
 
 ## Check
 
-`python3 tools/sb validate` exits 0. Rebuild the CSV with `python3 tools/compile-claims.py` if stale. `python3 tools/sb health` prints YAML vs CSV counts without picking a winner (C17). See [[deterministic-core]].
+`python3 tools/sb validate` exits 0. Rebuild the CSV with `python3 tools/compile-claims.py` if stale. `python3 tools/sb health` prints YAML vs CSV counts, `claims_without_provenance`, and `two_projections`. A YAML claim with no `sources` fails validate. See [[deterministic-core]] and [[provenance]].
 
 If a statement cannot be tied to a source page: leave it out of both tables.
 
 ## Related
 
-[[provenance]] · [[epistemic-labels]] · [[contradictions]] · [[untrusted-ingest]] · [[file-memory]] · [[stale-fact-detector]] · [[retrieval]] · [[stable-ids]] · [[memory-system]] · [[portable-memory]] · [[memory-ablation]] · [[deterministic-core]]
+[[provenance]] · [[epistemic-labels]] · [[contradictions]] · [[untrusted-ingest]] · [[file-memory]] · [[stale-fact-detector]] · [[retrieval]] · [[stable-ids]] · [[memory-system]] · [[portable-memory]] · [[memory-ablation]] · [[deterministic-core]] · [[src-vault-review-pr27-2026-08-29]]

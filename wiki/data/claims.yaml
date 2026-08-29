@@ -342,9 +342,38 @@ claims:
     confidence: high
     sources:
       - source:src-vault-review-2026-08-29
+      - source:src-vault-review-pr27-2026-08-29
     concepts:
       - concept:deterministic-core
       - concept:musk-algorithm
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:c17-two-projections
+    subject: YAML and CSV claim tables
+    predicate: are
+    object: two projections; ids are not required to match
+    confidence: high
+    sources:
+      - source:src-vault-review-pr27-2026-08-29
+    concepts:
+      - concept:claims
+      - concept:deterministic-core
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:contract-schema-is-v1
+    subject: Task contract
+    predicate: uses
+    object: schema v1 with contract_version and SCHEMA_INVALID/TASK_FAILED/TASK_PASSED
+    confidence: high
+    sources:
+      - source:src-vault-review-pr27-2026-08-29
+    concepts:
+      - concept:audited-task-contract
+      - concept:deterministic-core
     status: supported
     valid_from: 2026-08-29
     observed_at: 2026-08-29

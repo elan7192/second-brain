@@ -15,6 +15,7 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-vault-review-pr27-2026-08-29]] | 2026-08-29 | PR27 follow-up. Negative tests. Contract v1. C17 two_projections |
 | [[src-vault-review-2026-08-29]] | 2026-08-29 | Protocol ahead of runtime. C46. Health/ingest-check gates |
 | [[src-voxyz-codex-goal-quota]] | 2026-08-23 | Leftover Codex quota. Five `/goal` prompts retrieved. C45 |
 | [[src-jerry-two-pass-docs]] | 2026-08-23 | Codex/Cowork two-pass parse. Vendor OCR numbers unverified. C44 |

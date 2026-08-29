@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 from datetime import date
 
-from . import frontmatter, ids
+from . import frontmatter, ids, provenance
 from .index import connect, rebuild
 from .paths import ROOT, TOOLS_DIR, db_path
 from .yamlutil import loads
@@ -131,6 +131,17 @@ def validate(root: Path | None = None, db: Path | None = None) -> tuple[int, str
     else:
         lines.append("ok temporal fields")
 
+    prov_errs = _provenance_errors(root, conn)
+    if prov_errs:
+        errors += 1
+        lines.append(f"FAIL provenance ({len(prov_errs)})")
+        for item in prov_errs[:20]:
+            lines.append(f"  {item}")
+        if len(prov_errs) > 20:
+            lines.append(f"  … {len(prov_errs) - 20} more")
+    else:
+        lines.append("ok provenance")
+
     conn.close()
     status = "PASS" if errors == 0 else "FAIL"
     lines.append(f"{status} validate errors={errors}")
@@ -184,6 +195,16 @@ def _date_error(value: str) -> str:
     except ValueError:
         return f"{value!r} is not a real date"
     return ""
+
+
+def _provenance_errors(root: Path, conn) -> list[str]:
+    del conn
+    errors: list[str] = []
+    for claim_id in provenance.yaml_missing_sources(root):
+        errors.append(f"{claim_id} yaml missing sources")
+    for item in provenance.csv_missing_sources(root):
+        errors.append(f"{item} csv missing source")
+    return errors
 
 
 def orphans(root: Path | None = None) -> str:

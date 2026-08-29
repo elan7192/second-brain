@@ -125,9 +125,11 @@ class EngineTests(unittest.TestCase):
 
     def test_health_report_counts_claims(self) -> None:
         index.rebuild(self.root, self.db)
-        out = health.report(self.root, self.db)
+        code, out = health.report(self.root, self.db)
+        self.assertEqual(code, 0, out)
         self.assertIn("Knowledge health", out)
         self.assertIn("yaml_claims           1", out)
+        self.assertIn("two_projections", out)
         self.assertIn("gate                  PASS", out)
 
     def test_temporal_until_before_from_fails(self) -> None:
@@ -166,9 +168,10 @@ class EngineTests(unittest.TestCase):
     def test_contract_rejects_transcript(self) -> None:
         errors = contract.check_data(
             {
+                "contract_version": 1,
                 "objective": "ingest a source",
                 "acceptance_checks": ["python3 tools/sb validate"],
-                "write_scope": ["wiki/"],
+                "write_scope": {"allow": ["wiki/"], "deny": ["raw/"]},
                 "state_version": 1,
                 "transcript": "nope",
             }
@@ -176,9 +179,10 @@ class EngineTests(unittest.TestCase):
         self.assertTrue(any("forbidden" in err for err in errors))
         ok = contract.check_data(
             {
+                "contract_version": 1,
                 "objective": "ingest a source",
                 "acceptance_checks": ["python3 tools/sb validate"],
-                "write_scope": ["wiki/"],
+                "write_scope": {"allow": ["wiki/"], "deny": ["raw/"]},
                 "state_version": 1,
             }
         )

@@ -10,6 +10,9 @@ from .paths import ROOT
 
 CLAIMS_RE = re.compile(r"^## Claims kept", re.M)
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
+CATALOG_NAMES = frozenset(
+    {"index.md", "index-sources.md", "index-papers.md", "log.md", "Home.md"}
+)
 
 
 def normalize_slug(raw: str) -> str:
@@ -65,6 +68,8 @@ def _inbound_from_living(root: Path, slug: str, source: Path) -> list[str]:
         if path.resolve() in skip:
             continue
         if any(part in {".git", ".obsidian", "templates", "raw"} for part in path.parts):
+            continue
+        if path.name in CATALOG_NAMES:
             continue
         text = path.read_text(encoding="utf-8")
         if slug in WIKILINK_RE.findall(text):
