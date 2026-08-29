@@ -59,3 +59,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-voxyz-writing-system]] is a 6/6 `/goal` writing prompt. Third list. Keep D6. See C43. C6 stays open.
 
 [[src-voxyz-codex-goal-quota]] is the parent leftover-quota thread. Five `/goal` recipes retrieved. Duration claim is C45.
+
+[[src-voxyz-archify]] is a 2026-08-29 diagram-skill prompt. Project copy only. See [[archify]] and C47.

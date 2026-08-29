@@ -32,7 +32,7 @@ TYPE_TO_KIND = {
 }
 
 INDEXED_ROOT_FILES = {"MEMORY.md", "decisions.md", "Home.md", "wiki.md"}
-SKIP_DIR_NAMES = {".git", ".obsidian", "templates", "raw", "output", ".cache"}
+SKIP_DIR_NAMES = {".git", ".obsidian", "templates", "raw", "output", ".cache", ".agents", ".cursor"}
 SKIP_FILE_NAMES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 
 # Navigation indexes are not knowledge objects.

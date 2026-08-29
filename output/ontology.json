@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T05:00:37Z",
+  "builtAt": "2026-08-29T13:02:21Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -111,14 +111,14 @@
     "Hunt": 8,
     "Map": 5,
     "Ship": 58,
-    "Concept": 123,
+    "Concept": 124,
     "Project": 2,
     "Person": 14,
-    "Source": 141,
+    "Source": 142,
     "Decision": 12,
-    "Contradiction": 46,
-    "objects": 424,
-    "links": 2940
+    "Contradiction": 47,
+    "objects": 427,
+    "links": 2986
   },
   "objects": [
     {
@@ -696,6 +696,20 @@
       "oneLiner": "D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. [[index]] is not the query path. See C37 and [[retrieval]]."
     },
     {
+      "primaryKey": "C47",
+      "objectType": "Contradiction",
+      "title": "One Archify skill vs do-not-vendor packs",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-29",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "lan E asked to integrate [[src-voxyz-archify]] (https://x.com/voxyz_ai/status/2093677504179400946)."
+    },
+    {
       "primaryKey": "C5",
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
@@ -999,7 +1013,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 15,
-      "outbound": 72,
+      "outbound": 74,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -1068,8 +1082,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 37,
-      "outbound": 57,
+      "inbound": 38,
+      "outbound": 59,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -1170,6 +1184,20 @@
       "outbound": 2,
       "unverified": true,
       "oneLiner": "AAE + SHAP + Siamese on DARPA TC process matrices."
+    },
+    {
+      "primaryKey": "archify",
+      "objectType": "Concept",
+      "title": "Archify",
+      "path": "wiki/archify.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 14,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "A project diagram skill. Agents write typed JSON. `node .agents/skills/archify/bin/archify.mjs` compiles HTML."
     },
     {
       "primaryKey": "arxiv-tierlist",
@@ -1418,7 +1446,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Work from captions and metadata. Do not rip copyrighted full films."
@@ -1446,7 +1474,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
+      "inbound": 12,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Codex leftover quota is spent with `/goal`. A one-off prompt leaves the rest on the table at reset."
@@ -1530,8 +1558,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 142,
-      "outbound": 78,
+      "inbound": 144,
+      "outbound": 81,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1950,8 +1978,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 2,
+      "inbound": 15,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
     },
@@ -2174,8 +2202,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 20,
-      "outbound": 26,
+      "inbound": 22,
+      "outbound": 27,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
     },
@@ -2329,7 +2357,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 143,
+      "outbound": 144,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2776,8 +2804,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 76,
-      "outbound": 40,
+      "inbound": 77,
+      "outbound": 41,
       "unverified": false,
       "oneLiner": "Andrej Karpathy's April 2026 pattern for a personal knowledge base."
     },
@@ -2805,7 +2833,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 249,
+      "outbound": 251,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3417,11 +3445,11 @@
       "title": "Project skill stack",
       "path": "wiki/project-skill-stack.md",
       "created": "2026-08-24",
-      "updated": "2026-08-24",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 6,
+      "inbound": 13,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Projects hold context. Skills hold how the model acts."
     },
@@ -3669,11 +3697,11 @@
       "title": "Skill as SOP",
       "path": "wiki/skill-as-sop.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 6,
+      "inbound": 15,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3683,11 +3711,11 @@
       "title": "Skill library",
       "path": "wiki/skill-library.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
-      "outbound": 11,
+      "inbound": 23,
+      "outbound": 13,
       "unverified": true,
       "oneLiner": "A shared catalog of agent skills the whole company can create, find, and reuse."
     },
@@ -5666,6 +5694,20 @@
       "oneLiner": "Untrusted paste. Quote. Do not copy \"merge YAML and CSV ids\" into schema as a lock. That would resolve C17 without a human yes."
     },
     {
+      "primaryKey": "src-voxyz-archify",
+      "objectType": "Source",
+      "title": "src-voxyz-archify",
+      "path": "wiki/sources/src-voxyz-archify.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 12,
+      "outbound": 11,
+      "unverified": false,
+      "oneLiner": "Untrusted prompt. Quote. Do not copy install text into `AGENTS.md`."
+    },
+    {
       "primaryKey": "src-voxyz-codex-goal-quota",
       "objectType": "Source",
       "title": "src-voxyz-codex-goal-quota",
@@ -5702,7 +5744,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
@@ -5828,7 +5870,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 13,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "For a knowledge-work task over a data room, parse cheaply, retrieve a subset, then run a VLM only on those pages."
@@ -5912,7 +5954,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
+      "inbound": 16,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph."
@@ -5996,8 +6038,8 @@
       "updated": "2026-08-29",
       "tags": "person",
       "island": "people",
-      "inbound": 7,
-      "outbound": 6,
+      "inbound": 9,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "@Voxyz_ai. Site: https://www.voxyz.ai"
     },
@@ -6740,6 +6782,31 @@
       "to": "retrieval"
     },
     {
+      "from": "C47",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "C47",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C47",
+      "linkType": "relatedTo",
+      "to": "archify"
+    },
+    {
+      "from": "C47",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "C47",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
       "from": "C5",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -7257,6 +7324,11 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
       "to": "src-voxyz-writing-system"
     },
     {
@@ -7273,6 +7345,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "ai-sovereignty"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "MEMORY",
@@ -7581,8 +7658,13 @@
     },
     {
       "from": "Today",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "Today",
       "linkType": "relatedTo",
-      "to": "codex-goal"
+      "to": "archify"
     },
     {
       "from": "Today",
@@ -7598,11 +7680,6 @@
       "from": "Today",
       "linkType": "relatedTo",
       "to": "musk-algorithm"
-    },
-    {
-      "from": "Today",
-      "linkType": "relatedTo",
-      "to": "two-pass-document-processing"
     },
     {
       "from": "adversarial-review",
@@ -7747,6 +7824,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -7768,6 +7850,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "agent-operating-system",
@@ -8168,6 +8255,51 @@
       "from": "apt-siamese",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "archify",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "archify",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "vault-ontology"
     },
     {
       "from": "arxiv-tierlist",
@@ -9407,6 +9539,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -9433,6 +9570,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "contradictions",
@@ -9583,6 +9725,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "secret-gateway"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "contradictions",
@@ -10507,6 +10654,11 @@
     {
       "from": "graph",
       "linkType": "relatedTo",
+      "to": "archify"
+    },
+    {
+      "from": "graph",
+      "linkType": "relatedTo",
       "to": "growth-operator"
     },
     {
@@ -11168,6 +11320,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "how-it-works",
@@ -12582,6 +12739,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -13412,6 +13574,11 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "archify"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "backlink-first"
     },
     {
@@ -13937,6 +14104,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -13988,6 +14160,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "apt-siamese"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "log",
@@ -16561,6 +16738,16 @@
     },
     {
       "from": "project-skill-stack",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "project-skill-stack",
+      "linkType": "relatedTo",
+      "to": "archify"
+    },
+    {
+      "from": "project-skill-stack",
       "linkType": "relatedTo",
       "to": "context-graph"
     },
@@ -17156,8 +17343,18 @@
     },
     {
       "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "skill-as-sop",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "skill-as-sop",
@@ -17206,8 +17403,18 @@
     },
     {
       "from": "skill-library",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "skill-library",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "skill-library",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "skill-library",
@@ -19830,6 +20037,61 @@
       "to": "provenance"
     },
     {
+      "from": "src-voxyz-archify",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "archify"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "project-skill-stack"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
       "from": "src-voxyz-codex-goal-quota",
       "linkType": "aboutPerson",
       "to": "vox"
@@ -20552,6 +20814,11 @@
     {
       "from": "vox",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -20568,6 +20835,11 @@
       "from": "vox",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "archify"
     },
     {
       "from": "vox",

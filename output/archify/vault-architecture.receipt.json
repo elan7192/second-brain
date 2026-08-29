@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/workspace/output/archify/vault-architecture.json",
+  "output": "/workspace/output/archify/vault-architecture.html",
+  "specification": {
+    "sha256": "ef50c12b86c85bc7ded2c84c08b2c4f70b1f3aab93475444187b344565b484b2",
+    "bytes": 4663
+  },
+  "artifact": {
+    "sha256": "092b78f7c0b0f56e103d057e4b728efc4c0dbd2f767f63c2ebcc72787fb99841",
+    "bytes": 717219
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

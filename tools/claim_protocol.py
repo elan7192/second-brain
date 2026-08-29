@@ -44,7 +44,7 @@ STATUSES = {
     "superseded",
 }
 ID_RE = re.compile(r"^C\d{4}$")
-SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth", "output"}
+SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth", "output", ".agents", ".cursor"}
 SKIP_FILES = {"CLAUDE.md", "README.md"}
 STOPWORDS = {
     "a",

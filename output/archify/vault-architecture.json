@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Second-brain compiler vault",
+    "output": "output/archify/vault-architecture.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "ingest-path",
+        "label": "Ingest path",
+        "focus": ["lan_e", "raw", "compiler", "wiki", "gates"],
+        "note": "lan E drops a source. The agent compiles wiki. Gates accept the patch."
+      },
+      {
+        "id": "query-path",
+        "label": "Query path",
+        "focus": ["wiki", "gates", "fts", "ask", "output"],
+        "note": "Live query is python3 tools/sb ask over disposable FTS5. D9."
+      },
+      {
+        "id": "durable-locks",
+        "label": "Durable locks",
+        "focus": ["compiler", "wiki", "durable"],
+        "note": "MEMORY.md and decisions.md keep only facts that change later answers."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "lan_e",
+      "type": "external",
+      "label": "lan E",
+      "sublabel": "named owner",
+      "pos": [40, 300],
+      "size": [120, 60]
+    },
+    {
+      "id": "raw",
+      "type": "database",
+      "label": "raw/",
+      "sublabel": "immutable sources",
+      "pos": [230, 300],
+      "size": [130, 60],
+      "tag": "human only"
+    },
+    {
+      "id": "compiler",
+      "type": "backend",
+      "label": "Agent compiler",
+      "sublabel": "propose wiki edits",
+      "pos": [430, 300],
+      "size": [150, 60]
+    },
+    {
+      "id": "wiki",
+      "type": "database",
+      "label": "wiki/",
+      "sublabel": "compiled pages",
+      "pos": [650, 300],
+      "size": [140, 60]
+    },
+    {
+      "id": "gates",
+      "type": "security",
+      "label": "sb gates",
+      "sublabel": "validate · ingest-check",
+      "pos": [860, 300],
+      "size": [160, 60],
+      "tag": "code accepts"
+    },
+    {
+      "id": "ask",
+      "type": "backend",
+      "label": "sb ask",
+      "sublabel": "D9 live query",
+      "pos": [1090, 300],
+      "size": [140, 60]
+    },
+    {
+      "id": "durable",
+      "type": "security",
+      "label": "MEMORY + decisions",
+      "sublabel": "durable locks",
+      "pos": [640, 120],
+      "size": [180, 64]
+    },
+    {
+      "id": "obsidian",
+      "type": "frontend",
+      "label": "Obsidian",
+      "sublabel": "human door",
+      "pos": [430, 460],
+      "size": [140, 60]
+    },
+    {
+      "id": "fts",
+      "type": "database",
+      "label": "FTS5 index",
+      "sublabel": "disposable",
+      "pos": [860, 460],
+      "size": [150, 60]
+    },
+    {
+      "id": "output",
+      "type": "frontend",
+      "label": "output/",
+      "sublabel": "derived artifacts",
+      "pos": [1090, 460],
+      "size": [140, 60]
+    }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Human-owned", "wraps": ["lan_e", "raw"] },
+    { "kind": "security-group", "label": "Trusted compiled", "wraps": ["compiler", "wiki", "gates", "durable"] },
+    { "kind": "region", "label": "Disposable derived", "wraps": ["fts", "output"] }
+  ],
+  "connections": [
+    { "id": "drop-source", "from": "lan_e", "to": "raw", "label": "drop source", "variant": "emphasis" },
+    { "id": "ingest", "from": "raw", "to": "compiler", "label": "ingest" },
+    { "id": "compile", "from": "compiler", "to": "wiki", "label": "compile" },
+    { "id": "validate", "from": "wiki", "to": "gates", "label": "validate", "variant": "security" },
+    { "id": "query", "from": "gates", "to": "ask", "label": "ask" },
+    { "id": "locks", "from": "compiler", "to": "durable", "label": "locks", "variant": "dashed", "fromSide": "top", "toSide": "left" },
+    { "id": "door", "from": "wiki", "to": "obsidian", "label": "door", "fromSide": "bottom", "toSide": "top" },
+    { "id": "rebuild-index", "from": "wiki", "to": "fts", "label": "rebuild", "variant": "dashed", "fromSide": "bottom", "toSide": "left" },
+    { "id": "evidence", "from": "fts", "to": "ask", "label": "evidence", "fromSide": "top", "toSide": "bottom" },
+    { "id": "file-answer", "from": "ask", "to": "output", "fromSide": "bottom", "toSide": "top" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Ingest",
+      "items": [
+        "raw/ stays immutable. Wiki is compiled.",
+        "python3 tools/sb validate then ingest-check"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Query",
+      "items": [
+        "Live query is python3 tools/sb ask (D9).",
+        "Do not walk wiki/index.md as the query path."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Archify",
+      "items": [
+        "Project skill at .agents/skills/archify",
+        "HTML is derived. Do not copy prompts into AGENTS.md."
+      ]
+    }
+  ]
+}
