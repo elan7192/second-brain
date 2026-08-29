@@ -11,6 +11,10 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] hygiene | Archify pin is commit + tree + sha256
+
+`pin.json` now pins repository, commit, git tree, and sha256 of SKILL.md, CLI, and LICENSE. Fetch fail-closes on network errors and content mismatch. A branch is not a pin. See [[archify]].
+
 ## [2026-08-29] hygiene | C6 stay and 2400x1260 not a gate
 
 Review comments on #28. Wrote why C6 stays open: three-part rule is already in `AGENTS.md`; eight blocks were never retrieved; later Voxyz posts are different objects. Tweet 2400x1260 is not a vault acceptance check. See [[contradictions]] C6 and [[archify]].

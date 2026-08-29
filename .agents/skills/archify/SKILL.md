@@ -13,10 +13,11 @@ The human asked for a system, workflow, sequence, data-flow, or lifecycle diagra
 
 ## Do
 
-1. Read `pin.json` in this directory. Fetch the pinned commit with `python3 tools/fetch-archify.py` if `upstream/` is missing or the HEAD commit does not match `pin.json`.
-2. Read only `upstream/archify/SKILL.md` and the schema it names. Follow that file for authoring and `validate` / `deliver`.
-3. Write authored JSON under `output/archify/`. Write HTML, PNG, and receipts next to it if the human asked for a file.
-4. Do not `git add` HTML, PNG, receipts, or `upstream/`.
+1. Read `pin.json` in this directory. It must name a 40-char commit, a git tree, and sha256 hashes. A branch is not a pin. Fetch with `python3 tools/fetch-archify.py` if `upstream/` is missing.
+2. If fetch or `--verify` fails (network down, HEAD mismatch, tree mismatch, or hash mismatch): stop. Do not invent a renderer. Do not use a dirty checkout.
+3. Read only `upstream/archify/SKILL.md` and the schema it names. Follow that file for authoring and `validate` / `deliver`.
+4. Write authored JSON under `output/archify/`. Write HTML, PNG, and receipts next to it if the human asked for a file.
+5. Do not `git add` HTML, PNG, receipts, or `upstream/`.
 
 ## Do not
 

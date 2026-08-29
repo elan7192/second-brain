@@ -1,11 +1,18 @@
 {
   "name": "archify",
-  "upstream": "https://github.com/tt-a1i/archify",
+  "repository": "https://github.com/tt-a1i/archify",
   "commit": "0853a805003514776bef3593ecca091409828902",
-  "version": "2.16.0-dev.0",
-  "license": "MIT",
+  "tree": "e4b91a577fd7db2aef6d2cda842fdd39a1c9a0a1",
   "skill_path": "archify/SKILL.md",
   "cli": "archify/bin/archify.mjs",
+  "license_path": "LICENSE",
+  "skill_sha256": "8532186a103bba00df1164e5d133eefbc3a994fdeafe44627c907a12f4e77949",
+  "cli_sha256": "3415019a2c9edc6b083a2bef0350f2e2ca7ca01869d3e22947d2b0b9115b0390",
+  "license_sha256": "2f724fa953b4eaa8ec75fa56919ce474b57adce54d2456a3791510bc53735cbd",
+  "version": "2.16.0-dev.0",
+  "license": "MIT",
   "pinned_at": "2026-08-29",
-  "based_on": "Cocoon-AI/architecture-diagram-generator (MIT)"
+  "based_on": "Cocoon-AI/architecture-diagram-generator (MIT)",
+  "on_unavailable": "fail-closed",
+  "on_mismatch": "fail-closed"
 }

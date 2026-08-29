@@ -4,11 +4,15 @@
     "archify": {
       "source": "tt-a1i/archify",
       "sourceType": "github",
-      "url": "https://github.com/tt-a1i/archify",
+      "repository": "https://github.com/tt-a1i/archify",
       "commit": "0853a805003514776bef3593ecca091409828902",
+      "tree": "e4b91a577fd7db2aef6d2cda842fdd39a1c9a0a1",
       "version": "2.16.0-dev.0",
       "license": "MIT",
       "skillPath": "archify/SKILL.md",
+      "skill_sha256": "8532186a103bba00df1164e5d133eefbc3a994fdeafe44627c907a12f4e77949",
+      "cli_sha256": "3415019a2c9edc6b083a2bef0350f2e2ca7ca01869d3e22947d2b0b9115b0390",
+      "license_sha256": "2f724fa953b4eaa8ec75fa56919ce474b57adce54d2456a3791510bc53735cbd",
       "pin": ".agents/skills/archify/pin.json"
     }
   }

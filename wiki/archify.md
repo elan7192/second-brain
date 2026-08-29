@@ -29,7 +29,7 @@ Source: [[src-voxyz-archify]] ([[vox]], 2026-08-29). Upstream: https://github.co
 
 The tweet quotes `npx skills add tt-a1i/archify -g`. This vault does not keep a global install and does not vendor the renderer tree.
 
-GitHub API on 2026-08-29: 29431 stars. MIT. Pin: `.agents/skills/archify/pin.json`. Commit `0853a805003514776bef3593ecca091409828902`. Version string `v2.16.0-dev.0`. LICENSE in that directory is upstream MIT (tt-a1i 2026; Cocoon AI 2025).
+GitHub API on 2026-08-29: 29431 stars. MIT. Pin: `.agents/skills/archify/pin.json`. Immutable fields: `repository`, 40-char `commit` `0853a805003514776bef3593ecca091409828902`, git `tree` `e4b91a577fd7db2aef6d2cda842fdd39a1c9a0a1`, `skill_path`, `cli`, and sha256 of those files plus LICENSE. Version string `v2.16.0-dev.0`. A branch is not a pin. Fetch: `python3 tools/fetch-archify.py`. `--check` validates the pin file. `--verify` checks an existing checkout. Network failure, HEAD mismatch, tree mismatch, or hash mismatch fail closed. Do not invent a renderer. LICENSE in that directory matches `license_sha256`.
 
 `.agents/skills/archify/SKILL.md` is a vault-authored behavior change. It tells an agent when to fetch the pin and to follow upstream `archify/SKILL.md` after fetch. It is not documentation-only.
 
@@ -54,7 +54,7 @@ This source does not close C6. The missing object is eight 2026-08-22 paste bloc
 | `output/archify/*.html` `*.png` receipts | generated | no |
 | `output/ontology-objects.csv` | vault ontology | yes, existing product |
 
-Update: bump `commit` in `pin.json`, run `python3 tools/fetch-archify.py --check`, then fetch. Do not copy new upstream files into git.
+Update: bump `commit`, `tree`, and file hashes in `pin.json` after fetching the new revision. Run `python3 tools/fetch-archify.py --check`, then fetch. Do not copy new upstream files into git.
 
 ## INFERENCE
 
@@ -66,7 +66,7 @@ Do not copy Archify prompts into `AGENTS.md`. Do not vendor other public packs f
 
 ## Check
 
-`python3 tools/sb ingest-check src-voxyz-archify` exits 0. `python3 tools/fetch-archify.py --check` exits 0. `git ls-files .agents/skills/archify` is only `LICENSE`, `SKILL.md`, and `pin.json`. If fetch is needed and fails: stop and name the gap. Do not invent a second diagram runtime.
+`python3 tools/sb ingest-check src-voxyz-archify` exits 0. `python3 tools/fetch-archify.py --check` exits 0. `git ls-files .agents/skills/archify` is only `LICENSE`, `SKILL.md`, and `pin.json`. If fetch is needed and fails, or `--verify` reports a mismatch: stop and name the gap. Do not invent a second diagram runtime.
 
 ## Related
 
