@@ -8,6 +8,18 @@ updated: 2026-08-24
 
 # Ingest brief · 2026-08-24
 
-Jerry Liu’s 2026-08-23 post on two-pass document processing is now compiled.
+DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault.
 
-What changed: one new source, one concept ([[two-pass-document-processing]]), one person ([[jerry-liu]]), and a split against compile-once wiki on [[contradictions]] C8. What linked: Codex/Cowork defaults now sit on [[harness-routing]]; cheap-then-expensive tokens on [[tokens-as-capital]]; retrieve-then-zoom on [[context-graph]]. What to look at: C8, then whether you want LiteParse/LlamaParse as a later source or leave the vendor numbers `unverified`.
+## What changed
+
+Agents read `AGENTS.md` and working notes, not API docs. This vault now treats instruction files and `wiki/` as the control surface, and treats reading them as not verification. Locked D10 (was D8 on this branch). Flagged C26 and C27.
+
+## What linked
+
+[[agent-facing-docs]] now sits between [[verifiable-instructions]], [[context-graph]], [[tokens-as-capital]], [[llm-wiki]], and [[self-verification]]. The measured 60.5% agent-facing share is cited from [[src-dair-agent-friendly-docs]], with the weighting and label caveats on that page.
+
+## What to look at
+
+1. [[agent-facing-docs]] and D10 in `decisions.md`.
+2. [[contradictions]] C26 (file first vs code first) and C27 (prose checks vs observed validation).
+3. `AGENTS.md` Control surface. Then `python3 tools/lint-wiki.py` and `python3 tools/sb validate`.

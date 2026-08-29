@@ -3,7 +3,7 @@ type: map
 tags:
   - map
 created: 2026-08-23
-updated: 2026-08-24
+updated: 2026-08-29
 ---
 
 # Hooks
@@ -16,6 +16,10 @@ Trend to lock. From [[src-avid-obsidian-agent-team]].
 4. **Artifact** — the brief in [[ship]]
 5. **Lock** — write it in [[decisions]] so it is not remade
 
-This vault's first locked hook family: compile, do not retrieve. See [[llm-wiki]] and [[tokens-as-capital]].
+This vault's first locked hook family: compile, then retrieve the compiled set. See [[llm-wiki]], [[tokens-as-capital]], and D9. Foil on the page: [[retrieval-second-brain]] GraphRAG / vector runtime. C25.
 
-Open trend, not locked: [[two-pass-document-processing]]. Foil: [[contradictions]] C8.
+Open foil: Notion living [[skill-library]] vs a starred GitHub skill dump vs a local [[skill-as-sop]]. [[contradictions]] C20. D7 stays locked.
+
+Third locked hook family: instruction files are the control surface. They are not the verifier. See [[agent-facing-docs]] and D10.
+
+Open trend, not locked: [[two-pass-document-processing]]. Foil: [[contradictions]] C44.

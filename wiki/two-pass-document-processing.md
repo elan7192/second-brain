@@ -1,9 +1,10 @@
 ---
+id: concept:two-pass-document-processing
 type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-29
 ---
 
 # Two-pass document processing
@@ -29,7 +30,7 @@ LiteParse as pass one. LlamaParse as pass two, MCP or skill, page-number zoom-in
 
 ## Split from this vault
 
-This pattern is for ad-hoc document dumps. The compiled wiki still pays ingest once. See [[llm-wiki]], [[tokens-as-capital]], and [[contradictions]] C8.
+This pattern is for ad-hoc document dumps. The compiled wiki still pays ingest once. See [[llm-wiki]], [[tokens-as-capital]], and [[contradictions]] C44.
 
 ## Related
 

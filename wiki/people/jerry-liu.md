@@ -1,9 +1,10 @@
 ---
+id: person:jerry-liu
 type: person
 tags:
   - person
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-29
 ---
 
 # Jerry Liu
