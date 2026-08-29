@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Audited task contract
@@ -31,6 +31,8 @@ Moving a task to a new harness without a contract means re-reading the repo, reo
 
 Exclude: full chat, secrets, raw tool dumps, adjectives.
 
+Machine form: a YAML file with `objective`, `acceptance_checks`, `write_scope`, and `state_version`. Check with `python3 tools/sb contract-check <path>`. Forbidden keys: `transcript`, `secrets`, `tool_dumps`, `chat`. See [[deterministic-core]] and [[src-vault-review-2026-08-29]].
+
 [[src-4ndrearossetti-openconnector]] applies the same exclusion at tool time: the executor may call a gateway; the model still does not see the key. See [[secret-gateway]].
 
 From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-dispatch]].
@@ -56,4 +58,4 @@ Generated repo summaries in a 2026 AGENTS.md study did not significantly raise r
 
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]] · [[secret-gateway]] · [[codex-goal]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]] · [[secret-gateway]] · [[codex-goal]] · [[deterministic-core]]

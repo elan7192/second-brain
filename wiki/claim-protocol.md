@@ -43,8 +43,8 @@ Embeddings stay parked. See C19 and [[file-memory]].
 
 ## Check
 
-`python3 tools/sb ask` is Query step 1 in `AGENTS.md`. `python3 tools/sb validate` matches. If evidence is missing: mark `unverified`. Do not write it into `MEMORY.md`.
+`python3 tools/sb ask` is Query step 1 in `AGENTS.md`. `python3 tools/sb validate` matches. After ingest, `python3 tools/sb ingest-check <slug>` and `python3 tools/sb health`. If evidence is missing: mark `unverified`. Do not write it into `MEMORY.md`. See [[deterministic-core]].
 
 ## Related
 
-[[llm-wiki]] · [[retrieval]] · [[claims]] · [[memory-engineering]] · [[memory-ablation]] · [[portable-memory]] · [[file-memory]] · [[context-graph]] · [[stale-fact-detector]] · [[entropy-gate]] · [[self-verification]] · [[src-lan-e-claim-protocol-2026-08-27]]
+[[llm-wiki]] · [[retrieval]] · [[claims]] · [[memory-engineering]] · [[memory-ablation]] · [[portable-memory]] · [[file-memory]] · [[context-graph]] · [[stale-fact-detector]] · [[entropy-gate]] · [[self-verification]] · [[src-lan-e-claim-protocol-2026-08-27]] · [[deterministic-core]]

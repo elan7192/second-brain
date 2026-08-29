@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C45 must match that page.
+# Codes C1–C46 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -450,4 +450,14 @@ contradictions:
     severity: low
     resolution: keep the /goal method; mark the duration unverified
     resolution_source: concept:codex-goal
+    page: contradictions.md
+
+  - id: contradiction:c46
+    claim_a: claim:review-says-no-retrieval-layer
+    claim_b: claim:fts5-index-is-disposable
+    reason: vault review says no real retrieval layer vs D9 FTS ask path
+    status: resolved
+    severity: medium
+    resolution: keep D9; treat the review rating as an assessment; do not walk index as query
+    resolution_source: decision:markdown-canonical-fts-disposable
     page: contradictions.md

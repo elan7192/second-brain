@@ -23,6 +23,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 - [[memory-system]] — provenance, labels, parked vector
 - [[llm-wiki]] — core architecture
 - [[claim-protocol]] — Claim → Evidence → Verification → Retrieval → Context → Answer
+- [[deterministic-core]] — model proposes; `sb validate` / `sb health` / `sb ingest-check` accept
 - [[maps]] · [[hunt]] · [[ship]] — Obsidian navigation
 
 ## Projects

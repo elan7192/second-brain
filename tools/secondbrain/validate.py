@@ -5,10 +5,16 @@ from __future__ import annotations
 import importlib.util
 from pathlib import Path
 
+import re
+from datetime import date
+
 from . import frontmatter, ids
 from .index import connect, rebuild
 from .paths import ROOT, TOOLS_DIR, db_path
 from .yamlutil import loads
+
+ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+DATE_PREFIX = re.compile(r"^\d{4}")
 
 
 def validate(root: Path | None = None, db: Path | None = None) -> tuple[int, str]:
@@ -114,10 +120,70 @@ def validate(root: Path | None = None, db: Path | None = None) -> tuple[int, str
     else:
         lines.append("ok contradiction catalog")
 
+    temporal_errs = _temporal_errors(conn)
+    if temporal_errs:
+        errors += 1
+        lines.append(f"FAIL temporal fields ({len(temporal_errs)})")
+        for item in temporal_errs[:20]:
+            lines.append(f"  {item}")
+        if len(temporal_errs) > 20:
+            lines.append(f"  … {len(temporal_errs) - 20} more")
+    else:
+        lines.append("ok temporal fields")
+
     conn.close()
     status = "PASS" if errors == 0 else "FAIL"
     lines.append(f"{status} validate errors={errors}")
     return (0 if errors == 0 else 1), "\n".join(lines) + "\n"
+
+
+def _temporal_errors(conn) -> list[str]:
+    errors: list[str] = []
+    known = {row["id"] for row in conn.execute("SELECT id FROM objects")}
+    rows = conn.execute(
+        """
+        SELECT id, type, created, updated, valid_from, valid_until
+        FROM objects
+        """
+    ).fetchall()
+    for row in rows:
+        for field in ("created", "updated", "valid_from", "valid_until"):
+            value = row[field] or ""
+            err = _date_error(value)
+            if err:
+                errors.append(f"{row['id']} {field} {err}")
+        start = row["valid_from"] or ""
+        end = row["valid_until"] or ""
+        if ISO_DATE.match(start) and ISO_DATE.match(end) and end < start:
+            errors.append(f"{row['id']} valid_until {end} before valid_from {start}")
+    claim_rows = conn.execute(
+        """
+        SELECT id, valid_from, valid_until, observed_at, superseded_by
+        FROM claims
+        """
+    ).fetchall()
+    for row in claim_rows:
+        for field in ("valid_from", "valid_until", "observed_at"):
+            value = row[field] or ""
+            err = _date_error(value)
+            if err:
+                errors.append(f"{row['id']} {field} {err}")
+        successor = row["superseded_by"] or ""
+        if successor and successor not in known:
+            errors.append(f"{row['id']} superseded_by unknown id {successor}")
+    return errors
+
+
+def _date_error(value: str) -> str:
+    if not value or not DATE_PREFIX.match(value):
+        return ""
+    if not ISO_DATE.match(value):
+        return f"{value!r} is not YYYY-MM-DD"
+    try:
+        date.fromisoformat(value)
+    except ValueError:
+        return f"{value!r} is not a real date"
+    return ""
 
 
 def orphans(root: Path | None = None) -> str:

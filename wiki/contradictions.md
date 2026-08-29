@@ -420,3 +420,11 @@ The thread has no measurement.
 Resolution: keep the method on [[codex-goal]]. Mark the duration `unverified`.
 
 Remap: was C8 on the leftover-quota branch. Main C8 is the two anti-slop tens.
+
+## C46. Review says no retrieval layer vs D9 FTS
+
+[[src-vault-review-2026-08-29]] rates retrieval/search 5/10 and says there is no real retrieval layer yet. It also says the agent should read the index first.
+
+D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. [[index]] is not the query path. See C37 and [[retrieval]].
+
+Resolution: keep D9. Treat the review's retrieval rating as an assessment, not a vault fact. Do not walk [[index]] as the query path. Health counts live under `python3 tools/sb health`. See [[deterministic-core]].

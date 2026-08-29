@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Retrieval
@@ -21,6 +21,8 @@ See [[portable-memory]]. Do not clone Brain. Do not make the database a second m
 
 Paste foil: [[retrieval-second-brain]]. Hybrid BM25 + vector + GraphRAG is not this path. C25.
 
+[[src-vault-review-2026-08-29]] rated this layer 5/10 and said there is no real retrieval. That clashes with D9. See C46. Integrity counts: `python3 tools/sb health`.
+
 ## Related
 
-[[stable-ids]] · [[claims]] · [[llm-wiki]] · [[context-graph]] · [[tokens-as-capital]] · [[file-memory]] · [[claim-protocol]] · [[retrieval-second-brain]]
+[[stable-ids]] · [[claims]] · [[llm-wiki]] · [[context-graph]] · [[tokens-as-capital]] · [[file-memory]] · [[claim-protocol]] · [[retrieval-second-brain]] · [[deterministic-core]] · [[src-vault-review-2026-08-29]]

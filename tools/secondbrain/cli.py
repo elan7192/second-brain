@@ -7,7 +7,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from . import claims, eval_suite, ids, index, retrieve, validate
+from . import claims, contract, eval_suite, health, ids, index, ingest_check, retrieve, validate
 from .paths import ROOT, db_path
 
 
@@ -36,6 +36,11 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("stale", help="List objects past valid_until")
     sub.add_parser("orphans", help="List pages with no inbound wikilink")
     sub.add_parser("validate", help="Run lint, id, claim, and contradiction gates")
+    sub.add_parser("health", help="Print knowledge integrity counts")
+    p_ingest = sub.add_parser("ingest-check", help="Check a source slug against ingest gates")
+    p_ingest.add_argument("slug")
+    p_contract = sub.add_parser("contract-check", help="Validate a machine-readable task contract")
+    p_contract.add_argument("path", nargs="?", default="")
     sub.add_parser("eval", help="Run the retrieval/claim eval suite")
     sub.add_parser("graph", help="Print link degree for indexed objects")
     sub.add_parser("memory-review", help="Print MEMORY.md ablation reminder")
@@ -65,6 +70,16 @@ def main(argv: list[str] | None = None) -> int:
         code, out = validate.validate()
         sys.stdout.write(out)
         return code
+    if args.cmd == "health":
+        _ensure_index()
+        sys.stdout.write(health.report())
+        return 0
+    if args.cmd == "ingest-check":
+        code, out = ingest_check.check(args.slug)
+        sys.stdout.write(out)
+        return code
+    if args.cmd == "contract-check":
+        return cmd_contract(args.path)
     if args.cmd == "eval":
         code, out, _ = eval_suite.run_eval()
         sys.stdout.write(out)
@@ -117,6 +132,23 @@ def cmd_trace(object_id: str) -> int:
     out = claims.trace(object_id)
     sys.stdout.write(out)
     return 1 if out.startswith("unknown id:") else 0
+
+
+def cmd_contract(path: str) -> int:
+    if path:
+        errors = contract.check_path(Path(path))
+        if errors:
+            sys.stdout.write("FAIL contract-check\n" + "\n".join(f"  {e}" for e in errors) + "\n")
+            return 1
+        sys.stdout.write(f"ok contract {path}\n")
+        return 0
+    agents = ROOT / "agents"
+    if not agents.is_dir():
+        sys.stdout.write("0 contracts\n")
+        return 0
+    code, out = contract.check_dir(agents)
+    sys.stdout.write(out)
+    return code
 
 
 def cmd_graph() -> int:

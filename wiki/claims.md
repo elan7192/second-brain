@@ -40,10 +40,10 @@ Keep both until a human names one canonical store. Do not add a vector index to 
 
 ## Check
 
-`python3 tools/sb validate` exits 0. Rebuild the CSV with `python3 tools/compile-claims.py` if stale.
+`python3 tools/sb validate` exits 0. Rebuild the CSV with `python3 tools/compile-claims.py` if stale. `python3 tools/sb health` prints YAML vs CSV counts without picking a winner (C17). See [[deterministic-core]].
 
 If a statement cannot be tied to a source page: leave it out of both tables.
 
 ## Related
 
-[[provenance]] · [[epistemic-labels]] · [[contradictions]] · [[untrusted-ingest]] · [[file-memory]] · [[stale-fact-detector]] · [[retrieval]] · [[stable-ids]] · [[memory-system]] · [[portable-memory]] · [[memory-ablation]]
+[[provenance]] · [[epistemic-labels]] · [[contradictions]] · [[untrusted-ingest]] · [[file-memory]] · [[stale-fact-detector]] · [[retrieval]] · [[stable-ids]] · [[memory-system]] · [[portable-memory]] · [[memory-ablation]] · [[deterministic-core]]

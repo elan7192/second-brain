@@ -53,6 +53,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Bot-to-bot voice is caveman. Facts, paths, SHAs. No filler, no empty acks. Code/errors stay exact. lan E still gets short Traditional Chinese from lead. See [[bot-voice]]. Do not install JuliusBrussee/caveman.
 - 2026-08-26: Headlong lives at `~/.headlong`, not in this vault. Do not vendor the checkout. Do not commit `~/.headlong/.env`.
 - 2026-08-26: Headlong identity `hour` 1h trial ended 02:07Z. Do not restart without a new operator yes. Stop remains `hour stop` then `headlong-killall`. Nested Docker overlay failed rc=125 on this VM; do not treat Docker as available here without new evidence. qwen2.5-coder:7b as `gpt-4o` via Ollama copied the nested-shellm docs example; tests did not run. Do not use Headlong as the wiki runtime. Do not start Slack/Telegram bridges. See [[headlong]]. C16. D5.
+- 2026-08-29: Vault review [[src-vault-review-2026-08-29]] is an assessment. Do not treat "no retrieval layer" as current. D9 FTS exists. Do not add an MCP write path, ingestion daemon, or raw/public/private split from that review. Do not resolve C17 or C18. Integrity dashboard is `python3 tools/sb health`. See [[deterministic-core]] and C46.
 
 ## arXiv tierlist
 
