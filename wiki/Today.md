@@ -13,10 +13,14 @@ updated: 2026-08-29
 
 ## Done
 
-Merged origin/main into the jerry two-pass branch. Branch flag remapped C8→C44. Same-day brief renamed. C17 / C18 / C25 / C37 / C38 still unresolved.
+Merged origin/main into the voxyz leftover-quota branch. Branch flag remapped C8→C45. Same-day brief renamed. C17 / C18 / C25 / C37 / C38 still unresolved.
 
 ## Look at
 
+- [[codex-goal]]
+- [[contradictions]] C45
+- [[ingest-brief-2026-08-24-voxyz-codex-goal]]
+- [[merge-conflict-report-2026-08-29-voxyz-codex-goal]]
 - [[two-pass-document-processing]]
 - [[contradictions]] C44
 - [[ingest-brief-2026-08-24-jerry-two-pass]]

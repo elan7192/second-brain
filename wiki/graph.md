@@ -38,7 +38,7 @@ Taken from [[agent-operating-system]].
 | Compile | llm-wiki, tokens-as-capital, context-graph, retrieval, claims, stable-ids, claim-protocol |
 | Memory | memory-engineering, memory-ablation, portable-memory, memory-system, claims, project-skill-stack |
 | Verification | verifiable-instructions, self-verification, anti-slop |
-| Harness | audited-task-contract, harness-routing, entropy-gate, secret-gateway, flat-context |
+| Harness | audited-task-contract, harness-routing, entropy-gate, secret-gateway, flat-context, codex-goal |
 | Hunt / ship | hunt-ship-loop, plus maps / hunt / ship indexes |
 | People / sources | Sit with the concept they already cite |
 
@@ -88,10 +88,12 @@ flowchart TB
     src-voxyz-writing-system
     stale-fact-detector
     verifiable-instructions
+    vox
   end
   subgraph harness[Harness]
     audited-task-contract
     can-boluk
+    codex-goal
     company-foundry
     daily-tool-replace
     entropy-gate
@@ -112,6 +114,7 @@ flowchart TB
     src-laude-headlong
     src-milesdeutscher-grok-bot-use-cases
     src-rohit-harness-router
+    src-voxyz-codex-goal-quota
   end
   subgraph hunt-ship[Hunt / ship]
     GrowthOS
@@ -140,6 +143,7 @@ flowchart TB
     ingest-brief-2026-08-24-jerry-two-pass
     ingest-brief-2026-08-24-maverick-ultramode
     ingest-brief-2026-08-24-voxyz
+    ingest-brief-2026-08-24-voxyz-codex-goal
     ingest-brief-2026-08-25-avid-company-foundry
     ingest-brief-2026-08-25-exm7777-grok-bot
     ingest-brief-2026-08-25-growthos
@@ -167,6 +171,7 @@ flowchart TB
     merge-conflict-report-2026-08-28-omarsar
     merge-conflict-report-2026-08-28-x-ingest
     merge-conflict-report-2026-08-29-jerry-two-pass
+    merge-conflict-report-2026-08-29-voxyz-codex-goal
     merge-conflict-report-agent-facing-2026-08-28
     merge-conflict-report-entropy-quiz-2026-08-28
     musk-pass-2026-08-28
@@ -207,9 +212,12 @@ flowchart TB
   hunt --> hunt-ship-loop
   hunt --> disclosures
   maps --> GrowthOS
+  ship --> ingest-brief-2026-08-24
   ship --> ingest-brief-2026-08-23
   ship --> ingest-brief-2026-08-24-jerry-two-pass
   ship --> merge-conflict-report-2026-08-29-jerry-two-pass
+  ship --> ingest-brief-2026-08-24-voxyz-codex-goal
+  ship --> merge-conflict-report-2026-08-29-voxyz-codex-goal
   ship --> ingest-brief-2026-08-23-skill-library
   ship --> ingest-brief-2026-08-23-cybersecurity-skills
   ship --> ingest-brief-2026-08-23-skill-pack-list
@@ -247,6 +255,13 @@ flowchart TB
   ingest-brief-2026-08-23-skill-library --> llm-wiki
   ingest-brief-2026-08-23-skill-pack-list --> tokens-as-capital
   ingest-brief-2026-08-23-skill-pack-list --> verifiable-instructions
+  ingest-brief-2026-08-24-4ndrearossetti --> secret-gateway
+  ingest-brief-2026-08-24-4ndrearossetti --> src-4ndrearossetti-openconnector
+  ingest-brief-2026-08-24-alexprompter --> project-skill-stack
+  ingest-brief-2026-08-24-alexprompter --> src-alexprompter-claude-projects
+  ingest-brief-2026-08-24-avichawla --> flat-context
+  ingest-brief-2026-08-24-avichawla --> secret-gateway
+  ingest-brief-2026-08-24-avichawla --> src-avichawla-trueforge
   ingest-brief-2026-08-24-chatgpt-share --> llm-wiki
   ingest-brief-2026-08-24-chatgpt-share --> entropy-gate
   ingest-brief-2026-08-24-disclosure-index --> disclosures
@@ -254,6 +269,7 @@ flowchart TB
   ingest-brief-2026-08-24-maverick-ultramode --> entropy-gate
   ingest-brief-2026-08-24-maverick-ultramode --> harness-routing
   ingest-brief-2026-08-24-maverick-ultramode --> jacky-kwok
+  ingest-brief-2026-08-24-voxyz --> src-voxyz-writing-system
   ingest-brief-2026-08-24 --> verifiable-instructions
   ingest-brief-2026-08-24 --> context-graph
   ingest-brief-2026-08-24 --> tokens-as-capital
@@ -334,6 +350,21 @@ flowchart TB
   merge-conflict-report-2026-08-28-omarsar --> audited-task-contract
   merge-conflict-report-2026-08-28-omarsar --> self-verification
   merge-conflict-report-2026-08-28-omarsar --> ingest-brief-omarsar-2026-08-24
+  merge-conflict-report-2026-08-28-x-ingest --> secret-gateway
+  merge-conflict-report-2026-08-28-x-ingest --> flat-context
+  merge-conflict-report-2026-08-28-x-ingest --> project-skill-stack
+  merge-conflict-report-2026-08-28-x-ingest --> anti-slop
+  merge-conflict-report-2026-08-28-x-ingest --> harness-routing
+  merge-conflict-report-2026-08-28-x-ingest --> verifiable-instructions
+  merge-conflict-report-2026-08-28-x-ingest --> tokens-as-capital
+  merge-conflict-report-2026-08-28-x-ingest --> llm-wiki
+  merge-conflict-report-2026-08-28-x-ingest --> memory-engineering
+  merge-conflict-report-2026-08-28-x-ingest --> context-graph
+  merge-conflict-report-2026-08-28-x-ingest --> entropy-gate
+  merge-conflict-report-2026-08-28-x-ingest --> hunt-ship-loop
+  merge-conflict-report-2026-08-28-x-ingest --> audited-task-contract
+  merge-conflict-report-2026-08-28-x-ingest --> MEMORY
+  merge-conflict-report-2026-08-28-x-ingest --> src-voxyz-writing-system
   merge-conflict-report-2026-08-28 --> ship
   merge-conflict-report-2026-08-28 --> anti-slop
   merge-conflict-report-2026-08-28 --> tokens-as-capital
@@ -382,29 +413,24 @@ flowchart TB
   merge-conflict-report-2026-08-29-jerry-two-pass --> ship
   merge-conflict-report-2026-08-29-jerry-two-pass --> ingest-brief-2026-08-24-jerry-two-pass
   merge-conflict-report-2026-08-29-jerry-two-pass --> ingest-brief-2026-08-24
-  merge-conflict-report-2026-08-28-x-ingest --> secret-gateway
-  merge-conflict-report-2026-08-28-x-ingest --> flat-context
-  merge-conflict-report-2026-08-28-x-ingest --> project-skill-stack
-  merge-conflict-report-2026-08-28-x-ingest --> anti-slop
-  merge-conflict-report-2026-08-28-x-ingest --> harness-routing
-  merge-conflict-report-2026-08-28-x-ingest --> verifiable-instructions
-  merge-conflict-report-2026-08-28-x-ingest --> tokens-as-capital
-  merge-conflict-report-2026-08-28-x-ingest --> llm-wiki
-  merge-conflict-report-2026-08-28-x-ingest --> memory-engineering
-  merge-conflict-report-2026-08-28-x-ingest --> context-graph
-  merge-conflict-report-2026-08-28-x-ingest --> entropy-gate
-  merge-conflict-report-2026-08-28-x-ingest --> hunt-ship-loop
-  merge-conflict-report-2026-08-28-x-ingest --> audited-task-contract
-  merge-conflict-report-2026-08-28-x-ingest --> MEMORY
-  merge-conflict-report-2026-08-28-x-ingest --> src-voxyz-writing-system
-  ingest-brief-2026-08-24-avichawla --> flat-context
-  ingest-brief-2026-08-24-avichawla --> secret-gateway
-  ingest-brief-2026-08-24-avichawla --> src-avichawla-trueforge
-  ingest-brief-2026-08-24-4ndrearossetti --> secret-gateway
-  ingest-brief-2026-08-24-4ndrearossetti --> src-4ndrearossetti-openconnector
-  ingest-brief-2026-08-24-alexprompter --> project-skill-stack
-  ingest-brief-2026-08-24-alexprompter --> src-alexprompter-claude-projects
-  ingest-brief-2026-08-24-voxyz --> src-voxyz-writing-system
+  ingest-brief-2026-08-24-voxyz-codex-goal --> src-voxyz-codex-goal-quota
+  ingest-brief-2026-08-24-voxyz-codex-goal --> codex-goal
+  ingest-brief-2026-08-24-voxyz-codex-goal --> vox
+  ingest-brief-2026-08-24-voxyz-codex-goal --> audited-task-contract
+  ingest-brief-2026-08-24-voxyz-codex-goal --> verifiable-instructions
+  ingest-brief-2026-08-24-voxyz-codex-goal --> hunt-ship-loop
+  ingest-brief-2026-08-24-voxyz-codex-goal --> src-voxyz-verifiable-instructions
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> codex-goal
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> vox
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> audited-task-contract
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> verifiable-instructions
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> hunt-ship-loop
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> self-verification
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> hunt
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> ship
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> src-voxyz-writing-system
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> ingest-brief-2026-08-24-voxyz-codex-goal
+  merge-conflict-report-2026-08-29-voxyz-codex-goal --> ingest-brief-2026-08-24
   agent-operating-system --> llm-wiki
   agent-operating-system --> memory-engineering
   agent-operating-system --> audited-task-contract
@@ -416,6 +442,8 @@ flowchart TB
   anti-slop --> daily-tool-replace
   anti-slop --> src-can1357-daily-tool-replace-2026-08-27
   audited-task-contract --> src-rohit-harness-router
+  audited-task-contract --> codex-goal
+  audited-task-contract --> src-voxyz-codex-goal-quota
   audited-task-contract --> src-4ndrearossetti-openconnector
   audited-task-contract --> secret-gateway
   audited-task-contract --> src-avid-company-foundry
@@ -490,6 +518,11 @@ flowchart TB
   file-memory --> portable-memory
   file-memory --> memory-ablation
   file-memory --> context-graph
+  flat-context --> src-avichawla-trueforge
+  flat-context --> secret-gateway
+  flat-context --> harness-routing
+  flat-context --> entropy-gate
+  flat-context --> tokens-as-capital
   grok-bot-money --> grok-bot
   grok-bot-money --> src-exm7777-grok-bot-money
   grok-bot-money --> grok-bot-use-cases
@@ -551,6 +584,7 @@ flowchart TB
   headlong --> memory-engineering
   hunt-ship-loop --> src-avid-obsidian-agent-team
   hunt-ship-loop --> src-avid-company-foundry
+  hunt-ship-loop --> src-voxyz-codex-goal-quota
   hunt-ship-loop --> hunt
   hunt-ship-loop --> ship
   hunt-ship-loop --> maps
@@ -558,6 +592,7 @@ flowchart TB
   hunt-ship-loop --> llm-wiki
   hunt-ship-loop --> context-graph
   hunt-ship-loop --> secret-gateway
+  hunt-ship-loop --> codex-goal
   hunt-ship-loop --> company-foundry
   hunt-ship-loop --> avid
   hunt-ship-loop --> grok-bot
@@ -620,17 +655,28 @@ flowchart TB
   portable-memory --> claims
   portable-memory --> claim-protocol
   portable-memory --> memory-system
+  project-skill-stack --> src-alexprompter-claude-projects
+  project-skill-stack --> context-graph
+  project-skill-stack --> llm-wiki
+  project-skill-stack --> memory-engineering
   provenance --> memory-system
   provenance --> claims
   provenance --> epistemic-labels
   provenance --> stale-fact-detector
   provenance --> audited-task-contract
   provenance --> llm-wiki
+  secret-gateway --> src-4ndrearossetti-openconnector
+  secret-gateway --> src-avichawla-trueforge
+  secret-gateway --> harness-routing
+  secret-gateway --> audited-task-contract
+  secret-gateway --> hunt-ship-loop
+  secret-gateway --> flat-context
   self-verification --> src-jacky-self-verification
   self-verification --> jacky-kwok
   self-verification --> verifiable-instructions
   self-verification --> entropy-gate
   self-verification --> claim-protocol
+  self-verification --> codex-goal
   stale-fact-detector --> claims
   stale-fact-detector --> claim-protocol
   stale-fact-detector --> llm-wiki
@@ -650,25 +696,18 @@ flowchart TB
   untrusted-ingest --> epistemic-labels
   untrusted-ingest --> llm-wiki
   verifiable-instructions --> src-voxyz-verifiable-instructions
+  verifiable-instructions --> src-voxyz-codex-goal-quota
+  verifiable-instructions --> codex-goal
   verifiable-instructions --> src-voxyz-writing-system
   verifiable-instructions --> memory-ablation
   verifiable-instructions --> self-verification
   verifiable-instructions --> anti-slop
-  flat-context --> src-avichawla-trueforge
-  flat-context --> secret-gateway
-  flat-context --> harness-routing
-  flat-context --> entropy-gate
-  flat-context --> tokens-as-capital
-  secret-gateway --> src-4ndrearossetti-openconnector
-  secret-gateway --> src-avichawla-trueforge
-  secret-gateway --> harness-routing
-  secret-gateway --> audited-task-contract
-  secret-gateway --> hunt-ship-loop
-  secret-gateway --> flat-context
-  project-skill-stack --> src-alexprompter-claude-projects
-  project-skill-stack --> context-graph
-  project-skill-stack --> llm-wiki
-  project-skill-stack --> memory-engineering
+  codex-goal --> src-voxyz-codex-goal-quota
+  codex-goal --> vox
+  codex-goal --> audited-task-contract
+  codex-goal --> hunt-ship-loop
+  codex-goal --> verifiable-instructions
+  codex-goal --> self-verification
   andrej-karpathy --> llm-wiki
   andrej-karpathy --> src-papa-couch-compiler
   andrej-karpathy --> src-bober-folder-workflow
@@ -685,9 +724,27 @@ flowchart TB
   rohit --> audited-task-contract
   rohit --> harness-routing
   rohit --> src-rohit-harness-router
+  vox --> src-voxyz-verifiable-instructions
+  vox --> src-voxyz-codex-goal-quota
+  vox --> src-voxyz-writing-system
+  vox --> verifiable-instructions
+  vox --> codex-goal
+  vox --> anti-slop
   src-0xcodio-memory-ablation --> memory-engineering
   src-0xcodio-memory-ablation --> memory-ablation
   src-0xcodio-memory-ablation --> verifiable-instructions
+  src-4ndrearossetti-openconnector --> secret-gateway
+  src-4ndrearossetti-openconnector --> harness-routing
+  src-4ndrearossetti-openconnector --> audited-task-contract
+  src-alexprompter-claude-projects --> project-skill-stack
+  src-alexprompter-claude-projects --> context-graph
+  src-alexprompter-claude-projects --> memory-engineering
+  src-alexprompter-claude-projects --> llm-wiki
+  src-avichawla-trueforge --> harness-routing
+  src-avichawla-trueforge --> flat-context
+  src-avichawla-trueforge --> secret-gateway
+  src-avichawla-trueforge --> entropy-gate
+  src-avichawla-trueforge --> tokens-as-capital
   src-avid-company-foundry --> entropy-gate
   src-avid-company-foundry --> company-foundry
   src-avid-company-foundry --> hunt-ship-loop
@@ -745,22 +802,18 @@ flowchart TB
   src-rohit-harness-router --> audited-task-contract
   src-rohit-harness-router --> harness-routing
   src-rohit-harness-router --> rohit
+  src-voxyz-verifiable-instructions --> vox
   src-voxyz-verifiable-instructions --> verifiable-instructions
-  src-alexprompter-claude-projects --> project-skill-stack
-  src-alexprompter-claude-projects --> context-graph
-  src-alexprompter-claude-projects --> memory-engineering
-  src-alexprompter-claude-projects --> llm-wiki
+  src-voxyz-writing-system --> src-voxyz-codex-goal-quota
   src-voxyz-writing-system --> src-voxyz-verifiable-instructions
   src-voxyz-writing-system --> anti-slop
   src-voxyz-writing-system --> harness-routing
   src-voxyz-writing-system --> verifiable-instructions
-  src-4ndrearossetti-openconnector --> secret-gateway
-  src-4ndrearossetti-openconnector --> harness-routing
-  src-4ndrearossetti-openconnector --> audited-task-contract
-  src-avichawla-trueforge --> harness-routing
-  src-avichawla-trueforge --> flat-context
-  src-avichawla-trueforge --> secret-gateway
-  src-avichawla-trueforge --> entropy-gate
-  src-avichawla-trueforge --> tokens-as-capital
+  src-voxyz-writing-system --> vox
+  src-voxyz-codex-goal-quota --> vox
+  src-voxyz-codex-goal-quota --> codex-goal
+  src-voxyz-codex-goal-quota --> audited-task-contract
+  src-voxyz-codex-goal-quota --> verifiable-instructions
+  src-voxyz-codex-goal-quota --> hunt-ship-loop
 ```
 <!-- graph-mermaid:end -->

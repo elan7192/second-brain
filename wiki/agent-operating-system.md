@@ -17,7 +17,7 @@ Five layers, one vault.
 
 1. **Compile, then retrieve the compiled set.** [[llm-wiki]] + [[tokens-as-capital]] + [[retrieval]] + [[claim-protocol]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki. The agent queries through `python3 tools/sb ask`, not by walking [[index]] (D9, C37). [[agent-facing-docs]] measured that instruction files and working notes take most of an agent's documentation attention.
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]] + [[memory-system]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`. New claims are FACT, INFERENCE, or OPINION.
-3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]] + [[secret-gateway]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job. Credentials stay in a runtime, not in the prompt. [[adversarial-review]] freezes the artifact while a reviewer and critic argue, then the writer edits.
+3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]] + [[secret-gateway]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job. Credentials stay in a runtime, not in the prompt. [[adversarial-review]] freezes the artifact while a reviewer and critic argue, then the writer edits. Codex `/goal` is a same-harness form of that contract. See [[codex-goal]].
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations. Reading `AGENTS.md` is not the check. See D10 and [[agent-facing-docs]]. [[ultra-mode]] is the coding-agent product of that loop: N isolated worktrees, [[probabilistic-pivot-tournament]], uncommitted apply.
 5. **Keep a human gate.** [[hunt-ship-loop]] + [[clip-pipeline]] + [[skillspector]]. File first. Scouts write quietly. Vault does not post, pay, or send. Generated skills wait for SkillSpector. Operating order: [[musk-algorithm]].
 
@@ -57,3 +57,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-alexprompter-claude-projects]] is a Claude Projects how-to. Product workspace, not this wiki. See [[project-skill-stack]] and C42.
 
 [[src-voxyz-writing-system]] is a 6/6 `/goal` writing prompt. Third list. Keep D6. See C43. C6 stays open.
+
+[[src-voxyz-codex-goal-quota]] is the parent leftover-quota thread. Five `/goal` recipes retrieved. Duration claim is C45.

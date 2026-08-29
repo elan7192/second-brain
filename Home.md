@@ -13,7 +13,7 @@ Door to the vault. Open this folder in Obsidian. Then open graph view. See [[gra
 
 ## Result
 
-Compiled wiki. Gold [[wiki]], teal [[maps]], blue [[hunt]] / [[twitter]] / [[disclosures]], green [[andrej-karpathy]] [[jacky-kwok]] [[maverick]] [[elvis]] [[rohit]] [[hurley]] [[mahipal-jangra]] [[avid]] [[jerry-liu]], coral [[ship]].
+Compiled wiki. Gold [[wiki]], teal [[maps]], blue [[hunt]] / [[twitter]] / [[disclosures]], green [[andrej-karpathy]] [[jacky-kwok]] [[maverick]] [[elvis]] [[rohit]] [[hurley]] [[mahipal-jangra]] [[avid]] [[jerry-liu]] [[vox]], coral [[ship]].
 
 Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.
 
@@ -59,3 +59,5 @@ First ingest brief (kept): [[ingest-brief-2026-08-23]].
 2026-08-26: [[headlong]] trial. Brief: [[ingest-brief-2026-08-26-headlong]]. Hour harvest: [[ingest-brief-2026-08-26-headlong-hour]].
 
 2026-08-24: [[agent-facing-docs]] and [[disclosure-index]]. Briefs: [[ingest-brief-2026-08-24]], [[ingest-brief-2026-08-24-disclosure-index]]. Merge remapped D8/D9 → D10/D11 and C8–C10 → C26–C28. See [[merge-conflict-report-agent-facing-2026-08-28]].
+
+2026-08-23: [[src-voxyz-codex-goal-quota]]. Brief: [[ingest-brief-2026-08-24-voxyz-codex-goal]]. Merge remapped C8 → C45. See [[merge-conflict-report-2026-08-29-voxyz-codex-goal]].

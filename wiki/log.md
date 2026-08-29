@@ -11,6 +11,14 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] merge | origin/main into voxyz leftover-quota branch
+
+Fetched origin/main at `5502848`. Simple unions kept. Branch flag remapped C8→C45 so it does not collide with main C8 (two anti-slop tens). Same-day brief renamed to [[ingest-brief-2026-08-24-voxyz-codex-goal]]; main [[ingest-brief-2026-08-24]] kept. C17 / C18 / C25 / C37 / C38 left unresolved. See [[merge-conflict-report-2026-08-29-voxyz-codex-goal]].
+
+## [2026-08-24] ingest | Voxyz leftover Codex quota /goal
+
+Ingested https://x.com/voxyz_ai/status/2091603024817062192. Wrote [[src-voxyz-codex-goal-quota]], [[codex-goal]], [[vox]]. Five `/goal` prompts retrieved via threadreader. Linked [[audited-task-contract]], [[verifiable-instructions]], [[hunt-ship-loop]]. C6 still open. C45 (was C8 on this branch) marks "days of Sol" unverified. Brief: [[ingest-brief-2026-08-24-voxyz-codex-goal]].
+
 ## [2026-08-29] merge | origin/main into jerry two-pass branch
 
 Fetched origin/main at `dbf957b`. Simple unions kept. Branch flag remapped C8→C44 so it does not collide with main C8 (two anti-slop tens). Same-day brief renamed to [[ingest-brief-2026-08-24-jerry-two-pass]]; main [[ingest-brief-2026-08-24]] kept. C17 / C18 / C25 / C37 / C38 left unresolved. See [[merge-conflict-report-2026-08-29-jerry-two-pass]].

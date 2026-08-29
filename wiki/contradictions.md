@@ -61,6 +61,8 @@ Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks a
 
 [[src-voxyz-writing-system]] is a later `/goal` writing prompt (6/6). It is not those eight blocks. C6 stays open.
 
+The 2026-08-23 thread ([[src-voxyz-codex-goal-quota]]) is five `/goal` recipes. It does not close C6.
+
 ## C7. Income claim
 
 [[src-bober-folder-workflow]] claims $17k/month from the workflow.
@@ -408,3 +410,13 @@ D1 and [[llm-wiki]]: pay ingest once, keep compiled pages, retrieve the compiled
 Resolution: different stores. Persistent wiki stays compile-once. Ad-hoc document dumps use [[two-pass-document-processing]]. Do not reopen D1. LlamaParse/LiteParse accuracy and cost claims stay `unverified`.
 
 Remap: was C8 on this branch. Main C8 is two anti-slop tens.
+
+## C45. Leftover Codex quota as "days of Sol"
+
+[[src-voxyz-codex-goal-quota]] says unused quota at reset throws away days of Sol.
+
+The thread has no measurement.
+
+Resolution: keep the method on [[codex-goal]]. Mark the duration `unverified`.
+
+Remap: was C8 on the leftover-quota branch. Main C8 is the two anti-slop tens.

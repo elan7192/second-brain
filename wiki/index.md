@@ -122,6 +122,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 | [[skill-library]] | Living catalog vs GitHub dump. Compile here. Do not vendor either pack |
 | [[skill-as-sop]] | A skill is a compiled SOP for a workflow that already failed once |
 | [[retrieval-second-brain]] | Hybrid search / GraphRAG recipe. Compile the claim. Query path is D9. See C25 |
+| [[codex-goal]] | Leftover Codex quota is spent with `/goal`. Five recipes with checks |
 
 
 ## People
@@ -141,6 +142,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 | [[jerry-liu]] | Two-pass document processing. LlamaIndex |
 | [[hurley]] | Notion Skills library pitch, 2026-08-21 |
 | [[mahipal-jangra]] | Community cybersecurity skill library. Not Anthropic |
+| [[vox]] | @Voxyz_ai. Checks in schema, then `/goal` recipes |
 
 ## Root files the agent must keep current
 

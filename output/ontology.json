@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T03:20:54Z",
+  "builtAt": "2026-08-29T03:51:17Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 15,
-    "unverified": 101,
+    "unverified": 104,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 56,
-    "Concept": 121,
+    "Ship": 58,
+    "Concept": 122,
     "Project": 2,
-    "Person": 13,
-    "Source": 138,
+    "Person": 14,
+    "Source": 139,
     "Decision": 12,
-    "Contradiction": 44,
-    "objects": 414,
-    "links": 3002
+    "Contradiction": 45,
+    "objects": 420,
+    "links": 3085
   },
   "objects": [
     {
@@ -668,6 +668,20 @@
       "oneLiner": "D1 and [[llm-wiki]]: pay ingest once, keep compiled pages, retrieve the compiled set (D9). Do not re-derive from `raw/` on every question."
     },
     {
+      "primaryKey": "C45",
+      "objectType": "Contradiction",
+      "title": "Leftover Codex quota as \"days of Sol\"",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-29",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "The thread has no measurement."
+    },
+    {
       "primaryKey": "C5",
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
@@ -691,7 +705,7 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 3,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear."
     },
@@ -928,8 +942,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
-      "outbound": 53,
+      "inbound": 12,
+      "outbound": 57,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -999,7 +1013,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 6,
-      "outbound": 25,
+      "outbound": 28,
       "unverified": false,
       "oneLiner": "2026-08-29"
     },
@@ -1040,8 +1054,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 38,
-      "outbound": 55,
+      "inbound": 39,
+      "outbound": 57,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -1124,7 +1138,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 30,
+      "inbound": 31,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Default writing constraints"
@@ -1180,8 +1194,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
-      "outbound": 11,
+      "inbound": 40,
+      "outbound": 13,
       "unverified": true,
       "oneLiner": "Portable verified state across coding harnesses"
     },
@@ -1410,6 +1424,20 @@
       "oneLiner": "Cluster experts, store mean base plus rank-r residuals. 12-layer d=768 toy, not a production MoE LLM."
     },
     {
+      "primaryKey": "codex-goal",
+      "objectType": "Concept",
+      "title": "Codex /goal",
+      "path": "wiki/codex-goal.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 14,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Leftover Codex quota is spent with `/goal`. Five recipes with checks"
+    },
+    {
       "primaryKey": "company-foundry",
       "objectType": "Concept",
       "title": "Company Foundry",
@@ -1488,8 +1516,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 137,
-      "outbound": 73,
+      "inbound": 141,
+      "outbound": 75,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1629,7 +1657,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 30,
+      "outbound": 32,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1894,7 +1922,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -2132,7 +2160,7 @@
       "updated": "2026-08-24",
       "tags": "hunt",
       "island": "hunt-ship",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]"
@@ -2160,8 +2188,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 38,
-      "outbound": 20,
+      "inbound": 42,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "File first. Scouts stay quiet. Human final yes"
     },
@@ -2244,8 +2272,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 31,
-      "outbound": 104,
+      "inbound": 32,
+      "outbound": 106,
       "unverified": true,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-29"
     },
@@ -2272,8 +2300,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
-      "outbound": 140,
+      "inbound": 15,
+      "outbound": 141,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2356,7 +2384,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 4,
+      "inbound": 6,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
@@ -2472,6 +2500,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Voxyz 6/6 `/goal` prompt: one writing system in global CLAUDE.md / AGENTS.md, project voice stays local."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Voxyz leftover Codex quota",
+      "path": "output/ingest-brief-2026-08-24-voxyz-codex-goal.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 6,
+      "outbound": 8,
+      "unverified": true,
+      "oneLiner": "The 2026-08-23 Voxyz leftover-quota thread is compiled. Five `/goal` prompts were retrieved in full."
     },
     {
       "primaryKey": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -2735,7 +2777,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 241,
+      "outbound": 246,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3046,6 +3088,20 @@
       "outbound": 17,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `dbf957b`, then merged into `cursor/ingest-jerry-two-pass-2f90`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 Voxyz leftover-quota vs main",
+      "path": "output/merge-conflict-report-2026-08-29-voxyz-codex-goal.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 5,
+      "outbound": 17,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `5502848`, then merged into `cursor/ingest-voxyz-codex-goal-4456`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -3546,8 +3602,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
-      "outbound": 14,
+      "inbound": 27,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Sample several answers, score them, keep the winner"
     },
@@ -3574,8 +3630,8 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 12,
-      "outbound": 16,
+      "inbound": 13,
+      "outbound": 19,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
     },
@@ -5554,6 +5610,20 @@
       "oneLiner": "Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness."
     },
     {
+      "primaryKey": "src-voxyz-codex-goal-quota",
+      "objectType": "Source",
+      "title": "src-voxyz-codex-goal-quota",
+      "path": "wiki/sources/src-voxyz-codex-goal-quota.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 15,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "Leftover Codex quota dies at reset. Spend it with `/goal`, not a one-off prompt."
+    },
+    {
       "primaryKey": "src-voxyz-drafts-2026-08-27",
       "objectType": "Source",
       "title": "src-voxyz-drafts-2026-08-27",
@@ -5576,8 +5646,8 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 3,
+      "inbound": 10,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
     },
@@ -5590,8 +5660,8 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 12,
-      "outbound": 6,
+      "inbound": 14,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Sixth `/goal` prompt, labeled 6/6. Install one writing system in global `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep each project's voice in project-level files. Audit dupl"
     },
@@ -5688,8 +5758,8 @@
       "updated": "2026-08-29",
       "tags": "hunt,twitter",
       "island": "hunt-ship",
-      "inbound": 7,
-      "outbound": 17,
+      "inbound": 8,
+      "outbound": 18,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
     },
@@ -5814,8 +5884,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
-      "outbound": 9,
+      "inbound": 34,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Behavior, check, failure path. No wishes"
     },
@@ -5860,6 +5930,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Fine-tune with expert + zero-shot self-demos."
+    },
+    {
+      "primaryKey": "vox",
+      "objectType": "Person",
+      "title": "Vox",
+      "path": "wiki/people/vox.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "person",
+      "island": "people",
+      "inbound": 9,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "@Voxyz_ai. Checks in schema, then `/goal` recipes"
     },
     {
       "primaryKey": "vs-graph",
@@ -6560,6 +6644,21 @@
       "to": "two-pass-document-processing"
     },
     {
+      "from": "C45",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "C45",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C45",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
       "from": "C5",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -6573,6 +6672,11 @@
       "from": "C5",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "C6",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "C6",
@@ -6876,6 +6980,11 @@
     },
     {
       "from": "Home",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "Home",
       "linkType": "cites",
       "to": "src-jerry-two-pass-docs"
     },
@@ -6888,6 +6997,11 @@
       "from": "Home",
       "linkType": "cites",
       "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "Home",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "Home",
@@ -7002,6 +7116,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong"
     },
     {
@@ -7043,6 +7162,11 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
     },
     {
       "from": "Home",
@@ -7632,6 +7756,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "contradictions"
     },
     {
@@ -7677,6 +7806,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong-hour"
     },
     {
@@ -7703,6 +7837,11 @@
       "from": "Today",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
     },
     {
       "from": "Today",
@@ -7882,6 +8021,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-voxyz-writing-system"
     },
     {
@@ -7918,6 +8062,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "agent-operating-system",
@@ -8631,8 +8780,18 @@
     },
     {
       "from": "audited-task-contract",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "audited-task-contract",
       "linkType": "relatedTo",
       "to": "adversarial-review"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "audited-task-contract",
@@ -9055,6 +9214,41 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "codex-goal",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "company-foundry",
       "linkType": "aboutPerson",
       "to": "avid"
@@ -9447,6 +9641,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
@@ -9488,6 +9687,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "contradictions",
@@ -10042,6 +10246,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-exm7777-grok-bot"
     },
     {
@@ -10103,6 +10312,11 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
     },
     {
       "from": "digests",
@@ -11461,6 +11675,11 @@
     },
     {
       "from": "hunt-ship-loop",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -11468,6 +11687,11 @@
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "hunt-ship-loop",
@@ -11657,6 +11881,11 @@
     {
       "from": "index",
       "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
       "to": "zack0x01"
     },
     {
@@ -11748,6 +11977,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "index",
@@ -13042,6 +13276,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-voxyz-drafts-2026-08-27"
     },
     {
@@ -13368,6 +13607,46 @@
       "from": "ingest-brief-2026-08-24-voxyz",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -14021,6 +14300,11 @@
     },
     {
       "from": "log",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "log",
       "linkType": "cites",
       "to": "src-0xcarnagee-tape-2026-08-27"
     },
@@ -14327,6 +14611,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-voxyz-writing-system"
     },
     {
@@ -14448,6 +14737,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "clustered-moe"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "log",
@@ -14732,6 +15026,11 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-growthos"
     },
     {
@@ -14888,6 +15187,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
     },
     {
       "from": "log",
@@ -16315,6 +16619,91 @@
       "to": "two-pass-document-processing"
     },
     {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
       "linkType": "relatedTo",
       "to": "Home"
@@ -17332,6 +17721,11 @@
     {
       "from": "self-verification",
       "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
       "to": "contradictions"
     },
     {
@@ -17452,7 +17846,17 @@
     {
       "from": "ship",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
     },
     {
       "from": "ship",
@@ -17473,6 +17877,11 @@
       "from": "ship",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
     },
     {
       "from": "ship",
@@ -20090,6 +20499,36 @@
       "to": "harness-routing"
     },
     {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "src-voxyz-drafts-2026-08-27",
       "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
@@ -20101,6 +20540,11 @@
     },
     {
       "from": "src-voxyz-verifiable-instructions",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-verifiable-instructions",
       "linkType": "relatedTo",
       "to": "contradictions"
     },
@@ -20108,6 +20552,16 @@
       "from": "src-voxyz-verifiable-instructions",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "src-voxyz-writing-system",
@@ -20427,6 +20881,11 @@
     {
       "from": "twitter",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
@@ -20667,6 +21126,11 @@
     {
       "from": "verifiable-instructions",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
@@ -20683,6 +21147,11 @@
       "from": "verifiable-instructions",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "verifiable-instructions",
@@ -20748,6 +21217,36 @@
       "from": "vla-self-demo",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "vs-graph",

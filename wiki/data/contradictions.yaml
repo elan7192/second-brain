@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C44 must match that page.
+# Codes C1–C45 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -440,4 +440,14 @@ contradictions:
     severity: medium
     resolution: different stores; persistent wiki stays compile-once; dumps use two-pass; do not reopen D1
     resolution_source: decision:compiler-vault
+    page: contradictions.md
+
+  - id: contradiction:c45
+    claim_a: source:src-voxyz-codex-goal-quota
+    claim_b: concept:codex-goal
+    reason: leftover Codex quota as days of Sol
+    status: unverified
+    severity: low
+    resolution: keep the /goal method; mark the duration unverified
+    resolution_source: concept:codex-goal
     page: contradictions.md
