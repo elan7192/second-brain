@@ -23,6 +23,7 @@ Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are 
 - One owner per job, report once. See [[raptor-dispatch]].
 - Clip work is captions and metadata first. Fetch video only when a kept claim depends on the picture. See [[clip-pipeline]].
 - Compile methods learned in work into `wiki/` after the task. See [[src-play-methods-2026-08-25]].
+- [[src-voxyz-codex-goal-quota]] prompt 4: do not delete, merge, push, or deploy. Leave those actions in the final list. That matches D5.
 
 ## Folders that now exist
 
@@ -34,6 +35,6 @@ Graph colors live in `.obsidian/graph.json`. The 08:00 IST report clock is still
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[secret-gateway]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]] · [[company-foundry]] · [[avid]] · [[grok-bot]]
+[[llm-wiki]] · [[context-graph]] · [[secret-gateway]] · [[codex-goal]] · D5 in `decisions.md` · [[clip-pipeline]] · [[skillspector]] · [[growth-operator]] · [[company-foundry]] · [[avid]] · [[grok-bot]]
 
 [[src-exm7777-grok-bot-money]]: read-and-prepare first, actions behind approval, money moves never automated on day one. Matches D5. Send, publish, and ad spend stay human. See [[grok-bot-money]].

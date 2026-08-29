@@ -17,5 +17,7 @@ Short briefs that still need an inbound link. Knowledge lives on the concept pag
 - [[ingest-brief-2026-08-24-alexprompter]]
 - [[ingest-brief-2026-08-24-voxyz]]
 - [[ingest-brief-2026-08-24-disclosure-index]]
+- [[ingest-brief-2026-08-24-jerry-two-pass]]
+- [[ingest-brief-2026-08-24-voxyz-codex-goal]]
 - [[ingest-brief-2026-08-25-exm7777-grok-bot]]
 - [[ingest-brief-2026-08-27-claim-protocol]]

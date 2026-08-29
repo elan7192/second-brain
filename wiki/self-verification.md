@@ -44,6 +44,8 @@ Prose is not an observed oracle. [[src-dair-agent-friendly-docs]] recorded zero 
 
 ## Related
 
-[[verifiable-instructions]] · [[entropy-gate]] · [[ultra-mode]] · [[adversarial-review]] · [[claim-protocol]] · [[agent-facing-docs]]
+[[verifiable-instructions]] · [[entropy-gate]] · [[ultra-mode]] · [[adversarial-review]] · [[claim-protocol]] · [[agent-facing-docs]] · [[codex-goal]]
 
 Related later source: [[evosyn]] synthesizes executable tests; not the same as sampling several answers.
+
+[[codex-goal]] remasures the same product flow after each change. That is evidence on the app, not a scored sample of answers.

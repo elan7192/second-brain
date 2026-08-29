@@ -11,7 +11,7 @@ updated: 2026-08-28
 
 The portable unit between coding agents is verified task state, not a transcript.
 
-Source: [[src-rohit-harness-router]].
+Source: [[src-rohit-harness-router]]. Codex `/goal` is a same-harness form of this. See [[codex-goal]] and [[src-voxyz-codex-goal-quota]].
 
 ## Reset tax
 
@@ -46,6 +46,8 @@ Rule: the planner proposes. The executor changes a candidate. The auditor verifi
 
 [[adversarial-review]] is the same shape on one artifact: M writes, R reviews, C audits the review, then M may edit. The inner loop is review text only. Source: [[src-omarsar-adversarial-review]].
 
+`/goal` keeps outcome, check, constraints, and a stop list in one Codex prompt. It does not move state to another harness. Use this page's contract fields when the task leaves Codex. See [[codex-goal]].
+
 ## Why not a shared brain dump
 
 Generated repo summaries in a 2026 AGENTS.md study did not significantly raise resolve rate and raised cost. Native sessions are not a standard. Unverified memory can poison later agents.
@@ -54,4 +56,4 @@ Generated repo summaries in a 2026 AGENTS.md study did not significantly raise r
 
 ## Related
 
-[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]] · [[secret-gateway]]
+[[harness-routing]] · [[entropy-gate]] · [[memory-engineering]] · [[adversarial-review]] · [[company-foundry]] · [[secret-gateway]] · [[codex-goal]]

@@ -13,7 +13,7 @@ updated: 2026-08-24
 - Author: Voxyz_ai (Vox)
 - Tweet: 2091938084875088316
 - Created: 2026-08-24 17:18:00 UTC
-- Quotes: 2091603024817062192 (five `/goal` prompts. Those five were not retrieved here.)
+- Quotes: 2091603024817062192. Five `/goal` prompts now compiled at [[src-voxyz-codex-goal-quota]].
 - Not copied into `raw/`.
 
 ## Claims kept
@@ -30,8 +30,8 @@ Do not vendor this list into `AGENTS.md`. Vault writing default stays D6 / [[ant
 
 Fits [[harness-routing]] (global vs nested instruction files). Rule 1 "marketing energy" is author-voice, not this vault's default.
 
-Parent tweet's five prompts were not retrieved. No paper.
+Parent tweet's five prompts are on [[src-voxyz-codex-goal-quota]]. No paper.
 
 ## Pages updated
 
-[[anti-slop]] · [[verifiable-instructions]] · [[harness-routing]] · [[contradictions]] · [[agent-operating-system]]
+[[anti-slop]] · [[verifiable-instructions]] · [[harness-routing]] · [[contradictions]] · [[agent-operating-system]] · [[src-voxyz-codex-goal-quota]] · [[vox]]

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T04:37:55Z",
+  "builtAt": "2026-08-29T04:40:10Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 15,
-    "unverified": 95,
+    "unverified": 103,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 54,
-    "Concept": 120,
+    "Ship": 58,
+    "Concept": 122,
     "Project": 2,
-    "Person": 12,
-    "Source": 137,
+    "Person": 14,
+    "Source": 139,
     "Decision": 12,
-    "Contradiction": 43,
-    "objects": 408,
-    "links": 2745
+    "Contradiction": 45,
+    "objects": 420,
+    "links": 2882
   },
   "objects": [
     {
@@ -654,6 +654,34 @@
       "oneLiner": "D6 writing default is juampi's ranked ten, compiled into [[anti-slop]]."
     },
     {
+      "primaryKey": "C44",
+      "objectType": "Contradiction",
+      "title": "Compile-once wiki vs two-pass RAG",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-29",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": true,
+      "oneLiner": "D1 and [[llm-wiki]]: pay ingest once, keep compiled pages, retrieve the compiled set (D9). Do not re-derive from `raw/` on every question."
+    },
+    {
+      "primaryKey": "C45",
+      "objectType": "Contradiction",
+      "title": "Leftover Codex quota as \"days of Sol\"",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-29",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "The thread has no measurement."
+    },
+    {
       "primaryKey": "C5",
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
@@ -677,7 +705,7 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 3,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear."
     },
@@ -914,7 +942,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 10,
+      "inbound": 12,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
@@ -925,11 +953,11 @@
       "title": "Hooks",
       "path": "maps/Hooks.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-29",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 3,
-      "outbound": 11,
+      "inbound": 4,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Trend to lock. From [[src-avid-obsidian-agent-team]]."
     },
@@ -985,7 +1013,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 5,
-      "outbound": 3,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "2026-08-29"
     },
@@ -1023,13 +1051,13 @@
       "title": "Agent operating system",
       "path": "wiki/agent-operating-system.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 35,
-      "outbound": 53,
+      "inbound": 37,
+      "outbound": 57,
       "unverified": true,
-      "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts."
+      "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
     {
       "primaryKey": "ai-sovereignty",
@@ -1110,7 +1138,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
+      "inbound": 30,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Default writing constraints for this vault."
@@ -1166,8 +1194,8 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
-      "outbound": 11,
+      "inbound": 39,
+      "outbound": 13,
       "unverified": true,
       "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
     },
@@ -1396,6 +1424,20 @@
       "oneLiner": "Cluster experts, store mean base plus rank-r residuals. 12-layer d=768 toy, not a production MoE LLM."
     },
     {
+      "primaryKey": "codex-goal",
+      "objectType": "Concept",
+      "title": "Codex /goal",
+      "path": "wiki/codex-goal.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 13,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Codex leftover quota is spent with `/goal`. A one-off prompt leaves the rest on the table at reset."
+    },
+    {
       "primaryKey": "company-foundry",
       "objectType": "Concept",
       "title": "Company Foundry",
@@ -1457,11 +1499,11 @@
       "title": "Context graph",
       "path": "wiki/context-graph.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 39,
-      "outbound": 19,
+      "inbound": 43,
+      "outbound": 21,
       "unverified": false,
       "oneLiner": "Give the model the subgraph for this decision, not the whole dump."
     },
@@ -1474,8 +1516,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 131,
-      "outbound": 71,
+      "inbound": 139,
+      "outbound": 75,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1615,7 +1657,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 9,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Short briefs that still need an inbound link. Knowledge lives on the concept pages. Query with `python3 tools/sb ask`."
     },
@@ -1880,7 +1922,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
+      "inbound": 13,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -2059,11 +2101,11 @@
       "title": "Harness routing",
       "path": "wiki/harness-routing.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 41,
-      "outbound": 26,
+      "inbound": 46,
+      "outbound": 29,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
     },
@@ -2118,7 +2160,7 @@
       "updated": "2026-08-24",
       "tags": "hunt",
       "island": "hunt-ship",
-      "inbound": 5,
+      "inbound": 7,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]"
@@ -2146,8 +2188,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 37,
-      "outbound": 20,
+      "inbound": 41,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are indexes. The compiled store stays in `wiki/`."
     },
@@ -2230,7 +2272,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 30,
+      "inbound": 32,
       "outbound": 21,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
@@ -2255,11 +2297,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
-      "outbound": 139,
+      "inbound": 13,
+      "outbound": 141,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2342,7 +2384,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 1,
+      "inbound": 4,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
@@ -2418,6 +2460,20 @@
       "oneLiner": "The `#api` page documents a REST catalog. The live data is `data/catalog.js`."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-24-jerry-two-pass",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Jerry two-pass \u00b7 2026-08-24",
+      "path": "output/ingest-brief-2026-08-24-jerry-two-pass.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 3,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "Jerry Liu\u2019s 2026-08-23 post on two-pass document processing is compiled."
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-24-maverick-ultramode",
       "objectType": "Ship",
       "title": "Ingest brief \u00b7 Maverick ultramode \u00b7 2026-08-24",
@@ -2444,6 +2500,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Voxyz 6/6 `/goal` prompt: one writing system in global CLAUDE.md / AGENTS.md, project voice stays local."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Voxyz leftover Codex quota",
+      "path": "output/ingest-brief-2026-08-24-voxyz-codex-goal.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 3,
+      "outbound": 8,
+      "unverified": true,
+      "oneLiner": "The 2026-08-23 Voxyz leftover-quota thread is compiled. Five `/goal` prompts were retrieved in full."
     },
     {
       "primaryKey": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -2628,6 +2698,20 @@
       "oneLiner": "Stanford CS PhD. Author of LLM-as-a-Verifier (arXiv:2607.05391) and the DeepSeek V4 Flash self-verification Terminal-Bench post."
     },
     {
+      "primaryKey": "jerry-liu",
+      "objectType": "Person",
+      "title": "Jerry Liu",
+      "path": "wiki/people/jerry-liu.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "person",
+      "island": "people",
+      "inbound": 6,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "@jerryjliu0. Cofounder/CEO of LlamaIndex, per the 2026-08-23 post."
+    },
+    {
       "primaryKey": "lanbb",
       "objectType": "Project",
       "title": "LanBB",
@@ -2664,8 +2748,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 71,
-      "outbound": 37,
+      "inbound": 74,
+      "outbound": 38,
       "unverified": false,
       "oneLiner": "Andrej Karpathy's April 2026 pattern for a personal knowledge base."
     },
@@ -2693,7 +2777,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 235,
+      "outbound": 246,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2990,6 +3074,34 @@
       "outbound": 19,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `923f0f0`, then merged into `cursor/ingest-4ndrearossetti-openconnector-068c`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 Jerry two-pass vs main",
+      "path": "output/merge-conflict-report-2026-08-29-jerry-two-pass.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 17,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `dbf957b`, then merged into `cursor/ingest-jerry-two-pass-2f90`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 Voxyz leftover-quota vs main",
+      "path": "output/merge-conflict-report-2026-08-29-voxyz-codex-goal.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 17,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `5502848`, then merged into `cursor/ingest-voxyz-codex-goal-4456`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -3490,8 +3602,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
-      "outbound": 14,
+      "inbound": 26,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Generate several candidates. Score them. Keep the winner."
     },
@@ -3518,7 +3630,7 @@
       "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 11,
+      "inbound": 13,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
@@ -4854,6 +4966,20 @@
       "oneLiner": "Sample 5, verify with LLM-as-a-Verifier, 79% to 88% on Terminal-Bench 2.1 with DeepSeek V4 Flash. Author-reported. Fine-grained scores and logprob expectation."
     },
     {
+      "primaryKey": "src-jerry-two-pass-docs",
+      "objectType": "Source",
+      "title": "src-jerry-two-pass-docs",
+      "path": "wiki/sources/src-jerry-two-pass-docs.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 11,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Agent harnesses (Codex, Cowork) default to two-pass document processing over a data room: cheap OSS parse, then retrieval (grep or semantic), then a just-in-time VLM pass on the pages that matter. Def"
+    },
+    {
       "primaryKey": "src-johnsjawn-skill-library",
       "objectType": "Source",
       "title": "src-johnsjawn-skill-library",
@@ -5484,6 +5610,20 @@
       "oneLiner": "Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness."
     },
     {
+      "primaryKey": "src-voxyz-codex-goal-quota",
+      "objectType": "Source",
+      "title": "src-voxyz-codex-goal-quota",
+      "path": "wiki/sources/src-voxyz-codex-goal-quota.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 14,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "Leftover Codex quota dies at reset. Spend it with `/goal`, not a one-off prompt."
+    },
+    {
       "primaryKey": "src-voxyz-drafts-2026-08-27",
       "objectType": "Source",
       "title": "src-voxyz-drafts-2026-08-27",
@@ -5506,8 +5646,8 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 3,
+      "inbound": 10,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
     },
@@ -5520,8 +5660,8 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 12,
-      "outbound": 6,
+      "inbound": 14,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Sixth `/goal` prompt, labeled 6/6. Install one writing system in global `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep each project's voice in project-level files. Audit dupl"
     },
@@ -5587,11 +5727,11 @@
       "title": "Tokens as capital",
       "path": "wiki/tokens-as-capital.md",
       "created": "2026-08-23",
-      "updated": "2026-08-27",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 39,
-      "outbound": 20,
+      "inbound": 43,
+      "outbound": 22,
       "unverified": true,
       "oneLiner": "Treat a token as an investment, not a per-query bill."
     },
@@ -5615,13 +5755,27 @@
       "title": "Twitter hunt",
       "path": "hunt/twitter.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "hunt,twitter",
       "island": "hunt-ship",
-      "inbound": 6,
-      "outbound": 16,
+      "inbound": 8,
+      "outbound": 18,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
+    },
+    {
+      "primaryKey": "two-pass-document-processing",
+      "objectType": "Concept",
+      "title": "Two-pass document processing",
+      "path": "wiki/two-pass-document-processing.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 14,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "For a knowledge-work task over a data room, parse cheaply, retrieve a subset, then run a VLM only on those pages."
     },
     {
       "primaryKey": "two-stage-nn-tl",
@@ -5730,8 +5884,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
-      "outbound": 9,
+      "inbound": 33,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
     },
@@ -5776,6 +5930,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Fine-tune with expert + zero-shot self-demos."
+    },
+    {
+      "primaryKey": "vox",
+      "objectType": "Person",
+      "title": "Vox",
+      "path": "wiki/people/vox.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "person",
+      "island": "people",
+      "inbound": 7,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "@Voxyz_ai. Site: https://www.voxyz.ai"
     },
     {
       "primaryKey": "vs-graph",
@@ -6451,6 +6619,41 @@
       "to": "anti-slop"
     },
     {
+      "from": "C44",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "C44",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C44",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "C44",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
+      "from": "C45",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "C45",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C45",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
       "from": "C5",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -6464,6 +6667,11 @@
       "from": "C5",
       "linkType": "relatedTo",
       "to": "memory-ablation"
+    },
+    {
+      "from": "C6",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "C6",
@@ -6814,6 +7022,11 @@
       "from": "Hooks",
       "linkType": "relatedTo",
       "to": "twitter"
+    },
+    {
+      "from": "Hooks",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "Jarvis",
@@ -7268,6 +7481,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "inbox"
     },
     {
@@ -7279,6 +7497,11 @@
       "from": "Today",
       "linkType": "relatedTo",
       "to": "musk-algorithm"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "adversarial-review",
@@ -7388,6 +7611,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -7414,6 +7642,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "agent-operating-system",
@@ -7454,6 +7687,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "agent-operating-system",
@@ -7599,6 +7837,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "agent-operating-system",
@@ -8162,8 +8405,18 @@
     },
     {
       "from": "audited-task-contract",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "audited-task-contract",
       "linkType": "relatedTo",
       "to": "adversarial-review"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "audited-task-contract",
@@ -8586,6 +8839,41 @@
       "to": "arxiv-tierlist"
     },
     {
+      "from": "codex-goal",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "codex-goal",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "company-foundry",
       "linkType": "aboutPerson",
       "to": "avid"
@@ -8728,6 +9016,11 @@
     {
       "from": "context-graph",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
     },
     {
@@ -8799,6 +9092,11 @@
       "from": "context-graph",
       "linkType": "relatedTo",
       "to": "trace"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "context-graph",
@@ -8913,6 +9211,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -8968,6 +9271,11 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
@@ -9009,6 +9317,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "contradictions",
@@ -9139,6 +9452,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "tiwm"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "contradictions",
@@ -9508,7 +9826,17 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-voxyz"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
     },
     {
       "from": "digests",
@@ -10418,6 +10746,11 @@
     {
       "from": "harness-routing",
       "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "aboutPerson",
       "to": "rohit"
     },
     {
@@ -10444,6 +10777,11 @@
       "from": "harness-routing",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
     },
     {
       "from": "harness-routing",
@@ -10539,6 +10877,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "harness-routing",
@@ -10842,6 +11185,11 @@
     },
     {
       "from": "hunt-ship-loop",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -10849,6 +11197,11 @@
       "from": "hunt-ship-loop",
       "linkType": "relatedTo",
       "to": "clip-pipeline"
+    },
+    {
+      "from": "hunt-ship-loop",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "hunt-ship-loop",
@@ -11778,6 +12131,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -11999,6 +12357,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-thewhizzai-avo"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "index-sources",
@@ -12251,6 +12614,36 @@
       "to": "disclosures"
     },
     {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "ingest-brief-2026-08-24-maverick-ultramode",
       "linkType": "aboutPerson",
       "to": "jacky-kwok"
@@ -12299,6 +12692,46 @@
       "from": "ingest-brief-2026-08-24-voxyz",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "ingest-brief-2026-08-25-avid-company-foundry",
@@ -12626,6 +13059,21 @@
       "to": "ultra-mode"
     },
     {
+      "from": "jerry-liu",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "jerry-liu",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "jerry-liu",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "lanbb",
       "linkType": "aboutPerson",
       "to": "lostsec"
@@ -12863,6 +13311,11 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "untrusted-ingest"
     },
     {
@@ -12913,6 +13366,11 @@
     {
       "from": "log",
       "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
       "to": "mahipal-jangra"
     },
     {
@@ -12924,6 +13382,11 @@
       "from": "log",
       "linkType": "aboutPerson",
       "to": "rohit"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
+      "to": "vox"
     },
     {
       "from": "log",
@@ -13078,6 +13541,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -13228,6 +13696,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-voxyz-writing-system"
     },
     {
@@ -13349,6 +13822,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "clustered-moe"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "log",
@@ -13623,6 +14101,21 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-growthos"
     },
     {
@@ -13774,6 +14267,16 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-x-ingest"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-voxyz-codex-goal"
     },
     {
       "from": "log",
@@ -13994,6 +14497,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "trace"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "log",
@@ -15111,6 +15619,176 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "Hooks"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "hunt"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-voxyz-codex-goal"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-voxyz-codex-goal",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
       "linkType": "relatedTo",
       "to": "Home"
@@ -16099,6 +16777,11 @@
       "from": "self-verification",
       "linkType": "relatedTo",
       "to": "claim-protocol"
+    },
+    {
+      "from": "self-verification",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "self-verification",
@@ -18011,6 +18694,36 @@
       "to": "self-verification"
     },
     {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "src-johnsjawn-skill-library",
       "linkType": "aboutPerson",
       "to": "hurley"
@@ -18771,6 +19484,36 @@
       "to": "harness-routing"
     },
     {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "hunt-ship-loop"
+    },
+    {
+      "from": "src-voxyz-codex-goal-quota",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "src-voxyz-drafts-2026-08-27",
       "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
@@ -18782,6 +19525,11 @@
     },
     {
       "from": "src-voxyz-verifiable-instructions",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-verifiable-instructions",
       "linkType": "relatedTo",
       "to": "contradictions"
     },
@@ -18789,6 +19537,16 @@
       "from": "src-voxyz-verifiable-instructions",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-writing-system",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
     },
     {
       "from": "src-voxyz-writing-system",
@@ -18918,6 +19676,11 @@
     {
       "from": "tokens-as-capital",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -18998,6 +19761,11 @@
     {
       "from": "tokens-as-capital",
       "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
       "to": "work-per-cost"
     },
     {
@@ -19063,6 +19831,11 @@
     {
       "from": "twitter",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -19093,12 +19866,52 @@
     {
       "from": "twitter",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
       "from": "twitter",
       "linkType": "relatedTo",
       "to": "hunt-ship-loop"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "two-stage-nn-tl",
@@ -19298,6 +20111,11 @@
     {
       "from": "verifiable-instructions",
       "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
@@ -19314,6 +20132,11 @@
       "from": "verifiable-instructions",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
     },
     {
       "from": "verifiable-instructions",
@@ -19379,6 +20202,36 @@
       "from": "vla-self-demo",
       "linkType": "relatedTo",
       "to": "arxiv-tierlist"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
+      "to": "src-voxyz-codex-goal-quota"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
+      "to": "src-voxyz-verifiable-instructions"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
+      "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "codex-goal"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "vs-graph",
