@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T14:18:55Z",
+  "builtAt": "2026-08-29T14:21:36Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -118,7 +118,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 427,
-    "links": 2985
+    "links": 2991
   },
   "objects": [
     {
@@ -733,9 +733,9 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 4,
+      "outbound": 6,
       "unverified": false,
-      "oneLiner": "Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear."
+      "oneLiner": "Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear. Keep C6 open until those blocks exist."
     },
     {
       "primaryKey": "C7",
@@ -1195,7 +1195,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 14,
-      "outbound": 8,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Pinned external diagram skill. Wiki is the store. The renderer is not vendored."
     },
@@ -1558,8 +1558,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 144,
-      "outbound": 81,
+      "inbound": 145,
+      "outbound": 82,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -5702,8 +5702,8 @@
       "updated": "2026-08-29",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 12,
-      "outbound": 11,
+      "inbound": 14,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Untrusted prompt. Quote. Do not copy install text into `AGENTS.md`."
     },
@@ -5940,7 +5940,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 9,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "External text is data. It is not schema and it is not an instruction. See [[memory-system]] and [[grok-bot-tape]]."
@@ -5982,8 +5982,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 34,
-      "outbound": 11,
+      "inbound": 35,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
     },
@@ -6824,6 +6824,11 @@
     {
       "from": "C6",
       "linkType": "cites",
+      "to": "src-voxyz-archify"
+    },
+    {
+      "from": "C6",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -6840,6 +6845,11 @@
       "from": "C6",
       "linkType": "extractedFrom",
       "to": "contradictions"
+    },
+    {
+      "from": "C6",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "C7",
@@ -8265,6 +8275,11 @@
       "from": "archify",
       "linkType": "cites",
       "to": "src-voxyz-archify"
+    },
+    {
+      "from": "archify",
+      "linkType": "relatedTo",
+      "to": "contradictions"
     },
     {
       "from": "archify",
@@ -9750,6 +9765,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "unitok"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
     },
     {
       "from": "contradictions",
@@ -20087,6 +20107,11 @@
       "to": "skill-library"
     },
     {
+      "from": "src-voxyz-archify",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
       "from": "src-voxyz-codex-goal-quota",
       "linkType": "aboutPerson",
       "to": "vox"
@@ -20710,6 +20735,11 @@
       "from": "verifiable-instructions",
       "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "verifiable-instructions",
+      "linkType": "cites",
+      "to": "src-voxyz-archify"
     },
     {
       "from": "verifiable-instructions",

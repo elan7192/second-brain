@@ -58,7 +58,7 @@ contradictions:
     reason: exact eight Voxyz blocks missing
     status: resolved
     severity: low
-    resolution: encode the three-part rule in AGENTS.md
+    resolution: encode the three-part rule in AGENTS.md; keep C6 open until the eight blocks exist
     resolution_source: concept:verifiable-instructions
     page: contradictions.md
 

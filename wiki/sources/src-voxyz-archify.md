@@ -27,8 +27,9 @@ Untrusted prompt. Quote. Do not copy install text into `AGENTS.md`.
 - Quoted template: turn a codebase, feature, or workflow into one of Architecture, Workflow, Sequence, Data Flow, or Lifecycle.
 - Tweet-claimed agent jobs: one self-contained HTML with PNG, SVG, or video export; search a component and trace upstream and downstream; compare before and after versions.
 - Quoted bound: keep the 8-12 most important components and one primary path. Put supporting details in cards.
-- This is an install prompt. It is not the eight missing blocks on [[src-voxyz-verifiable-instructions]]. C6 stays open. Do not copy the prompt into `AGENTS.md`. See C47.
+- Quoted export size 2400x1260 is caption wording. It is not a vault acceptance check. Do not treat a missing 2400x1260 PNG as a failed ingest.
+- This is an install prompt. It is not the eight missing blocks on [[src-voxyz-verifiable-instructions]]. C6 stays open on purpose: the three-part rule is already in `AGENTS.md`; the blocks were never retrieved. Closing C6 would invent them. Do not copy the prompt into `AGENTS.md`. See C47.
 
 ## Pages updated
 
-[[archify]] · [[skill-library]] · [[skill-as-sop]] · [[project-skill-stack]] · [[how-it-works]] · [[graph]] · [[agent-operating-system]] · [[contradictions]] · [[vox]]
+[[archify]] · [[skill-library]] · [[skill-as-sop]] · [[project-skill-stack]] · [[how-it-works]] · [[graph]] · [[agent-operating-system]] · [[contradictions]] · [[verifiable-instructions]] · [[vox]]

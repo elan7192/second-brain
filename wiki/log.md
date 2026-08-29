@@ -11,6 +11,10 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] hygiene | C6 stay and 2400x1260 not a gate
+
+Review comments on #28. Wrote why C6 stays open: three-part rule is already in `AGENTS.md`; eight blocks were never retrieved; later Voxyz posts are different objects. Tweet 2400x1260 is not a vault acceptance check. See [[contradictions]] C6 and [[archify]].
+
 ## [2026-08-29] hygiene | Archify pin, drop vendored runtime
 
 Review of #28. Removed renderer/examples/scripts from `.agents/skills/archify`. Left `pin.json`, vault `SKILL.md`, and upstream LICENSE. Dropped committed HTML/PNG. Tweet 2400x1260 is not a vault gate. C47 updated. See [[archify]].

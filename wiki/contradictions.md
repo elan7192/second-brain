@@ -57,11 +57,20 @@ Resolution: D3. Profile files may exist. They may only hold facts that change an
 
 [[src-voxyz-verifiable-instructions]] promises eight copy-paste blocks. Retrieved text stops at the promise.
 
-Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear.
+Resolution: encode the three-part rule in `AGENTS.md`. Re-ingest if the blocks appear. Keep C6 open until those blocks exist.
 
-[[src-voxyz-writing-system]] is a later `/goal` writing prompt (6/6). It is not those eight blocks. C6 stays open.
+[[src-voxyz-writing-system]] is a later `/goal` writing prompt (6/6). It is not those eight blocks.
 
 The 2026-08-23 thread ([[src-voxyz-codex-goal-quota]]) is five `/goal` recipes. It does not close C6.
+
+[[src-voxyz-archify]] is a diagram-skill prompt. It does not close C6.
+
+Why the stay is safe and intentional:
+
+1. The source that landed is the three-part rule (behavior, check, failure path). That rule is already in `AGENTS.md` and is what `python3 tools/sb validate` enforces. Gates do not read the missing eight blocks.
+2. Closing C6 without the blocks would invent them. Untrusted ingest: if the source is silent, do not emit a FACT. See [[untrusted-ingest]].
+3. Later Voxyz posts are different objects. A writing `/goal`, leftover-quota recipes, and Archify are not the 2026-08-22 paste pack.
+4. The open item is a retrieval gap on one tweet, not a broken schema. Re-ingest that tweet if the blocks show up. Until then leave the flag.
 
 ## C7. Income claim
 

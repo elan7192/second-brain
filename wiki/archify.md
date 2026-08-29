@@ -33,7 +33,9 @@ GitHub API on 2026-08-29: 29431 stars. MIT. Pin: `.agents/skills/archify/pin.jso
 
 `.agents/skills/archify/SKILL.md` is a vault-authored behavior change. It tells an agent when to fetch the pin and to follow upstream `archify/SKILL.md` after fetch. It is not documentation-only.
 
-Tweet size 2400x1260 is caption wording. It is not a vault gate. Archify `visual-check` uses 1440x900 and 2048x1320. Do not commit a PNG that claims to satisfy 2400x1260.
+Tweet size 2400x1260 is caption wording. It is not a vault acceptance check. Archify `visual-check` uses 1440x900 and 2048x1320. Do not commit a PNG that claims to satisfy 2400x1260.
+
+This source does not close C6. The missing object is eight 2026-08-22 paste blocks. Archify is a later diagram prompt. The three-part instruction rule is already in `AGENTS.md`. Leave C6 open until those blocks are retrieved. See [[contradictions]] C6.
 
 ## Why not vendor the runtime
 
