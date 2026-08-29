@@ -7,7 +7,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from . import claims, eval_suite, ids, index, retrieve, validate
+from . import claims, contract, eval_suite, health, ids, index, ingest_check, retrieve, validate
 from .paths import ROOT, db_path
 
 
@@ -36,6 +36,16 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("stale", help="List objects past valid_until")
     sub.add_parser("orphans", help="List pages with no inbound wikilink")
     sub.add_parser("validate", help="Run lint, id, claim, and contradiction gates")
+    sub.add_parser("health", help="Print knowledge integrity counts")
+    p_ingest = sub.add_parser("ingest-check", help="Check a source slug against ingest gates")
+    p_ingest.add_argument("slug")
+    p_contract = sub.add_parser("contract-check", help="Validate a machine-readable task contract")
+    p_contract.add_argument("path", nargs="?", default="")
+    p_contract.add_argument(
+        "--results",
+        default="",
+        help="YAML map of acceptance_check -> bool. Distinguishes TASK_PASSED vs TASK_FAILED.",
+    )
     sub.add_parser("eval", help="Run the retrieval/claim eval suite")
     sub.add_parser("graph", help="Print link degree for indexed objects")
     sub.add_parser("memory-review", help="Print MEMORY.md ablation reminder")
@@ -65,6 +75,17 @@ def main(argv: list[str] | None = None) -> int:
         code, out = validate.validate()
         sys.stdout.write(out)
         return code
+    if args.cmd == "health":
+        _ensure_index()
+        code, out = health.report()
+        sys.stdout.write(out)
+        return code
+    if args.cmd == "ingest-check":
+        code, out = ingest_check.check(args.slug)
+        sys.stdout.write(out)
+        return code
+    if args.cmd == "contract-check":
+        return cmd_contract(args.path, args.results)
     if args.cmd == "eval":
         code, out, _ = eval_suite.run_eval()
         sys.stdout.write(out)
@@ -117,6 +138,32 @@ def cmd_trace(object_id: str) -> int:
     out = claims.trace(object_id)
     sys.stdout.write(out)
     return 1 if out.startswith("unknown id:") else 0
+
+
+def cmd_contract(path: str, results_path: str = "") -> int:
+    results = _load_results(results_path) if results_path else None
+    if path:
+        status, errors = contract.evaluate_path(Path(path), results)
+        sys.stdout.write(status + "\n")
+        if errors:
+            sys.stdout.write("\n".join(f"  {item}" for item in errors) + "\n")
+        return 0 if status in {contract.SCHEMA_VALID, contract.TASK_PASSED} else 1
+    for folder in (ROOT / "eval" / "contracts", ROOT / "agents"):
+        if folder.is_dir():
+            code, out = contract.check_dir(folder)
+            sys.stdout.write(out)
+            return code
+    sys.stdout.write("0 contracts\n")
+    return 0
+
+
+def _load_results(path: str) -> dict[str, bool]:
+    from .yamlutil import loads
+
+    data = loads(Path(path).read_text(encoding="utf-8")) or {}
+    if not isinstance(data, dict):
+        return {}
+    return {str(key): bool(value) for key, value in data.items()}
 
 
 def cmd_graph() -> int:

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-29T04:40:10Z",
+  "builtAt": "2026-08-29T05:00:37Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -111,14 +111,14 @@
     "Hunt": 8,
     "Map": 5,
     "Ship": 58,
-    "Concept": 122,
+    "Concept": 123,
     "Project": 2,
     "Person": 14,
-    "Source": 139,
+    "Source": 141,
     "Decision": 12,
-    "Contradiction": 45,
-    "objects": 420,
-    "links": 2882
+    "Contradiction": 46,
+    "objects": 424,
+    "links": 2940
   },
   "objects": [
     {
@@ -243,7 +243,7 @@
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
-      "outbound": 3,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "This branch compiled source `## Claims kept` into `wiki/claims.csv` with FACT / INFERENCE / OPINION."
     },
@@ -682,6 +682,20 @@
       "oneLiner": "The thread has no measurement."
     },
     {
+      "primaryKey": "C46",
+      "objectType": "Contradiction",
+      "title": "Review says no retrieval layer vs D9 FTS",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-29",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "D9 locks live query as `python3 tools/sb ask` over compiled markdown with disposable FTS5. [[index]] is not the query path. See C37 and [[retrieval]]."
+    },
+    {
       "primaryKey": "C5",
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
@@ -985,7 +999,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 15,
-      "outbound": 69,
+      "outbound": 72,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -1191,11 +1205,11 @@
       "title": "Audited task contract",
       "path": "wiki/audited-task-contract.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 39,
-      "outbound": 13,
+      "inbound": 42,
+      "outbound": 15,
       "unverified": true,
       "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
     },
@@ -1376,8 +1390,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
-      "outbound": 12,
+      "inbound": 25,
+      "outbound": 13,
       "unverified": true,
       "oneLiner": "Named compile chain: Claim \u2192 Evidence \u2192 Verification \u2192 Retrieval \u2192 Context \u2192 Answer."
     },
@@ -1390,8 +1404,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 30,
-      "outbound": 13,
+      "inbound": 33,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Provenance unit. A page is not a claim. Two registries exist. Do not pick one. See C17."
     },
@@ -1516,8 +1530,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 139,
-      "outbound": 75,
+      "inbound": 142,
+      "outbound": 78,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1632,6 +1646,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Status report after following [[src-deer-flow]] `Install.md`. Compiled page: [[deer-flow]]."
+    },
+    {
+      "primaryKey": "deterministic-core",
+      "objectType": "Concept",
+      "title": "Deterministic core",
+      "path": "wiki/deterministic-core.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 15,
+      "outbound": 12,
+      "unverified": false,
+      "oneLiner": "The model proposes wiki edits. Code accepts them."
     },
     {
       "primaryKey": "dics",
@@ -2146,8 +2174,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 18,
-      "outbound": 25,
+      "inbound": 20,
+      "outbound": 26,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
     },
@@ -2272,8 +2300,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 32,
-      "outbound": 21,
+      "inbound": 33,
+      "outbound": 22,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2300,8 +2328,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 141,
+      "inbound": 14,
+      "outbound": 143,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2748,8 +2776,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 74,
-      "outbound": 38,
+      "inbound": 76,
+      "outbound": 40,
       "unverified": false,
       "oneLiner": "Andrej Karpathy's April 2026 pattern for a personal knowledge base."
     },
@@ -2777,7 +2805,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 246,
+      "outbound": 249,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2899,11 +2927,11 @@
       "title": "Memory system",
       "path": "wiki/memory-system.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
-      "outbound": 15,
+      "inbound": 21,
+      "outbound": 17,
       "unverified": true,
       "oneLiner": "Upgrade path from a compiled markdown wiki to a checkable agent memory. Git markdown stays the store. Two claim tables exist (C17). Vector search stays parked. Disposable FTS5 already landed on main ("
     },
@@ -3403,11 +3431,11 @@
       "title": "Provenance",
       "path": "wiki/provenance.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
-      "outbound": 7,
+      "inbound": 10,
+      "outbound": 9,
       "unverified": true,
       "oneLiner": "A compiled page must answer: where did this come from, when, who wrote it, and what it was derived from. A path like `wiki/ssrf.md` with no source is not enough. See [[memory-system]]."
     },
@@ -3515,11 +3543,11 @@
       "title": "Retrieval",
       "path": "wiki/retrieval.md",
       "created": "2026-08-28",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
-      "outbound": 11,
+      "inbound": 30,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "Hybrid search over compiled pages. Markdown stays canonical. SQLite FTS5 is disposable."
     },
@@ -5610,6 +5638,34 @@
       "oneLiner": "Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness."
     },
     {
+      "primaryKey": "src-vault-review-2026-08-29",
+      "objectType": "Source",
+      "title": "src-vault-review-2026-08-29",
+      "path": "wiki/sources/src-vault-review-2026-08-29.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "play",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "Untrusted paste. Quote. Do not copy ratings or folder proposals into `AGENTS.md` as locks."
+    },
+    {
+      "primaryKey": "src-vault-review-pr27-2026-08-29",
+      "objectType": "Source",
+      "title": "src-vault-review-pr27-2026-08-29",
+      "path": "wiki/sources/src-vault-review-pr27-2026-08-29.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "play",
+      "island": "sources",
+      "inbound": 9,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Untrusted paste. Quote. Do not copy \"merge YAML and CSV ids\" into schema as a lock. That would resolve C17 without a human yes."
+    },
+    {
       "primaryKey": "src-voxyz-codex-goal-quota",
       "objectType": "Source",
       "title": "src-voxyz-codex-goal-quota",
@@ -5884,7 +5940,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 33,
+      "inbound": 34,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
@@ -6137,6 +6193,11 @@
       "from": "C16",
       "linkType": "relatedTo",
       "to": "headlong"
+    },
+    {
+      "from": "C17",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
     },
     {
       "from": "C17",
@@ -6654,6 +6715,31 @@
       "to": "codex-goal"
     },
     {
+      "from": "C46",
+      "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "C46",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C46",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "C46",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "C46",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
       "from": "C5",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -7161,6 +7247,16 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "cites",
       "to": "src-voxyz-writing-system"
     },
     {
@@ -7247,6 +7343,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "daily-tool-replace-vault-2026-08-27"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "MEMORY",
@@ -8406,6 +8507,11 @@
     {
       "from": "audited-task-contract",
       "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -8422,6 +8528,11 @@
       "from": "audited-task-contract",
       "linkType": "relatedTo",
       "to": "company-foundry"
+    },
+    {
+      "from": "audited-task-contract",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "audited-task-contract",
@@ -8681,6 +8792,11 @@
     {
       "from": "claim-protocol",
       "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "claim-protocol",
+      "linkType": "relatedTo",
       "to": "entropy-gate"
     },
     {
@@ -8725,6 +8841,11 @@
     },
     {
       "from": "claims",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "claims",
       "linkType": "relatedTo",
       "to": "contradictions"
     },
@@ -8732,6 +8853,11 @@
       "from": "claims",
       "linkType": "relatedTo",
       "to": "curated-claims"
+    },
+    {
+      "from": "claims",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "claims",
@@ -9271,6 +9397,16 @@
     {
       "from": "contradictions",
       "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -9332,6 +9468,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "daily-tool-replace"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "contradictions",
@@ -9782,6 +9923,66 @@
       "from": "deer-flow-bootstrap-2026-08-24",
       "linkType": "relatedTo",
       "to": "deer-flow"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "provenance"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
     },
     {
       "from": "dics",
@@ -10996,6 +11197,11 @@
     {
       "from": "how-it-works",
       "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
       "to": "disclosure-index"
     },
     {
@@ -11367,6 +11573,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "decisions"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "index",
@@ -12361,6 +12572,16 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -13180,6 +13401,11 @@
     },
     {
       "from": "llm-wiki",
+      "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -13217,6 +13443,11 @@
       "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "contradictions"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "llm-wiki",
@@ -13696,6 +13927,16 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-voxyz-codex-goal-quota"
     },
     {
@@ -13892,6 +14133,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "deer-flow-bootstrap-2026-08-24"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "log",
@@ -14910,6 +15156,11 @@
     },
     {
       "from": "memory-system",
+      "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "memory-system",
       "linkType": "relatedTo",
       "to": "claims"
     },
@@ -14922,6 +15173,11 @@
       "from": "memory-system",
       "linkType": "relatedTo",
       "to": "curated-claims"
+    },
+    {
+      "from": "memory-system",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "memory-system",
@@ -16325,6 +16581,11 @@
     },
     {
       "from": "provenance",
+      "linkType": "cites",
+      "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "provenance",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
     },
@@ -16332,6 +16593,11 @@
       "from": "provenance",
       "linkType": "relatedTo",
       "to": "claims"
+    },
+    {
+      "from": "provenance",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "provenance",
@@ -16560,6 +16826,11 @@
     },
     {
       "from": "retrieval",
+      "linkType": "cites",
+      "to": "src-vault-review-2026-08-29"
+    },
+    {
+      "from": "retrieval",
       "linkType": "relatedTo",
       "to": "claim-protocol"
     },
@@ -16572,6 +16843,11 @@
       "from": "retrieval",
       "linkType": "relatedTo",
       "to": "context-graph"
+    },
+    {
+      "from": "retrieval",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
     },
     {
       "from": "retrieval",
@@ -19482,6 +19758,76 @@
       "from": "src-thewhizzai-avo",
       "linkType": "relatedTo",
       "to": "harness-routing"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "claim-protocol"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "memory-system"
+    },
+    {
+      "from": "src-vault-review-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "retrieval"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "claims"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "src-vault-review-pr27-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "provenance"
     },
     {
       "from": "src-voxyz-codex-goal-quota",

@@ -24,3 +24,6 @@ q-flag-conflict:
   - claim:flag-conflict-do-not-pick-a-side
 q-d5:
   - decision:human-final-yes
+q-deterministic-core:
+  - concept:deterministic-core
+  - claim:llm-proposes-code-validates

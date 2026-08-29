@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-29
 created_by: agent
 confidence: high
 source:
@@ -44,7 +44,7 @@ Unlabeled compiled prose is how guesses become memory. Label [[epistemic-labels]
 
 ## OPINION
 
-Do not start with embeddings, Neo4j, or autonomous ingest. Finish provenance, claims, validation, and git gates first. See claim `c-memory-search-later`.
+Do not start with embeddings, Neo4j, or autonomous ingest. Finish provenance, claims, validation, and git gates first. See claim `c-memory-search-later`. [[src-vault-review-2026-08-29]] repeats that order. See [[deterministic-core]].
 
 ## Phases
 

@@ -306,3 +306,74 @@ claims:
     status: disputed
     valid_from: 2026-08-28
     observed_at: 2026-08-28
+
+  - id: claim:review-says-no-retrieval-layer
+    subject: src-vault-review-2026-08-29
+    predicate: claims
+    object: there is no real retrieval layer yet
+    confidence: medium
+    sources:
+      - source:src-vault-review-2026-08-29
+    concepts:
+      - concept:retrieval
+      - concept:deterministic-core
+    status: contradicted
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:llm-proposes-code-validates
+    subject: Wiki ingest
+    predicate: accepted_by
+    object: deterministic validate after the model proposes
+    confidence: high
+    sources:
+      - source:src-vault-review-2026-08-29
+    concepts:
+      - concept:deterministic-core
+      - concept:audited-task-contract
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:do-not-add-mcp-write-from-review
+    subject: This vault
+    predicate: must_not
+    object: add an MCP write path, ingestion daemon, or raw/public-private split from the 2026-08-29 review
+    confidence: high
+    sources:
+      - source:src-vault-review-2026-08-29
+      - source:src-vault-review-pr27-2026-08-29
+    concepts:
+      - concept:deterministic-core
+      - concept:musk-algorithm
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:c17-two-projections
+    subject: YAML and CSV claim tables
+    predicate: are
+    object: two projections; ids are not required to match
+    confidence: high
+    sources:
+      - source:src-vault-review-pr27-2026-08-29
+    concepts:
+      - concept:claims
+      - concept:deterministic-core
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:contract-schema-is-v1
+    subject: Task contract
+    predicate: uses
+    object: schema v1 with contract_version and SCHEMA_INVALID/TASK_FAILED/TASK_PASSED
+    confidence: high
+    sources:
+      - source:src-vault-review-pr27-2026-08-29
+    concepts:
+      - concept:audited-task-contract
+      - concept:deterministic-core
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29

@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-08-29
 created_by: agent
 confidence: high
 source:
@@ -34,6 +34,8 @@ Minimum fields on `schema: memory-v1` pages:
 
 Source pages already carry Raw, URL, and Date in the body. The compiler copies those onto claim rows in `wiki/claims.csv`. See [[claims]].
 
+YAML claim rows need at least one `sources` id. CSV rows need a `source` path. `python3 tools/sb health` prints `claims_without_provenance`. Optional `source_span` may name the quote. Do not require YAML ids to equal CSV ids. C17. Source: [[src-vault-review-pr27-2026-08-29]].
+
 ## INFERENCE
 
 Old concept pages without `schema: memory-v1` are grandfathered. The next ingest that edits a concept page must add the fields. Do not backfill fake `source:` lists.
@@ -44,10 +46,10 @@ Keep provenance in frontmatter, not in a second JSONL store. See [[loop-graph-en
 
 ## Check
 
-`python3 tools/lint-wiki.py` fails if `schema: memory-v1` is set and `source`/`derived_from`, `created`, `updated`, `created_by`, or `confidence` is missing.
+`python3 tools/lint-wiki.py` fails if `schema: memory-v1` is set and `source`/`derived_from`, `created`, `updated`, `created_by`, or `confidence` is missing. `python3 tools/sb validate` fails if a YAML claim has no `sources` or a CSV claim has no source path.
 
 If the original is missing: leave the claim out. Do not invent a URL.
 
 ## Related
 
-[[epistemic-labels]] · [[claims]] · [[stale-fact-detector]] · [[audited-task-contract]] · [[llm-wiki]]
+[[epistemic-labels]] · [[claims]] · [[stale-fact-detector]] · [[audited-task-contract]] · [[llm-wiki]] · [[deterministic-core]] · [[src-vault-review-pr27-2026-08-29]]

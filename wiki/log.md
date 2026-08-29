@@ -11,6 +11,14 @@ updated: 2026-08-29
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-29] gate | PR27 adversarial tests and contract v1
+
+Follow-up review of PR 27. Compiled [[src-vault-review-pr27-2026-08-29]]. Added negative tests in `tests/test_gates.py`, contract schema v1, provenance counts, CI `.github/workflows/vault.yml`. C17 stays two projections. No MCP. No daemon.
+
+## [2026-08-29] ingest | vault review deterministic core
+
+Pasted review of `elan7192/second-brain`. Compiled [[src-vault-review-2026-08-29]] and [[deterministic-core]]. Added `python3 tools/sb health`, `ingest-check`, `contract-check`, and temporal validate. Flagged C46 (review says no retrieval vs D9). Did not add MCP, daemon, or raw/ splits. C17 / C18 untouched. No standing brief (C38).
+
 ## [2026-08-29] merge | origin/main into musk-algorithm pass
 
 Fetched origin/main at `2667956`. Kept musk short door. Kept main's [[two-pass-document-processing]] and [[codex-goal]] pages. C44 and C45 stay. C38 skip stays. C17 / C18 / C37 untouched.

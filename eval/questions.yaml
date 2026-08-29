@@ -65,3 +65,10 @@ questions:
     k: 8
     must_include:
       - Human final yes
+
+  - id: q-deterministic-core
+    question: Should the LLM or deterministic code accept wiki ingest?
+    kind: fact
+    k: 8
+    must_include:
+      - validate

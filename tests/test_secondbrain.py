@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-from secondbrain import frontmatter, ids, index, retrieve, yamlutil  # noqa: E402
+from secondbrain import contract, frontmatter, health, ids, index, ingest_check, retrieve, yamlutil  # noqa: E402
 from secondbrain.eval_suite import run_eval  # noqa: E402
 from secondbrain.validate import validate  # noqa: E402
 
@@ -122,6 +122,71 @@ class EngineTests(unittest.TestCase):
         index.rebuild(self.root, self.db)
         code, out = validate(self.root, self.db)
         self.assertEqual(code, 0, out)
+
+    def test_health_report_counts_claims(self) -> None:
+        index.rebuild(self.root, self.db)
+        code, out = health.report(self.root, self.db)
+        self.assertEqual(code, 0, out)
+        self.assertIn("Knowledge health", out)
+        self.assertIn("yaml_claims           1", out)
+        self.assertIn("two_projections", out)
+        self.assertIn("gate                  PASS", out)
+
+    def test_temporal_until_before_from_fails(self) -> None:
+        claims_path = self.root / "wiki" / "data" / "claims.yaml"
+        text = claims_path.read_text(encoding="utf-8")
+        claims_path.write_text(
+            text.replace("valid_until: 2026-01-02", "valid_until: 2025-01-01"),
+            encoding="utf-8",
+        )
+        index.rebuild(self.root, self.db)
+        code, out = validate(self.root, self.db)
+        self.assertEqual(code, 1, out)
+        self.assertIn("valid_until", out)
+
+    def test_ingest_check_requires_catalog_and_claims(self) -> None:
+        (self.root / "wiki" / "index-sources.md").write_text(
+            "---\nid: meta:index-sources\ntype: meta\n---\n\n"
+            "# Index sources\n\n[[src-0xcodio-memory-ablation]]\n",
+            encoding="utf-8",
+        )
+        (self.root / "wiki" / "claims.csv").write_text(
+            "claim_id,kind,status,confidence,text,source,raw,url,"
+            "created_at,updated_at,created_by,derived_from,pages\n"
+            "src-0xcodio-memory-ablation-01,fact,active,medium,x,"
+            "wiki/sources/src-0xcodio-memory-ablation.md,,,,,,,\n",
+            encoding="utf-8",
+        )
+        source = self.root / "wiki" / "sources" / "src-0xcodio-memory-ablation.md"
+        source.write_text(
+            source.read_text(encoding="utf-8") + "\n## Claims kept\n\n- Facts survived.\n",
+            encoding="utf-8",
+        )
+        code, out = ingest_check.check("src-0xcodio-memory-ablation", self.root)
+        self.assertEqual(code, 0, out)
+
+    def test_contract_rejects_transcript(self) -> None:
+        errors = contract.check_data(
+            {
+                "contract_version": 1,
+                "objective": "ingest a source",
+                "acceptance_checks": ["python3 tools/sb validate"],
+                "write_scope": {"allow": ["wiki/"], "deny": ["raw/"]},
+                "state_version": 1,
+                "transcript": "nope",
+            }
+        )
+        self.assertTrue(any("forbidden" in err for err in errors))
+        ok = contract.check_data(
+            {
+                "contract_version": 1,
+                "objective": "ingest a source",
+                "acceptance_checks": ["python3 tools/sb validate"],
+                "write_scope": {"allow": ["wiki/"], "deny": ["raw/"]},
+                "state_version": 1,
+            }
+        )
+        self.assertEqual(ok, [])
 
 
 class LiveVaultTests(unittest.TestCase):

@@ -23,7 +23,7 @@ RAG re-derives knowledge on every query. A compiled wiki derives it once and kee
 
 - **Ingest.** One source updates the pages it actually changes. Source page, concepts, matching catalog (D12), log, YAML claim rows, CSV compile rows, `python3 tools/sb validate`. No standing ingest brief (C38). See [[musk-algorithm]].
 - **Query.** Run `python3 tools/sb ask`. Answer from the evidence set. Do not walk [[index]] as the query path (D9, C37). File back only if the next session would re-derive it. Named chain: [[claim-protocol]].
-- **Lint.** `python3 tools/sb validate`. Contradictions, stale claims, orphans, missing ids, injection phrases.
+- **Lint.** `python3 tools/sb validate`. Contradictions, stale claims, orphans, missing ids, injection phrases, temporal fields. After a named source, `python3 tools/sb ingest-check <slug>`. Counts: `python3 tools/sb health`. See [[deterministic-core]].
 - **Methods.** Compile methods learned while doing work after the task. See [[src-play-methods-2026-08-25]].
 - **Freshness.** Audit claims with [[stale-fact-detector]] against named sources. `raw/` stays immutable.
 - **Memory system.** Provenance and FACT/INFERENCE/OPINION on new pages. See [[memory-system]]. Dual claim store is C17.
@@ -43,7 +43,9 @@ A company skill catalog in Notion, or a GitHub folder of agent skills, is a prod
 
 ## Related
 
-[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[src-chatgpt-t-6a8cc267]] · [[how-it-works]] · [[two-pass-document-processing]] · [[skill-library]] · [[retrieval-second-brain]] · [[grok-bot]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]] · [[agent-facing-docs]] · [[company-foundry]] · [[project-skill-stack]]
+[[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[src-chatgpt-t-6a8cc267]] · [[src-vault-review-2026-08-29]] · [[how-it-works]] · [[deterministic-core]] · [[two-pass-document-processing]] · [[skill-library]] · [[retrieval-second-brain]] · [[grok-bot]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]] · [[agent-facing-docs]] · [[company-foundry]] · [[project-skill-stack]]
+
+[[src-vault-review-2026-08-29]] says the protocol is ahead of the runtime. Keep D1. Move more ingest invariants into `sb` gates. Do not add MCP or a daemon from that review. See [[deterministic-core]] and C46.
 
 [[src-chatgpt-t-6a8cc267]] is a public ChatGPT share that claimed a full upgraded snapshot ZIP not pushed to GitHub. ZIP missing. Do not treat that snapshot as this wiki. See C36.
 

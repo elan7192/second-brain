@@ -39,6 +39,14 @@ If the only copy is in README or a classical doc: move it before answering.
 Reading this file is not verification. After any ingest or schema edit, `python3 tools/sb validate` must exit 0. That command runs `tools/lint-wiki.py`.
 If validate fails: fix missing links before writing `output/`. See D10.
 
+The model proposes wiki edits. Code accepts them. See [[deterministic-core]].
+After validate, `python3 tools/sb health` prints integrity counts. It does not replace validate.
+After a named source ingest, `python3 tools/sb ingest-check <slug>` must exit 0.
+If a machine-readable contract is written, `python3 tools/sb contract-check <path>` must exit 0. Schema is v1 (`contract_version`). Status is SCHEMA_INVALID, SCHEMA_VALID, TASK_FAILED, or TASK_PASSED.
+If health shows a dual-store gap: cite both ids and C17. Do not pick a table.
+If ingest-check fails: fix catalog, inbound link, or Claims kept before writing `output/`.
+Do not add an MCP write path or ingestion daemon without lan E yes.
+
 ## Query
 
 Named owner: lan E. Pattern: [[andrej-karpathy]] / D1. Live query is D9. Catalog split is D12. See C37.
@@ -72,10 +80,11 @@ When lan E drops files in `raw/` and says ingest:
 7. Update the matching catalog ([[index-papers]] or [[index-sources]]). Do not append a concept, paper, or source to the short door (D12).
 8. Append `wiki/log.md`.
 9. If the source supports a belief, add or update a row in `wiki/data/claims.yaml`.
+10. Run `python3 tools/sb ingest-check <source-slug>`. Then `python3 tools/sb health`.
 
 Do not write a standing `output/` ingest brief. C38. File an answer only if the next session would re-derive it.
 
-Check: `python3 tools/sb validate` exits 0. Orphans fail the gate. Every new page has an inbound `[[wikilink]]` and an `id:`. Then `python3 tools/rebuild-ontology.py --check` exits 0. Rebuild from wiki if the check fails.
+Check: `python3 tools/sb validate` exits 0. `python3 tools/sb ingest-check <slug>` exits 0. Orphans fail the gate. Every new page has an inbound `[[wikilink]]` and an `id:`. Then `python3 tools/rebuild-ontology.py --check` exits 0. Rebuild from wiki if the check fails.
 If a claim cannot be tied to the raw file or to a named source page: leave it out.
 
 ## Ontology rebuild
