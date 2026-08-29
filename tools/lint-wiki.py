@@ -20,7 +20,7 @@ if str(TOOLS) not in sys.path:
 import memorylib  # noqa: E402
 
 LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
-SKIP_DIRS = {".git", ".obsidian", "templates"}
+SKIP_DIRS = {".git", ".obsidian", "templates", ".agents", ".cursor"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 HUBS = {"index", "index-papers", "index-sources", "log", "Home", "lint-wiki", "graph", "claims"}
 SOURCE_CLAIMS_RE = re.compile(r"^## Claims kept", re.M)

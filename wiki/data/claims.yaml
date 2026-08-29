@@ -377,3 +377,31 @@ claims:
     status: supported
     valid_from: 2026-08-29
     observed_at: 2026-08-29
+
+  - id: claim:archify-is-project-diagram-skill
+    subject: Archify
+    predicate: is
+    object: the optional project diagram skill at .agents/skills/archify
+    confidence: high
+    sources:
+      - source:src-voxyz-archify
+    concepts:
+      - concept:archify
+      - concept:skill-as-sop
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29
+
+  - id: claim:do-not-copy-archify-into-agents
+    subject: Archify prompts
+    predicate: must_not
+    object: be copied into AGENTS.md
+    confidence: high
+    sources:
+      - source:src-voxyz-archify
+    concepts:
+      - concept:archify
+      - concept:untrusted-ingest
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-29

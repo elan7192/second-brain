@@ -28,6 +28,7 @@ Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. 
 | `CLAUDE.md` | both | Pointer at `AGENTS.md` only (D2). Do not copy this file into it. |
 | `maps/` `hunt/` `ship/` | agent | Obsidian navigation. Do not copy wiki prose into them. |
 | `.obsidian/` | both | Vault settings. Keep graph color groups. |
+| `.agents/skills/` | agent | Optional project skills. Markdown there is not wiki. `lint-wiki.py` skips `.agents` and `.cursor`. |
 
 ## Control surface
 
@@ -46,6 +47,7 @@ If a machine-readable contract is written, `python3 tools/sb contract-check <pat
 If health shows a dual-store gap: cite both ids and C17. Do not pick a table.
 If ingest-check fails: fix catalog, inbound link, or Claims kept before writing `output/`.
 Do not add an MCP write path or ingestion daemon without lan E yes.
+`.agents/**/*.md` is not wiki. `python3 tools/sb validate` must not list those files as orphans. If a skill needs a durable claim, compile a wiki page. Do not put a wiki `id:` inside the skill.
 
 ## Query
 

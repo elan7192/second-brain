@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-29
 ---
 
 # Project skill stack
@@ -39,6 +39,8 @@ Cowork is named as the long-running execution surface. Product-only.
 
 No paper. GIF unread. Docs cited, not re-read. Do not treat Claude Projects as [[llm-wiki]]. Do not replace `raw/` + `wiki/` with a product workspace.
 
+[[archify]] is a skill. This vault is the project context. The skill does not replace `raw/` + `wiki/`.
+
 ## Related
 
-[[context-graph]] · [[memory-engineering]] · [[llm-wiki]] · [[src-chatchat-living-brain]]
+[[context-graph]] · [[memory-engineering]] · [[llm-wiki]] · [[src-chatchat-living-brain]] · [[archify]] · [[src-voxyz-archify]]

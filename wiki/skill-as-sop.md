@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-29
 ---
 
 # Skill as SOP
@@ -22,10 +22,12 @@ Source: [[src-skill-pack-list]].
 
 ## What to do in this vault
 
-Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]] and D7.
+Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
+
+[[src-voxyz-archify]] is one local SOP lan E asked to install: [[archify]] at `.agents/skills/archify`. Do not copy its prompts into `AGENTS.md`. See C47.
 
 If the next source is the Smoke script, ingest it. Until then do not invent the method.
 
 ## Related
 
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]]
+[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]]
