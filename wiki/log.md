@@ -4,12 +4,20 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-29] merge | origin/main into jerry two-pass branch
+
+Fetched origin/main at `dbf957b`. Simple unions kept. Branch flag remapped C8→C44 so it does not collide with main C8 (two anti-slop tens). Same-day brief renamed to [[ingest-brief-2026-08-24-jerry-two-pass]]; main [[ingest-brief-2026-08-24]] kept. C17 / C18 / C25 / C37 / C38 left unresolved. See [[merge-conflict-report-2026-08-29-jerry-two-pass]].
+
+## [2026-08-24] ingest | Jerry Liu two-pass document processing
+
+Pasted URL https://x.com/jerryjliu0/status/2091564183922077885. Captured to `raw/x/2026-08-23-jerry-two-pass-docs.md`. Compiled [[src-jerry-two-pass-docs]], [[two-pass-document-processing]], [[jerry-liu]]. Updated [[harness-routing]], [[tokens-as-capital]], [[context-graph]]. Flagged C44 (was C8 on this branch). Brief: [[ingest-brief-2026-08-24-jerry-two-pass]].
 
 ## [2026-08-28] merge | origin/main into openconnector X ingest branch
 

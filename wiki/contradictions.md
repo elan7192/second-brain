@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Contradictions
@@ -398,3 +398,13 @@ D6 writing default is juampi's ranked ten, compiled into [[anti-slop]].
 Resolution: keep D6. Do not vendor the Voxyz prompt into `AGENTS.md`. Do not merge the three lists.
 
 Remap: was C17 on this branch. Main C17 is two claim registries.
+
+## C44. Compile-once wiki vs two-pass RAG
+
+D1 and [[llm-wiki]]: pay ingest once, keep compiled pages, retrieve the compiled set (D9). Do not re-derive from `raw/` on every question.
+
+[[src-jerry-two-pass-docs]]: over a data room, cheap parse, retrieve, then just-in-time VLM. Retrieval with a late expensive pass.
+
+Resolution: different stores. Persistent wiki stays compile-once. Ad-hoc document dumps use [[two-pass-document-processing]]. Do not reopen D1. LlamaParse/LiteParse accuracy and cost claims stay `unverified`.
+
+Remap: was C8 on this branch. Main C8 is two anti-slop tens.

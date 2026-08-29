@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Index sources
@@ -15,6 +15,7 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-jerry-two-pass-docs]] | 2026-08-23 | Codex/Cowork two-pass parse. Vendor OCR numbers unverified. C44 |
 | [[src-voxyz-writing-system]] | 2026-08-24 | 6/6 /goal writing prompt. C43 third list. C6 still open |
 | [[src-alexprompter-claude-projects]] | 2026-08-24 | Quote of Claude Projects how-to. C42 not this vault |
 | [[src-avichawla-trueforge]] | 2026-08-24 | TrueForge article. 2.7x unverified. C41 |

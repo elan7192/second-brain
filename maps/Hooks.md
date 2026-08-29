@@ -3,7 +3,7 @@ type: map
 tags:
   - map
 created: 2026-08-23
-updated: 2026-08-23
+updated: 2026-08-29
 ---
 
 # Hooks
@@ -21,3 +21,5 @@ This vault's first locked hook family: compile, then retrieve the compiled set. 
 Open foil: Notion living [[skill-library]] vs a starred GitHub skill dump vs a local [[skill-as-sop]]. [[contradictions]] C20. D7 stays locked.
 
 Third locked hook family: instruction files are the control surface. They are not the verifier. See [[agent-facing-docs]] and D10.
+
+Open trend, not locked: [[two-pass-document-processing]]. Foil: [[contradictions]] C44.

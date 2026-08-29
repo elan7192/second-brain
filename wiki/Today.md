@@ -4,19 +4,23 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Today
 
-2026-08-28
+2026-08-29
 
 ## Done
 
-Merged origin/main into the openconnector X ingest branch. Branch flags remapped C14→C40, C15→C41, C16→C42, C17→C43. C17 / C18 / C25 / C37 / C38 still unresolved.
+Merged origin/main into the jerry two-pass branch. Branch flag remapped C8→C44. Same-day brief renamed. C17 / C18 / C25 / C37 / C38 still unresolved.
 
 ## Look at
 
+- [[two-pass-document-processing]]
+- [[contradictions]] C44
+- [[ingest-brief-2026-08-24-jerry-two-pass]]
+- [[merge-conflict-report-2026-08-29-jerry-two-pass]]
 - [[secret-gateway]]
 - [[flat-context]]
 - [[project-skill-stack]]

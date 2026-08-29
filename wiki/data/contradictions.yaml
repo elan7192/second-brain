@@ -1,5 +1,5 @@
 # Structured contradictions. Prose stays in wiki/contradictions.md.
-# Codes C1–C43 must match that page.
+# Codes C1–C44 must match that page.
 
 contradictions:
   - id: contradiction:c1
@@ -430,4 +430,14 @@ contradictions:
     severity: medium
     resolution: keep D6; do not vendor the Voxyz prompt into AGENTS.md; C6 stays open
     resolution_source: concept:anti-slop
+    page: contradictions.md
+
+  - id: contradiction:c44
+    claim_a: concept:llm-wiki
+    claim_b: source:src-jerry-two-pass-docs
+    reason: compile-once wiki vs two-pass RAG over data rooms
+    status: resolved
+    severity: medium
+    resolution: different stores; persistent wiki stays compile-once; dumps use two-pass; do not reopen D1
+    resolution_source: decision:compiler-vault
     page: contradictions.md

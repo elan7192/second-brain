@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-28T19:22:30Z",
+  "builtAt": "2026-08-29T03:20:54Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,18 +107,18 @@
   },
   "counts": {
     "Meta": 15,
-    "unverified": 96,
+    "unverified": 101,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 54,
-    "Concept": 120,
+    "Ship": 56,
+    "Concept": 121,
     "Project": 2,
-    "Person": 12,
-    "Source": 137,
+    "Person": 13,
+    "Source": 138,
     "Decision": 12,
-    "Contradiction": 43,
-    "objects": 408,
-    "links": 2925
+    "Contradiction": 44,
+    "objects": 414,
+    "links": 3002
   },
   "objects": [
     {
@@ -127,7 +127,7 @@
       "title": "Karpathy did not say stop writing code",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -141,7 +141,7 @@
       "title": "HydroFusion abstract years vs \u00a74.1",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -155,7 +155,7 @@
       "title": "UniTok 51.89% N@10 is Toys, not Tools",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -169,7 +169,7 @@
       "title": "TIWM Mini val14 vs full val14",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -183,7 +183,7 @@
       "title": "4MAS graphical abstract vs Table 1",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -197,7 +197,7 @@
       "title": "eptwts $100k / 10 months",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -211,7 +211,7 @@
       "title": "Foundry 3D paper vs Palantir Foundry",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -225,7 +225,7 @@
       "title": "Headlong one stream vs entropy gate",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -239,7 +239,7 @@
       "title": "Two claim registries",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -253,7 +253,7 @@
       "title": "Two retrieve engines",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -267,7 +267,7 @@
       "title": "Embeddings vs no vector DB",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -281,7 +281,7 @@
       "title": "Two folder skeletons",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -295,7 +295,7 @@
       "title": "Notion living skill library vs compiled git wiki",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -309,7 +309,7 @@
       "title": "Skill improves with use vs usage count",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -323,7 +323,7 @@
       "title": "Anthropic in the name, unaffiliated in the README",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -337,7 +337,7 @@
       "title": "817 skills vs the domain table",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -351,7 +351,7 @@
       "title": "Stale skill-pack counts",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -365,7 +365,7 @@
       "title": "Retrieval paste vs D9 FTS query path",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -379,7 +379,7 @@
       "title": "File first vs code first",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -393,7 +393,7 @@
       "title": "Prose checks vs observed validation",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -407,7 +407,7 @@
       "title": "Documented disclosure API vs live catalog",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -421,7 +421,7 @@
       "title": "Writing slop vs software slop",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -435,7 +435,7 @@
       "title": "200-agent cinematic vs 64-worker study",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -449,7 +449,7 @@
       "title": "Grok Bot screens vs entropy-gate isolation",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -463,7 +463,7 @@
       "title": "Avid Jarvis clip vs Company Foundry article",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -477,7 +477,7 @@
       "title": "DeerFlow `make config` vs extensions file",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -491,7 +491,7 @@
       "title": "Two Terminal-Bench lifts",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -505,7 +505,7 @@
       "title": "Gate outside the model vs LLM tournament",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -519,7 +519,7 @@
       "title": "Self-Refine vs N-candidate verify",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -533,7 +533,7 @@
       "title": "ChatGPT upgraded snapshot vs this vault",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -547,7 +547,7 @@
       "title": "Musk index-as-query vs D9 sb ask",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -561,7 +561,7 @@
       "title": "Standing ingest brief vs musk skip",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -575,7 +575,7 @@
       "title": "CLAUDE.md copy vs D2",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -589,7 +589,7 @@
       "title": "Shared memory vs shared contract",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -603,7 +603,7 @@
       "title": "Browser inject vs API-action catalog",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -617,7 +617,7 @@
       "title": "TrueForge 2.7x vs 40% vs vendor table",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -631,7 +631,7 @@
       "title": "Claude Projects vs compiler vault",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -645,7 +645,7 @@
       "title": "Three writing systems",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -654,12 +654,26 @@
       "oneLiner": "D6 writing default is juampi's ranked ten, compiled into [[anti-slop]]."
     },
     {
+      "primaryKey": "C44",
+      "objectType": "Contradiction",
+      "title": "Compile-once wiki vs two-pass RAG",
+      "path": "wiki/contradictions.md",
+      "created": "2026-08-23",
+      "updated": "2026-08-29",
+      "tags": "contradiction",
+      "island": "meta",
+      "inbound": 0,
+      "outbound": 4,
+      "unverified": true,
+      "oneLiner": "D1 and [[llm-wiki]]: pay ingest once, keep compiled pages, retrieve the compiled set (D9). Do not re-derive from `raw/` on every question."
+    },
+    {
       "primaryKey": "C5",
       "objectType": "Contradiction",
       "title": "Living CLAUDE.md profile vs adjective death",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -673,7 +687,7 @@
       "title": "Exact Voxyz blocks missing",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -687,7 +701,7 @@
       "title": "Income claim",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -701,7 +715,7 @@
       "title": "Two anti-slop tens",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -715,7 +729,7 @@
       "title": "NGC Table 1 vs Table 3 Mistral MMLU-pro",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "contradiction",
       "island": "meta",
       "inbound": 0,
@@ -911,11 +925,11 @@
       "title": "Home",
       "path": "Home.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 10,
-      "outbound": 49,
+      "inbound": 11,
+      "outbound": 53,
       "unverified": false,
       "oneLiner": "Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands."
     },
@@ -925,11 +939,11 @@
       "title": "Hooks",
       "path": "maps/Hooks.md",
       "created": "2026-08-23",
-      "updated": "2026-08-23",
+      "updated": "2026-08-29",
       "tags": "map",
       "island": "hunt-ship",
-      "inbound": 3,
-      "outbound": 11,
+      "inbound": 4,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Trend to lock. From [[src-avid-obsidian-agent-team]]."
     },
@@ -981,13 +995,13 @@
       "title": "Today",
       "path": "wiki/Today.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
       "inbound": 6,
-      "outbound": 22,
+      "outbound": 25,
       "unverified": false,
-      "oneLiner": "2026-08-28"
+      "oneLiner": "2026-08-29"
     },
     {
       "primaryKey": "adversarial-review",
@@ -1023,13 +1037,13 @@
       "title": "Agent operating system",
       "path": "wiki/agent-operating-system.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 37,
-      "outbound": 53,
+      "inbound": 38,
+      "outbound": 55,
       "unverified": true,
-      "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts."
+      "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
     {
       "primaryKey": "ai-sovereignty",
@@ -1457,11 +1471,11 @@
       "title": "Context graph",
       "path": "wiki/context-graph.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 40,
-      "outbound": 19,
+      "inbound": 44,
+      "outbound": 21,
       "unverified": false,
       "oneLiner": "Give the model the relevant subgraph, not the dump"
     },
@@ -1471,11 +1485,11 @@
       "title": "Contradictions",
       "path": "wiki/contradictions.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 133,
-      "outbound": 71,
+      "inbound": 137,
+      "outbound": 73,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
     },
@@ -1615,7 +1629,7 @@
       "tags": "ship",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 28,
+      "outbound": 30,
       "unverified": false,
       "oneLiner": "Short briefs built from the wiki. Chat gets these, not the raw hunt."
     },
@@ -1880,7 +1894,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
@@ -2059,11 +2073,11 @@
       "title": "Harness routing",
       "path": "wiki/harness-routing.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
-      "outbound": 26,
+      "inbound": 47,
+      "outbound": 29,
       "unverified": true,
       "oneLiner": "Route model and harness by phase, not by turn"
     },
@@ -2118,7 +2132,7 @@
       "updated": "2026-08-24",
       "tags": "hunt",
       "island": "hunt-ship",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]"
@@ -2227,13 +2241,13 @@
       "title": "Index",
       "path": "wiki/index.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 30,
-      "outbound": 102,
+      "inbound": 31,
+      "outbound": 104,
       "unverified": true,
-      "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-28"
+      "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-29"
     },
     {
       "primaryKey": "index-papers",
@@ -2255,11 +2269,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 13,
-      "outbound": 139,
+      "inbound": 14,
+      "outbound": 140,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2342,7 +2356,7 @@
       "updated": "2026-08-24",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 2,
+      "inbound": 4,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "DAIR.AI pointed at Gao and Chen, arXiv:2608.20195. Compiled into the vault."
@@ -2416,6 +2430,20 @@
       "outbound": 3,
       "unverified": false,
       "oneLiner": "The `#api` page documents a REST catalog. The live data is `data/catalog.js`."
+    },
+    {
+      "primaryKey": "ingest-brief-2026-08-24-jerry-two-pass",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Jerry two-pass \u00b7 2026-08-24",
+      "path": "output/ingest-brief-2026-08-24-jerry-two-pass.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 6,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": "Jerry Liu\u2019s 2026-08-23 post on two-pass document processing is compiled."
     },
     {
       "primaryKey": "ingest-brief-2026-08-24-maverick-ultramode",
@@ -2628,6 +2656,20 @@
       "oneLiner": "LLM-as-a-Verifier"
     },
     {
+      "primaryKey": "jerry-liu",
+      "objectType": "Person",
+      "title": "Jerry Liu",
+      "path": "wiki/people/jerry-liu.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "person",
+      "island": "people",
+      "inbound": 8,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "Two-pass document processing. LlamaIndex"
+    },
+    {
       "primaryKey": "lanbb",
       "objectType": "Project",
       "title": "LanBB",
@@ -2661,11 +2703,11 @@
       "title": "LLM Wiki",
       "path": "wiki/llm-wiki.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 71,
-      "outbound": 37,
+      "inbound": 74,
+      "outbound": 38,
       "unverified": false,
       "oneLiner": "Persistent compiled wiki between you and raw sources"
     },
@@ -2689,11 +2731,11 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 235,
+      "outbound": 241,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2990,6 +3032,20 @@
       "outbound": 19,
       "unverified": false,
       "oneLiner": "Fetched `origin/main` at `923f0f0`, then merged into `cursor/ingest-4ndrearossetti-openconnector-068c`."
+    },
+    {
+      "primaryKey": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "objectType": "Ship",
+      "title": "Merge conflict report \u00b7 Jerry two-pass vs main",
+      "path": "output/merge-conflict-report-2026-08-29-jerry-two-pass.md",
+      "created": "2026-08-29",
+      "updated": "2026-08-29",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 5,
+      "outbound": 17,
+      "unverified": false,
+      "oneLiner": "Fetched `origin/main` at `dbf957b`, then merged into `cursor/ingest-jerry-two-pass-2f90`."
     },
     {
       "primaryKey": "merge-conflict-report-agent-facing-2026-08-28",
@@ -3515,11 +3571,11 @@
       "title": "Ship",
       "path": "ship.md",
       "created": "2026-08-23",
-      "updated": "2026-08-25",
+      "updated": "2026-08-29",
       "tags": "ship",
       "island": "hunt-ship",
-      "inbound": 11,
-      "outbound": 14,
+      "inbound": 12,
+      "outbound": 16,
       "unverified": false,
       "oneLiner": "Output from compiled pages. Human yes before anything leaves the vault."
     },
@@ -4854,6 +4910,20 @@
       "oneLiner": "Sample 5, verify with LLM-as-a-Verifier, 79% to 88% on Terminal-Bench 2.1 with DeepSeek V4 Flash. Author-reported. Fine-grained scores and logprob expectation."
     },
     {
+      "primaryKey": "src-jerry-two-pass-docs",
+      "objectType": "Source",
+      "title": "src-jerry-two-pass-docs",
+      "path": "wiki/sources/src-jerry-two-pass-docs.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 12,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Agent harnesses (Codex, Cowork) default to two-pass document processing over a data room: cheap OSS parse, then retrieval (grep or semantic), then a just-in-time VLM pass on the pages that matter. Def"
+    },
+    {
       "primaryKey": "src-johnsjawn-skill-library",
       "objectType": "Source",
       "title": "src-johnsjawn-skill-library",
@@ -5587,11 +5657,11 @@
       "title": "Tokens as capital",
       "path": "wiki/tokens-as-capital.md",
       "created": "2026-08-23",
-      "updated": "2026-08-27",
+      "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 40,
-      "outbound": 20,
+      "inbound": 44,
+      "outbound": 22,
       "unverified": true,
       "oneLiner": "Pay ingest once. Write answers back. Do not re-derive"
     },
@@ -5615,13 +5685,27 @@
       "title": "Twitter hunt",
       "path": "hunt/twitter.md",
       "created": "2026-08-23",
-      "updated": "2026-08-28",
+      "updated": "2026-08-29",
       "tags": "hunt,twitter",
       "island": "hunt-ship",
-      "inbound": 6,
-      "outbound": 16,
+      "inbound": 7,
+      "outbound": 17,
       "unverified": false,
       "oneLiner": "Index of X sources in `raw/x/`. Blue in the Obsidian graph."
+    },
+    {
+      "primaryKey": "two-pass-document-processing",
+      "objectType": "Concept",
+      "title": "Two-pass document processing",
+      "path": "wiki/two-pass-document-processing.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-29",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 15,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Cheap parse and retrieve, then JIT VLM on the pages that matter"
     },
     {
       "primaryKey": "two-stage-nn-tl",
@@ -6456,6 +6540,26 @@
       "to": "anti-slop"
     },
     {
+      "from": "C44",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "C44",
+      "linkType": "extractedFrom",
+      "to": "contradictions"
+    },
+    {
+      "from": "C44",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "C44",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "C5",
       "linkType": "cites",
       "to": "src-papa-couch-compiler"
@@ -6753,6 +6857,11 @@
     {
       "from": "Home",
       "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "Home",
+      "linkType": "aboutPerson",
       "to": "mahipal-jangra"
     },
     {
@@ -6764,6 +6873,11 @@
       "from": "Home",
       "linkType": "aboutPerson",
       "to": "rohit"
+    },
+    {
+      "from": "Home",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
     },
     {
       "from": "Home",
@@ -6878,6 +6992,11 @@
     {
       "from": "Home",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-maverick-ultramode"
     },
     {
@@ -6919,6 +7038,11 @@
       "from": "Home",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-omarsar"
+    },
+    {
+      "from": "Home",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
     },
     {
       "from": "Home",
@@ -7024,6 +7148,11 @@
       "from": "Hooks",
       "linkType": "relatedTo",
       "to": "twitter"
+    },
+    {
+      "from": "Hooks",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "Jarvis",
@@ -7543,6 +7672,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-26-headlong-hour"
     },
     {
@@ -7568,6 +7702,11 @@
     {
       "from": "Today",
       "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
       "to": "merge-conflict-report-agent-facing-2026-08-28"
     },
     {
@@ -7584,6 +7723,11 @@
       "from": "Today",
       "linkType": "relatedTo",
       "to": "secret-gateway"
+    },
+    {
+      "from": "Today",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "Today",
@@ -7699,6 +7843,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
     },
     {
       "from": "agent-operating-system",
@@ -7914,6 +8063,11 @@
       "from": "agent-operating-system",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "agent-operating-system",
@@ -9038,6 +9192,11 @@
     {
       "from": "context-graph",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
     },
     {
@@ -9109,6 +9268,11 @@
       "from": "context-graph",
       "linkType": "relatedTo",
       "to": "trace"
+    },
+    {
+      "from": "context-graph",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "context-graph",
@@ -9219,6 +9383,11 @@
       "from": "contradictions",
       "linkType": "cites",
       "to": "src-jacky-self-verification"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
     },
     {
       "from": "contradictions",
@@ -9449,6 +9618,11 @@
       "from": "contradictions",
       "linkType": "relatedTo",
       "to": "tiwm"
+    },
+    {
+      "from": "contradictions",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "contradictions",
@@ -9853,6 +10027,11 @@
     {
       "from": "digests",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-24-maverick-ultramode"
     },
     {
@@ -9919,6 +10098,11 @@
       "from": "digests",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-x-ingest"
+    },
+    {
+      "from": "digests",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
     },
     {
       "from": "digests",
@@ -10823,6 +11007,11 @@
     {
       "from": "harness-routing",
       "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "aboutPerson",
       "to": "rohit"
     },
     {
@@ -10849,6 +11038,11 @@
       "from": "harness-routing",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
     },
     {
       "from": "harness-routing",
@@ -10944,6 +11138,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "harness-routing",
@@ -11433,6 +11632,11 @@
     {
       "from": "index",
       "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "index",
+      "linkType": "aboutPerson",
       "to": "lostsec"
     },
     {
@@ -11869,6 +12073,11 @@
       "from": "index",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "index",
@@ -12603,6 +12812,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -13076,6 +13290,36 @@
       "to": "disclosures"
     },
     {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "ingest-brief-2026-08-24-maverick-ultramode",
       "linkType": "aboutPerson",
       "to": "jacky-kwok"
@@ -13451,6 +13695,21 @@
       "to": "ultra-mode"
     },
     {
+      "from": "jerry-liu",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "jerry-liu",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "jerry-liu",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "lanbb",
       "linkType": "aboutPerson",
       "to": "lostsec"
@@ -13688,6 +13947,11 @@
     {
       "from": "llm-wiki",
       "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
+      "from": "llm-wiki",
+      "linkType": "relatedTo",
       "to": "untrusted-ingest"
     },
     {
@@ -13734,6 +13998,11 @@
       "from": "log",
       "linkType": "aboutPerson",
       "to": "jacky-kwok"
+    },
+    {
+      "from": "log",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
     },
     {
       "from": "log",
@@ -13899,6 +14168,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-hxiao-headlong-share"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
     },
     {
       "from": "log",
@@ -14448,6 +14722,16 @@
     {
       "from": "log",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-growthos"
     },
     {
@@ -14599,6 +14883,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-x-ingest"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
     },
     {
       "from": "log",
@@ -14819,6 +15108,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "trace"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "log",
@@ -15934,6 +16228,91 @@
       "from": "merge-conflict-report-2026-08-28-x-ingest",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "Home"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "Hooks"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "graph"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "hunt"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "ship"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "twitter"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-29-jerry-two-pass",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
     },
     {
       "from": "merge-conflict-report-agent-facing-2026-08-28",
@@ -17073,6 +17452,11 @@
     {
       "from": "ship",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-jerry-two-pass"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-25-avid-company-foundry"
     },
     {
@@ -17084,6 +17468,11 @@
       "from": "ship",
       "linkType": "relatedTo",
       "to": "merge-conflict-report-2026-08-28-avid-foundry"
+    },
+    {
+      "from": "ship",
+      "linkType": "relatedTo",
+      "to": "merge-conflict-report-2026-08-29-jerry-two-pass"
     },
     {
       "from": "ship",
@@ -18911,6 +19300,36 @@
       "to": "self-verification"
     },
     {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-jerry-two-pass-docs",
+      "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
       "from": "src-johnsjawn-skill-library",
       "linkType": "aboutPerson",
       "to": "hurley"
@@ -19818,6 +20237,11 @@
     {
       "from": "tokens-as-capital",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -19898,6 +20322,11 @@
     {
       "from": "tokens-as-capital",
       "linkType": "relatedTo",
+      "to": "two-pass-document-processing"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "relatedTo",
       "to": "work-per-cost"
     },
     {
@@ -19963,6 +20392,11 @@
     {
       "from": "twitter",
       "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "twitter",
+      "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
     },
     {
@@ -19999,6 +20433,41 @@
       "from": "twitter",
       "linkType": "relatedTo",
       "to": "hunt-ship-loop"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "aboutPerson",
+      "to": "jerry-liu"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "cites",
+      "to": "src-jerry-two-pass-docs"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "context-graph"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "two-pass-document-processing",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "two-stage-nn-tl",

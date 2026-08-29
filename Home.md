@@ -4,7 +4,7 @@ type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Home
@@ -13,7 +13,7 @@ Door to the vault. Open this folder in Obsidian. Then open graph view. See [[gra
 
 ## Result
 
-Compiled wiki. Gold [[wiki]], teal [[maps]], blue [[hunt]] / [[twitter]] / [[disclosures]], green [[andrej-karpathy]] [[jacky-kwok]] [[maverick]] [[elvis]] [[rohit]] [[hurley]] [[mahipal-jangra]] [[avid]], coral [[ship]].
+Compiled wiki. Gold [[wiki]], teal [[maps]], blue [[hunt]] / [[twitter]] / [[disclosures]], green [[andrej-karpathy]] [[jacky-kwok]] [[maverick]] [[elvis]] [[rohit]] [[hurley]] [[mahipal-jangra]] [[avid]] [[jerry-liu]], coral [[ship]].
 
 Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Compiled mermaid: [[graph]]. Growth operator graph: `output/growthos-graph.html`.
 
@@ -44,6 +44,8 @@ Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `out
 - Finish [[deer-flow]] launch: add a model, then `make dev`.
 
 ## This batch
+
+2026-08-23: [[src-jerry-two-pass-docs]]. Brief: [[ingest-brief-2026-08-24-jerry-two-pass]]. Merge remapped C8 → C44. See [[merge-conflict-report-2026-08-29-jerry-two-pass]].
 
 2026-08-28 [[musk-algorithm]] pass merged onto main. Catalog split remapped D9 → D12. Query path C37 and ingest-brief C38 left unresolved. Brief: [[musk-pass-2026-08-28]]. Report: [[merge-conflict-report-2026-08-28-musk]].
 First ingest brief (kept): [[ingest-brief-2026-08-23]].

@@ -4,12 +4,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Agent operating system
 
-Synthesis of the compiled posts through [[src-omarsar-adversarial-review]]. File this back so later sessions do not rebuild it from the posts.
+Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts.
 
 ## Stack
 
@@ -25,6 +25,8 @@ Five layers, one vault.
 
 [[skill-library]] is adjacent: discover and reuse known patterns instead of rebuilding them. It does not replace compile-into-`wiki/`. A starred GitHub skill dump is still a dump. A local SOP is [[skill-as-sop]]. A retrieval stack is [[retrieval-second-brain]]. D1 stays.
 
+Document dumps are a separate layer. [[two-pass-document-processing]] covers ad-hoc data rooms. See [[contradictions]] C44.
+
 ## What this batch does not prove
 
 Viral clips are not methods. See [[contradictions]]. Planning-first best-of-N changed 0 of 5 outcomes in [[src-maverick-ultramode]]. Adding more agents is the wrong first review fix in [[src-omarsar-adversarial-review]].
@@ -34,7 +36,7 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[ultra-mode]] · [[adversarial-review]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]] · [[agent-facing-docs]]
+[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[two-pass-document-processing]] · [[ultra-mode]] · [[adversarial-review]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]] · [[agent-facing-docs]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Harness routing
@@ -37,6 +37,10 @@ From use 2026-08-25: agents share contract, not free agent chat. See [[raptor-di
 
 [[ultra-mode]] can spread the N attempts across harness commands in one pass and judge them with one verifier. That is routing inside a single task, not a mid-turn harness swap. Source: [[src-maverick-ultramode]].
 
+## Document dumps
+
+[[src-jerry-two-pass-docs]] says Codex and Cowork already two-pass a data room: pdf2text, then the harness model as VLM (Opus 5 named). File that under harness defaults. See [[two-pass-document-processing]].
+
 ## Test before you believe it
 
 Compare a fixed pair, a fixed pair with audited state, and routed executors. If routing loses to the reset tax, keep the fixed pair.
@@ -45,7 +49,7 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[jerry-liu]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]]
 
 [[src-can1357-daily-tool-replace-2026-08-27]]: people who know better can replace daily-flow apps themselves. Hour tops is tweet wording. See [[daily-tool-replace]].
 

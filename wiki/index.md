@@ -4,12 +4,12 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-28
+updated: 2026-08-29
 ---
 
 # Index
 
-Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-28.
+Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Do not load those catalogs as the query path. D12. Updated 2026-08-29.
 
 ## Start
 
@@ -115,6 +115,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 | [[stale-fact-detector]] | Audit wiki claims vs named sources. raw/ immutable |
 | [[botdirectory-scan]] | Catalog scan. Skills on existing roles. Not a dump |
 | [[context-graph]] | Give the model the relevant subgraph, not the dump |
+| [[two-pass-document-processing]] | Cheap parse and retrieve, then JIT VLM on the pages that matter |
 | [[deer-flow]] | ByteDance SuperAgent. Local bootstrap on this VM. C32 |
 | [[agent-facing-docs]] | Agents read instruction files and working notes, not API refs |
 | [[disclosure-index]] | 11,338 public disclosure records, compiled 2026-08-24 |
@@ -137,6 +138,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 | [[maverick]] | agent-ultramode. /ultra over PPT |
 | [[elvis]] | dair.ai. Posted the AR paper summary |
 | [[rohit]] | Cross-harness task contract |
+| [[jerry-liu]] | Two-pass document processing. LlamaIndex |
 | [[hurley]] | Notion Skills library pitch, 2026-08-21 |
 | [[mahipal-jangra]] | Community cybersecurity skill library. Not Anthropic |
 

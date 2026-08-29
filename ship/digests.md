@@ -10,6 +10,8 @@ updated: 2026-08-28
 
 Short briefs built from the wiki. Chat gets these, not the raw hunt.
 
+- [[merge-conflict-report-2026-08-29-jerry-two-pass]]
+- [[ingest-brief-2026-08-24-jerry-two-pass]]
 - [[merge-conflict-report-2026-08-28-x-ingest]]
 - [[ingest-brief-2026-08-24-4ndrearossetti]]
 - [[ingest-brief-2026-08-24-avichawla]]
