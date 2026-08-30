@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Vault claims data flow",
+    "output": "output/archify/vault-claims.html",
+    "quality_profile": "showcase",
+    "viewBox": [1080, 760],
+    "views": [
+      {
+        "id": "compile-path",
+        "label": "Compile path",
+        "focus": ["raw", "source_page", "csv", "fts", "ask"],
+        "note": "Raw stays immutable. Claims kept compile to CSV. FTS5 is disposable."
+      },
+      {
+        "id": "wiki-path",
+        "label": "Wiki path",
+        "focus": ["raw", "wiki", "obsidian", "ontology"],
+        "note": "Obsidian reads wiki markdown. Ontology CSV is derived graph metadata, not the door."
+      },
+      {
+        "id": "conflict",
+        "label": "Conflict",
+        "focus": ["wiki", "contradictions"],
+        "note": "Disputed rows stay flagged. Do not pick a winner."
+      }
+    ]
+  },
+  "stages": [
+    { "label": "Source" },
+    { "label": "Compile" },
+    { "label": "Store" },
+    { "label": "Index" },
+    { "label": "Consume" }
+  ],
+  "nodes": [
+    { "id": "raw", "type": "database", "label": "raw/", "sublabel": "locked", "stage": 0, "row": 0, "tag": "human only" },
+    { "id": "source_page", "type": "backend", "label": "Source page", "sublabel": "Claims kept", "stage": 1, "row": 0 },
+    { "id": "wiki", "type": "backend", "label": "Concept pages", "sublabel": "FACT labels", "stage": 1, "row": 2 },
+    { "id": "csv", "type": "database", "label": "claims.csv", "sublabel": "compile-claims", "stage": 2, "row": 0, "tag": "C17" },
+    { "id": "contradictions", "type": "security", "label": "contradictions", "sublabel": "C# rows", "stage": 2, "row": 4 },
+    { "id": "fts", "type": "database", "label": "FTS5", "sublabel": "disposable", "stage": 3, "row": 0 },
+    { "id": "ontology", "type": "frontend", "label": "ontology CSV", "sublabel": "graph metadata", "stage": 3, "row": 2 },
+    { "id": "ask", "type": "backend", "label": "sb ask", "sublabel": "D9", "stage": 4, "row": 0 },
+    { "id": "obsidian", "type": "frontend", "label": "Obsidian", "sublabel": "human door", "stage": 4, "row": 2 }
+  ],
+  "flows": [
+    { "from": "raw", "to": "source_page", "label": "ingest", "classification": "untrusted", "variant": "emphasis", "route": "straight", "labelDy": -20 },
+    { "from": "raw", "to": "wiki", "label": "pages", "classification": "untrusted", "route": "vertical-channel" },
+    { "from": "source_page", "to": "csv", "label": "Claims kept", "classification": "compile", "variant": "emphasis", "route": "straight" },
+    { "from": "wiki", "to": "contradictions", "label": "disagree", "classification": "flag", "variant": "security", "route": "vertical-channel" },
+    { "from": "csv", "to": "fts", "label": "index", "classification": "disposable", "variant": "emphasis", "route": "straight" },
+    { "from": "wiki", "to": "ontology", "label": "rebuild", "classification": "derived", "route": "straight" },
+    { "from": "fts", "to": "ask", "label": "evidence", "classification": "D9", "variant": "emphasis", "route": "straight" },
+    { "from": "wiki", "to": "obsidian", "label": "door", "classification": "markdown vault", "variant": "dashed", "fromSide": "bottom", "toSide": "bottom", "via": [[315, 520], [960, 520]] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Store",
+      "items": [
+        "Wiki markdown stays the store.",
+        "Obsidian reads the markdown vault."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "C17",
+      "items": [
+        "CSV compile is shown. YAML is the other table.",
+        "Do not delete one table."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Query",
+      "items": [
+        "FTS5 is disposable.",
+        "Live query is python3 tools/sb ask."
+      ]
+    }
+  ]
+}

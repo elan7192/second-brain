@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # How it works
@@ -18,7 +18,7 @@ This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] an
 3. lan E asks. Agent runs `python3 tools/sb ask`, then reads the evidence pages. Cite claim ids and kind when labeled. Named chain: [[claim-protocol]]. Do not walk [[index]] as the query path (C37).
 4. File the answer to `wiki/` or `output/` only if the next session would re-derive it.
 5. After ingest, `python3 tools/rebuild-ontology.py --check`. Rebuild if the check fails. See [[vault-ontology]].
-6. Optional system map: [[archify]]. JSON and HTML live under `output/archify/`. Wiki stays the store.
+6. Optional system map: [[archify]]. Five typed JSON specs live under `output/archify/`. HTML is local and gitignored. Wiki stays the store.
 
 GrowthOS only when lan E asks. Load [[growth-core]]. Do not mix DEMO partner figures into [[MEMORY]]. See [[growth-operator]].
 
