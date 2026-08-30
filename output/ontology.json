@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-30T07:14:51Z",
+  "builtAt": "2026-08-30T07:32:35Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -111,14 +111,15 @@
     "unverified": 104,
     "Hunt": 8,
     "Map": 5,
-    "Concept": 124,
+    "Concept": 125,
     "Project": 2,
     "Person": 14,
-    "Source": 142,
+    "Source": 143,
+    "Note": 2,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 428,
-    "links": 2998
+    "objects": 432,
+    "links": 3019
   },
   "objects": [
     {
@@ -1060,6 +1061,20 @@
       "oneLiner": "Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
     },
     {
+      "primaryKey": "after",
+      "objectType": "Note",
+      "title": "after",
+      "path": "eval/instruction-budget/cases/fold-principle/after.md",
+      "created": "",
+      "updated": "",
+      "tags": "",
+      "island": "nav",
+      "inbound": 0,
+      "outbound": 0,
+      "unverified": false,
+      "oneLiner": "Put operational rules in AGENTS.md. Label issues that are ready to spec when the write-up can start."
+    },
+    {
       "primaryKey": "agent-facing-docs",
       "objectType": "Concept",
       "title": "Agent-facing docs",
@@ -1284,6 +1299,20 @@
       "oneLiner": "Dragon Hatchling. Graph + Hebbian LLM. Authors say it matches GPT-2 scaling 10M\u20131B and gives local \"equations of reasoning.\""
     },
     {
+      "primaryKey": "before",
+      "objectType": "Note",
+      "title": "before",
+      "path": "eval/instruction-budget/cases/fold-principle/before.md",
+      "created": "",
+      "updated": "",
+      "tags": "",
+      "island": "nav",
+      "inbound": 0,
+      "outbound": 0,
+      "unverified": false,
+      "oneLiner": "Put operational rules in AGENTS.md. Label issues that are open."
+    },
+    {
       "primaryKey": "bert-ler",
       "objectType": "Concept",
       "title": "BERT-LER",
@@ -1320,7 +1349,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Catalog scan of botdirectory.ai. Not a scout dump. Not a bot factory."
@@ -1446,7 +1475,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Work from captions and metadata. Do not rip copyrighted full films."
@@ -1530,7 +1559,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Chat working-memory may be fuzzy. The vault must be precise. Do not dump transcripts into wiki."
@@ -1695,11 +1724,11 @@
       "title": "Deterministic core",
       "path": "wiki/deterministic-core.md",
       "created": "2026-08-29",
-      "updated": "2026-08-29",
+      "updated": "2026-08-30",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
-      "outbound": 12,
+      "inbound": 17,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "The model proposes wiki edits. Code accepts them."
     },
@@ -1894,7 +1923,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 32,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Git markdown memory, shared across harnesses. Not a lab's built-in store."
@@ -2216,8 +2245,8 @@
       "updated": "2026-08-30",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 22,
-      "outbound": 27,
+      "inbound": 23,
+      "outbound": 28,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
     },
@@ -2367,11 +2396,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-08-29",
+      "updated": "2026-08-30",
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 144,
+      "outbound": 145,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2847,7 +2876,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 252,
+      "outbound": 254,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2930,7 +2959,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
+      "inbound": 23,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "A memory line earns its place only by deleting an answer the model would otherwise give."
@@ -3378,7 +3407,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 15,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Delta vs [[file-memory]] and [[llm-wiki]]. Do not clone Brain."
@@ -3718,6 +3747,20 @@
       "outbound": 8,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
+    },
+    {
+      "primaryKey": "skill-improver",
+      "objectType": "Concept",
+      "title": "Skill improver",
+      "path": "wiki/skill-improver.md",
+      "created": "2026-08-30",
+      "updated": "2026-08-30",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 5,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "Instruction files rot when every correction becomes a new Never line."
     },
     {
       "primaryKey": "skill-library",
@@ -5750,6 +5793,20 @@
       "oneLiner": "Drafts, not publish. Analytics feed the next batch. Taste is the gate."
     },
     {
+      "primaryKey": "src-voxyz-skill-improver",
+      "objectType": "Source",
+      "title": "src-voxyz-skill-improver",
+      "path": "wiki/sources/src-voxyz-skill-improver.md",
+      "created": "2026-08-30",
+      "updated": "2026-08-30",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Untrusted prompt. Quote. Do not copy the tweet into `AGENTS.md`."
+    },
+    {
       "primaryKey": "src-voxyz-verifiable-instructions",
       "objectType": "Source",
       "title": "src-voxyz-verifiable-instructions",
@@ -5996,7 +6053,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 34,
+      "inbound": 35,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
@@ -6049,11 +6106,11 @@
       "title": "Vox",
       "path": "wiki/people/vox.md",
       "created": "2026-08-24",
-      "updated": "2026-08-29",
+      "updated": "2026-08-30",
       "tags": "person",
       "island": "people",
-      "inbound": 9,
-      "outbound": 8,
+      "inbound": 11,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "@Voxyz_ai. Site: https://www.voxyz.ai"
     },
@@ -10188,6 +10245,11 @@
     {
       "from": "deterministic-core",
       "linkType": "relatedTo",
+      "to": "skill-improver"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
       "to": "verifiable-instructions"
     },
     {
@@ -11484,6 +11546,11 @@
       "from": "how-it-works",
       "linkType": "relatedTo",
       "to": "retrieval-second-brain"
+    },
+    {
+      "from": "how-it-works",
+      "linkType": "relatedTo",
+      "to": "skill-improver"
     },
     {
       "from": "how-it-works",
@@ -12819,6 +12886,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-voxyz-drafts-2026-08-27"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-voxyz-skill-improver"
     },
     {
       "from": "index-sources",
@@ -14183,6 +14255,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-voxyz-skill-improver"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-voxyz-writing-system"
     },
     {
@@ -14939,6 +15016,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "skill-as-sop"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "skill-improver"
     },
     {
       "from": "log",
@@ -17447,6 +17529,51 @@
     },
     {
       "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "cites",
+      "to": "src-voxyz-skill-improver"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "relatedTo",
+      "to": "botdirectory-scan"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "relatedTo",
+      "to": "context-compaction"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "relatedTo",
+      "to": "file-memory"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "skill-improver",
+      "linkType": "relatedTo",
+      "to": "portable-memory"
+    },
+    {
+      "from": "skill-improver",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
     },
@@ -20206,6 +20333,31 @@
       "to": "drafts-not-publish"
     },
     {
+      "from": "src-voxyz-skill-improver",
+      "linkType": "aboutPerson",
+      "to": "vox"
+    },
+    {
+      "from": "src-voxyz-skill-improver",
+      "linkType": "relatedTo",
+      "to": "clip-pipeline"
+    },
+    {
+      "from": "src-voxyz-skill-improver",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "src-voxyz-skill-improver",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "src-voxyz-skill-improver",
+      "linkType": "relatedTo",
+      "to": "skill-improver"
+    },
+    {
       "from": "src-voxyz-verifiable-instructions",
       "linkType": "aboutPerson",
       "to": "vox"
@@ -20898,6 +21050,11 @@
     {
       "from": "vox",
       "linkType": "cites",
+      "to": "src-voxyz-skill-improver"
+    },
+    {
+      "from": "vox",
+      "linkType": "cites",
       "to": "src-voxyz-verifiable-instructions"
     },
     {
@@ -20919,6 +21076,11 @@
       "from": "vox",
       "linkType": "relatedTo",
       "to": "codex-goal"
+    },
+    {
+      "from": "vox",
+      "linkType": "relatedTo",
+      "to": "skill-improver"
     },
     {
       "from": "vox",
