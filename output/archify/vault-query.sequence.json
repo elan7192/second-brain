@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Vault query sequence",
+    "output": "output/archify/vault-query.html",
+    "quality_profile": "showcase",
+    "column_fit": "spread",
+    "views": [
+      {
+        "id": "ask-path",
+        "label": "D9 ask path",
+        "focus": ["lan_e", "agent", "sb_ask", "fts"],
+        "note": "Live query is python3 tools/sb ask over disposable FTS5. Do not walk wiki/index.md."
+      },
+      {
+        "id": "evidence",
+        "label": "Read evidence",
+        "focus": ["sb_ask", "agent", "wiki"],
+        "note": "The agent reads the returned pages and cites claim ids."
+      },
+      {
+        "id": "file-back",
+        "label": "Optional file",
+        "focus": ["agent", "output", "lan_e"],
+        "note": "File the answer only if the next session would re-derive it."
+      }
+    ]
+  },
+  "participants": [
+    { "id": "lan_e", "type": "external", "label": "lan E", "sublabel": "named owner" },
+    { "id": "agent", "type": "backend", "label": "Agent", "sublabel": "compiler" },
+    { "id": "sb_ask", "type": "backend", "label": "sb ask", "sublabel": "D9" },
+    { "id": "fts", "type": "database", "label": "FTS5", "sublabel": "disposable" },
+    { "id": "wiki", "type": "database", "label": "wiki/", "sublabel": "compiled" },
+    { "id": "output", "type": "frontend", "label": "output/", "sublabel": "derived" }
+  ],
+  "segments": [
+    { "from": 150, "to": 310, "label": "Ask" },
+    { "from": 330, "to": 500, "label": "Evidence" },
+    { "from": 520, "to": 680, "label": "Answer" }
+  ],
+  "messages": [
+    { "id": "ask", "from": "lan_e", "to": "agent", "y": 180, "label": "ask question", "variant": "emphasis" },
+    { "id": "run-ask", "from": "agent", "to": "sb_ask", "y": 228, "label": "python3 tools/sb ask", "variant": "emphasis" },
+    { "id": "fts-query", "from": "sb_ask", "to": "fts", "y": 276, "label": "FTS5 query" },
+    { "id": "hits", "from": "fts", "to": "sb_ask", "y": 318, "label": "evidence set", "variant": "return" },
+    { "id": "pages", "from": "sb_ask", "to": "agent", "y": 368, "label": "pages + claim ids", "variant": "return" },
+    { "id": "read-wiki", "from": "agent", "to": "wiki", "y": 430, "label": "read evidence" },
+    { "id": "prose", "from": "wiki", "to": "agent", "y": 472, "label": "compiled prose", "variant": "return" },
+    { "id": "answer", "from": "agent", "to": "lan_e", "y": 540, "label": "cited answer", "variant": "return" },
+    { "id": "file", "from": "agent", "to": "output", "y": 600, "label": "file if re-derive", "variant": "dashed" }
+  ],
+  "activations": [
+    { "participant": "agent", "from": 175, "to": 610, "type": "backend" },
+    { "participant": "sb_ask", "from": 223, "to": 378, "type": "backend" },
+    { "participant": "fts", "from": 271, "to": 328, "type": "database" },
+    { "participant": "wiki", "from": 425, "to": 482, "type": "database" },
+    { "participant": "output", "from": 595, "to": 640, "type": "frontend" }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Query",
+      "items": [
+        "Live query is python3 tools/sb ask (D9).",
+        "Do not walk wiki/index.md as the query path."
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Cite",
+      "items": [
+        "Answer from the evidence pages.",
+        "Cite page slugs and claim ids."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "File",
+      "items": [
+        "output/ is derived.",
+        "File only if the next session would re-derive it."
+      ]
+    }
+  ]
+}

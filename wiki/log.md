@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-08-30] map | Archify five vault diagrams
+
+Finished the [[src-voxyz-archify]] integrate. Delivered ingest workflow, query sequence, claims data flow, and claim lifecycle next to the existing architecture map. Wrote `output/archify/vault-architecture-2400x1260.png`. Did not copy prompts into `AGENTS.md`. C47 and C6 stay.
 
 ## [2026-08-29] ingest | Voxyz Archify diagram skill
 

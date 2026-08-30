@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 created_by: agent
 confidence: medium
 source:
@@ -31,7 +31,17 @@ The tweet quotes `npx skills add tt-a1i/archify -g`. This vault copied the skill
 
 GitHub API on 2026-08-29: 29431 stars. MIT. README version string `v2.16.0-dev.0`. Five diagram types: architecture, workflow, sequence, dataflow, lifecycle.
 
-Delivered vault map: `output/archify/vault-architecture.html` from `output/archify/vault-architecture.json`. PNG is 2048x1320 from Archify visual-check (`output/archify/vault-architecture.png`). The tweet asked for 2400x1260; that size was not produced. Wiki markdown stays the store. The HTML is derived, same class as `output/ontology-objects.csv`. See [[vault-ontology]] and [[graph]].
+Five delivered vault maps under `output/archify/`. Wiki markdown stays the store. HTML is derived, same class as `output/ontology-objects.csv`. See [[vault-ontology]] and [[graph]].
+
+| Type | Spec | HTML |
+| --- | --- | --- |
+| Architecture | `vault-architecture.json` | `vault-architecture.html` |
+| Workflow | `vault-ingest.workflow.json` | `vault-ingest.html` |
+| Sequence | `vault-query.sequence.json` | `vault-query.html` |
+| Data flow | `vault-claims.dataflow.json` | `vault-claims.html` |
+| Lifecycle | `vault-claim.lifecycle.json` | `vault-claim.html` |
+
+Tweet-requested PNG: `output/archify/vault-architecture-2400x1260.png`. Visual-check also writes 2048x1320 sidecars. Search and upstream/downstream tracing are viewer features in the HTML.
 
 ## INFERENCE
 
@@ -43,7 +53,7 @@ Keep the skill local. Do not copy Archify prompts into `AGENTS.md`. Do not vendo
 
 ## Check
 
-`python3 tools/sb ingest-check src-voxyz-archify` exits 0. `node .agents/skills/archify/bin/archify.mjs validate architecture output/archify/vault-architecture.json --quality showcase --json` reports 0 composition errors. If the skill is missing: stop and name the gap. Do not invent a second diagram runtime.
+`python3 tools/sb ingest-check src-voxyz-archify` exits 0. For each map, `node .agents/skills/archify/bin/archify.mjs validate <type> output/archify/<spec>.json --quality showcase --json` reports 0 composition errors. If the skill is missing: stop and name the gap. Do not invent a second diagram runtime.
 
 ## Related
 

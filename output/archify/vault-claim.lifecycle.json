@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "Claim lifecycle",
+    "output": "output/archify/vault-claim.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "main-rail",
+        "label": "Main rail",
+        "focus": ["drafted", "sourced", "compiled", "gated", "active"],
+        "note": "A claim needs a source page, compiled prose, and a passing gate before it is treated as memory."
+      },
+      {
+        "id": "dispute",
+        "label": "Dispute",
+        "focus": ["compiled", "disputed"],
+        "note": "Two sources that disagree stay flagged. Do not pick a winner."
+      },
+      {
+        "id": "exits",
+        "label": "Fail and leave out",
+        "focus": ["gated", "failed_gate", "disputed", "left_out"],
+        "note": "A failed gate is retryable. A claim that cannot be tied to a source is left out."
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "main", "label": "Claim phases" },
+    { "id": "waiting", "label": "Open conflict" },
+    { "id": "recovery", "label": "Retry" },
+    { "id": "terminal", "label": "Left out" }
+  ],
+  "states": [
+    { "id": "drafted", "type": "start", "label": "Drafted", "sublabel": "agent proposes", "lane": "main", "col": 0, "step": "01", "tag": "entry" },
+    { "id": "sourced", "type": "active", "label": "Sourced", "sublabel": "tied to raw", "lane": "main", "col": 1, "step": "02" },
+    { "id": "compiled", "type": "active", "label": "Compiled", "sublabel": "wiki + claim id", "lane": "main", "col": 2, "step": "03" },
+    { "id": "gated", "type": "decision", "label": "Gated", "sublabel": "validate", "lane": "main", "col": 3, "step": "04", "tag": "check" },
+    { "id": "active", "type": "success", "label": "Active", "sublabel": "accepted", "lane": "main", "col": 4, "step": "05", "tag": "done" },
+    { "id": "disputed", "type": "waiting", "label": "Disputed", "sublabel": "C# open", "lane": "waiting", "col": 0, "tag": "no winner" },
+    { "id": "failed_gate", "type": "failure", "label": "Gate failed", "sublabel": "retryable", "lane": "recovery", "col": 1, "tag": "fix links" },
+    { "id": "left_out", "type": "failure", "label": "Left out", "sublabel": "no source", "lane": "terminal", "col": 0, "tag": "terminal" }
+  ],
+  "transitions": [
+    { "from": "compiled", "to": "disputed", "variant": "security", "route": "straight", "fromSide": "bottom", "toSide": "top" },
+    { "from": "gated", "to": "failed_gate", "variant": "security", "route": "straight", "fromSide": "bottom", "toSide": "top" },
+    { "from": "disputed", "to": "left_out", "variant": "dashed", "route": "straight", "fromSide": "bottom", "toSide": "top" }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Main path",
+      "items": [
+        "Claim needs a source page before it is memory.",
+        "sb validate accepts the compiled patch."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Dispute",
+      "items": [
+        "Write both claims and a C# row.",
+        "Do not silently pick a side."
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Leave out",
+      "items": [
+        "No source means no claim.",
+        "Do not invent a URL."
+      ]
+    }
+  ]
+}

@@ -64,7 +64,7 @@ Hooks,Map,Hooks,maps/Hooks.md,2026-08-23,2026-08-29,map,hunt-ship,4,12,false,Tre
 Jarvis,Map,Jarvis,maps/Jarvis.md,2026-08-23,2026-08-25,map,hunt-ship,3,17,true,Operating map for the agent. Teal in the Obsidian graph.
 MEMORY,Meta,Memory,MEMORY.md,2026-08-23,2026-08-29,wiki,meta,15,74,true,Durable facts only. A line stays if deleting it would change an answer.
 TELOS,Map,TELOS,maps/TELOS.md,2026-08-23,2026-08-23,map,hunt-ship,2,5,false,Why this vault exists.
-Today,Meta,Today,wiki/Today.md,2026-08-23,2026-08-29,wiki,meta,5,5,false,2026-08-29
+Today,Meta,Today,wiki/Today.md,2026-08-23,2026-08-30,wiki,meta,5,5,false,2026-08-30
 adversarial-review,Concept,Adversarial review,wiki/adversarial-review.md,2026-08-24,2026-08-24,wiki,concepts,9,6,false,"Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
 agent-facing-docs,Concept,Agent-facing docs,wiki/agent-facing-docs.md,2026-08-24,2026-08-29,wiki,concepts,17,8,false,Coding agents spend most of their documentation attention on instruction files and their own working notes.
 agent-operating-system,Meta,Agent operating system,wiki/agent-operating-system.md,2026-08-23,2026-08-29,wiki,meta,38,59,true,Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts.
@@ -75,7 +75,7 @@ andrej-karpathy,Person,Andrej Karpathy,wiki/people/andrej-karpathy.md,2026-08-23
 angles,Ship,Angles,ship/angles.md,2026-08-23,2026-08-23,ship,hunt-ship,1,5,false,Reusable framings earned from [[Hooks]].
 anti-slop,Concept,Anti-slop,wiki/anti-slop.md,2026-08-23,2026-08-27,wiki,concepts,30,10,false,Default writing constraints for this vault.
 apt-siamese,Concept,APT Siamese transfer,wiki/apt-siamese.md,2026-08-24,2026-08-24,wiki,concepts,5,2,true,AAE + SHAP + Siamese on DARPA TC process matrices.
-archify,Concept,Archify,wiki/archify.md,2026-08-29,2026-08-29,wiki,concepts,14,9,false,A project diagram skill. Agents write typed JSON. `node .agents/skills/archify/bin/archify.mjs` compiles HTML.
+archify,Concept,Archify,wiki/archify.md,2026-08-29,2026-08-30,wiki,concepts,14,9,false,A project diagram skill. Agents write typed JSON. `node .agents/skills/archify/bin/archify.mjs` compiles HTML.
 arxiv-tierlist,Project,arXiv potential tierlist,wiki/arxiv-tierlist.md,2026-08-24,2026-08-24,project,projects,111,58,true,405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist
 assign-execute-verify,Concept,"Assign, execute, verify",wiki/assign-execute-verify.md,2026-08-27,2026-08-27,wiki,concepts,5,5,false,Assign → execute → verify.
 audited-task-contract,Concept,Audited task contract,wiki/audited-task-contract.md,2026-08-23,2026-08-29,wiki,concepts,42,15,true,"The portable unit between coding agents is verified task state, not a transcript."
@@ -131,7 +131,7 @@ foundry-3d,Concept,Foundry 3D,wiki/foundry-3d.md,2026-08-24,2026-08-28,wiki,conc
 fourmas,Concept,4MAS,wiki/fourmas.md,2026-08-24,2026-08-24,wiki,concepts,7,4,false,"Two asymmetric hemispheres, STM+LTM, wake–sleep."
 g-carl,Concept,G-CARL,wiki/g-carl.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,Checklist-aligned GRPO for patient-facing report interpretation.
 github,Hunt,GitHub hunt,hunt/github.md,2026-08-23,2026-08-28,"hunt,github",hunt-ship,4,8,false,Green in the graph when people or repos land here.
-graph,Meta,Graph,wiki/graph.md,2026-08-23,2026-08-29,wiki,meta,15,3,false,"The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
+graph,Meta,Graph,wiki/graph.md,2026-08-23,2026-08-30,wiki,meta,15,3,false,"The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
 graph-clusters-2026-08-24,Ship,Graph clusters brief · 2026-08-24,output/graph-clusters-2026-08-24.md,2026-08-24,2026-08-24,ship,hunt-ship,1,3,false,The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite.
 grok-bot,Concept,Grok Bot,wiki/grok-bot.md,2026-08-25,2026-08-25,wiki,concepts,18,11,true,Product harness from Machina. One persistent named agent. One job.
 grok-bot-money,Concept,Grok Bot money,wiki/grok-bot-money.md,2026-08-25,2026-08-25,wiki,concepts,11,11,true,Ten revenue workflows from Machina. Architecture: [[grok-bot]]. Source: [[src-exm7777-grok-bot-money]].
@@ -147,7 +147,7 @@ hacker-news,Hunt,Hacker News hunt,hunt/hacker-news.md,2026-08-23,2026-08-23,hunt
 harness-routing,Concept,Harness routing,wiki/harness-routing.md,2026-08-23,2026-08-29,wiki,concepts,46,29,true,A model and a harness are different knobs.
 headlong,Concept,Headlong,wiki/headlong.md,2026-08-26,2026-08-28,wiki,concepts,15,11,true,Laude Institute / MIT Bash microharness for persistent agency. One thought stream. The agent keeps generating thoughts when nobody is talking to it.
 hear2act,Concept,Hear2Act,wiki/hear2act.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,When prosody should change what an assistant does.
-how-it-works,Meta,How it works,wiki/how-it-works.md,2026-08-23,2026-08-29,wiki,meta,22,27,false,This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i
+how-it-works,Meta,How it works,wiki/how-it-works.md,2026-08-23,2026-08-30,wiki,meta,22,27,false,This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i
 hunt,Hunt,Hunt,hunt.md,2026-08-23,2026-08-24,hunt,hunt-ship,7,8,false,Scout indexes. File first. Do not ping chat. [[hunt-ship-loop]]
 hunt-harden-loop,Concept,Hunt-harden loop,wiki/hunt-harden-loop.md,2026-08-27,2026-08-28,wiki,concepts,22,9,false,CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump.
 hunt-ship-loop,Concept,Hunt / Ship loop,wiki/hunt-ship-loop.md,2026-08-23,2026-08-27,wiki,concepts,41,22,false,Operational rules from [[src-avid-obsidian-agent-team]]. Hunt / Ship / Maps are indexes. The compiled store stays in `wiki/`.
@@ -192,7 +192,7 @@ lanbb,Project,LanBB,wiki/lanbb.md,2026-08-24,2026-08-27,project,projects,29,10,t
 lance,Concept,LANCE,wiki/lance.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,One-shot HOSVD activation cores for last-2/4-layer on-device fine-tune and CL.
 llm-wiki,Concept,LLM Wiki,wiki/llm-wiki.md,2026-08-23,2026-08-29,wiki,concepts,77,41,false,Andrej Karpathy's April 2026 pattern for a personal knowledge base.
 llm4eo,Concept,LLM4EO,wiki/llm4eo.md,2026-08-24,2026-08-24,wiki,concepts,5,3,true,LLM evolves EA operators for FJSP. Deployed model is GPT-4.1-mini.
-log,Meta,Log,wiki/log.md,2026-08-23,2026-08-29,wiki,meta,16,251,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+log,Meta,Log,wiki/log.md,2026-08-23,2026-08-30,wiki,meta,16,251,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-08-28,wiki,concepts,12,14,false,"Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
 lostsec,Person,lostsec,wiki/people/lostsec.md,2026-08-27,2026-08-27,person,people,5,4,false,Bug bounty hunter. Also coffinxp. Handle @lostsec_.
 mahipal-jangra,Person,Mahipal Jangra,wiki/people/mahipal-jangra.md,2026-08-23,2026-08-23,person,people,5,3,false,"@mukul975. README citation: Jangra, Mahipal."
