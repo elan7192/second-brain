@@ -7,3 +7,7 @@
 *.sqlite
 __pycache__/
 *.pyc
+
+# Archify HTML is derived. JSON specs are the source. Rebuild with python3 tools/deliver-archify.py
+output/archify/*.html
+output/archify/*.visual-check*

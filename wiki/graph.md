@@ -37,6 +37,6 @@ Taken from [[agent-operating-system]]. Home stays the door. agent-operating-syst
 
 Open `output/obsidian-graph.html` if you are not in Obsidian. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. Do not dump the graph into this page.
 
-[[archify]] HTML under `output/archify/` is a checked component map (five types). It is not this Obsidian cluster view.
+[[archify]] JSON under `output/archify/` is the checked component map (five types). Local HTML is derived. It is not this Obsidian cluster view.
 
 Growth operator graph is separate: `output/growthos-graph.html`. See [[growth-operator]]. Do not dump `growth/` notes onto this wiki snapshot.

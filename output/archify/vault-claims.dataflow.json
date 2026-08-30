@@ -16,8 +16,8 @@
       {
         "id": "wiki-path",
         "label": "Wiki path",
-        "focus": ["raw", "wiki", "ontology", "obsidian"],
-        "note": "Concept pages stay the store. Ontology CSV is derived. Obsidian is the door."
+        "focus": ["raw", "wiki", "obsidian", "ontology"],
+        "note": "Obsidian reads wiki markdown. Ontology CSV is derived graph metadata, not the door."
       },
       {
         "id": "conflict",
@@ -41,7 +41,7 @@
     { "id": "csv", "type": "database", "label": "claims.csv", "sublabel": "compile-claims", "stage": 2, "row": 0, "tag": "C17" },
     { "id": "contradictions", "type": "security", "label": "contradictions", "sublabel": "C# rows", "stage": 2, "row": 4 },
     { "id": "fts", "type": "database", "label": "FTS5", "sublabel": "disposable", "stage": 3, "row": 0 },
-    { "id": "ontology", "type": "frontend", "label": "ontology CSV", "sublabel": "derived", "stage": 3, "row": 2 },
+    { "id": "ontology", "type": "frontend", "label": "ontology CSV", "sublabel": "graph metadata", "stage": 3, "row": 2 },
     { "id": "ask", "type": "backend", "label": "sb ask", "sublabel": "D9", "stage": 4, "row": 0 },
     { "id": "obsidian", "type": "frontend", "label": "Obsidian", "sublabel": "human door", "stage": 4, "row": 2 }
   ],
@@ -53,7 +53,7 @@
     { "from": "csv", "to": "fts", "label": "index", "classification": "disposable", "variant": "emphasis", "route": "straight" },
     { "from": "wiki", "to": "ontology", "label": "rebuild", "classification": "derived", "route": "straight" },
     { "from": "fts", "to": "ask", "label": "evidence", "classification": "D9", "variant": "emphasis", "route": "straight" },
-    { "from": "ontology", "to": "obsidian", "label": "door", "classification": "not query path", "variant": "dashed", "route": "straight" }
+    { "from": "wiki", "to": "obsidian", "label": "door", "classification": "markdown vault", "variant": "dashed", "fromSide": "bottom", "toSide": "bottom", "via": [[315, 520], [960, 520]] }
   ],
   "cards": [
     {
@@ -61,7 +61,7 @@
       "title": "Store",
       "items": [
         "Wiki markdown stays the store.",
-        "raw/ is never edited by the agent."
+        "Obsidian reads the markdown vault."
       ]
     },
     {

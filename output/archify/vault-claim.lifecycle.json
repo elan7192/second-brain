@@ -20,9 +20,9 @@
       },
       {
         "id": "exits",
-        "label": "Fail and leave out",
-        "focus": ["gated", "failed_gate", "disputed", "left_out"],
-        "note": "A failed gate is retryable. A claim that cannot be tied to a source is left out."
+        "label": "Retry and leave out",
+        "focus": ["gated", "failed_gate", "compiled", "drafted", "left_out"],
+        "note": "A failed gate retries to compiled. A draft with no source is left out. Dispute is a different path."
       }
     ]
   },
@@ -45,7 +45,8 @@
   "transitions": [
     { "from": "compiled", "to": "disputed", "variant": "security", "route": "straight", "fromSide": "bottom", "toSide": "top" },
     { "from": "gated", "to": "failed_gate", "variant": "security", "route": "straight", "fromSide": "bottom", "toSide": "top" },
-    { "from": "disputed", "to": "left_out", "variant": "dashed", "route": "straight", "fromSide": "bottom", "toSide": "top" }
+    { "from": "failed_gate", "to": "compiled", "variant": "emphasis", "fromSide": "right", "toSide": "top", "via": [[860, 307], [860, 80], [402, 80]] },
+    { "from": "drafted", "to": "left_out", "variant": "dashed", "fromSide": "left", "toSide": "left", "via": [[20, 157], [20, 479]] }
   ],
   "cards": [
     {
@@ -61,7 +62,7 @@
       "title": "Dispute",
       "items": [
         "Write both claims and a C# row.",
-        "Do not silently pick a side."
+        "Disputed stays open. It is not left out."
       ]
     },
     {
@@ -69,7 +70,7 @@
       "title": "Leave out",
       "items": [
         "No source means no claim.",
-        "Do not invent a URL."
+        "A failed gate retries. Do not invent a URL."
       ]
     }
   ]

@@ -16,7 +16,7 @@
         "id": "compile",
         "label": "Compile claims",
         "focus": ["source_page", "claims_csv", "validate"],
-        "note": "Claims kept compile to CSV. Concept pages go to validate."
+        "note": "Claims kept compile to CSV on the main ingest path, then validate."
       },
       {
         "id": "gates",
@@ -38,13 +38,13 @@
     { "id": "compile", "label": "Compile", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
     { "id": "accept", "label": "Accept", "fromCol": 4, "toCol": 5, "variant": "dashed" }
   ],
-  "mainPath": ["lan_e", "raw", "read", "source_page", "validate", "ingest_check"],
+  "mainPath": ["lan_e", "raw", "read", "source_page", "claims_csv", "validate", "ingest_check"],
   "nodes": [
     { "id": "lan_e", "lane": "human", "col": 0, "type": "external", "label": "lan E", "sublabel": "named owner" },
     { "id": "raw", "lane": "human", "col": 1, "type": "database", "label": "raw/", "sublabel": "immutable", "tag": "no agent writes" },
     { "id": "read", "lane": "compiler", "col": 2, "type": "backend", "label": "Read source", "sublabel": "untrusted data" },
     { "id": "source_page", "lane": "compiler", "col": 3, "type": "backend", "label": "Source page", "sublabel": "Claims kept" },
-    { "id": "claims_csv", "lane": "catalogs", "col": 2, "type": "database", "label": "claims.csv", "sublabel": "compile-claims" },
+    { "id": "claims_csv", "lane": "catalogs", "col": 3, "type": "database", "label": "claims.csv", "sublabel": "compile-claims" },
     { "id": "validate", "lane": "gates", "col": 4, "type": "security", "label": "sb validate", "sublabel": "lint-wiki", "tag": "code accepts" },
     { "id": "ingest_check", "lane": "gates", "col": 5, "type": "security", "label": "ingest-check", "sublabel": "named slug" },
     { "id": "stop", "lane": "exceptions", "col": 4, "type": "security", "label": "Stop", "sublabel": "fix missing links" }
@@ -53,8 +53,8 @@
     { "from": "lan_e", "to": "raw", "variant": "emphasis" },
     { "from": "raw", "to": "read", "variant": "emphasis", "route": "drop", "fromSide": "bottom", "toSide": "top" },
     { "from": "read", "to": "source_page" },
-    { "from": "source_page", "to": "validate", "variant": "security", "route": "drop", "fromSide": "bottom", "toSide": "top" },
-    { "from": "source_page", "to": "claims_csv", "label": "compile", "route": "drop", "fromSide": "bottom", "toSide": "top" },
+    { "from": "source_page", "to": "claims_csv", "label": "compile", "variant": "emphasis", "route": "drop", "fromSide": "bottom", "toSide": "top" },
+    { "from": "claims_csv", "to": "validate", "variant": "security", "route": "drop", "fromSide": "bottom", "toSide": "top" },
     { "from": "validate", "to": "ingest_check", "variant": "emphasis" },
     { "from": "validate", "to": "stop", "variant": "security", "role": "error", "route": "drop", "fromSide": "bottom", "toSide": "top" }
   ],

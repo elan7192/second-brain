@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Contradictions
@@ -435,4 +435,4 @@ Resolution: keep D9. Treat the review's retrieval rating as an assessment, not a
 
 lan E asked to integrate [[src-voxyz-archify]] (https://x.com/voxyz_ai/status/2093677504179400946).
 
-Resolution: copy only `tt-a1i/archify` to `.agents/skills/archify`. Do not copy its prompts into `AGENTS.md`. Do not vendor other packs from this yes. HTML under `output/archify/` is derived. See [[archify]].
+Resolution: copy only `tt-a1i/archify` to `.agents/skills/archify`. Do not copy its prompts into `AGENTS.md`. Do not vendor other packs from this yes. JSON under `output/archify/` is the source. HTML is derived and gitignored. See [[archify]].

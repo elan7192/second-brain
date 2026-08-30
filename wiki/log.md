@@ -11,6 +11,10 @@ updated: 2026-08-30
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-30] map | Archify HTML gitignored
+
+PR31 review. Stopped committing `output/archify/*.html`. JSON specs stay the source. `python3 tools/deliver-archify.py` rebuilds HTML locally. Put claims.csv on the ingest main path. Lifecycle retry returns to compiled. Disputed no longer becomes left_out. Wiki door is markdown, not ontology CSV. C47 stays.
+
 ## [2026-08-30] map | Archify five vault diagrams
 
 Finished the [[src-voxyz-archify]] integrate. Delivered ingest workflow, query sequence, claims data flow, and claim lifecycle next to the existing architecture map. Wrote `output/archify/vault-architecture-2400x1260.png`. Did not copy prompts into `AGENTS.md`. C47 and C6 stay.

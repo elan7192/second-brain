@@ -98,6 +98,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - 2026-08-23: Do not vendor, install, or execute skills from `mukul975/Anthropic-Cybersecurity-Skills`. The README states the pack includes offensive and dual-use techniques. Compile catalog claims only. See [[src-mukul975-cybersecurity-skills]].
 - 2026-08-23: Do not vendor `vercel-labs/agent-skills`, `K-Dense-AI/scientific-agent-skills`, `alirezarezvani/claude-skills`, `psenger/ai-agent-skills`, or `softaworks/agent-toolkit`. Compile catalog claims. A local SOP the human writes may be compiled into `wiki/` or `AGENTS.md`. See [[skill-as-sop]].
 - 2026-08-29: lan E asked to integrate [[src-voxyz-archify]]. Project skill is `.agents/skills/archify`. Do not copy Archify prompts into `AGENTS.md`. Do not vendor other packs from this yes. Diagrams land in `output/archify/`. See [[archify]] and C47.
+- 2026-08-30: Do not commit Archify HTML. `output/archify/*.json` is the source. HTML is derived and gitignored. Rebuild with `python3 tools/deliver-archify.py`. Keep the tweet PNG. See [[archify]] and C47.
 - 2026-08-23: A Smoke-problem Hook + SOP exists in the human's account of work. The script is not in `raw/`. Do not invent the method. Ask to ingest the script.
 - 2026-08-23: Do not vendor MemGPT, Letta, LangChain, LlamaIndex, or a GraphRAG runtime. Compile those claims onto [[retrieval-second-brain]]. Live query stays D9 (`python3 tools/sb ask`). See C25.
 
