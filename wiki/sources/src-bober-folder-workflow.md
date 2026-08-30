@@ -17,6 +17,8 @@ updated: 2026-08-23
 
 Popular how-to: raw + wiki + schema, ingest, ask. Flat markdown, one topic per file.
 
+Attached clip: dark node-bus dataflow (shared context bus, colored headers, bezier wires). Used as the visual reference for `output/obsidian-dataflow.html`. Not a method claim.
+
 ## Claims rejected or parked
 
 - $17k/month: `unverified`

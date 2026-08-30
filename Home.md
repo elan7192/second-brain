@@ -15,7 +15,7 @@ Door to the vault. Open this folder in Obsidian. Then open graph view. See [[gra
 
 Compiled wiki. Gold [[wiki]], teal [[maps]], blue [[hunt]] / [[twitter]] / [[disclosures]], green people, coral [[ship]].
 
-Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`.
+Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Dark compile bus: `output/obsidian-dataflow.html` · `maps/dataflow.canvas`. Brief: [[dataflow-visual-2026-08-23]].
 
 ## Start
 

@@ -14,3 +14,4 @@ Teal in the Obsidian graph.
 - [[Hooks]] — trend to lock
 - [[TELOS]] — why the vault exists
 - [[GrowthOS]] — growth operator vault
+- `maps/dataflow.canvas` — dark compile pipeline. HTML twin: `output/obsidian-dataflow.html`

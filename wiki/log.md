@@ -11,6 +11,10 @@ updated: 2026-08-30
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-30] query | Dark dataflow visual rebased
+
+Rebased the Bober-clip dataflow skin onto current main. Island snapshot stays `output/obsidian-graph.html`. Dashboard is `output/obsidian-dataflow.html` plus `maps/dataflow.canvas` and `.obsidian/snippets/dataflow.css`. Brief: [[dataflow-visual-2026-08-23]]. Archify HTML stays gitignored.
+
 ## [2026-08-30] map | Archify HTML gitignored
 
 PR31 review. Stopped committing `output/archify/*.html`. JSON specs stay the source. `python3 tools/deliver-archify.py` rebuilds HTML locally. Put claims.csv on the ingest main path. Lifecycle retry returns to compiled. Disputed no longer becomes left_out. Wiki door is markdown, not ontology CSV. C47 stays.

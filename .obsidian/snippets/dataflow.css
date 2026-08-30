@@ -1,0 +1,33 @@
+/* Dark dataflow skin for graph view. Matches output/obsidian-graph.html. */
+
+.theme-dark {
+  --background-primary: #07080a;
+  --background-primary-alt: #0c0e12;
+  --background-secondary: #0c0e12;
+  --background-secondary-alt: #101214;
+  --background-modifier-border: #1c2026;
+  --text-normal: #e6e1d8;
+  --text-muted: #8a8680;
+  --text-accent: #c8a24a;
+  --interactive-accent: #c8a24a;
+  --graph-line: rgba(236, 232, 224, 0.22);
+  --graph-node: #c8a24a;
+  --graph-text: #d6d3d1;
+}
+
+.graph-view.color-fill {
+  opacity: 1;
+}
+
+.graph-view.color-line {
+  opacity: 0.85;
+}
+
+.workspace-leaf-content[data-type="graph"] .view-content {
+  background: #07080a;
+}
+
+.markdown-preview-view,
+.markdown-source-view {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
