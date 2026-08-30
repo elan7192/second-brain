@@ -405,3 +405,16 @@ claims:
     status: supported
     valid_from: 2026-08-29
     observed_at: 2026-08-29
+
+  - id: claim:instruction-change-is-a-principle-fold
+    subject: Instruction file change
+    predicate: must_be
+    object: a principle fold with trusted reason, not an append-only never-rule
+    confidence: medium
+    sources:
+      - source:src-voxyz-skill-improver
+    concepts:
+      - concept:skill-improver
+    status: supported
+    valid_from: 2026-08-29
+    observed_at: 2026-08-30

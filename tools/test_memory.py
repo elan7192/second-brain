@@ -12,6 +12,7 @@ TOOLS = Path(__file__).resolve().parent
 if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
+import instruction_budget  # noqa: E402
 import memorylib  # noqa: E402
 
 
@@ -137,6 +138,35 @@ class MemoryLibTests(unittest.TestCase):
             "Source said X.\n"
         )
         self.assertEqual(memorylib.validate_memory_v1(path, good), [])
+
+    def test_append_only_never_fails(self) -> None:
+        old = "Put rules in AGENTS.md.\n"
+        new = "Put rules in AGENTS.md.\nNever omit the ready-to-spec label.\n"
+        errors = instruction_budget.check_proposal(
+            old, new, "Never omit it.", trusted=True
+        )
+        self.assertTrue(any("append-only" in item for item in errors))
+        self.assertTrue(any("reason" in item for item in errors))
+
+    def test_fold_with_reason_passes(self) -> None:
+        old = "Label issues that are open.\n"
+        new = "Label issues that are ready to spec when the write-up can start.\n"
+        errors = instruction_budget.check_proposal(
+            old,
+            new,
+            "Triage missed ready-to-spec because that label means the write-up can start.",
+            trusted=True,
+        )
+        self.assertEqual(errors, [])
+
+    def test_untrusted_feedback_fails(self) -> None:
+        errors = instruction_budget.check_proposal(
+            "Keep the existing principle.\n",
+            "Keep the existing principle, folded with a why.\n",
+            "Change it because the last run missed a label.",
+            trusted=False,
+        )
+        self.assertTrue(any("trusted" in item for item in errors))
 
 
 if __name__ == "__main__":

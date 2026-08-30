@@ -1,0 +1,7 @@
+# Line ceilings for instruction files. A fold that grows a file updates this map.
+AGENTS.md: 262
+MEMORY.md: 128
+CLAUDE.md: 6
+wiki/verifiable-instructions.md: 43
+wiki/untrusted-ingest.md: 67
+wiki/skill-improver.md: 54

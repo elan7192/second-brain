@@ -11,6 +11,10 @@ updated: 2026-08-30
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-08-30] ingest | Voxyz skill improver and instruction-budget gate
+
+Compiled [[src-voxyz-skill-improver]] from https://x.com/voxyz_ai/status/2093737944809169107. Caption only. Wrote [[skill-improver]]. Folded one principle into `AGENTS.md` Control surface. `python3 tools/sb validate` runs the instruction-budget gate. Append-only Never fixture must fail. raw/ not written. No Improver bot.
+
 ## [2026-08-30] query | Dark dataflow visual rebased
 
 Rebased the Bober-clip dataflow skin onto current main. Island snapshot stays `output/obsidian-graph.html`. Dashboard is `output/obsidian-dataflow.html` plus `maps/dataflow.canvas` and `.obsidian/snippets/dataflow.css`. Brief: [[dataflow-visual-2026-08-23]]. Archify HTML stays gitignored.
