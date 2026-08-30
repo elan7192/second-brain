@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-30T07:32:35Z",
+  "builtAt": "2026-08-30T07:32:40Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -115,10 +115,9 @@
     "Project": 2,
     "Person": 14,
     "Source": 143,
-    "Note": 2,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 432,
+    "objects": 430,
     "links": 3019
   },
   "objects": [
@@ -1061,20 +1060,6 @@
       "oneLiner": "Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
     },
     {
-      "primaryKey": "after",
-      "objectType": "Note",
-      "title": "after",
-      "path": "eval/instruction-budget/cases/fold-principle/after.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "nav",
-      "inbound": 0,
-      "outbound": 0,
-      "unverified": false,
-      "oneLiner": "Put operational rules in AGENTS.md. Label issues that are ready to spec when the write-up can start."
-    },
-    {
       "primaryKey": "agent-facing-docs",
       "objectType": "Concept",
       "title": "Agent-facing docs",
@@ -1297,20 +1282,6 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Dragon Hatchling. Graph + Hebbian LLM. Authors say it matches GPT-2 scaling 10M\u20131B and gives local \"equations of reasoning.\""
-    },
-    {
-      "primaryKey": "before",
-      "objectType": "Note",
-      "title": "before",
-      "path": "eval/instruction-budget/cases/fold-principle/before.md",
-      "created": "",
-      "updated": "",
-      "tags": "",
-      "island": "nav",
-      "inbound": 0,
-      "outbound": 0,
-      "unverified": false,
-      "oneLiner": "Put operational rules in AGENTS.md. Label issues that are open."
     },
     {
       "primaryKey": "bert-ler",

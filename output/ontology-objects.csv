@@ -66,7 +66,6 @@ MEMORY,Meta,Memory,MEMORY.md,2026-08-23,2026-08-29,wiki,meta,15,74,true,Durable 
 TELOS,Map,TELOS,maps/TELOS.md,2026-08-23,2026-08-23,map,hunt-ship,2,5,false,Why this vault exists.
 Today,Meta,Today,wiki/Today.md,2026-08-23,2026-08-30,wiki,meta,5,6,false,2026-08-30
 adversarial-review,Concept,Adversarial review,wiki/adversarial-review.md,2026-08-24,2026-08-24,wiki,concepts,9,6,false,"Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
-after,Note,after,eval/instruction-budget/cases/fold-principle/after.md,,,,nav,0,0,false,Put operational rules in AGENTS.md. Label issues that are ready to spec when the write-up can start.
 agent-facing-docs,Concept,Agent-facing docs,wiki/agent-facing-docs.md,2026-08-24,2026-08-29,wiki,concepts,17,8,false,Coding agents spend most of their documentation attention on instruction files and their own working notes.
 agent-operating-system,Meta,Agent operating system,wiki/agent-operating-system.md,2026-08-23,2026-08-29,wiki,meta,38,59,true,Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts.
 ai-sovereignty,Concept,AI sovereignty,wiki/ai-sovereignty.md,2026-08-27,2026-08-28,wiki,concepts,12,11,true,"lan E paste 2026-08-27. Synthesis, not a transcript dump. No primary Karp URL. Marked `unverified` until a named source URL exists."
@@ -83,7 +82,6 @@ audited-task-contract,Concept,Audited task contract,wiki/audited-task-contract.m
 avid,Person,Avid,wiki/people/avid.md,2026-08-25,2026-08-28,person,people,5,5,false,@Av1dlive. Two compiled posts.
 backlink-first,Concept,Backlink first,wiki/backlink-first.md,2026-08-27,2026-08-27,wiki,concepts,4,6,false,Do not answer first. Follow backlinks. Tags are weights.
 bdh,Concept,BDH,wiki/bdh.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,"Dragon Hatchling. Graph + Hebbian LLM. Authors say it matches GPT-2 scaling 10M–1B and gives local ""equations of reasoning."""
-before,Note,before,eval/instruction-budget/cases/fold-principle/before.md,,,,nav,0,0,false,Put operational rules in AGENTS.md. Label issues that are open.
 bert-ler,Concept,BERT-LER,wiki/bert-ler.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,BERT on coded EHR timelines. 75M-patient pretrain.
 bot-voice,Concept,Bot voice,wiki/bot-voice.md,2026-08-25,2026-08-27,wiki,concepts,9,8,false,"Bot-to-bot voice is caveman. Facts, paths, SHAs. No filler. No empty acks."
 botdirectory-scan,Concept,Botdirectory scan,wiki/botdirectory-scan.md,2026-08-27,2026-08-27,wiki,concepts,12,6,false,Catalog scan of botdirectory.ai. Not a scout dump. Not a bot factory.
