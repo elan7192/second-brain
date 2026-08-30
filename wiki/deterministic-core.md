@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 created_by: agent
 confidence: medium
 source:
@@ -58,4 +58,4 @@ Do not add an MCP write path, an ingestion daemon, or `raw/public|private` from 
 
 ## Related
 
-[[llm-wiki]] · [[claims]] · [[retrieval]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[how-it-works]] · [[claim-protocol]] · [[memory-system]] · [[provenance]] · [[src-vault-review-2026-08-29]] · [[src-vault-review-pr27-2026-08-29]]
+[[llm-wiki]] · [[claims]] · [[retrieval]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[skill-improver]] · [[how-it-works]] · [[claim-protocol]] · [[memory-system]] · [[provenance]] · [[src-vault-review-2026-08-29]] · [[src-vault-review-pr27-2026-08-29]]

@@ -83,10 +83,12 @@ CLUSTER_SEEDS: dict[str, set[str]] = {
     },
     "verification": {
         "verifiable-instructions",
+        "skill-improver",
         "self-verification",
         "anti-slop",
         "stale-fact-detector",
         "src-voxyz-verifiable-instructions",
+        "src-voxyz-skill-improver",
         "src-voxyz-writing-system",
         "src-jacky-self-verification",
         "src-juampi-anti-slop-rank",

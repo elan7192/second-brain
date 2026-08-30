@@ -34,7 +34,9 @@ Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. 
 
 Put operational rules in `AGENTS.md`, `wiki/`, `MEMORY.md`, and `decisions.md`. Do not add a rule only in README or API docs and expect later agents to follow it.
 
-Check: a new operational rule has an inbound `[[wikilink]]` from `wiki/index.md` or this file.
+A new rule is a principle with a why, folded into an existing section. Worker ingest/ask/compile leaves this file and instruction wiki pages alone. A later improver pass proposes one focused fold as a PR. See [[skill-improver]].
+
+Check: a new operational rule has an inbound `[[wikilink]]` from `wiki/index.md` or this file. `python3 tools/sb validate` runs the instruction-budget gate. An append-only Never/Do-not fixture must fail.
 If the only copy is in README or a classical doc: move it before answering.
 
 Reading this file is not verification. After any ingest or schema edit, `python3 tools/sb validate` must exit 0. That command runs `tools/lint-wiki.py`.

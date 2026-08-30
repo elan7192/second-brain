@@ -4,7 +4,7 @@ type: person
 tags:
   - person
 created: 2026-08-24
-updated: 2026-08-29
+updated: 2026-08-30
 ---
 
 # Vox
@@ -17,7 +17,8 @@ updated: 2026-08-29
 - [[src-voxyz-codex-goal-quota]] (2026-08-23). Leftover Codex quota spent with `/goal`. Five prompts retrieved. C45.
 - [[src-voxyz-writing-system]] (2026-08-24). 6/6 writing `/goal`. Third list. C43.
 - [[src-voxyz-archify]] (2026-08-29). Archify diagram skill. Project copy. C47.
+- [[src-voxyz-skill-improver]] (2026-08-29). Warp/Claude skill improver. Caption only.
 
 ## Related
 
-[[verifiable-instructions]] · [[codex-goal]] · [[anti-slop]] · [[archify]]
+[[verifiable-instructions]] · [[codex-goal]] · [[anti-slop]] · [[archify]] · [[skill-improver]]

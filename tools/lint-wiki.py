@@ -144,6 +144,12 @@ def check_compile() -> list[str]:
     return errors
 
 
+def check_instruction_budget() -> list[str]:
+    import instruction_budget
+
+    return instruction_budget.check(ROOT)
+
+
 def check_unit_tests() -> list[str]:
     if ROOT != TOOLS.parent:
         return []
@@ -170,6 +176,7 @@ def main() -> int:
     extra.extend(check_compile())
     extra.extend(check_disputed_in_conflicts())
     extra.extend(check_unit_tests())
+    extra.extend(check_instruction_budget())
     print(
         f"pages={len(catalog)} missing={len(missing)} orphans={len(orphans)} extra={len(extra)}"
     )
