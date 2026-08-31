@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-08-30
+updated: 2026-08-31
 ---
 
 # Index sources
@@ -15,6 +15,7 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-yunta-tsai-quota-isolate]] | 2026-08-31 | Isolate one job. File method in repo. No new room |
 | [[src-voxyz-skill-improver]] | 2026-08-29 | Warp/Claude skill improver. Caption only. No video dump |
 | [[src-voxyz-archify]] | 2026-08-29 | Archify diagram skill. Project copy. C47 |
 | [[src-vault-review-pr27-2026-08-29]] | 2026-08-29 | PR27 follow-up. Negative tests. Contract v1. C17 two_projections |

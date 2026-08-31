@@ -2,6 +2,19 @@
 # IDs are stable. Do not delete a claim because a filename changed.
 
 claims:
+
+  - id: claim:isolate-one-job-then-file-in-repo
+    subject: Grok Bot job
+    predicate: isolated_as
+    object: one context, then file the method in the repo and stop
+    confidence: high
+    sources:
+      - source:src-yunta-tsai-quota-isolate
+    concepts:
+      - concept:grok-bot-quota
+    status: supported
+    valid_from: 2026-08-31
+    observed_at: 2026-08-31
   - id: claim:memory-line-retained-iff-changes-answer
     subject: Memory line
     predicate: retained_iff

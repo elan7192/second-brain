@@ -19,6 +19,10 @@ Profiled every CLI path before touching code. Three structural costs: link resol
 
 lan E asked to run [[musk-algorithm]] on the project. Previous passes ended on locked parts, so this pass took the gate surface, whose owner is the schema author. Deleted: `check_unit_tests` subprocess inside `tools/lint-wiki.py` (the test runner owns tests), `sb graph` and `sb memory-review` (zero references, the second was a wish), the double lint run inside `sb health`, empty `wiki/daily/`, and four CI steps (`health`, `ingest-check <fixed slug>`, `contract-check <fixture>`, `rebuild-ontology --check`) that `tests/test_gates.py` or validate already cover. Folded the ontology freshness check into `python3 tools/sb validate`. CI is now unit tests, validate, eval. `AGENTS.md` Ontology rebuild and Ingest check shrank. Left alone: C17, C18, D1–D12, committed graph renders (D7/D8, lan E owns), `output/` history (C38), append-only log. Candidates named on [[musk-algorithm]].
 
+## [2026-08-31] ingest | isolate-one-job on grok-bot-quota
+
+Folded [[src-yunta-tsai-quota-isolate]] into [[grok-bot-quota]]. Isolate one job in one context. File the method in the repo. Stop. Do not spawn a room. No new page. Hold merge.
+
 ## [2026-08-30] ingest | Voxyz skill improver and instruction-budget gate
 
 Compiled [[src-voxyz-skill-improver]] from https://x.com/voxyz_ai/status/2093737944809169107. Caption only. Wrote [[skill-improver]]. Folded one principle into `AGENTS.md` Control surface. `python3 tools/sb validate` runs the instruction-budget gate. Append-only Never fixture must fail. raw/ not written. No Improver bot.

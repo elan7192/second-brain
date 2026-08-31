@@ -43,7 +43,7 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Stale-fact-detector: audit wiki claims against named sources. Quote note + source with dates. No writes in the audit pass. Draft patch ok. Push needs PM/lan E. raw/ immutable. Silent source = unverifiable. See [[stale-fact-detector]].
 - Botdirectory 2026-08-27: 304 listings. Prefer skill on an existing role. Do not add a second memory writer or PAT daily-push. Catalog scan, not scout dump. See [[botdirectory-scan]].
 - Composio MCP catalog id 32661537 exists in Grok Bot. Not installed. Writes need lan E approval. See [[composio-mcp]].
-- Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Recurring fill belongs on dedicated bot `burn`, not the lead chat. See [[grok-bot-quota]].
+- Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Isolate one job in one context. When done, file the repeatable method in the repo and stop. Do not spawn a Grok Bot room or channel. Recurring fill does not belong on the lead chat. See [[grok-bot-quota]].
 - Routines: hourly or a few times a day. Never every 5 minutes. Recurring work goes to a fresh bot. See [[grok-bot-pro-tips]].
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.
 - lan E shared https://x.com/hxiao/status/2092015227286249607 (Headlong quote). Parked 2026-08-27 pending experiments. The 2026-08-26 hour trial is that report. See [[src-hxiao-headlong-share]] and [[headlong]].
