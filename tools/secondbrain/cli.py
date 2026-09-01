@@ -186,10 +186,9 @@ def _load_results(path: str) -> dict[str, bool]:
 
 
 def _ensure_index() -> None:
-    if not db_path().exists():
-        from . import index
+    from . import index
 
-        index.rebuild()
+    index.ensure()
 
 
 if __name__ == "__main__":

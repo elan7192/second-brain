@@ -75,6 +75,40 @@ def connect(path: Path | None = None) -> sqlite3.Connection:
     return conn
 
 
+def is_stale(root: Path | None = None, db: Path | None = None) -> bool:
+    """True when the index is missing or any indexed input is newer than it.
+
+    Compares mtimes of every knowledge page, the directories that hold them
+    (a delete or rename touches the directory, not the file), and the claim
+    and contradiction registries. About 2 ms for 300 pages.
+    """
+    root = root or ROOT
+    target = db or db_path()
+    try:
+        built = target.stat().st_mtime_ns
+    except FileNotFoundError:
+        return True
+    paths = ids.iter_knowledge_paths(root)
+    paths.extend(
+        p for p in (root / "wiki" / "data" / "claims.yaml", root / "wiki" / "data" / "contradictions.yaml")
+        if p.exists()
+    )
+    newest = 0
+    for path in paths:
+        newest = max(newest, path.stat().st_mtime_ns)
+    for folder in {path.parent for path in paths}:
+        newest = max(newest, folder.stat().st_mtime_ns)
+    return newest > built
+
+
+def ensure(root: Path | None = None, db: Path | None = None) -> bool:
+    """Rebuild only when stale. Returns True if a rebuild happened."""
+    if not is_stale(root, db):
+        return False
+    rebuild(root, db)
+    return True
+
+
 def rebuild(root: Path | None = None, db: Path | None = None) -> dict[str, int]:
     """Build into a sibling temp file, then atomically replace the index.
 

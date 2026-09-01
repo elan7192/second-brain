@@ -55,7 +55,7 @@ Do not add an MCP write path or ingestion daemon without lan E yes.
 
 Named owner: lan E. Pattern: [[andrej-karpathy]] / D1. Live query is D9. Catalog split is D12. See C37.
 
-1. Run `python3 tools/sb ask "<question>"`. If the index is missing, run `python3 tools/sb rebuild-index` first.
+1. Run `python3 tools/sb ask "<question>"`. It rebuilds the index when a page or registry is newer than it; `python3 tools/sb rebuild-index` forces one.
 2. Read the returned evidence pages. For why/whether questions, run `python3 tools/sb trace <id>`.
 3. Answer from those pages. Cite page slugs and claim ids. If a row is labeled FACT / INFERENCE / OPINION, cite the kind.
 4. If the evidence set is empty, say so. Do not invent. Ask to ingest a source or search the web.
@@ -66,7 +66,7 @@ Do not walk `wiki/index.md` as the query path. Do not load [[index-papers]] or [
 
 Check: every claim in the answer has a wiki citation or a claim id, or is marked `unverified`. After ingest, `python3 tools/sb validate` exits 0. After a retrieval change, `python3 tools/sb eval` exits 0.
 If evidence is missing: stop and name the gap. Do not fill it with tone.
-If the index is missing: rebuild, then retry. If eval fails: do not keep the retrieval change.
+If the evidence set looks stale after an edit: `python3 tools/sb rebuild-index`, then retry. If eval fails: do not keep the retrieval change.
 If a fact appears in only one of `wiki/data/claims.yaml` or `wiki/claims.csv`: cite it and mark the dual-store gap. Do not pick a canonical table. See C17.
 
 The named compile chain is [[claim-protocol]]. Live query stays `python3 tools/sb ask`. Do not switch this section to `tools/retrieve.py` until C18 has a human yes.

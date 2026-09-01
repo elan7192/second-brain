@@ -232,11 +232,10 @@ class VaultIntegrationTests(unittest.TestCase):
     def test_vault_integrity_and_index_agreement(self) -> None:
         self.assertEqual(integrity_errors(self.bundle), [])
         db = ROOT / ".cache" / "secondbrain.sqlite"
-        if not db.is_file():
-            sys.path.insert(0, str(ROOT / "tools"))
-            from secondbrain import index as sb_index
+        sys.path.insert(0, str(ROOT / "tools"))
+        from secondbrain import index as sb_index
 
-            sb_index.rebuild()
+        sb_index.ensure(ROOT, db)
         errors, counts = verify(self.bundle, db_path=db)
         self.assertEqual(errors, [])
         self.assertGreater(counts["index_compared"], 1000)

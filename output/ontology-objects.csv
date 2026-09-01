@@ -246,7 +246,7 @@ quota-router,Concept,Quota router,wiki/quota-router.md,2026-08-25,2026-08-27,wik
 r2-opd,Concept,R²-OPD,wiki/r2-opd.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,Filter on-policy distillation by reasoning-progress ranking.
 raptor-dispatch,Concept,Raptor dispatch,wiki/raptor-dispatch.md,2026-08-25,2026-08-27,wiki,concepts,27,12,false,"Raptor 3: one owner per job, report once, no empty acks."
 reddit,Hunt,Reddit hunt,hunt/reddit.md,2026-08-23,2026-08-23,hunt,hunt-ship,1,0,false,Empty. File links here. Ingest into `raw/` before they become wiki pages.
-retrieval,Concept,Retrieval,wiki/retrieval.md,2026-08-28,2026-08-29,wiki,concepts,30,13,false,Hybrid search over compiled pages. Markdown stays canonical. SQLite FTS5 is disposable.
+retrieval,Concept,Retrieval,wiki/retrieval.md,2026-08-28,2026-09-01,wiki,concepts,30,13,false,Hybrid search over compiled pages. Markdown stays canonical. SQLite FTS5 is disposable.
 retrieval-second-brain,Concept,Retrieval second brain,wiki/retrieval-second-brain.md,2026-08-23,2026-08-23,wiki,concepts,16,10,true,"A query-time stack for ""read and recall"": hybrid search, GraphRAG, three memory layers, agentic routing."
 rohit,Person,Rohit,wiki/people/rohit.md,2026-08-23,2026-08-23,person,people,3,3,false,@rohit4verse. Article: how to give every coding agent the same second brain.
 sapin,Concept,SAPIN,wiki/sapin.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,"9×9 grid, 30 migrating cells. CartPole without reward. Lock or forget."
