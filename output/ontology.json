@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-01T18:42:22Z",
+  "builtAt": "2026-09-01T18:43:15Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -110,15 +110,15 @@
     "unverified": 104,
     "Hunt": 8,
     "Map": 5,
-    "Ship": 57,
+    "Ship": 59,
     "Concept": 125,
     "Project": 2,
     "Person": 14,
     "Source": 143,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 428,
-    "links": 3006
+    "objects": 430,
+    "links": 3024
   },
   "objects": [
     {
@@ -1054,7 +1054,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 8,
+      "inbound": 9,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
@@ -1236,7 +1236,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 43,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
@@ -1558,7 +1558,7 @@
       "updated": "2026-09-01",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 143,
+      "inbound": 145,
       "outbound": 81,
       "unverified": true,
       "oneLiner": "Flag, do not silently merge. Machine form: `wiki/data/contradictions.yaml`. List with `python3 tools/sb contradictions`. CSV disputed rows live in `wiki/claims.csv` with a `C#` in `pages`. See [[claim"
@@ -1824,7 +1824,7 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "@omarsar0. Founder of dair.ai. Posted the Adversarial Review summary. Not a paper author."
@@ -1838,7 +1838,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 44,
       "outbound": 18,
       "unverified": true,
       "oneLiner": "Unverified cross-talk is how swarms agree on bugs that never existed."
@@ -2174,7 +2174,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 45,
+      "inbound": 46,
       "outbound": 29,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
@@ -2544,6 +2544,20 @@
       "oneLiner": "Jerry Liu\u2019s 2026-08-23 post on two-pass document processing is compiled."
     },
     {
+      "primaryKey": "ingest-brief-2026-08-24-maverick-ultramode",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Maverick ultramode \u00b7 2026-08-24",
+      "path": "output/ingest-brief-2026-08-24-maverick-ultramode.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-28",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "`/ultra` is now a concept: N isolated worktrees, then a [[probabilistic-pivot-tournament]] picks a winner. Jacky's 79% to 88% and Maverick's 24% to 33% are both on the pages, labeled as different slic"
+    },
+    {
       "primaryKey": "ingest-brief-2026-08-24-voxyz",
       "objectType": "Ship",
       "title": "Ingest brief \u00b7 2026-08-24 \u00b7 Voxyz writing system",
@@ -2726,6 +2740,20 @@
       "oneLiner": "lan E 07:36 Taipei: LanBB BB is bug bounty flow. The existing bounty/flow line on [[lanbb]] is identity, not contamination."
     },
     {
+      "primaryKey": "ingest-brief-omarsar-2026-08-24",
+      "objectType": "Ship",
+      "title": "Ingest brief \u00b7 Omarsar \u00b7 2026-08-24",
+      "path": "output/ingest-brief-omarsar-2026-08-24.md",
+      "created": "2026-08-24",
+      "updated": "2026-08-24",
+      "tags": "ship",
+      "island": "hunt-ship",
+      "inbound": 1,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "1. [[adversarial-review]] for the loop and the two tables."
+    },
+    {
       "primaryKey": "jacky-kwok",
       "objectType": "Person",
       "title": "Jacky Kwok",
@@ -2734,7 +2762,7 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Stanford CS PhD. Author of LLM-as-a-Verifier (arXiv:2607.05391) and the DeepSeek V4 Flash self-verification Terminal-Bench post."
@@ -2888,7 +2916,7 @@
       "updated": "2026-08-24",
       "tags": "person",
       "island": "people",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "@mavericktr24. GitHub `maverick-tr`. Shipped `agent-ultramode`: a `/ultra` command that productizes [[probabilistic-pivot-tournament]] for coding agents."
@@ -3406,7 +3434,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "The ranking step in [[src-maverick-ultramode]]. Named in the tweet as the verifier that picks a winning diff. Reimplemented from [[jacky-kwok]] LLM-as-a-Verifier (arXiv:2607.05391)."
@@ -3644,7 +3672,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
+      "inbound": 26,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Generate several candidates. Score them. Keep the winner."
@@ -5422,7 +5450,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 17,
+      "inbound": 18,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "`/ultra` runs a task N times in isolated git worktrees, then a same-model [[probabilistic-pivot-tournament]] picks a winner. Terminal-Bench, DeepSeek V4 Flash 0731, N=5, OpenCode run: 24% to 33% on 15"
@@ -5492,7 +5520,7 @@
       "updated": "2026-08-24",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Adding more agents is the default fix for weak review. The paper reports diminishing returns on repository-level tasks."
@@ -5912,7 +5940,7 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 15,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "A `/ultra` command and CLI that runs a coding task N times, then applies a verified winner."
@@ -13121,6 +13149,51 @@
       "to": "two-pass-document-processing"
     },
     {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "aboutPerson",
+      "to": "jacky-kwok"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "aboutPerson",
+      "to": "maverick"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "cites",
+      "to": "src-maverick-ultramode"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "probabilistic-pivot-tournament"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "self-verification"
+    },
+    {
+      "from": "ingest-brief-2026-08-24-maverick-ultramode",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
       "from": "ingest-brief-2026-08-24-voxyz",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
@@ -13424,6 +13497,41 @@
       "from": "ingest-brief-2026-08-27-lanbb-bb",
       "linkType": "relatedTo",
       "to": "lanbb"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "aboutPerson",
+      "to": "elvis"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "cites",
+      "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "adversarial-review"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "contradictions"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "entropy-gate"
+    },
+    {
+      "from": "ingest-brief-omarsar-2026-08-24",
+      "linkType": "relatedTo",
+      "to": "self-verification"
     },
     {
       "from": "jacky-kwok",
@@ -15828,6 +15936,11 @@
     {
       "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
       "linkType": "relatedTo",
+      "to": "ingest-brief-2026-08-24-maverick-ultramode"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-maverick-ultramode",
+      "linkType": "relatedTo",
       "to": "log"
     },
     {
@@ -15949,6 +16062,11 @@
       "from": "merge-conflict-report-2026-08-28-omarsar",
       "linkType": "relatedTo",
       "to": "index"
+    },
+    {
+      "from": "merge-conflict-report-2026-08-28-omarsar",
+      "linkType": "relatedTo",
+      "to": "ingest-brief-omarsar-2026-08-24"
     },
     {
       "from": "merge-conflict-report-2026-08-28-omarsar",
