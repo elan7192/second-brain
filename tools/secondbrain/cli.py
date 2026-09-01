@@ -47,8 +47,6 @@ def main(argv: list[str] | None = None) -> int:
         help="YAML map of acceptance_check -> bool. Distinguishes TASK_PASSED vs TASK_FAILED.",
     )
     sub.add_parser("eval", help="Run the retrieval/claim eval suite")
-    sub.add_parser("graph", help="Print link degree for indexed objects")
-    sub.add_parser("memory-review", help="Print MEMORY.md ablation reminder")
 
     args = parser.parse_args(argv)
     if args.cmd == "rebuild-index":
@@ -90,11 +88,6 @@ def main(argv: list[str] | None = None) -> int:
         code, out, _ = eval_suite.run_eval()
         sys.stdout.write(out)
         return code
-    if args.cmd == "graph":
-        return cmd_graph()
-    if args.cmd == "memory-review":
-        sys.stdout.write(_memory_review())
-        return 0
     parser.error(f"unknown command {args.cmd}")
     return 2
 
@@ -166,45 +159,9 @@ def _load_results(path: str) -> dict[str, bool]:
     return {str(key): bool(value) for key, value in data.items()}
 
 
-def cmd_graph() -> int:
-    _ensure_index()
-    conn = index.connect()
-    try:
-        rows = conn.execute(
-            """
-            SELECT objects.id, objects.type, objects.path,
-                   COUNT(links.dst_id) AS degree
-            FROM objects
-            LEFT JOIN links ON links.src_id = objects.id
-            GROUP BY objects.id
-            ORDER BY degree DESC, objects.id
-            LIMIT 40
-            """
-        ).fetchall()
-        print("id                                      type           degree  path")
-        for row in rows:
-            print(
-                f"{row['id']:40}  {row['type']:12}  {row['degree']:6}  {row['path']}"
-            )
-    finally:
-        conn.close()
-    return 0
-
-
 def _ensure_index() -> None:
     if not db_path().exists():
         index.rebuild()
-
-
-def _memory_review() -> str:
-    path = ROOT / "MEMORY.md"
-    text = path.read_text(encoding="utf-8") if path.exists() else ""
-    bullets = [ln for ln in text.splitlines() if ln.startswith("- ")]
-    return (
-        "A memory line stays only if deleting it would change an answer.\n"
-        f"MEMORY.md bullets: {len(bullets)}\n"
-        "Re-read MEMORY.md. Drop adjectives. Keep constraints, decisions, rejections.\n"
-    )
 
 
 if __name__ == "__main__":

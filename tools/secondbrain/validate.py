@@ -142,6 +142,15 @@ def validate(root: Path | None = None, db: Path | None = None) -> tuple[int, str
     else:
         lines.append("ok provenance")
 
+    onto_errs = _ontology_errors(root)
+    if onto_errs:
+        errors += 1
+        lines.append(f"FAIL ontology ({len(onto_errs)})")
+        for item in onto_errs:
+            lines.append(f"  {item}")
+    else:
+        lines.append("ok ontology")
+
     conn.close()
     status = "PASS" if errors == 0 else "FAIL"
     lines.append(f"{status} validate errors={errors}")
@@ -205,6 +214,19 @@ def _provenance_errors(root: Path, conn) -> list[str]:
     for item in provenance.csv_missing_sources(root):
         errors.append(f"{item} csv missing source")
     return errors
+
+
+def _ontology_errors(root: Path) -> list[str]:
+    # Fixture roots have no output/. A repo root does, and then both derived files must be fresh.
+    if not (root / "output").is_dir():
+        return []
+    lib_path = TOOLS_DIR / "ontology_lib.py"
+    spec = importlib.util.spec_from_file_location("ontology_lib", lib_path)
+    if spec is None or spec.loader is None:
+        return ["cannot load tools/ontology_lib.py"]
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return list(module.check_ontology(root))
 
 
 def orphans(root: Path | None = None) -> str:

@@ -8,7 +8,6 @@ Hubs: index, log, Home, lint-wiki, graph, claims.
 from __future__ import annotations
 
 import re
-import subprocess
 import sys
 from pathlib import Path
 
@@ -150,22 +149,6 @@ def check_instruction_budget() -> list[str]:
     return instruction_budget.check(ROOT)
 
 
-def check_unit_tests() -> list[str]:
-    if ROOT != TOOLS.parent:
-        return []
-    proc = subprocess.run(
-        [sys.executable, str(TOOLS / "test_memory.py")],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    if proc.returncode != 0:
-        detail = (proc.stdout + proc.stderr).strip()
-        return [f"tools/test_memory.py failed\n{detail}"]
-    return []
-
-
 def main() -> int:
     catalog = pages()
     missing, orphans = check_links(catalog)
@@ -175,7 +158,6 @@ def main() -> int:
     extra.extend(check_memory_v1(catalog))
     extra.extend(check_compile())
     extra.extend(check_disputed_in_conflicts())
-    extra.extend(check_unit_tests())
     extra.extend(check_instruction_budget())
     print(
         f"pages={len(catalog)} missing={len(missing)} orphans={len(orphans)} extra={len(extra)}"

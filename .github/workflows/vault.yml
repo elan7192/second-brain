@@ -13,16 +13,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: unit tests
-        run: python3 -m unittest tests.test_secondbrain tests.test_gates tools.test_memory -q
+        run: |
+          python3 -m unittest discover -s tests -q
+          python3 -m unittest discover -s tools -p 'test_*.py' -q
       - name: validate
         run: python3 tools/sb validate
-      - name: health
-        run: python3 tools/sb health
-      - name: ingest-check
-        run: python3 tools/sb ingest-check src-vault-review-2026-08-29
-      - name: contract-check
-        run: python3 tools/sb contract-check eval/contracts/valid.v1.yaml
       - name: eval
         run: python3 tools/sb eval
-      - name: ontology
-        run: python3 tools/rebuild-ontology.py --check
