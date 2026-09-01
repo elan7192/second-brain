@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-29
+updated: 2026-09-01
 ---
 
 # Musk Algorithm
@@ -29,6 +29,8 @@ Keep long-term vision. Starship lines on the source are examples, not new physic
 - 2026-08-29: deleted door catalogs, standing brief, dual lint, graph mermaid. C38 skip.
 - 2026-08-29b: deleted Home/index overlap, digest dump, `tools/sb.py`, MEMORY query duplicate, mandatory ontology rebuild, Home people catalog, GrowthOS graph on Home, graph islands table.
 - Stopped: next pass found only locked parts (C17, C18, D1–D12, C38 existing briefs, append-only log).
+- 2026-09-01: gate surface. Requirement owner was the schema author, not lan E, so it was deletable. Five gate commands became one: `sb validate` now includes the ontology check; lint no longer shells out to `tools/test_memory.py`; health lints once, not twice; `sb graph` and `sb memory-review` (unreferenced, the second a wish) gone; CI 7 steps to 3 (tests, validate, eval); empty `wiki/daily/` gone. Measured on the same VM, median of 3: validate 0.50s to 0.32s; health 0.85s to 0.32s; CI chain 3.3s to 2.1s. Docs folded: `AGENTS.md`, [[how-it-works]], [[vault-ontology]], [[deterministic-core]].
+- Not deleted, named for lan E: committed graph renders `output/obsidian-graph.{html,png,svg}`, `output/obsidian-dataflow.html`, `output/growthos-graph.html` (about 600 KB, derived like the gitignored Archify HTML, but D7/D8 point humans at them); two zero-inbound briefs `output/ingest-brief-2026-08-24-maverick-ultramode.md` and `output/ingest-brief-omarsar-2026-08-24.md` (C38 keeps history); eight copies of the wikilink regex and three frontmatter parsers across `tools/` (one is C18-parked). Each needs a yes before a cut.
 
 See [[log]]. Live query stays D9. C17 and C18 untouched.
 

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-08-30T07:32:40Z",
+  "builtAt": "2026-09-01T18:36:16Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -106,11 +106,11 @@
     }
   },
   "counts": {
-    "Ship": 59,
     "Meta": 15,
     "unverified": 104,
     "Hunt": 8,
     "Map": 5,
+    "Ship": 59,
     "Concept": 125,
     "Project": 2,
     "Person": 14,
@@ -118,7 +118,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 430,
-    "links": 3019
+    "links": 3023
   },
   "objects": [
     {
@@ -1695,11 +1695,11 @@
       "title": "Deterministic core",
       "path": "wiki/deterministic-core.md",
       "created": "2026-08-29",
-      "updated": "2026-08-30",
+      "updated": "2026-09-01",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 17,
-      "outbound": 13,
+      "inbound": 18,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "The model proposes wiki edits. Code accepts them."
     },
@@ -2213,10 +2213,10 @@
       "title": "How it works",
       "path": "wiki/how-it-works.md",
       "created": "2026-08-23",
-      "updated": "2026-08-30",
+      "updated": "2026-09-01",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 23,
+      "inbound": 24,
       "outbound": 28,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
@@ -2843,7 +2843,7 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-08-30",
+      "updated": "2026-09-01",
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
@@ -3235,11 +3235,11 @@
       "title": "Musk Algorithm",
       "path": "wiki/musk-algorithm.md",
       "created": "2026-08-27",
-      "updated": "2026-08-29",
+      "updated": "2026-09-01",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
-      "outbound": 6,
+      "inbound": 25,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
     },
@@ -5993,10 +5993,10 @@
       "title": "Vault ontology",
       "path": "wiki/vault-ontology.md",
       "created": "2026-08-28",
-      "updated": "2026-08-28",
+      "updated": "2026-09-01",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 16,
+      "inbound": 17,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph."
@@ -10202,6 +10202,11 @@
       "from": "deterministic-core",
       "linkType": "relatedTo",
       "to": "memory-system"
+    },
+    {
+      "from": "deterministic-core",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "deterministic-core",
@@ -16511,6 +16516,16 @@
     {
       "from": "musk-algorithm",
       "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "how-it-works"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
       "to": "index"
     },
     {
@@ -16522,6 +16537,11 @@
       "from": "musk-algorithm",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "vault-ontology"
     },
     {
       "from": "musk-algorithm",

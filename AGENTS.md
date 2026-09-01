@@ -39,7 +39,7 @@ A new rule is a principle with a why, folded into an existing section. Worker in
 Check: a new operational rule has an inbound `[[wikilink]]` from `wiki/index.md` or this file. `python3 tools/sb validate` runs the instruction-budget gate. An append-only Never/Do-not fixture must fail.
 If the only copy is in README or a classical doc: move it before answering.
 
-Reading this file is not verification. After any ingest or schema edit, `python3 tools/sb validate` must exit 0. That command runs `tools/lint-wiki.py`.
+Reading this file is not verification. After any ingest or schema edit, `python3 tools/sb validate` must exit 0. That one command runs `tools/lint-wiki.py`, the instruction budget, the claim and contradiction registries, and the ontology freshness check. Unit tests run in CI, not inside validate.
 If validate fails: fix missing links before writing `output/`. See D10.
 
 The model proposes wiki edits. Code accepts them. See [[deterministic-core]].
@@ -61,7 +61,7 @@ Named owner: lan E. Pattern: [[andrej-karpathy]] / D1. Live query is D9. Catalog
 4. If the evidence set is empty, say so. Do not invent. Ask to ingest a source or search the web.
 5. Do not read `raw/` unless lan E asked for the original, or a wiki page is missing and you are ingesting.
 6. File the answer into `wiki/` or `output/` only if the next session would otherwise re-derive it.
-7. For object/link questions, read `output/ontology.json` or run `python3 tools/ontology.py`. Rebuild first if `--check` fails.
+7. For object/link questions, read `output/ontology.json` or run `python3 tools/ontology.py`. Rebuild first if validate reports a stale ontology.
 Do not walk `wiki/index.md` as the query path. Do not load [[index-papers]] or [[index-sources]] instead of `sb ask`.
 
 Check: every claim in the answer has a wiki citation or a claim id, or is marked `unverified`. After ingest, `python3 tools/sb validate` exits 0. After a retrieval change, `python3 tools/sb eval` exits 0.
@@ -88,16 +88,16 @@ When lan E drops files in `raw/` and says ingest:
 
 Do not write a standing `output/` ingest brief. C38. File an answer only if the next session would re-derive it.
 
-Check: `python3 tools/sb validate` exits 0. `python3 tools/sb ingest-check <slug>` exits 0. Orphans fail the gate. Every new page has an inbound `[[wikilink]]` and an `id:`. Then `python3 tools/rebuild-ontology.py --check` exits 0. Rebuild from wiki if the check fails.
+Check: `python3 tools/sb validate` exits 0. `python3 tools/sb ingest-check <slug>` exits 0. Orphans and a stale ontology fail the gate. Every new page has an inbound `[[wikilink]]` and an `id:`.
 If a claim cannot be tied to the raw file or to a named source page: leave it out.
 
 ## Ontology rebuild
 
-`output/ontology-objects.csv` is a derived Palantir-style object table. Wiki markdown stays the store. No live Foundry or AIP objects.
+`output/ontology-objects.csv` and `output/ontology.json` are derived Palantir-style object tables. Wiki markdown stays the store. No live Foundry or AIP objects.
 
-After ingest or a structural wiki edit, `python3 tools/rebuild-ontology.py --check` exits 0. Rebuild from wiki if the check fails. Do not edit the CSV by hand. If Foundry credentials are missing: keep the local ontology. Do not create a Palantir account (D5).
+`python3 tools/sb validate` fails when those files are stale against the wiki. Fix by running `python3 tools/rebuild-ontology.py`, never by editing the CSV. If Foundry credentials are missing: keep the local ontology. Do not create a Palantir account (D5).
 
-Check: `python3 tools/sb validate` 0 and `python3 tools/rebuild-ontology.py --check` 0.
+Check: `python3 tools/sb validate` 0.
 If the CSV and wiki disagree: wiki wins.
 
 ## Epistemic labels

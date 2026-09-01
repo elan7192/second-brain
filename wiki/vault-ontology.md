@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-09-01
 ---
 
 # Vault ontology
@@ -43,7 +43,7 @@ python3 tools/ontology.py get llm-wiki
 python3 tools/ontology.py subgraph ai-sovereignty --hops 1
 ```
 
-`--check` must exit 0 after ingest. If it fails, rebuild from wiki. Do not patch the CSV.
+`python3 tools/sb validate` runs this `--check` since 2026-09-01. If it reports a stale ontology, rebuild from wiki. Do not patch the CSV.
 
 Brief: [[ontology-rebuild-brief-2026-08-28]].
 

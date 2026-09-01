@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-30
+updated: 2026-09-01
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-01] gate | Musk pass 4: one gate, not five
+
+lan E asked to run [[musk-algorithm]] on the project. Previous passes ended on locked parts, so this pass took the gate surface, whose owner is the schema author. Deleted: `check_unit_tests` subprocess inside `tools/lint-wiki.py` (the test runner owns tests), `sb graph` and `sb memory-review` (zero references, the second was a wish), the double lint run inside `sb health`, empty `wiki/daily/`, and four CI steps (`health`, `ingest-check <fixed slug>`, `contract-check <fixture>`, `rebuild-ontology --check`) that `tests/test_gates.py` or validate already cover. Folded the ontology freshness check into `python3 tools/sb validate`. CI is now unit tests, validate, eval. `AGENTS.md` Ontology rebuild and Ingest check shrank. Left alone: C17, C18, D1–D12, committed graph renders (D7/D8, lan E owns), `output/` history (C38), append-only log. Candidates named on [[musk-algorithm]].
 
 ## [2026-08-30] ingest | Voxyz skill improver and instruction-budget gate
 

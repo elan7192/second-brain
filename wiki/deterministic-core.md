@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-29
-updated: 2026-08-30
+updated: 2026-09-01
 created_by: agent
 confidence: medium
 source:
@@ -40,7 +40,7 @@ The same source says the LLM should propose changes and deterministic code shoul
 
 Validate fails when a dated `valid_until` is earlier than `valid_from`, when `superseded_by` names an unknown id, when a YAML claim has no `sources`, or when a CSV claim has no source path.
 
-Adversarial tests live in `tests/test_gates.py`. CI runs validate, health, ingest-check, contract-check, and eval.
+Adversarial tests live in `tests/test_gates.py`. Since 2026-09-01 CI runs the unit tests, `sb validate`, and `sb eval`. Health, ingest-check, and contract-check are exercised by `tests/test_gates.py`, not by separate CI steps. Validate includes the ontology freshness check. See [[musk-algorithm]].
 
 The review rated retrieval 5/10 and said there is no real retrieval layer. Live query is already `python3 tools/sb ask` (D9). See C46.
 
