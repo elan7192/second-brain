@@ -6,8 +6,12 @@ from __future__ import annotations
 import csv
 import io
 import re
+import sys
 from dataclasses import dataclass, field
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from secondbrain import frontmatter  # noqa: E402
 
 CLAIM_FIELDS = [
     "claim_id",
@@ -48,7 +52,6 @@ INJECTION_RE = re.compile(
 )
 FENCE_RE = re.compile(r"```.*?```", re.S)
 INLINE_CODE_RE = re.compile(r"`[^`]+`")
-FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?", re.S)
 CLAIMS_SECTION_RE = re.compile(
     r"^## Claims kept[^\n]*\n(.*?)(?=^## |\Z)", re.M | re.S
 )
@@ -56,7 +59,7 @@ PAGES_SECTION_RE = re.compile(
     r"^## Pages updated\n(.*?)(?=^## |\Z)", re.M | re.S
 )
 CONFLICT_RE = re.compile(r"^## (C\d+)\. (.+)$", re.M)
-WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
+WIKILINK_RE = frontmatter.WIKILINK
 RAW_PATH_RE = re.compile(r"`(raw/[^`]+)`")
 URL_RE = re.compile(r"https?://[^\s)]+")
 SEE_ONLY_RE = re.compile(r"^See \[\[[^\]]+\]\]\.?$", re.I)
@@ -110,28 +113,8 @@ class Frontmatter:
 
 
 def parse_frontmatter(text: str) -> tuple[Frontmatter, str]:
-    match = FRONTMATTER_RE.match(text)
-    if not match:
-        return Frontmatter(), text
-    data: dict[str, object] = {}
-    key: str | None = None
-    for line in match.group(1).splitlines():
-        if line.startswith("  - ") and key:
-            bucket = data.setdefault(key, [])
-            if not isinstance(bucket, list):
-                bucket = [str(bucket)]
-                data[key] = bucket
-            bucket.append(line[4:].strip())
-            continue
-        if ":" in line and not line.startswith(" "):
-            key, value = line.split(":", 1)
-            key = key.strip()
-            value = value.strip()
-            data[key] = value if value else []
-            continue
-        key = None
-    body = text[match.end() :]
-    return Frontmatter(data), body
+    data, body = frontmatter.split(text)
+    return Frontmatter(dict(data)), body
 
 
 def strip_code(text: str) -> str:

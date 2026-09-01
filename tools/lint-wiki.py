@@ -17,8 +17,8 @@ if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
 import memorylib  # noqa: E402
+from secondbrain.frontmatter import WIKILINK as LINK  # noqa: E402
 
-LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates", ".agents", ".cursor", "eval"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 HUBS = {"index", "index-papers", "index-sources", "log", "Home", "lint-wiki", "graph", "claims"}

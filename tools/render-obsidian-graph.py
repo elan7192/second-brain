@@ -5,13 +5,15 @@ from __future__ import annotations
 
 import json
 import math
-import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from secondbrain.frontmatter import WIKILINK as LINK  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "output"
-LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates", "raw", "growth", ".agents", ".cursor"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 # Catalog stars. They stay in the vault. They do not sit in this graph.

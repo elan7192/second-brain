@@ -9,10 +9,10 @@ from datetime import date
 from pathlib import Path
 
 from . import frontmatter, ids, schema
+from .frontmatter import WIKILINK
 from .paths import CLAIMS_PATH, CONTRADICTIONS_PATH, ROOT, db_path
 from .yamlutil import loads
 
-WIKILINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 DECISION_HEAD = re.compile(r"^## (D\d+)\.\s+(.+)$", re.MULTILINE)
 CONTRA_HEAD = re.compile(r"^## (C\d+)\.\s+(.+)$", re.MULTILINE)
 

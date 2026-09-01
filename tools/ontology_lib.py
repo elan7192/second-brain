@@ -9,13 +9,17 @@ import re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from secondbrain import frontmatter  # noqa: E402
+from secondbrain.frontmatter import WIKILINK as LINK  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = Path(__file__).resolve().parent / "ontology_schema.json"
 CSV_PATH = ROOT / "output" / "ontology-objects.csv"
 JSON_PATH = ROOT / "output" / "ontology.json"
 
-LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 HEADING = re.compile(r"^#\s+(.+)$", re.M)
 DECISION = re.compile(r"^## (D\d+)\.\s+(.+)$", re.M)
 CONTRADICTION = re.compile(r"^## (C\d+)\.\s+(.+)$", re.M)
@@ -59,30 +63,17 @@ def load_schema() -> dict:
 
 
 def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
-    if not text.startswith("---\n"):
-        return {}, text
-    end = text.find("\n---\n", 4)
-    if end < 0:
-        return {}, text
-    raw = text[4:end]
-    body = text[end + 5 :]
+    """Flat string view of the shared parser. Only tags keep list items, comma-joined."""
+    parsed, body = frontmatter.split(text)
     meta: dict[str, str] = {}
-    key: str | None = None
-    tags: list[str] = []
-    for line in raw.splitlines():
-        if line.startswith("  - ") and key == "tags":
-            tags.append(line[4:].strip())
-            continue
-        if ":" in line and not line.startswith(" "):
-            key, value = line.split(":", 1)
-            key = key.strip()
-            value = value.strip()
+    for key, value in parsed.items():
+        if isinstance(value, list):
             if key == "tags" and value:
-                tags.append(value)
+                meta[key] = ",".join(str(item) for item in value)
             elif key != "tags":
-                meta[key] = value
-    if tags:
-        meta["tags"] = ",".join(tags)
+                meta[key] = ""
+        else:
+            meta[key] = str(value)
     return meta, body
 
 
