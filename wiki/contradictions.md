@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-30
+updated: 2026-09-01
 ---
 
 # Contradictions
@@ -349,7 +349,7 @@ Main ingest step 9 wrote a three-sentence `output/` brief on every ingest.
 
 The 2026-08-28 musk pass deleted that standing brief (schema author, not lan E).
 
-Resolution: skip. lan E ordered the algorithm again on 2026-08-29. Do not write a standing brief. Existing briefs stay as historical output. File only if the next session would re-derive the answer. See [[musk-algorithm]].
+Resolution: skip. lan E ordered the algorithm again on 2026-08-29. Do not write a standing brief. Linked briefs stay as historical output. On 2026-09-01 lan E said yes to deleting the two briefs with zero inbound links (`ingest-brief-2026-08-24-maverick-ultramode`, `ingest-brief-omarsar-2026-08-24`); git history keeps them. File only if the next session would re-derive the answer. See [[musk-algorithm]].
 
 ## C39. CLAUDE.md copy vs D2
 

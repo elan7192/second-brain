@@ -11,3 +11,10 @@ __pycache__/
 # Archify HTML is derived. JSON specs are the source. Rebuild with python3 tools/deliver-archify.py
 output/archify/*.html
 output/archify/*.visual-check*
+
+# Graph renders are derived from wiki/ and growth/. Rebuild with tools/render-obsidian-graph.py, render-dataflow.py, render-growthos-graph.py
+output/obsidian-graph.html
+output/obsidian-graph.svg
+output/obsidian-graph.png
+output/obsidian-dataflow.html
+output/growthos-graph.html

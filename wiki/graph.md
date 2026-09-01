@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-30
+updated: 2026-09-01
 ---
 
 # Graph
@@ -35,10 +35,10 @@ Taken from [[agent-operating-system]]. Home stays the door. agent-operating-syst
 
 ## Snapshot
 
-Open `output/obsidian-graph.html` if you are not in Obsidian. Static copies: `output/obsidian-graph.svg`, `output/obsidian-graph.png`. Do not dump the graph into this page.
+If you are not in Obsidian, run `python3 tools/render-obsidian-graph.py`; it writes `output/obsidian-graph.html` and `.svg` (and `.png` when PIL is installed). Those renders are derived and gitignored since 2026-09-01 (lan E yes, [[musk-algorithm]]). Do not dump the graph into this page.
 
-Dark node-bus dashboard (Bober clip skin, this vault's pages): `output/obsidian-dataflow.html`. Canvas: `maps/dataflow.canvas`. Rebuild: `python3 tools/render-dataflow.py`. See [[dataflow-visual-2026-08-23]].
+Dark node-bus dashboard (Bober clip skin, this vault's pages): `python3 tools/render-dataflow.py` writes `output/obsidian-dataflow.html` (gitignored). Canvas: `maps/dataflow.canvas`. See [[dataflow-visual-2026-08-23]].
 
 [[archify]] JSON under `output/archify/` is the checked component map (five types). Local HTML is derived. It is not this Obsidian cluster view.
 
-Growth operator graph is separate: `output/growthos-graph.html`. See [[growth-operator]]. Do not dump `growth/` notes onto this wiki snapshot.
+Growth operator graph is separate: `python3 tools/render-growthos-graph.py` writes `output/growthos-graph.html` (gitignored). See [[growth-operator]]. Do not dump `growth/` notes onto this wiki snapshot.

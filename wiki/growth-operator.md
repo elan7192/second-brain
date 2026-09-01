@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-09-01
 ---
 
 # Growth operator
@@ -57,7 +57,7 @@ Fork answer: [[growthos-3d-gap-2026-08-25]].
 
 1. Read [[growth-core]], then only the pages it points to.
 2. `python3 tools/growth-brief.py --partner "…"`
-3. Open `output/growthos-graph.html` for the 3D graph. Figma is not required for that page; see [[gsap-figma-note-2026-08-25]].
+3. Run `python3 tools/render-growthos-graph.py`, then open `output/growthos-graph.html` (gitignored) for the 3D graph. Figma is not required for that page; see [[gsap-figma-note-2026-08-25]].
 4. File the briefing. Do not send.
 
 Latest briefing: [[growth-briefing-2026-08-25]]. Graph fork: [[growthos-3d-gap-2026-08-25]].
