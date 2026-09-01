@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-09-01
 ---
 
 # Index
@@ -13,7 +13,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 
 ## Start
 
-- [[Home]] — door. Dark compile bus: `output/obsidian-dataflow.html` · [[dataflow-visual-2026-08-23]]
+- [[Home]] — door. Dark compile bus: `python3 tools/render-dataflow.py` · [[dataflow-visual-2026-08-23]]
 - [[retrieval]] — FTS evidence set
 - [[claims]] — two registries; C17 unresolved
 - [[how-it-works]] — operations

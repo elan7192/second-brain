@@ -4,10 +4,15 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from typing import Any
+
+# Annotations only; `from __future__ import annotations` keeps them unevaluated,
+# so the typing module never loads on the query path.
+Any = object
 
 FRONT_RE = re.compile(r"\A---\n(.*?)\n---(?:\n|$)", re.DOTALL)
 H1_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
+# The one wikilink pattern for every tool. Group 1 is the target slug; alias and heading are dropped.
+WIKILINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 
 
 def split(text: str) -> tuple[dict[str, Any], str]:

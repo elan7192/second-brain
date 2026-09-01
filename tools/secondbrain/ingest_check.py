@@ -9,7 +9,7 @@ from . import frontmatter
 from .paths import ROOT
 
 CLAIMS_RE = re.compile(r"^## Claims kept", re.M)
-WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
+WIKILINK_RE = frontmatter.WIKILINK
 CATALOG_NAMES = frozenset(
     {"index.md", "index-sources.md", "index-papers.md", "log.md", "Home.md"}
 )

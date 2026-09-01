@@ -34,11 +34,12 @@ def report(root: Path | None = None, db: Path | None = None) -> tuple[int, str]:
 
     csv_status, csv_conf = _csv_counts(root)
     stale_n = _count_stale(target)
-    missing, orphans = _link_health(root)
     missing_ids = _missing_ids(root)
     yaml_ids, csv_ids = _claim_id_sets(root)
     prov = provenance.counts(root)
-    gate_code, _ = validate.validate(root, target)
+    # validate already runs lint; read link health from its output instead of linting twice.
+    gate_code, gate_out = validate.validate(root, target)
+    missing, orphans = _link_health(gate_out)
 
     lines = [
         "Knowledge health",
@@ -93,9 +94,7 @@ def _count_stale(db: Path) -> int:
         return 0
 
 
-def _link_health(root: Path) -> tuple[list[str], list[str]]:
-    lint_code, lint_out = validate._run_lint(root)
-    del lint_code
+def _link_health(lint_out: str) -> tuple[list[str], list[str]]:
     missing = [line[8:] for line in lint_out.splitlines() if line.startswith("MISSING ")]
     orphans = [line[7:] for line in lint_out.splitlines() if line.startswith("ORPHAN ")]
     return missing, orphans

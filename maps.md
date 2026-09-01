@@ -3,7 +3,7 @@ type: map
 tags:
   - map
 created: 2026-08-23
-updated: 2026-08-25
+updated: 2026-09-01
 ---
 
 # Maps
@@ -14,4 +14,4 @@ Teal in the Obsidian graph.
 - [[Hooks]] — trend to lock
 - [[TELOS]] — why the vault exists
 - [[GrowthOS]] — growth operator vault
-- `maps/dataflow.canvas` — dark compile pipeline. HTML twin: `output/obsidian-dataflow.html`
+- `maps/dataflow.canvas` — dark compile pipeline. HTML twin: `python3 tools/render-dataflow.py`

@@ -4,7 +4,7 @@ type: home
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-09-01
 ---
 
 # Home
@@ -15,7 +15,7 @@ Door to the vault. Open this folder in Obsidian. Then open graph view. See [[gra
 
 Compiled wiki. Gold [[wiki]], teal [[maps]], blue [[hunt]] / [[twitter]] / [[disclosures]], green people, coral [[ship]].
 
-Open `output/obsidian-graph.html` if you are not in Obsidian yet. Snapshot: `output/obsidian-graph.svg`. Dark compile bus: `output/obsidian-dataflow.html` · `maps/dataflow.canvas`. Brief: [[dataflow-visual-2026-08-23]].
+Not in Obsidian yet: `python3 tools/render-obsidian-graph.py` writes `output/obsidian-graph.html` and `.svg`. Dark compile bus: `python3 tools/render-dataflow.py` · `maps/dataflow.canvas`. Renders are gitignored. Brief: [[dataflow-visual-2026-08-23]].
 
 ## Start
 

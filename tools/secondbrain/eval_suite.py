@@ -78,10 +78,18 @@ def run_eval(
     unsupported_flags: list[int] = []
     contra_flags: list[int] = []
     failures: list[str] = []
-    for question in questions:
-        hits = retrieve.search(question.question, limit=question.k, db=db)
+    conn = index.connect(db)
+    try:
+        searched = [
+            (q, retrieve.search_conn(conn, q.question, limit=q.k)) for q in questions
+        ]
+        # One search per question. The evidence text is formatted from the same hits.
+        evidences = [retrieve.format_evidence(conn, q.question, hits) for q, hits in searched]
+        blobs = [_evidence_blob(conn, hits, ev) for (_, hits), ev in zip(searched, evidences)]
+    finally:
+        conn.close()
+    for (question, hits), blob in zip(searched, blobs):
         hit_ids = [h.id for h in hits]
-        evidence = retrieve.evidence_set(question.question, limit=question.k, db=db)
         retrieved = set(hit_ids)
         must = set(question.must_retrieve)
         recall = (len(must & retrieved) / len(must)) if must else 1.0
@@ -91,7 +99,6 @@ def run_eval(
         recalls.append(recall)
         precisions.append(precision)
         citations.append(cites)
-        blob = _evidence_blob(db, hits, evidence)
         bad = False
         for phrase in question.must_not_include:
             if phrase.lower() in blob:
@@ -179,34 +186,28 @@ def _stale_eval(eval_dir: Path, db: Path | None) -> bool:
     return all(item in report for item in expected)
 
 
-def _evidence_blob(db: Path | None, hits: list, evidence: str) -> str:
-    from .index import connect
-
+def _evidence_blob(conn, hits: list, evidence: str) -> str:
     parts = [evidence]
-    conn = connect(db)
-    try:
-        for hit in hits:
-            row = conn.execute(
-                "SELECT id, title, body FROM objects WHERE id = ?", (hit.id,)
-            ).fetchone()
-            if row:
-                parts.append(f"{row['id']}\n{row['title']}\n{row['body']}")
-            for extra in conn.execute(
-                """
-                SELECT claims.id, claims.subject, claims.predicate, claims.object
-                FROM claims
-                LEFT JOIN claim_concepts ON claim_concepts.claim_id = claims.id
-                LEFT JOIN claim_sources ON claim_sources.claim_id = claims.id
-                WHERE claim_concepts.concept_id = ? OR claim_sources.source_id = ?
-                   OR claims.id = ?
-                """,
-                (hit.id, hit.id, hit.id),
-            ):
-                parts.append(
-                    f"{extra['id']} {extra['subject']} {extra['predicate']} {extra['object']}"
-                )
-    finally:
-        conn.close()
+    for hit in hits:
+        row = conn.execute(
+            "SELECT id, title, body FROM objects WHERE id = ?", (hit.id,)
+        ).fetchone()
+        if row:
+            parts.append(f"{row['id']}\n{row['title']}\n{row['body']}")
+        for extra in conn.execute(
+            """
+            SELECT claims.id, claims.subject, claims.predicate, claims.object
+            FROM claims
+            LEFT JOIN claim_concepts ON claim_concepts.claim_id = claims.id
+            LEFT JOIN claim_sources ON claim_sources.claim_id = claims.id
+            WHERE claim_concepts.concept_id = ? OR claim_sources.source_id = ?
+               OR claims.id = ?
+            """,
+            (hit.id, hit.id, hit.id),
+        ):
+            parts.append(
+                f"{extra['id']} {extra['subject']} {extra['predicate']} {extra['object']}"
+            )
     return "\n".join(parts).lower()
 
 

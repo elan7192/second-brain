@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import sys
 import tempfile
 import unittest
@@ -106,6 +107,20 @@ class EngineTests(unittest.TestCase):
         hits = retrieve.search("memory ablation", limit=5, db=self.db)
         ids_found = [h.id for h in hits]
         self.assertIn("concept:memory-ablation", ids_found)
+
+    def test_ensure_rebuilds_only_when_stale(self) -> None:
+        self.assertTrue(index.is_stale(self.root, self.db))
+        self.assertTrue(index.ensure(self.root, self.db))
+        self.assertFalse(index.is_stale(self.root, self.db))
+        self.assertFalse(index.ensure(self.root, self.db))
+        page = self.root / "wiki" / "memory-ablation.md"
+        # Age the database below the page instead of pushing the page into the future.
+        older = page.stat().st_mtime_ns - 1_000_000_000
+        os.utime(self.db, ns=(older, older))
+        self.assertTrue(index.is_stale(self.root, self.db))
+        self.assertTrue(index.ensure(self.root, self.db))
+        self.assertFalse(index.is_stale(self.root, self.db))
+        self.assertFalse((self.db.parent / (self.db.name + ".tmp")).exists())
 
     def test_trace_and_stale(self) -> None:
         index.rebuild(self.root, self.db)

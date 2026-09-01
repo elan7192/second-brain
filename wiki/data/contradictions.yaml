@@ -378,7 +378,7 @@ contradictions:
     reason: musk deleted standing ingest brief; main ingest used to write one
     status: resolved
     severity: medium
-    resolution: skip standing brief; existing briefs stay; lan E 2026-08-29
+    resolution: skip standing brief; existing briefs stay; lan E 2026-08-29; 2026-09-01 zero-inbound report was a miscount, nothing deleted
     resolution_source: concept:musk-algorithm
     page: contradictions.md
 

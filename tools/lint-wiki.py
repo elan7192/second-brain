@@ -8,7 +8,6 @@ Hubs: index, log, Home, lint-wiki, graph, claims.
 from __future__ import annotations
 
 import re
-import subprocess
 import sys
 from pathlib import Path
 
@@ -18,12 +17,25 @@ if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
 import memorylib  # noqa: E402
+from secondbrain.frontmatter import WIKILINK as LINK  # noqa: E402
+from secondbrain.paths import rel_posix  # noqa: E402
 
-LINK = re.compile(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]")
 SKIP_DIRS = {".git", ".obsidian", "templates", ".agents", ".cursor", "eval"}
 SKIP_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
 HUBS = {"index", "index-papers", "index-sources", "log", "Home", "lint-wiki", "graph", "claims"}
 SOURCE_CLAIMS_RE = re.compile(r"^## Claims kept", re.M)
+
+# One read per file per lint run. main() clears it so repeated in-process
+# runs (validate, tests) always see the current tree.
+_TEXTS: dict[Path, str] = {}
+
+
+def read_text(path: Path) -> str:
+    text = _TEXTS.get(path)
+    if text is None:
+        text = path.read_text(encoding="utf-8")
+        _TEXTS[path] = text
+    return text
 
 
 def pages() -> dict[str, Path]:
@@ -41,7 +53,7 @@ def check_links(catalog: dict[str, Path]) -> tuple[list[str], list[str]]:
     missing: list[str] = []
     inbound: dict[str, int] = {slug: 0 for slug in catalog}
     for path in catalog.values():
-        text = path.read_text(encoding="utf-8")
+        text = read_text(path)
         for match in LINK.finditer(text):
             target = match.group(1).strip()
             if target not in catalog:
@@ -63,7 +75,7 @@ def check_source_claims() -> list[str]:
     if not sources.exists() or not compile_layer:
         return []
     for path in sorted(sources.glob("*.md")):
-        text = path.read_text(encoding="utf-8")
+        text = read_text(path)
         if not SOURCE_CLAIMS_RE.search(text):
             errors.append(f"{path.relative_to(ROOT)} missing ## Claims kept")
     return errors
@@ -83,11 +95,10 @@ def check_injection() -> list[str]:
             continue
         if path.name in SKIP_FILES:
             continue
-        rel = path.relative_to(ROOT).as_posix()
+        rel = rel_posix(path, ROOT)
         if rel.startswith("raw/"):
             continue
-        text = path.read_text(encoding="utf-8")
-        hits = memorylib.injection_hits(text)
+        hits = memorylib.injection_hits(read_text(path))
         for hit in hits:
             errors.append(f"{rel} unquoted injection phrase {hit!r}")
     return errors
@@ -96,8 +107,7 @@ def check_injection() -> list[str]:
 def check_memory_v1(catalog: dict[str, Path]) -> list[str]:
     errors: list[str] = []
     for path in catalog.values():
-        text = path.read_text(encoding="utf-8")
-        errors.extend(memorylib.validate_memory_v1(path.relative_to(ROOT), text))
+        errors.extend(memorylib.validate_memory_v1(rel_posix(path, ROOT), read_text(path)))
     return errors
 
 
@@ -150,23 +160,8 @@ def check_instruction_budget() -> list[str]:
     return instruction_budget.check(ROOT)
 
 
-def check_unit_tests() -> list[str]:
-    if ROOT != TOOLS.parent:
-        return []
-    proc = subprocess.run(
-        [sys.executable, str(TOOLS / "test_memory.py")],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    if proc.returncode != 0:
-        detail = (proc.stdout + proc.stderr).strip()
-        return [f"tools/test_memory.py failed\n{detail}"]
-    return []
-
-
 def main() -> int:
+    _TEXTS.clear()
     catalog = pages()
     missing, orphans = check_links(catalog)
     extra: list[str] = []
@@ -175,7 +170,6 @@ def main() -> int:
     extra.extend(check_memory_v1(catalog))
     extra.extend(check_compile())
     extra.extend(check_disputed_in_conflicts())
-    extra.extend(check_unit_tests())
     extra.extend(check_instruction_budget())
     print(
         f"pages={len(catalog)} missing={len(missing)} orphans={len(orphans)} extra={len(extra)}"

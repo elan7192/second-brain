@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from .paths import rel_posix
+
 KINDS = (
     "source",
     "concept",
@@ -53,7 +55,7 @@ TYPE_WEIGHT = {
 
 
 def kind_for(path: Path, declared_type: str, root: Path) -> str:
-    rel = path.relative_to(root).as_posix()
+    rel = rel_posix(path, root)
     if rel.startswith("wiki/sources/"):
         return "source"
     if rel.startswith("wiki/people/"):
