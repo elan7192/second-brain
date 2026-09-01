@@ -8,12 +8,17 @@ from __future__ import annotations
 
 import re
 import sqlite3
-from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date
 from pathlib import Path
 
 from . import schema
 from .index import connect
+
+OBJECT_SELECT = "SELECT id, type, title, path, slug, body, updated FROM objects"
+DECIDE_TOKENS = {"decide", "decision", "decisions", "decided"}
+CONFLICT_TOKENS = {"contradiction", "unresolved", "conflict"}
+SKIP_NEIGHBOR_SLUGS = {"index", "log", "Home", "wiki"}
+WS = re.compile(r"\s+")
 
 STOP = {
     "a", "an", "the", "and", "or", "of", "to", "in", "on", "for", "is", "are",
@@ -37,17 +42,35 @@ ALIASES = {
 TOKEN = re.compile(r"[A-Za-z0-9_:-]+")
 
 
-@dataclass
 class Hit:
-    id: str
-    type: str
-    title: str
-    path: str
-    slug: str
-    snippet: str
-    score: float
-    updated: str
-    reasons: tuple[str, ...]
+    """Slotted and mutable: scores are adjusted in place during ranking."""
+
+    __slots__ = ("id", "type", "title", "path", "slug", "snippet", "score", "updated", "reasons")
+
+    def __init__(
+        self,
+        id: str,
+        type: str,
+        title: str,
+        path: str,
+        slug: str,
+        snippet: str,
+        score: float,
+        updated: str,
+        reasons: tuple[str, ...],
+    ) -> None:
+        self.id = id
+        self.type = type
+        self.title = title
+        self.path = path
+        self.slug = slug
+        self.snippet = snippet
+        self.score = score
+        self.updated = updated
+        self.reasons = reasons
+
+    def __repr__(self) -> str:
+        return f"Hit({self.id!r}, score={self.score:.3f}, reasons={self.reasons})"
 
 
 def search(
@@ -82,7 +105,7 @@ def search_conn(
                        objects.slug, objects.body, objects.updated,
                        bm25(objects_fts) AS rank
                 FROM objects_fts
-                JOIN objects ON objects.id = objects_fts.id
+                JOIN objects ON objects.rowid = objects_fts.rowid
                 WHERE objects_fts MATCH ?
                 ORDER BY rank
                 LIMIT 40
@@ -93,21 +116,25 @@ def search_conn(
             fts_hits = []
     tokens = _tokens(query)
     ranked: dict[str, Hit] = {}
+    bodies: dict[str, str] = {}
     for row in fts_hits:
-        ranked[row["id"]] = _hit_from_row(row, tokens, today, fts_rank=row["rank"])
-    _expand_claim_links(conn, ranked, tokens, today)
-    _expand_neighbors(conn, ranked, tokens, today)
+        ranked[row["id"]] = _hit_from_row(row, tokens, today, bodies, fts_rank=row["rank"])
+    _expand_claim_links(conn, ranked, tokens, today, bodies)
+    _expand_neighbors(conn, ranked, tokens, today, bodies)
     _boost_graph(conn, ranked)
     if not ranked:
-        ranked.update(_substring_fallback(conn, tokens, today))
-    hits = sorted(ranked.values(), key=lambda h: h.score, reverse=True)
-    return hits[:limit]
+        ranked.update(_substring_fallback(conn, tokens, today, bodies))
+    hits = sorted(ranked.values(), key=lambda h: h.score, reverse=True)[:limit]
+    # Snippets only for what is returned. Candidates that fall out of the top-k never pay for one.
+    for hit in hits:
+        hit.snippet = _snippet(bodies.get(hit.id, ""), tokens)
+    return hits
 
 
 def evidence_set(query: str, *, limit: int = 8, db: Path | None = None) -> str:
-    hits = search(query, limit=limit, db=db)
     conn = connect(db)
     try:
+        hits = search_conn(conn, query, limit=limit)
         return format_evidence(conn, query, hits)
     finally:
         conn.close()
@@ -221,6 +248,7 @@ def _hit_from_row(
     row: sqlite3.Row,
     tokens: list[str],
     today: date,
+    bodies: dict[str, str],
     *,
     fts_rank: object = None,
     extra_score: float = 0.0,
@@ -234,30 +262,40 @@ def _hit_from_row(
     extra, lex_reasons = _lexical_bonus(row, tokens)
     score += extra
     reasons.extend(lex_reasons)
-    if any(tok in {"decide", "decision", "decisions", "decided"} for tok in tokens):
-        if row["type"] == "decision":
-            score += 4.0
-            reasons.append("decision-intent")
-    if any(tok in {"contradiction", "unresolved", "conflict"} for tok in tokens):
-        if row["type"] == "contradiction":
-            score += 3.0
-            reasons.append("contradiction-intent")
-    score *= schema.TYPE_WEIGHT.get(row["type"], 0.8)
+    kind = row["type"]
+    if kind == "decision" and not DECIDE_TOKENS.isdisjoint(tokens):
+        score += 4.0
+        reasons.append("decision-intent")
+    if kind == "contradiction" and not CONFLICT_TOKENS.isdisjoint(tokens):
+        score += 3.0
+        reasons.append("contradiction-intent")
+    score *= schema.TYPE_WEIGHT.get(kind, 0.8)
     recency, recency_reason = _recency_bonus(row["updated"], today)
     score += recency
     if recency_reason:
         reasons.append(recency_reason)
+    object_id = row["id"]
+    bodies[object_id] = row["body"] or ""
     return Hit(
-        id=row["id"],
-        type=row["type"],
-        title=row["title"] or row["id"],
+        id=object_id,
+        type=kind,
+        title=row["title"] or object_id,
         path=row["path"],
         slug=row["slug"],
-        snippet=_snippet(row["body"] or "", tokens),
+        snippet="",
         score=score,
         updated=row["updated"] or "",
         reasons=tuple(reasons),
     )
+
+
+def _fetch_objects(conn: sqlite3.Connection, object_ids: list[str]) -> dict[str, sqlite3.Row]:
+    """One IN query instead of one query per id. Order of the result is by rowid."""
+    if not object_ids:
+        return {}
+    q = ",".join("?" * len(object_ids))
+    rows = conn.execute(f"{OBJECT_SELECT} WHERE id IN ({q}) ORDER BY rowid", object_ids).fetchall()
+    return {row["id"]: row for row in rows}
 
 
 def _expand_claim_links(
@@ -265,6 +303,7 @@ def _expand_claim_links(
     ranked: dict[str, Hit],
     tokens: list[str],
     today: date,
+    bodies: dict[str, str],
 ) -> None:
     if not ranked:
         return
@@ -282,22 +321,26 @@ def _expand_claim_links(
         """,
         ids + ids + ids + ids,
     ).fetchall()
+    wanted: list[str] = []
     for row in rows:
         object_id = row["id"]
-        if not object_id or object_id in ranked:
+        if not object_id:
             continue
-        obj = conn.execute(
-            """
-            SELECT id, type, title, path, slug, body, updated
-            FROM objects WHERE id = ?
-            """,
-            (object_id,),
-        ).fetchone()
-        if not obj:
-            continue
-        ranked[object_id] = _hit_from_row(
-            obj, tokens, today, extra_score=3.5, extra_reasons=("claim-link",)
-        )
+        hit = ranked.get(object_id)
+        if hit is None:
+            wanted.append(object_id)
+        elif "claim-link" not in hit.reasons:
+            # Found by FTS and cited by a ranked claim. Same evidence as an
+            # object reached only through the claim, so it earns the same bonus.
+            hit.score += 3.5 * schema.TYPE_WEIGHT.get(hit.type, 0.8)
+            hit.reasons = hit.reasons + ("claim-link",)
+    objects = _fetch_objects(conn, wanted)
+    for object_id in wanted:
+        obj = objects.get(object_id)
+        if obj is not None:
+            ranked[object_id] = _hit_from_row(
+                obj, tokens, today, bodies, extra_score=3.5, extra_reasons=("claim-link",)
+            )
 
 
 def _expand_neighbors(
@@ -305,6 +348,7 @@ def _expand_neighbors(
     ranked: dict[str, Hit],
     tokens: list[str],
     today: date,
+    bodies: dict[str, str],
 ) -> None:
     if not ranked:
         return
@@ -319,24 +363,18 @@ def _expand_neighbors(
         """,
         ids + ids,
     ).fetchall()
+    # UNION output is sorted; keep that order so the 12-neighbor cap picks the same rows as before.
+    wanted = [row["id"] for row in rows if row["id"] and row["id"] not in ranked]
+    objects = _fetch_objects(conn, wanted)
     added = 0
-    for row in rows:
-        object_id = row["id"]
-        if not object_id or object_id in ranked:
+    for object_id in wanted:
+        obj = objects.get(object_id)
+        if obj is None:
             continue
-        obj = conn.execute(
-            """
-            SELECT id, type, title, path, slug, body, updated
-            FROM objects WHERE id = ?
-            """,
-            (object_id,),
-        ).fetchone()
-        if not obj:
-            continue
-        if obj["type"] in {"meta"} and obj["slug"] in {"index", "log", "Home", "wiki"}:
+        if obj["type"] == "meta" and obj["slug"] in SKIP_NEIGHBOR_SLUGS:
             continue
         ranked[object_id] = _hit_from_row(
-            obj, tokens, today, extra_score=1.5, extra_reasons=("graph-expand",)
+            obj, tokens, today, bodies, extra_score=1.5, extra_reasons=("graph-expand",)
         )
         added += 1
         if added >= 12:
@@ -397,24 +435,17 @@ def _boost_graph(conn: sqlite3.Connection, ranked: dict[str, Hit]) -> None:
             neighbors[dst].add(src)
     top = sorted(ranked.values(), key=lambda h: h.score, reverse=True)[:5]
     top_ids = {h.id for h in top}
-    for object_id, hit in list(ranked.items()):
+    for object_id, hit in ranked.items():
+        if object_id in top_ids:
+            continue
         overlap = neighbors.get(object_id, set()) & top_ids
-        if overlap and object_id not in top_ids:
-            ranked[object_id] = Hit(
-                id=hit.id,
-                type=hit.type,
-                title=hit.title,
-                path=hit.path,
-                slug=hit.slug,
-                snippet=hit.snippet,
-                score=hit.score + 1.4 * len(overlap),
-                updated=hit.updated,
-                reasons=hit.reasons + ("graph",),
-            )
+        if overlap:
+            hit.score += 1.4 * len(overlap)
+            hit.reasons = hit.reasons + ("graph",)
 
 
 def _substring_fallback(
-    conn: sqlite3.Connection, tokens: list[str], today: date
+    conn: sqlite3.Connection, tokens: list[str], today: date, bodies: dict[str, str]
 ) -> dict[str, Hit]:
     if not tokens:
         return {}
@@ -424,23 +455,18 @@ def _substring_fallback(
         like = f"%{tok}%"
         clauses.append("(lower(title) LIKE lower(?) OR lower(id) LIKE lower(?) OR lower(body) LIKE lower(?))")
         params.extend([like, like, like])
-    sql = f"""
-        SELECT id, type, title, path, slug, body, updated
-        FROM objects
-        WHERE {' OR '.join(clauses)}
-        LIMIT 30
-    """
+    sql = f"{OBJECT_SELECT} WHERE {' OR '.join(clauses)} LIMIT 30"
     rows = conn.execute(sql, params).fetchall()
     ranked: dict[str, Hit] = {}
     for row in rows:
         ranked[row["id"]] = _hit_from_row(
-            row, tokens, today, extra_score=1.0, extra_reasons=("fallback",)
+            row, tokens, today, bodies, extra_score=1.0, extra_reasons=("fallback",)
         )
     return ranked
 
 
 def _snippet(body: str, tokens: list[str], width: int = 180) -> str:
-    compact = re.sub(r"\s+", " ", body).strip()
+    compact = WS.sub(" ", body).strip()
     if not compact:
         return ""
     lower = compact.lower()
@@ -464,6 +490,6 @@ def _parse_date(value: str) -> date | None:
     if not value:
         return None
     try:
-        return datetime.strptime(value[:10], "%Y-%m-%d").date()
+        return date.fromisoformat(value[:10])
     except ValueError:
         return None

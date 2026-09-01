@@ -7,8 +7,10 @@ import argparse
 import sys
 from pathlib import Path
 
-from . import claims, contract, eval_suite, health, ids, index, ingest_check, retrieve, validate
 from .paths import ROOT, db_path
+
+# Subcommand modules import lazily inside their branch. `ask` should not pay
+# for the eval suite, the contract checker, or the lint bridge.
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -58,33 +60,47 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "trace":
         return cmd_trace(args.id)
     if args.cmd == "contradictions":
+        from . import claims
+
         _ensure_index()
         sys.stdout.write(claims.contradictions_report())
         return 0
     if args.cmd == "stale":
+        from . import claims
+
         _ensure_index()
         sys.stdout.write(claims.stale_report())
         return 0
     if args.cmd == "orphans":
+        from . import validate
+
         sys.stdout.write(validate.orphans())
         return 0
     if args.cmd == "validate":
+        from . import validate
+
         _ensure_index()
         code, out = validate.validate()
         sys.stdout.write(out)
         return code
     if args.cmd == "health":
+        from . import health
+
         _ensure_index()
         code, out = health.report()
         sys.stdout.write(out)
         return code
     if args.cmd == "ingest-check":
+        from . import ingest_check
+
         code, out = ingest_check.check(args.slug)
         sys.stdout.write(out)
         return code
     if args.cmd == "contract-check":
         return cmd_contract(args.path, args.results)
     if args.cmd == "eval":
+        from . import eval_suite
+
         code, out, _ = eval_suite.run_eval()
         sys.stdout.write(out)
         return code
@@ -93,6 +109,8 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def cmd_rebuild(write_ids: bool = False) -> int:
+    from . import ids, index
+
     if write_ids:
         written = ids.write_missing_ids()
         print(f"wrote {len(written)} ids")
@@ -107,6 +125,8 @@ def cmd_rebuild(write_ids: bool = False) -> int:
 
 
 def cmd_search(query: str, k: int) -> int:
+    from . import retrieve
+
     _ensure_index()
     hits = retrieve.search(query, limit=k)
     if not hits:
@@ -121,12 +141,16 @@ def cmd_search(query: str, k: int) -> int:
 
 
 def cmd_ask(query: str, k: int) -> int:
+    from . import retrieve
+
     _ensure_index()
     sys.stdout.write(retrieve.evidence_set(query, limit=k))
     return 0
 
 
 def cmd_trace(object_id: str) -> int:
+    from . import claims
+
     _ensure_index()
     out = claims.trace(object_id)
     sys.stdout.write(out)
@@ -134,6 +158,8 @@ def cmd_trace(object_id: str) -> int:
 
 
 def cmd_contract(path: str, results_path: str = "") -> int:
+    from . import contract
+
     results = _load_results(results_path) if results_path else None
     if path:
         status, errors = contract.evaluate_path(Path(path), results)
@@ -161,6 +187,8 @@ def _load_results(path: str) -> dict[str, bool]:
 
 def _ensure_index() -> None:
     if not db_path().exists():
+        from . import index
+
         index.rebuild()
 
 

@@ -12,6 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from secondbrain import frontmatter  # noqa: E402
+from secondbrain.paths import rel_posix  # noqa: E402
 
 CLAIM_FIELDS = [
     "claim_id",
@@ -122,8 +123,19 @@ def strip_code(text: str) -> str:
     return INLINE_CODE_RE.sub(" ", text)
 
 
+# Every INJECTION_RE alternative contains one of these once whitespace is collapsed.
+# Checking them first skips the seven-way regex on the ~95% of pages that cannot match.
+INJECTION_TRIGGERS = (
+    "ignore ", "you are now", "new instructions", "disclose ", "from now on", "do not follow",
+)
+
+
 def injection_hits(text: str) -> list[str]:
-    return [match.group(0) for match in INJECTION_RE.finditer(strip_code(text))]
+    stripped = strip_code(text)
+    flat = " ".join(stripped.lower().split())
+    if not any(trigger in flat for trigger in INJECTION_TRIGGERS):
+        return []
+    return [match.group(0) for match in INJECTION_RE.finditer(stripped)]
 
 
 def extract_raw_path(text: str) -> str:
@@ -167,7 +179,7 @@ def parse_source_claims(path: Path, root: Path) -> list[Claim]:
     section_match = CLAIMS_SECTION_RE.search(body)
     if not section_match:
         return []
-    rel_source = path.relative_to(root).as_posix()
+    rel_source = rel_posix(path, root)
     created = meta.get("created")
     updated = meta.get("updated") or created
     raw = extract_raw_path(body)
@@ -201,7 +213,7 @@ def parse_curated_claims(path: Path, root: Path) -> list[Claim]:
     _, body = parse_frontmatter(text)
     claims: list[Claim] = []
     parts = re.split(r"^## ", body, flags=re.M)
-    rel = path.relative_to(root).as_posix()
+    rel = rel_posix(path, root)
     for part in parts[1:]:
         lines = part.strip().splitlines()
         if not lines:
@@ -297,24 +309,25 @@ def validate_claim(claim: Claim) -> list[str]:
     return errors
 
 
-def validate_memory_v1(path: Path, text: str) -> list[str]:
+def validate_memory_v1(path: Path | str, text: str) -> list[str]:
     meta, body = parse_frontmatter(text)
     if meta.get("schema") != "memory-v1":
         return []
+    rel = path if isinstance(path, str) else path.as_posix()
     errors: list[str] = []
     for key in MEMORY_V1_REQUIRED:
         if not meta.get(key):
-            errors.append(f"{path.as_posix()} missing {key}")
+            errors.append(f"{rel} missing {key}")
     source = meta.get("source")
     derived = meta.get("derived_from")
     if not source and not derived:
-        errors.append(f"{path.as_posix()} missing source or derived_from")
+        errors.append(f"{rel} missing source or derived_from")
     if meta.get("confidence") and meta.get("confidence") not in CONFIDENCES:
-        errors.append(f"{path.as_posix()} bad confidence {meta.get('confidence')!r}")
+        errors.append(f"{rel} bad confidence {meta.get('confidence')!r}")
     headings = set(re.findall(r"^## (FACT|INFERENCE|OPINION)\s*$", body, re.M))
     if meta.get("type") == "concept" and not headings:
         errors.append(
-            f"{path.as_posix()} memory-v1 concept missing ## FACT/INFERENCE/OPINION"
+            f"{rel} memory-v1 concept missing ## FACT/INFERENCE/OPINION"
         )
     return errors
 

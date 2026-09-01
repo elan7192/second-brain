@@ -2,35 +2,69 @@
 
 from __future__ import annotations
 
+import os
 import re
 import sqlite3
-from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
 from . import frontmatter, ids, schema
 from .frontmatter import WIKILINK
-from .paths import CLAIMS_PATH, CONTRADICTIONS_PATH, ROOT, db_path
-from .yamlutil import loads
+from .paths import CLAIMS_PATH, CONTRADICTIONS_PATH, ROOT, db_path, rel_posix
 
 DECISION_HEAD = re.compile(r"^## (D\d+)\.\s+(.+)$", re.MULTILINE)
 CONTRA_HEAD = re.compile(r"^## (C\d+)\.\s+(.+)$", re.MULTILINE)
 
+# Link targets resolve against slug, full id, or any of these prefixes on the id.
+ID_PREFIXES = (
+    "concept:", "source:", "person:", "meta:", "memory:", "decision:", "contradiction:", "claim:",
+)
 
-@dataclass
+OBJECT_COLUMNS = (
+    "id", "type", "title", "path", "slug", "status", "created", "updated",
+    "valid_from", "valid_until", "body",
+)
+INSERT_OBJECT = (
+    f"INSERT INTO objects ({', '.join(OBJECT_COLUMNS)}) "
+    f"VALUES ({', '.join('?' * len(OBJECT_COLUMNS))})"
+)
+
+
 class ObjectRow:
-    id: str
-    type: str
-    title: str
-    path: str
-    slug: str
-    status: str
-    created: str
-    updated: str
-    valid_from: str
-    valid_until: str
-    body: str
-    links: tuple[str, ...]
+    """Plain slotted row. dataclasses would drag in inspect at import time."""
+
+    __slots__ = OBJECT_COLUMNS + ("links",)
+
+    def __init__(
+        self,
+        id: str,
+        type: str,
+        title: str,
+        path: str,
+        slug: str,
+        status: str,
+        created: str,
+        updated: str,
+        valid_from: str,
+        valid_until: str,
+        body: str,
+        links: tuple[str, ...],
+    ) -> None:
+        self.id = id
+        self.type = type
+        self.title = title
+        self.path = path
+        self.slug = slug
+        self.status = status
+        self.created = created
+        self.updated = updated
+        self.valid_from = valid_from
+        self.valid_until = valid_until
+        self.body = body
+        self.links = links
+
+    def values(self) -> tuple[str, ...]:
+        return tuple(getattr(self, name) for name in OBJECT_COLUMNS)
 
 
 def connect(path: Path | None = None) -> sqlite3.Connection:
@@ -42,52 +76,28 @@ def connect(path: Path | None = None) -> sqlite3.Connection:
 
 
 def rebuild(root: Path | None = None, db: Path | None = None) -> dict[str, int]:
+    """Build into a sibling temp file, then atomically replace the index.
+
+    Readers never see a half-built database. The index is disposable, so
+    journaling and fsync are off while building.
+    """
     root = root or ROOT
-    conn = connect(db)
-    conn.executescript(
-        """
-        DROP TABLE IF EXISTS objects_fts;
-        DROP TABLE IF EXISTS links;
-        DROP TABLE IF EXISTS claim_sources;
-        DROP TABLE IF EXISTS claim_concepts;
-        DROP TABLE IF EXISTS claims;
-        DROP TABLE IF EXISTS contradictions;
-        DROP TABLE IF EXISTS objects;
-        """
-    )
+    target = db or db_path()
+    tmp = target.with_name(target.name + ".tmp")
+    if tmp.exists():
+        tmp.unlink()
+    conn = connect(tmp)
+    conn.executescript("PRAGMA journal_mode = OFF; PRAGMA synchronous = OFF;")
     _create(conn)
-    objects = list(_iter_objects(root))
-    for obj in objects:
-        conn.execute(
-            """
-            INSERT INTO objects (
-              id, type, title, path, slug, status, created, updated,
-              valid_from, valid_until, body
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
-            (
-                obj.id,
-                obj.type,
-                obj.title,
-                obj.path,
-                obj.slug,
-                obj.status,
-                obj.created,
-                obj.updated,
-                obj.valid_from,
-                obj.valid_until,
-                obj.body,
-            ),
-        )
-        conn.execute(
-            "INSERT INTO objects_fts (id, title, body, type) VALUES (?, ?, ?, ?)",
-            (obj.id, obj.title, obj.body, obj.type),
-        )
-        for dest in obj.links:
-            conn.execute(
-                "INSERT INTO links (src_id, dst_slug) VALUES (?, ?)",
-                (obj.id, dest),
-            )
+    objects = _iter_objects(root)
+    conn.executemany(INSERT_OBJECT, (obj.values() for obj in objects))
+    conn.executemany(
+        "INSERT INTO links (src_id, dst_slug) VALUES (?, ?)",
+        ((obj.id, dest) for obj in objects for dest in obj.links),
+    )
+    # Page links resolve here, before claims land. Claim edges keep dst_id NULL
+    # and reach retrieval through claim_sources / claim_concepts instead.
+    # Resolving them too changed eval recall (95% to 91%), so the order stays.
     _resolve_link_ids(conn)
     claims = _load_yaml_list(root / "wiki" / "data" / "claims.yaml", "claims")
     if not claims and (root / CLAIMS_PATH.relative_to(ROOT)).exists():
@@ -99,6 +109,18 @@ def rebuild(root: Path | None = None, db: Path | None = None) -> dict[str, int]:
     )
     for item in contradictions:
         _insert_contradiction(conn, item)
+    conn.execute("INSERT INTO objects_fts (objects_fts) VALUES ('rebuild')")
+    conn.executescript(
+        """
+        CREATE INDEX objects_slug ON objects (slug);
+        CREATE INDEX links_src ON links (src_id);
+        CREATE INDEX links_dst ON links (dst_id);
+        CREATE INDEX claim_sources_claim ON claim_sources (claim_id);
+        CREATE INDEX claim_sources_source ON claim_sources (source_id);
+        CREATE INDEX claim_concepts_claim ON claim_concepts (claim_id);
+        CREATE INDEX claim_concepts_concept ON claim_concepts (concept_id);
+        """
+    )
     conn.commit()
     stats = {
         "objects": conn.execute("SELECT COUNT(*) FROM objects").fetchone()[0],
@@ -107,14 +129,16 @@ def rebuild(root: Path | None = None, db: Path | None = None) -> dict[str, int]:
         "links": conn.execute("SELECT COUNT(*) FROM links").fetchone()[0],
     }
     conn.close()
+    os.replace(tmp, target)
     return stats
 
 
 def _create(conn: sqlite3.Connection) -> None:
+    # objects_fts is an external-content table: it indexes objects in place
+    # instead of storing a second copy of every body.
     conn.executescript(
         """
-        PRAGMA foreign_keys = ON;
-        CREATE TABLE IF NOT EXISTS objects (
+        CREATE TABLE objects (
           id TEXT PRIMARY KEY,
           type TEXT NOT NULL,
           title TEXT,
@@ -127,19 +151,21 @@ def _create(conn: sqlite3.Connection) -> None:
           valid_until TEXT,
           body TEXT NOT NULL
         );
-        CREATE VIRTUAL TABLE IF NOT EXISTS objects_fts USING fts5(
+        CREATE VIRTUAL TABLE objects_fts USING fts5(
           id,
           title,
           body,
           type,
+          content='objects',
+          content_rowid='rowid',
           tokenize='porter unicode61'
         );
-        CREATE TABLE IF NOT EXISTS links (
+        CREATE TABLE links (
           src_id TEXT NOT NULL,
           dst_slug TEXT NOT NULL,
           dst_id TEXT
         );
-        CREATE TABLE IF NOT EXISTS claims (
+        CREATE TABLE claims (
           id TEXT PRIMARY KEY,
           subject TEXT,
           predicate TEXT,
@@ -151,15 +177,15 @@ def _create(conn: sqlite3.Connection) -> None:
           observed_at TEXT,
           superseded_by TEXT
         );
-        CREATE TABLE IF NOT EXISTS claim_sources (
+        CREATE TABLE claim_sources (
           claim_id TEXT NOT NULL,
           source_id TEXT NOT NULL
         );
-        CREATE TABLE IF NOT EXISTS claim_concepts (
+        CREATE TABLE claim_concepts (
           claim_id TEXT NOT NULL,
           concept_id TEXT NOT NULL
         );
-        CREATE TABLE IF NOT EXISTS contradictions (
+        CREATE TABLE contradictions (
           id TEXT PRIMARY KEY,
           claim_a TEXT,
           claim_b TEXT,
@@ -180,7 +206,7 @@ def _iter_objects(root: Path) -> list[ObjectRow]:
     for path in ids.iter_knowledge_paths(root):
         text = path.read_text(encoding="utf-8")
         meta, body = frontmatter.split(text)
-        rel = path.relative_to(root).as_posix()
+        rel = rel_posix(path, root)
         kind = schema.kind_for(path, str(meta.get("type", "")), root)
         object_id = str(meta.get("id") or ids.id_for(path, root))
         title = frontmatter.title_of(meta, body, path.stem)
@@ -312,15 +338,6 @@ def _insert_claim(conn: sqlite3.Connection, claim: dict) -> None:
             body,
         ),
     )
-    conn.execute(
-        "INSERT INTO objects_fts (id, title, body, type) VALUES (?, ?, ?, ?)",
-        (
-            claim_id,
-            f"{subject} {predicate} {obj}".strip(),
-            body,
-            "claim",
-        ),
-    )
     for source_id in _as_id_list(claim.get("sources")):
         conn.execute(
             "INSERT INTO claim_sources (claim_id, source_id) VALUES (?, ?)",
@@ -383,35 +400,29 @@ def _insert_contradiction(conn: sqlite3.Connection, item: dict) -> None:
                 str(item.get("reason") or ""),
             ),
         )
-        conn.execute(
-            "INSERT INTO objects_fts (id, title, body, type) VALUES (?, ?, ?, ?)",
-            (
-                contra_id,
-                str(item.get("reason") or contra_id),
-                str(item.get("reason") or ""),
-                "contradiction",
-            ),
-        )
 
 
 def _resolve_link_ids(conn: sqlite3.Connection) -> None:
-    conn.execute(
-        """
-        UPDATE links SET dst_id = (
-          SELECT id FROM objects
-          WHERE objects.slug = links.dst_slug
-             OR objects.id = links.dst_slug
-             OR objects.id = 'concept:' || links.dst_slug
-             OR objects.id = 'source:' || links.dst_slug
-             OR objects.id = 'person:' || links.dst_slug
-             OR objects.id = 'meta:' || links.dst_slug
-             OR objects.id = 'memory:' || links.dst_slug
-             OR objects.id = 'decision:' || links.dst_slug
-             OR objects.id = 'contradiction:' || links.dst_slug
-             OR objects.id = 'claim:' || links.dst_slug
-          LIMIT 1
-        )
-        """
+    """Map every link target to an object id in one pass.
+
+    A target matches an object by slug, by full id, or by id minus a known
+    prefix. The first object in insertion order wins, same as the old
+    correlated subquery, but this is O(objects + links) instead of a scan
+    of every object for every link.
+    """
+    first: dict[str, str] = {}
+    for row in conn.execute("SELECT id, slug FROM objects ORDER BY rowid"):
+        object_id, slug = row["id"], row["slug"]
+        keys = [slug, object_id]
+        for prefix in ID_PREFIXES:
+            if object_id.startswith(prefix):
+                keys.append(object_id[len(prefix):])
+        for key in keys:
+            first.setdefault(key, object_id)
+    targets = [row["dst_slug"] for row in conn.execute("SELECT DISTINCT dst_slug FROM links")]
+    conn.executemany(
+        "UPDATE links SET dst_id = ? WHERE dst_slug = ?",
+        ((first[slug], slug) for slug in targets if slug in first),
     )
 
 

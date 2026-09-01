@@ -14,6 +14,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from secondbrain import frontmatter  # noqa: E402
 from secondbrain.frontmatter import WIKILINK as LINK  # noqa: E402
+from secondbrain.paths import rel_posix  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = Path(__file__).resolve().parent / "ontology_schema.json"
@@ -108,7 +109,7 @@ def parse_index_lines(root: Path) -> dict[str, str]:
 def infer_type(path: Path, root: Path, front_type: str) -> str:
     if front_type in TYPE_MAP:
         return TYPE_MAP[front_type]
-    rel = path.relative_to(root).as_posix()
+    rel = rel_posix(path, root)
     if rel.startswith("wiki/sources/"):
         return "Source"
     if rel.startswith("wiki/people/"):
@@ -181,7 +182,7 @@ def compile_ontology(root: Path | None = None) -> dict:
         text = path.read_text(encoding="utf-8")
         meta, body = parse_frontmatter(text)
         object_type = infer_type(path, root, meta.get("type", ""))
-        rel = path.relative_to(root).as_posix()
+        rel = rel_posix(path, root)
         title = first_heading(body, slug)
         targets = [match.group(1).strip() for match in LINK.finditer(body)]
         outgoing[slug] = targets
