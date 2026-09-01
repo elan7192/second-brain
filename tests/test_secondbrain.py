@@ -114,8 +114,9 @@ class EngineTests(unittest.TestCase):
         self.assertFalse(index.is_stale(self.root, self.db))
         self.assertFalse(index.ensure(self.root, self.db))
         page = self.root / "wiki" / "memory-ablation.md"
-        future = self.db.stat().st_mtime_ns + 1_000_000_000
-        os.utime(page, ns=(future, future))
+        # Age the database below the page instead of pushing the page into the future.
+        older = page.stat().st_mtime_ns - 1_000_000_000
+        os.utime(self.db, ns=(older, older))
         self.assertTrue(index.is_stale(self.root, self.db))
         self.assertTrue(index.ensure(self.root, self.db))
         self.assertFalse(index.is_stale(self.root, self.db))
