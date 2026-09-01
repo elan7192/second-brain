@@ -16,10 +16,12 @@ from ontology_lib import (  # noqa: E402
     check_ontology,
     compile_ontology,
     get_object,
+    integrity_errors,
     link_type_for,
     links_for,
     search_objects,
     subgraph,
+    verify,
     write_ontology,
 )
 
@@ -141,6 +143,66 @@ class OntologyCompileTests(unittest.TestCase):
         errors = check_ontology(self.root)
         self.assertTrue(any("CSV stale" in err for err in errors))
 
+    def test_degrees_count_emitted_links_only(self) -> None:
+        # alpha links to src-palantir and karp (both objects) and nothing else.
+        alpha = get_object(self.bundle, "alpha")
+        outbound = [link for link in self.bundle["links"] if link["from"] == "alpha"]
+        self.assertEqual(alpha["outbound"], len(outbound))
+        total_out = sum(obj["outbound"] for obj in self.bundle["objects"])
+        total_in = sum(obj["inbound"] for obj in self.bundle["objects"])
+        self.assertEqual(total_out, len(self.bundle["links"]))
+        self.assertEqual(total_in, len(self.bundle["links"]))
+
+    def test_dangling_target_does_not_inflate_outbound(self) -> None:
+        (self.root / "wiki" / "alpha.md").write_text(
+            "---\ntype: concept\n---\n# Alpha\n\nSee [[src-palantir]] and [[nowhere]].\n",
+            encoding="utf-8",
+        )
+        bundle = compile_ontology(self.root)
+        self.assertEqual(get_object(bundle, "alpha")["outbound"], 1)
+        self.assertEqual(integrity_errors(bundle), [])
+
+    def test_integrity_errors_catch_corruption(self) -> None:
+        self.assertEqual(integrity_errors(self.bundle), [])
+        broken = json.loads(json.dumps(self.bundle))
+        broken["links"].append({"from": "alpha", "linkType": "relatedTo", "to": "ghost"})
+        broken["objects"][0]["inbound"] += 1
+        broken["links"].append({"from": "src-palantir", "linkType": "extractedFrom", "to": "karp"})
+        errors = integrity_errors(broken)
+        self.assertTrue(any("missing endpoint" in err for err in errors))
+        self.assertTrue(any("inbound/outbound disagree" in err for err in errors))
+        self.assertTrue(any("extractedFrom links Source -> Person" in err for err in errors))
+
+    def test_verify_sqlite_passes_and_detects_duplicates(self) -> None:
+        errors, counts = verify(self.bundle, db_path=self.root / "missing.sqlite")
+        self.assertEqual(errors, [])
+        self.assertEqual(counts["objects"], len(self.bundle["objects"]))
+        self.assertEqual(counts["dangling_dst"], 0)
+        self.assertEqual(counts["index_compared"], 0)
+        broken = json.loads(json.dumps(self.bundle))
+        broken["objects"].append(dict(broken["objects"][0]))
+        errors, _ = verify(broken, db_path=self.root / "missing.sqlite")
+        self.assertTrue(any("duplicate primaryKey" in err for err in errors))
+
+    def test_rebuild_keeps_built_at_when_unchanged(self) -> None:
+        write_ontology(self.bundle, self.root)
+        json_path = self.root / "output" / "ontology.json"
+        first = json_path.read_bytes()
+        later = dict(self.bundle, builtAt="2999-01-01T00:00:00Z")
+        write_ontology(later, self.root)
+        self.assertEqual(json_path.read_bytes(), first)
+
+    def test_query_helpers_use_adjacency(self) -> None:
+        links = links_for(self.bundle, "alpha")
+        self.assertEqual({l["to"] for l in links["outbound"]}, {"src-palantir", "karp"})
+        self.assertEqual(
+            {l["from"] for l in links["inbound"]},
+            {"index", "src-palantir", "karp", "C1", "D1", "contradictions", "decisions"},
+        )
+        two = subgraph(self.bundle, "D1", hops=2)
+        self.assertIn("src-palantir", {obj["primaryKey"] for obj in two["objects"]})
+        self.assertEqual(links_for(self.bundle, "nope"), {"outbound": [], "inbound": []})
+
 
 class VaultIntegrationTests(unittest.TestCase):
     @classmethod
@@ -166,6 +228,20 @@ class VaultIntegrationTests(unittest.TestCase):
         schema = json.loads((ROOT / "tools" / "ontology_schema.json").read_text(encoding="utf-8"))
         self.assertFalse(schema["hostedAip"])
         self.assertEqual(schema["sourceOfTruth"], "wiki markdown")
+
+    def test_vault_integrity_and_index_agreement(self) -> None:
+        self.assertEqual(integrity_errors(self.bundle), [])
+        db = ROOT / ".cache" / "secondbrain.sqlite"
+        if not db.is_file():
+            sys.path.insert(0, str(ROOT / "tools"))
+            from secondbrain import index as sb_index
+
+            sb_index.rebuild()
+        errors, counts = verify(self.bundle, db_path=db)
+        self.assertEqual(errors, [])
+        self.assertGreater(counts["index_compared"], 1000)
+        self.assertEqual(counts["links_only_in_index"], 0)
+        self.assertEqual(counts["links_only_in_ontology"], 0)
 
 
 if __name__ == "__main__":

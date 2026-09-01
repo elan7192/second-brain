@@ -18,6 +18,7 @@ from ontology_lib import (  # noqa: E402
     load_bundle,
     search_objects,
     subgraph,
+    verify,
 )
 
 
@@ -46,6 +47,11 @@ def main() -> int:
     sub_p = sub.add_parser("subgraph", help="N-hop subgraph for a seed object")
     sub_p.add_argument("key")
     sub_p.add_argument("--hops", type=int, default=1)
+
+    sub.add_parser(
+        "verify",
+        help="Load the bundle into SQLite, check integrity, compare with the FTS index. Exit 1 on any error.",
+    )
 
     args = parser.parse_args()
     try:
@@ -98,6 +104,10 @@ def main() -> int:
     if args.cmd == "subgraph":
         dump(subgraph(bundle, args.key, args.hops))
         return 0
+    if args.cmd == "verify":
+        errors, counts = verify(bundle)
+        dump({"counts": counts, "errors": errors, "status": "FAIL" if errors else "PASS"})
+        return 1 if errors else 0
     return 1
 
 

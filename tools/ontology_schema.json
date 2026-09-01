@@ -31,8 +31,8 @@
     "Contradiction": { "primaryKey": "C#", "source": "wiki/contradictions.md headings" }
   },
   "linkTypes": {
-    "cites": { "from": ["Concept", "Project", "Meta", "Note"], "to": ["Source"] },
-    "aboutPerson": { "from": ["Concept", "Source", "Project", "Meta"], "to": ["Person"] },
+    "cites": { "from": ["WikiNote"], "to": ["Source"] },
+    "aboutPerson": { "from": ["WikiNote"], "to": ["Person"] },
     "relatedTo": { "from": ["WikiNote"], "to": ["WikiNote"] },
     "extractedFrom": { "from": ["Decision", "Contradiction"], "to": ["Meta"] }
   },

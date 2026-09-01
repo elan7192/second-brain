@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-01T18:43:15Z",
+  "builtAt": "2026-09-01T19:11:16Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -52,10 +52,7 @@
   "linkTypes": {
     "cites": {
       "from": [
-        "Concept",
-        "Project",
-        "Meta",
-        "Note"
+        "WikiNote"
       ],
       "to": [
         "Source"
@@ -63,10 +60,7 @@
     },
     "aboutPerson": {
       "from": [
-        "Concept",
-        "Source",
-        "Project",
-        "Meta"
+        "WikiNote"
       ],
       "to": [
         "Person"
@@ -957,7 +951,7 @@
       "tags": "map",
       "island": "hunt-ship",
       "inbound": 4,
-      "outbound": 5,
+      "outbound": 2,
       "unverified": false,
       "oneLiner": "Door to the growth operator vault. Teal in the Obsidian graph. Notes live in `growth/`."
     },
@@ -999,7 +993,7 @@
       "tags": "map",
       "island": "hunt-ship",
       "inbound": 3,
-      "outbound": 17,
+      "outbound": 16,
       "unverified": true,
       "oneLiner": "Operating map for the agent. Teal in the Obsidian graph."
     },
@@ -2105,7 +2099,7 @@
       "tags": "growth",
       "island": "hunt-ship",
       "inbound": 3,
-      "outbound": 28,
+      "outbound": 1,
       "unverified": true,
       "oneLiner": "Generated from `growth/`. Not from chat memory. Target: **next AI UGC creator (unnamed)**."
     },
@@ -2119,7 +2113,7 @@
       "tags": "wiki",
       "island": "concepts",
       "inbound": 20,
-      "outbound": 23,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "DeRonin GrowthOS. Notes in `growth/`. DEMO partners"
     },
@@ -2217,7 +2211,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 24,
-      "outbound": 28,
+      "outbound": 27,
       "unverified": false,
       "oneLiner": "This vault is a compiler. See [[llm-wiki]]. Obsidian is the IDE. See [[Home]] and [[graph]]. Query compiled pages through [[retrieval]] (D9). Human/Obsidian door is the short [[index]] with opt-in [[i"
     },
@@ -2623,7 +2617,7 @@
       "tags": "",
       "island": "hunt-ship",
       "inbound": 1,
-      "outbound": 5,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Built [[growth-operator]] from [[src-deronin-growthos-vault]]. Operator notes are in `growth/` with DEMO partners. Linked from [[GrowthOS]] and [[growth-core]]."
     },
@@ -3827,7 +3821,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 4,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Line-level ablation on a 104-line memory file. 71 lines never changed an answer. Facts survived. Adjectives died. Do not let a model audit memory it wrote."
     },
@@ -4723,7 +4717,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 10,
-      "outbound": 5,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Home as door. File first. Scouts write, chat gets a digest. Human yes. Lock decisions. Context graph: relevant subgraph, temporal facts."
     },
@@ -4765,7 +4759,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 8,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": true,
       "oneLiner": "Popular how-to: raw + wiki + schema, ingest, ask. Flat markdown, one topic per file."
     },
@@ -4919,7 +4913,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 10,
-      "outbound": 3,
+      "outbound": 2,
       "unverified": true,
       "oneLiner": "Obsidian vault of markdown notes as Grokbot operator memory. Seven layers named in the tweet:"
     },
@@ -5003,7 +4997,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 7,
-      "outbound": 3,
+      "outbound": 2,
       "unverified": true,
       "oneLiner": "From the article: 64-worker table, four isolation conditions, drift gate, consensus-as-infection."
     },
@@ -5045,7 +5039,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 8,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Sample 5, verify with LLM-as-a-Verifier, 79% to 88% on Terminal-Bench 2.1 with DeepSeek V4 Flash. Author-reported. Fine-grained scores and logprob expectation."
     },
@@ -5059,7 +5053,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 11,
-      "outbound": 7,
+      "outbound": 6,
       "unverified": true,
       "oneLiner": "Agent harnesses (Codex, Cowork) default to two-pass document processing over a data room: cheap OSS parse, then retrieval (grep or semantic), then a just-in-time VLM pass on the pages that matter. Def"
     },
@@ -5073,7 +5067,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 11,
-      "outbound": 7,
+      "outbound": 6,
       "unverified": true,
       "oneLiner": "A company needs a living Skills library. A GitHub folder known to 10% of the company is the named failure mode. The 10% figure is author-stated, unverified."
     },
@@ -5087,7 +5081,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 7,
-      "outbound": 2,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "Ten named anti-slop skills. unslop's public pitch: no em dashes, no extra examples, no unsolicited comparisons."
     },
@@ -5451,7 +5445,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 18,
-      "outbound": 9,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "`/ultra` runs a task N times in isolated git worktrees, then a same-model [[probabilistic-pivot-tournament]] picks a winner. Terminal-Bench, DeepSeek V4 Flash 0731, N=5, OpenCode run: 24% to 33% on 15"
     },
@@ -5507,7 +5501,7 @@
       "tags": "github",
       "island": "sources",
       "inbound": 14,
-      "outbound": 7,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Community GitHub skill library. README says not affiliated with Anthropic PBC. Apache-2.0."
     },
@@ -5521,7 +5515,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 12,
-      "outbound": 7,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Adding more agents is the default fix for weak review. The paper reports diminishing returns on repository-level tasks."
     },
@@ -5577,7 +5571,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 11,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "305k vs 47k tokens for the same task if knowledge is already compiled. Write answers back. `raw/` / `wiki/` / `output/` / schema. Maintenance is why human wikis die."
     },
@@ -5633,7 +5627,7 @@
       "tags": "note",
       "island": "sources",
       "inbound": 11,
-      "outbound": 6,
+      "outbound": 5,
       "unverified": true,
       "oneLiner": "Four retrieval pillars: hybrid BM25 + vector + cross-encoder rerank; GraphRAG over entity links; working / episodic / semantic memory; agentic tool-calling that splits a question, queries, and reflect"
     },
@@ -5647,7 +5641,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 5,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Five harnesses, one router. Shared object is an [[audited-task-contract]]. Route model and harness as separate choices. Move semantic state, never KV state. Planner / controller / executor / auditor."
     },
@@ -5675,7 +5669,7 @@
       "tags": "github",
       "island": "sources",
       "inbound": 9,
-      "outbound": 6,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "A skill packages a repeated workflow as an SOP. Named jobs: UI review, API check, database plan, docs, architecture review, handoff. A stable SOP is meant to stop retrying a known failure and burning "
     },
@@ -5745,7 +5739,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 14,
-      "outbound": 7,
+      "outbound": 6,
       "unverified": false,
       "oneLiner": "Leftover Codex quota dies at reset. Spend it with `/goal`, not a one-off prompt."
     },
@@ -5787,7 +5781,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 11,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
     },
