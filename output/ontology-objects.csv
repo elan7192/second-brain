@@ -62,7 +62,7 @@ GrowthOS,Map,GrowthOS,maps/GrowthOS.md,2026-08-25,2026-09-01,map,hunt-ship,4,2,f
 Home,Meta,Home,Home.md,2026-08-23,2026-09-01,wiki,meta,12,9,false,Door to the vault. Open this folder in Obsidian. Then open graph view. See [[graph]] for the concept islands.
 Hooks,Map,Hooks,maps/Hooks.md,2026-08-23,2026-08-29,map,hunt-ship,4,12,false,Trend to lock. From [[src-avid-obsidian-agent-team]].
 Jarvis,Map,Jarvis,maps/Jarvis.md,2026-08-23,2026-08-25,map,hunt-ship,3,16,true,Operating map for the agent. Teal in the Obsidian graph.
-MEMORY,Meta,Memory,MEMORY.md,2026-08-23,2026-08-29,wiki,meta,15,74,true,Durable facts only. A line stays if deleting it would change an answer.
+MEMORY,Meta,Memory,MEMORY.md,2026-08-23,2026-09-02,wiki,meta,15,75,true,Durable facts only. A line stays if deleting it would change an answer.
 TELOS,Map,TELOS,maps/TELOS.md,2026-08-23,2026-08-23,map,hunt-ship,2,5,false,Why this vault exists.
 Today,Meta,Today,wiki/Today.md,2026-08-23,2026-09-01,wiki,meta,5,6,false,2026-08-30
 adversarial-review,Concept,Adversarial review,wiki/adversarial-review.md,2026-08-24,2026-08-24,wiki,concepts,9,6,false,"Three agents. A writer, a reviewer, and a critic of the review. The artifact stays frozen until the review converges."
@@ -84,7 +84,7 @@ backlink-first,Concept,Backlink first,wiki/backlink-first.md,2026-08-27,2026-08-
 bdh,Concept,BDH,wiki/bdh.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,"Dragon Hatchling. Graph + Hebbian LLM. Authors say it matches GPT-2 scaling 10M–1B and gives local ""equations of reasoning."""
 bert-ler,Concept,BERT-LER,wiki/bert-ler.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,BERT on coded EHR timelines. 75M-patient pretrain.
 bot-voice,Concept,Bot voice,wiki/bot-voice.md,2026-08-25,2026-08-27,wiki,concepts,9,8,false,"Bot-to-bot voice is caveman. Facts, paths, SHAs. No filler. No empty acks."
-botdirectory-scan,Concept,Botdirectory scan,wiki/botdirectory-scan.md,2026-08-27,2026-08-27,wiki,concepts,12,6,false,Catalog scan of botdirectory.ai. Not a scout dump. Not a bot factory.
+botdirectory-scan,Concept,Botdirectory scan,wiki/botdirectory-scan.md,2026-08-27,2026-08-27,wiki,concepts,13,6,false,Catalog scan of botdirectory.ai. Not a scout dump. Not a bot factory.
 brain-ai-convergence,Concept,Brain-AI convergence,wiki/brain-ai-convergence.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,Perspective. No empirical table.
 builds,Ship,Builds,ship/builds.md,2026-08-23,2026-09-01,ship,hunt-ship,1,0,false,Staff-engineer output. This vault's first build is the compiled wiki itself.
 buying-signal,Concept,Buying signal,wiki/buying-signal.md,2026-08-27,2026-08-27,wiki,concepts,2,3,false,"A public ""looking for alternative to"" is a buying signal."
@@ -134,10 +134,10 @@ g-carl,Concept,G-CARL,wiki/g-carl.md,2026-08-24,2026-08-24,wiki,concepts,5,2,fal
 github,Hunt,GitHub hunt,hunt/github.md,2026-08-23,2026-08-28,"hunt,github",hunt-ship,4,8,false,Green in the graph when people or repos land here.
 graph,Meta,Graph,wiki/graph.md,2026-08-23,2026-09-01,wiki,meta,16,5,false,"The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
 graph-clusters-2026-08-24,Ship,Graph clusters brief · 2026-08-24,output/graph-clusters-2026-08-24.md,2026-08-24,2026-08-24,ship,hunt-ship,1,3,false,The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite.
-grok-bot,Concept,Grok Bot,wiki/grok-bot.md,2026-08-25,2026-08-25,wiki,concepts,18,11,true,Product harness from Machina. One persistent named agent. One job.
+grok-bot,Concept,Grok Bot,wiki/grok-bot.md,2026-08-25,2026-09-02,wiki,concepts,20,13,true,Product harness from Machina. One persistent named agent. One job.
 grok-bot-money,Concept,Grok Bot money,wiki/grok-bot-money.md,2026-08-25,2026-08-25,wiki,concepts,11,11,true,Ten revenue workflows from Machina. Architecture: [[grok-bot]]. Source: [[src-exm7777-grok-bot-money]].
-grok-bot-pro-tips,Concept,Grok Bot pro tips,wiki/grok-bot-pro-tips.md,2026-08-27,2026-08-27,wiki,concepts,12,7,false,"Ten tips from the @bot team, collected by Ben Lang."
-grok-bot-quota,Concept,Grok Bot quota,wiki/grok-bot-quota.md,2026-08-27,2026-08-27,wiki,concepts,14,6,false,Grok Bot quota burns fastest on:
+grok-bot-pro-tips,Concept,Grok Bot pro tips,wiki/grok-bot-pro-tips.md,2026-08-27,2026-08-27,wiki,concepts,13,7,false,"Ten tips from the @bot team, collected by Ben Lang."
+grok-bot-quota,Concept,Grok Bot quota,wiki/grok-bot-quota.md,2026-08-27,2026-09-02,wiki,concepts,19,10,false,Grok Bot quota burns fastest on:
 grok-bot-tape,Concept,Grok Bot tape,wiki/grok-bot-tape.md,2026-08-27,2026-08-27,wiki,concepts,6,8,true,Show the tape. Recording or screenshots. Source for every number. Guesses listed. Skip listed. Cannot cite → omit.
 grok-bot-use-cases,Concept,Grok Bot use cases,wiki/grok-bot-use-cases.md,2026-08-25,2026-08-27,wiki,concepts,14,15,false,25 use cases from Miles Deutscher. lan E share. Not a scout harvest.
 growth-briefing-2026-08-25,Ship,GrowthOS briefing · 2026-08-25,output/growth-briefing-2026-08-25.md,2026-08-25,2026-08-25,growth,hunt-ship,3,1,true,Generated from `growth/`. Not from chat memory. Target: **next AI UGC creator (unnamed)**.
@@ -157,9 +157,9 @@ hurley,Person,Hurley,wiki/people/hurley.md,2026-08-23,2026-08-23,person,people,4
 hydrofusion-lmf,Concept,HydroFusion-LMF,wiki/hydrofusion-lmf.md,2026-08-24,2026-08-24,wiki,concepts,7,3,false,"Semi-supervised multi-network fusion for daily runoff. Boluo 1988–2020, not a 10-year series."
 iar,Concept,IAR,wiki/iar.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,"Inject, Align, Recover. Retrieval-free document internalization."
 inbox,Hunt,Inbox,hunt/inbox.md,2026-08-23,2026-08-23,hunt,hunt-ship,2,0,false,Drop unfiled clips here. New notes from Obsidian land in `hunt/inbox` by default.
-index,Meta,Index,wiki/index.md,2026-08-23,2026-09-01,wiki,meta,34,23,false,Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu
+index,Meta,Index,wiki/index.md,2026-08-23,2026-09-02,wiki,meta,34,25,false,Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu
 index-papers,Meta,Index papers,wiki/index-papers.md,2026-08-28,2026-08-28,wiki,meta,9,50,true,Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12.
-index-sources,Meta,Index sources,wiki/index-sources.md,2026-08-28,2026-08-30,wiki,meta,14,145,true,Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
+index-sources,Meta,Index sources,wiki/index-sources.md,2026-08-28,2026-09-02,wiki,meta,14,151,true,Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
 ingest-brief-2026-08-23,Ship,Ingest brief · 2026-08-23,output/ingest-brief-2026-08-23.md,2026-08-23,2026-08-23,ship,hunt-ship,1,2,false,Nine X posts compiled into the first vault.
 ingest-brief-2026-08-23-cybersecurity-skills,Ship,Ingest brief · cybersecurity skills repo,output/ingest-brief-2026-08-23-cybersecurity-skills.md,2026-08-23,2026-08-23,ship,hunt-ship,1,4,false,What changed: the GitHub catalog pitch is now a source page and a person page. [[skill-library]] gained a second source. Offensive skill bodies were not copied. `MEMORY.md` now forbids vendoring or ex
 ingest-brief-2026-08-23-retrieval-second-brain,Ship,Ingest brief · retrieval second brain,output/ingest-brief-2026-08-23-retrieval-second-brain.md,2026-08-23,2026-08-23,ship,hunt-ship,1,5,true,What changed: the four-pillar retrieval recipe is now [[retrieval-second-brain]]. Layer names landed on [[memory-engineering]]. GraphRAG vs compiled wikilinks landed on [[context-graph]]. C25 flags th
@@ -193,8 +193,8 @@ lanbb,Project,LanBB,wiki/lanbb.md,2026-08-24,2026-08-27,project,projects,29,10,t
 lance,Concept,LANCE,wiki/lance.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,One-shot HOSVD activation cores for last-2/4-layer on-device fine-tune and CL.
 llm-wiki,Concept,LLM Wiki,wiki/llm-wiki.md,2026-08-23,2026-08-29,wiki,concepts,77,41,false,Andrej Karpathy's April 2026 pattern for a personal knowledge base.
 llm4eo,Concept,LLM4EO,wiki/llm4eo.md,2026-08-24,2026-08-24,wiki,concepts,5,3,true,LLM evolves EA operators for FJSP. Deployed model is GPT-4.1-mini.
-log,Meta,Log,wiki/log.md,2026-08-23,2026-09-01,wiki,meta,16,254,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
-loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-08-28,wiki,concepts,12,14,false,"Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
+log,Meta,Log,wiki/log.md,2026-08-23,2026-09-02,wiki,meta,16,261,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-08-28,wiki,concepts,13,14,false,"Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
 lostsec,Person,lostsec,wiki/people/lostsec.md,2026-08-27,2026-08-27,person,people,5,4,false,Bug bounty hunter. Also coffinxp. Handle @lostsec_.
 mahipal-jangra,Person,Mahipal Jangra,wiki/people/mahipal-jangra.md,2026-08-23,2026-08-23,person,people,5,3,false,"@mukul975. README citation: Jangra, Mahipal."
 maps,Map,Maps,maps.md,2026-08-23,2026-09-01,map,hunt-ship,4,4,false,Teal in the Obsidian graph.
@@ -221,7 +221,7 @@ merge-conflict-report-agent-facing-2026-08-28,Ship,Merge conflict report · agen
 merge-conflict-report-entropy-quiz-2026-08-28,Ship,Merge conflict report · entropy-gate quiz vs main,output/merge-conflict-report-entropy-quiz-2026-08-28.md,2026-08-28,2026-08-28,ship,hunt-ship,1,4,false,"Fetched `origin/main` at `c5714e8`, then merged into `cursor/entropy-gate-quiz-b17d`."
 mpi-init,Concept,MPI init,wiki/mpi-init.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,Adaptive experience transfer for binary EA initialization.
 multi-source-verdict,Concept,Multi-source verdict,wiki/multi-source-verdict.md,2026-08-27,2026-08-27,wiki,concepts,10,8,true,One complaint or one system is not enough. Surface only with more than one confirming source.
-musk-algorithm,Concept,Musk Algorithm,wiki/musk-algorithm.md,2026-08-27,2026-09-01,wiki,concepts,26,9,false,Strict order. Best part is no part.
+musk-algorithm,Concept,Musk Algorithm,wiki/musk-algorithm.md,2026-08-27,2026-09-01,wiki,concepts,27,9,false,Strict order. Best part is no part.
 musk-pass-2026-08-28,Ship,Musk pass 2026-08-28,output/musk-pass-2026-08-28.md,,,,hunt-ship,1,8,false,"Deleted the mandatory full-index read, ingest briefs, MEMORY copies of LanBB loops 1–16, the extra first-principles page, and unused frontmatter automation. Query now loads `python3 tools/sb ask` (D9)"
 ngc,Concept,NGC,wiki/ngc.md,2026-08-24,2026-08-24,wiki,concepts,8,3,false,"Neuronal group communication. Low-rank neuronal states, 30% attn params kept."
 nmc-trace-complexity,Concept,NMC trace complexity,wiki/nmc-trace-complexity.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,"Aimone: neuromorphic computing does not change the time or space class of an algorithm. Energy can, when activity is sparse."
@@ -244,7 +244,7 @@ query-entropy-gate,Ship,Query · What is the entropy piece about?,output/query-e
 query-skills-and-slop,Ship,"Query · Skills, forgetting, anti-slop",output/query-skills-and-slop.md,2026-08-24,2026-08-24,ship,hunt-ship,2,15,false,"Human asked three things on 2026-08-24. Answer compiled from wiki, not from `raw/`."
 quota-router,Concept,Quota router,wiki/quota-router.md,2026-08-25,2026-08-27,wiki,concepts,9,4,false,Burn expiring quota first.
 r2-opd,Concept,R²-OPD,wiki/r2-opd.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,Filter on-policy distillation by reasoning-progress ranking.
-raptor-dispatch,Concept,Raptor dispatch,wiki/raptor-dispatch.md,2026-08-25,2026-08-27,wiki,concepts,27,12,false,"Raptor 3: one owner per job, report once, no empty acks."
+raptor-dispatch,Concept,Raptor dispatch,wiki/raptor-dispatch.md,2026-08-25,2026-09-02,wiki,concepts,33,18,false,"Raptor 3: one owner per job, report once, no empty acks."
 reddit,Hunt,Reddit hunt,hunt/reddit.md,2026-08-23,2026-08-23,hunt,hunt-ship,1,0,false,Empty. File links here. Ingest into `raw/` before they become wiki pages.
 retrieval,Concept,Retrieval,wiki/retrieval.md,2026-08-28,2026-09-01,wiki,concepts,30,13,false,Hybrid search over compiled pages. Markdown stays canonical. SQLite FTS5 is disposable.
 retrieval-second-brain,Concept,Retrieval second brain,wiki/retrieval-second-brain.md,2026-08-23,2026-08-23,wiki,concepts,16,10,true,"A query-time stack for ""read and recall"": hybrid search, GraphRAG, three memory layers, agentic routing."
@@ -255,12 +255,13 @@ secret-gateway,Concept,Secret gateway,wiki/secret-gateway.md,2026-08-24,2026-08-
 self-verification,Concept,Self-verification,wiki/self-verification.md,2026-08-23,2026-08-24,wiki,concepts,26,15,false,Generate several candidates. Score them. Keep the winner.
 session-migrate,Concept,Session-migrate,wiki/session-migrate.md,2026-08-25,2026-08-27,wiki,concepts,12,8,false,Session-migrate transfers context only. Git is the source of truth.
 ship,Ship,Ship,ship.md,2026-08-23,2026-08-29,ship,hunt-ship,14,4,false,Output from compiled pages. Human yes before anything leaves the vault.
-skill-as-sop,Concept,Skill as SOP,wiki/skill-as-sop.md,2026-08-23,2026-08-29,wiki,concepts,15,8,false,A skill is a compiled SOP for a workflow that already failed once.
-skill-improver,Concept,Skill improver,wiki/skill-improver.md,2026-08-30,2026-08-30,wiki,concepts,5,9,false,Instruction files rot when every correction becomes a new Never line.
+skill-as-sop,Concept,Skill as SOP,wiki/skill-as-sop.md,2026-08-23,2026-09-02,wiki,concepts,21,12,false,A skill is a compiled SOP for a workflow that already failed once.
+skill-improver,Concept,Skill improver,wiki/skill-improver.md,2026-08-30,2026-08-30,wiki,concepts,6,9,false,Instruction files rot when every correction becomes a new Never line.
 skill-library,Concept,Skill library,wiki/skill-library.md,2026-08-23,2026-08-29,wiki,concepts,23,13,true,"A shared catalog of agent skills the whole company can create, find, and reuse."
 skill-recorder,Concept,Skill Recorder,wiki/skill-recorder.md,2026-08-25,2026-08-25,wiki,concepts,9,6,false,Trial only on a clean desktop with fake data. Then [[skillspector]]. Then enable.
 skill-transfer,Concept,Skill transfer,wiki/skill-transfer.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,Task-level vs subtask-level skill memory for LLM agents.
 skillspector,Concept,SkillSpector,wiki/skillspector.md,2026-08-25,2026-08-25,wiki,concepts,10,4,false,Gate a generated `SKILL.md` with SkillSpector before shipping it.
+spacexai-grok-bot-keepers,Concept,SpaceXAI Grok Bot keepers,wiki/spacexai-grok-bot-keepers.md,2026-09-02,2026-09-02,wiki,concepts,13,14,false,Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool.
 spot-check,Concept,Surprise spot-check,wiki/spot-check.md,2026-08-25,2026-08-25,wiki,concepts,5,4,false,Lead inspects without warning. Specialists stay on-lane. Lessons go to wiki and a shared skill.
 src-0xcarnagee-tape-2026-08-27,Source,src-0xcarnagee-tape-2026-08-27,wiki/sources/src-0xcarnagee-tape-2026-08-27.md,2026-08-27,2026-08-27,twitter,sources,3,2,true,See [[grok-bot-tape]]. 11-step roster not cloned.
 src-0xcodio-memory-ablation,Source,src-0xcodio-memory-ablation,wiki/sources/src-0xcodio-memory-ablation.md,2026-08-23,2026-08-23,twitter,sources,4,3,false,Line-level ablation on a 104-line memory file. 71 lines never changed an answer. Facts survived. Adjectives died. Do not let a model audit memory it wrote.
@@ -376,6 +377,7 @@ src-lanbb-pr26-loop16,Source,src-lanbb-pr26-loop16,wiki/sources/src-lanbb-pr26-l
 src-lanbb-pr27-loop17,Source,src-lanbb-pr27-loop17,wiki/sources/src-lanbb-pr27-loop17.md,2026-08-27,2026-08-27,project,sources,5,3,false,Loop17. Report at 0/116. v16 applied. Floor mem>=6m pids>=6 held. `worker_processes 1` source `OOM=false`.
 src-lanbb-pr9-loop1,Source,src-lanbb-pr9-loop1,wiki/sources/src-lanbb-pr9-loop1.md,2026-08-27,2026-08-27,project,sources,5,3,false,Loop1. Local Juice Shop CASE. Score 0/116. Wall v0 → v1-hardened.
 src-laude-headlong,Source,src-laude-headlong,wiki/sources/src-laude-headlong.md,2026-08-26,2026-08-28,twitter,sources,6,6,true,Headlong is an open-source Bash microharness for persistent agency. A Headlong agent is never asleep. Human messages are observations in one thought stream. The agent decides if and when to reply.
+src-lingxi-grok-bot-engineering,Source,src-lingxi-grok-bot-engineering,wiki/sources/src-lingxi-grok-bot-engineering.md,2026-09-02,2026-09-02,twitter,sources,5,5,false,"One domain per standing bot: sharper memory and specs inside the owned area. Bots can cross lanes, but focus beats a generalist that owns everything."
 src-luismbat-buying-signal-2026-08-27,Source,src-luismbat-buying-signal-2026-08-27,wiki/sources/src-luismbat-buying-signal-2026-08-27.md,2026-08-27,2026-08-27,twitter,sources,2,1,false,"Public buying signal: people writing ""looking for alternative to""."
 src-lummox-assign-execute-verify,Source,src-lummox-assign-execute-verify,wiki/sources/src-lummox-assign-execute-verify.md,2026-08-27,2026-08-27,twitter,sources,2,3,false,Assign → execute → verify.
 src-marfinxx-trace,Source,src-marfinxx-trace,wiki/sources/src-marfinxx-trace.md,2026-08-24,2026-08-24,twitter,sources,3,4,true,"Paper (exists; do not invent): Zhao, Misra, Pandey. Trace: TRajectory Attribution for Automated Context Engineering. KDD 2026. https://arxiv.org/abs/2608.09153 Amazon Science: https://www.amazon.scien"
@@ -391,10 +393,13 @@ src-palantir-aip-developers-2026-08-28,Source,src-palantir-aip-developers-2026-0
 src-papa-couch-compiler,Source,src-papa-couch-compiler,wiki/sources/src-papa-couch-compiler.md,2026-08-23,2026-08-23,twitter,sources,11,3,false,305k vs 47k tokens for the same task if knowledge is already compiled. Write answers back. `raw/` / `wiki/` / `output/` / schema. Maintenance is why human wikis die.
 src-pawelhuryn-file-memory,Source,src-pawelhuryn-file-memory,wiki/sources/src-pawelhuryn-file-memory.md,2026-08-27,2026-08-27,twitter,sources,3,3,false,"Prefers git `.md` memory over a lab's built-in memory since March. Cowork, Claude Code, Codex, and Grok all read the same folder."
 src-play-methods-2026-08-25,Source,src-play-methods-2026-08-25,wiki/sources/src-play-methods-2026-08-25.md,2026-08-25,2026-08-25,play,sources,11,11,true,
+src-poteto-eliminate-interventions,Source,src-poteto-eliminate-interventions,wiki/sources/src-poteto-eliminate-interventions.md,2026-09-02,2026-09-02,twitter,sources,5,4,false,"Every agent correction should be eliminated entirely, in this order of value:"
+src-poteto-pstack-outer-loop,Source,src-poteto-pstack-outer-loop,wiki/sources/src-poteto-pstack-outer-loop.md,2026-09-02,2026-09-02,twitter,sources,4,3,false,"Routines farm context for the outer loop (signals, complaints, ideas). Human/CoS decides what the factory points at next."
 src-promptyx-llm-cpu,Source,src-promptyx-llm-cpu,wiki/sources/src-promptyx-llm-cpu.md,2026-08-24,2026-08-24,twitter,sources,3,1,true,"LLM as CPU / harness: the model is not the whole agent. Tools, loop, and permissions sit outside the weights. Fits [[harness-routing]]."
 src-retrieval-second-brain,Source,src-retrieval-second-brain,wiki/sources/src-retrieval-second-brain.md,2026-08-23,2026-08-23,note,sources,11,5,true,"Four retrieval pillars: hybrid BM25 + vector + cross-encoder rerank; GraphRAG over entity links; working / episodic / semantic memory; agentic tool-calling that splits a question, queries, and reflect"
 src-rohit-harness-router,Source,src-rohit-harness-router,wiki/sources/src-rohit-harness-router.md,2026-08-23,2026-08-23,twitter,sources,5,3,false,"Five harnesses, one router. Shared object is an [[audited-task-contract]]. Route model and harness as separate choices. Move semantic state, never KV state. Planner / controller / executor / auditor."
 src-ruujss-pipeline-honesty,Source,src-ruujss-pipeline-honesty,wiki/sources/src-ruujss-pipeline-honesty.md,2026-08-27,2026-08-27,twitter,sources,2,2,false,Pipeline honesty: chronological order first. Window-boundary and kernel misspec inflate a ratio. Out-of-sample is the honest test.
+src-samsokolin-browser-to-api,Source,src-samsokolin-browser-to-api,wiki/sources/src-samsokolin-browser-to-api.md,2026-09-02,2026-09-02,twitter,sources,5,3,false,Repeating the same GUI clicks in a web app burns tokens.
 src-skill-pack-list,Source,src-skill-pack-list,wiki/sources/src-skill-pack-list.md,2026-08-23,2026-08-23,github,sources,9,4,false,"A skill packages a repeated workflow as an SOP. Named jobs: UI review, API check, database plan, docs, architecture review, handoff. A stable SOP is meant to stop retrying a known failure and burning "
 src-thewhizzai-avo,Source,src-thewhizzai-avo,wiki/sources/src-thewhizzai-avo.md,2026-08-24,2026-08-24,twitter,sources,4,2,true,Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness.
 src-vault-review-2026-08-29,Source,src-vault-review-2026-08-29,wiki/sources/src-vault-review-2026-08-29.md,2026-08-29,2026-08-29,play,sources,9,9,false,Untrusted paste. Quote. Do not copy ratings or folder proposals into `AGENTS.md` as locks.
@@ -405,6 +410,8 @@ src-voxyz-drafts-2026-08-27,Source,src-voxyz-drafts-2026-08-27,wiki/sources/src-
 src-voxyz-skill-improver,Source,src-voxyz-skill-improver,wiki/sources/src-voxyz-skill-improver.md,2026-08-30,2026-08-30,twitter,sources,4,5,false,Untrusted prompt. Quote. Do not copy the tweet into `AGENTS.md`.
 src-voxyz-verifiable-instructions,Source,src-voxyz-verifiable-instructions,wiki/sources/src-voxyz-verifiable-instructions.md,2026-08-23,2026-08-23,twitter,sources,11,3,false,"Skills and schema files full of wishes do not steer agents. Every instruction needs a behavior, a check, and a failure path."
 src-voxyz-writing-system,Source,src-voxyz-writing-system,wiki/sources/src-voxyz-writing-system.md,2026-08-24,2026-08-24,twitter,sources,14,8,false,"Sixth `/goal` prompt, labeled 6/6. Install one writing system in global `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep each project's voice in project-level files. Audit dupl"
+src-xai-introducing-grok-bot,Source,src-xai-introducing-grok-bot,wiki/sources/src-xai-introducing-grok-bot.md,2026-09-02,2026-09-02,product,sources,4,3,false,Grok Bot: always-on agents with their own computer; sign into tools; finish jobs end to end; return when approval is needed.
+src-yunta-tsai-quota-isolate,Source,src-yunta-tsai-quota-isolate,wiki/sources/src-yunta-tsai-quota-isolate.md,2026-08-31,2026-08-31,twitter,sources,4,1,false,"Grok Bot token burn: dedicated context for that task, close when finished."
 stable-ids,Concept,Stable IDs,wiki/stable-ids.md,2026-08-28,2026-08-28,wiki,concepts,8,3,false,Every knowledge object has `id:` in frontmatter. Filenames can change without destroying identity.
 stale-fact-detector,Concept,Stale fact detector,wiki/stale-fact-detector.md,2026-08-27,2026-08-27,wiki,concepts,12,8,false,Audit compiled wiki claims against named sources. Internally consistent notes can still be dead.
 superde,Concept,SuperDE,wiki/superde.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,DDQN picks DE mutation and constraint handling each generation. Trained on CEC2010. Still a 28-action Q-net.
@@ -427,5 +434,5 @@ vla-self-demo,Concept,VLA self-demo,wiki/vla-self-demo.md,2026-08-24,2026-08-24,
 vox,Person,Vox,wiki/people/vox.md,2026-08-24,2026-08-30,person,people,11,10,false,@Voxyz_ai. Site: https://www.voxyz.ai
 vs-graph,Concept,VS-Graph,wiki/vs-graph.md,2026-08-24,2026-08-24,wiki,concepts,5,2,true,Topology-only HDC graph classifier. No backprop.
 wiki,Meta,Wiki,wiki.md,2026-08-23,2026-08-23,wiki,meta,2,5,false,Compiled knowledge. Gold in the Obsidian graph.
-work-per-cost,Concept,Work per cost,wiki/work-per-cost.md,2026-08-27,2026-08-27,wiki,concepts,21,25,true,Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled.
+work-per-cost,Concept,Work per cost,wiki/work-per-cost.md,2026-08-27,2026-09-02,wiki,concepts,26,29,true,Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled.
 zack0x01,Person,zack0x01,wiki/people/zack0x01.md,2026-08-27,2026-08-27,person,people,5,4,false,Bug bounty hunter. Handle zack0x01.

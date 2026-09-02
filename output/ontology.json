@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-01T19:16:12Z",
+  "builtAt": "2026-09-02T07:02:42Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -101,18 +101,18 @@
   },
   "counts": {
     "Meta": 15,
+    "Ship": 59,
+    "Map": 5,
     "unverified": 104,
     "Hunt": 8,
-    "Map": 5,
-    "Ship": 59,
-    "Concept": 125,
+    "Concept": 126,
     "Project": 2,
+    "Source": 149,
     "Person": 14,
-    "Source": 143,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 430,
-    "links": 3024
+    "objects": 437,
+    "links": 3093
   },
   "objects": [
     {
@@ -1003,11 +1003,11 @@
       "title": "Memory",
       "path": "MEMORY.md",
       "created": "2026-08-23",
-      "updated": "2026-08-29",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "meta",
       "inbound": 15,
-      "outbound": 74,
+      "outbound": 75,
       "unverified": true,
       "oneLiner": "Durable facts only. A line stays if deleting it would change an answer."
     },
@@ -1314,7 +1314,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Catalog scan of botdirectory.ai. Not a scout dump. Not a bot factory."
@@ -2011,11 +2011,11 @@
       "title": "Grok Bot",
       "path": "wiki/grok-bot.md",
       "created": "2026-08-25",
-      "updated": "2026-08-25",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
-      "outbound": 11,
+      "inbound": 20,
+      "outbound": 13,
       "unverified": true,
       "oneLiner": "Product harness from Machina. One persistent named agent. One job."
     },
@@ -2042,7 +2042,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Ten tips from the @bot team, collected by Ben Lang."
@@ -2053,11 +2053,11 @@
       "title": "Grok Bot quota",
       "path": "wiki/grok-bot-quota.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
-      "outbound": 6,
+      "inbound": 19,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Grok Bot quota burns fastest on:"
     },
@@ -2333,11 +2333,11 @@
       "title": "Index",
       "path": "wiki/index.md",
       "created": "2026-08-23",
-      "updated": "2026-09-01",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "meta",
       "inbound": 34,
-      "outbound": 23,
+      "outbound": 25,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2361,11 +2361,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-08-30",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "meta",
       "inbound": 14,
-      "outbound": 145,
+      "outbound": 151,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2837,11 +2837,11 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-09-01",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 254,
+      "outbound": 261,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2854,7 +2854,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
@@ -3232,7 +3232,7 @@
       "updated": "2026-09-01",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
+      "inbound": 27,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -3551,11 +3551,11 @@
       "title": "Raptor dispatch",
       "path": "wiki/raptor-dispatch.md",
       "created": "2026-08-25",
-      "updated": "2026-08-27",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
-      "outbound": 12,
+      "inbound": 33,
+      "outbound": 18,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
     },
@@ -3705,11 +3705,11 @@
       "title": "Skill as SOP",
       "path": "wiki/skill-as-sop.md",
       "created": "2026-08-23",
-      "updated": "2026-08-29",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
-      "outbound": 8,
+      "inbound": 21,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3722,7 +3722,7 @@
       "updated": "2026-08-30",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Instruction files rot when every correction becomes a new Never line."
@@ -3782,6 +3782,20 @@
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Gate a generated `SKILL.md` with SkillSpector before shipping it."
+    },
+    {
+      "primaryKey": "spacexai-grok-bot-keepers",
+      "objectType": "Concept",
+      "title": "SpaceXAI Grok Bot keepers",
+      "path": "wiki/spacexai-grok-bot-keepers.md",
+      "created": "2026-09-02",
+      "updated": "2026-09-02",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 13,
+      "outbound": 14,
+      "unverified": false,
+      "oneLiner": "Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool."
     },
     {
       "primaryKey": "spot-check",
@@ -5394,6 +5408,20 @@
       "oneLiner": "Headlong is an open-source Bash microharness for persistent agency. A Headlong agent is never asleep. Human messages are observations in one thought stream. The agent decides if and when to reply."
     },
     {
+      "primaryKey": "src-lingxi-grok-bot-engineering",
+      "objectType": "Source",
+      "title": "src-lingxi-grok-bot-engineering",
+      "path": "wiki/sources/src-lingxi-grok-bot-engineering.md",
+      "created": "2026-09-02",
+      "updated": "2026-09-02",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "One domain per standing bot: sharper memory and specs inside the owned area. Bots can cross lanes, but focus beats a generalist that owns everything."
+    },
+    {
       "primaryKey": "src-luismbat-buying-signal-2026-08-27",
       "objectType": "Source",
       "title": "src-luismbat-buying-signal-2026-08-27",
@@ -5604,6 +5632,34 @@
       "oneLiner": ""
     },
     {
+      "primaryKey": "src-poteto-eliminate-interventions",
+      "objectType": "Source",
+      "title": "src-poteto-eliminate-interventions",
+      "path": "wiki/sources/src-poteto-eliminate-interventions.md",
+      "created": "2026-09-02",
+      "updated": "2026-09-02",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Every agent correction should be eliminated entirely, in this order of value:"
+    },
+    {
+      "primaryKey": "src-poteto-pstack-outer-loop",
+      "objectType": "Source",
+      "title": "src-poteto-pstack-outer-loop",
+      "path": "wiki/sources/src-poteto-pstack-outer-loop.md",
+      "created": "2026-09-02",
+      "updated": "2026-09-02",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Routines farm context for the outer loop (signals, complaints, ideas). Human/CoS decides what the factory points at next."
+    },
+    {
       "primaryKey": "src-promptyx-llm-cpu",
       "objectType": "Source",
       "title": "src-promptyx-llm-cpu",
@@ -5658,6 +5714,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Pipeline honesty: chronological order first. Window-boundary and kernel misspec inflate a ratio. Out-of-sample is the honest test."
+    },
+    {
+      "primaryKey": "src-samsokolin-browser-to-api",
+      "objectType": "Source",
+      "title": "src-samsokolin-browser-to-api",
+      "path": "wiki/sources/src-samsokolin-browser-to-api.md",
+      "created": "2026-09-02",
+      "updated": "2026-09-02",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Repeating the same GUI clicks in a web app burns tokens."
     },
     {
       "primaryKey": "src-skill-pack-list",
@@ -5798,6 +5868,34 @@
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Sixth `/goal` prompt, labeled 6/6. Install one writing system in global `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep each project's voice in project-level files. Audit dupl"
+    },
+    {
+      "primaryKey": "src-xai-introducing-grok-bot",
+      "objectType": "Source",
+      "title": "src-xai-introducing-grok-bot",
+      "path": "wiki/sources/src-xai-introducing-grok-bot.md",
+      "created": "2026-09-02",
+      "updated": "2026-09-02",
+      "tags": "product",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Grok Bot: always-on agents with their own computer; sign into tools; finish jobs end to end; return when approval is needed."
+    },
+    {
+      "primaryKey": "src-yunta-tsai-quota-isolate",
+      "objectType": "Source",
+      "title": "src-yunta-tsai-quota-isolate",
+      "path": "wiki/sources/src-yunta-tsai-quota-isolate.md",
+      "created": "2026-08-31",
+      "updated": "2026-08-31",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 1,
+      "unverified": false,
+      "oneLiner": "Grok Bot token burn: dedicated context for that task, close when finished."
     },
     {
       "primaryKey": "stable-ids",
@@ -6113,11 +6211,11 @@
       "title": "Work per cost",
       "path": "wiki/work-per-cost.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-09-02",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
-      "outbound": 25,
+      "inbound": 26,
+      "outbound": 29,
       "unverified": true,
       "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
     },
@@ -7636,6 +7734,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "skill-recorder"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "MEMORY",
@@ -10784,6 +10887,11 @@
     },
     {
       "from": "grok-bot",
+      "linkType": "cites",
+      "to": "src-xai-introducing-grok-bot"
+    },
+    {
+      "from": "grok-bot",
       "linkType": "relatedTo",
       "to": "company-foundry"
     },
@@ -10831,6 +10939,11 @@
       "from": "grok-bot",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "grok-bot-money",
@@ -10929,6 +11042,21 @@
     },
     {
       "from": "grok-bot-quota",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
+    },
+    {
+      "from": "grok-bot-quota",
+      "linkType": "cites",
+      "to": "src-yunta-tsai-quota-isolate"
+    },
+    {
+      "from": "grok-bot-quota",
+      "linkType": "relatedTo",
+      "to": "botdirectory-scan"
+    },
+    {
+      "from": "grok-bot-quota",
       "linkType": "relatedTo",
       "to": "grok-bot-pro-tips"
     },
@@ -10941,6 +11069,11 @@
       "from": "grok-bot-quota",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "grok-bot-quota",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "grok-bot-quota",
@@ -11905,12 +12038,22 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "retrieval"
     },
     {
       "from": "index",
       "linkType": "relatedTo",
       "to": "ship"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "index-papers",
@@ -12735,6 +12878,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-lingxi-grok-bot-engineering"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-luismbat-buying-signal-2026-08-27"
     },
     {
@@ -12810,6 +12958,16 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-poteto-eliminate-interventions"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-poteto-pstack-outer-loop"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-promptyx-llm-cpu"
     },
     {
@@ -12826,6 +12984,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-ruujss-pipeline-honesty"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
     },
     {
       "from": "index-sources",
@@ -12876,6 +13039,16 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-xai-introducing-grok-bot"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-yunta-tsai-quota-isolate"
     },
     {
       "from": "index-sources",
@@ -14165,6 +14338,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-lingxi-grok-bot-engineering"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -14200,7 +14378,22 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-poteto-eliminate-interventions"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-poteto-pstack-outer-loop"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
     },
     {
       "from": "log",
@@ -14236,6 +14429,16 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-xai-introducing-grok-bot"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-yunta-tsai-quota-isolate"
     },
     {
       "from": "log",
@@ -15016,6 +15219,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "skillspector"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "log",
@@ -17110,7 +17318,17 @@
     {
       "from": "raptor-dispatch",
       "linkType": "cites",
+      "to": "src-lingxi-grok-bot-engineering"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "cites",
+      "to": "src-poteto-pstack-outer-loop"
     },
     {
       "from": "raptor-dispatch",
@@ -17135,6 +17353,11 @@
     {
       "from": "raptor-dispatch",
       "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
       "to": "harness-routing"
     },
     {
@@ -17155,7 +17378,22 @@
     {
       "from": "raptor-dispatch",
       "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
       "to": "spot-check"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
     },
     {
       "from": "retrieval",
@@ -17485,6 +17723,16 @@
     {
       "from": "skill-as-sop",
       "linkType": "cites",
+      "to": "src-lingxi-grok-bot-engineering"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-poteto-eliminate-interventions"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
       "to": "src-skill-pack-list"
     },
     {
@@ -17510,7 +17758,17 @@
     {
       "from": "skill-as-sop",
       "linkType": "relatedTo",
+      "to": "skill-improver"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
       "to": "skill-library"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "skill-as-sop",
@@ -17696,6 +17954,76 @@
       "from": "skillspector",
       "linkType": "relatedTo",
       "to": "skill-recorder"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
+      "to": "src-lingxi-grok-bot-engineering"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
+      "to": "src-poteto-eliminate-interventions"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
+      "to": "src-poteto-pstack-outer-loop"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
+      "to": "src-xai-introducing-grok-bot"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
+      "to": "src-yunta-tsai-quota-isolate"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "grok-bot-pro-tips"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
     },
     {
       "from": "spot-check",
@@ -19773,6 +20101,31 @@
       "to": "headlong"
     },
     {
+      "from": "src-lingxi-grok-bot-engineering",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-lingxi-grok-bot-engineering",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-lingxi-grok-bot-engineering",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-lingxi-grok-bot-engineering",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "src-lingxi-grok-bot-engineering",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
       "from": "src-luismbat-buying-signal-2026-08-27",
       "linkType": "relatedTo",
       "to": "buying-signal"
@@ -20073,6 +20426,41 @@
       "to": "skillspector"
     },
     {
+      "from": "src-poteto-eliminate-interventions",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-poteto-eliminate-interventions",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-poteto-eliminate-interventions",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "src-poteto-eliminate-interventions",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
+      "from": "src-poteto-pstack-outer-loop",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-poteto-pstack-outer-loop",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-poteto-pstack-outer-loop",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
       "from": "src-promptyx-llm-cpu",
       "linkType": "relatedTo",
       "to": "harness-routing"
@@ -20124,6 +20512,21 @@
     },
     {
       "from": "src-ruujss-pipeline-honesty",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
+      "from": "src-samsokolin-browser-to-api",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-samsokolin-browser-to-api",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "src-samsokolin-browser-to-api",
       "linkType": "relatedTo",
       "to": "work-per-cost"
     },
@@ -20401,6 +20804,26 @@
       "from": "src-voxyz-writing-system",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "src-xai-introducing-grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "src-xai-introducing-grok-bot",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-xai-introducing-grok-bot",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "src-yunta-tsai-quota-isolate",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
     },
     {
       "from": "stable-ids",
@@ -21124,6 +21547,16 @@
     },
     {
       "from": "work-per-cost",
+      "linkType": "cites",
+      "to": "src-poteto-eliminate-interventions"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
+    },
+    {
+      "from": "work-per-cost",
       "linkType": "relatedTo",
       "to": "ai-sovereignty"
     },
@@ -21216,6 +21649,16 @@
       "from": "work-per-cost",
       "linkType": "relatedTo",
       "to": "session-migrate"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "work-per-cost",

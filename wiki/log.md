@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-02] ingest | SpaceXAI Grok Bot engineer keepers
+
+Compiled [[src-lingxi-grok-bot-engineering]], [[src-poteto-eliminate-interventions]], [[src-poteto-pstack-outer-loop]], [[src-samsokolin-browser-to-api]], [[src-xai-introducing-grok-bot]]. Kept [[src-yunta-tsai-quota-isolate]] (no duplicate page). Hub [[spacexai-grok-bot-keepers]]. Folded into [[grok-bot-quota]], [[work-per-cost]], [[skill-as-sop]], [[raptor-dispatch]]. House filter: CoS front door; no Jenny/domain clones; no auto-merge; no 5/15-min poller; P0 = denser live steer; product LanBB. Hold merge on PR34.
 
 ## [2026-09-01] accelerate | Musk pass 4c: profile, then cut; ontology proved in SQLite
 

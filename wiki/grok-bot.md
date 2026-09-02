@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-09-02
 ---
 
 # Grok Bot
@@ -22,6 +22,8 @@ All bots share one cloud computer on the account. Files, browser sessions, and l
 Each bot gets its own screen. One bot runs one computer-use task on its screen at a time.
 
 The tweet names Grok 4.6. Pricing versus Claude Fable 5 and GPT-5.6 Sol is `unverified`.
+
+Product launch: [[src-xai-introducing-grok-bot]]. Engineer keepers (not org chart): [[spacexai-grok-bot-keepers]].
 
 xAI line as quoted in the tweet: “Bots are AI teammates that do real work for you. They sign in to your tools, use them just like you do, and come back with finished work.” Product copy. Not a paper.
 
@@ -57,4 +59,4 @@ Start with one valuable, reversible workflow. Read-and-prepare first. Actions be
 
 ## Related
 
-[[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]]
+[[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]] · [[spacexai-grok-bot-keepers]] · [[src-xai-introducing-grok-bot]]
