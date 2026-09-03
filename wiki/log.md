@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-03] ingest | chat keepers AdiiX / 0xwast3 / Atenov free-for-dev
+
+Compiled [[src-adiix-grok-bot-org]], [[src-0xwast3-ablation-schema]], [[src-atenov-free-for-dev]]. Principles only. Folded into [[spacexai-grok-bot-keepers]], [[raptor-dispatch]], [[grok-bot-quota]], [[work-per-cost]], [[skill-as-sop]], [[loop-graph-engineering]], [[musk-algorithm]], [[quota-router]]. Short concept [[graph-node-ablation]]. House: CoS front door; no Jenny; no auto-merge; no 5/15 polls; no new rooms; LanBB product. AI Compute Australia flagged unverified. Hold merge.
 
 ## [2026-09-02] ingest | SpaceXAI Grok Bot engineer keepers
 

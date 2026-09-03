@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # Index sources
@@ -15,6 +15,9 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-adiix-grok-bot-org]] | 2026-09-03 | Chief routes; hire by bottleneck; three gates; /workspace bus |
+| [[src-0xwast3-ablation-schema]] | 2026-09-03 | RUN→PULL→DELTA→RANK→CUT; retire no-op nodes |
+| [[src-atenov-free-for-dev]] | 2026-09-03 | free-for-dev pointer; AI Compute AU unverified |
 | [[src-lingxi-grok-bot-engineering]] | 2026-09-02 | One domain/bot; cloud proof loop; no Jenny clone |
 | [[src-poteto-eliminate-interventions]] | 2026-09-02 | Kill repetition: arch → CI → skill → human last |
 | [[src-poteto-pstack-outer-loop]] | 2026-09-02 | Routines farm outer loop; /goal /loop /swarm how |

@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-03
 created_by: agent
 confidence: high
 source:
@@ -15,6 +15,7 @@ source:
   - wiki/sources/src-samsokolin-browser-to-api.md
   - wiki/sources/src-yunta-tsai-quota-isolate.md
   - wiki/sources/src-xai-introducing-grok-bot.md
+  - wiki/sources/src-adiix-grok-bot-org.md
 derived_from:
   - src-lingxi-grok-bot-engineering
   - src-poteto-eliminate-interventions
@@ -22,6 +23,7 @@ derived_from:
   - src-samsokolin-browser-to-api
   - src-yunta-tsai-quota-isolate
   - src-xai-introducing-grok-bot
+  - src-adiix-grok-bot-org
   - raptor-dispatch
   - grok-bot-quota
   - work-per-cost
@@ -32,7 +34,7 @@ derived_from:
 
 Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool.
 
-Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-interventions]] · [[src-poteto-pstack-outer-loop]] · [[src-samsokolin-browser-to-api]] · [[src-yunta-tsai-quota-isolate]] · [[src-xai-introducing-grok-bot]].
+Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-interventions]] · [[src-poteto-pstack-outer-loop]] · [[src-samsokolin-browser-to-api]] · [[src-yunta-tsai-quota-isolate]] · [[src-xai-introducing-grok-bot]] · [[src-adiix-grok-bot-org]].
 
 ## FACT
 
@@ -50,6 +52,9 @@ Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-intervent
 
 [[src-xai-introducing-grok-bot]]: bots have their own computer, finish work in tools, and return for approval; a chief of staff can sit above specialists.
 
+[[src-adiix-grok-bot-org]]: Chief routes only (triage → delegate → watch → collect → escalate). Hire by bottleneck. Bot contract (job/sources/judgment/output/forbidden). Grow rules from repeatable mistakes. Shared box computer (own screen ≠ security boundary). `/workspace` as artifact bus. Three gates: source → evidence → action. Human only for money / publish / delete / irreversible. Ban constant polling, bad retries, too-many-bots.
+
+
 ## INFERENCE
 
 Map domains to the existing roster: CoS (front door + ops/postmortem), Engineer (all code), Vault (wiki), Fill (leftover quota), Rutin (routine hygiene). Do not hire Jenny / Baltata / Shaoruru / Hogan / Craig / Quill clones. derived_from: src-lingxi-grok-bot-engineering, raptor-dispatch.
@@ -60,7 +65,9 @@ P0 means denser live steer on the cloud agent (MessageSubagent / CheckSubagent).
 
 Outer loop folds into [[raptor-dispatch]]. Do not install pstack wholesale as a new bot farm. Skills do the how. derived_from: src-poteto-pstack-outer-loop, raptor-dispatch.
 
-Last yes stays human. No auto-merge even when the source describes low-blast auto-merge. derived_from: src-lingxi-grok-bot-engineering, decisions.
+Last yes stays human. No auto-merge even when the source describes low-blast auto-merge. Human gate matches AdiiX money/publish/delete/irreversible list. derived_from: src-lingxi-grok-bot-engineering, src-adiix-grok-bot-org, decisions.
+
+Shared machine + `/workspace` bus: hand off files, not chat walls. Do not treat Bot identity as isolation. derived_from: src-adiix-grok-bot-org.
 
 ## OPINION
 
@@ -72,4 +79,4 @@ If someone proposes a Jenny hire, a domain engineer bot clone, a 5/15-min poller
 
 ## Related
 
-[[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]]
+[[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]]

@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # Skill as SOP
@@ -26,6 +26,8 @@ Source: [[src-skill-pack-list]].
 
 [[src-poteto-eliminate-interventions]]: if the same correction happens twice, prefer architecture or CI over adding another skill line. Skill/rule is step 3; human review is last.
 
+[[src-adiix-grok-bot-org]]: grow from mistakes — turn a repeatable failure into a permanent rule in the narrowest place. Earn Skills: real task → correction → Skill → test → Routine. Same correction three times manually is unpaid QA.
+
 ## What to do in this vault
 
 Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
@@ -36,4 +38,4 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 ## Related
 
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]]
+[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]]
