@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # Work per cost
@@ -35,6 +35,9 @@ PM operational KPI 2026-08-27 is at the bottom.
 - [[session-migrate]]: context only. Git is truth. Do not migrate a compact blob as the vault.
 - [[audited-task-contract]]: share a contract, not a transcript. Avoid reset tax.
 - [[musk-algorithm]]: delete before optimize. Automate last.
+- [[graph-node-ablation]] / [[src-0xwast3-ablation-schema]]: RUN→PULL→DELTA→RANK→CUT. Retire nodes whose removal changes nothing.
+- [[src-adiix-grok-bot-org]]: ban constant polling, bad retries, too-many-bots; three gates before action; `/workspace` handoffs beat chat walls.
+- [[src-atenov-free-for-dev]]: free-for-dev pointer for Fill; AI Compute Australia unverified.
 - [[spacexai-grok-bot-keepers]] / [[src-poteto-eliminate-interventions]]: kill repetition — architecture/data structure → lint/test CI → skill/rule → human review last.
 - [[src-samsokolin-browser-to-api]]: GUI once, then API. Prefer MCP/API over browserUse over computerUse.
 - [[pipeline-honesty]]: chrono first. Out-of-sample W/E is the honest test. In-sample ratios can inflate.
@@ -58,4 +61,4 @@ Wallet split: Grok Bot scarce vs Fill leftover. Do not mix ledgers.
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]] · [[daily-tool-replace]] · [[spacexai-grok-bot-keepers]] · [[skill-as-sop]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]] · [[daily-tool-replace]] · [[spacexai-grok-bot-keepers]] · [[skill-as-sop]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]] · [[src-0xwast3-ablation-schema]] · [[src-atenov-free-for-dev]]

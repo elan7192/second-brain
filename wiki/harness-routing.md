@@ -4,14 +4,14 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-09-03
 ---
 
 # Harness routing
 
 A model and a harness are different knobs.
 
-Source: [[src-rohit-harness-router]].
+Source: [[src-rohit-harness-router]]. Related environment-design source (not a router): [[src-kaorixbt-harness-engineering]].
 
 ## Two choices
 
@@ -49,7 +49,7 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
 
-[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[jerry-liu]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]]
+[[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[jerry-liu]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]] · [[src-kaorixbt-harness-engineering]] · [[agent-operating-system]] · [[loop-graph-engineering]]
 
 [[src-can1357-daily-tool-replace-2026-08-27]]: people who know better can replace daily-flow apps themselves. Hour tops is tweet wording. See [[daily-tool-replace]].
 

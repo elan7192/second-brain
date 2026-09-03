@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-02
+updated: 2026-09-03
 created_by: agent
 confidence: high
 source:
@@ -13,11 +13,15 @@ source:
   - wiki/sources/src-yunta-tsai-quota-isolate.md
   - wiki/sources/src-samsokolin-browser-to-api.md
   - wiki/sources/src-lingxi-grok-bot-engineering.md
+  - wiki/sources/src-adiix-grok-bot-org.md
+  - wiki/sources/src-atenov-free-for-dev.md
 derived_from:
   - src-benln-grok-bot-pro-tips
   - src-yunta-tsai-quota-isolate
   - src-samsokolin-browser-to-api
   - src-lingxi-grok-bot-engineering
+  - src-adiix-grok-bot-org
+  - src-atenov-free-for-dev
   - raptor-dispatch
 ---
 
@@ -43,6 +47,10 @@ Recurring fill does not belong on the lead chat. See [[grok-bot-pro-tips]].
 
 [[src-samsokolin-browser-to-api]]: repeating GUI clicks burns tokens. Capture network once; next run hit the API. Prefer MCP/API over browserUse over computerUse.
 
+[[src-adiix-grok-bot-org]]: constant polling, sync-everything, bad retries, and too many Bots burn quota and can slow the system. Prefer event triggers; quiet success.
+
+[[src-atenov-free-for-dev]]: free-for-dev directory is a light Fill/lookup pointer. AI Compute Australia promo stays unverified.
+
 ## INFERENCE
 
 Isolate one job in one context. When done, file the repeatable method in the repo (wiki or skill) and stop. Do not spawn a Grok Bot room or channel to do this. Isolation is end-the-stream, not open-a-room. derived_from: src-yunta-tsai-quota-isolate, raptor-dispatch.
@@ -61,4 +69,4 @@ If a job is done and the method is only in chat: file it into wiki or a skill, t
 
 ## Related
 
-[[quota-router]] · [[grok-bot-pro-tips]] · [[tokens-as-capital]] · [[raptor-dispatch]] · [[work-per-cost]] · [[botdirectory-scan]] · [[spacexai-grok-bot-keepers]] · [[src-benln-grok-bot-pro-tips]] · [[src-yunta-tsai-quota-isolate]] · [[src-samsokolin-browser-to-api]]
+[[quota-router]] · [[grok-bot-pro-tips]] · [[tokens-as-capital]] · [[raptor-dispatch]] · [[work-per-cost]] · [[botdirectory-scan]] · [[spacexai-grok-bot-keepers]] · [[src-benln-grok-bot-pro-tips]] · [[src-yunta-tsai-quota-isolate]] · [[src-samsokolin-browser-to-api]] · [[src-adiix-grok-bot-org]] · [[src-atenov-free-for-dev]]

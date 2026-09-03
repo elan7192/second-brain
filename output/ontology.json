@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-02T07:02:42Z",
+  "builtAt": "2026-09-03T11:29:45Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 15,
     "Ship": 59,
     "Map": 5,
-    "unverified": 104,
+    "unverified": 110,
     "Hunt": 8,
-    "Concept": 126,
+    "Concept": 127,
     "Project": 2,
-    "Source": 149,
+    "Source": 153,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 437,
-    "links": 3093
+    "objects": 442,
+    "links": 3160
   },
   "objects": [
     {
@@ -1073,11 +1073,11 @@
       "title": "Agent operating system",
       "path": "wiki/agent-operating-system.md",
       "created": "2026-08-23",
-      "updated": "2026-08-29",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 38,
-      "outbound": 59,
+      "inbound": 41,
+      "outbound": 61,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -2006,6 +2006,20 @@
       "oneLiner": "The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite."
     },
     {
+      "primaryKey": "graph-node-ablation",
+      "objectType": "Concept",
+      "title": "Graph node ablation",
+      "path": "wiki/graph-node-ablation.md",
+      "created": "2026-09-03",
+      "updated": "2026-09-03",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 7,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Ablation test for multi-agent / workflow graphs: keep a node only if removing it changes the outcome."
+    },
+    {
       "primaryKey": "grok-bot",
       "objectType": "Concept",
       "title": "Grok Bot",
@@ -2053,12 +2067,12 @@
       "title": "Grok Bot quota",
       "path": "wiki/grok-bot-quota.md",
       "created": "2026-08-27",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
-      "outbound": 10,
-      "unverified": false,
+      "inbound": 21,
+      "outbound": 12,
+      "unverified": true,
       "oneLiner": "Grok Bot quota burns fastest on:"
     },
     {
@@ -2165,11 +2179,11 @@
       "title": "Harness routing",
       "path": "wiki/harness-routing.md",
       "created": "2026-08-23",
-      "updated": "2026-08-29",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 46,
-      "outbound": 29,
+      "inbound": 48,
+      "outbound": 32,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
     },
@@ -2333,11 +2347,11 @@
       "title": "Index",
       "path": "wiki/index.md",
       "created": "2026-08-23",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
       "inbound": 34,
-      "outbound": 25,
+      "outbound": 26,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2361,11 +2375,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
-      "outbound": 151,
+      "inbound": 15,
+      "outbound": 155,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2837,11 +2851,11 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 261,
+      "outbound": 267,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2851,11 +2865,11 @@
       "title": "Loop and graph engineering",
       "path": "wiki/loop-graph-engineering.md",
       "created": "2026-08-27",
-      "updated": "2026-08-28",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
-      "outbound": 14,
+      "inbound": 18,
+      "outbound": 20,
       "unverified": false,
       "oneLiner": "Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
     },
@@ -2924,7 +2938,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 23,
+      "inbound": 25,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "A memory line earns its place only by deleting an answer the model would otherwise give."
@@ -3229,11 +3243,11 @@
       "title": "Musk Algorithm",
       "path": "wiki/musk-algorithm.md",
       "created": "2026-08-27",
-      "updated": "2026-09-01",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
-      "outbound": 9,
+      "inbound": 29,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
     },
@@ -3523,12 +3537,12 @@
       "title": "Quota router",
       "path": "wiki/quota-router.md",
       "created": "2026-08-25",
-      "updated": "2026-08-27",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 9,
-      "outbound": 4,
-      "unverified": false,
+      "inbound": 10,
+      "outbound": 6,
+      "unverified": true,
       "oneLiner": "Burn expiring quota first."
     },
     {
@@ -3551,11 +3565,11 @@
       "title": "Raptor dispatch",
       "path": "wiki/raptor-dispatch.md",
       "created": "2026-08-25",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 33,
-      "outbound": 18,
+      "inbound": 36,
+      "outbound": 21,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
     },
@@ -3705,11 +3719,11 @@
       "title": "Skill as SOP",
       "path": "wiki/skill-as-sop.md",
       "created": "2026-08-23",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
-      "outbound": 12,
+      "inbound": 24,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3789,11 +3803,11 @@
       "title": "SpaceXAI Grok Bot keepers",
       "path": "wiki/spacexai-grok-bot-keepers.md",
       "created": "2026-09-02",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
-      "outbound": 14,
+      "inbound": 15,
+      "outbound": 16,
       "unverified": false,
       "oneLiner": "Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool."
     },
@@ -3840,6 +3854,20 @@
       "oneLiner": "Line-level ablation on a 104-line memory file. 71 lines never changed an answer. Facts survived. Adjectives died. Do not let a model audit memory it wrote."
     },
     {
+      "primaryKey": "src-0xwast3-ablation-schema",
+      "objectType": "Source",
+      "title": "src-0xwast3-ablation-schema",
+      "path": "wiki/sources/src-0xwast3-ablation-schema.md",
+      "created": "2026-09-03",
+      "updated": "2026-09-03",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 5,
+      "unverified": true,
+      "oneLiner": "Measure a node by what breaks when it is gone, not by what it produces."
+    },
+    {
       "primaryKey": "src-4ndrearossetti-openconnector",
       "objectType": "Source",
       "title": "src-4ndrearossetti-openconnector",
@@ -3852,6 +3880,20 @@
       "outbound": 5,
       "unverified": true,
       "oneLiner": "Reply to Steve Faulkner (@southpolesteve, 2091632440242573786). Body is a mention plus a quote of Alex Veremeyenko (@alex_verem, 2091165832592413114)."
+    },
+    {
+      "primaryKey": "src-adiix-grok-bot-org",
+      "objectType": "Source",
+      "title": "src-adiix-grok-bot-org",
+      "path": "wiki/sources/src-adiix-grok-bot-org.md",
+      "created": "2026-09-03",
+      "updated": "2026-09-03",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Chief routes; does not do the work. Triage \u2192 delegate \u2192 watch \u2192 collect \u2192 escalate. A Chief that researches/writes/operates itself rebuilds one giant chatbot."
     },
     {
       "primaryKey": "src-agentmemoryl-aml-s2",
@@ -4666,6 +4708,20 @@
       "oneLiner": "Product axis is future potential / runway, not citations or journal prestige. Corpus 2026-08-24 gap batch 6: 405856 unique papers (+72800, cursor 2022-06-08), dates 1990-01-01 to 2026-08-20, full-corp"
     },
     {
+      "primaryKey": "src-atenov-free-for-dev",
+      "objectType": "Source",
+      "title": "src-atenov-free-for-dev",
+      "path": "wiki/sources/src-atenov-free-for-dev.md",
+      "created": "2026-09-03",
+      "updated": "2026-09-03",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 3,
+      "unverified": true,
+      "oneLiner": "free-for-dev is a community-maintained directory of free tiers (author: long-lived list; rule claimed: free for at least a year, not short trials). Useful as a Fill / leftover-quota lookup pointer."
+    },
+    {
       "primaryKey": "src-av1dlive-loop-graph-2026-08-26",
       "objectType": "Source",
       "title": "src-av1dlive-loop-graph-2026-08-26",
@@ -5098,6 +5154,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Ten named anti-slop skills. unslop's public pitch: no em dashes, no extra examples, no unsolicited comparisons."
+    },
+    {
+      "primaryKey": "src-kaorixbt-harness-engineering",
+      "objectType": "Source",
+      "title": "src-kaorixbt-harness-engineering",
+      "path": "wiki/sources/src-kaorixbt-harness-engineering.md",
+      "created": "2026-09-03",
+      "updated": "2026-09-03",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Prompt engineering improves the instruction. Context engineering decides what the model sees. Harness engineering builds the world in which the model acts. Same weights, different harness \u2192 different "
     },
     {
       "primaryKey": "src-lan-e-claim-protocol-2026-08-27",
@@ -5696,7 +5766,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 9,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Five harnesses, one router. Shared object is an [[audited-task-contract]]. Route model and harness as separate choices. Move semantic state, never KV state. Planner / controller / executor / auditor."
@@ -6211,11 +6281,11 @@
       "title": "Work per cost",
       "path": "wiki/work-per-cost.md",
       "created": "2026-08-27",
-      "updated": "2026-09-02",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
-      "outbound": 29,
+      "inbound": 31,
+      "outbound": 33,
       "unverified": true,
       "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
     },
@@ -7948,6 +8018,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -7964,6 +8039,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
     },
     {
       "from": "agent-operating-system",
@@ -10881,6 +10961,41 @@
       "to": "graph"
     },
     {
+      "from": "graph-node-ablation",
+      "linkType": "cites",
+      "to": "src-0xwast3-ablation-schema"
+    },
+    {
+      "from": "graph-node-ablation",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "graph-node-ablation",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "graph-node-ablation",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "graph-node-ablation",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "graph-node-ablation",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "graph-node-ablation",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
       "from": "grok-bot",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
@@ -11034,6 +11149,16 @@
       "from": "grok-bot-pro-tips",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "grok-bot-quota",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "grok-bot-quota",
+      "linkType": "cites",
+      "to": "src-atenov-free-for-dev"
     },
     {
       "from": "grok-bot-quota",
@@ -11373,6 +11498,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -11399,6 +11529,11 @@
       "from": "harness-routing",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
     },
     {
       "from": "harness-routing",
@@ -11439,6 +11574,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "headlong"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
     },
     {
       "from": "harness-routing",
@@ -11988,6 +12128,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "graph-node-ablation"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "growth-operator"
     },
     {
@@ -12318,7 +12463,17 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-0xwast3-ablation-schema"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
     },
     {
       "from": "index-sources",
@@ -12613,6 +12768,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-atenov-free-for-dev"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-av1dlive-loop-graph-2026-08-26"
     },
     {
@@ -12764,6 +12924,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-juampi-anti-slop-rank"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
     },
     {
       "from": "index-sources",
@@ -14083,7 +14248,17 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-0xwast3-ablation-schema"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-4ndrearossetti-openconnector"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
     },
     {
       "from": "log",
@@ -14139,6 +14314,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-arxiv-tierlist-handoff"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-atenov-free-for-dev"
     },
     {
       "from": "log",
@@ -14234,6 +14414,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-johnsjawn-skill-library"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
     },
     {
       "from": "log",
@@ -14389,6 +14574,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
     },
     {
       "from": "log",
@@ -14724,6 +14914,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "g-carl"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "graph-node-ablation"
     },
     {
       "from": "log",
@@ -15333,12 +15528,27 @@
     {
       "from": "loop-graph-engineering",
       "linkType": "cites",
+      "to": "src-0xwast3-ablation-schema"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "cites",
       "to": "src-av1dlive-loop-graph-2026-08-26"
     },
     {
       "from": "loop-graph-engineering",
       "linkType": "cites",
       "to": "src-avid-obsidian-agent-team"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
     },
     {
       "from": "loop-graph-engineering",
@@ -15368,7 +15578,17 @@
     {
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
+      "to": "graph-node-ablation"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
       "to": "grok-bot-quota"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
     },
     {
       "from": "loop-graph-engineering",
@@ -15389,6 +15609,11 @@
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "loop-graph-engineering",
@@ -16713,6 +16938,11 @@
     {
       "from": "musk-algorithm",
       "linkType": "cites",
+      "to": "src-0xwast3-ablation-schema"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "cites",
       "to": "src-lan-e-musk-algorithm"
     },
     {
@@ -16724,6 +16954,11 @@
       "from": "musk-algorithm",
       "linkType": "relatedTo",
       "to": "deterministic-core"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "relatedTo",
+      "to": "graph-node-ablation"
     },
     {
       "from": "musk-algorithm",
@@ -17273,6 +17508,11 @@
     {
       "from": "quota-router",
       "linkType": "cites",
+      "to": "src-atenov-free-for-dev"
+    },
+    {
+      "from": "quota-router",
+      "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
     },
     {
@@ -17289,6 +17529,11 @@
       "from": "quota-router",
       "linkType": "relatedTo",
       "to": "harness-routing"
+    },
+    {
+      "from": "quota-router",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
     },
     {
       "from": "r2-opd",
@@ -17308,12 +17553,22 @@
     {
       "from": "raptor-dispatch",
       "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "cites",
       "to": "src-chatgpt-play-2026-08-25"
     },
     {
       "from": "raptor-dispatch",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
     },
     {
       "from": "raptor-dispatch",
@@ -17329,6 +17584,11 @@
       "from": "raptor-dispatch",
       "linkType": "cites",
       "to": "src-poteto-pstack-outer-loop"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
     },
     {
       "from": "raptor-dispatch",
@@ -17723,6 +17983,16 @@
     {
       "from": "skill-as-sop",
       "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
       "to": "src-lingxi-grok-bot-engineering"
     },
     {
@@ -17754,6 +18024,11 @@
       "from": "skill-as-sop",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
     },
     {
       "from": "skill-as-sop",
@@ -17958,6 +18233,11 @@
     {
       "from": "spacexai-grok-bot-keepers",
       "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
       "to": "src-lingxi-grok-bot-engineering"
     },
     {
@@ -17984,6 +18264,11 @@
       "from": "spacexai-grok-bot-keepers",
       "linkType": "cites",
       "to": "src-yunta-tsai-quota-isolate"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "relatedTo",
+      "to": "graph-node-ablation"
     },
     {
       "from": "spacexai-grok-bot-keepers",
@@ -18071,6 +18356,31 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "src-0xwast3-ablation-schema",
+      "linkType": "relatedTo",
+      "to": "graph-node-ablation"
+    },
+    {
+      "from": "src-0xwast3-ablation-schema",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "src-0xwast3-ablation-schema",
+      "linkType": "relatedTo",
+      "to": "memory-ablation"
+    },
+    {
+      "from": "src-0xwast3-ablation-schema",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-0xwast3-ablation-schema",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
       "from": "src-4ndrearossetti-openconnector",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
@@ -18094,6 +18404,31 @@
       "from": "src-4ndrearossetti-openconnector",
       "linkType": "relatedTo",
       "to": "secret-gateway"
+    },
+    {
+      "from": "src-adiix-grok-bot-org",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-adiix-grok-bot-org",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-adiix-grok-bot-org",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-adiix-grok-bot-org",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "src-adiix-grok-bot-org",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
     },
     {
       "from": "src-agentmemoryl-aml-s2",
@@ -19136,6 +19471,21 @@
       "to": "potential-ranking"
     },
     {
+      "from": "src-atenov-free-for-dev",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-atenov-free-for-dev",
+      "linkType": "relatedTo",
+      "to": "quota-router"
+    },
+    {
+      "from": "src-atenov-free-for-dev",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
       "from": "src-av1dlive-loop-graph-2026-08-26",
       "linkType": "cites",
       "to": "src-avid-obsidian-agent-team"
@@ -19759,6 +20109,41 @@
       "from": "src-juampi-anti-slop-rank",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "src-lan-e-claim-protocol-2026-08-27",
@@ -21538,6 +21923,21 @@
     {
       "from": "work-per-cost",
       "linkType": "cites",
+      "to": "src-0xwast3-ablation-schema"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "cites",
+      "to": "src-atenov-free-for-dev"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "cites",
       "to": "src-hitu-entropy-engineering"
     },
     {
@@ -21584,6 +21984,11 @@
       "from": "work-per-cost",
       "linkType": "relatedTo",
       "to": "file-memory"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "relatedTo",
+      "to": "graph-node-ablation"
     },
     {
       "from": "work-per-cost",

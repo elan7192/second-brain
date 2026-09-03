@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-01
+updated: 2026-09-03
 ---
 
 # Musk Algorithm
@@ -33,8 +33,10 @@ Keep long-term vision. Starship lines on the source are examples, not new physic
 - 2026-09-01b, lan E yes on the three named leftovers. Graph renders `output/obsidian-graph.{html,png,svg}`, `output/obsidian-dataflow.html`, `output/growthos-graph.html` deleted from git and gitignored; `tools/render-*.py` rebuild them and the committed copies were already stale. Doors point at the command. The two "zero-inbound" briefs were a miscount (the search skipped `output/`; merge-conflict reports link them), so they stay under C38. Parser dedupe: one `WIKILINK` and one frontmatter parser in `tools/secondbrain/frontmatter.py`; `memorylib`, `ontology_lib`, `lint-wiki`, `render-obsidian-graph`, `render-dataflow`, `index`, `ingest_check` import it. C18 files untouched.
 - 2026-09-01c, accelerate. Profiled first, then cut what the profile named. Index: build into a temp file and `os.replace` it (a reader can no longer open a half-built database), FTS5 external-content table (no second copy of every body), indexes on `links`, `claim_sources`, `claim_concepts`, `objects.slug`, link resolution as one dict pass instead of a ten-branch correlated subquery per link. Retrieval: slotted `Hit`, one batched fetch for neighbors, `date.fromisoformat`, snippets only for returned hits. CLI imports subcommand modules lazily. Eval searches each question once. Lint runs the injection regex on the 23 of 413 files that contain a trigger word, and reads each file once. `paths.rel_posix` replaces `pathlib.relative_to`, which was 28% of validate. Measured with a warm bytecode cache, median of 9: rebuild-index 253 to 93 ms, ask 48 to 31 ms, eval 397 to 136 ms. One ranking change, gated by eval: an object found by FTS and cited by a ranked claim now gets the claim-link bonus it was denied when FTS found it first. Recall 95%. Ontology: `outbound` counted skipped targets on 24 objects, 209 links broke the schema's own `linkTypes`, `builtAt` churned the committed JSON on every rebuild. All three fixed; `ontology.py verify` proves the graph in SQLite and against the FTS index. See [[vault-ontology]].
 
+Graph / workflow nodes: [[graph-node-ablation]] (RUN→PULL→DELTA→RANK→CUT) is the same delete test applied to agent graphs. Source [[src-0xwast3-ablation-schema]].
+
 See [[log]]. Live query stays D9. C17 and C18 untouched.
 
 ## Related
 
-[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]]
+[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]]

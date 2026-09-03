@@ -5,18 +5,22 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-09-02
+updated: 2026-09-03
 created_by: agent
 confidence: high
 source:
   - wiki/sources/src-play-methods-2026-08-25.md
   - wiki/sources/src-lingxi-grok-bot-engineering.md
   - wiki/sources/src-poteto-pstack-outer-loop.md
+  - wiki/sources/src-adiix-grok-bot-org.md
+  - wiki/sources/src-kaorixbt-harness-engineering.md
 derived_from:
   - src-play-methods-2026-08-25
   - src-lingxi-grok-bot-engineering
   - src-poteto-pstack-outer-loop
   - src-poteto-eliminate-interventions
+  - src-adiix-grok-bot-org
+  - src-kaorixbt-harness-engineering
 ---
 
 # Raptor dispatch
@@ -43,11 +47,15 @@ Same loop, named: [[assign-execute-verify]]. 24h intel stays OFF until lan E say
 
 [[src-lingxi-grok-bot-engineering]]: one domain per standing bot; cloud agent proof loop with named skills and expected proof.
 
+[[src-adiix-grok-bot-org]]: Chief is deliberately underqualified for production work. Routes only. Hire by bottleneck. Contract per Bot. Artifact handoffs via `/workspace`.
+
+[[src-kaorixbt-harness-engineering]]: contract before act; permissions and stop rules outside the model; report with evidence (tests/lint/traces), not empty done. Harness authorizes irreversible side effects; the model only proposes.
+
 ## INFERENCE
 
 Outer loop is CoS (front door). Inner bounded round is the named specialist (Engineer for code). Verifier is acceptance tests or Vault source-ids, not a new bot. Do not install pstack wholesale as a bot farm. derived_from: src-poteto-pstack-outer-loop, loop-graph-engineering.
 
-Roster map: CoS / Engineer / Vault / Fill / Rutin. No Jenny hire. No iOS/Android/Desktop engineer-bot clones. derived_from: src-lingxi-grok-bot-engineering.
+Roster map: CoS / Engineer / Vault / Fill / Rutin. No Jenny hire. No iOS/Android/Desktop engineer-bot clones. Hire only when a recurring bottleneck needs a permanent owner. derived_from: src-lingxi-grok-bot-engineering, src-adiix-grok-bot-org.
 
 P0 = denser live steer on the in-flight cloud agent. Not a 5/15-min poller. Last yes human. No auto-merge. derived_from: src-lingxi-grok-bot-engineering.
 
@@ -57,4 +65,4 @@ Hub: [[spacexai-grok-bot-keepers]].
 
 ## Related
 
-[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[grok-bot]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[loop-graph-engineering]] · [[assign-execute-verify]] · [[spacexai-grok-bot-keepers]] · [[skill-as-sop]] · [[work-per-cost]] · [[grok-bot-quota]]
+[[harness-routing]] · [[session-migrate]] · [[spot-check]] · [[bot-voice]] · [[grok-bot]] · [[src-chatgpt-play-2026-08-25]] · [[musk-algorithm]] · [[loop-graph-engineering]] · [[assign-execute-verify]] · [[spacexai-grok-bot-keepers]] · [[skill-as-sop]] · [[work-per-cost]] · [[grok-bot-quota]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[agent-operating-system]]
