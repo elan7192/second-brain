@@ -17,6 +17,8 @@ Source: [[src-av1dlive-loop-graph-2026-08-26]]. lan E share. Article not dumped.
 
 Owner + worker + verifier + stop rule.
 
+[[src-kaorixbt-harness-engineering]]: the loop belongs to the harness. Evidence, bounded retries, budget, escalation. The model repairs the local gap; the harness decides whether another attempt is allowed. "Keep trying until it works" is not a control system.
+
 ## Three stores. Do not mix
 
 - Knowledge graph: source-backed claims.
@@ -31,6 +33,8 @@ File bridge between harnesses. No native Grok Bot to Kimi handoff. Author says u
 
 Nested harness gap: outer approval does not see inner tool calls. No `kimi -p` write-capable. No yolo.
 
+[[src-kaorixbt-harness-engineering]] (distinct from [[src-rohit-harness-router]]): Prompts → Agents → Harness → Loops → Graphs. Graph turns every accepted result into a rule for the next run. Sensors before more autonomy. Durable `state` outside chat. Failure upgrades the class (map/tool/validator/retry-cap/permission/trace), not only the current output.
+
 ## Node ablation
 
 [[graph-node-ablation]] / [[src-0xwast3-ablation-schema]]: RUN→PULL→DELTA→RANK→CUT. Retire nodes whose removal changes nothing. Same delete test as [[musk-algorithm]] applied to graph steps.
@@ -38,6 +42,8 @@ Nested harness gap: outer approval does not see inner tool calls. No `kimi -p` w
 ## Start small
 
 Start one worker. Three-round cap. Same-fingerprint stop. Missing or stale source stop. Swarm / DAG / KG only after those are stable.
+
+Smallest harness that can observe, verify, and recover. Move up only when the task earns complexity. Small root map, not a giant manual.
 
 Author AGI claim is marketing. Not a fact.
 
@@ -55,4 +61,4 @@ See [[raptor-dispatch]], [[audited-task-contract]], [[context-graph]], [[llm-wik
 
 ## Related
 
-[[raptor-dispatch]] · [[audited-task-contract]] · [[context-graph]] · [[llm-wiki]] · [[claim-protocol]] · [[work-per-cost]] · [[musk-algorithm]] · [[ai-sovereignty]] · [[grok-bot-quota]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-av1dlive-loop-graph-2026-08-26]] · [[src-avid-obsidian-agent-team]] · [[memory-system]] · [[vault-ontology]]
+[[raptor-dispatch]] · [[audited-task-contract]] · [[context-graph]] · [[llm-wiki]] · [[claim-protocol]] · [[work-per-cost]] · [[musk-algorithm]] · [[ai-sovereignty]] · [[grok-bot-quota]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-av1dlive-loop-graph-2026-08-26]] · [[src-avid-obsidian-agent-team]] · [[memory-system]] · [[vault-ontology]] · [[src-kaorixbt-harness-engineering]] · [[src-rohit-harness-router]] · [[harness-routing]] · [[skill-as-sop]]

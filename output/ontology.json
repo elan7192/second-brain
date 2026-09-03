@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-03T11:27:31Z",
+  "builtAt": "2026-09-03T11:29:45Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 15,
     "Ship": 59,
     "Map": 5,
-    "unverified": 109,
+    "unverified": 110,
     "Hunt": 8,
     "Concept": 127,
     "Project": 2,
-    "Source": 152,
+    "Source": 153,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 441,
-    "links": 3137
+    "objects": 442,
+    "links": 3160
   },
   "objects": [
     {
@@ -1073,11 +1073,11 @@
       "title": "Agent operating system",
       "path": "wiki/agent-operating-system.md",
       "created": "2026-08-23",
-      "updated": "2026-08-29",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 38,
-      "outbound": 59,
+      "inbound": 41,
+      "outbound": 61,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -2179,11 +2179,11 @@
       "title": "Harness routing",
       "path": "wiki/harness-routing.md",
       "created": "2026-08-23",
-      "updated": "2026-08-29",
+      "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 46,
-      "outbound": 29,
+      "inbound": 48,
+      "outbound": 32,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 14,
-      "outbound": 154,
+      "inbound": 15,
+      "outbound": 155,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2855,7 +2855,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 265,
+      "outbound": 267,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -2868,8 +2868,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
-      "outbound": 16,
+      "inbound": 18,
+      "outbound": 20,
       "unverified": false,
       "oneLiner": "Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
     },
@@ -3568,8 +3568,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
-      "outbound": 19,
+      "inbound": 36,
+      "outbound": 21,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
     },
@@ -3722,8 +3722,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
-      "outbound": 13,
+      "inbound": 24,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -5156,6 +5156,20 @@
       "oneLiner": "Ten named anti-slop skills. unslop's public pitch: no em dashes, no extra examples, no unsolicited comparisons."
     },
     {
+      "primaryKey": "src-kaorixbt-harness-engineering",
+      "objectType": "Source",
+      "title": "src-kaorixbt-harness-engineering",
+      "path": "wiki/sources/src-kaorixbt-harness-engineering.md",
+      "created": "2026-09-03",
+      "updated": "2026-09-03",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Prompt engineering improves the instruction. Context engineering decides what the model sees. Harness engineering builds the world in which the model acts. Same weights, different harness \u2192 different "
+    },
+    {
       "primaryKey": "src-lan-e-claim-protocol-2026-08-27",
       "objectType": "Source",
       "title": "src-lan-e-claim-protocol-2026-08-27",
@@ -5752,7 +5766,7 @@
       "updated": "2026-08-23",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 9,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Five harnesses, one router. Shared object is an [[audited-task-contract]]. Route model and harness as separate choices. Move semantic state, never KV state. Planner / controller / executor / auditor."
@@ -8004,6 +8018,11 @@
     {
       "from": "agent-operating-system",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -8020,6 +8039,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
     },
     {
       "from": "agent-operating-system",
@@ -11474,6 +11498,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -11500,6 +11529,11 @@
       "from": "harness-routing",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
     },
     {
       "from": "harness-routing",
@@ -11540,6 +11574,11 @@
       "from": "harness-routing",
       "linkType": "relatedTo",
       "to": "headlong"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
     },
     {
       "from": "harness-routing",
@@ -12885,6 +12924,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-juampi-anti-slop-rank"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
     },
     {
       "from": "index-sources",
@@ -14374,6 +14418,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-lan-e-claim-protocol-2026-08-27"
     },
     {
@@ -14525,6 +14574,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
     },
     {
       "from": "log",
@@ -15488,6 +15542,16 @@
     },
     {
       "from": "loop-graph-engineering",
+      "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
+    },
+    {
+      "from": "loop-graph-engineering",
       "linkType": "relatedTo",
       "to": "ai-sovereignty"
     },
@@ -15524,6 +15588,11 @@
     {
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
       "to": "llm-wiki"
     },
     {
@@ -15540,6 +15609,11 @@
       "from": "loop-graph-engineering",
       "linkType": "relatedTo",
       "to": "raptor-dispatch"
+    },
+    {
+      "from": "loop-graph-engineering",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "loop-graph-engineering",
@@ -17494,6 +17568,11 @@
     {
       "from": "raptor-dispatch",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "cites",
       "to": "src-lingxi-grok-bot-engineering"
     },
     {
@@ -17505,6 +17584,11 @@
       "from": "raptor-dispatch",
       "linkType": "cites",
       "to": "src-poteto-pstack-outer-loop"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
     },
     {
       "from": "raptor-dispatch",
@@ -17904,6 +17988,11 @@
     {
       "from": "skill-as-sop",
       "linkType": "cites",
+      "to": "src-kaorixbt-harness-engineering"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
       "to": "src-lingxi-grok-bot-engineering"
     },
     {
@@ -17935,6 +18024,11 @@
       "from": "skill-as-sop",
       "linkType": "relatedTo",
       "to": "audited-task-contract"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
     },
     {
       "from": "skill-as-sop",
@@ -20015,6 +20109,41 @@
       "from": "src-juampi-anti-slop-rank",
       "linkType": "relatedTo",
       "to": "anti-slop"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "cites",
+      "to": "src-rohit-harness-router"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "loop-graph-engineering"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-kaorixbt-harness-engineering",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "src-lan-e-claim-protocol-2026-08-27",

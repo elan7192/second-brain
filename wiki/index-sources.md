@@ -15,6 +15,7 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-kaorixbt-harness-engineering]] | 2026-09-03 | Harness env: contract, map, tools, state, evidence, stop, fail→rule |
 | [[src-adiix-grok-bot-org]] | 2026-09-03 | Chief routes; hire by bottleneck; three gates; /workspace bus |
 | [[src-0xwast3-ablation-schema]] | 2026-09-03 | RUN→PULL→DELTA→RANK→CUT; retire no-op nodes |
 | [[src-atenov-free-for-dev]] | 2026-09-03 | free-for-dev pointer; AI Compute AU unverified |

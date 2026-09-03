@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-09-03
 ---
 
 # Agent operating system
@@ -18,6 +18,7 @@ Five layers, one vault.
 1. **Compile, then retrieve the compiled set.** [[llm-wiki]] + [[tokens-as-capital]] + [[retrieval]] + [[claim-protocol]]. `raw/` is input. `wiki/` is the brain. `output/` is built from the wiki. The agent queries through `python3 tools/sb ask`, not by walking [[index]] (D9, C37). [[agent-facing-docs]] measured that instruction files and working notes take most of an agent's documentation attention.
 2. **Remember only what changes answers.** [[memory-engineering]] + [[memory-ablation]] + [[memory-system]]. Capture is a filter. Adjectives die. Conflicts `flag_conflict`. New claims are FACT, INFERENCE, or OPINION.
 3. **Share a contract, not a chat.** [[audited-task-contract]] + [[harness-routing]] + [[entropy-gate]] + [[raptor-dispatch]] + [[secret-gateway]]. Planner proposes. Deterministic controller commits. Isolated worktrees. Validated diffs. One owner per job. Credentials stay in a runtime, not in the prompt. [[adversarial-review]] freezes the artifact while a reviewer and critic argue, then the writer edits. Codex `/goal` is a same-harness form of that contract. See [[codex-goal]].
+[[src-kaorixbt-harness-engineering]]: harness engineering is the environment around the model (contract before act, small root map, tools with purpose/failure/permission, durable state outside chat, evidence before autonomy, stop rules and permissions outside the model, failures → infrastructure). Prompt/context alone do not fix a broken harness. Distinct from [[src-rohit-harness-router]] routing.
 4. **Check instead of wishing.** [[verifiable-instructions]] + [[self-verification]] + [[anti-slop]]. Every schema rule has a check. High-risk answers get scored against citations. Reading `AGENTS.md` is not the check. See D10 and [[agent-facing-docs]]. [[ultra-mode]] is the coding-agent product of that loop: N isolated worktrees, [[probabilistic-pivot-tournament]], uncommitted apply.
 5. **Keep a human gate.** [[hunt-ship-loop]] + [[clip-pipeline]] + [[skillspector]]. File first. Scouts write quietly. Vault does not post, pay, or send. Generated skills wait for SkillSpector. Operating order: [[musk-algorithm]].
 
@@ -61,3 +62,5 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 [[src-voxyz-codex-goal-quota]] is the parent leftover-quota thread. Five `/goal` recipes retrieved. Duration claim is C45.
 
 [[src-voxyz-archify]] is a 2026-08-29 diagram-skill prompt. Project copy only. See [[archify]] and C47.
+
+[[src-kaorixbt-harness-engineering]] is harness-environment design (seven jobs). Related router: [[src-rohit-harness-router]]. Folded; no new hub.

@@ -28,6 +28,8 @@ Source: [[src-skill-pack-list]].
 
 [[src-adiix-grok-bot-org]]: grow from mistakes — turn a repeatable failure into a permanent rule in the narrowest place. Earn Skills: real task → correction → Skill → test → Routine. Same correction three times manually is unpaid QA.
 
+[[src-kaorixbt-harness-engineering]]: failures become rules. Encode the important rule twice — guide the agent can understand, then a mechanical check it cannot bypass. Past failure → permanent harness improvement; the next agent does not need to remember the incident.
+
 ## What to do in this vault
 
 Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
@@ -38,4 +40,4 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 ## Related
 
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]]
+[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[loop-graph-engineering]]

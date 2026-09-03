@@ -11,6 +11,10 @@ updated: 2026-09-03
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-03] ingest | kaorixbt harness engineering
+
+Compiled [[src-kaorixbt-harness-engineering]] from https://x.com/kaorixbt/status/2095172395254358494 + article https://x.com/i/article/2093441687989186560 via FxTwitter. Principles only. Folded into [[agent-operating-system]], [[raptor-dispatch]], [[loop-graph-engineering]], [[skill-as-sop]]; linked from [[harness-routing]]. Distinct from [[src-rohit-harness-router]]. No MEMORY/claims (overlap with existing contract/loop/SOP lines). Hold merge.
+
 ## [2026-09-03] ingest | chat keepers AdiiX / 0xwast3 / Atenov free-for-dev
 
 Compiled [[src-adiix-grok-bot-org]], [[src-0xwast3-ablation-schema]], [[src-atenov-free-for-dev]]. Principles only. Folded into [[spacexai-grok-bot-keepers]], [[raptor-dispatch]], [[grok-bot-quota]], [[work-per-cost]], [[skill-as-sop]], [[loop-graph-engineering]], [[musk-algorithm]], [[quota-router]]. Short concept [[graph-node-ablation]]. House: CoS front door; no Jenny; no auto-merge; no 5/15 polls; no new rooms; LanBB product. AI Compute Australia flagged unverified. Hold merge.
