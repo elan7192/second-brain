@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-08-30
+updated: 2026-09-02
 ---
 
 # Index sources
@@ -15,6 +15,12 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lingxi-grok-bot-engineering]] | 2026-09-02 | One domain/bot; cloud proof loop; no Jenny clone |
+| [[src-poteto-eliminate-interventions]] | 2026-09-02 | Kill repetition: arch → CI → skill → human last |
+| [[src-poteto-pstack-outer-loop]] | 2026-09-02 | Routines farm outer loop; /goal /loop /swarm how |
+| [[src-samsokolin-browser-to-api]] | 2026-09-02 | GUI once then API; prefer MCP/API |
+| [[src-xai-introducing-grok-bot]] | 2026-09-02 | Product post. Own computer. CoS + specialists |
+| [[src-yunta-tsai-quota-isolate]] | 2026-08-31 | Isolate one job. File method in repo. No new room |
 | [[src-voxyz-skill-improver]] | 2026-08-29 | Warp/Claude skill improver. Caption only. No video dump |
 | [[src-voxyz-archify]] | 2026-08-29 | Archify diagram skill. Project copy. C47 |
 | [[src-vault-review-pr27-2026-08-29]] | 2026-08-29 | PR27 follow-up. Negative tests. Contract v1. C17 two_projections |

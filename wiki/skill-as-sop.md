@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-09-02
 ---
 
 # Skill as SOP
@@ -20,6 +20,12 @@ Source: [[src-skill-pack-list]].
 3. A stable SOP is supposed to stop the agent from treating a known failure as new and burning tokens. That is the same bet as [[tokens-as-capital]].
 4. The human already turned one Smoke problem into Hook + SOP, then asked whether to make their own skill. The script is not in `raw/`.
 
+## Cloud agent → skill
+
+[[src-lingxi-grok-bot-engineering]]: after a clean cloud-agent path, package what it learned as a repo skill (when, inputs, sequence, validation, proof). Agent verifies its own result before the skill is trusted.
+
+[[src-poteto-eliminate-interventions]]: if the same correction happens twice, prefer architecture or CI over adding another skill line. Skill/rule is step 3; human review is last.
+
 ## What to do in this vault
 
 Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
@@ -30,4 +36,4 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 ## Related
 
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]]
+[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]]

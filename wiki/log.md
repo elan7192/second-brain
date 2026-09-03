@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-02] ingest | SpaceXAI Grok Bot engineer keepers
+
+Compiled [[src-lingxi-grok-bot-engineering]], [[src-poteto-eliminate-interventions]], [[src-poteto-pstack-outer-loop]], [[src-samsokolin-browser-to-api]], [[src-xai-introducing-grok-bot]]. Kept [[src-yunta-tsai-quota-isolate]] (no duplicate page). Hub [[spacexai-grok-bot-keepers]]. Folded into [[grok-bot-quota]], [[work-per-cost]], [[skill-as-sop]], [[raptor-dispatch]]. House filter: CoS front door; no Jenny/domain clones; no auto-merge; no 5/15-min poller; P0 = denser live steer; product LanBB. Hold merge on PR34.
 
 ## [2026-09-01] accelerate | Musk pass 4c: profile, then cut; ontology proved in SQLite
 
@@ -18,6 +22,10 @@ Profiled every CLI path before touching code. Three structural costs: link resol
 ## [2026-09-01] gate | Musk pass 4: one gate, not five
 
 lan E asked to run [[musk-algorithm]] on the project. Previous passes ended on locked parts, so this pass took the gate surface, whose owner is the schema author. Deleted: `check_unit_tests` subprocess inside `tools/lint-wiki.py` (the test runner owns tests), `sb graph` and `sb memory-review` (zero references, the second was a wish), the double lint run inside `sb health`, empty `wiki/daily/`, and four CI steps (`health`, `ingest-check <fixed slug>`, `contract-check <fixture>`, `rebuild-ontology --check`) that `tests/test_gates.py` or validate already cover. Folded the ontology freshness check into `python3 tools/sb validate`. CI is now unit tests, validate, eval. `AGENTS.md` Ontology rebuild and Ingest check shrank. Left alone: C17, C18, D1–D12, committed graph renders (D7/D8, lan E owns), `output/` history (C38), append-only log. Candidates named on [[musk-algorithm]].
+
+## [2026-08-31] ingest | isolate-one-job on grok-bot-quota
+
+Folded [[src-yunta-tsai-quota-isolate]] into [[grok-bot-quota]]. Isolate one job in one context. File the method in the repo. Stop. Do not spawn a room. No new page. Hold merge.
 
 ## [2026-08-30] ingest | Voxyz skill improver and instruction-budget gate
 

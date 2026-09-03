@@ -2,6 +2,92 @@
 # IDs are stable. Do not delete a claim because a filename changed.
 
 claims:
+
+  - id: claim:one-domain-per-standing-bot
+    subject: Standing Grok Bot
+    predicate: owns
+    object: one domain mapped to CoS/Engineer/Vault/Fill/Rutin not SpaceXAI clones
+    confidence: high
+    sources:
+      - source:src-lingxi-grok-bot-engineering
+    concepts:
+      - concept:spacexai-grok-bot-keepers
+      - concept:raptor-dispatch
+    status: supported
+    valid_from: 2026-09-02
+    observed_at: 2026-09-02
+
+  - id: claim:kill-repetition-arch-ci-skill-human
+    subject: Agent correction
+    predicate: eliminated_in_order
+    object: architecture/data structure then lint/test CI then skill/rule then human review last
+    confidence: high
+    sources:
+      - source:src-poteto-eliminate-interventions
+    concepts:
+      - concept:spacexai-grok-bot-keepers
+      - concept:skill-as-sop
+      - concept:work-per-cost
+    status: supported
+    valid_from: 2026-09-02
+    observed_at: 2026-09-02
+
+  - id: claim:gui-once-then-api
+    subject: Repeated GUI computer-use path
+    predicate: replaced_by
+    object: captured network then MCP/API script
+    confidence: high
+    sources:
+      - source:src-samsokolin-browser-to-api
+    concepts:
+      - concept:grok-bot-quota
+      - concept:work-per-cost
+      - concept:spacexai-grok-bot-keepers
+    status: supported
+    valid_from: 2026-09-02
+    observed_at: 2026-09-02
+
+  - id: claim:cloud-agent-proof-loop
+    subject: Cloud agent job
+    predicate: requires
+    object: named skills, expected proof, stay on run, agent self-verify, package repeat path as skill
+    confidence: high
+    sources:
+      - source:src-lingxi-grok-bot-engineering
+    concepts:
+      - concept:spacexai-grok-bot-keepers
+      - concept:skill-as-sop
+      - concept:raptor-dispatch
+    status: supported
+    valid_from: 2026-09-02
+    observed_at: 2026-09-02
+
+  - id: claim:outer-loop-routines-cos-skills
+    subject: Outer loop
+    predicate: is
+    object: routines farm context; CoS decides next; skills do how
+    confidence: high
+    sources:
+      - source:src-poteto-pstack-outer-loop
+    concepts:
+      - concept:raptor-dispatch
+      - concept:spacexai-grok-bot-keepers
+    status: supported
+    valid_from: 2026-09-02
+    observed_at: 2026-09-02
+
+  - id: claim:isolate-one-job-then-file-in-repo
+    subject: Grok Bot job
+    predicate: isolated_as
+    object: one context, then file the method in the repo and stop
+    confidence: high
+    sources:
+      - source:src-yunta-tsai-quota-isolate
+    concepts:
+      - concept:grok-bot-quota
+    status: supported
+    valid_from: 2026-08-31
+    observed_at: 2026-08-31
   - id: claim:memory-line-retained-iff-changes-answer
     subject: Memory line
     predicate: retained_iff

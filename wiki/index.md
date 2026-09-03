@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Index
@@ -18,6 +18,8 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 - [[claims]] — two registries; C17 unresolved
 - [[how-it-works]] — operations
 - [[musk-algorithm]] — delete before optimize
+- [[spacexai-grok-bot-keepers]] — SpaceXAI method keepers (not org chart)
+- [[raptor-dispatch]] — one owner; CoS outer loop
 - [[agent-operating-system]] — five-layer synthesis
 - [[contradictions]] — unresolved conflicts
 - [[memory-system]] — provenance, labels, parked vector
