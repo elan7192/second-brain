@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Thick 入vaul
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-amitiitbhu-llm-papers-skip]] | 2026-09-04 | Skip: generic LLM 101 paper list |
 | [[src-sukiea-writing-for-agents]] | 2026-09-04 | writing-for-agents pointer; do not install mattpocock/skills |
 | [[src-beamnxw-botdirectory-skip]] | 2026-09-04 | Bot Directory 安利（300+ bots／可複製 prompt），目錄廣告無新方法。 |
 | [[src-poteto-routine-frequency]] | 2026-09-04 | 配額控制：少用過密 scheduled routine（15min≈96次/日）；長對話例行改丟給 fresh bot，主 bot 留給 CoS。 |

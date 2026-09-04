@@ -11,6 +11,10 @@ updated: 2026-09-04
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-04] ingest | amitiitbhu LLM papers skip pointer
+
+Compiled [[src-amitiitbhu-llm-papers-skip]]. Skip: generic LLM 101 list, not wiki/memory/harness. Hold merge.
+
 ## [2026-09-04] ingest | Sukiea writing-for-agents pointer
 
 Compiled [[src-sukiea-writing-for-agents]] from https://x.com/Sukiea1008/status/2095594968136204501 via FxTwitter. One-line pointer only. Folded into [[skill-improver]] and [[skill-as-sop]]. Keep: optimize skill writing via mattpocock `writing-for-agents` SKILL.md URL; do not install whole `mattpocock/skills` (routing collision). Optional side note: `su-architecture-first`. MEMORY rejection line. No concept dump. No SKILL.md copy. Hold merge.
