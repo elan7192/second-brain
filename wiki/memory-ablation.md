@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-27
+updated: 2026-09-04
 ---
 
 # Memory ablation
@@ -35,6 +35,8 @@ Every survivor was a fact. Every dead line was an adjective.
 ## Lab note
 
 Do not ask a model to score memory it wrote. It defends its own prose.
+
+[[src-0xcodio-memory-collapse-pointer]]: TAGGER/ROOT/AUDIT/SWEEP memory-collapse writeup — pointer; pair with [[src-0xwast3-ablation-schema]].
 
 ## Related
 

@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-04
 created_by: agent
 confidence: medium
 source:
@@ -50,6 +50,8 @@ Frameworks that only add nodes without a CUT step grow dead weight. Park wholesa
 ## Check
 
 If someone proposes a new Bot, poller, or graph node: ask what DELTA its absence would show. If none, CUT / refuse.
+
+[[src-0xcodio-memory-collapse-pointer]]: TAGGER/ROOT/AUDIT/SWEEP memory-collapse writeup — pointer; pair with [[src-0xwast3-ablation-schema]].
 
 ## Related
 

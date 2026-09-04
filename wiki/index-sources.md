@@ -10,12 +10,63 @@ updated: 2026-09-04
 # Index sources
 
 Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
+Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Thick 入vault rows cataloged below.
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
 | [[src-sukiea-writing-for-agents]] | 2026-09-04 | writing-for-agents pointer; do not install mattpocock/skills |
+| [[src-beamnxw-botdirectory-skip]] | 2026-09-04 | Bot Directory 安利（300+ bots／可複製 prompt），目錄廣告無新方法。 |
+| [[src-poteto-routine-frequency]] | 2026-09-04 | 配額控制：少用過密 scheduled routine（15min≈96次/日）；長對話例行改丟給 fresh bot，主 bot 留給 CoS。 |
+| [[src-ridark-trading-floor-skip]] | 2026-09-04 | X Article「Grok Bot Trading Floor」8-agent 加密交易桌教學，偏 crypto desk 非 wiki/harness 主線。 |
+| [[src-everestchris6-revenue-systems-pointer]] | 2026-09-04 | X Article「build revenue systems with grok bot」；與已有 everestchris revenue 同源線，記指針即可。 |
+| [[src-t20000622yy-egolite-design]] | 2026-09-04 | 用 ego lite 操控瀏覽看參考站再生成站；附 archify/openpi/skillroster GitHub。 |
+| [[src-av1dlive-awesome-grok-bot-pointer]] | 2026-09-04 | Grok Bot 資源清單（docs／masterclass／awesome-grok-bot／usegrokbot／botdirectory）；PM 已 applied，指… |
+| [[src-godofprompt-10-prompts-pointer]] | 2026-09-04 | 「10 Grok Bot prompts」線程；Keepers 在 PM，vault 只留線程指針不重貼全文。 |
+| [[src-deronin-design-guide-to-skill-pointer]] | 2026-09-04 | 請把 reactiverobot 設計指南變成 skill；設計方法指針非新架構。 |
+| [[src-kloss-routine-audit]] | 2026-09-04 | 照 poteto 建議實做配額稽核：15min routine、跨 bot 重複 routine、該 idle 仍跑、測試耗額；具體 checklist。 |
+| [[src-rehan-nsfw-skip]] | 2026-09-04 | NSFW LoRA／直播「unethical tip」，成人內容噪音。 |
+| [[src-free-ai-guides-five-whys-skip]] | 2026-09-04 | 通用 Five Whys 提示詞模板，非 wiki／memory／harness 方法。 |
+| [[src-anirudh-lingxi-amplify-skip]] | 2026-09-04 | 轉發 lingxi SpaceXAI engineer 文，已有 src-lingxi-grok-bot-engineering。 |
+| [[src-ericzakariasson-webhook-wake]] | 2026-09-04 | Routine webhook trigger：WhatsApp／Notion／溫感／GitHub Action／錯誤率等可從任意處叫醒 bot。 |
+| [[src-yunta-symphony-demo-skip]] | 2026-09-04 | Grok Bot + Logic Pro 寫交響曲 demo，無方法可折。 |
+| [[src-alex-prompter-amplify-skip]] | 2026-09-04 | 轉發 Five Whys 帳號安利，無新內容。 |
+| [[src-k2sbhai-amd-api-skip]] | 2026-09-04 | AMD 免費 API／TokenFactory 資源安利，非 scout 主題。 |
+| [[src-poteto-android-launch-skip]] | 2026-09-04 | Grok Bot Android 上架公告。 |
+| [[src-petergyang-agent-privacy]] | 2026-09-04 | 比較 Instinct／Grok Bot／ChatGPT／Hermes 隱私政策與雲電腦登入／2FA 風險；含 Google 第三方 app 稽核。 |
+| [[src-deronin-robotics-career-skip]] | 2026-09-04 | X Article「How to become a Robotics Engineer in 6 months」，職涯資源非 scout 主題。 |
+| [[src-av1dlive-robotics-amplify-skip]] | 2026-09-04 | 喊話去讀 DeRonin robotics 文，轉發無新方法。 |
+| [[src-0xrafy-spacexai-talk-amplify-skip]] | 2026-09-04 | SpaceXAI／Lauren Tan 一小時談安利＋自寫文；原則已折進 lingxi／keepers。 |
+| [[src-petergyang-cloud-login-unease-pointer]] | 2026-09-04 | 雲瀏覽器填密碼／2FA 不安；與上則隱私片同一論點，指針即可。 |
+| [[src-mattyp-cafe-meetup-skip]] | 2026-09-04 | SF 咖啡店 Grok Bot meetup／Luma 活動宣傳。 |
+| [[src-ridark-4200-bots-hype-skip]] | 2026-09-04 | 「4200 Grok bots 內容工廠」六層流水線誇飾片，無可信可驗證步驟。 |
+| [[src-kloss-bot-templates-pointer]] | 2026-09-04 | 26 個 Grok Bot templates 書籤清單（含 dr eggbot／tinkabot 等）；目錄指針。 |
+| [[src-av1dlive-fable-hype-skip]] | 2026-09-04 | fable-orchestrator／「永不撞額」誇飾教學，可信度低。 |
+| [[src-maiyangai-digest-skip]] | 2026-09-04 | 12h 熱帖摘要聚合，條目已各自審，無需再收。 |
+| [[src-cyrilxbt-utopia-temporal-kb]] | 2026-09-04 | utopia：單 binary＋Postgres 的時間感知知識庫（事實有起迄、不覆寫）；對 second-brain／wiki 有方法價值。github.com/deepl… |
+| [[src-annatarxbt-adiix-amplify-skip]] | 2026-09-04 | 轉述 adiix「Chief＋specialists／shared /workspace」操作手冊；已有 src-adiix-grok-bot-org。 |
+| [[src-otterpal-egolite-crawl-pointer]] | 2026-09-04 | egolite＋Hermes 兩小時爬一年萬條；爬蟲速度證言，配 t20000622yy 方法。 |
+| [[src-xswl-egolite-question-skip]] | 2026-09-04 | 問「egolite 是什麼」的跟帖，無內容。 |
+| [[src-0xcodio-memory-collapse-pointer]] | 2026-09-04 | TAGGER／ROOT／AUDIT／SWEEP：記憶掛來源、假源整枝崩潰；轉寫 0xWast3 Memory Engineering，指針＋對照已有 ablation src。 |
+| [[src-chenchengpro-six-skills]] | 2026-09-04 | 6 skills 清單含 reverse-skill／dev-pair／implement-spec／avoid-ai-writing 等 GitHub 鏈。 |
+| [[src-grger-prompt-optimizer-skip]] | 2026-09-04 | Prompt-Optimizer 工具安利；Scout 已判跳過（通用 prompt UI）。 |
+| [[src-bober-650-agents-hype-skip]] | 2026-09-04 | 650 agents＋Second Brain 敘事片／無步驟，純 vibes。 |
+| [[src-hisevenih-itsfree-skip]] | 2026-09-04 | itsfree.ai 463 免費模型目錄，資源安利非主題。 |
+| [[src-thebigjaww-spam-skip]] | 2026-09-04 | 垃圾跟帖／成人話術 spam。 |
+| [[src-cbdoge-designing-grok-bot-pointer]] | 2026-09-04 | 官方 blog：設計師用 always-on Grok Bot（Experiments 等）從想法到 artifact；x.ai/news/designing-grok-bot。 |
+| [[src-uury-keyleak-reply-skip]] | 2026-09-04 | 回 itsfree「key 洩漏風險」一句，無方法。 |
+| [[src-mikenevermiss-browser-tools-skip]] | 2026-09-04 | 免註冊瀏覽器開源工具合集安利，非 scout 主題。 |
+| [[src-1kingcee-spam-skip]] | 2026-09-04 | 成人話術 spam 跟帖。 |
+| [[src-andaluzamolina-spam-skip]] | 2026-09-04 | 成人話術 spam 跟帖。 |
+| [[src-omerbozkurulew-spam-skip]] | 2026-09-04 | 成人話術 spam 跟帖。 |
+| [[src-mikenevermiss-cobalt-skip]] | 2026-09-04 | Cobalt 下載器安利，非主題。 |
+| [[src-v2metax-thanks-skip]] | 2026-09-04 | 「Thanks for sharing」空回覆。 |
+| [[src-mikenevermiss-cobalt-link-skip]] | 2026-09-04 | Cobalt 試用鏈接跟帖。 |
+| [[src-mikenevermiss-cobalt-ios-skip]] | 2026-09-04 | Cobalt iOS 存檔抱怨跟帖。 |
+| [[src-bkdgiffug-yuxi-rag-agents]] | 2026-09-04 | 語析 Yuxi：RAG＋知識圖譜＋LangGraph 多智能體工作台（引用／多租戶／Docker）；second-brain 形。github.com/zenghui-li/… |
+| [[src-leo-show-me-skill-pointer]] | 2026-09-04 | 推薦 /show-me skill（PR 可讀性／看 code 工具箱）；humanlayer 鏈指針。 |
+| [[src-fhwofjow-book-to-skill]] | 2026-09-04 | 開源 book-to-skill：PDF/EPUB/DOCX→結構化 Skill（章節／術語／方法）；書／論文／手冊可煉成可呼叫技能。github.com/virgilioj… |
 | [[src-kaorixbt-harness-engineering]] | 2026-09-03 | Harness env: contract, map, tools, state, evidence, stop, fail→rule |
 | [[src-adiix-grok-bot-org]] | 2026-09-03 | Chief routes; hire by bottleneck; three gates; /workspace bus |
 | [[src-0xwast3-ablation-schema]] | 2026-09-03 | RUN→PULL→DELTA→RANK→CUT; retire no-op nodes |

@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-03
+updated: 2026-09-04
 created_by: agent
 confidence: high
 source:
@@ -15,6 +15,9 @@ source:
   - wiki/sources/src-lingxi-grok-bot-engineering.md
   - wiki/sources/src-adiix-grok-bot-org.md
   - wiki/sources/src-atenov-free-for-dev.md
+  - wiki/sources/src-poteto-routine-frequency.md
+  - wiki/sources/src-kloss-routine-audit.md
+  - wiki/sources/src-ericzakariasson-webhook-wake.md
 derived_from:
   - src-benln-grok-bot-pro-tips
   - src-yunta-tsai-quota-isolate
@@ -23,6 +26,9 @@ derived_from:
   - src-adiix-grok-bot-org
   - src-atenov-free-for-dev
   - raptor-dispatch
+  - src-poteto-routine-frequency
+  - src-kloss-routine-audit
+  - src-ericzakariasson-webhook-wake
 ---
 
 # Grok Bot quota
@@ -49,7 +55,20 @@ Recurring fill does not belong on the lead chat. See [[grok-bot-pro-tips]].
 
 [[src-adiix-grok-bot-org]]: constant polling, sync-everything, bad retries, and too many Bots burn quota and can slow the system. Prefer event triggers; quiet success.
 
-[[src-atenov-free-for-dev]]: free-for-dev directory is a light Fill/lookup pointer. AI Compute Australia promo stays unverified.
+[[src-atenov-free-for-dev]] · [[src-poteto-routine-frequency]] · [[src-kloss-routine-audit]] · [[src-ericzakariasson-webhook-wake]]: free-for-dev directory is a light Fill/lookup pointer. AI Compute Australia promo stays unverified.
+
+
+[[src-poteto-routine-frequency]]: avoid over-dense scheduled routines (15 min ≈ 96–100 runs/day). Hourly or a few times a day is usually enough. Long chats make routines expensive — put recurring work on a fresh bot; keep CoS/main for steer.
+
+[[src-kloss-routine-audit]]: audit checklist — 15-min routines, duplicate routines across bots, “inactive” bots whose routines still fire, long main-chat routines that re-read the whole thread.
+
+[[src-ericzakariasson-webhook-wake]]: routines can wake from a webhook (WhatsApp, Notion change, sensor, GitHub Action, error-rate spike). Prefer event wake over dense polls.
+
+[[src-poteto-routine-frequency]]: avoid scheduled routines that run too frequently. A 15-min routine is ~96–100 runs/day; hourly or a few times a day is usually enough. Long chats make attached routines expensive — put recurring work on a fresh bot; keep CoS for steer.
+
+[[src-kloss-routine-audit]]: audit checklist — 15-min schedules, duplicate routines across bots, idle intent that does not stop routines, long CoS chat re-read by attached routines, untagged group replies, CoS multi-confirm, whole-skill rereads on eval, looping tasks in chat instead of a one-shot script.
+
+[[src-ericzakariasson-webhook-wake]]: routines can wake from a webhook (WhatsApp, Notion, sensor, GitHub Action, error spike). Prefer event wake over dense scheduled polls.
 
 ## INFERENCE
 
@@ -58,6 +77,8 @@ Isolate one job in one context. When done, file the repeatable method in the rep
 The named `burn` fill bot is an existing role. Do not open a new room per task. See [[raptor-dispatch]] and [[botdirectory-scan]].
 
 Cloud agent proof loop and domain map live on [[spacexai-grok-bot-keepers]]. derived_from: src-lingxi-grok-bot-engineering.
+
+Webhook wake beats a 5/15-min poller for the same job. Still no standing dense pollers. derived_from: src-ericzakariasson-webhook-wake, src-adiix-grok-bot-org, grok-bot-pro-tips.
 
 ## OPINION
 

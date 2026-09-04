@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-09-03
+updated: 2026-09-04
 created_by: agent
 confidence: high
 source:
@@ -14,6 +14,8 @@ source:
   - wiki/sources/src-poteto-pstack-outer-loop.md
   - wiki/sources/src-adiix-grok-bot-org.md
   - wiki/sources/src-kaorixbt-harness-engineering.md
+  - wiki/sources/src-ericzakariasson-webhook-wake.md
+  - wiki/sources/src-kloss-routine-audit.md
 derived_from:
   - src-play-methods-2026-08-25
   - src-lingxi-grok-bot-engineering
@@ -21,6 +23,8 @@ derived_from:
   - src-poteto-eliminate-interventions
   - src-adiix-grok-bot-org
   - src-kaorixbt-harness-engineering
+  - src-ericzakariasson-webhook-wake
+  - src-kloss-routine-audit
 ---
 
 # Raptor dispatch
@@ -49,7 +53,13 @@ Same loop, named: [[assign-execute-verify]]. 24h intel stays OFF until lan E say
 
 [[src-adiix-grok-bot-org]]: Chief is deliberately underqualified for production work. Routes only. Hire by bottleneck. Contract per Bot. Artifact handoffs via `/workspace`.
 
-[[src-kaorixbt-harness-engineering]]: contract before act; permissions and stop rules outside the model; report with evidence (tests/lint/traces), not empty done. Harness authorizes irreversible side effects; the model only proposes.
+[[src-kaorixbt-harness-engineering]] · [[src-ericzakariasson-webhook-wake]]: contract before act; permissions and stop rules outside the model; report with evidence (tests/lint/traces), not empty done. Harness authorizes irreversible side effects; the model only proposes.
+
+[[src-ericzakariasson-webhook-wake]]: wake a bot via routine webhook from external events; prefer event dispatch over dense scheduled polls.
+
+[[src-ericzakariasson-webhook-wake]]: wake a bot from an external event via routine webhook. Event route, not chat spam.
+
+[[src-kloss-routine-audit]]: tag one owner bot in a group; CoS must not confirm+chase+confirm for one job.
 
 ## INFERENCE
 

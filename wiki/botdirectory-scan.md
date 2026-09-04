@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-09-04
 ---
 
 # Botdirectory scan
@@ -33,6 +33,9 @@ The other ranked gaps belong to Engineer, PM, Product, Designer. Not compiled he
 
 Whop hustle stays skipped. Revenue-machine clone is skip. See [[multi-source-verdict]].
 
+Pointers (not new architecture): [[src-av1dlive-awesome-grok-bot-pointer]] · [[src-kloss-bot-templates-pointer]].
+
 ## Related
 
 [[stale-fact-detector]] · [[llm-wiki]] · [[file-memory]] · [[grok-bot-pro-tips]] · [[src-botdirectory-picks-2026-08-27]] · [[multi-source-verdict]]
+· [[src-av1dlive-awesome-grok-bot-pointer]] · [[src-kloss-bot-templates-pointer]]

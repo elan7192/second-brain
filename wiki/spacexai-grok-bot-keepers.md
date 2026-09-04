@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-09-02
-updated: 2026-09-03
+updated: 2026-09-04
 created_by: agent
 confidence: high
 source:
@@ -16,6 +16,14 @@ source:
   - wiki/sources/src-yunta-tsai-quota-isolate.md
   - wiki/sources/src-xai-introducing-grok-bot.md
   - wiki/sources/src-adiix-grok-bot-org.md
+  - wiki/sources/src-poteto-routine-frequency.md
+  - wiki/sources/src-ericzakariasson-webhook-wake.md
+  - wiki/sources/src-petergyang-agent-privacy.md
+  - wiki/sources/src-cbdoge-designing-grok-bot-pointer.md
+  - wiki/sources/src-av1dlive-awesome-grok-bot-pointer.md
+  - wiki/sources/src-godofprompt-10-prompts-pointer.md
+  - wiki/sources/src-petergyang-cloud-login-unease-pointer.md
+  - wiki/sources/src-kloss-routine-audit.md
 derived_from:
   - src-lingxi-grok-bot-engineering
   - src-poteto-eliminate-interventions
@@ -28,13 +36,17 @@ derived_from:
   - grok-bot-quota
   - work-per-cost
   - skill-as-sop
+  - src-poteto-routine-frequency
+  - src-ericzakariasson-webhook-wake
+  - src-petergyang-agent-privacy
+  - src-kloss-routine-audit
 ---
 
 # SpaceXAI Grok Bot keepers
 
 Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool.
 
-Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-interventions]] · [[src-poteto-pstack-outer-loop]] · [[src-samsokolin-browser-to-api]] · [[src-yunta-tsai-quota-isolate]] · [[src-xai-introducing-grok-bot]] · [[src-adiix-grok-bot-org]].
+Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-interventions]] · [[src-poteto-pstack-outer-loop]] · [[src-samsokolin-browser-to-api]] · [[src-yunta-tsai-quota-isolate]] · [[src-xai-introducing-grok-bot]] · [[src-adiix-grok-bot-org]] · [[src-poteto-routine-frequency]] · [[src-ericzakariasson-webhook-wake]] · [[src-petergyang-agent-privacy]] · [[src-cbdoge-designing-grok-bot-pointer]] · [[x-misses-audit-2026-09-04]].
 
 ## FACT
 
@@ -55,6 +67,21 @@ Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-intervent
 [[src-adiix-grok-bot-org]]: Chief routes only (triage → delegate → watch → collect → escalate). Hire by bottleneck. Bot contract (job/sources/judgment/output/forbidden). Grow rules from repeatable mistakes. Shared box computer (own screen ≠ security boundary). `/workspace` as artifact bus. Three gates: source → evidence → action. Human only for money / publish / delete / irreversible. Ban constant polling, bad retries, too-many-bots.
 
 
+
+[[src-poteto-routine-frequency]] / [[src-kloss-routine-audit]]: dense schedules and long-chat routines burn quota; recurring work on fresh bots. Detail on [[grok-bot-quota]].
+
+[[src-ericzakariasson-webhook-wake]]: webhook triggers wake bots from outside chat — event over poll.
+
+[[src-petergyang-agent-privacy]]: compare agent privacy policies; treat cloud-computer login/2FA as high risk; audit third-party Google apps. Pointer: [[src-petergyang-cloud-login-unease-pointer]].
+
+[[src-cbdoge-designing-grok-bot-pointer]]: official designing-with-always-on-bot note (x.ai/news) — pointer only.
+[[src-poteto-routine-frequency]] / [[src-kloss-routine-audit]]: frequency + cross-bot routine audit. Already banned 5/15-min pollers; keep recurring on fresh bots; CoS sends once.
+
+[[src-ericzakariasson-webhook-wake]]: event webhook wake for routines. Prefer over dense schedules.
+
+[[src-petergyang-agent-privacy]]: compare agent privacy policies; treat cloud-computer login/2FA as high risk; audit third-party apps on Google. Do not casually paste credentials into cloud sessions.
+
+
 ## INFERENCE
 
 Map domains to the existing roster: CoS (front door + ops/postmortem), Engineer (all code), Vault (wiki), Fill (leftover quota), Rutin (routine hygiene). Do not hire Jenny / Baltata / Shaoruru / Hogan / Craig / Quill clones. derived_from: src-lingxi-grok-bot-engineering, raptor-dispatch.
@@ -68,6 +95,8 @@ Outer loop folds into [[raptor-dispatch]]. Do not install pstack wholesale as a 
 Last yes stays human. No auto-merge even when the source describes low-blast auto-merge. Human gate matches AdiiX money/publish/delete/irreversible list. derived_from: src-lingxi-grok-bot-engineering, src-adiix-grok-bot-org, decisions.
 
 Shared machine + `/workspace` bus: hand off files, not chat walls. Do not treat Bot identity as isolation. derived_from: src-adiix-grok-bot-org.
+
+Privacy: cloud VM login and 2FA are blast-radius decisions. Prefer connectors/API with approval gates over typing secrets into computerUse. derived_from: src-petergyang-agent-privacy, src-samsokolin-browser-to-api.
 
 ## OPINION
 

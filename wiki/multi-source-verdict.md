@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-09-04
 ---
 
 # Multi-source verdict
@@ -32,6 +32,10 @@ Author-reported (not counted here): 576 items, 72 problems, 57 clusters, 1 candi
 Whop CLI, checkout, LLC, print/supplier API keys, outreach, spin a new agent per business, 2-hour internet pollers, social autopublish.
 
 Prior skip: Whop hustle. See [[botdirectory-scan]].
+
+## X misses batch 2026-09-04
+
+Scout misses_verdicts → Vault src pointers: [[x-misses-audit-2026-09-04]]. Includes 入vault建議 folds, 只記一筆 pointers (e.g. [[src-everestchris6-revenue-systems-pointer]]), and skip one-liners. Hold merge.
 
 ## Local
 

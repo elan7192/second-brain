@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-28
+updated: 2026-09-04
 ---
 
 # Portable memory
@@ -13,7 +13,7 @@ Delta vs [[file-memory]] and [[llm-wiki]]. Do not clone Brain.
 
 Source: [[src-av1dlive-portable-memory]]. lan E share.
 
-Already in vault: git markdown is the store. Compiled wiki, not RAG dump. Claim rows in `wiki/claims.csv`. See [[claims]].
+Already in vault: git markdown is the store. Compiled wiki, not RAG dump. Claim rows in `wiki/claims.csv`. See [[claims]] · [[src-cyrilxbt-utopia-temporal-kb]].
 
 New here:
 
@@ -23,6 +23,8 @@ New here:
 - FTS prefix rewrite for search.
 
 Do not clone `github.com/codejunkie99/brain`. Do not install a Brain binary. Vault stays markdown + git. See [[session-migrate]], [[retrieval]], [[stable-ids]], [[claims]].
+
+[[src-cyrilxbt-utopia-temporal-kb]]: temporal fact intervals (start/end, no silent overwrite) is a method to fold — not a binary to install.
 
 ## Related
 

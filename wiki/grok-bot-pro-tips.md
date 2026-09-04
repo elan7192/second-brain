@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-27
+updated: 2026-09-04
 ---
 
 # Grok Bot pro tips
@@ -23,6 +23,8 @@ Source: [[src-benln-grok-bot-pro-tips]]. lan E share.
 8. Make a Chief of Agents. Give it the rules every bot should follow: draft only, naming, voice, allowed tools. Ask it to create new bots with the same rules.
 9. For routines: could a real human teammate do this job? If yes, build it. If no, optimize first. Never run a routine every 5 minutes.
 10. Name-driven behavior. Bots act from the name given at creation. The role is legible from the name.
+
+Also: [[src-poteto-routine-frequency]] (same frequency tip from poteto) and [[src-kloss-routine-audit]] (field checklist).
 
 ## Related
 

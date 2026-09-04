@@ -5,16 +5,18 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-29
-updated: 2026-08-30
+updated: 2026-09-04
 created_by: agent
 confidence: medium
 source:
   - wiki/sources/src-voxyz-archify.md
   - https://github.com/tt-a1i/archify
+  - wiki/sources/src-t20000622yy-egolite-design.md
 derived_from:
   - src-voxyz-archify
   - skill-as-sop
   - skill-library
+  - src-t20000622yy-egolite-design
 ---
 
 # Archify
@@ -43,6 +45,8 @@ Five vault map specs under `output/archify/`. Wiki markdown stays the store. JSO
 
 Tweet-requested PNG: `output/archify/vault-architecture-2400x1260.png`. Search and upstream/downstream tracing are viewer features in locally delivered HTML.
 
+[[src-t20000622yy-egolite-design]]: author method uses ego lite browser passes over reference sites, then generates UI; names archify/openpi/skillroster as example repos. Pointer [[src-otterpal-egolite-crawl-pointer]] is crawl-speed testimony only.
+
 ## INFERENCE
 
 A checked HTML map can show the ingest and query path without replacing `python3 tools/sb ask` (D9). derived_from: src-voxyz-archify, retrieval, llm-wiki.
@@ -58,3 +62,5 @@ Keep the skill local. Do not copy Archify prompts into `AGENTS.md`. Do not vendo
 ## Related
 
 [[skill-library]] · [[skill-as-sop]] · [[project-skill-stack]] · [[how-it-works]] · [[graph]] · [[llm-wiki]] · [[vox]] · [[src-voxyz-archify]]
+
+· [[src-t20000622yy-egolite-design]] · [[src-otterpal-egolite-crawl-pointer]]
