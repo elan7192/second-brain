@@ -37,7 +37,7 @@ PM operational KPI 2026-08-27 is at the bottom.
 - [[musk-algorithm]]: delete before optimize. Automate last.
 - [[graph-node-ablation]] / [[src-0xwast3-ablation-schema]]: RUN→PULL→DELTA→RANK→CUT. Retire nodes whose removal changes nothing.
 - [[src-adiix-grok-bot-org]]: ban constant polling, bad retries, too-many-bots; three gates before action; `/workspace` handoffs beat chat walls.
-- [[src-atenov-free-for-dev]] · [[src-poteto-routine-frequency]] · [[src-kloss-routine-audit]] · [[src-t20000622yy-egolite-design]] · [[src-otterpal-egolite-crawl-pointer]]: free-for-dev pointer for Fill; AI Compute Australia unverified.
+- [[src-atenov-free-for-dev]]: free-for-dev pointer for Fill; AI Compute Australia unverified.
 - [[spacexai-grok-bot-keepers]] / [[src-poteto-eliminate-interventions]]: kill repetition — architecture/data structure → lint/test CI → skill/rule → human review last.
 - [[src-samsokolin-browser-to-api]]: GUI once, then API. Prefer MCP/API over browserUse over computerUse.
 - [[pipeline-honesty]]: chrono first. Out-of-sample W/E is the honest test. In-sample ratios can inflate.

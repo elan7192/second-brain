@@ -55,16 +55,9 @@ Recurring fill does not belong on the lead chat. See [[grok-bot-pro-tips]].
 
 [[src-adiix-grok-bot-org]]: constant polling, sync-everything, bad retries, and too many Bots burn quota and can slow the system. Prefer event triggers; quiet success.
 
-[[src-atenov-free-for-dev]] · [[src-poteto-routine-frequency]] · [[src-kloss-routine-audit]] · [[src-ericzakariasson-webhook-wake]]: free-for-dev directory is a light Fill/lookup pointer. AI Compute Australia promo stays unverified.
-
+[[src-atenov-free-for-dev]]: free-for-dev directory is a light Fill/lookup pointer. AI Compute Australia promo stays unverified.
 
 [[src-poteto-routine-frequency]]: avoid over-dense scheduled routines (15 min ≈ 96–100 runs/day). Hourly or a few times a day is usually enough. Long chats make routines expensive — put recurring work on a fresh bot; keep CoS/main for steer.
-
-[[src-kloss-routine-audit]]: audit checklist — 15-min routines, duplicate routines across bots, “inactive” bots whose routines still fire, long main-chat routines that re-read the whole thread.
-
-[[src-ericzakariasson-webhook-wake]]: routines can wake from a webhook (WhatsApp, Notion change, sensor, GitHub Action, error-rate spike). Prefer event wake over dense polls.
-
-[[src-poteto-routine-frequency]]: avoid scheduled routines that run too frequently. A 15-min routine is ~96–100 runs/day; hourly or a few times a day is usually enough. Long chats make attached routines expensive — put recurring work on a fresh bot; keep CoS for steer.
 
 [[src-kloss-routine-audit]]: audit checklist — 15-min schedules, duplicate routines across bots, idle intent that does not stop routines, long CoS chat re-read by attached routines, untagged group replies, CoS multi-confirm, whole-skill rereads on eval, looping tasks in chat instead of a one-shot script.
 
@@ -90,4 +83,4 @@ If a job is done and the method is only in chat: file it into wiki or a skill, t
 
 ## Related
 
-[[quota-router]] · [[grok-bot-pro-tips]] · [[tokens-as-capital]] · [[raptor-dispatch]] · [[work-per-cost]] · [[botdirectory-scan]] · [[spacexai-grok-bot-keepers]] · [[src-benln-grok-bot-pro-tips]] · [[src-yunta-tsai-quota-isolate]] · [[src-samsokolin-browser-to-api]] · [[src-adiix-grok-bot-org]] · [[src-atenov-free-for-dev]]
+[[quota-router]] · [[grok-bot-pro-tips]] · [[tokens-as-capital]] · [[raptor-dispatch]] · [[work-per-cost]] · [[botdirectory-scan]] · [[spacexai-grok-bot-keepers]] · [[src-benln-grok-bot-pro-tips]] · [[src-yunta-tsai-quota-isolate]] · [[src-samsokolin-browser-to-api]] · [[src-adiix-grok-bot-org]] · [[src-atenov-free-for-dev]] · [[src-poteto-routine-frequency]] · [[src-kloss-routine-audit]] · [[src-ericzakariasson-webhook-wake]]

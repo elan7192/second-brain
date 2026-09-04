@@ -75,13 +75,6 @@ Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-intervent
 [[src-petergyang-agent-privacy]]: compare agent privacy policies; treat cloud-computer login/2FA as high risk; audit third-party Google apps. Pointer: [[src-petergyang-cloud-login-unease-pointer]].
 
 [[src-cbdoge-designing-grok-bot-pointer]]: official designing-with-always-on-bot note (x.ai/news) — pointer only.
-[[src-poteto-routine-frequency]] / [[src-kloss-routine-audit]]: frequency + cross-bot routine audit. Already banned 5/15-min pollers; keep recurring on fresh bots; CoS sends once.
-
-[[src-ericzakariasson-webhook-wake]]: event webhook wake for routines. Prefer over dense schedules.
-
-[[src-petergyang-agent-privacy]]: compare agent privacy policies; treat cloud-computer login/2FA as high risk; audit third-party apps on Google. Do not casually paste credentials into cloud sessions.
-
-
 ## INFERENCE
 
 Map domains to the existing roster: CoS (front door + ops/postmortem), Engineer (all code), Vault (wiki), Fill (leftover quota), Rutin (routine hygiene). Do not hire Jenny / Baltata / Shaoruru / Hogan / Craig / Quill clones. derived_from: src-lingxi-grok-bot-engineering, raptor-dispatch.

@@ -17,11 +17,7 @@ Compiled [[src-sukiea-writing-for-agents]] from https://x.com/Sukiea1008/status/
 
 ## [2026-09-04] ingest | X misses src-pointers (Scout verdicts)
 
-Compiled 50 src pages from `misses_verdicts.md` (+ Scout fhwofjow book-to-skill). 9 入vault建議 folded into [[grok-bot-quota]], [[work-per-cost]], [[spacexai-grok-bot-keepers]], [[raptor-dispatch]], [[skill-as-sop]], [[skill-library]], [[archify]], [[file-memory]], [[llm-wiki]], [[portable-memory]], [[memory-system]], [[grok-bot]], [[grok-bot-pro-tips]]. 10 只記一筆 + 31 跳過仍記一行 as thin pointers. Hub [[x-misses-audit-2026-09-04]]. No NSFW/spam body dumps. Hold merge.
-
-## [2026-09-04] ingest | X misses src pointers (50)
-
-Scout `misses_verdicts.md` batch. Wrote 50 `wiki/sources/src-*` pages (9 入vault建議, 10 只記一筆, 31 skip). Included [[src-fhwofjow-book-to-skill]] from extra_misses. Folded thick principles into [[grok-bot-quota]], [[work-per-cost]], [[spacexai-grok-bot-keepers]], [[raptor-dispatch]], [[skill-as-sop]], [[skill-library]], [[archify]], [[file-memory]], [[llm-wiki]], [[portable-memory]], [[memory-system]], [[grok-bot]]. Batch hub [[x-misses-audit-2026-09-04]] inbound from [[multi-source-verdict]]. No tweet dumps. No NSFW bodies. Hold merge.
+Compiled 50 src pages from Scout `misses_verdicts.md` (+ fhwofjow book-to-skill). 9 入vault建議 folded into [[grok-bot-quota]], [[work-per-cost]], [[spacexai-grok-bot-keepers]], [[raptor-dispatch]], [[skill-as-sop]], [[skill-library]], [[archify]], [[file-memory]], [[llm-wiki]], [[portable-memory]], [[memory-system]], [[grok-bot]], [[grok-bot-pro-tips]]. 10 只記一筆 + 31 跳過仍記一行 as thin pointers. Hub [[x-misses-audit-2026-09-04]]. No NSFW/spam body dumps. Hold merge.
 
 ## [2026-09-03] ingest | kaorixbt harness engineering
 
