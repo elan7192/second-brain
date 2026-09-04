@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Thick 入vaul
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-0xkvro-quant-sample-size-skip]] | 2026-09-04 | Skip: quant sample-size / OOS pop science |
 | [[src-amitiitbhu-llm-papers-skip]] | 2026-09-04 | Skip: generic LLM 101 paper list |
 | [[src-sukiea-writing-for-agents]] | 2026-09-04 | writing-for-agents pointer; do not install mattpocock/skills |
 | [[src-beamnxw-botdirectory-skip]] | 2026-09-04 | Bot Directory 安利（300+ bots／可複製 prompt），目錄廣告無新方法。 |

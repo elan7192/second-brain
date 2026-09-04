@@ -11,6 +11,10 @@ updated: 2026-09-04
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-04] ingest | 0xkvro quant sample-size skip pointer
+
+Compiled [[src-0xkvro-quant-sample-size-skip]]. Skip: quant sample-size/OOS/cost/tail pop science, not wiki/memory/harness. Auto-merge.
+
 ## [2026-09-04] ingest | amitiitbhu LLM papers skip pointer
 
 Compiled [[src-amitiitbhu-llm-papers-skip]]. Skip: generic LLM 101 list, not wiki/memory/harness. Hold merge.
