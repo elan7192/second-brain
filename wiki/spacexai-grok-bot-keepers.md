@@ -103,5 +103,6 @@ If someone proposes a Jenny hire, a domain engineer bot clone, a 5/15-min poller
 
 Skip pointer (not keepers): [[src-ritonchain-regime-trading-skip]] — regime trading desk hype.
 Skip pointer (not keepers): [[src-amitiitbhu-llm-papers-skip]] — generic LLM 101 paper list.
+Skip pointer (not keepers): [[src-0xkvro-quant-sample-size-skip]] — quant sample-size / OOS pop science.
 
 [[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]]
