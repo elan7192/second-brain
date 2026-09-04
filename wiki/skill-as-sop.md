@@ -48,6 +48,9 @@ Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verif
 
 If the next source is the Smoke script, ingest it. Until then do not invent the method.
 
+
+Eval gate (go-live proof, not demo vibes): [[src-clorissignal-agent-eval-framework]].
+
 ## Related
 
 [[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]] · [[src-chenchengpro-six-skills]] · [[src-fhwofjow-book-to-skill]] · [[src-t20000622yy-egolite-design]] · [[src-leo-show-me-skill-pointer]] · [[src-deronin-design-guide-to-skill-pointer]]

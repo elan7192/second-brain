@@ -9,6 +9,7 @@ updated: 2026-09-04
 created_by: agent
 confidence: high
 source:
+  - wiki/sources/src-clorissignal-agent-eval-framework.md
   - wiki/sources/src-lingxi-grok-bot-engineering.md
   - wiki/sources/src-poteto-eliminate-interventions.md
   - wiki/sources/src-poteto-pstack-outer-loop.md
@@ -99,7 +100,15 @@ Principles beat tweet dumps. One short hub is enough; detail lives on [[grok-bot
 
 If someone proposes a Jenny hire, a domain engineer bot clone, a 5/15-min poller, auto-merge, or a second product stream: refuse. Fold into CoS / Engineer / Vault / Fill / Rutin and existing pages.
 
+
+## FACT (eval gate)
+
+[[src-clorissignal-agent-eval-framework]] (miles_mazy share of @ClorisSignal): a running Agent is not a live Agent. Eval proves go-live. Author-reported OpenAI/Anthropic eval framing stays unverified without primary docs. Maps to this desk's proof loop: named skills + proof before done.
+
 ## Related
+
+[[src-clorissignal-agent-eval-framework]]
+
 
 Skip pointer (not keepers): [[src-ritonchain-regime-trading-skip]] — regime trading desk hype.
 Skip pointer (not keepers): [[src-amitiitbhu-llm-papers-skip]] — generic LLM 101 paper list.
