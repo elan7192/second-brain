@@ -101,4 +101,6 @@ If someone proposes a Jenny hire, a domain engineer bot clone, a 5/15-min poller
 
 ## Related
 
+Skip pointer (not keepers): [[src-ritonchain-regime-trading-skip]] — regime trading desk hype.
+
 [[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]]
