@@ -67,6 +67,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Thick 入vaul
 | [[src-bkdgiffug-yuxi-rag-agents]] | 2026-09-04 | 語析 Yuxi：RAG＋知識圖譜＋LangGraph 多智能體工作台（引用／多租戶／Docker）；second-brain 形。github.com/zenghui-li/… |
 | [[src-leo-show-me-skill-pointer]] | 2026-09-04 | 推薦 /show-me skill（PR 可讀性／看 code 工具箱）；humanlayer 鏈指針。 |
 | [[src-fhwofjow-book-to-skill]] | 2026-09-04 | 開源 book-to-skill：PDF/EPUB/DOCX→結構化 Skill（章節／術語／方法）；書／論文／手冊可煉成可呼叫技能。github.com/virgilioj… |
+| [[src-ritonchain-regime-trading-skip]] | 2026-09-04 | Skip: regime trading desk hype / engagement bait |
 | [[src-kaorixbt-harness-engineering]] | 2026-09-03 | Harness env: contract, map, tools, state, evidence, stop, fail→rule |
 | [[src-adiix-grok-bot-org]] | 2026-09-03 | Chief routes; hire by bottleneck; three gates; /workspace bus |
 | [[src-0xwast3-ablation-schema]] | 2026-09-03 | RUN→PULL→DELTA→RANK→CUT; retire no-op nodes |
