@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-30
-updated: 2026-08-30
+updated: 2026-09-04
 created_by: agent
 confidence: medium
 source:
@@ -21,7 +21,7 @@ derived_from:
 
 Instruction files rot when every correction becomes a new Never line.
 
-Source: [[src-voxyz-skill-improver]] ([[vox]], 2026-08-29). Caption only. Video not fetched.
+Source: [[src-voxyz-skill-improver]] ([[vox]], 2026-08-29). Caption only. Video not fetched. Pointer: optimize skill writing with mattpocock [writing-for-agents](https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-for-agents/SKILL.md); do not install whole `mattpocock/skills` ([[src-sukiea-writing-for-agents]]).
 
 ## FACT
 
@@ -51,4 +51,4 @@ Park a one-off Never. Fold a principle or leave the file.
 
 ## Related
 
-[[verifiable-instructions]] · [[context-compaction]] · [[file-memory]] · [[portable-memory]] · [[memory-ablation]] · [[deterministic-core]] · [[src-voxyz-skill-improver]]
+[[verifiable-instructions]] · [[context-compaction]] · [[file-memory]] · [[portable-memory]] · [[memory-ablation]] · [[deterministic-core]] · [[src-voxyz-skill-improver]] · [[src-sukiea-writing-for-agents]]

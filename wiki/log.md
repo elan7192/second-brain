@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-04] ingest | Sukiea writing-for-agents pointer
+
+Compiled [[src-sukiea-writing-for-agents]] from https://x.com/Sukiea1008/status/2095594968136204501 via FxTwitter. One-line pointer only. Folded into [[skill-improver]] and [[skill-as-sop]]. Keep: optimize skill writing via mattpocock `writing-for-agents` SKILL.md URL; do not install whole `mattpocock/skills` (routing collision). Optional side note: `su-architecture-first`. MEMORY rejection line. No concept dump. No SKILL.md copy. Hold merge.
 
 ## [2026-09-03] ingest | kaorixbt harness engineering
 

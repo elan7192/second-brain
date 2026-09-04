@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # Index sources
@@ -15,6 +15,7 @@ Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-sukiea-writing-for-agents]] | 2026-09-04 | writing-for-agents pointer; do not install mattpocock/skills |
 | [[src-kaorixbt-harness-engineering]] | 2026-09-03 | Harness env: contract, map, tools, state, evidence, stop, fail→rule |
 | [[src-adiix-grok-bot-org]] | 2026-09-03 | Chief routes; hire by bottleneck; three gates; /workspace bus |
 | [[src-0xwast3-ablation-schema]] | 2026-09-03 | RUN→PULL→DELTA→RANK→CUT; retire no-op nodes |
