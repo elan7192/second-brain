@@ -11,6 +11,10 @@ updated: 2026-09-04
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-04] ingest | ClorisSignal agent eval framework
+
+Compiled [[src-clorissignal-agent-eval-framework]] from miles_mazy share of @ClorisSignal article. Eval proves go-live. Folded into [[spacexai-grok-bot-keepers]] and [[skill-as-sop]]. Auto-merge.
+
 ## [2026-09-04] ingest | 0xkvro quant sample-size skip pointer
 
 Compiled [[src-0xkvro-quant-sample-size-skip]]. Skip: quant sample-size/OOS/cost/tail pop science, not wiki/memory/harness. Auto-merge.
