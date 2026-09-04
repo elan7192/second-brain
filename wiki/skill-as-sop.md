@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # Skill as SOP
@@ -30,6 +30,8 @@ Source: [[src-skill-pack-list]].
 
 [[src-kaorixbt-harness-engineering]]: failures become rules. Encode the important rule twice — guide the agent can understand, then a mechanical check it cannot bypass. Past failure → permanent harness improvement; the next agent does not need to remember the incident.
 
+[[src-sukiea-writing-for-agents]]: pointer to mattpocock `writing-for-agents` for skill prose; do not wholesale-install `mattpocock/skills` (routing collision). Optional: author's `su-architecture-first` judges what to change before coding.
+
 ## What to do in this vault
 
 Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
@@ -40,4 +42,4 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 ## Related
 
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[loop-graph-engineering]]
+[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]]
