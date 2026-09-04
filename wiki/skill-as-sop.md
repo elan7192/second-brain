@@ -32,6 +32,14 @@ Source: [[src-skill-pack-list]].
 
 [[src-sukiea-writing-for-agents]]: pointer to mattpocock `writing-for-agents` for skill prose; do not wholesale-install `mattpocock/skills` (routing collision). Optional: author's `su-architecture-first` judges what to change before coding.
 
+[[src-chenchengpro-six-skills]]: pointer list (reverse-skill, dev-pair, implement-spec, avoid-ai-writing, …). Compile useful SOPs locally; do not wholesale-install packs.
+
+[[src-fhwofjow-book-to-skill]]: book/PDF/EPUB/DOCX → structured Skill (chapters/terms/methods). Read once, call later — same bet as compile-once wiki. Do not auto-vendor the repo.
+
+[[src-t20000622yy-egolite-design]]: ego lite browser inspection of reference sites before generating UI; repos archify/openpi/skillroster named as examples.
+
+[[src-deronin-design-guide-to-skill-pointer]] / [[src-leo-show-me-skill-pointer]]: design-guide→skill and /show-me readability pointers only.
+
 ## What to do in this vault
 
 Compile the SOP into `wiki/` or `AGENTS.md` with the three-part shape on [[verifiable-instructions]]. Do not vendor a public marketplace to get that SOP. That is [[anti-slop]].
@@ -42,4 +50,4 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 ## Related
 
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]]
+[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]] · [[src-chenchengpro-six-skills]] · [[src-fhwofjow-book-to-skill]] · [[src-t20000622yy-egolite-design]] · [[src-leo-show-me-skill-pointer]] · [[src-deronin-design-guide-to-skill-pointer]]

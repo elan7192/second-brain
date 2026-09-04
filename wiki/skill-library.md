@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-08-29
+updated: 2026-09-04
 ---
 
 # Skill library
@@ -61,9 +61,14 @@ Stale counts: [[contradictions]] C24. Scientific skill bodies were not copied.
 
 This vault compiles skill rules into pages and does not vendor marketplace dumps. That is [[anti-slop]]. Do not reopen D7 (Obsidian is the IDE).
 
-[[src-voxyz-archify]] is a named exception: lan E asked to integrate one diagram skill. Copy lives at `.agents/skills/archify`. See [[archify]] and C47.
+[[src-voxyz-archify]] is a named exception: lan E asked to integrate one diagram skill. Copy lives at `.agents/skills/archify`. See [[archify]] · [[src-chenchengpro-six-skills]] · [[src-fhwofjow-book-to-skill]] · [[src-leo-show-me-skill-pointer]] and C47.
 
 Discovery instead of rebuild is the same bet as [[tokens-as-capital]]. The compiler store stays `wiki/`. See [[contradictions]] C20.
+
+
+## Misses batch skill pointers (2026-09-04)
+
+[[src-chenchengpro-six-skills]] and [[src-fhwofjow-book-to-skill]] / [[src-leo-show-me-skill-pointer]]: catalog pointers only. Do not vendor packs. Compile local SOPs into wiki or project skills.
 
 ## Related
 

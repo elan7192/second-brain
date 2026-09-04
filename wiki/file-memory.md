@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-28
+updated: 2026-09-04
 ---
 
 # File memory
@@ -24,7 +24,7 @@ Vector DB only when there is too much to read. Linked markdown is already a grap
 
 Setup: markdown + one disposable index. This vault uses SQLite FTS5, not a CSV, for retrieval (D9). Source `## Claims kept` also compiles to `wiki/claims.csv`. Dual claim store is C17. No vector DB. See [[retrieval]], [[claims]], [[memory-system]], [[claim-protocol]].
 
-`output/ontology-objects.csv` is a derived object table, not the memory index. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]].
+`output/ontology-objects.csv` is a derived object table, not the memory index. Rebuild from wiki. Do not hand-edit. See [[vault-ontology]] · [[src-cyrilxbt-utopia-temporal-kb]] · [[src-bkdgiffug-yuxi-rag-agents]].
 
 This vault already does semantic wiki + index + append-only [[log]] + schema. See [[llm-wiki]], [[memory-engineering]], and [[retrieval]].
 
@@ -33,6 +33,11 @@ Do not add a second memory writer. Catalog `persistent-bot-memory` is the same j
 Delta: [[portable-memory]]. Git truth. FTS5 disposable. Do not clone Brain.
 
 2026-08-27 standing closed after loop17. Each hunt→harden: Vault writes Pawel semantic plus one episodic [[log]] row. Do not write procedural SKILL.md. Do not dump chat. No vector DB. See [[hunt-harden-loop]].
+
+
+[[src-cyrilxbt-utopia-temporal-kb]]: utopia (one binary + Postgres) closes old facts and opens new ones instead of overwriting — temporal scrub timeline. Compile the supersession principle here; do not install utopia as a second store.
+
+[[src-bkdgiffug-yuxi-rag-agents]]: Yuxi RAG+KG+LangGraph workbench is a foil. Keep live query as `python3 tools/sb ask` (D9). Do not add Neo4j/Milvus for this vault.
 
 ## Related
 

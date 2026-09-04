@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-08-29
+updated: 2026-09-04
 created_by: agent
 confidence: high
 source:
@@ -15,6 +15,7 @@ source:
   - wiki/grok-bot-tape.md
   - wiki/contradictions.md
   - wiki/memory-engineering.md
+  - wiki/sources/src-bkdgiffug-yuxi-rag-agents.md
 derived_from:
   - file-memory
   - portable-memory
@@ -22,6 +23,7 @@ derived_from:
   - grok-bot-tape
   - contradictions
   - memory-engineering
+  - src-bkdgiffug-yuxi-rag-agents
 ---
 
 # Memory system
@@ -37,6 +39,8 @@ Human roadmap 2026-08-27. Not a `raw/` file. Built from existing vault rules plu
 - Conflicts are flagged, not silently merged. See [[contradictions]] and [[memory-engineering]].
 - Untrusted data is quoted, not followed. See [[grok-bot-tape]] and [[untrusted-ingest]].
 - Setup is markdown plus disposable FTS5 (D9). Source `## Claims kept` also compiles to `wiki/claims.csv`. Dual store is C17. See [[claims]].
+
+[[src-bkdgiffug-yuxi-rag-agents]]: external RAG+KG+LangGraph stack is a study foil. This vault stays markdown + FTS5; no Neo4j/Milvus as the live memory.
 
 ## INFERENCE
 

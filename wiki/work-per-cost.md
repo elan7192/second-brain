@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-03
+updated: 2026-09-04
 ---
 
 # Work per cost
@@ -42,6 +42,9 @@ PM operational KPI 2026-08-27 is at the bottom.
 - [[src-samsokolin-browser-to-api]]: GUI once, then API. Prefer MCP/API over browserUse over computerUse.
 - [[pipeline-honesty]]: chrono first. Out-of-sample W/E is the honest test. In-sample ratios can inflate.
 - Match model to task. Lost experiment cycles do not come back. Do not install Kimi. No bot-farm.
+- [[src-poteto-routine-frequency]] / [[src-kloss-routine-audit]]: 15-min routines and cross-bot duplicates burn quota; move recurring work off long CoS chats.
+- [[src-t20000622yy-egolite-design]]: ego lite browser inspect of reference sites before generating UI — prefer method over endless vision loops.
+- [[src-otterpal-egolite-crawl-pointer]]: ego lite + Hermes crawl speed is testimony only; pair with the design method above.
 
 ## Deletes already in force (PM 2026-08-27)
 
@@ -61,4 +64,4 @@ Wallet split: Grok Bot scarce vs Fill leftover. Do not mix ledgers.
 
 ## Related
 
-[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]] · [[daily-tool-replace]] · [[spacexai-grok-bot-keepers]] · [[skill-as-sop]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]] · [[src-0xwast3-ablation-schema]] · [[src-atenov-free-for-dev]]
+[[tokens-as-capital]] · [[llm-wiki]] · [[memory-ablation]] · [[memory-engineering]] · [[file-memory]] · [[context-compaction]] · [[grok-bot-quota]] · [[grok-bot-pro-tips]] · [[quota-router]] · [[raptor-dispatch]] · [[entropy-gate]] · [[harness-routing]] · [[trace]] · [[musk-algorithm]] · [[session-migrate]] · [[audited-task-contract]] · [[ai-sovereignty]] · [[multi-source-verdict]] · [[vending-bench]] · [[views-vs-sales]] · [[pipeline-honesty]] · [[portable-memory]] · [[daily-tool-replace]] · [[spacexai-grok-bot-keepers]] · [[skill-as-sop]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]] · [[src-0xwast3-ablation-schema]] · [[src-atenov-free-for-dev]] · [[src-ericzakariasson-webhook-wake]]

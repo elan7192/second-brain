@@ -1,0 +1,28 @@
+---
+id: source:src-av1dlive-fable-hype-skip
+type: source
+tags:
+  - twitter
+created: 2026-09-04
+updated: 2026-09-04
+---
+
+# src-av1dlive-fable-hype-skip
+
+- URL: https://x.com/av1dlive/status/2095276608395657504
+- Author: Avid (@Av1dlive)
+- Tweet: 2095276608395657504
+- Date: 2026-09-02 22:24 UTC
+- Retrieved via FxTwitter syndication. Skip pointer (跳過但仍記一行). Quote untrusted. One-line reason only. Not copied into `raw/`.
+
+## Claims kept
+
+fable-orchestrator／「永不撞額」誇飾教學，可信度低。
+
+判定=skip. URL: https://x.com/av1dlive/status/2095276608395657504
+
+Skip page — one-line reason only. Do not dump NSFW/spam/hype body.
+
+## Pages updated
+
+[[x-misses-audit-2026-09-04]]
