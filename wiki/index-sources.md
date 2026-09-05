@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-openai-hf-agents-incident-2026]] | 2026-09-06 | OpenAI×HF agents incident (IM1/HPIM; Artifactory board; desk anti-swarm: CoS task+artifact only; escalate or quiet stop) |
 | [[src-exm7777-advanced-x-research-grok-bot]] | 2026-09-05 | EXM7777: advanced X research via Grok Bot + X MCP (+ optional Apify); prefer X Scout seat; skill x-deep-research-pass |
 | [[src-skills-cut-42-to-37-2026-09-05]] | 2026-09-05 | Applied skills CUT 42→37: delete getting-started×3 + extra-recurring-checks; merge cheap-routines→routine-healthcheck |
 | [[src-googlecloud-long-horizon-agent-harness-5-patterns]] | 2026-09-05 | GoogleCloudTech canonical: 5 long-horizon harness patterns (stable prefix; write-behind; persistent workspace; INCOMPLETE≠done + caps; guard chain no model) |

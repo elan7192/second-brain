@@ -37,4 +37,4 @@ Five design patterns (Google Cloud Tech / Long Horizon harness):
 
 ## Related
 
-[[src-shao-meng-long-horizon-harness-zh]] · [[harness-routing]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-spotify-portal-claude-cheap-workers]] · [[lan-e-desk-team]]
+[[src-shao-meng-long-horizon-harness-zh]] · [[harness-routing]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-spotify-portal-claude-cheap-workers]] · [[lan-e-desk-team]] · [[src-openai-hf-agents-incident-2026]]
