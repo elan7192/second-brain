@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] amend | fold shao Ng ZH amplify into Andrew primary
+
+No new skip/src. Fold https://x.com/shao__meng/status/2096047778011152641 as Related-only amplify on [[src-andrewng-ai-engineering-skills-map]]. Different from [[src-shao-meng-long-horizon-harness-zh]]. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | EXM7777 advanced X research Grok Bot
 
 Thin [[src-exm7777-advanced-x-research-grok-bot]]: Grok Bot + X MCP + optional Apify full history / morning brief. Desk skill `x-deep-research-pass`; prefer X Scout; no new bot. Near [[src-exm7777-grok-bot-money]]. Squash-merge if validate PASS.
