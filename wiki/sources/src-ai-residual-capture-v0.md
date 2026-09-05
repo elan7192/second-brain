@@ -34,6 +34,28 @@ updated: 2026-09-06
 
 **Success:** same question second time → find prior src+SHA in minutes without re-running Researchy. Gap is habit/search, not missing bots. Musk order: [[musk-algorithm]].
 
+
+## GTM fold (R2-E Researchy — Related amend, not a second src)
+
+Board: `/workspace/fill/ai-residual-value-plan-2026-09-06.md` §R2-E (+ R2-F eng default). Product framing: sell leftover AI work capture (artifact+verdict+SHA), not another chatbot. Competitor pricing/traffic claims on the board are `unverified` marketing context — not vault facts.
+
+**ICPs (segments only):**
+1. AI-native product teams (small eng) whose session work evaporates — residual ledger complementary to memory SaaS.
+2. Founder–engineers / “product people are engineers” with markdown second brains — Done = git SHA.
+3. GTM/ops eng hybrids with git “company brain” — want versioned agent truth, not Slack paste.
+4. Compliance-sensitive platform teams with observability but no reusable residual seal (claim+merge proof).
+5. Optional stretch: agencies needing auditable sprint leftovers.
+
+**Attraction (engineer-shaped):** open method/packet playbook; CLI/proof of find-prior-src-in-minutes; tiny public sample vault; seat-in-the-loop demo (Researchy→CoS→Vault PR). Avoid paid ads / content mills / “AI second brain” SEO as primary.
+
+**Eng wedge order:** packet+skill → git markdown SoR (`src-*`+SHA) → optional thin CLI → optional MCP read last. **v0 customer surface = nothing in LanBB** (R2-F): show board + merged src as proof.
+
+**GTM eng DELETE list:** hosted multi-tenant residual SaaS / vector DB / Neo4j; full LangSmith competitor; Obsidian plugin as v0 core; chatty swarm product; auto-vault every turn; LanBB UI before paying users; day-one “GTM Context Layer” contradiction engine.
+
+**Non-customers:** session-chat-memory-only buyers; pure observability seats with no wiki/git habit; non-technical marketers needing serve UI; vehicle/asset residual pricing (homonym); orgs wanting peer side-channels without front-door reviewer; Notion-replacement “all KM.”
+
+**GTM (fold):** ICP + attraction + eng DELETE list live in ## GTM fold above; no separate GTM src. v0 sell = habit proof, not LanBB product.
+
 ## Pages updated
 
 [[index-sources]] · [[lan-e-desk-team]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[src-openai-hf-agents-incident-2026]]
