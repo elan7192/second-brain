@@ -4,7 +4,7 @@ type: source
 tags:
   - twitter
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-09-05
 ---
 
 # src-avichawla-trueforge
@@ -46,3 +46,7 @@ X article figures unread.
 ## Pages updated
 
 [[flat-context]] · [[harness-routing]] · [[secret-gateway]] · [[entropy-gate]] · [[tokens-as-capital]] · [[agent-operating-system]] · [[contradictions]]
+
+## Related
+
+[[src-undefinedki-spotify-claude-cheap-workers]] (cheap workers / hard gate cost-routing; Spotify~90% framing cite-only; near token-cut theme).

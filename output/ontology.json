@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T11:31:57Z",
+  "builtAt": "2026-09-05T12:37:45Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 128,
     "Project": 2,
-    "Source": 240,
+    "Source": 241,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 532,
-    "links": 3651
+    "objects": 533,
+    "links": 3663
   },
   "objects": [
     {
@@ -2182,7 +2182,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 48,
+      "inbound": 49,
       "outbound": 32,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 30,
-      "outbound": 244,
+      "inbound": 31,
+      "outbound": 245,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 296,
+      "outbound": 298,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -4993,11 +4993,11 @@
       "title": "src-avichawla-trueforge",
       "path": "wiki/sources/src-avichawla-trueforge.md",
       "created": "2026-08-24",
-      "updated": "2026-08-24",
+      "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 11,
-      "outbound": 7,
+      "inbound": 12,
+      "outbound": 8,
       "unverified": true,
       "oneLiner": "X article. Closing line thanks TrueFoundry for working on it. Sponsored. No paper."
     },
@@ -5248,7 +5248,7 @@
       "updated": "2026-08-27",
       "tags": "community",
       "island": "sources",
-      "inbound": 2,
+      "inbound": 4,
       "outbound": 1,
       "unverified": true,
       "oneLiner": "Community notes, not an OpenAI paper. Compiled from PM 2026-08-27. Not copied into `raw/`."
@@ -6648,7 +6648,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -6746,7 +6746,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -7002,6 +7002,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "TradingView scripts\u2192LLM backtest \u65b9\u6cd5\u5e16\u6307\u91dd\uff08\u975e vault \u4e3b\u7dda\u539a\u5beb\uff09\u3002"
+    },
+    {
+      "primaryKey": "src-undefinedki-spotify-claude-cheap-workers",
+      "objectType": "Source",
+      "title": "src-undefinedki-spotify-claude-cheap-workers",
+      "path": "wiki/sources/src-undefinedki-spotify-claude-cheap-workers.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Cheap workers for file-skim / repetitive code work."
     },
     {
       "primaryKey": "src-uury-keyleak-reply-skip",
@@ -7264,7 +7278,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 43,
+      "inbound": 44,
       "outbound": 22,
       "unverified": true,
       "oneLiner": "Treat a token as an investment, not a per-query bill."
@@ -7516,7 +7530,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
+      "inbound": 36,
       "outbound": 38,
       "unverified": true,
       "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
@@ -14993,6 +15007,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-undefinedki-spotify-claude-cheap-workers"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-uury-keyleak-reply-skip"
     },
     {
@@ -16288,6 +16307,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-community-compaction"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-coreyganim-composio"
     },
     {
@@ -16604,6 +16628,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-taifex-tx-real-data-sources-2026-09"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-undefinedki-spotify-claude-cheap-workers"
     },
     {
       "from": "log",
@@ -21967,6 +21996,11 @@
     },
     {
       "from": "src-avichawla-trueforge",
+      "linkType": "cites",
+      "to": "src-undefinedki-spotify-claude-cheap-workers"
+    },
+    {
+      "from": "src-avichawla-trueforge",
       "linkType": "relatedTo",
       "to": "agent-operating-system"
     },
@@ -24219,6 +24253,46 @@
       "from": "src-tradingview-scripts-to-llm-backtest",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-avichawla-trueforge"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-community-compaction"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-undefinedki-spotify-claude-cheap-workers",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
     },
     {
       "from": "src-uury-keyleak-reply-skip",
