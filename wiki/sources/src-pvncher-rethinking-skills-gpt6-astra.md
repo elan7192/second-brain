@@ -26,7 +26,7 @@ AGENTS.md: drop mandatory full-repo map / read-before-every-edit / force-tests w
 
 Near (keep, do not overwrite): [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[skill-as-sop]] · [[agent-facing-docs]].
 
-Desk skills touchpoint (names only, no skill body dump): the-algorithm · skill-improver · cheap-routines — same hygiene bet (thin when-to-use, principles over recipes, revisit on model jump).
+Desk skills touchpoint (names only, no skill body dump): the-algorithm · skill-improver · routine-healthcheck (absorbs cheap-routines; see [[src-skills-cut-42-to-37-2026-09-05]]) — same hygiene bet (thin when-to-use, principles over recipes, revisit on model jump).
 
 Optional near skip: [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] (amplify wrapper + Codex audit prompt).
 

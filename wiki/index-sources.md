@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skills-cut-42-to-37-2026-09-05]] | 2026-09-05 | Applied skills CUT 42→37: delete getting-started×3 + extra-recurring-checks; merge cheap-routines→routine-healthcheck |
 | [[src-googlecloud-long-horizon-agent-harness-5-patterns]] | 2026-09-05 | GoogleCloudTech canonical: 5 long-horizon harness patterns (stable prefix; write-behind; persistent workspace; INCOMPLETE≠done + caps; guard chain no model) |
 | [[src-shao-meng-long-horizon-harness-zh]] | 2026-09-05 | Thin SECONDARY ZH digest → GoogleCloud long-horizon harness |
 | [[src-skip-goan999999-astra-cleanup-wrapper]] | 2026-09-05 | 跳過仍記：goan999999 Lonely/pvncher Astra wrapper near-dup |

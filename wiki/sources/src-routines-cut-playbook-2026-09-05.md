@@ -33,4 +33,4 @@ Vault records the applied cut only; live deletes were CoS/Rutin with lan E yes.
 
 ## Related
 
-[[src-algo-routines-audit-2026-09-05]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-kloss-routine-audit]] · [[src-poteto-routine-frequency]] · [[musk-algorithm]] · [[grok-bot-quota]] · [[spacexai-grok-bot-keepers]] · [[lan-e-desk-team]]
+[[src-algo-routines-audit-2026-09-05]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-kloss-routine-audit]] · [[src-poteto-routine-frequency]] · [[musk-algorithm]] · [[grok-bot-quota]] · [[spacexai-grok-bot-keepers]] · [[lan-e-desk-team]] · [[src-skills-cut-42-to-37-2026-09-05]]

@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | skills CUT 42→37 applied
+
+Thin [[src-skills-cut-42-to-37-2026-09-05]]: delete getting-started×3 + extra-recurring-checks; merge cheap-routines→routine-healthcheck. Disk workflows=37. Near [[src-routines-cut-playbook-2026-09-05]] · [[src-pvncher-rethinking-skills-gpt6-astra]]. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | GoogleCloud long-horizon harness 5 patterns + goan skip
 
 Canonical [[src-googlecloud-long-horizon-agent-harness-5-patterns]] (article 5 design patterns; ADK Long Horizon pointer). Secondary [[src-shao-meng-long-horizon-harness-zh]]. Skip [[src-skip-goan999999-astra-cleanup-wrapper]] (pvncher near-dup). Related Ng/Astra/TEAM/Spotify. Pending earlier batch already on tip: sairahul1 skip · skraft09 · Mortyx. Squash-merge if validate PASS.
