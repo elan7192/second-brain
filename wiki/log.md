@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-05] ingest | knowledge sync bus
+
+Compiled [[src-cos-knowledge-sync-bus-2026-09-05]] and [[knowledge-sync-bus]]. Specialist → CoS → Vault. Folded into [[raptor-dispatch]].
 
 ## [2026-09-04] ingest | ClorisSignal agent eval framework
 

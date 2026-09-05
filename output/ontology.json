@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-04T14:54:56Z",
+  "builtAt": "2026-09-05T04:35:59Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -105,14 +105,14 @@
     "Map": 5,
     "unverified": 113,
     "Hunt": 8,
-    "Concept": 127,
+    "Concept": 128,
     "Project": 2,
-    "Source": 208,
+    "Source": 209,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 498,
-    "links": 3423
+    "objects": 500,
+    "links": 3434
   },
   "objects": [
     {
@@ -2351,7 +2351,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 34,
-      "outbound": 26,
+      "outbound": 27,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2375,11 +2375,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
       "inbound": 17,
-      "outbound": 211,
+      "outbound": 212,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2790,6 +2790,20 @@
       "oneLiner": "@jerryjliu0. Cofounder/CEO of LlamaIndex, per the 2026-08-23 post."
     },
     {
+      "primaryKey": "knowledge-sync-bus",
+      "objectType": "Concept",
+      "title": "Knowledge sync bus",
+      "path": "wiki/knowledge-sync-bus.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "wiki",
+      "island": "concepts",
+      "inbound": 5,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "Specialist \u2192 **CoS last look** \u2192 **Vault** writes `wiki/sources` (and folds). Vault never invents. Source: [[src-cos-knowledge-sync-bus-2026-09-05]]. Skill: vault-knowledge-sync."
+    },
+    {
       "primaryKey": "lanbb",
       "objectType": "Project",
       "title": "LanBB",
@@ -2851,11 +2865,11 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 274,
+      "outbound": 276,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3565,11 +3579,11 @@
       "title": "Raptor dispatch",
       "path": "wiki/raptor-dispatch.md",
       "created": "2026-08-25",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 38,
-      "outbound": 23,
+      "inbound": 40,
+      "outbound": 24,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
     },
@@ -3806,7 +3820,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 29,
       "outbound": 27,
       "unverified": true,
       "oneLiner": "Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool."
@@ -3946,7 +3960,7 @@
       "updated": "2026-09-03",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Chief routes; does not do the work. Triage \u2192 delegate \u2192 watch \u2192 collect \u2192 escalate. A Chief that researches/writes/operates itself rebuilds one giant chatbot."
@@ -5184,6 +5198,20 @@
       "oneLiner": "Cursor has fewer native connectors. Use Composio MCP as a hub to 1000+ apps."
     },
     {
+      "primaryKey": "src-cos-knowledge-sync-bus-2026-09-05",
+      "objectType": "Source",
+      "title": "src-cos-knowledge-sync-bus-2026-09-05",
+      "path": "wiki/sources/src-cos-knowledge-sync-bus-2026-09-05.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "wiki",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Durable finds flow Specialist \u2192 CoS last look \u2192 Vault src/fold. Specialists do not write the vault unless CoS named that exact job. Do not ping lan E from specialists."
+    },
+    {
       "primaryKey": "src-cyrilxbt-utopia-temporal-kb",
       "objectType": "Source",
       "title": "src-cyrilxbt-utopia-temporal-kb",
@@ -5486,7 +5514,7 @@
       "updated": "2026-08-28",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 3,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "lan E pointed at this post. Method page now exists: [[headlong]]. Same URL as [[src-hxiao-headlong]]."
@@ -8277,11 +8305,6 @@
     {
       "from": "MEMORY",
       "linkType": "cites",
-      "to": "src-hxiao-headlong-share"
-    },
-    {
-      "from": "MEMORY",
-      "linkType": "cites",
       "to": "src-lanbb-pr27-loop17"
     },
     {
@@ -8498,6 +8521,11 @@
       "from": "MEMORY",
       "linkType": "relatedTo",
       "to": "index"
+    },
+    {
+      "from": "MEMORY",
+      "linkType": "relatedTo",
+      "to": "knowledge-sync-bus"
     },
     {
       "from": "MEMORY",
@@ -13022,6 +13050,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "knowledge-sync-bus"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "lanbb"
     },
     {
@@ -13798,6 +13831,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-coreyganim-composio"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
     },
     {
       "from": "index-sources",
@@ -15055,6 +15093,26 @@
       "to": "two-pass-document-processing"
     },
     {
+      "from": "knowledge-sync-bus",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "knowledge-sync-bus",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "knowledge-sync-bus",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "knowledge-sync-bus",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
       "from": "lanbb",
       "linkType": "aboutPerson",
       "to": "lostsec"
@@ -15533,6 +15591,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-coreyganim-composio"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
     },
     {
       "from": "log",
@@ -16278,6 +16341,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "ingest-brief-2026-08-27-lanbb-bb"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "knowledge-sync-bus"
     },
     {
       "from": "log",
@@ -18852,6 +18920,11 @@
     {
       "from": "raptor-dispatch",
       "linkType": "relatedTo",
+      "to": "knowledge-sync-bus"
+    },
+    {
+      "from": "raptor-dispatch",
+      "linkType": "relatedTo",
       "to": "loop-graph-engineering"
     },
     {
@@ -21278,6 +21351,16 @@
       "from": "src-coreyganim-composio",
       "linkType": "relatedTo",
       "to": "grok-bot-use-cases"
+    },
+    {
+      "from": "src-cos-knowledge-sync-bus-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "knowledge-sync-bus"
+    },
+    {
+      "from": "src-cos-knowledge-sync-bus-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
     },
     {
       "from": "src-cyrilxbt-utopia-temporal-kb",

@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-25
-updated: 2026-09-04
+updated: 2026-09-05
 created_by: agent
 confidence: high
 source:
@@ -70,6 +70,9 @@ P0 = denser live steer on the in-flight cloud agent. Not a 5/15-min poller. Last
 Kill repetition order folds through [[skill-as-sop]] and [[work-per-cost]]: architecture → CI → skill → human last. derived_from: src-poteto-eliminate-interventions.
 
 Hub: [[spacexai-grok-bot-keepers]].
+
+
+Knowledge sync bus (specialist → CoS → Vault src): [[knowledge-sync-bus]].
 
 ## Related
 
