@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-taifex-tx-real-data-sources-2026-09]] | 2026-09-05 | TAIFEX TX real-data catalog (thin-medium; free official daily ZIPs + rolling 30-day ticks, no free multi-year 1m/tick archive, eDataShop ~NT$9–10k per data-month, TEJ TQuant Lab ~NT$14.4k/yr for 1m, community dumps fail ToS; list prices as of 2026-09-05; educational only) |
 | [[src-monid-tinyfish-free-agent-search]] | 2026-09-05 | @shengkunye promo: free agent search+fetch via Tiny Fish + MonidHQ; marketing flag ("killed Exa/Tavily", "$0"); compare pointer only, keep Exa/Tavily, no install |
 | [[src-itrading-acer-trading-doctor-sop-2026-09]] | 2026-09-05 | 交易醫生 / Acer / 徐國華 台指期當沖 research SOP (medium; public structure plus desk PROXY gap-fade backtest, holdout 2023 loses after costs; 110金訴42 compliance flag; educational, not advice) |
 | [[src-deusyu-translate-book]] | 2026-09-05 | OSS translate-book (deusyu): whole-book PDF/DOCX/EPUB translation via parallel subagents; thin pointer, promo tweet flagged, no install |
