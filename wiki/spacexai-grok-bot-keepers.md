@@ -27,6 +27,7 @@ source:
   - wiki/sources/src-petergyang-cloud-login-unease-pointer.md
   - wiki/sources/src-kloss-routine-audit.md
   - wiki/sources/src-benln-grok-bot-pro-tips-2026-09-04.md
+  - wiki/sources/src-algo-routines-audit-2026-09-05.md
 derived_from:
   - src-lingxi-grok-bot-engineering
   - src-poteto-eliminate-interventions
@@ -44,6 +45,7 @@ derived_from:
   - src-petergyang-agent-privacy
   - src-kloss-routine-audit
   - src-benln-grok-bot-pro-tips-2026-09-04
+  - src-algo-routines-audit-2026-09-05
 ---
 
 # SpaceXAI Grok Bot keepers
@@ -73,6 +75,8 @@ Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-intervent
 
 
 [[src-poteto-routine-frequency]] / [[src-kloss-routine-audit]]: dense schedules and long-chat routines burn quota; recurring work on fresh bots. Detail on [[grok-bot-quota]].
+
+[[src-algo-routines-audit-2026-09-05]]: standing KEEP is CoS Morning OS (`0 8 * * 1-5`), X Scout weekday digest (`0 9 * * 1-5`), Vault `pr-merged` track; prefer events / CoS-named jobs over weekly self-audit digests; parked bots hold zero cron definitions.
 
 [[src-ericzakariasson-webhook-wake]]: webhook triggers wake bots from outside chat — event over poll.
 
