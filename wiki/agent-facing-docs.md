@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-24
-updated: 2026-08-29
+updated: 2026-09-05
 ---
 
 # Agent-facing docs
@@ -53,6 +53,8 @@ Agents also edit their own instructions. AIDev: `AGENTS.md` in 692 PRs, `CLAUDE.
 3. File working notes into `wiki/` or `output/`. They are a first-class maintenance surface.
 4. Keep this vault's file-first ingest. Observed public agents touch code first.
 
+[[src-pvncher-rethinking-skills-gpt6-astra]]: AGENTS.md hygiene for GPT-6 Astra — drop mandatory full-repo map / read-before-every-edit / force-tests when the model self-checks; "always ask" walls may stop early; grant safe local-test loops; define completion/persistence up front. Near [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]].
+
 ## Related
 
-[[verifiable-instructions]] · [[context-graph]] · [[tokens-as-capital]] · [[llm-wiki]] · [[self-verification]] · [[hunt-ship-loop]]
+[[verifiable-instructions]] · [[context-graph]] · [[tokens-as-capital]] · [[llm-wiki]] · [[self-verification]] · [[hunt-ship-loop]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[skill-as-sop]]

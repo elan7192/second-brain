@@ -11,6 +11,14 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | Rutin Astra routine-prompt pattern
+
+New [[src-rutin-astra-routine-prompt-pattern-2026-09]] from Rutin Astra pass via CoS vault_sync (thin method note). 判定=入vault建議. Kept: routine prompts = goal + done proof + quiet-when-nothing (do not bake MCP/CLI/widget menus into standing routine prompts); parked bots zero cron definitions on disk (align [[src-algo-routines-audit-2026-09-05]]); prefer event listeners over polling, ban dense 5/15-min polls; one on-demand auditor (Rutin), not every bot self-auditing on cron. Near keep (not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]]. Light Related/near folds on those two srcs. Catalog row added. No concept fold, no MEMORY line. Squash-merge if validate PASS.
+
+## [2026-09-05] ingest | pvncher rethinking skills GPT-6 Astra
+
+New [[src-pvncher-rethinking-skills-gpt6-astra]] from @pvncher tweet/article (Rethinking skills and prompts for GPT-6 Astra). 判定=入vault建議. Kept: stronger models make Skills/AGENTS.md/task prompts context debt — revisit each model jump; don't hoard skills (short when-to-use, progressive disclosure, principles over recipes); trim AGENTS.md mandatory full-repo map / read-before-every-edit / force-tests and "always ask" walls; grant safe local-test loops; define completion/persistence up front. Near keep (not overwrite): [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]]. Optional skip [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] (amplify + Codex audit). Light fold [[skill-as-sop]] · [[agent-facing-docs]]. Desk skills named only: the-algorithm · skill-improver · cheap-routines. No skill body dump. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | TAIFEX TX real-data sources catalog
 
 New [[src-taifex-tx-real-data-sources-2026-09]] from the Researchy brief `/workspace/fill/tx-real-data-sources-2026-09-05.md` (box, not in repo, not mounted in this session; figures taken from lan E's ingest brief). Thin-medium catalog, educational only. Kept: free official TAIFEX daily ZIPs (about 1998 to 2025) plus rolling 30-day futures ticks; no free official multi-year 1m or tick archive and no public historical DB API; eDataShop about NT$9k to 10k per data-month, full 2011 to 2026 ticks about NT$1.4M to 1.8M at list, single-user no redistribute; TEJ TQuant Lab minute plus continuous_future TX about NT$14.4k per year with 14-day trial; community MEGA / Drive / COCO dumps fail ToS and quality; brokers about 20-day 1m lookback only; hygiene one-liner filed as OPINION. Prices are list as of 2026-09-05 and not extended. Motivation and one-line Related cross-link on [[src-itrading-acer-trading-doctor-sop-2026-09]] (community TX_1m ending 2023-12); Acer claims untouched. Catalog row added. No concept fold, no MEMORY line. Squash-merge if validate PASS.
