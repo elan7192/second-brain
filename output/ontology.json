@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T22:38:12Z",
+  "builtAt": "2026-09-05T22:39:06Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 265,
+    "Source": 266,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 558,
-    "links": 3904
+    "objects": 559,
+    "links": 3914
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 55,
-      "outbound": 271,
+      "inbound": 56,
+      "outbound": 272,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 324,
+      "outbound": 325,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5436,6 +5436,20 @@
       "oneLiner": "557 SWE-chat sessions, 94,813 events, 3,033 documentation interactions. 33,097 AIDev agentic pull requests, 690,260 file-level change records."
     },
     {
+      "primaryKey": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "objectType": "Source",
+      "title": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "path": "wiki/sources/src-daniel-mac8-astra-skills-audit-prompt-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "One-shot Astra skills/AGENTS audit prompt. Fold into existing Astra notes on [[src-pvncher-rethinking-skills-gpt6-astra]]. Near skip (similar amplify): [[src-lonely-mh-pvncher-astra-cleanup-prompt-ski"
+    },
+    {
       "primaryKey": "src-debs-obrien-token-usage",
       "objectType": "Source",
       "title": "src-debs-obrien-token-usage",
@@ -5668,7 +5682,7 @@
       "updated": "2026-09-05",
       "tags": "twitter,astra,codex",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Pattern: keep notes across context windows instead of relying on repeated compaction (author framing via primary tweet)."
@@ -6298,7 +6312,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Amplify wrapper + Codex audit prompt on the pvncher Astra skills rethink; near primary [[src-pvncher-rethinking-skills-gpt6-astra]]."
@@ -6785,11 +6799,11 @@
       "title": "src-pvncher-rethinking-skills-gpt6-astra",
       "path": "wiki/sources/src-pvncher-rethinking-skills-gpt6-astra.md",
       "created": "2026-09-05",
-      "updated": "2026-09-05",
+      "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 12,
-      "outbound": 12,
+      "inbound": 13,
+      "outbound": 13,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -6900,7 +6914,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -7894,8 +7908,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 33,
-      "outbound": 32,
+      "inbound": 34,
+      "outbound": 33,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -14822,6 +14836,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-debs-obrien-token-usage"
     },
     {
@@ -16948,6 +16967,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05"
     },
     {
       "from": "log",
@@ -23455,6 +23479,36 @@
       "to": "verifiable-instructions"
     },
     {
+      "from": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "linkType": "cites",
+      "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-debs-obrien-token-usage",
       "linkType": "relatedTo",
       "to": "bot-voice"
@@ -25113,6 +25167,11 @@
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
       "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05"
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
@@ -27013,6 +27072,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-cyberstrike-ai-redteam"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
