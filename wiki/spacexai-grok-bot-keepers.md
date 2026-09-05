@@ -26,6 +26,7 @@ source:
   - wiki/sources/src-godofprompt-10-prompts-pointer.md
   - wiki/sources/src-petergyang-cloud-login-unease-pointer.md
   - wiki/sources/src-kloss-routine-audit.md
+  - wiki/sources/src-benln-grok-bot-pro-tips-2026-09-04.md
 derived_from:
   - src-lingxi-grok-bot-engineering
   - src-poteto-eliminate-interventions
@@ -42,13 +43,14 @@ derived_from:
   - src-ericzakariasson-webhook-wake
   - src-petergyang-agent-privacy
   - src-kloss-routine-audit
+  - src-benln-grok-bot-pro-tips-2026-09-04
 ---
 
 # SpaceXAI Grok Bot keepers
 
 Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool.
 
-Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-interventions]] · [[src-poteto-pstack-outer-loop]] · [[src-samsokolin-browser-to-api]] · [[src-yunta-tsai-quota-isolate]] · [[src-xai-introducing-grok-bot]] · [[src-adiix-grok-bot-org]] · [[src-poteto-routine-frequency]] · [[src-ericzakariasson-webhook-wake]] · [[src-petergyang-agent-privacy]] · [[src-cbdoge-designing-grok-bot-pointer]] · [[x-misses-audit-2026-09-04]].
+Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-interventions]] · [[src-poteto-pstack-outer-loop]] · [[src-samsokolin-browser-to-api]] · [[src-yunta-tsai-quota-isolate]] · [[src-xai-introducing-grok-bot]] · [[src-adiix-grok-bot-org]] · [[src-poteto-routine-frequency]] · [[src-ericzakariasson-webhook-wake]] · [[src-petergyang-agent-privacy]] · [[src-cbdoge-designing-grok-bot-pointer]] · [[src-benln-grok-bot-pro-tips-2026-09-04]] · [[x-misses-audit-2026-09-04]].
 
 ## FACT
 
@@ -73,6 +75,8 @@ Sources: [[src-lingxi-grok-bot-engineering]] · [[src-poteto-eliminate-intervent
 [[src-poteto-routine-frequency]] / [[src-kloss-routine-audit]]: dense schedules and long-chat routines burn quota; recurring work on fresh bots. Detail on [[grok-bot-quota]].
 
 [[src-ericzakariasson-webhook-wake]]: webhook triggers wake bots from outside chat — event over poll.
+
+[[src-benln-grok-bot-pro-tips-2026-09-04]]: Sep 4 Ben tip pack — tip1/7 already via [[src-samsokolin-browser-to-api]] / [[src-ericzakariasson-webhook-wake]]; tip5 friction-skim is **pattern not hire** (desk has no Eggbot; CoS owns friction skim).
 
 [[src-petergyang-agent-privacy]]: compare agent privacy policies; treat cloud-computer login/2FA as high risk; audit third-party Google apps. Pointer: [[src-petergyang-cloud-login-unease-pointer]].
 
@@ -129,4 +133,4 @@ Skip pointer (not keepers): [[src-skip-nrol-future-predict]] — future-predict.
 Skip pointer (not keepers): [[src-skip-12wk-cyber-roadmap]] — 12wk cyber roadmap.
 Skip pointer (not keepers): [[src-skip-webenstein-cyber-path]] — cyber path.
 
-[[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]]
+[[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]] · [[src-benln-grok-bot-pro-tips-2026-09-04]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]]

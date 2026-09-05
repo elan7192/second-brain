@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | benln grok bot pro tips 2026-09-04
+
+CoS packet. New [[src-benln-grok-bot-pro-tips-2026-09-04]] (root https://x.com/benln/status/2095861267831341431). Dedup: Aug [[src-benln-grok-bot-pro-tips]] kept. Tip1→[[src-samsokolin-browser-to-api]]; tip7→[[src-ericzakariasson-webhook-wake]]. Desk: no Eggbot; CoS owns friction skim (tip5 pattern). Folded [[grok-bot-pro-tips]], [[spacexai-grok-bot-keepers]], [[knowledge-sync-bus]]. Gaps: poteto status id unresolved; tips after #7 not captured.
+
 ## [2026-09-05] ingest | Obscura + crawl4ai + TonyZhu design philosophy
 
 Compiled [[src-obscura-rust-headless-browser]], [[src-crawl4ai-llm-markdown-crawler]], [[src-iamtonyzhu-grok-bot-design-philosophy]]. Cross-linked egolite cluster and [[spacexai-grok-bot-keepers]]. Auto-merge.

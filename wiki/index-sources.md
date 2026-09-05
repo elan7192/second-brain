@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-benln-grok-bot-pro-tips-2026-09-04]] | 2026-09-04 | Ben Lang Sep 4 Grok Bot tip pack (7 tips; tip1/7 reuse existing srcs) |
 | [[src-obscura-rust-headless-browser]] | 2026-09-05 | Obscura Rust headless/CDP scrape engine (pointer; no install) |
 | [[src-crawl4ai-llm-markdown-crawler]] | 2026-09-05 | crawl4ai LLM-ready Markdown crawler (unclecode; pointer) |
 | [[src-iamtonyzhu-grok-bot-design-philosophy]] | 2026-09-05 | Tony CN translate of x.ai Designing Grok Bot primitives |

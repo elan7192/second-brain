@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T04:52:59Z",
+  "builtAt": "2026-09-05T04:56:43Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 128,
     "Project": 2,
-    "Source": 230,
+    "Source": 231,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 522,
-    "links": 3554
+    "objects": 523,
+    "links": 3571
   },
   "objects": [
     {
@@ -2053,11 +2053,11 @@
       "title": "Grok Bot pro tips",
       "path": "wiki/grok-bot-pro-tips.md",
       "created": "2026-08-27",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 13,
-      "outbound": 9,
+      "inbound": 14,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Ten tips from the @bot team, collected by Ben Lang."
     },
@@ -2070,7 +2070,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
+      "inbound": 26,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "Grok Bot quota burns fastest on:"
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 21,
-      "outbound": 234,
+      "inbound": 22,
+      "outbound": 235,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2798,8 +2798,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 6,
-      "outbound": 4,
+      "inbound": 7,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "Specialist \u2192 **CoS last look** \u2192 **Vault** writes `wiki/sources` (and folds). Vault never invents. Source: [[src-cos-knowledge-sync-bus-2026-09-05]]. Skill: vault-knowledge-sync."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 280,
+      "outbound": 282,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3820,8 +3820,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 30,
-      "outbound": 36,
+      "inbound": 31,
+      "outbound": 37,
       "unverified": true,
       "oneLiner": "Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool."
     },
@@ -5049,13 +5049,27 @@
       "title": "src-benln-grok-bot-pro-tips",
       "path": "wiki/sources/src-benln-grok-bot-pro-tips.md",
       "created": "2026-08-27",
-      "updated": "2026-08-27",
+      "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 4,
+      "inbound": 5,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "Ten Grok Bot pro tips. See [[grok-bot-pro-tips]]."
+    },
+    {
+      "primaryKey": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "objectType": "Source",
+      "title": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "path": "wiki/sources/src-benln-grok-bot-pro-tips-2026-09-04.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Ben Lang Sep 4 pack: seven Grok Bot tips with linked posts (capture truncated after #7)."
     },
     {
       "primaryKey": "src-bkdgiffug-yuxi-rag-agents",
@@ -5430,7 +5444,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 9,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Routines can add a webhook trigger: wake a Grok Bot from outside the chat."
@@ -6648,7 +6662,7 @@
       "updated": "2026-09-02",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 8,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Repeating the same GUI clicks in a web app burns tokens."
@@ -12323,12 +12337,27 @@
     {
       "from": "grok-bot-pro-tips",
       "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips-2026-09-04"
+    },
+    {
+      "from": "grok-bot-pro-tips",
+      "linkType": "cites",
+      "to": "src-ericzakariasson-webhook-wake"
+    },
+    {
+      "from": "grok-bot-pro-tips",
+      "linkType": "cites",
       "to": "src-kloss-routine-audit"
     },
     {
       "from": "grok-bot-pro-tips",
       "linkType": "cites",
       "to": "src-poteto-routine-frequency"
+    },
+    {
+      "from": "grok-bot-pro-tips",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
     },
     {
       "from": "grok-bot-pro-tips",
@@ -14118,6 +14147,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips-2026-09-04"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-bkdgiffug-yuxi-rag-agents"
     },
     {
@@ -15543,6 +15577,11 @@
     {
       "from": "knowledge-sync-bus",
       "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips-2026-09-04"
+    },
+    {
+      "from": "knowledge-sync-bus",
+      "linkType": "cites",
       "to": "src-cos-knowledge-sync-bus-2026-09-05"
     },
     {
@@ -16008,6 +16047,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips-2026-09-04"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-botdirectory-picks-2026-08-27"
     },
     {
@@ -16069,6 +16113,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-disclosure-index"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-ericzakariasson-webhook-wake"
     },
     {
       "from": "log",
@@ -20073,6 +20122,11 @@
     {
       "from": "spacexai-grok-bot-keepers",
       "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips-2026-09-04"
+    },
+    {
+      "from": "spacexai-grok-bot-keepers",
+      "linkType": "cites",
       "to": "src-cbdoge-designing-grok-bot-pointer"
     },
     {
@@ -21687,6 +21741,11 @@
     },
     {
       "from": "src-benln-grok-bot-pro-tips",
+      "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips-2026-09-04"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips",
       "linkType": "relatedTo",
       "to": "grok-bot-pro-tips"
     },
@@ -21704,6 +21763,46 @@
       "from": "src-benln-grok-bot-pro-tips",
       "linkType": "relatedTo",
       "to": "quota-router"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "cites",
+      "to": "src-benln-grok-bot-pro-tips"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "cites",
+      "to": "src-ericzakariasson-webhook-wake"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "cites",
+      "to": "src-samsokolin-browser-to-api"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "grok-bot-pro-tips"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "knowledge-sync-bus"
+    },
+    {
+      "from": "src-benln-grok-bot-pro-tips-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "src-bkdgiffug-yuxi-rag-agents",

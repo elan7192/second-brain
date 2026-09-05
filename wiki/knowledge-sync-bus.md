@@ -35,6 +35,8 @@ Ephemeral chat, hype, NSFW, pure ads → skip仍記 or no file (CoS decides).
 
 User-pasted X status triage is X Scout. Vault files only packets CoS forwards.
 
+CoS→Vault packets include Ben Lang tip packs (e.g. [[src-benln-grok-bot-pro-tips-2026-09-04]]).
+
 ## Skip仍記一行
 
 Must include: source URL, one-line why skipped, judgment date. Never blank.
@@ -57,4 +59,4 @@ If a specialist asks Vault to ingest without a CoS packet: refuse and point them
 
 ## Related
 
-[[raptor-dispatch]] · [[spacexai-grok-bot-keepers]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[src-adiix-grok-bot-org]]
+[[raptor-dispatch]] · [[spacexai-grok-bot-keepers]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[src-benln-grok-bot-pro-tips-2026-09-04]] · [[src-adiix-grok-bot-org]]
