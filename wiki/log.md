@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] amend | Gabriel Chua Astra cross-window notes
+
+Amended [[src-gabrielchua-astra-cross-window-notes]]: added enable follow-up https://x.com/gabrielchua/status/2096097155048223221; clarified notes-across-windows vs repeated compaction; `features.context_management.experimental_mode` in Codex `config.toml` (box already set by CoS; user Windows/Mac may still need); Related + [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]]. No new bot. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | Gabriel Chua Astra cross-window notes
 
 New [[src-gabrielchua-astra-cross-window-notes]] from @gabrielchua tweet 2096097151524978891. 判定=入vault thin. Kept: cross-window notes pattern (cite tweet); enable key `features.context_management.experimental_mode` per CoS. Near: [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]]. No deep concept folds. Catalog row added. Squash-merge if validate PASS.
