@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Grok Bot pro tips
@@ -26,6 +26,14 @@ Source: [[src-benln-grok-bot-pro-tips]]. lan E share.
 
 Also: [[src-poteto-routine-frequency]] (same frequency tip from poteto) and [[src-kloss-routine-audit]] (field checklist).
 
+
+
+## 2026-09-04 Ben pack
+
+Seven more tips from Ben Lang (Sep 4 thread). Principles + linked posts on [[src-benln-grok-bot-pro-tips-2026-09-04]]. Aug 10/25 ten tips above stay intact ([[src-benln-grok-bot-pro-tips]]).
+
+Highlights only (detail on the src): browser→API ([[src-samsokolin-browser-to-api]]); iOS trackpad; phone→host computer; custom notification sounds; friction-skim **pattern** (no Eggbot hire — CoS owns); sidebar pin/titles/sections; webhook wake ([[src-ericzakariasson-webhook-wake]]).
+
 ## Related
 
-[[grok-bot-use-cases]] · [[grok-bot-quota]] · [[quota-router]] · [[raptor-dispatch]] · [[bot-voice]] · [[src-benln-grok-bot-pro-tips]] · [[grok-bot-tape]]
+[[grok-bot-use-cases]] · [[grok-bot-quota]] · [[quota-router]] · [[raptor-dispatch]] · [[bot-voice]] · [[src-benln-grok-bot-pro-tips]] · [[src-benln-grok-bot-pro-tips-2026-09-04]] · [[grok-bot-tape]]
