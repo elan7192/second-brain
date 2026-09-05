@@ -40,4 +40,4 @@ Caveats from the post (kept): cannot delegate editing (need targeted reads for l
 
 ## Related
 
-[[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-community-compaction]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]]
+[[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-community-compaction]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]] · [[src-andrewng-ai-engineering-skills-map]]

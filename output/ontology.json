@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T12:42:52Z",
+  "builtAt": "2026-09-05T12:43:37Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 128,
     "Project": 2,
-    "Source": 242,
+    "Source": 243,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 534,
-    "links": 3672
+    "objects": 535,
+    "links": 3682
   },
   "objects": [
     {
@@ -2182,7 +2182,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 50,
+      "inbound": 51,
       "outbound": 32,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 32,
-      "outbound": 246,
+      "inbound": 33,
+      "outbound": 247,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 299,
+      "outbound": 300,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3582,7 +3582,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 41,
+      "inbound": 42,
       "outbound": 24,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
@@ -3736,7 +3736,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 38,
+      "inbound": 39,
       "outbound": 25,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
@@ -4062,6 +4062,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Long-horizon agent eval: inventory, orders, pricing, daily fee."
+    },
+    {
+      "primaryKey": "src-andrewng-ai-engineering-skills-map",
+      "objectType": "Source",
+      "title": "src-andrewng-ai-engineering-skills-map",
+      "path": "wiki/sources/src-andrewng-ai-engineering-skills-map.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter,skills",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "Coding-agent work loop: plan \u2192 exec \u2192 deploy/monitor."
     },
     {
       "primaryKey": "src-anirudh-lingxi-amplify-skip",
@@ -6648,7 +6662,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -6746,7 +6760,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -6928,8 +6942,8 @@
       "updated": "2026-09-05",
       "tags": "spotify,claude-code,cost,routing",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 7,
+      "inbound": 5,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Cheap-workers routing for Claude Code via Portal AiKA modes + `shunt` plugin:"
     },
@@ -13971,6 +13985,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-anirudh-lingxi-amplify-skip"
     },
     {
@@ -16207,6 +16226,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-amitiitbhu-llm-papers-skip"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
     },
     {
       "from": "log",
@@ -20889,6 +20913,41 @@
       "to": "work-per-cost"
     },
     {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
+      "to": "src-spotify-portal-claude-cheap-workers"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
       "from": "src-anirudh-lingxi-amplify-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
@@ -24207,6 +24266,11 @@
       "from": "src-skip-webenstein-cyber-path",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-spotify-portal-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
     },
     {
       "from": "src-spotify-portal-claude-cheap-workers",

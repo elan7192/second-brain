@@ -35,3 +35,7 @@ Related/near: [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra routine-
 ## Pages updated
 
 [[skill-as-sop]] · [[agent-facing-docs]] · [[index-sources]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]]
+
+## Related
+
+[[src-andrewng-ai-engineering-skills-map]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-spotify-portal-claude-cheap-workers]]

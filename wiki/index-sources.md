@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-andrewng-ai-engineering-skills-map]] | 2026-09-05 | Andrew Ng AI Engineering Skills Map for coding agents (plan→exec→deploy/monitor; scarce=spec/arch/verify; harness wraps model; autonomy dial interactive/delegated/looped; 4 fail modes; polydao recap secondary) |
 | [[src-spotify-portal-claude-cheap-workers]] | 2026-09-05 | Spotify Engineering Portal/AiKA + shunt: Claude Code cheap-workers (VERIFIED; Dimitri Mazmanov 2026-09-03; file→summary bulk-read; example→disk code-write; SHUNT_MIN_LINES default 350; ~90% = Java monorepo bulk-read mean ≠ company bill; do not conflate Anthropic Spotify case study) |
 | [[src-undefinedki-spotify-claude-cheap-workers]] | 2026-09-05 | Thin SECONDARY pointer → [[src-spotify-portal-claude-cheap-workers]] (Yarchi @undefinedKi discovery cite; not primary) |
 | [[src-rutin-astra-routine-prompt-pattern-2026-09]] | 2026-09-05 | Rutin Astra routine-prompt pattern (thin method; goal+done proof+quiet-when-nothing; no MCP menus in standing prompts; zero crons on parked bots; events over polls; one on-demand auditor) |
