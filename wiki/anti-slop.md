@@ -27,6 +27,9 @@ The human asked for examples, a comparison, or a specific voice.
 
 ## Skill list (upstream)
 
+Related fold (2026-09-06): Wikipedia [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) via [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] — checklist only; no new skill.
+
+
 1. https://skills.sh/hardikpandya/stop-slop
 2. https://skills.sh/petergyang/no-ai-slop/no-ai-slop
 3. https://skills.sh/blader/humanizer
@@ -47,7 +50,7 @@ Public ranked skills. Company living libraries are a different object. A GitHub 
 
 ## Related
 
-[[verifiable-instructions]] · [[skill-library]] · [[skill-as-sop]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]] · [[src-voxyz-writing-system]] · [[daily-tool-replace]] · [[src-jolyne-sepia-de-ai-writing-pointer]] · [[src-senior-ai-prompt-goals]] · [[x-bookmark-sync-2026-09-05]]
+[[verifiable-instructions]] · [[skill-library]] · [[skill-as-sop]] · D6 in `decisions.md` · [[src-openagentskill-anti-slop]] · [[src-juampi-anti-slop-rank]] · [[src-voxyz-writing-system]] · [[daily-tool-replace]] · [[src-jolyne-sepia-de-ai-writing-pointer]] · [[src-senior-ai-prompt-goals]] · [[x-bookmark-sync-2026-09-05]] · [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]]
 
 A second 10-skill list exists ([[src-openagentskill-anti-slop]]). Do not replace juampi's list. See [[contradictions]] C8.
 
