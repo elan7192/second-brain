@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T12:43:37Z",
+  "builtAt": "2026-09-05T12:43:50Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 535,
-    "links": 3682
+    "links": 3684
   },
   "objects": [
     {
@@ -4072,7 +4072,7 @@
       "updated": "2026-09-05",
       "tags": "twitter,skills",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Coding-agent work loop: plan \u2192 exec \u2192 deploy/monitor."
@@ -6663,7 +6663,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 7,
-      "outbound": 7,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -6942,7 +6942,7 @@
       "updated": "2026-09-05",
       "tags": "spotify,claude-code,cost,routing",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Cheap-workers routing for Claude Code via Portal AiKA modes + `shunt` plugin:"
@@ -24030,6 +24030,11 @@
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
       "to": "src-astra-agent-cleanup-jexlau"
     },
     {
@@ -24046,6 +24051,11 @@
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-spotify-portal-claude-cheap-workers"
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
