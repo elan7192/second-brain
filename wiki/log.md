@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | deusyu translate-book thin pointer
+
+New [[src-deusyu-translate-book]] from @XAMTO_AI promo tweet (repo deusyu/translate-book, README verified 2026-09-05). Promo tone flagged; method only. Near cross-link on [[src-fhwofjow-book-to-skill]] (different tool, not overwritten). No concept fold: skill-as-sop / skill-library carry no translate catalog. Skill not installed. Auto-merge if validate PASS.
+
 ## [2026-09-05] ingest | last30days quant algo trading 2026-09
 
 CoS packet. New [[src-last30days-quant-algo-trading-2026-09]] (量化基金程式交易 / CTA systematic). Artifacts: `/workspace/last30days-runs/quant-algo-trading-2026-09-05.{compact,raw}.md` (+ sibling CTA raw). Near skips linked only: [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]] (do not overwrite). Gaps: no X/TikTok; thin 7d (5/18); Digg/Reddit/YouTube only. No new concept page. MEMORY skipped. Auto-merge if validate PASS.
