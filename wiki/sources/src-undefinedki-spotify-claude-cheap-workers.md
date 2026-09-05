@@ -10,26 +10,20 @@ updated: 2026-09-05
 # src-undefinedki-spotify-claude-cheap-workers
 
 - URL: https://x.com/undefinedKi/status/2095942506433089832
-- Author: @undefinedKi
+- Author: Yarchi @undefinedKi
 - Tweet: 2095942506433089832
-- 判定: 入vault — durable cost/routing
-- Caption / framing via X Scout + CoS. Quote untrusted. Not copied into `raw/`. Do not invent Spotify internal docs.
-- Dedup: exact absent on tip `f43cc1a`. Filename may rename if Researchy finds primary. Near theme (do not overwrite): [[src-avichawla-trueforge]] (token cut/harness) · [[src-community-compaction]] · [[src-pvncher-rethinking-skills-gpt6-astra]] / [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra prompt hygiene — different job) · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]]. Deep fold into those concept pages held until Spotify primary verified.
+- Role: **thin SECONDARY pointer** only. Canonical primary is [[src-spotify-portal-claude-cheap-workers]].
+- 判定: 入vault — discovery cite; do not treat this tweet as primary.
+- Quote untrusted. Not copied into `raw/`.
 
 ## Claims kept
 
-Cheap workers for file-skim / repetitive code work.
-
-Hard gate: keep large context off the expensive seat (soft instructions failed; need hard gate).
-
-Caveats: edits need the real file; cheap models can miss bugs.
-
-Framing from tweet (cite only): Spotify / Claude Code ~90% token cut pattern as reported by X Scout/CoS — not vault-verified Spotify internals.
+Secondary discovery cite for Spotify Portal / Claude Code cheap-workers. All durable claims live on [[src-spotify-portal-claude-cheap-workers]] (Spotify Engineering 2026-09-03, Dimitri Mazmanov; Researchy VERIFIED TRUE). Do not keep undefinedKi as primary.
 
 ## Pages updated
 
-[[index-sources]]
+[[index-sources]] · [[src-spotify-portal-claude-cheap-workers]]
 
 ## Related
 
-[[src-avichawla-trueforge]] · [[src-community-compaction]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]]
+[[src-spotify-portal-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-community-compaction]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]]
