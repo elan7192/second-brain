@@ -9,6 +9,7 @@ updated: 2026-09-05
 created_by: agent
 confidence: high
 source:
+  - wiki/sources/src-iamtonyzhu-grok-bot-design-philosophy.md
   - wiki/sources/src-clorissignal-agent-eval-framework.md
   - wiki/sources/src-lingxi-grok-bot-engineering.md
   - wiki/sources/src-poteto-eliminate-interventions.md
@@ -104,6 +105,11 @@ If someone proposes a Jenny hire, a domain engineer bot clone, a 5/15-min poller
 ## FACT (eval gate)
 
 [[src-clorissignal-agent-eval-framework]] (miles_mazy share of @ClorisSignal): a running Agent is not a live Agent. Eval proves go-live. Author-reported OpenAI/Anthropic eval framing stays unverified without primary docs. Maps to this desk's proof loop: named skills + proof before done.
+
+
+## FACT (design primitives)
+
+[[src-iamtonyzhu-grok-bot-design-philosophy]] (Tony / x.ai Designing Grok Bot): persistent Bots; five surface primitives Bots/Chats/Prompts/Tools/Artifacts; roster not chat-history. Near [[src-cbdoge-designing-grok-bot-pointer]].
 
 ## Related
 

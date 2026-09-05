@@ -25,4 +25,6 @@ Pointer only. Do not dump body.
 
 ## Pages updated
 
+Also [[src-iamtonyzhu-grok-bot-design-philosophy]].
+
 [[spacexai-grok-bot-keepers]] · [[grok-bot]] · [[x-misses-audit-2026-09-04]]

@@ -25,4 +25,6 @@ Pointer only. Do not dump body.
 
 ## Pages updated
 
+Also see [[src-obscura-rust-headless-browser]] · [[src-crawl4ai-llm-markdown-crawler]].
+
 [[archify]] · [[work-per-cost]] · [[x-misses-audit-2026-09-04]]
