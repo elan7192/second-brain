@@ -4,7 +4,7 @@ type: source
 tags:
   - twitter
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # src-fhwofjow-book-to-skill
@@ -22,6 +22,10 @@ book-to-skill (https://github.com/virgiliojr94/book-to-skill): turn a book/doc i
 Inputs: PDF / EPUB / DOCX (also papers, manuals, internal docs). Output: structured Skill (chapters, core knowledge, terms, methods) so the agent can call knowledge without re-stuffing hundreds of pages each turn.
 
 Principle: read once → permanent skill, not re-read-the-book every session. Do not auto-vendor; compile SOPs into wiki/skills locally. See [[skill-as-sop]] · [[skill-library]].
+
+## Related
+
+Near, different tool: [[src-deusyu-translate-book]] (book → translated book via parallel subagents, not book → Skill).
 
 ## Pages updated
 

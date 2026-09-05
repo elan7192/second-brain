@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-deusyu-translate-book]] | 2026-09-05 | OSS translate-book (deusyu): whole-book PDF/DOCX/EPUB translation via parallel subagents; thin pointer, promo tweet flagged, no install |
 | [[src-algo-routines-audit-2026-09-05]] | 2026-09-05 | Rutin Algorithm routines audit (thin playbook; zero crons on parked bots; events over digests) |
 | [[src-last30days-quant-algo-trading-2026-09]] | 2026-09-05 | last30days quant/CTA/algo brief (thin; Digg/Reddit/YT only) |
 | [[src-benln-grok-bot-pro-tips-2026-09-04]] | 2026-09-04 | Ben Lang Sep 4 Grok Bot tip pack (7 tips; tip1/7 reuse existing srcs) |

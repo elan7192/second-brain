@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T05:24:04Z",
+  "builtAt": "2026-09-05T05:29:47Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Ship": 59,
     "Concept": 128,
     "Project": 2,
-    "Source": 233,
+    "Source": 234,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 525,
-    "links": 3595
+    "objects": 526,
+    "links": 3600
   },
   "objects": [
     {
@@ -2379,7 +2379,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 24,
-      "outbound": 237,
+      "outbound": 238,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 286,
+      "outbound": 288,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5436,6 +5436,20 @@
       "oneLiner": "Chess: views \u2260 sales. 74k views / 51 buys vs 135k views / 2 buys. Same numbers already in `growth/growth-insights.md`."
     },
     {
+      "primaryKey": "src-deusyu-translate-book",
+      "objectType": "Source",
+      "title": "src-deusyu-translate-book",
+      "path": "wiki/sources/src-deusyu-translate-book.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter,github",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 1,
+      "unverified": false,
+      "oneLiner": "translate-book (https://github.com/deusyu/translate-book) is an agent skill for Codex, Claude Code, and OpenClaw that translates whole books (PDF/DOCX/EPUB) via parallel subagents."
+    },
+    {
       "primaryKey": "src-disclosure-index",
       "objectType": "Source",
       "title": "src-disclosure-index",
@@ -5511,11 +5525,11 @@
       "title": "src-fhwofjow-book-to-skill",
       "path": "wiki/sources/src-fhwofjow-book-to-skill.md",
       "created": "2026-09-04",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 2,
+      "inbound": 6,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "book-to-skill (https://github.com/virgiliojr94/book-to-skill): turn a book/doc into a callable Skill."
     },
@@ -14315,6 +14329,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-deusyu-translate-book"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-disclosure-index"
     },
     {
@@ -16160,6 +16179,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-deusyu-translate-book"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-disclosure-index"
     },
     {
@@ -16176,6 +16200,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-fhwofjow-book-to-skill"
     },
     {
       "from": "log",
@@ -22288,6 +22317,11 @@
       "to": "views-vs-sales"
     },
     {
+      "from": "src-deusyu-translate-book",
+      "linkType": "cites",
+      "to": "src-fhwofjow-book-to-skill"
+    },
+    {
       "from": "src-disclosure-index",
       "linkType": "relatedTo",
       "to": "contradictions"
@@ -22411,6 +22445,11 @@
       "from": "src-exm7777-grok-bot-money",
       "linkType": "relatedTo",
       "to": "skill-recorder"
+    },
+    {
+      "from": "src-fhwofjow-book-to-skill",
+      "linkType": "cites",
+      "to": "src-deusyu-translate-book"
     },
     {
       "from": "src-fhwofjow-book-to-skill",
