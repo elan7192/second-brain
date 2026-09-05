@@ -47,7 +47,7 @@ Compare a fixed pair, a fixed pair with audited state, and routed executors. If 
 
 ## Related
 
-Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16.
+Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Nested Docker overlay failed on this VM. Tests did not run. Do not restart without a new operator yes. Not the wiki runtime. See C16. · [[src-googlecloud-long-horizon-agent-harness-5-patterns]]
 
 [[audited-task-contract]] · [[entropy-gate]] · [[rohit]] · [[jerry-liu]] · [[ultra-mode]] · [[quota-router]] · [[raptor-dispatch]] · [[session-migrate]] · [[grok-bot]] · [[src-promptyx-llm-cpu]] · [[src-thewhizzai-avo]] · [[src-exm7777-grok-bot-money]] · [[daily-tool-replace]] · [[headlong]] · [[retrieval-second-brain]] · [[company-foundry]] · [[secret-gateway]] · [[flat-context]] · [[src-voxyz-writing-system]] · [[src-kaorixbt-harness-engineering]] · [[agent-operating-system]] · [[loop-graph-engineering]]
 

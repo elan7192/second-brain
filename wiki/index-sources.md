@@ -16,6 +16,9 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-googlecloud-long-horizon-agent-harness-5-patterns]] | 2026-09-05 | GoogleCloudTech canonical: 5 long-horizon harness patterns (stable prefix; write-behind; persistent workspace; INCOMPLETE≠done + caps; guard chain no model) |
+| [[src-shao-meng-long-horizon-harness-zh]] | 2026-09-05 | Thin SECONDARY ZH digest → GoogleCloud long-horizon harness |
+| [[src-skip-goan999999-astra-cleanup-wrapper]] | 2026-09-05 | 跳過仍記：goan999999 Lonely/pvncher Astra wrapper near-dup |
 | [[src-skraft09-bb-writeups-toolkit]] | 2026-09-05 | @skraft09 thin BB writeups/toolkit pointer → github.com/skraft9/vulnerability-research (verified); near mukul975/Cyberstrike; do not vendor |
 | [[src-0xmortyx-context-graph-timestamps]] | 2026-09-05 | @0xMortyx Google workshop context-graph timestamps 0→100; quotes Kimi anatomy; Related Ng/Spotify/TEAM |
 | [[src-0xricker-kimi-context-graph-anatomy]] | 2026-09-05 | Thin fold: Anatomy of a Kimi Context Graph (300 agents → one structure); phases launch→fan-out→overlap→edges→converge |

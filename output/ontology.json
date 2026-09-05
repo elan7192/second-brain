@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T14:25:43Z",
+  "builtAt": "2026-09-05T14:28:01Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 250,
+    "Source": 253,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 543,
-    "links": 3768
+    "objects": 546,
+    "links": 3793
   },
   "objects": [
     {
@@ -2182,8 +2182,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 51,
-      "outbound": 33,
+      "inbound": 52,
+      "outbound": 34,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 40,
-      "outbound": 255,
+      "inbound": 43,
+      "outbound": 258,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2812,8 +2812,8 @@
       "updated": "2026-09-05",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 7,
-      "outbound": 9,
+      "inbound": 8,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 308,
+      "outbound": 311,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -4114,8 +4114,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 9,
+      "inbound": 8,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Loop for building with coding agents: plan \u2192 exec \u2192 deploy/monitor (iterative; less focus on code, more on what to build / architecture / spec / verify)."
     },
@@ -5660,6 +5660,20 @@
       "oneLiner": "\u300c10 Grok Bot prompts\u300d\u7dda\u7a0b\uff1bKeepers \u5728 PM\uff0cvault \u53ea\u7559\u7dda\u7a0b\u6307\u91dd\u4e0d\u91cd\u8cbc\u5168\u6587\u3002"
     },
     {
+      "primaryKey": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "objectType": "Source",
+      "title": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "path": "wiki/sources/src-googlecloud-long-horizon-agent-harness-5-patterns.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter,harness",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Long-horizon = agent keeps going across days/sessions; one-shot breaks in front of you, long-horizon breaks quietly and keeps running."
+    },
+    {
       "primaryKey": "src-grger-prompt-optimizer-skip",
       "objectType": "Source",
       "title": "src-grger-prompt-optimizer-skip",
@@ -6256,7 +6270,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Amplify wrapper + Codex audit prompt on the pvncher Astra skills rethink; near primary [[src-pvncher-rethinking-skills-gpt6-astra]]."
@@ -6732,8 +6746,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 9,
+      "inbound": 10,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -6844,7 +6858,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -6892,6 +6906,20 @@
       "oneLiner": "Senior AI prompts\uff0fgoals\uff08\u975e tasks\uff09\u7dda\u7a0b\u6307\u91dd\u3002May near-dup [[src-voxyz-writing-system]]\uff0f[[src-voxyz-codex-goal-quota]] \u2014 keep thin; do not re-vendor. Still OK as pointer to this status."
     },
     {
+      "primaryKey": "src-shao-meng-long-horizon-harness-zh",
+      "objectType": "Source",
+      "title": "src-shao-meng-long-horizon-harness-zh",
+      "path": "wiki/sources/src-shao-meng-long-horizon-harness-zh.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Secondary pointer only. Durable pattern claims live on [[src-googlecloud-long-horizon-agent-harness-5-patterns]] (stable prefix; write-behind; persistent workspace; explicit INCOMPLETE + hard caps; gu"
+    },
+    {
       "primaryKey": "src-skill-pack-list",
       "objectType": "Source",
       "title": "src-skill-pack-list",
@@ -6932,6 +6960,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1aCyberstrike near-dup of [[src-cyberstrike-ai-redteam]]\uff08bountywriteups\uff09\u3002"
+    },
+    {
+      "primaryKey": "src-skip-goan999999-astra-cleanup-wrapper",
+      "objectType": "Source",
+      "title": "src-skip-goan999999-astra-cleanup-wrapper",
+      "path": "wiki/sources/src-skip-goan999999-astra-cleanup-wrapper.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 4,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1aLonely/pvncher Astra cleanup wrapper near-dup of [[src-pvncher-rethinking-skills-gpt6-astra]] / Lonely skip cluster. No new method."
     },
     {
       "primaryKey": "src-skip-greg-astra-prompts",
@@ -7054,7 +7096,7 @@
       "updated": "2026-09-05",
       "tags": "spotify,claude-code,cost,routing",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Cheap-workers routing for Claude Code via Portal AiKA modes + `shunt` plugin:"
@@ -7684,8 +7726,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 24,
-      "outbound": 24,
+      "inbound": 25,
+      "outbound": 25,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -13062,6 +13104,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-jerry-two-pass-docs"
     },
     {
@@ -14677,6 +14724,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-grger-prompt-optimizer-skip"
     },
     {
@@ -15117,6 +15169,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-shao-meng-long-horizon-harness-zh"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skill-pack-list"
     },
     {
@@ -15128,6 +15185,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-skip-cyberstrike-dup-pethuraj"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-skip-goan999999-astra-cleanup-wrapper"
     },
     {
       "from": "index-sources",
@@ -16032,6 +16094,11 @@
     {
       "from": "lan-e-desk-team",
       "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
       "to": "src-routines-cut-playbook-2026-09-05"
     },
     {
@@ -16652,6 +16719,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-hxiao-headlong-share"
     },
     {
@@ -16897,7 +16969,17 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-shao-meng-long-horizon-harness-zh"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-skill-pack-list"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-goan999999-astra-cleanup-wrapper"
     },
     {
       "from": "log",
@@ -21242,6 +21324,11 @@
     {
       "from": "src-andrewng-ai-engineering-skills-map",
       "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
@@ -23230,6 +23317,46 @@
       "to": "x-misses-audit-2026-09-04"
     },
     {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
+      "to": "src-shao-meng-long-horizon-harness-zh"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
+      "to": "src-spotify-portal-claude-cheap-workers"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
       "from": "src-grger-prompt-optimizer-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
@@ -24482,6 +24609,11 @@
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
       "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
     },
     {
@@ -24695,6 +24827,16 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-shao-meng-long-horizon-harness-zh",
+      "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "src-shao-meng-long-horizon-harness-zh",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
       "from": "src-skill-pack-list",
       "linkType": "relatedTo",
       "to": "contradictions"
@@ -24726,6 +24868,26 @@
     },
     {
       "from": "src-skip-cyberstrike-dup-pethuraj",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-skip-goan999999-astra-cleanup-wrapper",
+      "linkType": "cites",
+      "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "src-skip-goan999999-astra-cleanup-wrapper",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-skip-goan999999-astra-cleanup-wrapper",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-goan999999-astra-cleanup-wrapper",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
     },
@@ -26193,6 +26355,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-cyberstrike-dup-pethuraj"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-goan999999-astra-cleanup-wrapper"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
