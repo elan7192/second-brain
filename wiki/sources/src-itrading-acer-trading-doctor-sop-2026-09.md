@@ -52,3 +52,5 @@ updated: 2026-09-05
 ## Related
 
 [[src-last30days-quant-algo-trading-2026-09]] · [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]] · [[src-ridark-trading-floor-skip]] · [[skill-as-sop]]
+
+Community TX_1m limitation (bars end 2023-12-08, unlicensed dump): licensed TAIFEX / TEJ / eDataShop paths are cataloged in [[src-taifex-tx-real-data-sources-2026-09]].
