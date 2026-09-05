@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-03
+updated: 2026-09-05
 ---
 
 # Harness routing
@@ -58,5 +58,7 @@ Identity `hour` 1h local Ollama trial ended 2026-08-26T02:07Z (operator yes). Ne
 [[src-4ndrearossetti-openconnector]] puts credentials in a runtime, not in the prompt. Product counts `unverified`. See [[secret-gateway]].
 
 [[src-avichawla-trueforge]] treats the harness as the token-cost knob. 2.7x is `unverified`. See [[flat-context]].
+
+[[src-andrewng-ai-engineering-skills-map]]: harness wraps the model; autonomy dial interactive/delegated/looped; Related only (no deep fold).
 
 [[src-voxyz-writing-system]] audits global vs project `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep project voice local. See [[contradictions]] C43.
