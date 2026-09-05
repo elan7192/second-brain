@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | Ryrenz Wiki Signs of AI writing fold
+
+Thin [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] → fold into [[anti-slop]] / Unslop / Copy Humanizer. No new humanizer skill. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip nafis money-print repos listicle
 
 Skip [[src-skip-nafis-10-repos-print-money-2026-09-05]]: hype money-print GitHub listicle; trading/ads/SEO skew; no standing-seat fit. URL https://x.com/iam_nafisahmed/status/2096214894345343135. Squash-merge if validate PASS.

@@ -22,3 +22,7 @@ Skills were not copied into the repo. Rules were compiled into [[anti-slop]] and
 ## Pages updated
 
 [[anti-slop]]
+
+## Related
+
+[[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]]
