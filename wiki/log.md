@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | skip sairahul1 9 AI/ML YT
+
+Skip pointer [[src-skip-sairahul1-9-ai-ml-yt]]: https://x.com/sairahul1/status/2096171982672761317 — generic 9 AI/ML YouTube course dump; no desk method. Judgment 2026-09-05. Squash-merge if validate PASS.
+
 ## [2026-09-05] amend | lan E desk TEAM.md Weekly improve
 
 Amended [[lan-e-desk-team]] + [[src-cos-team-md-2026-09-05]]: live routine Weekly improve — CoS, Mondays 10:00 Taipei; ≤1 change proposal or quiet; needs lan E yes before apply. Local `/workspace/fill/TEAM.md` already updated by CoS. Squash-merge if validate PASS.
