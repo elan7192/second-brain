@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T22:08:24Z",
+  "builtAt": "2026-09-05T22:31:31Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 258,
+    "Source": 259,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 551,
-    "links": 3863
+    "objects": 552,
+    "links": 3868
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 48,
-      "outbound": 264,
+      "inbound": 49,
+      "outbound": 265,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 316,
+      "outbound": 317,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -7018,6 +7018,20 @@
       "oneLiner": "\u8df3\u904e\uff1a12-week cyber roadmap\uff0c\u8077\u6daf\uff0froadmap \u5b89\u5229\u975e vault \u4e3b\u7dda\u3002"
     },
     {
+      "primaryKey": "src-skip-cakeai8-vps-net-tune-2026-09-05",
+      "objectType": "Source",
+      "title": "src-skip-cakeai8-vps-net-tune-2026-09-05",
+      "path": "wiki/sources/src-skip-cakeai8-vps-net-tune-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1aVPS/proxy network-tuning listicle\uff08\u7121 standing-seat fit\uff09\u3002"
+    },
+    {
       "primaryKey": "src-skip-cyberstrike-dup-pethuraj",
       "objectType": "Source",
       "title": "src-skip-cyberstrike-dup-pethuraj",
@@ -7796,8 +7810,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 26,
-      "outbound": 25,
+      "inbound": 27,
+      "outbound": 26,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15289,6 +15303,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skip-cakeai8-vps-net-tune-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-cyberstrike-dup-pethuraj"
     },
     {
@@ -17140,6 +17159,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-cakeai8-vps-net-tune-2026-09-05"
     },
     {
       "from": "log",
@@ -25292,6 +25316,16 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-skip-cakeai8-vps-net-tune-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-cakeai8-vps-net-tune-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-skip-cyberstrike-dup-pethuraj",
       "linkType": "cites",
       "to": "src-cyberstrike-ai-redteam"
@@ -26770,6 +26804,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-12wk-cyber-roadmap"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-cakeai8-vps-net-tune-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

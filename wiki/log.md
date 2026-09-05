@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip CakeAI8 VPS/proxy network-tuning listicle
+
+Skip [[src-skip-cakeai8-vps-net-tune-2026-09-05]]: VPS/proxy network-tuning listicle; not standing-seat fit. URL https://x.com/CakeAI8/status/2096117672652222539. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | Ryrenz Wiki Signs of AI writing fold
 
 Thin [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] → fold into [[anti-slop]] / Unslop / Copy Humanizer. No new humanizer skill. Squash-merge if validate PASS.
