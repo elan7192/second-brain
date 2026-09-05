@@ -15,6 +15,10 @@ Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
 New [[src-monid-tinyfish-free-agent-search]] from @shengkunye tweet 2093050916953903451 (2026-08-27, FxTwitter metadata verified 2026-09-05). Marketing flag: "killed Exa, Tavily, SerpAPI, Brave" and "$0 / no quotas" kept as author claim, not a cost table. Desk note: Exa + Tavily connectors stay; compare pointer only. Near cross-link on [[src-crawl4ai-llm-markdown-crawler]]. No concept fold: no existing search/quota page lists Exa/Tavily. Nothing installed. Squash-merge if validate PASS.
 
+## [2026-09-05] ingest | 交易醫生 Acer research SOP
+
+Researchy brief via CoS vault_sync. New [[src-itrading-acer-trading-doctor-sop-2026-09]] (thin-medium). Artifact `/workspace/fill/交易醫生-research-sop-2026-09-05.md` stays outside the vault. Kept: identity 徐國華 = 交易醫生 / iTrader / 璞思; no primary link to 善甲狼 or 投機ok; public SOP structure only (五線, 跳空 SOP1/SOP2/SOPX, one direction per day, 3 to 5 trades, stop after 2 losses); paywalled parameters not copied. Compliance flag present: Taipei District Court 110金訴42 illegal futures advisory conviction reported 2022-11; 114審訴4147 marked unconfirmed name collision. Educational pointer, not advice. Near kept as-is: [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]] · [[src-last30days-quant-algo-trading-2026-09]]. No new concept page. MEMORY skipped. Auto-merge if validate PASS.
+
 ## [2026-09-05] ingest | deusyu translate-book thin pointer
 
 New [[src-deusyu-translate-book]] from @XAMTO_AI promo tweet (repo deusyu/translate-book, README verified 2026-09-05). Promo tone flagged; method only. Near cross-link on [[src-fhwofjow-book-to-skill]] (different tool, not overwritten). No concept fold: skill-as-sop / skill-library carry no translate catalog. Skill not installed. Auto-merge if validate PASS.

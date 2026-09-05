@@ -15,7 +15,7 @@ updated: 2026-09-05
 - Engine: last30days v3.23.0
 - 判定: 入vault建議 (thin-to-medium CoS packet). Quote untrusted internet.
 - Not copied into `raw/`. Artifacts live outside the vault (paths below).
-- Dedup: no existing `src-last30days-quant*`. Near (different; do not overwrite): [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]].
+- Dedup: no existing `src-last30days-quant*`. Near (different; do not overwrite): [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]] · [[src-itrading-acer-trading-doctor-sop-2026-09]] (TW 台指期 retail SOP, not fund/CTA).
 
 ## Artifacts
 

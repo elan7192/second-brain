@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T05:44:48Z",
+  "builtAt": "2026-09-05T05:46:34Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Hunt": 8,
     "Map": 5,
     "Meta": 17,
-    "unverified": 117,
+    "unverified": 118,
     "Ship": 59,
     "Concept": 128,
     "Project": 2,
-    "Source": 235,
+    "Source": 236,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 527,
-    "links": 3605
+    "objects": 528,
+    "links": 3616
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 25,
-      "outbound": 239,
+      "inbound": 26,
+      "outbound": 240,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 289,
+      "outbound": 290,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3736,7 +3736,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
+      "inbound": 36,
       "outbound": 22,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
@@ -3890,8 +3890,8 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 2,
+      "inbound": 5,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1a\u91cf\u5316\u6a23\u672c\u6578\uff0fOOS\uff0f\u6210\u672c\uff0f\u5c3e\u90e8\u79d1\u666e\uff0c\u975e wiki\uff0fmemory\uff0fharness\uff0fagent teams \u4e3b\u7dda\u3002"
     },
@@ -5660,6 +5660,20 @@
       "oneLiner": "Tony moved Codex automations to Grok Bot and points at the design team's philosophy (translates x.ai Designing Grok Bot)."
     },
     {
+      "primaryKey": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "objectType": "Source",
+      "title": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "path": "wiki/sources/src-itrading-acer-trading-doctor-sop-2026-09.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "research,taiwan,trading",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 6,
+      "unverified": true,
+      "oneLiner": ""
+    },
+    {
       "primaryKey": "src-jacky-self-verification",
       "objectType": "Source",
       "title": "src-jacky-self-verification",
@@ -6088,8 +6102,8 @@
       "updated": "2026-09-05",
       "tags": "last30days,quant",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 6,
+      "inbound": 5,
+      "outbound": 7,
       "unverified": true,
       "oneLiner": "Late-2026 CTA/trend (untrusted web synthesis): barometer / SG Trend YTD read favourable in the run packet; narrative shifting from crisis-alpha-only toward all-weather + liquid access. Capula systemat"
     },
@@ -6662,7 +6676,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 1,
       "unverified": false,
       "oneLiner": "X Article\u300cGrok Bot Trading Floor\u300d8-agent \u52a0\u5bc6\u4ea4\u6613\u684c\u6559\u5b78\uff0c\u504f crypto desk \u975e wiki/harness \u4e3b\u7dda\u3002"
@@ -6676,8 +6690,8 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 2,
+      "inbound": 5,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1a\u91cf\u5316\uff0fJane Street \u8a87\u98fe\uff0bGrok Bot regime trading \u684c\u5b89\u5229\uff0cengagement bait\uff0c\u975e wiki\uff0fmemory\uff0fharness \u4e3b\u7dda\u3002"
     },
@@ -14423,6 +14437,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-itrading-acer-trading-doctor-sop-2026-09"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-jacky-self-verification"
     },
     {
@@ -16234,6 +16253,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-iamtonyzhu-grok-bot-design-philosophy"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-itrading-acer-trading-doctor-sop-2026-09"
     },
     {
       "from": "log",
@@ -20468,6 +20492,11 @@
     {
       "from": "src-0xkvro-quant-sample-size-skip",
       "linkType": "cites",
+      "to": "src-itrading-acer-trading-doctor-sop-2026-09"
+    },
+    {
+      "from": "src-0xkvro-quant-sample-size-skip",
+      "linkType": "cites",
       "to": "src-last30days-quant-algo-trading-2026-09"
     },
     {
@@ -22591,6 +22620,36 @@
       "to": "spacexai-grok-bot-keepers"
     },
     {
+      "from": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "linkType": "cites",
+      "to": "src-0xkvro-quant-sample-size-skip"
+    },
+    {
+      "from": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "linkType": "cites",
+      "to": "src-last30days-quant-algo-trading-2026-09"
+    },
+    {
+      "from": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "linkType": "cites",
+      "to": "src-ridark-trading-floor-skip"
+    },
+    {
+      "from": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "linkType": "cites",
+      "to": "src-ritonchain-regime-trading-skip"
+    },
+    {
+      "from": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-itrading-acer-trading-doctor-sop-2026-09",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
       "from": "src-jacky-self-verification",
       "linkType": "aboutPerson",
       "to": "jacky-kwok"
@@ -23074,6 +23133,11 @@
       "from": "src-last30days-quant-algo-trading-2026-09",
       "linkType": "cites",
       "to": "src-0xkvro-quant-sample-size-skip"
+    },
+    {
+      "from": "src-last30days-quant-algo-trading-2026-09",
+      "linkType": "cites",
+      "to": "src-itrading-acer-trading-doctor-sop-2026-09"
     },
     {
       "from": "src-last30days-quant-algo-trading-2026-09",
@@ -23719,6 +23783,11 @@
       "from": "src-ridark-trading-floor-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
+    },
+    {
+      "from": "src-ritonchain-regime-trading-skip",
+      "linkType": "cites",
+      "to": "src-itrading-acer-trading-doctor-sop-2026-09"
     },
     {
       "from": "src-ritonchain-regime-trading-skip",
