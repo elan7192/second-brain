@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T12:44:07Z",
+  "builtAt": "2026-09-05T12:48:10Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 128,
     "Project": 2,
-    "Source": 243,
+    "Source": 244,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 535,
-    "links": 3685
+    "objects": 536,
+    "links": 3695
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 33,
-      "outbound": 247,
+      "inbound": 34,
+      "outbound": 248,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 300,
+      "outbound": 301,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -4072,8 +4072,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 5,
-      "outbound": 8,
+      "inbound": 6,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Loop for building with coding agents: plan \u2192 exec \u2192 deploy/monitor (iterative; less focus on code, more on what to build / architecture / spec / verify)."
     },
@@ -4884,7 +4884,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Astra agent cleanup\uff08JexLau\uff09\uff1a\u6e05\u7406 agent \u914d\u7f6e\uff0f\u6b98\u4ef6\u7684\u64cd\u4f5c\u5e16\u6307\u91dd\u3002"
@@ -4898,7 +4898,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Clean AGENTS.md\uff0fskills\uff1a\u7cbe\u7c21 agent \u6307\u4ee4\u8207 skill \u9762\u7684\u885b\u751f\u5e16\u3002"
@@ -5574,6 +5574,20 @@
       "outbound": 0,
       "unverified": false,
       "oneLiner": "Tweet body not retrieved (X blocked). Wiki is silent on what it said. Do not invent a topic."
+    },
+    {
+      "primaryKey": "src-gabrielchua-astra-cross-window-notes",
+      "objectType": "Source",
+      "title": "src-gabrielchua-astra-cross-window-notes",
+      "path": "wiki/sources/src-gabrielchua-astra-cross-window-notes.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter,astra",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Astra / Cursor cross-window notes pattern (author framing via tweet \u2014 cite URL; do not invent product UI copy beyond the enable key below)."
     },
     {
       "primaryKey": "src-godofprompt-10-prompts-pointer",
@@ -6662,8 +6676,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 8,
+      "inbound": 8,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -6760,7 +6774,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -14530,6 +14544,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-godofprompt-10-prompts-pointer"
     },
     {
@@ -16421,6 +16440,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-fhwofjow-book-to-skill"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
     },
     {
       "from": "log",
@@ -20920,6 +20944,11 @@
     {
       "from": "src-andrewng-ai-engineering-skills-map",
       "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
@@ -22803,6 +22832,36 @@
       "to": "x-misses-audit-2026-09-04"
     },
     {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
+      "to": "src-astra-agent-cleanup-jexlau"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
       "from": "src-godofprompt-10-prompts-pointer",
       "linkType": "relatedTo",
       "to": "spacexai-grok-bot-keepers"
@@ -24051,6 +24110,11 @@
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
       "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
