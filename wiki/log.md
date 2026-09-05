@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] amend | lan E desk TEAM.md Weekly improve
+
+Amended [[lan-e-desk-team]] + [[src-cos-team-md-2026-09-05]]: live routine Weekly improve — CoS, Mondays 10:00 Taipei; ≤1 change proposal or quiet; needs lan E yes before apply. Local `/workspace/fill/TEAM.md` already updated by CoS. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | lan E desk TEAM.md
 
 New [[src-cos-team-md-2026-09-05]] + compiled [[lan-e-desk-team]] from CoS `/workspace/fill/TEAM.md`. Standing/parked/gone seats, live routines (Morning OS / X Scout digest / Vault pr-merged / Rutin paused), routing cheat sheet, ≤1 weekly improve rule, 2026-09-05 efficiency log cross-link [[src-routines-cut-playbook-2026-09-05]]. Schema: concept page (not wiki/ops/). Squash-merge if validate PASS.

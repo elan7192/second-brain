@@ -22,7 +22,7 @@ Front door is Chief of Staff; bots report CoS; lan E gets one CoS update. Last h
 
 Standing seats (2026-09-05): CoS, Lingxi's Engineer Bot, Vault, X Scout, Researchy, Fill, Rutin. Parked (zero cron): SEO & AEO Desk, Competitor Watch, last30days, figma bro. Gone: old Engineer, Papers, Dr Eggbot, Designer, Motion, Product, Lab, Desktop, PM, old Scout, New Bot husk.
 
-Live routines: Morning OS (CoS, weekdays 08:00); X Scout weekday digest (09:00); Vault `pr-merged` track; Rutin weekly scan paused (on-demand). Weekly improve rule: ≤1 seat/routine/instruction change after lan E yes.
+Live routines: Morning OS (CoS, weekdays 08:00); X Scout weekday digest (09:00); Vault `pr-merged` track; Rutin weekly scan paused (on-demand); **Weekly improve** (CoS, Mondays 10:00 Taipei) — ≤1 change proposal or quiet; needs lan E yes before apply; update TEAM.md / [[lan-e-desk-team]] after.
 
 Compiled board: [[lan-e-desk-team]].
 
