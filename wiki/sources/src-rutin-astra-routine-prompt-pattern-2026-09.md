@@ -12,7 +12,7 @@ updated: 2026-09-05
 
 - Author path: Rutin Astra pass via CoS vault_sync 2026-09-05
 - 判定: 入vault建議 (thin method note). Quote untrusted. No full inventory dump.
-- Dedup: no exact `src-rutin-astra-routine-prompt*` yet. Near (do not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]]
+- Dedup: no exact `src-rutin-astra-routine-prompt*` yet. Near (do not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]] · [[src-andrewng-ai-engineering-skills-map]] (AI eng skills map — loop/autonomy/harness; Related only)
 
 ## Claims kept
 
