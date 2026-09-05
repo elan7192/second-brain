@@ -42,6 +42,7 @@ Already on main (dedup; not rewritten):
 | [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] | 跳過但仍記一行 | ML-math curriculum promo；無 bot gap-fill |
 | [[src-skip-suraj-12-agentic-projects-2026-09-04]] | 跳過但仍記一行 | agentic-career 12-projects hiring bait；無 standing-seat fit |
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 入vault建議 | Linear sync RE architecture pointer；no bot/skill/implement |
+| [[src-skip-mahaximus-grokbot-token-promo-2026-09-05]] | 跳過但仍記一行 | Grok Bot promo/video bait；near-dup CoS+Rutin；無 new seats |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |
