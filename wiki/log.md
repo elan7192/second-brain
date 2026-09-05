@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] amend | fold daniel_mac8 Astra audit prompt into pvncher
+
+Thin [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] Related-fold onto [[src-pvncher-rethinking-skills-gpt6-astra]]: one-shot audit prompt; no new skill/always-on. Near [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]]. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip Mahaximus Grok Bot promo/video bait
 
 Skip [[src-skip-mahaximus-grokbot-token-promo-2026-09-05]]: Grok Bot promo/video bait; near-dup CoS+Rutin; no new seats. URL https://x.com/Mahaximus_/status/2096234675794501686. Squash-merge if validate PASS.
