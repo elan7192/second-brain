@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | Gabriel Chua Astra cross-window notes
+
+New [[src-gabrielchua-astra-cross-window-notes]] from @gabrielchua tweet 2096097151524978891. 判定=入vault thin. Kept: cross-window notes pattern (cite tweet); enable key `features.context_management.experimental_mode` per CoS. Near: [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]]. No deep concept folds. Catalog row added. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | Andrew Ng AI Engineering Skills Map
 
 New [[src-andrewng-ai-engineering-skills-map]] from @AndrewYNg tweet 2095890279865721217 (CoS). 判定=入vault. Kept (quote untrusted; core only): plan→exec→deploy/monitor loop; scarce skills = spec/arch/verify; five hire skills named in primary (directing workflow; enabling autonomy; reviewing work; customizing agent/env; coding agent foundations); harness wraps model; autonomy dial interactive/delegated/looped (loop needs testable goal + stop); four fail modes (overengineer / no verification / stops short / destroys data). Dedup exact absent on tip `d06ea8f`. polydao 2095999364988538886 Related-only (redundant recap; no separate src). Related only (no deep concept folds): [[src-pvncher-rethinking-skills-gpt6-astra]] / [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-spotify-portal-claude-cheap-workers]] (Portal primary on tip; [[src-undefinedki-spotify-claude-cheap-workers]] secondary) · [[harness-routing]] · [[skill-as-sop]] · [[raptor-dispatch]]. Catalog row added. Squash-merge if validate PASS.

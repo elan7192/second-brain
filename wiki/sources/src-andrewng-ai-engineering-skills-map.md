@@ -37,4 +37,4 @@ Four fail modes: overengineer a simple solution; no explicit verification (rigor
 
 ## Related
 
-[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra hygiene) · [[src-spotify-portal-claude-cheap-workers]] (Spotify Portal/AiKA cheap-workers primary; secondary discovery [[src-undefinedki-spotify-claude-cheap-workers]]) · [[harness-routing]] · [[skill-as-sop]] · [[raptor-dispatch]] · polydao recap https://x.com/polydao/status/2095999364988538886 (no separate src)
+[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra hygiene) · [[src-spotify-portal-claude-cheap-workers]] (Spotify Portal/AiKA cheap-workers primary; secondary discovery [[src-undefinedki-spotify-claude-cheap-workers]]) · [[harness-routing]] · [[skill-as-sop]] · [[raptor-dispatch]] · polydao recap https://x.com/polydao/status/2095999364988538886 (no separate src) · [[src-gabrielchua-astra-cross-window-notes]]
