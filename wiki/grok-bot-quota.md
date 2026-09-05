@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-08-27
-updated: 2026-09-04
+updated: 2026-09-05
 created_by: agent
 confidence: high
 source:
@@ -18,6 +18,7 @@ source:
   - wiki/sources/src-poteto-routine-frequency.md
   - wiki/sources/src-kloss-routine-audit.md
   - wiki/sources/src-ericzakariasson-webhook-wake.md
+  - wiki/sources/src-algo-routines-audit-2026-09-05.md
 derived_from:
   - src-benln-grok-bot-pro-tips
   - src-yunta-tsai-quota-isolate
@@ -29,6 +30,7 @@ derived_from:
   - src-poteto-routine-frequency
   - src-kloss-routine-audit
   - src-ericzakariasson-webhook-wake
+  - src-algo-routines-audit-2026-09-05
 ---
 
 # Grok Bot quota
@@ -62,6 +64,8 @@ Recurring fill does not belong on the lead chat. See [[grok-bot-pro-tips]].
 [[src-kloss-routine-audit]]: audit checklist — 15-min schedules, duplicate routines across bots, idle intent that does not stop routines, long CoS chat re-read by attached routines, untagged group replies, CoS multi-confirm, whole-skill rereads on eval, looping tasks in chat instead of a one-shot script.
 
 [[src-ericzakariasson-webhook-wake]]: routines can wake from a webhook (WhatsApp, Notion, sensor, GitHub Action, error spike). Prefer event wake over dense scheduled polls.
+
+[[src-algo-routines-audit-2026-09-05]]: parked bots carry zero cron definitions on disk (`enabled:false` husks still violate Delete-first); dense end for a standing cron is once-daily weekday hours; `*/5` and `*/15` polls stay banned.
 
 ## INFERENCE
 

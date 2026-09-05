@@ -15,6 +15,10 @@ Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
 New [[src-deusyu-translate-book]] from @XAMTO_AI promo tweet (repo deusyu/translate-book, README verified 2026-09-05). Promo tone flagged; method only. Near cross-link on [[src-fhwofjow-book-to-skill]] (different tool, not overwritten). No concept fold: skill-as-sop / skill-library carry no translate catalog. Skill not installed. Auto-merge if validate PASS.
 
+## [2026-09-05] ingest | Algorithm routines audit
+
+CoS vault_sync packet from Rutin. New [[src-algo-routines-audit-2026-09-05]] (thin playbook). Artifact `/workspace/fill/algo-routines-audit-2026-09-05.md` stays outside the vault. Kept: zero cron definitions on parked bots; events / CoS-named jobs over weekly digests; standing KEEP list; proposed CUT of 8 disabled husks recorded, not executed. Folded one line each into [[grok-bot-quota]] and [[spacexai-grok-bot-keepers]]. Near kept as-is: [[src-kloss-routine-audit]] · [[src-poteto-routine-frequency]]. No new concept page. MEMORY skipped. Auto-merge if validate PASS.
+
 ## [2026-09-05] ingest | last30days quant algo trading 2026-09
 
 CoS packet. New [[src-last30days-quant-algo-trading-2026-09]] (量化基金程式交易 / CTA systematic). Artifacts: `/workspace/last30days-runs/quant-algo-trading-2026-09-05.{compact,raw}.md` (+ sibling CTA raw). Near skips linked only: [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]] (do not overwrite). Gaps: no X/TikTok; thin 7d (5/18); Digg/Reddit/YouTube only. No new concept page. MEMORY skipped. Auto-merge if validate PASS.
