@@ -18,7 +18,7 @@ updated: 2026-09-05
 
 ## Claims kept
 
-跳過：Reverse-Skill 已在 [[src-chenchengpro-six-skills]]（zhaoxuya520）收錄，不重寫厚 src。
+跳過：Reverse-Skill 已在 [[src-chenchengpro-six-skills]]（near chenchengpro）收錄，不重寫厚 src。
 
 判定=skip. URL: https://x.com/tom_doerr/status/2093534691345183018
 
@@ -26,4 +26,4 @@ Skip page — one-line reason only. Do not dump NSFW/spam/hype body.
 
 ## Pages updated
 
-[[src-chenchengpro-six-skills]] · [[skill-as-sop]] · [[x-bookmark-sync-2026-09-05]]
+[[src-chenchengpro-six-skills]] · [[x-bookmark-sync-2026-09-05]]

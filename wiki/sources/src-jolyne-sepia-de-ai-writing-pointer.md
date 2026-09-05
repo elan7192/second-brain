@@ -20,9 +20,9 @@ updated: 2026-09-05
 
 Sepia／de-AI writing tip: structure ≠ diction — fix structure first, not synonym swaps. Fold into [[anti-slop]]; do not thick-standalone.
 
-判定=只記一筆. URL: https://x.com/Jolyne_AI/status/2095904478713328112
-
 Near: [[src-sukiea-writing-for-agents]], avoid-ai-writing in [[src-chenchengpro-six-skills]].
+
+判定=只記一筆. URL: https://x.com/Jolyne_AI/status/2095904478713328112
 
 Pointer only. Do not dump body.
 

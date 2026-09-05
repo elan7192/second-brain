@@ -18,12 +18,12 @@ updated: 2026-09-05
 
 ## Claims kept
 
-Cyberstrike AI redteam 資源指針。Do NOT vendor. LanBB ethical white-hat context only. Near [[src-mukul975-cybersecurity-skills]].
+Cyberstrike AI redteam 資源指針。Note [[src-mukul975-cybersecurity-skills]]. Do NOT vendor. LanBB ethical white-hat context only.
 
 判定=只記一筆. URL: https://x.com/bountywriteups/status/2095142679764226142
 
-Pointer only. Do not vendor offensive packs. Do not dump body.
+Pointer only. Short. Do not vendor offensive packs. Do not dump body.
 
 ## Pages updated
 
-[[src-mukul975-cybersecurity-skills]] · [[anti-slop]] · [[lanbb]] · [[x-bookmark-sync-2026-09-05]]
+[[src-mukul975-cybersecurity-skills]] · [[lanbb]] · [[x-bookmark-sync-2026-09-05]]

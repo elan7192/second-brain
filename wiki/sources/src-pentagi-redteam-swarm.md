@@ -22,7 +22,7 @@ PentAGI redteam swarm 資源指針。Do NOT vendor. Near [[src-mukul975-cybersec
 
 判定=只記一筆. URL: https://x.com/MAXdeg0/status/2092872628293775599
 
-Pointer only. Do not vendor offensive packs. Do not dump body.
+Pointer only. Short. Do not vendor offensive packs. Do not dump body.
 
 ## Pages updated
 
