@@ -25,4 +25,4 @@ updated: 2026-09-04
 
 ## Related
 
-Near (different topic; do not overwrite): [[src-last30days-quant-algo-trading-2026-09]]
+Near (different topic; do not overwrite): [[src-last30days-quant-algo-trading-2026-09]] · [[src-itrading-acer-trading-doctor-sop-2026-09]]
