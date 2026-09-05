@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-routines-cut-playbook-2026-09-05]] | 2026-09-05 | Rutin efficiency pack APPLIED cut: deleted 7 parked cron husks (SEO×3 Competitor×2 figma×2); disk TOTAL=4 ENABLED=3 DENSE=0; parked=zero cron defs; Related algo-audit + Astra prompt pattern |
 | [[src-gabrielchua-astra-cross-window-notes]] | 2026-09-05 | @gabrielchua Codex/Astra cross-window notes vs repeated compaction; enable `features.context_management.experimental_mode` in config.toml (+ follow-up tweet); Related Spotify Portal + compaction + pvncher Astra |\n| [[src-andrewng-ai-engineering-skills-map]] | 2026-09-05 | @AndrewYNg AI Engineering Skills Map (入vault; plan→exec→deploy/monitor; scarce=spec/arch/verify; five hire skills; harness wraps model; autonomy dial interactive/delegated/looped; four fail modes) |
 | [[src-spotify-portal-claude-cheap-workers]] | 2026-09-05 | Spotify Engineering Portal/AiKA + shunt: Claude Code cheap-workers (VERIFIED; Dimitri Mazmanov 2026-09-03; file→summary bulk-read; example→disk code-write; SHUNT_MIN_LINES default 350; ~90% = Java monorepo bulk-read mean ≠ company bill; do not conflate Anthropic Spotify case study) |
 | [[src-undefinedki-spotify-claude-cheap-workers]] | 2026-09-05 | Thin SECONDARY pointer → [[src-spotify-portal-claude-cheap-workers]] (Yarchi @undefinedKi discovery cite; not primary) |
