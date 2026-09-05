@@ -3,9 +3,10 @@
 This repo is a compiled LLM wiki with a disposable retrieval index.
 You maintain `wiki/`. The human curates `raw/` and asks questions.
 
-Read this file. For a question, run `python3 tools/sb ask` and read the evidence set.
+For schema or ingest work, read the sections of this file you need. Do not reload this whole file, the full wiki map, every catalog, or the full test suite before a small edit. Point at docs when needed; keep them updated. Unit tests run in CI.
+For a question, run `python3 tools/sb ask` and read the evidence set.
 `wiki/index.md` is the human/Obsidian door, not the query path (D9).
-Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. Do not load them as the query path (D12).
+Paper catalog: `wiki/index-papers.md`. Source catalog: `wiki/index-sources.md`. Open those only when the question is a paper or a source. Do not load them as the query path (D12).
 
 ## Layout
 
@@ -39,12 +40,11 @@ A new rule is a principle with a why, folded into an existing section. Worker in
 Check: a new operational rule has an inbound `[[wikilink]]` from `wiki/index.md` or this file. `python3 tools/sb validate` runs the instruction-budget gate. An append-only Never/Do-not fixture must fail.
 If the only copy is in README or a classical doc: move it before answering.
 
-Reading this file is not verification. After any ingest or schema edit, `python3 tools/sb validate` must exit 0. That one command runs `tools/lint-wiki.py`, the instruction budget, the claim and contradiction registries, and the ontology freshness check. Unit tests run in CI, not inside validate.
+Reading this file is not verification. After any ingest or schema edit, `python3 tools/sb validate` must exit 0 (lint-wiki, instruction budget, claim/contradiction registries, ontology freshness). Unit tests stay in CI.
 If validate fails: fix missing links before writing `output/`. See D10.
+`python3 tools/sb validate`, `python3 tools/sb health`, and `python3 tools/sb ingest-check <slug>` are local with disposable fixtures and no production access. After an ingest or schema edit you made, run the relevant check, fix failures from that change, and rerun without asking at each step.
 
-The model proposes wiki edits. Code accepts them. See [[deterministic-core]].
-After validate, `python3 tools/sb health` prints integrity counts. It does not replace validate.
-After a named source ingest, `python3 tools/sb ingest-check <slug>` must exit 0.
+The model proposes wiki edits. Code accepts them. See [[deterministic-core]]. After validate, `python3 tools/sb health` prints integrity counts (does not replace validate). After a named source ingest, `python3 tools/sb ingest-check <slug>` must exit 0.
 If a machine-readable contract is written, `python3 tools/sb contract-check <path>` must exit 0. Schema is v1 (`contract_version`). Status is SCHEMA_INVALID, SCHEMA_VALID, TASK_FAILED, or TASK_PASSED.
 If health shows a dual-store gap: cite both ids and C17. Do not pick a table.
 If ingest-check fails: fix catalog, inbound link, or Claims kept before writing `output/`.
@@ -67,9 +67,9 @@ Do not walk `wiki/index.md` as the query path. Do not load [[index-papers]] or [
 Check: every claim in the answer has a wiki citation or a claim id, or is marked `unverified`. After ingest, `python3 tools/sb validate` exits 0. After a retrieval change, `python3 tools/sb eval` exits 0.
 If evidence is missing: stop and name the gap. Do not fill it with tone.
 If the evidence set looks stale after an edit: `python3 tools/sb rebuild-index`, then retry. If eval fails: do not keep the retrieval change.
-If a fact appears in only one of `wiki/data/claims.yaml` or `wiki/claims.csv`: cite it and mark the dual-store gap. Do not pick a canonical table. See C17.
+If a fact appears in only one of `wiki/data/claims.yaml` or `wiki/claims.csv`: cite both and mark the dual-store gap (C17). Do not pick a table.
 
-The named compile chain is [[claim-protocol]]. Live query stays `python3 tools/sb ask`. Do not switch this section to `tools/retrieve.py` until C18 has a human yes.
+Compile chain: [[claim-protocol]]. Live query stays `python3 tools/sb ask` until C18 has a human yes (do not switch to `tools/retrieve.py`).
 
 ## Ingest
 
@@ -86,7 +86,7 @@ When lan E drops files in `raw/` and says ingest:
 9. If the source supports a belief, add or update a row in `wiki/data/claims.yaml`.
 10. Run `python3 tools/sb ingest-check <source-slug>`. Then `python3 tools/sb health`.
 
-Do not write a standing `output/` ingest brief. C38. File an answer only if the next session would re-derive it.
+No standing `output/` ingest brief (C38). File an answer only if the next session would re-derive it.
 
 Check: `python3 tools/sb validate` exits 0. `python3 tools/sb ingest-check <slug>` exits 0. Orphans and a stale ontology fail the gate. Every new page has an inbound `[[wikilink]]` and an `id:`.
 If a claim cannot be tied to the raw file or to a named source page: leave it out.
