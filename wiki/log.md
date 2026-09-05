@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | Obscura + crawl4ai + TonyZhu design philosophy
+
+Compiled [[src-obscura-rust-headless-browser]], [[src-crawl4ai-llm-markdown-crawler]], [[src-iamtonyzhu-grok-bot-design-philosophy]]. Cross-linked egolite cluster and [[spacexai-grok-bot-keepers]]. Auto-merge.
+
 ## [2026-09-05] ingest | X bookmark sync (amended)
 
 Compiled 18 src pages (10 只記一筆 · 8 skip仍記) from CoS amended bookmark pack. Hub [[x-bookmark-sync-2026-09-05]]. Light fold: structure≠diction on [[anti-slop]] (near sukiea／chenchengpro). Dedup skipped rewrite: otterpal egolite, mikenevermiss cobalt(+), anirudh lingxi amplify. No thick dump. Do not vendor Cyberstrike／PentAGI. Auto-merge.

@@ -16,6 +16,9 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-obscura-rust-headless-browser]] | 2026-09-05 | Obscura Rust headless/CDP scrape engine (pointer; no install) |
+| [[src-crawl4ai-llm-markdown-crawler]] | 2026-09-05 | crawl4ai LLM-ready Markdown crawler (unclecode; pointer) |
+| [[src-iamtonyzhu-grok-bot-design-philosophy]] | 2026-09-05 | Tony CN translate of x.ai Designing Grok Bot primitives |
 | [[src-jolyne-sepia-de-ai-writing-pointer]] | 2026-09-05 | Sepia／de-AI writing：structure ≠ diction；fold anti-slop |
 | [[src-astra-agent-cleanup-jexlau]] | 2026-09-05 | Astra agent cleanup（JexLau）指針 |
 | [[src-astra-agents-md-cleanup]] | 2026-09-05 | AGENTS.md／skills cleanup（victornunez）指針 |
