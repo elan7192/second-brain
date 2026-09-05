@@ -49,4 +49,4 @@ X article figures unread.
 
 ## Related
 
-[[src-undefinedki-spotify-claude-cheap-workers]] (cheap workers / hard gate cost-routing; Spotify~90% framing cite-only; near token-cut theme).
+[[src-spotify-portal-claude-cheap-workers]] (Spotify Portal/AiKA + shunt cheap-workers; VERIFIED primary; ~90% bulk-read mean; hard gate SHUNT_MIN_LINES 350). Secondary cite: [[src-undefinedki-spotify-claude-cheap-workers]].

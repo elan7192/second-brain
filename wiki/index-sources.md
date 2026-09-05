@@ -16,7 +16,8 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
-| [[src-undefinedki-spotify-claude-cheap-workers]] | 2026-09-05 | @undefinedKi Spotify/Claude Code cheap-workers pattern (入vault; ~90% token cut framing cite-only; cheap workers for skim/repetitive code; hard gate keep large context off expensive seat; caveats on edits/bugs; deep concept fold held) |
+| [[src-spotify-portal-claude-cheap-workers]] | 2026-09-05 | Spotify Engineering Portal/AiKA + shunt: Claude Code cheap-workers (VERIFIED; Dimitri Mazmanov 2026-09-03; file→summary bulk-read; example→disk code-write; SHUNT_MIN_LINES default 350; ~90% = Java monorepo bulk-read mean ≠ company bill; do not conflate Anthropic Spotify case study) |
+| [[src-undefinedki-spotify-claude-cheap-workers]] | 2026-09-05 | Thin SECONDARY pointer → [[src-spotify-portal-claude-cheap-workers]] (Yarchi @undefinedKi discovery cite; not primary) |
 | [[src-rutin-astra-routine-prompt-pattern-2026-09]] | 2026-09-05 | Rutin Astra routine-prompt pattern (thin method; goal+done proof+quiet-when-nothing; no MCP menus in standing prompts; zero crons on parked bots; events over polls; one on-demand auditor) |
 | [[src-pvncher-rethinking-skills-gpt6-astra]] | 2026-09-05 | @pvncher Rethinking skills/prompts for GPT-6 Astra (入vault; skills/AGENTS.md as context debt; short when-to-use; progressive disclosure; near astra cleanup) |
 | [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] | 2026-09-05 | Skip: Lonely__MH amplify wrapper + Codex audit prompt near pvncher Astra rethink |
