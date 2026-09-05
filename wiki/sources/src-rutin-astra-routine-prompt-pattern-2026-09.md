@@ -30,4 +30,4 @@ One on-demand auditor (Rutin) — not every bot self-auditing on cron.
 
 ## Related
 
-[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]]
+[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] (applied cut 2026-09-05)
