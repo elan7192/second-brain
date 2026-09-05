@@ -16,6 +16,9 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-ryrenz-reverse-skill-pointer-2026-09-05]] | 2026-09-06 | 只記一筆：Ryrenz → reverse-skill research pointer；do NOT install；near [[src-chenchengpro-six-skills]] |
+| [[src-skip-kirkdborne-151-trading-2026-09-04]] | 2026-09-06 | 跳過仍記：trading-strategies PDF dump；無 standing-seat fit |
+| [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] | 2026-09-06 | 跳過仍記：ML-math curriculum promo；無 bot gap-fill |
 | [[src-skip-cakeai8-vps-net-tune-2026-09-05]] | 2026-09-06 | 跳過仍記：VPS/proxy network-tuning listicle（無 standing-seat fit） |
 | [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] | 2026-09-06 | Thin fold: Wiki Signs of AI writing + blader/humanizer → [[anti-slop]] / Unslop / Copy Humanizer; no new skill |
 | [[src-skip-nafis-10-repos-print-money-2026-09-05]] | 2026-09-06 | 跳過仍記：hype money-print GitHub listicle（trading/ads/SEO skew；無 standing-seat fit） |
