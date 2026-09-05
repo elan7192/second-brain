@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-cakeai8-vps-net-tune-2026-09-05]] | 2026-09-06 | 跳過仍記：VPS/proxy network-tuning listicle（無 standing-seat fit） |
 | [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] | 2026-09-06 | Thin fold: Wiki Signs of AI writing + blader/humanizer → [[anti-slop]] / Unslop / Copy Humanizer; no new skill |
 | [[src-skip-nafis-10-repos-print-money-2026-09-05]] | 2026-09-06 | 跳過仍記：hype money-print GitHub listicle（trading/ads/SEO skew；無 standing-seat fit） |
 | [[src-ai-residual-capture-v0]] | 2026-09-06 | Desk playbook: residual = artifact+verdict+SHA; CoS packet fields; amplify→Related; /workspace staging; no residual bot/vector DB |
