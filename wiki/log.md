@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | EXM7777 advanced X research Grok Bot
+
+Thin [[src-exm7777-advanced-x-research-grok-bot]]: Grok Bot + X MCP + optional Apify full history / morning brief. Desk skill `x-deep-research-pass`; prefer X Scout; no new bot. Near [[src-exm7777-grok-bot-money]]. Squash-merge if validate PASS.
+
 ## [2026-09-05] delete | goan999999 skip src (prefer no src)
 
 DELETE `src-skip-goan999999-astra-cleanup-wrapper`: amplify of [[src-pvncher-rethinking-skills-gpt6-astra]] only. CoS prefer no new src (DELETE/simplify). GoogleCloud canonical already on tip. Squash-merge if validate PASS.
