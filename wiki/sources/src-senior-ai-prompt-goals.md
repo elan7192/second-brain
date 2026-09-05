@@ -18,7 +18,7 @@ updated: 2026-09-05
 
 ## Claims kept
 
-Senior AI prompts／goals（非 tasks）線程指針。May near-dup [[src-voxyz-writing-system]]／[[src-voxyz-codex-goal-quota]] — keep thin; do not re-vendor.
+Senior AI prompts／goals（非 tasks）線程指針。May near-dup [[src-voxyz-writing-system]]／[[src-voxyz-codex-goal-quota]] — keep thin; do not re-vendor. Still OK as pointer to this status.
 
 判定=只記一筆. URL: https://x.com/Voxyz_ai/status/2067237707483337118
 

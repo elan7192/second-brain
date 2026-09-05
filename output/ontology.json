@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T04:51:19Z",
+  "builtAt": "2026-09-05T04:52:36Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 519,
-    "links": 3547
+    "links": 3530
   },
   "objects": [
     {
@@ -1160,7 +1160,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 34,
+      "inbound": 33,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "Default writing constraints for this vault."
@@ -2798,7 +2798,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Specialist \u2192 **CoS last look** \u2192 **Vault** writes `wiki/sources` (and folds). Vault never invents. Source: [[src-cos-knowledge-sync-bus-2026-09-05]]. Skill: vault-knowledge-sync."
@@ -2812,7 +2812,7 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "projects",
-      "inbound": 32,
+      "inbound": 31,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool"
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 280,
+      "outbound": 277,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3246,7 +3246,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 10,
       "unverified": true,
       "oneLiner": "One complaint or one system is not enough. Surface only with more than one confirming source."
@@ -3736,7 +3736,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 37,
+      "inbound": 35,
       "outbound": 22,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
@@ -3820,7 +3820,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
+      "inbound": 29,
       "outbound": 35,
       "unverified": true,
       "oneLiner": "Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool."
@@ -4058,7 +4058,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 3,
       "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8f49\u767c lingxi SpaceXAI engineer \u6587\uff0c\u5df2\u6709 src-lingxi-grok-bot-engineering\u3002"
@@ -5277,9 +5277,9 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 4,
+      "outbound": 3,
       "unverified": false,
-      "oneLiner": "Cyberstrike AI redteam \u8cc7\u6e90\u6307\u91dd\u3002Do NOT vendor. LanBB ethical white-hat context only. Near [[src-mukul975-cybersecurity-skills]]."
+      "oneLiner": "Cyberstrike AI redteam \u8cc7\u6e90\u6307\u91dd\u3002Note [[src-mukul975-cybersecurity-skills]]. Do NOT vendor. LanBB ethical white-hat context only."
     },
     {
       "primaryKey": "src-cyrilxbt-utopia-temporal-kb",
@@ -6214,7 +6214,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 2,
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Cobalt \u4e0b\u8f09\u5668\u5b89\u5229\uff0c\u975e\u4e3b\u984c\u3002"
@@ -6256,7 +6256,7 @@
       "updated": "2026-08-23",
       "tags": "github",
       "island": "sources",
-      "inbound": 19,
+      "inbound": 17,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Community GitHub skill library. README says not affiliated with Anthropic PBC. Apache-2.0."
@@ -6326,7 +6326,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 4,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "egolite\uff0bHermes \u5169\u5c0f\u6642\u722c\u4e00\u5e74\u842c\u689d\uff1b\u722c\u87f2\u901f\u5ea6\u8b49\u8a00\uff0c\u914d t20000622yy \u65b9\u6cd5\u3002"
@@ -6623,7 +6623,7 @@
       "inbound": 3,
       "outbound": 5,
       "unverified": false,
-      "oneLiner": "Senior AI prompts\uff0fgoals\uff08\u975e tasks\uff09\u7dda\u7a0b\u6307\u91dd\u3002May near-dup [[src-voxyz-writing-system]]\uff0f[[src-voxyz-codex-goal-quota]] \u2014 keep thin; do not re-vendor."
+      "oneLiner": "Senior AI prompts\uff0fgoals\uff08\u975e tasks\uff09\u7dda\u7a0b\u6307\u91dd\u3002May near-dup [[src-voxyz-writing-system]]\uff0f[[src-voxyz-codex-goal-quota]] \u2014 keep thin; do not re-vendor. Still OK as pointer to this status."
     },
     {
       "primaryKey": "src-skill-pack-list",
@@ -6649,7 +6649,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 3,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1a12-week cyber roadmap\uff0c\u8077\u6daf\uff0froadmap \u5b89\u5229\u975e vault \u4e3b\u7dda\u3002"
     },
@@ -6677,7 +6677,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 2,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1a9 Astra prompts listicle\uff0c\u7121\u65b0\u65b9\u6cd5\u53ef\u6298\u3002"
     },
@@ -6691,7 +6691,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 2,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1aTwo Sigma tease\uff0chype\uff0fincomplete\uff0c\u7121\u53ef\u9a57\u8b49\u65b9\u6cd5\u3002"
     },
@@ -6705,7 +6705,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 2,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1afuture-predict \u5e16\uff0c\u975e wiki\uff0fmemory\uff0fharness \u65b9\u6cd5\u3002"
     },
@@ -6719,7 +6719,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 2,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1a7 books \u66f8\u55ae\uff0cengagement bait\u3002"
     },
@@ -6733,9 +6733,9 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 2,
-      "outbound": 3,
+      "outbound": 2,
       "unverified": false,
-      "oneLiner": "\u8df3\u904e\uff1aReverse-Skill \u5df2\u5728 [[src-chenchengpro-six-skills]]\uff08zhaoxuya520\uff09\u6536\u9304\uff0c\u4e0d\u91cd\u5beb\u539a src\u3002"
+      "oneLiner": "\u8df3\u904e\uff1aReverse-Skill \u5df2\u5728 [[src-chenchengpro-six-skills]]\uff08near chenchengpro\uff09\u6536\u9304\uff0c\u4e0d\u91cd\u5beb\u539a src\u3002"
     },
     {
       "primaryKey": "src-skip-webenstein-cyber-path",
@@ -6747,7 +6747,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 3,
-      "outbound": 2,
+      "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1acyber path \u8def\u7dda\u5e16\uff0c\u975e wiki\uff0fmemory\uff0fharness \u65b9\u6cd5\u3002"
     },
@@ -7349,9 +7349,9 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 22,
-      "outbound": 28,
+      "outbound": 23,
       "unverified": false,
-      "oneLiner": "CoS AMENDED sync pack. Prefer fold/skip over new thick src. Date on all skip/pointer rows: 2026-09-05."
+      "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
     {
       "primaryKey": "x-misses-audit-2026-09-04",
@@ -15876,11 +15876,6 @@
     {
       "from": "log",
       "linkType": "cites",
-      "to": "src-anirudh-lingxi-amplify-skip"
-    },
-    {
-      "from": "log",
-      "linkType": "cites",
       "to": "src-arxiv-batch01"
     },
     {
@@ -16156,11 +16151,6 @@
     {
       "from": "log",
       "linkType": "cites",
-      "to": "src-mikenevermiss-cobalt-skip"
-    },
-    {
-      "from": "log",
-      "linkType": "cites",
       "to": "src-milesdeutscher-grok-bot-use-cases"
     },
     {
@@ -16172,11 +16162,6 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-omarsar-adversarial-review"
-    },
-    {
-      "from": "log",
-      "linkType": "cites",
-      "to": "src-otterpal-egolite-crawl-pointer"
     },
     {
       "from": "log",
@@ -21871,11 +21856,6 @@
     {
       "from": "src-cyberstrike-ai-redteam",
       "linkType": "relatedTo",
-      "to": "anti-slop"
-    },
-    {
-      "from": "src-cyberstrike-ai-redteam",
-      "linkType": "relatedTo",
       "to": "lanbb"
     },
     {
@@ -23350,16 +23330,6 @@
     },
     {
       "from": "src-skip-12wk-cyber-roadmap",
-      "linkType": "cites",
-      "to": "src-mukul975-cybersecurity-skills"
-    },
-    {
-      "from": "src-skip-12wk-cyber-roadmap",
-      "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
-    },
-    {
-      "from": "src-skip-12wk-cyber-roadmap",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
     },
@@ -23376,17 +23346,7 @@
     {
       "from": "src-skip-greg-astra-prompts",
       "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
-    },
-    {
-      "from": "src-skip-greg-astra-prompts",
-      "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
-    },
-    {
-      "from": "src-skip-l1vsun-twosigma-tease",
-      "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "src-skip-l1vsun-twosigma-tease",
@@ -23396,17 +23356,7 @@
     {
       "from": "src-skip-nrol-future-predict",
       "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
-    },
-    {
-      "from": "src-skip-nrol-future-predict",
-      "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
-    },
-    {
-      "from": "src-skip-preserver-7books",
-      "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "src-skip-preserver-7books",
@@ -23421,17 +23371,7 @@
     {
       "from": "src-skip-reverse-skill-tom-doerr",
       "linkType": "relatedTo",
-      "to": "skill-as-sop"
-    },
-    {
-      "from": "src-skip-reverse-skill-tom-doerr",
-      "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
-    },
-    {
-      "from": "src-skip-webenstein-cyber-path",
-      "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
     },
     {
       "from": "src-skip-webenstein-cyber-path",
@@ -24681,11 +24621,6 @@
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
-      "to": "src-anirudh-lingxi-amplify-skip"
-    },
-    {
-      "from": "x-bookmark-sync-2026-09-05",
-      "linkType": "cites",
       "to": "src-astra-agent-cleanup-jexlau"
     },
     {
@@ -24717,21 +24652,6 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-llm-guardrail-tool-output-bypass"
-    },
-    {
-      "from": "x-bookmark-sync-2026-09-05",
-      "linkType": "cites",
-      "to": "src-mikenevermiss-cobalt-skip"
-    },
-    {
-      "from": "x-bookmark-sync-2026-09-05",
-      "linkType": "cites",
-      "to": "src-mukul975-cybersecurity-skills"
-    },
-    {
-      "from": "x-bookmark-sync-2026-09-05",
-      "linkType": "cites",
-      "to": "src-otterpal-egolite-crawl-pointer"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
@@ -24801,17 +24721,12 @@
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "relatedTo",
-      "to": "lanbb"
+      "to": "knowledge-sync-bus"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "relatedTo",
-      "to": "skill-as-sop"
-    },
-    {
-      "from": "x-bookmark-sync-2026-09-05",
-      "linkType": "relatedTo",
-      "to": "spacexai-grok-bot-keepers"
+      "to": "multi-source-verdict"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

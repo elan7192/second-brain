@@ -26,4 +26,4 @@ Skip page — one-line reason only. Do not dump NSFW/spam/hype body.
 
 ## Pages updated
 
-[[spacexai-grok-bot-keepers]] · [[src-mukul975-cybersecurity-skills]] · [[x-bookmark-sync-2026-09-05]]
+[[x-bookmark-sync-2026-09-05]]
