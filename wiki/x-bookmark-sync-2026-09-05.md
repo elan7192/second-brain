@@ -40,6 +40,7 @@ Already on main (dedup; not rewritten):
 | [[src-ryrenz-reverse-skill-pointer-2026-09-05]] | 只記一筆 | reverse-skill research pointer；do NOT install；near chenchengpro |
 | [[src-skip-kirkdborne-151-trading-2026-09-04]] | 跳過但仍記一行 | trading-strategies PDF dump；無 standing-seat fit |
 | [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] | 跳過但仍記一行 | ML-math curriculum promo；無 bot gap-fill |
+| [[src-skip-suraj-12-agentic-projects-2026-09-04]] | 跳過但仍記一行 | agentic-career 12-projects hiring bait；無 standing-seat fit |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |

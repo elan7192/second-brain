@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip Suraj 12 agentic projects hiring bait
+
+Skip [[src-skip-suraj-12-agentic-projects-2026-09-04]]: agentic-career 12-projects hiring bait; no seat fit. URL https://x.com/suraj_sharma14/status/2095859430776533318. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | pack Ryrenz reverse-skill pointer + Kirk/Tivadar skips
 
 [[src-ryrenz-reverse-skill-pointer-2026-09-05]]: authorized research pointer to zhaoxuya520/reverse-skill; do NOT install; near [[src-chenchengpro-six-skills]]. Skip [[src-skip-kirkdborne-151-trading-2026-09-04]] (trading PDF dump). Skip [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] (ML-math curriculum promo). Squash-merge if validate PASS.
