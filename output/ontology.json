@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T22:36:29Z",
+  "builtAt": "2026-09-05T22:37:30Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 263,
+    "Source": 264,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 556,
-    "links": 3892
+    "objects": 557,
+    "links": 3898
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 53,
-      "outbound": 269,
+      "inbound": 54,
+      "outbound": 270,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 322,
+      "outbound": 323,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5346,7 +5346,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Durable finds flow Specialist \u2192 CoS last look \u2192 Vault src/fold. Specialists do not write the vault unless CoS named that exact job. Do not ping lan E from specialists."
@@ -7396,6 +7396,20 @@
       "oneLiner": "Untrusted paste. Quote. Do not copy \"merge YAML and CSV ids\" into schema as a lock. That would resolve C17 without a human yes."
     },
     {
+      "primaryKey": "src-vikingmute-linear-sync-engine-re-2026-09-05",
+      "objectType": "Source",
+      "title": "src-vikingmute-linear-sync-engine-re-2026-09-05",
+      "path": "wiki/sources/src-vikingmute-linear-sync-engine-re-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,architecture",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "Reverse-engineered Linear-style sync architecture (author framing; verify against repo):"
+    },
+    {
       "primaryKey": "src-voxyz-archify",
       "objectType": "Source",
       "title": "src-voxyz-archify",
@@ -7866,8 +7880,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 31,
-      "outbound": 30,
+      "inbound": 32,
+      "outbound": 31,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15494,6 +15508,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-vikingmute-linear-sync-engine-re-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-voxyz-archify"
     },
     {
@@ -17310,6 +17329,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-vault-review-pr27-2026-08-29"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-vikingmute-linear-sync-engine-re-2026-09-05"
     },
     {
       "from": "log",
@@ -25807,6 +25831,21 @@
       "to": "provenance"
     },
     {
+      "from": "src-vikingmute-linear-sync-engine-re-2026-09-05",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "src-vikingmute-linear-sync-engine-re-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-vikingmute-linear-sync-engine-re-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-voxyz-archify",
       "linkType": "aboutPerson",
       "to": "vox"
@@ -27035,6 +27074,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-tradingview-scripts-to-llm-backtest"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-vikingmute-linear-sync-engine-re-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
