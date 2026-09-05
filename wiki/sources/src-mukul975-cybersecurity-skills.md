@@ -28,4 +28,5 @@ Internal count drift: domain table sums to 785; contributing copy still says Dec
 
 ## Pages updated
 
-[[skill-library]] · [[mahipal-jangra]] · [[tokens-as-capital]] · [[context-graph]] · [[anti-slop]]
+[[skill-library]] · [[mahipal-jangra]] · [[tokens-as-capital]] · [[context-graph]] · [[anti-slop]] · [[src-skraft09-bb-writeups-toolkit]]
+
