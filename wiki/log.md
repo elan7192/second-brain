@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | skraft09 BB toolkit + Mortyx context-graph timestamps
+
+New [[src-skraft09-bb-writeups-toolkit]] (outbound https://github.com/skraft9/vulnerability-research verified HTTP 200; near mukul975/Cyberstrike; do not vendor). New [[src-0xmortyx-context-graph-timestamps]] + fold [[src-0xricker-kimi-context-graph-anatomy]] (Kimi phases → one structure). Related [[context-graph]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[lan-e-desk-team]]. No new bots. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | skip sairahul1 9 AI/ML YT
 
 Skip pointer [[src-skip-sairahul1-9-ai-ml-yt]]: https://x.com/sairahul1/status/2096171982672761317 — generic 9 AI/ML YouTube course dump; no desk method. Judgment 2026-09-05. Squash-merge if validate PASS.

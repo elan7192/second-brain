@@ -16,6 +16,9 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skraft09-bb-writeups-toolkit]] | 2026-09-05 | @skraft09 thin BB writeups/toolkit pointer → github.com/skraft9/vulnerability-research (verified); near mukul975/Cyberstrike; do not vendor |
+| [[src-0xmortyx-context-graph-timestamps]] | 2026-09-05 | @0xMortyx Google workshop context-graph timestamps 0→100; quotes Kimi anatomy; Related Ng/Spotify/TEAM |
+| [[src-0xricker-kimi-context-graph-anatomy]] | 2026-09-05 | Thin fold: Anatomy of a Kimi Context Graph (300 agents → one structure); phases launch→fan-out→overlap→edges→converge |
 | [[src-skip-sairahul1-9-ai-ml-yt]] | 2026-09-05 | 跳過仍記：@sairahul1 9 AI/ML YT course dump；無 desk method |
 | [[src-cos-team-md-2026-09-05]] | 2026-09-05 | CoS TEAM.md desk ops board provenance → compiled [[lan-e-desk-team]] (standing/parked/gone + live routines + ≤1 weekly improve) |
 | [[src-routines-cut-playbook-2026-09-05]] | 2026-09-05 | Rutin efficiency pack APPLIED cut: deleted 7 parked cron husks (SEO×3 Competitor×2 figma×2); disk TOTAL=4 ENABLED=3 DENSE=0; parked=zero cron defs; Related algo-audit + Astra prompt pattern |
