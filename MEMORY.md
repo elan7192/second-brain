@@ -46,7 +46,6 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 - Grok Bot quota burns fastest on Cursor cloud agents Max Mode, computerUse screenshot/vision loops, and long specialist transcripts reread every turn. Isolate one job in one context; file method in repo; stop; no new room. SpaceXAI keepers (method only): one domain per bot → CoS/Engineer/Vault/Fill/Rutin; cloud proof loop; kill repetition arch→CI→skill→human last; GUI once then API; no Jenny/domain clones; no auto-merge; P0 denser live steer not 5/15-min poller; outer loop = routines farm + CoS + skills. See [[grok-bot-quota]] and [[spacexai-grok-bot-keepers]].
 - Routines: hourly or a few times a day. Never every 5 minutes. Recurring work goes to a fresh bot. See [[grok-bot-pro-tips]].
 - If bot token usage is an issue, ask the chief of staff: anyway we can improve token usage? thoughts? See [[src-debs-obrien-token-usage]]. lan E share, not scout.
-- lan E shared https://x.com/hxiao/status/2092015227286249607 (Headlong quote). Parked 2026-08-27 pending experiments. The 2026-08-26 hour trial is that report. See [[src-hxiao-headlong-share]] and [[headlong]].
 - Skill Recorder: trial only on a clean desktop with fake data, then SkillSpector, then enable. See [[skill-recorder]].
 - Dry-migrate sessions only after a secret scan. Never migrate prod keys or customer data. Rebuild if context is hidden. See [[session-migrate]].
 - Surprise spot-checks: lead inspects without warning; specialists stay on-lane; lessons go to wiki and a shared skill. One owner per job, report once, no empty acks. See [[spot-check]] and [[raptor-dispatch]].
@@ -126,3 +125,4 @@ Adjectives and taste notes do not belong here. See [[memory-ablation]].
 ## Open questions
 
 - No personal identity or goals have been captured yet. Do not invent them.
+- Knowledge sync bus: Specialist → CoS → Vault src/fold. User X pastes → X Scout; Vault only CoS packets. Skip仍記 = URL + reason + date. Routine src/skip PRs auto-merge after validate PASS. See [[knowledge-sync-bus]].

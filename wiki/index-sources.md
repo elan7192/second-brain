@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Index sources
@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Thick 入vaul
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-cos-knowledge-sync-bus-2026-09-05]] | 2026-09-05 | Knowledge sync bus: Specialist → CoS → Vault |
 | [[src-clorissignal-agent-eval-framework]] | 2026-09-04 | Agent eval framework / go-live proof (ClorisSignal via miles_mazy) |
 | [[src-0xkvro-quant-sample-size-skip]] | 2026-09-04 | Skip: quant sample-size / OOS pop science |
 | [[src-amitiitbhu-llm-papers-skip]] | 2026-09-04 | Skip: generic LLM 101 paper list |
