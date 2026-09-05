@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T19:11:59Z",
+  "builtAt": "2026-09-05T19:13:34Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,7 +103,7 @@
     "Meta": 17,
     "Ship": 59,
     "Map": 5,
-    "unverified": 120,
+    "unverified": 121,
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
@@ -4032,7 +4032,7 @@
       "island": "sources",
       "inbound": 6,
       "outbound": 8,
-      "unverified": false,
+      "unverified": true,
       "oneLiner": "**Residual (desk v0):** reusable AI-work unit = **artifact** (path/PR) + **verdict** + **provenance/SHA**. Disk-only / chat-only \u2260 synced. Done = GitHub PR URL + merge SHA on `elan7192/second-brain` ("
     },
     {

@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] amend | residual-v0 GTM fold (R2-E)
+
+Fold ICP / attraction / eng wedge DELETE list from board R2-E into [[src-ai-residual-capture-v0]] (no second src). R2-F: v0 customer surface = nothing. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | AI residual capture v0 playbook
 
 Thin [[src-ai-residual-capture-v0]] from board §D + Round2 + skill `ai-residual-capture`. Cross-link knowledge-sync bus, openai-hf anti-swarm, TEAM, musk-algorithm. lan E execute via CoS. Squash-merge if validate PASS.
