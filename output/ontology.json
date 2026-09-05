@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T12:54:01Z",
+  "builtAt": "2026-09-05T14:19:20Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -105,14 +105,14 @@
     "Map": 5,
     "unverified": 118,
     "Hunt": 8,
-    "Concept": 128,
+    "Concept": 129,
     "Project": 2,
-    "Source": 245,
+    "Source": 246,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 537,
-    "links": 3711
+    "objects": 539,
+    "links": 3735
   },
   "objects": [
     {
@@ -2070,7 +2070,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 29,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "Grok Bot quota burns fastest on:"
@@ -2351,7 +2351,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 34,
-      "outbound": 27,
+      "outbound": 28,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 35,
-      "outbound": 249,
+      "inbound": 36,
+      "outbound": 251,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2804,6 +2804,20 @@
       "oneLiner": "Specialist \u2192 **CoS last look** \u2192 **Vault** writes `wiki/sources` (and folds). Vault never invents. Source: [[src-cos-knowledge-sync-bus-2026-09-05]]. Skill: vault-knowledge-sync."
     },
     {
+      "primaryKey": "lan-e-desk-team",
+      "objectType": "Concept",
+      "title": "lan E desk team",
+      "path": "wiki/lan-e-desk-team.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "wiki,ops",
+      "island": "concepts",
+      "inbound": 5,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
+    },
+    {
       "primaryKey": "lanbb",
       "objectType": "Project",
       "title": "LanBB",
@@ -2869,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 302,
+      "outbound": 304,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3260,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 33,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -3582,7 +3596,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 44,
       "outbound": 24,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
@@ -3820,7 +3834,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 33,
+      "inbound": 34,
       "outbound": 38,
       "unverified": true,
       "oneLiner": "Ablation-clean principles from SpaceXAI engineer writeups. Apply the method. Do not copy their org chart. Product is LanBB; semantica is a tool."
@@ -3960,7 +3974,7 @@
       "updated": "2026-09-03",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Chief routes; does not do the work. Triage \u2192 delegate \u2192 watch \u2192 collect \u2192 escalate. A Chief that researches/writes/operates itself rebuilds one giant chatbot."
@@ -4016,7 +4030,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 8,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Parked bots must have zero cron definitions on disk, not merely `enabled:false`. A disabled husk on a parked bot still violates Delete-first; the audit proposes delete. CoS approves live deletes; the "
@@ -5290,10 +5304,24 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 5,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Durable finds flow Specialist \u2192 CoS last look \u2192 Vault src/fold. Specialists do not write the vault unless CoS named that exact job. Do not ping lan E from specialists."
+    },
+    {
+      "primaryKey": "src-cos-team-md-2026-09-05",
+      "objectType": "Source",
+      "title": "src-cos-team-md-2026-09-05",
+      "path": "wiki/sources/src-cos-team-md-2026-09-05.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "wiki,ops",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "Front door is Chief of Staff; bots report CoS; lan E gets one CoS update. Last human yes for send/pay/post/non-routine merge/irreversible."
     },
     {
       "primaryKey": "src-crawl4ai-llm-markdown-crawler",
@@ -6774,8 +6802,8 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 8,
+      "inbound": 6,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** deleted **7** parked cron husks (SEO\u00d73, Competitor\u00d72, figma\u00d72). Folders removed \u2014 not merely `enabled:false`."
     },
@@ -6788,7 +6816,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 9,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -13643,6 +13671,11 @@
     {
       "from": "index",
       "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "index",
+      "linkType": "relatedTo",
       "to": "lanbb"
     },
     {
@@ -14458,6 +14491,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-cos-team-md-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-crawl4ai-llm-markdown-crawler"
     },
     {
@@ -15169,6 +15207,11 @@
       "from": "index-sources",
       "linkType": "relatedTo",
       "to": "index-papers"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
     },
     {
       "from": "index-sources",
@@ -15891,6 +15934,51 @@
       "to": "spacexai-grok-bot-keepers"
     },
     {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-algo-routines-audit-2026-09-05"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-cos-team-md-2026-09-05"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-routines-cut-playbook-2026-09-05"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "relatedTo",
+      "to": "spacexai-grok-bot-keepers"
+    },
+    {
       "from": "lanbb",
       "linkType": "aboutPerson",
       "to": "lostsec"
@@ -16404,6 +16492,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-cos-team-md-2026-09-05"
     },
     {
       "from": "log",
@@ -17249,6 +17342,11 @@
       "from": "log",
       "linkType": "relatedTo",
       "to": "knowledge-sync-bus"
+    },
+    {
+      "from": "log",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
     },
     {
       "from": "log",
@@ -22551,6 +22649,51 @@
       "to": "raptor-dispatch"
     },
     {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "cites",
+      "to": "src-algo-routines-audit-2026-09-05"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "cites",
+      "to": "src-routines-cut-playbook-2026-09-05"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-cos-team-md-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
       "from": "src-crawl4ai-llm-markdown-crawler",
       "linkType": "cites",
       "to": "src-monid-tinyfish-free-agent-search"
@@ -24284,6 +24427,11 @@
       "from": "src-routines-cut-playbook-2026-09-05",
       "linkType": "relatedTo",
       "to": "index-sources"
+    },
+    {
+      "from": "src-routines-cut-playbook-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
     },
     {
       "from": "src-routines-cut-playbook-2026-09-05",

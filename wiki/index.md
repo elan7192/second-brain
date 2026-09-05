@@ -21,6 +21,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 - [[knowledge-sync-bus]] — Specialist → CoS → Vault
 - [[spacexai-grok-bot-keepers]] — SpaceXAI method keepers (not org chart)
 - [[graph-node-ablation]] — RUN→PULL→DELTA→RANK→CUT
+- [[lan-e-desk-team]] — lan E desk standing/parked/gone seats + live routines (CoS TEAM.md)
 - [[raptor-dispatch]] — one owner; CoS outer loop
 - [[agent-operating-system]] — five-layer synthesis
 - [[contradictions]] — unresolved conflicts

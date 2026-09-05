@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | lan E desk TEAM.md
+
+New [[src-cos-team-md-2026-09-05]] + compiled [[lan-e-desk-team]] from CoS `/workspace/fill/TEAM.md`. Standing/parked/gone seats, live routines (Morning OS / X Scout digest / Vault pr-merged / Rutin paused), routing cheat sheet, ≤1 weekly improve rule, 2026-09-05 efficiency log cross-link [[src-routines-cut-playbook-2026-09-05]]. Schema: concept page (not wiki/ops/). Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | Routines CUT playbook (applied)
 
 New [[src-routines-cut-playbook-2026-09-05]] from Rutin efficiency pack via CoS (lan E yes applied). Kept: deleted 7 parked cron husks SEO×3 Competitor×2 figma×2; re-verify TOTAL=4 ENABLED=3 DENSE=0; standing Morning OS + X Scout digest + Vault pr-merged + Rutin weekly paused; parked=zero cron defs; prompt hygiene cross-link [[src-rutin-astra-routine-prompt-pattern-2026-09]]; prior propose [[src-algo-routines-audit-2026-09-05]]. No full fleet table. Artifact `/workspace/fill/efficiency-routines-cut-2026-09-05.md` not in repo. Squash-merge if validate PASS.
