@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | Monid / Tiny Fish free agent search promo
+
+New [[src-monid-tinyfish-free-agent-search]] from @shengkunye tweet 2093050916953903451 (2026-08-27, FxTwitter metadata verified 2026-09-05). Marketing flag: "killed Exa, Tavily, SerpAPI, Brave" and "$0 / no quotas" kept as author claim, not a cost table. Desk note: Exa + Tavily connectors stay; compare pointer only. Near cross-link on [[src-crawl4ai-llm-markdown-crawler]]. No concept fold: no existing search/quota page lists Exa/Tavily. Nothing installed. Squash-merge if validate PASS.
+
 ## [2026-09-05] amend | Acer desk PROXY gap-fade backtest folded
 
 Folded the desk PROXY gap-fade verdict into [[src-itrading-acer-trading-doctor-sop-2026-09]] as a `### Desk PROXY gap-fade backtest (2026-09-05)` subsection under Claims kept. No new source page. Artifact `/workspace/fill/acer-doctor-bt-2026-09-05/STATUS.md` stays outside the vault; notebooks, CSVs, PNGs, and the full grid were not copied. The artifact directory was not mounted in this agent session; figures were taken from lan E's fold brief and are cited to that STATUS.md path. Kept: PROXY_SOPX / PROXY_SOP1 are name-only, not paywalled SOP params, SOP2 not coded; costs 2 pts per side, TX 1 lot, NT$200 per pt; train-selected variant train WR about 38% PF about 1.19, holdout 2023 PF about 0.92 loses, validate 2021 to 2022 PF about 0.93 loses, blurb-fixed baseline worse; data ends 2023-12-08; 五線 / 外資 / news / Friday size / segmented 停利 not modeled. Not kept bullet on performance figures narrowed: marketing figures still out, PROXY metrics kept as PROXY only. 110金訴42 flag restated. Educational only, not advice. Catalog row updated. claims.csv recompiled. MEMORY skipped. Squash-merge if validate PASS.

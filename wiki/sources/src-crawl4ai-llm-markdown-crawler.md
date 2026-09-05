@@ -20,7 +20,7 @@ updated: 2026-09-05
 
 crawl4ai: open-source crawler that turns web pages into LLM-ready Markdown. Author says no API key / no per-page paywall for the OSS path. Star-count and speed claims are author-reported, unverified.
 
-Local map: same scrape cluster as [[src-obscura-rust-headless-browser]] · [[src-otterpal-egolite-crawl-pointer]] · [[src-t20000622yy-egolite-design]]. Prefer compile a local SOP over installing every crawler.
+Local map: same scrape cluster as [[src-obscura-rust-headless-browser]] · [[src-otterpal-egolite-crawl-pointer]] · [[src-t20000622yy-egolite-design]] · [[src-monid-tinyfish-free-agent-search]] (promo pointer; Exa/Tavily stay). Prefer compile a local SOP over installing every crawler.
 
 ## Pages updated
 
