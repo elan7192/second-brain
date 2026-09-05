@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T12:43:50Z",
+  "builtAt": "2026-09-05T12:44:39Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 535,
-    "links": 3684
+    "links": 3685
   },
   "objects": [
     {
@@ -4072,10 +4072,10 @@
       "updated": "2026-09-05",
       "tags": "twitter,skills",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 7,
       "unverified": false,
-      "oneLiner": "Coding-agent work loop: plan \u2192 exec \u2192 deploy/monitor."
+      "oneLiner": "Loop for building with coding agents: plan \u2192 exec \u2192 deploy/monitor (iterative; less focus on code, more on what to build / architecture / spec / verify)."
     },
     {
       "primaryKey": "src-anirudh-lingxi-amplify-skip",
@@ -6761,7 +6761,7 @@
       "tags": "wiki,routines",
       "island": "sources",
       "inbound": 5,
-      "outbound": 3,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
     },
@@ -24146,6 +24146,11 @@
       "from": "src-rutin-astra-routine-prompt-pattern-2026-09",
       "linkType": "cites",
       "to": "src-algo-routines-audit-2026-09-05"
+    },
+    {
+      "from": "src-rutin-astra-routine-prompt-pattern-2026-09",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
     },
     {
       "from": "src-rutin-astra-routine-prompt-pattern-2026-09",
