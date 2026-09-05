@@ -5,7 +5,7 @@ schema: memory-v1
 tags:
   - wiki
 created: 2026-09-02
-updated: 2026-09-04
+updated: 2026-09-05
 created_by: agent
 confidence: high
 source:
@@ -113,5 +113,14 @@ If someone proposes a Jenny hire, a domain engineer bot clone, a 5/15-min poller
 Skip pointer (not keepers): [[src-ritonchain-regime-trading-skip]] — regime trading desk hype.
 Skip pointer (not keepers): [[src-amitiitbhu-llm-papers-skip]] — generic LLM 101 paper list.
 Skip pointer (not keepers): [[src-0xkvro-quant-sample-size-skip]] — quant sample-size / OOS pop science.
+
+Batch hub: [[x-bookmark-sync-2026-09-05]] (CoS AMENDED 2026-09-05).
+Skip pointer (not keepers): [[src-skip-l1vsun-twosigma-tease]] — Two Sigma tease hype/incomplete.
+Skip pointer (not keepers): [[src-skip-preserver-7books]] — 7-books engagement bait.
+Skip pointer (not keepers): [[src-skip-greg-astra-prompts]] — Astra prompts listicle.
+Skip pointer (not keepers): [[src-anirudh-lingxi-amplify-skip]] — SpaceXAI specialists amplify (already; NOT 入vault).
+Skip pointer (not keepers): [[src-skip-nrol-future-predict]] — future-predict.
+Skip pointer (not keepers): [[src-skip-12wk-cyber-roadmap]] — 12wk cyber roadmap.
+Skip pointer (not keepers): [[src-skip-webenstein-cyber-path]] — cyber path.
 
 [[raptor-dispatch]] · [[grok-bot-quota]] · [[work-per-cost]] · [[skill-as-sop]] · [[grok-bot]] · [[loop-graph-engineering]] · [[musk-algorithm]] · [[grok-bot-pro-tips]] · [[graph-node-ablation]] · [[src-adiix-grok-bot-org]]
