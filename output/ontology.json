@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T14:34:46Z",
+  "builtAt": "2026-09-05T14:37:15Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 547,
-    "links": 3811
+    "links": 3812
   },
   "objects": [
     {
@@ -4115,7 +4115,7 @@
       "tags": "twitter",
       "island": "sources",
       "inbound": 8,
-      "outbound": 10,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Loop for building with coding agents: plan \u2192 exec \u2192 deploy/monitor (iterative; less focus on code, more on what to build / architecture / spec / verify)."
     },
@@ -6928,7 +6928,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Secondary pointer only. Durable pattern claims live on [[src-googlecloud-long-horizon-agent-harness-5-patterns]] (stable prefix; write-behind; persistent workspace; explicit INCOMPLETE + hard caps; gu"
@@ -21374,6 +21374,11 @@
       "from": "src-andrewng-ai-engineering-skills-map",
       "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
+      "to": "src-shao-meng-long-horizon-harness-zh"
     },
     {
       "from": "src-andrewng-ai-engineering-skills-map",
