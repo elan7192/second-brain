@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T22:31:31Z",
+  "builtAt": "2026-09-05T22:35:38Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 259,
+    "Source": 262,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 552,
-    "links": 3868
+    "objects": 555,
+    "links": 3887
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 49,
-      "outbound": 265,
+      "inbound": 52,
+      "outbound": 268,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 317,
+      "outbound": 321,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3750,7 +3750,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 39,
+      "inbound": 40,
       "outbound": 25,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
@@ -5290,7 +5290,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 9,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Pointer list of six skills (do not wholesale-install packs):"
@@ -6920,6 +6920,20 @@
       "oneLiner": "Pipeline honesty: chronological order first. Window-boundary and kernel misspec inflate a ratio. Out-of-sample is the honest test."
     },
     {
+      "primaryKey": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "objectType": "Source",
+      "title": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "path": "wiki/sources/src-ryrenz-reverse-skill-pointer-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Authorized research pointer to `zhaoxuya520/reverse-skill`. Already listed in [[src-chenchengpro-six-skills]]. **Do NOT install** skill pack on box. Compile SOPs locally if needed; no vendor."
+    },
+    {
       "primaryKey": "src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05",
       "objectType": "Source",
       "title": "src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05",
@@ -7060,6 +7074,20 @@
       "oneLiner": "\u8df3\u904e\uff1a9 Astra prompts listicle\uff0c\u7121\u65b0\u65b9\u6cd5\u53ef\u6298\u3002"
     },
     {
+      "primaryKey": "src-skip-kirkdborne-151-trading-2026-09-04",
+      "objectType": "Source",
+      "title": "src-skip-kirkdborne-151-trading-2026-09-04",
+      "path": "wiki/sources/src-skip-kirkdborne-151-trading-2026-09-04.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1atrading-strategies PDF dump\uff08\u7121 standing-seat fit\uff09\u3002"
+    },
+    {
       "primaryKey": "src-skip-l1vsun-twosigma-tease",
       "objectType": "Source",
       "title": "src-skip-l1vsun-twosigma-tease",
@@ -7124,7 +7152,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 2,
+      "inbound": 3,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1aReverse-Skill \u5df2\u5728 [[src-chenchengpro-six-skills]]\uff08near chenchengpro\uff09\u6536\u9304\uff0c\u4e0d\u91cd\u5beb\u539a src\u3002"
@@ -7142,6 +7170,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1ageneric 9 AI/ML YouTube course dump\uff1b\u7121 desk method\u3002"
+    },
+    {
+      "primaryKey": "src-skip-tivadar-ml-math-roadmap-2026-09-05",
+      "objectType": "Source",
+      "title": "src-skip-tivadar-ml-math-roadmap-2026-09-05",
+      "path": "wiki/sources/src-skip-tivadar-ml-math-roadmap-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1aML-math curriculum promo\uff08\u7121 bot gap-fill\uff09\u3002"
     },
     {
       "primaryKey": "src-skip-webenstein-cyber-path",
@@ -7810,8 +7852,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 27,
-      "outbound": 26,
+      "inbound": 30,
+      "outbound": 29,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15268,6 +15310,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-ryrenz-reverse-skill-pointer-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05"
     },
     {
@@ -15318,6 +15365,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skip-kirkdborne-151-trading-2026-09-04"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-l1vsun-twosigma-tease"
     },
     {
@@ -15344,6 +15396,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-skip-sairahul1-9-ai-ml-yt"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-skip-tivadar-ml-math-roadmap-2026-09-05"
     },
     {
       "from": "index-sources",
@@ -16798,6 +16855,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-chenchengpro-six-skills"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-clorissignal-agent-eval-framework"
     },
     {
@@ -17138,6 +17200,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-ryrenz-reverse-skill-pointer-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05"
     },
     {
@@ -17168,12 +17235,22 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-skip-kirkdborne-151-trading-2026-09-04"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-skip-nafis-10-repos-print-money-2026-09-05"
     },
     {
       "from": "log",
       "linkType": "cites",
       "to": "src-skip-sairahul1-9-ai-ml-yt"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-tivadar-ml-math-roadmap-2026-09-05"
     },
     {
       "from": "log",
@@ -25166,6 +25243,31 @@
       "to": "work-per-cost"
     },
     {
+      "from": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "linkType": "cites",
+      "to": "src-chenchengpro-six-skills"
+    },
+    {
+      "from": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-reverse-skill-tom-doerr"
+    },
+    {
+      "from": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-ryrenz-reverse-skill-pointer-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05",
       "linkType": "cites",
       "to": "src-jolyne-sepia-de-ai-writing-pointer"
@@ -25341,6 +25443,16 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-skip-kirkdborne-151-trading-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-kirkdborne-151-trading-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-skip-l1vsun-twosigma-tease",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
@@ -25382,6 +25494,16 @@
     },
     {
       "from": "src-skip-sairahul1-9-ai-ml-yt",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-skip-tivadar-ml-math-roadmap-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-tivadar-ml-math-roadmap-2026-09-05",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
     },
@@ -26798,6 +26920,11 @@
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
+      "to": "src-ryrenz-reverse-skill-pointer-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
       "to": "src-senior-ai-prompt-goals"
     },
     {
@@ -26819,6 +26946,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-greg-astra-prompts"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-kirkdborne-151-trading-2026-09-04"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
@@ -26849,6 +26981,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-sairahul1-9-ai-ml-yt"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-tivadar-ml-math-roadmap-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | pack Ryrenz reverse-skill pointer + Kirk/Tivadar skips
+
+[[src-ryrenz-reverse-skill-pointer-2026-09-05]]: authorized research pointer to zhaoxuya520/reverse-skill; do NOT install; near [[src-chenchengpro-six-skills]]. Skip [[src-skip-kirkdborne-151-trading-2026-09-04]] (trading PDF dump). Skip [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] (ML-math curriculum promo). Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip CakeAI8 VPS/proxy network-tuning listicle
 
 Skip [[src-skip-cakeai8-vps-net-tune-2026-09-05]]: VPS/proxy network-tuning listicle; not standing-seat fit. URL https://x.com/CakeAI8/status/2096117672652222539. Squash-merge if validate PASS.
