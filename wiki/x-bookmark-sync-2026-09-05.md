@@ -35,6 +35,7 @@ Already on main (dedup; not rewritten):
 | [[src-cyberstrike-ai-redteam]] | 只記一筆 | Cyberstrike redteam 指針；note mukul975；do not vendor |
 | [[src-skip-nrol-future-predict]] | 跳過但仍記一行 | future-predict 帖，非主題 |
 | [[src-skip-sairahul1-9-ai-ml-yt]] | 跳過但仍記一行 | generic 9 AI/ML YT course dump；無 desk method |
+| [[src-skip-goan999999-astra-cleanup-wrapper]] | 跳過但仍記一行 | Lonely/pvncher Astra wrapper near-dup |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |

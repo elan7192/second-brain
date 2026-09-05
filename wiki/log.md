@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | GoogleCloud long-horizon harness 5 patterns + goan skip
+
+Canonical [[src-googlecloud-long-horizon-agent-harness-5-patterns]] (article 5 design patterns; ADK Long Horizon pointer). Secondary [[src-shao-meng-long-horizon-harness-zh]]. Skip [[src-skip-goan999999-astra-cleanup-wrapper]] (pvncher near-dup). Related Ng/Astra/TEAM/Spotify. Pending earlier batch already on tip: sairahul1 skip · skraft09 · Mortyx. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | skraft09 BB toolkit + Mortyx context-graph timestamps
 
 New [[src-skraft09-bb-writeups-toolkit]] (outbound https://github.com/skraft9/vulnerability-research verified HTTP 200; near mukul975/Cyberstrike; do not vendor). New [[src-0xmortyx-context-graph-timestamps]] + fold [[src-0xricker-kimi-context-graph-anatomy]] (Kimi phases → one structure). Related [[context-graph]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[lan-e-desk-team]]. No new bots. Squash-merge if validate PASS.
