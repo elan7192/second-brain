@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T22:37:30Z",
+  "builtAt": "2026-09-05T22:38:12Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 264,
+    "Source": 265,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 557,
-    "links": 3898
+    "objects": 558,
+    "links": 3904
   },
   "objects": [
     {
@@ -2028,7 +2028,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
+      "inbound": 26,
       "outbound": 17,
       "unverified": true,
       "oneLiner": "Product harness from Machina. One persistent named agent. One job."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 54,
-      "outbound": 270,
+      "inbound": 55,
+      "outbound": 271,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 323,
+      "outbound": 324,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -7102,6 +7102,20 @@
       "oneLiner": "\u8df3\u904e\uff1aTwo Sigma tease\uff0chype\uff0fincomplete\uff0c\u7121\u53ef\u9a57\u8b49\u65b9\u6cd5\u3002"
     },
     {
+      "primaryKey": "src-skip-mahaximus-grokbot-token-promo-2026-09-05",
+      "objectType": "Source",
+      "title": "src-skip-mahaximus-grokbot-token-promo-2026-09-05",
+      "path": "wiki/sources/src-skip-mahaximus-grokbot-token-promo-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1aGrok Bot promo/video bait\uff1bnear-dup CoS+Rutin\uff1b\u7121 new seats\u3002"
+    },
+    {
       "primaryKey": "src-skip-nafis-10-repos-print-money-2026-09-05",
       "objectType": "Source",
       "title": "src-skip-nafis-10-repos-print-money-2026-09-05",
@@ -7880,8 +7894,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 32,
-      "outbound": 31,
+      "inbound": 33,
+      "outbound": 32,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15403,6 +15417,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skip-mahaximus-grokbot-token-promo-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-nafis-10-repos-print-money-2026-09-05"
     },
     {
@@ -17274,6 +17293,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skip-kirkdborne-151-trading-2026-09-04"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-mahaximus-grokbot-token-promo-2026-09-05"
     },
     {
       "from": "log",
@@ -25506,6 +25530,21 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-skip-mahaximus-grokbot-token-promo-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "src-skip-mahaximus-grokbot-token-promo-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-mahaximus-grokbot-token-promo-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-skip-nafis-10-repos-print-money-2026-09-05",
       "linkType": "relatedTo",
       "to": "index-sources"
@@ -27029,6 +27068,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-l1vsun-twosigma-tease"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-mahaximus-grokbot-token-promo-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

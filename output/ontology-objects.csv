@@ -135,7 +135,7 @@ github,Hunt,GitHub hunt,hunt/github.md,2026-08-23,2026-08-28,"hunt,github",hunt-
 graph,Meta,Graph,wiki/graph.md,2026-08-23,2026-09-01,wiki,meta,16,5,false,"The live Obsidian graph and the files in `output/` cluster by concept. Color still means folder family: gold wiki, teal maps, blue hunt/twitter, green people, coral ship."
 graph-clusters-2026-08-24,Ship,Graph clusters brief · 2026-08-24,output/graph-clusters-2026-08-24.md,2026-08-24,2026-08-24,ship,hunt-ship,1,3,false,The hairball came from ring-by-folder layout and catalog stars. Islands now follow the five layers on [[agent-operating-system]]. Sources and people sit with the concept they already cite.
 graph-node-ablation,Concept,Graph node ablation,wiki/graph-node-ablation.md,2026-09-03,2026-09-04,wiki,concepts,8,8,true,Ablation test for multi-agent / workflow graphs: keep a node only if removing it changes the outcome.
-grok-bot,Concept,Grok Bot,wiki/grok-bot.md,2026-08-25,2026-09-04,wiki,concepts,25,17,true,Product harness from Machina. One persistent named agent. One job.
+grok-bot,Concept,Grok Bot,wiki/grok-bot.md,2026-08-25,2026-09-04,wiki,concepts,26,17,true,Product harness from Machina. One persistent named agent. One job.
 grok-bot-money,Concept,Grok Bot money,wiki/grok-bot-money.md,2026-08-25,2026-08-25,wiki,concepts,11,11,true,Ten revenue workflows from Machina. Architecture: [[grok-bot]]. Source: [[src-exm7777-grok-bot-money]].
 grok-bot-pro-tips,Concept,Grok Bot pro tips,wiki/grok-bot-pro-tips.md,2026-08-27,2026-09-05,wiki,concepts,14,12,false,"Ten tips from the @bot team, collected by Ben Lang."
 grok-bot-quota,Concept,Grok Bot quota,wiki/grok-bot-quota.md,2026-08-27,2026-09-05,wiki,concepts,30,16,true,Grok Bot quota burns fastest on:
@@ -160,7 +160,7 @@ iar,Concept,IAR,wiki/iar.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,"Injec
 inbox,Hunt,Inbox,hunt/inbox.md,2026-08-23,2026-08-23,hunt,hunt-ship,2,0,false,Drop unfiled clips here. New notes from Obsidian land in `hunt/inbox` by default.
 index,Meta,Index,wiki/index.md,2026-08-23,2026-09-03,wiki,meta,34,28,false,Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu
 index-papers,Meta,Index papers,wiki/index-papers.md,2026-08-28,2026-08-28,wiki,meta,9,50,true,Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12.
-index-sources,Meta,Index sources,wiki/index-sources.md,2026-08-28,2026-09-05,wiki,meta,54,270,true,Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
+index-sources,Meta,Index sources,wiki/index-sources.md,2026-08-28,2026-09-05,wiki,meta,55,271,true,Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
 ingest-brief-2026-08-23,Ship,Ingest brief · 2026-08-23,output/ingest-brief-2026-08-23.md,2026-08-23,2026-08-23,ship,hunt-ship,1,2,false,Nine X posts compiled into the first vault.
 ingest-brief-2026-08-23-cybersecurity-skills,Ship,Ingest brief · cybersecurity skills repo,output/ingest-brief-2026-08-23-cybersecurity-skills.md,2026-08-23,2026-08-23,ship,hunt-ship,1,4,false,What changed: the GitHub catalog pitch is now a source page and a person page. [[skill-library]] gained a second source. Offensive skill bodies were not copied. `MEMORY.md` now forbids vendoring or ex
 ingest-brief-2026-08-23-retrieval-second-brain,Ship,Ingest brief · retrieval second brain,output/ingest-brief-2026-08-23-retrieval-second-brain.md,2026-08-23,2026-08-23,ship,hunt-ship,1,5,true,What changed: the four-pillar retrieval recipe is now [[retrieval-second-brain]]. Layer names landed on [[memory-engineering]]. GraphRAG vs compiled wikilinks landed on [[context-graph]]. C25 flags th
@@ -196,7 +196,7 @@ lanbb,Project,LanBB,wiki/lanbb.md,2026-08-24,2026-08-27,project,projects,32,10,t
 lance,Concept,LANCE,wiki/lance.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,One-shot HOSVD activation cores for last-2/4-layer on-device fine-tune and CL.
 llm-wiki,Concept,LLM Wiki,wiki/llm-wiki.md,2026-08-23,2026-09-04,wiki,concepts,79,43,false,Andrej Karpathy's April 2026 pattern for a personal knowledge base.
 llm4eo,Concept,LLM4EO,wiki/llm4eo.md,2026-08-24,2026-08-24,wiki,concepts,5,3,true,LLM evolves EA operators for FJSP. Deployed model is GPT-4.1-mini.
-log,Meta,Log,wiki/log.md,2026-08-23,2026-09-05,wiki,meta,16,323,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+log,Meta,Log,wiki/log.md,2026-08-23,2026-09-05,wiki,meta,16,324,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-09-03,wiki,concepts,18,20,false,"Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
 lostsec,Person,lostsec,wiki/people/lostsec.md,2026-08-27,2026-08-27,person,people,5,4,false,Bug bounty hunter. Also coffinxp. Handle @lostsec_.
 mahipal-jangra,Person,Mahipal Jangra,wiki/people/mahipal-jangra.md,2026-08-23,2026-08-23,person,people,5,3,false,"@mukul975. README citation: Jangra, Mahipal."
@@ -498,6 +498,7 @@ src-skip-cyberstrike-dup-pethuraj,Source,src-skip-cyberstrike-dup-pethuraj,wiki/
 src-skip-greg-astra-prompts,Source,src-skip-greg-astra-prompts,wiki/sources/src-skip-greg-astra-prompts.md,2026-09-05,2026-09-05,twitter,sources,3,1,false,跳過：9 Astra prompts listicle，無新方法可折。
 src-skip-kirkdborne-151-trading-2026-09-04,Source,src-skip-kirkdborne-151-trading-2026-09-04,wiki/sources/src-skip-kirkdborne-151-trading-2026-09-04.md,2026-09-06,2026-09-06,twitter,sources,3,2,false,跳過：trading-strategies PDF dump（無 standing-seat fit）。
 src-skip-l1vsun-twosigma-tease,Source,src-skip-l1vsun-twosigma-tease,wiki/sources/src-skip-l1vsun-twosigma-tease.md,2026-09-05,2026-09-05,twitter,sources,3,1,false,跳過：Two Sigma tease，hype／incomplete，無可驗證方法。
+src-skip-mahaximus-grokbot-token-promo-2026-09-05,Source,src-skip-mahaximus-grokbot-token-promo-2026-09-05,wiki/sources/src-skip-mahaximus-grokbot-token-promo-2026-09-05.md,2026-09-06,2026-09-06,twitter,sources,3,3,false,跳過：Grok Bot promo/video bait；near-dup CoS+Rutin；無 new seats。
 src-skip-nafis-10-repos-print-money-2026-09-05,Source,src-skip-nafis-10-repos-print-money-2026-09-05,wiki/sources/src-skip-nafis-10-repos-print-money-2026-09-05.md,2026-09-06,2026-09-06,twitter,sources,3,2,false,跳過：hype money-print GitHub listicle（trading/ads/SEO skew；無 standing-seat fit）。
 src-skip-nrol-future-predict,Source,src-skip-nrol-future-predict,wiki/sources/src-skip-nrol-future-predict.md,2026-09-05,2026-09-05,twitter,sources,3,1,false,跳過：future-predict 帖，非 wiki／memory／harness 方法。
 src-skip-preserver-7books,Source,src-skip-preserver-7books,wiki/sources/src-skip-preserver-7books.md,2026-09-05,2026-09-05,twitter,sources,3,1,false,跳過：7 books 書單，engagement bait。
@@ -553,6 +554,6 @@ vox,Person,Vox,wiki/people/vox.md,2026-08-24,2026-08-30,person,people,11,10,fals
 vs-graph,Concept,VS-Graph,wiki/vs-graph.md,2026-08-24,2026-08-24,wiki,concepts,5,2,true,Topology-only HDC graph classifier. No backprop.
 wiki,Meta,Wiki,wiki.md,2026-08-23,2026-08-23,wiki,meta,2,5,false,Compiled knowledge. Gold in the Obsidian graph.
 work-per-cost,Concept,Work per cost,wiki/work-per-cost.md,2026-08-27,2026-09-04,wiki,concepts,37,38,true,Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled.
-x-bookmark-sync-2026-09-05,Meta,X bookmark sync 2026-09-05,wiki/x-bookmark-sync-2026-09-05.md,2026-09-05,2026-09-05,wiki,meta,32,31,false,Amended CoS bookmark pack. Vault wrote thin src pointers／skips. Living inbound hub.
+x-bookmark-sync-2026-09-05,Meta,X bookmark sync 2026-09-05,wiki/x-bookmark-sync-2026-09-05.md,2026-09-05,2026-09-05,wiki,meta,33,32,false,Amended CoS bookmark pack. Vault wrote thin src pointers／skips. Living inbound hub.
 x-misses-audit-2026-09-04,Meta,X misses audit 2026-09-04,wiki/x-misses-audit-2026-09-04.md,2026-09-04,2026-09-04,wiki,meta,46,56,false,Scout misses_verdicts batch ingest. Vault wrote src pointers for every row. Hold merge.
 zack0x01,Person,zack0x01,wiki/people/zack0x01.md,2026-08-27,2026-08-27,person,people,5,4,false,Bug bounty hunter. Handle zack0x01.

@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip Mahaximus Grok Bot promo/video bait
+
+Skip [[src-skip-mahaximus-grokbot-token-promo-2026-09-05]]: Grok Bot promo/video bait; near-dup CoS+Rutin; no new seats. URL https://x.com/Mahaximus_/status/2096234675794501686. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | vikingmute Linear sync engine RE method
 
 Thin [[src-vikingmute-linear-sync-engine-re-2026-09-05]]: architecture pointer to https://github.com/wzhudev/reverse-linear-sync-engine (models, IndexedDB, txn upload, server delta, partial load/undo/optimistic UI). No new bot/skill; no implement unless product ask. Squash-merge if validate PASS.

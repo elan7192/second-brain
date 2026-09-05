@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-mahaximus-grokbot-token-promo-2026-09-05]] | 2026-09-06 | 跳過仍記：Grok Bot promo/video bait；near-dup CoS+Rutin；無 new seats |
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 2026-09-06 | METHOD：Linear-style sync RE（models/IndexedDB/txn/delta/partial+undo+optimistic）；no bot/skill/implement |
 | [[src-skip-suraj-12-agentic-projects-2026-09-04]] | 2026-09-06 | 跳過仍記：agentic-career 12-projects hiring bait；無 standing-seat fit |
 | [[src-ryrenz-reverse-skill-pointer-2026-09-05]] | 2026-09-06 | 只記一筆：Ryrenz → reverse-skill research pointer；do NOT install；near [[src-chenchengpro-six-skills]] |
