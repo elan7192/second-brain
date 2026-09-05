@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | AI residual capture v0 playbook
+
+Thin [[src-ai-residual-capture-v0]] from board §D + Round2 + skill `ai-residual-capture`. Cross-link knowledge-sync bus, openai-hf anti-swarm, TEAM, musk-algorithm. lan E execute via CoS. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | OpenAI×HF agents incident + TEAM anti-swarm
 
 Thin [[src-openai-hf-agents-incident-2026]] from Researchy brief + OpenAI/METR primaries. Amend [[lan-e-desk-team]] anti-swarm bus (SendToAgent = CoS task+artifact; dossier handoffs; escalate or quiet stop). Cross-link Ng / Google long-horizon / Astra / TEAM. No new swarm bot. Squash-merge if validate PASS.

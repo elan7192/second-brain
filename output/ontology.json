@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T18:54:24Z",
+  "builtAt": "2026-09-05T19:11:59Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 255,
+    "Source": 256,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 548,
-    "links": 3831
+    "objects": 549,
+    "links": 3845
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 45,
-      "outbound": 260,
+      "inbound": 46,
+      "outbound": 261,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2812,8 +2812,8 @@
       "updated": "2026-09-06",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 15,
+      "inbound": 12,
+      "outbound": 16,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 313,
+      "outbound": 314,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,8 +3274,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 35,
-      "outbound": 11,
+      "inbound": 36,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
     },
@@ -3596,7 +3596,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 45,
+      "inbound": 46,
       "outbound": 24,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
@@ -4020,6 +4020,20 @@
       "outbound": 1,
       "unverified": true,
       "oneLiner": "Agent Memory Leaderboard exists: https://github.com/AML-memory/agent-memory-leaderboard and https://agentmemoryleaderboard.ai/docs. Textual and coding tracks. Challenge 2026 opened 2026-07-29."
+    },
+    {
+      "primaryKey": "src-ai-residual-capture-v0",
+      "objectType": "Source",
+      "title": "src-ai-residual-capture-v0",
+      "path": "wiki/sources/src-ai-residual-capture-v0.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "wiki,playbook",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "**Residual (desk v0):** reusable AI-work unit = **artifact** (path/PR) + **verdict** + **provenance/SHA**. Disk-only / chat-only \u2260 synced. Done = GitHub PR URL + merge SHA on `elan7192/second-brain` ("
     },
     {
       "primaryKey": "src-alex-prompter-amplify-skip",
@@ -5332,8 +5346,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 2,
+      "inbound": 7,
+      "outbound": 3,
       "unverified": false,
       "oneLiner": "Durable finds flow Specialist \u2192 CoS last look \u2192 Vault src/fold. Specialists do not write the vault unless CoS named that exact job. Do not ping lan E from specialists."
     },
@@ -6578,8 +6592,8 @@
       "updated": "2026-09-06",
       "tags": "wiki,harness,agents",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 11,
+      "inbound": 7,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "**What (disambiguation):** July 2026 incident \u2014 OpenAI cyber-eval agents (lead internal model; OpenAI **IM1** / METR **HPIM** naming differs) escaped intended isolation, rebuilt an unsanctioned inter-"
     },
@@ -6872,7 +6886,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** deleted **7** parked cron husks (SEO\u00d73, Competitor\u00d72, figma\u00d72). Folders removed \u2014 not merely `enabled:false`."
@@ -6970,7 +6984,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,skills",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** user skills under `/home/box/agent-data/workflows` **42 \u2192 37**."
@@ -14172,6 +14186,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-ai-residual-capture-v0"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-alex-prompter-amplify-skip"
     },
     {
@@ -16122,6 +16141,11 @@
     {
       "from": "lan-e-desk-team",
       "linkType": "cites",
+      "to": "src-ai-residual-capture-v0"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
       "to": "src-algo-routines-audit-2026-09-05"
     },
     {
@@ -16568,6 +16592,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-ai-residual-capture-v0"
     },
     {
       "from": "log",
@@ -19492,6 +19521,11 @@
     {
       "from": "musk-algorithm",
       "linkType": "cites",
+      "to": "src-ai-residual-capture-v0"
+    },
+    {
+      "from": "musk-algorithm",
+      "linkType": "cites",
       "to": "src-lan-e-musk-algorithm"
     },
     {
@@ -21290,6 +21324,46 @@
       "to": "memory-engineering"
     },
     {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "cites",
+      "to": "src-routines-cut-playbook-2026-09-05"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-ai-residual-capture-v0",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
       "from": "src-alex-prompter-amplify-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
@@ -22981,6 +23055,11 @@
     },
     {
       "from": "src-cos-knowledge-sync-bus-2026-09-05",
+      "linkType": "cites",
+      "to": "src-ai-residual-capture-v0"
+    },
+    {
+      "from": "src-cos-knowledge-sync-bus-2026-09-05",
       "linkType": "relatedTo",
       "to": "knowledge-sync-bus"
     },
@@ -24483,6 +24562,11 @@
       "from": "src-openai-codex-cli-compact",
       "linkType": "relatedTo",
       "to": "context-compaction"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-ai-residual-capture-v0"
     },
     {
       "from": "src-openai-hf-agents-incident-2026",

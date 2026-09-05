@@ -16,6 +16,7 @@ derived_from:
   - src-routines-cut-playbook-2026-09-05
   - src-cos-knowledge-sync-bus-2026-09-05
   - src-openai-hf-agents-incident-2026
+  - src-ai-residual-capture-v0
 ---
 
 # lan E desk team
@@ -89,4 +90,4 @@ Prefer event > poll and delete parked husks before rewriting them. Align [[src-r
 
 ## Related
 
-[[src-cos-team-md-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[spacexai-grok-bot-keepers]] · [[grok-bot-quota]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-skills-cut-42-to-37-2026-09-05]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-openai-hf-agents-incident-2026]]
+[[src-cos-team-md-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[spacexai-grok-bot-keepers]] · [[grok-bot-quota]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-skills-cut-42-to-37-2026-09-05]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-openai-hf-agents-incident-2026]] · [[src-ai-residual-capture-v0]]

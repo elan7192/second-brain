@@ -39,4 +39,4 @@ See [[log]]. Live query stays D9. C17 and C18 untouched.
 
 ## Related
 
-[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]]
+[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-ai-residual-capture-v0]]
