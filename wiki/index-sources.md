@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-monid-tinyfish-free-agent-search]] | 2026-09-05 | @shengkunye promo: free agent search+fetch via Tiny Fish + MonidHQ; marketing flag ("killed Exa/Tavily", "$0"); compare pointer only, keep Exa/Tavily, no install |
 | [[src-deusyu-translate-book]] | 2026-09-05 | OSS translate-book (deusyu): whole-book PDF/DOCX/EPUB translation via parallel subagents; thin pointer, promo tweet flagged, no install |
 | [[src-algo-routines-audit-2026-09-05]] | 2026-09-05 | Rutin Algorithm routines audit (thin playbook; zero crons on parked bots; events over digests) |
 | [[src-last30days-quant-algo-trading-2026-09]] | 2026-09-05 | last30days quant/CTA/algo brief (thin; Digg/Reddit/YT only) |

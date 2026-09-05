@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T05:29:47Z",
+  "builtAt": "2026-09-05T05:44:48Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Hunt": 8,
     "Map": 5,
     "Meta": 17,
-    "unverified": 116,
+    "unverified": 117,
     "Ship": 59,
     "Concept": 128,
     "Project": 2,
-    "Source": 234,
+    "Source": 235,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 526,
-    "links": 3600
+    "objects": 527,
+    "links": 3605
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 24,
-      "outbound": 238,
+      "inbound": 25,
+      "outbound": 239,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 288,
+      "outbound": 289,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5290,8 +5290,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 4,
+      "inbound": 5,
+      "outbound": 5,
       "unverified": true,
       "oneLiner": "crawl4ai: open-source crawler that turns web pages into LLM-ready Markdown. Author says no API key / no per-page paywall for the OSS path. Star-count and speed claims are author-reported, unverified."
     },
@@ -6316,6 +6316,20 @@
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Title: 25 insanely useful Grok Bot agent use cases (anyone can implement these)."
+    },
+    {
+      "primaryKey": "src-monid-tinyfish-free-agent-search",
+      "objectType": "Source",
+      "title": "src-monid-tinyfish-free-agent-search",
+      "path": "wiki/sources/src-monid-tinyfish-free-agent-search.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": true,
+      "oneLiner": "Promo: free agent search + fetch of webpages, stated as powered by Tiny Fish and MonidHQ (author claim, unverified)."
     },
     {
       "primaryKey": "src-mrgreenieybt3-llm-wiki",
@@ -14644,6 +14658,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-monid-tinyfish-free-agent-search"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-mrgreenieybt3-llm-wiki"
     },
     {
@@ -16355,6 +16374,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-milesdeutscher-grok-bot-use-cases"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-monid-tinyfish-free-agent-search"
     },
     {
       "from": "log",
@@ -22164,6 +22188,11 @@
     {
       "from": "src-crawl4ai-llm-markdown-crawler",
       "linkType": "cites",
+      "to": "src-monid-tinyfish-free-agent-search"
+    },
+    {
+      "from": "src-crawl4ai-llm-markdown-crawler",
+      "linkType": "cites",
       "to": "src-obscura-rust-headless-browser"
     },
     {
@@ -23290,6 +23319,16 @@
       "from": "src-milesdeutscher-grok-bot-use-cases",
       "linkType": "relatedTo",
       "to": "skill-recorder"
+    },
+    {
+      "from": "src-monid-tinyfish-free-agent-search",
+      "linkType": "cites",
+      "to": "src-crawl4ai-llm-markdown-crawler"
+    },
+    {
+      "from": "src-monid-tinyfish-free-agent-search",
+      "linkType": "relatedTo",
+      "to": "index-sources"
     },
     {
       "from": "src-mrgreenieybt3-llm-wiki",

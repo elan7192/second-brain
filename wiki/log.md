@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | Monid / Tiny Fish free agent search promo
+
+New [[src-monid-tinyfish-free-agent-search]] from @shengkunye tweet 2093050916953903451 (2026-08-27, FxTwitter metadata verified 2026-09-05). Marketing flag: "killed Exa, Tavily, SerpAPI, Brave" and "$0 / no quotas" kept as author claim, not a cost table. Desk note: Exa + Tavily connectors stay; compare pointer only. Near cross-link on [[src-crawl4ai-llm-markdown-crawler]]. No concept fold: no existing search/quota page lists Exa/Tavily. Nothing installed. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | deusyu translate-book thin pointer
 
 New [[src-deusyu-translate-book]] from @XAMTO_AI promo tweet (repo deusyu/translate-book, README verified 2026-09-05). Promo tone flagged; method only. Near cross-link on [[src-fhwofjow-book-to-skill]] (different tool, not overwritten). No concept fold: skill-as-sop / skill-library carry no translate catalog. Skill not installed. Auto-merge if validate PASS.
