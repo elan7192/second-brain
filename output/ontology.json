@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T05:51:51Z",
+  "builtAt": "2026-09-05T11:29:18Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -100,19 +100,19 @@
     }
   },
   "counts": {
-    "Hunt": 8,
-    "Map": 5,
     "Meta": 17,
-    "unverified": 118,
     "Ship": 59,
+    "Map": 5,
+    "unverified": 118,
+    "Hunt": 8,
     "Concept": 128,
     "Project": 2,
-    "Source": 237,
+    "Source": 239,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 529,
-    "links": 3623
+    "objects": 531,
+    "links": 3644
   },
   "objects": [
     {
@@ -1059,11 +1059,11 @@
       "title": "Agent-facing docs",
       "path": "wiki/agent-facing-docs.md",
       "created": "2026-08-24",
-      "updated": "2026-08-29",
+      "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 19,
-      "outbound": 8,
+      "inbound": 20,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Coding agents spend most of their documentation attention on instruction files and their own working notes."
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 27,
-      "outbound": 241,
+      "inbound": 29,
+      "outbound": 243,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2869,7 +2869,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 291,
+      "outbound": 295,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3733,11 +3733,11 @@
       "title": "Skill as SOP",
       "path": "wiki/skill-as-sop.md",
       "created": "2026-08-23",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 36,
-      "outbound": 22,
+      "inbound": 38,
+      "outbound": 25,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -4870,7 +4870,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 2,
+      "inbound": 6,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Astra agent cleanup\uff08JexLau\uff09\uff1a\u6e05\u7406 agent \u914d\u7f6e\uff0f\u6b98\u4ef6\u7684\u64cd\u4f5c\u5e16\u6307\u91dd\u3002"
@@ -4884,7 +4884,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 2,
+      "inbound": 6,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Clean AGENTS.md\uff0fskills\uff1a\u7cbe\u7c21 agent \u6307\u4ee4\u8207 skill \u9762\u7684\u885b\u751f\u5e16\u3002"
@@ -6164,6 +6164,20 @@
       "oneLiner": "LLM guardrail\uff0ftool-output bypass \u610f\u8b58\u5e16\u6307\u91dd\uff08\u9ad8\u968e\u6982\u5ff5 only\uff1b\u4e0d\u6284 exploit\uff0fPoC\uff09\u3002"
     },
     {
+      "primaryKey": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip",
+      "objectType": "Source",
+      "title": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip",
+      "path": "wiki/sources/src-lonely-mh-pvncher-astra-cleanup-prompt-skip.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "Amplify wrapper + Codex audit prompt on the pvncher Astra skills rethink; near primary [[src-pvncher-rethinking-skills-gpt6-astra]]."
+    },
+    {
       "primaryKey": "src-luismbat-buying-signal-2026-08-27",
       "objectType": "Source",
       "title": "src-luismbat-buying-signal-2026-08-27",
@@ -6624,6 +6638,20 @@
       "outbound": 1,
       "unverified": true,
       "oneLiner": "LLM as CPU / harness: the model is not the whole agent. Tools, loop, and permissions sit outside the weights. Fits [[harness-routing]]."
+    },
+    {
+      "primaryKey": "src-pvncher-rethinking-skills-gpt6-astra",
+      "objectType": "Source",
+      "title": "src-pvncher-rethinking-skills-gpt6-astra",
+      "path": "wiki/sources/src-pvncher-rethinking-skills-gpt6-astra.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
     {
       "primaryKey": "src-rehan-nsfw-skip",
@@ -9156,7 +9184,22 @@
     {
       "from": "agent-facing-docs",
       "linkType": "cites",
+      "to": "src-astra-agent-cleanup-jexlau"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "cites",
       "to": "src-dair-agent-friendly-docs"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
       "from": "agent-facing-docs",
@@ -9182,6 +9225,11 @@
       "from": "agent-facing-docs",
       "linkType": "relatedTo",
       "to": "self-verification"
+    },
+    {
+      "from": "agent-facing-docs",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "agent-facing-docs",
@@ -14631,6 +14679,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-luismbat-buying-signal-2026-08-27"
     },
     {
@@ -14792,6 +14845,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-promptyx-llm-cpu"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
       "from": "index-sources",
@@ -16146,6 +16204,16 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-astra-agent-cleanup-jexlau"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-atenov-free-for-dev"
     },
     {
@@ -16411,6 +16479,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -16467,6 +16540,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-poteto-routine-frequency"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
       "from": "log",
@@ -19966,6 +20044,16 @@
     {
       "from": "skill-as-sop",
       "linkType": "cites",
+      "to": "src-astra-agent-cleanup-jexlau"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
       "to": "src-chenchengpro-six-skills"
     },
     {
@@ -20002,6 +20090,11 @@
       "from": "skill-as-sop",
       "linkType": "cites",
       "to": "src-poteto-eliminate-interventions"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
       "from": "skill-as-sop",
@@ -23279,6 +23372,16 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
       "from": "src-luismbat-buying-signal-2026-08-27",
       "linkType": "relatedTo",
       "to": "buying-signal"
@@ -23772,6 +23875,36 @@
       "from": "src-promptyx-llm-cpu",
       "linkType": "relatedTo",
       "to": "harness-routing"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-astra-agent-cleanup-jexlau"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
     },
     {
       "from": "src-rehan-nsfw-skip",

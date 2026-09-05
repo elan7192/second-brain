@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-04
+updated: 2026-09-05
 ---
 
 # Skill as SOP
@@ -38,7 +38,7 @@ Source: [[src-skill-pack-list]].
 
 [[src-t20000622yy-egolite-design]]: ego lite browser inspection of reference sites before generating UI; repos archify/openpi/skillroster named as examples.
 
-[[src-deronin-design-guide-to-skill-pointer]] / [[src-leo-show-me-skill-pointer]]: design-guide→skill and /show-me readability pointers only.
+[[src-deronin-design-guide-to-skill-pointer]] · [[src-pvncher-rethinking-skills-gpt6-astra]] / [[src-leo-show-me-skill-pointer]]: design-guide→skill and /show-me readability pointers only.
 
 ## What to do in this vault
 
@@ -50,6 +50,8 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 
 Eval gate (go-live proof, not demo vibes): [[src-clorissignal-agent-eval-framework]].
+
+[[src-pvncher-rethinking-skills-gpt6-astra]]: on stronger models (GPT-6 Astra), Skills/AGENTS.md become context debt — short when-to-use, progressive disclosure, principles over recipes; revisit each model jump. Near [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]].
 
 ## Related
 
