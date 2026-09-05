@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | last30days quant algo trading 2026-09
+
+CoS packet. New [[src-last30days-quant-algo-trading-2026-09]] (量化基金程式交易 / CTA systematic). Artifacts: `/workspace/last30days-runs/quant-algo-trading-2026-09-05.{compact,raw}.md` (+ sibling CTA raw). Near skips linked only: [[src-0xkvro-quant-sample-size-skip]] · [[src-ritonchain-regime-trading-skip]] (do not overwrite). Gaps: no X/TikTok; thin 7d (5/18); Digg/Reddit/YouTube only. No new concept page. MEMORY skipped. Auto-merge if validate PASS.
+
 ## [2026-09-05] ingest | benln grok bot pro tips 2026-09-04
 
 CoS packet. New [[src-benln-grok-bot-pro-tips-2026-09-04]] (root https://x.com/benln/status/2095861267831341431). Dedup: Aug [[src-benln-grok-bot-pro-tips]] kept. Tip1→[[src-samsokolin-browser-to-api]]; tip7→[[src-ericzakariasson-webhook-wake]]. Desk: no Eggbot; CoS owns friction skim (tip5 pattern). Folded [[grok-bot-pro-tips]], [[spacexai-grok-bot-keepers]], [[knowledge-sync-bus]]. Gaps: poteto status id unresolved; tips after #7 not captured.
