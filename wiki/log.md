@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | vikingmute Linear sync engine RE method
+
+Thin [[src-vikingmute-linear-sync-engine-re-2026-09-05]]: architecture pointer to https://github.com/wzhudev/reverse-linear-sync-engine (models, IndexedDB, txn upload, server delta, partial load/undo/optimistic UI). No new bot/skill; no implement unless product ask. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip Suraj 12 agentic projects hiring bait
 
 Skip [[src-skip-suraj-12-agentic-projects-2026-09-04]]: agentic-career 12-projects hiring bait; no seat fit. URL https://x.com/suraj_sharma14/status/2095859430776533318. Squash-merge if validate PASS.
