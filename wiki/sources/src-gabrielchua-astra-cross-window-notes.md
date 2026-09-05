@@ -4,26 +4,28 @@ type: source
 tags:
   - twitter
   - astra
+  - codex
 created: 2026-09-05
 updated: 2026-09-05
 ---
 
 # src-gabrielchua-astra-cross-window-notes
 
-- URL: https://x.com/gabrielchua/status/2096097151524978891
+- URL (pattern): https://x.com/gabrielchua/status/2096097151524978891
+- URL (enable follow-up): https://x.com/gabrielchua/status/2096097155048223221
 - Author: @gabrielchua
-- Tweet: 2096097151524978891
-- 判定: 入vault — thin Astra / Cursor notes pointer
+- Tweets: 2096097151524978891 · 2096097155048223221
+- 判定: 入vault — thin Codex/Astra capability note
 - Quote untrusted. Not copied into `raw/`.
-- Dedup: exact absent on tip `d5d5003`. Near (do not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]].
+- Dedup: canonical slug already from PR62; this amend adds enable URL + compaction contrast + Related. Near (do not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]].
 
 ## Claims kept
 
-Astra / Cursor cross-window notes pattern (author framing via tweet — cite URL; do not invent product UI copy beyond the enable key below).
+Pattern: keep notes across context windows instead of relying on repeated compaction (author framing via primary tweet).
 
-Enable path named in CoS packet: `features.context_management.experimental_mode` (exact key; treat as the experimental context-management switch for this note).
+Enable (follow-up tweet + CoS): set `features.context_management.experimental_mode` in Codex `config.toml`. Desk note: CoS already wrote `/home/box/.codex/config.toml` on the Grok Bot computer; user Windows/Mac Codex may still need the same key.
 
-Near cluster: Astra skills/prompt hygiene [[src-pvncher-rethinking-skills-gpt6-astra]]; routine prompt shape [[src-rutin-astra-routine-prompt-pattern-2026-09]].
+No new bot implied.
 
 ## Pages updated
 
@@ -31,4 +33,4 @@ Near cluster: Astra skills/prompt hygiene [[src-pvncher-rethinking-skills-gpt6-a
 
 ## Related
 
-[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]]
+[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]]

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T12:48:10Z",
+  "builtAt": "2026-09-05T12:49:36Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 536,
-    "links": 3695
+    "links": 3699
   },
   "objects": [
     {
@@ -1524,7 +1524,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Chat working-memory may be fuzzy. The vault must be precise. Do not dump transcripts into wiki."
@@ -5262,7 +5262,7 @@
       "updated": "2026-08-27",
       "tags": "community",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 1,
       "unverified": true,
       "oneLiner": "Community notes, not an OpenAI paper. Compiled from PM 2026-08-27. Not copied into `raw/`."
@@ -5582,12 +5582,12 @@
       "path": "wiki/sources/src-gabrielchua-astra-cross-window-notes.md",
       "created": "2026-09-05",
       "updated": "2026-09-05",
-      "tags": "twitter,astra",
+      "tags": "twitter,astra,codex",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 6,
+      "inbound": 5,
+      "outbound": 9,
       "unverified": false,
-      "oneLiner": "Astra / Cursor cross-window notes pattern (author framing via tweet \u2014 cite URL; do not invent product UI copy beyond the enable key below)."
+      "oneLiner": "Pattern: keep notes across context windows instead of relying on repeated compaction (author framing via primary tweet)."
     },
     {
       "primaryKey": "src-godofprompt-10-prompts-pointer",
@@ -6956,8 +6956,8 @@
       "updated": "2026-09-05",
       "tags": "spotify,claude-code,cost,routing",
       "island": "sources",
-      "inbound": 5,
-      "outbound": 7,
+      "inbound": 6,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Cheap-workers routing for Claude Code via Portal AiKA modes + `shunt` plugin:"
     },
@@ -22849,12 +22849,27 @@
     {
       "from": "src-gabrielchua-astra-cross-window-notes",
       "linkType": "cites",
+      "to": "src-community-compaction"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
       "from": "src-gabrielchua-astra-cross-window-notes",
       "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
+      "to": "src-spotify-portal-claude-cheap-workers"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "relatedTo",
+      "to": "context-compaction"
     },
     {
       "from": "src-gabrielchua-astra-cross-window-notes",
@@ -24360,6 +24375,11 @@
       "from": "src-spotify-portal-claude-cheap-workers",
       "linkType": "cites",
       "to": "src-community-compaction"
+    },
+    {
+      "from": "src-spotify-portal-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
     },
     {
       "from": "src-spotify-portal-claude-cheap-workers",
