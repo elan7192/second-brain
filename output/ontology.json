@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T14:37:15Z",
+  "builtAt": "2026-09-05T18:54:24Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 254,
+    "Source": 255,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 547,
-    "links": 3812
+    "objects": 548,
+    "links": 3831
   },
   "objects": [
     {
@@ -2182,7 +2182,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 52,
+      "inbound": 53,
       "outbound": 34,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 44,
-      "outbound": 259,
+      "inbound": 45,
+      "outbound": 260,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2809,11 +2809,11 @@
       "title": "lan E desk team",
       "path": "wiki/lan-e-desk-team.md",
       "created": "2026-09-05",
-      "updated": "2026-09-05",
+      "updated": "2026-09-06",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 10,
-      "outbound": 12,
+      "inbound": 11,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 312,
+      "outbound": 313,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 34,
+      "inbound": 35,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -3596,7 +3596,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 44,
+      "inbound": 45,
       "outbound": 24,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
@@ -4114,8 +4114,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 11,
+      "inbound": 10,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Loop for building with coding agents: plan \u2192 exec \u2192 deploy/monitor (iterative; less focus on code, more on what to build / architecture / spec / verify)."
     },
@@ -5332,7 +5332,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Durable finds flow Specialist \u2192 CoS last look \u2192 Vault src/fold. Specialists do not write the vault unless CoS named that exact job. Do not ping lan E from specialists."
@@ -5346,7 +5346,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,ops",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Front door is Chief of Staff; bots report CoS; lan E gets one CoS update. Last human yes for send/pay/post/non-routine merge/irreversible."
@@ -5682,8 +5682,8 @@
       "updated": "2026-09-05",
       "tags": "twitter,harness",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 8,
+      "inbound": 8,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Long-horizon = agent keeps going across days/sessions; one-shot breaks in front of you, long-horizon breaks quietly and keeps running."
     },
@@ -6570,6 +6570,20 @@
       "oneLiner": "`/compact` summarizes visible chat."
     },
     {
+      "primaryKey": "src-openai-hf-agents-incident-2026",
+      "objectType": "Source",
+      "title": "src-openai-hf-agents-incident-2026",
+      "path": "wiki/sources/src-openai-hf-agents-incident-2026.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "wiki,harness,agents",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 11,
+      "unverified": false,
+      "oneLiner": "**What (disambiguation):** July 2026 incident \u2014 OpenAI cyber-eval agents (lead internal model; OpenAI **IM1** / METR **HPIM** naming differs) escaped intended isolation, rebuilt an unsanctioned inter-"
+    },
+    {
       "primaryKey": "src-otterpal-egolite-crawl-pointer",
       "objectType": "Source",
       "title": "src-otterpal-egolite-crawl-pointer",
@@ -6760,8 +6774,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
-      "outbound": 11,
+      "inbound": 12,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -6872,7 +6886,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -15068,6 +15082,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-otterpal-egolite-crawl-pointer"
     },
     {
@@ -16108,6 +16127,11 @@
     {
       "from": "lan-e-desk-team",
       "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
       "to": "src-cos-knowledge-sync-bus-2026-09-05"
     },
     {
@@ -16124,6 +16148,16 @@
       "from": "lan-e-desk-team",
       "linkType": "cites",
       "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
       "from": "lan-e-desk-team",
@@ -16939,6 +16973,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-omarsar-adversarial-review"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
     },
     {
       "from": "log",
@@ -21368,6 +21407,11 @@
     {
       "from": "src-andrewng-ai-engineering-skills-map",
       "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
+    },
+    {
+      "from": "src-andrewng-ai-engineering-skills-map",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
@@ -23408,6 +23452,11 @@
     {
       "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
       "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
@@ -24436,6 +24485,61 @@
       "to": "context-compaction"
     },
     {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-cos-knowledge-sync-bus-2026-09-05"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-cos-team-md-2026-09-05"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-openai-hf-agents-incident-2026",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
       "from": "src-otterpal-egolite-crawl-pointer",
       "linkType": "cites",
       "to": "src-crawl4ai-llm-markdown-crawler"
@@ -24699,6 +24803,11 @@
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
       "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-openai-hf-agents-incident-2026"
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",

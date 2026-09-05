@@ -6,7 +6,7 @@ tags:
   - wiki
   - ops
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-06
 created_by: agent
 confidence: high
 source:
@@ -15,6 +15,7 @@ derived_from:
   - src-cos-team-md-2026-09-05
   - src-routines-cut-playbook-2026-09-05
   - src-cos-knowledge-sync-bus-2026-09-05
+  - src-openai-hf-agents-incident-2026
 ---
 
 # lan E desk team
@@ -32,6 +33,17 @@ Timezone Asia/Taipei. Quiet hours ~22:00–07:00; batch routine noise.
 Motto: [[musk-algorithm]] — requirements → delete → simplify → accelerate → automate last.
 
 Knowledge bus: durable finds → CoS → Vault → GitHub `elan7192/second-brain`. Skip仍記 = URL + reason + date. See [[src-cos-knowledge-sync-bus-2026-09-05]].
+
+### Anti-swarm bus (2026-09-06)
+
+SendToAgent = **CoS-routed task + artifact only** (goal, done criteria, path to brief/PR). Ban improvised peer side-channels and N-way brainstorm loops.
+
+Prefer **predecessor dossier → next specialist** (Researchy brief → CoS packet → Vault sync) over spawning peers to “discuss.” Max one coordinator (CoS); specialists return artifacts, not chat.
+
+Impossible / blocked / no new evidence after bounded tool budget → **escalate CoS or quiet stop**. Do not invent side channels or endless tool thrash.
+
+Durable knowledge only via Vault → second-brain. Warning-shot source: [[src-openai-hf-agents-incident-2026]] (OpenAI×HF eval agents; sanctioned bus ≠ improvised swarm). Align [[src-andrewng-ai-engineering-skills-map]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-pvncher-rethinking-skills-gpt6-astra]].
+
 
 ### Standing (2026-09-05)
 
@@ -77,4 +89,4 @@ Prefer event > poll and delete parked husks before rewriting them. Align [[src-r
 
 ## Related
 
-[[src-cos-team-md-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[spacexai-grok-bot-keepers]] · [[grok-bot-quota]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-skills-cut-42-to-37-2026-09-05]] · [[src-exm7777-advanced-x-research-grok-bot]]
+[[src-cos-team-md-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[spacexai-grok-bot-keepers]] · [[grok-bot-quota]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-skills-cut-42-to-37-2026-09-05]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-openai-hf-agents-incident-2026]]
