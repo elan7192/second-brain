@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | X bookmark sync CoS AMENDED
+
+Compiled 18 new thin src pages from CoS AMENDED bookmark pack. 11 只記一筆 + 7 跳過但仍記一行. Skipped rewrite (already on main): [[src-otterpal-egolite-crawl-pointer]], [[src-mikenevermiss-cobalt-skip]], [[src-anirudh-lingxi-amplify-skip]]. Hub [[x-bookmark-sync-2026-09-05]]. Light fold sepia structure≠diction into [[anti-slop]]. Cyberstrike/PentAGI pointer-only near [[src-mukul975-cybersecurity-skills]]; no vendor. No thick Jolyne/Reverse-Skill/SpaceXAI.
+
 ## [2026-09-05] ingest | knowledge sync bus
 
 Compiled [[src-cos-knowledge-sync-bus-2026-09-05]] and [[knowledge-sync-bus]]. Specialist → CoS → Vault. Folded into [[raptor-dispatch]].

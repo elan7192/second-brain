@@ -10,12 +10,30 @@ updated: 2026-09-05
 # Index sources
 
 Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
-Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Thick 入vault rows cataloged below.
+Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync batch: [[x-bookmark-sync-2026-09-05]] (18 new thin srcs). Thick 入vault rows cataloged below.
 
 ## Sources
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-jolyne-sepia-de-ai-writing-pointer]] | 2026-09-05 | Sepia de-AI：structure≠diction；fold anti-slop |
+| [[src-astra-agent-cleanup-jexlau]] | 2026-09-05 | Astra agent cleanup（JexLau）指針 |
+| [[src-astra-agents-md-cleanup]] | 2026-09-05 | Clean AGENTS.md／skills 衛生帖指針 |
+| [[src-skip-l1vsun-twosigma-tease]] | 2026-09-05 | Skip: Two Sigma tease hype/incomplete |
+| [[src-astra-first-principles-code-prompt]] | 2026-09-05 | Astra first-principles code prompt 指針 |
+| [[src-tradingview-scripts-to-llm-backtest]] | 2026-09-05 | TradingView scripts→LLM backtest 指針 |
+| [[src-skip-preserver-7books]] | 2026-09-05 | Skip: 7 books engagement bait |
+| [[src-skip-greg-astra-prompts]] | 2026-09-05 | Skip: 9 Astra prompts listicle |
+| [[src-crypto-mcps-astra-list]] | 2026-09-05 | crypto MCPs／Astra 清單指針 |
+| [[src-cyberstrike-ai-redteam]] | 2026-09-05 | Cyberstrike AI redteam 指針；不 vendor |
+| [[src-skip-nrol-future-predict]] | 2026-09-05 | Skip: future-predict |
+| [[src-skip-12wk-cyber-roadmap]] | 2026-09-05 | Skip: 12wk cyber roadmap |
+| [[src-llm-guardrail-tool-output-bypass]] | 2026-09-05 | LLM guardrail/tool-output bypass 意識指針 |
+| [[src-skip-webenstein-cyber-path]] | 2026-09-05 | Skip: cyber path |
+| [[src-skip-cyberstrike-dup-pethuraj]] | 2026-09-05 | Skip: Cyberstrike near-dup |
+| [[src-skip-reverse-skill-tom-doerr]] | 2026-09-05 | Skip: Reverse-Skill already in chenchengpro |
+| [[src-pentagi-redteam-swarm]] | 2026-09-05 | PentAGI redteam swarm 指針；不 vendor |
+| [[src-senior-ai-prompt-goals]] | 2026-09-05 | Voxyz senior prompts/goals；near-dup existing voxyz |
 | [[src-cos-knowledge-sync-bus-2026-09-05]] | 2026-09-05 | Knowledge sync bus: Specialist → CoS → Vault |
 | [[src-clorissignal-agent-eval-framework]] | 2026-09-04 | Agent eval framework / go-live proof (ClorisSignal via miles_mazy) |
 | [[src-0xkvro-quant-sample-size-skip]] | 2026-09-04 | Skip: quant sample-size / OOS pop science |
