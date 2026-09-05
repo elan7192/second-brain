@@ -30,6 +30,8 @@ Desk skills touchpoint (names only, no skill body dump): the-algorithm · skill-
 
 Optional near skip: [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] (amplify wrapper + Codex audit prompt).
 
+Related/near: [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra routine-prompt companion from Rutin).
+
 ## Pages updated
 
-[[skill-as-sop]] · [[agent-facing-docs]] · [[index-sources]]
+[[skill-as-sop]] · [[agent-facing-docs]] · [[index-sources]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]]

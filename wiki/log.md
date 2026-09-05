@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | Rutin Astra routine-prompt pattern
+
+New [[src-rutin-astra-routine-prompt-pattern-2026-09]] from Rutin Astra pass via CoS vault_sync (thin method note). 判定=入vault建議. Kept: routine prompts = goal + done proof + quiet-when-nothing (do not bake MCP/CLI/widget menus into standing routine prompts); parked bots zero cron definitions on disk (align [[src-algo-routines-audit-2026-09-05]]); prefer event listeners over polling, ban dense 5/15-min polls; one on-demand auditor (Rutin), not every bot self-auditing on cron. Near keep (not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]]. Light Related/near folds on those two srcs. Catalog row added. No concept fold, no MEMORY line. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | pvncher rethinking skills GPT-6 Astra
 
 New [[src-pvncher-rethinking-skills-gpt6-astra]] from @pvncher tweet/article (Rethinking skills and prompts for GPT-6 Astra). 判定=入vault建議. Kept: stronger models make Skills/AGENTS.md/task prompts context debt — revisit each model jump; don't hoard skills (short when-to-use, progressive disclosure, principles over recipes); trim AGENTS.md mandatory full-repo map / read-before-every-edit / force-tests and "always ask" walls; grant safe local-test loops; define completion/persistence up front. Near keep (not overwrite): [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]]. Optional skip [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] (amplify + Codex audit). Light fold [[skill-as-sop]] · [[agent-facing-docs]]. Desk skills named only: the-algorithm · skill-improver · cheap-routines. No skill body dump. Squash-merge if validate PASS.

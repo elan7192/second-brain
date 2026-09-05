@@ -32,4 +32,4 @@ Audit proposed CUT of 8 disabled husks (SEO×3, Competitor×2, figma×2, Rutin w
 
 ## Related
 
-[[src-kloss-routine-audit]] · [[src-poteto-routine-frequency]] · [[src-ericzakariasson-webhook-wake]] · [[src-adiix-grok-bot-org]] · [[musk-algorithm]]
+[[src-kloss-routine-audit]] · [[src-poteto-routine-frequency]] · [[src-ericzakariasson-webhook-wake]] · [[src-adiix-grok-bot-org]] · [[musk-algorithm]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]]
