@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-05] ingest | undefinedKi Spotify/Claude cheap workers
+
+New [[src-undefinedki-spotify-claude-cheap-workers]] from @undefinedKi tweet 2095942506433089832 (X Scout + CoS). 判定=入vault — durable cost/routing. Kept (quote untrusted): cheap workers for file-skim / repetitive code work; hard gate keep large context off the expensive seat (soft instructions failed); caveats edits need the real file and cheap models can miss bugs; framing Spotify / Claude Code ~90% token cut pattern as reported by X Scout/CoS — cite tweet only, do not invent Spotify internals. Dedup exact absent on tip `f43cc1a`; filename may rename if Researchy finds primary. Near keep (not overwrite): [[src-avichawla-trueforge]] · [[src-community-compaction]] · [[src-pvncher-rethinking-skills-gpt6-astra]] / [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]]. Deep fold into concept pages held until Spotify primary verified. No Related body edits on trueforge/community-compaction (no existing Related sections). Catalog row added. Squash-merge if validate PASS.
+
 ## [2026-09-05] ingest | Rutin Astra routine-prompt pattern
 
 New [[src-rutin-astra-routine-prompt-pattern-2026-09]] from Rutin Astra pass via CoS vault_sync (thin method note). 判定=入vault建議. Kept: routine prompts = goal + done proof + quiet-when-nothing (do not bake MCP/CLI/widget menus into standing routine prompts); parked bots zero cron definitions on disk (align [[src-algo-routines-audit-2026-09-05]]); prefer event listeners over polling, ban dense 5/15-min polls; one on-demand auditor (Rutin), not every bot self-auditing on cron. Near keep (not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-algo-routines-audit-2026-09-05]]. Light Related/near folds on those two srcs. Catalog row added. No concept fold, no MEMORY line. Squash-merge if validate PASS.
