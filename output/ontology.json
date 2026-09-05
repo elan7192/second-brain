@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T14:28:01Z",
+  "builtAt": "2026-09-05T14:30:20Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 253,
+    "Source": 254,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 546,
-    "links": 3793
+    "objects": 547,
+    "links": 3806
   },
   "objects": [
     {
@@ -2070,7 +2070,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
+      "inbound": 30,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "Grok Bot quota burns fastest on:"
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 43,
-      "outbound": 258,
+      "inbound": 44,
+      "outbound": 259,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2812,8 +2812,8 @@
       "updated": "2026-09-05",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 8,
-      "outbound": 10,
+      "inbound": 9,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 311,
+      "outbound": 312,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 33,
+      "inbound": 34,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -4058,7 +4058,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 8,
+      "inbound": 9,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Parked bots must have zero cron definitions on disk, not merely `enabled:false`. A disabled husk on a parked bot still violates Delete-first; the audit proposes delete. CoS approves live deletes; the "
@@ -6746,8 +6746,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
-      "outbound": 10,
+      "inbound": 11,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -6844,8 +6844,8 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 9,
+      "inbound": 7,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** deleted **7** parked cron husks (SEO\u00d73, Competitor\u00d72, figma\u00d72). Folders removed \u2014 not merely `enabled:false`."
     },
@@ -6858,7 +6858,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -6932,6 +6932,20 @@
       "outbound": 4,
       "unverified": false,
       "oneLiner": "A skill packages a repeated workflow as an SOP. Named jobs: UI review, API check, database plan, docs, architecture review, handoff. A stable SOP is meant to stop retrying a known failure and burning "
+    },
+    {
+      "primaryKey": "src-skills-cut-42-to-37-2026-09-05",
+      "objectType": "Source",
+      "title": "src-skills-cut-42-to-37-2026-09-05",
+      "path": "wiki/sources/src-skills-cut-42-to-37-2026-09-05.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "wiki,skills",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "**Applied 2026-09-05:** user skills under `/home/box/agent-data/workflows` **42 \u2192 37**."
     },
     {
       "primaryKey": "src-skip-12wk-cyber-roadmap",
@@ -15179,6 +15193,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-12wk-cyber-roadmap"
     },
     {
@@ -16108,6 +16127,11 @@
     },
     {
       "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "lan-e-desk-team",
       "linkType": "relatedTo",
       "to": "grok-bot-quota"
     },
@@ -16975,6 +16999,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skill-pack-list"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
     },
     {
       "from": "log",
@@ -24623,6 +24652,11 @@
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -24725,6 +24759,11 @@
       "from": "src-routines-cut-playbook-2026-09-05",
       "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-routines-cut-playbook-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
     },
     {
       "from": "src-routines-cut-playbook-2026-09-05",
@@ -24855,6 +24894,46 @@
       "from": "src-skill-pack-list",
       "linkType": "relatedTo",
       "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "cites",
+      "to": "src-algo-routines-audit-2026-09-05"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "cites",
+      "to": "src-routines-cut-playbook-2026-09-05"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-skills-cut-42-to-37-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
     },
     {
       "from": "src-skip-12wk-cyber-roadmap",
