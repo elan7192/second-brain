@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-rutin-astra-routine-prompt-pattern-2026-09]] | 2026-09-05 | Rutin Astra routine-prompt pattern (thin method; goal+done proof+quiet-when-nothing; no MCP menus in standing prompts; zero crons on parked bots; events over polls; one on-demand auditor) |
 | [[src-pvncher-rethinking-skills-gpt6-astra]] | 2026-09-05 | @pvncher Rethinking skills/prompts for GPT-6 Astra (入vault; skills/AGENTS.md as context debt; short when-to-use; progressive disclosure; near astra cleanup) |
 | [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] | 2026-09-05 | Skip: Lonely__MH amplify wrapper + Codex audit prompt near pvncher Astra rethink |
 | [[src-taifex-tx-real-data-sources-2026-09]] | 2026-09-05 | TAIFEX TX real-data catalog (thin-medium; free official daily ZIPs + rolling 30-day ticks, no free multi-year 1m/tick archive, eDataShop ~NT$9–10k per data-month, TEJ TQuant Lab ~NT$14.4k/yr for 1m, community dumps fail ToS; list prices as of 2026-09-05; educational only) |
