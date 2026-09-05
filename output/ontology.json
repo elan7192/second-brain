@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-05T14:31:18Z",
+  "builtAt": "2026-09-05T14:34:46Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 17,
     "Ship": 59,
     "Map": 5,
-    "unverified": 119,
+    "unverified": 120,
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 253,
+    "Source": 254,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 546,
-    "links": 3799
+    "objects": 547,
+    "links": 3811
   },
   "objects": [
     {
@@ -2028,8 +2028,8 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 24,
-      "outbound": 16,
+      "inbound": 25,
+      "outbound": 17,
       "unverified": true,
       "oneLiner": "Product harness from Machina. One persistent named agent. One job."
     },
@@ -2098,7 +2098,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 15,
       "outbound": 15,
       "unverified": false,
       "oneLiner": "25 use cases from Miles Deutscher. lan E share. Not a scout harvest."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 43,
-      "outbound": 258,
+      "inbound": 44,
+      "outbound": 259,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2812,8 +2812,8 @@
       "updated": "2026-09-05",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 9,
-      "outbound": 11,
+      "inbound": 10,
+      "outbound": 12,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 311,
+      "outbound": 312,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5346,7 +5346,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,ops",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Front door is Chief of Staff; bots report CoS; lan E gets one CoS update. Last human yes for send/pay/post/non-routine merge/irreversible."
@@ -5576,6 +5576,20 @@
       "oneLiner": "X Article\u300cbuild revenue systems with grok bot\u300d\uff1b\u8207\u5df2\u6709 everestchris revenue \u540c\u6e90\u7dda\uff0c\u8a18\u6307\u91dd\u5373\u53ef\u3002"
     },
     {
+      "primaryKey": "src-exm7777-advanced-x-research-grok-bot",
+      "objectType": "Source",
+      "title": "src-exm7777-advanced-x-research-grok-bot",
+      "path": "wiki/sources/src-exm7777-advanced-x-research-grok-bot.md",
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "tags": "twitter,grok-bot",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "Advanced X research pattern (author framing):"
+    },
+    {
       "primaryKey": "src-exm7777-grok-bot-money",
       "objectType": "Source",
       "title": "src-exm7777-grok-bot-money",
@@ -5584,8 +5598,8 @@
       "updated": "2026-08-25",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 21,
-      "outbound": 15,
+      "inbound": 22,
+      "outbound": 16,
       "unverified": true,
       "oneLiner": "Grok Bot: one persistent named agent, one job, on a shared cloud computer. Bot memory is not the source of truth. The vault is. Approvals beat allow rules. See [[grok-bot]]."
     },
@@ -7348,7 +7362,7 @@
       "updated": "2026-09-02",
       "tags": "product",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "Grok Bot: always-on agents with their own computer; sign into tools; finish jobs end to end; return when approval is needed."
@@ -12549,6 +12563,11 @@
     {
       "from": "grok-bot",
       "linkType": "cites",
+      "to": "src-exm7777-advanced-x-research-grok-bot"
+    },
+    {
+      "from": "grok-bot",
+      "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
     },
     {
@@ -14694,6 +14713,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-exm7777-advanced-x-research-grok-bot"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-exm7777-grok-bot-money"
     },
     {
@@ -16094,6 +16118,11 @@
     {
       "from": "lan-e-desk-team",
       "linkType": "cites",
+      "to": "src-exm7777-advanced-x-research-grok-bot"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
       "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
     },
     {
@@ -16705,6 +16734,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-everestchris6-revenue-2026-08-26"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-exm7777-advanced-x-research-grok-bot"
     },
     {
       "from": "log",
@@ -23170,6 +23204,46 @@
       "from": "src-everestchris6-revenue-systems-pointer",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "cites",
+      "to": "src-cos-team-md-2026-09-05"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "cites",
+      "to": "src-exm7777-grok-bot-money"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "cites",
+      "to": "src-xai-introducing-grok-bot"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "relatedTo",
+      "to": "grok-bot-use-cases"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-exm7777-advanced-x-research-grok-bot",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-exm7777-grok-bot-money",
+      "linkType": "cites",
+      "to": "src-exm7777-advanced-x-research-grok-bot"
     },
     {
       "from": "src-exm7777-grok-bot-money",

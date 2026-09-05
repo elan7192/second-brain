@@ -59,4 +59,4 @@ Start with one valuable, reversible workflow. Read-and-prepare first. Actions be
 
 ## Related
 
-[[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]] · [[spacexai-grok-bot-keepers]] · [[src-xai-introducing-grok-bot]]
+[[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]] · [[spacexai-grok-bot-keepers]] · [[src-xai-introducing-grok-bot]] · [[src-exm7777-advanced-x-research-grok-bot]]
