@@ -47,4 +47,4 @@ Uncertainty: CVE list / full PDF depth not re-verified here; press may conflate 
 
 ## Related
 
-[[lan-e-desk-team]] · [[src-cos-team-md-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[harness-routing]] · [[raptor-dispatch]] · [[musk-algorithm]]
+[[lan-e-desk-team]] · [[src-cos-team-md-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[harness-routing]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[src-ai-residual-capture-v0]]

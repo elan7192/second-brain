@@ -25,3 +25,7 @@ Routine src/skip PRs: validate PASS → auto-merge. Big/uncertain (schema, mass 
 ## Pages updated
 
 [[knowledge-sync-bus]] · [[raptor-dispatch]]
+
+## Related
+
+[[src-ai-residual-capture-v0]]
