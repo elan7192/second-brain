@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T05:11:36Z",
+  "builtAt": "2026-09-06T05:15:07Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 272,
+    "Source": 274,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 565,
-    "links": 3966
+    "objects": 567,
+    "links": 3978
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 62,
-      "outbound": 278,
+      "inbound": 64,
+      "outbound": 280,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2812,7 +2812,7 @@
       "updated": "2026-09-06",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 14,
+      "inbound": 15,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 331,
+      "outbound": 333,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -7208,7 +7208,7 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1ahype money-print GitHub listicle\uff08trading/ads/SEO skew\uff1b\u7121 standing-seat fit\uff09\u3002"
@@ -7256,6 +7256,20 @@
       "oneLiner": "\u8df3\u904e\uff1aReverse-Skill \u5df2\u5728 [[src-chenchengpro-six-skills]]\uff08near chenchengpro\uff09\u6536\u9304\uff0c\u4e0d\u91cd\u5beb\u539a src\u3002"
     },
     {
+      "primaryKey": "src-skip-rodmanai-10-repos-income-2026-09-05",
+      "objectType": "Source",
+      "title": "src-skip-rodmanai-10-repos-income-2026-09-05",
+      "path": "wiki/sources/src-skip-rodmanai-10-repos-income-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1anear-dup nafis money-repos listicle\u3002"
+    },
+    {
       "primaryKey": "src-skip-sairahul1-9-ai-ml-yt",
       "objectType": "Source",
       "title": "src-skip-sairahul1-9-ai-ml-yt",
@@ -7296,6 +7310,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1aML-math curriculum promo\uff08\u7121 bot gap-fill\uff09\u3002"
+    },
+    {
+      "primaryKey": "src-skip-unicode-marketplace-marketing-bots-2026-09-05",
+      "objectType": "Source",
+      "title": "src-skip-unicode-marketplace-marketing-bots-2026-09-05",
+      "path": "wiki/sources/src-skip-unicode-marketplace-marketing-bots-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 3,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1amarketing marketplace 16-bots pack\uff1bDELETE bias\u3002"
     },
     {
       "primaryKey": "src-skip-webenstein-cyber-path",
@@ -7992,8 +8020,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 39,
-      "outbound": 38,
+      "inbound": 41,
+      "outbound": 40,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15575,6 +15603,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skip-rodmanai-10-repos-income-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-sairahul1-9-ai-ml-yt"
     },
     {
@@ -15586,6 +15619,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-skip-tivadar-ml-math-roadmap-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-skip-unicode-marketplace-marketing-bots-2026-09-05"
     },
     {
       "from": "index-sources",
@@ -17480,6 +17518,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-skip-rodmanai-10-repos-income-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-skip-sairahul1-9-ai-ml-yt"
     },
     {
@@ -17491,6 +17534,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skip-tivadar-ml-math-roadmap-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-unicode-marketplace-marketing-bots-2026-09-05"
     },
     {
       "from": "log",
@@ -25918,6 +25966,21 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-skip-rodmanai-10-repos-income-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-nafis-10-repos-print-money-2026-09-05"
+    },
+    {
+      "from": "src-skip-rodmanai-10-repos-income-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-rodmanai-10-repos-income-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-skip-sairahul1-9-ai-ml-yt",
       "linkType": "relatedTo",
       "to": "index-sources"
@@ -25944,6 +26007,21 @@
     },
     {
       "from": "src-skip-tivadar-ml-math-roadmap-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-skip-unicode-marketplace-marketing-bots-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-unicode-marketplace-marketing-bots-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-skip-unicode-marketplace-marketing-bots-2026-09-05",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
     },
@@ -27505,6 +27583,11 @@
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
+      "to": "src-skip-rodmanai-10-repos-income-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
       "to": "src-skip-sairahul1-9-ai-ml-yt"
     },
     {
@@ -27516,6 +27599,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-tivadar-ml-math-roadmap-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-unicode-marketplace-marketing-bots-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
