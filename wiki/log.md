@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | pack skip waleexbt 350-bot desk + navaneeth inference checklist
+
+Skip [[src-skip-waleexbt-350-bot-desk-2026-08-30]] (viral 350-bot trading-desk hype/animation; unverified). Skip [[src-skip-navaneeth-inference-killers-2026-09-04]] (LLM inference perf checklist; no bot seat fit). Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | Ryrenz humanlayer/skills pointer (no install)
 
 Thin [[src-ryrenz-humanlayer-skills-pointer-2026-09-06]]: https://github.com/humanlayer/skills via https://x.com/Ryrenz/status/2096403511474893050. Optional fold improve-claude-md conditional blocks into [[src-astra-agents-md-cleanup]]. **Do NOT** install pack / no npx skills on box. Squash-merge if validate PASS.

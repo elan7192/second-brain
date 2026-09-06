@@ -54,6 +54,8 @@ Already on main (dedup; not rewritten):
 | [[src-skip-bharuka-10-ai-repos-2026-09-05]] | 跳過但仍記一行 | AI-engineer 10-repo curriculum listicle；無 seat fit |
 | [[src-skip-ryrenz-ai-job-search-2026-09-05]] | 跳過但仍記一行 | ai-job-search skill-pack；無 job-hunt seat |
 | [[src-ryrenz-humanlayer-skills-pointer-2026-09-06]] | 只記一筆 | humanlayer/skills pointer；optional AGENTS conditional-blocks fold；do NOT install |
+| [[src-skip-waleexbt-350-bot-desk-2026-08-30]] | 跳過但仍記一行 | viral 350-bot trading-desk hype/animation; unverified |
+| [[src-skip-navaneeth-inference-killers-2026-09-04]] | 跳過但仍記一行 | LLM inference perf checklist; no bot seat fit |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |

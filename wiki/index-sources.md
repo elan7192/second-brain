@@ -16,6 +16,8 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-waleexbt-350-bot-desk-2026-08-30]] | 2026-09-06 | 跳過仍記：viral 350-bot trading-desk hype/animation；unverified |
+| [[src-skip-navaneeth-inference-killers-2026-09-04]] | 2026-09-06 | 跳過仍記：LLM inference perf checklist；無 bot seat fit |
 | [[src-ryrenz-humanlayer-skills-pointer-2026-09-06]] | 2026-09-06 | POINTER：humanlayer/skills；optional improve-claude-md → AGENTS cleanup；do NOT install / no npx |
 | [[src-skip-ryrenz-ai-job-search-2026-09-05]] | 2026-09-06 | 跳過仍記：ai-job-search skill-pack；無 job-hunt seat |
 | [[src-skip-bharuka-10-ai-repos-2026-09-05]] | 2026-09-06 | 跳過仍記：AI-engineer 10-repo curriculum listicle；無 seat fit |
