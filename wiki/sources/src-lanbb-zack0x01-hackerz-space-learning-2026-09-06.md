@@ -37,9 +37,11 @@ LanBB curriculum map (hackerz.space + RECOX, Researchy 2026-09-06):
 
 White-hat curriculum only. Do not dump course TOC or attack procedures.
 
+Folded into [[lanbb]] § White-hat learning (desk entry) — lan E 2026-09-06.
+
 ## Pages updated
 
-[[index-sources]] · [[zack0x01]] · [[hunter-follows]] · [[lanbb]] · [[src-zack0x01-ai-hunter-workflow-2026-08-29]]
+[[index-sources]] · [[index]] · [[zack0x01]] · [[hunter-follows]] · [[lanbb]] · [[src-zack0x01-ai-hunter-workflow-2026-08-29]]
 
 ## Related
 

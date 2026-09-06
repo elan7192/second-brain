@@ -4,7 +4,7 @@ type: project
 tags:
   - project
 created: 2026-08-24
-updated: 2026-08-27
+updated: 2026-09-06
 ---
 
 # LanBB
@@ -33,7 +33,36 @@ The vault did not create this repo. Wiki is still silent on whether any semantic
 
 Hunt→harden: [[hunt-harden-loop]]. Current wall: PR27 merged `94ac04c` wall `ad6f669` v17. Floor held. worker_processes 1 source OOM=false. Report 0/N. No more loops this window. Procedural stays in LanBB.
 
+
+## White-hat learning (zack0x01_ digest → LanBB)
+
+lan E 2026-09-06: fold zack digest into LanBB knowledge (not a loose src only). White-hat / learning only — **never** exploit steps / PoCs / payloads.
+
+**Where to look (desk entry):**
+
+| Need | Path |
+| --- | --- |
+| Curriculum map + learn-first order | [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] |
+| AI hunter workflow (human recon → scoped AI → scripts collect / AI analyze → manual validate) | [[src-zack0x01-ai-hunter-workflow-2026-08-29]] |
+| Burp MCP tooling note | [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] — **no auto-wire** |
+| Person / handle | [[zack0x01]] — active `@zack0x01_`; old `@zack0x01` suspended |
+| Follow list | [[hunter-follows]] |
+
+**Hubs:** https://hackerz.space (academy / roadmap CTA; courses often paid/Sold out) · free RECOX https://recox.hackerz.space (passive-recon UI; stay in-scope + report-only).
+
+**Learn-first order (desk):**
+1. Responsible disclosure + program scope / rules of engagement.
+2. Classic web app security fundamentals (roadmap framing: recon → discovery → report → disclosure).
+3. Passive recon literacy (public-data inventory concepts) before any active testing.
+4. AI as multiplier for *reading* code and reports — never auto-exploit.
+
+**KEEP for skills:** methodology checklist (scope → passive inventory → document → clear bounty report); AI sink-spotting as read-only review aid with human confirm; adversary-AI threat awareness (defensive).
+
+**SKIP/KILL:** auto “AI hacker” bundles without human gates; payload/exploit/PoC dumps; blind buy of sold-out $99 “AI Hacker” upsell without syllabus audit.
+
+Provenance: Researchy `/workspace/fill/lanbb-zack0x01-ai-cyber-learning-2026-09-06.md` → vaulted src above (PR96 method + Burp; PR97 curriculum src).
+
 ## Related
 
-Hunter method: [[src-zack0x01-ai-hunter-workflow-2026-08-29]]. Curriculum map: [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]].
+Hunter method: [[src-zack0x01-ai-hunter-workflow-2026-08-29]]. Curriculum map: [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]]. Burp MCP: [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] (no auto-wire).
 [[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr27-loop17]]

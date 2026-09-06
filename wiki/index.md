@@ -36,7 +36,7 @@ Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: 
 | Page | One line |
 | --- | --- |
 | [[growth-operator]] | DeRonin GrowthOS. Notes in `growth/`. DEMO partners |
-| [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool |
+| [[lanbb]] | Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool. Zack digest: [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] + [[src-zack0x01-ai-hunter-workflow-2026-08-29]] |
 | [[arxiv-tierlist]] | 405856 inventory. BATCH01–09 compiled. Site: elan7192.github.io/arxiv-potential-tierlist |
 
 ## Root files the agent must keep current

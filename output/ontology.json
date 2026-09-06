@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T06:56:34Z",
+  "builtAt": "2026-09-06T06:58:57Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 575,
-    "links": 4047
+    "links": 4051
   },
   "objects": [
     {
@@ -2350,8 +2350,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 34,
-      "outbound": 28,
+      "inbound": 35,
+      "outbound": 30,
       "unverified": false,
       "oneLiner": "Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu"
     },
@@ -2823,13 +2823,13 @@
       "title": "LanBB",
       "path": "wiki/lanbb.md",
       "created": "2026-08-24",
-      "updated": "2026-08-27",
+      "updated": "2026-09-06",
       "tags": "project",
       "island": "projects",
       "inbound": 35,
-      "outbound": 12,
+      "outbound": 13,
       "unverified": true,
-      "oneLiner": "Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool"
+      "oneLiner": "Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool. Zack digest: [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] + [[src-zack0x01-ai-hunter-workflow-2026-08-29]]"
     },
     {
       "primaryKey": "lance",
@@ -6256,8 +6256,8 @@
       "updated": "2026-09-06",
       "tags": "lanbb,researchy",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 8,
+      "inbound": 8,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "LanBB curriculum map (hackerz.space + RECOX, Researchy 2026-09-06):"
     },
@@ -7782,7 +7782,7 @@
       "updated": "2026-09-06",
       "tags": "twitter,lanbb",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Human-led AI hunter workflow (author framing):"
@@ -7796,7 +7796,7 @@
       "updated": "2026-09-06",
       "tags": "twitter,lanbb",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 6,
       "unverified": false,
       "oneLiner": "Burp MCP + AI for analysis / PoC-tab assistance (author framing). Desk: light tooling note only \u2014 do **not** auto-wire Burp MCP on box; do **not** dump attack procedures."
@@ -14124,6 +14124,16 @@
     },
     {
       "from": "index",
+      "linkType": "cites",
+      "to": "src-lanbb-zack0x01-hackerz-space-learning-2026-09-06"
+    },
+    {
+      "from": "index",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "index",
       "linkType": "relatedTo",
       "to": "Home"
     },
@@ -16776,6 +16786,11 @@
       "from": "lanbb",
       "linkType": "cites",
       "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "lanbb",
+      "linkType": "cites",
+      "to": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06"
     },
     {
       "from": "lanbb",
@@ -24966,6 +24981,11 @@
       "from": "src-lanbb-zack0x01-hackerz-space-learning-2026-09-06",
       "linkType": "relatedTo",
       "to": "hunter-follows"
+    },
+    {
+      "from": "src-lanbb-zack0x01-hackerz-space-learning-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index"
     },
     {
       "from": "src-lanbb-zack0x01-hackerz-space-learning-2026-09-06",
