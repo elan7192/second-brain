@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] fold | AI Town learn notes into Coral Bay anim pointer
+
+Related-fold `/workspace/fill/learn/ai-town-how-it-works.md` into [[src-coral-bay-anim-skills-x-2026-09-06]]: emote/zones/chat-OOB/one-op; skip Convex 60Hz+LLM. No new src (near PR100/101). Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | Coral Bay anim skills X Scout pointers
 
 Thin [[src-coral-bay-anim-skills-x-2026-09-06]]: agent-sprite-forge skill-cand; SpriteCook MCP optional; AI Town characters.ts poses steal-not-redeploy; skip OpenBot migrate (fold explorax); peer DM skill already exists. Squash-merge if validate PASS.
