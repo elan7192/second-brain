@@ -17,7 +17,7 @@ updated: 2026-09-05
 - Tweets: 2096097151524978891 · 2096097155048223221
 - 判定: 入vault — thin Codex/Astra capability note
 - Quote untrusted. Not copied into `raw/`.
-- Dedup: canonical slug already from PR62; this amend adds enable URL + compaction contrast + Related. Near (do not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]].
+- Dedup: canonical slug already from PR62; this amend adds enable URL + compaction contrast + Related. Near (do not overwrite): [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]].
 
 ## Claims kept
 
@@ -33,4 +33,4 @@ No new bot implied.
 
 ## Related
 
-[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]]
+[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]] · [[src-andrewng-ai-engineering-skills-map]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-community-compaction]] · [[context-compaction]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]]

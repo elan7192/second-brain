@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T08:02:07Z",
+  "builtAt": "2026-09-06T08:02:48Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 289,
+    "Source": 290,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 582,
-    "links": 4117
+    "objects": 583,
+    "links": 4131
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 79,
-      "outbound": 295,
+      "inbound": 80,
+      "outbound": 296,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 348,
+      "outbound": 349,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -4982,7 +4982,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 8,
+      "inbound": 9,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Clean AGENTS.md\uff0fskills\uff1a\u7cbe\u7c21 agent \u6307\u4ee4\u8207 skill \u9762\u7684\u885b\u751f\u5e16\u3002"
@@ -5766,10 +5766,24 @@
       "updated": "2026-09-05",
       "tags": "twitter,astra,codex",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 9,
+      "inbound": 7,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Pattern: keep notes across context windows instead of relying on repeated compaction (author framing via primary tweet)."
+    },
+    {
+      "primaryKey": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "objectType": "Source",
+      "title": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "path": "wiki/sources/src-gengdaj-astra-token-four-cuts-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,astra",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Four Astra token cuts (author framing):"
     },
     {
       "primaryKey": "src-godofprompt-10-prompts-pointer",
@@ -6900,8 +6914,8 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 17,
-      "outbound": 13,
+      "inbound": 18,
+      "outbound": 14,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -7026,7 +7040,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 13,
+      "inbound": 14,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Routine prompts = goal + done proof + quiet-when-nothing. Do not bake MCP/CLI/widget menus into standing routine prompts."
@@ -7964,7 +7978,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 47,
+      "inbound": 48,
       "outbound": 23,
       "unverified": true,
       "oneLiner": "Treat a token as an investment, not a per-query bill."
@@ -8034,8 +8048,8 @@
       "updated": "2026-08-24",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 15,
-      "outbound": 8,
+      "inbound": 16,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "A `/ultra` command and CLI that runs a coding task N times, then applies a verified winner."
     },
@@ -8230,8 +8244,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 50,
-      "outbound": 49,
+      "inbound": 51,
+      "outbound": 50,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15323,6 +15337,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-godofprompt-10-prompts-pointer"
     },
     {
@@ -17559,6 +17578,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
     },
     {
       "from": "log",
@@ -24613,6 +24637,11 @@
     {
       "from": "src-gabrielchua-astra-cross-window-notes",
       "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
+    },
+    {
+      "from": "src-gabrielchua-astra-cross-window-notes",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
@@ -24634,6 +24663,46 @@
       "from": "src-gabrielchua-astra-cross-window-notes",
       "linkType": "relatedTo",
       "to": "index-sources"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "cites",
+      "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "cites",
+      "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "ultra-mode"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
     },
     {
       "from": "src-godofprompt-10-prompts-pointer",
@@ -26059,6 +26128,11 @@
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
       "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
@@ -27743,6 +27817,11 @@
     {
       "from": "ultra-mode",
       "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
+    },
+    {
+      "from": "ultra-mode",
+      "linkType": "cites",
       "to": "src-maverick-ultramode"
     },
     {
@@ -28334,6 +28413,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-eth-vibe-coding-cs-writing-predict-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

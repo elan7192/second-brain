@@ -42,6 +42,7 @@ Already on main (dedup; not rewritten):
 | [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] | 跳過但仍記一行 | ML-math curriculum promo；無 bot gap-fill |
 | [[src-skip-suraj-12-agentic-projects-2026-09-04]] | 跳過但仍記一行 | agentic-career 12-projects hiring bait；無 standing-seat fit |
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 入vault建議 | Linear sync RE architecture pointer；no bot/skill/implement |
+| [[src-gengdaj-astra-token-four-cuts-2026-09-05]] | 入vault建議 | Astra four token cuts；Related-fold pvncher；勿 verbatim Codex config |
 | [[src-eth-vibe-coding-cs-writing-predict-2026-09-05]] | 入vault建議 | ETH vibe-coding: CS+writing predict success；daily LLM ≠ better |
 | [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] | 入vault建議 | CF/XDP earliest-cheap-reject METHOD；desk transfer；SKIP pktz |
 | [[src-skip-immanuel-ebpf-pktz-2026-09-05]] | 跳過但仍記一行 | eBPF/pktz infra promo；無 standing-seat fit |
