@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip akshay Magnitude local-model profiler
+
+Skip [[src-skip-akshay-magnitude-local-models-2026-09-04]]: Magnitude local-model profiler; cloud-bot desk, no seat fit. URL https://x.com/akshay_pachaar/status/2095906342154424750. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | RetroChainer Grok Bot docs digest (prefer official)
 
 Thin [[src-retrochainer-grok-bot-docs-digest-2026-09-05]]: discovery X https://x.com/RetroChainer/status/2096153799198924843; prefer docs.x.ai overview / skills-routines / approvals-security. Kept: ≤50 routines/bot; shared-box ≠ security boundary. Fold [[grok-bot]] + skill grok-bot-lessons. No new bot from infographic. Squash-merge if validate PASS.
