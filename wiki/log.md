@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip cyrilXBT Obsidian+Vellum second-brain promo
+
+Skip [[src-skip-cyrilxbt-obsidian-vellum-2026-09-06]]: Obsidian+Vellum second-brain promo; Vault already covers. URL https://x.com/cyrilXBT/status/2096455601215729824. Squash-merge if validate PASS.
+
 ## [2026-09-06] amend | fold daniel_mac8 Astra audit prompt into pvncher
 
 Thin [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] Related-fold onto [[src-pvncher-rethinking-skills-gpt6-astra]]: one-shot audit prompt; no new skill/always-on. Near [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]]. Squash-merge if validate PASS.
