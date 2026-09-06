@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T06:04:53Z",
+  "builtAt": "2026-09-06T06:48:27Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 17,
     "Ship": 59,
     "Map": 5,
-    "unverified": 121,
+    "unverified": 123,
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 277,
+    "Source": 279,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 570,
-    "links": 4000
+    "objects": 572,
+    "links": 4010
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 67,
-      "outbound": 283,
+      "inbound": 69,
+      "outbound": 285,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 336,
+      "outbound": 338,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -7242,6 +7242,20 @@
       "oneLiner": "\u8df3\u904e\uff1ahype money-print GitHub listicle\uff08trading/ads/SEO skew\uff1b\u7121 standing-seat fit\uff09\u3002"
     },
     {
+      "primaryKey": "src-skip-navaneeth-inference-killers-2026-09-04",
+      "objectType": "Source",
+      "title": "src-skip-navaneeth-inference-killers-2026-09-04",
+      "path": "wiki/sources/src-skip-navaneeth-inference-killers-2026-09-04.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1aLLM inference perf checklist\uff1b\u7121 bot seat fit\u3002"
+    },
+    {
       "primaryKey": "src-skip-nrol-future-predict",
       "objectType": "Source",
       "title": "src-skip-nrol-future-predict",
@@ -7366,6 +7380,20 @@
       "outbound": 3,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1amarketing marketplace 16-bots pack\uff1bDELETE bias\u3002"
+    },
+    {
+      "primaryKey": "src-skip-waleexbt-350-bot-desk-2026-08-30",
+      "objectType": "Source",
+      "title": "src-skip-waleexbt-350-bot-desk-2026-08-30",
+      "path": "wiki/sources/src-skip-waleexbt-350-bot-desk-2026-08-30.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 2,
+      "unverified": true,
+      "oneLiner": "\u8df3\u904e\uff1aviral 350-bot trading-desk hype/animation\uff1bunverified\u3002"
     },
     {
       "primaryKey": "src-skip-webenstein-cyber-path",
@@ -8062,9 +8090,9 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 44,
-      "outbound": 43,
-      "unverified": false,
+      "inbound": 46,
+      "outbound": 45,
+      "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
     {
@@ -15640,6 +15668,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skip-navaneeth-inference-killers-2026-09-04"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-nrol-future-predict"
     },
     {
@@ -15681,6 +15714,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-skip-unicode-marketplace-marketing-bots-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-skip-waleexbt-350-bot-desk-2026-08-30"
     },
     {
       "from": "index-sources",
@@ -17585,6 +17623,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-skip-navaneeth-inference-killers-2026-09-04"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-skip-rodmanai-10-repos-income-2026-09-05"
     },
     {
@@ -17611,6 +17654,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skip-unicode-marketplace-marketing-bots-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-waleexbt-350-bot-desk-2026-08-30"
     },
     {
       "from": "log",
@@ -26073,6 +26121,16 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-skip-navaneeth-inference-killers-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-navaneeth-inference-killers-2026-09-04",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-skip-nrol-future-predict",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
@@ -26159,6 +26217,16 @@
     },
     {
       "from": "src-skip-unicode-marketplace-marketing-bots-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-skip-waleexbt-350-bot-desk-2026-08-30",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-waleexbt-350-bot-desk-2026-08-30",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
     },
@@ -27715,6 +27783,11 @@
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
+      "to": "src-skip-navaneeth-inference-killers-2026-09-04"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
       "to": "src-skip-nrol-future-predict"
     },
     {
@@ -27756,6 +27829,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-unicode-marketplace-marketing-bots-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-waleexbt-350-bot-desk-2026-08-30"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
