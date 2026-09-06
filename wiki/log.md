@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | agent playgrounds catalog vs Coral Bay (Researchy)
+
+Thin [[src-agent-playground-catalog-2026-09-06]]: steal activity→sprite + peer join/say/leave; SKIP AI Town/Smallville tick engines. Fold [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | exploraX OpenBot vs Grok Bot desk pointer
 
 Thin [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]: OpenBot = local OSS agent OS (containers+policy); ≠ xAI Grok Bot. Desk = CoS seats + Vault — different class, no migrate. Squash-merge if validate PASS.

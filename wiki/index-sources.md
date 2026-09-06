@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-agent-playground-catalog-2026-09-06]] | 2026-09-06 | METHOD：agent playgrounds catalog vs Coral Bay — steal activity→sprite + peer join/say/leave；SKIP AI Town/Smallville engines |
 | [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]] | 2026-09-06 | POINTER：OpenBot local OSS agent OS ≠ xAI Grok Bot desk；no migrate |
 | [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] | 2026-09-06 | METHOD：LanBB curriculum map — hackerz.space + free RECOX；learn-first order；fold zack0x01_ method |
 | [[src-zack0x01-ai-hunter-workflow-2026-08-29]] | 2026-09-06 | METHOD：zack0x01_ AI hunter — human recon → scoped AI → scripts collect / AI analyze → manual validate；hub hackerz.space |
