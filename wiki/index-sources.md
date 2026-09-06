@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-kingao-grokbot-10x-promo-2026-09-05]] | 2026-09-06 | 跳過仍記：Grok Bot 10x/200-windows promo；roster already covers |
 | [[src-wikiskill-google-research-pointer-2026-09-06]] | 2026-09-06 | POINTER：WikiSkill Google Research（arXiv 2608.27454）；KILL auto Skill Proposer；human/CoS gate；not install |
 | [[src-skip-akshay-magnitude-local-models-2026-09-04]] | 2026-09-06 | 跳過仍記：Magnitude local-model profiler；cloud-bot desk，無 seat fit |
 | [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] | 2026-09-06 | METHOD：Grok Bot official docs digest（≤50 routines；shared-box ≠ security boundary）；fold grok-bot-lessons；no new bot |
