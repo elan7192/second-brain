@@ -26,4 +26,5 @@ Product: [[lanbb]]. BB = bug bounty flow.
 
 ## Related
 
+Method absorb: [[src-zack0x01-ai-hunter-workflow-2026-08-29]] (@zack0x01_ / hackerz.space). Burp MCP light: [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] (no auto-wire). No exploit dumps.
 [[lanbb]] · [[lostsec]] · [[zack0x01]] · [[src-lan-e-lanbb-bb-2026-08-27]]

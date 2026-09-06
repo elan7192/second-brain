@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T06:48:27Z",
+  "builtAt": "2026-09-06T06:54:33Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 279,
+    "Source": 281,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 572,
-    "links": 4010
+    "objects": 574,
+    "links": 4032
   },
   "objects": [
     {
@@ -2252,7 +2252,7 @@
       "updated": "2026-08-28",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 22,
+      "inbound": 23,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "CASE path on a local in-scope target. Find + report. Then harden. Not an exploit dump."
@@ -2280,8 +2280,8 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
-      "outbound": 4,
+      "inbound": 9,
+      "outbound": 6,
       "unverified": true,
       "oneLiner": "Input sources for LanBB bug-bounty flow. Not an exploit dump."
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 69,
-      "outbound": 285,
+      "inbound": 71,
+      "outbound": 287,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2826,8 +2826,8 @@
       "updated": "2026-08-27",
       "tags": "project",
       "island": "projects",
-      "inbound": 32,
-      "outbound": 10,
+      "inbound": 34,
+      "outbound": 11,
       "unverified": true,
       "oneLiner": "Bug bounty flow. https://github.com/elan7192/LanBB ; semantica is a tool"
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 338,
+      "outbound": 340,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5416,7 +5416,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Cyberstrike AI redteam \u8cc7\u6e90\u6307\u91dd\u3002Note [[src-mukul975-cybersecurity-skills]]. Do NOT vendor. LanBB ethical white-hat context only."
@@ -7418,7 +7418,7 @@
       "updated": "2026-09-05",
       "tags": "twitter,github",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 6,
       "unverified": true,
       "oneLiner": "Thin BB writeups / report-template / research-tools pointer via @skraft09 to `skraft9/vulnerability-research`. Author bounty totals in the tweet are unverified marketing \u2014 not kept as vault facts."
@@ -7758,6 +7758,34 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "Grok Bot token burn: dedicated context for that task, close when finished."
+    },
+    {
+      "primaryKey": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "objectType": "Source",
+      "title": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "path": "wiki/sources/src-zack0x01-ai-hunter-workflow-2026-08-29.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,lanbb",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Human-led AI hunter workflow (author framing):"
+    },
+    {
+      "primaryKey": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "objectType": "Source",
+      "title": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "path": "wiki/sources/src-zack0x01-burp-mcp-ai-pointer-2026-09-06.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,lanbb",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Burp MCP + AI for analysis / PoC-tab assistance (author framing). Desk: light tooling note only \u2014 do **not** auto-wire Burp MCP on box; do **not** dump attack procedures."
     },
     {
       "primaryKey": "stable-ids",
@@ -8118,10 +8146,10 @@
       "updated": "2026-08-27",
       "tags": "person",
       "island": "people",
-      "inbound": 5,
-      "outbound": 4,
+      "inbound": 7,
+      "outbound": 6,
       "unverified": false,
-      "oneLiner": "Bug bounty hunter. Handle zack0x01."
+      "oneLiner": "Bug bounty hunter. **Active handle `@zack0x01_`** (hackerz.space founder). Old `@zack0x01` suspended."
     }
   ],
   "links": [
@@ -14022,6 +14050,16 @@
     },
     {
       "from": "hunter-follows",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "hunter-follows",
+      "linkType": "cites",
+      "to": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06"
+    },
+    {
+      "from": "hunter-follows",
       "linkType": "relatedTo",
       "to": "lanbb"
     },
@@ -15852,6 +15890,16 @@
     },
     {
       "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06"
+    },
+    {
+      "from": "index-sources",
       "linkType": "relatedTo",
       "to": "anti-slop"
     },
@@ -16694,6 +16742,11 @@
       "from": "lanbb",
       "linkType": "cites",
       "to": "src-lanbb-pr9-loop1"
+    },
+    {
+      "from": "lanbb",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
     },
     {
       "from": "lanbb",
@@ -17734,6 +17787,16 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-yunta-tsai-quota-isolate"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06"
     },
     {
       "from": "log",
@@ -26751,6 +26814,71 @@
       "to": "grok-bot-quota"
     },
     {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "aboutPerson",
+      "to": "zack0x01"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "cites",
+      "to": "src-cyberstrike-ai-redteam"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "cites",
+      "to": "src-skraft09-bb-writeups-toolkit"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "cites",
+      "to": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "hunt-harden-loop"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "hunter-follows"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-zack0x01-ai-hunter-workflow-2026-08-29",
+      "linkType": "relatedTo",
+      "to": "lanbb"
+    },
+    {
+      "from": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "linkType": "aboutPerson",
+      "to": "zack0x01"
+    },
+    {
+      "from": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "hunter-follows"
+    },
+    {
+      "from": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "lanbb"
+    },
+    {
       "from": "stable-ids",
       "linkType": "relatedTo",
       "to": "claims"
@@ -28164,6 +28292,16 @@
       "from": "zack0x01",
       "linkType": "cites",
       "to": "src-lan-e-lanbb-bb-2026-08-27"
+    },
+    {
+      "from": "zack0x01",
+      "linkType": "cites",
+      "to": "src-zack0x01-ai-hunter-workflow-2026-08-29"
+    },
+    {
+      "from": "zack0x01",
+      "linkType": "cites",
+      "to": "src-zack0x01-burp-mcp-ai-pointer-2026-09-06"
     },
     {
       "from": "zack0x01",
