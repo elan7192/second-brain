@@ -51,6 +51,7 @@ Already on main (dedup; not rewritten):
 | [[src-aksheyd-create-workflow-trace-audit-2026-09-05]] | 入vault建議 | create-workflow trace CUT audit；one-shot；Fill owns box；last yes before deletes |
 | [[src-skip-rodmanai-10-repos-income-2026-09-05]] | 跳過但仍記一行 | near-dup nafis money-repos listicle |
 | [[src-skip-unicode-marketplace-marketing-bots-2026-09-05]] | 跳過但仍記一行 | marketing marketplace 16-bots pack; DELETE bias |
+| [[src-skip-bharuka-10-ai-repos-2026-09-05]] | 跳過但仍記一行 | AI-engineer 10-repo curriculum listicle；無 seat fit |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |
