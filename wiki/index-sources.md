@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-eth-vibe-coding-cs-writing-predict-2026-09-05]] | 2026-09-06 | METHOD：ETH study — CS + writing predict vibe-coding success；daily LLM ≠ better；desk foundations+writing |
 | [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] | 2026-09-06 | METHOD：earliest cheap reject (CF/XDP illustration)；desk early-reject / measure-cut / O(1) CoS / edge filter；SKIP pktz/SRE |
 | [[src-skip-immanuel-ebpf-pktz-2026-09-05]] | 2026-09-06 | 跳過仍記：eBPF/pktz infra promo；無 standing-seat fit |
 | [[src-skip-kirillk-grokbot-money-video-2026-09-05]] | 2026-09-06 | 跳過仍記：Grok Bot monetization video promo / course funnel；無 desk gap-fill |

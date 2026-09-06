@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T08:00:58Z",
+  "builtAt": "2026-09-06T08:02:07Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 288,
+    "Source": 289,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 581,
-    "links": 4107
+    "objects": 582,
+    "links": 4117
   },
   "objects": [
     {
@@ -1062,7 +1062,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
+      "inbound": 22,
       "outbound": 12,
       "unverified": false,
       "oneLiner": "Coding agents spend most of their documentation attention on instruction files and their own working notes."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 78,
-      "outbound": 294,
+      "inbound": 79,
+      "outbound": 295,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 347,
+      "outbound": 348,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3750,8 +3750,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 43,
-      "outbound": 26,
+      "inbound": 44,
+      "outbound": 27,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -4156,7 +4156,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 12,
       "unverified": false,
       "oneLiner": "Loop for building with coding agents: plan \u2192 exec \u2192 deploy/monitor (iterative; less focus on code, more on what to build / architecture / spec / verify)."
@@ -5632,6 +5632,20 @@
       "oneLiner": "Routines can add a webhook trigger: wake a Grok Bot from outside the chat."
     },
     {
+      "primaryKey": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "objectType": "Source",
+      "title": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "path": "wiki/sources/src-eth-vibe-coding-cs-writing-predict-2026-09-05.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,research",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 6,
+      "unverified": false,
+      "oneLiner": "ETH study (arXiv 2603.14133): CS achievement + writing predict vibe-coding success; daily LLM habit \u2260 better."
+    },
+    {
       "primaryKey": "src-everestchris6-revenue-2026-08-26",
       "objectType": "Source",
       "title": "src-everestchris6-revenue-2026-08-26",
@@ -6886,7 +6900,7 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 16,
+      "inbound": 17,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -8216,8 +8230,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 49,
-      "outbound": 48,
+      "inbound": 50,
+      "outbound": 49,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15259,6 +15273,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-eth-vibe-coding-cs-writing-predict-2026-09-05"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-everestchris6-revenue-2026-08-26"
     },
     {
@@ -17505,6 +17524,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-ericzakariasson-webhook-wake"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-eth-vibe-coding-cs-writing-predict-2026-09-05"
     },
     {
       "from": "log",
@@ -21464,6 +21488,11 @@
     {
       "from": "skill-as-sop",
       "linkType": "cites",
+      "to": "src-eth-vibe-coding-cs-writing-predict-2026-09-05"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
       "to": "src-fhwofjow-book-to-skill"
     },
     {
@@ -24335,6 +24364,36 @@
       "from": "src-ericzakariasson-webhook-wake",
       "linkType": "relatedTo",
       "to": "spacexai-grok-bot-keepers"
+    },
+    {
+      "from": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "linkType": "cites",
+      "to": "src-andrewng-ai-engineering-skills-map"
+    },
+    {
+      "from": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-eth-vibe-coding-cs-writing-predict-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
     },
     {
       "from": "src-everestchris6-revenue-2026-08-26",
@@ -28270,6 +28329,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-daniel-mac8-astra-skills-audit-prompt-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-eth-vibe-coding-cs-writing-predict-2026-09-05"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

@@ -38,7 +38,7 @@ Source: [[src-skill-pack-list]].
 
 [[src-t20000622yy-egolite-design]]: ego lite browser inspection of reference sites before generating UI; repos archify/openpi/skillroster named as examples.
 
-[[src-deronin-design-guide-to-skill-pointer]] · [[src-pvncher-rethinking-skills-gpt6-astra]] / [[src-leo-show-me-skill-pointer]]: design-guide→skill and /show-me readability pointers only.
+[[src-deronin-design-guide-to-skill-pointer]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-eth-vibe-coding-cs-writing-predict-2026-09-05]] / [[src-leo-show-me-skill-pointer]]: design-guide→skill and /show-me readability pointers only.
 
 ## What to do in this vault
 
