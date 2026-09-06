@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip Ryrenz ai-job-search skill-pack
+
+Skip [[src-skip-ryrenz-ai-job-search-2026-09-05]]: ai-job-search skill-pack; no job-hunt seat. URL https://x.com/Ryrenz/status/2096162673821921424. Do not install. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip Bharuka 10 AI-engineer repos listicle
 
 Skip [[src-skip-bharuka-10-ai-repos-2026-09-05]]: AI-engineer 10-repo curriculum listicle; no seat fit. URL https://x.com/BharukaShraddha/status/2096296838811074949. Squash-merge if validate PASS.
