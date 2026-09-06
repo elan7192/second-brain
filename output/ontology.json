@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T08:02:48Z",
+  "builtAt": "2026-09-06T09:01:38Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 290,
+    "Source": 291,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 583,
-    "links": 4131
+    "objects": 584,
+    "links": 4144
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 80,
-      "outbound": 296,
+      "inbound": 81,
+      "outbound": 297,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 349,
+      "outbound": 350,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3750,8 +3750,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 44,
-      "outbound": 27,
+      "inbound": 45,
+      "outbound": 28,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3778,7 +3778,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 27,
+      "inbound": 28,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "A shared catalog of agent skills the whole company can create, find, and reuse."
@@ -4982,7 +4982,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 4,
       "unverified": false,
       "oneLiner": "Clean AGENTS.md\uff0fskills\uff1a\u7cbe\u7c21 agent \u6307\u4ee4\u8207 skill \u9762\u7684\u885b\u751f\u5e16\u3002"
@@ -5780,8 +5780,8 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 8,
+      "inbound": 7,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Four Astra token cuts (author framing):"
     },
@@ -6914,8 +6914,8 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 18,
-      "outbound": 14,
+      "inbound": 19,
+      "outbound": 15,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -7858,6 +7858,20 @@
       "oneLiner": "\u554f\u300cegolite \u662f\u4ec0\u9ebc\u300d\u7684\u8ddf\u5e16\uff0c\u7121\u5167\u5bb9\u3002"
     },
     {
+      "primaryKey": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "objectType": "Source",
+      "title": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "path": "wiki/sources/src-yangtze-skill-dies-method-lives-2026-09-06.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,astra",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "Skill dies, methodology lives (author framing): prefer vault methods + thin when-to-use over always-on skill packs."
+    },
+    {
       "primaryKey": "src-yunta-symphony-demo-skip",
       "objectType": "Source",
       "title": "src-yunta-symphony-demo-skip",
@@ -8244,8 +8258,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 51,
-      "outbound": 50,
+      "inbound": 52,
+      "outbound": 51,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -16082,6 +16096,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-yunta-symphony-demo-skip"
     },
     {
@@ -18038,6 +18057,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-xai-introducing-grok-bot"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
     },
     {
       "from": "log",
@@ -21571,6 +21595,11 @@
     },
     {
       "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "skill-as-sop",
       "linkType": "relatedTo",
       "to": "anti-slop"
     },
@@ -24686,6 +24715,11 @@
     },
     {
       "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "src-gengdaj-astra-token-four-cuts-2026-09-05",
       "linkType": "relatedTo",
       "to": "index-sources"
     },
@@ -26161,6 +26195,11 @@
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -27368,6 +27407,41 @@
       "from": "src-xswl-egolite-question-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
     },
     {
       "from": "src-yunta-symphony-demo-skip",
@@ -28593,6 +28667,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-vikingmute-linear-sync-engine-re-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
