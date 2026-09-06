@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-akshay-magnitude-local-models-2026-09-04]] | 2026-09-06 | 跳過仍記：Magnitude local-model profiler；cloud-bot desk，無 seat fit |
 | [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] | 2026-09-06 | METHOD：Grok Bot official docs digest（≤50 routines；shared-box ≠ security boundary）；fold grok-bot-lessons；no new bot |
 | [[src-skip-cyrilxbt-obsidian-vellum-2026-09-06]] | 2026-09-06 | 跳過仍記：Obsidian+Vellum second-brain promo；Vault already covers |
 | [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] | 2026-09-06 | Related-fold：one-shot Astra skills audit prompt → [[src-pvncher-rethinking-skills-gpt6-astra]]；no new skill/always-on |
