@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T05:16:45Z",
+  "builtAt": "2026-09-06T06:04:53Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 276,
+    "Source": 277,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 569,
-    "links": 3988
+    "objects": 570,
+    "links": 4000
   },
   "objects": [
     {
@@ -1062,7 +1062,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 20,
+      "inbound": 21,
       "outbound": 12,
       "unverified": false,
       "oneLiner": "Coding agents spend most of their documentation attention on instruction files and their own working notes."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 66,
-      "outbound": 282,
+      "inbound": 67,
+      "outbound": 283,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 335,
+      "outbound": 336,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3750,7 +3750,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 43,
       "outbound": 26,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
@@ -4968,8 +4968,8 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 3,
+      "inbound": 8,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "Clean AGENTS.md\uff0fskills\uff1a\u7cbe\u7c21 agent \u6307\u4ee4\u8207 skill \u9762\u7684\u885b\u751f\u5e16\u3002"
     },
@@ -5304,7 +5304,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 11,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Pointer list of six skills (do not wholesale-install packs):"
@@ -6284,7 +6284,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 4,
+      "inbound": 5,
       "outbound": 3,
       "unverified": false,
       "oneLiner": "\u63a8\u85a6 /show-me skill\uff08PR \u53ef\u8b80\u6027\uff0f\u770b code \u5de5\u5177\u7bb1\uff09\uff1bhumanlayer \u93c8\u6307\u91dd\u3002"
@@ -6816,7 +6816,7 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 15,
+      "inbound": 16,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -6960,6 +6960,20 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Pipeline honesty: chronological order first. Window-boundary and kernel misspec inflate a ratio. Out-of-sample is the honest test."
+    },
+    {
+      "primaryKey": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "objectType": "Source",
+      "title": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "path": "wiki/sources/src-ryrenz-humanlayer-skills-pointer-2026-09-06.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Research pointer to `humanlayer/skills` pack."
     },
     {
       "primaryKey": "src-ryrenz-reverse-skill-pointer-2026-09-05",
@@ -8048,8 +8062,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 43,
-      "outbound": 42,
+      "inbound": 44,
+      "outbound": 43,
       "unverified": false,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15526,6 +15540,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-ryrenz-humanlayer-skills-pointer-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-ryrenz-reverse-skill-pointer-2026-09-05"
     },
     {
@@ -17487,6 +17506,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-ryrenz-humanlayer-skills-pointer-2026-09-06"
     },
     {
       "from": "log",
@@ -23105,6 +23129,11 @@
     },
     {
       "from": "src-astra-agents-md-cleanup",
+      "linkType": "cites",
+      "to": "src-ryrenz-humanlayer-skills-pointer-2026-09-06"
+    },
+    {
+      "from": "src-astra-agents-md-cleanup",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -25714,6 +25743,46 @@
       "to": "work-per-cost"
     },
     {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-astra-agents-md-cleanup"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-chenchengpro-six-skills"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-leo-show-me-skill-pointer"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "agent-facing-docs"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-ryrenz-humanlayer-skills-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-ryrenz-reverse-skill-pointer-2026-09-05",
       "linkType": "cites",
       "to": "src-chenchengpro-six-skills"
@@ -27567,6 +27636,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-retrochainer-grok-bot-docs-digest-2026-09-05"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-ryrenz-humanlayer-skills-pointer-2026-09-06"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
