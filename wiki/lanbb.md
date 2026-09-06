@@ -35,5 +35,5 @@ Hunt→harden: [[hunt-harden-loop]]. Current wall: PR27 merged `94ac04c` wall `a
 
 ## Related
 
-Hunter method: [[src-zack0x01-ai-hunter-workflow-2026-08-29]].
+Hunter method: [[src-zack0x01-ai-hunter-workflow-2026-08-29]]. Curriculum map: [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]].
 [[MEMORY]] · [[ai-sovereignty]] · [[work-per-cost]] · [[hunter-follows]] · [[src-lan-e-lanbb-bb-2026-08-27]] · [[hunt-harden-loop]] · [[src-lanbb-pr9-loop1]] · [[src-lanbb-pr27-loop17]]
