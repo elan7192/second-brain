@@ -41,4 +41,4 @@ Pointer only. Do not dump thread. Do not auto-edit AGENTS.
 
 ## Related
 
-[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-gabrielchua-astra-cross-window-notes]] · [[src-astra-agents-md-cleanup]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[ultra-mode]] · [[tokens-as-capital]]
+[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-yangtze-skill-dies-method-lives-2026-09-06]] · [[src-gabrielchua-astra-cross-window-notes]] · [[src-astra-agents-md-cleanup]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] · [[ultra-mode]] · [[tokens-as-capital]]

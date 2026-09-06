@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | Yangtze skill-dies method-lives Related-fold
+
+Thin [[src-yangtze-skill-dies-method-lives-2026-09-06]]: prefer vault methods + thin when-to-use over always-on packs. Fold [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]]. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | gengdaJ Astra token four-cuts Related-fold
 
 Thin [[src-gengdaj-astra-token-four-cuts-2026-09-05]]: cross-window; slim AGENTS+SKILL; don’t default Ultra; normal speed value. Fold [[src-pvncher-rethinking-skills-gpt6-astra]]. Adapt per seat — no verbatim Codex config. Squash-merge if validate PASS.
