@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T04:50:35Z",
+  "builtAt": "2026-09-06T05:09:40Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 269,
+    "Source": 270,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 562,
-    "links": 3936
+    "objects": 563,
+    "links": 3947
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 59,
-      "outbound": 275,
+      "inbound": 60,
+      "outbound": 276,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2854,8 +2854,8 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 79,
-      "outbound": 43,
+      "inbound": 80,
+      "outbound": 44,
       "unverified": false,
       "oneLiner": "Andrej Karpathy's April 2026 pattern for a personal knowledge base."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 328,
+      "outbound": 329,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3750,8 +3750,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 40,
-      "outbound": 25,
+      "inbound": 41,
+      "outbound": 26,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3778,7 +3778,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 26,
+      "inbound": 27,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "A shared catalog of agent skills the whole company can create, find, and reuse."
@@ -5290,7 +5290,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Pointer list of six skills (do not wholesale-install packs):"
@@ -6802,7 +6802,7 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 13,
+      "inbound": 14,
       "outbound": 13,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -7040,7 +7040,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,skills",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** user skills under `/home/box/agent-data/workflows` **42 \u2192 37**."
@@ -7562,6 +7562,20 @@
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Sixth `/goal` prompt, labeled 6/6. Install one writing system in global `CLAUDE.md` / `AGENTS.md` that Codex and Claude Code actually load. Keep each project's voice in project-level files. Audit dupl"
+    },
+    {
+      "primaryKey": "src-wikiskill-google-research-pointer-2026-09-06",
+      "objectType": "Source",
+      "title": "src-wikiskill-google-research-pointer-2026-09-06",
+      "path": "wiki/sources/src-wikiskill-google-research-pointer-2026-09-06.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "arxiv,research",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "WikiSkill (arXiv 2608.27454): concept rhymes this desk's Vault + skills pattern (compiled wiki layer + reusable SOPs)."
     },
     {
       "primaryKey": "src-xai-introducing-grok-bot",
@@ -15643,6 +15657,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-wikiskill-google-research-pointer-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-xai-introducing-grok-bot"
     },
     {
@@ -16602,6 +16621,11 @@
     },
     {
       "from": "llm-wiki",
+      "linkType": "cites",
+      "to": "src-wikiskill-google-research-pointer-2026-09-06"
+    },
+    {
+      "from": "llm-wiki",
       "linkType": "relatedTo",
       "to": "agent-facing-docs"
     },
@@ -17479,6 +17503,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-voxyz-writing-system"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-wikiskill-google-research-pointer-2026-09-06"
     },
     {
       "from": "log",
@@ -20994,6 +21023,11 @@
       "from": "skill-as-sop",
       "linkType": "cites",
       "to": "src-voxyz-archify"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-wikiskill-google-research-pointer-2026-09-06"
     },
     {
       "from": "skill-as-sop",
@@ -26254,6 +26288,41 @@
       "from": "src-voxyz-writing-system",
       "linkType": "relatedTo",
       "to": "verifiable-instructions"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-chenchengpro-six-skills"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "llm-wiki"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-wikiskill-google-research-pointer-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-library"
     },
     {
       "from": "src-xai-introducing-grok-bot",

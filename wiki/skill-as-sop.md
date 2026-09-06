@@ -55,4 +55,5 @@ Eval gate (go-live proof, not demo vibes): [[src-clorissignal-agent-eval-framewo
 
 ## Related
 
+Related research (not install): [[src-wikiskill-google-research-pointer-2026-09-06]] — WikiSkill rhymes Vault+skills; no auto skill install.
 [[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]] · [[src-chenchengpro-six-skills]] · [[src-fhwofjow-book-to-skill]] · [[src-t20000622yy-egolite-design]] · [[src-leo-show-me-skill-pointer]] · [[src-deronin-design-guide-to-skill-pointer]]

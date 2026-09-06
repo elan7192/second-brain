@@ -46,6 +46,7 @@ A company skill catalog in Notion, or a GitHub folder of agent skills, is a prod
 
 ## Related
 
+Research pointer (not install): [[src-wikiskill-google-research-pointer-2026-09-06]] — WikiSkill Google paper; KILL auto Skill Proposer; human/CoS gate on skill changes.
 [[tokens-as-capital]] · [[context-graph]] · [[andrej-karpathy]] · [[src-papa-couch-compiler]] · [[src-bober-folder-workflow]] · [[src-mrgreenieybt3-llm-wiki]] · [[src-chatgpt-t-6a8cc267]] · [[src-vault-review-2026-08-29]] · [[how-it-works]] · [[deterministic-core]] · [[two-pass-document-processing]] · [[skill-library]] · [[archify]] · [[retrieval-second-brain]] · [[grok-bot]] · [[grok-bot-use-cases]] · [[growth-operator]] · [[file-memory]] · [[src-cyrilxbt-utopia-temporal-kb]] · [[src-bkdgiffug-yuxi-rag-agents]] · [[stale-fact-detector]] · [[botdirectory-scan]] · [[portable-memory]] · [[backlink-first]] · [[memory-system]] · [[claims]] · [[untrusted-ingest]] · [[retrieval]] · [[stable-ids]] · [[vault-ontology]] · [[palantir-aip]] · [[agent-facing-docs]] · [[company-foundry]] · [[project-skill-stack]] · [[archify]]
 
 [[src-vault-review-2026-08-29]] says the protocol is ahead of the runtime. Keep D1. Move more ingest invariants into `sb` gates. Do not add MCP or a daemon from that review. See [[deterministic-core]] and C46.
