@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] fold | zack digest into lanbb project page
+
+lan E: 「zack的digest加入lanbb」. Fold white-hat learning desk section into [[lanbb]] (entry table: curriculum [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] · workflow [[src-zack0x01-ai-hunter-workflow-2026-08-29]] · Burp [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]]). Src already vaulted PR96/97. No exploit steps. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | LanBB zack0x01 hackerz.space curriculum map (Researchy)
 
 Thin [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]]: hub https://hackerz.space + free RECOX https://recox.hackerz.space; learn-first order; AI-as-review-aid only. Fold [[src-zack0x01-ai-hunter-workflow-2026-08-29]] · [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]]. White-hat only — no exploit steps. Squash-merge if validate PASS.
