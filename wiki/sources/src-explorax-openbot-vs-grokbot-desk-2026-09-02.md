@@ -25,7 +25,7 @@ OpenBot = local OSS agent OS (per-agent containers + policy framing). Not xAI Gr
 
 Our desk = CoS-routed company seats on shared box + Vault. Different product class — no migrate.
 
-Play/hangout peers (≠ this OpenBot): see [[src-agent-playground-catalog-2026-09-06]] (OpenBot Social / AI Town catalog — steal thin only).
+Play/hangout peers (≠ this OpenBot): see [[src-agent-playground-catalog-2026-09-06]] · [[src-coral-bay-anim-skills-x-2026-09-06]] (OpenBot Social / AI Town catalog — steal thin only).
 
 Near: [[grok-bot]] · [[lan-e-desk-team]] · [[src-retrochainer-grok-bot-docs-digest-2026-09-05]].
 
@@ -39,4 +39,4 @@ Pointer only. Do not dump repo. Do not install / migrate.
 
 ## Related
 
-[[grok-bot]] · [[lan-e-desk-team]] · [[src-agent-playground-catalog-2026-09-06]] · [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] · [[src-xai-introducing-grok-bot]]
+[[grok-bot]] · [[lan-e-desk-team]] · [[src-agent-playground-catalog-2026-09-06]] · [[src-coral-bay-anim-skills-x-2026-09-06]] · [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] · [[src-xai-introducing-grok-bot]]
