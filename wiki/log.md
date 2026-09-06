@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | RetroChainer Grok Bot docs digest (prefer official)
+
+Thin [[src-retrochainer-grok-bot-docs-digest-2026-09-05]]: discovery X https://x.com/RetroChainer/status/2096153799198924843; prefer docs.x.ai overview / skills-routines / approvals-security. Kept: ≤50 routines/bot; shared-box ≠ security boundary. Fold [[grok-bot]] + skill grok-bot-lessons. No new bot from infographic. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip cyrilXBT Obsidian+Vellum second-brain promo
 
 Skip [[src-skip-cyrilxbt-obsidian-vellum-2026-09-06]]: Obsidian+Vellum second-brain promo; Vault already covers. URL https://x.com/cyrilXBT/status/2096455601215729824. Squash-merge if validate PASS.

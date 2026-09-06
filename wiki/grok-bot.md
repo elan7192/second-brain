@@ -59,4 +59,5 @@ Start with one valuable, reversible workflow. Read-and-prepare first. Actions be
 
 ## Related
 
+Docs digest (prefer official): [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] — ≤50 routines/bot; shared-box ≠ security boundary. Skill fold: `grok-bot-lessons`. No new bot from X infographic.
 [[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]] · [[spacexai-grok-bot-keepers]] · [[src-xai-introducing-grok-bot]] · [[src-exm7777-advanced-x-research-grok-bot]]

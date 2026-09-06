@@ -45,6 +45,7 @@ Already on main (dedup; not rewritten):
 | [[src-skip-mahaximus-grokbot-token-promo-2026-09-05]] | 跳過但仍記一行 | Grok Bot promo/video bait；near-dup CoS+Rutin；無 new seats |
 | [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] | 入vault建議 | Related-fold one-shot Astra audit prompt → pvncher；no new skill/always-on |
 | [[src-skip-cyrilxbt-obsidian-vellum-2026-09-06]] | 跳過但仍記一行 | Obsidian+Vellum second-brain promo；Vault already covers |
+| [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] | 入vault建議 | Grok Bot docs digest（prefer official）；≤50 routines；shared-box ≠ boundary；no new bot |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |
