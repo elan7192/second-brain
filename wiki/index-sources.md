@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] | 2026-09-06 | METHOD：LanBB curriculum map — hackerz.space + free RECOX；learn-first order；fold zack0x01_ method |
 | [[src-zack0x01-ai-hunter-workflow-2026-08-29]] | 2026-09-06 | METHOD：zack0x01_ AI hunter — human recon → scoped AI → scripts collect / AI analyze → manual validate；hub hackerz.space |
 | [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] | 2026-09-06 | POINTER：Burp MCP + AI analysis note；no auto-wire；no exploit steps |
 | [[src-skip-waleexbt-350-bot-desk-2026-08-30]] | 2026-09-06 | 跳過仍記：viral 350-bot trading-desk hype/animation；unverified |

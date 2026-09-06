@@ -34,4 +34,4 @@ Pointer only. Do not dump body. Do not install/auto-wire.
 
 ## Related
 
-[[src-zack0x01-ai-hunter-workflow-2026-08-29]] · [[zack0x01]] · [[lanbb]] · [[hunter-follows]]
+[[src-zack0x01-ai-hunter-workflow-2026-08-29]] · [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] · [[zack0x01]] · [[lanbb]] · [[hunter-follows]]

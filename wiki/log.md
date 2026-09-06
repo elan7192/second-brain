@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | LanBB zack0x01 hackerz.space curriculum map (Researchy)
+
+Thin [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]]: hub https://hackerz.space + free RECOX https://recox.hackerz.space; learn-first order; AI-as-review-aid only. Fold [[src-zack0x01-ai-hunter-workflow-2026-08-29]] · [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]]. White-hat only — no exploit steps. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | zack0x01_ AI hunter workflow + hub + Burp MCP note (LanBB)
 
 Thin [[src-zack0x01-ai-hunter-workflow-2026-08-29]]: human-led recon → scoped AI digs → scripts collect / AI analyze → manual validate. Hub https://hackerz.space; theme https://x.com/zack0x01_/status/2096243334524346702 Related-fold. Light [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] (no auto-wire). Active handle @zack0x01_. White-hat only — no exploit steps. Squash-merge if validate PASS.

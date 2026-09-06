@@ -29,7 +29,7 @@ Human-led AI hunter workflow (author framing):
 3. Deterministic scripts for collect; AI for analyze.
 4. Always manual validate (false-positive heavy).
 
-Curriculum hub (absorb once): https://hackerz.space as labs/guides/roadmap CTA. Theme post https://x.com/zack0x01_/status/2096243334524346702 Related-fold here (no second thick src).
+Curriculum hub (absorb once): https://hackerz.space as labs/guides/roadmap CTA. Theme post https://x.com/zack0x01_/status/2096243334524346702 Related-fold here. Deeper map: [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] (RECOX free + learn-first order).
 
 Handle note: active `@zack0x01_` / hackerz.space founder; old `@zack0x01` suspended. See [[zack0x01]].
 
@@ -45,4 +45,4 @@ Thin method pointer. Do not dump writeups. Do not file exploit steps.
 
 ## Related
 
-[[zack0x01]] · [[hunter-follows]] · [[lanbb]] · [[hunt-harden-loop]] · [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] · [[src-skraft09-bb-writeups-toolkit]] · [[src-cyberstrike-ai-redteam]]
+[[zack0x01]] · [[hunter-follows]] · [[lanbb]] · [[hunt-harden-loop]] · [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]] · [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] · [[src-skraft09-bb-writeups-toolkit]] · [[src-cyberstrike-ai-redteam]]
