@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip Bharuka 10 AI-engineer repos listicle
+
+Skip [[src-skip-bharuka-10-ai-repos-2026-09-05]]: AI-engineer 10-repo curriculum listicle; no seat fit. URL https://x.com/BharukaShraddha/status/2096296838811074949. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | pack skip RodmanAi money-repos + unicode marketplace bots
 
 Skip [[src-skip-rodmanai-10-repos-income-2026-09-05]] (near-dup nafis money-repos). Skip [[src-skip-unicode-marketplace-marketing-bots-2026-09-05]] (marketing marketplace 16-bots pack; DELETE bias). Squash-merge if validate PASS.
