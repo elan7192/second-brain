@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | exploraX OpenBot vs Grok Bot desk pointer
+
+Thin [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]: OpenBot = local OSS agent OS (containers+policy); ≠ xAI Grok Bot. Desk = CoS seats + Vault — different class, no migrate. Squash-merge if validate PASS.
+
 ## [2026-09-06] fold | zack digest into lanbb project page
 
 lan E: 「zack的digest加入lanbb」. Fold white-hat learning desk section into [[lanbb]] (entry table: curriculum [[src-lanbb-zack0x01-hackerz-space-learning-2026-09-06]] · workflow [[src-zack0x01-ai-hunter-workflow-2026-08-29]] · Burp [[src-zack0x01-burp-mcp-ai-pointer-2026-09-06]]). Src already vaulted PR96/97. No exploit steps. Squash-merge if validate PASS.
