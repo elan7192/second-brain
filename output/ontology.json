@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T09:08:49Z",
+  "builtAt": "2026-09-06T09:10:39Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 292,
+    "Source": 293,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 585,
-    "links": 4149
+    "objects": 586,
+    "links": 4163
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 82,
-      "outbound": 298,
+      "inbound": 83,
+      "outbound": 299,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 351,
+      "outbound": 352,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 38,
+      "inbound": 39,
       "outbound": 12,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -3750,8 +3750,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 45,
-      "outbound": 28,
+      "inbound": 46,
+      "outbound": 29,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3778,7 +3778,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 28,
+      "inbound": 29,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "A shared catalog of agent skills the whole company can create, find, and reuse."
@@ -5780,7 +5780,7 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Four Astra token cuts (author framing):"
@@ -6640,6 +6640,20 @@
       "oneLiner": "Community GitHub skill library. README says not affiliated with Anthropic PBC. Apache-2.0."
     },
     {
+      "primaryKey": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "objectType": "Source",
+      "title": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "path": "wiki/sources/src-nateberkopec-skillslop-yagni-2026-09-06.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "twitter,astra",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "skillslop (author framing): bloated skills \u2248 one-liner YAGNI \u2014 DELETE bias."
+    },
+    {
       "primaryKey": "src-obscura-rust-headless-browser",
       "objectType": "Source",
       "title": "src-obscura-rust-headless-browser",
@@ -6914,8 +6928,8 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 19,
-      "outbound": 15,
+      "inbound": 20,
+      "outbound": 16,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
@@ -7880,8 +7894,8 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 7,
+      "inbound": 7,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Skill dies, methodology lives (author framing): prefer vault methods + thin when-to-use over always-on skill packs."
     },
@@ -8272,8 +8286,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 53,
-      "outbound": 52,
+      "inbound": 54,
+      "outbound": 53,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15675,6 +15689,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-obscura-rust-headless-browser"
     },
     {
@@ -17801,6 +17820,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-mukul975-cybersecurity-skills"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
     },
     {
       "from": "log",
@@ -21581,6 +21605,11 @@
       "from": "skill-as-sop",
       "linkType": "cites",
       "to": "src-lingxi-grok-bot-engineering"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
     },
     {
       "from": "skill-as-sop",
@@ -25788,6 +25817,46 @@
       "to": "tokens-as-capital"
     },
     {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-obscura-rust-headless-browser",
       "linkType": "cites",
       "to": "src-crawl4ai-llm-markdown-crawler"
@@ -26201,6 +26270,11 @@
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
       "linkType": "cites",
       "to": "src-lonely-mh-pvncher-astra-cleanup-prompt-skip"
+    },
+    {
+      "from": "src-pvncher-rethinking-skills-gpt6-astra",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
     },
     {
       "from": "src-pvncher-rethinking-skills-gpt6-astra",
@@ -27455,6 +27529,11 @@
     {
       "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
       "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
     },
     {
@@ -28536,6 +28615,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-llm-guardrail-tool-output-bypass"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

@@ -32,7 +32,7 @@ Optional near skip: [[src-lonely-mh-pvncher-astra-cleanup-prompt-skip]] (amplify
 
 Related-fold (one-shot audit prompt; no new skill/always-on): [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] — https://x.com/daniel_mac8/status/2096305332435730590.
 
-Related/near: [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] (one-shot audit prompt; Related-fold) · [[src-openai-hf-agents-incident-2026]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra routine-prompt companion from Rutin) · [[src-andrewng-ai-engineering-skills-map]] (AI eng skills map — loop/autonomy/harness; Related only) · [[src-gabrielchua-astra-cross-window-notes]] (Astra cross-window notes; Related only) · [[src-gengdaj-astra-token-four-cuts-2026-09-05]] (four token cuts; Related-fold) · [[src-yangtze-skill-dies-method-lives-2026-09-06]] (skill dies / method lives; Related-fold).
+Related/near: [[src-daniel-mac8-astra-skills-audit-prompt-2026-09-05]] (one-shot audit prompt; Related-fold) · [[src-openai-hf-agents-incident-2026]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-rutin-astra-routine-prompt-pattern-2026-09]] (Astra routine-prompt companion from Rutin) · [[src-andrewng-ai-engineering-skills-map]] (AI eng skills map — loop/autonomy/harness; Related only) · [[src-gabrielchua-astra-cross-window-notes]] (Astra cross-window notes; Related only) · [[src-gengdaj-astra-token-four-cuts-2026-09-05]] (four token cuts; Related-fold) · [[src-yangtze-skill-dies-method-lives-2026-09-06]] (skill dies / method lives; Related-fold) · [[src-nateberkopec-skillslop-yagni-2026-09-06]] (skillslop YAGNI; Related-fold).
 
 ## Pages updated
 

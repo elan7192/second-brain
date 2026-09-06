@@ -51,6 +51,8 @@ If the next source is the Smoke script, ingest it. Until then do not invent the 
 
 Eval gate (go-live proof, not demo vibes): [[src-clorissignal-agent-eval-framework]].
 
+[[src-nateberkopec-skillslop-yagni-2026-09-06]]: skillslop ≈ one-liner YAGNI; search-existing-first (Ponytail pointer, no install).
+
 [[src-yangtze-skill-dies-method-lives-2026-09-06]]: skill dies / methodology lives — vault methods + thin when-to-use (Related-fold Astra).
 
 [[src-pvncher-rethinking-skills-gpt6-astra]]: on stronger models (GPT-6 Astra), Skills/AGENTS.md become context debt — short when-to-use, progressive disclosure, principles over recipes; revisit each model jump. Near [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]].
