@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip KinGao Grok Bot 10x/200-windows promo
+
+Skip [[src-skip-kingao-grokbot-10x-promo-2026-09-05]]: Grok Bot 10x/200-windows promo; roster already covers. URL https://x.com/KinGao476942/status/2096248309962903715. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | WikiSkill Google Research pointer (lan E yes)
 
 Thin [[src-wikiskill-google-research-pointer-2026-09-06]]: https://arxiv.org/abs/2608.27454 (+ html). Community port https://github.com/ashutoshsinghpr7/wikiskill noted as **not** Google. Verdict: rhymes Vault+skills; KILL auto Skill Proposer/install; human/CoS gate on skill changes; optional wiki-layer idea only. No product install. Squash-merge if validate PASS.
