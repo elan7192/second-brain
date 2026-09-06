@@ -16,6 +16,8 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-rodmanai-10-repos-income-2026-09-05]] | 2026-09-06 | 跳過仍記：near-dup nafis money-repos listicle |
+| [[src-skip-unicode-marketplace-marketing-bots-2026-09-05]] | 2026-09-06 | 跳過仍記：marketing marketplace 16-bots pack；DELETE bias |
 | [[src-aksheyd-create-workflow-trace-audit-2026-09-05]] | 2026-09-06 | METHOD：create-workflow map-reduce traces → extract/update/DELETE low-use；one-shot CUT；Fill owns box；last yes before deletes |
 | [[src-skip-kingao-grokbot-10x-promo-2026-09-05]] | 2026-09-06 | 跳過仍記：Grok Bot 10x/200-windows promo；roster already covers |
 | [[src-wikiskill-google-research-pointer-2026-09-06]] | 2026-09-06 | POINTER：WikiSkill Google Research（arXiv 2608.27454）；KILL auto Skill Proposer；human/CoS gate；not install |

@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | pack skip RodmanAi money-repos + unicode marketplace bots
+
+Skip [[src-skip-rodmanai-10-repos-income-2026-09-05]] (near-dup nafis money-repos). Skip [[src-skip-unicode-marketplace-marketing-bots-2026-09-05]] (marketing marketplace 16-bots pack; DELETE bias). Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | aksheyd create-workflow trace CUT audit method
 
 Thin [[src-aksheyd-create-workflow-trace-audit-2026-09-05]]: grok build /create-workflow map-reduce on traces — extract skills, update stale, DELETE low-use plugins/MCPs/skills. One-shot not always-on; Fill owns box; last yes before deletes. Near skills/routines CUT + WikiSkill KILL auto-proposer. Squash-merge if validate PASS.
