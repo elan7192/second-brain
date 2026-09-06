@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip 0xJokker TimesFM promo
+
+Skip [[src-skip-0xjokker-timesfm-promo-2026-09-05]]: TimesFM forecasting promo; no standing-seat fit. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | Yangtze skill-dies method-lives Related-fold
 
 Thin [[src-yangtze-skill-dies-method-lives-2026-09-06]]: prefer vault methods + thin when-to-use over always-on packs. Fold [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]]. Squash-merge if validate PASS.
