@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-nateberkopec-skillslop-yagni-2026-09-06]] | 2026-09-06 | Related-fold Astra/DELETE：skillslop ≈ one-liner YAGNI；search-existing-first (Ponytail pointer no install)；align Yangtze |
 | [[src-skip-0xjokker-timesfm-promo-2026-09-05]] | 2026-09-06 | 跳過仍記：TimesFM forecasting promo；無 standing-seat fit |
 | [[src-yangtze-skill-dies-method-lives-2026-09-06]] | 2026-09-06 | Related-fold Astra：skill dies / methodology lives — vault methods + thin when-to-use；align pvncher/gengdaJ |
 | [[src-gengdaj-astra-token-four-cuts-2026-09-05]] | 2026-09-06 | Related-fold Astra：四刀 — cross-window / slim AGENTS+SKILL / 勿預設 Ultra / normal speed；勿 verbatim Codex config |
