@@ -42,6 +42,7 @@ Already on main (dedup; not rewritten):
 | [[src-skip-tivadar-ml-math-roadmap-2026-09-05]] | 跳過但仍記一行 | ML-math curriculum promo；無 bot gap-fill |
 | [[src-skip-suraj-12-agentic-projects-2026-09-04]] | 跳過但仍記一行 | agentic-career 12-projects hiring bait；無 standing-seat fit |
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 入vault建議 | Linear sync RE architecture pointer；no bot/skill/implement |
+| [[src-timesfm-principles-2026-09-06]] | 入vault建議 | TimesFM METHOD literacy；SKIP install；alongside 0xJokker skip |
 | [[src-skip-0xjokker-timesfm-promo-2026-09-05]] | 跳過但仍記一行 | TimesFM forecasting promo；無 standing-seat fit |
 | [[src-nateberkopec-skillslop-yagni-2026-09-06]] | 入vault建議 | skillslop YAGNI；Ponytail pointer no install；Related-fold Yangtze/Astra |
 | [[src-yangtze-skill-dies-method-lives-2026-09-06]] | 入vault建議 | skill dies / method lives；Related-fold pvncher/gengdaJ |

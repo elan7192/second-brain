@@ -20,6 +20,8 @@ updated: 2026-09-06
 
 跳過：TimesFM forecasting promo；無 standing-seat fit。
 
+LEARN method (not install): [[src-timesfm-principles-2026-09-06]] — TS FM literacy / observed clears > forecast.
+
 判定=skip. URL: https://x.com/0xJokker/status/2096362349644906555
 
 Skip page — one-line reason only. Do not dump promo body.
@@ -30,4 +32,4 @@ Skip page — one-line reason only. Do not dump promo body.
 
 ## Related
 
-[[x-bookmark-sync-2026-09-05]]
+[[x-bookmark-sync-2026-09-05]] · [[src-timesfm-principles-2026-09-06]] · [[tokens-as-capital]]
