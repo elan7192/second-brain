@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-every-compound-writing-fold-2026-09-05]] | 2026-09-07 | Related-fold：Every Compound Writing method → Copy Humanizer/unslop；SKIP install skill pack |
 | [[src-valuation-anything-learn-from-others-2026-09-06]] | 2026-09-06 | METHOD：valuation-of-anything — Lemonade quote≠claim；Manheim venue-split+thin-sample；art estimate≠hammer；atoms=clears |
 | [[src-lan-e-ai-divide-atoms-2026-09-06]] | 2026-09-06 | METHOD：lan E — AI conquers software via divide-to-atoms；cannot move atoms；stop at physics/hard walls；align valuation atoms |
 | [[src-timesfm-principles-2026-09-06]] | 2026-09-06 | METHOD：TimesFM TS FM literacy — data diversity + foundation/adapt + quantiles；observed clears > forecast；SKIP install/seat |

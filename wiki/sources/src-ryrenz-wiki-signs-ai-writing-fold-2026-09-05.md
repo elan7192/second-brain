@@ -30,4 +30,4 @@ Fold into [[anti-slop]] (and desk Copy Humanizer / Unslop usage) — checklist/r
 
 ## Related
 
-[[anti-slop]] · [[src-juampi-anti-slop-rank]] · [[src-jolyne-sepia-de-ai-writing-pointer]] · [[src-sukiea-writing-for-agents]] · [[src-openagentskill-anti-slop]] · [[x-bookmark-sync-2026-09-05]]
+[[anti-slop]] · [[src-juampi-anti-slop-rank]] · [[src-every-compound-writing-fold-2026-09-05]] · [[src-jolyne-sepia-de-ai-writing-pointer]] · [[src-sukiea-writing-for-agents]] · [[src-openagentskill-anti-slop]] · [[x-bookmark-sync-2026-09-05]]

@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | Every Compound Writing Related-fold (SKIP install)
+
+Thin [[src-every-compound-writing-fold-2026-09-05]]: interview→section loop→voice/style files. Fold [[anti-slop]] / Copy Humanizer. SKIP Every OSS pack — near-dup Humanizer / skillslop. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | valuation-anything learn-from-others METHOD (Researchy)
 
 Thin [[src-valuation-anything-learn-from-others-2026-09-06]]: Lemonade quote≠claim; Manheim venue-split+thin-sample; art estimate≠hammer. Atoms=clears. Fold [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]]. Squash-merge if validate PASS.
