@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | WikiSkill Google Research pointer (lan E yes)
+
+Thin [[src-wikiskill-google-research-pointer-2026-09-06]]: https://arxiv.org/abs/2608.27454 (+ html). Community port https://github.com/ashutoshsinghpr7/wikiskill noted as **not** Google. Verdict: rhymes Vault+skills; KILL auto Skill Proposer/install; human/CoS gate on skill changes; optional wiki-layer idea only. No product install. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip akshay Magnitude local-model profiler
 
 Skip [[src-skip-akshay-magnitude-local-models-2026-09-04]]: Magnitude local-model profiler; cloud-bot desk, no seat fit. URL https://x.com/akshay_pachaar/status/2095906342154424750. Squash-merge if validate PASS.
