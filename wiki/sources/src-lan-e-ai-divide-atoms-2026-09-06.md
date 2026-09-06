@@ -32,4 +32,4 @@ Thin principle. Do not invent physics claims beyond this sentence.
 
 ## Related
 
-[[musk-algorithm]] · [[src-lan-e-musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]
+[[musk-algorithm]] · [[src-lan-e-musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]

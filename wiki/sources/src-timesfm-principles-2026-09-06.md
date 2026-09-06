@@ -38,4 +38,4 @@ Thin method. Do not dump paper. Do not install.
 
 ## Related
 
-[[src-skip-0xjokker-timesfm-promo-2026-09-05]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[tokens-as-capital]] · [[work-per-cost]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[src-itrading-acer-trading-doctor-sop-2026-09]]
+[[src-skip-0xjokker-timesfm-promo-2026-09-05]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[tokens-as-capital]] · [[work-per-cost]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[src-itrading-acer-trading-doctor-sop-2026-09]]
