@@ -49,4 +49,6 @@ The jupyter miss had confidence 0.25. Two successes were 0.17 and 0.21. Some bey
 
 ## Related
 
+Astra “don’t default Ultra” cut: [[src-gengdaj-astra-token-four-cuts-2026-09-05]].
+
 [[self-verification]] · [[entropy-gate]] · [[harness-routing]]
