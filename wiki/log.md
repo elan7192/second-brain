@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | TimesFM principles METHOD (Researchy)
+
+Thin [[src-timesfm-principles-2026-09-06]]: TS FM literacy; observed clears > forecast atoms; SKIP install/seat. Alongside [[src-skip-0xjokker-timesfm-promo-2026-09-05]]. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | nateberkopec skillslop YAGNI Related-fold
 
 Thin [[src-nateberkopec-skillslop-yagni-2026-09-06]]: bloated skills ≈ one-liner YAGNI; Ponytail search-first pointer (no install). Fold [[src-yangtze-skill-dies-method-lives-2026-09-06]] · [[src-pvncher-rethinking-skills-gpt6-astra]]. Squash-merge if validate PASS.

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T09:10:39Z",
+  "builtAt": "2026-09-06T09:11:48Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 293,
+    "Source": 294,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 586,
-    "links": 4163
+    "objects": 587,
+    "links": 4176
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 83,
-      "outbound": 299,
+      "inbound": 84,
+      "outbound": 300,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 352,
+      "outbound": 353,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -5346,7 +5346,7 @@
       "updated": "2026-09-06",
       "tags": "researchy,method",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Cloudflare eBPF/XDP cost principles \u2192 desk transfer (Researchy 2026-09-06):"
@@ -5906,7 +5906,7 @@
       "updated": "2026-09-05",
       "tags": "research,taiwan,trading",
       "island": "sources",
-      "inbound": 6,
+      "inbound": 7,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Community TX_1m limitation (bars end 2023-12-08, unlicensed dump): licensed TAIFEX / TEJ / eDataShop paths are cataloged in [[src-taifex-tx-real-data-sources-2026-09]]."
@@ -7194,8 +7194,8 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
-      "outbound": 2,
+      "inbound": 4,
+      "outbound": 4,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1aTimesFM forecasting promo\uff1b\u7121 standing-seat fit\u3002"
     },
@@ -7662,6 +7662,20 @@
       "oneLiner": "Tweet: 30.2 to 100 on ARC-AGI-3 when a model sits in a harness."
     },
     {
+      "primaryKey": "src-timesfm-principles-2026-09-06",
+      "objectType": "Source",
+      "title": "src-timesfm-principles-2026-09-06",
+      "path": "wiki/sources/src-timesfm-principles-2026-09-06.md",
+      "created": "2026-09-06",
+      "updated": "2026-09-06",
+      "tags": "researchy,method",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "TimesFM principles \u2192 desk literacy (Researchy 2026-09-06):"
+    },
+    {
       "primaryKey": "src-tradingview-scripts-to-llm-backtest",
       "objectType": "Source",
       "title": "src-tradingview-scripts-to-llm-backtest",
@@ -8020,8 +8034,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 48,
-      "outbound": 23,
+      "inbound": 50,
+      "outbound": 24,
       "unverified": true,
       "oneLiner": "Treat a token as an investment, not a per-query bill."
     },
@@ -8272,7 +8286,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 39,
+      "inbound": 40,
       "outbound": 39,
       "unverified": true,
       "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
@@ -8286,8 +8300,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 54,
-      "outbound": 53,
+      "inbound": 55,
+      "outbound": 54,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -16054,6 +16068,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-timesfm-principles-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-tradingview-scripts-to-llm-backtest"
     },
     {
@@ -18055,6 +18074,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-taifex-tx-real-data-sources-2026-09"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-timesfm-principles-2026-09-06"
     },
     {
       "from": "log",
@@ -26718,8 +26742,18 @@
     },
     {
       "from": "src-skip-0xjokker-timesfm-promo-2026-09-05",
+      "linkType": "cites",
+      "to": "src-timesfm-principles-2026-09-06"
+    },
+    {
+      "from": "src-skip-0xjokker-timesfm-promo-2026-09-05",
       "linkType": "relatedTo",
       "to": "index-sources"
+    },
+    {
+      "from": "src-skip-0xjokker-timesfm-promo-2026-09-05",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
     },
     {
       "from": "src-skip-0xjokker-timesfm-promo-2026-09-05",
@@ -27150,6 +27184,41 @@
       "from": "src-thewhizzai-avo",
       "linkType": "relatedTo",
       "to": "harness-routing"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "cites",
+      "to": "src-cloudflare-ebpf-xdp-cost-principles-2026-09-06"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "cites",
+      "to": "src-itrading-acer-trading-doctor-sop-2026-09"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "cites",
+      "to": "src-skip-0xjokker-timesfm-promo-2026-09-05"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
     },
     {
       "from": "src-tradingview-scripts-to-llm-backtest",
@@ -27770,6 +27839,11 @@
       "from": "tokens-as-capital",
       "linkType": "cites",
       "to": "src-skill-pack-list"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
+      "to": "src-timesfm-principles-2026-09-06"
     },
     {
       "from": "tokens-as-capital",
@@ -28780,6 +28854,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-webenstein-cyber-path"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-timesfm-principles-2026-09-06"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
