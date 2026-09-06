@@ -23,6 +23,8 @@ Doing it backwards (automate, then simplify, then delete) wastes time.
 
 Keep long-term vision. Starship lines on the source are examples, not new physics.
 
+Companion (2026-09-06): [[src-lan-e-ai-divide-atoms-2026-09-06]] — AI conquers software by divide-to-atoms; cannot move atoms; stop at physics/hard walls.
+
 ## Vault passes
 
 - 2026-08-28: short door D12. Deleted full-index dump, first-principles page, MEMORY LanBB loops. C37 open.
@@ -39,4 +41,4 @@ See [[log]]. Live query stays D9. C17 and C18 untouched.
 
 ## Related
 
-[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-ai-residual-capture-v0]]
+[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-ai-residual-capture-v0]]
