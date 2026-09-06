@@ -27,3 +27,7 @@ Pointer only. Do not dump body.
 ## Pages updated
 
 [[agent-facing-docs]] · [[skill-as-sop]] · [[x-bookmark-sync-2026-09-05]]
+
+## Related
+
+Related-fold (optional): [[src-ryrenz-humanlayer-skills-pointer-2026-09-06]] — humanlayer/skills pointer; improve-claude-md conditional blocks idea only; **do NOT install pack** / no npx skills on box.
