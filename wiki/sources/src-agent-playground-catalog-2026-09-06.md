@@ -31,8 +31,8 @@ Agent playgrounds catalog vs Coral Bay Ops (Researchy 2026-09-06):
 
 ## Pages updated
 
-[[index-sources]] · [[grok-bot]] · [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]
+[[index-sources]] · [[grok-bot]] · [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]] · [[src-coral-bay-anim-skills-x-2026-09-06]]
 
 ## Related
 
-[[grok-bot]] · [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]] · [[lan-e-desk-team]] · [[src-retrochainer-grok-bot-docs-digest-2026-09-05]]
+[[grok-bot]] · [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]] · [[src-coral-bay-anim-skills-x-2026-09-06]] · [[lan-e-desk-team]] · [[src-retrochainer-grok-bot-docs-digest-2026-09-05]]

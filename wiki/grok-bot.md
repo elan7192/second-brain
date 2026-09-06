@@ -11,7 +11,7 @@ updated: 2026-09-04
 
 Product harness from Machina. One persistent named agent. One job.
 
-Source: [[src-exm7777-grok-bot-money]]. Revenue lanes: [[grok-bot-money]]. Miles list: [[grok-bot-use-cases]]. · [[src-agent-playground-catalog-2026-09-06]]
+Source: [[src-exm7777-grok-bot-money]]. Revenue lanes: [[grok-bot-money]]. Miles list: [[grok-bot-use-cases]]. · [[src-agent-playground-catalog-2026-09-06]] · [[src-coral-bay-anim-skills-x-2026-09-06]]
 
 ## Architecture
 
@@ -59,5 +59,5 @@ Start with one valuable, reversible workflow. Read-and-prepare first. Actions be
 
 ## Related
 
-OpenBot contrast (no migrate): [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]. Coral Bay playground catalog (steal thin / skip engines): [[src-agent-playground-catalog-2026-09-06]]. Docs digest (prefer official): [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] — ≤50 routines/bot; shared-box ≠ security boundary. Skill fold: `grok-bot-lessons`. No new bot from X infographic.
-[[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]] · [[spacexai-grok-bot-keepers]] · [[src-xai-introducing-grok-bot]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]] · [[src-agent-playground-catalog-2026-09-06]]
+OpenBot contrast (no migrate): [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]. Coral Bay playground catalog (steal thin / skip engines): [[src-agent-playground-catalog-2026-09-06]]. Anim skill pointers: [[src-coral-bay-anim-skills-x-2026-09-06]]. Docs digest (prefer official): [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] — ≤50 routines/bot; shared-box ≠ security boundary. Skill fold: `grok-bot-lessons`. No new bot from X infographic.
+[[grok-bot-money]] · [[harness-routing]] · [[entropy-gate]] · [[raptor-dispatch]] · [[memory-engineering]] · [[llm-wiki]] · [[src-exm7777-grok-bot-money]] · [[company-foundry]] · [[spacexai-grok-bot-keepers]] · [[src-xai-introducing-grok-bot]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]] · [[src-agent-playground-catalog-2026-09-06]] · [[src-coral-bay-anim-skills-x-2026-09-06]]

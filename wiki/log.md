@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | Coral Bay anim skills X Scout pointers
+
+Thin [[src-coral-bay-anim-skills-x-2026-09-06]]: agent-sprite-forge skill-cand; SpriteCook MCP optional; AI Town characters.ts poses steal-not-redeploy; skip OpenBot migrate (fold explorax); peer DM skill already exists. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | agent playgrounds catalog vs Coral Bay (Researchy)
 
 Thin [[src-agent-playground-catalog-2026-09-06]]: steal activity→sprite + peer join/say/leave; SKIP AI Town/Smallville tick engines. Fold [[src-explorax-openbot-vs-grokbot-desk-2026-09-02]]. Squash-merge if validate PASS.
