@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-immanuel-ebpf-pktz-2026-09-05]] | 2026-09-06 | 跳過仍記：eBPF/pktz infra promo；無 standing-seat fit |
 | [[src-skip-kirillk-grokbot-money-video-2026-09-05]] | 2026-09-06 | 跳過仍記：Grok Bot monetization video promo / course funnel；無 desk gap-fill |
 | [[src-coral-bay-anim-skills-x-2026-09-06]] | 2026-09-06 | POINTER：Coral Bay anim — agent-sprite-forge + SpriteCook MCP + AI Town characters.ts steal；skip OpenBot migrate |
 | [[src-agent-playground-catalog-2026-09-06]] | 2026-09-06 | METHOD：agent playgrounds catalog vs Coral Bay — steal activity→sprite + peer join/say/leave；SKIP AI Town/Smallville engines |

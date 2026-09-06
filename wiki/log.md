@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | skip immanuel eBPF/pktz infra promo
+
+Skip [[src-skip-immanuel-ebpf-pktz-2026-09-05]]: eBPF/pktz infra promo; no standing-seat fit. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip kirillk Grok Bot money-video promo
 
 Skip [[src-skip-kirillk-grokbot-money-video-2026-09-05]]: monetization video / course funnel; no desk gap-fill. Squash-merge if validate PASS.
