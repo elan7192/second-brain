@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-06] ingest | aksheyd create-workflow trace CUT audit method
+
+Thin [[src-aksheyd-create-workflow-trace-audit-2026-09-05]]: grok build /create-workflow map-reduce on traces — extract skills, update stale, DELETE low-use plugins/MCPs/skills. One-shot not always-on; Fill owns box; last yes before deletes. Near skills/routines CUT + WikiSkill KILL auto-proposer. Squash-merge if validate PASS.
+
 ## [2026-09-06] ingest | skip KinGao Grok Bot 10x/200-windows promo
 
 Skip [[src-skip-kingao-grokbot-10x-promo-2026-09-05]]: Grok Bot 10x/200-windows promo; roster already covers. URL https://x.com/KinGao476942/status/2096248309962903715. Squash-merge if validate PASS.

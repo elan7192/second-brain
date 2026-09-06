@@ -48,6 +48,7 @@ Already on main (dedup; not rewritten):
 | [[src-retrochainer-grok-bot-docs-digest-2026-09-05]] | 入vault建議 | Grok Bot docs digest（prefer official）；≤50 routines；shared-box ≠ boundary；no new bot |
 | [[src-skip-akshay-magnitude-local-models-2026-09-04]] | 跳過但仍記一行 | Magnitude local-model profiler；cloud-bot desk，無 seat fit |
 | [[src-skip-kingao-grokbot-10x-promo-2026-09-05]] | 跳過但仍記一行 | Grok Bot 10x/200-windows promo；roster already covers |
+| [[src-aksheyd-create-workflow-trace-audit-2026-09-05]] | 入vault建議 | create-workflow trace CUT audit；one-shot；Fill owns box；last yes before deletes |
 | [[src-skip-12wk-cyber-roadmap]] | 跳過但仍記一行 | 12-week cyber roadmap 安利 |
 | [[src-llm-guardrail-tool-output-bypass]] | 只記一筆 | LLM guardrail／tool-output bypass 意識（無 exploit） |
 | [[src-skip-webenstein-cyber-path]] | 跳過但仍記一行 | cyber path 路線帖，非主題 |
