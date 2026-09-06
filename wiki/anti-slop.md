@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-05
+updated: 2026-09-07
 ---
 
 # Anti-slop
@@ -26,6 +26,8 @@ Source: [[src-juampi-anti-slop-rank]]. Skills were ranked, not vendored.
 The human asked for examples, a comparison, or a specific voice.
 
 ## Skill list (upstream)
+
+Related fold (2026-09-07): Every Compound Writing via [[src-every-compound-writing-fold-2026-09-05]] — interview→section→voice/style method only; **SKIP** Every OSS skill pack.
 
 Related fold (2026-09-06): Wikipedia [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) via [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] — checklist only; no new skill.
 
