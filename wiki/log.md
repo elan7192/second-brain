@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | Prompt Debt / DSPy METHOD (SKIP install)
+
+Thin [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]]: Prompt Debt=brittle prompt sprawl; DSPy=program/optimize vs prompt pile. Align Yangtze/skillslop/pvncher. SKIP DSPy stack unless lan E asks. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | Kaggle TPU Qwen BF16 METHOD + free-compute Related
 
 Thin [[src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07]]: free Kaggle TPU→OpenAI-compat agent backend (rahim3). Fold [[quota-router]] / atenov. SKIP always-on skill/bot + stolen-key scrapers. Adjacent free-compute URLs Related-only. Squash-merge if validate PASS.

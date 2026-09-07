@@ -32,8 +32,8 @@ Pointer only. Do not dump thread. Do not wholesale-install.
 
 ## Pages updated
 
-[[index-sources]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[skill-as-sop]] · [[x-bookmark-sync-2026-09-05]]
+[[index-sources]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[skill-as-sop]] · [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] · [[x-bookmark-sync-2026-09-05]]
 
 ## Related
 
-[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-nateberkopec-skillslop-yagni-2026-09-06]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]] · [[skill-as-sop]] · [[skill-library]] · [[src-astra-agents-md-cleanup]]
+[[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-nateberkopec-skillslop-yagni-2026-09-06]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]] · [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] · [[skill-as-sop]] · [[skill-library]] · [[src-astra-agents-md-cleanup]]
