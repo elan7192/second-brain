@@ -38,4 +38,4 @@ Thin method. Do not dump Researchy body. Do not license feeds this week.
 
 ## Related
 
-[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[musk-algorithm]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]]
+[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[musk-algorithm]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]]
