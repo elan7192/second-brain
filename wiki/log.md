@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | atom-manipulation knowledge map METHOD
+
+Thin [[src-atom-manipulation-knowledge-map-2026-09-07]]: B− LLM survey collage; real STM/tweezers/Paul paradigms; hard wall for AI≠move atoms; DOI/arXiv SoR; SKIP lab seat. Fold [[src-lan-e-ai-divide-atoms-2026-09-06]]. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | Gemini video-route METHOD + YT20 skip
 
 Thin [[src-rudijr-gemini-video-route-2026-09-06]]: long video→brief→coding seat. Fold [[quota-router]] / cheap-worker. SKIP always-on Gemini skill/key until Fill burns reopen.

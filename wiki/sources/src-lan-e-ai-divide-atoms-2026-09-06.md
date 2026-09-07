@@ -5,7 +5,7 @@ tags:
   - lan-e
   - method
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # src-lan-e-ai-divide-atoms-2026-09-06
@@ -24,12 +24,14 @@ Near [[musk-algorithm]] (physics absolute) · [[tokens-as-capital]] · [[src-clo
 
 判定=METHOD. Provenance: lan E → CoS → Vault 2026-09-06.
 
+Hard-wall literacy map (Researchy 2026-09-07): [[src-atom-manipulation-knowledge-map-2026-09-07]] — STM/tweezers/Paul real; AI drives loops not physics; SKIP lab.
+
 Thin principle. Do not invent physics claims beyond this sentence.
 
 ## Pages updated
 
-[[index-sources]] · [[musk-algorithm]] · [[src-timesfm-principles-2026-09-06]]
+[[index-sources]] · [[musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]]
 
 ## Related
 
-[[musk-algorithm]] · [[src-lan-e-musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]
+[[musk-algorithm]] · [[src-lan-e-musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]
