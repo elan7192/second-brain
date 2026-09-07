@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-08] ingest | Fischbach problem-choice METHOD
+
+Thin [[src-fischbach-problem-choice-2026-09-08]]: Stanford Eng 10-point skeleton + verified Cell 187(8):1828–1833 (DOI 10.1016/j.cell.2024.03.012). Fold [[musk-algorithm]]. X @Hi_Mrinal pointer. Squash-merge if validate PASS.
+
 ## [2026-09-08] skip | PaulKlay 10× inefficient industries
 
 Skip [[src-skip-paulklay-10x-inefficient-industries-2026-09-08]]: old-constraint industries → ask 10× with today’s stack; thin Stress lens only; no new skill/bot. Squash-merge if validate PASS.
