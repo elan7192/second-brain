@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-07T08:01:31Z",
+  "builtAt": "2026-09-07T08:04:43Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 302,
+    "Source": 303,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 595,
-    "links": 4275
+    "objects": 596,
+    "links": 4290
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 92,
-      "outbound": 308,
+      "inbound": 93,
+      "outbound": 309,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 361,
+      "outbound": 362,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 42,
+      "inbound": 43,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -3750,8 +3750,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 47,
-      "outbound": 29,
+      "inbound": 48,
+      "outbound": 30,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
     },
@@ -3778,7 +3778,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 29,
+      "inbound": 30,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "A shared catalog of agent skills the whole company can create, find, and reuse."
@@ -5808,7 +5808,7 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 8,
+      "inbound": 9,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Four Astra token cuts (author framing):"
@@ -6690,8 +6690,8 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 9,
-      "outbound": 10,
+      "inbound": 10,
+      "outbound": 11,
       "unverified": false,
       "oneLiner": "skillslop (author framing): bloated skills \u2248 one-liner YAGNI \u2014 DELETE bias."
     },
@@ -6970,7 +6970,7 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 20,
+      "inbound": 21,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -7984,6 +7984,20 @@
       "oneLiner": "METHOD: free Kaggle TPU \u2192 OpenAI-compatible agent backend (Qwen3.8-27B BF16 notebook rahim3). Optional **quota relief for local coding CLIs** \u2014 not a new standing bot. Fill owns box computer ops; Gemi"
     },
     {
+      "primaryKey": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "objectType": "Source",
+      "title": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "path": "wiki/sources/src-x-prompt-debt-dspy-dbreunig-2026-09-07.md",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "tags": "twitter,method",
+      "island": "sources",
+      "inbound": 6,
+      "outbound": 9,
+      "unverified": false,
+      "oneLiner": "**Prompt Debt** (dbreunig framing via Boswell/X): brittle prompt sprawl \u2014 piles of hand-tuned prompts that rot as models/tasks move."
+    },
+    {
       "primaryKey": "src-xai-introducing-grok-bot",
       "objectType": "Source",
       "title": "src-xai-introducing-grok-bot",
@@ -8020,8 +8034,8 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 8,
+      "inbound": 9,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Skill dies, methodology lives (author framing): prefer vault methods + thin when-to-use over always-on skill packs."
     },
@@ -8412,8 +8426,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 59,
-      "outbound": 58,
+      "inbound": 60,
+      "outbound": 59,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -16310,6 +16324,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-x-prompt-debt-dspy-dbreunig-2026-09-07"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-xai-introducing-grok-bot"
     },
     {
@@ -18331,6 +18350,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-x-prompt-debt-dspy-dbreunig-2026-09-07"
     },
     {
       "from": "log",
@@ -21896,6 +21920,11 @@
       "from": "skill-as-sop",
       "linkType": "cites",
       "to": "src-wikiskill-google-research-pointer-2026-09-06"
+    },
+    {
+      "from": "skill-as-sop",
+      "linkType": "cites",
+      "to": "src-x-prompt-debt-dspy-dbreunig-2026-09-07"
     },
     {
       "from": "skill-as-sop",
@@ -26220,6 +26249,11 @@
     {
       "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
       "linkType": "cites",
+      "to": "src-x-prompt-debt-dspy-dbreunig-2026-09-07"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "cites",
       "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
     },
     {
@@ -28143,6 +28177,51 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "cites",
+      "to": "src-gengdaj-astra-token-four-cuts-2026-09-05"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "skill-library"
+    },
+    {
+      "from": "src-x-prompt-debt-dspy-dbreunig-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-xai-introducing-grok-bot",
       "linkType": "relatedTo",
       "to": "grok-bot"
@@ -28181,6 +28260,11 @@
       "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
       "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
+      "linkType": "cites",
+      "to": "src-x-prompt-debt-dspy-dbreunig-2026-09-07"
     },
     {
       "from": "src-yangtze-skill-dies-method-lives-2026-09-06",
@@ -29476,6 +29560,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-x-prompt-debt-dspy-dbreunig-2026-09-07"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

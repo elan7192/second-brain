@@ -39,4 +39,4 @@ Pointer only. Do not dump thread. Do not install.
 
 ## Related
 
-[[src-yangtze-skill-dies-method-lives-2026-09-06]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]] · [[skill-as-sop]] · [[skill-library]] · [[musk-algorithm]] · [[src-rudijr-gemini-video-route-2026-09-06]] · [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]]
+[[src-yangtze-skill-dies-method-lives-2026-09-06]] · [[src-pvncher-rethinking-skills-gpt6-astra]] · [[src-gengdaj-astra-token-four-cuts-2026-09-05]] · [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] · [[skill-as-sop]] · [[skill-library]] · [[musk-algorithm]] · [[src-rudijr-gemini-video-route-2026-09-06]] · [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]]

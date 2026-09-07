@@ -55,9 +55,11 @@ Eval gate (go-live proof, not demo vibes): [[src-clorissignal-agent-eval-framewo
 
 [[src-yangtze-skill-dies-method-lives-2026-09-06]]: skill dies / methodology lives — vault methods + thin when-to-use (Related-fold Astra).
 
+[[src-x-prompt-debt-dspy-dbreunig-2026-09-07]]: Prompt Debt = brittle prompt sprawl; DSPy = program/optimize (pointer only — **SKIP** install unless lan E asks).
+
 [[src-pvncher-rethinking-skills-gpt6-astra]]: on stronger models (GPT-6 Astra), Skills/AGENTS.md become context debt — short when-to-use, progressive disclosure, principles over recipes; revisit each model jump. Near [[src-astra-agents-md-cleanup]] · [[src-astra-agent-cleanup-jexlau]].
 
 ## Related
 
 Related research (not install): [[src-wikiskill-google-research-pointer-2026-09-06]] — WikiSkill rhymes Vault+skills; no auto skill install.
-[[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]] · [[src-chenchengpro-six-skills]] · [[src-fhwofjow-book-to-skill]] · [[src-t20000622yy-egolite-design]] · [[src-leo-show-me-skill-pointer]] · [[src-deronin-design-guide-to-skill-pointer]]
+[[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] · [[skill-library]] · [[tokens-as-capital]] · [[verifiable-instructions]] · [[audited-task-contract]] · [[archify]] · [[spacexai-grok-bot-keepers]] · [[skill-improver]] · [[src-adiix-grok-bot-org]] · [[src-kaorixbt-harness-engineering]] · [[src-sukiea-writing-for-agents]] · [[loop-graph-engineering]] · [[src-chenchengpro-six-skills]] · [[src-fhwofjow-book-to-skill]] · [[src-t20000622yy-egolite-design]] · [[src-leo-show-me-skill-pointer]] · [[src-deronin-design-guide-to-skill-pointer]]

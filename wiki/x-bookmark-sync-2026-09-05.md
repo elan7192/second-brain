@@ -44,6 +44,7 @@ Already on main (dedup; not rewritten):
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 入vault建議 | Linear sync RE architecture pointer；no bot/skill/implement |
 | [[src-timesfm-principles-2026-09-06]] | 入vault建議 | TimesFM METHOD literacy；SKIP install；alongside 0xJokker skip |
 | [[src-skip-0xjokker-timesfm-promo-2026-09-05]] | 跳過但仍記一行 | TimesFM forecasting promo；無 standing-seat fit |
+| [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] | 入vault建議 | Prompt Debt / DSPy pointer；align Astra DELETE；SKIP install |
 | [[src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07]] | 入vault建議 | Kaggle TPU→Qwen BF16 OpenAI-compat；SKIP always-on skill/stolen keys |
 | [[src-rudijr-gemini-video-route-2026-09-06]] | 入vault建議 | Gemini video-route METHOD；SKIP always-on skill/key |
 | [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]] | 跳過但仍記一行 | YT20 skillmaxxing promo；skill-pack spam / download-20 |
