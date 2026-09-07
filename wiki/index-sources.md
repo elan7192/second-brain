@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-genspark-fable-picker-2026-09-07]] | 2026-09-07 | 跳過：GenSpark Fable 5/5.1 in Code Agent+Claw picker, not Super Agent Ultra |
 | [[src-ai-recog-valuation-knowledge-2026-09-07]] | 2026-09-07 | METHOD：photo→identity/condition hypotheses→comps；never photo→price atom；SKIP vision seat/price-from-pixels |
 | [[src-skip-mitchellkeller-cf-wrangler-agent-2026-09-07]] | 2026-09-07 | 跳過：CF+$0 Wrangler-in-Codex tip；desk has wrangler skills；no new bot |
 | [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] | 2026-09-07 | METHOD：Prompt Debt=brittle prompt sprawl；DSPy=program/optimize；align Astra DELETE；SKIP install |

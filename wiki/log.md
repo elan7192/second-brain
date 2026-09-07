@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] skip | GenSpark Fable picker FAQ
+
+Skip [[src-skip-genspark-fable-picker-2026-09-07]]: Fable 5/5.1 in Code Agent+Claw picker, not Super Agent Ultra; label may be 5.1. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | AI-recog valuation METHOD (Product A)
 
 Thin [[src-ai-recog-valuation-knowledge-2026-09-07]]: photo→identity/condition hypotheses→comps; never photo→price atom. Primaries Stanford Cars/SOP/Products-10K/CarDD. SKIP price-from-pixels / new vision seat. Fold valuation atoms. Squash-merge if validate PASS.
