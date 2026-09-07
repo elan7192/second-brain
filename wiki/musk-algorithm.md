@@ -23,6 +23,8 @@ Doing it backwards (automate, then simplify, then delete) wastes time.
 
 Keep long-term vision. Starship lines on the source are examples, not new physics.
 
+Problem-choice METHOD (2026-09-08): [[src-fischbach-problem-choice-2026-09-08]] — spend more time picking; altitude dance; face failure as signal.
+
 Companion (2026-09-06): [[src-lan-e-ai-divide-atoms-2026-09-06]] — AI conquers software by divide-to-atoms; cannot move atoms; stop at physics/hard walls.
 
 Hard-wall map (2026-09-07): [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[src-plastics-env-engineering-2026-09-07]] — real atom-manip paradigms; SKIP lab seat.
@@ -45,4 +47,4 @@ See [[log]]. Live query stays D9. C17 and C18 untouched.
 
 ## Related
 
-[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-ai-residual-capture-v0]]
+[[raptor-dispatch]] · [[src-lan-e-musk-algorithm]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[src-fischbach-problem-choice-2026-09-08]] · [[index]] · [[verifiable-instructions]] · [[daily-tool-replace]] · [[graph-node-ablation]] · [[src-0xwast3-ablation-schema]] · [[src-ai-residual-capture-v0]]

@@ -31,4 +31,4 @@ Skip page — one-line reason only. Do not dump thread. Do not install.
 
 ## Related
 
-[[x-bookmark-sync-2026-09-05]] · [[src-skip-kingao-grokbot-10x-promo-2026-09-05]] · [[musk-algorithm]] · [[company-foundry]]
+[[x-bookmark-sync-2026-09-05]] · [[src-skip-kingao-grokbot-10x-promo-2026-09-05]] · [[musk-algorithm]] · [[src-fischbach-problem-choice-2026-09-08]] · [[company-foundry]]

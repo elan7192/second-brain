@@ -44,6 +44,7 @@ Already on main (dedup; not rewritten):
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 入vault建議 | Linear sync RE architecture pointer；no bot/skill/implement |
 | [[src-timesfm-principles-2026-09-06]] | 入vault建議 | TimesFM METHOD literacy；SKIP install；alongside 0xJokker skip |
 | [[src-skip-0xjokker-timesfm-promo-2026-09-05]] | 跳過但仍記一行 | TimesFM forecasting promo；無 standing-seat fit |
+| [[src-fischbach-problem-choice-2026-09-08]] | 入vault建議 | Fischbach problem-choice METHOD；Cell DOI verified；Musk Algorithm fold |
 | [[src-skip-paulklay-10x-inefficient-industries-2026-09-08]] | 跳過但仍記一行 | 10× industries tip；Stress lens only；no skill/bot |
 | [[src-skip-genspark-fable-picker-2026-09-07]] | 跳過但仍記一行 | GenSpark Fable picker FAQ；not Ultra |
 | [[src-skip-mitchellkeller-cf-wrangler-agent-2026-09-07]] | 跳過但仍記一行 | CF+$0 Wrangler tip；no new skill/bot |
