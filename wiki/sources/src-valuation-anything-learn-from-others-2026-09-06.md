@@ -6,7 +6,7 @@ tags:
   - method
   - product-a
 created: 2026-09-06
-updated: 2026-09-06
+updated: 2026-09-07
 ---
 
 # src-valuation-anything-learn-from-others-2026-09-06
@@ -28,14 +28,16 @@ Valuation-of-anything learn-from-others (Researchy 2026-09-06):
 5. **Universal atoms:** cleared sale + identity + condition + venue + time. Non-atoms (asks/estimates/MMR/KBB/Zestimate/premium/forecasts) store separately — never mix into band math.
 6. Align [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] (observed clears > forecast).
 
+Vision intake (2026-09-07): [[src-ai-recog-valuation-knowledge-2026-09-07]] — photo→identity/condition hypotheses→comps; never photo→price atom.
+
 判定=METHOD. Product A copies clears+identity/condition/venue/time stack — not Lemonade premium engine / Zestimate-as-truth / MMR without feed.
 
 Thin method. Do not dump Researchy body. Do not license feeds this week.
 
 ## Pages updated
 
-[[index-sources]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]]
+[[index-sources]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-ai-recog-valuation-knowledge-2026-09-07]]
 
 ## Related
 
-[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[musk-algorithm]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]]
+[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-ai-recog-valuation-knowledge-2026-09-07]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[musk-algorithm]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]]

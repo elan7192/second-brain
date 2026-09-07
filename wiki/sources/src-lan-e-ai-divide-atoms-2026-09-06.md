@@ -34,4 +34,4 @@ Thin principle. Do not invent physics claims beyond this sentence.
 
 ## Related
 
-[[musk-algorithm]] · [[src-lan-e-musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]
+[[musk-algorithm]] · [[src-lan-e-musk-algorithm]] · [[src-timesfm-principles-2026-09-06]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-ai-recog-valuation-knowledge-2026-09-07]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[tokens-as-capital]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]

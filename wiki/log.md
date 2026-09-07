@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | AI-recog valuation METHOD (Product A)
+
+Thin [[src-ai-recog-valuation-knowledge-2026-09-07]]: photo→identity/condition hypotheses→comps; never photo→price atom. Primaries Stanford Cars/SOP/Products-10K/CarDD. SKIP price-from-pixels / new vision seat. Fold valuation atoms. Squash-merge if validate PASS.
+
 ## [2026-09-07] skip | MitchellKeller CF Wrangler agent tip
 
 Skip [[src-skip-mitchellkeller-cf-wrangler-agent-2026-09-07]]: CF+$0 / Wrangler-in-Codex — desk already has wrangler skills; agent drives wrangler, don’t wrap CF in a new bot. Squash-merge if validate PASS.
