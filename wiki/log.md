@@ -11,6 +11,11 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | Gemini video-route METHOD + YT20 skip
+
+Thin [[src-rudijr-gemini-video-route-2026-09-06]]: long video→brief→coding seat. Fold [[quota-router]] / cheap-worker. SKIP always-on Gemini skill/key until Fill burns reopen.
+Skip [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]]: YT20 skillmaxxing promo / skill-pack spam. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | Every Compound Writing Related-fold (SKIP install)
 
 Thin [[src-every-compound-writing-fold-2026-09-05]]: interview→section loop→voice/style files. Fold [[anti-slop]] / Copy Humanizer. SKIP Every OSS pack — near-dup Humanizer / skillslop. Squash-merge if validate PASS.

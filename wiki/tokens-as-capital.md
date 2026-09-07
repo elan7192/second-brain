@@ -36,7 +36,7 @@ Treat a token as an investment, not a per-query bill.
 
 ## Related
 
-[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[src-jerry-two-pass-docs]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]] · [[agent-facing-docs]] · [[flat-context]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[src-timesfm-principles-2026-09-06]]
+[[llm-wiki]] · [[context-graph]] · [[src-papa-couch-compiler]] · [[src-jerry-two-pass-docs]] · [[skill-library]] · [[skill-as-sop]] · [[retrieval-second-brain]] · [[src-mukul975-cybersecurity-skills]] · [[trace]] · [[bot-voice]] · [[src-debs-obrien-token-usage]] · [[context-compaction]] · [[work-per-cost]] · [[agent-facing-docs]] · [[flat-context]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-rudijr-gemini-video-route-2026-09-06]]
 
 [[trace]] paper: one-pass attribution is 16x fewer LLM calls than iterative per-node. Tweet 4.2x token cut is `unverified`.
 
