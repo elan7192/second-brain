@@ -16,7 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
-| [[src-plastics-env-engineering-2026-09-07]] | 2026-09-07 | METHOD literacy：plastics leakage atoms；mech/chem/DRS/NIR/DfR/EPR/LCA；AI≠polymers；SKIP env seat |
+| [[src-plastics-env-engineering-2026-09-07]] | 2026-09-07 | METHOD literacy：leakage atoms + Fable stock/levers/4-rates/5-point audit；KEEP 3-col MFA + chem 0.1%；DO NOT vault η_c/η_x；SKIP env seat |
 | [[src-code-stack-genspark-fable-factcheck-2026-09-07]] | 2026-09-07 | METHOD：Fable code-stack long-form SoR (A~90%); resolved Go1.25/JDK24/YJIT/FT3.14/Apple cacheline；TLDR=code-stack src |
 | [[src-code-stack-language-ai-correctness-2026-09-07]] | 2026-09-07 | METHOD：execution-layer atoms；language-by-plane；measure-first；AI code guilty until tests+last-yes；SKIP rewrite/FT default |
 | [[src-skip-genspark-fable-picker-2026-09-07]] | 2026-09-07 | 跳過：GenSpark Fable 5/5.1 in Code Agent+Claw picker, not Super Agent Ultra |

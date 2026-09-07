@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-07T14:01:13Z",
+  "builtAt": "2026-09-07T14:54:11Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -112,7 +112,7 @@
     "Decision": 12,
     "Contradiction": 47,
     "objects": 602,
-    "links": 4359
+    "links": 4361
   },
   "objects": [
     {
@@ -5388,8 +5388,8 @@
       "updated": "2026-09-07",
       "tags": "researchy,method",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 8,
+      "inbound": 8,
+      "outbound": 9,
       "unverified": true,
       "oneLiner": "1. **Go 1.25 GOMAXPROCS:** container-aware default (cgroup CPU bandwidth) + periodic update. Pre-1.25 still needs `uber-go/automaxprocs` on older toolchains. https://go.dev/doc/go1.25 \u00b7 https://go.dev"
     },
@@ -6928,8 +6928,8 @@
       "updated": "2026-09-07",
       "tags": "researchy,method,literacy",
       "island": "sources",
-      "inbound": 5,
-      "outbound": 7,
+      "inbound": 6,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "**Leakage atom** = measurable mass-flow of polymer/additive leaving an intended engineered pathway (year, polymer/size class, pathway, MFA method). Units t/yr (or items/yr for DRS)."
     },
@@ -24693,6 +24693,11 @@
     {
       "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
       "linkType": "cites",
+      "to": "src-plastics-env-engineering-2026-09-07"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "cites",
       "to": "src-python-agent-systems-map-2026-09-07"
     },
     {
@@ -26854,6 +26859,11 @@
       "from": "src-plastics-env-engineering-2026-09-07",
       "linkType": "cites",
       "to": "src-atom-manipulation-knowledge-map-2026-09-07"
+    },
+    {
+      "from": "src-plastics-env-engineering-2026-09-07",
+      "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
     },
     {
       "from": "src-plastics-env-engineering-2026-09-07",

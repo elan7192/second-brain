@@ -40,4 +40,4 @@ Do not dump Fable essay into wiki. Do not rewrite desk.
 
 ## Related
 
-[[src-code-stack-language-ai-correctness-2026-09-07]] · [[src-python-agent-systems-map-2026-09-07]] · [[harness-routing]] · [[src-ai-recog-valuation-knowledge-2026-09-07]] · [[src-skip-genspark-fable-picker-2026-09-07]] · [[audited-task-contract]] · [[verifiable-instructions]]
+[[src-code-stack-language-ai-correctness-2026-09-07]] · [[src-python-agent-systems-map-2026-09-07]] · [[harness-routing]] · [[src-ai-recog-valuation-knowledge-2026-09-07]] · [[src-skip-genspark-fable-picker-2026-09-07]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[src-plastics-env-engineering-2026-09-07]]
