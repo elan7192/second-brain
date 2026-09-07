@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-python-agent-systems-map-2026-09-07]] | 2026-09-07 | METHOD map：Python=control plane；pymalloc 1MiB@64-bit；PEP 703/744 caveats；nanobind；SKIP Mojo/FT default |
 | [[src-atom-manipulation-knowledge-map-2026-09-07]] | 2026-09-07 | METHOD map：atom-manip hard wall (B− survey); DOI/arXiv; SKIP lab seat; fold divide-atoms |
 | [[src-rudijr-gemini-video-route-2026-09-06]] | 2026-09-07 | METHOD：long video→brief→Cursor/Claude；SKIP always-on Gemini skill/key until Fill burns reopen |
 | [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]] | 2026-09-07 | 跳過：YT20 skillmaxxing promo；skill-pack spam / download-20 adjacent |

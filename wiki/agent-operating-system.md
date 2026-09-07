@@ -37,7 +37,7 @@ The wiki is still below the 50-100 source density [[src-papa-couch-compiler]] sa
 
 ## Related
 
-[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[two-pass-document-processing]] · [[ultra-mode]] · [[adversarial-review]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]] · [[agent-facing-docs]]
+[[how-it-works]] · [[index]] · [[claim-protocol]] · [[contradictions]] · [[two-pass-document-processing]] · [[ultra-mode]] · [[adversarial-review]] · [[src-play-methods-2026-08-25]] · [[growth-operator]] · [[memory-system]] · [[retrieval]] · [[claims]] · [[eval-suite]] · [[vault-ontology]] · [[agent-facing-docs]] · [[src-python-agent-systems-map-2026-09-07]]
 
 [[src-thewhizzai-avo]] is a harness-vs-model score tweet. 30.2→100 is `unverified` (no paper).
 

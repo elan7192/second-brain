@@ -36,7 +36,7 @@ Caveats from the post (kept): cannot delegate editing (need targeted reads for l
 
 ## Pages updated
 
-[[index-sources]] · [[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-rudijr-gemini-video-route-2026-09-06]]
+[[index-sources]] · [[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-rudijr-gemini-video-route-2026-09-06]] · [[src-python-agent-systems-map-2026-09-07]]
 
 ## Related
 
