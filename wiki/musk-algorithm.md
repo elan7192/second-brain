@@ -25,7 +25,9 @@ Keep long-term vision. Starship lines on the source are examples, not new physic
 
 Companion (2026-09-06): [[src-lan-e-ai-divide-atoms-2026-09-06]] — AI conquers software by divide-to-atoms; cannot move atoms; stop at physics/hard walls.
 
-Hard-wall map (2026-09-07): [[src-atom-manipulation-knowledge-map-2026-09-07]] — real atom-manip paradigms; SKIP lab seat.
+Hard-wall map (2026-09-07): [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[src-plastics-env-engineering-2026-09-07]] — real atom-manip paradigms; SKIP lab seat.
+
+Plastics env literacy (2026-09-07): [[src-plastics-env-engineering-2026-09-07]] — AI≠move polymers; SKIP env seat.
 
 ## Vault passes
 
