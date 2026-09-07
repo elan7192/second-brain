@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-07T11:16:06Z",
+  "builtAt": "2026-09-07T12:35:41Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 17,
     "Ship": 59,
     "Map": 5,
-    "unverified": 124,
+    "unverified": 125,
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 304,
+    "Source": 305,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 597,
-    "links": 4299
+    "objects": 598,
+    "links": 4311
   },
   "objects": [
     {
@@ -1482,7 +1482,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 21,
+      "inbound": 22,
       "outbound": 12,
       "unverified": true,
       "oneLiner": "A compiler for organisational method. Source: [[src-avid-company-foundry]] article and README."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 94,
-      "outbound": 310,
+      "inbound": 95,
+      "outbound": 311,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 363,
+      "outbound": 364,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 43,
+      "inbound": 44,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -4034,6 +4034,20 @@
       "outbound": 1,
       "unverified": true,
       "oneLiner": "Agent Memory Leaderboard exists: https://github.com/AML-memory/agent-memory-leaderboard and https://agentmemoryleaderboard.ai/docs. Textual and coding tracks. Challenge 2026 opened 2026-07-29."
+    },
+    {
+      "primaryKey": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "objectType": "Source",
+      "title": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "path": "wiki/sources/src-ai-recog-valuation-knowledge-2026-09-07.md",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "tags": "researchy,method,product-a",
+      "island": "sources",
+      "inbound": 5,
+      "outbound": 7,
+      "unverified": true,
+      "oneLiner": "**Pipeline:** `photo \u2192 candidates(identity, condition_grade, defect_boxes, confidence) \u2192 human/tech confirm \u2192 join comps by identity+condition+venue+time`."
     },
     {
       "primaryKey": "src-ai-residual-capture-v0",
@@ -5024,7 +5038,7 @@
       "updated": "2026-09-07",
       "tags": "method,physics",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 7,
       "unverified": false,
       "oneLiner": "Hard wall for [[src-lan-e-ai-divide-atoms-2026-09-06]]: AI conquers software; **cannot move atoms** without lab physics. AI can drive control loops (self-driving SPM, rearrange algorithms); cannot del"
@@ -6074,8 +6088,8 @@
       "updated": "2026-09-07",
       "tags": "lan-e,method",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 9,
+      "inbound": 7,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "lan E (2026-09-06): AI can theoretically conquer all software by divide-and-conquer down to atomic scale; AI **cannot move atoms**; stop at physics / hard walls."
     },
@@ -7768,8 +7782,8 @@
       "updated": "2026-09-06",
       "tags": "researchy,method",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 9,
+      "inbound": 9,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "TimesFM principles \u2192 desk literacy (Researchy 2026-09-06):"
     },
@@ -7835,11 +7849,11 @@
       "title": "src-valuation-anything-learn-from-others-2026-09-06",
       "path": "wiki/sources/src-valuation-anything-learn-from-others-2026-09-06.md",
       "created": "2026-09-06",
-      "updated": "2026-09-06",
+      "updated": "2026-09-07",
       "tags": "researchy,method,product-a",
       "island": "sources",
-      "inbound": 5,
-      "outbound": 7,
+      "inbound": 6,
+      "outbound": 8,
       "unverified": false,
       "oneLiner": "Valuation-of-anything learn-from-others (Researchy 2026-09-06):"
     },
@@ -14928,6 +14942,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-ai-recog-valuation-knowledge-2026-09-07"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-ai-residual-capture-v0"
     },
     {
@@ -17599,6 +17618,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-agent-playground-catalog-2026-09-06"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-ai-recog-valuation-knowledge-2026-09-07"
     },
     {
       "from": "log",
@@ -22646,6 +22670,41 @@
       "to": "memory-engineering"
     },
     {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "cites",
+      "to": "src-atom-manipulation-knowledge-map-2026-09-07"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "cites",
+      "to": "src-lan-e-ai-divide-atoms-2026-09-06"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "cites",
+      "to": "src-timesfm-principles-2026-09-06"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "cites",
+      "to": "src-valuation-anything-learn-from-others-2026-09-06"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
       "from": "src-ai-residual-capture-v0",
       "linkType": "cites",
       "to": "src-cos-knowledge-sync-bus-2026-09-05"
@@ -25538,6 +25597,11 @@
     {
       "from": "src-lan-e-ai-divide-atoms-2026-09-06",
       "linkType": "cites",
+      "to": "src-ai-recog-valuation-knowledge-2026-09-07"
+    },
+    {
+      "from": "src-lan-e-ai-divide-atoms-2026-09-06",
+      "linkType": "cites",
       "to": "src-atom-manipulation-knowledge-map-2026-09-07"
     },
     {
@@ -27768,6 +27832,11 @@
     {
       "from": "src-timesfm-principles-2026-09-06",
       "linkType": "cites",
+      "to": "src-ai-recog-valuation-knowledge-2026-09-07"
+    },
+    {
+      "from": "src-timesfm-principles-2026-09-06",
+      "linkType": "cites",
       "to": "src-cloudflare-ebpf-xdp-cost-principles-2026-09-06"
     },
     {
@@ -27859,6 +27928,11 @@
       "from": "src-v2metax-thanks-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
+    },
+    {
+      "from": "src-valuation-anything-learn-from-others-2026-09-06",
+      "linkType": "cites",
+      "to": "src-ai-recog-valuation-knowledge-2026-09-07"
     },
     {
       "from": "src-valuation-anything-learn-from-others-2026-09-06",
