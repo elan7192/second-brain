@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] amend | plastics Fable fact-check METHOD fold
+
+Amend [[src-plastics-env-engineering-2026-09-07]]: STEAL stock eqn+six levers, four root causes, hazard=M×h, four recycling-rate defs (Conversio 17/12/9), circular-claim 5-point audit, UK PPT, France AGEC washer-filter, Wiesinger (+UNEP separate), WWTP~95%+sludge, Sentinel-2. DO NOT vault η_c/η_x, Kole-as-leakage, textile-as-OECD-leakage, ocean $100–1000 blended. KEEP three-column MFA, chem-recycle 0.1%, AI≠hydrolyse PE. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | plastics env-engineering METHOD literacy
 
 Thin [[src-plastics-env-engineering-2026-09-07]]: leakage atoms along chain; mech/chem/DRS/NIR/DfR/EPR/LCA; AI≠move polymers; rate illusion / mass-balance greenwash. Fold divide-atoms. SKIP env seat. Squash-merge if validate PASS.
