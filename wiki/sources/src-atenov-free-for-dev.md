@@ -27,4 +27,8 @@ Not bot-ops core. Do not hire a free-tier bot. Pointer only for Fill / quota hun
 
 ## Pages updated
 
-[[quota-router]] · [[grok-bot-quota]] · [[work-per-cost]]
+[[quota-router]] · [[grok-bot-quota]] · [[work-per-cost]] · [[src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07]]
+
+## Related
+
+[[quota-router]] · [[grok-bot-quota]] · [[work-per-cost]] · [[src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07]]

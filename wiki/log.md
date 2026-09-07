@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | Kaggle TPU Qwen BF16 METHOD + free-compute Related
+
+Thin [[src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07]]: free Kaggle TPU→OpenAI-compat agent backend (rahim3). Fold [[quota-router]] / atenov. SKIP always-on skill/bot + stolen-key scrapers. Adjacent free-compute URLs Related-only. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | python-agent systems METHOD map
 
 Thin [[src-python-agent-systems-map-2026-09-07]]: B+ systems collage; control vs compute; pymalloc 1MiB@64-bit fix; PEP 703/744 caveats; nanobind; SKIP Mojo rewrite / free-threaded default without yes. SoR=PEP+docs. Fold [[harness-routing]]. Squash-merge if validate PASS.
