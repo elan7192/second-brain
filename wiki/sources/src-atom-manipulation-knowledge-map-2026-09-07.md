@@ -48,4 +48,4 @@ Pointer map only. Do not dump essay body or lab recipes. Exact HDL T/dose = lab-
 
 ## Related
 
-[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[musk-algorithm]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]]
+[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[musk-algorithm]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-cloudflare-ebpf-xdp-cost-principles-2026-09-06]] · [[company-foundry]] · [[src-plastics-env-engineering-2026-09-07]]

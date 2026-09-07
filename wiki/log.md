@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | plastics env-engineering METHOD literacy
+
+Thin [[src-plastics-env-engineering-2026-09-07]]: leakage atoms along chain; mech/chem/DRS/NIR/DfR/EPR/LCA; AI≠move polymers; rate illusion / mass-balance greenwash. Fold divide-atoms. SKIP env seat. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | GenSpark Fable code-stack fact-check METHOD
 
 Thin [[src-code-stack-genspark-fable-factcheck-2026-09-07]]: adopt Fable code-stack as long-form SoR; TLDR stays [[src-code-stack-language-ai-correctness-2026-09-07]]. Resolved Go 1.25 GOMAXPROCS; CPython 3.14 FT opt-in; YJIT off default; JDK 24 JEP 491; Apple cacheline nuance. Squash-merge if validate PASS.
