@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-07T13:06:13Z",
+  "builtAt": "2026-09-07T13:29:42Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 17,
     "Ship": 59,
     "Map": 5,
-    "unverified": 125,
+    "unverified": 126,
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 307,
+    "Source": 308,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 600,
-    "links": 4332
+    "objects": 601,
+    "links": 4347
   },
   "objects": [
     {
@@ -1230,7 +1230,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 44,
+      "inbound": 45,
       "outbound": 15,
       "unverified": true,
       "oneLiner": "The portable unit between coding agents is verified task state, not a transcript."
@@ -2182,8 +2182,8 @@
       "updated": "2026-09-07",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 55,
-      "outbound": 36,
+      "inbound": 56,
+      "outbound": 37,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 97,
-      "outbound": 313,
+      "inbound": 98,
+      "outbound": 314,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 366,
+      "outbound": 367,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -4044,8 +4044,8 @@
       "updated": "2026-09-07",
       "tags": "researchy,method,product-a",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 7,
+      "inbound": 7,
+      "outbound": 8,
       "unverified": true,
       "oneLiner": "**Pipeline:** `photo \u2192 candidates(identity, condition_grade, defect_boxes, confidence) \u2192 human/tech confirm \u2192 join comps by identity+condition+venue+time`."
     },
@@ -5380,6 +5380,20 @@
       "oneLiner": "Cloudflare eBPF/XDP cost principles \u2192 desk transfer (Researchy 2026-09-06):"
     },
     {
+      "primaryKey": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "objectType": "Source",
+      "title": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "path": "wiki/sources/src-code-stack-genspark-fable-factcheck-2026-09-07.md",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "tags": "researchy,method",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 8,
+      "unverified": true,
+      "oneLiner": "1. **Go 1.25 GOMAXPROCS:** container-aware default (cgroup CPU bandwidth) + periodic update. Pre-1.25 still needs `uber-go/automaxprocs` on older toolchains. https://go.dev/doc/go1.25 \u00b7 https://go.dev"
+    },
+    {
       "primaryKey": "src-code-stack-language-ai-correctness-2026-09-07",
       "objectType": "Source",
       "title": "src-code-stack-language-ai-correctness-2026-09-07",
@@ -5388,8 +5402,8 @@
       "updated": "2026-09-07",
       "tags": "researchy,method",
       "island": "sources",
-      "inbound": 4,
-      "outbound": 8,
+      "inbound": 5,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "**Execution-layer atoms:** ISA \u2192 OS \u2192 runtime \u2192 language \u2192 libraries \u2192 your code \u2192 process topology \u2192 human/AI loop. \u201cLanguage X is fast\u201d is meaningless without naming **which layer** you pay."
     },
@@ -7012,8 +7026,8 @@
       "updated": "2026-09-07",
       "tags": "method,python",
       "island": "sources",
-      "inbound": 9,
-      "outbound": 10,
+      "inbound": 10,
+      "outbound": 11,
       "unverified": true,
       "oneLiner": "**Architecture metaphor:** Agent = nondeterministic cognition \u2194 deterministic tool loop. **Python = control plane**; C++/CUDA/Triton/(aspirational Mojo) = hot compute path."
     },
@@ -7404,8 +7418,8 @@
       "updated": "2026-09-07",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 5,
-      "outbound": 4,
+      "inbound": 6,
+      "outbound": 5,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1aGenSpark Fable exposure FAQ \u2014 Fable 5/5.1 in Code Agent+Claw picker, not Super Agent Ultra; label may be 5.1."
     },
@@ -8370,7 +8384,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 38,
+      "inbound": 39,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
@@ -13895,6 +13909,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-code-stack-language-ai-correctness-2026-09-07"
     },
     {
@@ -15451,6 +15470,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-cloudflare-ebpf-xdp-cost-principles-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
     },
     {
       "from": "index-sources",
@@ -17826,6 +17850,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-cloudflare-ebpf-xdp-cost-principles-2026-09-06"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
     },
     {
       "from": "log",
@@ -22730,6 +22759,11 @@
     {
       "from": "src-ai-recog-valuation-knowledge-2026-09-07",
       "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
+    },
+    {
+      "from": "src-ai-recog-valuation-knowledge-2026-09-07",
+      "linkType": "cites",
       "to": "src-lan-e-ai-divide-atoms-2026-09-06"
     },
     {
@@ -24611,6 +24645,51 @@
       "from": "src-cloudflare-ebpf-xdp-cost-principles-2026-09-06",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "cites",
+      "to": "src-ai-recog-valuation-knowledge-2026-09-07"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "cites",
+      "to": "src-code-stack-language-ai-correctness-2026-09-07"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "cites",
+      "to": "src-skip-genspark-fable-picker-2026-09-07"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "audited-task-contract"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-code-stack-genspark-fable-factcheck-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "src-code-stack-language-ai-correctness-2026-09-07",
+      "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
     },
     {
       "from": "src-code-stack-language-ai-correctness-2026-09-07",
@@ -26930,6 +27009,11 @@
     {
       "from": "src-python-agent-systems-map-2026-09-07",
       "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "cites",
       "to": "src-code-stack-language-ai-correctness-2026-09-07"
     },
     {
@@ -27536,6 +27620,11 @@
       "from": "src-skip-genspark-fable-picker-2026-09-07",
       "linkType": "cites",
       "to": "src-av1dlive-fable-hype-skip"
+    },
+    {
+      "from": "src-skip-genspark-fable-picker-2026-09-07",
+      "linkType": "cites",
+      "to": "src-code-stack-genspark-fable-factcheck-2026-09-07"
     },
     {
       "from": "src-skip-genspark-fable-picker-2026-09-07",

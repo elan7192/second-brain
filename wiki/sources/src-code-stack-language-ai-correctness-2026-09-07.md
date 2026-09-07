@@ -14,7 +14,7 @@ updated: 2026-09-07
 - 判定: METHOD
 - Date: 2026-09-07
 - Related prior: [[src-python-agent-systems-map-2026-09-07]]
-- GenSpark model-fable code-stack output: **PENDING** (prompt staged; file missing).
+- GenSpark model-fable code-stack: fact-checked — long-form SoR pointer [[src-code-stack-genspark-fable-factcheck-2026-09-07]] (this page = TLDR).
 - **SKIP** desk-wide Mojo/Rust rewrite; free-threaded as box default without Fill/lan E yes; “AI code needs no tests.”
 
 ## Claims kept
@@ -27,14 +27,14 @@ updated: 2026-09-07
 
 **AI code guilty until tests + last-yes:** generate → typecheck → pytest/CI → (mutation if critical) → human review → last-yes merge. Prefer independent oracles over dual-model self-agree. Sandbox untrusted AI code off prod creds.
 
-判定=METHOD. Primaries: PEP 703/744 · https://docs.python.org/3/c-api/memory.html · language docs · Amdahl.
+判定=METHOD TLDR. Long-form SoR: [[src-code-stack-genspark-fable-factcheck-2026-09-07]] (resolved: Go 1.25 GOMAXPROCS; CPython 3.14 FT opt-in; YJIT off default; JDK 24 pinning; Apple cacheline nuance).
 
-Pointer map only. Do not dump Researchy body. Do not rewrite desk from this note.
+Pointer map only. Do not dump Researchy/Fable body. Do not rewrite desk from this note.
 
 ## Pages updated
 
-[[index-sources]] · [[src-python-agent-systems-map-2026-09-07]] · [[harness-routing]]
+[[index-sources]] · [[src-python-agent-systems-map-2026-09-07]] · [[harness-routing]] · [[src-code-stack-genspark-fable-factcheck-2026-09-07]]
 
 ## Related
 
-[[src-python-agent-systems-map-2026-09-07]] · [[harness-routing]] · [[work-per-cost]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[musk-algorithm]] · [[src-skip-genspark-fable-picker-2026-09-07]]
+[[src-python-agent-systems-map-2026-09-07]] · [[harness-routing]] · [[work-per-cost]] · [[audited-task-contract]] · [[verifiable-instructions]] · [[musk-algorithm]] · [[src-skip-genspark-fable-picker-2026-09-07]] · [[src-code-stack-genspark-fable-factcheck-2026-09-07]]

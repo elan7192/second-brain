@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | GenSpark Fable code-stack fact-check METHOD
+
+Thin [[src-code-stack-genspark-fable-factcheck-2026-09-07]]: adopt Fable code-stack as long-form SoR; TLDR stays [[src-code-stack-language-ai-correctness-2026-09-07]]. Resolved Go 1.25 GOMAXPROCS; CPython 3.14 FT opt-in; YJIT off default; JDK 24 JEP 491; Apple cacheline nuance. Squash-merge if validate PASS.
+
 ## [2026-09-07] ingest | code-stack language/AI correctness METHOD
 
 Thin [[src-code-stack-language-ai-correctness-2026-09-07]]: execution-layer atoms; language-by-plane; measure-first; AI code guilty until tests+last-yes. Fold [[src-python-agent-systems-map-2026-09-07]] / [[harness-routing]]. SKIP desk rewrite / FT default. Squash-merge if validate PASS.

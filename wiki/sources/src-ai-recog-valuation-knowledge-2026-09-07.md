@@ -15,7 +15,8 @@ updated: 2026-09-07
 - 判定: METHOD（Product A / remain vision intake）
 - Date: 2026-09-07
 - Frame: atoms = cleared sale, identity, condition, venue, time · 有人買才叫交易 · vision = hypotheses aid, never clears.
-- **SKIP** end-to-end price-from-pixels as SoR; new vision seat without Engineer path; GenSpark as truth (fact-check PENDING — burn folder screenshots only).
+- **SKIP** end-to-end price-from-pixels as SoR; new vision seat without Engineer path.
+- GenSpark burn fact-check (2026-09-07): rolling file `/workspace/fill/ai-recog-valuation-genspark-factcheck-2026-09-07.md` — Fable followup STEAL three-state 已判定/不可判定/不可观测; see also [[src-code-stack-genspark-fable-factcheck-2026-09-07]] skim note.
 
 ## Claims kept
 
