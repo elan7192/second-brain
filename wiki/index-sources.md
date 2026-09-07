@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-skip-mitchellkeller-cf-wrangler-agent-2026-09-07]] | 2026-09-07 | 跳過：CF+$0 Wrangler-in-Codex tip；desk has wrangler skills；no new bot |
 | [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] | 2026-09-07 | METHOD：Prompt Debt=brittle prompt sprawl；DSPy=program/optimize；align Astra DELETE；SKIP install |
 | [[src-x-0x0sojalsec-kaggle-tpu-qwen-bf16-2026-09-07]] | 2026-09-07 | METHOD：Kaggle TPU→OpenAI-compat Qwen BF16 (rahim3)；SKIP always-on skill/stolen keys；Related free-compute list |
 | [[src-python-agent-systems-map-2026-09-07]] | 2026-09-07 | METHOD map：Python=control plane；pymalloc 1MiB@64-bit；PEP 703/744 caveats；nanobind；SKIP Mojo/FT default |
