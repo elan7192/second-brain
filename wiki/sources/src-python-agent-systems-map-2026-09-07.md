@@ -45,8 +45,8 @@ Pointer map only. Do not dump essay body. Do not mandate Mojo rewrite.
 
 ## Pages updated
 
-[[index-sources]] · [[harness-routing]] · [[work-per-cost]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]]
+[[index-sources]] · [[harness-routing]] · [[work-per-cost]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-code-stack-language-ai-correctness-2026-09-07]]
 
 ## Related
 
-[[harness-routing]] · [[work-per-cost]] · [[quota-router]] · [[tokens-as-capital]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[agent-operating-system]] · [[src-rudijr-gemini-video-route-2026-09-06]]
+[[harness-routing]] · [[work-per-cost]] · [[quota-router]] · [[tokens-as-capital]] · [[src-spotify-portal-claude-cheap-workers]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[agent-operating-system]] · [[src-rudijr-gemini-video-route-2026-09-06]] · [[src-code-stack-language-ai-correctness-2026-09-07]]

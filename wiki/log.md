@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-07] ingest | code-stack language/AI correctness METHOD
+
+Thin [[src-code-stack-language-ai-correctness-2026-09-07]]: execution-layer atoms; language-by-plane; measure-first; AI code guilty until tests+last-yes. Fold [[src-python-agent-systems-map-2026-09-07]] / [[harness-routing]]. SKIP desk rewrite / FT default. Squash-merge if validate PASS.
+
 ## [2026-09-07] skip | GenSpark Fable picker FAQ
 
 Skip [[src-skip-genspark-fable-picker-2026-09-07]]: Fable 5/5.1 in Code Agent+Claw picker, not Super Agent Ultra; label may be 5.1. Squash-merge if validate PASS.
