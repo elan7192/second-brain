@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-06T17:22:22Z",
+  "builtAt": "2026-09-07T06:23:44Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 297,
+    "Source": 299,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 590,
-    "links": 4210
+    "objects": 592,
+    "links": 4234
   },
   "objects": [
     {
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 87,
-      "outbound": 303,
+      "inbound": 89,
+      "outbound": 305,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 356,
+      "outbound": 358,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3565,11 +3565,11 @@
       "title": "Quota router",
       "path": "wiki/quota-router.md",
       "created": "2026-08-25",
-      "updated": "2026-09-03",
+      "updated": "2026-09-07",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 11,
-      "outbound": 6,
+      "inbound": 12,
+      "outbound": 7,
       "unverified": true,
       "oneLiner": "Burn expiring quota first."
     },
@@ -3750,7 +3750,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 46,
+      "inbound": 47,
       "outbound": 29,
       "unverified": false,
       "oneLiner": "A skill is a compiled SOP for a workflow that already failed once."
@@ -6676,8 +6676,8 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 7,
-      "outbound": 8,
+      "inbound": 9,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "skillslop (author framing): bloated skills \u2248 one-liner YAGNI \u2014 DELETE bias."
     },
@@ -7074,6 +7074,20 @@
       "oneLiner": "**Applied 2026-09-05:** deleted **7** parked cron husks (SEO\u00d73, Competitor\u00d72, figma\u00d72). Folders removed \u2014 not merely `enabled:false`."
     },
     {
+      "primaryKey": "src-rudijr-gemini-video-route-2026-09-06",
+      "objectType": "Source",
+      "title": "src-rudijr-gemini-video-route-2026-09-06",
+      "path": "wiki/sources/src-rudijr-gemini-video-route-2026-09-06.md",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "tags": "twitter,method",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 8,
+      "unverified": false,
+      "oneLiner": "Gemini video-route pattern (author framing): long video \u2192 brief \u2192 Cursor/Claude (or other coding seat)."
+    },
+    {
       "primaryKey": "src-rutin-astra-routine-prompt-pattern-2026-09",
       "objectType": "Source",
       "title": "src-rutin-astra-routine-prompt-pattern-2026-09",
@@ -7240,6 +7254,20 @@
       "outbound": 1,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1a12-week cyber roadmap\uff0c\u8077\u6daf\uff0froadmap \u5b89\u5229\u975e vault \u4e3b\u7dda\u3002"
+    },
+    {
+      "primaryKey": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
+      "objectType": "Source",
+      "title": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
+      "path": "wiki/sources/src-skip-aiedge-yt20-skillmaxx-2026-09-06.md",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "\u8df3\u904e\uff1aYT20 skillmaxxing promo \u2014 skill-pack spam / download-20 adjacent."
     },
     {
       "primaryKey": "src-skip-akshay-magnitude-local-models-2026-09-04",
@@ -7516,7 +7544,7 @@
       "updated": "2026-09-05",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 3,
+      "inbound": 4,
       "outbound": 2,
       "unverified": false,
       "oneLiner": "\u8df3\u904e\uff1ageneric 9 AI/ML YouTube course dump\uff1b\u7121 desk method\u3002"
@@ -7614,8 +7642,8 @@
       "updated": "2026-09-05",
       "tags": "spotify,claude-code,cost,routing",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 8,
+      "inbound": 9,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "Cheap-workers routing for Claude Code via Portal AiKA modes + `shunt` plugin:"
     },
@@ -7950,7 +7978,7 @@
       "updated": "2026-09-06",
       "tags": "twitter,astra",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Skill dies, methodology lives (author framing): prefer vault methods + thin when-to-use over always-on skill packs."
@@ -8076,8 +8104,8 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 52,
-      "outbound": 24,
+      "inbound": 53,
+      "outbound": 25,
       "unverified": true,
       "oneLiner": "Treat a token as an investment, not a per-query bill."
     },
@@ -8328,7 +8356,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 40,
+      "inbound": 41,
       "outbound": 39,
       "unverified": true,
       "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
@@ -8342,8 +8370,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 56,
-      "outbound": 55,
+      "inbound": 58,
+      "outbound": 57,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -15905,6 +15933,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
     },
     {
@@ -15961,6 +15994,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-skip-12wk-cyber-roadmap"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-skip-aiedge-yt20-skillmaxx-2026-09-06"
     },
     {
       "from": "index-sources",
@@ -17995,6 +18033,11 @@
     {
       "from": "log",
       "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
     },
     {
@@ -18036,6 +18079,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skip-0xjokker-timesfm-promo-2026-09-05"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-aiedge-yt20-skillmaxx-2026-09-06"
     },
     {
       "from": "log",
@@ -21176,6 +21224,11 @@
       "from": "quota-router",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "quota-router",
+      "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
     },
     {
       "from": "quota-router",
@@ -26015,6 +26068,16 @@
     {
       "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
       "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "cites",
+      "to": "src-skip-aiedge-yt20-skillmaxx-2026-09-06"
+    },
+    {
+      "from": "src-nateberkopec-skillslop-yagni-2026-09-06",
+      "linkType": "cites",
       "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
     },
     {
@@ -26658,6 +26721,46 @@
       "to": "spacexai-grok-bot-keepers"
     },
     {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "cites",
+      "to": "src-spotify-portal-claude-cheap-workers"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "cites",
+      "to": "src-yangtze-skill-dies-method-lives-2026-09-06"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "quota-router"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
+      "from": "src-rudijr-gemini-video-route-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-rutin-astra-routine-prompt-pattern-2026-09",
       "linkType": "cites",
       "to": "src-algo-routines-audit-2026-09-05"
@@ -26929,6 +27032,31 @@
     },
     {
       "from": "src-skip-12wk-cyber-roadmap",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
+      "from": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
+      "linkType": "cites",
+      "to": "src-nateberkopec-skillslop-yagni-2026-09-06"
+    },
+    {
+      "from": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
+      "linkType": "cites",
+      "to": "src-skip-sairahul1-9-ai-ml-yt"
+    },
+    {
+      "from": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
+      "linkType": "relatedTo",
+      "to": "skill-as-sop"
+    },
+    {
+      "from": "src-skip-aiedge-yt20-skillmaxx-2026-09-06",
       "linkType": "relatedTo",
       "to": "x-bookmark-sync-2026-09-05"
     },
@@ -27256,6 +27384,11 @@
       "from": "src-spotify-portal-claude-cheap-workers",
       "linkType": "cites",
       "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "src-spotify-portal-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
     },
     {
       "from": "src-spotify-portal-claude-cheap-workers",
@@ -28041,6 +28174,11 @@
       "from": "tokens-as-capital",
       "linkType": "cites",
       "to": "src-retrieval-second-brain"
+    },
+    {
+      "from": "tokens-as-capital",
+      "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
     },
     {
       "from": "tokens-as-capital",
@@ -28920,6 +29058,11 @@
     {
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
       "to": "src-ryrenz-humanlayer-skills-pointer-2026-09-06"
     },
     {
@@ -28941,6 +29084,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-12wk-cyber-roadmap"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-aiedge-yt20-skillmaxx-2026-09-06"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",

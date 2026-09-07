@@ -16,6 +16,8 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-rudijr-gemini-video-route-2026-09-06]] | 2026-09-07 | METHOD：long video→brief→Cursor/Claude；SKIP always-on Gemini skill/key until Fill burns reopen |
+| [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]] | 2026-09-07 | 跳過：YT20 skillmaxxing promo；skill-pack spam / download-20 adjacent |
 | [[src-every-compound-writing-fold-2026-09-05]] | 2026-09-07 | Related-fold：Every Compound Writing method → Copy Humanizer/unslop；SKIP install skill pack |
 | [[src-valuation-anything-learn-from-others-2026-09-06]] | 2026-09-06 | METHOD：valuation-of-anything — Lemonade quote≠claim；Manheim venue-split+thin-sample；art estimate≠hammer；atoms=clears |
 | [[src-lan-e-ai-divide-atoms-2026-09-06]] | 2026-09-06 | METHOD：lan E — AI conquers software via divide-to-atoms；cannot move atoms；stop at physics/hard walls；align valuation atoms |

@@ -44,6 +44,8 @@ Already on main (dedup; not rewritten):
 | [[src-vikingmute-linear-sync-engine-re-2026-09-05]] | 入vault建議 | Linear sync RE architecture pointer；no bot/skill/implement |
 | [[src-timesfm-principles-2026-09-06]] | 入vault建議 | TimesFM METHOD literacy；SKIP install；alongside 0xJokker skip |
 | [[src-skip-0xjokker-timesfm-promo-2026-09-05]] | 跳過但仍記一行 | TimesFM forecasting promo；無 standing-seat fit |
+| [[src-rudijr-gemini-video-route-2026-09-06]] | 入vault建議 | Gemini video-route METHOD；SKIP always-on skill/key |
+| [[src-skip-aiedge-yt20-skillmaxx-2026-09-06]] | 跳過但仍記一行 | YT20 skillmaxxing promo；skill-pack spam / download-20 |
 | [[src-every-compound-writing-fold-2026-09-05]] | 入vault建議 | Compound Writing method fold → Humanizer/unslop；SKIP Every pack |
 | [[src-nateberkopec-skillslop-yagni-2026-09-06]] | 入vault建議 | skillslop YAGNI；Ponytail pointer no install；Related-fold Yangtze/Astra |
 | [[src-yangtze-skill-dies-method-lives-2026-09-06]] | 入vault建議 | skill dies / method lives；Related-fold pvncher/gengdaJ |

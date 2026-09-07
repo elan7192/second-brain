@@ -36,8 +36,8 @@ Caveats from the post (kept): cannot delegate editing (need targeted reads for l
 
 ## Pages updated
 
-[[index-sources]] · [[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]]
+[[index-sources]] · [[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-rudijr-gemini-video-route-2026-09-06]]
 
 ## Related
 
-[[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-community-compaction]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]] · [[src-gabrielchua-astra-cross-window-notes]]
+[[src-undefinedki-spotify-claude-cheap-workers]] · [[src-avichawla-trueforge]] · [[src-community-compaction]] · [[harness-routing]] · [[work-per-cost]] · [[tokens-as-capital]] · [[src-gabrielchua-astra-cross-window-notes]] · [[src-rudijr-gemini-video-route-2026-09-06]]
