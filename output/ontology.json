@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-07T06:26:06Z",
+  "builtAt": "2026-09-07T07:11:48Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -103,16 +103,16 @@
     "Meta": 17,
     "Ship": 59,
     "Map": 5,
-    "unverified": 123,
+    "unverified": 124,
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 300,
+    "Source": 301,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 593,
-    "links": 4246
+    "objects": 594,
+    "links": 4262
   },
   "objects": [
     {
@@ -1076,8 +1076,8 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 41,
-      "outbound": 61,
+      "inbound": 42,
+      "outbound": 62,
       "unverified": true,
       "oneLiner": "Synthesis of the compiled posts through [[src-omarsar-adversarial-review]] and [[src-jerry-two-pass-docs]]. File this back so later sessions do not rebuild it from the posts."
     },
@@ -2179,11 +2179,11 @@
       "title": "Harness routing",
       "path": "wiki/harness-routing.md",
       "created": "2026-08-23",
-      "updated": "2026-09-05",
+      "updated": "2026-09-07",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 53,
-      "outbound": 34,
+      "inbound": 54,
+      "outbound": 35,
       "unverified": true,
       "oneLiner": "A model and a harness are different knobs."
     },
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 90,
-      "outbound": 306,
+      "inbound": 91,
+      "outbound": 307,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2883,7 +2883,7 @@
       "tags": "wiki",
       "island": "meta",
       "inbound": 16,
-      "outbound": 359,
+      "outbound": 360,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3568,7 +3568,7 @@
       "updated": "2026-09-07",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 12,
+      "inbound": 13,
       "outbound": 7,
       "unverified": true,
       "oneLiner": "Burn expiring quota first."
@@ -5836,8 +5836,8 @@
       "updated": "2026-09-05",
       "tags": "twitter,harness",
       "island": "sources",
-      "inbound": 8,
-      "outbound": 9,
+      "inbound": 9,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Long-horizon = agent keeps going across days/sessions; one-shot breaks in front of you, long-horizon breaks quietly and keeps running."
     },
@@ -6976,6 +6976,20 @@
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
     },
     {
+      "primaryKey": "src-python-agent-systems-map-2026-09-07",
+      "objectType": "Source",
+      "title": "src-python-agent-systems-map-2026-09-07",
+      "path": "wiki/sources/src-python-agent-systems-map-2026-09-07.md",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "tags": "method,python",
+      "island": "sources",
+      "inbound": 7,
+      "outbound": 9,
+      "unverified": true,
+      "oneLiner": "**Architecture metaphor:** Agent = nondeterministic cognition \u2194 deterministic tool loop. **Python = control plane**; C++/CUDA/Triton/(aspirational Mojo) = hot compute path."
+    },
+    {
       "primaryKey": "src-rehan-nsfw-skip",
       "objectType": "Source",
       "title": "src-rehan-nsfw-skip",
@@ -7096,7 +7110,7 @@
       "updated": "2026-09-07",
       "tags": "twitter,method",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Gemini video-route pattern (author framing): long video \u2192 brief \u2192 Cursor/Claude (or other coding seat)."
@@ -7656,8 +7670,8 @@
       "updated": "2026-09-05",
       "tags": "spotify,claude-code,cost,routing",
       "island": "sources",
-      "inbound": 9,
-      "outbound": 9,
+      "inbound": 10,
+      "outbound": 10,
       "unverified": false,
       "oneLiner": "Cheap-workers routing for Claude Code via Portal AiKA modes + `shunt` plugin:"
     },
@@ -8118,7 +8132,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 53,
+      "inbound": 54,
       "outbound": 25,
       "unverified": true,
       "oneLiner": "Treat a token as an investment, not a per-query bill."
@@ -8370,8 +8384,8 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 41,
-      "outbound": 39,
+      "inbound": 42,
+      "outbound": 40,
       "unverified": true,
       "oneLiner": "Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled."
     },
@@ -10178,6 +10192,11 @@
       "from": "agent-operating-system",
       "linkType": "cites",
       "to": "src-play-methods-2026-08-25"
+    },
+    {
+      "from": "agent-operating-system",
+      "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
     },
     {
       "from": "agent-operating-system",
@@ -13822,6 +13841,11 @@
     {
       "from": "harness-routing",
       "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
+    },
+    {
+      "from": "harness-routing",
+      "linkType": "cites",
       "to": "src-retrieval-second-brain"
     },
     {
@@ -15908,6 +15932,11 @@
       "from": "index-sources",
       "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
     },
     {
       "from": "index-sources",
@@ -18028,6 +18057,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
     },
     {
       "from": "log",
@@ -25082,6 +25116,11 @@
     {
       "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
       "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
+    },
+    {
+      "from": "src-googlecloud-long-horizon-agent-harness-5-patterns",
+      "linkType": "cites",
       "to": "src-rutin-astra-routine-prompt-pattern-2026-09"
     },
     {
@@ -26630,6 +26669,51 @@
       "to": "skill-as-sop"
     },
     {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "cites",
+      "to": "src-googlecloud-long-horizon-agent-harness-5-patterns"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "cites",
+      "to": "src-rudijr-gemini-video-route-2026-09-06"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "cites",
+      "to": "src-spotify-portal-claude-cheap-workers"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "agent-operating-system"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "harness-routing"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "quota-router"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "tokens-as-capital"
+    },
+    {
+      "from": "src-python-agent-systems-map-2026-09-07",
+      "linkType": "relatedTo",
+      "to": "work-per-cost"
+    },
+    {
       "from": "src-rehan-nsfw-skip",
       "linkType": "relatedTo",
       "to": "x-misses-audit-2026-09-04"
@@ -27453,6 +27537,11 @@
       "from": "src-spotify-portal-claude-cheap-workers",
       "linkType": "cites",
       "to": "src-gabrielchua-astra-cross-window-notes"
+    },
+    {
+      "from": "src-spotify-portal-claude-cheap-workers",
+      "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
     },
     {
       "from": "src-spotify-portal-claude-cheap-workers",
@@ -28908,6 +28997,11 @@
       "from": "work-per-cost",
       "linkType": "cites",
       "to": "src-poteto-routine-frequency"
+    },
+    {
+      "from": "work-per-cost",
+      "linkType": "cites",
+      "to": "src-python-agent-systems-map-2026-09-07"
     },
     {
       "from": "work-per-cost",
