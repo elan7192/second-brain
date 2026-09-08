@@ -4,7 +4,7 @@ type: concept
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-07
+updated: 2026-09-08
 ---
 
 # Anti-slop
@@ -20,12 +20,15 @@ Source: [[src-juampi-anti-slop-rank]]. Skills were ranked, not vendored.
 - No unsolicited comparisons.
 - No "it's not X, it's Y" openings.
 - Lead with the answer.
+- Prefer literal phrasing over mannered metaphor/flourish (see [[src-mannered-prose-anthropic-2026-09-08]]).
 
 ## Do not apply when
 
 The human asked for examples, a comparison, or a specific voice.
 
 ## Skill list (upstream)
+
+Related fold (2026-09-08): Anthropic mannered-prose via [[src-mannered-prose-anthropic-2026-09-08]] — prefer literal over metaphor/flourish; fold Copy Humanizer / unslop; **SKIP** new skill.
 
 Related fold (2026-09-07): Every Compound Writing via [[src-every-compound-writing-fold-2026-09-05]] — interview→section→voice/style method only; **SKIP** Every OSS skill pack.
 
