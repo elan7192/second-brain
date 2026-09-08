@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-mannered-prose-anthropic-2026-09-08]] | 2026-09-08 | METHOD：Anthropic mannered-prose anti-slop；literal > flourish；fold Humanizer/unslop；SKIP new skill |
 | [[src-fischbach-problem-choice-2026-09-08]] | 2026-09-08 | METHOD：Fischbach problem choice — 10-point skeleton；Cell 2024 DOI；cross-link Musk Algorithm |
 | [[src-skip-paulklay-10x-inefficient-industries-2026-09-08]] | 2026-09-08 | 跳過：10× inefficient-industries tip；thin Stress lens only；no new skill/bot |
 | [[src-plastics-env-engineering-2026-09-07]] | 2026-09-07 | METHOD literacy：leakage atoms + Fable stock/levers/4-rates/5-point audit；KEEP 3-col MFA + chem 0.1%；DO NOT vault η_c/η_x；SKIP env seat |

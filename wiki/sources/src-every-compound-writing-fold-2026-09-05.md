@@ -37,4 +37,4 @@ Pointer only. Do not dump guide. Do not install.
 
 ## Related
 
-[[anti-slop]] · [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] · [[src-juampi-anti-slop-rank]] · [[src-nateberkopec-skillslop-yagni-2026-09-06]] · [[src-voxyz-writing-system]] · [[src-sukiea-writing-for-agents]]
+[[anti-slop]] · [[src-ryrenz-wiki-signs-ai-writing-fold-2026-09-05]] · [[src-juampi-anti-slop-rank]] · [[src-mannered-prose-anthropic-2026-09-08]] · [[src-nateberkopec-skillslop-yagni-2026-09-06]] · [[src-voxyz-writing-system]] · [[src-sukiea-writing-for-agents]]

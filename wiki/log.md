@@ -11,6 +11,10 @@ updated: 2026-09-05
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-08] ingest | Anthropic mannered-prose anti-slop METHOD
+
+Thin [[src-mannered-prose-anthropic-2026-09-08]]: mannered prose = metaphor/flourish for display; fix = literal when available. Fold [[anti-slop]] / Copy Humanizer / unslop. SKIP new skill. Squash-merge if validate PASS.
+
 ## [2026-09-08] ingest | Fischbach problem-choice METHOD
 
 Thin [[src-fischbach-problem-choice-2026-09-08]]: Stanford Eng 10-point skeleton + verified Cell 187(8):1828–1833 (DOI 10.1016/j.cell.2024.03.012). Fold [[musk-algorithm]]. X @Hi_Mrinal pointer. Squash-merge if validate PASS.
