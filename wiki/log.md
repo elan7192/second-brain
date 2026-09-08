@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-08] ingest | desk bots/skills/process audit (Fable) + one-cut proposal
+
+Thin [[src-desk-bots-skills-process-audit-fable-2026-09-08]]: Musk Algorithm strict order over lan E desk snapshot; standing 7→11, user skills 37→41; DELETE husk `New Agent` + `x-scout-connect-onboarding` + two `weekly-*` skills (proposal); sunset 2026-10-05 for parked packs; GO–ACK and locked-UX fixes as packet/profile lines, no new skill; routing tie-breaks. [[src-desk-one-cut-proposal-2026-09-08]]: one cut = CoS stops answering ACK/GO, gated on 7-day baseline, with owner/done-proof/rollback; rest queued. Board note on [[lan-e-desk-team]]. Nothing applied live. Squash-merge if validate PASS.
 
 ## [2026-09-08] ingest | Anthropic mannered-prose anti-slop METHOD
 

@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-08T01:40:05Z",
+  "builtAt": "2026-09-08T01:47:19Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Hunt": 8,
     "Concept": 129,
     "Project": 2,
-    "Source": 312,
+    "Source": 314,
     "Person": 14,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 605,
-    "links": 4397
+    "objects": 607,
+    "links": 4428
   },
   "objects": [
     {
@@ -1160,7 +1160,7 @@
       "updated": "2026-09-08",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 37,
+      "inbound": 38,
       "outbound": 18,
       "unverified": false,
       "oneLiner": "Default writing constraints for this vault."
@@ -2070,7 +2070,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 31,
+      "inbound": 32,
       "outbound": 16,
       "unverified": true,
       "oneLiner": "Grok Bot quota burns fastest on:"
@@ -2375,11 +2375,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-09-05",
+      "updated": "2026-09-08",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 102,
-      "outbound": 318,
+      "inbound": 104,
+      "outbound": 320,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2809,11 +2809,11 @@
       "title": "lan E desk team",
       "path": "wiki/lan-e-desk-team.md",
       "created": "2026-09-05",
-      "updated": "2026-09-06",
+      "updated": "2026-09-08",
       "tags": "wiki,ops",
       "island": "concepts",
-      "inbound": 18,
-      "outbound": 16,
+      "inbound": 20,
+      "outbound": 18,
       "unverified": false,
       "oneLiner": "CoS playbook card for standing / parked / gone seats and live routines. Source: [[src-cos-team-md-2026-09-05]] (`/workspace/fill/TEAM.md`, 2026-09-05 Asia/Taipei). Not an org chart of SpaceXAI product"
     },
@@ -2879,11 +2879,11 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-09-05",
+      "updated": "2026-09-08",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 16,
-      "outbound": 371,
+      "inbound": 17,
+      "outbound": 373,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 48,
+      "inbound": 50,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -3596,7 +3596,7 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 46,
+      "inbound": 48,
       "outbound": 24,
       "unverified": false,
       "oneLiner": "Raptor 3: one owner per job, report once, no empty acks."
@@ -3764,7 +3764,7 @@
       "updated": "2026-09-04",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 9,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Instruction files rot when every correction becomes a new Never line."
@@ -4002,7 +4002,7 @@
       "updated": "2026-09-03",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 11,
+      "inbound": 12,
       "outbound": 5,
       "unverified": false,
       "oneLiner": "Chief routes; does not do the work. Triage \u2192 delegate \u2192 watch \u2192 collect \u2192 escalate. A Chief that researches/writes/operates itself rebuilds one giant chatbot."
@@ -4114,7 +4114,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "Parked bots must have zero cron definitions on disk, not merely `enabled:false`. A disabled husk on a parked bot still violates Delete-first; the audit proposes delete. CoS approves live deletes; the "
@@ -5472,7 +5472,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,ops",
       "island": "sources",
-      "inbound": 5,
+      "inbound": 6,
       "outbound": 9,
       "unverified": false,
       "oneLiner": "Front door is Chief of Staff; bots report CoS; lan E gets one CoS update. Last human yes for send/pay/post/non-routine merge/irreversible."
@@ -5644,6 +5644,34 @@
       "outbound": 2,
       "unverified": false,
       "oneLiner": "Chess: views \u2260 sales. 74k views / 51 buys vs 135k views / 2 buys. Same numbers already in `growth/growth-insights.md`."
+    },
+    {
+      "primaryKey": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "objectType": "Source",
+      "title": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "path": "wiki/sources/src-desk-bots-skills-process-audit-fable-2026-09-08.md",
+      "created": "2026-09-08",
+      "updated": "2026-09-08",
+      "tags": "wiki,ops,skills",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 15,
+      "unverified": false,
+      "oneLiner": "**Step 1, requirements (named owner lan E):** front door CoS only, last yes human, durable knowledge via Vault, Algorithm every round. All four survive the \"who asked for this\" test. One requirement i"
+    },
+    {
+      "primaryKey": "src-desk-one-cut-proposal-2026-09-08",
+      "objectType": "Source",
+      "title": "src-desk-one-cut-proposal-2026-09-08",
+      "path": "wiki/sources/src-desk-one-cut-proposal-2026-09-08.md",
+      "created": "2026-09-08",
+      "updated": "2026-09-08",
+      "tags": "wiki,ops",
+      "island": "sources",
+      "inbound": 4,
+      "outbound": 10,
+      "unverified": false,
+      "oneLiner": "**The cut:** delete CoS's side of the GO\u2013ACK loop. One instruction change, on the Chief of Staff profile only. Proposed text (three lines): \"TASK once, with an id. Revise or STOP is a new TASK id that"
     },
     {
       "primaryKey": "src-deusyu-translate-book",
@@ -6116,7 +6144,7 @@
       "updated": "2026-09-04",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 10,
+      "inbound": 12,
       "outbound": 4,
       "unverified": true,
       "oneLiner": "Applied poteto quota tip; audited a mega-burning Grok Bot setup. Concrete checklist:"
@@ -7054,7 +7082,7 @@
       "updated": "2026-09-06",
       "tags": "twitter",
       "island": "sources",
-      "inbound": 21,
+      "inbound": 22,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "Stronger models (GPT-6 Astra): Skills / AGENTS.md / task prompts become context debt \u2014 revisit each model jump."
@@ -7180,7 +7208,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,routines",
       "island": "sources",
-      "inbound": 11,
+      "inbound": 13,
       "outbound": 10,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** deleted **7** parked cron husks (SEO\u00d73, Competitor\u00d72, figma\u00d72). Folders removed \u2014 not merely `enabled:false`."
@@ -7334,7 +7362,7 @@
       "updated": "2026-09-05",
       "tags": "wiki,skills",
       "island": "sources",
-      "inbound": 8,
+      "inbound": 10,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "**Applied 2026-09-05:** user skills under `/home/box/agent-data/workflows` **42 \u2192 37**."
@@ -15630,6 +15658,16 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-desk-bots-skills-process-audit-fable-2026-09-08"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
+      "to": "src-desk-one-cut-proposal-2026-09-08"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-deusyu-translate-book"
     },
     {
@@ -17315,6 +17353,16 @@
     {
       "from": "lan-e-desk-team",
       "linkType": "cites",
+      "to": "src-desk-bots-skills-process-audit-fable-2026-09-08"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
+      "to": "src-desk-one-cut-proposal-2026-09-08"
+    },
+    {
+      "from": "lan-e-desk-team",
+      "linkType": "cites",
       "to": "src-exm7777-advanced-x-research-grok-bot"
     },
     {
@@ -17996,6 +18044,16 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-deronin-growthos-vault"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-desk-bots-skills-process-audit-fable-2026-09-08"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-desk-one-cut-proposal-2026-09-08"
     },
     {
       "from": "log",
@@ -25146,6 +25204,131 @@
       "from": "src-deronin-views-vs-sales-2026-08-27",
       "linkType": "relatedTo",
       "to": "views-vs-sales"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-adiix-grok-bot-org"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-algo-routines-audit-2026-09-05"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-cos-team-md-2026-09-05"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-desk-one-cut-proposal-2026-09-08"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-kloss-routine-audit"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-pvncher-rethinking-skills-gpt6-astra"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-routines-cut-playbook-2026-09-05"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "anti-slop"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "grok-bot-quota"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-desk-bots-skills-process-audit-fable-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "skill-improver"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "cites",
+      "to": "src-desk-bots-skills-process-audit-fable-2026-09-08"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "cites",
+      "to": "src-kloss-routine-audit"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "cites",
+      "to": "src-routines-cut-playbook-2026-09-05"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "cites",
+      "to": "src-skills-cut-42-to-37-2026-09-05"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "lan-e-desk-team"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "raptor-dispatch"
+    },
+    {
+      "from": "src-desk-one-cut-proposal-2026-09-08",
+      "linkType": "relatedTo",
+      "to": "skill-improver"
     },
     {
       "from": "src-deusyu-translate-book",

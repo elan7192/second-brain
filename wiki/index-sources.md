@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # Index sources
@@ -16,6 +16,8 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-desk-one-cut-proposal-2026-09-08]] | 2026-09-08 | ONE weekly-improve cut：CoS stops answering ACK/GO (one profile line)；gate=7-day GO–ACK baseline ≥2 else quiet；owner/done-proof/rollback；husk+3 skill deletes queued |
+| [[src-desk-bots-skills-process-audit-fable-2026-09-08]] | 2026-09-08 | METHOD：Algorithm-ordered desk audit (bots/skills/process)；seats 7→11, skills 37→41；DELETE husk + 3 skills；sunset parked packs；GO–ACK + locked-UX fixes；routing tie-breaks；no new bot |
 | [[src-mannered-prose-anthropic-2026-09-08]] | 2026-09-08 | METHOD：Anthropic mannered-prose anti-slop；literal > flourish；fold Humanizer/unslop；SKIP new skill |
 | [[src-fischbach-problem-choice-2026-09-08]] | 2026-09-08 | METHOD：Fischbach problem choice — 10-point skeleton；Cell 2024 DOI；cross-link Musk Algorithm |
 | [[src-skip-paulklay-10x-inefficient-industries-2026-09-08]] | 2026-09-08 | 跳過：10× inefficient-industries tip；thin Stress lens only；no new skill/bot |

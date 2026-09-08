@@ -6,7 +6,7 @@ tags:
   - wiki
   - ops
 created: 2026-09-05
-updated: 2026-09-06
+updated: 2026-09-08
 created_by: agent
 confidence: high
 source:
@@ -17,6 +17,8 @@ derived_from:
   - src-cos-knowledge-sync-bus-2026-09-05
   - src-openai-hf-agents-incident-2026
   - src-ai-residual-capture-v0
+  - src-desk-bots-skills-process-audit-fable-2026-09-08
+  - src-desk-one-cut-proposal-2026-09-08
 ---
 
 # lan E desk team
@@ -80,6 +82,10 @@ Old Engineer · Papers · dr eggbot · Designer · Motion · Product · Lab · D
 
 Routing: X → X Scout · research → Researchy · code → Lingxi Engineer · wiki → Vault · quota → Fill · routines CUT → Rutin. Dispatch shape: [[raptor-dispatch]].
 
+### Snapshot 2026-09-08 (lan E paste; audit [[src-desk-bots-skills-process-audit-fable-2026-09-08]])
+
+Standing 11: the seven above plus Product Idea Stress Test · Copy Humanizer · Critiquito · GTM Loop Closer. Parked and Gone lists unchanged. Husk agent "New Agent" (empty description) present despite "New Bot husk" under Gone; delete/park hygiene flagged. User skills named: 41 (vault recorded 37 after the 2026-09-05 cut). Weekly improve candidate for the Monday slot: [[src-desk-one-cut-proposal-2026-09-08]] (CoS stops answering acks; gated on a 7-day GO–ACK baseline).
+
 ## INFERENCE
 
 Weekly improve is a **live CoS routine** (Mondays 10:00 Taipei): review seats/routines → propose **≤1** change or stay quiet → apply only after lan E yes → record on this board / TEAM.md. Flag idle/duplicate for next review.
@@ -90,4 +96,4 @@ Prefer event > poll and delete parked husks before rewriting them. Align [[src-r
 
 ## Related
 
-[[src-cos-team-md-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[spacexai-grok-bot-keepers]] · [[grok-bot-quota]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-skills-cut-42-to-37-2026-09-05]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-openai-hf-agents-incident-2026]] · [[src-ai-residual-capture-v0]]
+[[src-cos-team-md-2026-09-05]] · [[src-routines-cut-playbook-2026-09-05]] · [[src-cos-knowledge-sync-bus-2026-09-05]] · [[raptor-dispatch]] · [[musk-algorithm]] · [[spacexai-grok-bot-keepers]] · [[grok-bot-quota]] · [[src-googlecloud-long-horizon-agent-harness-5-patterns]] · [[src-skills-cut-42-to-37-2026-09-05]] · [[src-exm7777-advanced-x-research-grok-bot]] · [[src-openai-hf-agents-incident-2026]] · [[src-ai-residual-capture-v0]] · [[src-desk-bots-skills-process-audit-fable-2026-09-08]] · [[src-desk-one-cut-proposal-2026-09-08]]
