@@ -11,6 +11,10 @@ updated: 2026-09-08
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-08] decision | PR129 one-cut skip live (CoS delete supersedes)
+
+Captain via Firstmate (`pr129-skip-live`): weekly improve slot **not** spent on live CoS GO–ACK profile edit from [[src-desk-one-cut-proposal-2026-09-08]]. Proposal stays historical; superseded by CoS seat delete. Board note on [[lan-e-desk-team]]. No live bot profile changes. Squash-merge if validate PASS.
+
 ## [2026-09-08] ingest | desk bots/skills/process audit (Fable) + one-cut proposal
 
 Thin [[src-desk-bots-skills-process-audit-fable-2026-09-08]]: Musk Algorithm strict order over lan E desk snapshot; standing 7→11, user skills 37→41; DELETE husk `New Agent` + `x-scout-connect-onboarding` + two `weekly-*` skills (proposal); sunset 2026-10-05 for parked packs; GO–ACK and locked-UX fixes as packet/profile lines, no new skill; routing tie-breaks. [[src-desk-one-cut-proposal-2026-09-08]]: one cut = CoS stops answering ACK/GO, gated on 7-day baseline, with owner/done-proof/rollback; rest queued. Board note on [[lan-e-desk-team]]. Nothing applied live. Squash-merge if validate PASS.

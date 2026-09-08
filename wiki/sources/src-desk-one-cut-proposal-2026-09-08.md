@@ -13,6 +13,7 @@ updated: 2026-09-08
 - Artifact: weekly-improve proposal drawn from [[src-desk-bots-skills-process-audit-fable-2026-09-08]] (lan E desk snapshot 2026-09-08). Proposal only; nothing applied.
 - Author path: Cursor Claude Fable 5.1 (this run) → Vault PR → CoS carries it into the Monday 10:00 Taipei weekly improve → lan E yes or no.
 - Rule honored: **≤1 instruction or seat change per week**, human yes before apply, board updated after ([[lan-e-desk-team]]). Live bot profile edits are never auto-applied from this vault.
+- **Status 2026-09-08:** **SUPERSEDED / not applied live.** Captain (via Firstmate task `pr129-skip-live`) skipped live CoS GO–ACK profile edit — CoS seat delete supersedes this cut. Page remains historical proposal only.
 - 判定: 入vault建議 (thin; one cut, one gate, one rollback).
 - Dedup: no prior one-cut page. Near: [[src-skills-cut-42-to-37-2026-09-05]] (applied cut record) · [[src-routines-cut-playbook-2026-09-05]].
 

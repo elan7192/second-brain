@@ -86,6 +86,8 @@ Routing: X → X Scout · research → Researchy · code → Lingxi Engineer · 
 
 Standing 11: the seven above plus Product Idea Stress Test · Copy Humanizer · Critiquito · GTM Loop Closer. Parked and Gone lists unchanged. Husk agent "New Agent" (empty description) present despite "New Bot husk" under Gone; delete/park hygiene flagged. User skills named: 41 (vault recorded 37 after the 2026-09-05 cut). Weekly improve candidate for the Monday slot: [[src-desk-one-cut-proposal-2026-09-08]] (CoS stops answering acks; gated on a 7-day GO–ACK baseline).
 
+**2026-09-08 skip live (captain via Firstmate, task `pr129-skip-live`):** weekly improve slot **not** spent on live CoS GO–ACK profile edit. One-cut proposal stays **historical only** — superseded by **CoS seat delete**. No live bot profile changes from PR129.
+
 ## INFERENCE
 
 Weekly improve is a **live CoS routine** (Mondays 10:00 Taipei): review seats/routines → propose **≤1** change or stay quiet → apply only after lan E yes → record on this board / TEAM.md. Flag idle/duplicate for next review.
