@@ -11,6 +11,10 @@ updated: 2026-09-08
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 
+## [2026-09-10] ingest | plastic make/recycle/efficiency METHOD
+
+Thin [[src-plastic-make-recycle-efficiency-2026-09-10]]: three-track map (make / plant classes / efficiency axes); Uekert 2023 primary; TW TFDA B2B + Far Eastern ChemCycle pointer; EU 2022/1616; pyrolysis/mass-balance/FU hype gates. Fold [[src-plastics-env-engineering-2026-09-07]]. Change notes who|what|why. Firstmate task vault-plastic-eff-2026-09-10. Squash-merge if validate PASS.
+
 ## [2026-09-08] decision | PR129 one-cut skip live (CoS delete supersedes)
 
 Captain via Firstmate (`pr129-skip-live`): weekly improve slot **not** spent on live CoS GO–ACK profile edit from [[src-desk-one-cut-proposal-2026-09-08]]. Proposal stays historical; superseded by CoS seat delete. Board note on [[lan-e-desk-team]]. No live bot profile changes. Squash-merge if validate PASS.

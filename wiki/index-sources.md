@@ -16,6 +16,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 
 | Page | Date | One line |
 | --- | --- | --- |
+| [[src-plastic-make-recycle-efficiency-2026-09-10]] | 2026-09-10 | METHOD：plastic make→recycle three-track；Uekert axes；TW B2B/FDA；pyrolysis/mass-balance hype gates；SKIP CapEx invent |
 | [[src-desk-one-cut-proposal-2026-09-08]] | 2026-09-08 | ONE weekly-improve cut：CoS stops answering ACK/GO (one profile line)；gate=7-day GO–ACK baseline ≥2 else quiet；owner/done-proof/rollback；husk+3 skill deletes queued |
 | [[src-desk-bots-skills-process-audit-fable-2026-09-08]] | 2026-09-08 | METHOD：Algorithm-ordered desk audit (bots/skills/process)；seats 7→11, skills 37→41；DELETE husk + 3 skills；sunset parked packs；GO–ACK + locked-UX fixes；routing tie-breaks；no new bot |
 | [[src-mannered-prose-anthropic-2026-09-08]] | 2026-09-08 | METHOD：Anthropic mannered-prose anti-slop；literal > flourish；fold Humanizer/unslop；SKIP new skill |
