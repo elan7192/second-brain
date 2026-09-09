@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-08T01:47:19Z",
+  "builtAt": "2026-09-09T16:49:35Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -101,18 +101,18 @@
   },
   "counts": {
     "Meta": 17,
-    "Ship": 59,
-    "Map": 5,
     "unverified": 126,
     "Hunt": 8,
+    "Map": 5,
+    "Ship": 59,
     "Concept": 129,
     "Project": 2,
-    "Source": 314,
     "Person": 14,
+    "Source": 315,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 607,
-    "links": 4428
+    "objects": 608,
+    "links": 4438
   },
   "objects": [
     {
@@ -1482,7 +1482,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 25,
+      "inbound": 26,
       "outbound": 12,
       "unverified": true,
       "oneLiner": "A compiler for organisational method. Source: [[src-avid-company-foundry]] article and README."
@@ -2378,8 +2378,8 @@
       "updated": "2026-09-08",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 104,
-      "outbound": 320,
+      "inbound": 105,
+      "outbound": 321,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2882,8 +2882,8 @@
       "updated": "2026-09-08",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 17,
-      "outbound": 373,
+      "inbound": 18,
+      "outbound": 374,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -3274,7 +3274,7 @@
       "updated": "2026-09-03",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 50,
+      "inbound": 51,
       "outbound": 16,
       "unverified": false,
       "oneLiner": "Strict order. Best part is no part."
@@ -5038,7 +5038,7 @@
       "updated": "2026-09-07",
       "tags": "method,physics",
       "island": "sources",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 8,
       "unverified": false,
       "oneLiner": "Hard wall for [[src-lan-e-ai-divide-atoms-2026-09-06]]: AI conquers software; **cannot move atoms** without lab physics. AI can drive control loops (self-driving SPM, rearrange algorithms); cannot del"
@@ -6158,7 +6158,7 @@
       "updated": "2026-09-07",
       "tags": "lan-e,method",
       "island": "sources",
-      "inbound": 9,
+      "inbound": 10,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "lan E (2026-09-06): AI can theoretically conquer all software by divide-and-conquer down to atomic scale; AI **cannot move atoms**; stop at physics / hard walls."
@@ -6976,6 +6976,20 @@
       "oneLiner": "\u96f2\u700f\u89bd\u5668\u586b\u5bc6\u78bc\uff0f2FA \u4e0d\u5b89\uff1b\u8207\u4e0a\u5247\u96b1\u79c1\u7247\u540c\u4e00\u8ad6\u9ede\uff0c\u6307\u91dd\u5373\u53ef\u3002"
     },
     {
+      "primaryKey": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "objectType": "Source",
+      "title": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "path": "wiki/sources/src-plastic-make-recycle-efficiency-2026-09-10.md",
+      "created": "2026-09-10",
+      "updated": "2026-09-10",
+      "tags": "researchy,method,plastics",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 7,
+      "unverified": false,
+      "oneLiner": "**Three tracks:** (A) virgin make monomer\u2192polymer\u2192converting + PCR re-entry points; (B) plant classes B1\u2013B7 (MRF/NIR \u00b7 wash/pellet \u00b7 B2B food-grade \u00b7 PET depoly \u00b7 dissolution \u00b7 pyrolysis \u00b7 WTE); (C) e"
+    },
+    {
       "primaryKey": "src-plastics-env-engineering-2026-09-07",
       "objectType": "Source",
       "title": "src-plastics-env-engineering-2026-09-07",
@@ -6984,8 +6998,8 @@
       "updated": "2026-09-07",
       "tags": "researchy,method,literacy",
       "island": "sources",
-      "inbound": 6,
-      "outbound": 8,
+      "inbound": 7,
+      "outbound": 9,
       "unverified": false,
       "oneLiner": "**Leakage atom** = measurable mass-flow of polymer/additive leaving an intended engineered pathway (year, polymer/size class, pathway, MFA method). Units t/yr (or items/yr for DRS)."
     },
@@ -16133,6 +16147,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-plastic-make-recycle-efficiency-2026-09-10"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-plastics-env-engineering-2026-09-07"
     },
     {
@@ -18339,6 +18358,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-pawelhuryn-file-memory"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-plastic-make-recycle-efficiency-2026-09-10"
     },
     {
       "from": "log",
@@ -27211,6 +27235,41 @@
       "to": "x-misses-audit-2026-09-04"
     },
     {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "cites",
+      "to": "src-atom-manipulation-knowledge-map-2026-09-07"
+    },
+    {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "cites",
+      "to": "src-lan-e-ai-divide-atoms-2026-09-06"
+    },
+    {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "cites",
+      "to": "src-plastics-env-engineering-2026-09-07"
+    },
+    {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "relatedTo",
+      "to": "company-foundry"
+    },
+    {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "relatedTo",
+      "to": "log"
+    },
+    {
+      "from": "src-plastic-make-recycle-efficiency-2026-09-10",
+      "linkType": "relatedTo",
+      "to": "musk-algorithm"
+    },
+    {
       "from": "src-plastics-env-engineering-2026-09-07",
       "linkType": "cites",
       "to": "src-atom-manipulation-knowledge-map-2026-09-07"
@@ -27224,6 +27283,11 @@
       "from": "src-plastics-env-engineering-2026-09-07",
       "linkType": "cites",
       "to": "src-lan-e-ai-divide-atoms-2026-09-06"
+    },
+    {
+      "from": "src-plastics-env-engineering-2026-09-07",
+      "linkType": "cites",
+      "to": "src-plastic-make-recycle-efficiency-2026-09-10"
     },
     {
       "from": "src-plastics-env-engineering-2026-09-07",

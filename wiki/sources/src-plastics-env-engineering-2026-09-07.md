@@ -50,14 +50,16 @@ updated: 2026-09-07
 
 **SKIP:** staff env seat; unify one global leakage number as atom; “optimise” pyrolysis without mass balance; open-ocean cleanup as primary control.
 
+Make→recycle efficiency companion (2026-09-10): [[src-plastic-make-recycle-efficiency-2026-09-10]] — three-track plant map + Uekert axes; aligns pyrolysis/mass-balance hype gates.
+
 Primaries spine: OECD GPO DOI 10.1787/de747aef-en · Conversio/BKV 2023 · Pew/Systemiq · Geyer SciAdv 2017 · Meijer SciAdv 2021 · Uekert ACS SCE 2023 · Wiesinger ES&T 2021 · UNEP Chemicals in Plastics 2023 · HMRC PPT · AGEC · WHO 2019 MP drinking-water.
 
 Pointer map only. Do not dump Fable essay. Do not invent a single Mt/yr truth.
 
 ## Pages updated
 
-[[index-sources]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[musk-algorithm]] · [[src-code-stack-genspark-fable-factcheck-2026-09-07]]
+[[index-sources]] · [[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[src-plastic-make-recycle-efficiency-2026-09-10]] · [[musk-algorithm]] · [[src-code-stack-genspark-fable-factcheck-2026-09-07]]
 
 ## Related
 
-[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[musk-algorithm]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-code-stack-genspark-fable-factcheck-2026-09-07]] · [[company-foundry]]
+[[src-lan-e-ai-divide-atoms-2026-09-06]] · [[src-atom-manipulation-knowledge-map-2026-09-07]] · [[src-plastic-make-recycle-efficiency-2026-09-10]] · [[musk-algorithm]] · [[src-valuation-anything-learn-from-others-2026-09-06]] · [[src-timesfm-principles-2026-09-06]] · [[src-code-stack-genspark-fable-factcheck-2026-09-07]] · [[company-foundry]]
