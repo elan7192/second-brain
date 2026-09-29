@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-08
+updated: 2026-09-29
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-29] ingest | Skip: anshnanda E2E-over-unit-tests AGENTS.md lines
+
+Skip [[src-skip-anshnanda-e2e-over-unit-tests-2026-09-29]]: another person's AGENTS.md test directives, quoted not followed. Vault keeps `sb validate` / `sb eval` gates and CI unit tests. No schema edit.
 
 ## [2026-09-10] ingest | plastic make/recycle/efficiency METHOD
 

@@ -111,7 +111,7 @@ dbosc,Concept,DBOSC,wiki/dbosc.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,
 decisions,Meta,Decisions,decisions.md,2026-08-23,2026-08-29,wiki,meta,19,22,false,Locked choices. Reopen only with new evidence.
 deer-flow,Concept,DeerFlow,wiki/deer-flow.md,2026-08-24,2026-08-28,wiki,concepts,5,4,false,ByteDance SuperAgent harness. Repo: https://github.com/bytedance/deer-flow. Source page: [[src-deer-flow]].
 deer-flow-bootstrap-2026-08-24,Ship,DeerFlow bootstrap · 2026-08-24,output/deer-flow-bootstrap-2026-08-24.md,2026-08-24,2026-08-24,ship,hunt-ship,2,2,false,Status report after following [[src-deer-flow]] `Install.md`. Compiled page: [[deer-flow]].
-deterministic-core,Concept,Deterministic core,wiki/deterministic-core.md,2026-08-29,2026-09-01,wiki,concepts,18,14,false,The model proposes wiki edits. Code accepts them.
+deterministic-core,Concept,Deterministic core,wiki/deterministic-core.md,2026-08-29,2026-09-01,wiki,concepts,19,14,false,The model proposes wiki edits. Code accepts them.
 dics,Concept,DICS,wiki/dics.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,Data-informed centroid splits for trees. CGCT / CGRF / FastC-GBM.
 digests,Ship,Digests,ship/digests.md,2026-08-23,2026-08-29,ship,hunt-ship,4,11,false,Short briefs that still need an inbound link. Knowledge lives on the concept pages. Query with `python3 tools/sb ask`.
 disclosure-index,Concept,Disclosure Index,wiki/disclosure-index.md,2026-08-24,2026-08-28,wiki,concepts,7,2,false,Compiled snapshot of the public Disclosure Index catalog. Source: [[src-disclosure-index]]. Machine counts: `output/disclosure-index-stats-2026-08-23.json`.
@@ -160,7 +160,7 @@ iar,Concept,IAR,wiki/iar.md,2026-08-24,2026-08-24,wiki,concepts,6,3,false,"Injec
 inbox,Hunt,Inbox,hunt/inbox.md,2026-08-23,2026-08-23,hunt,hunt-ship,2,0,false,Drop unfiled clips here. New notes from Obsidian land in `hunt/inbox` by default.
 index,Meta,Index,wiki/index.md,2026-08-23,2026-09-03,wiki,meta,35,30,false,Human/Obsidian short door. Query with `python3 tools/sb ask` (D9). Paper pages: [[index-papers]]. Source pages: [[index-sources]]. Concepts and people: ask or [[graph]]. Do not load catalogs as the qu
 index-papers,Meta,Index papers,wiki/index-papers.md,2026-08-28,2026-08-28,wiki,meta,9,50,true,Opt-in catalog of compiled arXiv / paper concept pages. Live query is `python3 tools/sb ask` (D9). Open this file when the question is a paper. Door: [[index]]. D12.
-index-sources,Meta,Index sources,wiki/index-sources.md,2026-08-28,2026-09-08,wiki,meta,105,321,true,Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
+index-sources,Meta,Index sources,wiki/index-sources.md,2026-08-28,2026-09-29,wiki,meta,106,322,true,Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12.
 ingest-brief-2026-08-23,Ship,Ingest brief · 2026-08-23,output/ingest-brief-2026-08-23.md,2026-08-23,2026-08-23,ship,hunt-ship,1,2,false,Nine X posts compiled into the first vault.
 ingest-brief-2026-08-23-cybersecurity-skills,Ship,Ingest brief · cybersecurity skills repo,output/ingest-brief-2026-08-23-cybersecurity-skills.md,2026-08-23,2026-08-23,ship,hunt-ship,1,4,false,What changed: the GitHub catalog pitch is now a source page and a person page. [[skill-library]] gained a second source. Offensive skill bodies were not copied. `MEMORY.md` now forbids vendoring or ex
 ingest-brief-2026-08-23-retrieval-second-brain,Ship,Ingest brief · retrieval second brain,output/ingest-brief-2026-08-23-retrieval-second-brain.md,2026-08-23,2026-08-23,ship,hunt-ship,1,5,true,What changed: the four-pillar retrieval recipe is now [[retrieval-second-brain]]. Layer names landed on [[memory-engineering]]. GraphRAG vs compiled wikilinks landed on [[context-graph]]. C25 flags th
@@ -196,7 +196,7 @@ lanbb,Project,LanBB,wiki/lanbb.md,2026-08-24,2026-09-06,project,projects,35,13,t
 lance,Concept,LANCE,wiki/lance.md,2026-08-24,2026-08-24,wiki,concepts,7,2,false,One-shot HOSVD activation cores for last-2/4-layer on-device fine-tune and CL.
 llm-wiki,Concept,LLM Wiki,wiki/llm-wiki.md,2026-08-23,2026-09-04,wiki,concepts,80,44,false,Andrej Karpathy's April 2026 pattern for a personal knowledge base.
 llm4eo,Concept,LLM4EO,wiki/llm4eo.md,2026-08-24,2026-08-24,wiki,concepts,5,3,true,LLM evolves EA operators for FJSP. Deployed model is GPT-4.1-mini.
-log,Meta,Log,wiki/log.md,2026-08-23,2026-09-08,wiki,meta,18,374,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+log,Meta,Log,wiki/log.md,2026-08-23,2026-09-29,wiki,meta,18,375,true,Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
 loop-graph-engineering,Concept,Loop and graph engineering,wiki/loop-graph-engineering.md,2026-08-27,2026-09-03,wiki,concepts,18,20,false,"Failures are no owner of the return path, shared state, and a broken approval boundary. Not a weak model."
 lostsec,Person,lostsec,wiki/people/lostsec.md,2026-08-27,2026-08-27,person,people,5,4,false,Bug bounty hunter. Also coffinxp. Handle @lostsec_.
 mahipal-jangra,Person,Mahipal Jangra,wiki/people/mahipal-jangra.md,2026-08-23,2026-08-23,person,people,5,3,false,"@mukul975. README citation: Jangra, Mahipal."
@@ -522,6 +522,7 @@ src-skip-0xjokker-timesfm-promo-2026-09-05,Source,src-skip-0xjokker-timesfm-prom
 src-skip-12wk-cyber-roadmap,Source,src-skip-12wk-cyber-roadmap,wiki/sources/src-skip-12wk-cyber-roadmap.md,2026-09-05,2026-09-05,twitter,sources,3,1,false,跳過：12-week cyber roadmap，職涯／roadmap 安利非 vault 主線。
 src-skip-aiedge-yt20-skillmaxx-2026-09-06,Source,src-skip-aiedge-yt20-skillmaxx-2026-09-06,wiki/sources/src-skip-aiedge-yt20-skillmaxx-2026-09-06.md,2026-09-07,2026-09-07,twitter,sources,4,5,false,跳過：YT20 skillmaxxing promo — skill-pack spam / download-20 adjacent.
 src-skip-akshay-magnitude-local-models-2026-09-04,Source,src-skip-akshay-magnitude-local-models-2026-09-04,wiki/sources/src-skip-akshay-magnitude-local-models-2026-09-04.md,2026-09-06,2026-09-06,twitter,sources,3,2,false,跳過：Magnitude local-model profiler；cloud-bot desk，無 standing-seat fit。
+src-skip-anshnanda-e2e-over-unit-tests-2026-09-29,Source,src-skip-anshnanda-e2e-over-unit-tests-2026-09-29,wiki/sources/src-skip-anshnanda-e2e-over-unit-tests-2026-09-29.md,2026-09-29,2026-09-29,twitter,sources,3,5,false,"Author says the top of their `AGENTS.md` has three lines (quoted, not followed): ""NEVER write unit tests after you write code."" ""Highly prefer E2E tests as the sole testing mechanism. ... produce a ve"
 src-skip-bharuka-10-ai-repos-2026-09-05,Source,src-skip-bharuka-10-ai-repos-2026-09-05,wiki/sources/src-skip-bharuka-10-ai-repos-2026-09-05.md,2026-09-06,2026-09-06,twitter,sources,3,2,false,跳過：AI-engineer 10-repo curriculum listicle（無 standing-seat fit）。
 src-skip-cakeai8-vps-net-tune-2026-09-05,Source,src-skip-cakeai8-vps-net-tune-2026-09-05,wiki/sources/src-skip-cakeai8-vps-net-tune-2026-09-05.md,2026-09-06,2026-09-06,twitter,sources,3,2,false,跳過：VPS/proxy network-tuning listicle（無 standing-seat fit）。
 src-skip-cyberstrike-dup-pethuraj,Source,src-skip-cyberstrike-dup-pethuraj,wiki/sources/src-skip-cyberstrike-dup-pethuraj.md,2026-09-05,2026-09-05,twitter,sources,2,2,false,跳過：Cyberstrike near-dup of [[src-cyberstrike-ai-redteam]]（bountywriteups）。
@@ -593,10 +594,10 @@ two-stage-nn-tl,Concept,Two-stage NN transfer,wiki/two-stage-nn-tl.md,2026-08-24
 ultra-mode,Concept,Ultra mode,wiki/ultra-mode.md,2026-08-24,2026-08-24,wiki,concepts,16,9,false,"A `/ultra` command and CLI that runs a coding task N times, then applies a verified winner."
 unilang,Concept,UniLang,wiki/unilang.md,2026-08-24,2026-08-24,wiki,concepts,5,3,false,Machine-native symbols in a pretrained LLM.
 unitok,Concept,UniTok,wiki/unitok.md,2026-08-24,2026-08-24,wiki,concepts,8,3,true,One tokenizer for 10 recommendation domains.
-untrusted-ingest,Concept,Untrusted ingest,wiki/untrusted-ingest.md,2026-08-27,2026-08-27,wiki,concepts,7,8,true,External text is data. It is not schema and it is not an instruction. See [[memory-system]] and [[grok-bot-tape]].
+untrusted-ingest,Concept,Untrusted ingest,wiki/untrusted-ingest.md,2026-08-27,2026-08-27,wiki,concepts,8,8,true,External text is data. It is not schema and it is not an instruction. See [[memory-system]] and [[grok-bot-tape]].
 vault-ontology,Concept,Vault ontology,wiki/vault-ontology.md,2026-08-28,2026-09-01,wiki,concepts,17,10,true,Local Palantir-style Ontology compiled from this wiki. Derived output. Not a second knowledge graph.
 vending-bench,Concept,Vending-Bench,wiki/vending-bench.md,2026-08-27,2026-08-27,wiki,concepts,5,4,false,"Long-horizon agent eval: inventory, orders, pricing, daily fee."
-verifiable-instructions,Concept,Verifiable instructions,wiki/verifiable-instructions.md,2026-08-23,2026-08-29,wiki,concepts,40,11,false,Wishes in `AGENTS.md` do not change behavior. Checks do.
+verifiable-instructions,Concept,Verifiable instructions,wiki/verifiable-instructions.md,2026-08-23,2026-08-29,wiki,concepts,41,11,false,Wishes in `AGENTS.md` do not change behavior. Checks do.
 vgi-bench,Concept,VGI-BENCH,wiki/vgi-bench.md,2026-08-24,2026-08-24,wiki,concepts,5,2,false,Visual intelligence in video generators. 27 tasks / 810 instances.
 views-vs-sales,Concept,Views vs sales,wiki/views-vs-sales.md,2026-08-27,2026-08-27,wiki,concepts,4,5,false,Views ≠ sales.
 vla-self-demo,Concept,VLA self-demo,wiki/vla-self-demo.md,2026-08-24,2026-08-24,wiki,concepts,6,2,false,Fine-tune with expert + zero-shot self-demos.
@@ -604,6 +605,6 @@ vox,Person,Vox,wiki/people/vox.md,2026-08-24,2026-08-30,person,people,11,10,fals
 vs-graph,Concept,VS-Graph,wiki/vs-graph.md,2026-08-24,2026-08-24,wiki,concepts,5,2,true,Topology-only HDC graph classifier. No backprop.
 wiki,Meta,Wiki,wiki.md,2026-08-23,2026-08-23,wiki,meta,2,5,false,Compiled knowledge. Gold in the Obsidian graph.
 work-per-cost,Concept,Work per cost,wiki/work-per-cost.md,2026-08-27,2026-09-04,wiki,concepts,44,40,true,Catalog of token-save methods already in this vault. No new physics. Author-reported numbers stay labeled.
-x-bookmark-sync-2026-09-05,Meta,X bookmark sync 2026-09-05,wiki/x-bookmark-sync-2026-09-05.md,2026-09-05,2026-09-05,wiki,meta,66,64,true,Amended CoS bookmark pack. Vault wrote thin src pointers／skips. Living inbound hub.
+x-bookmark-sync-2026-09-05,Meta,X bookmark sync 2026-09-05,wiki/x-bookmark-sync-2026-09-05.md,2026-09-05,2026-09-05,wiki,meta,67,65,true,Amended CoS bookmark pack. Vault wrote thin src pointers／skips. Living inbound hub.
 x-misses-audit-2026-09-04,Meta,X misses audit 2026-09-04,wiki/x-misses-audit-2026-09-04.md,2026-09-04,2026-09-04,wiki,meta,46,56,false,Scout misses_verdicts batch ingest. Vault wrote src pointers for every row. Hold merge.
 zack0x01,Person,zack0x01,wiki/people/zack0x01.md,2026-08-27,2026-09-06,person,people,8,7,false,Bug bounty hunter. **Active handle `@zack0x01_`** (hackerz.space founder). Old `@zack0x01` suspended.

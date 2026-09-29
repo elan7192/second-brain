@@ -47,6 +47,7 @@ Already on main (dedup; not rewritten):
 | [[src-mannered-prose-anthropic-2026-09-08]] | 入vault建議 | Anthropic mannered-prose METHOD；fold Humanizer/unslop；SKIP new skill |
 | [[src-fischbach-problem-choice-2026-09-08]] | 入vault建議 | Fischbach problem-choice METHOD；Cell DOI verified；Musk Algorithm fold |
 | [[src-skip-paulklay-10x-inefficient-industries-2026-09-08]] | 跳過但仍記一行 | 10× industries tip；Stress lens only；no skill/bot |
+| [[src-skip-anshnanda-e2e-over-unit-tests-2026-09-29]] | 跳過但仍記一行 | E2E-only / no unit tests after code (author's AGENTS.md)；no schema edit |
 | [[src-skip-genspark-fable-picker-2026-09-07]] | 跳過但仍記一行 | GenSpark Fable picker FAQ；not Ultra |
 | [[src-skip-mitchellkeller-cf-wrangler-agent-2026-09-07]] | 跳過但仍記一行 | CF+$0 Wrangler tip；no new skill/bot |
 | [[src-x-prompt-debt-dspy-dbreunig-2026-09-07]] | 入vault建議 | Prompt Debt / DSPy pointer；align Astra DELETE；SKIP install |

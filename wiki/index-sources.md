@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-08-28
-updated: 2026-09-08
+updated: 2026-09-29
 ---
 
 # Index sources
@@ -21,6 +21,7 @@ Batch hub for 41 skip/pointer rows: [[x-misses-audit-2026-09-04]]. Bookmark sync
 | [[src-desk-bots-skills-process-audit-fable-2026-09-08]] | 2026-09-08 | METHOD：Algorithm-ordered desk audit (bots/skills/process)；seats 7→11, skills 37→41；DELETE husk + 3 skills；sunset parked packs；GO–ACK + locked-UX fixes；routing tie-breaks；no new bot |
 | [[src-mannered-prose-anthropic-2026-09-08]] | 2026-09-08 | METHOD：Anthropic mannered-prose anti-slop；literal > flourish；fold Humanizer/unslop；SKIP new skill |
 | [[src-fischbach-problem-choice-2026-09-08]] | 2026-09-08 | METHOD：Fischbach problem choice — 10-point skeleton；Cell 2024 DOI；cross-link Musk Algorithm |
+| [[src-skip-anshnanda-e2e-over-unit-tests-2026-09-29]] | 2026-09-29 | 跳過：someone else's AGENTS.md test rules (E2E only, no unit tests after code)；vault keeps validate/eval + CI unit tests |
 | [[src-skip-paulklay-10x-inefficient-industries-2026-09-08]] | 2026-09-08 | 跳過：10× inefficient-industries tip；thin Stress lens only；no new skill/bot |
 | [[src-plastics-env-engineering-2026-09-07]] | 2026-09-07 | METHOD literacy：leakage atoms + Fable stock/levers/4-rates/5-point audit；KEEP 3-col MFA + chem 0.1%；DO NOT vault η_c/η_x；SKIP env seat |
 | [[src-code-stack-genspark-fable-factcheck-2026-09-07]] | 2026-09-07 | METHOD：Fable code-stack long-form SoR (A~90%); resolved Go1.25/JDK24/YJIT/FT3.14/Apple cacheline；TLDR=code-stack src |

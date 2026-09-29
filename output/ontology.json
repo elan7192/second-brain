@@ -1,6 +1,6 @@
 {
   "ontology": "second-brain",
-  "builtAt": "2026-09-09T16:49:35Z",
+  "builtAt": "2026-09-29T05:32:25Z",
   "sourceOfTruth": "wiki markdown",
   "hostedAip": false,
   "objectTypes": {
@@ -107,12 +107,12 @@
     "Ship": 59,
     "Concept": 129,
     "Project": 2,
+    "Source": 316,
     "Person": 14,
-    "Source": 315,
     "Decision": 12,
     "Contradiction": 47,
-    "objects": 608,
-    "links": 4438
+    "objects": 609,
+    "links": 4446
   },
   "objects": [
     {
@@ -1692,7 +1692,7 @@
       "updated": "2026-09-01",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 18,
+      "inbound": 19,
       "outbound": 14,
       "unverified": false,
       "oneLiner": "The model proposes wiki edits. Code accepts them."
@@ -2375,11 +2375,11 @@
       "title": "Index sources",
       "path": "wiki/index-sources.md",
       "created": "2026-08-28",
-      "updated": "2026-09-08",
+      "updated": "2026-09-29",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 105,
-      "outbound": 321,
+      "inbound": 106,
+      "outbound": 322,
       "unverified": true,
       "oneLiner": "Opt-in catalog of compiled source pages. Live query is `python3 tools/sb ask` (D9). Open this file when ingesting or citing a source. Door: [[index]]. D12."
     },
@@ -2879,11 +2879,11 @@
       "title": "Log",
       "path": "wiki/log.md",
       "created": "2026-08-23",
-      "updated": "2026-09-08",
+      "updated": "2026-09-29",
       "tags": "wiki",
       "island": "meta",
       "inbound": 18,
-      "outbound": 374,
+      "outbound": 375,
       "unverified": true,
       "oneLiner": "Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`."
     },
@@ -7438,6 +7438,20 @@
       "oneLiner": "\u8df3\u904e\uff1aMagnitude local-model profiler\uff1bcloud-bot desk\uff0c\u7121 standing-seat fit\u3002"
     },
     {
+      "primaryKey": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "objectType": "Source",
+      "title": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "path": "wiki/sources/src-skip-anshnanda-e2e-over-unit-tests-2026-09-29.md",
+      "created": "2026-09-29",
+      "updated": "2026-09-29",
+      "tags": "twitter",
+      "island": "sources",
+      "inbound": 3,
+      "outbound": 5,
+      "unverified": false,
+      "oneLiner": "Author says the top of their `AGENTS.md` has three lines (quoted, not followed): \"NEVER write unit tests after you write code.\" \"Highly prefer E2E tests as the sole testing mechanism. ... produce a ve"
+    },
+    {
       "primaryKey": "src-skip-bharuka-10-ai-repos-2026-09-05",
       "objectType": "Source",
       "title": "src-skip-bharuka-10-ai-repos-2026-09-05",
@@ -8440,7 +8454,7 @@
       "updated": "2026-08-27",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 7,
+      "inbound": 8,
       "outbound": 8,
       "unverified": true,
       "oneLiner": "External text is data. It is not schema and it is not an instruction. See [[memory-system]] and [[grok-bot-tape]]."
@@ -8482,7 +8496,7 @@
       "updated": "2026-08-29",
       "tags": "wiki",
       "island": "concepts",
-      "inbound": 40,
+      "inbound": 41,
       "outbound": 11,
       "unverified": false,
       "oneLiner": "Wishes in `AGENTS.md` do not change behavior. Checks do."
@@ -8594,8 +8608,8 @@
       "updated": "2026-09-05",
       "tags": "wiki",
       "island": "meta",
-      "inbound": 66,
-      "outbound": 64,
+      "inbound": 67,
+      "outbound": 65,
       "unverified": true,
       "oneLiner": "Amended CoS bookmark pack. Vault wrote thin src pointers\uff0fskips. Living inbound hub."
     },
@@ -16312,6 +16326,11 @@
     {
       "from": "index-sources",
       "linkType": "cites",
+      "to": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29"
+    },
+    {
+      "from": "index-sources",
+      "linkType": "cites",
       "to": "src-skip-bharuka-10-ai-repos-2026-09-05"
     },
     {
@@ -18483,6 +18502,11 @@
       "from": "log",
       "linkType": "cites",
       "to": "src-skip-akshay-magnitude-local-models-2026-09-04"
+    },
+    {
+      "from": "log",
+      "linkType": "cites",
+      "to": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29"
     },
     {
       "from": "log",
@@ -28080,6 +28104,31 @@
       "to": "x-bookmark-sync-2026-09-05"
     },
     {
+      "from": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "linkType": "relatedTo",
+      "to": "deterministic-core"
+    },
+    {
+      "from": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "linkType": "relatedTo",
+      "to": "index-sources"
+    },
+    {
+      "from": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "linkType": "relatedTo",
+      "to": "untrusted-ingest"
+    },
+    {
+      "from": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "linkType": "relatedTo",
+      "to": "verifiable-instructions"
+    },
+    {
+      "from": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29",
+      "linkType": "relatedTo",
+      "to": "x-bookmark-sync-2026-09-05"
+    },
+    {
       "from": "src-skip-bharuka-10-ai-repos-2026-09-05",
       "linkType": "relatedTo",
       "to": "index-sources"
@@ -30313,6 +30362,11 @@
       "from": "x-bookmark-sync-2026-09-05",
       "linkType": "cites",
       "to": "src-skip-akshay-magnitude-local-models-2026-09-04"
+    },
+    {
+      "from": "x-bookmark-sync-2026-09-05",
+      "linkType": "cites",
+      "to": "src-skip-anshnanda-e2e-over-unit-tests-2026-09-29"
     },
     {
       "from": "x-bookmark-sync-2026-09-05",
