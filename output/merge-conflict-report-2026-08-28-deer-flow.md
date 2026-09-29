@@ -15,7 +15,7 @@ Fetched `origin/main` at `db892ee` (Avid Company Foundry / C31), then merged int
 
 Unions on Home, hunt/github, Today, index, and log. Today stayed 2026-08-28 from main; deer-flow went into Look at, not Done.
 
-ID collision: this branch used C8 for DeerFlow `make config` vs `extensions_config.json`. Main C8 is two anti-slop tens. Remapped to **C32** on [[contradictions]], `wiki/data/contradictions.yaml`, [[deer-flow]], [[index]], [[log]], and [[Today]]. Anti-slop C8 left alone.
+ID collision: this branch used C8 for DeerFlow `make config` vs `extensions_config.json`. Main C8 is two anti-slop tens. Remapped to **C32** on [[contradictions]], `wiki/data/contradictions.yaml`, [[deer-flow]], [[index]], [[log]], and `Today` (deleted 2026-09-29). Anti-slop C8 left alone.
 
 ## Complicated (not silently picked)
 

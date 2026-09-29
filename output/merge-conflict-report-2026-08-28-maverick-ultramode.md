@@ -12,7 +12,7 @@ Fetched `origin/main` at `5927d29`, then merged into `cursor/ingest-maverick-ult
 
 ## Simple (fixed)
 
-Catalog and related-link unions: [[Home]], [[Today]], [[index]], [[twitter]], [[github]], [[ship]], [[log]], [[entropy-gate]], [[harness-routing]], [[self-verification]], [[agent-operating-system]], [[MEMORY]]. Graph snapshots regenerated from the merged wiki.
+Catalog and related-link unions: [[Home]], `Today` (deleted 2026-09-29), [[index]], [[twitter]], [[github]], [[ship]], [[log]], [[entropy-gate]], [[harness-routing]], [[self-verification]], [[agent-operating-system]], [[MEMORY]]. Graph snapshots regenerated from the merged wiki.
 
 ID collision: this branch had used C8 for two Terminal-Bench lifts and C9 for the LLM-tournament apply gate. Main already used C8 for two anti-slop tens and C9 for NGC tables. Remapped to **C33** and **C34** on pages, [[contradictions]], and `wiki/data/contradictions.yaml`. Paper C8–C9 were left alone.
 

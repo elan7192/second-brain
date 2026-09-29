@@ -12,7 +12,7 @@ Fetched `origin/main` at `c9172cf`, then merged into `cursor/agent-facing-docs-8
 
 ## Simple (fixed)
 
-Catalog and related-link unions: [[Home]], [[Today]], [[index]], [[ship]], [[twitter]], [[how-it-works]], [[log]], [[agent-operating-system]], [[context-graph]], [[llm-wiki]], [[tokens-as-capital]], [[self-verification]], [[verifiable-instructions]], [[hunt-ship-loop]], [[MEMORY]], [[Hooks]]. Graph snapshots taken from main, then regenerated.
+Catalog and related-link unions: [[Home]], `Today` (deleted 2026-09-29), [[index]], [[ship]], [[twitter]], [[how-it-works]], [[log]], [[agent-operating-system]], [[context-graph]], [[llm-wiki]], [[tokens-as-capital]], [[self-verification]], [[verifiable-instructions]], [[hunt-ship-loop]], [[MEMORY]], [[Hooks]]. Graph snapshots taken from main, then regenerated.
 
 `tools/render-obsidian-graph.py` kept main (concept islands / PNG). This branch only bumped a date.
 

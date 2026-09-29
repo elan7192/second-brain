@@ -12,7 +12,7 @@ Fetched `origin/main` at `4be06ef` (Maverick `#5` already on main), then merged 
 
 ## Simple (fixed)
 
-Catalog and related-link unions: [[Home]], [[Today]], [[index]], [[twitter]], [[ship]], [[log]], [[entropy-gate]], [[audited-task-contract]], [[self-verification]], [[agent-operating-system]], `MEMORY.md`. Graph snapshots regenerated from the merged wiki.
+Catalog and related-link unions: [[Home]], `Today` (deleted 2026-09-29), [[index]], [[twitter]], [[ship]], [[log]], [[entropy-gate]], [[audited-task-contract]], [[self-verification]], [[agent-operating-system]], `MEMORY.md`. Graph snapshots regenerated from the merged wiki.
 
 Maverick pages already on main (`[[ultra-mode]]`, [[maverick]], PPT, source). Kept main's copies (ids plus C33/C34). This branch's pre-remap C8/C9 text was dropped in favor of those.
 

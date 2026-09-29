@@ -4,12 +4,16 @@ type: meta
 tags:
   - wiki
 created: 2026-08-23
-updated: 2026-09-08
+updated: 2026-09-29
 ---
 
 # Log
 
 Append-only. Each entry starts with `## [YYYY-MM-DD] kind | title`.
+
+## [2026-09-29] lint | Algorithm pass: spam pages, Today, README
+
+lan E asked for a delete pass by [[musk-algorithm]]. Deleted four spam / empty-reply source pages (thebigjaww, 1kingcee, omerbozkurulew, v2metax) that only held "spam" as a claim; the URL and skip reason stay as rows on [[x-misses-audit-2026-09-04]]. Deleted `wiki/Today.md`, a dashboard frozen at 2026-08-30 with no living inbound; five merge-conflict reports now name it in plain text. README cut to a pointer at `Home.md` and `AGENTS.md` (CLI and layout lists duplicated `AGENTS.md`). Claims recompiled (1100 to 1088 rows), ontology rebuilt. Left locked parts alone: C17, C18, C38 briefs, C47 Archify, append-only log (so the duplicate `src-hxiao-headlong-share` stays; the log links it).
 
 ## [2026-09-10] ingest | plastic make/recycle/efficiency METHOD
 
