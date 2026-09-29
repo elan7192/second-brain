@@ -4,7 +4,7 @@ type: meta
 tags:
   - wiki
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-29
 ---
 
 # X misses audit 2026-09-04
@@ -55,15 +55,15 @@ Living inbound for skip/pointer rows. Thick folds also link from concept pages. 
 | [[src-grger-prompt-optimizer-skip]] | 跳過但仍記一行 | Prompt-Optimizer 工具安利；Scout 已判跳過（通用 prompt UI）。 |
 | [[src-bober-650-agents-hype-skip]] | 跳過但仍記一行 | 650 agents＋Second Brain 敘事片／無步驟，純 vibes。 |
 | [[src-hisevenih-itsfree-skip]] | 跳過但仍記一行 | itsfree.ai 463 免費模型目錄，資源安利非主題。 |
-| [[src-thebigjaww-spam-skip]] | 跳過但仍記一行 | 垃圾跟帖／成人話術 spam。 |
+| https://x.com/TheBig_Jaww/status/2095549510466629737 | 跳過但仍記一行 (page deleted 2026-09-29, spam) | 垃圾跟帖／成人話術 spam。 |
 | [[src-cbdoge-designing-grok-bot-pointer]] | 只記一筆 | 官方 blog：設計師用 always-on Grok Bot（Experiments 等）從想法到 artifact；x.ai/news/designi… |
 | [[src-uury-keyleak-reply-skip]] | 跳過但仍記一行 | 回 itsfree「key 洩漏風險」一句，無方法。 |
 | [[src-mikenevermiss-browser-tools-skip]] | 跳過但仍記一行 | 免註冊瀏覽器開源工具合集安利，非 scout 主題。 |
-| [[src-1kingcee-spam-skip]] | 跳過但仍記一行 | 成人話術 spam 跟帖。 |
+| https://x.com/1_King_Cee/status/2095675435627712934 | 跳過但仍記一行 (page deleted 2026-09-29, spam) | 成人話術 spam 跟帖。 |
 | [[src-andaluzamolina-spam-skip]] | 跳過但仍記一行 | 成人話術 spam 跟帖。 |
-| [[src-omerbozkurulew-spam-skip]] | 跳過但仍記一行 | 成人話術 spam 跟帖。 |
+| https://x.com/OmerBozkurulew/status/2095688527946330488 | 跳過但仍記一行 (page deleted 2026-09-29, spam) | 成人話術 spam 跟帖。 |
 | [[src-mikenevermiss-cobalt-skip]] | 跳過但仍記一行 | Cobalt 下載器安利，非主題。 |
-| [[src-v2metax-thanks-skip]] | 跳過但仍記一行 | 「Thanks for sharing」空回覆。 |
+| https://x.com/V2MetaX/status/2095692678885233008 | 跳過但仍記一行 (page deleted 2026-09-29, spam) | 「Thanks for sharing」空回覆。 |
 | [[src-mikenevermiss-cobalt-link-skip]] | 跳過但仍記一行 | Cobalt 試用鏈接跟帖。 |
 | [[src-mikenevermiss-cobalt-ios-skip]] | 跳過但仍記一行 | Cobalt iOS 存檔抱怨跟帖。 |
 | [[src-bkdgiffug-yuxi-rag-agents]] | 入vault建議 | 語析 Yuxi：RAG＋知識圖譜＋LangGraph 多智能體工作台（引用／多租戶／Docker）；second-brain 形。github.com/z… |
